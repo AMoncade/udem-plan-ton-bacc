@@ -1,0 +1,109 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-microbiologie-et-immunologie",
+  "nom": "Maîtrise en microbiologie et immunologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires dont 38 crédits attribués à la recherche et à la rédaction d'une thèse, et 6 crédits à option.",
+    "obligatoire": {
+      "min": 39,
+      "max": 39
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Obligatoire - 1 crédit.",
+      "cours": [
+        "MCB 60511",
+        "MCB 60512"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours MCB60511 et MCB60512 sont équivalents au cours MCB6051."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MCB 6012",
+        "MCB 6020",
+        "MCB 6031",
+        "MCB 6034",
+        "MCB 6035",
+        "MCB 6043",
+        "MCB 6068",
+        "MCB 6070",
+        "MCB 6090",
+        "MCB 6093",
+        "MCB 6094",
+        "MCB 6210"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Pour compléter ce bloc, l'étudiant désirant s'inscrire à tout autre cours des études supérieures du Département de microbiologie, infectiologie et immunologie ou d'autres départements devra faire approuver son choix par le Comité des études supérieures du département."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 38,
+          "max": 38
+        }
+      },
+      "regleBrut": "Obligatoire - 38 crédits.",
+      "cours": [
+        "MCB 6915",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A00)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires dont 38 crédits attribués à la recherche et à la rédaction d'une thèse, et 6 crédits à option.",
+    "Segment 70 — Au moins deux trimestres consécutifs doivent être accomplis en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-microbiologie-et-immunologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:04.941Z"
+}

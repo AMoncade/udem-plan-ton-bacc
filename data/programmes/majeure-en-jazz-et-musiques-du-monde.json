@@ -1,0 +1,360 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-jazz-et-musiques-du-monde",
+  "nom": "Majeure en jazz et musiques du monde",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Majeure",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante: 20 crédits obligatoires et 40 crédits à option.",
+    "obligatoire": {
+      "min": 20,
+      "max": 20
+    },
+    "option": {
+      "min": 40,
+      "max": 40
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "EMU 2101",
+        "MIN 1088",
+        "MIN 1089",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 3601X",
+        "MTE 3611X",
+        "MUL 1246"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Communication et outils professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "EMU 1310",
+        "EMU 2312",
+        "MIN 1804",
+        "MUL 1132",
+        "MUS 2134",
+        "PLU 2800U"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "MTE 12041",
+        "MTE 12042",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1100I",
+        "MUS 1100J",
+        "MUS 1213",
+        "MUS 1214"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : Pour vous inscrire aux cours MUS 1100I-J, MTE 1100 et MTE 1120, vous devez avoir reçu une prescription à la suite des tests de classement effectués après votre admission."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Improvisation, composition et harmonie au clavier",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 10 crédits.",
+      "cours": [
+        "MCT 1301",
+        "MCT 1302",
+        "MIN 1098",
+        "MIN 1099",
+        "MIN 1791",
+        "MIN 1792",
+        "MTE 2315",
+        "MTE 2316"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Histoire et théorie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANG 1500",
+        "MUL 1102",
+        "MUL 1117",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3314"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Instrument",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 16
+        }
+      },
+      "regleBrut": "Option - Maximum 16 crédits.",
+      "cours": [
+        "MUI 1404A",
+        "MUI 1404B",
+        "MUI 1414A",
+        "MUI 1414B",
+        "MUI 1424A",
+        "MUI 1424B",
+        "MUI 1434A",
+        "MUI 1434B",
+        "MUI 1454A",
+        "MUI 1454B",
+        "MUI 1464A",
+        "MUI 1464B",
+        "MUI 1474A",
+        "MUI 1474B",
+        "MUI 1484A",
+        "MUI 1484B",
+        "MUI 1494A",
+        "MUI 1494B",
+        "MUI 1524A",
+        "MUI 1524B",
+        "MUI 1534A",
+        "MUI 1534B",
+        "MUI 1564A",
+        "MUI 1564B",
+        "MUI 2404A",
+        "MUI 2404B",
+        "MUI 2414A",
+        "MUI 2414B",
+        "MUI 2424A",
+        "MUI 2424B",
+        "MUI 2434A",
+        "MUI 2434B",
+        "MUI 2454A",
+        "MUI 2454B",
+        "MUI 2464A",
+        "MUI 2464B",
+        "MUI 2474A",
+        "MUI 2474B",
+        "MUI 2484A",
+        "MUI 2484B",
+        "MUI 2494A",
+        "MUI 2494B",
+        "MUI 2524A",
+        "MUI 2524B",
+        "MUI 2534A",
+        "MUI 2534B",
+        "MUI 2564A",
+        "MUI 2564B",
+        "MUI 3404A",
+        "MUI 3404B",
+        "MUI 3414A",
+        "MUI 3414B",
+        "MUI 3424A",
+        "MUI 3424B",
+        "MUI 3434A",
+        "MUI 3434B",
+        "MUI 3454A",
+        "MUI 3454B",
+        "MUI 3464A",
+        "MUI 3464B",
+        "MUI 3474A",
+        "MUI 3474B",
+        "MUI 3484A",
+        "MUI 3484B",
+        "MUI 3494A",
+        "MUI 3494B",
+        "MUI 3524A",
+        "MUI 3524B",
+        "MUI 3534A",
+        "MUI 3534B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Grands ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 8 crédits.",
+      "cours": [
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1363",
+        "MUE 1364",
+        "MUE 1365",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1473",
+        "MUE 1474",
+        "MUE 1611",
+        "MUE 1612",
+        "MUE 1613",
+        "MUE 1614"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Autres ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MUE 1261",
+        "MUE 1262",
+        "MUE 1263",
+        "MUE 1264",
+        "MUE 1391",
+        "MUE 1392",
+        "MUE 1393",
+        "MUE 1394",
+        "MUE 1421",
+        "MUE 1422",
+        "MUE 1423",
+        "MUE 1424",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1501",
+        "MUE 1502",
+        "MUE 1503",
+        "MUE 1504",
+        "MUE 1521",
+        "MUE 1522",
+        "MUE 1523",
+        "MUE 1524",
+        "MUE 1551",
+        "MUE 1552",
+        "MUE 1631",
+        "MUE 1632",
+        "MUE 1633",
+        "MUE 1634",
+        "MUE 1641",
+        "MUE 1642",
+        "MUE 1643",
+        "MUE 1644",
+        "MUE 1645",
+        "MUE 1646"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Sciences et technologies de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "MUS 1127",
+        "MUS 1330",
+        "MUS 1331",
+        "MUS 2325"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A21)\nCe programme totalise 60 crédits.",
+    "Segment 70 — Les crédits de la majeure sont répartis de la façon suivante: 20 crédits obligatoires et 40 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-jazz-et-musiques-du-monde/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:44.325Z"
+}

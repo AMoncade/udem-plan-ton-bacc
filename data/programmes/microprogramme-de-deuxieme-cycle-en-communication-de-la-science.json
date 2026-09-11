@@ -1,0 +1,72 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-deuxieme-cycle-en-communication-de-la-science",
+  "nom": "Microprogramme de 2e cycle en communication de la science",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 12,
+  "exigences": {
+    "brut": "Les crédits du programme sont répartis de la façon suivante : 3 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "FAS 6100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option ‐ 9 crédits."
+      },
+      "regleBrut": "Option ‐ 9 crédits.",
+      "cours": [
+        "FAS 6101",
+        "FAS 6102",
+        "FAS 6103",
+        "FAS 6104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H26)\nLe microprogramme comporte 12 crédits.",
+    "Segment 70 — Les crédits du programme sont répartis de la façon suivante : 3 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-deuxieme-cycle-en-communication-de-la-science/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:37.511Z"
+}

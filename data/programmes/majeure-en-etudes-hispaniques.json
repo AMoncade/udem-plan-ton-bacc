@@ -1,0 +1,275 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-etudes-hispaniques",
+  "nom": "Majeure en études hispaniques",
+  "orientation": null,
+  "segments": [
+    "73"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 18 crédits obligatoires, 39 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 39,
+      "max": 39
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Langue, civilisations, littérature",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "ESP 1215",
+        "ESP 1225",
+        "ESP 1317",
+        "ESP 1325",
+        "ESP 2536"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Apprentissage de l'espagnol",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Étude de la langue et traduction",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 24 crédits.",
+      "cours": [
+        "ESP 2525",
+        "ESP 2535",
+        "ESP 2700",
+        "ESP 2710",
+        "ESP 2720",
+        "ESP 2730",
+        "ESP 3511",
+        "ESP 3517",
+        "ESP 3537",
+        "ESP 3550",
+        "ESP 3730",
+        "LNG 1955"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Littérature hispanique et pratiques culturelles hispano-américaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 21 crédits.",
+      "cours": [
+        "ESP 1327",
+        "ESP 2350",
+        "ESP 2400",
+        "ESP 2651",
+        "ESP 2652",
+        "ESP 3222",
+        "ESP 3242",
+        "ESP 3252",
+        "ESP 3312",
+        "ESP 3324",
+        "ESP 3326",
+        "ESP 3335",
+        "ESP 3355",
+        "ESP 3444",
+        "ESP 3451"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Lectures et recherches complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ESP 3810",
+        "ESP 3820",
+        "ESP 3900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73F",
+      "cle": "73/73F",
+      "segment": "73",
+      "nom": "Culture et société et théorie littéraire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANT 3881",
+        "CTL 1120",
+        "CTL 1140",
+        "FRA 1000",
+        "FRA 2311",
+        "HAR 1115",
+        "HAR 2361",
+        "HAR 2515",
+        "HAR 3132",
+        "HOR 1200",
+        "LAA 1101",
+        "LCO 2011",
+        "LCO 3010",
+        "LLM 1000",
+        "LLM 1310",
+        "LLM 2000",
+        "POL 3835"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73Y",
+      "cle": "73/73Y",
+      "segment": "73",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ALL 1903",
+        "ALL 1904",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1911",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ARA 1001",
+        "ARA 1002",
+        "ARA 1903",
+        "CIN 1102",
+        "COM 1200",
+        "ETM 1200",
+        "ETM 1400",
+        "FRA 1160",
+        "FRA 1161",
+        "FRA 2143",
+        "HGL 1021",
+        "HGL 1031",
+        "HNU 1000",
+        "HNU 2000",
+        "HST 2351",
+        "HST 2352",
+        "ITL 1120",
+        "ITL 1903",
+        "ITL 1904",
+        "LAT 3160",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2340",
+        "PHI 2320",
+        "PTG 1903",
+        "PTG 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73Z",
+      "cle": "73/73Z",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ESP."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 16 (H24)\nLa majeure comporte 60 crédits.",
+    "Segment 73 — Les crédits de la majeure sont répartis de la façon suivante : 18 crédits obligatoires, 39 crédits à option et 3 crédits au choix.",
+    "Segment 73 — Tous les cours ESP se donnent en espagnol sauf indication contraire."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-etudes-hispaniques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:27.944Z"
+}

@@ -1,0 +1,70 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-soins-pharmaceutiques-aux-aines",
+  "nom": "Microprogramme de 2e cycle en soins pharmaceutiques aux aînés",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PHA 6000W",
+        "PHA 6001W",
+        "PHA 6002W",
+        "PHA 6011W",
+        "PHA 6012W",
+        "PHA 6013W",
+        "PHA 6014W"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Complément de formation facultatif",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHA 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Veuillez noter que l'inscription au stage PHA6015 doit être approuvée par la direction du programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H23)\nLe microprogramme comporte de 9 à 12 crédits de cours.",
+    "Segment 70 — Le microprogramme comporte de 9 à 12 crédits de cours.",
+    "Segment 70 — Tous les cours du microprogramme sont obligatoires et offerts en ligne, à l'exception du bloc 70B qui comprend un stage optionnel de 3 crédits qui pourrait être réalisé par un étudiant au dernier trimestre, sous réserve de l'approbation de la direction du programme."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-soins-pharmaceutiques-aux-aines/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:57.483Z"
+}

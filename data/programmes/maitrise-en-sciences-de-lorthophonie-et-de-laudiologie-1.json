@@ -1,0 +1,128 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-lorthophonie-et-de-laudiologie-1",
+  "nom": "Maîtrise en sciences de l'orthophonie et de l'audiologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "La maîtrise comporte 45 crédits répartis de la façon suivante : 36 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 9 crédits à option.",
+    "obligatoire": {
+      "min": 45,
+      "max": 45
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "ORA 60111",
+        "ORA 60112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MSO 6060",
+        "MSO 6061",
+        "PSY 6002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "AUD 6171",
+        "AUD 6172",
+        "AUD 6181",
+        "AUD 6273",
+        "AUD 6282",
+        "AUD 6817",
+        "CSS 6100",
+        "ORA 6868",
+        "ORT 6303",
+        "ORT 6817",
+        "ORT 6872",
+        "ORT 6873",
+        "PSY 6008"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants doivent choisir au moins 3 crédits de sigle ORT ou AUD."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "ORA 6900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A21)\nLa maîtrise comporte un total de 45 crédits.",
+    "Segment 70 — La maîtrise comporte 45 crédits répartis de la façon suivante : 36 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-lorthophonie-et-de-laudiologie-1/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:10.261Z"
+}

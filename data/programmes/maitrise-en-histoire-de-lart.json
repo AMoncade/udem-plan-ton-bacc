@@ -1,0 +1,125 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-histoire-de-lart",
+  "nom": "Maîtrise en histoire de l'art",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 36 crédits obligatoires dont 33 crédits attribués à la recherche et à la rédaction d'un mémoire, de 6 à 9 crédits de cours à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "HAR 60011",
+        "HAR 60012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "HAR 6015",
+        "HAR 6046",
+        "HAR 6055",
+        "HAR 6073",
+        "HAR 6080",
+        "HAR 6082",
+        "HAR 6083",
+        "HAR 6100",
+        "HAR 6246",
+        "HAR 6300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisi dans la banque de cours de 2e cycle de l'Université ou d'une autre université. Exceptionnellement et avec autorisation, le cours choisi peut être de 1er cycle."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits",
+      "cours": [
+        "HAR 6900",
+        "HAR 6910",
+        "HAR 6920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A00)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 36 crédits obligatoires dont 33 crédits attribués à la recherche et à la rédaction d'un mémoire, de 6 à 9 crédits de cours à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-histoire-de-lart/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:53.308Z"
+}

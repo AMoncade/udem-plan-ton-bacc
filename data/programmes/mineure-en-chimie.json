@@ -1,0 +1,107 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-chimie",
+  "nom": "Mineure en chimie",
+  "orientation": null,
+  "segments": [
+    "77"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 21 crédits obligatoires, 6 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "77A",
+      "cle": "77/77A",
+      "segment": "77",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "CHM 1201",
+        "CHM 1301",
+        "CHM 1401",
+        "CHM 1501",
+        "CHM 1502",
+        "CHM 1503",
+        "CHM 1602"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77B",
+      "cle": "77/77B",
+      "segment": "77",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "BCM 1503",
+        "BCM 1531",
+        "BIO 1153",
+        "CHM 1302",
+        "CHM 1402",
+        "CHM 1510",
+        "CHM 1511",
+        "MCB 1979"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77Z",
+      "cle": "77/77Z",
+      "segment": "77",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle CHM."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A25)\nLa mineure comporte 30 crédits.",
+    "Segment 77 — Les crédits de la mineure sont répartis de la façon suivante : 21 crédits obligatoires, 6 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-chimie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:05.305Z"
+}

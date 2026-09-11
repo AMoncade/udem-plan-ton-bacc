@@ -1,0 +1,172 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-hispaniques",
+  "nom": "Mineure en études hispaniques",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Apprentissage de l'espagnol",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Étude de la langue et traduction",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Maximum 27 crédits.",
+      "cours": [
+        "ESP 2525",
+        "ESP 2535",
+        "ESP 2536",
+        "ESP 2700",
+        "ESP 2710",
+        "ESP 2720",
+        "ESP 2730",
+        "ESP 3511",
+        "ESP 3550",
+        "ESP 3710",
+        "ESP 3730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Civilisation et littérature",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Maximum 21 crédits.",
+      "cours": [
+        "ESP 1215",
+        "ESP 1225",
+        "ESP 1317",
+        "ESP 1325",
+        "ESP 1327",
+        "ESP 2350",
+        "ESP 2400",
+        "ESP 2651",
+        "ESP 2652",
+        "ESP 3335",
+        "ESP 3444",
+        "ESP 3451",
+        "LLM 1000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Culture et société",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANT 3881",
+        "CTL 1120",
+        "CTL 1140",
+        "HAR 1115",
+        "HAR 2361",
+        "HAR 2515",
+        "HAR 3132",
+        "HNU 1000",
+        "HNU 2000",
+        "HOR 1200",
+        "LAA 1101",
+        "LLM 1310",
+        "LLM 2000",
+        "POL 3835"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ESP."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 08 (A19)\nLa mineure comporte 30 crédits.",
+    "Segment 72 — Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "Segment 72 — Tous les cours ESP se donnent en espagnol sauf indication contraire."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-hispaniques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:41.247Z"
+}

@@ -1,0 +1,163 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-histoire",
+  "nom": "Mineure en histoire",
+  "orientation": null,
+  "segments": [
+    "75"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "Méthodologie et fondements",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits.",
+      "cours": [
+        "HST 1010",
+        "HST 1015",
+        "HST 1031",
+        "HST 1032",
+        "HST 1041",
+        "HST 1042",
+        "HST 1043",
+        "HST 1044",
+        "HST 1048",
+        "HST 1051",
+        "HST 1052",
+        "HST 1053",
+        "HST 1061",
+        "HST 1062",
+        "HST 1063",
+        "HST 1070",
+        "HST 1080",
+        "HST 2002",
+        "HST 2023",
+        "HST 2101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "HST 2070",
+        "HST 2080",
+        "HST 2108",
+        "HST 2109",
+        "HST 2110",
+        "HST 2111",
+        "HST 2113",
+        "HST 2125",
+        "HST 2126",
+        "HST 2128",
+        "HST 2132",
+        "HST 2139",
+        "HST 2151",
+        "HST 2212",
+        "HST 2246",
+        "HST 2262",
+        "HST 2263",
+        "HST 2264",
+        "HST 2267",
+        "HST 2273",
+        "HST 2274",
+        "HST 2276",
+        "HST 2284",
+        "HST 2288",
+        "HST 2295",
+        "HST 2296",
+        "HST 2297",
+        "HST 2298",
+        "HST 2348",
+        "HST 2351",
+        "HST 2352",
+        "HST 2362",
+        "HST 2370",
+        "HST 2371",
+        "HST 2401",
+        "HST 2402",
+        "HST 2410",
+        "HST 2420",
+        "HST 2427",
+        "HST 2430",
+        "HST 2443",
+        "HST 2444",
+        "HST 2446",
+        "HST 2453",
+        "HST 2618",
+        "HST 2621",
+        "HST 2624",
+        "HST 2625",
+        "HST 2627",
+        "HST 2628",
+        "HST 2820",
+        "HST 2875",
+        "HST 2885",
+        "HST 2904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75Z",
+      "cle": "75/75Z",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle HST."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A16)\nLa mineure comporte 30 crédits.",
+    "Segment 75 — Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-histoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:58.406Z"
+}

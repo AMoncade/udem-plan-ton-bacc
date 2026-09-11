@@ -1,0 +1,146 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-societe-politiques-publiques-et-sante",
+  "nom": "Microprogramme de 2e cycle société, politiques publiques et santé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PLU 6115",
+        "SOL 6650"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Société et santé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANT 6155",
+        "ASA 6734",
+        "COM 6201",
+        "DMO 6050",
+        "MSN 6115",
+        "MSO 6500",
+        "PLU 6043",
+        "PRX 6002",
+        "PSY 6799",
+        "SPS 6001",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Politiques publiques et santé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ASA 6703",
+        "ASA 6754",
+        "BIE 6006",
+        "BIE 6016",
+        "DMO 6502",
+        "MSN 6021",
+        "MSO 6350",
+        "PLU 6048",
+        "PSE 6578",
+        "STS 6010",
+        "SVS 6355",
+        "SVS 6485",
+        "SVS 6765"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 2055",
+        "ANT 3820",
+        "COM 3420",
+        "DMO 3150",
+        "GEO 3322",
+        "POL 2150",
+        "POL 2829",
+        "POL 3102",
+        "SOL 2103",
+        "SOL 2107",
+        "SPU 2100G",
+        "SVS 2101",
+        "SVS 2901",
+        "SVS 3275"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A22)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-societe-politiques-publiques-et-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:02:48.446Z"
+}

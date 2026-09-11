@@ -1,0 +1,186 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-ecriture-musicale",
+  "nom": "Mineure en écriture musicale",
+  "orientation": null,
+  "segments": [
+    "01"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Mineure",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 12 crédits obligatoires et 18 crédits à option.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 18,
+      "max": 18
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MTE 1110",
+        "MTE 1111",
+        "MTE 1220",
+        "MTE 1221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Écriture, analyse et formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "MCT 3011",
+        "MCT 3012",
+        "MTE 1100",
+        "MTE 1120",
+        "MTE 12041",
+        "MTE 12042",
+        "MTE 1205",
+        "MTE 1206",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 2114",
+        "MTE 2115",
+        "MTE 2210",
+        "MTE 2211",
+        "MTE 3114",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1011",
+        "MUS 1012",
+        "MUS 1013",
+        "MUS 1014",
+        "MUS 1015",
+        "MUS 1016",
+        "MUS 1315"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MUS 1011 à 1016 et MTE 1100 & 1120 nécessite une prescription obtenue à la suite des tests de classement."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Histoire et culture musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "MUL 1102",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1117",
+        "MUL 1246",
+        "MUL 2109",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3333X",
+        "MUL 3335X",
+        "MUS 1300",
+        "MUS 1327",
+        "MUS 3321"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Outils professionnels et de communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DRT 3812",
+        "FRA 1009",
+        "MUL 1132",
+        "MUS 1127",
+        "MUS 1321",
+        "MUS 2134",
+        "MUS 2135"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Grands ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1441",
+        "MUE 1442"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A26)\nLa mineure comprend 30 crédits.",
+    "Segment 01 — Les crédits sont répartis de la façon suivante : 12 crédits obligatoires et 18 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-ecriture-musicale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:17.107Z"
+}

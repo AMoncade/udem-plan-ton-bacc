@@ -1,0 +1,220 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-sciences-economiques",
+  "nom": "Majeure en sciences économiques",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 36,
+      "max": 36
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Cours de première année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "ECN 1160",
+        "ECN 1800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Cours de deuxième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "ECN 2311",
+        "ECN 2800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Cours de spécialisation de première année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "ECN 1070",
+        "ECN 1075",
+        "ECN 1260",
+        "ECN 1350",
+        "ECN 1700",
+        "ECN 1967",
+        "ECN 1971"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Cours de spécialisation de deuxième année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 24 crédits.",
+      "cours": [
+        "DMO 3450",
+        "ECN 2015",
+        "ECN 2040",
+        "ECN 2045",
+        "ECN 2050",
+        "ECN 2055",
+        "ECN 2160",
+        "ECN 2165",
+        "ECN 2230",
+        "ECN 2260",
+        "ECN 2405",
+        "ECN 2450",
+        "ECN 2565",
+        "ECN 2700",
+        "ECN 2910",
+        "ECN 2964",
+        "ECN 2995",
+        "HST 3450",
+        "MAT 1400",
+        "MAT 1600",
+        "MAT 1978",
+        "REI 2475"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ANG 1103",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1911",
+        "ANG 1913",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ANT 1013",
+        "DMO 1000",
+        "DMO 3100",
+        "DMO 3150",
+        "DMO 3400",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "GEO 2222",
+        "HOR 3200",
+        "HST 2443",
+        "HST 2820",
+        "IFT 1800",
+        "IFT 1990",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "PHI 1130",
+        "PHI 1400",
+        "POL 1000",
+        "POL 1600",
+        "PSY 1075",
+        "QCF 1050",
+        "REI 1010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ECN."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 08 (H01)\nLa majeure comporte 60 crédits.",
+    "Segment 71 — Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-sciences-economiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:14.563Z"
+}

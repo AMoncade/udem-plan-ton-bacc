@@ -1,0 +1,263 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-litterature-comparee",
+  "nom": "Maîtrise en littérature comparée",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 48,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, 12 à 15 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 12,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "LCO 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Traditions/résonances - groupe 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "LCO 6360"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Traditions/résonances - groupe 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LCO 6447"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Traditions/résonances - groupe 3",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "LCO 6320",
+        "LCO 6525"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Méthodologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "LCO 6111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Savoirs et média",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ANG 6505",
+        "HNU 6000",
+        "LCO 6019",
+        "LCO 6100",
+        "LCO 6312",
+        "LCO 6333",
+        "LCO 6467",
+        "LCO 6469",
+        "LCO 6546",
+        "LLM 6000",
+        "PLU 6042",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Séminaires de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "LCO 6800",
+        "LCO 6820",
+        "LCO 6830",
+        "LCO 6840",
+        "LCO 6870"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours LCO 69201 et LCO 69202 sont équivalents au cours LCO 6920."
+      ]
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "LCO 6610",
+        "LCO 6640Z"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sujet à l'approbation du responsable du 2e et 3e cycles ou du directeur du département."
+      ]
+    },
+    {
+      "id": "70K",
+      "cle": "70/70K",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "LCO 6910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A08)\nLa maîtrise comporte 48 crédits.\nL'étudiant doit acquérir la connaissance d'une 3e langue, si cela s'avère nécessaire.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, 12 à 15 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-litterature-comparee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:58.699Z"
+}

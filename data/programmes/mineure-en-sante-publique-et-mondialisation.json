@@ -1,0 +1,164 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-sante-publique-et-mondialisation",
+  "nom": "Mineure en santé publique et mondialisation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la Mineure sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "SPU 1001",
+        "SPU 1002",
+        "SPU 1003",
+        "SPU 1004",
+        "SPU 1005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Environnement et développement durable",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "BIO 1803",
+        "DMO 2170",
+        "GEO 1312",
+        "MSN 2100",
+        "PPL 3025"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Mondialisation et développement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ANT 2055",
+        "COM 2001",
+        "DMO 3100",
+        "ECN 1000",
+        "ECN 1700",
+        "HST 2820",
+        "PHI 2415",
+        "POL 3602",
+        "SOL 3201",
+        "URB 1115"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Population et santé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ANT 1513",
+        "ANT 3820",
+        "BIO 1203",
+        "BIO 2811",
+        "BIO 3204",
+        "DMO 1000",
+        "DMO 2700",
+        "DMO 3400",
+        "DMO 3450",
+        "DMV 3221",
+        "DRT 3810",
+        "NUT 1970",
+        "PSY 2048",
+        "SOL 2103",
+        "SVS 2101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Éthique, droit et politique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "DRT 3810",
+        "PHI 2406",
+        "PHI 2415",
+        "POL 2829",
+        "POL 3602"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A18)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la Mineure sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-sante-publique-et-mondialisation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:27.541Z"
+}

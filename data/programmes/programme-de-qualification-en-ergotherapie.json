@@ -1,0 +1,109 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "programme-de-qualification-en-ergotherapie",
+  "nom": "Programme de qualification en ergothérapie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Programme",
+  "creditsTotal": 54,
+  "exigences": {
+    "brut": "Version 01 (A16) Le programme comporte 54 crédits répartis de la façon suivante : 33 crédits obligatoires, 6 crédits à option provenant de cours offerts par l'École et 15 crédits attribués à deux stages de formation clinique.",
+    "obligatoire": {
+      "min": 1,
+      "max": 1
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "CSS 3900",
+        "ERT 1401",
+        "ERT 3401",
+        "ERT 3411",
+        "ERT 6030",
+        "ERT 6032",
+        "ERT 6034"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ERT 6071",
+        "ERT 6072",
+        "ERT 6073",
+        "ERT 6074",
+        "ERT 6076",
+        "ERT 6077",
+        "ERT 6078",
+        "ERT 6083A",
+        "ERT 6084A",
+        "REA 6002",
+        "REA 6009",
+        "REA 6012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ERT 3460",
+        "ERT 6060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A16)\nLe programme comporte 54 crédits répartis de la façon suivante : 33 crédits obligatoires, 6 crédits à option provenant de cours offerts par l'École et 15 crédits attribués à deux stages de formation clinique. Le candidat peut se voir obligé de suivre des cours additionnels tel que prescrits par l'Ordre des ergothérapeutes du Québec. Le candidat pourrait se voir exempter certains cours en fonction de l'analyse du dossier effectuée par le Comité d'admission de l'Ordre des ergothérapeutes du Québec.",
+    "Segment 70 — Le segment comporte 54 crédits."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/programme-de-qualification-en-ergotherapie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:05:12.112Z"
+}

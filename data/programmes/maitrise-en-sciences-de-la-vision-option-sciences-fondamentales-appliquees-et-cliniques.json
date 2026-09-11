@@ -1,0 +1,131 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-la-vision-option-sciences-fondamentales-appliquees-et-cliniques",
+  "nom": "Maîtrise en sciences de la vision, option Sciences fondamentales, appliquées et cliniques",
+  "orientation": null,
+  "segments": [
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "Sciences fondamentales",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'Option sont répartis de la façon suivante : 39 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, un maximum de 6 crédits à option et un maximum de 6 crédits au choix.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 0,
+          "max": 6
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École d'optométrie",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SCV 60011",
+        "SCV 60012",
+        "SCV 60021",
+        "SCV 60022",
+        "SCV 6003",
+        "SCV 6011"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - maximum 6 crédits.",
+      "cours": [
+        "IDV 6020",
+        "SCV 6007",
+        "SCV 6010",
+        "SCV 6013"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de ces cours doit être fait parmi la banque de cours des études supérieures de l'Université de Montréal et approuvé par le Comité des études supérieures."
+      ]
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "SCV 6902",
+        "SCV 6903",
+        "SCV 6904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (E21)\nLa maîtrise comporte 45 crédits. Elle est offerte en une option :\n- option Sciences fondamentales, appliquées et cliniques (segment 74).",
+    "Segment 74 Propre à l'option Sciences fondamentales, appliquées et cliniques — Les crédits de l'Option sont répartis de la façon suivante : 39 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, un maximum de 6 crédits à option et un maximum de 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-la-vision-option-sciences-fondamentales-appliquees-et-cliniques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:18.835Z"
+}

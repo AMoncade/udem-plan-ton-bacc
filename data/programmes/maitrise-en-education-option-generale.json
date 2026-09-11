@@ -1,0 +1,93 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-education-option-generale",
+  "nom": "Maîtrise en éducation, option Générale",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 6 crédits obligatoires, de 30 à 39 crédits à option et un maximum de 9 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 30,
+      "max": 39
+    },
+    "choix": {
+      "min": 0,
+      "max": 9
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "EDU 6010",
+        "EDU 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 30,
+          "max": 39
+        }
+      },
+      "regleBrut": "Option - Minimum 30 crédits, maximum 39 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours de 2e cycle de la Faculté des sciences de l'éducation."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - Maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A06)\nLa maîtrise comporte 45 crédits dont 30 crédits obtenus au cours d'un D.E.S.S. ou au cours de microprogrammes.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 6 crédits obligatoires, de 30 à 39 crédits à option et un maximum de 9 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-education-option-generale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:15.133Z"
+}

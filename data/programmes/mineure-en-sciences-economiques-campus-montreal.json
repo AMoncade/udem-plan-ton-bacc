@@ -1,0 +1,136 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-sciences-economiques-campus-montreal",
+  "nom": "Mineure en sciences économiques - Campus Montréal",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 15 crédits obligatoires, 12 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "ECN 1160",
+        "ECN 1800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Économie et institutions régionales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ECN 1700",
+        "ECN 1967",
+        "ECN 1971"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Cours spécialisés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "CRI 3401",
+        "ECN 1070",
+        "ECN 1075",
+        "ECN 1260",
+        "ECN 1350",
+        "ECN 2015",
+        "ECN 2040",
+        "ECN 2050",
+        "ECN 2165",
+        "ECN 2230",
+        "ECN 2311",
+        "ECN 2405",
+        "ECN 2450",
+        "ECN 2565",
+        "ECN 2700",
+        "ECN 2800",
+        "ECN 2910",
+        "ECN 2964"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ECN."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 06 (H04)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — Les crédits de la mineure sont répartis de la façon suivante : 15 crédits obligatoires, 12 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-sciences-economiques-campus-montreal/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:40.579Z"
+}

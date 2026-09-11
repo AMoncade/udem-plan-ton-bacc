@@ -1,0 +1,116 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-sciences-cognitives",
+  "nom": "Mineure en sciences cognitives",
+  "orientation": null,
+  "segments": [
+    "74"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 3 crédits obligatoires et 27 crédits à option.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PSY 1006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Fondements théoriques et méthodologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 21 crédits.",
+      "cours": [
+        "IFT 1144",
+        "IFT 1990",
+        "LNG 1010",
+        "LNG 2002",
+        "PHI 1710",
+        "PHI 2320",
+        "PSY 1035",
+        "PSY 2065"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Champs sectoriels disciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 1166",
+        "IFT 1810",
+        "IFT 2821",
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2050",
+        "LNG 2160",
+        "LNG 2355",
+        "LNG 3090",
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 1300",
+        "PHI 2305",
+        "PSY 1004",
+        "PSY 2055",
+        "PSY 3032",
+        "PSY 3063",
+        "PSY 3083"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A18)\nLa mineure comporte 30 crédits.",
+    "Segment 74 — Les crédits de la mineure sont répartis de la façon suivante : 3 crédits obligatoires et 27 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-sciences-cognitives/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:34.440Z"
+}

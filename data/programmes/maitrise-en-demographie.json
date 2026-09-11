@@ -1,0 +1,295 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-demographie",
+  "nom": "Maîtrise en démographie",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "cheminement international",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 43,5 crédits obligatoires, dont 18 crédits attribués à la recherche et à la rédaction d'un mémoire, et 1,5 crédit à option.",
+        "obligatoire": {
+          "min": 5,
+          "max": 5
+        },
+        "option": {
+          "min": 5,
+          "max": 5
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements méthodologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "DMO 6200",
+        "DMO 6305",
+        "DMO 6371"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Phénomènes démographiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DMO 6500",
+        "DMO 6501",
+        "DMO 6502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Méthodes avancées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DMO 6320",
+        "DMO 6330",
+        "DMO 6405",
+        "DMO 6820"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Connaissances complémentaires 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits",
+      "cours": [
+        "DMO 6050",
+        "DMO 6311",
+        "DMO 6430",
+        "SOL 6448",
+        "STS 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Connaissances complémentaires 2",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours pertinent de niveau des études supérieures, avec l'approbation du responsable du programme."
+      ]
+    },
+    {
+      "id": "MM-70F",
+      "cle": "70/MM-70F",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "DMO 6060",
+        "DMO 6070"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "ST-70F",
+      "cle": "70/ST-70F",
+      "segment": "70",
+      "nom": "Stage et travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "DMO 6610",
+        "DMO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Fondements méthodologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "DMO 6371",
+        "DMO 6430",
+        "DMO 6500",
+        "DMO 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Formation internationale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13.5,
+          "max": 13.5
+        }
+      },
+      "regleBrut": "Obligatoire – 13.5 crédits.",
+      "cours": [
+        "DMO 6103E",
+        "DMO 6110E",
+        "DMO 6112E",
+        "DMO 6120E",
+        "DMO 6130E",
+        "DMO 6160E",
+        "DMO 6195E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés par l'Université catholique de Louvain."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1.5,
+          "max": 1.5
+        }
+      },
+      "regleBrut": "Option - 1.5 crédit.",
+      "cours": [
+        "DMO 6104E",
+        "DMO 6111E",
+        "DMO 6140E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés par l'Université catholique de Louvain. Le choix de cours doit être approuvé par le directeur de recherche et le responsable du programme."
+      ]
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire – 18 crédits.",
+      "cours": [
+        "DMO 6065E",
+        "DMO 6066E",
+        "DMO 6067E",
+        "DMO 6070"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Remarque : séminaires donnés par l'Université catholique de Louvain."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A23)\nLa maîtrise comporte 45 crédits. Elle est offerte selon deux options :\n- l'option générale, avec mémoire (MM) ou stage (ST) et travail dirigé (segment 70)\n- l'option cheminement international avec mémoire (segment 71).",
+    "Segment 70 Propre à l'option générale — Les crédits du segment 70 sont répartis de la façon suivante :",
+    "Segment 70 Propre à l'option générale — - modalité avec mémoire (MM): 33 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire, de 9 à 12 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 70 Propre à l'option générale — - modalité avec stage (ST) et travail dirigé: 30 crédits obligatoires, dont 21 crédits attribués au stage et à la rédaction d'un travail dirigé, de 12 à 15 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 71 Propre à l'option cheminement international — Les crédits du segment 71 sont répartis de la façon suivante : 43,5 crédits obligatoires, dont 18 crédits attribués à la recherche et à la rédaction d'un mémoire, et 1,5 crédit à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-demographie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:36.706Z"
+}

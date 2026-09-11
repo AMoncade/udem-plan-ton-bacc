@@ -1,0 +1,122 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "qualification-en-pharmacie",
+  "nom": "Qualification en pharmacie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Qualification",
+  "creditsTotal": 64,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours de soins pharmaceutiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "PAP 1131",
+        "PAP 1132",
+        "PAP 1133",
+        "PAP 1134",
+        "PAP 1135",
+        "PAP 1136",
+        "PAP 1137",
+        "PAP 1138",
+        "PAP 1139",
+        "PAP 1140",
+        "PAP 1141",
+        "PAP 1142"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours complémentaires en pharmacie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire - 13 crédits.",
+      "cours": [
+        "PAP 1221",
+        "PAP 1222",
+        "PAP 1223",
+        "PAP 1224",
+        "PAP 1225",
+        "PAP 1226",
+        "PAP 1227"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Laboratoire de pratique professionnelle",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PAP 1301",
+        "PAP 1305",
+        "PAP 1310",
+        "PAP 1315"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "PAP 3500",
+        "PAP 3505",
+        "PAP 3510",
+        "PAP 3515"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A21)\nLe programme comporte 64 crédits.",
+    "Segment 70 — Les crédits du segment sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/qualification-en-pharmacie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:05:24.539Z"
+}

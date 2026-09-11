@@ -1,0 +1,188 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-musique-option-composition-pour-lecran",
+  "nom": "Maîtrise en musique, option Composition pour l'écran",
+  "orientation": null,
+  "segments": [
+    "01",
+    "73"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "- Composition pour l'écran Elle est offerte avec deux cheminements : Segment 73X1 Propre au cheminement débutant à l'UdeM Segment 73X2 Propre au cheminement débutant dans l'une des universités partenaires Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 3 crédits attribués à un stage, 21 crédits attribués à un projet de composition final ainsi que la rédaction d'un mémoire, accompagné d'une présentation de la démarche et de l'analyse des œuvres, d'un enregistrement sonore d'une exécution ou d'une simulation par ordinateur des œuvres, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 73,
+      "max": 73
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Disciplines associées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MCT 6211X",
+        "MCT 6513",
+        "MCT 6514",
+        "MTE 6300",
+        "MUL 6208X",
+        "MUS 6101X",
+        "MUS 6105",
+        "MUS 6106",
+        "MUS 6127X",
+        "MUS 6324X",
+        "MUS 6328X",
+        "MUS 6329X",
+        "MUS 6531E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Disciplines complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "CIN 6054",
+        "CIN 6057",
+        "CIN 6058",
+        "MTE 6117X",
+        "MUS 6301",
+        "MUS 6321",
+        "MUS 6322X",
+        "MUS 6535E",
+        "MUS 6536E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73X",
+      "cle": "73/73X",
+      "segment": "73",
+      "nom": "1A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MCT 6512",
+        "MUS 6521",
+        "MUS 6522",
+        "MUS 6523E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73X",
+      "cle": "73/73X",
+      "segment": "73",
+      "nom": "1B Recherche-création en composition pour l'écran",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "MCT 6531",
+        "MCT 6532",
+        "MCT 6533E",
+        "MCT 6534E",
+        "MCT 6920",
+        "MCT 6950E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73X",
+      "cle": "73/73X",
+      "segment": "73",
+      "nom": "2A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MCT 6512E",
+        "MUS 6521E",
+        "MUS 6522E",
+        "MUS 6523"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73X",
+      "cle": "73/73X",
+      "segment": "73",
+      "nom": "2B Recherche-création en composition pour l'écran",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "MCT 6531E",
+        "MCT 6532E",
+        "MCT 6533",
+        "MCT 6534",
+        "MCT 6920E",
+        "MCT 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A20)\nLa maîtrise comporte 45 crédits. Elle est offerte avec la modalité mémoire selon l'option suivante :\n- Composition pour l'écran\nElle est offerte avec deux cheminements :\nSegment 73X1 Propre au cheminement débutant à l'UdeM\nSegment 73X2 Propre au cheminement débutant dans l'une des universités partenaires\nLes crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 3 crédits attribués à un stage, 21 crédits attribués à un projet de composition final ainsi que la rédaction d'un mémoire, accompagné d'une présentation de la démarche et de l'analyse des œuvres, d'un enregistrement sonore d'une exécution ou d'une simulation par ordinateur des œuvres, et 12 crédits à option.",
+    "Segment 01 Tronc commun (pour les deux cheminements) — Remarque :",
+    "Segment 01 Tronc commun (pour les deux cheminements) — Le nombre de crédits suivis par l'étudiant pour compléter les blocs 01A et 01B du programme doivent être également répartis entre les deux établissements partenaires.",
+    "Segment 73 X1 Propre au cheminement débutant à l'UdeM — Les crédits de ce segment sont tous obligatoires.",
+    "Segment 73 X2 Propre au cheminement débutant dans l'université partenaire — Les crédits de ce segment sont tous obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-musique-option-composition-pour-lecran/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:13.659Z"
+}

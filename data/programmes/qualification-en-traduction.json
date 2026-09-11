@@ -1,0 +1,40 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "qualification-en-traduction",
+  "nom": "Qualification en traduction",
+  "orientation": null,
+  "segments": [
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Qualification",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "80Z",
+      "cle": "80/80Z",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 24
+        }
+      },
+      "regleBrut": "Choix - Maximum 24 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A25)\nLe programme de qualification comprend un maximum de 24 crédits.",
+    "Segment 80 — L'OTTIAQ prescrit les cours qui doivent être faits par l'étudiant."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/qualification-en-traduction/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:05:26.597Z"
+}

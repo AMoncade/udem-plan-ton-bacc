@@ -1,0 +1,310 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-education-option-enseignement-superieur-m-ed",
+  "nom": "Maîtrise en éducation, option Enseignement supérieur",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Préparation à la pièce maitresse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "EDU 6609",
+        "ETA 6655"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Pièce maitresse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "EDU 6709",
+        "EDU 67091",
+        "EDU 67092",
+        "EDU 67093"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours EDU67091, EDU67092 et EDU67093 sont équivalents au cours EDU6709."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Fondements et interprofessionnalité",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "ETA 6400",
+        "ETA 6401"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Secteurs collégial et universitaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "PLU 6035",
+        "PLU 6038"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits",
+      "cours": [
+        "DID 6080",
+        "EDU 6000",
+        "EDU 6001",
+        "EDU 6611",
+        "ETA 6045",
+        "ETA 6402",
+        "ETA 6543",
+        "PPA 6015",
+        "PPA 6673"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1A Pédagogie de l'enseignement supérieur",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PPA 6228"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1B Didactique en enseignement supérieur",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "DID 6646",
+        "DID 6696"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1C Dimensions de l'enseignement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DID 6151",
+        "DID 6152",
+        "DID 6216",
+        "DID 6525",
+        "DID 6571",
+        "DID 6754",
+        "DID 6867",
+        "DID 6869",
+        "PPA 6008",
+        "PPA 6075",
+        "PPA 6445",
+        "PPA 6614",
+        "PPA 6617",
+        "PPA 6674",
+        "PPA 6675"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1D Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EDU 6646",
+        "EDU 6647",
+        "EDU 6656"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2A Administration de l'enseignement supérieur",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ETA 6954"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2B Dimensions institutionnelles et politiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ETA 6105",
+        "ETA 6120",
+        "ETA 6807",
+        "ETA 6808",
+        "ETA 6917",
+        "ETA 6937",
+        "ETA 6940"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2C Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ETA 6968"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A25)\nL'option enseignement supérieur de la Maitrise en éducation comporte 45 crédits.\nElle se compose d'un tronc commun (segment 01) et de deux concentrations :\n- concentration enseignement\n- concentration administration",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont répartis de la façon suivante : 12 crédits, obligatoires, 18 crédits à option et jusqu'à 3 crédits au choix.",
+    "Segment 70 C1 Concentration Enseignement — Les crédits de cette concentration sont répartis de la façon suivante : 3 crédits obligatoires et de 9 à 12 crédits à option.",
+    "Segment 70 C2 Concentration administration — Les crédits de cette concentration sont répartis de la façon suivante : 6 crédits obligatoires et 6 à 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-education-option-enseignement-superieur-m-ed/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:13.716Z"
+}

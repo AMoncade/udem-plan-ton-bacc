@@ -1,0 +1,100 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-medecine-veterinaire-animaux-de-compagnie",
+  "nom": "Microprogramme de 2e cycle en médecine vétérinaire - Animaux de compagnie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 8 crédits obligatoires et 7 crédits à option.",
+    "obligatoire": {
+      "min": 8,
+      "max": 8
+    },
+    "option": {
+      "min": 7,
+      "max": 7
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "MMV 6507",
+        "MMV 6551",
+        "MMV 6552",
+        "MMV 6553"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "MMV 5002E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 5,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - Minimum 5 crédits, maximum 7 crédits.",
+      "cours": [
+        "MMV 6500A",
+        "MMV 6500B",
+        "MMV 6500C",
+        "MMV 6508",
+        "MMV 6511",
+        "MMV 6522",
+        "MMV 6524"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H10)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 8 crédits obligatoires et 7 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-medecine-veterinaire-animaux-de-compagnie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:51.969Z"
+}

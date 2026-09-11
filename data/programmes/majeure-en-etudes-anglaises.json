@@ -1,0 +1,255 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-etudes-anglaises",
+  "nom": "Majeure en études anglaises",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 36,
+      "max": 36
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Initiation à la littérature",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ANG 1002",
+        "ANG 1005",
+        "ANG 1006",
+        "ANG 1034",
+        "ANG 1100",
+        "ANG 1103",
+        "ANG 1104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Grammaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - maximum 6 crédits.",
+      "cours": [
+        "ANG 1052",
+        "ANG 1053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Langue parlée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Lecture et langue écrite",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1921",
+        "ANG 1922"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Littératures, cultures, genres et perspectives historiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 21,
+          "max": 33
+        }
+      },
+      "regleBrut": "Option - Minimum 21 crédits, maximum 33 crédits.",
+      "cours": [
+        "ANG 1001",
+        "ANG 1022",
+        "ANG 1023",
+        "ANG 1031",
+        "ANG 1032",
+        "ANG 1282",
+        "ANG 1320",
+        "ANG 1325",
+        "ANG 1380",
+        "ANG 1381",
+        "ANG 1401",
+        "ANG 1450",
+        "ANG 1500",
+        "ANG 1600",
+        "ANG 1655",
+        "ANG 1700",
+        "ANG 1750",
+        "ANG 2001",
+        "ANG 2006",
+        "ANG 2020",
+        "ANG 2115",
+        "ANG 2133",
+        "ANG 2144",
+        "ANG 2153",
+        "ANG 2183",
+        "ANG 2260",
+        "ANG 2322",
+        "ANG 2325",
+        "ANG 2361",
+        "ANG 2362",
+        "ANG 2404",
+        "ANG 2454",
+        "ANG 2461",
+        "ANG 2480"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 2102",
+        "ETM 1400",
+        "FRA 1130",
+        "GRC 1031",
+        "HAR 1167",
+        "HAR 1200",
+        "HNU 1000",
+        "HNU 2000",
+        "HOR 1200",
+        "HST 1043",
+        "HST 1052",
+        "LCO 1000",
+        "LCO 1001",
+        "LLM 1310",
+        "LLM 2000",
+        "PHI 1255",
+        "POL 1954",
+        "SOL 1150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 3101",
+        "ANG 3102"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ANG."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 11 (A21)\nLa majeure comporte 60 crédits.",
+    "Segment 71 — Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix.",
+    "Segment 71 — Les étudiants n'auront accès aux cours de niveau 2000 qu'après avoir suivi 15 crédits de niveau 1000."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-etudes-anglaises/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:20.829Z"
+}

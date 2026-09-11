@@ -1,0 +1,89 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-langue-et-culture-anglaises",
+  "nom": "Microprogramme de 1er cycle en langue et culture anglaises",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "ANG 1052",
+        "ANG 1053",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1926",
+        "ANG 1933"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Culture - cours en anglais",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1005",
+        "ANG 1022",
+        "ANG 1023",
+        "ANG 1325",
+        "ANG 1380",
+        "ANG 1381",
+        "ANG 1401",
+        "ANG 1500",
+        "ANG 1655",
+        "ANG 1700",
+        "ANG 1750",
+        "DMO 1200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (E99)\nLe microprogramme de premier cycle comporte 15 crédits.",
+    "Segment 70 — Tous les crédits du microprogramme sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-langue-et-culture-anglaises/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:10.535Z"
+}

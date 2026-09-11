@@ -1,0 +1,69 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-programmation",
+  "nom": "Microprogramme de 1er cycle en programmation",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Langages de programmation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 1166",
+        "IFT 1170",
+        "IFT 1175",
+        "IFT 1178",
+        "IFT 1179",
+        "IFT 1810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Compléments d'informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "IFT 1169",
+        "IFT 1176",
+        "IFT 2810",
+        "IFT 2821"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H21)\nLes crédits du microprogramme sont répartis de la façon suivante : 12 à 15 crédits à option.",
+    "Segment 72 — Les crédits du microprogramme sont tous à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-programmation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:39.553Z"
+}

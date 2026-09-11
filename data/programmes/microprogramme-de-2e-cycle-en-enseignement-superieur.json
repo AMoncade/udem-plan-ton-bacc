@@ -1,0 +1,116 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-enseignement-superieur",
+  "nom": "Microprogramme de 2e cycle en enseignement supérieur",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Secteurs collégial et universitaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PLU 6035",
+        "PLU 6038"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Dimensions de l'enseignement supérieur",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DID 6646",
+        "DID 6696",
+        "ETA 6045",
+        "ETA 6400",
+        "ETA 6401",
+        "ETA 6402",
+        "ETA 6954",
+        "PPA 6015",
+        "PPA 6075",
+        "PPA 6228",
+        "PPA 6445",
+        "PPA 6614",
+        "PPA 6617"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EDU 6646",
+        "EDU 6647",
+        "EDU 6656"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "EDU 6611"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, il est possible de suivre tout autre cours jugé pertinent à votre formation parmi la banque de cours de cycles supérieures de la Faculté des sciences de l'éducation. Le choix des cours doit être approuvé par le responsable du programme"
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A23)\nLe microprogramme comporte un total de 15 crédits. Il comprend des cours et des stages.",
+    "Segment 70 — Le programme comporte 15 crédits à option, dont 3 crédits attribués à un stage."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-enseignement-superieur/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:03.961Z"
+}

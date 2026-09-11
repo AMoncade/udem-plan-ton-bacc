@@ -1,0 +1,151 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-etudes-cinematographiques",
+  "nom": "Majeure en études cinématographiques",
+  "orientation": null,
+  "segments": [
+    "74"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 27 crédits obligatoires, jusqu'à 33 crédits à option et jusqu'à 6 crédits au choix.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": null,
+    "choix": {
+      "min": 33,
+      "max": 33
+    }
+  },
+  "blocs": [
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 1104",
+        "CIN 2102",
+        "CIN 2103",
+        "CIN 2104",
+        "CIN 2128",
+        "HAR 1210"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Approfondissements",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 24 crédits.",
+      "cours": [
+        "CIN 1105",
+        "CIN 1106",
+        "CIN 1107",
+        "CIN 1109",
+        "CIN 1110",
+        "CIN 1121",
+        "CIN 2105",
+        "CIN 2106",
+        "CIN 2109",
+        "CIN 2111",
+        "CIN 2122",
+        "CIN 2125",
+        "CIN 2126",
+        "CIN 2200",
+        "CIN 3102",
+        "CIN 3103",
+        "CIN 3104",
+        "CIN 3106",
+        "CIN 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Approches interdisciplinaires et intermédiales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 24 crédits.",
+      "cours": [
+        "CIN 1108",
+        "CIN 2107",
+        "CIN 2108",
+        "CIN 2110",
+        "CIN 2111",
+        "CIN 2112",
+        "CIN 2113",
+        "CIN 2116",
+        "CIN 2120",
+        "CIN 2123",
+        "CIN 2124",
+        "CIN 3107",
+        "HAR 2330",
+        "HAR 2355",
+        "JEU 1003",
+        "JEU 1004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74Z",
+      "cle": "74/74Z",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle CIN."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A23)\nLa majeure comporte 60 crédits.",
+    "Segment 74 — Les crédits du segment sont répartis de la façon suivante : 27 crédits obligatoires, jusqu'à 33 crédits à option et jusqu'à 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-etudes-cinematographiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:21.085Z"
+}

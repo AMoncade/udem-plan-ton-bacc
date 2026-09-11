@@ -1,0 +1,113 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-enseignement-postsecondaire",
+  "nom": "Microprogramme de 2e cycle en enseignement postsecondaire",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PLU 6035",
+        "PLU 6038"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DID 6075",
+        "ETA 6045",
+        "ETA 6400",
+        "ETA 6401",
+        "PPA 6015",
+        "PPA 6075",
+        "PPA 6228",
+        "PPA 6276",
+        "PPA 6445",
+        "PPA 6617"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "À compter du trimestre H2023, l'inscription au cours PPA 6276 ne sera plus permise; il est suggéré de suivre le PPA 6617."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EDU 6646",
+        "EDU 6647",
+        "EDU 6656"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Avec l'approbation du responsable du programme d'études, tout cours offert aux études supérieures de la FSE ou du répertoire des cours de l'Université de Montréal."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (A19)\nLe microprogramme comporte un total de 15 crédits de cours de 2e cycle.",
+    "Segment 70 — Les 15 crédits de ce microprogramme sont tous à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-enseignement-postsecondaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:01.964Z"
+}

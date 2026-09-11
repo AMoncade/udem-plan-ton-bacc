@@ -1,0 +1,75 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-de-physiotherapie-avancee-en-neuro-musculosquelettique",
+  "nom": "Microprogramme de 2e cycle de physiothérapie avancée en neuro-musculosquelettique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Les crédits de ce microprogramme sont répartis de la façon suivante : 12 crédits obligatoires et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": null,
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PHT 6401",
+        "PHT 6402",
+        "PHT 6403",
+        "PHT 6404"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours en lien avec la thématique du programme et avec l'approbation du responsable du programme d'études."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H20)\nLe microprogramme comprend 15 crédits.",
+    "Segment 70 — Les crédits de ce microprogramme sont répartis de la façon suivante : 12 crédits obligatoires et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-de-physiotherapie-avancee-en-neuro-musculosquelettique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:11.464Z"
+}

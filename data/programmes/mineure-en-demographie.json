@@ -1,0 +1,126 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-demographie",
+  "nom": "Mineure en démographie",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Connaissances fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "DMO 1000",
+        "DMO 2200",
+        "DMO 2311",
+        "DMO 2312"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Phénomènes et enjeux démographiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "DMO 1100",
+        "DMO 1200",
+        "DMO 2170",
+        "DMO 2500",
+        "DMO 3100",
+        "DMO 3150",
+        "DMO 3250",
+        "DMO 3420"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Approches multidisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DMO 2700",
+        "DMO 3307",
+        "DMO 3400",
+        "DMO 3450"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle DMO."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 05 (A25)\nLa mineure comporte 30 crédits.",
+    "Segment 72 — Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-demographie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:13.583Z"
+}

@@ -1,0 +1,90 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-enseignement-instrumental",
+  "nom": "Microprogramme de 2e cycle en enseignement instrumental",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 10 crédits obligatoires et 5 crédits à option.",
+    "obligatoire": {
+      "min": 10,
+      "max": 10
+    },
+    "option": {
+      "min": 5,
+      "max": 5
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [
+        "EMU 6010",
+        "EMU 6030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "- Ateliers de didactique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "- Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option- 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À l'exclusion des cours d'introduction, choisir parmi les cours de premier cycle ou les séminaires offerts par la Faculté de musique."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A16)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 10 crédits obligatoires et 5 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-enseignement-instrumental/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:00.153Z"
+}

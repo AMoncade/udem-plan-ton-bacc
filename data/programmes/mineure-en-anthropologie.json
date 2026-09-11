@@ -1,0 +1,222 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-anthropologie",
+  "nom": "Mineure en anthropologie",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Cours thématiques : ethnologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1013",
+        "ANT 1018",
+        "ANT 1020",
+        "ANT 1065",
+        "ANT 2020",
+        "ANT 2023",
+        "ANT 2026",
+        "ANT 2030",
+        "ANT 2031",
+        "ANT 2036",
+        "ANT 2037",
+        "ANT 2040",
+        "ANT 2042",
+        "ANT 2043",
+        "ANT 2050",
+        "ANT 2055",
+        "ANT 2070",
+        "ANT 2088",
+        "ANT 2830",
+        "ANT 3000",
+        "ANT 3025",
+        "ANT 3030",
+        "ANT 3035",
+        "ANT 3053",
+        "ANT 3073",
+        "ANT 3082",
+        "ANT 3090",
+        "ANT 3100",
+        "ANT 3141",
+        "ANT 3142",
+        "ANT 3164",
+        "ANT 3171",
+        "ANT 3172",
+        "ANT 3809",
+        "ANT 3809Z",
+        "ANT 3811",
+        "ANT 3820",
+        "ANT 3851",
+        "ANT 3854",
+        "ANT 3855",
+        "ANT 3864",
+        "ANT 3866",
+        "ANT 3867",
+        "AUT 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Cours thématiques : archéologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1210",
+        "ANT 1213",
+        "ANT 1280",
+        "ANT 2210",
+        "ANT 2230",
+        "ANT 2260",
+        "ANT 2266",
+        "ANT 2270",
+        "ANT 2280",
+        "ANT 2290",
+        "ANT 3213",
+        "ANT 3214",
+        "ANT 3230",
+        "ANT 3260",
+        "ANT 3270",
+        "ANT 3283",
+        "ANT 3285",
+        "ANT 3286",
+        "ANT 3287",
+        "ANT 3288",
+        "ANT 3290",
+        "ANT 3857",
+        "ANT 3881",
+        "ANT 3882"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Cours thématiques : bioanthropologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1511",
+        "ANT 1513",
+        "ANT 2430",
+        "ANT 2440",
+        "ANT 2454",
+        "ANT 2470",
+        "ANT 3450",
+        "ANT 3457",
+        "ANT 3460",
+        "ANT 3470",
+        "ANT 3471",
+        "ANT 3475",
+        "ANT 3476",
+        "ANT 3490",
+        "ANT 3814",
+        "ANT 3891"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Cours thématiques : anthropologie linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1611",
+        "ANT 2610",
+        "ANT 2611",
+        "ANT 2624",
+        "ANT 2625",
+        "ANT 2630",
+        "ANT 2660",
+        "ANT 2665",
+        "ANT 3625",
+        "ANT 3632",
+        "ANT 3875",
+        "ANT 3876",
+        "ANT 3877"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A05)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "Segment 71 — L'étudiant suit dès son premier trimestre à l'Université les cours ANT dont le numéro commence par le chiffre 1; après avoir complété un trimestre, il peut aborder ceux dont le numéro commence par 2, et après deux trimestres, ceux dont le numéro commence par 3. Si l'étudiant désire suivre des cours de niveau 3000, il peut s'attendre à compléter le programme en plusieurs trimestres."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-anthropologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:01.589Z"
+}

@@ -1,0 +1,404 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-etudes-internationales",
+  "nom": "Maîtrise en études internationales",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "INT 6170"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Concentration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "INT 6010",
+        "INT 6020",
+        "INT 6030",
+        "INT 6040",
+        "INT 6050",
+        "INT 6080"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "-MM Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "INT 6180"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "-ST Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2010",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "ITL 3002",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "PTG 1903",
+        "PTG 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "-TD Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "INT 6180"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "FAS 60011",
+        "FAS 60012",
+        "HST 6635",
+        "INT 6060",
+        "INT 6070",
+        "INT 6240A",
+        "INT 6240B",
+        "INT 6240C",
+        "INT 6240D",
+        "INT 6240E",
+        "INT 6240F",
+        "INT 6240G",
+        "INT 6240H",
+        "INT 6240I",
+        "INT 6240J",
+        "INT 6240K",
+        "INT 6240L",
+        "INT 6240M",
+        "INT 6240N",
+        "INT 6240O",
+        "INT 6240P",
+        "INT 6240Q",
+        "INT 6400",
+        "INT 6501",
+        "INT 6504",
+        "INT 6506",
+        "INT 6507",
+        "INT 6701",
+        "INT 6702",
+        "INT 6704",
+        "INT 6706",
+        "INT 6707",
+        "INT 6709",
+        "INT 6711",
+        "POL 6529",
+        "POL 6536",
+        "POL 6672"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANG 6185",
+        "ANG 6190",
+        "ANG 6650",
+        "ANG 6670",
+        "ANT 6033",
+        "ANT 6038",
+        "ANT 6117",
+        "ANT 6132",
+        "ANT 6160",
+        "AUT 6010",
+        "AUT 6011",
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6175",
+        "COM 6192",
+        "COM 6331",
+        "COM 6341",
+        "COM 6351",
+        "COM 6355",
+        "COM 6374",
+        "CRI 6231",
+        "CRI 6232",
+        "CRI 6233",
+        "CRI 6722",
+        "CRI 6726",
+        "CRI 6727",
+        "DMO 6430",
+        "DMO 6501",
+        "DRI 6125",
+        "DRT 6501",
+        "DRT 6805B",
+        "DRT 6830B",
+        "DRT 6830G",
+        "DRT 6830H",
+        "DRT 6830I",
+        "DRT 6830J",
+        "DRT 6845A",
+        "DRT 6851",
+        "DRT 6853",
+        "DRT 6855",
+        "DRT 6856",
+        "DRT 6864",
+        "DRT 6903",
+        "DRT 6929A",
+        "ECN 6478",
+        "EDD 6060",
+        "ENV 6003",
+        "ENV 6005",
+        "ESP 6135",
+        "ESP 6145",
+        "ESP 6170",
+        "ESP 6180",
+        "GEO 6201",
+        "GEO 6204",
+        "GEO 6205",
+        "HST 6102",
+        "HST 6103",
+        "HST 6448",
+        "HST 6646",
+        "HST 6647",
+        "HST 6700",
+        "LCO 6447",
+        "LLM 6000",
+        "PHI 6291",
+        "PHI 6520",
+        "PHI 6545",
+        "PHI 6575",
+        "PHI 6576",
+        "PLU 6022",
+        "PLU 6059",
+        "PLU 6904A",
+        "PLU 6908A",
+        "PLU 6911A",
+        "POL 6112",
+        "POL 6130",
+        "POL 6404",
+        "POL 6417",
+        "POL 6418",
+        "POL 6526",
+        "POL 6614",
+        "POL 6615",
+        "POL 6617",
+        "POL 6627",
+        "POL 6672",
+        "PSY 6093",
+        "REL 6103",
+        "REL 6124",
+        "REL 6160",
+        "REL 6170",
+        "REL 6214",
+        "SOL 6053",
+        "SOL 6312",
+        "SOL 6520",
+        "SOL 6541",
+        "SOL 6857",
+        "SOL 6915",
+        "URB 6850"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants peuvent prendre un maximum de 6 crédits de cours POL."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "-MM Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "INT 67101",
+        "INT 67102",
+        "INT 6751"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "-ST Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "INT 6800",
+        "INT 6811"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "-TD Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "INT 67101",
+        "INT 67102",
+        "INT 6806"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A25)\nLa maîtrise comporte 45 crédits répartis de la façon suivante : de 24 à 33 crédits obligatoires, dont de 15 à 24 crédits attribués à la recherche et à la rédaction d'un mémoire, d'un stage ou d'un travail dirigé, et de 12 à 21 crédits à option.\n- Option générale (segment 70)\n– modalité avec mémoire (MM)\n– modalité avec stage (ST)\n– modalité avec travail dirigé (TD)\nLes blocs identifiés par MM sont réservés pour les étudiants qui font la modalité avec Mémoire, ceux identifiés ST sont pour les étudiants qui font la modalité avec Stage et ceux identifiés TD sont pour les étudiants qui font la modalité avec travail dirigé. Les blocs qui n'ont aucune mention sont communs pour tous les étudiants, peu importe la modalité.",
+    "Segment 70 Option générale — Les crédits du segment 70 sont répartis de la façon suivante :",
+    "Segment 70 Option générale — - modalité avec mémoire (MM), composée des blocs 70A, 70B, MM-70C, 70D, 70E et MM-70F : 33 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits à option.",
+    "Segment 70 Option générale — - modalité avec stage (ST), composée des blocs 70A, 70B, ST-70C, 70D, 70E et ST-70F : 24 crédits obligatoires, dont 15 crédits attribués à un stage, et 21 crédits à option.",
+    "Segment 70 Option générale — - modalité avec travail dirigé (TD), composée des blocs 70A, 70B, TD-70C, 70D, 70E et TD-70F : 24 crédits obligatoires, dont 15 crédits attribués à un travail dirigé, et 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-etudes-internationales/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:41.527Z"
+}

@@ -1,0 +1,132 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-physique",
+  "nom": "Mineure en physique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Physique fondamentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PHY 1441",
+        "PHY 1620",
+        "PHY 1651",
+        "PHY 1652"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Outils mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "MAT 1400",
+        "MAT 1410",
+        "MAT 1600",
+        "MAT 1681"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Compléments de physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "PHY 1234",
+        "PHY 1501",
+        "PHY 2215",
+        "PHY 2300",
+        "PHY 2345",
+        "PHY 2400",
+        "PHY 2441",
+        "PHY 2476",
+        "PHY 2500",
+        "PHY 2601",
+        "PHY 2701",
+        "PHY 2810",
+        "PHY 2900",
+        "PHY 3012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les crédits au choix ne sont pas de sigle PHY."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 05 (A04)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-physique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:20.030Z"
+}

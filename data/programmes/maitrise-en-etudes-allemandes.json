@@ -1,0 +1,162 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-etudes-allemandes",
+  "nom": "Maîtrise en études allemandes",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante: 21 à 30 crédits obligatoires, dont 18 à 27 crédits attribués à la recherche et à la rédaction d'un mémoire ou à un travail dirigé, et de 15 à 24 crédits à option.",
+    "obligatoire": {
+      "min": 21,
+      "max": 30
+    },
+    "option": {
+      "min": 15,
+      "max": 24
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ALL 60111",
+        "ALL 60112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Littérature et médias allemands",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "ALL 6200",
+        "ALL 6201",
+        "ALL 6210",
+        "ALL 6231",
+        "ALL 6242"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Civilisation et histoire des pays germanophones",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "ALL 6300",
+        "ALL 6322",
+        "ALL 6331",
+        "ALL 6333",
+        "ALL 6444",
+        "EAE 6004",
+        "EAE 6041A",
+        "EAE 6041B",
+        "HST 6646",
+        "LLM 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Enseignement de l'allemand langue étrangère",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ALL 6405",
+        "ALL 6415",
+        "ALL 6435",
+        "DID 6205",
+        "DID 6231",
+        "DID 6646"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Formation interdisciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANG 6032",
+        "ANG 6505",
+        "ANG 6605",
+        "FAS 6500",
+        "HNU 6000",
+        "HST 6635",
+        "LCO 6000",
+        "LCO 6111",
+        "LNG 6380",
+        "PHI 6270",
+        "PHI 6280",
+        "PLU 6060",
+        "PLU 6133",
+        "SOL 6915",
+        "TRA 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A25)\nLa maîtrise comporte 45 crédits.\nElle est offerte selon deux modalités :\n- modalité avec mémoire (MM),\n- modalité avec travail dirigé (TD)",
+    "Segment 70 — Les crédits sont répartis de la façon suivante: 21 à 30 crédits obligatoires, dont 18 à 27 crédits attribués à la recherche et à la rédaction d'un mémoire ou à un travail dirigé, et de 15 à 24 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-etudes-allemandes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:34.125Z"
+}

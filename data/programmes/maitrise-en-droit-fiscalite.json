@@ -1,0 +1,68 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-droit-fiscalite",
+  "nom": "Maîtrise en droit - Fiscalité",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 39,
+          "max": 39
+        }
+      },
+      "regleBrut": "Option - 39 crédits.",
+      "cours": [
+        "DRT 6210",
+        "DRT 6215",
+        "DRT 6220",
+        "DRT 6230",
+        "DRT 6235"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Notez que le cours DRT6210 est obligatoire pour les étudiants sans formation en droit. Notez que le cours HEC6139 est obligatoire pour les étudiants sans formation en comptabilité."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stage ou recherche supervisée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "DRT 6240",
+        "DRT 6250"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A19)\nLa maîtrise comporte 45 crédits.\nLe doyen approuve le plan d'études qui a été établi par l'étudiant et en contrôle l'exécution. Le Conseil de la Faculté détermine, chaque année, dans le cadre du programme agréé par la Commission des études, les cours de 2e cycle qui sont offerts et leur caractère obligatoire ou à option.",
+    "Segment 70 — Les 45 crédits de la maîtrise sont tous à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-droit-fiscalite/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:43.214Z"
+}

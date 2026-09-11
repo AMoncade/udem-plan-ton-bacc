@@ -1,0 +1,269 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-education-option-enseignement-au-secondaire",
+  "nom": "Maîtrise en éducation, option Enseignement au secondaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 60,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "EDU 6500",
+        "ETA 6065",
+        "ETA 6160",
+        "ETA 6901",
+        "PPA 6201",
+        "PPA 6236",
+        "PPA 6237",
+        "PPA 6400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Formation pratique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "EDU 6291",
+        "EDU 6292",
+        "EDU 6293",
+        "EDU 6505",
+        "PPA 6698"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "1A Didactique des sciences et technologies",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "DID 6693",
+        "DID 6867",
+        "DID 6868",
+        "DID 6869"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "1B Complément de formation en sciences et technologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "BIO 1334",
+        "BIO 1803",
+        "CHM 1201",
+        "GEO 1112",
+        "PHY 1651",
+        "PHY 1972"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le responsable du programme, en accord avec le règlement pédagogique, propose à l'étudiant 9 crédits de cours de 1er cycle lui permettant de pallier les lacunes de sa formation initiale disciplinaire (cours de sigle BIO, CHM, PHY, GEO, DID ou DST). Cette liste n'est pas exhaustive. D'autres cours pourraient être demandés à l'étudiant par le responsable du programme, à la suite de l'étude de son dossier."
+      ]
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "2A Didactique des mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "DID 2260",
+        "DID 6571",
+        "DID 6573",
+        "DID 6754"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "2B Complément de formation en mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "DID 2280",
+        "MAT 1332",
+        "MAT 1720",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le responsable du programme, en accord avec le règlement pédagogique, propose à l'étudiant 9 crédits de cours de 1er cycle lui permettant de pallier les lacunes de sa formation initiale disciplinaire (cours de sigle MAT, STT, IFT ou DID). Cette liste n'est pas exhaustive. D'autres cours pourraient être demandés à l'étudiant par le responsable du programme, à la suite de l'étude de son dossier."
+      ]
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "3A Didactique du français langue d'enseignement",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DID 6201",
+        "DID 6211",
+        "DID 6214",
+        "DID 6216",
+        "DID 6525"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "3B Complément de formation en français langue d'enseignement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "FRA 1000",
+        "FRA 1005",
+        "FRA 1027",
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le responsable du programme, en accord avec le règlement pédagogique, propose à l'étudiant 6 crédits de cours de 1er cycle lui permettant de pallier les lacunes de sa formation initiale disciplinaire (cours de sigle FRA, LNG ou DID). Cette liste n'est pas exhaustive. D'autres cours pourraient être demandés à l'étudiant par le responsable du programme, à la suite de l'étude de son dossier."
+      ]
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "4A Didactique de l'univers social",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DID 6150",
+        "DID 6151",
+        "DID 6152",
+        "DID 6153",
+        "DID 6154"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "4B Complément de formation en univers social",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "GEO 1212",
+        "GEO 1312",
+        "HST 1031",
+        "HST 1041",
+        "HST 1051",
+        "HST 1052"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le responsable du programme, en accord avec le règlement pédagogique, propose à l'étudiant 6 crédits de cours de 1er cycle lui permettant de pallier les lacunes de sa formation initiale disciplinaire (cours de sigle HST, GEO ou DID). Cette liste n'est pas exhaustive. D'autres cours pourraient être demandés à l'étudiant par le responsable du programme, à la suite de l'étude de son dossier."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 06 (A22)\nLa maîtrise professionnelle comporte 60 crédits.\nCette maîtrise est offerte selon quatre concentrations :\n- concentration Enseignement des sciences et des technologies au secondaire (segment 80C1),\n- concentration Enseignement des mathématiques au secondaire (segment 80C2),\n- concentration Enseignement du français au secondaire (segment 80C3),\n- concentration Enseignement de l'univers social au secondaire (segment 80C4).\nCette maîtrise donne droit à la M. Éd. (enseignement au secondaire) et à une autorisation légale d'enseigner.",
+    "Segment 01 Commun à toutes les concentrations — Le segment comprend 39 crédits obligatoires.",
+    "Segment 80 C1 Concentration Enseign. des sciences et technologies au secondaire — Les crédits de la concentration sont répartis de la façon suivante: 12 crédits obligatoires et 9 crédits à option.",
+    "Segment 80 C2 Concentration Enseignement des mathématiques au secondaire — Les crédits de la concentration sont répartis de la façon suivante: 12 crédits obligatoires et 9 crédits à option.",
+    "Segment 80 C3 Concentration Enseignement du français au secondaire — Les crédits de la concentration sont répartis de la façon suivante: 15 crédits obligatoires et 6 crédits à option.",
+    "Segment 80 C4 Concentration Enseignement de l'univers social au secondaire — Les crédits de la concentration sont répartis de la façon suivante: 15 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-education-option-enseignement-au-secondaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:08.239Z"
+}

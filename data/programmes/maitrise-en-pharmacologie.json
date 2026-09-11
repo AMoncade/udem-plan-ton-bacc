@@ -1,0 +1,627 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-pharmacologie",
+  "nom": "Maîtrise en pharmacologie",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Neuropharmacologie",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Pharmacogénomique",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 3 crédits à option.",
+        "obligatoire": {
+          "min": 42,
+          "max": 42
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Pharmacologie clinique",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Pharmacologie intégrative cardiovasculaire",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 3 crédits à option.",
+        "obligatoire": {
+          "min": 42,
+          "max": 42
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Pharmacologie moléculaire",
+      "segments": [
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "PHL 60511",
+        "PHL 60512",
+        "PHL 6053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "PGM 6001",
+        "PGM 6078",
+        "PHL 6011",
+        "PHL 6031",
+        "PHL 6032",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6060",
+        "PHL 6064",
+        "PHL 6071",
+        "PHL 6092",
+        "PHL 6093",
+        "PHL 6095",
+        "PHL 6097",
+        "PHL 6099",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "PHL 6903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "PHL 60511",
+        "PHL 60512",
+        "PHL 6053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PHL 6031",
+        "PHL 6032"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Si le candidat a pris seulement le PHL6031 ou le PHL6032 au Bloc 71B, il devra choisir un cours dans la liste au Bloc 71C."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option – Maximum 3 crédits.",
+      "cours": [
+        "NSC 6030",
+        "NSC 6060",
+        "NSC 6061",
+        "PGM 6001",
+        "PGM 6078",
+        "PHL 6011",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6060",
+        "PHL 6064",
+        "PHL 6071",
+        "PHL 6092",
+        "PHL 6093",
+        "PHL 6094",
+        "PHL 6095",
+        "PHL 6097",
+        "PHL 6099",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E",
+        "PST 6100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "PHL 6903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "PGM 6054",
+        "PGM 6078",
+        "PHL 6053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6210",
+        "BIN 6002",
+        "MSO 6018",
+        "PGM 6001",
+        "PHL 6011",
+        "PHL 6060",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "PHL 6903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PGM 6001",
+        "PHL 6060",
+        "PHL 6094"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "PHL 6031",
+        "PHL 6032",
+        "PHL 6035",
+        "PHL 6064",
+        "PHL 6071",
+        "PHL 6074",
+        "PHL 6092",
+        "PHL 6095",
+        "PHL 6099"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "PHL 6904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "PHL 60511",
+        "PHL 60512",
+        "PHL 6053",
+        "PHL 6071"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PGM 6001",
+        "PGM 6078",
+        "PHL 6011",
+        "PHL 6031",
+        "PHL 6032",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6060",
+        "PHL 6064",
+        "PHL 6092",
+        "PHL 6093",
+        "PHL 6094",
+        "PHL 6095",
+        "PHL 6097",
+        "PHL 6099",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "PHL 6903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "PHL 60511",
+        "PHL 60512",
+        "PHL 6053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PGM 6001",
+        "PGM 6078",
+        "PHL 6031",
+        "PHL 6032",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6060",
+        "PHL 6064",
+        "PHL 6092",
+        "PHL 6093",
+        "PHL 6094",
+        "PHL 6095",
+        "PHL 6097",
+        "PHL 6099"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "PHL 6903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 13 (H20)\nLa maîtrise comporte 45 crédits. Elle est offerte avec six options :\n- l'option Générale (segment 70),\n- l'option Neuropharmacologie (segment 71),\n- l'option Pharmacogénomique (segment 72),\n- l'option Pharmacologie clinique (segment 73),\n- l'option Pharmacologie intégrative cardiovasculaire (segment 74),\n- l'option Pharmacologie moléculaire (segment 75).",
+    "Segment 70 Propre à l'option Générale — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+    "Segment 71 Propre à l'option Neuropharmacologie — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+    "Segment 72 Propre à l'option Pharmacogénomique — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 3 crédits à option.",
+    "Segment 73 Propre à l'option Pharmacologie clinique — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+    "Segment 74 Propre à l'option Pharmacologie intégrative cardiovasculaire — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 3 crédits à option.",
+    "Segment 75 Propre à l'option Pharmacologie moléculaire — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires dont 35 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-pharmacologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:27.123Z"
+}

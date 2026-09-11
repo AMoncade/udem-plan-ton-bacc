@@ -1,0 +1,190 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-education-option-orthopedagogie",
+  "nom": "Maîtrise en éducation, option Orthopédagogie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 12 crédits obligatoires et 33 crédits à option.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 33,
+      "max": 33
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "DID 6484",
+        "DID 6740",
+        "PPA 6416",
+        "PPA 6433"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Application et développement en orthopédagogie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "EDU 6014A",
+        "EDU 6014B",
+        "EDU 6014C",
+        "EDU 6709",
+        "EDU 67091",
+        "EDU 67092",
+        "EDU 67093"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours EDU67091, EDU67092 et EDU67093 sont équivalents au cours EDU6709."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Dimensions psychopédagogiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "PPA 6224",
+        "PPA 6274",
+        "PPA 6276",
+        "PPA 6278",
+        "PPA 6301",
+        "PPA 6304",
+        "PPA 6403",
+        "PPA 6413",
+        "PPA 6415",
+        "PPA 6419",
+        "PPA 6428",
+        "PPA 6429",
+        "PPA 6430",
+        "PPA 6431",
+        "PPA 6432",
+        "PPA 6434",
+        "PPA 6614",
+        "PPA 6673"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Dimensions orthodidactiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "DID 6208",
+        "DID 6218",
+        "DID 6226",
+        "DID 6485",
+        "DID 6741",
+        "DID 6745"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Enjeux transversaux en éducation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "EDU 6000",
+        "EDU 6001",
+        "EDU 6410",
+        "EDU 6609",
+        "ETA 6655",
+        "ETA 6809",
+        "PPA 6256"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "DID 6080",
+        "EDU 6585"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez vous inscrire à l'un des cours proposés, ou tout autre cours jugé pertinent parmi la banque de cours de cycles supérieurs des sciences de l'éducation excluant les cours de la Maîtrise en éducation, option Enseignement au secondaire (2-811-1-3) et la Maîtrise en éducation, option Éducation préscolaire et enseignement primaire (2-820-1-9). L'approbation du responsable de programme est requise."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (A22)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 12 crédits obligatoires et 33 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-education-option-orthopedagogie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:18.368Z"
+}

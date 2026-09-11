@@ -1,0 +1,327 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-environnement-societe-et-transitions",
+  "nom": "Majeure en environnement, société et transitions",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 36,
+      "max": 36
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "DRT 1004",
+        "ECN 1910",
+        "EDD 1001",
+        "EDD 1002",
+        "EDD 3004",
+        "GEO 1312",
+        "SOL 2200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Introduction scientifique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "BIO 1803",
+        "CHM 1956",
+        "GEO 1130"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Politiques publiques et gouvernance",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "HST 2885",
+        "PHI 2418",
+        "POL 1000",
+        "POL 1330",
+        "POL 2140",
+        "POL 2170",
+        "POL 3159",
+        "PPL 3025",
+        "SPU 1001",
+        "SPU 1002",
+        "SPU 1004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Mise en pratique des principes environnementaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "APA 1130",
+        "DRT 3108",
+        "GEO 2312",
+        "GEO 3322",
+        "PPL 2160",
+        "SPU 1005",
+        "SPU 2003",
+        "URB 1111",
+        "URB 2323"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Enjeux de communications et multimédia",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "COM 1150",
+        "COM 1500",
+        "COM 2018",
+        "COM 2220",
+        "COM 2460",
+        "COM 3220",
+        "COM 3320",
+        "IFT 1135",
+        "IFT 1144",
+        "IFT 1155",
+        "IFT 1810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Perspectives économiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ECN 1000",
+        "ECN 1700",
+        "ECN 2405",
+        "ECN 2450",
+        "ECN 2910",
+        "GEO 2222",
+        "PPL 3035",
+        "REI 1420",
+        "REI 2470"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Écosystèmes et changements climatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "BIO 1804",
+        "BIO 2820",
+        "BIO 3390",
+        "BIO 3801",
+        "BIO 3893",
+        "GEO 1122",
+        "GEO 1222",
+        "MSN 1001",
+        "MSN 2001",
+        "MSN 2002",
+        "URB 1114"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Outils d'analyse avancés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ECN 1260",
+        "FAS 1002",
+        "FAS 1003",
+        "FAS 3001",
+        "GEO 1532",
+        "GEO 1542",
+        "GEO 2532",
+        "POL 1803",
+        "POL 2809"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "EDD 2003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Discipline connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANT 2030",
+        "ANT 3290",
+        "DMO 2170",
+        "GEO 1212",
+        "GEO 3262",
+        "GEO 3333",
+        "GEO 3463",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 2820",
+        "PEF 2715",
+        "PHI 1130",
+        "POL 3235",
+        "PPL 3076",
+        "REL 1330",
+        "REL 2440",
+        "SOL 1012",
+        "SOL 3201",
+        "SOL 3221",
+        "SPU 2100G",
+        "SVS 1101",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A23)\nLa majeure comporte 60 crédits.",
+    "Segment 70 — Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-environnement-societe-et-transitions/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:15.129Z"
+}

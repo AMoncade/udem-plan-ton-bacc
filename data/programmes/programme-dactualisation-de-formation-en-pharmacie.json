@@ -1,0 +1,42 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "programme-dactualisation-de-formation-en-pharmacie",
+  "nom": "Programme d'actualisation de formation en pharmacie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Programme d'actualisation",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 90
+        }
+      },
+      "regleBrut": "Choix - Maximum 90 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours sont choisis dans la banque de cours de la Faculté en fonction des besoins du candidat et, le cas échéant des exigences de l'ordre professionnel. Le choix doit être approuvé par un conseiller pédagogique."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A03)\nLe programme d'actualisation comporte un maximum de 90 crédits.\nRégime d'inscription\nL'étudiant s'inscrit à temps plein ou à temps partiel.\n- À temps plein, l'étudiant s'inscrit à un minimum de 12 crédits et à un maximum de 18 crédits par trimestre. Habituellement, il s'inscrit à un total de 30 crédits par année.\n- À temps partiel (moins de 12 crédits par trimestre), l'étudiant doit s'inscrire à un minimum de neuf crédits en quatre trimestres consécutifs.",
+    "Segment 70 — Tous les crédits du programme d'actualisation sont au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/programme-dactualisation-de-formation-en-pharmacie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:05:06.103Z"
+}

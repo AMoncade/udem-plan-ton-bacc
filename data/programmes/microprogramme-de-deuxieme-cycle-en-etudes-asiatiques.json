@@ -1,0 +1,205 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-deuxieme-cycle-en-etudes-asiatiques",
+  "nom": "Microprogramme de 2e cycle en études asiatiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 3 crédits obligatoires et 12 crédits à option.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits",
+      "cours": [
+        "AES 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Concentration sur l'Asie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits",
+      "cours": [
+        "AES 6002",
+        "HST 6102",
+        "LCO 6525",
+        "PHI 6291",
+        "PHI 6292",
+        "PLU 6912A",
+        "POL 6615",
+        "POL 6646",
+        "REL 6131",
+        "REL 6136",
+        "REL 6137",
+        "REL 6170",
+        "REL 6171"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Élargissement disciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "ANT 6030",
+        "ANT 6117",
+        "ANT 6160",
+        "ANT 6626",
+        "CIN 6051",
+        "CIN 6059",
+        "COM 6175",
+        "COM 6192",
+        "COM 6331",
+        "DMO 6501",
+        "ENV 6003",
+        "FRA 6730",
+        "GEO 6201",
+        "GEO 6204",
+        "GEO 6205",
+        "HAR 6055",
+        "INT 6030",
+        "INT 6240A",
+        "INT 6501",
+        "INT 6702",
+        "INT 6704",
+        "INT 6706",
+        "INT 6711",
+        "JEU 6001",
+        "JEU 6002",
+        "LCO 6469",
+        "LLM 6000",
+        "PHI 6540",
+        "PHI 6545",
+        "PHI 6575",
+        "PHI 6576",
+        "PLU 6110",
+        "POL 6418",
+        "POL 6570",
+        "POL 6626",
+        "POL 6627",
+        "POL 6628",
+        "POL 6672",
+        "PSY 6093",
+        "REL 6103",
+        "REL 6122",
+        "REL 6124",
+        "SOL 6017",
+        "SOL 6052",
+        "SOL 6659",
+        "SOL 6915",
+        "TRA 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours de langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "AES 1001",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A26)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 3 crédits obligatoires et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-deuxieme-cycle-en-etudes-asiatiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:09.985Z"
+}

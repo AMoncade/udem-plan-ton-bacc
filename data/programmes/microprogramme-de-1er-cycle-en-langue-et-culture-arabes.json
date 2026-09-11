@@ -1,0 +1,78 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-langue-et-culture-arabes",
+  "nom": "Microprogramme de 1er cycle en langue et culture arabes",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "ARA 2030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ARA 1001",
+        "ARA 1002",
+        "ARA 2001",
+        "ARA 2040",
+        "ARA 2050",
+        "DMO 1200",
+        "LCO 1030",
+        "LLM 1000",
+        "LLM 2000",
+        "POL 3009",
+        "POL 3840",
+        "REL 1230",
+        "SOL 2050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A19)\nLe microprogramme de premier cycle comporte 15 crédits.",
+    "Segment 70 — Tous les crédits du microprogramme sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-langue-et-culture-arabes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:12.340Z"
+}

@@ -1,0 +1,134 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-bioethique",
+  "nom": "Mineure en bioéthique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "La mineure comporte 30 crédits répartis de la façon suivante : 9 crédits de cours obligatoires et 21 crédits de cours à option.",
+    "obligatoire": {
+      "min": 30,
+      "max": 30
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIE 1000",
+        "BIE 2001",
+        "BIE 2002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Théories et fondements de la bioéthique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "BIE 2003",
+        "PHI 1400",
+        "PHI 2406",
+        "PHI 2415",
+        "PHI 2417",
+        "PHI 3615",
+        "PHI 3625",
+        "REL 1340"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Problèmes d'éthique contemporaine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ASA 3250G",
+        "PHI 2418",
+        "SPU 1005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ASA 1050G",
+        "ASA 2221G",
+        "AUT 2500",
+        "DRT 3810",
+        "PSY 2048",
+        "REL 2430",
+        "SOL 2103",
+        "SOL 2104",
+        "SPU 1001",
+        "SPU 1002",
+        "SPU 1003",
+        "SPU 1004",
+        "SPU 2300G",
+        "SVS 2101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — La mineure comporte 30 crédits répartis de la façon suivante : 9 crédits de cours obligatoires et 21 crédits de cours à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-bioethique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:03.381Z"
+}

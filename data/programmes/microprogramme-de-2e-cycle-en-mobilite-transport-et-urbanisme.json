@@ -1,0 +1,82 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-mobilite-transport-et-urbanisme",
+  "nom": "Microprogramme de 2e cycle en mobilité, transport et urbanisme",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Ingénierie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Urbanisme",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "URB 6729",
+        "URB 6753",
+        "URB 6754",
+        "URB 6767",
+        "URB 6770"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Projet en mobilité, transport et urbanisme",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "URB 6654"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A14)\nLe microprogramme comporte 15 crédits.\nLe cheminement type sur une année est le suivant :\n- 6 crédits de cours au premier trimestre (avec un maximum de 3 crédits de 1er cycle)\n- 6 crédits de cours au deuxième trimestre\n- Projet de 3 crédits au dernier trimestre d'inscription\nPréférablement, le cours de premier cycle (le cas échéant) est effectué au premier trimestre alors que le projet en mobilité, transport et urbanisme est effectué au dernier trimestre d'inscription.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 15 crédits à option, dont 3 crédits attribués à un projet d'études."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-mobilite-transport-et-urbanisme/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:57.812Z"
+}

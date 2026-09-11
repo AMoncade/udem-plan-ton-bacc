@@ -1,0 +1,199 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-mathematiques",
+  "nom": "Majeure en mathématiques",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 26 crédits obligatoires, 31 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 26,
+      "max": 26
+    },
+    "option": {
+      "min": 31,
+      "max": 31
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Éléments",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 26,
+          "max": 26
+        }
+      },
+      "regleBrut": "Obligatoire - 26 crédits.",
+      "cours": [
+        "MAT 1000",
+        "MAT 1400",
+        "MAT 1500",
+        "MAT 1600",
+        "MAT 1720",
+        "MAT 2717",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Compléments",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 21,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 21 crédits, maximum 24 crédits.",
+      "cours": [
+        "ACT 1240",
+        "ACT 2241",
+        "ACT 2243",
+        "ACT 3230",
+        "MAT 1410",
+        "MAT 2050",
+        "MAT 2100",
+        "MAT 2115",
+        "MAT 2130",
+        "MAT 2300",
+        "MAT 2412",
+        "MAT 2450",
+        "MAT 2460",
+        "MAT 2466",
+        "MAT 2531",
+        "MAT 2600",
+        "MAT 2611",
+        "MAT 2719",
+        "MAT 3162",
+        "MAT 3300",
+        "MAT 3363",
+        "MAT 3450",
+        "MAT 3460",
+        "MAT 3632",
+        "MAT 3634",
+        "MAT 3661",
+        "STT 2000",
+        "STT 2105",
+        "STT 2400",
+        "STT 2700",
+        "STT 3410",
+        "STT 3510",
+        "STT 3790",
+        "STT 3795"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Éléments d'informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - 4 crédits.",
+      "cours": [
+        "IFT 1015",
+        "MAT 1681",
+        "STT 1682"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIO 1203",
+        "BIO 1803",
+        "BIO 2811",
+        "DMO 1000",
+        "DMO 2200",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "ECN 2165",
+        "IFT 1025",
+        "IFT 1174",
+        "IFT 1575",
+        "IFT 2015",
+        "IFT 2105",
+        "IFT 2425",
+        "IFT 2505",
+        "IFT 3205",
+        "IFT 3515",
+        "IFT 3545",
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 1300",
+        "PHY 1441",
+        "PHY 1620",
+        "PHY 1651",
+        "PHY 1652",
+        "PHY 1972",
+        "PHY 3131",
+        "PHY 3140"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 14 (A20)\nLa majeure comporte 60 crédits.",
+    "Segment 71 — Les crédits de la majeure sont répartis de la façon suivante : 26 crédits obligatoires, 31 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-mathematiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:54.480Z"
+}

@@ -1,0 +1,632 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sante-publique",
+  "nom": "Maîtrise en santé publique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "72",
+    "73",
+    "77",
+    "78",
+    "79",
+    "80"
+  ],
+  "orientations": [
+    {
+      "nom": "Recherche",
+      "segments": [
+        "01",
+        "80"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 21 crédits attribués à la rédaction d'un mémoire, et 9 crédits à option.",
+        "obligatoire": {
+          "min": 36,
+          "max": 36
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "MSO 6083",
+        "SPU 6002",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Cours interdisciplinaires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ASA 6754",
+        "MSN 6115",
+        "MSO 6011",
+        "MSO 6060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire - 13 crédits.",
+      "cours": [
+        "MSO 6116",
+        "MSO 6612",
+        "MSO 6615",
+        "MSO 6623",
+        "SPU 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6132",
+        "KIN 6848",
+        "MSO 6019",
+        "MSO 6080",
+        "MSO 6135",
+        "MSO 6331",
+        "MSO 6340",
+        "MSO 6350",
+        "MSO 6351",
+        "SPU 6005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [
+        "MSO 6810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Cours interdisciplinaires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ASA 6754",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MSN 6021",
+        "MSN 6115",
+        "MSN 6136",
+        "MSO 6116"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ENV 6002",
+        "ENV 6003",
+        "ENV 6005",
+        "MSN 6018",
+        "MSN 6022",
+        "MSN 6023",
+        "MSN 6024",
+        "MSN 6025",
+        "MSN 6026",
+        "MSN 6028",
+        "MSN 6111",
+        "MSN 6112",
+        "MSN 6144",
+        "MSN 6146",
+        "MSN 6148",
+        "MSO 6067",
+        "TXL 6002",
+        "TXL 6010",
+        "TXL 6012",
+        "TXL 6014",
+        "TXL 6016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MSN 6502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Cours interdisciplinaires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ASA 6754",
+        "MSN 6115",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ASA 6734",
+        "MSO 6116",
+        "MSO 6500",
+        "MSO 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MSO 6632"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77A",
+      "cle": "77/77A",
+      "segment": "77",
+      "nom": "Cours interdisciplinaires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ASA 6754",
+        "MSN 6115",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77B",
+      "cle": "77/77B",
+      "segment": "77",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MSO 6116",
+        "SPV 6410",
+        "SPV 6420",
+        "SPV 6430"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77C",
+      "cle": "77/77C",
+      "segment": "77",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "SPV 6611"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78A",
+      "cle": "78/78A",
+      "segment": "78",
+      "nom": "Cours interdisciplinaires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MSN 6115",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78B",
+      "cle": "78/78B",
+      "segment": "78",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ASA 6754",
+        "MSO 6116",
+        "SPU 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78C",
+      "cle": "78/78C",
+      "segment": "78",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ASA 6120",
+        "ASA 6175",
+        "ASA 6703",
+        "ASA 6708",
+        "ASA 6764",
+        "ASA 6769",
+        "SPU 6005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78D",
+      "cle": "78/78D",
+      "segment": "78",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "ASA 6821"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "79A",
+      "cle": "79/79A",
+      "segment": "79",
+      "nom": "Cours interdisciplinaires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ASA 6754",
+        "MSN 6115",
+        "MSO 6061",
+        "MSO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "79B",
+      "cle": "79/79B",
+      "segment": "79",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 17,
+          "max": 17
+        }
+      },
+      "regleBrut": "Obligatoire - 17 crédits.",
+      "cours": [
+        "MSO 6011",
+        "MSO 6014",
+        "MSO 6067",
+        "MSO 6116",
+        "MSO 6150",
+        "MSO 6320"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "79C",
+      "cle": "79/79C",
+      "segment": "79",
+      "nom": "Activité de synthèse et stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MSO 6628",
+        "SPU 6969"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MSO 6011",
+        "MSO 6061",
+        "MSO 6601",
+        "MSO 6602",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ASA 6178",
+        "ASA 6704",
+        "ASA 6754",
+        "MSN 6115",
+        "MSO 6014",
+        "MSO 6067",
+        "MSO 6135",
+        "MSO 6312",
+        "MSO 6331",
+        "MSO 6340",
+        "MSO 6350",
+        "MSO 6351",
+        "MSO 6612",
+        "MSO 6616",
+        "MSO 6624",
+        "MSO 6634",
+        "SPU 6005"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez vous inscrire à l'un des cours proposés, ou tout autre cours jugé pertinent, soit 9 crédits de cours dont au moins 6 crédits de méthodes. Le choix des cours doit être approuvé par la direction du programme."
+      ]
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "MSO 6610"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A25)\nLa maîtrise comporte 45 crédits. Elle est offerte selon sept options :\n- l'option Recherche (segment 80), laquelle est offerte avec la modalité mémoire.\nLes options suivantes sont offertes avec la modalité stage:\n− option Promotion de la santé (segment 01 et 71)\n− option Santé environnementale (segment 01 et 72)\n− option Santé mondiale (segment 01 et 73)\n− option Une seule santé (segment 01 et 77)\n− option Systèmes et politiques de santé (segment 01 et 78)\n− option Surveillance épidémiologique (segment 01 et 79)",
+    "Segment 01 — Tronc commun aux options avec la modalité de stage.",
+    "Segment 71 Propre à l'option Promotion de la santé — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 42 crédits obligatoires, dont 10 attribués à un stage et 3 crédits à option.",
+    "Segment 72 Propre à l'option Santé environnementale — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 42 crédits obligatoires dont 11 attribués à un stage et 3 crédits à option.",
+    "Segment 73 Propre à l'option Santé mondiale — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 45 crédits obligatoires dont 11 attribués à un stage.",
+    "Segment 77 Propre à l'option Une seule santé — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 45 crédits obligatoires dont 11 attribués à un stage.",
+    "Segment 78 Propre à l'option Systèmes et politiques de santé — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 39 crédits obligatoires dont 11 attribués à un stage et 6 crédits à option.",
+    "Segment 79 Propre à l'option Surveillance épidémiologique — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 45 crédits obligatoires, dont 9 sont attribués à une activité de synthèse et à un stage",
+    "Segment 80 Propre à l'option Recherche — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 21 crédits attribués à la rédaction d'un mémoire, et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sante-publique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:47.434Z"
+}

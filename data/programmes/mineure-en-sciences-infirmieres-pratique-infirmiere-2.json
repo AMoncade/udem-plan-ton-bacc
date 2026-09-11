@@ -1,0 +1,78 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-sciences-infirmieres-pratique-infirmiere-2",
+  "nom": "Mineure en sciences infirmières : pratique infirmière 2",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Santé dans la communauté",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Leadership",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Soins critiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SOI 3716"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours SOI35061 et SOI35062 sont équivalents au cours SOI3506. Les cours SOI37161 et SOI37162 sont équivalents au cours SOI3716."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A11)\nLa mineure comporte 30 crédits.",
+    "Segment 72 — Tous les crédits du segment sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-sciences-infirmieres-pratique-infirmiere-2/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:44.559Z"
+}

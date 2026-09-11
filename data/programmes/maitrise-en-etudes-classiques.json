@@ -1,0 +1,573 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-etudes-classiques",
+  "nom": "Maîtrise en études classiques",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "Archéologie classique",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 30 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire et 15 crédits à option.",
+        "obligatoire": {
+          "min": 30,
+          "max": 30
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Histoire ancienne",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 30 attribués à la recherche et à la rédaction d'un mémoire et 9 crédits à option.",
+        "obligatoire": {
+          "min": 36,
+          "max": 36
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Langues et littératures",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire et 9 crédits à option.",
+        "obligatoire": {
+          "min": 36,
+          "max": 36
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Archéologie classique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "HGL 6700",
+        "HGL 6815"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Histoire ancienne",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "HST 6610",
+        "HST 6615"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Langues et littératures",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GRC 6050",
+        "GRC 6060",
+        "LAT 6050",
+        "LAT 6055"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Philosophie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHI 6205",
+        "PHI 6215",
+        "PHI 6225",
+        "PHI 6235"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "GRC 6005",
+        "GRC 6015",
+        "HGL 6050",
+        "HGL 6060",
+        "LAT 6010",
+        "LAT 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Cours d'auteurs",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "HGL 6460"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Histoire ancienne",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "HST 6610",
+        "HST 6615"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Archéologie classique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "HGL 6700",
+        "HGL 6815"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Langues et littératures",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GRC 6050",
+        "GRC 6060",
+        "LAT 6050",
+        "LAT 6055"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Philosophie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHI 6205",
+        "PHI 6215",
+        "PHI 6225",
+        "PHI 6235"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "GRC 6005",
+        "GRC 6015",
+        "HGL 6050",
+        "HGL 6060",
+        "LAT 6010",
+        "LAT 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Cours d'auteurs",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "HGL 6460"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "1 Grec",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "GRC 6005",
+        "GRC 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants doivent faire 6 crédits dans l'un OU l'autre des blocs 72A."
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "2 Latin",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "LAT 6010",
+        "LAT 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants doivent faire 6 crédits dans l'un OU l'autre des blocs 72A."
+      ]
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Langues et littératures",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "GRC 6050",
+        "GRC 6060",
+        "LAT 6050",
+        "LAT 6055"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Histoire ancienne",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "HST 6610",
+        "HST 6615"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Archéologie classique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "HGL 6700",
+        "HGL 6815"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Philosophie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHI 6205",
+        "PHI 6215",
+        "PHI 6225",
+        "PHI 6235"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72F",
+      "cle": "72/72F",
+      "segment": "72",
+      "nom": "Lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GRC 6005",
+        "GRC 6015",
+        "HGL 6050",
+        "HGL 6060",
+        "LAT 6010",
+        "LAT 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72G",
+      "cle": "72/72G",
+      "segment": "72",
+      "nom": "Cours d'auteurs",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72H",
+      "cle": "72/72H",
+      "segment": "72",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "HGL 6460"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (H15)\nLa maîtrise comporte 45 crédits. Elle est offerte avec trois options :\n- l'option Archéologie classique (segment 70),\n- l'option Histoire ancienne (segment 71),\n- l'option Langues et littératures (segment 72).",
+    "Segment 70 Propre à l'option Archéologie classique — Les crédits de l'option sont répartis de la façon suivante : 30 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire et 15 crédits à option.",
+    "Segment 71 Propre à l'option Histoire ancienne — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 30 attribués à la recherche et à la rédaction d'un mémoire et 9 crédits à option.",
+    "Segment 72 Propre à l'option Langues et littératures — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-etudes-classiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:37.547Z"
+}

@@ -1,0 +1,119 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-leducation-option-pedagogie-universitaire-des-sciences-de-la-sante",
+  "nom": "Maîtrise en sciences de l'éducation, option Pédagogie universitaire des sciences de la santé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 30 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 15 crédits à option.",
+    "obligatoire": {
+      "min": 70,
+      "max": 70
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "MMD 63141",
+        "MMD 63142",
+        "PSS 6101",
+        "PSS 6102",
+        "PSS 6103",
+        "PSS 6202"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "EDU 6715",
+        "EDU 6716",
+        "ETA 6512",
+        "MMD 6101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire – 27 crédits.",
+      "cours": [
+        "EDU 6095",
+        "EDU 6660"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A23)\nL'option pédagogie universitaire des sciences de la santé de la Maîtrise en sciences de l'éducation comporte 45 crédits et est offerte selon la modalité avec mémoire.",
+    "Segment 70 — Les crédits du segment 70 sont répartis de la façon suivante : 30 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-leducation-option-pedagogie-universitaire-des-sciences-de-la-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:02.084Z"
+}

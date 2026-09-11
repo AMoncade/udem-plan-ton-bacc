@@ -1,0 +1,86 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-administration-de-leducation",
+  "nom": "Microprogramme de 2e cycle en administration de l'éducation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 3 crédits obligatoires et 12 crédits à option.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "ETA 6105",
+        "ETA 6120",
+        "ETA 6160",
+        "ETA 6655",
+        "ETA 6901",
+        "ETA 6917",
+        "ETA 6937",
+        "ETA 6940",
+        "ETA 6947",
+        "ETA 69811",
+        "ETA 69812",
+        "ETA 69831",
+        "ETA 69832",
+        "ETA 6984",
+        "ETA 6997"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours ETA 69611 et ETA 69612 sont équivalents au cours ETA 6961, ETA 6961A ou ETA6961B. Les cours ETA 69811 et ETA 69812 sont équivalents au cours ETA 6981. Les cours ETA 69831 et ETA 69832 sont équivalents au cours ETA 6983."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (H07)\nLe microprogramme comporte un total de 15 crédits de cours du niveau des études supérieures",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 3 crédits obligatoires et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-administration-de-leducation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:17.270Z"
+}

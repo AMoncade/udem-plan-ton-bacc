@@ -1,0 +1,387 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-histoire",
+  "nom": "Maîtrise en histoire",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "recherche",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 36 crédits obligatoires, dont 33 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 6,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "histoire au collégial",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 39 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "histoire en pratique",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 72 sont répartis de la façon suivante : 33 crédits obligatoires, dont 27 crédits attribués à un stage, 3 à 12 crédits à option et un maximum de 9 crédits au choix.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 3,
+          "max": 12
+        },
+        "choix": {
+          "min": 0,
+          "max": 9
+        }
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "HST 6001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Thématiques, historiographie et méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "HST 6014",
+        "HST 6015",
+        "HST 6102",
+        "HST 6103",
+        "HST 6290",
+        "HST 6406",
+        "HST 6448",
+        "HST 6519",
+        "HST 6535",
+        "HST 6551",
+        "HST 6600",
+        "HST 6610",
+        "HST 6615",
+        "HST 6623",
+        "HST 6630",
+        "HST 6635",
+        "HST 6645",
+        "HST 6646",
+        "HST 6647",
+        "HST 6648",
+        "HST 6700",
+        "HST 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisi dans le répertoire de cours de l'Université ou dans celui d'une autre université avec l'approbation du responsable des cycles supérieurs."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et rédaction",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "HST 6025",
+        "HST 6934"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "HST 6001",
+        "HST 69111",
+        "HST 69112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Thématiques, historiographie et méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "HST 6014",
+        "HST 6015",
+        "HST 6102",
+        "HST 6103",
+        "HST 6290",
+        "HST 6406",
+        "HST 6448",
+        "HST 6519",
+        "HST 6535",
+        "HST 6551",
+        "HST 6600",
+        "HST 6610",
+        "HST 6615",
+        "HST 6623",
+        "HST 6630",
+        "HST 6635",
+        "HST 6645",
+        "HST 6646",
+        "HST 6647",
+        "HST 6648",
+        "HST 6700",
+        "HST 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Pédagogie et didactique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "DID 6075",
+        "ETA 6045",
+        "PPA 6015",
+        "PPA 6075",
+        "PPA 6228"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Recherche et rédaction",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "HST 6924",
+        "HST 6934"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "HST 6014",
+        "HST 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Thématiques, historiographie et méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "HST 6102",
+        "HST 6103",
+        "HST 6290",
+        "HST 6406",
+        "HST 6448",
+        "HST 6519",
+        "HST 6535",
+        "HST 6551",
+        "HST 6600",
+        "HST 6610",
+        "HST 6615",
+        "HST 6623",
+        "HST 6630",
+        "HST 6635",
+        "HST 6645",
+        "HST 6646",
+        "HST 6647",
+        "HST 6648",
+        "HST 6700",
+        "HST 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - Maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 1er ou 2e cycle choisi dans le répertoire de cours de l'Université ou dans celui d'une autre université avec l'approbation du responsable des cycles supérieurs. Remarque : un maximum de 6 crédits de cours de 1er cycle est permis."
+      ]
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Stage et essai de stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "HST 6931",
+        "HST 6932"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 13 (A24)\nLa maîtrise comporte 45 crédits répartis de la façon suivante : 33 à 39 crédits obligatoires (dont 27 à 33 crédits attribués à la recherche et à la rédaction d'un mémoire, ou à un stage et à la rédaction d'un essai de stage), de 6 à 9 crédits à option et d'un maximum de 9 crédits au choix.\nElle est offerte avec trois options:\n- l'option recherche (segment 70)\n- l'option histoire au collégial (segment 71)\n- l'option histoire en pratique (segment 72)",
+    "Segment 70 Propre à l'option recherche — Les crédits du segment 70 sont répartis de la façon suivante : 36 crédits obligatoires, dont 33 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 71 Propre à l'option histoire au collégial — Les crédits du segment 71 sont répartis de la façon suivante : 39 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+    "Segment 72 Propre à l'option histoire en pratique — Les crédits du segment 72 sont répartis de la façon suivante : 33 crédits obligatoires, dont 27 crédits attribués à un stage, 3 à 12 crédits à option et un maximum de 9 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-histoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:50.533Z"
+}

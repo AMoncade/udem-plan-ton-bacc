@@ -1,0 +1,95 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2-cycle-en-physiologie",
+  "nom": "Microprogramme de 2e cycle en physiologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 12,
+  "exigences": {
+    "brut": "Les crédits du microprogramme en physiologie sont répartis de la façon suivante: 3 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PSL 6090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "PSL 6001",
+        "PSL 6020",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E",
+        "PSL 6170"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H20)\nLe microprogramme en physiologie comporte 12 crédits.\nLes étudiants qui envisagent utiliser le microprogramme comme passerelle vers la maîtrise, devront obligatoirement avoir complété le PSL 6001 durant leur microprogramme.\nLes étudiants qui auraient au cours de leur B. Sc. suivi et réussi le ou les cours siglés 3000 ne pourront obtenir d'équivalence dans le cadre du microprogramme. Ils devront s'inscrire aux autres cours.",
+    "Segment 70 — Les crédits du microprogramme en physiologie sont répartis de la façon suivante: 3 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2-cycle-en-physiologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:02:16.391Z"
+}

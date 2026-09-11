@@ -1,0 +1,193 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-linguistique",
+  "nom": "Maîtrise en linguistique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 27 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire et 18 crédits à option.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": {
+      "min": 18,
+      "max": 18
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Formation en linguistique fondamentale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "LNG 6300",
+        "LNG 6360",
+        "LNG 6765",
+        "LNG 6775"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation complémentaire en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "LNG 6021",
+        "LNG 6030",
+        "LNG 6105",
+        "LNG 6320",
+        "LNG 6380",
+        "LNG 6390",
+        "LNG 6570",
+        "LNG 6572",
+        "LNG 6581"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compléments de formation en linguistique informatique et appliquée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "IFT 6285",
+        "IFT 6390",
+        "SCI 6203",
+        "TRA 6008",
+        "TRA 6021",
+        "TRA 6117"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Compléments de formation en sociolinguistique",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option ‐ Maximum 3 crédits."
+      },
+      "regleBrut": "Option ‐ Maximum 3 crédits.",
+      "cours": [
+        "ANT 6117",
+        "ANT 6600",
+        "ANT 6630"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Compléments de formation en psycho‐neurolinguistique",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option ‐ Maximum 3 crédits."
+      },
+      "regleBrut": "Option ‐ Maximum 3 crédits.",
+      "cours": [
+        "ETA 6512",
+        "MSO 6061",
+        "MSO 6067",
+        "ORT 6873",
+        "PSE 6573",
+        "PSY 6419"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Cours complémentaires en linguistique",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option ‐ Maximum 6 crédits."
+      },
+      "regleBrut": "Option ‐ Maximum 6 crédits.",
+      "cours": [
+        "LNG 2052",
+        "LNG 2075",
+        "LNG 2095",
+        "LNG 2122",
+        "LNG 2140",
+        "LNG 2240",
+        "LNG 2340",
+        "LNG 3040",
+        "LNG 3045",
+        "LNG 3050",
+        "LNG 3052",
+        "LNG 3070",
+        "LNG 3090",
+        "LNG 3120",
+        "LNG 3400",
+        "LNG 3560"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Obligatoire ‐ 27 crédits."
+      },
+      "regleBrut": "Obligatoire ‐ 27 crédits.",
+      "cours": [
+        "LNG 6957"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A21)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 27 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire et 18 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-linguistique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:57.144Z"
+}

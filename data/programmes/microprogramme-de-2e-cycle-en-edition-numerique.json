@@ -1,0 +1,104 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-edition-numerique",
+  "nom": "Microprogramme de 2e cycle en édition numérique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 12,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "EDN 6001",
+        "EDN 6002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Aspects théoriques et technologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANG 6740",
+        "CIN 6056",
+        "COM 6175",
+        "COM 6421",
+        "EDN 6015",
+        "EDN 6101",
+        "EDN 6103",
+        "FRA 6730",
+        "HNU 6000",
+        "HNU 6051",
+        "HNU 6052",
+        "HNU 6053",
+        "HNU 6054",
+        "HNU 6055",
+        "HNU 6056",
+        "HNU 6057",
+        "HNU 6058",
+        "HNU 6059",
+        "JEU 6002",
+        "LCO 6546",
+        "MSL 6523E",
+        "MSL 6529",
+        "PLU 6060",
+        "SCI 6137",
+        "SCI 6203",
+        "SCI 6304",
+        "SCI 6306",
+        "SCI 6344",
+        "SCI 6348",
+        "SCI 6355",
+        "SCI 6370",
+        "SCI 6373"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A21)\nCe microprogramme comporte 12 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-edition-numerique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:52.421Z"
+}

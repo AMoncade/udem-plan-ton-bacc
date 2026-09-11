@@ -1,0 +1,77 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-soins-palliatifs-et-de-fin-de-vie",
+  "nom": "Microprogramme de 1er cycle en soins palliatifs et de fin de vie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 9,
+  "exigences": {
+    "brut": "Les crédits de ce programme sont répartis de la façon suivante: 6 crédits obligatoires et 3 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "GER 2022D",
+        "SOI 2633"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "AEG 3137",
+        "ANT 3214",
+        "GER 3046D",
+        "REL 3340",
+        "SOL 1967"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H19)\nLe microprogramme de premier cycle comporte 9 crédits.",
+    "Segment 70 — Les crédits de ce programme sont répartis de la façon suivante: 6 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-soins-palliatifs-et-de-fin-de-vie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:55.902Z"
+}

@@ -1,0 +1,86 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-soins-palliatifs-et-de-fin-de-vie",
+  "nom": "Microprogramme de 2e cycle en soins palliatifs et de fin de vie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Le microprogramme comporte 9 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIE 6004",
+        "PAL 6109",
+        "PAL 6112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANT 6155",
+        "ANT 6156",
+        "PAL 6110",
+        "PAL 6111",
+        "PLU 6043",
+        "PSY 6106",
+        "REL 6215",
+        "SOI 6238",
+        "SOI 6239",
+        "SVS 6414",
+        "SVS 6765"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Avec l'accord de la direction du programme, l'étudiant peut choisir tout autre cours de 2e cycle jugé approprié."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A18)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Le microprogramme comporte 9 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-soins-palliatifs-et-de-fin-de-vie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:02:42.087Z"
+}

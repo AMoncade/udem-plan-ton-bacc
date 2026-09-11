@@ -1,0 +1,81 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-etudes-juives",
+  "nom": "Microprogramme de 2e cycle en études juives",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Littératures, arts, culture et histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Pensée et philosophie juive classique et moderne",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "POL 6624"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compléments de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 2020",
+        "FRA 3508",
+        "PHI 3755",
+        "PHI 3870"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H15)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Tous les crédits du microprogramme sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-etudes-juives/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:16.434Z"
+}

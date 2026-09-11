@@ -1,0 +1,267 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-musiques-numeriques",
+  "nom": "Majeure en musiques numériques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 15 crédits obligatoires et 45 crédits à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 45,
+      "max": 45
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MUL 3208X",
+        "MUS 1217",
+        "MUS 1300",
+        "MUS 1321",
+        "MUS 3324X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Électroacoustique et musique numérique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "CIN 2000",
+        "MTE 1503",
+        "MTE 1504",
+        "MTE 3300",
+        "MUS 1330",
+        "MUS 1331",
+        "MUS 2325",
+        "MUS 3322X",
+        "MUS 3323"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Informatique musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "IFT 1135",
+        "IFT 1144",
+        "IFT 1155",
+        "IFT 1166",
+        "IFT 1810",
+        "MUS 1127",
+        "MUS 3127X",
+        "MUS 3326X",
+        "MUS 3328X",
+        "MUS 3329X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Musique et cognition",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUS 1232",
+        "MUS 3321",
+        "NCM 2000",
+        "NCM 2100",
+        "PSY 1006",
+        "PSY 1035",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 3022",
+        "PSY 3033"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Musique et multimédia",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 1105",
+        "CIN 2103",
+        "CIN 2108",
+        "CIN 2110",
+        "CIN 2113",
+        "IFT 1941",
+        "IFT 2720",
+        "MUL 2109",
+        "MUL 2119",
+        "MUS 2327",
+        "MUS 2328",
+        "MUS 3314X",
+        "MUS 3315X",
+        "MUS 4105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Musique et culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "DRT 3812",
+        "HAR 1200",
+        "HAR 2195",
+        "HAR 3900",
+        "MTE 1100",
+        "MTE 1120",
+        "MUL 1102",
+        "MUL 1132",
+        "MUL 1134",
+        "MUL 1246",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 3314",
+        "MUL 3333X",
+        "MUL 3334",
+        "MUL 3335X",
+        "MUL 3344",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1315",
+        "MUS 2134",
+        "MUS 2135",
+        "PLU 2800U",
+        "SOL 1017",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MTE 1100 & 1120 nécessite une prescription obtenue à la suite du test de classement."
+      ]
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Musique d'ensemble",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1363",
+        "MUE 1364",
+        "MUE 1441",
+        "MUE 1442",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1531",
+        "MUE 1611",
+        "MUE 1612",
+        "MUE 1621",
+        "MUE 1622",
+        "MUE 2351",
+        "MUE 2352"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A26)\nLa majeure comporte 60 crédits.",
+    "Segment 70 — Les crédits de la majeure sont répartis de la façon suivante : 15 crédits obligatoires et 45 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-musiques-numeriques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:54.717Z"
+}

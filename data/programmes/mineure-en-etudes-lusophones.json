@@ -1,0 +1,140 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-lusophones",
+  "nom": "Mineure en études lusophones",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la Mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "PTG 1100",
+        "PTG 1220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 21 crédits.",
+      "cours": [
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Lettres et société",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ECN 1971",
+        "HAR 2515",
+        "HAR 3510",
+        "HNU 1000",
+        "HNU 2000",
+        "HST 1041",
+        "HST 1042",
+        "HST 1044",
+        "HST 2351",
+        "HST 2352",
+        "LLM 1000",
+        "LLM 1310"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A14)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la Mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-lusophones/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:47.318Z"
+}

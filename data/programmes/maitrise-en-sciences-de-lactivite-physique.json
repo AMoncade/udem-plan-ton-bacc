@@ -1,0 +1,157 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-lactivite-physique",
+  "nom": "Maîtrise en sciences de l'activité physique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire et 12 crédits à option.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "KIN 6801",
+        "KIN 6802",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Orientation de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "KIN 6501",
+        "KIN 6506",
+        "KIN 6841"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Méthodologie de la recherche et statistiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ASA 6177",
+        "ASA 6704",
+        "MSO 6060",
+        "MSO 6061",
+        "MSO 6312",
+        "PSY 6008",
+        "SOL 6448"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CSS 6100",
+        "KIN 6500",
+        "KIN 6510",
+        "KIN 6515",
+        "KIN 6520",
+        "KIN 6525",
+        "KIN 6530",
+        "KIN 6825",
+        "KIN 6830",
+        "KIN 6831",
+        "KIN 6832",
+        "KIN 6833",
+        "KIN 6837",
+        "KIN 6838",
+        "KIN 6842",
+        "KIN 6843",
+        "KIN 6848"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Choisir parmi les cours suivants avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "KIN 6427"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A22)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-lactivite-physique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:57.782Z"
+}

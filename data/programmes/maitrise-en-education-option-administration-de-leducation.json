@@ -1,0 +1,211 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-education-option-administration-de-leducation",
+  "nom": "Maîtrise en éducation, option Administration de l'éducation",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Préparation à la pièce maitresse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDU 6609"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Pièce maitresse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "EDU 6709",
+        "EDU 67091",
+        "EDU 67092",
+        "EDU 67093"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours EDU67091, EDU67092 et EDU67093 sont équivalents au cours EDU6709."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "ETA 6800",
+        "ETA 6801",
+        "ETA 6802",
+        "ETA 6803",
+        "ETA 6806",
+        "ETA 6825",
+        "ETA 6940",
+        "ETA 6947"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1B",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ETA 6105",
+        "ETA 6120",
+        "ETA 6543",
+        "ETA 6655",
+        "ETA 6807",
+        "ETA 6808",
+        "ETA 6810",
+        "ETA 6917",
+        "ETA 6937",
+        "ETA 69811",
+        "ETA 69812",
+        "ETA 69831",
+        "ETA 69832",
+        "ETA 6984",
+        "ETA 6997",
+        "PPA 6224",
+        "PPA 6278",
+        "PPA 6304",
+        "PPA 6430",
+        "PPA 6432"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2A Enjeux institutionnels et politiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "ETA 6105",
+        "ETA 6120",
+        "ETA 6543",
+        "ETA 6655",
+        "ETA 6917",
+        "ETA 6940"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2B Gestion des établissements",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "ETA 6807",
+        "ETA 6808",
+        "ETA 6809",
+        "ETA 6825",
+        "ETA 6937",
+        "ETA 6997"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2C Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "EDU 6000",
+        "EDU 6001",
+        "ETA 6400",
+        "ETA 6401",
+        "ETA 6810",
+        "ETA 6954",
+        "PPA 6224",
+        "PPA 6278",
+        "PPA 6304",
+        "PPA 6430",
+        "PPA 6432"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A22)\nLa maîtrise comporte 45 crédits.\nElle est offerte selon deux concentrations :\n- concentration leadership et gestion des établissements scolaires\n- concentration administration de l'éducation",
+    "Segment 01 Tronc Commun — Cours communs aux deux concentrations.",
+    "Segment 01 Tronc Commun — Le tronc commun comporte 3 crédits obligatoires et 9 crédits à option.",
+    "Segment 70 C1 Concentration leadership et gestion des établissements scolaires — Les crédits de cette concentration sont répartis de la façon suivante : 24 crédits obligatoires et 9 crédits à option.",
+    "Segment 70 C2 Concentration administration de l'éducation — Les crédits de cette concentration sont tous à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-education-option-administration-de-leducation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:02.262Z"
+}

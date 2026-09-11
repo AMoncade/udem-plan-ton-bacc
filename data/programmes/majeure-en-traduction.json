@@ -1,0 +1,321 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-traduction",
+  "nom": "Majeure en traduction",
+  "orientation": null,
+  "segments": [
+    "01",
+    "73"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Transfert linguistique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "TRA 1500",
+        "TRA 1550",
+        "TRA 2505",
+        "TRA 2650",
+        "TRA 3555"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Communication",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire- 12 crédits.",
+      "cours": [
+        "TRA 1005",
+        "TRA 1015",
+        "TRA 1300",
+        "TRA 2330"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Recherche et outils informatiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "TRA 1400",
+        "TRA 1600",
+        "TRA 2600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Terminologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 2450",
+        "TRA 3455"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Exercice de la profession",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 3900",
+        "TRA 3915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Évolution de la discipline",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 2115",
+        "TRA 3125"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours TRA2115 et TRA3125 sont fortement recommandés aux étudiants désireux de poursuivre leurs études en recherche aux études supérieures. Valider auprès des responsables le cheminement approprié le cas échéant."
+      ]
+    },
+    {
+      "id": "01G",
+      "cle": "01/01G",
+      "segment": "01",
+      "nom": "Anglais",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "TRA 1025",
+        "TRA 1750",
+        "TRA 2750"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants seront classés selon leurs connaissances à l'arrivée à l'Université par un test d'admission. Les personnes classées de niveau 1 pourront suivre le cours TRA1025 et celles de niveau 2 pourront suivre le cours TRA1750 ou TRA2750. L'inscription à ce cours doit être faite par le département."
+      ]
+    },
+    {
+      "id": "01H",
+      "cle": "01/01H",
+      "segment": "01",
+      "nom": "Formation en contexte professionnel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "TRA 2900",
+        "TRA 2920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Langues et notions",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "TRA 2210",
+        "TRA 2220",
+        "TRA 2240",
+        "TRA 2260"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Filière scientifique et technique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2515",
+        "TRA 3250",
+        "TRA 3355",
+        "TRA 3515"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Filière juridique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 3565"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Filière biomédicale et pharmaceutique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2545",
+        "TRA 3545"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Filière commerciale, économique et administrative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2525",
+        "TRA 3525",
+        "TRA 3575"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73F",
+      "cle": "73/73F",
+      "segment": "73",
+      "nom": "Filière littéraire et multimodale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2570",
+        "TRA 3580",
+        "TRA 3590"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A22)\nLa majeure comporte 60 crédits.\nLes crédits sont répartis de la façon suivante: les 42 crédits obligatoires du tronc commun (segment 01) et 18 crédits à option (de 6 à 12 crédits dans le segment 01 et de 6 à 12 crédits dans le segment 73).",
+    "Segment 01 — Les crédits du segment 01 sont répartis de la façon suivante : 42 crédits obligatoires et 6 à 12 crédits à option.",
+    "Segment 73 Traduction spécialisée — Les crédits du segment 73 sont répartis de la façon suivante: de 6 à 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-traduction/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:22.174Z"
+}

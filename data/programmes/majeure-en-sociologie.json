@@ -1,0 +1,189 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-sociologie",
+  "nom": "Majeure en sociologie",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante: 18 crédits obligatoires, 39 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 39,
+      "max": 39
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Bases théoriques et méthodologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "SOL 1013",
+        "SOL 1015",
+        "SOL 1017",
+        "SOL 1018",
+        "SOL 1020",
+        "SOL 1090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Cours thématiques en sociologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Option - 36 crédits.",
+      "cours": [
+        "SOL 1012",
+        "SOL 1016",
+        "SOL 1102",
+        "SOL 1150",
+        "SOL 1400",
+        "SOL 1967",
+        "SOL 2015",
+        "SOL 2016",
+        "SOL 2017",
+        "SOL 2018",
+        "SOL 2020",
+        "SOL 2027",
+        "SOL 2050",
+        "SOL 2090",
+        "SOL 2103",
+        "SOL 2104",
+        "SOL 2105",
+        "SOL 2107",
+        "SOL 2111",
+        "SOL 2200",
+        "SOL 2201",
+        "SOL 2301",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 2503",
+        "SOL 2511",
+        "SOL 3012",
+        "SOL 3017",
+        "SOL 3026",
+        "SOL 3035",
+        "SOL 3051",
+        "SOL 3104",
+        "SOL 3107",
+        "SOL 3201",
+        "SOL 3221",
+        "SOL 3351",
+        "SOL 3402",
+        "SOL 3404",
+        "SOL 3406",
+        "SOL 3407",
+        "SOL 3410",
+        "SOL 3505",
+        "SOL 3604"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Y",
+      "cle": "72/72Y",
+      "segment": "72",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ANG 1911",
+        "ANT 1010",
+        "ANT 1511",
+        "ANT 2088",
+        "ANT 3030",
+        "CRI 1950",
+        "DMO 1000",
+        "DMO 1200",
+        "DMO 2200",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "FEM 3300",
+        "GEO 1212",
+        "GEO 1222",
+        "HST 1052",
+        "HST 1063",
+        "JOU 1200",
+        "MUL 3334",
+        "PHI 1400",
+        "POL 1954",
+        "PSY 1045",
+        "PSY 1095",
+        "PSY 1983",
+        "REI 1030",
+        "REL 1340",
+        "SVS 1160",
+        "SVS 2103",
+        "SVS 2378",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que le sigle SOL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 11 (A05)\nLa majeure comporte 60 crédits.",
+    "Segment 72 — Les crédits de la majeure sont répartis de la façon suivante: 18 crédits obligatoires, 39 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-sociologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:16.411Z"
+}

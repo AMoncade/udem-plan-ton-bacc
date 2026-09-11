@@ -1,0 +1,95 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-dinitiation-a-la-programmation",
+  "nom": "Microprogramme de 1er cycle d'initiation à la programmation",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 12,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 3 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "IFT 1810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 1166",
+        "IFT 1170",
+        "IFT 1175",
+        "IFT 1179"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "IFT 1169",
+        "IFT 1176"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H06)\nLe microprogramme de premier cycle comporte 12 crédits.",
+    "Segment 72 — Les crédits du microprogramme sont répartis de la façon suivante : 3 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-dinitiation-a-la-programmation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:34.340Z"
+}

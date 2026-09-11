@@ -1,0 +1,73 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-perfusion-extracorporelle-m-sc",
+  "nom": "Maîtrise en perfusion extracorporelle",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "CHI 6001A",
+        "CHI 6001B",
+        "CHI 6905",
+        "CHI 6910",
+        "CHI 6911A",
+        "CHI 6911B",
+        "CHI 6912",
+        "CHI 6913",
+        "CHI 6992A",
+        "CHI 6992B",
+        "CHI 6992C",
+        "MMD 6005R",
+        "PHL 6064"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "CHI 6810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A24)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits du programme sont répartis de la façon suivante : 45 crédits obligatoires, dont 9 crédits attribués à la rédaction d'un travail dirigé."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-perfusion-extracorporelle-m-sc/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:25.347Z"
+}

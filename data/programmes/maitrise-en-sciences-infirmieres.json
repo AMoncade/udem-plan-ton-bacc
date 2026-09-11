@@ -1,0 +1,647 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-infirmieres",
+  "nom": "Maîtrise en sciences infirmières",
+  "orientation": null,
+  "segments": [
+    "80",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85"
+  ],
+  "orientations": [
+    {
+      "nom": "pratique avancée",
+      "segments": [
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SOI 6022",
+        "SOI 6102",
+        "SOI 6186",
+        "SOI 6237"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SOI 6172",
+        "SPU 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PAL 6109",
+        "PAL 6112",
+        "PLU 6043",
+        "SOI 6230",
+        "SOI 6238",
+        "SOI 6239",
+        "SOI 6264",
+        "SOI 6920",
+        "SOI 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de 2e cycle dans le répertoire de l'UdeM avec l'approbation du directeur."
+      ]
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Mémoire-recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SOI 6220",
+        "SOI 6243",
+        "SOI 6244",
+        "SOI 6251"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SOI 6022",
+        "SOI 6102",
+        "SOI 6189",
+        "SOI 6237"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SOI 6172",
+        "SPU 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ETA 6065",
+        "PPA 6075",
+        "PPA 6228",
+        "SOI 6192",
+        "SOI 6230",
+        "SOI 6264",
+        "SOI 6920",
+        "SOI 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de 2e cycle dans le répertoire de l'UdeM avec l'approbation du directeur."
+      ]
+    },
+    {
+      "id": "81E",
+      "cle": "81/81E",
+      "segment": "81",
+      "nom": "Mémoire-recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SOI 6220",
+        "SOI 6243",
+        "SOI 6244",
+        "SOI 6251"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SOI 6022",
+        "SOI 6102",
+        "SOI 6213",
+        "SOI 6237"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SOI 6172",
+        "SPU 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82C",
+      "cle": "82/82C",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "SOI 6230",
+        "SOI 6264",
+        "SOI 6900",
+        "SOI 6920",
+        "SOI 6940",
+        "SOI 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82D",
+      "cle": "82/82D",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de 2e cycle dans le répertoire de l'UdeM avec l'approbation du directeur."
+      ]
+    },
+    {
+      "id": "82E",
+      "cle": "82/82E",
+      "segment": "82",
+      "nom": "Mémoire-recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SOI 6220",
+        "SOI 6243",
+        "SOI 6244",
+        "SOI 6251"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83A",
+      "cle": "83/83A",
+      "segment": "83",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "SOI 6022",
+        "SOI 6102",
+        "SOI 6177",
+        "SOI 6186",
+        "SOI 6237"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83B",
+      "cle": "83/83B",
+      "segment": "83",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PAL 6109",
+        "PAL 6112",
+        "PLU 6043",
+        "SOI 6230",
+        "SOI 6238",
+        "SOI 6239",
+        "SOI 6264",
+        "SOI 6920",
+        "SOI 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83C",
+      "cle": "83/83C",
+      "segment": "83",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de 2e cycle dans le répertoire de l'UdeM avec l'approbation du directeur."
+      ]
+    },
+    {
+      "id": "83D",
+      "cle": "83/83D",
+      "segment": "83",
+      "nom": "Mémoire et practicum",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SOI 6243",
+        "SOI 6244",
+        "SOI 6251",
+        "SOI 6288",
+        "SOI 6289",
+        "SOI 6290"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "84A",
+      "cle": "84/84A",
+      "segment": "84",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "SOI 6022",
+        "SOI 6102",
+        "SOI 6177",
+        "SOI 6189",
+        "SOI 6237"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "84B",
+      "cle": "84/84B",
+      "segment": "84",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ETA 6065",
+        "PPA 6075",
+        "PPA 6228",
+        "SOI 6192",
+        "SOI 6230",
+        "SOI 6264",
+        "SOI 6920",
+        "SOI 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "84C",
+      "cle": "84/84C",
+      "segment": "84",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de 2e cycle dans le répertoire de l'UdeM avec l'approbation du directeur."
+      ]
+    },
+    {
+      "id": "84D",
+      "cle": "84/84D",
+      "segment": "84",
+      "nom": "Mémoire et practicum",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SOI 6243",
+        "SOI 6244",
+        "SOI 6251",
+        "SOI 6288",
+        "SOI 6289",
+        "SOI 6290"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "85A",
+      "cle": "85/85A",
+      "segment": "85",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "SOI 6022",
+        "SOI 6102",
+        "SOI 6177",
+        "SOI 6213",
+        "SOI 6237"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "85B",
+      "cle": "85/85B",
+      "segment": "85",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "SOI 6230",
+        "SOI 6264",
+        "SOI 6900",
+        "SOI 6920",
+        "SOI 6940",
+        "SOI 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "85C",
+      "cle": "85/85C",
+      "segment": "85",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de 2e cycle dans le répertoire de l'UdeM avec l'approbation du directeur."
+      ]
+    },
+    {
+      "id": "85D",
+      "cle": "85/85D",
+      "segment": "85",
+      "nom": "Mémoire et practicum",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SOI 6243",
+        "SOI 6244",
+        "SOI 6251",
+        "SOI 6288",
+        "SOI 6289",
+        "SOI 6290"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 12 (A20)\nLa maîtrise comporte 45 crédits. Elle est offerte avec la modalité mémoire (mémoire de recherche à 24 crédits ou mémoire avec practicum à 18 crédits), selon les six options suivantes:\n- Option pratique avancée : expertise clinique (Segment 80)\n- Option pratique avancée : formation infirmière (Segment 81)\n- Option pratique avancée : gestion de proximité (Segment 82)\n- Option pratique avancée : expertise clinique et intervention (Segment 83)\n- Option pratique avancée : formation infirmière et intervention (Segment 84)\n- Option pratique avancée : gestion de proximité et intervention (Segment 85)\nMémoire de recherche (24 crédits): pour une formation plus poussée à la recherche dans un domaine de la pratique infirmière avancée, donnant accès au doctorat en sciences infirmières.\nMémoire avec practicum (18 crédits): pour une formation à la recherche et à l'exercice d'un rôle de pratique infirmière avancée, donnant accès au doctorat en sciences infirmières.",
+    "Segment 80 Propre à l'option Pratique avancée: expertise clinique — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 81 Propre à l'option Pratique avancée: formation infirmière — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 82 Propre à l'option Pratique avancée: gestion de proximité — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 83 Propre à l'option Pratique avancée: expertise clinique intervention — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 18 crédits attribués à un mémoire, et un maximum de 3 crédits à option ou au choix.",
+    "Segment 84 Propre à l'option Pratique avancée: formation infirmière intervention — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 18 crédits attribués à un mémoire, et un maximum de 3 crédits à option ou au choix.",
+    "Segment 85 Propre à l'option Pratique avancée: gestion proximité et intervention — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 18 crédits attribués à un mémoire, et un maximum 3 crédits à option ou au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-infirmieres/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:25.225Z"
+}

@@ -1,0 +1,153 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-humanites-numeriques",
+  "nom": "Mineure en humanités numériques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 9 crédits obligatoires, 18 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 18,
+      "max": 18
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Théories et fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "HNU 1000",
+        "HNU 2000",
+        "HNU 3000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Ateliers techniques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "HNU 3051",
+        "HNU 3052",
+        "HNU 3053",
+        "HNU 3054",
+        "HNU 3055",
+        "HNU 3056",
+        "HNU 3057",
+        "HNU 3058",
+        "HNU 3059"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compléments disciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "ANT 1611",
+        "ART 2060",
+        "ART 2102",
+        "CIN 2113",
+        "COM 1300",
+        "COM 2215",
+        "COM 2590",
+        "COM 2920",
+        "DMO 2700",
+        "ETM 1400",
+        "FAS 1001",
+        "FAS 1002",
+        "FAS 1003",
+        "FAS 3001",
+        "FAS 3002",
+        "FRA 2805",
+        "FRA 3500",
+        "FRA 3715",
+        "FRA 3825",
+        "FRA 3826",
+        "HOR 3200",
+        "HST 2007",
+        "IFT 1015",
+        "INU 1001",
+        "LCO 1001",
+        "LCO 2030",
+        "LCO 2090",
+        "LCO 3060",
+        "LNG 2095",
+        "LNG 3120",
+        "PHI 1130",
+        "PHI 1300",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A22)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la mineure sont répartis de la façon suivante : 9 crédits obligatoires, 18 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-humanites-numeriques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:04.477Z"
+}

@@ -1,0 +1,81 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-gestion-des-services-de-sante-et-des-services-sociaux",
+  "nom": "Microprogramme de 1er cycle en gestion des services de santé et des services sociaux",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "ASA 1050G",
+        "SPU 1000G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ASA 1910G",
+        "ASA 2000G",
+        "ASA 2010G",
+        "ASA 2221G",
+        "ASA 2350G",
+        "ASA 3150G",
+        "ASA 3250G",
+        "ASA 3300G",
+        "ASA 3620G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A22)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 9 crédits à option. Les cours ASA1050G et SPU1000G doivent être suivis en début de programme."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-gestion-des-services-de-sante-et-des-services-sociaux/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:01.565Z"
+}

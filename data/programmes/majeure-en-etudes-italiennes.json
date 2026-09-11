@@ -1,0 +1,215 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-etudes-italiennes",
+  "nom": "Majeure en études italiennes",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 6 crédits obligatoires, 51 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 51,
+      "max": 51
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Civilisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "ITL 1120",
+        "ITL 2195"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 24 crédits.",
+      "cours": [
+        "ITL 1070",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "ITL 3002",
+        "ITL 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Littérature et société",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "ITL 1141",
+        "ITL 2120",
+        "ITL 2160",
+        "ITL 2270",
+        "ITL 2310",
+        "ITL 2350",
+        "ITL 3075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "L'Italie dans la Méditerranée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 3867",
+        "ARA 2050",
+        "CTL 1120",
+        "ESP 1215",
+        "ESP 2400",
+        "HST 2284",
+        "HST 3210",
+        "ITL 2880"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Les arts",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "HAR 1090",
+        "HAR 2089",
+        "HAR 2090",
+        "HAR 2361",
+        "HAR 3420",
+        "MUL 1105",
+        "PHI 2255"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Y",
+      "cle": "72/72Y",
+      "segment": "72",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ETM 1200",
+        "ETM 1400",
+        "HGL 1031",
+        "HNU 1000",
+        "HNU 2000",
+        "HST 1032",
+        "HST 1041",
+        "HST 2108",
+        "HST 2109",
+        "LCO 1008",
+        "LCO 2011",
+        "LCO 2040",
+        "LCO 3010",
+        "LLM 1000",
+        "LLM 1310",
+        "LLM 2000",
+        "LNG 2340",
+        "TRA 2115",
+        "TRA 3125"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A03)\nLa majeure comporte 60 crédits.",
+    "Segment 72 — Les crédits de la majeure sont répartis de la façon suivante : 6 crédits obligatoires, 51 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-etudes-italiennes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:29.854Z"
+}

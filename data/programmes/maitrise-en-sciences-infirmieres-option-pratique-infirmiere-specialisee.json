@@ -1,0 +1,140 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-infirmieres-option-pratique-infirmiere-specialisee",
+  "nom": "Maîtrise en sciences infirmières, option pratique infirmière spécialisée",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 37 crédits obligatoires, dont 19 crédits attribués à des stages, et 8 crédits à option.",
+    "obligatoire": {
+      "min": 37,
+      "max": 37
+    },
+    "option": {
+      "min": 8,
+      "max": 8
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "SOI 6102",
+        "SOI 6202",
+        "SOI 6237",
+        "SOI 62481",
+        "SOI 62482",
+        "SOI 6249",
+        "SOI 6264",
+        "SOI 64151",
+        "SOI 64152"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Selon la trajectoire établie, certains cours du Bloc 70A doivent être suivis de façon concomitante aux stages."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Évaluation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Option - 5 crédits.",
+      "cours": [
+        "SOI 61661",
+        "SOI 61662",
+        "SOI 65071",
+        "SOI 65072"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PAL 6109",
+        "PAL 6110",
+        "PAL 6111",
+        "PAL 6112",
+        "SOI 6022",
+        "SOI 6034",
+        "SOI 6177",
+        "SOI 6189",
+        "SOI 6213",
+        "SOI 6230",
+        "SOI 6238",
+        "SOI 6940",
+        "SOI 6941",
+        "SVS 6442",
+        "SVS 6473"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 19,
+          "max": 19
+        }
+      },
+      "regleBrut": "Obligatoire - 19 crédits.",
+      "cours": [
+        "SOM 6418",
+        "SOM 6419"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Pour s'inscrire au Bloc 70D, la personne étudiante doit avoir une moyenne cumulative d'au moins 2.7. Les cours du Bloc 70D sont évalués par la mention succès ou échec et ils ne contribuent pas au calcul de la moyenne cumulative."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 04 (A23)\nLa maîtrise comporte 45 crédits.\nL'option pratique infirmière spécialisée est offerte selon la modalité avec stage.",
+    "Segment 70 Propre à l'option pratique infirmière spécialisée — Les crédits sont répartis de la façon suivante : 37 crédits obligatoires, dont 19 crédits attribués à des stages, et 8 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-infirmieres-option-pratique-infirmiere-specialisee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:25.447Z"
+}

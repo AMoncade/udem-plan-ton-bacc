@@ -1,0 +1,314 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-sciences-biologiques",
+  "nom": "Majeure en sciences biologiques",
+  "orientation": null,
+  "segments": [
+    "81"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 17 crédits obligatoires, 40 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 17,
+      "max": 17
+    },
+    "option": {
+      "min": 40,
+      "max": 40
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "Connaissances fondamentales en biologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 17,
+          "max": 17
+        }
+      },
+      "regleBrut": "Obligatoire - 17 crédits.",
+      "cours": [
+        "BIO 1153",
+        "BIO 1203",
+        "BIO 1284",
+        "BIO 1334",
+        "BIO 1434",
+        "BIO 1803"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "Microbiologie et immunologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 25
+        }
+      },
+      "regleBrut": "Option - Maximum 25 crédits.",
+      "cours": [
+        "MCB 1979",
+        "MCB 2094",
+        "MCB 2979",
+        "MCB 2985",
+        "MCB 2987",
+        "MCB 2999",
+        "MCB 3095",
+        "MCB 3637",
+        "MCB 3984"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "Biologie moléculaire, cellulaire et des organismes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 25
+        }
+      },
+      "regleBrut": "Option - Maximum 25 crédits.",
+      "cours": [
+        "BIO 1534",
+        "BIO 1634",
+        "BIO 2102",
+        "BIO 2150",
+        "BIO 2162",
+        "BIO 2372",
+        "BIO 2402",
+        "BIO 2412",
+        "BIO 2541",
+        "BIO 3150",
+        "BIO 3160",
+        "BIO 3682"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Biodiversité, écologie et évolution",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Maximum 24 crédits.",
+      "cours": [
+        "BIO 2350",
+        "BIO 2405",
+        "BIO 2811",
+        "BIO 2820",
+        "BIO 2821",
+        "BIO 2855",
+        "BIO 2862",
+        "BIO 3043",
+        "BIO 3203",
+        "BIO 3204",
+        "BIO 3293",
+        "BIO 3721",
+        "BIO 3754",
+        "BIO 3801",
+        "BIO 3851",
+        "BIO 3872",
+        "BIO 3893"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81E",
+      "cle": "81/81E",
+      "segment": "81",
+      "nom": "Cours pratiques en laboratoire, sur le terrain et stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ANT 3476",
+        "BIO 1001",
+        "BIO 2050",
+        "BIO 2155",
+        "BIO 2255",
+        "BIO 2432",
+        "BIO 2720",
+        "BIO 3020",
+        "BIO 3050",
+        "BIO 3080",
+        "BIO 3753",
+        "BIO 3756",
+        "BIO 3843"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81F",
+      "cle": "81/81F",
+      "segment": "81",
+      "nom": "Disciplines biologiques diverses",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 26
+        }
+      },
+      "regleBrut": "Option - Maximum 26 crédits.",
+      "cours": [
+        "BIO 2260",
+        "BIO 2306",
+        "BIO 2315",
+        "BIO 2386",
+        "BIO 2431",
+        "BIO 2440",
+        "BIO 2470",
+        "BIO 2471",
+        "BIO 2476",
+        "BIO 2478",
+        "BIO 2480",
+        "BIO 2490",
+        "BIO 2621",
+        "BIO 3002",
+        "BIO 3008",
+        "BIO 3044",
+        "BIO 3390",
+        "BIO 3659",
+        "BIO 3665",
+        "BIO 3781",
+        "BIO 3790",
+        "BIO 3831",
+        "BIO 3839",
+        "BIO 3900",
+        "PHL 2025",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81G",
+      "cle": "81/81G",
+      "segment": "81",
+      "nom": "Connaissances en biologie quantitative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "BIO 2041",
+        "BIO 2042",
+        "BIO 2044",
+        "BIO 2045",
+        "BIO 3033",
+        "BIO 3044",
+        "BIO 3207",
+        "BIO 3866"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81H",
+      "cle": "81/81H",
+      "segment": "81",
+      "nom": "Connaissances connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1913",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "ANT 2454",
+        "BCM 1501",
+        "CHM 1600",
+        "CHM 1950",
+        "CHM 1984",
+        "DRT 1004",
+        "GEO 1312",
+        "GEO 2122",
+        "GEO 3132",
+        "GER 1016D",
+        "HOR 1200",
+        "HOR 3200",
+        "PHI 1130",
+        "PHI 1365",
+        "PHI 2480",
+        "PHY 1972",
+        "PHY 1973",
+        "SOL 2200",
+        "URB 1114"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81Z",
+      "cle": "81/81Z",
+      "segment": "81",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les 3 crédits au choix sont obligatoires et ne sont pas de sigle BIO."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 16 (A25)\nLa majeure comporte 60 crédits.",
+    "Segment 81 — Les crédits de la majeure sont répartis de la façon suivante : 17 crédits obligatoires, 40 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-sciences-biologiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:10.719Z"
+}

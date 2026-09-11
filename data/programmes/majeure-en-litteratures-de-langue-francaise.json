@@ -1,0 +1,414 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-litteratures-de-langue-francaise",
+  "nom": "Majeure en littératures de langue française",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 36,
+      "max": 36
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Outils fondamentaux de lecture et d'analyse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "FRA 1000",
+        "FRA 1005",
+        "FRA 1009",
+        "FRA 1027"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Lectures critiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "FRA 2007",
+        "FRA 2008",
+        "FRA 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Introduction aux littératures du Moyen Âge et de l'Ancien Régime",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FRA 1100",
+        "FRA 1102",
+        "FRA 1110",
+        "FRA 1160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Introduction aux littératures modernes et contemporaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FRA 1120",
+        "FRA 1130",
+        "FRA 1140",
+        "FRA 1161"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Initiation à l'analyse et à l'écriture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "FRA 1203",
+        "FRA 1204",
+        "FRA 1205",
+        "FRA 1260",
+        "FRA 1705",
+        "FRA 1706",
+        "FRA 1707"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Histoire des littératures",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FRA 2100",
+        "FRA 2103",
+        "FRA 2110",
+        "FRA 2111",
+        "FRA 2112",
+        "FRA 2124",
+        "FRA 2131",
+        "FRA 2141",
+        "FRA 2142",
+        "FRA 2143",
+        "FRA 2180",
+        "FRA 2181",
+        "FRA 2183",
+        "FRA 2184",
+        "FRA 2620"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Poétiques et parcours de lecture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FRA 2203",
+        "FRA 2204",
+        "FRA 2210",
+        "FRA 2220",
+        "FRA 2221",
+        "FRA 2241",
+        "FRA 2261",
+        "FRA 2263",
+        "FRA 2264",
+        "FRA 2265",
+        "FRA 2284",
+        "FRA 2285",
+        "FRA 2615",
+        "FRA 3220",
+        "FRA 3230",
+        "FRA 3241",
+        "FRA 3242"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Théories",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "FRA 1980",
+        "FRA 2012",
+        "FRA 2223",
+        "FRA 2311",
+        "FRA 2314",
+        "FRA 2318",
+        "FRA 3302",
+        "FRA 3306",
+        "FRA 3308",
+        "FRA 3310",
+        "FRA 3313",
+        "FRA 3314",
+        "FRA 3359",
+        "FRA 3360"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Langue française",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ETM 1200",
+        "FRA 1013",
+        "LNG 1050",
+        "LNG 1061G",
+        "LNG 1062G",
+        "LNG 1126",
+        "LNG 1955",
+        "LNG 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Études interdisciplinaires et culturelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FRA 2500",
+        "FRA 2517",
+        "FRA 3500",
+        "FRA 3503",
+        "FRA 3508",
+        "FRA 3511",
+        "FRA 3641"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70K",
+      "cle": "70/70K",
+      "segment": "70",
+      "nom": "Compléments ét. interdisciplinaires/culturelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CIN 2110",
+        "FEM 3300",
+        "LCO 1001",
+        "LCO 1020",
+        "LCO 2030",
+        "LCO 2100",
+        "LCO 2300",
+        "LCO 3001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70L",
+      "cle": "70/70L",
+      "segment": "70",
+      "nom": "Pratiques d'écriture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "FRA 2707",
+        "FRA 2760",
+        "FRA 2807",
+        "FRA 3709",
+        "FRA 3715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70M",
+      "cle": "70/70M",
+      "segment": "70",
+      "nom": "Compléments aux pratiques d'écriture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CIN 2107",
+        "CIN 2109",
+        "CIN 3104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70N",
+      "cle": "70/70N",
+      "segment": "70",
+      "nom": "Métiers de l'édition et de la culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ETM 1400",
+        "FRA 2805",
+        "FRA 3180",
+        "FRA 3819",
+        "FRA 3825",
+        "FRA 3826",
+        "SCI 2955"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les trois crédits de cours au choix ne sont pas de sigle FRA."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 04 (A23)\nLa majeure comporte 60 crédits.",
+    "Segment 70 — Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-litteratures-de-langue-francaise/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:53.111Z"
+}

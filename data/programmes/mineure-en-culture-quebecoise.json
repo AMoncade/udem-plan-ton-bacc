@@ -1,0 +1,197 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-culture-quebecoise",
+  "nom": "Mineure en culture québécoise",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires et 24 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 24,
+      "max": 24
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "QCF 1951",
+        "QCF 1952"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Pratiques artistiques et littéraires au Québec",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 1380",
+        "ANG 1401",
+        "CIN 2102",
+        "FRA 1130",
+        "FRA 2111",
+        "FRA 2131",
+        "FRA 2264",
+        "FRA 2620",
+        "FRA 3230",
+        "FRA 3500",
+        "HAR 2115",
+        "HAR 2195",
+        "HAR 2196",
+        "HAR 2717",
+        "LCO 1080"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Communautés culturelles au Québec et identités de genre",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANT 3030",
+        "ANT 3854",
+        "AUT 2500",
+        "FEM 2000",
+        "FEM 3200",
+        "HST 2401",
+        "HST 2402",
+        "HST 2430",
+        "HST 2446",
+        "HST 3440",
+        "HST 3441",
+        "HST 3510",
+        "ITL 2270",
+        "SOL 3404"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Approches de la culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 1005",
+        "ANG 2006",
+        "ANT 1020",
+        "ANT 1611",
+        "ANT 2031",
+        "ANT 2040",
+        "ANT 2042",
+        "ANT 2043",
+        "ANT 2050",
+        "ANT 3625",
+        "COM 2320",
+        "COM 2720",
+        "COM 2925",
+        "DIN 3211",
+        "FRA 2284",
+        "FRA 3508",
+        "GEO 2242",
+        "HST 2013",
+        "LCO 2100",
+        "LCO 2300",
+        "MUS 2135",
+        "SOL 1150",
+        "SOL 2111",
+        "SOL 2301",
+        "SOL 3351"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Perspectives sur le Québec",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANT 3851",
+        "ARC 3104",
+        "GEO 1412",
+        "HST 1051",
+        "HST 1052",
+        "HST 2443",
+        "HST 2875",
+        "HST 2904",
+        "HST 3430",
+        "HST 3432",
+        "LNG 1126",
+        "LNG 2100",
+        "LNG 2140",
+        "QCF 1050",
+        "REL 2310",
+        "REL 2320",
+        "URB 1111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A25)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires et 24 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-culture-quebecoise/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:11.690Z"
+}

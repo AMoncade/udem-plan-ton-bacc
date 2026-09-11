@@ -1,0 +1,199 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-medievales",
+  "nom": "Mineure en études médiévales",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires et 24 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 24,
+      "max": 24
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Introductions",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "FRA 1100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Langues médiévales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "ALL 2340",
+        "ANG 2020",
+        "ESP 3517",
+        "ETM 1200",
+        "ETM 2200",
+        "FRA 2031",
+        "LNG 1050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Outils",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ETM 1400",
+        "ETM 3202",
+        "FRA 3180",
+        "HST 2001",
+        "HST 2101"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le cours HIS4809 L'âge du manuscrit en Occident : l'art et la science de l'écrit, IVe-XVIIIe siècles offert à l'UQÀM est équivalent au cours HST2001."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Histoire médiévale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ETM 2008",
+        "ETM 2102",
+        "HST 1070",
+        "HST 2109",
+        "HST 2125",
+        "HST 2126",
+        "HST 2128",
+        "HST 2132",
+        "HST 2139",
+        "HST 3108",
+        "HST 3130",
+        "HST 3131"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours HIS4206 L'aventure scandinave, des Vikings aux Normands, HIS4212 Culture et société au Moyen Âge (Ve-XIIIe siècles) et HIS4218 Histoire des Croisades (XIe-XIIIe siècles) offerts à l'UQÀM sont respectivement équivalents aux cours HST2139, HST3130 et HST2132."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Culture médiévale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANG 1031",
+        "FRA 2100",
+        "FRA 2203",
+        "HAR 2070",
+        "HAR 2073",
+        "HAR 3056",
+        "PHI 1860",
+        "PHI 2870",
+        "PHI 3870",
+        "REL 1230",
+        "REL 2360"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours PHI1013 Introduction à la philosophie médiévale et REL2348 Islam offerts à l'UQÀM sont respectivement équivalents aux cours PHI1860 et REL1230."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Langues classiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "LAT 1111",
+        "LAT 1121",
+        "REL 1720",
+        "REL 1721"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours ARA1410 Arabe I (débutant 1) et ARA2410 Arabe III : Compréhension de documents (intermédiaire 1) offerts à l'UQÀM sont respectivement équivalents aux cours ARA1901 et ARA1903. Les cours SHM5011 Initiation au grec I et SHM5012 Initiation au grec II offerts à l'UQÀM sont respectivement équivalents aux cours GRC1111 et GRC1121. Les cours SHM5001 Initiation au latin I et SHM5002 Initiation au latin II offerts à l'UQÀM sont respectivement équivalents aux cours LAT1111 et LAT1121."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A25)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires et 24 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-medievales/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:48.996Z"
+}

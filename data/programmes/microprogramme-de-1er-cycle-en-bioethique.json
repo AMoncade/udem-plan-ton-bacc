@@ -1,0 +1,81 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-bioethique",
+  "nom": "Microprogramme de 1er cycle en bioéthique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Le microprogramme comporte 15 crédits répartis de la façon suivante : 9 crédits de cours obligatoires et 6 crédits de cours à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Cours obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIE 1000",
+        "BIE 2001",
+        "BIE 2002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Théories et fondements de la bioéthique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "BIE 2003",
+        "PHI 1400",
+        "PHI 2406",
+        "PHI 2415",
+        "PHI 2417",
+        "PHI 3615",
+        "PHI 3625",
+        "REL 1340"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)\nLe microprogramme comporte 15 crédits.",
+    "Segment 71 — Le microprogramme comporte 15 crédits répartis de la façon suivante : 9 crédits de cours obligatoires et 6 crédits de cours à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-bioethique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:47.445Z"
+}

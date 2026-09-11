@@ -1,0 +1,172 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-jeu-video",
+  "nom": "Majeure en jeu vidéo",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "La majeure en jeu vidéo est composée de 42 crédits obligatoires, 15 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 42,
+      "max": 42
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours fondamentaux - Théorie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "JEU 1001",
+        "JEU 1002",
+        "JEU 1003",
+        "JEU 1007",
+        "JEU 1008",
+        "JEU 1011",
+        "JEU 2001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours fondamentaux - Pratique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ART 2101",
+        "DEJ 1101",
+        "IFT 1119",
+        "JEU 1103",
+        "JEU 2101",
+        "MUS 1327"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Approfondissement pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "IFT 2200",
+        "IFT 2740",
+        "MUS 2327"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "AES 2070",
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1105",
+        "CIN 2110",
+        "CIN 2113",
+        "COM 1350",
+        "COM 1600",
+        "COM 2200",
+        "COM 2710",
+        "FRA 3500",
+        "FRA 3715",
+        "HAR 1210",
+        "HAR 2330",
+        "HST 1063",
+        "IFT 1935",
+        "JEU 1004",
+        "JEU 1005",
+        "LCO 2030",
+        "LCO 2100",
+        "PHI 1255",
+        "PHI 2255",
+        "POL 1000",
+        "POL 1008",
+        "PSY 1045",
+        "PSY 1075",
+        "SOL 3410",
+        "TRA 2570"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que les sigles CIN et JEU."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A24)\nLa majeure comporte 60 crédits.",
+    "Segment 70 — La majeure en jeu vidéo est composée de 42 crédits obligatoires, 15 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-jeu-video/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:46.300Z"
+}

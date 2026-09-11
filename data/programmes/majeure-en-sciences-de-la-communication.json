@@ -1,0 +1,259 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-sciences-de-la-communication",
+  "nom": "Majeure en sciences de la communication",
+  "orientation": null,
+  "segments": [
+    "76"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 33 à 39 crédits à option et 0 à 6 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 33,
+      "max": 39
+    },
+    "choix": {
+      "min": 0,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "Théories et fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "COM 1150",
+        "COM 1300",
+        "COM 1500",
+        "COM 1600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "Méthodologies",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "COM 1100",
+        "COM 2008",
+        "COM 2009"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Cours thématiques en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "COM 1350",
+        "COM 1750",
+        "COM 2104",
+        "COM 2150",
+        "COM 2200",
+        "COM 2230",
+        "COM 2320",
+        "COM 2505",
+        "COM 3220",
+        "COM 3320",
+        "COM 3400",
+        "COM 3410",
+        "COM 3420"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76D",
+      "cle": "76/76D",
+      "segment": "76",
+      "nom": "Communication, médias et culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 24 crédits.",
+      "cours": [
+        "COM 2001",
+        "COM 2220",
+        "COM 2450",
+        "COM 2570",
+        "COM 2660",
+        "COM 2720",
+        "COM 2920",
+        "COM 2925",
+        "COM 2945",
+        "COM 3035",
+        "COM 3155"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76E",
+      "cle": "76/76E",
+      "segment": "76",
+      "nom": "Technologies et société",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "COM 2021",
+        "COM 2215",
+        "COM 2590",
+        "COM 2710",
+        "COM 3060",
+        "COM 3065"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76F",
+      "cle": "76/76F",
+      "segment": "76",
+      "nom": "Connaissance des médias numériques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "COM 1560",
+        "COM 1570",
+        "COM 1571",
+        "COM 2540",
+        "COM 2550",
+        "COM 2565",
+        "COM 2571",
+        "COM 2580",
+        "COM 3562",
+        "COM 3570"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76G",
+      "cle": "76/76G",
+      "segment": "76",
+      "nom": "Communication organisationnelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "COM 2018",
+        "COM 2019",
+        "COM 2020",
+        "COM 2130",
+        "COM 2440",
+        "COM 2460",
+        "COM 3011",
+        "COM 3118",
+        "COM 3305"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76H",
+      "cle": "76/76H",
+      "segment": "76",
+      "nom": "Activités d'intégration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 3000",
+        "COM 3032",
+        "COM 3600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76Z",
+      "cle": "76/76Z",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les crédits au choix ne peuvent pas être de sigle COM."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A23)\nLa majeure comporte 60 crédits.",
+    "Segment 76 — Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires, 33 à 39 crédits à option et 0 à 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-sciences-de-la-communication/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:12.989Z"
+}

@@ -1,0 +1,109 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-sciences-de-leducation-option-administration-de-leducation",
+  "nom": "Maîtrise sciences de l'éducation, option Administration de l'éducation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise sciences",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits de cours à option.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ETA 6512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir parmi les cours de 2e cycle en administration et fondements de l'éducation (sigle ETA)."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits",
+      "cours": [
+        "ETA 6991",
+        "ETA 6993"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A16)\nLa maîtrise comporte 45 crédits. Il s'agit d'une maîtrise au cheminement avec mémoire.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits de cours à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-sciences-de-leducation-option-administration-de-leducation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:01.833Z"
+}

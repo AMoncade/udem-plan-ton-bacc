@@ -1,0 +1,198 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-etudes-autochtones",
+  "nom": "Microprogramme de 1er cycle en études autochtones",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Ce programme comporte 6 crédits obligatoires et 9 crédits à option, dont un stage optionnel de 3 crédits.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "AUT 2000",
+        "AUT 2500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 1065",
+        "HST 1010",
+        "POL 1100",
+        "SOL 1018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Autochtones du Québec, du Canada et du monde",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANT 2630",
+        "ANT 2830",
+        "ANT 3000",
+        "ANT 3030",
+        "ANT 3171",
+        "ANT 3854",
+        "ANT 3855",
+        "ANT 3881",
+        "ANT 3882",
+        "CRI 3001",
+        "DMO 1000",
+        "DMO 1100",
+        "DRT 1011S",
+        "DRT 3015",
+        "FRA 2620",
+        "HAR 1115",
+        "HAR 2717",
+        "HST 1044",
+        "HST 1053",
+        "HST 2444",
+        "HST 3371",
+        "HST 3441",
+        "POL 3159",
+        "PPA 2550",
+        "REL 2270",
+        "SPU 1020G",
+        "SPU 3033G",
+        "SVS 3175"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANG 2361",
+        "ANT 1020",
+        "ANT 3025",
+        "DRT 1002S",
+        "ESP 3312",
+        "GEO 2242",
+        "HST 2351",
+        "HST 2352",
+        "HST 2446",
+        "LCO 1030",
+        "SOL 2104",
+        "SOL 3404"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 3857",
+        "AUT 3001",
+        "AUT 3002",
+        "INN 3001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A20)\nLe Microprogramme comporte 15 crédits.",
+    "Segment 70 — Ce programme comporte 6 crédits obligatoires et 9 crédits à option, dont un stage optionnel de 3 crédits."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-etudes-autochtones/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:54.553Z"
+}

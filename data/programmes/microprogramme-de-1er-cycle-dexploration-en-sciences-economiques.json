@@ -1,0 +1,106 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-dexploration-en-sciences-economiques",
+  "nom": "Microprogramme de 1er cycle d'exploration en sciences économiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "ECN 1000",
+        "ECN 1050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Connaissances générales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ECN 1160",
+        "ECN 1350",
+        "ECN 1700",
+        "ECN 1800",
+        "ECN 1967",
+        "ECN 1971",
+        "ECN 2165"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compléments de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ECN 1040",
+        "ECN 2015",
+        "ECN 2230",
+        "ECN 2311",
+        "ECN 2405",
+        "ECN 2450",
+        "ECN 2565",
+        "ECN 2910",
+        "ECN 2964"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A22)",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 6 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-dexploration-en-sciences-economiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:26.930Z"
+}

@@ -1,0 +1,202 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-medecine-dentaire",
+  "nom": "Maîtrise en médecine dentaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "Orthodontie",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Réhabilitation prosthodontique",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Dentisterie pédiatrique",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine dentaire",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SAB 6065",
+        "SAB 6069",
+        "SAB 6311",
+        "SAB 6338",
+        "SAB 6405",
+        "SAB 66041",
+        "SAB 66042",
+        "SAB 66043",
+        "SAB 66044",
+        "SAB 66045",
+        "SAB 66046",
+        "STO 6000",
+        "STO 6300",
+        "STO 6303",
+        "STO 6304"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "SAB 6610",
+        "STO 6307"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "SAB 6611"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "DER 6222",
+        "STO 6307"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "SAB 6610",
+        "STO 6307"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "SAB 6617"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A14)\nLa maîtrise comporte 45 crédits. Elle est offerte avec un tronc commun (segment 01) et comporte 3 options:\n- option Orthodontie (segments 01 et 70),\n- option Réhabilitation prosthodontique (segments 01 et 71),\n- option Dentisterie pédiatrique (segments 01 et 72).",
+    "Segment 01 Tronc commun — Le Tronc commun comporte 12 crédits obligatoires.",
+    "Segment 70 Propre à l'option Orthodontie — L'option comporte 45 crédits obligatoires, dont 30 crédits sont attribués à la recherche et à la rédaction d'un mémoire.",
+    "Segment 71 Propre à l'option Réhabilitation prosthodontique — L'option comporte 45 crédits obligatoires, dont 30 crédits sont attribués à la recherche et à la rédaction d'un mémoire.",
+    "Segment 72 Propre à l'option Dentisterie pédiatrique — L'option comporte 45 crédits obligatoires, dont 30 crédits sont attribués à la recherche et à la rédaction d'un mémoire."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-medecine-dentaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:02.832Z"
+}

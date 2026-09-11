@@ -1,0 +1,188 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-philosophie",
+  "nom": "Maîtrise en philosophie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "69",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "01",
+        "69"
+      ],
+      "exigences": {
+        "brut": "- l'option Générale (segment 01 et 69) comporte 30 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire et 15 crédits à option.",
+        "obligatoire": {
+          "min": 30,
+          "max": 30
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Philosophie au collégial",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "- l'option Philosophie au collégial (segments 01 et 72) comporte 33 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire et 12 crédits à option.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Formation disciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 15 crédits.",
+      "cours": [
+        "PHI 6015",
+        "PHI 6205",
+        "PHI 6215",
+        "PHI 6225",
+        "PHI 6235",
+        "PHI 6240",
+        "PHI 6241",
+        "PHI 6260",
+        "PHI 6261",
+        "PHI 6262",
+        "PHI 6270",
+        "PHI 6280",
+        "PHI 6291",
+        "PHI 6292",
+        "PHI 6315",
+        "PHI 6322",
+        "PHI 6325",
+        "PHI 6346",
+        "PHI 6380",
+        "PHI 6385",
+        "PHI 6515",
+        "PHI 6520",
+        "PHI 6525",
+        "PHI 6540",
+        "PHI 6545",
+        "PHI 6555",
+        "PHI 6556",
+        "PHI 6575",
+        "PHI 6576",
+        "PHI 6605",
+        "PHI 6621",
+        "PHI 6625",
+        "PHI 6645",
+        "PHI 6646",
+        "PHI 6647",
+        "PHI 6655",
+        "PHI 6715",
+        "PHI 6725"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez suivre quatre à cinq des cours proposés, ou tout autre cours jugé pertinent parmi la banque de cours de cycles supérieurs du département de philosophie (PHI6000). L'approbation du responsable de programme est requise."
+      ]
+    },
+    {
+      "id": "69A",
+      "cle": "69/69A",
+      "segment": "69",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "PHI 6915",
+        "PHI 6925",
+        "PHI 6935"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PHI 6401",
+        "PHI 6402",
+        "PHI 6410",
+        "PLU 6035"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "PHI 6945",
+        "PHI 6955",
+        "PHI 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A22)\nLa maîtrise comporte 45 crédits, répartis de la façon suivante :\n- l'option Générale (segment 01 et 69) comporte 30 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire et 15 crédits à option.\n- l'option Philosophie au collégial (segments 01 et 72) comporte 33 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire et 12 crédits à option.",
+    "Segment 01 Tronc commun — Le segment 01 comporte de 12 à 15 crédits à option.",
+    "Segment 69 Propre à l'option Générale — Le segment 69 comporte 30 crédits obligatoires, attribués à la recherche et à la rédaction d'un mémoire.",
+    "Segment 72 Propre à l'option Philosophie au collégial — Le segment 72 comporte 33 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-philosophie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:32.926Z"
+}

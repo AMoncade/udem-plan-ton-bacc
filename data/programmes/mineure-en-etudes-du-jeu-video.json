@@ -1,0 +1,155 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-du-jeu-video",
+  "nom": "Mineure en études du jeu vidéo",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "JEU 1001",
+        "JEU 1003",
+        "JEU 1007",
+        "JEU 1008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approches spécifiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "JEU 1002",
+        "JEU 1004",
+        "JEU 1005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Ouvertures au cinéma",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 1105",
+        "CIN 1108",
+        "CIN 1109",
+        "CIN 1110",
+        "CIN 1121",
+        "CIN 2105",
+        "CIN 2108",
+        "CIN 2110",
+        "CIN 2113",
+        "CIN 2116",
+        "CIN 2120",
+        "CIN 2122",
+        "CIN 2123",
+        "CIN 2200",
+        "CIN 3103",
+        "CIN 3104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cultures visuelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "HAR 1210"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que les sigles JEU et CIN."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A20)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-du-jeu-video/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:34.779Z"
+}

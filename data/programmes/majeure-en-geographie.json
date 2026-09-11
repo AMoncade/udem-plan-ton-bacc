@@ -1,0 +1,242 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-geographie",
+  "nom": "Majeure en géographie",
+  "orientation": null,
+  "segments": [
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 15 crédits obligatoires, 42 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 42,
+      "max": 42
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "GEO 1112",
+        "GEO 1122",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 1550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Analyse et gestion de l'environnement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "GEO 1312",
+        "GEO 2312"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Analyse et gestion de l'information géographique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "GEO 1512",
+        "GEO 1532",
+        "GEO 1542",
+        "GEO 2512",
+        "GEO 2522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Environnement physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "GEO 2112",
+        "GEO 2122",
+        "GEO 2132",
+        "GEO 2143",
+        "GEO 2152"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Environnement humain",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "GEO 2222",
+        "GEO 2232",
+        "GEO 2242",
+        "GEO 2252",
+        "GEO 2262"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80F",
+      "cle": "80/80F",
+      "segment": "80",
+      "nom": "Régions, monde",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "GEO 1412",
+        "GEO 3412",
+        "GEO 3442",
+        "GEO 3452",
+        "GEO 3462",
+        "GEO 3463",
+        "GEO 3482",
+        "GEO 3492"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80G",
+      "cle": "80/80G",
+      "segment": "80",
+      "nom": "Cours terrain",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "GEO 1315"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80Y",
+      "cle": "80/80Y",
+      "segment": "80",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CHM 1600",
+        "DMO 1000",
+        "DMO 1200",
+        "DMO 2170",
+        "FEM 3300",
+        "HOR 3200",
+        "HST 1063",
+        "IFT 1800",
+        "IFT 1810",
+        "PHY 1972",
+        "SOL 3221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80Z",
+      "cle": "80/80Z",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, le cours au choix doit être parmi les cours identifiés par un sigle autre que le sigle GEO."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 12 (A15)\nLa majeure comporte 60 crédits.",
+    "Segment 80 — Les crédits de la majeure sont répartis de la façon suivante : 15 crédits obligatoires, 42 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-geographie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:36.708Z"
+}

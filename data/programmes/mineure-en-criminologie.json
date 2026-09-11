@@ -1,0 +1,132 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-criminologie",
+  "nom": "Mineure en criminologie",
+  "orientation": null,
+  "segments": [
+    "81"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "Initiation à la criminologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CRI 1050",
+        "CRI 1100",
+        "CRI 1151",
+        "CRI 1200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "Connaissances criminologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "CRI 1212",
+        "CRI 1511",
+        "CRI 1600",
+        "CRI 1730",
+        "CRI 2000",
+        "CRI 2015",
+        "CRI 2052",
+        "CRI 2301",
+        "CRI 2410",
+        "CRI 2455",
+        "CRI 2531",
+        "CRI 2545",
+        "CRI 2990",
+        "CRI 3001",
+        "CRI 3010",
+        "CRI 3013",
+        "CRI 3040",
+        "CRI 3052",
+        "CRI 3201",
+        "CRI 3213",
+        "CRI 3305",
+        "CRI 3318",
+        "CRI 3341",
+        "CRI 3361",
+        "CRI 3401",
+        "CRI 3415",
+        "CRI 3420",
+        "CRI 3425",
+        "CRI 3465",
+        "CRI 3495",
+        "CRI 3540",
+        "CRI 3810",
+        "CRI 3820",
+        "CRI 3900",
+        "CRI 3950",
+        "PHI 2990"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81Z",
+      "cle": "81/81Z",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les crédits au choix ne sont pas de sigle CRI."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (A20)\nLa mineure comporte 30 crédits.",
+    "Segment 81 — Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-criminologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:09.871Z"
+}

@@ -1,0 +1,546 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sante-environnementale-et-sante-au-travail",
+  "nom": "Maîtrise en santé environnementale et santé au travail",
+  "orientation": null,
+  "segments": [
+    "68",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "Analyse du risque",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 27 crédits obligatoires, 15 crédits à option attribués à un travail dirigé ou à un stage et 3 crédits à option.",
+        "obligatoire": {
+          "min": 27,
+          "max": 27
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Toxicologie générale",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 30 crédits obligatoires et 15 crédits à option attribués à un travail dirigé ou à un stage.",
+        "obligatoire": {
+          "min": 30,
+          "max": 30
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Environnement",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 21 crédits obligatoires, 15 crédits à option attribués à un travail dirigé ou à un stage, et 9 crédits au choix.",
+        "obligatoire": {
+          "min": 21,
+          "max": 21
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": {
+          "min": 9,
+          "max": 9
+        }
+      }
+    },
+    {
+      "nom": "Hygiène du travail",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires et 12 crédits à option attribués à la rédaction d'un travail dirigé ou un stage.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Santé environnementale mondiale",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 21 crédits obligatoires, 21 à 24 crédits à option, dont 15 crédits attribués à un travail dirigé ou à un stage, et un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 21,
+          "max": 21
+        },
+        "option": {
+          "min": 21,
+          "max": 24
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "68A",
+      "cle": "68/68A",
+      "segment": "68",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "MSN 60041",
+        "MSN 60042",
+        "MSN 6115",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "68B",
+      "cle": "68/68B",
+      "segment": "68",
+      "nom": "Analyse de données",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6704",
+        "MSN 6026",
+        "MSO 6060",
+        "MSO 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "68C",
+      "cle": "68/68C",
+      "segment": "68",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez choisir l'un des cours proposés ou tout autre cours jugé pertinent dans la banque de cours de cycles supérieurs de l'École de santé publique (ENV, MSN, TXL, par exemple) préalablement approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "68D",
+      "cle": "68/68D",
+      "segment": "68",
+      "nom": "- Éthique de la recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit",
+      "cours": [
+        "BIE 6046",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "68E",
+      "cle": "68/68E",
+      "segment": "68",
+      "nom": "- Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits",
+      "cours": [
+        "MSN 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "MSN 6021",
+        "MSN 6115",
+        "MSN 6136",
+        "MSN 6146",
+        "MSO 6011",
+        "SPU 6600",
+        "TXL 6002",
+        "TXL 6010",
+        "TXL 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MSN 6018",
+        "TXL 6016"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez vous inscrire à l'un des cours proposés ou tout autre cours jugé pertinent dans la banque de cours de cycles supérieurs de l'École de santé publique (ENV, MSN, TXL, par exemple) préalablement approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Travail dirigé OU stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "MSN 6900",
+        "MSN 6910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "MSN 6018",
+        "MSN 6021",
+        "MSN 6115",
+        "MSN 6136",
+        "SPU 6600",
+        "TXL 6002",
+        "TXL 6010",
+        "TXL 6012",
+        "TXL 6014",
+        "TXL 6016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Travail dirigé OU stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "MSN 6900",
+        "MSN 6910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ENV 6002",
+        "ENV 6003",
+        "MSN 6027",
+        "MSN 6115",
+        "MSN 6148",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez choisir dans la banque de cours de cycles supérieurs de l'École de santé publique (ENV, MSN, TXL, par exemple) ou encore tout autre cours de 2e cycle provenant d'autres départements, facultés, écoles (Poly, HEC), ou d'autres universités, préalablement approuvés par le responsable de programme."
+      ]
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "MSN 6900",
+        "MSN 6910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "MSN 6018",
+        "MSN 6022",
+        "MSN 6023",
+        "MSN 6024",
+        "MSN 6025",
+        "MSN 6026",
+        "MSN 6112",
+        "REI 6170",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Travail dirigé OU stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "MSN 6901",
+        "MSN 6911"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ASA 6734",
+        "ENV 6002",
+        "MSN 6027",
+        "MSN 6028",
+        "MSN 6115",
+        "MSO 6500",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "MSN 6021",
+        "MSN 6136",
+        "MSN 6144",
+        "MSN 6148",
+        "MSO 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez choisir un cours jugé pertinent parmi les répertoires des départements de médecine sociale et préventive, de gestion, d'évaluation et de politique de santé, de santé environnementale et santé au travail, ou autre, préalablement approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Travail dirigé OU stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "MSN 6900",
+        "MSN 6910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A21)\nLa maîtrise comporte 45 crédits. Elle est offerte selon deux modalités :\n- la modalité avec recherche (segment 68),\n- la modalité avec travail dirigé ou stage, lequel comprend les cinq options suivantes:\n- l'option Analyse du risque (segment 70),\n- l'option Toxicologie générale (segment 71),\n- l'option Environnement, santé et gestion des catastrophes (segment 72),\n- l'option Hygiène du travail (segment 73),\n- l'option Santé environnementale mondiale (segment 74),",
+    "Segment 68 Propre à l'option Recherche — Les crédits de l'option sont répartis de la façon suivante : 38 crédits obligatoires, dont 30 crédits attribués à la rédaction d'un mémoire, 4 crédits à option incluant 1 crédit en éthique et 3 crédits au choix.",
+    "Segment 70 Propre à l'option Analyse du risque — Les crédits de l'option sont répartis de la façon suivante : 27 crédits obligatoires, 15 crédits à option attribués à un travail dirigé ou à un stage et 3 crédits à option.",
+    "Segment 71 Propre à l'option Toxicologie générale — Les crédits de l'option sont répartis de la façon suivante : 30 crédits obligatoires et 15 crédits à option attribués à un travail dirigé ou à un stage.",
+    "Segment 72 Propre à l'option Environnement, santé et gestion des catastrophes — Les crédits de l'option sont répartis de la façon suivante : 21 crédits obligatoires, 15 crédits à option attribués à un travail dirigé ou à un stage, et 9 crédits au choix.",
+    "Segment 73 Propre à l'option Hygiène du travail — Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires et 12 crédits à option attribués à la rédaction d'un travail dirigé ou un stage.",
+    "Segment 74 Propre à l'option Santé environnementale mondiale — Les crédits de l'option sont répartis de la façon suivante : 21 crédits obligatoires, 21 à 24 crédits à option, dont 15 crédits attribués à un travail dirigé ou à un stage, et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sante-environnementale-et-sante-au-travail/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:46.250Z"
+}

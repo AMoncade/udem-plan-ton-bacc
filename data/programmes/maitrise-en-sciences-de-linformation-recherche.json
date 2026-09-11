@@ -1,0 +1,204 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-linformation-recherche",
+  "nom": "Maîtrise en sciences de l'information - Recherche",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 36 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, de 6 à 9 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Compétences pratiques en sciences de l'information",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "SCI 6003",
+        "SCI 6004",
+        "SCI 6005",
+        "SCI 6006",
+        "SCI 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Fondements disciplinaires et institutionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SCI 6001",
+        "SCI 6002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Organisation de l'information",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SCI 6113",
+        "SCI 6135",
+        "SCI 6155"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Compléments de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "SCI 6111",
+        "SCI 6112",
+        "SCI 6114",
+        "SCI 6115",
+        "SCI 6116",
+        "SCI 6118",
+        "SCI 6122",
+        "SCI 6123",
+        "SCI 6124",
+        "SCI 6133",
+        "SCI 6137",
+        "SCI 6141",
+        "SCI 6142",
+        "SCI 6143",
+        "SCI 6144",
+        "SCI 6145",
+        "SCI 6146",
+        "SCI 6201",
+        "SCI 6202",
+        "SCI 6203",
+        "SCI 6204",
+        "SCI 6304",
+        "SCI 6305",
+        "SCI 6306",
+        "SCI 6307",
+        "SCI 6308",
+        "SCI 6315",
+        "SCI 6322",
+        "SCI 6323",
+        "SCI 6324",
+        "SCI 6337",
+        "SCI 6339",
+        "SCI 6343",
+        "SCI 6344",
+        "SCI 6348",
+        "SCI 6355",
+        "SCI 6358",
+        "SCI 6365",
+        "SCI 6370",
+        "SCI 6371",
+        "SCI 6372",
+        "SCI 6373",
+        "SCI 6375",
+        "SCI 6399",
+        "SCI 6772",
+        "SCI 6850",
+        "SOL 6210"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de cycles supérieurs choisis avec l'approbation de la personne responsable du programme, compatibles avec le projet d'études en sciences de l'information. Possibilité de prendre des cours à l'extérieur de l'Université de Montréal."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "SCI 6925"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A25)\nLa maîtrise, offerte selon la modalité avec mémoire, comporte 45 crédits.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 36 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, de 6 à 9 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-linformation-recherche/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:07.848Z"
+}

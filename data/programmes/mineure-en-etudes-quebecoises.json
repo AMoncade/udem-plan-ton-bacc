@@ -1,0 +1,170 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-quebecoises",
+  "nom": "Mineure en études québécoises",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires, 21 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "QCF 1050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Discipline des sciences et sciences humaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "BIO 2306",
+        "GEO 1412",
+        "HST 1032",
+        "HST 1041",
+        "HST 1042",
+        "HST 1051",
+        "HST 1052",
+        "HST 2420",
+        "HST 2430",
+        "HST 2443",
+        "HST 2446",
+        "HST 2904",
+        "HST 3440"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Discipline des sciences sociales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANT 3030",
+        "ANT 3854",
+        "ANT 3882",
+        "DMO 1000",
+        "ECN 1800",
+        "POL 1020",
+        "POL 3291",
+        "POL 3292",
+        "POL 3500",
+        "POL 3721",
+        "REI 1010",
+        "SVS 1102",
+        "SVS 1107",
+        "SVS 2110",
+        "SVS 3941",
+        "URB 1111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Discipline des arts et lettres",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANG 1022",
+        "ANG 1401",
+        "CIN 2102",
+        "FRA 1130",
+        "FRA 2111",
+        "FRA 2131",
+        "FRA 2264",
+        "FRA 3230",
+        "FRA 3508",
+        "HAR 2115",
+        "HAR 2195",
+        "LNG 1126",
+        "LNG 2100",
+        "LNG 2140"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A08)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires, 21 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-quebecoises/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:50.503Z"
+}

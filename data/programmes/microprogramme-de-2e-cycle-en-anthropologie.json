@@ -1,0 +1,125 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-anthropologie",
+  "nom": "Microprogramme de 2e cycle en anthropologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 12,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 9 à 12 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 9,
+      "max": 12
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANT 6020",
+        "ANT 6030",
+        "ANT 6033",
+        "ANT 6038",
+        "ANT 6040",
+        "ANT 6100",
+        "ANT 6100A",
+        "ANT 6113",
+        "ANT 6117",
+        "ANT 6138",
+        "ANT 6150",
+        "ANT 6154",
+        "ANT 6155",
+        "ANT 6156",
+        "ANT 6160",
+        "ANT 6200",
+        "ANT 6213",
+        "ANT 6220",
+        "ANT 6230",
+        "ANT 6235",
+        "ANT 6245",
+        "ANT 6259",
+        "ANT 6458",
+        "ANT 6463",
+        "ANT 6470",
+        "ANT 6600",
+        "ANT 6610",
+        "ANT 6626",
+        "ANT 6630",
+        "ANT 6632",
+        "ANT 6810",
+        "ANT 6880Z",
+        "ANT 6881",
+        "ANT 6882"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 6802",
+        "ANT 6806"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Soit un cours de premier cycle et /ou un séminaire à l'extérieur du Département d'anthropologie ou hors institution avec l'approbation du responsable de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H20)\nCe microprogramme comporte 12 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 9 à 12 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-anthropologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:30.436Z"
+}

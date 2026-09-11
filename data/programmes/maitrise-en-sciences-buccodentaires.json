@@ -1,0 +1,113 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-buccodentaires",
+  "nom": "Maîtrise en sciences buccodentaires",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine dentaire",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 37 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, un maximum de 8 crédits à option et un maximum de 5 crédits au choix.",
+    "obligatoire": {
+      "min": 37,
+      "max": 37
+    },
+    "option": {
+      "min": 0,
+      "max": 8
+    },
+    "choix": {
+      "min": 0,
+      "max": 5
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option – minimum 3 crédits et maximum 5 crédits"
+      },
+      "regleBrut": "Option – minimum 3 crédits et maximum 5 crédits",
+      "cours": [
+        "BIE 6046",
+        "DER 6222",
+        "MMD 6005R",
+        "SAB 6405"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Développement professionnel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 5
+        }
+      },
+      "regleBrut": "Option – Maximum 5 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Veuillez consulter le site des Saisons des ESP pour voir l'offre des cours disponibles."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 5
+        }
+      },
+      "regleBrut": "Choix – Maximum 5 crédits",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 37,
+          "max": 37
+        }
+      },
+      "regleBrut": "Obligatoire – 37 crédits",
+      "cours": [
+        "STO 6907",
+        "STO 6908",
+        "STO 6910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (E26)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits sont répartis de la façon suivante : 37 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, un maximum de 8 crédits à option et un maximum de 5 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-buccodentaires/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:54.360Z"
+}

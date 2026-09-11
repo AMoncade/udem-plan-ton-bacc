@@ -1,0 +1,208 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-psychologie",
+  "nom": "Maîtrise en psychologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires, dont 33 crédits attribués à la recherche et à la rédaction d'un mémoire, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 39,
+      "max": 39
+    },
+    "option": {
+      "min": 3,
+      "max": 6
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PSY 6013",
+        "PSY 6028"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Méthodes d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSY 6002",
+        "PSY 6008",
+        "PSY 6018",
+        "PSY 6019",
+        "SOL 6211A",
+        "SOL 6211B",
+        "SOL 6211C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Séminaires et stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PSY 6032",
+        "PSY 6855"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Neuroscience cognitive et neuropsychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "NCM 6441",
+        "PSY 6022",
+        "PSY 64071",
+        "PSY 64072",
+        "PSY 6415",
+        "PSY 6423",
+        "PSY 6424",
+        "PSY 6913",
+        "PSY 6936",
+        "PSY 6973",
+        "PSY 6976",
+        "PSY 6983",
+        "PSY 6989"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Psychologie clinique/sociale/du travail et des organisations",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PSY 6093",
+        "PSY 6106",
+        "PSY 6257",
+        "PSY 6258",
+        "PSY 6303",
+        "PSY 6304",
+        "PSY 6308",
+        "PSY 6329",
+        "PSY 6712",
+        "PSY 6714",
+        "PSY 6715",
+        "PSY 6716",
+        "PSY 6717",
+        "PSY 6732",
+        "PSY 6733",
+        "PSY 6734",
+        "PSY 6793",
+        "PSY 6799"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de cycles supérieurs choisi avec l'approbation de la personne responsable du programme."
+      ]
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "PSY 6965",
+        "PSY 6966"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A20)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires, dont 33 crédits attribués à la recherche et à la rédaction d'un mémoire, 3 à 6 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-psychologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:44.810Z"
+}

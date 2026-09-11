@@ -1,0 +1,798 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-environnement-et-developpement-durable-avec-stage",
+  "nom": "Maîtrise en environnement et développement durable (avec stage)",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "biogéochimie environnementale",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 6,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "gestion de l'eau",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 6,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "gestion de la biodiversité",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 72 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 6,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "enjeux sociaux et gouvernance",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 73 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 6,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "perspectives d'aménagement",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 74 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+        "obligatoire": {
+          "min": 74,
+          "max": 74
+        },
+        "option": {
+          "min": 6,
+          "max": 15
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "EDD 6005",
+        "EDD 6010",
+        "EDD 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Modèles, règles et acteurs en environnement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 6864",
+        "ENV 6002",
+        "ENV 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "ENV 6002 et GEO 6286 sont des cours équivalents."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Méthodes et outils",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "APC 6004",
+        "APC 6017",
+        "ART 6009",
+        "ART 6012",
+        "ART 6017",
+        "BIO 6078",
+        "COM 6205",
+        "COM 6915",
+        "DMO 6200",
+        "DMO 6371",
+        "DMO 6405",
+        "SOL 6210",
+        "SOL 6448"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "EDD 6025"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "EDD 69991",
+        "EDD 69992"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "GEO 6142"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "BIO 6822",
+        "CHM 6802",
+        "CHM 6810",
+        "TXL 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compléments multidisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "APA 6013",
+        "EDD 6040",
+        "EDD 6050",
+        "MSN 6028"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIO 2820",
+        "BIO 3721",
+        "BIO 3831",
+        "BIO 3839",
+        "BIO 3893",
+        "CHM 3103",
+        "CHM 3604",
+        "CHM 3605",
+        "CHM 3606",
+        "GEO 2152",
+        "GEO 3152",
+        "GEO 3162"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits",
+      "cours": [
+        "EDD 6040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "APA 6013",
+        "BIO 6822",
+        "BIO 6965",
+        "CHM 6810",
+        "ENV 6005",
+        "GEO 6142",
+        "MSN 6144",
+        "PLU 6910A",
+        "POL 6570",
+        "TXL 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Compléments multidisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AME 6920",
+        "EDD 6050",
+        "EDD 6060",
+        "EDD 6070",
+        "GEO 6204",
+        "GEO 6343",
+        "GEO 6352",
+        "MSN 6028",
+        "MSO 6500",
+        "PHI 6575",
+        "PLU 6901A",
+        "PLU 6907A",
+        "POL 6526",
+        "URB 6754",
+        "URB 6772",
+        "URB 6774",
+        "URB 6778",
+        "URB 6850"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIO 2476",
+        "BIO 3831",
+        "BIO 3839",
+        "BIO 3843",
+        "BIO 3893",
+        "CHM 3604",
+        "CHM 3605",
+        "CHM 3606",
+        "GEO 2152",
+        "GEO 2512",
+        "GEO 3162",
+        "POL 2170",
+        "POL 3010",
+        "POL 3175",
+        "SOL 2200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDD 6050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "APA 6013",
+        "APA 6515",
+        "BIO 6245",
+        "BIO 6875",
+        "BIO 6965",
+        "GEO 6100",
+        "GEO 6341",
+        "MSL 6515",
+        "PLU 6901A",
+        "URB 6778"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Compléments multidisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AME 6920",
+        "BIO 6822",
+        "EDD 6040",
+        "EDD 6060",
+        "GEO 6204",
+        "GEO 6343",
+        "GEO 6352",
+        "PHI 6575",
+        "PLU 6907A",
+        "PLU 6910A",
+        "POL 6526",
+        "POL 6570",
+        "URB 6772",
+        "URB 6774"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "APA 2130",
+        "BIO 2150",
+        "BIO 2306",
+        "BIO 2350",
+        "BIO 2386",
+        "BIO 2431",
+        "BIO 2440",
+        "BIO 2476",
+        "BIO 2478",
+        "BIO 2480",
+        "BIO 2490",
+        "BIO 2821",
+        "GEO 2122",
+        "GEO 2132",
+        "GEO 2152",
+        "GEO 2512",
+        "POL 2170",
+        "POL 2829",
+        "POL 3010",
+        "POL 3175"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDD 6060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "AME 6920",
+        "COM 6331",
+        "DMO 6430",
+        "DMO 6501",
+        "ENV 6005",
+        "GEO 6204",
+        "INT 6040",
+        "PLU 6901A",
+        "POL 6418",
+        "POL 6512",
+        "POL 6526",
+        "POL 6570",
+        "POL 6609",
+        "POL 6666",
+        "SOL 6242",
+        "SOL 6312",
+        "SOL 6510",
+        "URB 6729",
+        "URB 6767",
+        "URB 6772",
+        "URB 6774"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Compléments multidisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AME 6431",
+        "ANT 6030",
+        "ANT 6132",
+        "ARC 6851",
+        "DRT 6830B",
+        "EDD 6040",
+        "EDD 6070",
+        "GEO 6200",
+        "GEO 6201",
+        "GEO 6202",
+        "GEO 6205",
+        "GEO 6352",
+        "MSO 6500",
+        "PHI 6575",
+        "PLU 6907A",
+        "PLU 6910A",
+        "POL 6112",
+        "URB 6742",
+        "URB 6754",
+        "URB 6778",
+        "URB 6850"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANT 2030",
+        "COM 3155",
+        "DMO 3100",
+        "GEO 3333",
+        "POL 2170",
+        "POL 3010",
+        "POL 3175",
+        "REL 2440",
+        "SOL 2200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDD 6070"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "APA 6006",
+        "APA 6013",
+        "URB 6729",
+        "URB 6742",
+        "URB 6754",
+        "URB 6772",
+        "URB 6774",
+        "URB 6778"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Compléments multidisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AME 6431",
+        "AME 6920",
+        "ANT 6132",
+        "APA 6015",
+        "APA 6515",
+        "ARC 6851",
+        "DIN 6001",
+        "GEO 6205",
+        "POL 6112",
+        "POL 6570",
+        "POL 6609",
+        "POL 6666",
+        "SOL 6312",
+        "SOL 6510",
+        "URB 6767",
+        "URB 6770",
+        "URB 6850"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "APA 1130",
+        "APA 2130",
+        "DIN 2332",
+        "DIN 3211",
+        "DIN 3532",
+        "POL 2170",
+        "POL 3175"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A25)\nLa maîtrise comporte 45 crédits répartis de la façon suivante: 27 crédits obligatoires, dont 15 crédits attribués au stage, et 18 crédits à option.\nElle est offerte selon la modalité stage et comporte un tronc commun (segment 01) ainsi que les cinq options suivantes :\n- L'option biogéochimie environnementale (segment 70)\n- L'option gestion de l'eau (segment 71)\n- L'option gestion de la biodiversité (segment 72)\n- L'option enjeux sociaux et gouvernance (segment 73)\n- L'option perspectives d'aménagement (segment 74)",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont répartis de la façon suivante : 24 crédits obligatoires, dont 15 crédits attribués à un stage, et de 3 à 12 crédits à option.",
+    "Segment 70 Propre à l'option biogéochimie environnementale — Les crédits du segment 70 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+    "Segment 71 Propre à l'option gestion de l'eau — Les crédits du segment 71 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+    "Segment 72 Propre à l'option gestion de la biodiversité — Les crédits du segment 72 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+    "Segment 73 Propre à l'option enjeux sociaux et gouvernance — Les crédits du segment 73 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option.",
+    "Segment 74 Propre à l'option perspectives d'aménagement — Les crédits du segment 74 sont répartis de la façon suivante: 3 crédits obligatoires et de 6 à 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-environnement-et-developpement-durable-avec-stage/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:27.719Z"
+}

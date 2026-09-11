@@ -1,0 +1,124 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-musique-option-composition-et-creation-sonore",
+  "nom": "Maîtrise en musique, option Composition et création sonore",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 9 crédits attribués à la composition et la création sonore et 24 crédits attribués au mémoire et portfolio de création, de 6 à 12 crédits à option et un maximum de 6 crédits au choix.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 6,
+      "max": 12
+    },
+    "choix": {
+      "min": 0,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Séminaires",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option ‐ Minimum 6 crédits, maximum 12 crédits."
+      },
+      "regleBrut": "Option ‐ Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal ( https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l'accord de la direction de recherche."
+      ]
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Cours et ateliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option – Maximum 3 crédits.",
+      "cours": [
+        "EMU 6310",
+        "EMU 6312",
+        "MIN 6949",
+        "MUE 6491",
+        "MUE 6492",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106",
+        "MUS 6316"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant·e choisit tout autre cours de cycles supérieurs jugé pertinent, avec l'accord de la direction de recherche."
+      ]
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Recherche-création",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "MCT 6407",
+        "MCT 6408",
+        "MCT 6409",
+        "MCT 6945"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 09 (A26)\nLa maîtrise comporte 45 crédits. Elle est offerte selon l'option suivante :\n- Composition et création sonore (Segment 72)",
+    "Segment 72 Propre à l'option Composition et création sonore — Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 9 crédits attribués à la composition et la création sonore et 24 crédits attribués au mémoire et portfolio de création, de 6 à 12 crédits à option et un maximum de 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-musique-option-composition-et-creation-sonore/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:11.265Z"
+}

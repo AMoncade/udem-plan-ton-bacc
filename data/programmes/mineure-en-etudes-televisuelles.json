@@ -1,0 +1,144 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-televisuelles",
+  "nom": "Mineure en études télévisuelles",
+  "orientation": null,
+  "segments": [
+    "01"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "La mineure comporte 30 crédits: 18 crédits obligatoires, de 9 à 12 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 30,
+      "max": 30
+    },
+    "option": {
+      "min": 9,
+      "max": 12
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Cours fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "CIN 1102",
+        "CIN 1104",
+        "CIN 1108",
+        "CIN 1121",
+        "CIN 2122",
+        "CIN 2125"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Approfondissements thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 2107",
+        "CIN 2123",
+        "CIN 2127",
+        "CIN 2130",
+        "CIN 2200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Ouverture au cinéma, aux médias et disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 1023",
+        "ANG 1600",
+        "ANG 1750",
+        "ANT 2611",
+        "CIN 1101",
+        "CIN 1103",
+        "CIN 1109",
+        "CIN 2110",
+        "CIN 2112",
+        "CIN 2113",
+        "CIN 2116",
+        "CIN 2120",
+        "CIN 3103",
+        "CIN 3104",
+        "CIN 3106",
+        "COM 1300",
+        "COM 2220",
+        "COM 2450",
+        "COM 2920",
+        "COM 2925",
+        "COM 2945",
+        "FRA 2284",
+        "HAR 1210",
+        "HAR 2330",
+        "LCO 1001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A23)\nLa mineure comporte 30 crédits.",
+    "Segment 01 — La mineure comporte 30 crédits: 18 crédits obligatoires, de 9 à 12 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-televisuelles/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:53.513Z"
+}

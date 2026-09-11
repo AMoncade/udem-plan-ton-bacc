@@ -1,0 +1,190 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-veterinaires-option-sante-publique-veterinaire-sans-memoire",
+  "nom": "Maîtrise en sciences vétérinaires, option Santé publique vétérinaire (sans mémoire)",
+  "orientation": null,
+  "segments": [
+    "80",
+    "81"
+  ],
+  "orientations": [
+    {
+      "nom": "Pathologie et microbiologie",
+      "segments": [
+        "80"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Santé publique vétérinaire qui",
+      "segments": [
+        "81"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'Option sont répartis de la façon suivante : 22 crédits obligatoires, 8 crédits à option et 15 crédits de stage ou de travaux dirigés.",
+        "obligatoire": {
+          "min": 22,
+          "max": 22
+        },
+        "option": {
+          "min": 8,
+          "max": 8
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 28,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 28 crédits, maximum 30 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis dans la banque de cours des études supérieures de la Faculté. ."
+      ]
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 17
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 17 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "SPV 6510",
+        "SPV 6520",
+        "SPV 6525",
+        "SPV 6530",
+        "SPV 6550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "SPV 6513",
+        "SPV 6514",
+        "SPV 6515",
+        "SPV 6531"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - 8 crédits.",
+      "cours": [
+        "PTM 4912",
+        "SPV 4903",
+        "SPV 6512",
+        "SPV 6535"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "SPV 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Travaux dirigés",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H11)\nLa maîtrise sans mémoire comporte 45 crédits. Elle est offerte selon deux options :\n- option Pathologie et microbiologie (segment 80),\n- option Santé publique vétérinaire qui est offerte avec stage ou travaux dirigés (segment 81).",
+    "Segment 80 Propre à l'option Pathologie et microbiologie — Tous les crédits de l'Option sont à option, de 15 à 17 crédits sont attribués à des travaux dirigés.",
+    "Segment 81 Propre à l'option Santé publique vétérinaire — Les crédits de l'Option sont répartis de la façon suivante : 22 crédits obligatoires, 8 crédits à option et 15 crédits de stage ou de travaux dirigés."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-veterinaires-option-sante-publique-veterinaire-sans-memoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:37.508Z"
+}

@@ -1,0 +1,226 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-physique",
+  "nom": "Majeure en physique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 45 crédits obligatoires, 12 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 45,
+      "max": 45
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Physique fondamentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits.",
+      "cours": [
+        "PHY 1111",
+        "PHY 1441",
+        "PHY 1620",
+        "PHY 1651",
+        "PHY 1652",
+        "PHY 2215",
+        "PHY 2441",
+        "PHY 2810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Outils mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MAT 1400",
+        "MAT 1410",
+        "MAT 1600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Formation expérimentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHY 1501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Méthodes de solution de problème en physique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PHY 1234",
+        "PHY 2345"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Physique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "PHY 2813",
+        "PHY 3131",
+        "PHY 3214",
+        "PHY 3442"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Compléments de physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2300",
+        "PHY 2400",
+        "PHY 2476",
+        "PHY 2500",
+        "PHY 2601",
+        "PHY 2701",
+        "PHY 2900",
+        "PHY 3012",
+        "PHY 3030",
+        "PHY 3040",
+        "PHY 3051",
+        "PHY 3070",
+        "PHY 3075",
+        "PHY 3080",
+        "PHY 3140",
+        "PHY 3320",
+        "PHY 3510",
+        "PHY 3600",
+        "PHY 3701",
+        "PHY 3711",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Outils informatiques complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "IFT 1166",
+        "IFT 1170",
+        "IFT 1575",
+        "MAT 1681"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle PHY."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A10)\nLa majeure comporte 60 crédits.",
+    "Segment 71 — Les crédits de la majeure sont répartis de la façon suivante : 45 crédits obligatoires, 12 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-physique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:01.902Z"
+}

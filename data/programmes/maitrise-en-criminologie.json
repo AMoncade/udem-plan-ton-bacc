@@ -1,0 +1,923 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-criminologie",
+  "nom": "Maîtrise en criminologie",
+  "orientation": null,
+  "segments": [
+    "69",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "69"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 69 sont répartis de la façon suivante : 30 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, de 12 à 15 crédits à option, et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 69,
+          "max": 69
+        },
+        "option": {
+          "min": 12,
+          "max": 15
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "intervention",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 33 crédits obligatoires dont 20 crédits attribués à un stage et à la rédaction d'un rapport de stage, et 12 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "sécurité intérieure",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 72 sont répartis de la façon suivante : 18 crédits obligatoires, dont 15 crédits attribués à la rédaction d'une étude de cas, 24 à 27 crédits à option, et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 24,
+          "max": 27
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "criminalistique et information",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 73 sont répartis de la façon suivante : 21 crédits obligatoires dont 15 crédits attribués à la rédaction d'un travail dirigé, 21 à 24 crédits à option, et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 21,
+          "max": 24
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "justice et victimes",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 74 sont répartis de la façon suivante : 18 crédits obligatoires, dont 15 crédits attribués à la rédaction d'une étude de cas, 24 à 27 crédits à option, et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 74,
+          "max": 74
+        },
+        "option": {
+          "min": 24,
+          "max": 27
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "69A",
+      "cle": "69/69A",
+      "segment": "69",
+      "nom": "Méthodologie et outils d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6001",
+        "CRI 6002",
+        "CRI 6003",
+        "CRI 6220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69B",
+      "cle": "69/69B",
+      "segment": "69",
+      "nom": "Théories",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6006",
+        "CRI 6007",
+        "CRI 6008",
+        "CRI 6010",
+        "CRI 6533",
+        "CRI 6536"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69C",
+      "cle": "69/69C",
+      "segment": "69",
+      "nom": "Intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CRI 6112",
+        "CRI 6113",
+        "CRI 6114",
+        "CRI 6115",
+        "CRI 6118",
+        "CRI 6119",
+        "CRI 6121",
+        "CRI 6122"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69D",
+      "cle": "69/69D",
+      "segment": "69",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "CRI 6223",
+        "CRI 6224",
+        "CRI 6226",
+        "CRI 6228",
+        "CRI 6229",
+        "CRI 6231",
+        "CRI 6232",
+        "CRI 6233",
+        "CRI 6234",
+        "CRI 6530",
+        "CRI 6531",
+        "CRI 6532",
+        "CRI 6535",
+        "CRI 6538",
+        "CRI 6539",
+        "CRI 6540",
+        "CRI 6720",
+        "CRI 6721",
+        "CRI 6722",
+        "CRI 6723",
+        "CRI 6725",
+        "CRI 6726",
+        "CRI 6727",
+        "CRI 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69E",
+      "cle": "69/69E",
+      "segment": "69",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir au maximum 3 crédits de cycles supérieurs dans le répertoire des cours de l'Université de Montréal ou toute autre université, avec l'approbation de la personne responsable du programme d'études suite à la recommandation du directeur de recherche."
+      ]
+    },
+    {
+      "id": "69F",
+      "cle": "69/69F",
+      "segment": "69",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "CRI 69051",
+        "CRI 69052",
+        "CRI 6910",
+        "CRI 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Formation clinique avancée",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CRI 6118",
+        "CRI 6121"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6001",
+        "CRI 6002",
+        "CRI 6003",
+        "CRI 6220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Théories",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6006",
+        "CRI 6007",
+        "CRI 6008",
+        "CRI 6010",
+        "CRI 6533",
+        "CRI 6536"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Cours de concentration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6112",
+        "CRI 6113",
+        "CRI 6114",
+        "CRI 6115",
+        "CRI 6119"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CRI 6122",
+        "CRI 6223",
+        "CRI 6224",
+        "CRI 6226",
+        "CRI 6228",
+        "CRI 6229",
+        "CRI 6231",
+        "CRI 6232",
+        "CRI 6233",
+        "CRI 6234",
+        "CRI 6530",
+        "CRI 6531",
+        "CRI 6532",
+        "CRI 6535",
+        "CRI 6538",
+        "CRI 6539",
+        "CRI 6540",
+        "CRI 6720",
+        "CRI 6721",
+        "CRI 6722",
+        "CRI 6723",
+        "CRI 6725",
+        "CRI 6726",
+        "CRI 6727",
+        "CRI 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Stage et rapport de stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "CRI 6146",
+        "CRI 6147",
+        "CRI 61661",
+        "CRI 61662",
+        "CRI 61771",
+        "CRI 61772",
+        "CRI 6187"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant qui échoue le CRI 6147 doit reprendre le CRI 6146 même si ce dernier a été réussi."
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Méthodologie et outils d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6001",
+        "CRI 6002",
+        "CRI 6003",
+        "CRI 6220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Aspects de la sécurité intérieure",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 21 crédits.",
+      "cours": [
+        "CRI 6006",
+        "CRI 6007",
+        "CRI 6226",
+        "CRI 6720",
+        "CRI 6721",
+        "CRI 6722",
+        "CRI 6723",
+        "CRI 6725",
+        "CRI 6726",
+        "CRI 6727",
+        "CRI 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6008",
+        "CRI 6010",
+        "CRI 6112",
+        "CRI 6113",
+        "CRI 6114",
+        "CRI 6115",
+        "CRI 6118",
+        "CRI 6119",
+        "CRI 6121",
+        "CRI 6122",
+        "CRI 6223",
+        "CRI 6224",
+        "CRI 6228",
+        "CRI 6229",
+        "CRI 6231",
+        "CRI 6232",
+        "CRI 6233",
+        "CRI 6234",
+        "CRI 6530",
+        "CRI 6531",
+        "CRI 6532",
+        "CRI 6533",
+        "CRI 6535",
+        "CRI 6536",
+        "CRI 6538",
+        "CRI 6539",
+        "CRI 6540"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir au maximum 3 crédits de cycles supérieurs dans le répertoire des cours de l'Université de Montréal ou toute autre université, avec l'approbation de la personne responsable du programme d'études suite à la recommandation du directeur de recherche."
+      ]
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Étude de cas",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits",
+      "cours": [
+        "CRI 6908",
+        "CRI 6911"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4.5,
+          "max": 4.5
+        }
+      },
+      "regleBrut": "Obligatoire - 4.5 crédits.",
+      "cours": [
+        "CRI 6850",
+        "CRI 6851"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés par l'Université de Lausanne."
+      ]
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Méthodologie et outils d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6001",
+        "CRI 6002",
+        "CRI 6003",
+        "CRI 6220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Analyse du phénomène criminel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "CRI 6006",
+        "CRI 6007",
+        "CRI 6112",
+        "CRI 6223",
+        "CRI 6224",
+        "CRI 6226",
+        "CRI 6228",
+        "CRI 6229",
+        "CRI 6231",
+        "CRI 6233",
+        "CRI 6234",
+        "CRI 6530",
+        "CRI 6531",
+        "CRI 6532",
+        "CRI 6720",
+        "CRI 6721",
+        "CRI 6722",
+        "CRI 6723",
+        "CRI 6725",
+        "CRI 6726",
+        "CRI 6727",
+        "CRI 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Analyse de la trace",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CRI 6860",
+        "CRI 6861",
+        "CRI 6862",
+        "CRI 6863",
+        "CRI 6864",
+        "CRI 6865",
+        "CRI 6866",
+        "CRI 6867"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés à l'Université de Lausanne."
+      ]
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CRI 6008",
+        "CRI 6010",
+        "CRI 6113",
+        "CRI 6114",
+        "CRI 6115",
+        "CRI 6118",
+        "CRI 6119",
+        "CRI 6121",
+        "CRI 6122",
+        "CRI 6232",
+        "CRI 6533",
+        "CRI 6535",
+        "CRI 6536",
+        "CRI 6538",
+        "CRI 6539",
+        "CRI 6540"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73F",
+      "cle": "73/73F",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir au maximum 3 crédits de cycles supérieurs dans le répertoire des cours de l'Université de Montréal ou toute autre université, avec l'approbation de la personne responsable du programme d'études suite à la recommandation du directeur de recherche."
+      ]
+    },
+    {
+      "id": "73G",
+      "cle": "73/73G",
+      "segment": "73",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16.5,
+          "max": 16.5
+        }
+      },
+      "regleBrut": "Obligatoire - 16.5 crédits.",
+      "cours": [
+        "CRI 6906",
+        "CRI 6912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Méthodologie et outils d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6001",
+        "CRI 6002",
+        "CRI 6003",
+        "CRI 6220",
+        "DRT 6500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Fondements",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CRI 6533",
+        "CRI 6535",
+        "CRI 6536"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Cours de concentration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "CRI 6113",
+        "CRI 6115",
+        "CRI 6223",
+        "CRI 6224",
+        "CRI 6231",
+        "CRI 6232",
+        "CRI 6530",
+        "CRI 6531",
+        "CRI 6538",
+        "CRI 6539",
+        "CRI 6540",
+        "CRI 6727",
+        "DRT 6853"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CRI 6006",
+        "CRI 6007",
+        "CRI 6008",
+        "CRI 6010",
+        "CRI 6112",
+        "CRI 6114",
+        "CRI 6118",
+        "CRI 6119",
+        "CRI 6121",
+        "CRI 6122",
+        "CRI 6226",
+        "CRI 6228",
+        "CRI 6229",
+        "CRI 6233",
+        "CRI 6234",
+        "CRI 6532",
+        "CRI 6720",
+        "CRI 6721",
+        "CRI 6722",
+        "CRI 6723",
+        "CRI 6725",
+        "CRI 6726",
+        "CRI 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74E",
+      "cle": "74/74E",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir au maximum 3 crédits de cycles supérieurs dans le répertoire des cours de l'Université de Montréal ou toute autre université, avec l'approbation de la personne responsable du programme d'études suite à la recommandation du directeur de recherche."
+      ]
+    },
+    {
+      "id": "74F",
+      "cle": "74/74F",
+      "segment": "74",
+      "nom": "Étude de cas",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "CRI 6960",
+        "CRI 6961"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 11 (A23)\nLa maîtrise comporte 45 crédits. Elle inclut cinq options selon les modalités suivantes :\n- l'option générale, avec mémoire (segment 69),\n- l'option intervention, avec stage (segment 71),\n- l'option sécurité intérieure, avec travail dirigé (segment 72),\n- l'option criminalistique et information, avec travail dirigé (segment 73),\n- l'option justice et victimes, avec travail dirigé (segment 74).",
+    "Segment 69 Propre à l'option générale — Les crédits du segment 69 sont répartis de la façon suivante : 30 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, de 12 à 15 crédits à option, et de 0 à 3 crédits au choix.",
+    "Segment 71 Propre à l'option intervention — Les crédits du segment 71 sont répartis de la façon suivante : 33 crédits obligatoires dont 20 crédits attribués à un stage et à la rédaction d'un rapport de stage, et 12 crédits à option.",
+    "Segment 72 Propre à l'option sécurité intérieure — Les crédits du segment 72 sont répartis de la façon suivante : 18 crédits obligatoires, dont 15 crédits attribués à la rédaction d'une étude de cas, 24 à 27 crédits à option, et de 0 à 3 crédits au choix.",
+    "Segment 73 Propre à l'option criminalistique et information — Les crédits du segment 73 sont répartis de la façon suivante : 21 crédits obligatoires dont 15 crédits attribués à la rédaction d'un travail dirigé, 21 à 24 crédits à option, et de 0 à 3 crédits au choix.",
+    "Segment 74 Propre à l'option justice et victimes — Les crédits du segment 74 sont répartis de la façon suivante : 18 crédits obligatoires, dont 15 crédits attribués à la rédaction d'une étude de cas, 24 à 27 crédits à option, et de 0 à 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-criminologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:31.420Z"
+}

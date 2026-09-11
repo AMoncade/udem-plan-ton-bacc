@@ -1,0 +1,284 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-biologiques",
+  "nom": "Maîtrise en sciences biologiques",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "Recherche en biologie",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 3,
+          "max": 6
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Biologie quantitative et computationnelle",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 6 crédits obligatoires, 39 crédits à option dont 12 à 18 crédits de stages de recherche ou de travaux dirigés.",
+        "obligatoire": {
+          "min": 6,
+          "max": 6
+        },
+        "option": {
+          "min": 12,
+          "max": 18
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours de synthèse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIO 6028",
+        "BIO 6034",
+        "BIO 6037",
+        "BIO 6044",
+        "BIO 6078",
+        "BIO 6106",
+        "BIO 6157",
+        "BIO 6204",
+        "BIO 6205",
+        "BIO 6206",
+        "BIO 6390",
+        "BIO 6432",
+        "BIO 6441",
+        "BIO 6756",
+        "BIO 6790",
+        "BIO 6822",
+        "BIO 6851",
+        "BIO 6866",
+        "BIO 6872",
+        "BIO 6875",
+        "BIO 6965"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours méthodologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIO 6004",
+        "BIO 6020",
+        "BIO 60321",
+        "BIO 60322",
+        "BIO 6033",
+        "BIO 6245"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours spécialisés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIO 6008",
+        "BIO 6009",
+        "BIO 6011"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BIN 6002",
+        "EDD 6050",
+        "ENV 6002",
+        "MSL 6515",
+        "NSC 6060",
+        "NSC 6070",
+        "SPV 6410",
+        "TXL 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis avec l'approbation du responsable du programme."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 39,
+          "max": 39
+        }
+      },
+      "regleBrut": "Obligatoire - 39 crédits.",
+      "cours": [
+        "BIO 6903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "BIO 6004",
+        "BIO 60321",
+        "BIO 60322"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 21,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 21 crédits, maximum 27 crédits.",
+      "cours": [
+        "BIN 6002",
+        "BIO 6009",
+        "BIO 6033",
+        "BIO 6034",
+        "BIO 6037",
+        "BIO 6204",
+        "BIO 6245",
+        "BIO 6851",
+        "BIO 6866"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Stages de recherche et travaux dirigés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "BIO 6061",
+        "BIO 6062",
+        "BIO 6063",
+        "BIO 6064"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A19)\nLa maîtrise comporte 45 crédits.\nElle est offerte selon 2 options:\n- option Recherche en biologie (segment 70)\n- option Biologie quantitative et computationnelle (segment 71)",
+    "Segment 70 Propre à l'option Recherche en biologie — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 70 Propre à l'option Recherche en biologie — L'étudiant doit réussir au moins un cours des blocs 70A, 70B, 70C ou 70D (cours en sciences biologiques).",
+    "Segment 71 Propre à l'option Biologie quantitative et computationnelle — Les crédits de l'option sont répartis de la façon suivante : 6 crédits obligatoires, 39 crédits à option dont 12 à 18 crédits de stages de recherche ou de travaux dirigés."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-biologiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:49.889Z"
+}

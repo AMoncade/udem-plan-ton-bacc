@@ -1,0 +1,138 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-sociologie",
+  "nom": "Mineure en sociologie",
+  "orientation": null,
+  "segments": [
+    "73"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Bases théoriques et méthodologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SOL 1013",
+        "SOL 1015",
+        "SOL 1017",
+        "SOL 1018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Cours thématiques en sociologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "SOL 1012",
+        "SOL 1016",
+        "SOL 1020",
+        "SOL 1090",
+        "SOL 1102",
+        "SOL 1150",
+        "SOL 1400",
+        "SOL 1967",
+        "SOL 2015",
+        "SOL 2016",
+        "SOL 2017",
+        "SOL 2018",
+        "SOL 2020",
+        "SOL 2027",
+        "SOL 2050",
+        "SOL 2103",
+        "SOL 2104",
+        "SOL 2105",
+        "SOL 2107",
+        "SOL 2111",
+        "SOL 2200",
+        "SOL 2201",
+        "SOL 2301",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 2503",
+        "SOL 2511",
+        "SOL 3017",
+        "SOL 3026",
+        "SOL 3051",
+        "SOL 3104",
+        "SOL 3107",
+        "SOL 3201",
+        "SOL 3221",
+        "SOL 3351",
+        "SOL 3402",
+        "SOL 3404",
+        "SOL 3406",
+        "SOL 3407",
+        "SOL 3410",
+        "SOL 3505",
+        "SOL 3604"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73Z",
+      "cle": "73/73Z",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que le sigle SOL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 09 (A05)\nLa mineure comporte 30 crédits.",
+    "Segment 73 — Les crédits de la mineure sont répartis de la façon suivante : 12 crédits obligatoires, 15 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-sociologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:46.023Z"
+}

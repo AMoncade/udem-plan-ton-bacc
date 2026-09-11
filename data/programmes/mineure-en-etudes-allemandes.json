@@ -1,0 +1,164 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-allemandes",
+  "nom": "Mineure en études allemandes",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Apprentissage initial de l'allemand",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "À l'arrivée à l'Université, les étudiants sont classés selon leurs connaissances de la langue allemande après étude de leur parcours préalable par le responsable, ou, au besoin, après un test (entretien ou test écrit auprès de la coordonnatrice des cours d'allemand au Centre de langues). Selon leur classement, les étudiants devront suivre des cours dans le bloc 71A."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Introduction aux études allemandes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1110",
+        "ALL 1210",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2110"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Littérature / civilisation en langue française et traduction",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ALL 1310",
+        "ALL 2214",
+        "ALL 2321",
+        "ALL 3111",
+        "ALL 3112",
+        "ALL 3131",
+        "ALL 3145",
+        "HNU 1000",
+        "HNU 2000",
+        "LLM 1000",
+        "LLM 1310",
+        "LLM 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Littérature / civilisation en langue allemande",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ALL 2200",
+        "ALL 2214",
+        "ALL 2270",
+        "ALL 2321",
+        "ALL 2333",
+        "ALL 2340",
+        "ALL 2444",
+        "ALL 3200",
+        "ALL 3263",
+        "ALL 3273",
+        "ALL 3281",
+        "ALL 3333"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ALL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 10 (A19)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-allemandes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:21.119Z"
+}

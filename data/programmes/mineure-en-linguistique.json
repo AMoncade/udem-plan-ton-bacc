@@ -1,0 +1,194 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-linguistique",
+  "nom": "Mineure en linguistique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 9 crédits obligatoires, 18 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 18,
+      "max": 18
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Initiation à la linguistique 1",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Initiation à la linguistique 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "LNG 2050",
+        "LNG 2080",
+        "LNG 2360",
+        "LNG 2400",
+        "LNG 2470"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Initiation à linguistique historique/philologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "LNG 1050",
+        "LNG 1126",
+        "LNG 2122"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Maîtrise du français",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FRA 1013",
+        "FRA 2953G",
+        "TRA 1005",
+        "TRA 1015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Outils et applications",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "LNG 1013",
+        "LNG 2002",
+        "LNG 2052",
+        "LNG 2075",
+        "LNG 2095",
+        "LNG 2160",
+        "LNG 2340",
+        "LNG 2350",
+        "LNG 3120",
+        "LNG 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Sujets spéciaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "LLM 2000",
+        "LNG 1010",
+        "LNG 2045",
+        "LNG 2100",
+        "LNG 2140",
+        "LNG 2240",
+        "LNG 2355"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A98)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — Les crédits de la mineure sont répartis de la façon suivante : 9 crédits obligatoires, 18 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-linguistique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:06.854Z"
+}

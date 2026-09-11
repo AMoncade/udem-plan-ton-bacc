@@ -1,0 +1,122 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-droit-international",
+  "nom": "Microprogramme de 2e cycle en droit international",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : de 12 à 15 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 12,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "DRI 6130",
+        "DRT 6500",
+        "DRT 6510",
+        "DRT 6515",
+        "DRT 6805B",
+        "DRT 6816A",
+        "DRT 6816B",
+        "DRT 6816C",
+        "DRT 6818A",
+        "DRT 6818B",
+        "DRT 6818C",
+        "DRT 6828",
+        "DRT 6830A",
+        "DRT 6830B",
+        "DRT 6830D",
+        "DRT 6830E",
+        "DRT 6830F",
+        "DRT 6830G",
+        "DRT 6830H",
+        "DRT 6830I",
+        "DRT 6830J",
+        "DRT 6870C",
+        "DRT 6883A",
+        "DRT 6883B",
+        "DRT 6883C",
+        "DRT 6884",
+        "DRT 6903",
+        "DRT 6909",
+        "DRT 6910",
+        "DRT 6912",
+        "DRT 6916W",
+        "DRT 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 2e cycle choisi parmi les cours d'un autre domaine du droit ou, avec l'accord du doyen, d'une autre faculté."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Avec l'accord du doyen, cours choisi parmi les cours de 1er cycle en droit."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (H06)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : de 12 à 15 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-droit-international/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:46.911Z"
+}

@@ -1,0 +1,96 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-droit-et-travail",
+  "nom": "Microprogramme de 2e cycle en droit et travail",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : de 12 à 15 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 12,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "DRI 6106",
+        "DRI 6110",
+        "DRI 6115",
+        "DRI 6120",
+        "DRI 6125",
+        "DRI 6130"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis parmi les cours de 2e cycle offerts par la Faculté de droit ou l'École de relations industrielles."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis dans d'autres programmes de 2e cycle avec l'approbation des responsables du programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A05)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : de 12 à 15 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-droit-et-travail/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:44.748Z"
+}

@@ -1,0 +1,319 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-musiques-histoire-et-societes",
+  "nom": "Majeure en musiques, histoire et sociétés",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires et 39 crédits à option.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 39,
+      "max": 39
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "MTE 2210",
+        "MTE 2211",
+        "MUL 1132",
+        "MUL 1134",
+        "MUL 1245",
+        "MUL 3314",
+        "MUL 3334"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MUS 1011",
+        "MUS 1012",
+        "MUS 1013",
+        "MUS 1014",
+        "MUS 1015",
+        "MUS 1016"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MUS 1011 à 1016 - Solfège et dictée 1 à 6 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Histoire de la musique 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUL 1102",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1117"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Histoire de la musique 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3208X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Théories et sciences de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUL 2450",
+        "MUL 3333X",
+        "MUL 3335X",
+        "MUS 1232",
+        "MUS 1300",
+        "MUS 1321",
+        "MUS 1327",
+        "MUS 3321",
+        "MUS 3322X",
+        "MUS 3323"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Musiques, cultures et sociétés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "MUL 1246",
+        "MUL 3344",
+        "MUS 2135"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Écriture et analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "MTE 1100",
+        "MTE 1110",
+        "MTE 1111",
+        "MTE 1120",
+        "MTE 12041",
+        "MTE 12042",
+        "MTE 1205",
+        "MTE 1206",
+        "MTE 1220",
+        "MTE 1221",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 2116",
+        "MTE 2117",
+        "MTE 2315",
+        "MTE 2316",
+        "MTE 3300",
+        "MUL 2109",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1217",
+        "MUS 1315"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MTE 1100 & 1120 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Outils professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "DRT 3812",
+        "MUS 1127",
+        "MUS 2134",
+        "PLU 2800U"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Cours de langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts. Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Grands ensembles et ateliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1285",
+        "MUE 1286",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1345",
+        "MUE 1346",
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1363",
+        "MUE 1364",
+        "MUE 1365",
+        "MUE 1366",
+        "MUE 1441",
+        "MUE 1442",
+        "MUE 1443",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1473",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1495",
+        "MUE 1496",
+        "MUI 1162A",
+        "MUI 1162B",
+        "MUI 2162A"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : La participation aux ateliers et ensembles de ce bloc requiert que les étudiants passent une audition, à l'exception du gamelan et des cours de Connaissance du clavier."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A26)\nLa majeure comporte 60 crédits.",
+    "Segment 70 — Les crédits de la majeure sont répartis de la façon suivante : 21 crédits obligatoires et 39 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-musiques-histoire-et-societes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:57.783Z"
+}

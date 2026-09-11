@@ -1,0 +1,102 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-genie-biomedical",
+  "nom": "Maîtrise en génie biomédical",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 18 crédits obligatoires, 27 crédits à option, dont 24 crédits attribués à un travail dirigé et à un stage.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "ASA 6732",
+        "GBM 6112",
+        "GBM 6126",
+        "PHY 6918"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6768",
+        "ASA 6769"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Stage et projet dirigé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - 24 crédits.",
+      "cours": [
+        "GBM 6127",
+        "GBM 6903",
+        "GBM 69031",
+        "GBM 69032"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours GBM 69031 et GBM 69032 sont équivalents au cours GBM 6903."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 11 (A26)\nLa maîtrise comporte 45 crédits. Elle est offerte selon les modalités avec mémoire (MM) ou travail dirigé/stage (TD/ST). L'étudiant doit choisir parmi les deux options suivantes : option GÉNÉRALE ou option GÉNIE CLINIQUE.",
+    "Segment 70 Propre à l'option générale — Les crédits du segment 70 sont répartis de la façon suivante : pour la modalité avec mémoire, 33 crédits sont obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits sont à option; pour la modalité avec travail dirigé ou stage, 2 crédits sont obligatoires et les 43 crédits à option restant doivent inclure entre 9 et 15 crédits de travail dirigé ou de stage.",
+    "Segment 71 Propre à l'option génie clinique — Les crédits de l'option sont répartis de la façon suivante : 18 crédits obligatoires, 27 crédits à option, dont 24 crédits attribués à un travail dirigé et à un stage."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-genie-biomedical/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:48.575Z"
+}

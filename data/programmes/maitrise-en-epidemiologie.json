@@ -1,0 +1,99 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-epidemiologie",
+  "nom": "Maîtrise en épidémiologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 42 crédits obligatoires, dont 21 crédits attribués à la rédaction d'un mémoire, et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 42,
+      "max": 42
+    },
+    "option": null,
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "BIE 6046",
+        "MSO 6011",
+        "MSO 6014",
+        "MSO 6061",
+        "MSO 6067",
+        "MSO 6616",
+        "MSO 6619",
+        "MSO 6634",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir parmi les cours de 2e cycle dans les répertoires des programmes de Médecine sociale et préventive ou tout autre cours sujet à l'approbation du directeur du programme. Exceptionnellement un cours de 1er cycle pourrait être suivi sur approbation du directeur de programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "MSO 6622"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A21)\nLa maîtrise est de 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 42 crédits obligatoires, dont 21 crédits attribués à la rédaction d'un mémoire, et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-epidemiologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:30.882Z"
+}

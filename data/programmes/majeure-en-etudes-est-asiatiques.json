@@ -1,0 +1,422 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-etudes-est-asiatiques",
+  "nom": "Majeure en études est-asiatiques",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "72",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "Chine",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Japon",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Corée",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Formation est-asiatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 24 crédits.",
+      "cours": [
+        "AES 1100",
+        "AES 2040",
+        "AES 2070",
+        "AES 3800",
+        "ANT 3164",
+        "GEO 3412",
+        "GEO 3442",
+        "HST 1061",
+        "HST 1062",
+        "HST 1063",
+        "HST 2618",
+        "HST 2624",
+        "HST 2625",
+        "HST 2628",
+        "HST 3570",
+        "PHI 2960",
+        "POL 3753",
+        "POL 3754"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Formation est-asiatique complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "AES 2011",
+        "AES 2012",
+        "AES 2014",
+        "AES 2015",
+        "AES 2020",
+        "AES 2021",
+        "AES 2034",
+        "AES 2050",
+        "AES 2060",
+        "AES 2710",
+        "AES 2800",
+        "AES 3021",
+        "AES 3022",
+        "AES 3032",
+        "AES 3500",
+        "ANT 3864",
+        "ANT 3866",
+        "ANT 3875",
+        "HST 2621",
+        "PHI 2965",
+        "POL 3011",
+        "REL 1250",
+        "REL 1251",
+        "REL 2240",
+        "REL 2250",
+        "REL 2255"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Formation est-asiatique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "AES 3010",
+        "AES 3041",
+        "AES 3610",
+        "AES 3815",
+        "AES 3915",
+        "HST 3571",
+        "HST 3574",
+        "POL 3008",
+        "POL 3401"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Y",
+      "cle": "01/01Y",
+      "segment": "01",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ANT 1213",
+        "ANT 1611",
+        "COM 2001",
+        "LCO 2011",
+        "LCO 2090",
+        "MUL 1246",
+        "POL 1954",
+        "PPL 3040",
+        "SOL 3221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Langue chinoise",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 36
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 36 crédits.",
+      "cours": [
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Autres langues asiatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AES 1001",
+        "AES 1002",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Langue japonaise",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 36
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 36 crédits.",
+      "cours": [
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Autres langues asiatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AES 1001",
+        "AES 1002",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Langue coréenne",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 30 crédits.",
+      "cours": [
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Autres langues asiatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AES 1001",
+        "AES 1002",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 9 (A16)\nLa majeure comporte 60 crédits. Elle est offerte avec un tronc commun (segment 01) et trois orientations :\n- l'orientation Chine (segments 01 et 71), comporte 60 crédits à option,\n- l'orientation Japon (segments 01 et 72), comporte 60 crédits à option,\n- l'orientation Corée (segments 01 et 74), comporte 60 crédits à option.",
+    "Segment 01 Commun aux trois orientations — Le tronc commun comporte de 24 à 51 crédits à option.",
+    "Segment 71 Propre à l'orientation Chine — Tous les crédits de l'orientation sont à option. De 9 à 36 crédits peuvent être complétés.",
+    "Segment 72 Propre à l'orientation Japon — Tous les crédits de l'orientation sont à option. De 9 à 36 crédits peuvent être complétés.",
+    "Segment 74 Propre à l'orientation Corée — Tous les crédits de l'orientation sont à option. De 9 à 36 crédits peuvent être complétés."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-etudes-est-asiatiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:26.196Z"
+}

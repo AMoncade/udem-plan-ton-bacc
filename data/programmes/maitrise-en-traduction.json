@@ -1,0 +1,116 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-traduction",
+  "nom": "Maîtrise en traduction",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 6001",
+        "TRA 6002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Séminaires spécialisés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "TRA 6003",
+        "TRA 6004",
+        "TRA 6008",
+        "TRA 6011",
+        "TRA 6015",
+        "TRA 6021"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Complément de formation à la recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sous réserve de l'approbation du conseiller pédagogique ou du directeur du département, l'étudiant peut choisir des cours des différentes options de la Maîtrise en traduction, de la Maîtrise en traduction, option traduction professionnelle anglais-français, du D.E.S.S. traduction (si le diplôme n'a pas déjà été obtenu), des cours de niveau 2000 ou 3000 du Baccalauréat en traduction, des cours de 1er ou 2e cycle des programmes de linguistique ou tout autre cours hors département contribuant à sa spécialisation ou utile à la rédaction de son mémoire, dont les ateliers des Saisons des ESP, à l'exclusion des cours de perfectionnement du français ou de l'anglais."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits",
+      "cours": [
+        "TRA 6930"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A27)\nLa maîtrise comporte 45 crédits et est offerte selon la modalité avec mémoire.",
+    "Segment 70 Propre à l'option recherche — Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-traduction/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:49.246Z"
+}

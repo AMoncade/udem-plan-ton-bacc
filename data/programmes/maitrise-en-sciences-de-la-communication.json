@@ -1,0 +1,1513 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-la-communication",
+  "nom": "Maîtrise en sciences de la communication",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75",
+    "76"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Communication organisationnelle",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Communication médiatique",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Communication politique",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Communication politique - volet international",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Recherche-création",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Études de journalisme",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "COM 6020",
+        "COM 6815"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70A",
+      "cle": "70/MM-70A",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70B",
+      "cle": "70/MM-70B",
+      "segment": "70",
+      "nom": "Outils théoriques et analytiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6174",
+        "COM 6175",
+        "COM 6192",
+        "COM 6201",
+        "COM 6331",
+        "COM 6335",
+        "COM 6341",
+        "COM 6351",
+        "COM 6355",
+        "COM 6374",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6500",
+        "COM 6501",
+        "COM 6502",
+        "COM 6505",
+        "COM 6531",
+        "COM 6550",
+        "COM 6710",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841",
+        "COM 6915",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70C",
+      "cle": "70/MM-70C",
+      "segment": "70",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "MM-70D",
+      "cle": "70/MM-70D",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "COM 6006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70A",
+      "cle": "70/TD-70A",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70B",
+      "cle": "70/TD-70B",
+      "segment": "70",
+      "nom": "Outils théoriques et analytiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 21 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6174",
+        "COM 6175",
+        "COM 6192",
+        "COM 6201",
+        "COM 6331",
+        "COM 6335",
+        "COM 6341",
+        "COM 6351",
+        "COM 6355",
+        "COM 6374",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6500",
+        "COM 6501",
+        "COM 6502",
+        "COM 6505",
+        "COM 6531",
+        "COM 6710",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841",
+        "COM 6915",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70C",
+      "cle": "70/TD-70C",
+      "segment": "70",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "TD-70D",
+      "cle": "70/TD-70D",
+      "segment": "70",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "COM 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-71A",
+      "cle": "71/MM-71A",
+      "segment": "71",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-71B",
+      "cle": "71/MM-71B",
+      "segment": "71",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "COM 6201",
+        "COM 6351",
+        "COM 6355",
+        "COM 6500",
+        "COM 6505",
+        "COM 6915",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-71C",
+      "cle": "71/MM-71C",
+      "segment": "71",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6174",
+        "COM 6175",
+        "COM 6192",
+        "COM 6331",
+        "COM 6335",
+        "COM 6341",
+        "COM 6374",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6501",
+        "COM 6502",
+        "COM 6531",
+        "COM 6550",
+        "COM 6710",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-71D",
+      "cle": "71/MM-71D",
+      "segment": "71",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "MM-71E",
+      "cle": "71/MM-71E",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "COM 6006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-71A",
+      "cle": "71/TD-71A",
+      "segment": "71",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-71B",
+      "cle": "71/TD-71B",
+      "segment": "71",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "COM 6201",
+        "COM 6351",
+        "COM 6355",
+        "COM 6500",
+        "COM 6505",
+        "COM 6915",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-71C",
+      "cle": "71/TD-71C",
+      "segment": "71",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6174",
+        "COM 6175",
+        "COM 6192",
+        "COM 6331",
+        "COM 6335",
+        "COM 6341",
+        "COM 6374",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6501",
+        "COM 6502",
+        "COM 6531",
+        "COM 6550",
+        "COM 6710",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-71D",
+      "cle": "71/TD-71D",
+      "segment": "71",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "TD-71E",
+      "cle": "71/TD-71E",
+      "segment": "71",
+      "nom": "Travaux dirigés",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "COM 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-72A",
+      "cle": "72/MM-72A",
+      "segment": "72",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-72B",
+      "cle": "72/MM-72B",
+      "segment": "72",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6174",
+        "COM 6175",
+        "COM 6192",
+        "COM 6341",
+        "COM 6351",
+        "COM 6374",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6501",
+        "COM 6531",
+        "COM 6715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-72C",
+      "cle": "72/MM-72C",
+      "segment": "72",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "COM 6201",
+        "COM 6331",
+        "COM 6335",
+        "COM 6355",
+        "COM 6500",
+        "COM 6502",
+        "COM 6505",
+        "COM 6550",
+        "COM 6710",
+        "COM 6840",
+        "COM 6841",
+        "COM 6915",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-72D",
+      "cle": "72/MM-72D",
+      "segment": "72",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "MM-72E",
+      "cle": "72/MM-72E",
+      "segment": "72",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "COM 6006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-72A",
+      "cle": "72/TD-72A",
+      "segment": "72",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-72B",
+      "cle": "72/TD-72B",
+      "segment": "72",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6174",
+        "COM 6175",
+        "COM 6192",
+        "COM 6341",
+        "COM 6351",
+        "COM 6374",
+        "COM 6394",
+        "COM 6501",
+        "COM 6531",
+        "COM 6710",
+        "COM 6715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-72C",
+      "cle": "72/TD-72C",
+      "segment": "72",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6201",
+        "COM 6331",
+        "COM 6335",
+        "COM 6355",
+        "COM 6402",
+        "COM 6421",
+        "COM 6500",
+        "COM 6502",
+        "COM 6505",
+        "COM 6550",
+        "COM 6840",
+        "COM 6841",
+        "COM 6915",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-72D",
+      "cle": "72/TD-72D",
+      "segment": "72",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "TD-72E",
+      "cle": "72/TD-72E",
+      "segment": "72",
+      "nom": "Travaux dirigés",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "COM 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-73A",
+      "cle": "73/MM-73A",
+      "segment": "73",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-73B",
+      "cle": "73/MM-73B",
+      "segment": "73",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6192",
+        "COM 6331",
+        "COM 6335",
+        "COM 6341",
+        "COM 6351",
+        "COM 6374",
+        "COM 6502",
+        "COM 6710",
+        "COM 6915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-73C",
+      "cle": "73/MM-73C",
+      "segment": "73",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6174",
+        "COM 6175",
+        "COM 6201",
+        "COM 6355",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6500",
+        "COM 6501",
+        "COM 6505",
+        "COM 6531",
+        "COM 6550",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-73D",
+      "cle": "73/MM-73D",
+      "segment": "73",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "MM-73E",
+      "cle": "73/MM-73E",
+      "segment": "73",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "COM 6006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-73A",
+      "cle": "73/TD-73A",
+      "segment": "73",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-73B",
+      "cle": "73/TD-73B",
+      "segment": "73",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6192",
+        "COM 6331",
+        "COM 6335",
+        "COM 6341",
+        "COM 6351",
+        "COM 6374",
+        "COM 6502",
+        "COM 6710",
+        "COM 6915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-73C",
+      "cle": "73/TD-73C",
+      "segment": "73",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "COM 6174",
+        "COM 6175",
+        "COM 6201",
+        "COM 6355",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6500",
+        "COM 6501",
+        "COM 6505",
+        "COM 6531",
+        "COM 6550",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-73D",
+      "cle": "73/TD-73D",
+      "segment": "73",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "TD-73E",
+      "cle": "73/TD-73E",
+      "segment": "73",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "COM 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-74B",
+      "cle": "74/TD-74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de sigle COM de niveau 6000 déterminés annuellement par le Comité des études supérieures du Département de communication de l'Université de Montréal. Ces cours devront être suivis au trimestre d'automne de la deuxième année du programme."
+      ]
+    },
+    {
+      "id": "TD-74C",
+      "cle": "74/TD-74C",
+      "segment": "74",
+      "nom": "Séminaires - Université libre de Bruxelles",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Ceux-ci s'inscrivent dans la finalité Communication politique du Master en information et communication du Département des sciences de l'information et de la communication de l'Université libre de Bruxelles. Ces cours devront être suivis au trimestre d'hiver suivant l'inscription initiale dans le programme."
+      ]
+    },
+    {
+      "id": "TD-74D",
+      "cle": "74/TD-74D",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "TD-74E",
+      "cle": "74/TD-74E",
+      "segment": "74",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "COM 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "Approche en recherche-création",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6402",
+        "COM 6531",
+        "COM 6715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6135",
+        "COM 6174",
+        "COM 6175",
+        "COM 6192",
+        "COM 6331",
+        "COM 6341",
+        "COM 6351",
+        "COM 6394",
+        "COM 6421",
+        "COM 6501",
+        "COM 6840"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6335",
+        "COM 6355",
+        "COM 6502",
+        "COM 6550",
+        "COM 6710",
+        "COM 6840",
+        "COM 6841",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75E",
+      "cle": "75/75E",
+      "segment": "75",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "75F",
+      "cle": "75/75F",
+      "segment": "75",
+      "nom": "Réalisation en recherche-création",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "COM 6006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-76A",
+      "cle": "76/MM-76A",
+      "segment": "76",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-76B",
+      "cle": "76/MM-76B",
+      "segment": "76",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6175",
+        "COM 6192",
+        "COM 6374",
+        "COM 6710",
+        "JRN 6101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-76C",
+      "cle": "76/MM-76C",
+      "segment": "76",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6174",
+        "COM 6201",
+        "COM 6355",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6500",
+        "COM 6501",
+        "COM 6505",
+        "COM 6531",
+        "COM 6550",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-76D",
+      "cle": "76/MM-76D",
+      "segment": "76",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "MM-76E",
+      "cle": "76/MM-76E",
+      "segment": "76",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "COM 6006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-76A",
+      "cle": "76/TD-76A",
+      "segment": "76",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 6205",
+        "COM 6285"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-76B",
+      "cle": "76/TD-76B",
+      "segment": "76",
+      "nom": "Séminaires de l'option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6175",
+        "COM 6192",
+        "COM 6374",
+        "COM 6710",
+        "JRN 6101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-76C",
+      "cle": "76/TD-76C",
+      "segment": "76",
+      "nom": "Formation avancée en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "COM 6174",
+        "COM 6201",
+        "COM 6355",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6500",
+        "COM 6501",
+        "COM 6505",
+        "COM 6531",
+        "COM 6550",
+        "COM 6715",
+        "COM 6840",
+        "COM 6841",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-76D",
+      "cle": "76/TD-76D",
+      "segment": "76",
+      "nom": "Apport d'autres disciplines",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université avec l'approbation du responsable."
+      ]
+    },
+    {
+      "id": "TD-76E",
+      "cle": "76/TD-76E",
+      "segment": "76",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "COM 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 11 (H18)\nLa maîtrise comporte 45 crédits. Elle est offerte selon les sept options suivantes:\n- l'option Générale (segment 01 et segment 70),\n- l'option Communication organisationnelle (segment 01 et segment 71),\n- l'option Communication médiatique (segment 01 et segment 72),\n- l'option Communication politique (segment 01 et segment 73),\n- l'option Communication politique - volet international (segment 01 et segment 74).\n- l'option Recherche-création (segment 01 et segment 75)\n- l'option Études de journalisme (segment 01 et segment 76)\nSauf exception, la maîtrise peut être suivie selon deux modalités :\n- la modalité avec mémoire (MM),\n- la modalité avec travail dirigé (TD).\nSeule la modalité avec travail dirigé est permise pour l'option Communication politique - volet international. Par ailleurs, la modalité mémoire est la seule à laquelle ont accès les étudiants ayant choisi l'option recherche-création.",
+    "Segment 01 Tronc commun — Le tronc commun comporte 6 crédits obligatoires.",
+    "Segment 70 Propre à l'option Générale — Les crédits de l'option sont répartis de la façon suivante :",
+    "Segment 70 Propre à l'option Générale — - Modalité avec mémoire (MM) : 24 crédits obligatoires attribués à la rédaction du mémoire, de 12 à 15 crédits à option et, au maximum, 3 crédits au choix,",
+    "Segment 70 Propre à l'option Générale — - Modalité avec travail dirigé (TD) : 15 crédits obligatoires attribués à la rédaction du travail dirigé, de 18 à 24 crédits à option et, au maximum, 6 crédits au choix.",
+    "Segment 71 Propre à l'option Communication organisationnelle — Les crédits de l'option sont répartis de la façon suivante :",
+    "Segment 71 Propre à l'option Communication organisationnelle — - Modalité avec mémoire (MM) : 24 crédits obligatoires attribués à la rédaction d'un mémoire, de 12 à 15 crédits à option et, au maximum, 3 crédits au choix,",
+    "Segment 71 Propre à l'option Communication organisationnelle — - Modalité avec travail dirigé (TD) : 15 crédits obligatoires attribués à la rédaction du travail dirigé, de 18 à 24 crédits à option et, au maximum, 6 crédits au choix.",
+    "Segment 72 Propre à l'option Communication médiatique — Les crédits de l'option sont répartis de la façon suivante :",
+    "Segment 72 Propre à l'option Communication médiatique — - Modalité avec mémoire (MM) : 24 crédits obligatoires attribués à la rédaction du mémoire, de 12 à 15 crédits à option et, au maximum, 3 crédits au choix,",
+    "Segment 72 Propre à l'option Communication médiatique — - Modalité avec travail dirigé (TD) : 15 crédits obligatoires attribués à la rédaction du travail dirigé, de 18 à 24 crédits à option et, au maximum, 6 crédits au choix.",
+    "Segment 73 Propre à l'option Communication politique — Les crédits de l'option sont répartis de la façon suivante :",
+    "Segment 73 Propre à l'option Communication politique — - Modalité avec mémoire (MM) : 24 crédits obligatoires attribués à la rédaction du mémoire, de 12 à 15 crédits à option et, au maximum, 3 crédits au choix,",
+    "Segment 73 Propre à l'option Communication politique — - Modalité avec travail dirigé (TD) : 15 crédits obligatoires attribués à la rédaction du travail dirigé, de 18 à 24 crédits à option et, au maximum, 6 crédits au choix.",
+    "Segment 74 Propre à l'option Communication politique - volet international — Les crédits de l'option sont répartis de la façon suivante :",
+    "Segment 74 Propre à l'option Communication politique - volet international — 24 crédits obligatoires, dont 15 attribués à la rédaction du travail dirigé, 12 crédits à option et 3 crédits au choix.",
+    "Segment 75 Propre à l'option Recherche-création — Les crédits de l'option sont répartis de la façon suivante :",
+    "Segment 75 Propre à l'option Recherche-création — 24 crédits obligatoires attribués au mémoire, 12 à 15 crédits à option et, au maximum, 3 crédits au choix.",
+    "Segment 76 Propre à l'option Études du journalisme — Les crédits de l'option sont répartis de la façon suivante :",
+    "Segment 76 Propre à l'option Études du journalisme — -Modalité avec mémoire (MM) : 24 crédits obligatoires attribués à la rédaction du mémoire, de 12 à 15 crédits à option et, au maximum, 3 crédits au choix.",
+    "Segment 76 Propre à l'option Études du journalisme — -Modalité avec travail dirigé (TD) : 15 crédits obligatoires attribués à la rédaction du travail dirigé, de 18 à 24 crédits à option et, au maximum, 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-la-communication/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:12.631Z"
+}

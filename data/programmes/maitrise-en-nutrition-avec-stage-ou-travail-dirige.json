@@ -1,0 +1,246 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-nutrition-avec-stage-ou-travail-dirige",
+  "nom": "Maîtrise en nutrition (avec stage ou travail dirigé)",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "S-70A",
+      "cle": "70/S-70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MSO 6060",
+        "NUT 6675",
+        "NUT 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "S-70B",
+      "cle": "70/S-70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - 4 crédits.",
+      "cours": [
+        "NUT 6033",
+        "NUT 6040",
+        "NUT 6613",
+        "NUT 6638",
+        "NUT 6643",
+        "NUT 6644",
+        "NUT 6654"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "S-70C",
+      "cle": "70/S-70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "CSS 6100",
+        "NUT 6027",
+        "NUT 6029",
+        "NUT 6093",
+        "NUT 6606",
+        "NUT 6626",
+        "NUT 6659",
+        "NUT 6670",
+        "NUT 6671"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "S-70D",
+      "cle": "70/S-70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix est fait à partir de la liste des cours du Département de nutrition et des cours offerts dans d'autres départements ou facultés de l'Université."
+      ]
+    },
+    {
+      "id": "S-70E",
+      "cle": "70/S-70E",
+      "segment": "70",
+      "nom": "Stage et rapport de stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 17,
+          "max": 17
+        }
+      },
+      "regleBrut": "Obligatoire - 17 crédits.",
+      "cours": [
+        "NUT 6961",
+        "NUT 6962"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le stage permet à l'étudiant d'appliquer ses connaissances à un problème de nutrition clinique ou de nutrition publique et de s'initier à la recherche."
+      ]
+    },
+    {
+      "id": "TD-70A",
+      "cle": "70/TD-70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MSO 6060",
+        "NUT 6650",
+        "NUT 6675"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70B",
+      "cle": "70/TD-70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "NUT 6613",
+        "NUT 6654"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70C",
+      "cle": "70/TD-70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Option - 14 crédits.",
+      "cours": [
+        "NUT 6027",
+        "NUT 6029",
+        "NUT 6033",
+        "NUT 6093",
+        "NUT 6606",
+        "NUT 6626",
+        "NUT 6638",
+        "NUT 6659",
+        "NUT 6670",
+        "NUT 6671"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70D",
+      "cle": "70/TD-70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Choix - Minimum 6 crédits."
+      },
+      "regleBrut": "Choix - Minimum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix est fait à partir de la liste des cours du Département de nutrition et des cours offerts dans d'autres départements ou facultés de l'Université."
+      ]
+    },
+    {
+      "id": "TD-70E",
+      "cle": "70/TD-70E",
+      "segment": "70",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "NUT 6956"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A15)\nLa maîtrise comporte 45 crédits. Elle est offerte selon deux cheminements :\n- la modalité avec travail dirigé (TD) (segment 70),\n- la modalité avec stage (S) (segment 70).",
+    "Segment 70 — Les crédits sont répartis de la façon suivante :",
+    "Segment 70 — - Modalité avec travail dirigé : 24 crédits obligatoires, 15 crédits à option et un minimum de 6 crédits au choix.",
+    "Segment 70 — Au moins deux trimestres consécutifs doivent être accomplis en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine.",
+    "Segment 70 — - Modalité avec stage : 26 crédits obligatoires, 16 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-nutrition-avec-stage-ou-travail-dirige/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:21.741Z"
+}

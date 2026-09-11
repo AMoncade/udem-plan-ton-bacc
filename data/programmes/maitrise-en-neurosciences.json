@@ -1,0 +1,122 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-neurosciences",
+  "nom": "Maîtrise en neurosciences",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires, dont 33 attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option.",
+    "obligatoire": {
+      "min": 39,
+      "max": 39
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "NSC 6020",
+        "NSC 6044",
+        "NSC 6045"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "NSC 6030",
+        "NSC 6035",
+        "NSC 6051",
+        "NSC 6060",
+        "NSC 6061",
+        "NSC 6070",
+        "NSC 6086",
+        "NSC 6088",
+        "PHL 6031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "regleBrut": "Option - 0 crédits.",
+      "cours": [
+        "NSC 6060T",
+        "NSC 6070T"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "NSC 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A15)\nLa maîtrise comporte 45 crédits.\nAu moins 2 trimestres consécutifs doivent être accomplis en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires, dont 33 attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-neurosciences/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:18.440Z"
+}

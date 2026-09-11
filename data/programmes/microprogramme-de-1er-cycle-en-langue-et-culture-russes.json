@@ -1,0 +1,71 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-langue-et-culture-russes",
+  "nom": "Microprogramme de 1er cycle en langue et culture russes",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DMO 1200",
+        "HST 2212",
+        "HST 3259",
+        "LLM 1000",
+        "LLM 2000",
+        "POL 3285",
+        "POL 3286",
+        "POL 3287"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A19)\nLe microprogramme de premier cycle comporte 15 crédits.",
+    "Segment 70 — Tous les crédits du microprogramme sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-langue-et-culture-russes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:28.273Z"
+}

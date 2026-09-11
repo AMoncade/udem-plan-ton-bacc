@@ -1,0 +1,164 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-museologie",
+  "nom": "Maîtrise en muséologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires dont 9 crédits attribués à un stage et 9 crédits attribués à un travail dirigé, 9 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MSL 6101",
+        "MSL 6103"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours MSL 6101 et 6103 sont offerts à l'Université de Montréal, les cours MSL 6102 et 6104, à l'Université du Québec à Montréal."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Muséologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "MSL 6503",
+        "MSL 6505",
+        "MSL 6509",
+        "MSL 6515",
+        "MSL 6517",
+        "MSL 6523",
+        "MSL 6525",
+        "MSL 6527",
+        "MSL 6529"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours ayant des numéros impairs sont offerts à l'université de Montréal, aux deux ou trois ans; les cours ayant des numéros pairs sont offerts à l'Université du Québec à Montréal."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 2e cycle choisi dans l'université d'attache ou, exceptionnellement, un cours de 1er cycle dans un champ d'études connexe."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Séminaire de synthèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "MSL 6800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MSL 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Travaux dirigés",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MSL 6700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (E90)\nLa maîtrise, offerte conjointement avec l'Université du Québec à Montréal, comporte 45 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires dont 9 crédits attribués à un stage et 9 crédits attribués à un travail dirigé, 9 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-museologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:06.371Z"
+}

@@ -1,0 +1,326 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-histoire-de-lart",
+  "nom": "Majeure en histoire de l'art",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante: 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 36,
+      "max": 36
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Outils fondamentaux et d'analyse en histoire de l'art",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "HAR 1001",
+        "HAR 1032",
+        "HAR 1075",
+        "HAR 1145",
+        "HAR 1166",
+        "HAR 1167",
+        "HAR 2075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Mise en pratique des apprentissages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ART 1800",
+        "ART 1900",
+        "ART 2000",
+        "ART 2050",
+        "ART 2060",
+        "ART 2102",
+        "ART 3001",
+        "HAR 2262",
+        "HAR 2290"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Études historiques et actuelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 18 crédits.",
+      "cours": [
+        "HAR 1090",
+        "HAR 1130",
+        "HAR 1161",
+        "HAR 1200",
+        "HAR 1640",
+        "HAR 2070",
+        "HAR 2073",
+        "HAR 2089",
+        "HAR 2090",
+        "HAR 2252",
+        "HAR 2295",
+        "HAR 2330",
+        "HAR 2361",
+        "HAR 2535",
+        "HAR 2650",
+        "HAR 2815",
+        "HAR 3132",
+        "HAR 3220",
+        "HAR 3420"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Art des Amériques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "CIN 2102",
+        "HAR 1115",
+        "HAR 1610",
+        "HAR 2115",
+        "HAR 2195",
+        "HAR 2196",
+        "HAR 2515",
+        "HAR 2717",
+        "HAR 3510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Arts, institutions et sociétés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "HAR 1210",
+        "HAR 1240",
+        "HAR 2121",
+        "HAR 2260",
+        "HAR 2780",
+        "HAR 2781",
+        "HAR 2785",
+        "HAR 2786",
+        "HAR 3040",
+        "HAR 3056",
+        "HAR 3290",
+        "HAR 3450",
+        "HAR 3550",
+        "HAR 3900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72F",
+      "cle": "72/72F",
+      "segment": "72",
+      "nom": "Arts, médiums, techniques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 2108",
+        "CIN 2110",
+        "CIN 2124",
+        "HAR 2185",
+        "HAR 2355",
+        "HAR 2400",
+        "HAR 2460",
+        "HAR 3185",
+        "JEU 1001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Y",
+      "cle": "72/72Y",
+      "segment": "72",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "AES 3815",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1911",
+        "ALL 1912",
+        "ANG 1911",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ANT 1611",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "ARV 1050",
+        "CHN 1901",
+        "CHN 1902",
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 3030",
+        "COM 1150",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1905",
+        "ESP 1225",
+        "ESP 1325",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ETM 1200",
+        "ETM 1400",
+        "FRA 1013",
+        "FRA 1100",
+        "FRA 1120",
+        "FRA 1130",
+        "FRA 2318",
+        "FRA 2517",
+        "GRC 1111",
+        "GRC 1121",
+        "HGL 1021",
+        "HST 1032",
+        "HST 1041",
+        "HST 1042",
+        "HST 1043",
+        "HST 1044",
+        "HST 1051",
+        "HST 1052",
+        "HST 2128",
+        "HST 2352",
+        "HST 2904",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "LAT 1111",
+        "LCO 1001",
+        "LCO 1008",
+        "LCO 3001",
+        "MUL 3333X",
+        "PHI 1255",
+        "PSY 2055",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "REL 1208",
+        "REL 1930",
+        "REL 2320",
+        "REL 3221",
+        "SCI 2955",
+        "SOL 1150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle HAR."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 10 (A21)\nLa majeure comporte 60 crédits.",
+    "Segment 72 — Les crédits de la majeure sont répartis de la façon suivante: 21 crédits obligatoires, 36 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-histoire-de-lart/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:40.706Z"
+}

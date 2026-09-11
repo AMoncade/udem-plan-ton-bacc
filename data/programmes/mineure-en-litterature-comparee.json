@@ -1,0 +1,199 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-litterature-comparee",
+  "nom": "Mineure en littérature comparée",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires, 18 crédits à option et 6 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 18,
+      "max": 18
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Méthodologies",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "LCO 1000",
+        "LCO 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Littérature",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "LCO 1008",
+        "LCO 1030",
+        "LCO 1050",
+        "LCO 2000",
+        "LCO 2040",
+        "LCO 2060",
+        "LCO 2070",
+        "LCO 2200",
+        "LCO 3010",
+        "LCO 3030",
+        "LCO 3050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Interdisciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANT 1611",
+        "ANT 2020",
+        "ANT 3625",
+        "ARA 2030",
+        "ARA 2040",
+        "CIN 3103",
+        "FRA 1110",
+        "FRA 1120",
+        "FRA 3715",
+        "HNU 1000",
+        "HNU 2000",
+        "HST 1041",
+        "HST 1042",
+        "LCO 1001",
+        "LCO 1020",
+        "LCO 2011",
+        "LCO 2030",
+        "LCO 2090",
+        "LCO 2300",
+        "LCO 3001",
+        "LCO 3020",
+        "LCO 3060",
+        "PHI 1600",
+        "PHI 3250",
+        "REL 2380",
+        "SOL 1015",
+        "SOL 1150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Aires culturelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "AES 2011",
+        "AES 2012",
+        "AES 2020",
+        "AES 2021",
+        "ALL 2214",
+        "ALL 2270",
+        "ALL 2321",
+        "ANG 1325",
+        "ANG 2361",
+        "ANG 2404",
+        "ARA 2050",
+        "CIN 1107",
+        "CTL 1120",
+        "CTL 1140",
+        "ESP 1225",
+        "ESP 1325",
+        "ESP 2400",
+        "FRA 1140",
+        "FRA 2131",
+        "FRA 2141",
+        "FRA 2142",
+        "FRA 2143",
+        "GRC 1031",
+        "ITL 1120",
+        "ITL 1141",
+        "ITL 2160",
+        "LAT 1031",
+        "LCO 1080",
+        "LCO 3040",
+        "LLM 1310",
+        "LLM 2000",
+        "PTG 1220",
+        "QCF 1050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A98)\nLa mineure comporte 30 crédits.",
+    "Segment 70 — Les crédits de la mineure sont répartis de la façon suivante : 6 crédits obligatoires, 18 crédits à option et 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-litterature-comparee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:10.313Z"
+}

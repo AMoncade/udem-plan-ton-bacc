@@ -1,0 +1,116 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-analyse-des-megadonnees-en-sante",
+  "nom": "Microprogramme de 2e cycle en analyse des mégadonnées en santé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 17,
+  "exigences": {
+    "brut": "Les crédits de ce programme d'études sont répartis de la façon suivante: 7 crédits obligatoires et 10 crédits à option",
+    "obligatoire": {
+      "min": 7,
+      "max": 7
+    },
+    "option": {
+      "min": 10,
+      "max": 10
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Général",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "BIO 6033",
+        "IFT 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Éthique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "BIE 6501",
+        "BIE 6502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Utilisation des données en santé publique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ASA 6768",
+        "ASA 6769",
+        "MSO 6624"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Utilisation des données biomédicales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "BIN 6010",
+        "BIN 6011",
+        "GBM 6300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A19)\nCe programme d'études comporte 17 crédits.",
+    "Segment 70 — Les crédits de ce programme d'études sont répartis de la façon suivante: 7 crédits obligatoires et 10 crédits à option"
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-analyse-des-megadonnees-en-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:00:28.118Z"
+}

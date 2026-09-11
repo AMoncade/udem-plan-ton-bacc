@@ -1,0 +1,224 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-sciences-biologiques",
+  "nom": "Mineure en sciences biologiques",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 11 crédits obligatoires, 16 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 11,
+      "max": 11
+    },
+    "option": {
+      "min": 16,
+      "max": 16
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Connaissances fondamentales en biologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "BIO 1153",
+        "BIO 1203",
+        "BIO 1284",
+        "BIO 1803"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Microbiologie et immunologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "MCB 1979",
+        "MCB 2094",
+        "MCB 2979",
+        "MCB 2985",
+        "MCB 2987"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Biologie moléculaire, cellulaire et des organismes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "BIO 1534",
+        "BIO 1634",
+        "BIO 2102",
+        "BIO 2155",
+        "BIO 2162",
+        "BIO 2255",
+        "BIO 2541",
+        "BIO 3659",
+        "BIO 3665",
+        "BIO 3682"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Biodiversité, écologie et évolution",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "BIO 1334",
+        "BIO 1434",
+        "BIO 2350",
+        "BIO 2405",
+        "BIO 2820",
+        "BIO 2821",
+        "BIO 2855",
+        "BIO 3203",
+        "BIO 3206",
+        "BIO 3293",
+        "BIO 3754",
+        "BIO 3851"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Connaissances en biologie quantitative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "BIO 2041",
+        "BIO 2042",
+        "BIO 2044",
+        "BIO 2045",
+        "BIO 3033",
+        "BIO 3207"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Disciplines biologiques diverses",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "BIO 1001",
+        "BIO 2306",
+        "BIO 2315",
+        "BIO 2386",
+        "BIO 2402",
+        "BIO 2431",
+        "BIO 2440",
+        "BIO 2476",
+        "BIO 2478",
+        "BIO 2480",
+        "BIO 2490",
+        "BIO 2811",
+        "BIO 2862",
+        "BIO 3002",
+        "BIO 3008",
+        "BIO 3390",
+        "BIO 3756",
+        "BIO 3781",
+        "BIO 3801",
+        "BIO 3831",
+        "BIO 3839",
+        "BIO 3893",
+        "DMO 3600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les 3 crédits au choix sont obligatoires et ne sont pas de sigle BIO."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A25)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — Les crédits de la mineure sont répartis de la façon suivante : 11 crédits obligatoires, 16 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-sciences-biologiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:33.001Z"
+}

@@ -1,0 +1,151 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-theologie",
+  "nom": "Maîtrise en théologie",
+  "orientation": null,
+  "segments": [
+    "74"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 à 12 crédits à option et, au maximum, 6 crédits au choix.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 6,
+      "max": 12
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Herméneutique et méthode",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "REL 6310"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "FAS 60011",
+        "FAS 60012",
+        "REL 6127",
+        "REL 6217",
+        "REL 6311",
+        "REL 6314",
+        "REL 6318",
+        "REL 6319",
+        "REL 6320",
+        "REL 6321",
+        "REL 6322",
+        "REL 6400",
+        "REL 6500",
+        "REL 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours REL de 2e cycle de l'Institut d'études religieuses ou un cours hors Institut. Dans ce dernier cas, il doit être approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REL 6502",
+        "REL 6503"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Notez que le stage 1 est préalable au stage 2. Le choix de cours doit être approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "74E",
+      "cle": "74/74E",
+      "segment": "74",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits",
+      "cours": [
+        "REL 6815",
+        "REL 6820",
+        "REL 6825",
+        "REL 6840"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A15)\nLa maîtrise comporte 45 crédits. Elle est offerte selon l'option générale avec mémoire (segment 74).",
+    "Segment 74 Propre à l'option Générale — Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 à 12 crédits à option et, au maximum, 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-theologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:44.929Z"
+}

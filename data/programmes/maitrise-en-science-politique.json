@@ -1,0 +1,187 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-science-politique",
+  "nom": "Maîtrise en science politique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 42 à 45 crédits à option, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire OU attribués à la recherche, à la rédaction d'un mémoire et à un stage, et un maximum de 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 42,
+      "max": 45
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "POL 6020",
+        "POL 6021"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Séminaires de synthèse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "POL 6008",
+        "POL 6101",
+        "POL 6308",
+        "POL 6415",
+        "POL 6502",
+        "POL 6601"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours et séminaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "LLM 6000",
+        "PLU 6115",
+        "POL 6022",
+        "POL 6031",
+        "POL 6084",
+        "POL 6104",
+        "POL 6112",
+        "POL 6113",
+        "POL 6116",
+        "POL 6121",
+        "POL 6130",
+        "POL 6207",
+        "POL 6208",
+        "POL 6261",
+        "POL 6262",
+        "POL 6404",
+        "POL 6417",
+        "POL 6418",
+        "POL 6480",
+        "POL 6512",
+        "POL 6515",
+        "POL 6527",
+        "POL 6529",
+        "POL 6536",
+        "POL 6560",
+        "POL 6570",
+        "POL 6602",
+        "POL 6607",
+        "POL 6609",
+        "POL 6610",
+        "POL 6612",
+        "POL 6614",
+        "POL 6615",
+        "POL 6617",
+        "POL 6619",
+        "POL 6620",
+        "POL 6622",
+        "POL 6624",
+        "POL 6626",
+        "POL 6627",
+        "POL 6628",
+        "POL 6629",
+        "POL 6630",
+        "POL 6631",
+        "POL 6640",
+        "POL 6646",
+        "POL 6666",
+        "POL 6672"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi l'ensemble des cours offerts par l'Université, ou le cas échéant, dans une autre institution universitaire, avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - 30 crédits.",
+      "cours": [
+        "POL 6216",
+        "POL 6965",
+        "POL 6995",
+        "POL 6996"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Remarque : les étudiants doivent suivre soit la combinaison de cours POL 6216, POL 6965 et POL 6996, soit la combinaison POL 6965 et POL 6995"
+      ]
+    }
+  ],
+  "notes": [
+    "Version 10 (A24)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 Propre à l'option générale — Les crédits du segment 70 sont répartis de la façon suivante : 42 à 45 crédits à option, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire OU attribués à la recherche, à la rédaction d'un mémoire et à un stage, et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-science-politique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:48.632Z"
+}

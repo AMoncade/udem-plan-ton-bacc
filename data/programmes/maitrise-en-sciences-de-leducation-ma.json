@@ -1,0 +1,182 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-leducation-ma",
+  "nom": "Maîtrise en sciences de l'éducation",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Le tronc commun comporte 18 crédits répartis de la façon suivante : 12 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "EDU 6006",
+        "EDU 6600",
+        "EDU 6715",
+        "EDU 6716"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "DID 6010",
+        "DID 6040",
+        "DID 6208",
+        "DID 6225",
+        "DID 6226",
+        "DID 6231",
+        "DID 6232",
+        "DID 6233",
+        "DID 6280",
+        "DID 6484",
+        "DID 6696",
+        "DID 6740",
+        "EDU 6000",
+        "EDU 6001",
+        "EDU 6410",
+        "EDU 6751",
+        "ETA 6010",
+        "ETA 6105",
+        "ETA 6120",
+        "ETA 6145",
+        "ETA 6400",
+        "ETA 6401",
+        "ETA 6402",
+        "ETA 6536",
+        "ETA 6809",
+        "ETA 6810",
+        "ETA 6917",
+        "ETA 6937",
+        "ETA 6997",
+        "PPA 6010",
+        "PPA 6226",
+        "PPA 6256",
+        "PPA 6274",
+        "PPA 6276",
+        "PPA 6278",
+        "PPA 6304",
+        "PPA 6403",
+        "PPA 6413",
+        "PPA 6428",
+        "PPA 6430",
+        "PPA 6432",
+        "PPA 6445"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "DID 6491",
+        "DID 6495"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "ETA 6491",
+        "ETA 6495"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "PPA 6491",
+        "PPA 6495"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A25)\nLa maîtrise comporte 45 crédits, répartis de la façon suivante : un tronc commun (segment 01) et trois concentrations (segments 70, 71 et 72).",
+    "Segment 01 Tronc commun — Le tronc commun comporte 18 crédits répartis de la façon suivante : 12 crédits obligatoires et 6 crédits à option.",
+    "Segment 70 Didactique — Cette concentration comporte 27 crédits obligatoires.",
+    "Segment 71 Administration et fondements de l'éducation — Cette concentration comporte 27 crédits obligatoires.",
+    "Segment 72 Psychopédagogie et andragogie — Cette concentration comporte 27 crédits obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-leducation-ma/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:59.823Z"
+}

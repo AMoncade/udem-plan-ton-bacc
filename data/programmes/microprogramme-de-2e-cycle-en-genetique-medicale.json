@@ -1,0 +1,89 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-genetique-medicale",
+  "nom": "Microprogramme de 2e cycle en génétique médicale",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 12 crédits obligatoires et 3 crédits à option.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CGE 6001",
+        "CGE 6002",
+        "CGE 6003",
+        "CGE 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6100",
+        "BCM 6210",
+        "BIE 6001",
+        "BIE 6003",
+        "BIE 6008",
+        "MSO 6060",
+        "PGM 6001",
+        "PHI 6520",
+        "PHI 6540",
+        "PSY 6093",
+        "SMC 6061",
+        "SOI 6202"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un cours à choisir parmi les cours de biochimie (BCM), bioéthique (BIE), Droit (DRT), Médecine sociale et préventive (MSO), pathologie et biologie cellulaire (PBC), pharmacologie (PGM), Philosophie (PHI), psychologie (PSY), Sciences cliniques (SMC) et Sciences infirmières (SOI) de la liste suivante ou tout autre cours du niveau des cycles supérieurs jugé pertinent à la formation du candidat et approuvé par le responsable du programme. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H10)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 12 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-genetique-medicale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:23.980Z"
+}

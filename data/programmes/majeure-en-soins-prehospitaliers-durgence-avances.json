@@ -1,0 +1,188 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-soins-prehospitaliers-durgence-avances",
+  "nom": "Majeure en soins préhospitaliers d'urgence avancés",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "régulier",
+      "segments": [
+        "70",
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "de reconnaissance des acquis et des compétences",
+      "segments": [
+        "70",
+        "71"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Majeure",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MDF 1001",
+        "MDF 1002",
+        "MDF 1003",
+        "MDF 1004",
+        "MDF 1005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MDF 1006",
+        "MDF 1007",
+        "MDF 1008",
+        "MDF 1009",
+        "MDF 1010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MDF 2002",
+        "MDF 2003",
+        "MDF 2004",
+        "MDF 2005",
+        "MDF 2008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MDF 2001",
+        "MDF 2006A",
+        "MDF 2007",
+        "MDF 2009",
+        "MDF 2010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 39,
+          "max": 39
+        }
+      },
+      "regleBrut": "Option - 39 crédits.",
+      "cours": [
+        "MDF 1001",
+        "MDF 1002",
+        "MDF 1003",
+        "MDF 1004",
+        "MDF 1005",
+        "MDF 1006",
+        "MDF 1007",
+        "MDF 1008",
+        "MDF 1009",
+        "MDF 1010",
+        "MDF 2001",
+        "MDF 2002",
+        "MDF 2003",
+        "MDF 2004",
+        "MDF 2005",
+        "MDF 2007",
+        "MDF 2008",
+        "MDF 2009",
+        "MDF 2010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A20)\nLa majeure totalise 60 crédits. Elle comporte deux orientations offrant les cheminements suivants:\n- Cheminement régulier (segment 70)\n- Cheminement de reconnaissance des acquis et des compétences (segment 71)",
+    "Segment 70 — Les 60 crédits du cheminement régulier sont obligatoires.",
+    "Segment 71 — Les crédits du cheminement de reconnaissance des acquis et des compétences sont répartis de la façon suivante: 21 crédits obligatoires et 39 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-soins-prehospitaliers-durgence-avances/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:18.348Z"
+}

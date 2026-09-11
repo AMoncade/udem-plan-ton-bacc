@@ -1,0 +1,134 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-urbanisme",
+  "nom": "Mineure en urbanisme",
+  "orientation": null,
+  "segments": [
+    "01",
+    "02",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "URB 1111",
+        "URB 1113",
+        "URB 1116"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "URB 1114",
+        "URB 1115",
+        "URB 2213"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02A",
+      "cle": "02/02A",
+      "segment": "02",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "URB 1117",
+        "URB 1118"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02B",
+      "cle": "02/02B",
+      "segment": "02",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "URB 2046",
+        "URB 2322",
+        "URB 2323",
+        "URB 2342",
+        "URB 2344",
+        "URB 2347",
+        "URB 2348"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "URB 1412",
+        "URB 1414"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A13)\nLa mineure comporte 30 crédits.",
+    "Segment 01 L'urbain — Les crédits du segment sont répartis de la façon suivante : 9 crédits obligatoires et de 3 à 9 crédits à option.",
+    "Segment 02 L'urbanisme — Les crédits du segment sont répartis de la façon suivante : 6 crédits obligatoires et de 3 à 9 crédits à option.",
+    "Segment 70 Compétences techniques — Le segment comporte un maximum de 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-urbanisme/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:49.697Z"
+}

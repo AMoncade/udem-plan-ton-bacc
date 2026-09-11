@@ -1,0 +1,132 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-musique-option-accompagnement-au-piano",
+  "nom": "Maîtrise en musique, option Accompagnement au piano",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 18 crédits attribués à des récitals et 9 crédits à option.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire - 13 crédits.",
+      "cours": [
+        "MIN 6955",
+        "MUI 6255A",
+        "MUI 6255B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MIN 6040",
+        "MIN 6041",
+        "MIN 6043",
+        "MUE 6002",
+        "MUE 6101",
+        "MUE 6241",
+        "MUE 6242",
+        "MUE 6243",
+        "MUE 6244",
+        "MUE 6245",
+        "MUE 6561",
+        "MUE 6562",
+        "MUE 6563",
+        "MUE 6621"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EMU 6310",
+        "EMU 6312",
+        "MIN 6957",
+        "MUS 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours de 3 crédits choisi parmi un ensemble de cours et de séminaires de 2e et/ou 3e cycle, travaux et lectures dirigés ou sujets spéciaux offerts chaque année par la Faculté de musique. Le choix de cours doit être approuvé par le responsable du programme d'études (directeur/trice de recherche)."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Récitals",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Obligatoire - 23 crédits.",
+      "cours": [
+        "MIN 6959",
+        "MIN 6960",
+        "MUI 6255C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H19)\nLa maîtrise en musique comporte 45 crédits.",
+    "Segment 70 Propre à l'option Accompagnement au piano — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 18 crédits attribués à des récitals et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-musique-option-accompagnement-au-piano/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:09.782Z"
+}

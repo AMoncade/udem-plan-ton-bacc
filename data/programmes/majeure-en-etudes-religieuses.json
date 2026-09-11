@@ -1,0 +1,286 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-etudes-religieuses",
+  "nom": "Majeure en études religieuses",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante: 9 crédits obligatoires, 45 crédits à option et 6 crédits au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 45,
+      "max": 45
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Concepts fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "REL 1111",
+        "REL 1112",
+        "REL 1500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Traditions spirituelles et religieuses",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "REL 1220",
+        "REL 1230",
+        "REL 1240",
+        "REL 1250",
+        "REL 1251"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Textes et histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 30 crédits.",
+      "cours": [
+        "AES 3800",
+        "REL 1130",
+        "REL 1510",
+        "REL 1520",
+        "REL 1930",
+        "REL 2140",
+        "REL 2233",
+        "REL 2240",
+        "REL 2250",
+        "REL 2255",
+        "REL 2270",
+        "REL 2310",
+        "REL 2320",
+        "REL 2360",
+        "REL 2380",
+        "REL 2520",
+        "REL 2610",
+        "REL 2700",
+        "REL 2710",
+        "REL 2720",
+        "REL 2732",
+        "REL 2733",
+        "REL 3221",
+        "REL 3234",
+        "REL 3600",
+        "REL 3970"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Théories et méthodes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 30 crédits.",
+      "cours": [
+        "AES 2800",
+        "REL 1320",
+        "REL 1330",
+        "REL 1340",
+        "REL 2311",
+        "REL 2340",
+        "REL 2350",
+        "REL 2410",
+        "REL 2440",
+        "REL 2980",
+        "REL 3310",
+        "REL 3340",
+        "REL 3350",
+        "REL 3900",
+        "REL 3920",
+        "REL 3930",
+        "REL 3980"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Pratiques, éthique et intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 30 crédits.",
+      "cours": [
+        "REL 2330",
+        "REL 2402",
+        "REL 2420",
+        "REL 2430",
+        "REL 2670",
+        "REL 3320",
+        "REL 3402",
+        "REL 3800",
+        "REL 3940",
+        "REL 3960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "ETM 2200",
+        "GRC 1111",
+        "GRC 1121",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "REL 1720",
+        "REL 1721"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANT 2020",
+        "ANT 2830",
+        "ANT 3035",
+        "ANT 3875",
+        "ARA 1001",
+        "ETM 1400",
+        "GER 1020D",
+        "HGL 1021",
+        "HGL 1031",
+        "HOR 1200",
+        "HST 2111",
+        "HST 2128",
+        "HST 2621",
+        "HST 3108",
+        "JES 1000",
+        "LCO 1030",
+        "PHI 1400",
+        "PHI 1520",
+        "PHI 2870",
+        "PHI 2965",
+        "PHI 3870",
+        "PHI 3905",
+        "SOL 2050",
+        "SOL 2104",
+        "SVS 2378",
+        "SVS 3207",
+        "VIO 2015",
+        "VIO 2040Z"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un autre sigle que REL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H26)\nLa majeure comporte 60 crédits.",
+    "Segment 70 — Les crédits de la majeure sont répartis de la façon suivante: 9 crédits obligatoires, 45 crédits à option et 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-etudes-religieuses/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:34.658Z"
+}

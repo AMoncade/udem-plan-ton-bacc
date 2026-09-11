@@ -1,0 +1,109 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-langue-et-culture-italiennes",
+  "nom": "Microprogramme de 1er cycle en langue et culture italiennes",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "ITL 1070",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "ITL 3002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Culture : cours en italien",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ITL 2120",
+        "ITL 2195",
+        "ITL 2310",
+        "ITL 2350",
+        "ITL 2880",
+        "ITL 3020",
+        "ITL 3075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Culture : cours en français",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DMO 1200",
+        "HAR 1090",
+        "HAR 2090",
+        "HAR 3420",
+        "HGL 1011",
+        "HGL 1031",
+        "HGL 2060",
+        "HST 2108",
+        "HST 2109",
+        "HST 2284",
+        "ITL 1120",
+        "ITL 1141",
+        "ITL 2160",
+        "ITL 2270",
+        "LLM 1000",
+        "LLM 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A19)\nLe microprogramme de premier cycle comporte 15 crédits.",
+    "Segment 70 — Tous les crédits du microprogramme sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-langue-et-culture-italiennes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:23.946Z"
+}

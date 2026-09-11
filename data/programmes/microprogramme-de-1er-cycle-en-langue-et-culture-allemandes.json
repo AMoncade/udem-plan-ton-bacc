@@ -1,0 +1,113 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-langue-et-culture-allemandes",
+  "nom": "Microprogramme de 1er cycle en langue et culture allemandes",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1110",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2010",
+        "ALL 2110",
+        "ALL 2340",
+        "ALL 3111",
+        "ALL 3112",
+        "ALL 3131",
+        "ALL 3145"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Culture - cours en allemand",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ALL 1210",
+        "ALL 2200",
+        "ALL 2270",
+        "ALL 2333",
+        "ALL 2444",
+        "ALL 3200",
+        "ALL 3263",
+        "ALL 3273",
+        "ALL 3333"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Culture - cours en français",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ALL 1310",
+        "ALL 2214",
+        "ALL 2321",
+        "DMO 1200",
+        "HST 1042",
+        "HST 2274",
+        "LLM 1000",
+        "LLM 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A19)\nLe microprogramme de premier cycle comporte 15 crédits à option.",
+    "Segment 70 — Tous les crédits du microprogramme sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-langue-et-culture-allemandes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:08.509Z"
+}

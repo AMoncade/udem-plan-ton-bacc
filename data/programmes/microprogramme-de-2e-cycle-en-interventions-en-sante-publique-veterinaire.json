@@ -1,0 +1,84 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-interventions-en-sante-publique-veterinaire",
+  "nom": "Microprogramme de 2e cycle en Interventions en santé publique vétérinaire",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 11 crédits obligatoires et 4 crédits à option.",
+    "obligatoire": {
+      "min": 11,
+      "max": 11
+    },
+    "option": {
+      "min": 4,
+      "max": 4
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "SPV 6513",
+        "SPV 6514",
+        "SPV 6515",
+        "SPV 6531"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - 4 crédits.",
+      "cours": [
+        "BIE 6016",
+        "MSO 6023",
+        "MSO 6330",
+        "MSO 6340",
+        "MSO 6350",
+        "SPV 6501W",
+        "SPV 6512",
+        "SPV 6535"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Parmi les cours suivants ou tout autre cours jugé pertinent par le responsable de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A14)\nLe microprogramme comporte 15 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 11 crédits obligatoires et 4 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-interventions-en-sante-publique-veterinaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:43.683Z"
+}

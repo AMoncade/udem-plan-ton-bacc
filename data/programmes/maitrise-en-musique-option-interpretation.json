@@ -1,0 +1,143 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-musique-option-interpretation",
+  "nom": "Maîtrise en musique, option Interprétation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 33 crédits obligatoires, dont 18 crédits attribués à des récitals incluant une transmission du discours musical écrit (partition), et 12 crédits à option.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUI 6##5A, MUI 6##5B et MUI 6##5C, dont le sigle est en fonction de l'instrument étudié."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Musique d'ensemble",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MIN 6040",
+        "MIN 6041",
+        "MIN 6043"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours MUE 6###, dont le sigle est en fonction du grand ensemble. L'étudiant·e suivant le programme avec un instrument d'orchestre (cordes, vents, percussions) doit se présenter à une audition obligatoire à chaque trimestre de sa scolarité. Les résultats de cette audition déterminent la prescription d'ensemble qui lui sera attribuée."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Séminaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l'accord de la direction de recherche."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours et ateliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option – Maximum 3 crédits.",
+      "cours": [
+        "EMU 6310",
+        "EMU 6312",
+        "MIN 6491",
+        "MIN 6949",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Récitals",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "MIN 6959",
+        "MIN 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A26)\nLa maîtrise en musique comporte 45 crédits.",
+    "Segment 70 — Les crédits sont répartis de la façon suivante : 33 crédits obligatoires, dont 18 crédits attribués à des récitals incluant une transmission du discours musical écrit (partition), et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-musique-option-interpretation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:15.790Z"
+}

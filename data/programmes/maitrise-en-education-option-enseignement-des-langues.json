@@ -1,0 +1,164 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-education-option-enseignement-des-langues",
+  "nom": "Maîtrise en éducation, option Enseignement des langues",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Le tronc commun comporte 6 crédits obligatoires et 9 à 15 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 9,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Préparation à la pièce maitresse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "EDU 6609",
+        "ETA 6655"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Pièce maitresse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "EDU 6709",
+        "EDU 67091",
+        "EDU 67092",
+        "EDU 67093"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours EDU67091, EDU67092 et EDU67093 sont équivalents au cours EDU6709."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Enjeux transversaux en éducation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ETA 6809",
+        "PPA 6224",
+        "PPA 6274",
+        "PPA 6278",
+        "PPA 6430"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1A",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 24,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 24 crédits, maximum 30 crédits.",
+      "cours": [
+        "DID 6075",
+        "DID 6080",
+        "DID 6205",
+        "DID 6208",
+        "DID 6209",
+        "DID 6213",
+        "DID 6217",
+        "DID 6280",
+        "DID 6328",
+        "DID 6329",
+        "DID 6480"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2A",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 24,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 24 crédits, maximum 27 crédits.",
+      "cours": [
+        "DID 6205",
+        "DID 6219",
+        "DID 6225",
+        "DID 6226",
+        "DID 6231",
+        "DID 6232",
+        "DID 6233",
+        "DID 6484",
+        "EDU 6000",
+        "EDU 6001",
+        "PPA 6256",
+        "PPA 6276"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A22)\nLa maîtrise comporte 45 crédits.\nElle est offerte selon deux concentrations :\n- concentration enseignement du français par la littérature jeunesse\n- concentration enseignement des langues secondes",
+    "Segment 01 Tronc Commun — Cours communs aux deux concentrations.",
+    "Segment 01 Tronc Commun — Le tronc commun comporte 6 crédits obligatoires et 9 à 15 crédits à option.",
+    "Segment 70 C1 Enseignement du français par la littérature jeunesse — Les crédits de cette concentration sont tous à option.",
+    "Segment 70 C2 Enseignement des langues secondes — Les crédits de cette concentration sont tous à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-education-option-enseignement-des-langues/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:11.990Z"
+}

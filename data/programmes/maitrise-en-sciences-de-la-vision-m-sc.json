@@ -1,0 +1,353 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-de-la-vision-m-sc",
+  "nom": "Maîtrise en sciences de la vision",
+  "orientation": null,
+  "segments": [
+    "72",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "Intervention en déficience visuelle",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 21 crédits obligatoires, dont 5 crédits attribués à la rédaction d'un travail dirigé de recherche et 24 crédits à option.",
+        "obligatoire": {
+          "min": 21,
+          "max": 21
+        },
+        "option": {
+          "min": 24,
+          "max": 24
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Intervention clinique et recherche",
+      "segments": [
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 41 crédits obligatoires, dont 9 crédits attribués à la rédaction d'un travail dirigé de recherche, et 4 crédits à option.",
+        "obligatoire": {
+          "min": 41,
+          "max": 41
+        },
+        "option": {
+          "min": 4,
+          "max": 4
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École d'optométrie",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "IDV 6017",
+        "IDV 6020",
+        "IDV 6024",
+        "IDV 6025",
+        "IDV 6038"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "1 Concentration Orientation et mobilité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Option - 23 crédits.",
+      "cours": [
+        "IDV 6003",
+        "IDV 6004",
+        "IDV 6007A",
+        "IDV 6007B",
+        "IDV 6016",
+        "IDV 6031",
+        "IDV 6032"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "2 Concentration Réadaptation en déficience visuelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Option - 23 crédits.",
+      "cours": [
+        "IDV 6015A",
+        "IDV 6015B",
+        "IDV 6026",
+        "IDV 6027",
+        "IDV 6028",
+        "IDV 6029",
+        "IDV 6030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "3 Concentration en basse vision",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Option - 23 crédits.",
+      "cours": [
+        "IDV 6030",
+        "IDV 6033",
+        "IDV 6034",
+        "IDV 6035",
+        "IDV 6036",
+        "IDV 6037A",
+        "IDV 6037B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Obligatoire - 1 crédit.",
+      "cours": [
+        "SCV 60011",
+        "SCV 60012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "BIE 6046",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "SCV 68001",
+        "SCV 68002",
+        "SCV 68003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "OPM 6009",
+        "OPM 6010",
+        "OPM 6024A",
+        "OPM 6024B",
+        "OPM 6038",
+        "OPM 6039",
+        "OPM 6040A",
+        "OPM 6040B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "OPM 6031A",
+        "OPM 6031B",
+        "OPM 6031C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "SCV 60011",
+        "SCV 60012",
+        "SCV 6006A",
+        "SCV 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "BIE 6046",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75E",
+      "cle": "75/75E",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ETA 6512",
+        "MSO 6060",
+        "MSO 6061",
+        "SCV 6011"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75F",
+      "cle": "75/75F",
+      "segment": "75",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SCV 68091",
+        "SCV 68092",
+        "SCV 68093"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A22)\nLa maîtrise comporte 45 crédits. Elle est offerte en deux options :\n- option Intervention en déficience visuelle (segment 72),\n- option Intervention clinique et recherche (segment 75).",
+    "Segment 72 Propre à l'option Intervention en déficience visuelle — Les crédits de l'option sont répartis de la façon suivante : 21 crédits obligatoires, dont 5 crédits attribués à la rédaction d'un travail dirigé de recherche et 24 crédits à option.",
+    "Segment 75 Propre à l'option Intervention clinique et recherche — Les crédits de l'option sont répartis de la façon suivante : 41 crédits obligatoires, dont 9 crédits attribués à la rédaction d'un travail dirigé de recherche, et 4 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-de-la-vision-m-sc/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:14.366Z"
+}

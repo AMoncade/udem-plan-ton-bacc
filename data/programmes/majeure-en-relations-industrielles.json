@@ -1,0 +1,179 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-relations-industrielles",
+  "nom": "Majeure en relations industrielles",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 27 crédits obligatoires, 30 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": {
+      "min": 30,
+      "max": 30
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Connaissances fondamentales en RI",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "REI 1010",
+        "REI 1040",
+        "REI 1105",
+        "REI 1130",
+        "REI 1140",
+        "REI 1240",
+        "REI 1420",
+        "REI 2305",
+        "REI 2510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Gestion des ressources humaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "REI 2211",
+        "REI 2215",
+        "REI 2230",
+        "REI 3206",
+        "REI 3275",
+        "REI 3280",
+        "REI 3525",
+        "REI 3535"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Relations du travail et droit du travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "REI 2310",
+        "REI 2320",
+        "REI 2330",
+        "REI 2340",
+        "REI 3315",
+        "REI 3335",
+        "REI 3345",
+        "REI 3375"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Politiques gouvernementales du travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "REI 2470",
+        "REI 2475",
+        "REI 3415",
+        "REI 3435"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Connaissances multidisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "REI 1020",
+        "REI 1030",
+        "REI 3700",
+        "REI 3710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les crédits au choix ne sont pas de sigle REI."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A23)\n.",
+    "Segment 72 — Les crédits de la majeure sont répartis de la façon suivante : 27 crédits obligatoires, 30 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-relations-industrielles/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:04.172Z"
+}

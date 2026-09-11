@@ -1,0 +1,284 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-science-politique",
+  "nom": "Majeure en science politique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 9 crédits obligatoires, 48 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 48,
+      "max": 48
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Fondement I",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "POL 1000",
+        "POL 1020",
+        "POL 1100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Fondement II",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 18 crédits.",
+      "cours": [
+        "POL 1008",
+        "POL 1009",
+        "POL 1025",
+        "POL 1200",
+        "POL 1330",
+        "POL 1600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Méthodologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "POL 1803",
+        "POL 2120",
+        "POL 2809",
+        "POL 2829",
+        "POL 2849",
+        "POL 2859"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 21 crédits.",
+      "cours": [
+        "FEM 2000",
+        "POL 2005",
+        "POL 2007",
+        "POL 2011",
+        "POL 2050",
+        "POL 2090",
+        "POL 2100",
+        "POL 2101",
+        "POL 2102",
+        "POL 2111",
+        "POL 2140",
+        "POL 2150",
+        "POL 2160",
+        "POL 2170",
+        "POL 2180",
+        "POL 2215",
+        "POL 2250",
+        "POL 2322",
+        "POL 2400",
+        "POL 2403",
+        "POL 2404",
+        "POL 2405",
+        "POL 2410",
+        "POL 2510",
+        "POL 2560",
+        "POL 2602",
+        "POL 2606",
+        "POL 2802",
+        "POL 2806",
+        "POL 2850",
+        "POL 2916",
+        "POL 2917"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 21 crédits.",
+      "cours": [
+        "POL 3004",
+        "POL 3005",
+        "POL 3006",
+        "POL 3007",
+        "POL 3008",
+        "POL 3009",
+        "POL 3010",
+        "POL 3011",
+        "POL 3013",
+        "POL 3050",
+        "POL 3101",
+        "POL 3102",
+        "POL 3140",
+        "POL 3159",
+        "POL 3175",
+        "POL 3235",
+        "POL 3285",
+        "POL 3286",
+        "POL 3287",
+        "POL 3291",
+        "POL 3292",
+        "POL 3310",
+        "POL 3355",
+        "POL 3370",
+        "POL 3401",
+        "POL 3402",
+        "POL 3481",
+        "POL 3500",
+        "POL 3601",
+        "POL 3602",
+        "POL 3603",
+        "POL 3605",
+        "POL 3721",
+        "POL 3753",
+        "POL 3754",
+        "POL 3807",
+        "POL 3835",
+        "POL 3840",
+        "POL 3849",
+        "POL 3851",
+        "POL 3861",
+        "POL 3870",
+        "POL 3900",
+        "POL 3906",
+        "POL 3908",
+        "POL 3910",
+        "POL 3913",
+        "POL 3917",
+        "POL 3930"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Expérience pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "POL 3240",
+        "POL 3241",
+        "POL 3904",
+        "POL 3919"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle POL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 11 (A17)\nLa majeure comporte 60 crédits.",
+    "Segment 71 — Les crédits de la majeure sont répartis de la façon suivante : 9 crédits obligatoires, 48 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-science-politique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:58:06.415Z"
+}

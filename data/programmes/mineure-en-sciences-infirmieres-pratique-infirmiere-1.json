@@ -1,0 +1,106 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-sciences-infirmieres-pratique-infirmiere-1",
+  "nom": "Mineure en sciences infirmières : pratique infirmière 1",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "La mineure Sciences infirmières : Pratique infirmière 1, offerte à temps partiel, est constituée de 17 crédits obligatoires et de 13 crédits à option.",
+    "obligatoire": {
+      "min": 17,
+      "max": 17
+    },
+    "option": {
+      "min": 13,
+      "max": 13
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Expériences de santé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Soins d'urgence",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 13
+        }
+      },
+      "regleBrut": "Option - Maximum 13 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Soins critiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 13
+        }
+      },
+      "regleBrut": "Option - Maximum 13 crédits.",
+      "cours": [
+        "SOI 2723"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Pratique infirmière",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "SOI 3802"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A09)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — La mineure Sciences infirmières : Pratique infirmière 1, offerte à temps partiel, est constituée de 17 crédits obligatoires et de 13 crédits à option. Les crédits à option doivent être complétés à l'intérieur du même bloc de cours."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-sciences-infirmieres-pratique-infirmiere-1/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:42.646Z"
+}

@@ -1,0 +1,201 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-economiques",
+  "nom": "Maîtrise en sciences économiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "- Cheminement avec mémoire (MM) : 36 crédits obligatoires dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, 3 crédits à option et 6 crédits au choix, - Cheminement avec rapport de recherche (TD) : 30 crédits obligatoires dont 21 crédits attribués à un rapport de recherche, 3 crédits à option et 12 crédits au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "MM-70A",
+      "cle": "70/MM-70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ECN 6013",
+        "ECN 6118",
+        "ECN 6350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70B",
+      "cle": "70/MM-70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ECN 6053",
+        "ECN 6153"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un atelier choisi dans la liste des ateliers de maîtrise."
+      ]
+    },
+    {
+      "id": "MM-70C",
+      "cle": "70/MM-70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de niveau 6000 du Département, d'autres départements ou d'autres universités sur des sujets connexes à l'économie et choisis avec l'approbation du conseiller pédagogique. Un cours de niveau 3000 peut être crédité."
+      ]
+    },
+    {
+      "id": "MM-70D",
+      "cle": "70/MM-70D",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "ECN 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70A",
+      "cle": "70/TD-70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ECN 6013",
+        "ECN 6118",
+        "ECN 6350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70B",
+      "cle": "70/TD-70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ECN 6053",
+        "ECN 6153"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un atelier choisi dans la liste des ateliers de maîtrise."
+      ]
+    },
+    {
+      "id": "TD-70C",
+      "cle": "70/TD-70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Choix - 12 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de niveau 6000 du Département, d'autres départements ou d'autres universités sur des sujets connexes à l'économie et choisis avec l'approbation du conseiller pédagogique. Un cours de niveau 3000 peut être crédité."
+      ]
+    },
+    {
+      "id": "TD-70D",
+      "cle": "70/TD-70D",
+      "segment": "70",
+      "nom": "Rapport de recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ECN 6008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A09)\nLa maîtrise comporte 45 crédits. Elle est offerte selon deux cheminements :\n- le cheminement avec mémoire (MM),\n- le cheminement avec rapport de recherche (TD).",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante :",
+    "Segment 70 — - Cheminement avec mémoire (MM) : 36 crédits obligatoires dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, 3 crédits à option et 6 crédits au choix,",
+    "Segment 70 — - Cheminement avec rapport de recherche (TD) : 30 crédits obligatoires dont 21 crédits attribués à un rapport de recherche, 3 crédits à option et 12 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-economiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:22.588Z"
+}

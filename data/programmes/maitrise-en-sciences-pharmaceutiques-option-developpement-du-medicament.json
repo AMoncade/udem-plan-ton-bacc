@@ -1,0 +1,219 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-pharmaceutiques-option-developpement-du-medicament",
+  "nom": "Maîtrise en sciences pharmaceutiques, option Développement du médicament",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Un maximum de 3 crédits provient des cours transversaux à option (bloc 01B), des cours transversaux au choix (bloc 01C) ou d'une combinaison des deux.",
+    "obligatoire": null,
+    "option": {
+      "min": 0,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 22,
+          "max": 22
+        }
+      },
+      "regleBrut": "Obligatoire - 22 crédits.",
+      "cours": [
+        "PHM 6010",
+        "PHM 6011",
+        "PHM 6015",
+        "PHM 6019",
+        "PHM 6153",
+        "PHM 6155",
+        "SBP 6009"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Cours transversaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHM 6071",
+        "PHM 6154",
+        "SBP 6105",
+        "SBP 6106",
+        "SBP 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix est sujet à l'approbation du responsable du programme."
+      ]
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Stage ou travail dirigé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "PHM 6042",
+        "PHM 60531",
+        "PHM 60532"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les 15 crédits de ce bloc sont attribués soit à un stage, soit à un travail dirigé. Le stage ou le travail dirigé doit porter sur un thème qui correspond à la concentration choisie par l'étudiant."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1A Réglementation, fabrication et conformité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 5,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 5 crédits, maximum 8 crédits.",
+      "cours": [
+        "PHM 6001",
+        "PHM 6029",
+        "PHM 6084",
+        "PHM 6086",
+        "SBP 6109",
+        "SBP 6117",
+        "SBP 6118",
+        "SBP 6120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2A Recherche clinique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 8 crédits.",
+      "cours": [
+        "BIE 6003",
+        "PHM 6001",
+        "PHM 6014",
+        "PHM 6025",
+        "SBP 6109",
+        "SBP 6112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "3A Pharmacoéconomie et accès au marché",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 8 crédits.",
+      "cours": [
+        "PHM 6009",
+        "PHM 6025",
+        "PHM 6032",
+        "SBP 6121"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "4A Pharmacovigilance et gestion du risque",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 8 crédits.",
+      "cours": [
+        "PHL 6092",
+        "PHM 6025",
+        "SBP 6122"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A19)\nL'option Développement du médicament de la maîtrise comporte un minimum de 45 crédits. Elle est offerte avec les modalités de stage ou de travail dirigé. Le cheminement de l'option Développement du médicament inclut un tronc commun (Segment 01) ainsi qu'une de ces quatre concentrations:\n- la concentration Réglementation, fabrication et conformité (segment 70C1)\n- la concentration Recherche clinique (segment 70C2)\n- la concentration Pharmacoéconomie et accès au marché (segment 70C3)\n- la concentration Pharmacovigilance et gestion du risque (segment 70C4)",
+    "Segment 01 Tronc commun — Le tronc commun se compose de cours obligatoires, de cours transversaux et d'un stage ou d'un travail dirigé. Un minimum de 37 crédits et un maximum de 40 crédits peuvent être attribués à ce segment. Les cours obligatoires contribuent pour 22 crédits (bloc 01A). Un maximum de 3 crédits provient des cours transversaux à option (bloc 01B), des cours transversaux au choix (bloc 01C) ou d'une combinaison des deux. Le stage ou le travail dirigé contribue pour 15 crédits (bloc 01D).",
+    "Segment 70 C1 Développ. du médicament: Réglementation, fabrication et conformité — Cette concentration comporte de 5 à 8 crédits à option.",
+    "Segment 70 C2 Développement du médicament: Recherche clinique — Cette concentration comporte de 2 à 8 crédits à option.",
+    "Segment 70 C3 Développement du médicament: Pharmacoéconomie et accès au marché — Cette concentration comporte de 2 à 8 crédits à option.",
+    "Segment 70 C4 Développement du médicament: Pharmacovigilance et gestion du risque — Cette concentration comporte de 2 à 8 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-pharmaceutiques-option-developpement-du-medicament/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:29.983Z"
+}

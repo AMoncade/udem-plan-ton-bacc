@@ -1,0 +1,189 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-ergotherapie",
+  "nom": "Maîtrise en ergothérapie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "72",
+    "73"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "BIE 6018",
+        "ERT 6030",
+        "ERT 6031",
+        "ERT 60511",
+        "ERT 60512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Activités d'intégration",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "ERT 60901",
+        "ERT 60902",
+        "ERT 60903",
+        "ERT 60911",
+        "ERT 60912",
+        "ERT 60913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Approfondissement des connaissances",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "CSS 6100",
+        "ERT 6071",
+        "ERT 6072",
+        "ERT 6073",
+        "ERT 6074",
+        "ERT 6076",
+        "ERT 6077",
+        "ERT 6078",
+        "ERT 6083A",
+        "ERT 6084A",
+        "ERT 6086",
+        "ERT 6087",
+        "ERT 6088",
+        "REA 6002",
+        "REA 6009",
+        "REA 6011",
+        "REA 6012",
+        "REA 6103"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout cours de 2e cycle sur approbation de la direction du programme d'études."
+      ]
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "ERT 6060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Santé mondiale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3, maximum 6 crédits.",
+      "cours": [
+        "ASA 6734",
+        "ERT 6035",
+        "MSO 6500",
+        "MSO 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "ERT 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A20)\nLa maîtrise comporte 45 crédits. Elle est offerte selon deux cheminements :\n- Le cheminement régulier destiné aux étudiants engagés dans un continuum baccalauréat - maîtrise (segment 72),\n- Le cheminement international destiné aux étudiants engagés dans un continuum baccalauréat – maîtrise et qui souhaitent poursuivre une partie de leurs études de maîtrise à l'étranger (segment 73).",
+    "Segment 01 Tronc commun — Les crédits du tronc commun sont répartis de la façon suivante : 19 crédits obligatoires et de 12 à 18 crédits à option.",
+    "Segment 72 Propre au cheminement régulier — Les crédits du segment sont répartis de la façon suivante : 8 crédits obligatoires attribués à un stage et un maximum de 6 crédits au choix.",
+    "Segment 73 Propre au cheminement international — Les crédits du segment sont répartis de la façon suivante : 8 crédits obligatoires attribués à un stage et entre 3 et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-ergotherapie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:32.478Z"
+}

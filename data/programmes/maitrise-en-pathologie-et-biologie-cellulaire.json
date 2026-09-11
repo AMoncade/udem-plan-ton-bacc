@@ -1,0 +1,250 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-pathologie-et-biologie-cellulaire",
+  "nom": "Maîtrise en pathologie et biologie cellulaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "76",
+    "77"
+  ],
+  "orientations": [
+    {
+      "nom": "histopathologie moléculaire",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "embryologie et développement",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "science macroscopique et assistanat en pathologie",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "PBC 6011",
+        "PBC 6042",
+        "PHL 6064"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-76A",
+      "cle": "76/MM-76A",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "BIM 6035",
+        "PBC 6043",
+        "PBC 6044",
+        "PBC 6045",
+        "PBC 6086",
+        "PBC 6087"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-76B",
+      "cle": "76/MM-76B",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "PBC 6924"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "ST-76A",
+      "cle": "76/ST-76A",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "BIM 6035",
+        "PBC 6043",
+        "PBC 6044",
+        "PBC 6045"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "ST-76B",
+      "cle": "76/ST-76B",
+      "segment": "76",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - 7 crédits.",
+      "cours": [
+        "BIM 6064A",
+        "BIM 6064D",
+        "BIM 6065C",
+        "BIM 6070",
+        "PBC 6086",
+        "PBC 6087"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "ST-76C",
+      "cle": "76/ST-76C",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Obligatoire - 23 crédits.",
+      "cours": [
+        "PBC 6046P",
+        "PBC 6047P",
+        "PBC 6048"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77A",
+      "cle": "77/77A",
+      "segment": "77",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "BCM 6100",
+        "BIM 6065C",
+        "BIM 6070",
+        "PBC 6026",
+        "PBC 6027",
+        "PBC 6028",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-77B",
+      "cle": "77/MM-77B",
+      "segment": "77",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Obligatoire - 23 crédits.",
+      "cours": [
+        "PBC 6923"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "ST-77B",
+      "cle": "77/ST-77B",
+      "segment": "77",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Obligatoire - 23 crédits.",
+      "cours": [
+        "PBC 6046",
+        "PBC 6047",
+        "PBC 6048"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A24)\nLa maîtrise comporte 45 crédits.\nElle est offerte selon : deux modalités : avec mémoire (MM) ou avec stage (ST) ainsi que les trois options suivantes :\n- option histopathologie moléculaire (segment 01 et segment 76)\n- option embryologie et développement (segment 01 et segment 77)\n- option science macroscopique et assistanat en pathologie (segment 01 et segment 78) - Admission actuellement suspendue",
+    "Segment 01 Tronc commun — Les crédits du segment sont obligatoires.",
+    "Segment 76 Propre à l'option histopathologie moléculaire — Les crédits du segment sont répartis de la façon suivante :",
+    "Segment 76 Propre à l'option histopathologie moléculaire — - selon la modalité avec mémoire (MM) : 38 crédits obligatoires dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire.",
+    "Segment 76 Propre à l'option histopathologie moléculaire — - selon la modalité avec stage (ST) : 31 crédits obligatoires dont 23 crédits attribués à des stages et à la rédaction de rapports et 7 crédits à option.",
+    "Segment 77 Propre à l'option embryologie et développement — Les crédits du segment 77 sont répartis de la façon suivante :",
+    "Segment 77 Propre à l'option embryologie et développement — - selon la modalité avec mémoire (MM) : 38 crédits obligatoires dont 23 crédits attribués à la recherche et à la rédaction d'un mémoire.",
+    "Segment 77 Propre à l'option embryologie et développement — - selon la modalité avec stage (ST) : 38 crédits obligatoires dont 23 crédits attribués à des stages et à la rédaction de rapports."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-pathologie-et-biologie-cellulaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:23.817Z"
+}

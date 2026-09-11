@@ -1,0 +1,169 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-informatique",
+  "nom": "Mineure en informatique",
+  "orientation": null,
+  "segments": [
+    "73"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 15 crédits obligatoires, 12 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Programmation et matériel",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "IFT 1015",
+        "IFT 1025",
+        "IFT 1065",
+        "IFT 1215",
+        "IFT 1227"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Domaines fondamentaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "IFT 2015",
+        "IFT 2035",
+        "IFT 2105",
+        "IFT 2125",
+        "IFT 2245",
+        "IFT 2255",
+        "IFT 2505"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "IFT 1575",
+        "MAT 1400",
+        "MAT 1600",
+        "MAT 1978"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73Y",
+      "cle": "73/73Y",
+      "segment": "73",
+      "nom": "Contributions d'autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "AEG 2110",
+        "ANG 1903",
+        "ANG 1913",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1501",
+        "BCM 1503",
+        "BIO 1203",
+        "COM 2001",
+        "DRT 1002S",
+        "ECN 1000",
+        "ECN 1050",
+        "ECN 2230",
+        "GEO 2522",
+        "LCO 2030",
+        "LNG 1080",
+        "LNG 1955",
+        "MAT 2450",
+        "MAT 2531",
+        "MCB 1979",
+        "PHI 1130",
+        "PHI 2005",
+        "PHY 1651",
+        "PSY 2055",
+        "PSY 2065",
+        "REI 1010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73Z",
+      "cle": "73/73Z",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 11 (A05)\nLa mineure comporte 30 crédits.",
+    "Segment 73 — Les crédits de la mineure sont répartis de la façon suivante : 15 crédits obligatoires, 12 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:06.667Z"
+}

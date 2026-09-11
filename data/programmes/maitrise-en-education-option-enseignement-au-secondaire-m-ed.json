@@ -1,0 +1,202 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-education-option-enseignement-au-secondaire-m-ed",
+  "nom": "Maîtrise en éducation, option Enseignement au secondaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Le segment comprend 27 crédits obligatoires et 3 crédits à option.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Tronc commun",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "DID 2000",
+        "ETA 6065",
+        "ETA 6901",
+        "PPA 6201",
+        "PPA 6214",
+        "PPA 6400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "DID 1010T",
+        "EDU 6000",
+        "EDU 6500",
+        "ETA 6160",
+        "PPA 6236",
+        "PPA 6237",
+        "PPA 6435",
+        "PPA 6550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Formation pratique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "EDU 6295",
+        "EDU 6296",
+        "PPA 6698"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "1A Didactique des sciences et technologies",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DID 6450",
+        "DID 6693",
+        "DID 6867",
+        "DID 6868",
+        "DID 6869"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "2A Didactique des mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DID 1050",
+        "DID 6570",
+        "DID 6571",
+        "DID 6572",
+        "DID 6573"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "3A Didactique du français langue d'enseignement",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DID 6201",
+        "DID 6211",
+        "DID 6214",
+        "DID 6216",
+        "DID 6525"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "4A Didactique de l'univers social",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DID 6150",
+        "DID 6151",
+        "DID 6152",
+        "DID 6153",
+        "DID 6154"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A25)\nLa maitrise professionnelle comporte 45 crédits.\nCette maîtrise est offerte selon quatre concentrations :\n- concentration Enseignement des sciences et des technologies au secondaire (segment 80C1),\n- concentration Enseignement des mathématiques au secondaire (segment 80C2),\n- concentration Enseignement du français au secondaire (segment 80C3),\n- concentration Enseignement de l'univers social au secondaire (segment 80C4).",
+    "Segment 01 Commun à toutes les concentrations — Le segment comprend 27 crédits obligatoires et 3 crédits à option.",
+    "Segment 80 C1 Concentration Enseignement des sc. et technologies au secondaire — La concentration comporte 15 crédits obligatoires.",
+    "Segment 80 C2 Concentration Enseignement des mathématiques au secondaire — La concentration comporte 15 crédits obligatoires.",
+    "Segment 80 C3 Concentration Enseignement du français au secondaire — La concentration comporte 15 crédits obligatoires.",
+    "Segment 80 C4 Concentration Enseignement de l'univers social au secondaire — La concentration comporte 15 crédits obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-education-option-enseignement-au-secondaire-m-ed/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:09.865Z"
+}

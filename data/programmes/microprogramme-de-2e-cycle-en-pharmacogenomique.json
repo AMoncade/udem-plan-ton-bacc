@@ -1,0 +1,78 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-pharmacogenomique",
+  "nom": "Microprogramme de 2e cycle en pharmacogénomique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 13,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 7 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 7,
+      "max": 7
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "PGM 6001",
+        "PGM 6078"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "BCM 6210",
+        "MSO 6018",
+        "PHL 6011",
+        "PHL 6060",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (E14)\nLe microprogramme comporte 13 crédits.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 7 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-pharmacogenomique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:02:11.119Z"
+}

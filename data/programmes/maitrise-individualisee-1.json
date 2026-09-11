@@ -1,0 +1,59 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-individualisee-1",
+  "nom": "Maîtrise individualisée",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise individualisée",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 36
+        }
+      },
+      "regleBrut": "Choix – Maximum 36 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix des cours doit être approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "MM-70A",
+      "cle": "70/MM-70A",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 18,
+          "max": 45
+        }
+      },
+      "regleBrut": "Choix – Minimum 18 crédits, maximum 45 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (E24)\nLa maîtrise comporte 45 crédits.\nElle est offerte selon trois modalités : avec mémoire (MM), avec stage (ST) ou avec travail dirigé (TD).\nLes crédits de la maîtrise sont répartis de la façon suivante selon la :\n- modalité avec mémoire (bloc MM) : de 0 à 15 crédits de cours et de 18 à 45 crédits attribués à la recherche et à la rédaction d'un mémoire,\n- modalité avec stage ou avec modalité avec travail dirigé (blocs ST/TD) : de 30 à 36 crédits de cours et de 9 à 15 crédits attribués à un stage ou à un travail dirigé.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis selon le plan d'étude déterminé et approuvé."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-individualisee-1/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:57.343Z"
+}

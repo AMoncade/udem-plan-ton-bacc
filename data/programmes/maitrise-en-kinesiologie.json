@@ -1,0 +1,449 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-kinesiologie",
+  "nom": "Maîtrise en kinésiologie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72",
+    "73"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 0,
+          "max": 18
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "réentraînement des populations symptomatiques",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 0,
+          "max": 18
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "préparation physique",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 72 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 0,
+          "max": 18
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "promotion de l'activité physique",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 73 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 0,
+          "max": 18
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "KIN 6500",
+        "KIN 6800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Réentraînement des populations symptomatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "KIN 6833",
+        "KIN 6843",
+        "PSY 6106",
+        "REA 6002",
+        "REA 6008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Préparation physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "KIN 6830",
+        "KIN 6831",
+        "KIN 6832"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Promotion de l'activité physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "SOL 6448",
+        "SOL 6657",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Stages complémentaires et travaux dirigés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "CSS 6100",
+        "KIN 6811",
+        "KIN 6812",
+        "KIN 6814",
+        "KIN 6815",
+        "KIN 6816"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "KIN 6520",
+        "KIN 6530",
+        "KIN 6837",
+        "KIN 6848"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "KIN 6510",
+        "KIN 6515",
+        "KIN 6525",
+        "KIN 6825",
+        "KIN 6842",
+        "MSO 6612",
+        "PPA 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "KIN 6813"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "KIN 6510",
+        "KIN 6515",
+        "KIN 6530",
+        "KIN 6837"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "KIN 6520",
+        "KIN 6525",
+        "KIN 6825",
+        "KIN 6842",
+        "KIN 6848"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "KIN 6871"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "KIN 6520",
+        "KIN 6530",
+        "KIN 6825",
+        "KIN 6842"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "KIN 6872"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ASA 6132",
+        "KIN 6525",
+        "KIN 6848",
+        "MSO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "KIN 6520",
+        "KIN 6825"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "KIN 6873"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A22)\nLa maîtrise comporte 45 crédits. Elle est offerte selon la modalité stage à l'intérieur de laquelle il est possible de suivre des crédits consacrés à un travail dirigé et selon les quatre options suivantes, pour lesquels les crédits sont répartis comme suit : 27 crédits obligatoires (segments 01 et (70 ou 71 ou 72 ou 73)) et 18 crédits à option.\n- option générale (segment 70)\n- option réentraînement des populations symptomatiques (segment 71),\n- option préparation physique (segment 72),\n- option promotion de l'activité physique (segment 73).",
+    "Segment 01 Tronc commun à toutes les options — Les crédits du segment 01 sont répartis de la façon suivante : 6 crédits obligatoires et de 0 à 18 crédits à option.",
+    "Segment 70 Propre à l'option générale — Les crédits du segment 70 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option.",
+    "Segment 71 Propre à l'option réentraînement des populations symptomatiques — Les crédits du segment 71 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option.",
+    "Segment 72 Propre à l'option préparation physique — Les crédits du segment 72 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option.",
+    "Segment 73 Propre à l'option promotion de l'activité physique — Les crédits du segment 73 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-kinesiologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:55.339Z"
+}

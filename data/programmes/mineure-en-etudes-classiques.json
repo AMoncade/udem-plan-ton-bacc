@@ -1,0 +1,355 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-etudes-classiques",
+  "nom": "Mineure en études classiques",
+  "orientation": null,
+  "segments": [
+    "01",
+    "74",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "Langues",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Civilisation",
+      "segments": [
+        "01",
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'Orientation sont répartis de la façon suivante : 6 crédits obligatoires et 18 crédits à option.",
+        "obligatoire": {
+          "min": 6,
+          "max": 6
+        },
+        "option": {
+          "min": 18,
+          "max": 18
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "GRC 1031",
+        "LAT 1031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Langues: apprentissage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "GRC 1111",
+        "GRC 1121",
+        "LAT 1111",
+        "LAT 1121"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Langues : lecture de textes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "ETM 2200",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Littérature",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "GRC 3120",
+        "GRC 3140",
+        "GRC 3170",
+        "LAT 3120",
+        "LAT 3130",
+        "LAT 3140",
+        "LAT 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Histoire et civilisation antique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "HGL 1011",
+        "HGL 1021",
+        "HGL 1031",
+        "HGL 2005",
+        "HGL 2031",
+        "HGL 2061",
+        "HST 1031",
+        "HST 2108",
+        "HST 2109",
+        "HST 2110",
+        "HST 2111",
+        "HST 2113",
+        "PHI 1800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74Y",
+      "cle": "74/74Y",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ANT 1210",
+        "ANT 1213",
+        "ANT 2020",
+        "ETM 1400",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HAR 1032",
+        "HAR 1166",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "HGL 1011",
+        "HST 1031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Histoire et civilisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "HGL 1021",
+        "HGL 1031",
+        "HGL 2005",
+        "HST 2108",
+        "HST 2109",
+        "HST 2110",
+        "HST 2111",
+        "HST 2113",
+        "HST 3105",
+        "HST 3111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Archéologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "HGL 2030",
+        "HGL 2031",
+        "HGL 2032",
+        "HGL 2060",
+        "HGL 2061",
+        "HGL 2062",
+        "HGL 2421",
+        "HGL 2422",
+        "HGL 3040",
+        "HGL 3170",
+        "HGL 3423"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75Y",
+      "cle": "75/75Y",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1913",
+        "ANT 1210",
+        "ANT 1213",
+        "ANT 2020",
+        "ETM 2200",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HAR 1032",
+        "HAR 1166",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A06)\nLa mineure comporte 30 crédits. Elle est offerte avec un tronc commun (segment 01) et deux orientations :\n- orientation Langues (segment 74)\n- orientation Civilisation (segment 75).",
+    "Segment 01 Tronc commun — Tous les crédits du tronc commun sont obligatoires.",
+    "Segment 74 Propre à l'orientation Langues — Tous les crédits de l'Orientation sont à option.",
+    "Segment 75 Propre à l'orientation Civilisation — Les crédits de l'Orientation sont répartis de la façon suivante : 6 crédits obligatoires et 18 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-etudes-classiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:33.223Z"
+}

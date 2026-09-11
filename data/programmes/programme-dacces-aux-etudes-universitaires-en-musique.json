@@ -1,0 +1,142 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "programme-dacces-aux-etudes-universitaires-en-musique",
+  "nom": "Programme d'accès aux études universitaires en musique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Programme",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Formation en musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 24 crédits.",
+      "cours": [
+        "EMU 1310",
+        "EMU 2312",
+        "MIN 1804",
+        "MTE 1100",
+        "MTE 1120",
+        "MUE 1151",
+        "MUE 1152",
+        "MUE 1161",
+        "MUE 1162",
+        "MUE 1241",
+        "MUE 1242",
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1411",
+        "MUE 1412",
+        "MUE 1431",
+        "MUE 1432",
+        "MUE 1441",
+        "MUE 1442",
+        "MUE 1451",
+        "MUE 1452",
+        "MUE 1453",
+        "MUE 1454",
+        "MUI 1323A",
+        "MUI 1323B",
+        "MUL 1102",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1100I",
+        "MUS 1100J",
+        "MUS 1315"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : Pour vous inscrire aux cours MUS 1100I-J, MTE 1100 et MTE 1120, vous devez avoir reçu une prescription à la suite des tests de classement effectués après votre admission."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1013",
+        "ANT 1611",
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "HAR 3900",
+        "MUS 1327",
+        "REL 1208"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours de langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1911",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A13)\nLe Programme totalise 24 crédits.",
+    "Segment 70 — Le segment comporte de 18 à 36 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/programme-dacces-aux-etudes-universitaires-en-musique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:05:04.756Z"
+}

@@ -1,0 +1,505 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-physique",
+  "nom": "Maîtrise en physique",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "- modalité avec mémoire (MM) : 36 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, 3 à 9 crédits à option, et de 0 à 6 crédits au choix.",
+        "obligatoire": {
+          "min": 36,
+          "max": 36
+        },
+        "option": {
+          "min": 3,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "biophysique et physiologie moléculaires",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 36 crédits obligatoires, attribués à la recherche et à la rédaction d'un mémoire, et 9 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "physique médicale",
+      "segments": [
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "plasma - cheminement international",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 73 sont répartis de la façon suivante : 39 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "physique des matériaux",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 74 sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+        "obligatoire": {
+          "min": 74,
+          "max": 74
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "-MM",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "PHY 6035",
+        "PHY 6051X",
+        "PHY 6210",
+        "PHY 6445",
+        "PHY 6505",
+        "PHY 6638",
+        "PHY 6650",
+        "PHY 6651",
+        "PHY 6669",
+        "PHY 6710",
+        "PHY 6756",
+        "PHY 6812",
+        "PHY 6822"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez vous inscrire à l'un des cours proposés, ou tout autre cours jugé pertinent à votre projet de recherche. Le choix des cours doit être approuvé par la direction du programme. Un maximum de 3 crédits de cours de niveau 3000 peut être autorisé."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "-ST",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 21 crédits.",
+      "cours": [
+        "PHY 6051X",
+        "PHY 6210",
+        "PHY 6445",
+        "PHY 6505",
+        "PHY 6638",
+        "PHY 6650",
+        "PHY 6651",
+        "PHY 6669",
+        "PHY 6710",
+        "PHY 6756",
+        "PHY 6812",
+        "PHY 6822"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez vous inscrire à l'un des cours proposés, ou tout autre cours jugé pertinent à votre projet de recherche. Le choix des cours doit être approuvé par la direction du programme. Un maximum de 6 crédits de cours de niveau 3000 peut être autorisé."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "-MM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours à choisir dans la banque de cours de l'Université de Montréal ou d'une autre université avec l'accord du responsable de programme."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "-ST",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi les cours de 1er cycle et des cycles supérieurs offerts par des départements de sciences fondamentales."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "-MM",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "PHY 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "-ST",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSL 6020",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis dans la banque de cours du Département de physique et des autres départements de sciences fondamentales. Un des cours peut être un cours de 1er cycle."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "PHY 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits.",
+      "cours": [
+        "IFT 6150",
+        "PHY 6292",
+        "PHY 6639",
+        "PHY 6912",
+        "PHY 6915",
+        "PHY 69801",
+        "PHY 69802",
+        "PHY 6985",
+        "PHY 6990",
+        "PHY 69961",
+        "PHY 69962"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "PHY 6901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Formation internationale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "PHY 6410",
+        "PHY 6411",
+        "PHY 6412",
+        "PHY 6413",
+        "PHY 6414",
+        "PHY 6415",
+        "PHY 6416"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés à l'Université Toulouse III - Paul-Sabatier"
+      ]
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "PHY 6051X",
+        "PHY 6445",
+        "PHY 6450",
+        "PHY 6460",
+        "PHY 6485"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "PHY 6420"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Formation internationale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CHM 6100E",
+        "CHM 6101E",
+        "CHM 6102E",
+        "CHM 6103E",
+        "CHM 6104E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés à l'Université Toulouse III - Paul-Sabatier"
+      ]
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "CHM 3404",
+        "CHM 6461",
+        "CHM 6462",
+        "CHM 6465",
+        "CHM 6485",
+        "CHM 6492",
+        "PHY 6445",
+        "PHY 6485",
+        "PHY 6505",
+        "PHY 6530"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "PHY 6570"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A23)\nLa maîtrise comporte 45 crédits. Elle est offerte selon les modalités et les cinq options suivantes:\n- l'option générale, avec mémoire (MM) ou avec stage (ST) (segment 70)\n- l'option biophysique et physiologie moléculaires, avec mémoire (segment 71)\n- l'option physique médicale, avec mémoire (segment 72)\n- l'option plasma - cheminement international, avec mémoire (segment 73)\n- l'option physique des matériaux, des surfaces et des interfaces - cheminement international, avec mémoire (segment 74)",
+    "Segment 70 Propre à l'option générale — Les crédits du segment 70 sont répartis de la façon suivante :",
+    "Segment 70 Propre à l'option générale — - modalité avec mémoire (MM) : 36 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, 3 à 9 crédits à option, et de 0 à 6 crédits au choix.",
+    "Segment 70 Propre à l'option générale — - modalité avec stage (ST) : 24 obligatoires crédits attribués à un stage, et 21 crédits à option. L'étudiant peut faire un maximum de 6 crédits de premier cycle.",
+    "Segment 71 Propre à l'option biophysique et physiologie moléculaires — Les crédits du segment 71 sont répartis de la façon suivante : 36 crédits obligatoires, attribués à la recherche et à la rédaction d'un mémoire, et 9 crédits à option.",
+    "Segment 72 Propre à l'option physique médicale — Les crédits du segment 72 sont répartis de la façon suivante : 45 crédits obligatoires, dont 20 crédits attribués à la recherche et à la rédaction d'un mémoire.",
+    "Segment 73 Propre à l'option plasma - cheminement international — Les crédits du segment 73 sont répartis de la façon suivante : 39 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+    "Segment 74 Propre à l'option physique des matériaux, surfaces et interfaces — Les crédits du segment 74 sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-physique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:39.191Z"
+}

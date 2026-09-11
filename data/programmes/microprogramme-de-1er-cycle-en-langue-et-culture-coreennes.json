@@ -1,0 +1,78 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-1er-cycle-en-langue-et-culture-coreennes",
+  "nom": "Microprogramme de 1er cycle en langue et culture coréennes",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "AES 2015",
+        "AES 2040",
+        "AES 2050",
+        "AES 2060",
+        "AES 2070",
+        "AES 3032",
+        "AES 3610"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A15)\nCe microprogramme de premier cycle comporte 15 crédits à option.",
+    "Segment 70 — Tous les crédits sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-1er-cycle-en-langue-et-culture-coreennes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:59:17.302Z"
+}

@@ -1,0 +1,385 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations",
+  "nom": "Maîtrise en sciences pharmaceutiques, option médicament et santé des populations",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "PHM 6069",
+        "PHM 6088"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de ces cours doit être approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "MSO 6011",
+        "PHM 6076"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1B",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 10 crédits.",
+      "cours": [
+        "ASA 6175",
+        "MSO 6014",
+        "MSO 6061",
+        "MSO 6067",
+        "MSO 6619",
+        "PHL 6092",
+        "PHM 6008",
+        "PHM 6010",
+        "PHM 6011",
+        "PHM 6015",
+        "PHM 6025",
+        "PHM 6032",
+        "PHM 6078",
+        "SBP 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1C Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits",
+      "cours": [
+        "PHM 6190"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "PHM 6008",
+        "PHM 6032",
+        "SBP 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2B",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 10 crédits.",
+      "cours": [
+        "MSO 6011",
+        "MSO 6014",
+        "MSO 6061",
+        "MSO 6067",
+        "MSO 6619",
+        "PHM 6025",
+        "PHM 6076",
+        "PHM 6078"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2C Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits.",
+      "cours": [
+        "PHM 6190"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "3A",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "ASA 6178",
+        "ASA 6732",
+        "MSO 6011",
+        "MSO 6014",
+        "MSO 6061",
+        "MSO 6067",
+        "MSO 6116",
+        "MSO 6619",
+        "PHM 6071",
+        "PHM 6076",
+        "PLU 6115",
+        "SPU 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "3B Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits.",
+      "cours": [
+        "PHM 6190"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "4A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHM 6071"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "4B",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANT 6154",
+        "ANT 6155",
+        "ASA 6704",
+        "BIE 6000",
+        "BIE 6008",
+        "BIE 6016",
+        "MSO 6008",
+        "PHM 6076",
+        "PHM 6079",
+        "SOL 6212",
+        "SOL 6650",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "4C Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits.",
+      "cours": [
+        "PHM 6190"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "5A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHM 6078"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "5B",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "IFT 6390",
+        "MSO 6011",
+        "MSO 6075",
+        "MSO 6611",
+        "PHM 6076",
+        "STT 6415",
+        "STT 6516"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "5C Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits.",
+      "cours": [
+        "PHM 6190"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A26)\nL'option médicament et santé des populations de la Maîtrise en sciences pharmaceutiques comporte 45 crédits. Elle est offerte avec la modalité mémoire et comporte un tronc commun ainsi que les cinq concentrations suivantes :\nConcentration Pharmacoépidémiologie (Segment 70C1)\nConcentration Pharmacoéconomie (Segment 70C2)\nConcentration Évaluation de pratiques/politiques pharmaceutiques (Segment 70C3)\nConcentration Socioanthropologie du médicament (Segment 70C4)\nConcentration Statistiques en sciences pharmaceutiques (Segment 70C5)",
+    "Segment 01 Tronc Commun — La répartition des crédits du tronc commun est la suivante : 5 crédits obligatoires et un maximum de 6 crédits au choix.",
+    "Segment 70 C1 Concentration pharmacoépidémiologie — La répartition des crédits de cette concentration est la suivante : 30 crédits obligatoires, dont 25 crédits attribués à la recherche et au mémoire de maîtrise, et de 4 à 10 crédits à option",
+    "Segment 70 C2 Concentration pharmacoéconomie — La répartition des crédits de cette concentration est la suivante : 30 crédits obligatoires, dont 25 crédits attribués à la recherche et au mémoire de maîtrise, et de 4 à 10 crédits à option.",
+    "Segment 70 C3 Concentration évaluation de pratiques / politiques pharmaceutiques — La répartition des crédits de cette concentration est la suivante : 30 crédits obligatoires, dont 25 crédits attribués à la recherche et au mémoire de maîtrise, et de 9 à 15 crédits à option.",
+    "Segment 70 C4 Concentration socio-anthropologie du médicament — La répartition des crédits de cette concentration est la suivante : 28 crédits obligatoires, dont 25 crédits attribués à la recherche et au mémoire de maîtrise, et de 6 à 12 crédits à option.",
+    "Segment 70 C5 Concentration statistiques en sciences pharmaceutiques — La répartition des crédits de cette concentration est la suivante : 28 crédits obligatoires, dont 25 crédits attribués à la recherche et au mémoire de maîtrise, et de 6 à 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:32.263Z"
+}

@@ -1,0 +1,183 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-travail-social",
+  "nom": "Maîtrise en travail social (avec stage ou mémoire)",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire ou à un stage et à la rédaction d'un essai de stage, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements théoriques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "SVS 6501",
+        "SVS 6502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Méthodes de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SVS 6503",
+        "SVS 6512",
+        "SVS 6520",
+        "SVS 6550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Champs de pratique et intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 7 crédits.",
+      "cours": [
+        "SVS 6095",
+        "SVS 6161",
+        "SVS 6195",
+        "SVS 6414",
+        "SVS 6415",
+        "SVS 6424",
+        "SVS 6425",
+        "SVS 6426",
+        "SVS 6435",
+        "SVS 6442",
+        "SVS 6445",
+        "SVS 6460",
+        "SVS 6473",
+        "SVS 6525A",
+        "SVS 6765"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Perspectives sociales et organisationnelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SVS 6290",
+        "SVS 6355",
+        "SVS 6455",
+        "SVS 6465",
+        "SVS 6475",
+        "SVS 6485"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70E",
+      "cle": "70/MM-70E",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SVS 6910",
+        "SVS 6944",
+        "SVS 6946"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "ST-70E",
+      "cle": "70/ST-70E",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SVS 6931",
+        "SVS 6932",
+        "SVS 6934",
+        "SVS 69341",
+        "SVS 69342",
+        "SVS 6940",
+        "SVS 69401",
+        "SVS 69402",
+        "SVS 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le SVS 6940 est un stage international sur un trimestre. Les étudiants qui s'inscrivent à ce stage doivent suivre le séminaire de stage SVS 6934. Les cours SVS 6934 et SVS 69341-2 sont équivalents et ne diffèrent que par leur durée. Les cours SVS 6940 et SVS 69401-2 sont équivalents et ne diffèrent que par leur durée."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A24)\nLa maîtrise comporte 45 crédits. Elle est offerte selon deux modalités :\n- modalité avec mémoire (MM)\n- modalité avec stage (ST)",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 33 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire ou à un stage et à la rédaction d'un essai de stage, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-travail-social/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:51.442Z"
+}

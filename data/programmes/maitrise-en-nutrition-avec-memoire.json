@@ -1,0 +1,140 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-nutrition-avec-memoire",
+  "nom": "Maîtrise en nutrition (avec mémoire)",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante: 38 crédits obligatoires dont 29 crédits attribués à la recherche et à la rédaction d'un mémoire, 4 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 38,
+      "max": 38
+    },
+    "option": {
+      "min": 4,
+      "max": 4
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MSO 6060",
+        "NUT 6650",
+        "NUT 6675"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Nutrition préventive et clinique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "NUT 6613",
+        "NUT 6654"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "CSS 6100",
+        "IPR 6012",
+        "PLU 6055",
+        "PLU 6150"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le choix est fait à partir de la liste des cours du Département de nutrition ou parmi les cours ci-dessous."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 29,
+          "max": 29
+        }
+      },
+      "regleBrut": "Obligatoire - 29 crédits.",
+      "cours": [
+        "NUT 6927"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (E14)\nLa maîtrise comporte 45 crédits et est offerte selon un cheminement avec mémoire.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante: 38 crédits obligatoires dont 29 crédits attribués à la recherche et à la rédaction d'un mémoire, 4 crédits à option et 3 crédits au choix.",
+    "Segment 70 — Au moins deux trimestres consécutifs doivent être accomplis en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-nutrition-avec-memoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:19.931Z"
+}

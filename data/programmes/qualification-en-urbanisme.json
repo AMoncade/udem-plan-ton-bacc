@@ -1,0 +1,64 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "qualification-en-urbanisme",
+  "nom": "Qualification en urbanisme",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Qualification",
+  "creditsTotal": 15,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "URB 6020",
+        "URB 6287"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits",
+      "cours": [
+        "URB 6289",
+        "URB 6770",
+        "URB 6778"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A14)\nLe programme comporte 15 crédits répartis de la façon suivante : 9 crédits obligatoires et 6 crédits à option.\nLe cheminement type sur une année est le suivant:\n- 6 ou 9 crédits de cours à l'automne\n- 6 ou 9 crédits de cours à l'hiver, dont l'atelier obligatoire (URB6020).",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 9 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/qualification-en-urbanisme/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:05:28.091Z"
+}

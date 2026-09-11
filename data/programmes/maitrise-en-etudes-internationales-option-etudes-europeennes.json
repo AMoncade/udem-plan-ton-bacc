@@ -1,0 +1,166 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-etudes-internationales-option-etudes-europeennes",
+  "nom": "Maîtrise en études internationales, option Études européennes",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits l'option sont répartis de la façon suivante : 24 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, et 21 crédits à option.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "POL 6112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Fondements - Aspects interdisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "INT 6050",
+        "INT 6080"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "HST 6635",
+        "HST 6646",
+        "INT 6010",
+        "INT 6020",
+        "INT 6030",
+        "POL 6130",
+        "POL 6404",
+        "POL 6617",
+        "SOL 6915"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le choix de cours doit être approuvé par le directeur de recherche et le responsable du programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Formations intensives",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "INT 6240A",
+        "INT 6240B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Formation internationale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "INT 6500",
+        "INT 6505",
+        "INT 6510",
+        "INT 6599"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés à l'Université catholique de Louvain/Université Saint-Louis – Bruxelles. Le choix de cours doit être approuvé par le directeur de recherche et le responsable du programme."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "INT 6100",
+        "INT 6755"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A21)\nCette option de la Maîtrise en études internationales comporte 45 crédits.",
+    "Segment 70 Propre à l'option Études européennes — Les crédits l'option sont répartis de la façon suivante : 24 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, et 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-etudes-internationales-option-etudes-europeennes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:43.269Z"
+}

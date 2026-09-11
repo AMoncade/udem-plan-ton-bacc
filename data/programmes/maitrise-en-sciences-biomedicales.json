@@ -1,0 +1,252 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-biomedicales",
+  "nom": "Maîtrise en sciences biomédicales",
+  "orientation": null,
+  "segments": [
+    "81",
+    "82"
+  ],
+  "orientations": [
+    {
+      "nom": "Sciences cardiovasculaires",
+      "segments": [
+        "81"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 9 crédits à option.",
+        "obligatoire": {
+          "min": 36,
+          "max": 36
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Médecine expérimentale",
+      "segments": [
+        "82"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 6 crédits à option.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MMD 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "MSO 6060",
+        "MSO 6061",
+        "PHL 6064"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MMD 6011",
+        "NUT 6027",
+        "NUT 6093",
+        "PHL 6071",
+        "PHM 6065",
+        "PSL 6170"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "SMC 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "MMD 6001",
+        "MMD 6005R",
+        "MMD 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "MSO 6060",
+        "MSO 6061",
+        "PHL 6064"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82C",
+      "cle": "82/82C",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6023",
+        "BCM 6210",
+        "CHI 6100",
+        "CHI 61001",
+        "CHI 61002",
+        "MCB 6031",
+        "MMD 6002",
+        "MMD 6011",
+        "MSO 6011",
+        "NSC 6060",
+        "NSC 6070",
+        "NSC 6081",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6071",
+        "PHL 6074",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E",
+        "PSL 6090",
+        "PSL 6170",
+        "SMC 6011",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours CHI 61001 et CHI 61002 sont équivalents au cours CHI 6101."
+      ]
+    },
+    {
+      "id": "82D",
+      "cle": "82/82D",
+      "segment": "82",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "SMC 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 17 (A22)\nLa maîtrise comporte 45 crédits. Elle est offerte selon les options suivantes :\n- option Sciences cardiovasculaires (segment 81)\n- option Médecine expérimentale (segment 82)\nAu moins deux trimestres consécutifs doivent être accomplis en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine.",
+    "Segment 81 Propre à l'option Sciences cardiovasculaires — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 9 crédits à option.",
+    "Segment 82 Propre à l'option Médecine expérimentale — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-biomedicales/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:52.975Z"
+}

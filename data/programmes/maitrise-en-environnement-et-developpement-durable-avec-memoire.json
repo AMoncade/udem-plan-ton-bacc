@@ -1,0 +1,428 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-environnement-et-developpement-durable-avec-memoire",
+  "nom": "Maîtrise en environnement et développement durable (avec mémoire)",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "biogéochimie environnementale",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "gestion de l'eau",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "gestion de la biodiversité",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 72 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "enjeux sociaux et gouvernance",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 73 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "perspectives d'aménagement",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 74 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+        "obligatoire": {
+          "min": 74,
+          "max": 74
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "EDD 6005",
+        "EDD 6010",
+        "EDD 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Modèles, règles et acteurs en environnement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "DRT 6864",
+        "ENV 6002",
+        "ENV 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "EDD 6080",
+        "EDD 6090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "GEO 6142"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "BIO 6822",
+        "CHM 6802",
+        "CHM 6810",
+        "TXL 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits",
+      "cours": [
+        "EDD 6040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "APA 6013",
+        "BIO 6822",
+        "BIO 6965",
+        "CHM 6810",
+        "ENV 6005",
+        "GEO 6142",
+        "MSN 6144",
+        "PLU 6910A",
+        "POL 6570",
+        "TXL 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDD 6050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "APA 6013",
+        "APA 6515",
+        "BIO 6245",
+        "BIO 6875",
+        "BIO 6965",
+        "GEO 6100",
+        "GEO 6341",
+        "MSL 6515",
+        "PLU 6901A",
+        "URB 6778"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDD 6060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "AME 6920",
+        "COM 6331",
+        "DMO 6430",
+        "DMO 6501",
+        "GEO 6204",
+        "INT 6040",
+        "PLU 6901A",
+        "POL 6418",
+        "POL 6512",
+        "POL 6526",
+        "POL 6570",
+        "POL 6609",
+        "POL 6666",
+        "SOL 6242",
+        "SOL 6312",
+        "SOL 6510",
+        "URB 6729",
+        "URB 6767",
+        "URB 6772",
+        "URB 6774"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDD 6070"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "APA 6006",
+        "APA 6013",
+        "URB 6729",
+        "URB 6742",
+        "URB 6754",
+        "URB 6772",
+        "URB 6774",
+        "URB 6778"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A23)\nLa maîtrise comporte 45 crédits répartis de la façon suivante: 39 crédits obligatoires et 6 crédits à option.\nElle est offerte selon la modalité mémoire et comporte un tronc commun (segment 01) ainsi que les cinq options suivantes :\n- L'option biogéochimie environnementale (segment 70)\n- L'option gestion de l'eau (segment 71)\n- L'option gestion de la biodiversité (segment 72)\n- L'option enjeux sociaux et gouvernance (segment 73)\n- L'option perspectives d'aménagement (segment 74)",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont répartis de la façon suivante : 36 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire de maîtrise, et 3 crédits à option.",
+    "Segment 70 Propre à l'option biogéochimie environnementale — Les crédits du segment 70 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+    "Segment 71 Propre à l'option gestion de l'eau — Les crédits du segment 71 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+    "Segment 72 Propre à l'option gestion de la biodiversité — Les crédits du segment 72 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+    "Segment 73 Propre à l'option enjeux sociaux et gouvernance — Les crédits du segment 73 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option.",
+    "Segment 74 Propre à l'option perspectives d'aménagement — Les crédits du segment 74 sont répartis de la façon suivante: 3 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-environnement-et-developpement-durable-avec-memoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:54:26.529Z"
+}

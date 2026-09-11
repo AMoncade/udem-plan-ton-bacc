@@ -1,0 +1,195 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-litteratures-de-langue-francaise",
+  "nom": "Maîtrise en littératures de langue française",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "Recherche",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de cette option, incluant le segment 01, sont répartis de la façon suivante : 33 crédits obligatoires, dont 24 crédits pour la rédaction d'un mémoire, et 12 crédits à option.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Recherche-création",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de cette option, incluant le segment 01, sont répartis de la façon suivante : 33 crédits obligatoires, dont 24 crédits pour la rédaction d'un mémoire, et 12 crédits à option.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "FRA 60601",
+        "FRA 60602"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "FRA 60301",
+        "FRA 60302",
+        "FRA 6080",
+        "FRA 6144",
+        "FRA 6145",
+        "FRA 6146",
+        "FRA 6162",
+        "FRA 6193",
+        "FRA 6194",
+        "FRA 6195",
+        "FRA 6260",
+        "FRA 6262",
+        "FRA 6264",
+        "FRA 6342",
+        "FRA 6343",
+        "FRA 6347",
+        "FRA 6348",
+        "FRA 6349",
+        "FRA 6351",
+        "FRA 6420",
+        "FRA 6421",
+        "FRA 6443",
+        "FRA 6484",
+        "FRA 6486",
+        "FRA 6610",
+        "FRA 6730",
+        "FRA 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Création littéraire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FRA 6501",
+        "FRA 6505",
+        "PLU 61232",
+        "PLU 6300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "FRA 6916",
+        "FRA 6926",
+        "FRA 6936"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Recherche-création et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "FRA 6916",
+        "FRA 6926",
+        "FRA 6940"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H17)\nLa maîtrise comporte 45 crédits. Elle est offerte selon les 2 options suivantes :\n- option Recherche (segments 01 et 70).\n- option Recherche-création (segments 01 et 71)",
+    "Segment 01 Tronc commun — Les crédits du tronc commun sont répartis de la façon suivante : 3 crédits obligatoires et 12 crédits à option.",
+    "Segment 70 Propre à l'option recherche — Les crédits de cette option, incluant le segment 01, sont répartis de la façon suivante : 33 crédits obligatoires, dont 24 crédits pour la rédaction d'un mémoire, et 12 crédits à option.",
+    "Segment 71 Propre à l'option recherche-création — Les crédits de cette option, incluant le segment 01, sont répartis de la façon suivante : 33 crédits obligatoires, dont 24 crédits pour la rédaction d'un mémoire, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-litteratures-de-langue-francaise/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:01.031Z"
+}

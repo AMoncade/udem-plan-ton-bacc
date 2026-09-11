@@ -1,0 +1,57 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "ph-d-individualise",
+  "nom": "Ph. D. individualisé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Études supérieures et postdoctorales, Faculté de l'aménagement",
+  "typeProgramme": "Ph.",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 30
+        }
+      },
+      "regleBrut": "Choix - Maximum 30 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 60,
+          "max": 90
+        }
+      },
+      "regleBrut": "Choix - Minimum 60 crédits, maximum 90 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (E24)\nLe doctorat comporte 90 crédits répartis de la façon suivante: de 0 à 30 crédits de cours et de 60 à 90 crédits attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 70 — Les crédits du doctorat sont répartis selon le plan d'étude déterminé et approuvé."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/ph-d-individualise/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:51.444Z"
+}

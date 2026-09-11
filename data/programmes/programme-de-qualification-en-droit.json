@@ -1,0 +1,342 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "programme-de-qualification-en-droit",
+  "nom": "Programme de qualification en droit",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "79"
+  ],
+  "orientations": [
+    {
+      "nom": "Cheminement barreau",
+      "segments": [
+        "70",
+        "71",
+        "79"
+      ],
+      "exigences": {
+        "brut": "- l'orientation Cheminement barreau (segment 70) comportant 9 crédits obligatoires et 36 à option,",
+        "obligatoire": {
+          "min": 9,
+          "max": 9
+        },
+        "option": {
+          "min": 36,
+          "max": 36
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Cheminement notaire",
+      "segments": [
+        "70",
+        "71",
+        "79"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Perfectionnement particulier",
+      "segments": [
+        "70",
+        "71",
+        "79"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Programme",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Droit civil 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option – Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "DRT 1221G",
+        "DRT 1222G",
+        "DRT 1223G",
+        "DRT 1225G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Procédure civile",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "DRT 2233G",
+        "DRT 2234G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Droit administratif",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "DRT 2501G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Droit commercial et corporatif",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 2400G",
+        "DRT 2402G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Droit constitutionnel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 1501G",
+        "DRT 1502G",
+        "DRT 3503G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Droit criminel et pénal",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 1505G",
+        "DRT 2505G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Droit de la famille",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 1224G",
+        "DRT 3203G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Droit civil 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "DRT 3201G",
+        "DRT 3202",
+        "DRT 3205G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Droit du travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DRT 3600G",
+        "DRT 3602G",
+        "DRT 3603G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 36,
+          "max": 39
+        }
+      },
+      "regleBrut": "Option - Minimum 36 crédits, maximum 39 crédits.",
+      "cours": [
+        "DRT 1224G",
+        "DRT 1225G",
+        "DRT 1501G",
+        "DRT 2233G",
+        "DRT 2402G",
+        "DRT 2501G",
+        "DRT 3104",
+        "DRT 3202",
+        "DRT 3203",
+        "DRT 3203G",
+        "DRT 3204",
+        "DRT 3205G",
+        "DRT 3206",
+        "DRT 3701G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DRT 1010G",
+        "DRT 1151G",
+        "DRT 1221G",
+        "DRT 1222G",
+        "DRT 1223G",
+        "DRT 1502G",
+        "DRT 1505G",
+        "DRT 1901G",
+        "DRT 2012G",
+        "DRT 2234G",
+        "DRT 2400G",
+        "DRT 2505G",
+        "DRT 2923G",
+        "DRT 3201G",
+        "DRT 3401G",
+        "DRT 3402G",
+        "DRT 3404G",
+        "DRT 3501G",
+        "DRT 3503G",
+        "DRT 3600G",
+        "DRT 3602G",
+        "DRT 3603G",
+        "DRT 3702G",
+        "DRT 3801G",
+        "DRT 3807G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "79Z",
+      "cle": "79/79Z",
+      "segment": "79",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 45
+        }
+      },
+      "regleBrut": "Choix - Maximum 45 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (H25)\nLe programme de qualification en droit comporte généralement 45 crédits et est offert selon trois orientations, correspondant aux prescriptions des ordres professionnels:\n- l'orientation Cheminement barreau (segment 70) comportant 9 crédits obligatoires et 36 à option,\n- l'orientation Cheminement notaire (segment 71) comportant 45 crédits à option,\n- l'orientation Perfectionnement particulier (segment 79) comportant un maximum de 45 crédits au choix.",
+    "Segment 70 Cheminement barreau — Les crédits du cheminement sont répartis de la façon suivante : 9 crédits obligatoires et 36 crédits à option.",
+    "Segment 71 Cheminement notaire — L'orientation Cheminement notaire comporte 45 crédits à option.",
+    "Segment 79 Perfectionnement particulier — L'orientation Perfectionnement particulier comporte un maximum de 45 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/programme-de-qualification-en-droit/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:05:09.782Z"
+}

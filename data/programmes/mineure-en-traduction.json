@@ -1,0 +1,181 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-traduction",
+  "nom": "Mineure en traduction",
+  "orientation": null,
+  "segments": [
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 21 crédits de cours obligatoires, 6 à 9 crédits à option et un maximum de 3 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Transfert linguistique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 1500",
+        "TRA 1550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Communication",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "TRA 1005",
+        "TRA 1015",
+        "TRA 1300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Recherche et outils informatiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 1400",
+        "TRA 1600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Anglais",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "TRA 1025",
+        "TRA 1750"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants seront classés selon leurs connaissances par un test d'admission. Les personnes de niveau 1 pourront suivre le cours TRA 1025 et celles de niveau 2 pourront suivre le cours TRA 1750. L’inscription doit être faite par le département."
+      ]
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Évolution de la discipline",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2115",
+        "TRA 3125"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80F",
+      "cle": "80/80F",
+      "segment": "80",
+      "nom": "Langues et notions",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2210",
+        "TRA 2220",
+        "TRA 2240",
+        "TRA 2260"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80Z",
+      "cle": "80/80Z",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que TRA."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 06 (A25)\nLa mineure comporte 30 crédits.",
+    "Segment 80 — Les crédits de la mineure sont répartis de la façon suivante : 21 crédits de cours obligatoires, 6 à 9 crédits à option et un maximum de 3 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-traduction/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:47.431Z"
+}

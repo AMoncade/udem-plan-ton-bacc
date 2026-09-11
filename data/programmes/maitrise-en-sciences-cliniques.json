@@ -1,0 +1,494 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-cliniques",
+  "nom": "Maîtrise en sciences cliniques",
+  "orientation": null,
+  "segments": [
+    "75",
+    "76",
+    "83",
+    "84",
+    "86",
+    "87"
+  ],
+  "orientations": [
+    {
+      "nom": "musculosquelettique",
+      "segments": [
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 75 sont répartis de la façon suivante : 39 crédits obligatoires, dont 34 crédits attribués à la recherche et à la rédaction d'un mémoire, de 3 à 6 crédits à option et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 75,
+          "max": 75
+        },
+        "option": {
+          "min": 3,
+          "max": 6
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "sciences du vieillissement",
+      "segments": [
+        "76"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 76 sont répartis de la façon suivante : 33 crédits obligatoires, dont 32 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits à option.",
+        "obligatoire": {
+          "min": 76,
+          "max": 76
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "éthique clinique",
+      "segments": [
+        "83"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "recherche clinique appliquée",
+      "segments": [
+        "84"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 84 sont répartis de la façon suivante : 42 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, et 3 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "partenariat patient",
+      "segments": [
+        "86"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "médecine computationnelle",
+      "segments": [
+        "87"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 87 sont répartis de la façon suivante : 35 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction un mémoire, et 10 crédits à option.",
+        "obligatoire": {
+          "min": 87,
+          "max": 87
+        },
+        "option": {
+          "min": 10,
+          "max": 10
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MMD 6007",
+        "MMD 6049",
+        "MMD 66001",
+        "MMD 66002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MSO 6061",
+        "REA 6008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir tout autre cours de cycles supérieurs jugé pertinent avec l'approbation du responsable de l'option et de la Direction du programme d'études."
+      ]
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "SMC 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Obligatoire - 1 crédit.",
+      "cours": [
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ASA 6177",
+        "ETA 6512",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6067"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "NSC 6051",
+        "NSC 6060",
+        "NSC 6070",
+        "ORT 6873",
+        "PHL 6041",
+        "PSY 6022",
+        "PSY 64071",
+        "PSY 64072",
+        "PSY 6415"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Il est fortement recommandé que le cours NSC 6051 précède le cours RAD 6005."
+      ]
+    },
+    {
+      "id": "76D",
+      "cle": "76/76D",
+      "segment": "76",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Obligatoire - 32 crédits.",
+      "cours": [
+        "SMC 6925"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "84A",
+      "cle": "84/84A",
+      "segment": "84",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MMD 6008",
+        "MSO 6014",
+        "MSO 6061",
+        "MSO 6067",
+        "MSO 6075",
+        "MSO 6619",
+        "MSO 6634",
+        "MSO 6635"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "84B",
+      "cle": "84/84B",
+      "segment": "84",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "ASA 6178",
+        "ASA 6704",
+        "ASA 6732",
+        "BCM 6210",
+        "CGE 6001",
+        "MCB 6031",
+        "MMD 6002",
+        "NSC 6061",
+        "NSC 6070",
+        "PHL 6011",
+        "PHL 6031",
+        "PHL 6041",
+        "PHL 6060",
+        "PHL 6093",
+        "PHM 6025",
+        "PHM 6032",
+        "PST 6100",
+        "PST 6110",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "84C",
+      "cle": "84/84C",
+      "segment": "84",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "SMC 6921"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "87A",
+      "cle": "87/87A",
+      "segment": "87",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "IFT 6758",
+        "MMD 6005R",
+        "MMD 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "87B",
+      "cle": "87/87B",
+      "segment": "87",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - 4 crédits.",
+      "cours": [
+        "IFT 6390",
+        "IFT 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "87C",
+      "cle": "87/87C",
+      "segment": "87",
+      "nom": "Statistiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MMD 6021",
+        "MSO 6011",
+        "MSO 6067",
+        "PHL 6064",
+        "PHL 6094"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "87D",
+      "cle": "87/87D",
+      "segment": "87",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 4 crédits.",
+      "cours": [
+        "ASA 6768",
+        "ASA 6769",
+        "BIN 6010",
+        "BIN 6011",
+        "GBM 6300",
+        "IFT 6135",
+        "IFT 6285",
+        "MSO 6014",
+        "MSO 6611",
+        "MSO 6624"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Sur demande dûment justifiée, le responsable de l'option et la direction du programme pourraient autoriser un étudiant à substituer un des cours de ce bloc par un autre cours jugé pertinent pour son projet de recherche."
+      ]
+    },
+    {
+      "id": "87E",
+      "cle": "87/87E",
+      "segment": "87",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SMC 6927"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A26)\nLa maîtrise comporte 45 crédits répartis de la façon suivante : de 24 à 39 crédits obligatoires (parmi lesquels 17 ou 18 crédits sont attribués à un travail dirigé ou de 21 à 34 crédits sont attribués à la recherche et à la rédaction d'un mémoire), de 3 à 21 crédits à option et de 0 à 3 crédits au choix. Elle est offerte selon les modalités et les options suivantes :\n- option musculosquelettique, avec mémoire (segment 75)\n- option sciences du vieillissement, avec mémoire (segment 76)\n- option éthique clinique, avec mémoire (MM) ou travail dirigé (TD) (segment 83)\n- option recherche clinique appliquée, avec mémoire (segment 84)\n- option partenariat patient, avec mémoire (MM) ou travail dirigé (TD) (segment 86).\n- option médecine computationnelle, avec mémoire (segment 87)",
+    "Segment 75 Propre à l'option musculosquelettique — Les crédits du segment 75 sont répartis de la façon suivante : 39 crédits obligatoires, dont 34 crédits attribués à la recherche et à la rédaction d'un mémoire, de 3 à 6 crédits à option et de 0 à 3 crédits au choix.",
+    "Segment 76 Propre à l'option sciences du vieillissement — Les crédits du segment 76 sont répartis de la façon suivante : 33 crédits obligatoires, dont 32 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits à option.",
+    "Segment 83 Propre à l'option éthique clinique — Les crédits du segment 83 sont répartis de la façon suivante :",
+    "Segment 83 Propre à l'option éthique clinique — - modalité avec mémoire (MM) : 33 crédits obligatoires, dont 26 crédits attribués à la recherche et à la rédaction d'un mémoire, de 9 à 12 crédits à option et de 0 à 3 crédits au choix.",
+    "Segment 83 Propre à l'option éthique clinique — - modalité avec travail dirigé (TD) : 39 crédits obligatoires, dont 17 crédits attribués à un travail dirigé, et 6 crédits à option.",
+    "Segment 84 Propre à l'option recherche clinique appliquée — Les crédits du segment 84 sont répartis de la façon suivante : 42 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, et 3 crédits à option.",
+    "Segment 86 Propre à l'option partenariat patient — Les crédits du segment 86 sont répartis de la façon suivante :",
+    "Segment 86 Propre à l'option partenariat patient — - modalité avec mémoire (MM) : 36 crédits obligatoires, dont 29 crédits attribués à la recherche et à la rédaction d'un mémoire, et 9 crédits à option.",
+    "Segment 86 Propre à l'option partenariat patient — - modalité avec travail dirigé (TD) : 24 crédits obligatoires, dont 17 crédits attribués à un travail dirigé, et 21 crédits à option.",
+    "Segment 87 Propre à l'option médecine computationnelle — Les crédits du segment 87 sont répartis de la façon suivante : 35 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction un mémoire, et 10 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-cliniques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:55:54.548Z"
+}

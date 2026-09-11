@@ -1,0 +1,229 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-histoire-de-lart",
+  "nom": "Mineure en histoire de l'art",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Outils fondamentaux et d'analyse en histoire de l'art",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "HAR 1001",
+        "HAR 1032",
+        "HAR 1075",
+        "HAR 1145",
+        "HAR 1166",
+        "HAR 1167",
+        "HAR 2075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Mise en pratique des apprentissages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ART 1800",
+        "ART 1900",
+        "ART 2000",
+        "ART 2050",
+        "ART 2060",
+        "ART 2102",
+        "ART 3001",
+        "HAR 2262",
+        "HAR 2290"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Études historiques et actuelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "HAR 1090",
+        "HAR 1130",
+        "HAR 1161",
+        "HAR 1200",
+        "HAR 1640",
+        "HAR 2070",
+        "HAR 2073",
+        "HAR 2089",
+        "HAR 2090",
+        "HAR 2252",
+        "HAR 2295",
+        "HAR 2330",
+        "HAR 2361",
+        "HAR 2535",
+        "HAR 2650",
+        "HAR 2815",
+        "HAR 3132",
+        "HAR 3220",
+        "HAR 3420"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Art des Amériques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 2102",
+        "HAR 1115",
+        "HAR 1610",
+        "HAR 2115",
+        "HAR 2195",
+        "HAR 2196",
+        "HAR 2515",
+        "HAR 2717",
+        "HAR 3510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Arts, institutions et sociétés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "HAR 1210",
+        "HAR 1240",
+        "HAR 2121",
+        "HAR 2260",
+        "HAR 2780",
+        "HAR 2781",
+        "HAR 2785",
+        "HAR 2786",
+        "HAR 3040",
+        "HAR 3056",
+        "HAR 3290",
+        "HAR 3450",
+        "HAR 3550",
+        "HAR 3900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72F",
+      "cle": "72/72F",
+      "segment": "72",
+      "nom": "Arts, médiums, techniques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "CIN 2108",
+        "CIN 2110",
+        "CIN 2124",
+        "ETM 1400",
+        "HAR 2185",
+        "HAR 2355",
+        "HAR 2400",
+        "HAR 2460",
+        "HAR 3185",
+        "JEU 1001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle HAR."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 08 (A21)\nLa mineure comporte 30 crédits.",
+    "Segment 72 — Les crédits de la mineure sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-histoire-de-lart/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:04:02.846Z"
+}

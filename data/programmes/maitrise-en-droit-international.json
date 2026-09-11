@@ -1,0 +1,155 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-droit-international",
+  "nom": "Maîtrise en droit international",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 15 crédits obligatoires attribués à un travail dirigé, de 24 à 30 crédits à option choisis dans les blocs 70A et 70B ou dans les blocs 70A et 70C et, au maximum, 6 crédits au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 24,
+      "max": 30
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours généraux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "DRT 6500",
+        "DRT 6510",
+        "DRT 6515"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Droit transnational",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 24 crédits.",
+      "cours": [
+        "DRT 6805B",
+        "DRT 6828",
+        "DRT 6830A",
+        "DRT 6830B",
+        "DRT 6830D",
+        "DRT 6830E",
+        "DRT 6830F",
+        "DRT 6830G",
+        "DRT 6830H",
+        "DRT 6830I",
+        "DRT 6830J",
+        "DRT 6910",
+        "DRT 6912",
+        "DRT 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Parmi les cours suivants ou, avec l'approbation du doyen, tout autre cours d'études supérieures en droit (deux cours peuvent être choisis dans le programme du Baccalauréat en droit) ou dans une discipline connexe."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Droit international public",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 24 crédits.",
+      "cours": [
+        "DRI 6130",
+        "DRT 6870C",
+        "DRT 6903",
+        "DRT 6909",
+        "DRT 6916W"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Parmi les cours suivants ou, avec l'approbation du doyen, tout autre cours d'études supérieures en droit (deux cours peuvent être choisis dans le programme du Baccalauréat en droit) ou dans une discipline connexe."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours connexes",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis parmi les cours de 2e cycle en droit ou, avec l'accord du vice-décanat aux études supérieures, d'un autre programme de 2e cycle."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DRT 6995"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A11)\nLa maîtrise comporte 45 crédits.\nLe doyen approuve le plan d'études qui a été établi par l'étudiant et en contrôle l'exécution. Le Conseil de la Faculté détermine, chaque année, dans le cadre du programme agréé par la Commission des études, les cours de 2e cycle qui sont offerts et leur caractère obligatoire ou à option.\nL'étudiant dont la formation juridique a été entièrement suivie à l'étranger doit suivre :\nDRT 6501 Système juridique du Québec et du Canada, 3 crédits.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 15 crédits obligatoires attribués à un travail dirigé, de 24 à 30 crédits à option choisis dans les blocs 70A et 70B ou dans les blocs 70A et 70C et, au maximum, 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-droit-international/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:46.156Z"
+}

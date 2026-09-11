@@ -1,0 +1,173 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-criminologie-campus-laval",
+  "nom": "Majeure en criminologie - Campus Laval",
+  "orientation": null,
+  "segments": [
+    "91"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 36 crédits obligatoires, 21 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "91A",
+      "cle": "91/91A",
+      "segment": "91",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "CRI 1050",
+        "CRI 1100",
+        "CRI 1151",
+        "CRI 1200",
+        "CRI 1212",
+        "CRI 1511",
+        "CRI 1600",
+        "CRI 1730",
+        "CRI 2052",
+        "CRI 2410",
+        "CRI 2990",
+        "CRI 3900",
+        "PHI 2990"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "91B",
+      "cle": "91/91B",
+      "segment": "91",
+      "nom": "Intervention criminologique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "CRI 2000",
+        "CRI 2015",
+        "CRI 2301",
+        "CRI 2545",
+        "CRI 3010",
+        "CRI 3415",
+        "CRI 3721",
+        "CRI 3800",
+        "CRI 3820"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "91C",
+      "cle": "91/91C",
+      "segment": "91",
+      "nom": "Analyse et recherche criminologique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "CRI 2531",
+        "CRI 2950",
+        "CRI 3013",
+        "CRI 3040",
+        "CRI 3052",
+        "CRI 3213",
+        "CRI 3318",
+        "CRI 3361",
+        "CRI 3950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "91D",
+      "cle": "91/91D",
+      "segment": "91",
+      "nom": "Connaissances criminologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "CRI 2005",
+        "CRI 2427",
+        "CRI 2455",
+        "CRI 2951",
+        "CRI 3001",
+        "CRI 3201",
+        "CRI 3305",
+        "CRI 3341",
+        "CRI 3401",
+        "CRI 3420",
+        "CRI 3425",
+        "CRI 3465",
+        "CRI 3495",
+        "CRI 3540",
+        "CRI 3810",
+        "SIP 3040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "91Z",
+      "cle": "91/91Z",
+      "segment": "91",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A20)\nLa majeure comporte 60 crédits.",
+    "Segment 91 — Les crédits de la majeure sont répartis de la façon suivante : 36 crédits obligatoires, 21 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-criminologie-campus-laval/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:09.759Z"
+}

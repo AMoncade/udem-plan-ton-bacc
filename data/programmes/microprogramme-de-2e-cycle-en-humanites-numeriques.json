@@ -1,0 +1,81 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-humanites-numeriques",
+  "nom": "Microprogramme de 2e cycle en humanités numériques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 9,
+  "exigences": {
+    "brut": "Les crédits du programme sont répartis de la façon suivante : 3 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "HNU 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Ateliers techniques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "HNU 6051",
+        "HNU 6052",
+        "HNU 6053",
+        "HNU 6054",
+        "HNU 6055",
+        "HNU 6056",
+        "HNU 6057",
+        "HNU 6058",
+        "HNU 6059",
+        "HNU 6100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A22)\nLe microprogramme comporte 9 crédits.",
+    "Segment 70 — Les crédits du programme sont répartis de la façon suivante : 3 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-humanites-numeriques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:01:34.481Z"
+}

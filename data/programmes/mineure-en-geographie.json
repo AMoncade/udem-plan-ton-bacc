@@ -1,0 +1,125 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-geographie",
+  "nom": "Mineure en géographie",
+  "orientation": null,
+  "segments": [
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 18 crédits obligatoires, 9 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "GEO 1112",
+        "GEO 1122",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 1312",
+        "GEO 1550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Régions, monde",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "GEO 1412",
+        "GEO 3412",
+        "GEO 3442",
+        "GEO 3452",
+        "GEO 3462",
+        "GEO 3463",
+        "GEO 3482",
+        "GEO 3492"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Analyse et gestion de l'information géographique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "GEO 1512",
+        "GEO 1532",
+        "GEO 1542"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80Z",
+      "cle": "80/80Z",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A15)\nLa mineure comporte 30 crédits.",
+    "Segment 80 — Les crédits de la mineure sont répartis de la façon suivante : 18 crédits obligatoires, 9 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-geographie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:03:56.807Z"
+}

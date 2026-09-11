@@ -1,0 +1,312 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-sciences-des-religions",
+  "nom": "Maîtrise en sciences des religions",
+  "orientation": null,
+  "segments": [
+    "70",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante: 33 crédits obligatoires, dont 30 crédits attribués à la rédaction d'un mémoire, 6 à 12 crédits à option et, au maximum, 6 crédits au choix.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 6,
+          "max": 12
+        },
+        "choix": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "Spiritualité",
+      "segments": [
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante: 33 crédits obligatoires, dont 30 crédits attribués à la rédaction d'un mémoire, 6 à 12 crédits à option et, au maximum, 6 crédits au choix.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 6,
+          "max": 12
+        },
+        "choix": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "REL 6120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "FAS 60011",
+        "FAS 60012",
+        "PLU 6110",
+        "REL 6103",
+        "REL 6112",
+        "REL 6113",
+        "REL 6115",
+        "REL 6122",
+        "REL 6123",
+        "REL 6124",
+        "REL 6126",
+        "REL 6127",
+        "REL 6131",
+        "REL 6132",
+        "REL 6136",
+        "REL 6137",
+        "REL 6138",
+        "REL 6151",
+        "REL 6160",
+        "REL 6170",
+        "REL 6171",
+        "REL 6212",
+        "REL 6215",
+        "REL 6217",
+        "REL 6400",
+        "REL 6500",
+        "REL 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours REL de 2e cycle de l'Institut d'études religieuses ou un cours hors Institut. Dans ce dernier cas, il doit être approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REL 6502",
+        "REL 6503"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Notez que le stage 1 est préalable au stage 2. Le choix de prendre un stage doit être approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "REL 6815",
+        "REL 6820",
+        "REL 6825",
+        "REL 6840"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "REL 6210"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "REL 6112",
+        "REL 6127",
+        "REL 6131",
+        "REL 6137",
+        "REL 6151",
+        "REL 6160",
+        "REL 6171",
+        "REL 6211",
+        "REL 6212",
+        "REL 6214",
+        "REL 6215",
+        "REL 6217",
+        "REL 6218",
+        "REL 6219",
+        "REL 6220",
+        "REL 6500",
+        "REL 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours REL de 2e cycle de l'Institut d'études religieuses ou un cours hors Institut. Dans ce dernier cas, il doit être approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REL 6502",
+        "REL 6503"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Notez que le stage 1 est préalable au stage 2. Le choix de prendre un stage doit être approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "75E",
+      "cle": "75/75E",
+      "segment": "75",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "REL 6815",
+        "REL 6820",
+        "REL 6825",
+        "REL 6840"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A15)\nLa maîtrise comporte 45 crédits. Elle est offerte avec le cheminement avec mémoire, lequel comporte les options suivantes:\n- l'option Générale (segment 70)\n- l'option Spiritualité (segment 75)\nSelon la formation préalable de l'étudiant, des cours complémentaires peuvent être exigés (entre autres : animation, relation d'aide et praxéologie).",
+    "Segment 70 Propre à l'option générale — Les crédits de l'option sont répartis de la façon suivante: 33 crédits obligatoires, dont 30 crédits attribués à la rédaction d'un mémoire, 6 à 12 crédits à option et, au maximum, 6 crédits au choix.",
+    "Segment 75 Propre à l'option spiritualité — Les crédits de l'option sont répartis de la façon suivante: 33 crédits obligatoires, dont 30 crédits attribués à la rédaction d'un mémoire, 6 à 12 crédits à option et, au maximum, 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-sciences-des-religions/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:56:20.530Z"
+}

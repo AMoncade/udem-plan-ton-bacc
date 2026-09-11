@@ -1,0 +1,295 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-histoire",
+  "nom": "Majeure en histoire",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 6 crédits obligatoires, 51 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 51,
+      "max": 51
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Fondement méthodologique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "HST 1010",
+        "HST 2023"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Fondement, histoire de l'Europe",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "HST 1031",
+        "HST 1032",
+        "HST 1041",
+        "HST 1042"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Fondement, histoire du Québec, du Canada et des Amériques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "HST 1043",
+        "HST 1044",
+        "HST 1048",
+        "HST 1051",
+        "HST 1052",
+        "HST 1053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Fondement, histoire de l'Afrique et de l'Orient",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "HST 1061",
+        "HST 1062",
+        "HST 1063",
+        "HST 1070",
+        "HST 1080"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Pratique et méthode",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ARV 1050",
+        "ETM 3202",
+        "HGL 1011",
+        "HGL 2005",
+        "HGL 2422",
+        "HST 1015",
+        "HST 2001",
+        "HST 2002",
+        "HST 2007",
+        "HST 2013",
+        "HST 2101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 27 crédits.",
+      "cours": [
+        "HST 2070",
+        "HST 2080",
+        "HST 2108",
+        "HST 2109",
+        "HST 2110",
+        "HST 2111",
+        "HST 2113",
+        "HST 2125",
+        "HST 2126",
+        "HST 2128",
+        "HST 2132",
+        "HST 2139",
+        "HST 2151",
+        "HST 2212",
+        "HST 2246",
+        "HST 2262",
+        "HST 2263",
+        "HST 2264",
+        "HST 2267",
+        "HST 2273",
+        "HST 2274",
+        "HST 2276",
+        "HST 2284",
+        "HST 2288",
+        "HST 2295",
+        "HST 2296",
+        "HST 2297",
+        "HST 2298",
+        "HST 2348",
+        "HST 2351",
+        "HST 2352",
+        "HST 2362",
+        "HST 2370",
+        "HST 2371",
+        "HST 2401",
+        "HST 2402",
+        "HST 2410",
+        "HST 2420",
+        "HST 2427",
+        "HST 2430",
+        "HST 2443",
+        "HST 2444",
+        "HST 2446",
+        "HST 2453",
+        "HST 2618",
+        "HST 2621",
+        "HST 2624",
+        "HST 2625",
+        "HST 2627",
+        "HST 2628",
+        "HST 2820",
+        "HST 2875",
+        "HST 2885",
+        "HST 2904",
+        "HST 2911"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "HST 3070",
+        "HST 3080",
+        "HST 3100",
+        "HST 3105",
+        "HST 3108",
+        "HST 3111",
+        "HST 3130",
+        "HST 3131",
+        "HST 3133",
+        "HST 3206",
+        "HST 3210",
+        "HST 3249",
+        "HST 3253",
+        "HST 3257",
+        "HST 3259",
+        "HST 3276",
+        "HST 3352",
+        "HST 3361",
+        "HST 3371",
+        "HST 3430",
+        "HST 3432",
+        "HST 3440",
+        "HST 3441",
+        "HST 3450",
+        "HST 3480",
+        "HST 3510",
+        "HST 3570",
+        "HST 3571",
+        "HST 3574",
+        "HST 3611"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle HST."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A16)\nLa majeure comporte 60 crédits.",
+    "Segment 71 — Les crédits de la majeure sont répartis de la façon suivante : 6 crédits obligatoires, 51 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-histoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:57:38.415Z"
+}

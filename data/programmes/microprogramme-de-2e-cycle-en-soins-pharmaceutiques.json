@@ -1,0 +1,113 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "microprogramme-de-2e-cycle-en-soins-pharmaceutiques",
+  "nom": "Microprogramme de 2e cycle en soins pharmaceutiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Microprogramme",
+  "creditsTotal": 12,
+  "exigences": {
+    "brut": "Les crédits du microprogramme sont répartis de la façon suivante : 7 crédits obligatoires et 5 crédits à option.",
+    "obligatoire": {
+      "min": 7,
+      "max": 7
+    },
+    "option": {
+      "min": 5,
+      "max": 5
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "PHM 6404W",
+        "PHM 6405W",
+        "PHM 6406W",
+        "PHM 6407W",
+        "PHM 6408W"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Mise à jour en pharmacothérapie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 4 crédits.",
+      "cours": [
+        "PHM 6423W",
+        "PHM 6424W",
+        "PHM 6426W",
+        "PHM 6429W",
+        "PHM 6431W",
+        "PHM 6433W"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Autres problématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Minimum 1 crédit, maximum 3 crédits.",
+      "cours": [
+        "PHM 6400W",
+        "PHM 6420W",
+        "PHM 6421W",
+        "PHM 6501",
+        "PHM 6504",
+        "PHM 6505",
+        "PHM 6510",
+        "PHM 6513",
+        "PHM 6514",
+        "PHM 6515",
+        "PHM 6602W",
+        "PHM 6892W"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours PHM 65101 et PHM 65102 sont équivalents au cours PHM 6510."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (H19)\nLe microprogramme comporte 12 crédits. Pour plusieurs des cours, les travaux nécessitent que l'étudiant ait accès à un milieu de pratique.",
+    "Segment 70 — Les crédits du microprogramme sont répartis de la façon suivante : 7 crédits obligatoires et 5 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/microprogramme-de-2e-cycle-en-soins-pharmaceutiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T17:02:44.326Z"
+}
