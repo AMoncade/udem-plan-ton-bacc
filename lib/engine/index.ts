@@ -8,12 +8,32 @@ import type {
   EtatBloc,
   NoeudPrealable,
   Programme,
-  RegleBloc,
 } from "../types";
-import { normaliserCode } from "../codes";
+import { cleBloc, normaliserCode } from "../codes";
+import {
+  arrondi,
+  bornesDeRegle,
+  cr,
+  dedup,
+  listerCodes,
+  nomBloc,
+  resoudreExigences,
+  type Bornes,
+  type TypeBloc,
+} from "./bornes";
+import {
+  PLAFOND_AFFECTATIONS,
+  resoudreAffectation,
+  type BlocAffectable,
+  type ExigencesTotaux,
+} from "./affectation";
 
 export { parsePrealables } from "./prealables";
 export type { ResultatParsing } from "./prealables";
+export { bornesDeRegle, resoudreExigences } from "./bornes";
+export type { Bornes, ExigencesResolues } from "./bornes";
+export { resoudreAffectation, compositions } from "./affectation";
+export type { Cout, ResultatAffectation } from "./affectation";
 
 /**
  * MOTEUR — deux fonctions pures, point d'entrée gelé pour la session UI :
@@ -25,44 +45,31 @@ export type { ResultatParsing } from "./prealables";
  *
  * PRINCIPE DIRECTEUR (c'est le mode de défaillance principal du projet) :
  * tout ce que le moteur n'a pas su interpréter doit RESSORTIR. Un préalable
- * opaque sort dans `DiagnosticCours.avertissements`, un cours sans fiche ou une
- * règle de bloc illisible sort dans `Audit.problemes`. Un repli muet rend
- * l'audit faux sans faire échouer un seul test.
+ * opaque sort dans `DiagnosticCours.avertissements`, une restriction
+ * d'inscription aussi, un cours sans fiche ou une règle de bloc illisible sort
+ * dans `Audit.problemes`. Un repli muet rend l'audit faux sans faire échouer un
+ * seul test.
+ *
+ * ---------------------------------------------------------------------------
+ * CE QUE LE CONTRAT v2 A CHANGÉ SOUS CE FICHIER
+ *
+ *  - `RegleBloc` est unifiée : `bornes: {min, max}` au lieu de
+ *    `credits` / `min` / `max`. Lecture isolée dans `./bornes.ts`.
+ *  - `Bloc.id` n'est PAS unique (`MM-Bloc 73A` et `S-Bloc 73A` coexistent) :
+ *    l'identité passe par `Bloc.cle` / `cleBloc()`, l'affichage par `Bloc.id`.
+ *  - `Programme.exigences` porte les totaux par type, en INTERVALLES. La
+ *    déduction 90 − 54 − 3 = 33 de la v1 survit comme REPLI, et se déclare.
+ *  - `Programme.creditsTotal` peut être null : jamais supposer 90.
+ *  - `Cours.restrictionsBrut` existe : une restriction d'inscription n'est NI
+ *    un préalable NI un concomitant. Jamais évaluée, toujours signalée.
+ *  - `segmentDeBloc()` n'existe plus : le segment est lu sur la page.
+ *  - L'attribution des cours aux blocs est devenue une AFFECTATION SOUS BORNES
+ *    (`./affectation.ts`), parce que 70K ⊂ 70L en droit.
  */
 
 // ---------------------------------------------------------------------------
 // Utilitaires
 // ---------------------------------------------------------------------------
-
-/** Les crédits UdeM ne sont pas tous entiers (des cours valent 1 ou 1,5
- *  crédit). Additionner des flottants fabrique des 17,999999999999996 qui
- *  feraient échouer une comparaison au minimum d'un bloc. */
-function arrondi(x: number): number {
-  return Math.round(x * 1e6) / 1e6;
-}
-
-function nb(x: number): string {
-  return String(arrondi(x)).replace(".", ",");
-}
-
-/** « 9 crédits », « 1 crédit », « 1,5 crédit », « 0 crédit ». */
-function cr(x: number): string {
-  return `${nb(x)} ${arrondi(x) >= 2 ? "crédits" : "crédit"}`;
-}
-
-/** « 75C (Compléments d'actuariat) », ou « 01A » tout court : le catalogue réel
- *  a deux blocs sans nom (01A et 75Z, la page de structure ne leur en donne
- *  pas), et « le bloc 01A () » est un message cassé. */
-function nomBloc(bloc: Bloc): string {
-  const nom = (bloc.nom ?? "").trim();
-  return nom === "" ? bloc.id : `${bloc.id} (${nom})`;
-}
-
-function listerCodes(codes: readonly string[], maximum = 10): string {
-  const visibles = codes.slice(0, maximum).join(", ");
-  const reste = codes.length - maximum;
-  return reste > 0 ? `${visibles}, … (+${reste})` : visibles;
-}
 
 /** Crédits exploitables d'une fiche, ou null si la fiche est absente ou porte
  *  une valeur inutilisable. null veut dire « inconnu », jamais « zéro ». */
@@ -107,6 +114,14 @@ function normaliserEnsemble(codes: Set<CodeCours> | undefined): {
     else invalides.push(String(brut));
   }
   return { faits, invalides };
+}
+
+/** Clé d'un bloc. `Bloc.cle` est fabriquée par le scraper via `cleBloc()` ;
+ *  si elle manque (données anciennes), on la refabrique AU MÊME ENDROIT plutôt
+ *  que de retomber sur `id`, qui n'est pas unique. */
+function cleDe(bloc: Bloc): string {
+  const cle = (bloc.cle ?? "").trim();
+  return cle !== "" ? cle : cleBloc(bloc.segment ?? "?", bloc.id);
 }
 
 // ---------------------------------------------------------------------------
@@ -167,10 +182,6 @@ export function evaluerPrealables(noeud: NoeudPrealable, faits: Set<CodeCours>):
       return { satisfait: true, manquants: [], opaques: [texte] };
     }
   }
-}
-
-function dedup<T>(xs: T[]): T[] {
-  return [...new Set(xs)];
 }
 
 // ---------------------------------------------------------------------------
@@ -278,6 +289,23 @@ function diagnostiquerUn(
     avertissements.push(`concomitants non analysés, à lire tel quel : « ${fiche.concomitantsBrut.trim()} »`);
   }
 
+  // RESTRICTIONS D'INSCRIPTION — champ nouveau du contrat v2.
+  //
+  // Ce n'est NI un préalable NI un concomitant : « Restrictions d'inscription:
+  // DMO1000/DMO1010 » veut dire que ces deux cours s'excluent, pas que DMO 1000
+  // est requis pour lui-même. MUI 1162A n'a QUE des restrictions, et un parseur
+  // qui les confondrait avec des préalables y verrait vingt cours requis.
+  //
+  // Le moteur ne les évalue donc PAS — il n'a pas de modèle pour « exclusion » —
+  // et il ne les laisse pas tomber : elles sortent en avertissement, verbatim.
+  // En v1 cette donnée réelle était piégée hors contrat, dans une clé `_journal`
+  // que rien ne pouvait afficher.
+  if (fiche.restrictionsBrut != null && fiche.restrictionsBrut.trim() !== "") {
+    avertissements.push(
+      `restriction d'inscription non évaluée (ce n'est ni un préalable ni un concomitant), à lire tel quel : « ${fiche.restrictionsBrut.trim()} »`,
+    );
+  }
+
   const etat = !satisfait ? "verrouille" : avertissements.length > 0 ? "avertissement" : "disponible";
   return { code, etat, manquants, avertissements };
 }
@@ -303,46 +331,9 @@ function codesCites(noeud: NoeudPrealable): CodeCours[] {
 // 3. auditProgramme
 // ---------------------------------------------------------------------------
 
-type TypeBloc = "obligatoire" | "option" | "choix" | "inconnu";
-
-interface Bornes {
-  type: TypeBloc;
-  min: number;
-  /** Infinity quand la règle ne pose pas de maximum. */
-  max: number;
-}
-
-function bornesDeRegle(regle: RegleBloc | undefined): Bornes {
-  if (!regle || typeof regle !== "object") return { type: "inconnu", min: 0, max: Infinity };
-  switch (regle.type) {
-    case "obligatoire":
-      // « Obligatoire - 26 crédits » : tous les cours du bloc sont requis et
-      // totalisent 26. Min et max confondus.
-      return { type: "obligatoire", min: regle.credits, max: regle.credits };
-    case "choix":
-      return { type: "choix", min: regle.credits, max: regle.credits };
-    case "option":
-      return { type: "option", min: regle.min ?? 0, max: regle.max ?? Infinity };
-    default: {
-      // Garde d'exhaustivité : une règle inconnue ne doit pas être auditée comme
-      // si elle était vide. Elle sort dans `Audit.problemes` et interdit de
-      // déclarer le programme conforme.
-      const inconnu: never = regle;
-      void inconnu;
-      return { type: "inconnu", min: 0, max: Infinity };
-    }
-  }
-}
-
-/** Un bloc « Choix » est celui dont la liste de cours est vide : n'importe quel
- *  cours compte. Un bloc d'OPTION à liste vide, lui, est une donnée incomplète
- *  (on ne sait pas quels cours l'alimentent) — ce n'est pas un joker. */
-function estJoker(bloc: Bloc, bornes: Bornes): boolean {
-  return bornes.type === "choix" && (bloc.cours ?? []).length === 0;
-}
-
 interface Calcul {
   bloc: Bloc;
+  cle: string;
   bornes: Bornes;
   /** Crédits des cours attribués dont on connaît les crédits. */
   bruts: number;
@@ -356,48 +347,50 @@ interface Calcul {
   creditsInconnus: CodeCours[];
 }
 
+/** Un bloc « Choix » est celui dont la liste de cours est vide : n'importe quel
+ *  cours compte. Un bloc d'OPTION à liste vide, lui, est une donnée incomplète
+ *  (on ne sait pas quels cours l'alimentent) — ce n'est pas un joker. */
+function estJoker(bloc: Bloc, bornes: Bornes): boolean {
+  return bornes.type === "choix" && (bloc.cours ?? []).length === 0;
+}
+
 /**
- * Audit d'un programme : bornes de chaque bloc ET totaux par type de bloc.
+ * Audit d'un programme : bornes de chaque bloc, ET totaux par type de bloc, ET
+ * affectation des cours résolue sous ces bornes.
  *
  * ─────────────────────────────────────────────────────────────────────────────
- * LE PIÈGE CENTRAL (vérifié sur data/fixtures/actuariat-verifie.fixture.json)
+ * LE PIÈGE CENTRAL, ET SON SYMÉTRIQUE
  *
  * Actuariat : 90 crédits = 54 obligatoires (01A 26 + 75A 21 + 75B 7) + 3 au
- * choix (75Z) + le reste en option. Les minimums des blocs d'option valent
+ * choix (75Z) + 33 en option. Les minimums des blocs d'option valent
  * 75C 12 + 75D 3 + 75E 0 + 75Y 3 = 18, pour une capacité (somme des maximums)
  * de 27 + 15 + 13 + 12 = 67.
  *
- * Les 33 crédits d'option exigés ne sont écrits NULLE PART dans les données :
- * ils se DÉDUISENT, 90 − 54 − 3 = 33. C'est pour ça que ce code les calcule au
- * lieu de les coder en dur — un autre programme aura d'autres nombres.
- *
  * Un audit qui vérifie chaque bloc indépendamment voit 12/12, 3/3, 0/0, 3/3 et
  * déclare « conforme » un parcours à 18 crédits d'option qui ne mène pas au
- * diplôme : il manque 15 crédits, plaçables dans n'importe quel bloc d'option
- * encore sous son maximum. `conforme` tient donc les deux niveaux ensemble.
+ * diplôme : il manque 15 crédits. Le symétrique est aussi vrai : 33 crédits
+ * empilés dans un bloc plafonné à 27 n'en donnent que 27. `conforme` tient donc
+ * les deux niveaux ensemble.
+ *
+ * Le 33 n'était écrit NULLE PART en v1 : il se déduisait, 90 − 54 − 3. Le
+ * contrat v2 porte `Programme.exigences`, donc on l'utilise quand il existe ; la
+ * déduction reste comme repli, et elle se DÉCLARE dans `problemes`. Ailleurs la
+ * déduction est impossible parce que ce sont des intervalles : le droit écrit
+ * « de 30 à 33 crédits à option », la psycho « de 39 à 42 ».
  *
  * ─────────────────────────────────────────────────────────────────────────────
- * ATTRIBUTION — hypothèse documentée
+ * AFFECTATION : CE N'EST PLUS UNE HYPOTHÈSE
  *
- * Un cours ne compte que dans UN SEUL bloc. Vérifié sur la fixture : les huit
- * blocs de l'actuariat citent 55 codes et ces 55 codes sont DISTINCTS, aucun
- * chevauchement. Une attribution directe (chaque cours vers son bloc) suffit
- * donc, sans solveur d'affectation sous bornes.
+ * La v1 attribuait chaque cours au premier bloc qui le cite, en documentant que
+ * les 55 codes de l'actuariat sont distincts. C'est faux ailleurs : en droit, le
+ * bloc 70K (`Option - 3 crédits.`) est ENTIÈREMENT CONTENU dans le bloc 70L
+ * (`Option - Maximum 9 crédits.`), onze cours communs. L'attribution directe y
+ * déclare non conforme un parcours conforme.
  *
- * Le chevauchement est quand même DÉTECTÉ à l'exécution, pour le jour où le
- * scraper livrera un programme qui en contient : il ressort dans
- * `problemes`. Et l'erreur d'une attribution directe est à sens unique — elle
- * peut sous-estimer un bloc et déclarer non conforme un parcours conforme,
- * jamais l'inverse : quand elle conclut « conforme », l'attribution qu'elle a
- * trouvée est elle-même la preuve qu'une attribution valide existe.
- *
- * Cas particulier du bloc « Choix » (75Z, liste de cours vide) : il accepte
- * n'importe quel cours, donc il chevauche formellement tous les autres blocs.
- * Décision prise ici : un cours cité par un bloc va TOUJOURS dans ce bloc, et
- * seuls les cours cités par aucun bloc alimentent le bloc « Choix ». Un cours
- * d'option excédentaire n'est donc pas recyclé en cours au choix — c'est
- * l'interprétation stricte, et elle est dite explicitement dans le message de
- * `problemes` quand le bloc de choix est incomplet.
+ * `./affectation.ts` résout donc l'affectation, et ses garanties sont écrites
+ * là-bas en détail. En résumé : une affectation de coût nul est une PREUVE de
+ * conformité ; un verdict négatif est démontré sauf si la recherche a été
+ * tronquée, et dans ce cas `problemes` le dit.
  */
 export function auditProgramme(
   programme: Programme,
@@ -409,21 +402,10 @@ export function auditProgramme(
   const blocs = programme.blocs ?? [];
   const problemes: string[] = [];
 
-  // --- index code -> blocs qui le citent (détection du chevauchement) -------
-  const blocsParCode = new Map<CodeCours, string[]>();
-  for (const bloc of blocs) {
-    for (const brut of bloc.cours ?? []) {
-      const code = normaliserCode(brut) ?? brut;
-      const deja = blocsParCode.get(code);
-      if (deja) deja.push(bloc.id);
-      else blocsParCode.set(code, [bloc.id]);
-    }
-  }
-  const chevauchements = [...blocsParCode.entries()].filter(([, ids]) => ids.length > 1);
-
   // --- préparation des calculs par bloc ------------------------------------
   const calculs: Calcul[] = blocs.map((bloc) => ({
     bloc,
+    cle: cleDe(bloc),
     bornes: bornesDeRegle(bloc.regle),
     bruts: 0,
     comptes: 0,
@@ -432,34 +414,65 @@ export function auditProgramme(
     attribues: [],
     creditsInconnus: [],
   }));
-  const parId = new Map(calculs.map((c) => [c.bloc.id, c]));
-  const jokers = calculs.filter((c) => estJoker(c.bloc, c.bornes));
 
-  // --- attribution ---------------------------------------------------------
-  // Ordre alphabétique : l'audit ne doit pas dépendre de l'ordre d'insertion
-  // dans le Set que l'UI nous passe.
-  const horsBloc: CodeCours[] = [];
-  for (const code of [...acquis].sort()) {
-    const ids = blocsParCode.get(code);
-    let cible: Calcul | undefined;
-    if (ids && ids.length > 0) {
-      cible = parId.get(ids[0]); // attribution directe, ordre de déclaration
-    } else if (jokers.length > 0) {
-      // Premier bloc de choix encore sous son maximum, sinon le premier : le
-      // surplus devient des crédits perdus, visibles, plutôt que disparus.
-      cible = jokers.find((j) => j.bruts < j.bornes.max) ?? jokers[0];
+  // `Bloc.id` n'est pas unique ; `Bloc.cle` devrait l'être. Si elle ne l'est
+  // pas, deux blocs fusionneraient en silence dans l'affectation — exactement
+  // le bogue qui a mis 58 cours dans le mauvais bloc pendant la validation.
+  const clesVues = new Map<string, number>();
+  for (const c of calculs) clesVues.set(c.cle, (clesVues.get(c.cle) ?? 0) + 1);
+  const clesDupliquees = [...clesVues.entries()].filter(([, n]) => n > 1).map(([cle]) => cle);
+
+  // --- chevauchements, pour l'explication ----------------------------------
+  const blocsParCode = new Map<CodeCours, string[]>();
+  for (const c of calculs) {
+    for (const brut of c.bloc.cours ?? []) {
+      const code = normaliserCode(brut) ?? brut;
+      const deja = blocsParCode.get(code);
+      if (deja) deja.push(c.bloc.id);
+      else blocsParCode.set(code, [c.bloc.id]);
     }
-    if (!cible) {
-      horsBloc.push(code);
-      continue;
-    }
-    cible.attribues.push(code);
-    const credits = creditsDeFiche(fiches.get(code));
-    if (credits === null) cible.creditsInconnus.push(code);
-    else cible.bruts = arrondi(cible.bruts + credits);
   }
+  const chevauchements = [...blocsParCode.entries()].filter(([, ids]) => ids.length > 1);
 
-  // --- bornes de chaque bloc ----------------------------------------------
+  // --- exigences par type : page, sinon déduction, sinon minimums ----------
+  const exigences = resoudreExigences(programme, calculs);
+  const contraintes: ExigencesTotaux = {
+    obligatoire: exigences.obligatoire.intervalle,
+    option: exigences.option.intervalle,
+    choix: exigences.choix.intervalle,
+    creditsTotal:
+      typeof programme.creditsTotal === "number" && Number.isFinite(programme.creditsTotal)
+        ? programme.creditsTotal
+        : null,
+  };
+
+  // --- affectation sous bornes ---------------------------------------------
+  const affectables: BlocAffectable[] = calculs.map((c) => ({
+    cle: c.cle,
+    id: c.bloc.id,
+    bornes: c.bornes,
+    cours: new Set((c.bloc.cours ?? []).map((brut) => normaliserCode(brut) ?? brut)),
+    joker: estJoker(c.bloc, c.bornes),
+  }));
+  const affectation = resoudreAffectation(
+    affectables,
+    [...acquis],
+    (code) => creditsDeFiche(fiches.get(code)),
+    contraintes,
+  );
+
+  // --- report de l'affectation sur les calculs -----------------------------
+  const parCle = new Map(calculs.map((c) => [c.cle, c]));
+  for (const [cle, codes] of affectation.parCle) {
+    const cible = parCle.get(cle);
+    if (!cible) continue; // impossible : les clés viennent de `calculs`.
+    for (const code of codes) {
+      cible.attribues.push(code);
+      const credits = creditsDeFiche(fiches.get(code));
+      if (credits === null) cible.creditsInconnus.push(code);
+      else cible.bruts = arrondi(cible.bruts + credits);
+    }
+  }
   for (const c of calculs) {
     c.comptes = arrondi(Math.min(c.bruts, c.bornes.max));
     c.perdus = arrondi(c.bruts - c.comptes);
@@ -467,56 +480,60 @@ export function auditProgramme(
   }
 
   // --- totaux par type ----------------------------------------------------
-  const total = (type: TypeBloc, champ: "comptes" | "min") =>
+  const total = (type: TypeBloc, champ: "comptes" | "min" | "max") =>
     arrondi(
       calculs
         .filter((c) => c.bornes.type === type)
-        .reduce((s, c) => s + (champ === "comptes" ? c.comptes : c.bornes.min), 0),
+        .reduce(
+          (s, c) => s + (champ === "comptes" ? c.comptes : champ === "min" ? c.bornes.min : c.bornes.max),
+          0,
+        ),
     );
 
   const creditsObligatoires = total("obligatoire", "comptes");
   const creditsOption = total("option", "comptes");
   const creditsChoix = total("choix", "comptes");
   const creditsTotal = arrondi(creditsObligatoires + creditsOption + creditsChoix);
+  const obtenus = { obligatoire: creditsObligatoires, option: creditsOption, choix: creditsChoix };
 
-  const exigeObligatoire = total("obligatoire", "min");
-  const exigeChoix = total("choix", "min");
-  // Le nombre qui n'est écrit nulle part : 90 − 54 − 3 = 33.
-  const exigeOption = arrondi((programme.creditsTotal ?? 0) - exigeObligatoire - exigeChoix);
   const minsOption = total("option", "min");
-  const capaciteOption = arrondi(
-    calculs.filter((c) => c.bornes.type === "option").reduce((s, c) => s + c.bornes.max, 0),
-  );
+  const capaciteOption = total("option", "max");
+  const exigeOption = exigences.option.intervalle.min;
 
   // --- cohérence des données du programme ---------------------------------
   let donneesIncoherentes = false;
+  const incoherence = (message: string) => {
+    donneesIncoherentes = true;
+    problemes.push(message);
+  };
+
+  for (const cle of clesDupliquees) {
+    incoherence(
+      `deux blocs de ce programme portent la même clé « ${cle} » : ils sont indiscernables, l'affectation des cours entre eux n'est pas fiable.`,
+    );
+  }
   for (const c of calculs) {
-    if (c.bornes.type === "inconnu") {
-      donneesIncoherentes = true;
-      problemes.push(
-        `la règle du bloc ${c.bloc.id} n'a pas été interprétée (« ${c.bloc.regleBrut ?? "?"} ») : l'audit de ce bloc n'est pas concluant.`,
+    if (c.bornes.illisible !== null) {
+      incoherence(
+        `la règle du bloc ${c.bloc.id} n'a pas été interprétée (« ${c.bloc.regleBrut ?? c.bornes.illisible} ») : l'audit de ce bloc n'est pas concluant.`,
       );
     }
     if (c.bornes.type === "option" && (c.bloc.cours ?? []).length === 0 && c.bornes.min > 0) {
-      donneesIncoherentes = true;
-      problemes.push(
+      incoherence(
         `le bloc ${c.bloc.id} exige un minimum de ${cr(c.bornes.min)} mais ne liste aucun cours : données de programme incomplètes, ce bloc ne peut pas être rempli.`,
       );
     }
   }
   if (exigeOption < 0) {
-    donneesIncoherentes = true;
-    problemes.push(
-      `incohérence des données : les blocs obligatoires (${cr(exigeObligatoire)}) et au choix (${cr(exigeChoix)}) dépassent déjà les ${cr(programme.creditsTotal ?? 0)} du programme.`,
+    incoherence(
+      `incohérence des données : les blocs obligatoires (${cr(exigences.obligatoire.intervalle.min)}) et au choix (${cr(exigences.choix.intervalle.min)}) dépassent déjà les ${cr(programme.creditsTotal ?? 0)} du programme.`,
     );
   } else if (exigeOption > 0 && capaciteOption < exigeOption) {
-    donneesIncoherentes = true;
-    problemes.push(
+    incoherence(
       `incohérence des données : le programme exige ${cr(exigeOption)} d'option alors que les maximums des blocs d'option n'en autorisent que ${cr(capaciteOption)}.`,
     );
   } else if (exigeOption > 0 && minsOption > exigeOption) {
-    donneesIncoherentes = true;
-    problemes.push(
+    incoherence(
       `incohérence des données : les minimums des blocs d'option totalisent ${cr(minsOption)}, soit plus que les ${cr(exigeOption)} d'option exigés par le programme.`,
     );
   }
@@ -533,39 +550,77 @@ export function auditProgramme(
   // --- niveau 2 : totaux par type de bloc ---------------------------------
   // C'est ici que le piège 18-contre-33 se fait prendre : tous les blocs
   // d'option peuvent être à leur minimum et le total d'option rester court.
-  const manqueObligatoire = arrondi(Math.max(0, exigeObligatoire - creditsObligatoires));
-  const manqueOption = arrondi(Math.max(0, exigeOption - creditsOption));
-  const manqueChoix = arrondi(Math.max(0, exigeChoix - creditsChoix));
+  const libelle = { obligatoire: "de cours obligatoires", option: "de cours d'option", choix: "de cours au choix" } as const;
+  const manques = { obligatoire: 0, option: 0, choix: 0 };
 
-  if (manqueObligatoire > 0) {
-    problemes.push(
-      `il manque ${cr(manqueObligatoire)} de cours obligatoires : ${cr(creditsObligatoires)} sur les ${cr(exigeObligatoire)} exigés.`,
-    );
-    problemes.push(...messagesPerdus(calculs, "obligatoire"));
+  for (const type of ["obligatoire", "option", "choix"] as const) {
+    const borne = exigences[type].intervalle;
+    const obtenu = obtenus[type];
+    const manque = arrondi(Math.max(0, borne.min - obtenu));
+    manques[type] = manque;
+    if (manque <= 0) continue;
+
+    const exige =
+      borne.min === borne.max
+        ? `les ${cr(borne.min)} exigés`
+        : `le minimum de ${cr(borne.min)} exigé (l'intervalle du programme va de ${cr(borne.min)} à ${cr(borne.max)})`;
+    let message = `il manque ${cr(manque)} ${libelle[type]} : ${cr(obtenu)} sur ${exige}`;
+    if (exigences[type].source === "deduction") {
+      message += ` (${cr(programme.creditsTotal ?? 0)} au total − ${cr(exigences.obligatoire.intervalle.min)} d'obligatoires − ${cr(exigences.choix.intervalle.min)} au choix)`;
+    } else if (exigences.brut) {
+      message += ` d'après la page (« ${exigences.brut} »)`;
+    }
+    message += ".";
+
+    if (type === "option") {
+      const restantes = calculs
+        .filter((c) => c.bornes.type === "option" && c.bornes.max - c.comptes > 0)
+        .map((c) => `${c.bloc.id} ${cr(arrondi(c.bornes.max - c.comptes))}`);
+      message +=
+        ` Les minimums des blocs d'option ne totalisent que ${cr(minsOption)} : atteindre chaque minimum NE SUFFIT PAS.` +
+        ` Ajoutez ${cr(manque)} dans n'importe quel bloc d'option encore sous son maximum` +
+        (restantes.length > 0 ? ` (place restante : ${restantes.join(", ")}).` : ".");
+    }
+    if (type === "choix") {
+      message +=
+        ` N'importe quel cours qui n'est cité par aucun bloc du programme y compte ; un cours d'option en surplus, non.`;
+    }
+    problemes.push(message);
+    problemes.push(...messagesPerdus(calculs, type));
   }
-  if (manqueOption > 0) {
-    const restantes = calculs
-      .filter((c) => c.bornes.type === "option" && c.bornes.max - c.comptes > 0)
-      .map((c) =>
-        c.bornes.max === Infinity
-          ? `${c.bloc.id} sans maximum`
-          : `${c.bloc.id} ${cr(arrondi(c.bornes.max - c.comptes))}`,
+
+  // --- niveau 2 bis : un total de type qui DÉPASSE son intervalle ---------
+  // Le droit écrit « de 30 à 33 crédits à option » : au-delà de 33, les crédits
+  // sont réussis mais ne comptent pas vers le diplôme. Ne pas le dire ferait
+  // croire que 36 crédits d'option valent 36.
+  let retenuApresPlafondType = 0;
+  for (const type of ["obligatoire", "option", "choix"] as const) {
+    const borne = exigences[type].intervalle;
+    const obtenu = obtenus[type];
+    const retenu = Math.min(obtenu, borne.max);
+    retenuApresPlafondType = arrondi(retenuApresPlafondType + retenu);
+    const surplus = arrondi(obtenu - retenu);
+    if (surplus > 0) {
+      problemes.push(
+        `${cr(surplus)} ${libelle[type]} dépassent le maximum de ${cr(borne.max)} que le programme autorise pour ce type : ils sont réussis mais ne comptent pas vers le diplôme.`,
       );
-    problemes.push(
-      `il manque ${cr(manqueOption)} de cours d'option : ${cr(creditsOption)} sur les ${cr(exigeOption)} exigés par le programme ` +
-        `(${cr(programme.creditsTotal ?? 0)} au total − ${cr(exigeObligatoire)} d'obligatoires − ${cr(exigeChoix)} au choix). ` +
-        `Les minimums des blocs d'option ne totalisent que ${cr(minsOption)} : atteindre chaque minimum NE SUFFIT PAS. ` +
-        `Ajoutez ${cr(manqueOption)} dans n'importe quel bloc d'option encore sous son maximum` +
-        (restantes.length > 0 ? ` (place restante : ${restantes.join(", ")}).` : "."),
-    );
-    problemes.push(...messagesPerdus(calculs, "option"));
+    }
   }
-  if (manqueChoix > 0) {
+
+  // --- niveau 3 : le total du programme, qui couple les intervalles -------
+  // Le droit : 68 obligatoires + « de 30 à 33 » d'option + « maximum 3 » au
+  // choix, pour 101 crédits. Chaque type peut être dans son intervalle sans que
+  // la somme atteigne 101 — c'est le couplage, et il ne se vérifie qu'ici.
+  const manqueTotal =
+    contraintes.creditsTotal === null
+      ? 0
+      : arrondi(Math.max(0, contraintes.creditsTotal - retenuApresPlafondType));
+  if (manqueTotal > 0 && manques.obligatoire === 0 && manques.option === 0 && manques.choix === 0) {
     problemes.push(
-      `il manque ${cr(manqueChoix)} de cours au choix : ${cr(creditsChoix)} sur les ${cr(exigeChoix)} exigés. ` +
-        `N'importe quel cours qui n'est cité par aucun bloc du programme y compte ; un cours d'option en surplus, non.`,
+      `chaque type de crédits est dans son intervalle, mais il manque ${cr(manqueTotal)} au total du programme : ` +
+        `${cr(retenuApresPlafondType)} comptent sur les ${cr(contraintes.creditsTotal ?? 0)} exigés. ` +
+        `Les intervalles par type sont couplés par la somme : en être dans chacun ne suffit pas.`,
     );
-    problemes.push(...messagesPerdus(calculs, "choix"));
   }
 
   // --- limites de l'audit lui-même : jamais avalées -----------------------
@@ -581,27 +636,47 @@ export function auditProgramme(
       `${invalides.length} code(s) de cours fait(s) non reconnu(s) et ignoré(s) (${listerCodes(invalides)}) : forme attendue « ABC 1234 ».`,
     );
   }
-  if (horsBloc.length > 0) {
+  if (affectation.horsBloc.length > 0) {
     problemes.push(
-      `${horsBloc.length} cours fait(s) n'entre(nt) dans aucun bloc de ce programme (${listerCodes(horsBloc)}) : leurs crédits ne comptent pas vers le diplôme.`,
+      `${affectation.horsBloc.length} cours fait(s) n'entre(nt) dans aucun bloc de ce programme (${listerCodes(affectation.horsBloc)}) : leurs crédits ne comptent pas vers le diplôme.`,
     );
   }
   if (chevauchements.length > 0) {
+    problemes.push(messageChevauchement(chevauchements, affectation, calculs));
+  }
+  if (affectation.tronquee) {
     problemes.push(
-      `${chevauchements.length} cours figure(nt) dans plusieurs blocs (${chevauchements.map(([code, ids]) => `${code} : ${ids.join(" + ")}`).join(" ; ")}) : ` +
-        `l'attribution est directe (premier bloc déclaré), ce qui peut sous-estimer un autre bloc et rendre le verdict de non-conformité trop strict.`,
+      `la recherche d'affectation a été TRONQUÉE au plafond de ${PLAFOND_AFFECTATIONS} affectations ` +
+        `(${affectation.combinaisons === Infinity ? "plus de 2^53" : affectation.combinaisons} possibles) : ` +
+        `une affectation conforme existe peut-être et n'a pas été trouvée. Ce verdict de non-conformité n'est PAS démontré.`,
     );
   }
 
-  const blocsConformes = calculs.every((c) => c.manquants === 0 && c.bornes.type !== "inconnu");
+  // --- les règles que le contrat ne modélise pas : visibles, pas bloquantes
+  const nbNotes =
+    (programme.notes ?? []).length + calculs.reduce((s, c) => s + (c.bloc.notes ?? []).length, 0);
+  if (nbNotes > 0) {
+    problemes.push(
+      `${nbNotes} note(s) normative(s) de la page ne sont PAS évaluées par le moteur (prose des blocs et du programme : séquences, autorisations, quotas par sigle, « trois cours dans la même discipline »). ` +
+        `À lire avant de se fier au verdict ci-dessus.`,
+    );
+  }
+  problemes.push(...exigences.notes);
+
+  // --- verdict -------------------------------------------------------------
+  const blocsConformes = calculs.every((c) => c.manquants === 0 && c.bornes.illisible === null);
   const conforme =
     !donneesIncoherentes &&
     blocsConformes &&
-    manqueObligatoire === 0 &&
-    manqueOption === 0 &&
-    manqueChoix === 0;
+    manques.obligatoire === 0 &&
+    manques.option === 0 &&
+    manques.choix === 0 &&
+    manqueTotal === 0;
 
   const etatsBlocs: EtatBloc[] = calculs.map((c) => ({
+    // `cleBloc` identifie (l'id ne suffit pas : `MM-Bloc 73A` et `S-Bloc 73A`),
+    // `idBloc` affiche.
+    cleBloc: c.cle,
     idBloc: c.bloc.id,
     // Crédits RETENUS vers le diplôme (déjà plafonnés au maximum du bloc) ;
     // le surplus est dans `creditsPerdus`. creditsAttribues + creditsPerdus =
@@ -609,7 +684,7 @@ export function auditProgramme(
     creditsAttribues: c.comptes,
     creditsManquants: c.manquants,
     creditsPerdus: c.perdus,
-    conforme: c.manquants === 0 && c.bornes.type !== "inconnu",
+    conforme: c.manquants === 0 && c.bornes.illisible === null,
     coursAttribues: [...c.attribues],
   }));
 
@@ -623,6 +698,46 @@ export function auditProgramme(
     conforme,
     problemes,
   };
+}
+
+/**
+ * Le chevauchement n'est plus une anomalie à signaler « au cas où » : c'est un
+ * cas traité, et le message doit dire ce que le solveur a conclu ET sur quelle
+ * base, pour que l'étudiant puisse vérifier.
+ */
+function messageChevauchement(
+  chevauchements: [CodeCours, string[]][],
+  affectation: { cout: { blocs: number; types: number; total: number }; explorees: number; combinaisons: number; tronquee: boolean; parCle: Map<string, CodeCours[]> },
+  calculs: Calcul[],
+): string {
+  const liste = chevauchements
+    .slice(0, 6)
+    .map(([code, ids]) => `${code} : ${ids.join(" + ")}`)
+    .join(" ; ");
+  const reste = chevauchements.length - 6;
+  const tete =
+    `${chevauchements.length} cours figure(nt) dans plusieurs blocs (${liste}${reste > 0 ? `, … (+${reste})` : ""}) : ` +
+    `l'affectation a donc été RÉSOLUE sous bornes, pas attribuée au premier bloc déclaré`;
+
+  const nul = affectation.cout.blocs === 0 && affectation.cout.types === 0 && affectation.cout.total === 0;
+  const repartition = calculs
+    .filter((c) => c.attribues.some((code) => chevauchements.some(([k]) => k === code)))
+    .map((c) => `${c.bloc.id} ← ${c.attribues.filter((code) => chevauchements.some(([k]) => k === code)).join(", ")}`)
+    .join(" ; ");
+
+  if (nul) {
+    return (
+      `${tete}. L'affectation retenue est la PREUVE que le parcours tient : ${repartition}. ` +
+      `(${affectation.explorees} affectation(s) examinée(s).)`
+    );
+  }
+  if (affectation.tronquee) {
+    return `${tete}, mais la recherche a été tronquée : voir l'avertissement ci-dessous.`;
+  }
+  return (
+    `${tete}. AUCUNE des ${affectation.combinaisons === Infinity ? "très nombreuses" : affectation.combinaisons} affectations possibles ne satisfait toutes les bornes ; ` +
+    `la moins mauvaise est retenue ci-dessus pour expliquer ce qui manque (${repartition || "aucun cours de chevauchement n'est fait"}).`
+  );
 }
 
 /** Crédits au-delà du maximum d'un bloc : ils expliquent souvent à eux seuls
