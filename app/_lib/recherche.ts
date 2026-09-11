@@ -75,7 +75,10 @@ export function preparerIndex(index: IndexProgrammes): IndexPrepare {
           fiche.faculte ?? "",
           fiche.typeProgramme ?? "",
           fiche.cycle ?? "",
-          fiche.id,
+          // `cle` plutôt que `id` : elle porte le slug ET l'orientation, donc
+          // une recherche sur « actuariat » trouve le parcours même quand le
+          // nom de la page ne dit que « mathématiques ».
+          fiche.cle,
         ].join(" "),
       ),
     };
@@ -252,11 +255,19 @@ export function facettes(
     .sort((a, b) => a.valeur.localeCompare(b.valeur, "fr"));
 }
 
-export function ficheParId(
+/**
+ * La fiche d'un PARCOURS, par sa clé.
+ *
+ * Par `cle` et non par `id` : plusieurs fiches partagent le même `id` dès que
+ * la page porte des orientations — le bacc en mathématiques en a quatre. Une
+ * recherche par `id` rendrait la PREMIÈRE, donc le mauvais parcours trois fois
+ * sur quatre, sans qu'aucune erreur ne le signale.
+ */
+export function ficheParCle(
   prepare: IndexPrepare,
-  id: string,
+  cle: string,
 ): FicheIndex | undefined {
-  return prepare.entrees.find((entree) => entree.fiche.id === id)?.fiche;
+  return prepare.entrees.find((entree) => entree.fiche.cle === cle)?.fiche;
 }
 
 /** « Baccalauréat en mathématiques — orientation actuariat ». */

@@ -16,6 +16,7 @@
  * signatures ne changent pas.
  */
 import { normaliserCode, sujetDeCode } from "../../lib/codes";
+import { lireCleParcours, parcoursDe, projeterOrientation } from "../../lib/parcours";
 import type {
   Bloc,
   Catalogue,
@@ -117,7 +118,12 @@ export function sujetsDesPrealables(fiches: Cours[]): string[] {
 
 export interface CatalogueAssemble {
   catalogue: Catalogue;
+  /** Le programme PROJETÉ sur le parcours demandé, prêt pour le moteur. */
   programme: Programme;
+  /** La clé du parcours affiché — `slug` ou `slug#orientation`. */
+  cle: string;
+  /** Les autres parcours de la même page, pour pouvoir en proposer le passage. */
+  parcoursVoisins: { cle: string; orientation: string | null }[];
   /** Sujets effectivement chargés, pour pouvoir le dire à l'écran. */
   sujets: string[];
   /** Codes que `normaliserCode()` a refusés, conservés verbatim. */
@@ -135,10 +141,30 @@ export interface CatalogueAssemble {
  */
 export async function assembler(
   depot: Depot,
-  id: string,
+  cle: string,
 ): Promise<CatalogueAssemble> {
   const journal: EntreeJournal[] = [];
-  const programme = await depot.chargerProgramme(id);
+
+  // --- de la CLÉ DE PARCOURS au fichier, puis au parcours ------------------
+  //
+  // L'étudiant choisit un PARCOURS, pas une page. Le découpage sur disque, lui,
+  // est par page : `data/programmes/<id>.json`. La clé porte les deux —
+  // `slug` ou `slug#orientation` — et c'est ici qu'on les sépare.
+  const lu = lireCleParcours(cle);
+  if (lu === null) {
+    throw new Error(`clé de parcours mal formée : « ${cle} ».`);
+  }
+  const page = await depot.chargerProgramme(lu.id);
+
+  // La PROJECTION vient avant tout le reste, et ce n'est pas un détail d'ordre.
+  // Les orientations d'une page sont des alternatives exclusives : le bacc en
+  // mathématiques oppose les segments 75 (actuariat) et 76 (actuariat COOP).
+  // Auditer la page entière exigerait les deux à la fois, ce qui est
+  // impossible — `projeterOrientation()` échoue bruyamment plutôt que de le
+  // conclure en silence. Projeter d'abord réduit aussi les blocs, donc les
+  // sujets à charger : on ne lit pas les cours des parcours qu'on n'affiche pas.
+  const programme = projeterOrientation(page, lu.orientation);
+  const parcoursVoisins = parcoursDe(page);
 
   const illisibles: string[] = [];
   const norm = (brut: string): CodeCours => {
@@ -181,7 +207,7 @@ export async function assembler(
     if (tours >= TOURS_MAX) {
       journal.push({
         genre: "inattendu",
-        sujet: id,
+        sujet: cle,
         message:
           `les préalables s'étendent au-delà de ${TOURS_MAX} tours de chargement ; ` +
           `sujets non chargés : ${aCharger.join(", ")}. Les cours de ces sujets ` +
@@ -237,7 +263,7 @@ export async function assembler(
   if (illisibles.length > 0) {
     journal.push({
       genre: "inattendu",
-      sujet: id,
+      sujet: cle,
       message: `${illisibles.length} code(s) de cours non normalisable(s), conservé(s) tels quels : ${illisibles.join(", ")}.`,
     });
   }
@@ -252,6 +278,8 @@ export async function assembler(
       scrapeISO: programme.scrapeISO,
     },
     programme: programmeNormalise,
+    cle,
+    parcoursVoisins,
     sujets: [...charges].sort(),
     codesIllisibles: illisibles,
   };

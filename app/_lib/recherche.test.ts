@@ -7,13 +7,14 @@
  */
 import { describe, expect, it } from "vitest";
 import type { FicheIndex, IndexProgrammes } from "../../lib/types";
+import { cleParcours, lireCleParcours } from "../../lib/parcours";
 import { creerDepotDemo } from "../_demo/depot-demo";
 import {
   FILTRES_VIDES,
   PLAFOND_RESULTATS,
   chercher,
   facettes,
-  ficheParId,
+  ficheParCle,
   libelleFiche,
   plier,
   preparerIndex,
@@ -29,8 +30,24 @@ function avec(partiel: Partial<Filtres>): Filtres {
 }
 
 describe("l'index de démonstration", () => {
-  it("a l'échelle voulue : plusieurs centaines de fiches", () => {
-    expect(prepare.entrees.length).toBeGreaterThanOrEqual(300);
+  it("a l'échelle voulue : des centaines de PARCOURS, plus que de pages", () => {
+    expect(prepare.entrees.length).toBeGreaterThanOrEqual(600);
+    const pages = new Set(prepare.entrees.map((e) => e.fiche.id));
+    // Le rapport mesuré sur le vrai site : ~964 parcours pour ~545 pages.
+    // Éprouver la recherche sur le nombre de PAGES la sous-dimensionnerait de
+    // près de moitié.
+    expect(prepare.entrees.length).toBeGreaterThan(pages.size);
+  });
+
+  it("porte une page à dix parcours, comme le site en a", () => {
+    const parPage = new Map<string, number>();
+    for (const { fiche } of prepare.entrees) {
+      parPage.set(fiche.id, (parPage.get(fiche.id) ?? 0) + 1);
+    }
+    expect(Math.max(...parPage.values())).toBeGreaterThanOrEqual(10);
+    const multi = [...parPage.values()].filter((n) => n > 1).length;
+    // ~17,3 % des pages du vrai site portent des orientations.
+    expect(multi / parPage.size).toBeGreaterThan(0.1);
   });
 
   it("contient des fiches sans structure exploitable", () => {
@@ -43,9 +60,45 @@ describe("l'index de démonstration", () => {
     expect(prepare.types.length).toBeGreaterThan(4);
   });
 
-  it("n'a aucun identifiant en double", () => {
+  it("n'a aucune CLÉ en double, mais bien des identifiants répétés", () => {
+    // C'est le coeur du modèle de parcours. `cle` identifie ce que l'étudiant
+    // choisit ; `id` nomme le fichier sur disque. Une page à orientations —
+    // le bacc en mathématiques en a quatre — produit plusieurs fiches qui
+    // partagent l'identifiant. Exiger l'unicité de `id`, comme le faisait ce
+    // test, revenait à nier l'existence des orientations.
+    const cles = prepare.entrees.map((e) => e.fiche.cle);
+    expect(new Set(cles).size).toBe(cles.length);
+
     const ids = prepare.entrees.map((e) => e.fiche.id);
-    expect(new Set(ids).size).toBe(ids.length);
+    expect(new Set(ids).size).toBeLessThan(ids.length);
+  });
+
+  it("fabrique les clés comme `lib/parcours` les lit", () => {
+    // Deux formatages différents de la même clé produiraient un sélecteur qui
+    // retient un parcours et un chargement qui en ouvre un autre, sans erreur.
+    for (const { fiche } of prepare.entrees) {
+      expect(fiche.cle).toBe(cleParcours(fiche.id, fiche.orientation));
+      expect(lireCleParcours(fiche.cle)).toEqual({
+        id: fiche.id,
+        orientation: fiche.orientation,
+      });
+    }
+  });
+
+  it("porte des parcours à orientation, et ils se distinguent à l'écran", () => {
+    const avecOrientation = prepare.entrees.filter(
+      (e) => e.fiche.orientation !== null,
+    );
+    expect(avecOrientation.length).toBeGreaterThan(5);
+    // Deux parcours d'une même page portent le même nom : c'est l'orientation
+    // qui les distingue, donc le libellé doit la montrer.
+    const parPage = new Map<string, string[]>();
+    for (const { fiche } of avecOrientation) {
+      parPage.set(fiche.id, [...(parPage.get(fiche.id) ?? []), libelleFiche(fiche)]);
+    }
+    for (const [, libelles] of parPage) {
+      expect(new Set(libelles).size).toBe(libelles.length);
+    }
   });
 
   it("préfixe tous les identifiants par `demo-` : aucun ne peut passer pour un vrai", () => {
@@ -165,11 +218,11 @@ describe("facettes", () => {
   });
 });
 
-describe("ficheParId et libelleFiche", () => {
+describe("ficheParCle et libelleFiche", () => {
   it("retrouve une fiche par son identifiant", () => {
     const premiere = prepare.entrees[0].fiche;
-    expect(ficheParId(prepare, premiere.id)).toBe(premiere);
-    expect(ficheParId(prepare, "demo-inexistant")).toBeUndefined();
+    expect(ficheParCle(prepare, premiere.id)).toBe(premiere);
+    expect(ficheParCle(prepare, "demo-inexistant")).toBeUndefined();
   });
 
   it("nomme l'orientation quand il y en a une", () => {

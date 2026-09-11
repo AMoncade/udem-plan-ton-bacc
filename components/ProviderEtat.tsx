@@ -44,10 +44,10 @@ import {
 import type { CatalogueAssemble } from "@/app/_lib/depot";
 import { auditProgramme, diagnostiquerCours } from "@/app/_lib/moteur";
 import type { Plan } from "@/app/_lib/plan";
-import { ficheParId } from "@/app/_lib/recherche";
+import { ficheParCle } from "@/app/_lib/recherche";
 import {
   abonnerSelection,
-  choisirProgramme,
+  choisirParcours,
   lireSelection,
   lireSelectionServeur,
 } from "@/app/_lib/selection";
@@ -121,7 +121,7 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
     demanderProgramme(
       depot,
       selection,
-      selection === null ? undefined : ficheParId(index.prepare, selection),
+      selection === null ? undefined : ficheParCle(index.prepare, selection),
     );
   }, [index, selection]);
 
@@ -167,8 +167,8 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
     ecrire({ faits: [], plan: {} });
   }, []);
 
-  const choisir = useCallback((id: string | null) => {
-    choisirProgramme(id);
+  const choisir = useCallback((cle: string | null) => {
+    choisirParcours(cle);
   }, []);
 
   const valeur = useMemo<ValeurEtat>(

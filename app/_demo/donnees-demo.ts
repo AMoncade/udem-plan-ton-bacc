@@ -43,6 +43,7 @@
  *    de 15 crédits sur un cas dont on connaît la réponse.
  */
 import { cleBloc } from "../../lib/codes";
+import { cleParcours } from "../../lib/parcours";
 import type {
   Bloc,
   Cours,
@@ -51,6 +52,7 @@ import type {
   IndexProgrammes,
   Intervalle,
   NoeudPrealable,
+  Orientation,
   Programme,
   RegleBloc,
   Saison,
@@ -268,20 +270,68 @@ export interface Fabrique {
   sujet(sujet: string): Cours[];
 }
 
+/** Noms d'orientations génériques, pour que la proportion de pages à parcours
+ *  multiples approche celle mesurée sur le vrai site (17,3 %, jusqu'à dix). */
+const ORIENTATIONS_GENERIQUES = [
+  "Général",
+  "Honor",
+  "COOP",
+  "Cheminement international",
+  "Avec stages",
+  "Recherche",
+  "Professionnel",
+  "Enseignement au secondaire",
+  "Cheminement intensif",
+  "Bidisciplinaire",
+] as const;
+
+/**
+ * Les orientations d'une page, ou une liste vide.
+ *
+ * UNE seule définition, parce que l'index et le programme doivent s'accorder :
+ * une orientation présente dans l'un et absente de l'autre ferait échouer
+ * `projeterOrientation()` — bruyamment, heureusement, mais sur un écran.
+ */
+function orientationsDe(discipline: Discipline, type: TypeProgramme): string[] {
+  const nommees = ORIENTATIONS[discipline.sujet];
+  if (type.nom === "Baccalauréat" && nommees !== undefined) return nommees;
+  // Les baccalauréats et les maîtrises portent souvent des orientations ; les
+  // certificats et microprogrammes, jamais.
+  if (type.nom !== "Baccalauréat" && !type.nom.startsWith("Maîtrise")) return [];
+  // Calibré pour approcher la mesure du vrai site : ~17 % des PAGES portent
+  // des orientations, et l'index compte alors nettement plus de parcours que
+  // de pages. C'est l'échelle à laquelle la recherche doit rester vive.
+  const dé = graine(`orientations/${discipline.sujet}/${type.nom}`);
+  if (dé() >= 0.5) return [];
+  return ORIENTATIONS_GENERIQUES.slice(0, entier(dé, 2, ORIENTATIONS_GENERIQUES.length));
+}
+
+/** Segment propre à la n-ième orientation d'une page. Le commun est « 01 ». */
+function segmentOrientation(rang: number): string {
+  return String(75 + rang);
+}
+
+/**
+ * Les fiches d'index d'UNE page.
+ *
+ * Une page à orientations en produit PLUSIEURS, qui partagent le même `id` —
+ * le nom du fichier `data/programmes/<id>.json` — et se distinguent par `cle`.
+ * C'est le point du contrat : l'étudiant choisit un PARCOURS, pas une page. Le
+ * bacc en mathématiques est une seule page et quatre parcours exclusifs, dont
+ * chacun a ses segments et sa propre répartition de crédits.
+ */
 function fichesDe(discipline: Discipline, type: TypeProgramme): FicheIndex[] {
-  const orientations = ORIENTATIONS[discipline.sujet] ?? [];
-  const avecOrientations = type.nom === "Baccalauréat" && orientations.length > 0;
+  const orientations = orientationsDe(discipline, type);
   const base = `${type.nom} en ${discipline.nom}`;
-  const idBase = `demo-${slug(base)}`;
+  const id = `demo-${slug(base)}`;
 
   const construire = (orientation: string | null): FicheIndex => {
-    const id =
-      orientation === null ? idBase : `${idBase}-orientation-${slug(orientation)}`;
-    const dé = graine(id);
+    const dé = graine(cleParcours(id, orientation));
     // Un doctorat n'annonce pas toujours un total de crédits ; un microprogramme
     // non plus. `creditsTotal: null` doit traverser toute l'UI sans « NaN ».
     const credits = type.credits === null || dé() < 0.08 ? null : type.credits;
     return {
+      cle: cleParcours(id, orientation),
       id,
       nom: base,
       orientation,
@@ -294,7 +344,7 @@ function fichesDe(discipline: Discipline, type: TypeProgramme): FicheIndex[] {
     };
   };
 
-  return avecOrientations
+  return orientations.length > 0
     ? orientations.map((orientation) => construire(orientation))
     : [construire(null)];
 }
@@ -326,8 +376,10 @@ function construireIndex(): IndexProgrammes {
   }
 
   for (const hors of SANS_STRUCTURE) {
+    const id = `demo-${slug(hors.nom)}`;
     programmes.push({
-      id: `demo-${slug(hors.nom)}`,
+      cle: cleParcours(id, null),
+      id,
       nom: hors.nom,
       orientation: null,
       cycle: hors.cycle,
@@ -339,11 +391,12 @@ function construireIndex(): IndexProgrammes {
     });
   }
 
-  // Les deux répliques nommées, pour que les cas connus soient atteignables.
+  // Les répliques nommées, pour que les cas connus soient atteignables.
   programmes.push({
+    cle: cleParcours(ID_MAITRISE_DOUBLE, null),
     id: ID_MAITRISE_DOUBLE,
     nom: "Maîtrise en mathématiques",
-    orientation: "Mathématiques fondamentales",
+    orientation: null,
     cycle: "2e cycle",
     faculte: "Arts et sciences",
     typeProgramme: "Maîtrise",
@@ -352,6 +405,7 @@ function construireIndex(): IndexProgrammes {
     structureLue: true,
   });
   programmes.push({
+    cle: cleParcours(ID_DROIT_INTERVALLE, null),
     id: ID_DROIT_INTERVALLE,
     nom: "Baccalauréat en droit",
     orientation: null,
@@ -362,6 +416,20 @@ function construireIndex(): IndexProgrammes {
     nbBlocs: 6,
     structureLue: true,
   });
+  // La page à CONTENU OUVERT : un bloc décrit en prose, que l'outil ne peut
+  // pas vérifier. Ce n'est ni un bloc au choix ni une erreur.
+  programmes.push({
+    cle: cleParcours(ID_MUSIQUE_OUVERT, null),
+    id: ID_MUSIQUE_OUVERT,
+    nom: "Baccalauréat en musique — écriture",
+    orientation: null,
+    cycle: "1er cycle",
+    faculte: "Musique",
+    typeProgramme: "Baccalauréat",
+    creditsTotal: 90,
+    nbBlocs: 4,
+    structureLue: true,
+  });
 
   return {
     programmes,
@@ -370,9 +438,13 @@ function construireIndex(): IndexProgrammes {
   };
 }
 
-export const ID_ACTUARIAT = "demo-baccalaureat-en-mathematiques-orientation-actuariat";
+/** La PAGE du bacc en mathématiques : un seul fichier, quatre parcours. */
+export const ID_PAGE_MATHS = "demo-baccalaureat-en-mathematiques";
+/** Le PARCOURS actuariat de cette page — ce que le sélecteur retient. */
+export const CLE_ACTUARIAT = cleParcours(ID_PAGE_MATHS, "Actuariat");
 export const ID_MAITRISE_DOUBLE = "demo-maitrise-en-mathematiques-blocs-homonymes";
 export const ID_DROIT_INTERVALLE = "demo-baccalaureat-en-droit-intervalle";
+export const ID_MUSIQUE_OUVERT = "demo-baccalaureat-en-musique-ecriture";
 
 // ---------------------------------------------------------------------------
 // Les programmes
@@ -386,8 +458,19 @@ function bloc(
   regle: RegleBloc,
   cours: string[],
   notes: string[] = [],
+  contenuOuvert = false,
 ): Bloc {
-  return { id, cle: cleBloc(segment, id), segment, nom, regle, regleBrut, cours, notes };
+  return {
+    id,
+    cle: cleBloc(segment, id),
+    segment,
+    nom,
+    regle,
+    regleBrut,
+    cours,
+    notes,
+    contenuOuvert,
+  };
 }
 
 /**
@@ -482,26 +565,81 @@ function pourTotal(pool: string[], cible: number): string[] {
   return items;
 }
 
-/** Réplique de l'arithmétique vérifiée de l'actuariat : 54 obligatoires,
- *  33 à option, 3 au choix, pour 90 crédits — alors que les minimums des blocs
- *  d'option ne totalisent que 18. L'écart de 15 crédits est le geste central de
- *  la vue d'audit, et il se vérifie ici sur un cas dont on connaît la réponse. */
-function programmeActuariat(): Programme {
+/**
+ * LA PAGE du baccalauréat en mathématiques : un seul fichier, QUATRE parcours
+ * exclusifs.
+ *
+ * C'est le cas qui a fait bouger le contrat. Une page n'est pas un parcours :
+ * celle-ci porte le segment commun 01 et un segment par orientation (75
+ * actuariat, 76 appliquées, 77 pures, 78 statistique). Les additionner
+ * exigerait à la fois le 75 et le 76, ce qui est impossible — d'où
+ * `projeterOrientation()`, qui réduit la page à un parcours avant tout audit.
+ *
+ * Le parcours ACTUARIAT reproduit l'arithmétique vérifiée : 54 obligatoires,
+ * 33 à option, 3 au choix pour 90 crédits, alors que les minimums des blocs
+ * d'option ne totalisent que 18. L'écart de 15 crédits est le geste central de
+ * la vue d'audit, et il se vérifie sur un cas dont on connaît la réponse.
+ */
+function programmeMaths(): Programme {
+  /** Les blocs d'un parcours secondaire : un obligatoire et deux à option. */
+  const parcoursSecondaire = (segment: string, sujet: string): Bloc[] => [
+    bloc(segment, `${segment}A`, "", "Obligatoire - 18 crédits.", { type: "obligatoire", bornes: { min: 18, max: 18 } },
+      pourTotal([...codesExistants(sujet, 2000, 8), ...codesExistants(sujet, 3000, 4)], 18)),
+    bloc(segment, `${segment}C`, "", "Option - Minimum 15 crédits, maximum 24 crédits.", { type: "option", bornes: { min: 15, max: 24 } },
+      [...codesExistants(sujet, 3000, 5, 4), ...codesExistants(sujet, 4000, 5)]),
+    bloc(segment, `${segment}Z`, "", "Choix - 3 crédits.", { type: "choix", bornes: { min: 3, max: 3 } }, []),
+  ];
+
   return {
-    id: ID_ACTUARIAT,
+    id: ID_PAGE_MATHS,
     nom: "Baccalauréat en mathématiques",
-    orientation: "Actuariat",
-    segments: ["01", "75"],
+    // `orientation` reste null sur une page NON projetée : c'est
+    // `orientations` qui porte l'information. Le contrat est explicite.
+    orientation: null,
+    segments: ["01", "75", "76", "77", "78"],
     cycle: "1er cycle",
     faculte: "Arts et sciences",
     typeProgramme: "Baccalauréat",
     creditsTotal: 90,
-    exigences: {
-      brut: "54 crédits obligatoires, 33 crédits à option et 3 crédits au choix",
-      obligatoire: { min: 54, max: 54 },
-      option: { min: 33, max: 33 },
-      choix: { min: 3, max: 3 },
-    },
+    // Sur une page à orientations, les exigences sont PAR orientation.
+    exigences: null,
+    orientations: [
+      {
+        nom: "Actuariat",
+        segments: ["01", "75"],
+        exigences: {
+          brut: "54 crédits obligatoires, 33 crédits à option et 3 crédits au choix",
+          obligatoire: { min: 54, max: 54 },
+          option: { min: 33, max: 33 },
+          choix: { min: 3, max: 3 },
+        },
+      },
+      {
+        nom: "Mathématiques appliquées",
+        segments: ["01", "76"],
+        exigences: {
+          brut: "44 crédits obligatoires, de 43 à 46 crédits à option et 3 crédits au choix",
+          obligatoire: { min: 44, max: 44 },
+          option: { min: 43, max: 46 },
+          choix: { min: 3, max: 3 },
+        },
+      },
+      {
+        nom: "Mathématiques pures",
+        segments: ["01", "77"],
+        exigences: null,
+      },
+      {
+        nom: "Statistique",
+        segments: ["01", "78"],
+        exigences: {
+          brut: "44 crédits obligatoires, 43 crédits à option et 3 crédits au choix",
+          obligatoire: { min: 44, max: 44 },
+          option: { min: 43, max: 43 },
+          choix: { min: 3, max: 3 },
+        },
+      },
+    ],
     blocs: [
       // `nom: ""` est volontaire : le contrat dit que la page ne nomme ni le
       // bloc 01A ni le bloc 75Z, et inventer un nom de bloc est exactement la
@@ -526,11 +664,67 @@ function programmeActuariat(): Programme {
         // cas normal du catalogue, et il doit s'afficher comme tel.
         [...codesSansFiche("ACT", 3), ...codesExistants("MAT", 4000, 3)]),
       bloc("75", "75Z", "", "Choix - 3 crédits.", { type: "choix", bornes: { min: 3, max: 3 } }, []),
+
+      // Les trois autres parcours de la MÊME page. Leurs segments sont
+      // exclusifs de 75 : c'est ce que la projection démêle.
+      ...parcoursSecondaire("76", "MAT"),
+      ...parcoursSecondaire("77", "MAT"),
+      ...parcoursSecondaire("78", "STT"),
     ],
     notes: [
       "L'orientation actuariat prépare aux examens de la Society of Actuaries ; la réussite d'un cours ne dispense d'aucun examen professionnel.",
+      "Le passage d'une orientation à une autre se fait sur demande au responsable de programme.",
     ],
-    url: "https://exemple.invalid/demo/actuariat",
+    url: "https://exemple.invalid/demo/baccalaureat-en-mathematiques",
+    scrapeISO: ISO_DEMO,
+  };
+}
+
+/**
+ * La page à BLOC OUVERT : le bloc 02E n'énumère aucun cours et décrit son
+ * contenu en prose (renvoi aux cours du Centre de langues).
+ *
+ * Ce n'est PAS un bloc au choix et ce n'est pas une donnée manquante : c'est un
+ * bloc que l'outil ne peut pas vérifier, et l'étudiant doit le savoir. Sans le
+ * drapeau `contenuOuvert`, la seule façon de le reconnaître serait de deviner
+ * d'après `notes`.
+ */
+function programmeMusique(): Programme {
+  return {
+    id: ID_MUSIQUE_OUVERT,
+    nom: "Baccalauréat en musique — écriture",
+    orientation: null,
+    segments: ["02"],
+    cycle: "1er cycle",
+    faculte: "Musique",
+    typeProgramme: "Baccalauréat",
+    creditsTotal: 90,
+    exigences: {
+      brut: "60 crédits obligatoires, de 24 à 30 crédits à option",
+      obligatoire: { min: 60, max: 60 },
+      option: { min: 24, max: 30 },
+      choix: null,
+    },
+    orientations: [],
+    blocs: [
+      bloc("02", "02A", "Écriture et analyse", "Obligatoire - 24 crédits.", { type: "obligatoire", bornes: { min: 24, max: 24 } },
+        pourTotal(codesExistants("MUS", 1000, 12), 24)),
+      bloc("02", "02B", "Interprétation", "Obligatoire - 36 crédits.", { type: "obligatoire", bornes: { min: 36, max: 36 } },
+        pourTotal([...codesExistants("MUI", 1000, 12), ...codesExistants("MUI", 2000, 12)], 36)),
+      bloc("02", "02D", "Répertoire", "Option - Minimum 18 crédits, maximum 24 crédits.", { type: "option", bornes: { min: 18, max: 24 } },
+        codesExistants("MUS", 2000, 8)),
+      bloc("02", "02E", "Langues", "Option - Maximum 6 crédits.", { type: "option", bornes: { min: 0, max: 6 } },
+        // Aucun cours énuméré, et ce n'est pas une omission.
+        [],
+        [
+          "Les cours de langue offerts par le Centre de langues peuvent être crédités à ce bloc, jusqu'à concurrence de 6 crédits.",
+          "Le choix des cours doit être approuvé par le responsable de programme avant l'inscription.",
+        ],
+        true,
+      ),
+    ],
+    notes: [],
+    url: "https://exemple.invalid/demo/musique-ecriture",
     scrapeISO: ISO_DEMO,
   };
 }
@@ -542,7 +736,8 @@ function programmeMaitriseDouble(): Programme {
   return {
     id: ID_MAITRISE_DOUBLE,
     nom: "Maîtrise en mathématiques",
-    orientation: "Mathématiques fondamentales",
+    orientation: null,
+    orientations: [],
     segments: ["70", "73"],
     cycle: "2e cycle",
     faculte: "Arts et sciences",
@@ -582,6 +777,7 @@ function programmeDroit(): Programme {
     id: ID_DROIT_INTERVALLE,
     nom: "Baccalauréat en droit",
     orientation: null,
+    orientations: [],
     segments: ["70"],
     cycle: "1er cycle",
     faculte: "Droit",
@@ -624,25 +820,27 @@ function programmeDroit(): Programme {
   };
 }
 
-function programmeGenerique(fiche: FicheIndex): Programme {
-  const dé = graine(`programme/${fiche.id}`);
-  const discipline =
-    DISCIPLINES.find((d) => fiche.nom.endsWith(d.nom)) ?? DISCIPLINES[0];
-  const sujets = [discipline.sujet, ...discipline.voisins];
-  const formes = formesPour(dé);
-  const segments = fiche.cycle === "1er cycle" ? ["01", "70"] : ["70", "73"];
+/** Les blocs d'UN segment. Extrait pour qu'une page à orientations puisse en
+ *  fabriquer un jeu par parcours, chacun dans son propre segment. */
+function blocsDuSegment(
+  dé: () => number,
+  segment: string,
+  sujets: string[],
+  cycle: string | null,
+  combien: number,
+  formes: FormeRegle[],
+  avecChoixFinal: boolean,
+): Bloc[] {
   const lettres = "ABCDEFGHIJKLMNOPQRSTUVWXY";
-
   const blocs: Bloc[] = [];
-  for (let i = 0; i < fiche.nbBlocs; i += 1) {
-    const segment = segments[i % segments.length];
-    const lettre = lettres[Math.floor(i / segments.length) % lettres.length];
-    const id = `${segment}${lettre}`;
-    // Le premier bloc est toujours obligatoire ; le dernier toujours au choix.
+  for (let i = 0; i < combien; i += 1) {
+    const id = `${segment}${lettres[i % lettres.length]}`;
+    // Le premier bloc est toujours obligatoire ; le dernier au choix quand on
+    // le demande.
     const forme =
       i === 0
         ? formes[0]
-        : i === fiche.nbBlocs - 1
+        : avecChoixFinal && i === combien - 1
           ? formes[6]
           : choisir(dé, formes.slice(1, 6));
     const sujet = choisir(dé, sujets);
@@ -651,7 +849,7 @@ function programmeGenerique(fiche: FicheIndex): Programme {
     // à juste titre comme des données de programme incomplètes. Une moitié des
     // programmes de 2e cycle dans cet état aurait noyé le signal.
     const niveau =
-      fiche.cycle === "1er cycle"
+      cycle === "1er cycle"
         ? choisir(dé, [1000, 2000, 3000])
         : choisir(dé, [4000, 6000]);
     const liste =
@@ -668,51 +866,124 @@ function programmeGenerique(fiche: FicheIndex): Programme {
         dé() < 0.25 ? [choisir(dé, NOTES_BLOC)] : []),
     );
   }
+  return blocs;
+}
 
-  // Une règle `inconnu` de temps en temps : une forme jamais vue ne doit pas
-  // être avalée, elle doit ressortir dans les problèmes.
-  if (dé() < 0.12 && blocs.length > 1) {
-    const cible = entier(dé, 1, blocs.length - 1);
-    const brut = "Bloc - voir les remarques au bas de la page.";
-    blocs[cible] = { ...blocs[cible], regleBrut: brut, regle: { type: "inconnu", brut } };
+function sommeObligatoire(blocs: Bloc[]): number {
+  return blocs.reduce(
+    (s, b) => s + (b.regle.type === "obligatoire" ? b.regle.bornes.min : 0),
+    0,
+  );
+}
+
+/** Exigences parfois absentes, parfois exactes, parfois en intervalle. Les
+ *  trois cas doivent traverser l'UI sans « NaN » ni nombre inventé. */
+function exigencesPour(dé: () => number, oblig: number): ExigencesParType | null {
+  const annonce = dé();
+  if (annonce < 0.35) return null;
+  const exact = annonce < 0.7;
+  return {
+    brut: exact
+      ? `${oblig} crédits obligatoires et le reste à option`
+      : `de ${oblig} à ${oblig + 3} crédits obligatoires, de 24 à 27 crédits à option`,
+    obligatoire: exact ? { min: oblig, max: oblig } : { min: oblig, max: oblig + 3 },
+    option: exact ? null : { min: 24, max: 27 },
+    choix: null,
+  };
+}
+
+/**
+ * Le programme d'une PAGE, tous parcours compris.
+ *
+ * Prend toutes les fiches qui partagent l'identifiant, pas une seule : une page
+ * à orientations n'est qu'UN fichier `data/programmes/<id>.json`, et ses
+ * parcours y sont décrits par `orientations`. Chaque orientation reçoit son
+ * propre segment, exclusif des autres, plus le segment commun « 01 » — c'est
+ * exactement la forme que `projeterOrientation()` sait démêler.
+ */
+function programmeGenerique(fiches: FicheIndex[]): Programme {
+  const premiere = fiches[0];
+  const dé = graine(`programme/${premiere.id}`);
+  const discipline =
+    DISCIPLINES.find((d) => premiere.nom.endsWith(d.nom)) ?? DISCIPLINES[0];
+  const sujets = [discipline.sujet, ...discipline.voisins];
+  const formes = formesPour(dé);
+  const nomsOrientations = fiches
+    .map((f) => f.orientation)
+    .filter((o): o is string => o !== null);
+
+  if (nomsOrientations.length === 0) {
+    const segments = premiere.cycle === "1er cycle" ? ["01", "70"] : ["70", "73"];
+    const blocs = [
+      ...blocsDuSegment(dé, segments[0], sujets, premiere.cycle, Math.max(1, premiere.nbBlocs - 1), formes, false),
+      ...blocsDuSegment(dé, segments[1], sujets, premiere.cycle, 1, formes, true),
+    ];
+    // Une règle `inconnu` de temps en temps : une forme jamais vue ne doit pas
+    // être avalée, elle doit ressortir dans les problèmes.
+    if (dé() < 0.12 && blocs.length > 1) {
+      const cible = entier(dé, 1, blocs.length - 1);
+      const brut = "Bloc - voir les remarques au bas de la page.";
+      blocs[cible] = { ...blocs[cible], regleBrut: brut, regle: { type: "inconnu", brut } };
+    }
+    return {
+      id: premiere.id,
+      nom: premiere.nom,
+      orientation: null,
+      orientations: [],
+      segments,
+      cycle: premiere.cycle,
+      faculte: premiere.faculte,
+      typeProgramme: premiere.typeProgramme,
+      creditsTotal: premiere.creditsTotal,
+      exigences: exigencesPour(dé, sommeObligatoire(blocs)),
+      blocs,
+      notes: dé() < 0.4 ? [choisir(dé, NOTES_PROGRAMME)] : [],
+      url: `https://exemple.invalid/demo/${premiere.id}`,
+      scrapeISO: ISO_DEMO,
+    };
   }
 
-  const oblig = blocs
-    .filter((b) => b.regle.type === "obligatoire")
-    .reduce((s, b) => s + (b.regle.type === "obligatoire" ? b.regle.bornes.min : 0), 0);
+  // Tronc commun, partagé par tous les parcours de la page.
+  const communs = blocsDuSegment(dé, "01", sujets, premiere.cycle, 2, formes, false);
+  const blocs: Bloc[] = [...communs];
+  const orientations: Orientation[] = [];
 
-  // Les exigences ne sont PAS toujours annoncées ; quand elles le sont, c'est
-  // parfois un intervalle. Les deux cas doivent traverser l'UI.
-  const annonce = dé();
-  const exigences: ExigencesParType | null =
-    annonce < 0.35
-      ? null
-      : {
-          brut:
-            annonce < 0.7
-              ? `${oblig} crédits obligatoires et le reste à option`
-              : `de ${oblig} à ${oblig + 3} crédits obligatoires, de 24 à 27 crédits à option`,
-          obligatoire:
-            annonce < 0.7
-              ? { min: oblig, max: oblig }
-              : { min: oblig, max: oblig + 3 },
-          option: annonce < 0.7 ? null : { min: 24, max: 27 },
-          choix: null,
-        };
+  nomsOrientations.forEach((nom, rang) => {
+    const segment = segmentOrientation(rang);
+    const fiche = fiches[rang];
+    const propres = blocsDuSegment(
+      dé,
+      segment,
+      sujets,
+      premiere.cycle,
+      Math.max(2, fiche.nbBlocs - communs.length),
+      formes,
+      true,
+    );
+    blocs.push(...propres);
+    orientations.push({
+      nom,
+      segments: ["01", segment],
+      exigences: exigencesPour(dé, sommeObligatoire([...communs, ...propres])),
+    });
+  });
 
   return {
-    id: fiche.id,
-    nom: fiche.nom,
-    orientation: fiche.orientation,
-    segments,
-    cycle: fiche.cycle,
-    faculte: fiche.faculte,
-    typeProgramme: fiche.typeProgramme,
-    creditsTotal: fiche.creditsTotal,
-    exigences,
+    id: premiere.id,
+    nom: premiere.nom,
+    // Jamais renseigné sur une page non projetée : le contrat est explicite.
+    orientation: null,
+    orientations,
+    segments: ["01", ...orientations.map((o) => o.segments[1])],
+    cycle: premiere.cycle,
+    faculte: premiere.faculte,
+    typeProgramme: premiere.typeProgramme,
+    creditsTotal: premiere.creditsTotal,
+    // Les exigences sont PAR orientation sur une telle page.
+    exigences: null,
     blocs,
     notes: dé() < 0.4 ? [choisir(dé, NOTES_PROGRAMME)] : [],
-    url: `https://exemple.invalid/demo/${fiche.id}`,
+    url: `https://exemple.invalid/demo/${premiere.id}`,
     scrapeISO: ISO_DEMO,
   };
 }
@@ -775,7 +1046,26 @@ function trimestresDe(dé: () => number): Trimestre[] {
  * sans fiche » — titre et crédits inconnus, jamais « undefined », et jamais
  * verrouillé puisque ses préalables ne sont pas connus.
  */
+/**
+ * Mémoïsation des fiches par sujet.
+ *
+ * `coursDuSujet` est appelé en cascade par `codesExistants` et `pourTotal` :
+ * une page à dix orientations le rappelle des centaines de fois, et chaque
+ * appel refabriquait une soixantaine de fiches avec leur générateur. Le
+ * résultat étant déterministe, le recalculer ne changeait rien d'autre que le
+ * temps — assez pour figer l'onglet une fois les orientations ajoutées.
+ */
+const memoSujets = new Map<string, Cours[]>();
+
 function coursDuSujet(sujet: string): Cours[] {
+  const connu = memoSujets.get(sujet);
+  if (connu !== undefined) return connu;
+  const calcule = fabriquerCoursDuSujet(sujet);
+  memoSujets.set(sujet, calcule);
+  return calcule;
+}
+
+function fabriquerCoursDuSujet(sujet: string): Cours[] {
   const discipline = DISCIPLINES.find((d) => d.sujet === sujet);
   if (discipline === undefined) return [];
 
@@ -905,16 +1195,21 @@ export function fabrique(): Fabrique {
 
   return {
     index,
+    /** Rend LA PAGE, tous parcours compris. C'est l'appelant qui projette
+     *  ensuite sur une orientation — le découpage sur disque est par page. */
     programme(id: string): Programme | null {
-      if (id === ID_ACTUARIAT) return programmeActuariat();
+      if (id === ID_PAGE_MATHS) return programmeMaths();
       if (id === ID_MAITRISE_DOUBLE) return programmeMaitriseDouble();
       if (id === ID_DROIT_INTERVALLE) return programmeDroit();
-      const fiche = index.programmes.find((f) => f.id === id);
-      if (fiche === undefined) return null;
+      if (id === ID_MUSIQUE_OUVERT) return programmeMusique();
+      // Toutes les fiches de cet identifiant : une page à orientations en a
+      // plusieurs, et elles décrivent ensemble un seul fichier.
+      const fiches = index.programmes.filter((f) => f.id === id);
+      if (fiches.length === 0) return null;
       // Une fiche sans structure lue n'a pas de programme à rendre : c'est au
       // sélecteur de le dire, pas au dépôt d'inventer un programme vide.
-      if (!fiche.structureLue) return null;
-      return programmeGenerique(fiche);
+      if (!fiches[0].structureLue) return null;
+      return programmeGenerique(fiches);
     },
     sujet(sujet: string): Cours[] {
       return coursDuSujet(sujet);
