@@ -129,10 +129,16 @@ function normaliserEnsemble(codes: Set<CodeCours> | undefined): {
 
 /** Clé d'un bloc. `Bloc.cle` est fabriquée par le scraper via `cleBloc()` ;
  *  si elle manque (données anciennes), on la refabrique AU MÊME ENDROIT plutôt
- *  que de retomber sur `id`, qui n'est pas unique. */
+ *  que de retomber sur `id`, qui n'est pas unique.
+ *
+ *  Le NOM fait partie de l'identité depuis que `cleBloc` prend trois arguments
+ *  (« Bloc 70D Stage » et « Bloc 70D Travail dirigé » ont même segment, même id
+ *  et même règle). `scripts/scrape/structure.ts:477` le passe toujours ; ce
+ *  repli doit le passer aussi, sinon les deux endroits fabriquent deux clés
+ *  différentes pour un même bloc — sans lever la moindre erreur. */
 function cleDe(bloc: Bloc): string {
   const cle = (bloc.cle ?? "").trim();
-  return cle !== "" ? cle : cleBloc(bloc.segment ?? "?", bloc.id);
+  return cle !== "" ? cle : cleBloc(bloc.segment ?? "?", bloc.id, bloc.nom);
 }
 
 // ---------------------------------------------------------------------------
@@ -356,6 +362,13 @@ interface Calcul {
   attribues: CodeCours[];
   /** Cours attribués dont les crédits sont inconnus (aucune fiche). */
   creditsInconnus: CodeCours[];
+  /**
+   * Somme des crédits des cours que le bloc LISTE — sa capacité réelle.
+   * `null` dès qu'une seule fiche manque : la somme ne serait alors qu'un
+   * plancher, et déclarer un bloc infaisable sur un plancher reviendrait à
+   * accuser la page d'une incohérence qui vient d'un trou dans NOS données.
+   */
+  capaciteListee: number | null;
 }
 
 /**
@@ -385,6 +398,49 @@ function estOuvert(bloc: Bloc): boolean {
  * que n'importe quoi convient. Y verser les cours non cités reviendrait à
  * inventer une appartenance qu'aucune donnée n'atteste.
  */
+/**
+ * Capacité listée d'un bloc : la somme des crédits des cours qu'il énumère.
+ *
+ * Retourne `null` si le bloc n'énumère rien, ou si une seule de ses fiches
+ * manque. C'est la précaution essentielle : 70 % des cours cités par le
+ * catalogue n'ont pas encore de fiche, donc une somme partielle est un
+ * PLANCHER. Conclure « ce bloc est infaisable » à partir d'un plancher
+ * reprocherait à la page une incohérence produite par notre propre scrape.
+ *
+ * Les doublons sont écrasés : un bloc qui cite deux fois le même cours ne
+ * dispose pas de ses crédits deux fois.
+ */
+function capaciteDeBloc(bloc: Bloc, fiches: Map<CodeCours, Cours>): number | null {
+  const cours = new Set((bloc.cours ?? []).map((brut) => normaliserCode(brut) ?? brut));
+  if (cours.size === 0) return null;
+  let somme = 0;
+  for (const code of cours) {
+    const credits = creditsDeFiche(fiches.get(code));
+    if (credits === null) return null;
+    somme += credits;
+  }
+  return arrondi(somme);
+}
+
+/**
+ * Bloc dont la PAGE est incohérente : son minimum dépasse ce que ses propres
+ * cours peuvent fournir.
+ *
+ * Cas réel et vérifié dans le HTML brut : le bacc en musique annonce
+ * « Obligatoire - 15 crédits » au bloc 01/01A et n'y liste que 4 cours à
+ * 3 crédits. Dix blocs du catalogue sont dans ce cas (mesuré sur les 937 blocs
+ * dont toutes les fiches sont connues), tous de type « Obligatoire ».
+ *
+ * Sans ce diagnostic, l'audit dit à un étudiant qui a réussi les 4 cours du
+ * bloc « il vous manque 3 crédits » — une exigence qu'aucune action de sa part
+ * ne peut satisfaire, puisque les crédits en question n'existent nulle part
+ * dans ces données. Le projet refuse les deux réponses faciles : bloquer sur
+ * l'amont (on ne le maîtrise pas) et tolérer en silence.
+ */
+function estInfaisable(c: Calcul): boolean {
+  return c.capaciteListee !== null && c.capaciteListee < c.bornes.min && !estOuvert(c.bloc);
+}
+
 function estJoker(bloc: Bloc, bornes: Bornes): boolean {
   return bornes.type === "choix" && (bloc.cours ?? []).length === 0 && !estOuvert(bloc);
 }
@@ -448,6 +504,7 @@ export function auditProgramme(
     manquants: 0,
     attribues: [],
     creditsInconnus: [],
+    capaciteListee: null,
   }));
 
   // `Bloc.id` n'est pas unique ; `Bloc.cle` devrait l'être. Si elle ne l'est
@@ -516,7 +573,15 @@ export function auditProgramme(
     // le bloc 71G » que l'étudiant ne peut pas corriger dans cette application,
     // puisque les cours en question ne sont dans aucune de nos données. Le
     // problème est dit autrement, plus bas.
-    c.manquants = estOuvert(c.bloc) ? 0 : arrondi(Math.max(0, c.bornes.min - c.comptes));
+    c.capaciteListee = capaciteDeBloc(c.bloc, fiches);
+    // Ce qui reste à faire se mesure contre ce qui est ATTEIGNABLE, pas contre
+    // un minimum que la page elle-même rend inatteignable : sinon l'étudiant
+    // lit « il manque 3 crédits » après avoir réussi tout le bloc, sans aucun
+    // moyen d'y répondre. L'écart, lui, n'est pas tu — il est journalisé plus
+    // bas comme une incohérence de la page.
+    const atteignable =
+      c.capaciteListee !== null ? Math.min(c.bornes.min, c.capaciteListee) : c.bornes.min;
+    c.manquants = estOuvert(c.bloc) ? 0 : arrondi(Math.max(0, atteignable - c.comptes));
   }
 
   // --- totaux par type ----------------------------------------------------
@@ -570,6 +635,15 @@ export function auditProgramme(
     ) {
       incoherence(
         `le bloc ${c.bloc.id} exige un minimum de ${cr(c.bornes.min)} mais ne liste aucun cours : données de programme incomplètes, ce bloc ne peut pas être rempli.`,
+      );
+    }
+    // Le bloc liste des cours, toutes leurs fiches sont connues, et leur somme
+    // n'atteint pas le minimum annoncé. L'écart est réel et il est AMONT.
+    if (estInfaisable(c)) {
+      incoherence(
+        `le bloc ${nomBloc(c.bloc)} annonce « ${c.bloc.regleBrut} » mais les ${(c.bloc.cours ?? []).length} cours qu'il liste ne totalisent que ${cr(c.capaciteListee ?? 0)} : ` +
+          `c'est la PAGE du programme qui est incohérente, pas votre parcours. Même en réussissant tout ce qui y figure, il resterait ${cr(c.bornes.min - (c.capaciteListee ?? 0))} ` +
+          `hors d'atteinte. L'audit ne vous les réclame donc pas, mais il ne peut pas non plus déclarer ce bloc conforme — il le signale.`,
       );
     }
   }
@@ -776,10 +850,14 @@ export function auditProgramme(
     // Un bloc ouvert sans minimum n'a rien à satisfaire : `true`, il n'échoue
     // pas. Avec un minimum, il n'est pas établi : `false`, et le message dit que
     // c'est faute de pouvoir vérifier, pas faute de crédits.
+    // Comme pour un bloc à contenu ouvert, `conforme: false` avec
+    // `creditsManquants: 0` : la règle annoncée n'est pas satisfaite, mais rien
+    // de ce que l'étudiant peut faire n'y changerait quoi que ce soit.
     conforme:
       c.manquants === 0 &&
       c.bornes.illisible === null &&
-      !(estOuvert(c.bloc) && c.bornes.min > 0),
+      !(estOuvert(c.bloc) && c.bornes.min > 0) &&
+      !estInfaisable(c),
     coursAttribues: [...c.attribues],
   }));
 
