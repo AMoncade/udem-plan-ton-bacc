@@ -30,6 +30,7 @@ describe("parseExigences", () => {
     expect(parseExigences(null)).toEqual({
       prealablesBrut: null,
       concomitantsBrut: null,
+      restrictionsBrut: null,
       autres: [],
     });
   });
@@ -55,12 +56,30 @@ describe("parseExigences", () => {
     expect(e.autres).toEqual([]);
   });
 
-  it("range une étiquette inconnue dans `autres`, jamais dans les préalables", () => {
+  it("met « Restrictions d'inscription » dans SON champ, jamais dans les préalables", () => {
+    // C'est la correction la plus importante de la v2 côté cours : MUI 1162A n'a
+    // QUE des restrictions, et un parseur qui les rangerait en préalables y
+    // verrait une vingtaine de cours requis — cours verrouillé à jamais.
     const e = parseExigences("<p>Restrictions d'inscription: DMO1000/DMO1010</p>");
     expect(e.prealablesBrut).toBeNull();
-    expect(e.autres).toEqual([
-      { etiquette: "Restrictions d'inscription", texte: "DMO1000/DMO1010" },
-    ]);
+    expect(e.restrictionsBrut).toBe("DMO1000/DMO1010");
+    expect(e.autres).toEqual([]);
+  });
+
+  it("sépare préalables et restrictions réunis sur une ligne (CRI 3318)", () => {
+    const e = parseExigences(
+      "<p>Préalables: CRI1006 ou CRI1006G; Restrictions d'inscription:CRI3318/SOL2020</p>",
+    );
+    expect(e.prealablesBrut).toBe("CRI1006 ou CRI1006G");
+    expect(e.restrictionsBrut).toBe("CRI3318/SOL2020");
+    expect(e.autres).toEqual([]);
+  });
+
+  it("range une étiquette VRAIMENT inconnue dans `autres`", () => {
+    const e = parseExigences("<p>Condition spéciale: voir le département</p>");
+    expect(e.prealablesBrut).toBeNull();
+    expect(e.restrictionsBrut).toBeNull();
+    expect(e.autres).toEqual([{ etiquette: "Condition spéciale", texte: "voir le département" }]);
   });
 });
 
@@ -78,7 +97,7 @@ describe("parseTrimestres", () => {
   it("signale une saison inconnue au lieu de l'inventer", () => {
     const j = new Journal();
     expect(parseTrimestres("Printemps 2026", "X", j)).toEqual([]);
-    expect(j.entrees[0].quoi).toContain("saison inconnue");
+    expect(j.entrees[0].message).toContain("saison inconnue");
   });
 });
 
@@ -105,6 +124,7 @@ describe("parseFicheCours — ACT 2250, la fiche de référence du contrat", () 
         ],
       },
       concomitantsBrut: null,
+      restrictionsBrut: null,
       trimestres: [
         { saison: "Été", annee: 2026 },
         { saison: "Automne", annee: 2026 },
@@ -232,7 +252,7 @@ describe("parseFicheCours — étiquettes au singulier et cas limites du sommair
     // de lecture ; le planificateur doit savoir que l'offre est inconnue.
     const { cours, journal } = fiche("act-4000");
     expect(cours?.trimestres).toEqual([]);
-    expect(journal.entrees.some((e) => e.quoi.includes("Trimestre"))).toBe(true);
+    expect(journal.entrees.some((e) => e.message.includes("Trimestre"))).toBe(true);
   });
 
   it("MAT 6117 : cycle « Cycles supérieurs » et 4 crédits", () => {
@@ -241,18 +261,53 @@ describe("parseFicheCours — étiquettes au singulier et cas limites du sommair
     expect(cours?.credits).toBe(4);
   });
 
-  it("DMO 1000 : la restriction d'inscription va au journal, pas dans les préalables", () => {
+  it("DMO 1000 : la restriction d'inscription a son champ, et rien ne déborde", () => {
+    // En v1 cette exigence réelle finissait dans le journal non typé, invisible
+    // pour l'UI : le repli silencieux que le projet combat, mais dans le contrat
+    // plutôt que dans le code. La v2 lui donne `restrictionsBrut`.
     const { cours, journal } = fiche("dmo-1000");
+    expect(cours?.restrictionsBrut).toBe("DMO1000/DMO1010");
     expect(cours?.prealablesBrut).toBeNull();
+    expect(cours?.prealables).toBeNull();
     expect(cours?.concomitantsBrut).toBeNull();
-    const alerte = journal.entrees.find((e) => e.gravite === "inattendu");
-    expect(alerte?.quoi).toContain("Restrictions d'inscription: DMO1000/DMO1010");
+    expect(journal.entrees.filter((e) => e.genre === "inattendu")).toEqual([]);
+  });
+});
+
+describe("parseFicheCours — codes suffixés et à cinq chiffres", () => {
+  it("MUI 1162A : code SUFFIXÉ, et QUE des restrictions — aucun préalable", () => {
+    // Le cas pur que la v2 existe pour régler. Vingt codes dans la ligne, et pas
+    // un seul n'est un préalable : un parseur qui confondrait les deux
+    // verrouillerait ce cours à jamais.
+    const { cours, prealablesComplet, journal } = fiche("mui-1162a");
+    expect(cours?.code).toBe("MUI 1162A");
+    expect(cours?.credits).toBe(2);
+    expect(cours?.prealablesBrut).toBeNull();
+    expect(cours?.prealables).toBeNull();
+    expect(prealablesComplet).toBeNull();
+    expect(cours?.restrictionsBrut).toMatch(/^MUI1062A\/MUI1063A\//);
+    expect(cours?.restrictionsBrut?.split("/").length).toBeGreaterThan(15);
+    expect(journal.entrees.filter((e) => e.genre === "inattendu")).toEqual([]);
+  });
+
+  it("PSY 40001 : code à CINQ chiffres lu, mais fiche rejetée faute de crédits", () => {
+    // La page n'a AUCUNE étiquette « Crédits » dans son sommaire (Campus,
+    // Trimestres, Période, et c'est tout) — vérifié dans la fixture. Mettre 0
+    // ferait passer ce cours pour gratuit dans tout audit ; `Cours.credits` est
+    // un `number` non nullable, donc il n'existe aucune valeur honnête. La fiche
+    // est donc ABSENTE du catalogue, avec son motif au journal — cas que le
+    // moteur gère déjà (« un bloc peut citer un cours sans fiche »).
+    const { cours, journal } = fiche("psy-40001");
+    expect(cours).toBeNull();
+    const motif = journal.entrees.find((e) => e.message.includes("fiche rejetée"));
+    expect(motif?.sujet).toBe("PSY 40001");
+    expect(motif?.message).toContain("étiquette « Crédits » absente");
   });
 });
 
 describe("parseFicheCours — indépendance aux fins de ligne", () => {
   // Même raison que pour la structure : `core.autocrlf=true` dans ce dépôt.
-  for (const slug of ["act-2250", "act-3261", "stt-2400", "act-4000", "dmo-1000"]) {
+  for (const slug of ["act-2250", "act-3261", "stt-2400", "act-4000", "dmo-1000", "mui-1162a"]) {
     it(`${slug} : résultat identique en CRLF`, () => {
       const chemin = path.join(import.meta.dirname, "__fixtures__", `cours-${slug}.html`);
       const lf = readFileSync(chemin, "utf8");
@@ -268,7 +323,7 @@ describe("parseFicheCours — pages dégradées", () => {
   it("rejette une page qui n'est pas une fiche, au lieu d'inventer un cours", () => {
     const r = parseFicheCours("<html><body>Erreur 500</body></html>", "u", ISO, parsePrealables);
     expect(r.cours).toBeNull();
-    expect(r.journal.entrees[0].quoi).toContain("span.cours-numero absent");
+    expect(r.journal.entrees[0].message).toContain("span.cours-numero absent");
   });
 
   it("rejette une fiche dont les crédits sont illisibles plutôt que de mettre 0", () => {
@@ -278,6 +333,6 @@ describe("parseFicheCours — pages dégradées", () => {
       '<section class="cours-sommaire"><ul><li><b>Crédits</b><p>s.o.</p></li></ul></section>';
     const r = parseFicheCours(html, "u", ISO, parsePrealables);
     expect(r.cours).toBeNull();
-    expect(r.journal.entrees[0].quoi).toContain("fiche rejetée");
+    expect(r.journal.entrees[0].message).toContain("fiche rejetée");
   });
 });

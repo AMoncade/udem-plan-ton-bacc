@@ -1,0 +1,288 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-droit",
+  "nom": "Certificat en droit",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "DRT 1151G",
+        "DRT 1221G",
+        "DRT 1223G",
+        "DRT 1901G"
+      ],
+      "notes": [
+        "Les cours DRT 1151G Introduction à l'étude du droit, et DRT 1901G Développement des habiletés du juriste, doivent être suivis en début de programme, avant tout autre cours, ou de façon concomitante si l'étudiant est à temps plein."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "DRT 1222G",
+        "DRT 1501G",
+        "DRT 1502G"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DRT 1010G",
+        "DRT 1224G",
+        "DRT 1225G",
+        "DRT 1505G",
+        "DRT 2012G",
+        "DRT 2100G",
+        "DRT 2233G",
+        "DRT 2234G",
+        "DRT 2400G",
+        "DRT 2402G",
+        "DRT 2501G",
+        "DRT 2505G",
+        "DRT 2923G",
+        "DRT 3201G",
+        "DRT 3203G",
+        "DRT 3205G",
+        "DRT 3401G",
+        "DRT 3402G",
+        "DRT 3404G",
+        "DRT 3501G",
+        "DRT 3503G",
+        "DRT 3600G",
+        "DRT 3602G",
+        "DRT 3603G",
+        "DRT 3701G",
+        "DRT 3702G",
+        "DRT 3801G",
+        "DRT 3807G"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": [
+        "À choisir parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
+      ]
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "DRT 1225G",
+        "DRT 2400G",
+        "DRT 3205G"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DRT 1222G",
+        "DRT 2012G",
+        "DRT 2233G",
+        "DRT 2234G",
+        "DRT 2402G",
+        "DRT 2923G",
+        "DRT 3201G",
+        "DRT 3203G",
+        "DRT 3401G",
+        "DRT 3402G",
+        "DRT 3404G",
+        "DRT 3600G",
+        "DRT 3602G",
+        "DRT 3603G",
+        "DRT 3701G",
+        "DRT 3702G",
+        "DRT 3801G",
+        "DRT 3807G"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": [
+        "À choisir parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "DRT 1501G",
+        "DRT 1502G",
+        "DRT 2501G"
+      ],
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DRT 1505G",
+        "DRT 2012G",
+        "DRT 2100G",
+        "DRT 2505G",
+        "DRT 2923G",
+        "DRT 3501G",
+        "DRT 3503G",
+        "DRT 3600G",
+        "DRT 3602G",
+        "DRT 3603G"
+      ],
+      "notes": [
+        "Il est préférable de suivre le cours DRT 2501G Droit administratif général avant de suivre les cours DRT 3810G et 3804G."
+      ]
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": [
+        "À choisir parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (H25)\nLe certificat comporte 30 crédits. Il est offert avec un tronc commun et les trois orientations suivantes :\n- l'orientation Droit général (segment 70),\n- l'orientation Droit des affaires (segment 71),\n- l'orientation Droit public (segment 72).",
+    "Segment 01 Tronc commun — Le tronc commun comporte 12 crédits obligatoires.",
+    "Segment 70 Propre à l'orientation Droit général — Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 71 Propre à l'orientation Droit des affaires — Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 72 Propre à l'orientation Droit public — Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-droit/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:29.661Z"
+}

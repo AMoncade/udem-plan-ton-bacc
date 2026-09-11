@@ -1,0 +1,71 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "acces-fac",
+  "nom": "Accès - FAC",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Accès",
+  "creditsTotal": 24,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Perfectionnement méthodologique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "EDP 1010",
+        "EDP 1030",
+        "EDP 1050"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Perfectionnement complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, Maximum 15 crédits.",
+      "cours": [
+        "AEG 2110",
+        "AEG 3137",
+        "CRE 1001",
+        "CRI 1950",
+        "FRA 1009",
+        "ORA 1900",
+        "PPL 3040",
+        "PSY 1901",
+        "REI 1030G",
+        "SPU 1020G",
+        "STT 1901",
+        "VIO 2015"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A25)\nLe Programme d'accès comporte un maximum de 24 crédits.",
+    "Segment 70 — Pour compléter le programme, vous devez avoir réussi entre 12 et 24 crédits. Les crédits du programme d'Accès - FAC sont répartis de la façon suivante: 9 crédits obligatoires et de 3 à 15 crédits de cours optionnels. Le choix des cours optionnels dépend de votre programme d'études et doit être validé auprès de l'équipe du certificat."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/acces-fac/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:47.859Z"
+}

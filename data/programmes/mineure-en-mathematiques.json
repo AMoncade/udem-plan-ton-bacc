@@ -1,0 +1,145 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "mineure-en-mathematiques",
+  "nom": "Mineure en mathématiques",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Mineure",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de la mineure sont répartis de la façon suivante : 19 crédits obligatoires, 9 crédits à option et 2 crédits au choix.",
+    "obligatoire": {
+      "min": 19,
+      "max": 19
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": {
+      "min": 2,
+      "max": 2
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Éléments",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 19,
+          "max": 19
+        }
+      },
+      "regleBrut": "Obligatoire - 19 crédits.",
+      "cours": [
+        "MAT 1400",
+        "MAT 1500",
+        "MAT 1600",
+        "MAT 1720",
+        "STT 1700"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Compléments",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ACT 1240",
+        "MAT 1000",
+        "MAT 1330",
+        "MAT 1332",
+        "MAT 1340",
+        "MAT 1350",
+        "MAT 1410",
+        "MAT 1681",
+        "MAT 2050",
+        "MAT 2115",
+        "MAT 2450",
+        "MAT 2460",
+        "MAT 2531",
+        "MAT 2600",
+        "MAT 2717",
+        "MAT 3450",
+        "MAT 3632",
+        "STT 1682",
+        "STT 2000",
+        "STT 2400",
+        "STT 2700"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BIO 1203",
+        "BIO 1803",
+        "DMO 1000",
+        "ECN 1000",
+        "ECN 1050",
+        "ECN 2165",
+        "GEO 1312",
+        "IFT 1015",
+        "IFT 1174",
+        "IFT 1575",
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 1300",
+        "PHY 1441",
+        "PHY 1651",
+        "PHY 1972"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Choix - 2 crédits.",
+      "cours": [],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A20)\nLa mineure comporte 30 crédits.",
+    "Segment 71 — Les crédits de la mineure sont répartis de la façon suivante : 19 crédits obligatoires, 9 crédits à option et 2 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/mineure-en-mathematiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:34.284Z"
+}

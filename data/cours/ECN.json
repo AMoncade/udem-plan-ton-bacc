@@ -1,0 +1,263 @@
+{
+  "ECN 1000": {
+    "code": "ECN 1000",
+    "titre": "Principes d'économie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation des outils de base de l'analyse économique : coût d'opportunité, offre, demande et prix; choix des consommateurs; choix de production des firmes; marchés concurrentiels; monopole; efficacité; commerce international. Remarques: Cours aussi offert en ligne",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1000/",
+    "scrapeISO": "2026-09-11T11:17:33.040Z"
+  },
+  "ECN 1040": {
+    "code": "ECN 1040",
+    "titre": "Introduction à la microéconomie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Éléments de finance : décisions d'épargne et marchés financiers; concurrence imparfaite : progrès technologique et informations imparfaites; rôle de l'État : environnement, efficacité, équité.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1040/",
+    "scrapeISO": "2026-09-11T11:17:35.002Z"
+  },
+  "ECN 1050": {
+    "code": "ECN 1050",
+    "titre": "Introduction à la macroéconomie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Interdépendance des marchés et comptabilité nationale et financière. Marchés monétaires et théories de l'inflation. Marché du travail et types de chômage. Modèles de long et de court termes. Modèle IS-LM; fluctuations économiques. Remarques: Cours aussi offert en ligne",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1050/",
+    "scrapeISO": "2026-09-11T11:17:37.467Z"
+  },
+  "ECN 2165": {
+    "code": "ECN 2165",
+    "titre": "Comptabilité 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Le modèle comptable : fondements théoriques et fonctionnement pratique, adaptation aux formes juridiques d'entreprises. Concept économique de la valeur et du profit vs théories classiques de la comptabilité. Introduction à la comptabilité nationale.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2165/",
+    "scrapeISO": "2026-09-11T11:17:38.902Z"
+  },
+  "ECN 2040": {
+    "code": "ECN 2040",
+    "titre": "Théorie microéconomique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théorie de la décision; choix des consommateurs et théorie de la demande; choix des producteurs et théorie de l'offre; marchés concurrentiels; équilibres partiel et général; bien-être et efficacité.",
+    "prealablesBrut": "ECN1040 ET (ECN1075 OU MAT1400)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 1040"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ECN 1075"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1400"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2040/",
+    "scrapeISO": "2026-09-11T11:19:18.644Z"
+  },
+  "ECN 2045": {
+    "code": "ECN 2045",
+    "titre": "Théorie microéconomique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Économie de l'incertain : choix en incertitude; marchés des actifs financiers : équilibre; éléments de théorie des jeux; concurrence imparfaite; modèle principal-agent.",
+    "prealablesBrut": "ECN2040",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2040"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2045/",
+    "scrapeISO": "2026-09-11T11:19:20.583Z"
+  },
+  "ECN 2050": {
+    "code": "ECN 2050",
+    "titre": "Théorie macroéconomique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modèle IS-LM en économie fermée et en économie ouverte; fluctuations des taux de change; marché du travail et offre globale; courbe de Phillips.",
+    "prealablesBrut": "ECN1050 ET (ECN1075 OU MAT1400)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 1050"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ECN 1075"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1400"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2050/",
+    "scrapeISO": "2026-09-11T11:19:25.364Z"
+  },
+  "ECN 3801": {
+    "code": "ECN 3801",
+    "titre": "Économie financière",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à la finance. Étude des décisions d'investissement de la firme. Incorporation de la contrainte financière, de la fiscalité et du risque dans les analyses avantages-coûts des projets privés. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans le programme suivant : 119010 spécialisation 75.",
+    "prealablesBrut": "(ECN1260 OU MAT1978 OU STT1700) ET ECN2040",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ECN 1260"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            },
+            {
+              "genre": "cours",
+              "code": "STT 1700"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2040"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3801/",
+    "scrapeISO": "2026-09-11T11:19:25.482Z"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "DMO 1000": {
+    "code": "DMO 1000",
+    "titre": "Introduction à la démographie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux phénomènes majeurs modifiant les populations humaines, dans leur structure et dans leur mouvement : fécondité, nuptialité, mortalité, migration. Histoire des populations et croissance démographique. Perspectives de populations.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "DMO1000/DMO1010",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-1000/",
+    "scrapeISO": "2026-09-11T11:17:30.035Z"
+  },
+  "DMO 2200": {
+    "code": "DMO 2200",
+    "titre": "Sources de données",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Recensements canadiens et données d'état civil au Québec; implications pour l'analyse; comparaison avec d'autres pays, dont certains du Tiers-Monde. Enquête démographique. Enjeux éthiques. Remarques: Travaux pratiques avec les données et les métadonnées disponibles sur Internet.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-2200/",
+    "scrapeISO": "2026-09-11T11:19:10.935Z"
+  },
+  "DMO 2311": {
+    "code": "DMO 2311",
+    "titre": "Analyse longitudinale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes d'analyse longitudinale : application à la mortalité, fécondité, nuptialité, migration. Construction de tables démographiques. Histoire d'une promotion de mariages.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "DMO1000",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-2311/",
+    "scrapeISO": "2026-09-11T11:19:12.776Z"
+  },
+  "DMO 2312": {
+    "code": "DMO 2312",
+    "titre": "Analyse transversale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes d'analyse transversale : application à la mortalité, fécondité, nuptialité, migration. Construction de tables de mortalité. Structure et renouvellement des populations. Modèles et éléments de perspectives de population.",
+    "prealablesBrut": "DMO2311",
+    "prealables": {
+      "genre": "cours",
+      "code": "DMO 2311"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-2312/",
+    "scrapeISO": "2026-09-11T11:19:14.663Z"
+  },
+  "DMO 3307": {
+    "code": "DMO 3307",
+    "titre": "Pratique de la démographie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Pratique de la démographie. Perspectives de population : modèles de base et modèles adaptés aux sous-populations. Applications à divers milieux de pratique : éducation, santé, population active, immigration, et autres.",
+    "prealablesBrut": "DMO2311",
+    "prealables": {
+      "genre": "cours",
+      "code": "DMO 2311"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-3307/",
+    "scrapeISO": "2026-09-11T11:19:16.480Z"
+  }
+}

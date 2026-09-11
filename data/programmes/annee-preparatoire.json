@@ -1,0 +1,486 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "annee-preparatoire",
+  "nom": "Année préparatoire",
+  "orientation": null,
+  "segments": [
+    "71",
+    "72",
+    "73"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Année préparatoire",
+  "creditsTotal": 24,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Démarche intellectuelle",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "FAS 1901",
+        "PHI 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Formation en sciences humaines et sociales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1902",
+        "ECN 1901",
+        "HST 1901",
+        "POL 1901",
+        "PSY 1901",
+        "REL 1901",
+        "SOL 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Formation en arts et lettres",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "FRA 1903",
+        "FRA 1904",
+        "HAR 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Formation en langue anglaise",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1901A",
+        "ANG 1902",
+        "ANG 1903",
+        "ANG 1904"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Formation en sciences",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "BIO 1953",
+        "BIO 1954",
+        "CHM 1963",
+        "CHM 1982",
+        "FAS 1903",
+        "IFT 1901",
+        "MAT 1903",
+        "MAT 1905",
+        "MAT 1923",
+        "PHY 1901",
+        "PHY 1902"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Formation en statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "STT 1901",
+        "STT 1903"
+      ],
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Démarche intellectuelle",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "FAS 1901",
+        "PHI 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Formation en arts et lettres",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "FRA 1903",
+        "FRA 1904",
+        "HAR 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Formation en langue anglaise",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1901A",
+        "ANG 1902",
+        "ANG 1903",
+        "ANG 1904"
+      ],
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Formation en sciences humaines et sociales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANT 1902",
+        "ECN 1901",
+        "HST 1901",
+        "POL 1901",
+        "PSY 1901",
+        "REL 1901",
+        "SOL 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Formation en sciences",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "BIO 1953",
+        "BIO 1954",
+        "CHM 1963",
+        "CHM 1982",
+        "FAS 1903",
+        "IFT 1901",
+        "MAT 1903",
+        "MAT 1905",
+        "MAT 1923",
+        "PHY 1901",
+        "PHY 1902"
+      ],
+      "notes": []
+    },
+    {
+      "id": "72F",
+      "cle": "72/72F",
+      "segment": "72",
+      "nom": "Formation en statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "STT 1901",
+        "STT 1903"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Démarche intellectuelle",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "FAS 1901",
+        "FAS 1903"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Formation en biologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIO 1953",
+        "BIO 1954"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Formation en chimie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CHM 1963",
+        "CHM 1982"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Formation en mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "MAT 1903",
+        "MAT 1905",
+        "MAT 1923"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Formation en statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "STT 1901",
+        "STT 1903"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73F",
+      "cle": "73/73F",
+      "segment": "73",
+      "nom": "Formation en physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PHY 1901",
+        "PHY 1902"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73G",
+      "cle": "73/73G",
+      "segment": "73",
+      "nom": "Formation en informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "IFT 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73H",
+      "cle": "73/73H",
+      "segment": "73",
+      "nom": "Formation en arts et lettres",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "FRA 1903",
+        "FRA 1904",
+        "HAR 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73I",
+      "cle": "73/73I",
+      "segment": "73",
+      "nom": "Formation en sciences humaines et sociales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 1902",
+        "ECN 1901",
+        "HST 1901",
+        "POL 1901",
+        "PSY 1901",
+        "REL 1901",
+        "SOL 1901"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73J",
+      "cle": "73/73J",
+      "segment": "73",
+      "nom": "Formation en langue anglaise",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANG 1901A",
+        "ANG 1902",
+        "ANG 1903",
+        "ANG 1904"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A25)\nL'année préparatoire comporte 24 crédits. Elle est offerte selon trois orientations:\n- orientation sciences humaines et sociales (segment 71)\n- orientation arts et lettres (segment 72)\n- orientation sciences (segment 73).",
+    "Segment 71 Propre à l'orientation sciences humaines et sociales — Les crédits de l'Orientation sont répartis de la façon suivante: 6 crédits obligatoires et 18 crédits à option.",
+    "Segment 72 Propre à l'orientation arts et lettres — Les crédits de l'Orientation sont répartis de la façon suivante: 15 crédits obligatoires et 9 crédits à option.",
+    "Segment 73 Propre à l'orientation sciences — Les crédits de l'Orientation sont répartis de la façon suivante: 6 crédits obligatoires et 18 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/annee-preparatoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:49.172Z"
+}

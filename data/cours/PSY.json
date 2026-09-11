@@ -1,0 +1,1454 @@
+{
+  "PSY 1004": {
+    "code": "PSY 1004",
+    "titre": "Analyses quantitatives en psychologie 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Statistiques descriptives et inférentielles. Distribution normale. Tests d'hypothèses. Corrélation et régression. Test t. ANOVA à un facteur. Tests non paramétriques associés. Apprentissage du logiciel R pour l’application des notions apprises.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1004/",
+    "scrapeISO": "2026-09-11T11:30:48.406Z"
+  },
+  "PSY 1006": {
+    "code": "PSY 1006",
+    "titre": "Méthodologie scientifique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes de recherche. Problématique, hypothèse, variables et contrôle. Principes éthiques. Plans de recherche. Cueillette des données. Analyse et interprétation. Analyse d'articles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY1006/PSE1205/REI1130",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1006/",
+    "scrapeISO": "2026-09-11T11:30:49.621Z"
+  },
+  "PSY 2003": {
+    "code": "PSY 2003",
+    "titre": "Introduction à la psychométrie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Instruments de mesure en psychologie: grilles d'observation, questionnaires, tests, mesures psychophysiologiques, etc. Caractéristiques des mesures: validité, fidélité, etc. Réalisation d’un projet de création et validation d’un outil psychométrique.",
+    "prealablesBrut": "(PSY1004 ou SOL1020) et PSY1006",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "PSY 1004"
+            },
+            {
+              "genre": "cours",
+              "code": "SOL 1020"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1006"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY2003/PSE2202",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2003/",
+    "scrapeISO": "2026-09-11T11:30:51.241Z"
+  },
+  "PSY 3022": {
+    "code": "PSY 3022",
+    "titre": "Histoire critique de la psychologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Contexte d'origine. Impact des écoles de psychologie. Débats avec la psychanalyse et la phénoménologie. Relations interdisciplinaires. Nouveaux horizons catégoriels.",
+    "prealablesBrut": "Avoir complété un minimum de 30 crédits dans les programmes :1-183-1-0 ou 1-195-1-0 ou 1-195-2-0 ou 1-220-1-0 ou 1-220-1-2 ou 1-220-1-9 ou 1-220-2-0 ou 1-615-1-2 ou 1-615-2-1 OU avoir complété un minimum de 60 crédits dans 1-257-1-0.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété un minimum de 30 crédits dans les programmes :1-183-1-0 ou 1-195-1-0 ou 1-195-2-0 ou 1-220-1-0 ou 1-220-1-2 ou 1-220-1-9 ou 1-220-2-0 ou 1-615-1-2 ou 1-615-2-1 OU avoir complété un minimum de 60 crédits dans 1-257-1-0."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3022/",
+    "scrapeISO": "2026-09-11T11:30:54.065Z"
+  },
+  "PSY 1035": {
+    "code": "PSY 1035",
+    "titre": "Psychologie physiologique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction. Techniques en psychophysiologie. Anatomie. Micro-anatomie et électrophysiologie. Les systèmes sensoriels et moteurs. La motivation et les émotions. Le sommeil et l'éveil. L'apprentissage et la mémoire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSE2201/PSY1035/PSL3062/PSY1048",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1035/",
+    "scrapeISO": "2026-09-11T11:30:55.707Z"
+  },
+  "PSY 2055": {
+    "code": "PSY 2055",
+    "titre": "Psychologie de la perception",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principales problématiques : perspective historique et théories contemporaines. Processus perceptifs de la perception de l'environnement (espace, forme, mouvement) : analyse phénoménale et étude comparative des diverses approches et interprétations.",
+    "prealablesBrut": "PSY1006",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1006"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2055/",
+    "scrapeISO": "2026-09-11T11:30:58.128Z"
+  },
+  "PSY 2065": {
+    "code": "PSY 2065",
+    "titre": "Processus cognitifs 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des processus attentionnels et mnésiques de l'être humain. Aperçu des principaux résultats et des principales théories concernant l'acquisition, la rétention et la récupération des connaissances et des souvenirs.",
+    "prealablesBrut": "PSY1006 ou être étudiant du programme 1-530-1-0",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "PSY1006 ou être étudiant du programme 1-530-1-0"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2065/",
+    "scrapeISO": "2026-09-11T11:30:58.249Z"
+  },
+  "PSY 3032": {
+    "code": "PSY 3032",
+    "titre": "Neuropsychologie humaine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Dommages cérébraux et leurs effets. Expérience de cerveau divisé. Apraxies, aphasies. Intégration théorique des données expérimentales.",
+    "prealablesBrut": "PSY1035 ou PSY1048 ou NSC1002 ou SBM2007",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PSY 1035"
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1048"
+        },
+        {
+          "genre": "cours",
+          "code": "NSC 1002"
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3032/",
+    "scrapeISO": "2026-09-11T11:31:01.622Z"
+  },
+  "PSY 1085": {
+    "code": "PSY 1085",
+    "titre": "L'apprentissage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction historique à l'évolution de la problématique de l'apprentissage. Conditionnement classique et instrumental. Notion de renforcement, généralisation, discrimination, transfert, etc. Équivalent : PSE2219",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1085/",
+    "scrapeISO": "2026-09-11T11:31:03.187Z"
+  },
+  "PSY 1095": {
+    "code": "PSY 1095",
+    "titre": "Développement de l'enfant",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Développement physique, cognitif, social et affectif au cours de l'enfance. Le développement prénatal, la petite enfance, les périodes préscolaire et scolaire. Principales théories en psychologie du développement.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSE1201/PSY1095/PSY1961",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1095/",
+    "scrapeISO": "2026-09-11T11:31:03.310Z"
+  },
+  "PSY 1045": {
+    "code": "PSY 1045",
+    "titre": "Motivation et émotion",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux concepts de motivation et d'émotion. Principales théories explicatives. Modèles et méthodes. La réaction émotionnelle. La motivation humaine individuelle et sociale. Les comportements intrinsèquement motivés.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1045/",
+    "scrapeISO": "2026-09-11T11:31:06.632Z"
+  },
+  "PSY 1075": {
+    "code": "PSY 1075",
+    "titre": "Psychologie sociale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théories, méthodes et postulats de base. Influence des facteurs sociaux sur l'individu. Processus interpersonnels. Processus de groupe. Psychologie sociale et problèmes contemporains.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1075/",
+    "scrapeISO": "2026-09-11T11:31:08.362Z"
+  },
+  "PSY 1105": {
+    "code": "PSY 1105",
+    "titre": "Psychologie de la personnalité",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Problématique du champ. Déterminants biologiques et culturels. Modèles psychanalytique, behavioral et phénoménologique : divergences et convergences. Tendances nouvelles. Horizon anthropologique contemporain.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-1105/",
+    "scrapeISO": "2026-09-11T11:31:08.468Z"
+  },
+  "PSY 2115": {
+    "code": "PSY 2115",
+    "titre": "Psychopathologie: introduction",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Psychopathologie, perspective historique. Modèles dynamique, behavioral. Milieux sociopathologiques. Pathophysiologie.",
+    "prealablesBrut": "PSY1006 ou SVS1341",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PSY 1006"
+        },
+        {
+          "genre": "cours",
+          "code": "SVS 1341"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2115/",
+    "scrapeISO": "2026-09-11T11:31:11.349Z"
+  },
+  "PSY 2128": {
+    "code": "PSY 2128",
+    "titre": "Psychologie et monde du travail",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principaux apports de la psychologie contemporaine au monde du travail.",
+    "prealablesBrut": "PSY1006 et PSY1075",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PSY 1006"
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1075"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2128/",
+    "scrapeISO": "2026-09-11T11:31:13.480Z"
+  },
+  "PSY 2093": {
+    "code": "PSY 2093",
+    "titre": "Adolescence",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse des tâches génétiques propres à l'adolescence : le développement pubertaire, l'évolution de la socialisation, l'accès à l'identité psychosociale. Psychopathologie propre à l'adolescence.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY1966/PSY3093/PSY2093/PSE1203",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2093/",
+    "scrapeISO": "2026-09-11T11:31:14.894Z"
+  },
+  "PSY 2254": {
+    "code": "PSY 2254",
+    "titre": "Maturité et vieillesse",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Points sur les connaissances psychologiques en rapport avec la maturité et la vieillesse. Les acquis et les pertes de ces périodes de la vie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY3254/PSY2254",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2254/",
+    "scrapeISO": "2026-09-11T11:31:15.055Z"
+  },
+  "PSY 2071": {
+    "code": "PSY 2071",
+    "titre": "Relations interpersonnelles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perception de l'autre. Processus d'affiliation. Effet des premières rencontres. Développement, maintien et fin des relations d'amitié et d'amour. Examen des principales théories et méthodes dans l'étude des relations interpersonnelles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY1951/PSY3071/PSY2071",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2071/",
+    "scrapeISO": "2026-09-11T11:31:17.465Z"
+  },
+  "PSY 2084": {
+    "code": "PSY 2084",
+    "titre": "Identités et interactions sociales",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Identités sociales dans les sociétés modernes. Identité, processus sociocognitifs, variables sociales affectant les relations interculturelles. Les nouveaux arrivants et leur société d'accueil. Psychologie et relations interculturelles positives.",
+    "prealablesBrut": "PSY1075",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1075"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2084/",
+    "scrapeISO": "2026-09-11T11:31:18.904Z"
+  },
+  "PSY 3073": {
+    "code": "PSY 3073",
+    "titre": "Psychologie des groupes et équipes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse du comportement social dans les groupes restreints et les organisations : processus d'interactions et de communications en jeu, élaboration de structures et cultures spécifiques.",
+    "prealablesBrut": "PSY2128",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2128"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3073/",
+    "scrapeISO": "2026-09-11T11:31:20.188Z"
+  },
+  "PSY 3119": {
+    "code": "PSY 3119",
+    "titre": "Psychologie communautaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stratégies d'intervention et de prévention de problèmes sociaux comme les mauvais traitements envers les enfants, les problèmes de santé mentale et le suicide, à la lumière des théories et méthodes de recherche en psychologie communautaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3119/",
+    "scrapeISO": "2026-09-11T11:31:22.100Z"
+  },
+  "PSY 3033": {
+    "code": "PSY 3033",
+    "titre": "Neuropsychologie sensorielle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Traitement de l'information dans les systèmes sensoriels : organisation microscopique et microphysiologique. Effets de lésions partielles ou totales. Intégration théorique des données expérimentales.",
+    "prealablesBrut": "(PSY1035 ET PSY2055) OU (PSY1048 ET PSY2055) OU SBM2007",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "PSY 1035"
+            },
+            {
+              "genre": "cours",
+              "code": "PSY 2055"
+            }
+          ]
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "PSY 1048"
+            },
+            {
+              "genre": "cours",
+              "code": "PSY 2055"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3033/",
+    "scrapeISO": "2026-09-11T11:31:26.752Z"
+  },
+  "PSY 3035": {
+    "code": "PSY 3035",
+    "titre": "Psychopharmacologie : introduction",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Description des effets physiologiques et psychologiques des principales classes de drogues psychotropes. Évaluation critique (méthodologique et déontologique) de la recherche et des connaissances actuelles en psychopharmacologie.",
+    "prealablesBrut": "(NSC2001 et NSC2002) ou PSY1035 ou PSY1048 ou SBM2007",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "NSC 2001"
+            },
+            {
+              "genre": "cours",
+              "code": "NSC 2002"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1035"
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1048"
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY3035/TXM1221/TXM1221D",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3035/",
+    "scrapeISO": "2026-09-11T11:31:29.242Z"
+  },
+  "PSY 3036": {
+    "code": "PSY 3036",
+    "titre": "Hormones, stress et comportement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Bases de neuroendocrinologie. Mesures des différentes hormones et de leurs effets sur le cerveau. Hormones, stress et humeur. Hormones, genre et sexe. Hormones et mémoire. Hormones et comportement parental. Hormones et développement de l'enfant.",
+    "prealablesBrut": "PSY1035 OU PSY1048",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PSY 1035"
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1048"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3036/",
+    "scrapeISO": "2026-09-11T11:31:29.391Z"
+  },
+  "PSY 3063": {
+    "code": "PSY 3063",
+    "titre": "Processus cognitifs 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des processus impliqués dans le langage et la pensée humaine. Aperçu des principaux résultats et des principales théories concernant la compréhension du langage, la résolution de problèmes et le raisonnement.",
+    "prealablesBrut": "PSY2065",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2065"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3063/",
+    "scrapeISO": "2026-09-11T11:31:32.372Z"
+  },
+  "PSY 3083": {
+    "code": "PSY 3083",
+    "titre": "Mémoire humaine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principales approches à l'étude de la mémoire. Système de traitement, d'entreposage, de recouvrement d'information. Mémoire à court terme, à long terme, épisodique, sémantique. Mnémotechniques, plans, scripts et schémas. Théories de l'oubli.",
+    "prealablesBrut": "PSY2065",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2065"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3083/",
+    "scrapeISO": "2026-09-11T11:31:32.465Z"
+  },
+  "PSY 3088": {
+    "code": "PSY 3088",
+    "titre": "Neuroscience sociale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Processus de traitement des informations sociales et méthodes utilisées. Cognition et perception sociale. Prise de décisions. Neuroscience culturelle. Normes et hiérarchie sociales. Théorie de l'esprit. Empathie. Moralité. Neuroscience politique.",
+    "prealablesBrut": "(PSY1035 ou PSY1048) et PSY1075",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "PSY 1035"
+            },
+            {
+              "genre": "cours",
+              "code": "PSY 1048"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1075"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3088/",
+    "scrapeISO": "2026-09-11T11:31:35.469Z"
+  },
+  "PSY 2098": {
+    "code": "PSY 2098",
+    "titre": "Sexualité et cycle de vie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Développement de la sexualité chez l'être humain aux différentes étapes de la vie : enfance, adolescence, maturité, troisième âge. Perspectives biologique, psychosociale et anthropologique. État de la recherche sur le comportement sexuel humain.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2098/",
+    "scrapeISO": "2026-09-11T11:31:38.050Z"
+  },
+  "PSY 3090": {
+    "code": "PSY 3090",
+    "titre": "Développement social et cognitif 0-5 ans",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Grands courants empiriques actuels dans le domaine du développement social et cognitif au cours de la petite enfance. Pratiques parentales et attachement. Influences familiales, biologiques et cognitives sur le développement socio-affectif.",
+    "prealablesBrut": "PSY1095",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1095"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3090/",
+    "scrapeISO": "2026-09-11T11:31:40.533Z"
+  },
+  "PSY 3099": {
+    "code": "PSY 3099",
+    "titre": "Développement familial",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts/théories sur le parentage. Les familles et leurs enjeux dans divers contextes : historiques, structures, transitions, et cycles de vie familiaux. Autres particularités : paternité, homoparentalité, adoption, familles vulnérables/résilientes.",
+    "prealablesBrut": "PSY 1095",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1095"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3099/",
+    "scrapeISO": "2026-09-11T11:31:42.455Z"
+  },
+  "PSY 2044": {
+    "code": "PSY 2044",
+    "titre": "Stress et anxiété",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principales approches dans l'étude du stress et de l'anxiété. Composantes cognitives, comportementales et psychophysiologiques. Anxiété normale et pathologique. Principes de base : gestion du stress et traitement de l'anxiété.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY1989/PSY2044",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2044/",
+    "scrapeISO": "2026-09-11T11:31:44.575Z"
+  },
+  "PSY 2253": {
+    "code": "PSY 2253",
+    "titre": "Psychologie évolutionniste",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principaux apports de la théorie de l'évolution à la psychologie. Le problème de l'inné et de l'acquis. L'influence des déterminants biologiques dans le comportement.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2253/",
+    "scrapeISO": "2026-09-11T11:31:45.899Z"
+  },
+  "PSY 3106": {
+    "code": "PSY 3106",
+    "titre": "La psychologie du rêve",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perspective historique, théories, fonctions, données expérimentales, troubles oniriques, applications cliniques. Liens avec le développement humain, la personnalité, la psychopathologie et la psychophysiologie.",
+    "prealablesBrut": "(PSY1035 et PSY1105) ou être inscrit au programme 2-220-2-1",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "(PSY1035 et PSY1105) ou être inscrit au programme 2-220-2-1"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "SME3030/PSY3106",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3106/",
+    "scrapeISO": "2026-09-11T11:31:47.902Z"
+  },
+  "PSY 3247": {
+    "code": "PSY 3247",
+    "titre": "Psychologie de l'environnement et du climat",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Influences de l’environnement. Environnement physique. Changements climatiques. Éco-anxiété et émotions climatiques. Processus psychologiques. Méthodes de recherche.",
+    "prealablesBrut": "PSY1006",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1006"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3247/",
+    "scrapeISO": "2026-09-11T11:31:49.712Z"
+  },
+  "PSY 3257": {
+    "code": "PSY 3257",
+    "titre": "Personnalité 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude approfondie des principales théories de la personnalité. Applications à la compréhension des comportements.",
+    "prealablesBrut": "PSY1105",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1105"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3257/",
+    "scrapeISO": "2026-09-11T11:31:50.937Z"
+  },
+  "PSY 3258": {
+    "code": "PSY 3258",
+    "titre": "Psychopathologie 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Études approfondies des principaux modèles actuels en psychopathologie. Applications à la prévention et au traitement.",
+    "prealablesBrut": "PSY2115",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2115"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3258/",
+    "scrapeISO": "2026-09-11T11:31:51.089Z"
+  },
+  "PSY 3260": {
+    "code": "PSY 3260",
+    "titre": "Théorie psychanalytique : Freud et après",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modèle freudien classique du fonctionnement psychique. Principaux successeurs de Freud. Raccordements avec les autres disciplines modernes de l'esprit.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3260/",
+    "scrapeISO": "2026-09-11T11:31:53.924Z"
+  },
+  "PSY 2048": {
+    "code": "PSY 2048",
+    "titre": "Psychologie de la santé",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Influence des facteurs psychologiques sur la santé physique. Comportements touchant la santé (p.ex. tabagisme, activité physique). Conceptions du stress et vulnérabilité. Rôle du psychologue dans la maladie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2048/",
+    "scrapeISO": "2026-09-11T11:31:56.108Z"
+  },
+  "PSY 2226": {
+    "code": "PSY 2226",
+    "titre": "Modèles d'intervention",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation des principaux modèles d'intervention (psychodynamique, behavioral, expérientiel, systémique). Aperçu historique. Étude des postulats de base et de la problématique selon une grille d'analyse critique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2226/",
+    "scrapeISO": "2026-09-11T11:31:56.242Z"
+  },
+  "PSY 3037": {
+    "code": "PSY 3037",
+    "titre": "Introduction aux dépendances",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fondements, définitions, symptomatologie, épidémiologie, modèles théoriques et étiologiques, et traitement des dépendances de diverses natures (p.ex., substances, jeu pathologique, cyberdépendance, sexualité compulsive). Remarque : il est recommandé d’avoir complété le cours PSY2115 avant de suivre ce cours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3037/",
+    "scrapeISO": "2026-09-11T11:31:59.217Z"
+  },
+  "PSY 3114": {
+    "code": "PSY 3114",
+    "titre": "Les troubles mentaux graves",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les hypothèses biologiques de l'origine de la maladie mentale. Importance et évolution historique. Les recherches contemporaines. L'influence des facteurs héréditaires. Intégration des hypothèses biologiques et psychologiques.",
+    "prealablesBrut": "PSY2115",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2115"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3114/",
+    "scrapeISO": "2026-09-11T11:31:59.374Z"
+  },
+  "PSY 3129": {
+    "code": "PSY 3129",
+    "titre": "Méthodes et techniques d'entrevues",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Habiletés fondamentales d'entretien psychologique. Étapes du processus thérapeutique. Résultats des recherches sur les habiletés d'intervention. Mise en application.",
+    "prealablesBrut": "PSY2115",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2115"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CRI2811/PSY3129",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3129/",
+    "scrapeISO": "2026-09-11T11:32:02.048Z"
+  },
+  "PSY 3249": {
+    "code": "PSY 3249",
+    "titre": "Violence familiale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts, théories et grands thèmes associés à l'étude de la violence au sein de la famille. Violence conjugale, mauvais traitements envers les enfants, cycle de la violence, analyse des déterminants et des conséquences. Équivalents: PSE3212/PSY3249",
+    "prealablesBrut": "PSY1075",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1075"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3249/",
+    "scrapeISO": "2026-09-11T11:32:04.289Z"
+  },
+  "PSY 3259": {
+    "code": "PSY 3259",
+    "titre": "Psychologie légale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de l'interface entre la psychologie et le droit. Les rôles du psychologue dans le système judiciaire: dans l'enquête, à la cour de justice, durant l'incarcération et lors de la réinsertion sociale.",
+    "prealablesBrut": "PSY1075",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1075"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3259/",
+    "scrapeISO": "2026-09-11T11:32:05.532Z"
+  },
+  "PSY 3273": {
+    "code": "PSY 3273",
+    "titre": "Neurodiversité",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Bases conceptuelles et définitions de la neurodiversité. La neurodiversité au cours de la vie. État de la recherche. État de l’action sociale. Enjeux contemporains.",
+    "prealablesBrut": "PSY2115",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2115"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3273/",
+    "scrapeISO": "2026-09-11T11:32:07.317Z"
+  },
+  "PSY 2007": {
+    "code": "PSY 2007",
+    "titre": "Laboratoire 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Application des notions fondamentales de la méthodologie scientifique par la réalisation d'une recherche dans un domaine particulier. Revue de documentation. Expérimentation. Séminaire de recherche et rédaction d'un rapport. Cours équivalent : NCM2200.",
+    "prealablesBrut": "PSY1004 ET PSY1006",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PSY 1004"
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1006"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-2007/",
+    "scrapeISO": "2026-09-11T11:32:11.425Z"
+  },
+  "PSY 3008": {
+    "code": "PSY 3008",
+    "titre": "Laboratoire 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Revue de la littérature sur un problème pertinent au domaine de recherche choisi en psychologie, réalisation d'une recherche, séminaires de recherche et rédaction d'un rapport.",
+    "prealablesBrut": "PSY2007 ou NCM2200 ou LNG3160",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PSY 2007"
+        },
+        {
+          "genre": "cours",
+          "code": "NCM 2200"
+        },
+        {
+          "genre": "cours",
+          "code": "LNG 3160"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3008/",
+    "scrapeISO": "2026-09-11T11:32:11.589Z"
+  },
+  "PSY 3009": {
+    "code": "PSY 3009",
+    "titre": "Laboratoire 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Revue de la littérature sur un problème pertinent au domaine de recherche choisi en psychologie, réalisation d'une recherche, séminaires de recherche et rédaction d'un rapport.",
+    "prealablesBrut": "PSY3008",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 3008"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3009/",
+    "scrapeISO": "2026-09-11T11:32:14.749Z"
+  },
+  "PSY 3204": {
+    "code": "PSY 3204",
+    "titre": "Analyses quantitatives en psychologie 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyses quantitatives univariées. Analyses de variance (à deux facteurs, à mesures répétées, mixtes). Analyses de covariance. Régression multiple. Tests non paramétriques associés. Apprentissage du logiciel R pour l’application des notions apprises.",
+    "prealablesBrut": "PSY1004",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 1004"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PSY6019/PSY3204",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3204/",
+    "scrapeISO": "2026-09-11T11:32:14.909Z"
+  },
+  "PSY 3913": {
+    "code": "PSY 3913",
+    "titre": "IA, psychologie et neuroscience cognitive",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l’IA. Concepts clés de l'IA et ses applications en psychologie et en neuroscience cognitive. Remarques : intelligence artificielle (IA). Aux cycles supérieurs ainsi qu’au cheminement honor du 1-220-1-2, vous devez suivre le cours PSY6913.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3913/",
+    "scrapeISO": "2026-09-11T11:32:17.859Z"
+  },
+  "PSY 3298": {
+    "code": "PSY 3298",
+    "titre": "Stage d'initiation à la psychologie 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage d'initiation d'une durée de 135 heures dans un milieu de travail choisi par l'étudiant et approuvé par la direction du département. Observation des activités professionnelles et préparation d'un rapport de stage analytique. Remarque : Les stages PSY3298 et PSY3299 sont obligatoirement consécutifs.",
+    "prealablesBrut": "PSY2115",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 2115"
+    },
+    "concomitantsBrut": "PSY3298 et PSY2226 et PSY3129",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3298/",
+    "scrapeISO": "2026-09-11T11:32:19.064Z"
+  },
+  "PSY 3299": {
+    "code": "PSY 3299",
+    "titre": "Stage d'initiation à la psychologie 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage d'initiation d'une durée de 135 heures dans un milieu de travail choisi par l'étudiant et approuvé par la direction du département. Observation des activités professionnelles et préparation d'un rapport de stage analytique. Remarque : Les stages PSY3298 et PSY3299 sont obligatoirement consécutifs.",
+    "prealablesBrut": "PSY3298",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 3298"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-3299/",
+    "scrapeISO": "2026-09-11T11:32:20.791Z"
+  },
+  "PSY 40002": {
+    "code": "PSY 40002",
+    "titre": "Projet de recherche honor 2",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Séminaire laboratoire portant sur la planification et l'élaboration d'une recherche avancée en psychologie.",
+    "prealablesBrut": "PSY40001",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSY 40001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-40002/",
+    "scrapeISO": "2026-09-11T11:32:24.571Z"
+  },
+  "PSY 6028": {
+    "code": "PSY 6028",
+    "titre": "Enjeux méthodologiques et éthiques de la recherche",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Problèmes méthodologiques et éthiques dans la production et la diffusion des recherches en psychologie. Science et pseudoscience. Avantages et dangers du journalisme scientifique : libre accès, biais de publication, journaux prédateurs. Cours équivalent : PSY6026",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psy-6028/",
+    "scrapeISO": "2026-09-11T11:32:26.929Z"
+  }
+}

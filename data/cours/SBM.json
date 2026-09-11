@@ -1,0 +1,34 @@
+{
+  "SBM 3200": {
+    "code": "SBM 3200",
+    "titre": "Chronobiologie et sommeil",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Bases anatomiques et physiologie du sommeil et des rythmes biologiques. Méthodes d'investigation. Fonctions physiologiques et psychologiques. Pathologies et approches thérapeutiques.",
+    "prealablesBrut": "SBM2007 OU PSY1035",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        },
+        {
+          "genre": "cours",
+          "code": "PSY 1035"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sbm-3200/",
+    "scrapeISO": "2026-09-11T11:31:36.730Z"
+  }
+}

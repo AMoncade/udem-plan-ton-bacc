@@ -1,0 +1,53 @@
+{
+  "ORA 1900": {
+    "code": "ORA 1900",
+    "titre": "Langue des signes québécoise 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction à la langue des signes du Québec (LSQ). Introduction à la culture sourde. Acquisition d'un lexique de base et des rudiments de la syntaxe de la LSQ. Cours magistraux et travaux pratiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-1900/",
+    "scrapeISO": "2026-09-11T11:36:29.763Z"
+  },
+  "ORA 2900": {
+    "code": "ORA 2900",
+    "titre": "Langue des signes québécoise 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Enrichissement des notions de base de la langue des signes québécoise et de la culture sourde. Cours magistraux et travaux pratiques.",
+    "prealablesBrut": "ORA1900",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORA 1900"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-2900/",
+    "scrapeISO": "2026-09-11T11:36:32.811Z"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "majeure-en-psychologie",
+  "nom": "Majeure en psychologie",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Majeure",
+  "creditsTotal": 60,
+  "exigences": {
+    "brut": "Les crédits de la majeure sont répartis de la façon suivante : 45 crédits obligatoires, 12 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 45,
+      "max": 45
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Histoire et méthode",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PSY 1004",
+        "PSY 1006",
+        "PSY 2003",
+        "PSY 3022"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Bases en neuropsychologie/psychologie cognitive",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PSY 1035",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 3032"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Bases en psychologie développement/apprentissage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PSY 1085",
+        "PSY 1095"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Bases individuelles sociales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "PSY 1045",
+        "PSY 1075",
+        "PSY 1105",
+        "PSY 2115",
+        "PSY 2128"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Psychologie du développement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PSY 2093",
+        "PSY 2254"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Individu, groupe et société",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PSY 2071",
+        "PSY 2084",
+        "PSY 3073",
+        "PSY 3119"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Cours d'approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "NCM 2000",
+        "NCM 2100",
+        "NCM 2200",
+        "PSE 1208",
+        "PSY 2007",
+        "PSY 2044",
+        "PSY 2048",
+        "PSY 2098",
+        "PSY 2226",
+        "PSY 2253",
+        "PSY 3008",
+        "PSY 3033",
+        "PSY 3035",
+        "PSY 3036",
+        "PSY 3063",
+        "PSY 3083",
+        "PSY 3088",
+        "PSY 3090",
+        "PSY 3099",
+        "PSY 3106",
+        "PSY 3114",
+        "PSY 3129",
+        "PSY 3204",
+        "PSY 3249",
+        "PSY 3257",
+        "PSY 3258",
+        "PSY 3259",
+        "PSY 3260"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A20)\nLa majeure comporte 60 crédits.",
+    "Segment 71 — Les crédits de la majeure sont répartis de la façon suivante : 45 crédits obligatoires, 12 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/majeure-en-psychologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:32.380Z"
+}

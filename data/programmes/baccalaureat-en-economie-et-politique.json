@@ -1,0 +1,371 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-economie-et-politique",
+  "nom": "Baccalauréat en économie et politique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Ce programme totalise 27 crédits de cours obligatoire, un minimum de 60 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": null,
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Connaissances théoriques en économie et politique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "POL 1000",
+        "POL 1020",
+        "POL 1600"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Méthodes de recherche en économie et politique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ECN 1070",
+        "ECN 1075",
+        "POL 1100"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Méthodes de recherche quantitative 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ECN 1260",
+        "POL 1803"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Méthodes de recherche quantitative 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ECN 2160",
+        "POL 2809"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Cours d'intégration",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ECN 2311",
+        "EPL 1000",
+        "EPL 3900"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Expérience pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - maximum 6 crédits.",
+      "cours": [
+        "ECN 2995",
+        "ECN 3995",
+        "POL 3240",
+        "POL 3241",
+        "POL 3904"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - maximum 6 crédits.",
+      "cours": [],
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Économie 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "ECN 1350",
+        "ECN 1700",
+        "ECN 1800",
+        "ECN 1967",
+        "ECN 1971"
+      ],
+      "notes": [
+        "Plusieurs cours de niveau 3000 en sciences économiques exigent les préalables suivants : ECN1070, ECN1075, ECN1260, ECN2040, ECN2045, ECN2050 et ECN2055.Une des conditions d'admission à la maîtrise en sciences économiques est la réussite de ces sept cours auxquels il faut ajouter ECN2160."
+      ]
+    },
+    {
+      "id": "71I",
+      "cle": "71/71I",
+      "segment": "71",
+      "nom": "Économie 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "ECN 2015",
+        "ECN 2040",
+        "ECN 2045",
+        "ECN 2050",
+        "ECN 2055",
+        "ECN 2165",
+        "ECN 2230",
+        "ECN 2260",
+        "ECN 2405",
+        "ECN 2450",
+        "ECN 2565",
+        "ECN 2700",
+        "ECN 2800",
+        "ECN 2910",
+        "ECN 2964",
+        "ECN 3013",
+        "ECN 3064",
+        "ECN 3065",
+        "ECN 3105",
+        "ECN 3115",
+        "ECN 3355",
+        "ECN 3405",
+        "ECN 3505",
+        "ECN 3550",
+        "ECN 3565",
+        "ECN 3705",
+        "ECN 3750",
+        "ECN 3801",
+        "ECN 3820",
+        "ECN 3900",
+        "ECN 3910"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71J",
+      "cle": "71/71J",
+      "segment": "71",
+      "nom": "Politique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 24,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 24 crédits, maximum 30 crédits.",
+      "cours": [
+        "POL 1008",
+        "POL 1009",
+        "POL 1200",
+        "POL 1330",
+        "POL 2005",
+        "POL 2007",
+        "POL 2011",
+        "POL 2050",
+        "POL 2090",
+        "POL 2100",
+        "POL 2101",
+        "POL 2102",
+        "POL 2111",
+        "POL 2120",
+        "POL 2140",
+        "POL 2150",
+        "POL 2160",
+        "POL 2170",
+        "POL 2180",
+        "POL 2215",
+        "POL 2250",
+        "POL 2322",
+        "POL 2400",
+        "POL 2403",
+        "POL 2404",
+        "POL 2405",
+        "POL 2410",
+        "POL 2510",
+        "POL 2560",
+        "POL 2602",
+        "POL 2606",
+        "POL 2802",
+        "POL 2806",
+        "POL 2829",
+        "POL 2849",
+        "POL 2850",
+        "POL 2859",
+        "POL 2916",
+        "POL 2917",
+        "POL 3004",
+        "POL 3005",
+        "POL 3006",
+        "POL 3007",
+        "POL 3008",
+        "POL 3009",
+        "POL 3010",
+        "POL 3011",
+        "POL 3013",
+        "POL 3050",
+        "POL 3101",
+        "POL 3102",
+        "POL 3140",
+        "POL 3159",
+        "POL 3175",
+        "POL 3235",
+        "POL 3285",
+        "POL 3286",
+        "POL 3287",
+        "POL 3291",
+        "POL 3292",
+        "POL 3310",
+        "POL 3355",
+        "POL 3370",
+        "POL 3401",
+        "POL 3402",
+        "POL 3481",
+        "POL 3500",
+        "POL 3601",
+        "POL 3602",
+        "POL 3603",
+        "POL 3605",
+        "POL 3721",
+        "POL 3753",
+        "POL 3754",
+        "POL 3807",
+        "POL 3835",
+        "POL 3840",
+        "POL 3849",
+        "POL 3851",
+        "POL 3861",
+        "POL 3870",
+        "POL 3900",
+        "POL 3906",
+        "POL 3908",
+        "POL 3910",
+        "POL 3913",
+        "POL 3917",
+        "POL 3919",
+        "POL 3930"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que les sigles ECN ou POL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A18)\nLe baccalauréat comporte 90 crédits, dont minimalement 33 en science politique et 33 en sciences économiques.\nCe programme n'exige pas de cours préalables en mathématiques. Cependant, il est fortement suggéré pour les étudiants n'ayant pas fait les cours de mathématiques au cégep, ou pour les étudiants internationaux, de prendre les cours MAT1903, MAT1905 et MAT1923 (non crédités et offerts aux sessions d'été, automne et hiver) afin d'acquérir les connaissances nécessaires à la réussite des cours d'économie.",
+    "Segment 71 — Ce programme totalise 27 crédits de cours obligatoire, un minimum de 60 crédits à option et un maximum de 3 crédits au choix. Quels que soient les cours à option choisis, 33 crédits de cours POL et 33 crédits de cours ECN devront avoir été complétés, incluant les cours obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-economie-et-politique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:25.540Z"
+}

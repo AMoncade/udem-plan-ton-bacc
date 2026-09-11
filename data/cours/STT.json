@@ -1,0 +1,414 @@
+{
+  "STT 1700": {
+    "code": "STT 1700",
+    "titre": "Introduction à la statistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Description des données. Production de données. Probabilités. Inférence. Intervalles de confiance et tests d'hypothèses. Données de dénombrement. Tableaux de contingence. Régression linéaire simple. Remarques: Utilisation d'un progiciel.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1700/",
+    "scrapeISO": "2026-09-11T11:16:22.864Z"
+  },
+  "STT 2400": {
+    "code": "STT 2400",
+    "titre": "Régression linéaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthode des moindres carrés. Théorèmes de Gauss-Markov et de Cochran. Estimation et tests d'hypothèses. Résidus et diagnostics. Construction de modèles. Exemples. Remarques: Utilisation du progiciel SAS.",
+    "prealablesBrut": "MAT1600",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1600"
+    },
+    "concomitantsBrut": "STT2700",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2400/",
+    "scrapeISO": "2026-09-11T11:16:35.161Z"
+  },
+  "STT 2700": {
+    "code": "STT 2700",
+    "titre": "Concepts et méthodes en statistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Estimation ponctuelle et par intervalle. Tests d'hypothèses. Méthodes graphiques. Test du khi-deux. Théorie de la décision et inférence bayésienne. Comparaisons de deux échantillons. Lié aux examens CAS et agrément ICA.",
+    "prealablesBrut": "(MAT1720 ou MAT1978) et STT1700",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MAT 1720"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "STT 1700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2700/",
+    "scrapeISO": "2026-09-11T11:16:37.639Z"
+  },
+  "STT 1682": {
+    "code": "STT 1682",
+    "titre": "Progiciels statistiques en actuariat",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation de SAS et R; lecture des données; organisation, gestion et manipulation des données; transformation de variables; chaînes de caractères, dates; instructions de condition et de boucle; procédures graphiques; statistiques descriptives.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1682/",
+    "scrapeISO": "2026-09-11T11:16:43.894Z"
+  },
+  "STT 2000": {
+    "code": "STT 2000",
+    "titre": "Échantillonnage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Sondages élémentaires, empiriques, stratifiés, systématiques, avec probabilités inégales, à deux degrés. Méthodes de Monte-Carlo : création d'échantillons artificiels, simulation et analyse d'exemples.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "STT2000 et STT2700",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2000/",
+    "scrapeISO": "2026-09-11T11:17:03.169Z"
+  },
+  "STT 2105": {
+    "code": "STT 2105",
+    "titre": "Statistique bayésienne",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théorie de la décision, lois a priori et a posteriori, règle de Bayes, rapport de Bayes, loi prédictive, région de prévision, modèle hiérarchique, simulations par chaînes de Markov, échantillonneurs de Gibbs et de Metropolis-Hastings.",
+    "prealablesBrut": "STT2700",
+    "prealables": {
+      "genre": "cours",
+      "code": "STT 2700"
+    },
+    "concomitantsBrut": "MAT2717",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2105/",
+    "scrapeISO": "2026-09-11T11:17:04.645Z"
+  },
+  "STT 3220": {
+    "code": "STT 3220",
+    "titre": "Méthodes de prévision",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Estimation ponctuelle et par intervalle. Tests d'hypothèses. Méthodes graphiques. Test du khi-deux. Théorie de la décision et inférence bayésienne. Comparaisons de deux échantillons.",
+    "prealablesBrut": "STT2400 et STT2700",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "STT 2400"
+        },
+        {
+          "genre": "cours",
+          "code": "STT 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3220/",
+    "scrapeISO": "2026-09-11T11:17:06.269Z"
+  },
+  "STT 3260": {
+    "code": "STT 3260",
+    "titre": "Modèles de survie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fonction de survie. Taux de panne. Modèles paramétriques et non paramétriques pour des données complètes. Estimation. Différents types de censure. Modèle de régression. Applications.",
+    "prealablesBrut": "STT2400 et STT2700",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "STT 2400"
+        },
+        {
+          "genre": "cours",
+          "code": "STT 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3260/",
+    "scrapeISO": "2026-09-11T11:17:06.397Z"
+  },
+  "STT 3410": {
+    "code": "STT 3410",
+    "titre": "Plans et analyses d'expériences",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principes. Assignation au hasard. Répliques. Blocs. Effets fixes et aléatoires. Classification simple. Plans factoriels, à mesures répétées, incomplets. Résidus et diagnostics. Applications. Remarques: Utilisation du progiciel SPSS.",
+    "prealablesBrut": "STT2400 et STT2700",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "STT 2400"
+        },
+        {
+          "genre": "cours",
+          "code": "STT 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3410/",
+    "scrapeISO": "2026-09-11T11:17:08.894Z"
+  },
+  "STT 3510": {
+    "code": "STT 3510",
+    "titre": "Biostatistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Études de cohortes, études transversales, longitudinales, prospectives. Détermination des tailles d'échantillon dans les devis. Fiabilité des mesures.",
+    "prealablesBrut": "STT2700",
+    "prealables": {
+      "genre": "cours",
+      "code": "STT 2700"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3510/",
+    "scrapeISO": "2026-09-11T11:17:10.225Z"
+  },
+  "STT 3781": {
+    "code": "STT 3781",
+    "titre": "Laboratoire de statistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Planification d'expériences et de sondages. Exploration et analyse de données à l'aide de progiciels. Interprétation et communication de résultats.",
+    "prealablesBrut": "STT3410",
+    "prealables": {
+      "genre": "cours",
+      "code": "STT 3410"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3781/",
+    "scrapeISO": "2026-09-11T11:17:12.108Z"
+  },
+  "STT 3790": {
+    "code": "STT 3790",
+    "titre": "Apprentissage statistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Évaluation d'un modèle de régression et sélection de variables. Méthodes de rétrécissement. Modèles linéaires généralisés. Méthode des k plus proches voisins. Arbres de décision. Régression non paramétrique.",
+    "prealablesBrut": "STT2400 et STT2700",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "STT 2400"
+        },
+        {
+          "genre": "cours",
+          "code": "STT 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3790/",
+    "scrapeISO": "2026-09-11T11:17:13.569Z"
+  },
+  "STT 3795": {
+    "code": "STT 3795",
+    "titre": "Fondements théoriques en science des données",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Classification. Réduction de la dimension. Modélisation de relations avec noyaux de similarité. Regroupements. Apprentissage de variétés. Fondements mathématiques et applications d'algorithmes d'apprentissage.",
+    "prealablesBrut": "MAT1400/MAT1600/MAT1720 ou MAT1978",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "MAT1400/MAT1600/MAT1720 ou MAT1978"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3795/",
+    "scrapeISO": "2026-09-11T11:17:13.702Z"
+  },
+  "STT 6516": {
+    "code": "STT 6516",
+    "titre": "Données catégorielles",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Tableaux de contingence à plusieurs dimensions. Mesures d'association. Risque relatif, rapport de cote. Tests exacts et asymptotiques. Régression logistique, de Poisson, multinomiale, logistique cumulative. Modèles log-linéaires. Modèles graphiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-6516/",
+    "scrapeISO": "2026-09-11T11:19:05.757Z"
+  },
+  "STT 4000": {
+    "code": "STT 4000",
+    "titre": "Mémoire de fin d'études",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Un projet est suggéré à chaque étudiant lui permettant de faire une synthèse de ses connaissances en statistique. L'étudiant soumet un rapport et fait un exposé oral à la fin du trimestre.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-4000/",
+    "scrapeISO": "2026-09-11T11:19:06.914Z"
+  }
+}
