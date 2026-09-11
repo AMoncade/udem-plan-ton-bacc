@@ -113,16 +113,33 @@ describe("parsePrealables — disjonction homogène « A OU B »", () => {
   });
 });
 
-describe("parsePrealables — ce qui reste opaque en attendant le relevé du scraper", () => {
+describe("parsePrealables — lu depuis le relevé du scraper (docs/RELEVE-PREALABLES.md)", () => {
+  // Ces trois formes étaient refusées tant qu'on ne savait pas si elles
+  // existaient. Le relevé du 2026-09-11 les a trouvées sur de vraies fiches,
+  // avec des parenthèses TOUJOURS explicites : la précédence est écrite par la
+  // page, pas devinée par le parseur. Détail et données réelles dans
+  // lib/engine/releve.test.ts.
+  it("groupe en tête : « (A OU B) ET C »", () => {
+    expect(parsePrealables("(ACT1240 OU MAT1720) ET STT1700").complet).toBe(true);
+  });
+  it("groupe en queue : « A ET (B OU C) »", () => {
+    expect(parsePrealables("ACT1240 ET (MAT1720 OU STT1700)").complet).toBe(true);
+  });
+  it("point final collé au code", () => {
+    expect(parsePrealables("ACT1240.")).toEqual({
+      complet: true, noeud: { genre: "cours", code: "ACT 1240" },
+    });
+  });
+});
+
+describe("parsePrealables — ce qui reste opaque après le relevé", () => {
   const aRefuser: [string, string][] = [
     ["ACT1240, MAT1720", "une virgule ne dit pas si c'est ET ou OU"],
     ["ACT1240 MAT1720", "deux codes sans connecteur"],
-    ["(ACT1240 OU MAT1720) ET STT1700", "parenthèses : forme jamais observée"],
-    ["ACT1240 ET (MAT1720 OU STT1700)", "parenthèses : forme jamais observée"],
     ["ACT1240 ET MAT1720 OU STT1700", "mélange ET/OU sans parenthèses"],
     ["Avoir réussi 30 crédits", "condition de crédits, en prose"],
     ["ACT1240 concomitant MAT1720", "concomitant : pas encore mécanisé"],
-    ["ACT1240.", "ponctuation collée : on ne nettoie pas à l'aveugle"],
+    ["ACT1240..", "deux points : forme jamais observée, on n'en rogne qu'un"],
   ];
   for (const [brut, pourquoi] of aRefuser) {
     it(`reste opaque et signalé : « ${brut} » (${pourquoi})`, () => {
