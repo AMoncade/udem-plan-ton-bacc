@@ -152,6 +152,24 @@ export interface Bloc {
    * de coupler deux choses sans le dire.
    */
   contenuOuvert: boolean;
+  /**
+   * `true` quand la passe a LU ce bloc et n'y a trouvé ni cours ni prose.
+   *
+   * C'est un CONSTAT, pas un défaut : 50 blocs des 1 088 pages sont réellement
+   * vides à cet endroit, surtout dans les certificats d'études individualisées,
+   * qui par nature ne listent pas leurs cours. Absent — et non `false` — quand
+   * le bloc a du contenu : un `false` sur 5 028 blocs n'apprendrait rien.
+   *
+   * Pourquoi ce champ plutôt que le journal. L'invariant « tout bloc vide est
+   * VU » s'attestait par la présence de la clé dans `data/journal.json`. Or ce
+   * journal est ÉCRASÉ à chaque passe, délibérément — il décrit CETTE passe. Le
+   * chantier scraper l'a mesuré : une passe « cours » l'a fait tomber de 3 488
+   * entrées à 0, puis une autre l'a rempli de 7 794 entrées de cours. Un
+   * invariant sur les blocs devenait donc faux sans qu'une ligne de code ait
+   * changé. L'attestation doit voyager AVEC ce qu'elle atteste, dans le fichier
+   * du programme, dont la passe programmes est le seul écrivain.
+   */
+  videConstate?: boolean;
   /** Prose normative attachée au bloc, conservée telle quelle. Sans ce champ
    *  elle disparaît au scrape (autorisations, conditions, remarques). */
   notes: string[];
@@ -266,6 +284,26 @@ export interface IndexProgrammes {
   /** Sujets présents dans data/cours/ : ["ACT", "MAT", …]. */
   sujets: string[];
   scrapeISO: string;
+  /**
+   * Empreinte du CODE d'extraction qui a produit ces données — somme SHA-256
+   * du contenu de `scripts/scrape/*.ts`, écrite par le scraper à chaque passe.
+   *
+   * POURQUOI CE CHAMP EXISTE. Le 2026-09-11, l'extracteur a appris à lire le
+   * qualificatif qui distingue deux blocs homonymes (commit 4cdde1a, 13 h 28)
+   * et le scrape n'a pas été relancé : `data/` datait de 13 h 09. La suite est
+   * devenue rouge sur « clé de bloc en double 70/70A » — un message qui accuse
+   * la page amont ou l'extracteur, alors que les deux étaient justes. Il a
+   * fallu re-télécharger la page et rejouer l'extracteur dessus pour voir que
+   * seules les DONNÉES étaient en retard.
+   *
+   * `scrapeISO` ne peut pas le dire : il date la passe, pas le code qui l'a
+   * faite. L'empreinte apparie les deux, et `tests/coutures.test.ts` compare
+   * celle-ci à celle du code présent sur le disque.
+   *
+   * Optionnel tant que le chantier scraper ne l'écrit pas : un champ absent
+   * laisse le test se taire plutôt que de fabriquer un échec.
+   */
+  empreinteExtracteur?: string;
 }
 
 export type GenreEntreeJournal = "info" | "manque" | "inattendu" | "erreur";

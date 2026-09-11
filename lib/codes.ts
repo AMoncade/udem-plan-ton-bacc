@@ -50,13 +50,44 @@ export function extraireCodes(texte: string): CodeCours[] {
 /**
  * Clé unique d'un bloc dans un programme.
  *
- * Existe parce que `Bloc.id` n'est PAS unique : la maîtrise en mathématiques
- * porte `MM-Bloc 73A` et `S-Bloc 73A` dans le même segment 73. Deux chantiers
- * qui formateraient cette clé différemment produiraient des audits qui ne se
- * recoupent pas, sans erreur visible — d'où un seul endroit pour la fabriquer.
+ * Existe parce que `Bloc.id` n'est PAS unique — et le segment ne suffit pas non
+ * plus à le rendre unique. Trois familles d'homonymes, toutes MESURÉES sur les
+ * pages de l'UdeM, pas supposées :
+ *
+ *  1. le préfixe de cheminement est DANS l'id : `MM-Bloc 73A` et `S-Bloc 73A`
+ *     coexistent au segment 73 de la maîtrise en mathématiques. `parseTitreBloc`
+ *     le garde, donc l'id les sépare déjà ;
+ *  2. un `<small>` QUALIFIE le bloc : le doctorat en pathologie porte deux
+ *     `Bloc 70A` au segment 70, « Accès direct du B. Sc. au Ph. D. » et « Accès
+ *     de la M. Sc. au Ph. D. ». Le scraper replie ce qualificatif dans l'id ;
+ *  3. le NOM seul discrimine : « Bloc 70D Stage » et « Bloc 70D Travail
+ *     dirigé », même segment, même id, même règle (« Obligatoire - 9 crédits »).
+ *     Quatre programmes en vivent — maîtrise en finance mathématique et
+ *     computationnelle, en évaluation des technologies de la santé, en
+ *     administration des services de santé option administration sociale, en
+ *     sciences vétérinaires option santé publique sans mémoire.
+ *
+ * D'où le `nom` dans la clé. Il y est TOUJOURS, pas seulement quand une
+ * collision existe : une identité qu'on ne fabrique que lorsqu'un doublon se
+ * présente dépend de ce que la page contient ce jour-là, et change sous les
+ * données à la première correction en amont.
+ *
+ * CE QUE ÇA COÛTE, ET POURQUOI C'EST PAYÉ : 3 628 des 5 028 blocs portent un
+ * nom, donc la clé change pour 72 % d'entre eux. Aucun état d'étudiant n'en
+ * dépend — `app/_lib/stockage.ts` garde des codes de cours (`faits`, `plan`) et
+ * `app/_lib/selection.ts` une clé de PARCOURS, jamais une clé de bloc. Le seul
+ * coût est de régénérer `data/`, qui l'est de toute façon.
+ *
+ * Les tirets Unicode sont ramenés à l'ASCII et les espaces réduits : la maîtrise
+ * en évaluation des technologies de la santé écrit « Bloc 70A ST‐TD » avec un
+ * U+2010, qui se lit comme un trait d'union et n'en est pas un. Sans ça, deux
+ * scrapes de la même page peuvent donner deux clés pour un seul bloc.
  */
-export function cleBloc(segment: string, id: string): string {
-  return `${segment}/${id}`;
+export function cleBloc(segment: string, id: string, nom?: string): string {
+  const propre = (t: string): string =>
+    t.replace(/[\u2010-\u2015\u2212]/g, "-").replace(/\s+/g, " ").trim();
+  const suffixe = nom !== undefined && propre(nom) !== "" ? ` — ${propre(nom)}` : "";
+  return `${segment}/${propre(id)}${suffixe}`;
 }
 
 /**

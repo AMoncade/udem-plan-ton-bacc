@@ -14,11 +14,13 @@
  */
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join } from "node:path";
 import { diagnostiquerCours, auditProgramme } from "../lib/engine";
 import { normaliserCode, cleBloc, sujetDeCode } from "../lib/codes";
 import { cleParcours, parcoursDe, projeterOrientation } from "../lib/parcours";
 import type {
+  Bloc,
   Catalogue,
   CodeCours,
   Cours,
@@ -63,6 +65,29 @@ function champsManquants(): string[] {
   return manques;
 }
 
+/**
+ * Empreinte du code d'extraction PRÉSENT sur le disque.
+ *
+ * SHA-256 du contenu de `scripts/scrape/*.ts`, hors fichiers de test (ils ne
+ * changent pas ce que le scraper écrit), pris dans l'ordre alphabétique. Les
+ * fins de ligne sont normalisées : sans ça l'empreinte dépendrait du réglage
+ * `core.autocrlf` de la machine et non du code.
+ *
+ * Le scraper doit calculer la SIENNE de la même façon et la déposer dans
+ * `IndexProgrammes.empreinteExtracteur`. Si les deux formules divergent, le
+ * test de fraîcheur le dit dans son message plutôt que de laisser croire à un
+ * scrape en retard.
+ */
+function empreinteExtracteur(): string {
+  const dir = join(import.meta.dirname, "..", "scripts", "scrape");
+  const h = createHash("sha256");
+  for (const f of readdirSync(dir).filter((x) => x.endsWith(".ts") && !x.endsWith(".test.ts")).sort()) {
+    h.update(f);
+    h.update(readFileSync(join(dir, f), "utf8").replace(/\r\n/g, "\n"));
+  }
+  return h.digest("hex");
+}
+
 const MANQUES = champsManquants();
 const PRET = V2_PRESENTE && MANQUES.length === 0;
 
@@ -80,6 +105,42 @@ function echantillon<T>(liste: T[], n: number): T[] {
 
 const fichiersProgrammes = (): string[] =>
   readdirSync(DIR_PROGRAMMES).filter((f) => f.endsWith(".json")).sort();
+
+/**
+ * Texte du journal, MAIS seulement s'il décrit une passe « programmes ».
+ *
+ * Deux invariants de ce fichier attestent qu'une anomalie a été VUE par sa
+ * présence au journal — un bloc vide, un écart de somme de crédits. Ils ne
+ * valent donc que si le journal décrit la passe qui a produit `data/programmes`.
+ *
+ * Or `data/journal.json` est ÉCRASÉ à chaque passe, délibérément : il décrit la
+ * DERNIÈRE passe, pas l'historique (`scripts/scrape/disposition.ts`). Une passe
+ * « cours » avec `--reprendre` saute les 1 088 programmes, ne journalise aucun
+ * bloc, et le journal tombe à zéro entrée de programme. Mesuré par le chantier
+ * scraper : 3 488 entrées → 0, sans qu'une ligne de test ni de scraper ait
+ * changé.
+ *
+ * Les deux tests deviendraient alors rouges en accusant les données, pour une
+ * raison qui n'est ni dans les données ni dans eux. On refuse donc de mesurer
+ * plutôt que de mal mesurer — et on le dit, au lieu de se sauter en silence :
+ * un invariant qui s'esquive tout seul est la panne que ce fichier combat.
+ */
+function texteJournalDeProgrammes(): string {
+  const journal = existsSync(JOURNAL) ? lire<EntreeJournal[]>(JOURNAL) : [];
+  const slugs = new Set(fichiersProgrammes().map((f) => f.replace(/\.json$/, "")));
+  const deProgrammes = journal.filter((e) => slugs.has(e.sujet.split(" ")[0]));
+  if (deProgrammes.length === 0) {
+    throw new Error(
+      `data/journal.json ne décrit pas une passe « programmes » : aucune de ses ` +
+        `${journal.length} entrées ne porte sur un des ${slugs.size} programmes de ` +
+        `data/programmes/. Le journal est écrasé à chaque passe — une passe ` +
+        `« cours » l'a donc vidé de ce qui atteste les blocs. Relancer une passe ` +
+        `programmes (\`npm run scrape\`) pour que cet invariant redevienne ` +
+        `mesurable. Ce n'est ni un défaut des données ni un défaut du test.`,
+    );
+  }
+  return journal.map((e) => `${e.sujet} ${e.message}`).join("\n");
+}
 
 describe("disposition des données sur disque", () => {
   it("la disposition v2 est en place, sinon tout le reste ne mesure rien", () => {
@@ -113,6 +174,39 @@ describe("disposition des données sur disque", () => {
       );
     }
     expect(MANQUES).toEqual([]);
+  });
+
+  it("les données ont été produites par l'extracteur PRÉSENT sur le disque", () => {
+    // LE DÉFAUT QUE CE TEST ATTRAPE, vécu le 2026-09-11. L'extracteur a appris
+    // à distinguer deux blocs homonymes (commit 4cdde1a, 13 h 28) et le scrape
+    // n'a pas été relancé : `data/` datait de 13 h 09. Le test de collision
+    // ci-dessous est devenu rouge sur « clé de bloc en double 70/70A ».
+    //
+    // Ce message accuse deux innocents. La page amont porte BIEN deux
+    // `Bloc 70A` — vérifié dans son HTML — et l'extracteur courant les
+    // distingue BIEN — vérifié en le rejouant sur la page re-téléchargée.
+    // Seules les données étaient en retard, et rien ne le disait.
+    //
+    // `scrapeISO` ne peut pas le dire : il date la passe, pas le code qui l'a
+    // faite. D'où `empreinteExtracteur`, que le scraper écrit à chaque passe et
+    // qu'on recalcule ici sur le code réellement présent.
+    //
+    // Le test se TAIT quand le champ est absent : tant que le chantier scraper
+    // ne l'écrit pas, fabriquer un échec ferait exactement ce qu'on reproche au
+    // message de collision — désigner un coupable qu'on n'a pas mesuré.
+    const index = lire<IndexProgrammes>(INDEX);
+    if (index.empreinteExtracteur === undefined) return;
+    expect(
+      index.empreinteExtracteur,
+      "Les données de data/ n'ont PAS été produites par le code d'extraction " +
+        "présent sur le disque. Presque toujours : le scrape n'a pas été " +
+        "relancé après un correctif de l'extracteur — lancer `npm run scrape`. " +
+        "Tant que ce n'est pas fait, tout échec des tests de contenu ci-dessous " +
+        "mesure un artefact périmé et n'accuse personne à juste titre. " +
+        "(Autre cause possible : la formule d'empreinte du scraper a divergé de " +
+        "`empreinteExtracteur()` dans ce fichier — les deux doivent hacher les " +
+        "mêmes fichiers dans le même ordre.)",
+    ).toBe(empreinteExtracteur());
   });
 });
 
@@ -212,14 +306,53 @@ describe.skipIf(!PRET)("couture blocs : identité, bornes et contenu", () => {
     // `MM-Bloc 73A` ET `S-Bloc 73A` dans le segment 73. Pendant la validation,
     // un extracteur ancré sur « Bloc » a fusionné 58 cours dans le mauvais
     // bloc, sans lever d'erreur.
+    //
+    // QUAND CE TEST ÉCHOUE, LIRE LE MESSAGE AVANT D'ACCUSER LA PAGE. Une clé en
+    // double a trois causes possibles, et elles ne se corrigent pas au même
+    // endroit :
+    //
+    //   1. les données sont plus vieilles que l'extracteur — le test de
+    //      fraîcheur plus haut le dit ; relancer `npm run scrape` ;
+    //   2. la page porte un DISCRIMINANT que la clé jette. Deux familles
+    //      mesurées sur les 1 088 pages : le `<small>` de qualification
+    //      (« Accès direct du B. Sc. au Ph. D. » contre « Accès de la M. Sc. au
+    //      Ph. D. », doctorat en pathologie) et le NOM dans le `<h4>`
+    //      (« Bloc 70D Stage » contre « Bloc 70D Travail dirigé », maîtrise en
+    //      finance mathématique). Le correctif est dans la fabrication de
+    //      l'identité, pas ici ;
+    //   3. la page répète vraiment deux blocs indiscernables — alors seulement
+    //      c'est l'amont qui est en faute.
+    //
+    // Le message distingue les trois, parce que la première fois il ne le
+    // faisait pas et a envoyé chercher un défaut d'extracteur qui n'existait
+    // pas.
+    const collisions: string[] = [];
     for (const p of programmes()) {
-      const cles = new Set<string>();
+      const vus = new Map<string, Bloc>();
       for (const b of p.blocs) {
-        expect(b.cle, `${p.id} / ${b.id} : clé mal formée`).toBe(cleBloc(b.segment, b.id));
-        expect(cles.has(b.cle), `${p.id} : clé de bloc en double ${b.cle}`).toBe(false);
-        cles.add(b.cle);
+        expect(b.cle, `${p.id} / ${b.id} : clé mal formée`).toBe(cleBloc(b.segment, b.id, b.nom));
+        const jumeau = vus.get(b.cle);
+        if (jumeau === undefined) {
+          vus.set(b.cle, b);
+          continue;
+        }
+        const ecarts: string[] = [];
+        if (jumeau.nom !== b.nom) ecarts.push(`nom « ${jumeau.nom} » ≠ « ${b.nom} »`);
+        if (jumeau.regleBrut !== b.regleBrut) {
+          ecarts.push(`règle « ${jumeau.regleBrut} » ≠ « ${b.regleBrut} »`);
+        }
+        collisions.push(
+          `${p.id} : clé de bloc en double ${b.cle} — ` +
+            (ecarts.length > 0
+              ? `les deux blocs DIFFÈRENT (${ecarts.join(" ; ")}), donc la page porte ` +
+                `un discriminant que la clé jette : corriger la fabrication de ` +
+                `l'identité, pas ce test`
+              : `les deux blocs sont indiscernables dans les données : c'est la page ` +
+                `amont qu'il faut aller lire`),
+        );
       }
     }
+    expect(collisions).toEqual([]);
   });
 
   it("les bornes d'un bloc sont cohérentes", () => {
@@ -246,9 +379,21 @@ describe.skipIf(!PRET)("couture blocs : identité, bornes et contenu", () => {
     // tous deux « Option - maximum 6 crédits » renvoyant aux cours du Centre de
     // langues, sans aucun lien de cours dans le HTML.
     //
-    // L'invariant n'est donc pas « pas de bloc vide » mais « tout bloc vide est
-    // DÉCLARÉ comme tel », par `contenuOuvert`. Un bloc à option vide et non
-    // déclaré reste une page mal lue.
+    // DEUXIÈME version, tombée elle aussi : « tout bloc vide est DÉCLARÉ par
+    // contenuOuvert ». Contre-exemple mesuré sur les 1 088 pages — 50 blocs
+    // n'ont NI cours NI prose, la page est littéralement vide à cet endroit.
+    // Ils se concentrent dans `certificat-detudes-individualisees-es-arts` et
+    // `-es-sciences`, ce qui se comprend : un certificat d'études
+    // individualisées ne liste pas ses cours, ils se choisissent au cas par cas.
+    // `contenuOuvert: false` y est correct — il n'y a pas un contenu décrit
+    // ailleurs, il n'y a rien.
+    //
+    // L'invariant tenable est donc le même que pour les sommes de crédits :
+    // non pas que l'amont soit régulier, mais que TOUT BLOC VIDE SOIT VU. Un
+    // bloc vide journalisé est une donnée constatée ; un bloc vide muet reste
+    // une page mal lue.
+    const texteJournal = texteJournalDeProgrammes();
+    const videsNonVus: string[] = [];
     for (const p of programmes()) {
       for (const b of p.blocs) {
         if (b.cours.length > 0) continue;
@@ -262,12 +407,12 @@ describe.skipIf(!PRET)("couture blocs : identité, bornes et contenu", () => {
           ).toBeGreaterThan(0);
           continue;
         }
-        throw new Error(
-          `${p.id} / ${b.cle} (${b.regleBrut}) : bloc ${b.regle.type} sans aucun ` +
-            `cours et sans contenuOuvert`,
-        );
+        if (!texteJournal.includes(b.cle) && !texteJournal.includes(p.id)) {
+          videsNonVus.push(`${p.id} / ${b.cle} (${b.regleBrut}) : bloc vide et muet`);
+        }
       }
     }
+    expect(videsNonVus).toEqual([]);
   });
 });
 
@@ -340,8 +485,7 @@ describe.skipIf(!PRET)("couture moteur <-> données réelles", () => {
     // soit VU. Exiger la perfection de l'amont bloquerait sur une donnée qu'on
     // ne maîtrise pas ; tolérer en silence est exactement ce que ce projet
     // refuse. Donc : chaque écart doit apparaître dans le journal.
-    const journal = existsSync(JOURNAL) ? lire<EntreeJournal[]>(JOURNAL) : [];
-    const texteJournal = journal.map((e) => `${e.sujet} ${e.message}`).join("\n");
+    const texteJournal = texteJournalDeProgrammes();
     let compares = 0;
     const ecartsNonJournalises: string[] = [];
     for (const f of echantillon(fichiersProgrammes(), 60)) {

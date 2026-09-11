@@ -126,6 +126,33 @@ describe("cleBloc", () => {
     expect(cleBloc("73", "MM-Bloc 73A")).not.toBe(cleBloc("73", "S-Bloc 73A"));
     expect(cleBloc("75", "75C")).toBe("75/75C");
   });
+
+  it("sépare deux blocs que seul le NOM distingue", () => {
+    // Mesuré sur la maîtrise en finance mathématique et computationnelle :
+    // « Bloc 70D Stage » et « Bloc 70D Travail dirigé », même segment, même id,
+    // même règle (« Obligatoire - 9 crédits »). Sans le nom dans la clé, les
+    // deux fusionnent — et c'est l'échec que le contrat documente déjà, 58 cours
+    // versés dans le mauvais bloc sans qu'aucune erreur ne se lève.
+    expect(cleBloc("70", "70D", "Stage")).not.toBe(cleBloc("70", "70D", "Travail dirigé"));
+    expect(cleBloc("70", "70D", "Stage")).toBe("70/70D — Stage");
+  });
+
+  it("ramène les tirets Unicode à l'ASCII et réduit les espaces", () => {
+    // La maîtrise en évaluation des technologies de la santé écrit
+    // « Bloc 70A ST‐TD » avec un U+2010 : ça se lit comme un trait d'union et
+    // n'en est pas un. Sans normalisation, deux scrapes de la même page peuvent
+    // donner deux clés pour un seul bloc — une collision inverse, invisible.
+    expect(cleBloc("70", "70A", "ST\u2010TD")).toBe(cleBloc("70", "70A", "ST-TD"));
+    expect(cleBloc("70", "70A", "  Deux   espaces  ")).toBe("70/70A — Deux espaces");
+  });
+
+  it("laisse la clé inchangée quand le bloc n'a pas de nom", () => {
+    // 1 400 blocs sur 5 028 n'ont pas de nom : leur clé ne doit pas gagner un
+    // séparateur vide, sinon la forme diffère pour rien.
+    expect(cleBloc("75", "75C", "")).toBe("75/75C");
+    expect(cleBloc("75", "75C", undefined)).toBe("75/75C");
+    expect(cleBloc("75", "75C")).toBe("75/75C");
+  });
 });
 
 describe("sujetDeCode", () => {
