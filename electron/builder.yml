@@ -1,0 +1,80 @@
+# Configuration electron-builder.
+#
+# Volontairement ici et pas à la racine : le périmètre de cette session est
+# `electron/**`, `next.config.ts` et les seuls scripts `desktop:` de
+# `package.json`. Les scripts passent `--config electron/builder.yml`.
+
+appId: com.moncade.plantonbacc
+productName: Plan ton bacc
+copyright: Projet personnel — sans affiliation avec l'Université de Montréal
+
+directories:
+  # `build/` est déjà ignoré par .gitignore (« # production /build »), donc
+  # l'installateur produit ne salit pas `git status` — et .gitignore, qui
+  # n'appartient pas à cette session, n'a pas eu à être touché.
+  output: build/desktop
+  # Par défaut electron-builder lit ses ressources dans `build/`, ce qui
+  # entrerait en collision avec la sortie ci-dessus.
+  buildResources: electron/ressources
+
+# `main`, `description` et `author` sont injectés dans le package.json de
+# l'app EMPAQUETÉE seulement. Le `package.json` du dépôt appartient à la
+# session intégratrice : cette session n'y ajoute que ses devDependencies et
+# ses scripts `desktop:`, comme convenu.
+extraMetadata:
+  main: electron/main.cjs
+  description: Planificateur de parcours universitaire — préalables, audit des blocs et offre par trimestre
+  author:
+    name: AMoncade
+    email: adrien@moncade.com
+
+# Ce qui entre dans l'archive. `out/` est l'export Next, `data/` le catalogue.
+# `node_modules` est exclu : l'export statique est autonome, et les dépendances
+# de build (next, react) n'ont rien à faire dans l'app livrée.
+#
+# `data/**` est embarqué EN ENTIER, sans trier. Décider que tel sous-dossier
+# (`fixtures/`…) ne sert pas au runtime serait un arbitrage sur un répertoire
+# qui appartient à une autre session : un fichier attendu qui répond 404 coûte
+# plus cher que quelques Ko de charge utile.
+files:
+  - electron/**/*
+  - out/**/*
+  - data/**/*
+  - package.json
+  - "!node_modules/**/*"
+  - "!**/*.map"
+  # Uniquement utiles au moment du build, pas à l'exécution.
+  - "!electron/builder.yml"
+  - "!electron/ressources/**/*"
+  # `scripts/copier-donnees.mjs` (hook `prebuild`) recopie `data/` vers
+  # `public/donnees/`, que `next build` republie dans `out/donnees/`. Le
+  # protocole sert `/donnees` depuis `data/`, donc embarquer la copie
+  # doublerait les ~12 Mo du catalogue pour rien.
+  - "!out/donnees/**/*"
+
+# asar activé (défaut) et assumé : `data/` contiendra des MILLIERS de petits
+# JSON (un par programme, un par sujet de cours). Dans une archive asar c'est
+# un seul fichier avec un index — l'installation crée un fichier au lieu de
+# plusieurs milliers, ce qui change l'ordre de grandeur du temps d'install sur
+# NTFS. `fs` lit dans l'asar de façon transparente, donc le protocole n'a
+# aucun cas particulier à gérer.
+asar: true
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: electron/ressources/icone.ico
+  # Aucune signature de code : pas de certificat sur cette machine. SmartScreen
+  # avertira au premier lancement. C'est un fait à dire, pas à masquer.
+  signAndEditExecutable: true
+
+nsis:
+  oneClick: false
+  perMachine: false # install par utilisateur : pas d'élévation UAC
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Plan ton bacc
+  artifactName: ${productName} ${version} (installateur).${ext}
