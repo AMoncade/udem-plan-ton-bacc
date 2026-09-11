@@ -50,6 +50,7 @@ import { cleBloc, normaliserCode } from "../../lib/codes";
 import { contenu, decouperSur, texteBrut, texteLigne } from "./html";
 import { Journal } from "./journal";
 import {
+  lireCheminement,
   lireOrientations,
   parseExigencesParType,
   parseRegleBloc,
@@ -485,7 +486,7 @@ export function parseStructure(
   // La description est passée LIGNE PAR LIGNE, pas recollée : `lireOrientations`
   // s'appuie sur les puces, et recoller collerait la phrase d'introduction à la
   // première d'entre elles.
-  const orientations: Orientation[] = lireOrientations(description).map((o) => {
+  const orientations: Orientation[] = lireOrientations(description).flatMap((o): Orientation[] => {
     // Les segments sont ceux que la page NOMME, sans les filtrer sur ceux
     // trouvés : un segment annoncé mais absent des blocs est une information en
     // soi, et le taire ferait disparaître un parcours au lieu de le signaler.
@@ -505,27 +506,54 @@ export function parseStructure(
     // elle n'énonce qu'une seule répartition : le segment 73 de la maîtrise en
     // énonce deux (cheminement mémoire et cheminement stage) et choisir serait
     // inventer.
-    let phrase: string | null = trouverPhrasesExigences(o.phrase)[0] ?? null;
-    if (phrase === null) {
-      const propres = o.segments.filter((s) => !segmentsCommuns.includes(s));
-      const candidates = [...new Set(propres.flatMap((s) => phrasesParSegment.get(s) ?? []))];
-      if (candidates.length === 1) phrase = candidates[0];
-      else if (candidates.length > 1) {
-        journal.inattendu(
-          slug,
-          `orientation « ${o.nom} » : ses segments (${propres.join(", ")}) énoncent ` +
-            `${candidates.length} répartitions différentes, aucune n'est « celle de l'orientation » — ` +
-            `exigences = null, les phrases restent dans \`notes\``,
-        );
-      }
-    }
-    let exigencesOrientation: ExigencesParType | null = null;
-    if (phrase !== null) {
+    const lireExigences = (nom: string, phrase: string): ExigencesParType => {
       const lu = parseExigencesParType(phrase);
-      exigencesOrientation = lu.exigences;
-      for (const note of lu.notes) journal.inattendu(`${slug} / ${o.nom}`, note);
+      for (const note of lu.notes) journal.inattendu(`${slug} / ${nom}`, note);
+      return lu.exigences;
+    };
+
+    const propre = trouverPhrasesExigences(o.phrase)[0] ?? null;
+    if (propre !== null) {
+      return [{ nom: o.nom, segments: segmentsDuParcours, exigences: lireExigences(o.nom, propre) }];
     }
-    return { nom: o.nom, segments: segmentsDuParcours, exigences: exigencesOrientation };
+
+    const propres = o.segments.filter((s) => !segmentsCommuns.includes(s));
+    const candidates = [...new Set(propres.flatMap((s) => phrasesParSegment.get(s) ?? []))];
+    if (candidates.length === 1) {
+      return [
+        { nom: o.nom, segments: segmentsDuParcours, exigences: lireExigences(o.nom, candidates[0]) },
+      ];
+    }
+
+    if (candidates.length > 1) {
+      // Plusieurs répartitions pour un seul segment : ce sont des CHEMINEMENTS,
+      // et un cheminement mémoire et un cheminement stage ont des répartitions
+      // différentes — donc deux parcours, au sens où l'étudiant en choisit un.
+      // On les aplatit en orientations plutôt que d'ajouter un troisième niveau
+      // au modèle : l'imbrication est une façon dont la page est écrite, pas
+      // une nécessité, et un niveau de plus se propagerait partout sans rien
+      // exprimer de neuf.
+      const nommes = candidates.map((p) => ({ phrase: p, cheminement: lireCheminement(p) }));
+      const noms = nommes.map((c) => c.cheminement);
+      const tousNommes = noms.every((n) => n !== null);
+      const tousDistincts = new Set(noms).size === noms.length;
+      if (tousNommes && tousDistincts) {
+        return nommes.map(({ phrase, cheminement }) => {
+          const nom = `${o.nom} — cheminement ${cheminement}`;
+          return { nom, segments: segmentsDuParcours, exigences: lireExigences(nom, phrase) };
+        });
+      }
+      // On n'invente pas un cheminement que la page ne nomme pas, et on ne
+      // choisit pas parmi des répartitions indiscernables : exigences reste
+      // null et les phrases restent dans `notes`.
+      journal.inattendu(
+        slug,
+        `orientation « ${o.nom} » : ses segments (${propres.join(", ")}) énoncent ` +
+          `${candidates.length} répartitions, dont ${noms.filter((n) => n === null).length} sans ` +
+          "cheminement nommé — aucune n'est « celle de l'orientation », exigences = null",
+      );
+    }
+    return [{ nom: o.nom, segments: segmentsDuParcours, exigences: null }];
   });
 
   // `exigences` au niveau du programme : uniquement quand la page ne déclare

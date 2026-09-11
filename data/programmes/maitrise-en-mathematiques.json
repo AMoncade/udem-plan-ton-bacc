@@ -52,11 +52,46 @@
       }
     },
     {
-      "nom": "Actuariat",
+      "nom": "Actuariat — cheminement avec mémoire (MM)",
       "segments": [
         "73"
       ],
-      "exigences": null
+      "exigences": {
+        "brut": "- cheminement avec mémoire (MM) : 29 crédits obligatoires attribués à la recherche, de 10 à 16 crédits à option et un maximum de 6 crédits au choix.",
+        "obligatoire": {
+          "min": 29,
+          "max": 29
+        },
+        "option": {
+          "min": 10,
+          "max": 16
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "Actuariat — cheminement avec stage (S)",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "- cheminement avec stage (S) : 21 crédits obligatoires attribués à un stage, de 15 à 24 crédits à option et un maximum de 9 crédits au choix.",
+        "obligatoire": {
+          "min": 21,
+          "max": 21
+        },
+        "option": {
+          "min": 15,
+          "max": 24
+        },
+        "choix": {
+          "min": 0,
+          "max": 9
+        }
+      }
     }
   ],
   "cycle": "Cycles supérieurs",

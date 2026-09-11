@@ -15,11 +15,58 @@
   ],
   "orientations": [
     {
-      "nom": "Générale",
+      "nom": "Générale — cheminement avec mémoire (MM)",
       "segments": [
         "70"
       ],
-      "exigences": null
+      "exigences": {
+        "brut": "Les crédits de l'option avec mémoire (MM), sont répartis de la façon suivante : 30 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire et 15 crédits à option.",
+        "obligatoire": {
+          "min": 30,
+          "max": 30
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Générale — cheminement avec stage (ST)",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option avec stage (ST), sont répartis de la façon suivante : 22 crédits obligatoires attribués à un stage et 23 crédits à option.",
+        "obligatoire": {
+          "min": 22,
+          "max": 22
+        },
+        "option": {
+          "min": 23,
+          "max": 23
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Générale — cheminement avec travaux dirigés (TD)",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option avec travaux dirigés (TD), sont répartis de la façon suivante : 22 crédits obligatoires attribués à la recherche et à la rédaction de deux travaux dirigés et 23 crédits à option.",
+        "obligatoire": {
+          "min": 22,
+          "max": 22
+        },
+        "option": {
+          "min": 23,
+          "max": 23
+        },
+        "choix": null
+      }
     },
     {
       "nom": "Apprentissage automatique",
