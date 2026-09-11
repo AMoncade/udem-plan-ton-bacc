@@ -5,21 +5,26 @@
  *
  * Deux lectures du même graphe, parce qu'une seule mentirait :
  *
- *  1. le GRAPHE des relations réellement connues. Sur la fixture il est
- *     minuscule (une seule fiche porte des préalables) et l'écran le dit au
- *     lieu d'afficher une grande surface vide qui ressemble à un bogue ;
- *  2. la LISTE par bloc, qui montre les 55 codes du programme, fiche ou pas.
+ *  1. le GRAPHE des relations réellement connues. Quand les fiches chargées ne
+ *     déclarent aucun préalable il est vide, et l'écran le DIT au lieu
+ *     d'afficher une grande surface vide qui ressemble à un bogue ;
+ *  2. la LISTE par bloc, qui montre tous les codes du programme, fiche ou pas.
  *
  * Les états viennent de `DiagnosticCours`, jamais d'un calcul local.
+ *
+ * En v2 le catalogue n'est plus un module importé mais le résultat d'un
+ * chargement : il change quand l'étudiant change de programme. Tout ce qui en
+ * dérive est donc mémoïsé SUR le catalogue, et non calculé une fois pour
+ * toutes — un graphe construit une seule fois resterait celui du programme
+ * précédent, sans qu'aucune erreur ne le signale.
  */
 
 import { useMemo, useState } from "react";
-import { catalogue, programme } from "@/app/_donnees/catalogue";
 import { blocsDuCours, codesReferences, creditsDe, ficheDe } from "@/app/_lib/cours";
 import { horairePublie } from "@/app/_lib/offre";
-import type { CodeCours, EtatCours, NoeudPrealable } from "@/lib/types";
+import type { Catalogue, CodeCours, EtatCours, NoeudPrealable } from "@/lib/types";
 import { Credits, HABITS, LegendeEtats, MarqueEtat, TitreCours } from "./Etats";
-import { useEtat } from "./ProviderEtat";
+import { useDonnees, useEtat } from "./ProviderEtat";
 
 const L = 132;
 const H = 40;
@@ -52,7 +57,7 @@ function aretesDuNoeud(
   }
 }
 
-function construireGraphe() {
+function construireGraphe(catalogue: Catalogue) {
   const aretes: Arete[] = [];
   for (const fiche of Object.values(catalogue.cours)) {
     if (fiche.prealables === null) continue;
@@ -110,14 +115,21 @@ function construireGraphe() {
 }
 
 export function VueArbre() {
-  const { diagnostics, faits, basculerFait } = useEtat();
-  const graphe = useMemo(() => construireGraphe(), []);
-  const codes = useMemo(() => codesReferences(catalogue), []);
+  const { faits, basculerFait } = useEtat();
+  const { catalogue, programme, diagnostics } = useDonnees();
+  const graphe = useMemo(() => construireGraphe(catalogue), [catalogue]);
+  const codes = useMemo(() => codesReferences(catalogue), [catalogue]);
+
   // Sélection d'ouverture : le premier cours qui a une fiche, pour que le
   // panneau montre d'emblée un cas complet plutôt qu'une absence.
-  const [selection, setSelection] = useState<CodeCours>(
-    () => Object.keys(catalogue.cours)[0] ?? codesReferences(catalogue)[0] ?? "",
-  );
+  const [choisi, setSelection] = useState<CodeCours | null>(null);
+  // Changer de programme change le catalogue, et le cours retenu peut ne plus y
+  // figurer. Plutôt qu'un effet qui remet l'état à zéro après coup — donc un
+  // rendu avec un cours inexistant — on retombe pendant le rendu.
+  const selection =
+    choisi !== null && codes.includes(choisi)
+      ? choisi
+      : (Object.keys(catalogue.cours)[0] ?? codes[0] ?? "");
 
   const etatDe = (code: CodeCours): EtatCours =>
     diagnostics.get(code)?.etat ?? "avertissement";
@@ -256,13 +268,33 @@ export function VueArbre() {
           </div>
 
           <div className="mt-4 grid gap-5 xl:grid-cols-2">
+            {/* Clé `cle` et non `id` : deux blocs d'un même programme peuvent
+                porter le même `id` (`MM-Bloc 73A` et `S-Bloc 73A`), et React
+                fusionnerait leurs listes de cours sans rien signaler. */}
             {programme.blocs.map((bloc) => (
-              <article key={bloc.id} className="border border-trait">
+              <article key={bloc.cle} className="border border-trait">
                 <header className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 border-b border-trait bg-relief px-3 py-2">
                   <span className="chiffres text-[13px] text-papier">{bloc.id}</span>
-                  <h3 className="text-[13px] text-papier">{bloc.nom}</h3>
-                  <span className="ml-auto text-[11.5px] text-faible">{bloc.regleBrut}</span>
+                  <h3 className="text-[13px] text-papier">
+                    {bloc.nom === "" ? (
+                      <span className="text-faible italic">sans nom sur la page</span>
+                    ) : (
+                      bloc.nom
+                    )}
+                  </h3>
+                  <span className="ml-auto text-[11.5px] text-faible">
+                    {bloc.regleBrut === "" ? "règle non publiée" : bloc.regleBrut}
+                  </span>
                 </header>
+                {bloc.notes.length > 0 ? (
+                  <ul className="border-b border-trait/60 px-3 py-1.5">
+                    {bloc.notes.map((note) => (
+                      <li key={note} className="text-[11.5px] leading-relaxed text-doux">
+                        {note}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
                 {bloc.cours.length === 0 ? (
                   <p className="px-3 py-3 text-[12.5px] text-faible">
                     Aucune liste de cours : ce bloc accepte n&apos;importe quel cours.
@@ -327,7 +359,8 @@ export function VueArbre() {
 }
 
 function PanneauCours({ code }: { code: CodeCours }) {
-  const { diagnostics, faits, basculerFait } = useEtat();
+  const { faits, basculerFait } = useEtat();
+  const { catalogue, programme, diagnostics } = useDonnees();
   const fiche = ficheDe(catalogue, code);
   const diagnostic = diagnostics.get(code);
   const etat = diagnostic?.etat ?? "avertissement";
@@ -361,7 +394,9 @@ function PanneauCours({ code }: { code: CodeCours }) {
             {blocs.length === 0 ? (
               <span className="text-faible">aucun</span>
             ) : (
-              blocs.map((bloc) => `${bloc.id} — ${bloc.nom}`).join(" ; ")
+              blocs
+                .map((bloc) => (bloc.nom === "" ? bloc.id : `${bloc.id} — ${bloc.nom}`))
+                .join(" ; ")
             )}
           </dd>
         </div>
@@ -414,6 +449,35 @@ function PanneauCours({ code }: { code: CodeCours }) {
         )}
       </section>
 
+      {/* RESTRICTIONS ET CONCOMITANTS — trois choses DIFFÉRENTES, montrées
+          séparément. Une restriction d'inscription n'est ni un préalable ni un
+          concomitant : elle ne verrouille pas le cours, elle en réserve
+          l'inscription. Les confondre fait voir vingt cours requis là où il n'y
+          en a aucun (MUI 1162A n'a QUE des restrictions). */}
+      {fiche !== undefined &&
+      (fiche.restrictionsBrut !== null || fiche.concomitantsBrut !== null) ? (
+        <section className="mt-5">
+          <h3 className="border-b border-trait pb-1.5 text-[13px] font-semibold">
+            Autres conditions
+          </h3>
+          {fiche.concomitantsBrut !== null ? (
+            <p className="mt-2 text-[12.5px] text-doux">
+              <span className="text-faible">Concomitants : </span>
+              <span className="chiffres">{fiche.concomitantsBrut}</span> — à suivre en
+              même temps, pas avant.
+            </p>
+          ) : null}
+          {fiche.restrictionsBrut !== null ? (
+            <p className="mt-2 border-l-2 border-avert/50 pl-2.5 text-[12.5px] text-doux">
+              <span className="text-faible">Restriction d&apos;inscription : </span>
+              {fiche.restrictionsBrut} — ce n&apos;est pas un préalable. Le cours
+              n&apos;est pas verrouillé pour autant ; l&apos;inscription, elle, peut
+              l&apos;être.
+            </p>
+          ) : null}
+        </section>
+      ) : null}
+
       {diagnostic !== undefined && diagnostic.manquants.length > 0 ? (
         <section className="mt-5">
           <h3 className="text-[13px] font-semibold">Ce qui manque</h3>
@@ -452,7 +516,7 @@ function PanneauCours({ code }: { code: CodeCours }) {
 
 /** L'arbre tel qu'il est écrit dans les données, conjonctions comprises. */
 function NoeudVue({ noeud }: { noeud: NoeudPrealable }) {
-  const { diagnostics } = useEtat();
+  const { catalogue, diagnostics } = useDonnees();
 
   switch (noeud.genre) {
     case "cours": {

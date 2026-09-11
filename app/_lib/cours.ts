@@ -12,6 +12,7 @@ import type {
   Catalogue,
   CodeCours,
   Cours,
+  Intervalle,
   NoeudPrealable,
   Programme,
   RegleBloc,
@@ -139,15 +140,29 @@ export function blocsDuCours(programme: Programme, code: CodeCours): Bloc[] {
   return programme.blocs.filter((bloc) => bloc.cours.includes(code));
 }
 
-/** Minimum de crédits exigé par un bloc. 0 quand le bloc n'en impose aucun. */
-export function minBloc(regle: RegleBloc): number {
+/**
+ * Bornes de crédits d'un bloc, ou `null` quand la règle n'a pas été
+ * interprétée (`type: "inconnu"`).
+ *
+ * UNE fonction et non deux (`minBloc`/`maxBloc` de la v1), parce que le cas
+ * `inconnu` doit être traité UNE fois par l'appelant. Deux fonctions qui
+ * renvoient chacune `number | null` invitent à écrire `?? 0` d'un côté et
+ * `?? Infinity` de l'autre : un bloc dont la règle est illisible passerait
+ * alors pour un bloc sans exigence et sans plafond, ce qui est faux dans les
+ * deux sens. Ici l'appelant reçoit `null` et doit dire « règle non lue ».
+ *
+ * En v2 un maximum est toujours un nombre fini : la forme « minimum sans
+ * maximum » que la v1 autorisait n'apparaît sur aucune page
+ * (`docs/CONTRAT.md`). `null` ne veut donc JAMAIS dire « pas de plafond ».
+ */
+export function bornesBloc(regle: RegleBloc): Intervalle | null {
   switch (regle.type) {
     case "obligatoire":
-      return regle.credits;
     case "option":
-      return regle.min ?? 0;
     case "choix":
-      return regle.credits;
+      return regle.bornes;
+    case "inconnu":
+      return null;
     default: {
       const jamais: never = regle;
       throw new Error(`type de règle inconnu: ${JSON.stringify(jamais)}`);
@@ -155,63 +170,150 @@ export function minBloc(regle: RegleBloc): number {
   }
 }
 
-/** Maximum de crédits d'un bloc. `null` = aucun plafond déclaré. */
-export function maxBloc(regle: RegleBloc): number | null {
-  switch (regle.type) {
-    case "obligatoire":
-      return regle.credits;
-    case "option":
-      return regle.max;
-    case "choix":
-      return regle.credits;
-    default: {
-      const jamais: never = regle;
-      throw new Error(`type de règle inconnu: ${JSON.stringify(jamais)}`);
-    }
-  }
+/** Le bloc d'un programme par sa CLÉ. `Bloc.id` n'est pas unique (la maîtrise
+ *  en mathématiques porte `MM-Bloc 73A` et `S-Bloc 73A`) : chercher par `id`
+ *  rend le premier des deux, sans erreur et sans prévenir. */
+export function blocParCle(programme: Programme, cle: string): Bloc | undefined {
+  return programme.blocs.find((bloc) => bloc.cle === cle);
+}
+
+/** D'où vient le total d'option exigé : lu sur la page, déduit du total de
+ *  crédits, ou inconnu. Affiché, parce qu'une déduction et une lecture n'ont
+ *  pas la même autorité. */
+export type OrigineExigence = "page" | "deduit" | "inconnu";
+
+export interface ArithmetiqueProgramme {
+  /** Somme des bornes des blocs obligatoires. */
+  obligatoire: Intervalle;
+  choix: Intervalle;
+  /** Somme des minimums des blocs d'option. */
+  minimumsOption: number;
+  /** Somme des maximums des blocs d'option : la place totale disponible. */
+  capaciteOption: number;
+  /** Le plus haut plafond parmi les blocs d'option — échelle des barres. */
+  capaciteOptionMax: number;
+  /** Ce que le programme exige en option. `null` quand rien ne le dit. */
+  exigeOption: Intervalle | null;
+  origineOption: OrigineExigence;
+  creditsTotal: number | null;
+  /** Crédits d'option exigés qu'aucun minimum de bloc ne réclame. `null`
+   *  quand `exigeOption` est inconnu — surtout pas 0. */
+  ecart: number | null;
+  /** Blocs dont la règle n'a pas été interprétée. Ils rendent toute somme
+   *  ci-dessus incomplète, donc ils s'affichent. */
+  blocsInconnus: Bloc[];
+}
+
+const ZERO: Intervalle = { min: 0, max: 0 };
+
+function somme(a: Intervalle, b: Intervalle): Intervalle {
+  return { min: a.min + b.min, max: a.max + b.max };
 }
 
 /**
- * Le coeur du projet, calculé et non recopié : ce que le programme exige en
- * crédits d'option, c'est ce qui reste une fois l'obligatoire et le choix
- * retirés du total. Pour l'actuariat : 90 − 54 − 3 = 33, alors que les
- * minimums des blocs d'option n'en totalisent que 18. Un étudiant peut donc
- * satisfaire chaque bloc et ne pas diplômer.
+ * Le coeur du projet : ce que le programme exige en crédits d'option, comparé
+ * à ce que les minimums de ses blocs réclament. Pour l'actuariat la page écrit
+ * 33 crédits d'option alors que les minimums des blocs n'en totalisent que 18 :
+ * un étudiant peut satisfaire CHAQUE bloc et ne pas diplômer.
+ *
+ * Trois changements par rapport à la v1, chacun parce que la v1 était fausse
+ * hors actuariat :
+ *
+ *  1. `Programme.exigences` est LU en priorité. La v1 déduisait toujours
+ *     90 − 54 − 3 = 33. Ailleurs c'est indéductible, parce que les pages
+ *     écrivent des intervalles : droit « de 30 à 33 à option ».
+ *  2. `creditsTotal` peut être `null`. La v1 faisait `null - 54 - 3` = NaN, et
+ *     `NaN crédits` s'affichait à l'écran. Sans total ET sans exigences,
+ *     `exigeOption` vaut `null` et l'écran dit « non annoncé ».
+ *  3. Les blocs `inconnu` ressortent dans `blocsInconnus` au lieu d'être
+ *     ignorés par un `switch` sans cas par défaut — c'était le repli
+ *     silencieux type : un bloc disparu d'une somme ne fait échouer aucun test.
  */
-export function arithmetiqueProgramme(programme: Programme) {
-  let obligatoire = 0;
-  let choix = 0;
+export function arithmetiqueProgramme(programme: Programme): ArithmetiqueProgramme {
+  let obligatoire = ZERO;
+  let choix = ZERO;
   let minimumsOption = 0;
   let capaciteOption = 0;
   let capaciteOptionMax = 0;
+  const blocsInconnus: Bloc[] = [];
+
   for (const bloc of programme.blocs) {
+    const bornes = bornesBloc(bloc.regle);
+    if (bornes === null) {
+      blocsInconnus.push(bloc);
+      continue;
+    }
     switch (bloc.regle.type) {
       case "obligatoire":
-        obligatoire += bloc.regle.credits;
+        obligatoire = somme(obligatoire, bornes);
         break;
       case "choix":
-        choix += bloc.regle.credits;
+        choix = somme(choix, bornes);
         break;
       case "option":
-        minimumsOption += bloc.regle.min ?? 0;
-        capaciteOption += bloc.regle.max ?? 0;
-        capaciteOptionMax = Math.max(
-          capaciteOptionMax,
-          bloc.regle.max ?? bloc.regle.min ?? 0,
-        );
+        minimumsOption += bornes.min;
+        capaciteOption += bornes.max;
+        capaciteOptionMax = Math.max(capaciteOptionMax, bornes.max);
         break;
     }
   }
-  const exigeOption = programme.creditsTotal - obligatoire - choix;
+
+  // Lu sur la page d'abord ; déduit seulement en dernier recours, et dit.
+  //
+  // L'ORDRE ET LES CONDITIONS SONT CEUX DU MOTEUR (`lib/engine/bornes.ts`,
+  // `resoudreExigences`), délibérément. Cette fonction alimente la balance du
+  // haut de l'écran ; le moteur alimente la liste des problèmes juste en
+  // dessous. Deux règles de déduction différentes donneraient deux nombres
+  // différents sur le MÊME écran — « Option 0/33 » au-dessus et « il manque
+  // 18 crédits d'option » en dessous — sans qu'aucun test de l'un ou l'autre
+  // ne tombe, puisque chacun serait cohérent avec lui-même.
+  const resolu = (
+    champ: "obligatoire" | "choix",
+    sommeDesBlocs: Intervalle,
+  ): Intervalle => programme.exigences?.[champ] ?? { min: sommeDesBlocs.min, max: sommeDesBlocs.min };
+  const estExact = (i: Intervalle): boolean => i.min === i.max;
+
+  const obligatoireResolu = resolu("obligatoire", obligatoire);
+  const choixResolu = resolu("choix", choix);
+
+  let exigeOption: Intervalle | null = null;
+  let origineOption: OrigineExigence = "inconnu";
+  const surPage = programme.exigences?.option ?? null;
+  if (surPage !== null) {
+    exigeOption = surPage;
+    origineOption = "page";
+  } else if (
+    programme.creditsTotal !== null &&
+    // Soustraire des INTERVALLES donnerait un résultat plus large que la
+    // réalité, donc un audit trop clément : la déduction n'a de sens que si
+    // l'obligatoire et le choix sont des nombres exacts.
+    estExact(obligatoireResolu) &&
+    estExact(choixResolu)
+  ) {
+    const reste = programme.creditsTotal - obligatoireResolu.min - choixResolu.min;
+    if (reste >= 0) {
+      exigeOption = { min: reste, max: reste };
+      origineOption = "deduit";
+    }
+  }
+
   return {
     obligatoire,
     choix,
-    exigeOption,
     minimumsOption,
     capaciteOption,
-    /** Le plus haut plafond parmi les blocs d'option, échelle des barres. */
     capaciteOptionMax,
-    /** Crédits d'option qu'aucun minimum de bloc ne réclame. */
-    ecart: exigeOption - minimumsOption,
+    exigeOption,
+    origineOption,
+    creditsTotal: programme.creditsTotal,
+    ecart: exigeOption === null ? null : exigeOption.min - minimumsOption,
+    blocsInconnus,
   };
+}
+
+/** « 12 » ou « de 30 à 33 » — un intervalle tel qu'on le lit à voix haute. */
+export function libelleIntervalle(intervalle: Intervalle): string {
+  return intervalle.min === intervalle.max
+    ? `${intervalle.min}`
+    : `de ${intervalle.min} à ${intervalle.max}`;
 }

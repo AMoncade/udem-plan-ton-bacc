@@ -5,13 +5,23 @@
  *   diagnostiquerCours(catalogue, faits) -> Map<CodeCours, DiagnosticCours>
  *   auditProgramme(programme, catalogue, faits) -> Audit
  *
- * Branché sur le VRAI moteur depuis la fusion des chantiers. Le faux de
- * `app/_demo/`, qui avait permis d'écrire l'UI avant que `lib/engine` existe,
- * a été supprimé.
+ * Ce fichier a porté un PONT pendant une journée : `lib/engine` lisait encore
+ * la forme v1 de `RegleBloc` (`credits`/`min`/`max`) alors que le contrat gelé
+ * portait déjà `bornes`, et il n'émettait pas `EtatBloc.cleBloc`. Le pont
+ * traduisait, rattachait les clés, et refusait de maquiller ce qu'il ne pouvait
+ * pas transmettre sans perte.
+ *
+ * Le moteur v2 a été fusionné (`lib/engine/bornes.ts`, `affectation.ts`) : il
+ * lit `regle.bornes`, remplit `cleBloc`, et exploite `Programme.exigences`. Le
+ * pont est donc parti tel qu'il avait été prévu, en deux lignes. Ce qu'il
+ * surveillait ne disparaît pas pour autant : `app/_lib/moteur.test.ts` garde
+ * les invariants qui comptent — aucun `NaN` ne sort d'un audit, `cleBloc`
+ * distingue deux blocs homonymes, les crédits perdus restent visibles, et une
+ * restriction d'inscription n'est jamais lue comme un préalable.
  *
  * `MOTEUR_EST_FACTICE` reste exporté exprès : c'est le filet qui allume la
- * bannière d'avertissement si quelqu'un rebranche un faux un jour. Un faux
- * moteur qui alimente des écrans sans le dire est précisément le genre de
+ * bannière d'avertissement si quelqu'un rebranche un faux moteur un jour. Un
+ * faux moteur qui alimente des écrans sans le dire est précisément le genre de
  * chose qui finit par être pris pour la réalité.
  */
 export { diagnostiquerCours, auditProgramme } from "../../lib/engine";
