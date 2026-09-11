@@ -505,33 +505,69 @@ export function VueAudit() {
         </section>
       ) : null}
 
+      {/* LE VERDICT, PUIS CE QUE L'AUDIT SIGNALE — et les deux ne sont pas la
+          même chose.
+
+          Cette section rendait `problemes` UNIQUEMENT quand l'audit n'était pas
+          conforme, et affichait « Aucun problème » sinon. Or `Audit.problemes`
+          n'est pas une liste d'échecs : le moteur y verse aussi ce qu'il n'a pas
+          su vérifier — blocs à contenu ouvert, cours faits sans fiche (crédits
+          comptés 0), exclusions de sigle que 47 programmes portent et qu'une
+          dérogation peut lever. Un parcours parfaitement conforme peut donc en
+          porter plusieurs, et elles étaient AVALÉES précisément au moment où
+          l'écran disait que tout allait bien. C'est le défaut qui revient dans
+          ce projet : un vert qui recouvre un « invérifiable ».
+
+          Le verdict garde donc sa couleur, et la liste s'affiche dans les deux
+          cas. Elle n'est pas colorée en rouge : le moteur ne distingue pas dans
+          `problemes` ce qui bloque de ce qu'il n'a pas pu vérifier, et l'écran
+          ne prétend pas le savoir — il le dit. */}
       <section className="mt-8">
         <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-trait pb-2">
           <h2 className="text-[15px] font-semibold">
-            {audit.conforme ? "Aucun problème" : `Problèmes (${audit.problemes.length})`}
+            {audit.problemes.length === 0
+              ? "Rien à signaler"
+              : `Ce que l'audit signale (${audit.problemes.length})`}
           </h2>
           <p className="text-[12px] text-faible">
             {audit.blocs.length} bloc{audit.blocs.length === 1 ? "" : "s"} audité
             {audit.blocs.length === 1 ? "" : "s"}
           </p>
         </div>
-        {audit.conforme ? (
-          <p className="mt-3 border-l-2 border-fait/60 bg-fait/5 px-3 py-2 text-[13px] text-fait">
-            Toutes les contraintes tiennent ensemble : chaque bloc dans ses bornes, et
-            les totaux par type atteints.
-          </p>
-        ) : (
-          <ul className="mt-3 space-y-1.5">
-            {audit.problemes.map((probleme) => (
-              <li
-                key={probleme}
-                className="border-l-2 border-perdu/60 bg-perdu/5 px-3 py-1.5 text-[13px] text-papier"
-              >
-                {probleme}
-              </li>
-            ))}
-          </ul>
-        )}
+
+        <p
+          className={`mt-3 border-l-2 px-3 py-2 text-[13px] ${
+            audit.conforme
+              ? "border-fait/60 bg-fait/5 text-fait"
+              : "border-perdu/60 bg-perdu/5 text-papier"
+          }`}
+        >
+          {audit.conforme
+            ? "Toutes les contraintes tiennent ensemble : chaque bloc dans ses bornes, et les totaux par type atteints."
+            : "Au moins une contrainte ne tient pas : un bloc hors de ses bornes, ou un total par type non atteint."}
+        </p>
+
+        {audit.problemes.length > 0 ? (
+          <>
+            <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
+              {audit.conforme
+                ? "Le verdict ci-dessus est favorable, et ces points restent à vérifier vous-même : l'audit les a rencontrés sans pouvoir conclure."
+                : "Ces lignes mélangent ce qui bloque et ce que l'audit n'a pas pu vérifier."}{" "}
+              Le moteur ne les distingue pas dans sa liste, donc cet écran ne le
+              prétend pas : lisez-les une par une plutôt que de les compter.
+            </p>
+            <ul className="mt-2 space-y-1.5">
+              {audit.problemes.map((probleme) => (
+                <li
+                  key={probleme}
+                  className="border-l-2 border-avert/60 bg-avert/5 px-3 py-1.5 text-[13px] text-papier"
+                >
+                  {probleme}
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : null}
       </section>
 
       <section className="mt-9">

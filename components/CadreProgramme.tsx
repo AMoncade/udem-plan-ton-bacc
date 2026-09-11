@@ -15,6 +15,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { CouvertureCours } from "./CouvertureCours";
 import { useEtat } from "./ProviderEtat";
 
 function Encadre({
@@ -139,5 +140,14 @@ export function CadreProgramme({ children }: { children: ReactNode }) {
     );
   }
 
-  return <>{children}</>;
+  // La couverture des fiches se dit AVANT la vue, et une seule fois pour les
+  // trois : c'est une propriété du programme chargé, pas de l'onglet regardé.
+  // La mettre dans chaque vue la ferait diverger — c'est déjà arrivé au verdict
+  // des blocs à contenu ouvert, vert dans l'audit et « invérifiable » à côté.
+  return (
+    <>
+      <CouvertureCours />
+      {children}
+    </>
+  );
 }
