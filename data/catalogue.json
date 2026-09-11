@@ -1,0 +1,1620 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main. `_journal` liste tout ce que la page n'a pas livré ou que le code n'a pas su réduire : un champ vide sans entrée de journal serait un bogue.",
+  "programmes": [
+    {
+      "id": "bac-mathematiques-actuariat",
+      "nom": "Baccalauréat en mathématiques",
+      "orientation": "Actuariat",
+      "creditsTotal": 90,
+      "blocs": [
+        {
+          "id": "01A",
+          "segment": "01",
+          "nom": "",
+          "regle": {
+            "type": "obligatoire",
+            "credits": 26
+          },
+          "cours": [
+            "MAT 1000",
+            "MAT 1400",
+            "MAT 1500",
+            "MAT 1600",
+            "MAT 1720",
+            "MAT 2717",
+            "STT 1700"
+          ],
+          "regleBrut": "Obligatoire - 26 crédits."
+        },
+        {
+          "id": "75A",
+          "segment": "75",
+          "nom": "Actuariat, mathématiques financières et statistique",
+          "regle": {
+            "type": "obligatoire",
+            "credits": 21
+          },
+          "cours": [
+            "ACT 1240",
+            "ACT 2243",
+            "ACT 2250",
+            "ACT 3201",
+            "ACT 3251",
+            "STT 2400",
+            "STT 2700"
+          ],
+          "regleBrut": "Obligatoire - 21 crédits."
+        },
+        {
+          "id": "75B",
+          "segment": "75",
+          "nom": "Outils informatiques de base",
+          "regle": {
+            "type": "obligatoire",
+            "credits": 7
+          },
+          "cours": [
+            "IFT 1015",
+            "IFT 1174",
+            "STT 1682"
+          ],
+          "regleBrut": "Obligatoire - 7 crédits."
+        },
+        {
+          "id": "75C",
+          "segment": "75",
+          "nom": "Compléments d'actuariat",
+          "regle": {
+            "type": "option",
+            "min": 12,
+            "max": 27
+          },
+          "cours": [
+            "ACT 2241",
+            "ACT 2242",
+            "ACT 2251",
+            "ACT 2284",
+            "ACT 3230",
+            "ACT 3253",
+            "ACT 3261",
+            "ACT 3282",
+            "ACT 4000",
+            "MAT 2000",
+            "MAT 3000"
+          ],
+          "regleBrut": "Option - Minimum 12 crédits, maximum 27 crédits."
+        },
+        {
+          "id": "75D",
+          "segment": "75",
+          "nom": "Compléments de statistique",
+          "regle": {
+            "type": "option",
+            "min": 3,
+            "max": 15
+          },
+          "cours": [
+            "STT 2000",
+            "STT 2105",
+            "STT 3220",
+            "STT 3260",
+            "STT 3410",
+            "STT 3510",
+            "STT 3781",
+            "STT 3790",
+            "STT 3795"
+          ],
+          "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits."
+        },
+        {
+          "id": "75E",
+          "segment": "75",
+          "nom": "Compléments de mathématiques",
+          "regle": {
+            "type": "option",
+            "min": null,
+            "max": 13
+          },
+          "cours": [
+            "MAT 1410",
+            "MAT 2050",
+            "MAT 2100",
+            "MAT 2115",
+            "MAT 2130",
+            "MAT 2412",
+            "MAT 2719",
+            "MAT 6117",
+            "MAT 6701"
+          ],
+          "regleBrut": "Option - Maximum 13 crédits."
+        },
+        {
+          "id": "75Y",
+          "segment": "75",
+          "nom": "Contributions d'autres disciplines",
+          "regle": {
+            "type": "option",
+            "min": 3,
+            "max": 12
+          },
+          "cours": [
+            "DMO 1000",
+            "ECN 1000",
+            "ECN 1040",
+            "ECN 1050",
+            "ECN 2165",
+            "IFT 1025",
+            "IFT 2015",
+            "IFT 3245",
+            "IFT 3700"
+          ],
+          "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits."
+        },
+        {
+          "id": "75Z",
+          "segment": "75",
+          "nom": "",
+          "regle": {
+            "type": "choix",
+            "credits": 3
+          },
+          "cours": [],
+          "regleBrut": "Choix - 3 crédits."
+        }
+      ],
+      "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques/structure-du-programme/",
+      "scrapeISO": "2026-09-11T03:00:15.143Z"
+    }
+  ],
+  "cours": {
+    "MAT 1000": {
+      "code": "MAT 1000",
+      "titre": "Analyse 1",
+      "credits": 4,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Propriétés des nombres réels, concepts topologiques dans R, suites et séries numériques, propriétés des fonctions continues et fonctions dérivables d'une variable réelle à valeurs réelles.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1000/",
+      "scrapeISO": "2026-09-11T03:05:28.286Z"
+    },
+    "MAT 1400": {
+      "code": "MAT 1400",
+      "titre": "Calcul 1",
+      "credits": 4,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Suites, séries. Fonctions de plusieurs variables, continuité, dérivées partielles, différentielles, plan tangent, dérivation en chaîne. Gradient, surfaces de niveau, extremums. Intégrales multiples, changement de variables, jacobien.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1400/",
+      "scrapeISO": "2026-09-11T03:05:29.192Z"
+    },
+    "MAT 1500": {
+      "code": "MAT 1500",
+      "titre": "Mathématiques discrètes",
+      "credits": 4,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Ensembles et fonctions. Lois de la logique, quantificateurs, preuves. Induction, pgcd, nombres premiers, algorithme d’Euclide-Bézout, congruence, récursion. Principes de comptage, structures discrètes, graphes.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1500/",
+      "scrapeISO": "2026-09-11T03:05:30.399Z"
+    },
+    "MAT 1600": {
+      "code": "MAT 1600",
+      "titre": "Algèbre linéaire",
+      "credits": 4,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Systèmes d'équations linéaires, élimination de Gauss, inverse matricielle. Espace vectoriel, indépendance linéaire, transformations linéaires, changement de base. Produit scalaire. Déterminants. Diagonalisation. Exemples d'applications.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1600/",
+      "scrapeISO": "2026-09-11T03:05:31.625Z"
+    },
+    "MAT 1720": {
+      "code": "MAT 1720",
+      "titre": "Probabilités",
+      "credits": 4,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Espace de probabilité. Analyse combinatoire. Probabilité conditionnelle. Indépendance. Variable aléatoire. Fonction de répartition et fonction génératrice. Espérance mathématique. Loi faible des grands nombres. Théorème limite central.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1720/",
+      "scrapeISO": "2026-09-11T03:05:32.833Z"
+    },
+    "MAT 2717": {
+      "code": "MAT 2717",
+      "titre": "Processus stochastiques",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Chaînes de Markov. Processus de Galton-Watson. Processus de Poisson. Processus de mort et de naissance. Étude naïve du mouvement brownien. Applications diverses.",
+      "prealablesBrut": "MAT1600 et (MAT1720 ou MAT1978)",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "MAT1600 et (MAT1720 ou MAT1978)"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2717/",
+      "scrapeISO": "2026-09-11T03:05:34.005Z"
+    },
+    "STT 1700": {
+      "code": "STT 1700",
+      "titre": "Introduction à la statistique",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Description des données. Production de données. Probabilités. Inférence. Intervalles de confiance et tests d'hypothèses. Données de dénombrement. Tableaux de contingence. Régression linéaire simple. Remarques: Utilisation d'un progiciel.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1700/",
+      "scrapeISO": "2026-09-11T03:05:35.195Z"
+    },
+    "ACT 1240": {
+      "code": "ACT 1240",
+      "titre": "Mathématiques financières",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Mesures d'intérêt, valeurs présentes, accumulées, annuités certaines à paiements égaux et non-égaux, remboursement des prêts, obligations, flux monétaires généraux et portefeuilles, duration, immunisation, déterminants des taux d'intérêt.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-1240/",
+      "scrapeISO": "2026-09-11T03:05:36.697Z"
+    },
+    "ACT 2243": {
+      "code": "ACT 2243",
+      "titre": "Investissements",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Marchés financiers et actifs financiers qui s'y transigent (actions, titres à revenu fixe). Construction de portefeuilles, frontière efficace. Modèle CAPM. Efficience des marchés et finance comportementale. Mesures de risque.",
+      "prealablesBrut": "ACT1240",
+      "prealables": {
+        "genre": "cours",
+        "code": "ACT 1240"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2243/",
+      "scrapeISO": "2026-09-11T03:05:38.902Z"
+    },
+    "ACT 2250": {
+      "code": "ACT 2250",
+      "titre": "Mathématiques de l'assurance-vie 1",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Assurances à long terme, fonction de survie, probabilités de décès, force de mortalité, tables de mortalité, hypothèses pour âges fractionnaires, assurance-vie, rentes viagères, perte de l'assureur, calcul des primes périodiques nettes et brutes.",
+      "prealablesBrut": "ACT1240 ET MAT1720",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "ACT 1240"
+          },
+          {
+            "genre": "cours",
+            "code": "MAT 1720"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2250/",
+      "scrapeISO": "2026-09-11T03:00:18.452Z"
+    },
+    "ACT 3201": {
+      "code": "ACT 3201",
+      "titre": "Régimes de retraite",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Système canadien de régimes de retraite publics et privés. Types de régimes privés. Calcul de rentes. Principe de capitalisation. Méthodes actuarielles d'évaluation, hypothèses, gains et pertes. Contexte législatif.",
+      "prealablesBrut": "ACT2250",
+      "prealables": {
+        "genre": "cours",
+        "code": "ACT 2250"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3201/",
+      "scrapeISO": "2026-09-11T03:05:52.740Z"
+    },
+    "ACT 3251": {
+      "code": "ACT 3251",
+      "titre": "Théorie du risque",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Modèles de fréquence et de sévérité des sinistres, modèles collectifs, distribution des pertes totales. Types de contrat d'assurance et de réassurance IARD. Effet de modifications de couverture.",
+      "prealablesBrut": "MAT1720",
+      "prealables": {
+        "genre": "cours",
+        "code": "MAT 1720"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3251/",
+      "scrapeISO": "2026-09-11T03:05:54.708Z"
+    },
+    "STT 2400": {
+      "code": "STT 2400",
+      "titre": "Régression linéaire",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Méthode des moindres carrés. Théorèmes de Gauss-Markov et de Cochran. Estimation et tests d'hypothèses. Résidus et diagnostics. Construction de modèles. Exemples. Remarques: Utilisation du progiciel SAS.",
+      "prealablesBrut": "MAT1600",
+      "prealables": {
+        "genre": "cours",
+        "code": "MAT 1600"
+      },
+      "concomitantsBrut": "STT2700",
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2400/",
+      "scrapeISO": "2026-09-11T03:05:56.370Z"
+    },
+    "STT 2700": {
+      "code": "STT 2700",
+      "titre": "Concepts et méthodes en statistique",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Estimation ponctuelle et par intervalle. Tests d'hypothèses. Méthodes graphiques. Test du khi-deux. Théorie de la décision et inférence bayésienne. Comparaisons de deux échantillons. Lié aux examens CAS et agrément ICA.",
+      "prealablesBrut": "(MAT1720 ou MAT1978) et STT1700",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "(MAT1720 ou MAT1978) et STT1700"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2700/",
+      "scrapeISO": "2026-09-11T03:05:56.520Z"
+    },
+    "IFT 1015": {
+      "code": "IFT 1015",
+      "titre": "Programmation 1",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Éléments de base d'un langage de programmation : types, expressions, énoncés conditionnels et itératifs, procédures, fonctions, paramètres, récursivité, tableaux, enregistrements, pointeurs et fichiers.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1015/",
+      "scrapeISO": "2026-09-11T03:00:18.595Z"
+    },
+    "IFT 1174": {
+      "code": "IFT 1174",
+      "titre": "Chiffrier, bases de données et programmation VBA",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Traitement d'ensembles de données au moyen d'un chiffrier électronique et d'un système de gestion de base de données. Automatisation et adaptation de différents traitements sur ces données en utilisant la programmation en VBA.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1174/",
+      "scrapeISO": "2026-09-11T03:05:57.706Z"
+    },
+    "STT 1682": {
+      "code": "STT 1682",
+      "titre": "Progiciels statistiques en actuariat",
+      "credits": 1,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Présentation de SAS et R; lecture des données; organisation, gestion et manipulation des données; transformation de variables; chaînes de caractères, dates; instructions de condition et de boucle; procédures graphiques; statistiques descriptives.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1682/",
+      "scrapeISO": "2026-09-11T03:06:01.313Z"
+    },
+    "ACT 2241": {
+      "code": "ACT 2241",
+      "titre": "Produits dérivés et gestion de risque",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Options d'achat/vente, contrats à terme/à livrer, stratégies de gestion des risques, évaluation d'options, parité, arbitrage, modèle binomial, modèle de Black-Scholes, couverture dynamique.",
+      "prealablesBrut": "ACT1240",
+      "prealables": {
+        "genre": "cours",
+        "code": "ACT 1240"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2241/",
+      "scrapeISO": "2026-09-11T03:06:03.255Z"
+    },
+    "ACT 2242": {
+      "code": "ACT 2242",
+      "titre": "Finance corporative",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Concepts de comptabilité et règlementation. Préparation et analyse d'états financiers. Calcul de ratios financiers. Coût de la dette et coût des capitaux propres. Décision d'investissement. Structure du capital, modèle M&M.",
+      "prealablesBrut": "ACT1240",
+      "prealables": {
+        "genre": "cours",
+        "code": "ACT 1240"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2242/",
+      "scrapeISO": "2026-09-11T03:06:03.368Z"
+    },
+    "ACT 2251": {
+      "code": "ACT 2251",
+      "titre": "Mathématiques de l'assurance-vie 2",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Réserves pour bénéfices; formules prospectives, rétrospective, récursive; réserves modifiées. Vies conjointes, dernier survivant; assurance, rente sur 2 vies; modèles à décréments multiples et applications.",
+      "prealablesBrut": "ACT2250",
+      "prealables": {
+        "genre": "cours",
+        "code": "ACT 2250"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2251/",
+      "scrapeISO": "2026-09-11T03:06:06.460Z"
+    },
+    "ACT 2284": {
+      "code": "ACT 2284",
+      "titre": "Mathématiques de l'assurance IARD",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Théorie de l'estimation et de la sélection de modèles paramétriques. Théorie de la crédibilité. Tarification et réserves.",
+      "prealablesBrut": "ACT3251 et STT2700",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "ACT 3251"
+          },
+          {
+            "genre": "cours",
+            "code": "STT 2700"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2284/",
+      "scrapeISO": "2026-09-11T03:06:06.581Z"
+    },
+    "ACT 3230": {
+      "code": "ACT 3230",
+      "titre": "Finance mathématique",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Notions de probabilités et calcul stochastique, théorie de l'arbitrage, théorèmes fondamentaux, modèles binomiaux, modèle de Black-Scholes, modèles pour taux d'intérêt, calibration de modèles aux données de marché.",
+      "prealablesBrut": "ACT2241 et MAT2717",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "ACT 2241"
+          },
+          {
+            "genre": "cours",
+            "code": "MAT 2717"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3230/",
+      "scrapeISO": "2026-09-11T03:06:09.049Z"
+    },
+    "ACT 3253": {
+      "code": "ACT 3253",
+      "titre": "Gestion des risques",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Types de risques traditionnels et non traditionnels (ex. risque d’entreprise, risques environnementaux). Méthodes qualitatives et quantitatives d'évaluation et de gestion des risques.",
+      "prealablesBrut": "ACT2250 et ACT3251.",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "ACT2250 et ACT3251."
+      },
+      "concomitantsBrut": null,
+      "trimestres": [],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3253/",
+      "scrapeISO": "2026-09-11T03:06:10.422Z"
+    },
+    "ACT 3261": {
+      "code": "ACT 3261",
+      "titre": "Modélisation prédictive",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Techniques de description et de visualisation de données. Applications de modèles linéaires généralisés et d'arbres de décision. Techniques de regroupement de données. Communication et vulgarisation des résultats.",
+      "prealablesBrut": "ACT3251.",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "ACT3251."
+      },
+      "concomitantsBrut": "STT3790.",
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3261/",
+      "scrapeISO": "2026-09-11T03:06:12.281Z"
+    },
+    "ACT 3282": {
+      "code": "ACT 3282",
+      "titre": "Laboratoire de mathématiques financières",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Étude de problèmes complexes en mathématiques financières. Communication des résultats",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": "ACT3230",
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3282/",
+      "scrapeISO": "2026-09-11T03:06:14.134Z"
+    },
+    "ACT 4000": {
+      "code": "ACT 4000",
+      "titre": "Mémoire de fin d'études",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Un projet est suggéré à chaque étudiant lui permettant de faire une synthèse de ses connaissances en actuariat ou mathématiques financières. L'étudiant soumet un rapport et fait un exposé oral à la fin du trimestre.",
+      "prealablesBrut": "57 crédits complétés dans le baccalauréat en mathématiques 1-190-1-0 avec une moyenne cumulative supérieure à 3.3.",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "57 crédits complétés dans le baccalauréat en mathématiques 1-190-1-0 avec une moyenne cumulative supérieure à 3.3."
+      },
+      "concomitantsBrut": null,
+      "trimestres": [],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-4000/",
+      "scrapeISO": "2026-09-11T03:06:14.251Z"
+    },
+    "MAT 2000": {
+      "code": "MAT 2000",
+      "titre": "Stage 1",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Stage supervisé faisant appel à des compétences actuarielles, mathématiques ou statistiques.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2000/",
+      "scrapeISO": "2026-09-11T03:06:16.744Z"
+    },
+    "MAT 3000": {
+      "code": "MAT 3000",
+      "titre": "Stage 2",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Stage supervisé faisant appel à des compétences actuarielles, mathématiques ou statistiques.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3000/",
+      "scrapeISO": "2026-09-11T03:06:18.803Z"
+    },
+    "STT 2000": {
+      "code": "STT 2000",
+      "titre": "Échantillonnage",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Sondages élémentaires, empiriques, stratifiés, systématiques, avec probabilités inégales, à deux degrés. Méthodes de Monte-Carlo : création d'échantillons artificiels, simulation et analyse d'exemples.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": "STT2000 et STT2700",
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2000/",
+      "scrapeISO": "2026-09-11T03:06:18.932Z"
+    },
+    "STT 2105": {
+      "code": "STT 2105",
+      "titre": "Statistique bayésienne",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Théorie de la décision, lois a priori et a posteriori, règle de Bayes, rapport de Bayes, loi prédictive, région de prévision, modèle hiérarchique, simulations par chaînes de Markov, échantillonneurs de Gibbs et de Metropolis-Hastings.",
+      "prealablesBrut": "STT2700",
+      "prealables": {
+        "genre": "cours",
+        "code": "STT 2700"
+      },
+      "concomitantsBrut": "MAT2717",
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2105/",
+      "scrapeISO": "2026-09-11T03:06:21.343Z"
+    },
+    "STT 3220": {
+      "code": "STT 3220",
+      "titre": "Méthodes de prévision",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Estimation ponctuelle et par intervalle. Tests d'hypothèses. Méthodes graphiques. Test du khi-deux. Théorie de la décision et inférence bayésienne. Comparaisons de deux échantillons.",
+      "prealablesBrut": "STT2400 et STT2700",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "STT 2400"
+          },
+          {
+            "genre": "cours",
+            "code": "STT 2700"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3220/",
+      "scrapeISO": "2026-09-11T03:06:21.474Z"
+    },
+    "STT 3260": {
+      "code": "STT 3260",
+      "titre": "Modèles de survie",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Fonction de survie. Taux de panne. Modèles paramétriques et non paramétriques pour des données complètes. Estimation. Différents types de censure. Modèle de régression. Applications.",
+      "prealablesBrut": "STT2400 et STT2700",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "STT 2400"
+          },
+          {
+            "genre": "cours",
+            "code": "STT 2700"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3260/",
+      "scrapeISO": "2026-09-11T03:06:22.712Z"
+    },
+    "STT 3410": {
+      "code": "STT 3410",
+      "titre": "Plans et analyses d'expériences",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Principes. Assignation au hasard. Répliques. Blocs. Effets fixes et aléatoires. Classification simple. Plans factoriels, à mesures répétées, incomplets. Résidus et diagnostics. Applications. Remarques: Utilisation du progiciel SPSS.",
+      "prealablesBrut": "STT2400 et STT2700",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "STT 2400"
+          },
+          {
+            "genre": "cours",
+            "code": "STT 2700"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3410/",
+      "scrapeISO": "2026-09-11T03:06:23.867Z"
+    },
+    "STT 3510": {
+      "code": "STT 3510",
+      "titre": "Biostatistique",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Études de cohortes, études transversales, longitudinales, prospectives. Détermination des tailles d'échantillon dans les devis. Fiabilité des mesures.",
+      "prealablesBrut": "STT2700",
+      "prealables": {
+        "genre": "cours",
+        "code": "STT 2700"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3510/",
+      "scrapeISO": "2026-09-11T03:06:26.880Z"
+    },
+    "STT 3781": {
+      "code": "STT 3781",
+      "titre": "Laboratoire de statistique",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Planification d'expériences et de sondages. Exploration et analyse de données à l'aide de progiciels. Interprétation et communication de résultats.",
+      "prealablesBrut": "STT3410",
+      "prealables": {
+        "genre": "cours",
+        "code": "STT 3410"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3781/",
+      "scrapeISO": "2026-09-11T03:06:28.700Z"
+    },
+    "STT 3790": {
+      "code": "STT 3790",
+      "titre": "Apprentissage statistique",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Évaluation d'un modèle de régression et sélection de variables. Méthodes de rétrécissement. Modèles linéaires généralisés. Méthode des k plus proches voisins. Arbres de décision. Régression non paramétrique.",
+      "prealablesBrut": "STT2400 et STT2700",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "STT 2400"
+          },
+          {
+            "genre": "cours",
+            "code": "STT 2700"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3790/",
+      "scrapeISO": "2026-09-11T03:06:31.015Z"
+    },
+    "STT 3795": {
+      "code": "STT 3795",
+      "titre": "Fondements théoriques en science des données",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Classification. Réduction de la dimension. Modélisation de relations avec noyaux de similarité. Regroupements. Apprentissage de variétés. Fondements mathématiques et applications d'algorithmes d'apprentissage.",
+      "prealablesBrut": "MAT1400/MAT1600/MAT1720 ou MAT1978",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "MAT1400/MAT1600/MAT1720 ou MAT1978"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3795/",
+      "scrapeISO": "2026-09-11T03:06:32.384Z"
+    },
+    "MAT 1410": {
+      "code": "MAT 1410",
+      "titre": "Calcul 2",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Calcul vectoriel : divergence, rotationnel, laplacien. Formules de Green-Riemann, de Stokes et théorème de la divergence. Introduction aux équations différentielles. Équations différentielles linéaires d'ordre un et deux.",
+      "prealablesBrut": "MAT1400",
+      "prealables": {
+        "genre": "cours",
+        "code": "MAT 1400"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1410/",
+      "scrapeISO": "2026-09-11T03:06:34.962Z"
+    },
+    "MAT 2050": {
+      "code": "MAT 2050",
+      "titre": "Analyse 2",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "L'intégrale de Riemann, le théorème fondamental du calcul. Fonctions trigonométriques, exponentielles et leurs inverses. Suites et séries de fonctions, séries de Taylor, séries de Fourier.",
+      "prealablesBrut": "MAT1000",
+      "prealables": {
+        "genre": "cours",
+        "code": "MAT 1000"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2050/",
+      "scrapeISO": "2026-09-11T03:06:35.112Z"
+    },
+    "MAT 2100": {
+      "code": "MAT 2100",
+      "titre": "Analyse 3",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Topologie de Rn. Ensembles ouverts, compacts. Applications continues, différentiables. Jacobien. Théorème de Taylor. Extrema. Théorème des fonctions inverses et implicites.",
+      "prealablesBrut": "MAT1000",
+      "prealables": {
+        "genre": "cours",
+        "code": "MAT 1000"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2100/",
+      "scrapeISO": "2026-09-11T03:06:36.380Z"
+    },
+    "MAT 2115": {
+      "code": "MAT 2115",
+      "titre": "Équations différentielles",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Équations du premier et du second ordre. Existence et unicité. Dépendance continue par rapport à la condition initiale. Méthodes analytiques, qualitatives. Systèmes linéaires et non linéaires. Dynamique discrète.",
+      "prealablesBrut": "MAT1400 ET MAT1600",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "MAT 1400"
+          },
+          {
+            "genre": "cours",
+            "code": "MAT 1600"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2115/",
+      "scrapeISO": "2026-09-11T03:06:37.493Z"
+    },
+    "MAT 2130": {
+      "code": "MAT 2130",
+      "titre": "Variable complexe",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Fonctions holomorphes d'une variable complexe. Représentation conforme. Équations de Cauchy-Riemann. Théorème de Cauchy. Séries de Laurent. Théorème fondamental des résidus.",
+      "prealablesBrut": "MAT1000",
+      "prealables": {
+        "genre": "cours",
+        "code": "MAT 1000"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2130/",
+      "scrapeISO": "2026-09-11T03:06:38.730Z"
+    },
+    "MAT 2412": {
+      "code": "MAT 2412",
+      "titre": "Analyse numérique",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Propagation d'erreurs. Solution numérique d'équations non linéaires. Interpolation et approximation polynomiale. Dérivation et intégration numériques. Algèbre linéaire : méthodes directes et itératives. Approximation discrète par moindres carrés.",
+      "prealablesBrut": "MAT1400 ET MAT1600",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "MAT 1400"
+          },
+          {
+            "genre": "cours",
+            "code": "MAT 1600"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2412/",
+      "scrapeISO": "2026-09-11T03:06:39.976Z"
+    },
+    "MAT 2719": {
+      "code": "MAT 2719",
+      "titre": "Marches et graphes aléatoires",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Lien entre les marches aléatoires réversibles et les réseaux électriques. Exemples de graphes aléatoires, dont la percolation et les arbres couvrants. Marches aléatoires sur graphes aléatoires. Méthodes du premier et second moment.",
+      "prealablesBrut": "MAT1000 et (MAT1720 ou MAT1978).",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "MAT1000 et (MAT1720 ou MAT1978)."
+      },
+      "concomitantsBrut": null,
+      "trimestres": [],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2719/",
+      "scrapeISO": "2026-09-11T03:06:42.942Z"
+    },
+    "MAT 6117": {
+      "code": "MAT 6117",
+      "titre": "Mesure et intégration",
+      "credits": 4,
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Ensembles mesurables, mesure de Lebesgue, théorèmes de Lusin et de Egorov, intégrale de Lebesgue, théorème de Fubini, espaces Lp, éléments de la théorie ergodique, mesure et dimension de Hausdorff, ensembles fractals.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-6117/",
+      "scrapeISO": "2026-09-11T03:06:44.757Z"
+    },
+    "MAT 6701": {
+      "code": "MAT 6701",
+      "titre": "Probabilités",
+      "credits": 4,
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Espace de probabilité, variables aléatoires, indépendance, espérance mathématique, modes de convergence, lois des grands nombres, théorème central limite, espérance conditionnelle et martingales. Introduction au mouvement brownien.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-6701/",
+      "scrapeISO": "2026-09-11T03:06:46.392Z"
+    },
+    "DMO 1000": {
+      "code": "DMO 1000",
+      "titre": "Introduction à la démographie",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Introduction aux phénomènes majeurs modifiant les populations humaines, dans leur structure et dans leur mouvement : fécondité, nuptialité, mortalité, migration. Histoire des populations et croissance démographique. Perspectives de populations.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-1000/",
+      "scrapeISO": "2026-09-11T03:06:48.066Z"
+    },
+    "ECN 1000": {
+      "code": "ECN 1000",
+      "titre": "Principes d'économie",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Présentation des outils de base de l'analyse économique : coût d'opportunité, offre, demande et prix; choix des consommateurs; choix de production des firmes; marchés concurrentiels; monopole; efficacité; commerce international. Remarques: Cours aussi offert en ligne",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1000/",
+      "scrapeISO": "2026-09-11T03:06:48.217Z"
+    },
+    "ECN 1040": {
+      "code": "ECN 1040",
+      "titre": "Introduction à la microéconomie",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Éléments de finance : décisions d'épargne et marchés financiers; concurrence imparfaite : progrès technologique et informations imparfaites; rôle de l'État : environnement, efficacité, équité.",
+      "prealablesBrut": "ECN1000",
+      "prealables": {
+        "genre": "cours",
+        "code": "ECN 1000"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1040/",
+      "scrapeISO": "2026-09-11T03:06:49.420Z"
+    },
+    "ECN 1050": {
+      "code": "ECN 1050",
+      "titre": "Introduction à la macroéconomie",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Interdépendance des marchés et comptabilité nationale et financière. Marchés monétaires et théories de l'inflation. Marché du travail et types de chômage. Modèles de long et de court termes. Modèle IS-LM; fluctuations économiques. Remarques: Cours aussi offert en ligne",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1050/",
+      "scrapeISO": "2026-09-11T03:06:50.607Z"
+    },
+    "ECN 2165": {
+      "code": "ECN 2165",
+      "titre": "Comptabilité 1",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Le modèle comptable : fondements théoriques et fonctionnement pratique, adaptation aux formes juridiques d'entreprises. Concept économique de la valeur et du profit vs théories classiques de la comptabilité. Introduction à la comptabilité nationale.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2165/",
+      "scrapeISO": "2026-09-11T03:06:51.826Z"
+    },
+    "IFT 1025": {
+      "code": "IFT 1025",
+      "titre": "Programmation 2",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Concepts avancés : classes, objets, héritage, interfaces, réutilisation, événements. Introduction aux structures de données et algorithmes : listes, arbres binaires, fichiers, recherche et tri. Notions d'analyse numérique : précision.",
+      "prealablesBrut": "IFT1015 ou IFT1016",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "IFT1015 ou IFT1016"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1025/",
+      "scrapeISO": "2026-09-11T03:06:53.003Z"
+    },
+    "IFT 2015": {
+      "code": "IFT 2015",
+      "titre": "Structures de données",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Types abstraits pour les structures de données, arbres, dictionnaires, files avec priorités, graphes, méthodes externes.",
+      "prealablesBrut": "IFT1025 et IFT1065",
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "IFT 1025"
+          },
+          {
+            "genre": "cours",
+            "code": "IFT 1065"
+          }
+        ]
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2015/",
+      "scrapeISO": "2026-09-11T03:06:54.224Z"
+    },
+    "IFT 3245": {
+      "code": "IFT 3245",
+      "titre": "Simulation et modèles",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Modèles de simulation. Simulations continues et à événements discrets. Modélisation stochastique. Validation et réalisme. Analyse des résultats. Technique de réduction de la variance. Génération de valeurs pseudoaléatoires.",
+      "prealablesBrut": "IFT2015 ET (MAT1978 OU MAT1720 OU PHY2215)",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "IFT2015 ET (MAT1978 OU MAT1720 OU PHY2215)"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3245/",
+      "scrapeISO": "2026-09-11T03:06:56.796Z"
+    },
+    "IFT 3700": {
+      "code": "IFT 3700",
+      "titre": "Introduction à la science des données",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Mise en contexte et applications des probabilités, statistiques, optimisation et outils informatiques pour la science des données; nettoyage et visualisation de données; enjeux statistiques de l'apprentissage automatique sur données structurées.",
+      "prealablesBrut": "IFT2015 ET (MAT1978 OU MAT1720 OU STT1700)",
+      "prealables": {
+        "genre": "opaque",
+        "texte": "IFT2015 ET (MAT1978 OU MAT1720 OU STT1700)"
+      },
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
+      "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3700/",
+      "scrapeISO": "2026-09-11T03:06:57.000Z"
+    }
+  },
+  "prealablesNonParses": [
+    {
+      "code": "MAT 2717",
+      "brut": "MAT1600 et (MAT1720 ou MAT1978)"
+    },
+    {
+      "code": "STT 2700",
+      "brut": "(MAT1720 ou MAT1978) et STT1700"
+    },
+    {
+      "code": "ACT 3253",
+      "brut": "ACT2250 et ACT3251."
+    },
+    {
+      "code": "ACT 3261",
+      "brut": "ACT3251."
+    },
+    {
+      "code": "ACT 4000",
+      "brut": "57 crédits complétés dans le baccalauréat en mathématiques 1-190-1-0 avec une moyenne cumulative supérieure à 3.3."
+    },
+    {
+      "code": "STT 3795",
+      "brut": "MAT1400/MAT1600/MAT1720 ou MAT1978"
+    },
+    {
+      "code": "MAT 2719",
+      "brut": "MAT1000 et (MAT1720 ou MAT1978)."
+    },
+    {
+      "code": "IFT 1025",
+      "brut": "IFT1015 ou IFT1016"
+    },
+    {
+      "code": "IFT 3245",
+      "brut": "IFT2015 ET (MAT1978 OU MAT1720 OU PHY2215)"
+    },
+    {
+      "code": "IFT 3700",
+      "brut": "IFT2015 ET (MAT1978 OU MAT1720 OU STT1700)"
+    }
+  ],
+  "scrapeISO": "2026-09-11T03:18:34.446Z",
+  "_journal": [
+    {
+      "gravite": "info",
+      "ou": "bac-mathematiques-actuariat",
+      "quoi": "exigences par type, verbatim de la page : « orientation Actuariat (segments 01 et 75) avec 54 crédits obligatoires, 33 crédits à option et 3 crédits au choix. » — aucun champ de `Programme` ne peut la porter, voir le rapport."
+    },
+    {
+      "gravite": "manque",
+      "ou": "bloc 01A",
+      "quoi": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+    },
+    {
+      "gravite": "manque",
+      "ou": "bloc 75Z",
+      "quoi": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+    },
+    {
+      "gravite": "manque",
+      "ou": "ACT 3253",
+      "quoi": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+    },
+    {
+      "gravite": "manque",
+      "ou": "ACT 4000",
+      "quoi": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+    },
+    {
+      "gravite": "manque",
+      "ou": "MAT 2719",
+      "quoi": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+    },
+    {
+      "gravite": "inattendu",
+      "ou": "DMO 1000",
+      "quoi": "exigence d'inscription non rangée (ni préalable ni concomitant) : « Restrictions d'inscription: DMO1000/DMO1010 »"
+    }
+  ]
+}
