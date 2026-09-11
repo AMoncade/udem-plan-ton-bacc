@@ -1,23 +1,44 @@
 import { describe, it, expect } from "vitest";
 import { parsePrealables, diagnostiquerCours, auditProgramme } from "./index";
 import type { Catalogue, Cours, NoeudPrealable } from "../types";
-import catalogueBrut from "../../data/catalogue.json";
-import { adapterCatalogue } from "./donnees-test";
+import {
+  catalogueActuariat,
+  programmeActuariat,
+  programmeActuariatSansExigences,
+} from "./donnees-actuariat";
 
 /**
- * Tests contre le CATALOGUE RÉEL scrapé le 2026-09-11 (55/55 fiches) et contre
- * le relevé de formes de docs/RELEVE-PREALABLES.md.
+ * Tests contre les VRAIES lignes de préalables de l'orientation actuariat
+ * (55/55 fiches relevées le 2026-09-11) et contre `docs/RELEVE-PREALABLES.md`.
  *
- * À lire avant de s'étonner : `data/catalogue.json` a été produit par la
- * VERSION PRÉCÉDENTE de parsePrealables(). Ses champs `prealables` portent donc
- * encore 10 noeuds `opaque`, et `prealablesNonParses` compte encore 10 entrées.
- * Le fichier appartient à la session scraper et n'est pas édité ici : il faut
- * un `npm run scrape` pour que le gain arrive dans les données. Ces tests
- * re-parsent donc `prealablesBrut` (exactement ce que le scraper refera) pour
- * mesurer ce que le parseur sait lire aujourd'hui.
+ * ═══════════════════════════════════════════════════════════════════════════
+ * POURQUOI CE FICHIER NE LIT PLUS `data/catalogue.json`
+ *
+ * Il l'importait statiquement. Ce fichier disparaît : la disposition v2 le
+ * remplace par un index, un fichier par programme et un fichier par sujet. Mais
+ * la raison de la migration n'est pas seulement qu'il disparaît — c'est qu'il
+ * n'aurait jamais dû être la source de CE test.
+ *
+ * `data/catalogue.json` est PRODUIT par un scraper qui appelle
+ * `parsePrealables()`. Mesurer `parsePrealables()` contre lui, c'est mesurer un
+ * instrument avec sa propre sortie. La faute a déjà été commise deux fois ici,
+ * et l'ancien en-tête de ce fichier la racontait : quatre tests étaient tombés
+ * après un `npm run scrape`, non parce que le moteur avait régressé, mais parce
+ * que la mesure lisait un artefact dérivé de ce qu'elle mesurait.
+ *
+ * Les lignes sont donc FIGÉES dans `./donnees-actuariat.ts`, verbatim, avec leur
+ * date de scrape. Leur fidélité au fichier qu'elles remplacent a été vérifiée
+ * champ par champ pendant la migration, tant que ce fichier existait encore.
+ *
+ * Ce qui n'est PAS mesuré ici et l'est ailleurs : que les données réellement
+ * livrées sur disque soient fraîches et cohérentes. C'est le travail de
+ * `tests/coutures.test.ts`, qui lit `data/` à l'exécution — et c'est le bon
+ * endroit, parce que c'est une couture, pas une propriété du parseur.
  */
-const catalogue = adapterCatalogue(catalogueBrut);
-const programme = catalogue.programmes[0];
+const catalogue = catalogueActuariat();
+/** Le programme SANS `exigences`, pour que le chemin de repli par déduction
+ *  (90 − 54 − 3) reste éprouvé maintenant qu'il n'est plus le chemin normal. */
+const programme = programmeActuariatSansExigences();
 const fiches = catalogue.cours as Record<string, Cours>;
 
 const cours = (code: string): Cours => {
@@ -30,14 +51,13 @@ const cours = (code: string): Cours => {
  * Les 10 codes dont la version précédente du parseur laissait la ligne
  * opaque — le relevé de docs/RELEVE-PREALABLES.md.
  *
- * Cette liste est écrite en dur EXPRÈS. La version précédente de ce fichier
- * la lisait dans `catalogue.prealablesNonParses`, ce qui marchait tant que
- * data/catalogue.json était lui-même périmé. Dès qu'un `npm run scrape` l'a
- * régénéré avec le parseur étendu, cette liste est tombée à 2 et quatre
- * tests ont échoué — non pas parce que le moteur avait régressé, mais parce
- * que l'instrument de mesure lisait un artefact dérivé de ce qu'il mesurait.
- * Les codes, eux, sont un fait historique, et chaque `brut` est relu de la
- * fiche, donc toujours verbatim de la page.
+ * Cette liste est écrite en dur EXPRÈS, et c'est désormais le cas de TOUT ce
+ * fichier. La version d'avant la lisait dans `catalogue.prealablesNonParses`,
+ * ce qui marchait tant que `data/catalogue.json` était lui-même périmé ; dès
+ * qu'un `npm run scrape` l'a régénéré avec le parseur étendu, elle est tombée
+ * à 2 et quatre tests ont échoué — non parce que le moteur avait régressé,
+ * mais parce que l'instrument lisait un artefact dérivé de ce qu'il mesurait.
+ * Les codes sont un fait historique, et chaque `brut` reste verbatim de la page.
  */
 const CODES_DU_RELEVE = [
   "ACT 3253", "ACT 3261", "ACT 4000", "IFT 1025", "IFT 3245",
@@ -49,31 +69,55 @@ const LIGNES_NON_PARSEES = CODES_DU_RELEVE.map((code) => ({
   brut: cours(code).prealablesBrut as string,
 }));
 
-/** Le catalogue tel que le parseur v1 le produisait : les 10 lignes du
- *  relevé forcées en `opaque`. Sert d'état « avant » aux comparaisons, pour
- *  qu'elles ne dépendent plus de la fraîcheur du fichier généré. */
+/**
+ * Le catalogue tel que le parseur v1 le produisait : les 25 autres lignes lues,
+ * et les 10 du relevé forcées en `opaque`. Sert d'état « avant » aux
+ * comparaisons.
+ *
+ * L'instantané figé ne porte AUCUN `prealables` — c'est voulu, il fige ce que
+ * les pages disent, pas ce qu'une version du parseur en faisait. L'état « v1 »
+ * est donc reconstruit ici : les 25 lignes que la v1 savait déjà lire donnent le
+ * même arbre aujourd'hui (elles n'ont jamais été en cause), et les 10 du relevé
+ * sont remises dans l'état où la v1 les laissait.
+ */
 function catalogueV1(): Catalogue {
-  const coursV1: Record<string, Cours> = { ...fiches };
-  for (const { code, brut } of LIGNES_NON_PARSEES) {
-    coursV1[code] = { ...cours(code), prealables: { genre: "opaque", texte: brut } };
+  const opaques = new Set<string>(CODES_DU_RELEVE);
+  const coursV1: Record<string, Cours> = {};
+  const nonParses: { code: string; brut: string }[] = [];
+  for (const [code, f] of Object.entries(fiches)) {
+    if (f.prealablesBrut == null) {
+      coursV1[code] = f;
+      continue;
+    }
+    if (opaques.has(code)) {
+      coursV1[code] = { ...f, prealables: { genre: "opaque", texte: f.prealablesBrut } };
+      nonParses.push({ code, brut: f.prealablesBrut });
+      continue;
+    }
+    const r = parsePrealables(f.prealablesBrut);
+    // Garde-fou : si une de ces 25 lignes cessait d'être lisible, l'état
+    // « avant » serait faux et toutes les comparaisons avec lui aussi.
+    expect(r.complet, `${code} était lisible dès la v1`).toBe(true);
+    coursV1[code] = { ...f, prealables: r.noeud };
   }
-  return { ...catalogue, cours: coursV1, prealablesNonParses: [...LIGNES_NON_PARSEES] };
+  return { ...catalogue, cours: coursV1, prealablesNonParses: nonParses };
 }
 
 describe("relevé du scraper — les 10 lignes laissées opaques par la version précédente", () => {
-  it("sont bien les 10 annoncées, et elles viennent du catalogue lui-même", () => {
+  it("sont bien les 10 annoncées, et leurs lignes sont celles du relevé", () => {
     expect(LIGNES_NON_PARSEES).toHaveLength(10);
-    // Chaque ligne du relevé existe toujours dans les données, verbatim.
+    // Chaque ligne du relevé est présente et non vide, verbatim.
     for (const { code, brut } of LIGNES_NON_PARSEES) {
       expect(cours(code).prealablesBrut, code).toBe(brut);
       expect(brut.length, code).toBeGreaterThan(0);
     }
-    // Et le catalogue généré est À JOUR avec le parseur : il ne consigne plus
-    // que les 2 refus assumés. Si cette assertion tombe, data/catalogue.json
-    // vient d'une autre version du parseur — relancer `npm run scrape`.
-    expect(catalogue.prealablesNonParses.map((l) => l.code).sort()).toEqual([
-      "ACT 4000", "STT 3795",
-    ]);
+    // L'instantané figé ne PRÉTEND rien sur l'état du parseur : il ne porte
+    // aucun `prealables` et aucune ligne non parsée. C'est le re-parsing, plus
+    // bas, qui mesure. (La fraîcheur des données réellement livrées est
+    // vérifiée par tests/coutures.test.ts, qui lit le disque — c'est une
+    // couture, pas une propriété du parseur.)
+    expect(catalogue.prealablesNonParses).toEqual([]);
+    expect(Object.values(fiches).every((f) => f.prealables === null)).toBe(true);
   });
 
   it("8 des 10 sont maintenant LUES, et exactement 2 restent opaques", () => {
@@ -421,12 +465,38 @@ describe("audit sur le catalogue réel — crédits vrais, plus aucun inventé",
     const a = auditProgramme(programme, cat, new Set(faits));
     expect(a.creditsOption).toBe(33);
     expect(a.creditsTotal).toBe(90);
-    // `data/catalogue.json` est en contrat v1 : il n'a pas de champ `exigences`,
-    // donc le moteur DÉDUIT les 33 crédits (90 − 54 − 3) et le déclare. C'est le
-    // seul problème attendu ; tout le reste doit rester vide.
+    // `programme` est ici la variante SANS `exigences` : le moteur déduit donc
+    // les 33 crédits (90 − 54 − 3) et le déclare. C'est le seul problème
+    // attendu ; tout le reste doit rester vide.
     expect(a.problemes.filter((p) => !p.includes("il est DÉDUIT"))).toEqual([]);
     expect(a.problemes).toHaveLength(1);
     expect(a.conforme).toBe(true);
+  });
+
+  it("le MÊME parcours avec les exigences de la page : conforme, et plus aucune mise en garde", () => {
+    // Le chemin NORMAL depuis le contrat v2. La page écrit « 54 crédits
+    // obligatoires, 33 crédits à option et 3 crédits au choix » ; le scraper
+    // l'avait consignée dans son journal faute de champ pour la porter. La
+    // déduction 90 − 54 − 3 n'était qu'un palliatif, et redevient l'exception.
+    const faits = [
+      ...bloc("01A").cours, ...bloc("75A").cours, ...bloc("75B").cours,
+      ...bloc("75C").cours.slice(0, 9), bloc("75D").cours[0], bloc("75Y").cours[0],
+      "PHI 1968",
+    ];
+    const cat: Catalogue = {
+      ...catalogue,
+      cours: { ...fiches, "PHI 1968": { ...cours("IFT 1015"), code: "PHI 1968", credits: 3 } },
+    };
+    const a = auditProgramme(programmeActuariat(), cat, new Set(faits));
+    expect(a.problemes).toEqual([]);
+    expect(a.conforme).toBe(true);
+    // Et le verdict est le même que par déduction : les deux chemins concordent
+    // sur le seul programme où la comparaison est possible.
+    const parDeduction = auditProgramme(programme, cat, new Set(faits));
+    expect(a.creditsObligatoires).toBe(parDeduction.creditsObligatoires);
+    expect(a.creditsOption).toBe(parDeduction.creditsOption);
+    expect(a.creditsChoix).toBe(parDeduction.creditsChoix);
+    expect(a.conforme).toBe(parDeduction.conforme);
   });
 
   it("un bloc sans nom ne produit pas « le bloc 01A () »", () => {

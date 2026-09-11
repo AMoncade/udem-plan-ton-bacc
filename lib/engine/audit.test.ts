@@ -7,8 +7,10 @@ import {
   EXIGENCES_ACTUARIAT_VERIFIEES,
   adapterCatalogue,
   avecExigences,
+  catalogueContenuOuvert,
   ficheTest,
   formeDetectee,
+  programmeContenuOuvert,
 } from "./donnees-test";
 
 /**
@@ -606,6 +608,119 @@ describe("auditProgramme — ce que le moteur n'a pas pu interpréter ressort", 
     // Elles ne rendent pas le parcours non conforme : le moteur n'a pas de quoi
     // l'affirmer. Elles rendent le verdict CONDITIONNEL, et le disent.
     expect(a.conforme).toBe(true);
+  });
+});
+
+describe("auditProgramme — un bloc à CONTENU OUVERT est invérifiable, et le dit", () => {
+  /**
+   * Cas réel : deux blocs du site n'énumèrent AUCUN cours et décrivent leur
+   * contenu en prose — `baccalaureat-en-economie-et-politique` 71/71G et
+   * `baccalaureat-en-musique` 02/02E, « Option - maximum 6 crédits » renvoyant
+   * aux cours du Centre de langues, sans aucun lien de cours dans le HTML.
+   *
+   * Ce n'est ni un bloc au choix ni une page mal lue, et c'est pour ça que
+   * `Bloc.contenuOuvert` existe : sans lui, la seule façon de le reconnaître
+   * serait de deviner d'après `notes`.
+   */
+  const OBLIG_71 = ["POL 1001", "POL 1002", "ECN 1001", "ECN 1002"];
+
+  it("sans minimum : il n'empêche pas de diplômer, mais l'audit refuse de le déclarer vérifié", () => {
+    const a = auditProgramme(programmeContenuOuvert(), catalogueContenuOuvert(), new Set(OBLIG_71));
+    expect(a.creditsObligatoires).toBe(12);
+    expect(a.creditsOption).toBe(0);
+    // NI IMPOSSIBLE : aucun « il manque 6 crédits dans le bloc 71G », qui serait
+    // un reproche que l'étudiant ne peut pas corriger ici.
+    expect(etat(a, "71G").creditsManquants).toBe(0);
+    expect(joint(a)).not.toMatch(/il manque .* dans le bloc 71G/);
+    // Ni confondu avec un bloc d'option aux données incomplètes.
+    expect(joint(a)).not.toMatch(/ne liste aucun cours : données de programme incomplètes/);
+    // NI SATISFAIT EN SILENCE : le problème est dit, avec la règle verbatim et
+    // la prose de la page.
+    expect(joint(a)).toMatch(
+      /le bloc 71G \(Cours de langues\) \(« Option - maximum 6 crédits\. »\) n'énumère aucun cours/,
+    );
+    expect(joint(a)).toMatch(/l'audit ne peut ni compter ni vérifier ce que vous y avez fait/);
+    expect(joint(a)).toMatch(/Centre de langues/);
+    // Le verdict reste calculable : le programme diplôme.
+    expect(a.conforme).toBe(true);
+  });
+
+  it("avec un minimum : le verdict devient NON AFFIRMABLE, et le message le distingue d'un manque", () => {
+    const a = auditProgramme(
+      programmeContenuOuvert(3),
+      catalogueContenuOuvert(3),
+      new Set(OBLIG_71),
+    );
+    expect(a.conforme).toBe(false);
+    expect(etat(a, "71G").conforme).toBe(false);
+    expect(etat(a, "71G").creditsManquants).toBe(0); // toujours pas un reproche
+    expect(joint(a)).toMatch(/l'audit NE PEUT PAS établir la conformité de ce programme/);
+    expect(joint(a)).toMatch(/ce n'est pas « il vous manque des crédits », c'est « je ne sais pas vérifier »/);
+    expect(joint(a)).not.toMatch(/il manque .* dans le bloc 71G/);
+  });
+
+  it("son minimum invérifiable refuse la conformité POUR LUI-MÊME, pas via le total du type", () => {
+    /**
+     * AJOUTÉ APRÈS UNE MUTATION SURVIVANTE, la seconde fois que cette méthode
+     * attrape la même faute. En retirant du verdict le contrôle des blocs
+     * ouverts non affirmables, aucun test ne tombait : dans le cas précédent
+     * l'étudiant n'avait aucun crédit d'option, donc c'était le TOTAL du type
+     * qui refusait la conformité, pas la règle testée.
+     *
+     * Le cas qui les sépare : un second bloc d'option, ORDINAIRE, qui permet
+     * d'atteindre le minimum du type. Ici 71H donne 6 crédits d'option, donc le
+     * type est satisfait, le total du programme aussi, chaque bloc est dans ses
+     * bornes — et il reste que personne ne peut dire si les 3 crédits de langues
+     * exigés par 71G ont été faits.
+     */
+    const faits = [...OBLIG_71, "POL 2001", "POL 2002"];
+    const a = auditProgramme(programmeContenuOuvert(3), catalogueContenuOuvert(3), new Set(faits));
+
+    // Tout ce qui est vérifiable est vert.
+    expect(a.creditsObligatoires).toBe(12);
+    expect(a.creditsOption).toBe(6); // >= le minimum de type, qui est 3
+    expect(a.creditsTotal).toBe(18); // >= les 12 crédits du programme
+    expect(joint(a)).not.toMatch(/il manque .* de cours d'option/);
+    expect(joint(a)).not.toMatch(/il manque .* au total du programme/);
+    for (const b of a.blocs) expect(b.creditsManquants, `bloc ${b.idBloc}`).toBe(0);
+
+    // Et pourtant le verdict ne peut pas être rendu, à cause du seul 71G.
+    expect(a.conforme).toBe(false);
+    expect(etat(a, "71G").conforme).toBe(false);
+    expect(etat(a, "71H").conforme).toBe(true);
+    expect(joint(a)).toMatch(/l'audit NE PEUT PAS établir la conformité de ce programme/);
+  });
+
+  it("il n'aspire pas les cours hors bloc : ce n'est pas un bloc au choix", () => {
+    // 71G est de type « option », mais même un bloc « Choix » à contenu ouvert
+    // ne doit pas servir de joker : sa liste est vide parce que son contenu vit
+    // ailleurs, pas parce que n'importe quoi convient.
+    const commeChoix: Programme = {
+      ...programmeContenuOuvert(),
+      blocs: programmeContenuOuvert().blocs.map((b) =>
+        b.id === "71G"
+          ? { ...b, regle: { type: "choix", bornes: { min: 0, max: 6 } }, regleBrut: "Choix - Maximum 6 crédits." }
+          : b,
+      ),
+    };
+    const a = auditProgramme(commeChoix, catalogueContenuOuvert(), new Set([...OBLIG_71, "ZZZ 9001"]));
+    expect(etat(a, "71G").coursAttribues).toEqual([]);
+    expect(joint(a)).toMatch(/1 cours fait\(s\) n'entre\(nt\) dans aucun bloc de ce programme \(ZZZ 9001\)/);
+    expect(joint(a)).toMatch(/n'énumère aucun cours/);
+  });
+
+  it("un bloc ordinaire à liste vide reste diagnostiqué comme donnée incomplète", () => {
+    // La distinction que `contenuOuvert` sert à faire, vue de l'autre côté : le
+    // MÊME bloc sans le drapeau redevient une lacune de scrape.
+    const sansDrapeau: Programme = {
+      ...programmeContenuOuvert(3),
+      blocs: programmeContenuOuvert(3).blocs.map((b) =>
+        b.id === "71G" ? { ...b, contenuOuvert: false } : b,
+      ),
+    };
+    const a = auditProgramme(sansDrapeau, catalogueContenuOuvert(3), new Set(OBLIG_71));
+    expect(joint(a)).toMatch(/le bloc 71G exige un minimum de 3 crédits mais ne liste aucun cours : données de programme incomplètes/);
+    expect(joint(a)).not.toMatch(/je ne sais pas vérifier/);
   });
 });
 

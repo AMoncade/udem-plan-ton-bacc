@@ -360,6 +360,7 @@ describe("affectation — garanties et limites annoncées", () => {
         regle: { type: "option" as const, bornes: { min: 14, max: 14 } },
         regleBrut: "Option - 14 crédits.",
         cours: [...codes],
+        contenuOuvert: false,
         notes: [],
       })),
     };

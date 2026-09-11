@@ -347,11 +347,35 @@ interface Calcul {
   creditsInconnus: CodeCours[];
 }
 
-/** Un bloc « Choix » est celui dont la liste de cours est vide : n'importe quel
- *  cours compte. Un bloc d'OPTION à liste vide, lui, est une donnée incomplète
- *  (on ne sait pas quels cours l'alimentent) — ce n'est pas un joker. */
+/**
+ * Bloc à CONTENU OUVERT : il n'énumère aucun cours et décrit son contenu en
+ * prose, en renvoyant à un ensemble extérieur.
+ *
+ * Cas réels vérifiés dans le HTML : `baccalaureat-en-economie-et-politique`
+ * 71/71G et `baccalaureat-en-musique` 02/02E, « Option - maximum 6 crédits »
+ * renvoyant aux cours du Centre de langues, sans aucun lien de cours.
+ *
+ * Ce n'est ni un bloc au choix, ni une page mal lue — c'est un troisième cas,
+ * et c'est pour ça que `Bloc.contenuOuvert` existe plutôt qu'une devinette sur
+ * `notes`. Conséquence pour le moteur : ce bloc est INVÉRIFIABLE. Voir
+ * `traiterContenuOuvert()` plus bas pour ce que l'audit en fait.
+ */
+function estOuvert(bloc: Bloc): boolean {
+  return bloc.contenuOuvert === true;
+}
+
+/**
+ * Un bloc « Choix » est celui dont la liste de cours est vide : n'importe quel
+ * cours compte. Un bloc d'OPTION à liste vide, lui, est une donnée incomplète
+ * (on ne sait pas quels cours l'alimentent) — ce n'est pas un joker.
+ *
+ * Un bloc à contenu ouvert n'est JAMAIS un joker, même s'il est de type
+ * « choix » : sa liste est vide parce que son contenu vit ailleurs, pas parce
+ * que n'importe quoi convient. Y verser les cours non cités reviendrait à
+ * inventer une appartenance qu'aucune donnée n'atteste.
+ */
 function estJoker(bloc: Bloc, bornes: Bornes): boolean {
-  return bornes.type === "choix" && (bloc.cours ?? []).length === 0;
+  return bornes.type === "choix" && (bloc.cours ?? []).length === 0 && !estOuvert(bloc);
 }
 
 /**
@@ -476,7 +500,12 @@ export function auditProgramme(
   for (const c of calculs) {
     c.comptes = arrondi(Math.min(c.bruts, c.bornes.max));
     c.perdus = arrondi(c.bruts - c.comptes);
-    c.manquants = arrondi(Math.max(0, c.bornes.min - c.comptes));
+    // Un bloc à contenu ouvert n'a reçu aucun cours et ne pouvait pas en
+    // recevoir : lui compter un manque produirait un « il manque 6 crédits dans
+    // le bloc 71G » que l'étudiant ne peut pas corriger dans cette application,
+    // puisque les cours en question ne sont dans aucune de nos données. Le
+    // problème est dit autrement, plus bas.
+    c.manquants = estOuvert(c.bloc) ? 0 : arrondi(Math.max(0, c.bornes.min - c.comptes));
   }
 
   // --- totaux par type ----------------------------------------------------
@@ -518,12 +547,24 @@ export function auditProgramme(
         `la règle du bloc ${c.bloc.id} n'a pas été interprétée (« ${c.bloc.regleBrut ?? c.bornes.illisible} ») : l'audit de ce bloc n'est pas concluant.`,
       );
     }
-    if (c.bornes.type === "option" && (c.bloc.cours ?? []).length === 0 && c.bornes.min > 0) {
+    // `contenuOuvert` exclut ce diagnostic : un bloc qui n'énumère rien PARCE
+    // QUE la page renvoie à un ensemble extérieur n'est pas une donnée
+    // incomplète. C'est exactement la distinction que ce champ sert à faire —
+    // sans lui, les deux cas seraient confondus et l'un des deux serait faux.
+    if (
+      c.bornes.type === "option" &&
+      (c.bloc.cours ?? []).length === 0 &&
+      c.bornes.min > 0 &&
+      !estOuvert(c.bloc)
+    ) {
       incoherence(
         `le bloc ${c.bloc.id} exige un minimum de ${cr(c.bornes.min)} mais ne liste aucun cours : données de programme incomplètes, ce bloc ne peut pas être rempli.`,
       );
     }
   }
+
+  // --- blocs à contenu ouvert : invérifiables, jamais avalés ---------------
+  const ouvertsNonAffirmables = traiterContenuOuvert(calculs, problemes);
   if (exigeOption < 0) {
     incoherence(
       `incohérence des données : les blocs obligatoires (${cr(exigences.obligatoire.intervalle.min)}) et au choix (${cr(exigences.choix.intervalle.min)}) dépassent déjà les ${cr(programme.creditsTotal ?? 0)} du programme.`,
@@ -668,6 +709,11 @@ export function auditProgramme(
   const conforme =
     !donneesIncoherentes &&
     blocsConformes &&
+    // Un bloc ouvert qui exige un minimum rend le verdict NON AFFIRMABLE : on
+    // ne peut ni le déclarer satisfait (rien ne le prouve) ni le déclarer raté
+    // (rien ne le prouve non plus). `conforme: false` avec un message qui dit
+    // « pas établi » plutôt que « il vous manque des crédits ».
+    ouvertsNonAffirmables === 0 &&
     manques.obligatoire === 0 &&
     manques.option === 0 &&
     manques.choix === 0 &&
@@ -684,7 +730,13 @@ export function auditProgramme(
     creditsAttribues: c.comptes,
     creditsManquants: c.manquants,
     creditsPerdus: c.perdus,
-    conforme: c.manquants === 0 && c.bornes.illisible === null,
+    // Un bloc ouvert sans minimum n'a rien à satisfaire : `true`, il n'échoue
+    // pas. Avec un minimum, il n'est pas établi : `false`, et le message dit que
+    // c'est faute de pouvoir vérifier, pas faute de crédits.
+    conforme:
+      c.manquants === 0 &&
+      c.bornes.illisible === null &&
+      !(estOuvert(c.bloc) && c.bornes.min > 0),
     coursAttribues: [...c.attribues],
   }));
 
@@ -698,6 +750,58 @@ export function auditProgramme(
     conforme,
     problemes,
   };
+}
+
+/**
+ * Les blocs à contenu ouvert : ce que l'audit en dit, et pourquoi.
+ *
+ * Un tel bloc renvoie à un ensemble de cours qui n'est PAS dans nos données
+ * (« les cours de langues offerts par le Centre de langues »). Trois réponses
+ * possibles, et les deux premières sont fausses :
+ *
+ *  - le déclarer SATISFAIT : c'est affirmer sans preuve, et l'étudiant
+ *    découvrirait le contraire à l'inscription ;
+ *  - le déclarer IMPOSSIBLE : « il manque 6 crédits dans le bloc 71G » est un
+ *    problème qu'il ne peut pas corriger ici, puisque ces cours n'existent nulle
+ *    part dans l'application. Répété à chaque audit, ce message ne fait
+ *    qu'apprendre à ignorer les messages ;
+ *  - le DIRE, en distinguant les deux situations possibles. C'est ce qu'on
+ *    fait, et c'est la même famille que la troncature de la recherche
+ *    d'affectation : un verdict dont on connaît la limite vaut mieux qu'un
+ *    verdict faux.
+ *
+ * Sans minimum (les deux cas réels relevés sont « maximum 6 crédits », donc
+ * minimum 0), il n'y a rien à satisfaire : simple mise en garde, le verdict
+ * reste calculable. Avec un minimum, le verdict devient NON AFFIRMABLE et la
+ * fonction le compte pour que `conforme` ne puisse pas passer à vrai.
+ *
+ * @returns le nombre de blocs ouverts qui empêchent d'affirmer la conformité.
+ */
+function traiterContenuOuvert(calculs: Calcul[], problemes: string[]): number {
+  let nonAffirmables = 0;
+  for (const c of calculs) {
+    if (!estOuvert(c.bloc)) continue;
+    const prose = (c.bloc.notes ?? []).map((n) => n.trim()).filter((n) => n !== "");
+    const renvoi =
+      prose.length > 0
+        ? ` La page dit seulement : « ${prose.join(" ")} »`
+        : ` La page ne dit pas non plus où les trouver.`;
+    if (c.bornes.min > 0) {
+      nonAffirmables++;
+      problemes.push(
+        `le bloc ${nomBloc(c.bloc)} (« ${c.bloc.regleBrut} ») n'énumère aucun cours : son contenu est décrit en prose et renvoie à un ensemble extérieur à ces données. ` +
+          `Comme il exige un minimum de ${cr(c.bornes.min)}, l'audit NE PEUT PAS établir la conformité de ce programme — ce n'est pas « il vous manque des crédits », c'est « je ne sais pas vérifier ».` +
+          renvoi,
+      );
+    } else {
+      problemes.push(
+        `le bloc ${nomBloc(c.bloc)} (« ${c.bloc.regleBrut} ») n'énumère aucun cours : son contenu est décrit en prose et renvoie à un ensemble extérieur à ces données. ` +
+          `Il n'impose aucun minimum, donc il n'empêche pas de diplômer, mais l'audit ne peut ni compter ni vérifier ce que vous y avez fait.` +
+          renvoi,
+      );
+    }
+  }
+  return nonAffirmables;
 }
 
 /**

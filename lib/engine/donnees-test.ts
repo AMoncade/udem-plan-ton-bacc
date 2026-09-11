@@ -19,10 +19,13 @@ import { cleBloc } from "../codes";
  * ═══════════════════════════════════════════════════════════════════════════
  * 1. UN PONT v1 -> v2, TEMPORAIRE ET BRUYANT
  *
- * `data/fixtures/actuariat-verifie.fixture.json` et `data/catalogue.json` sont
- * écrits dans le contrat v1 et appartiennent à d'autres sessions (intégratrice
- * et scraper). Le moteur, lui, lit le contrat v2. Deux mauvaises réponses
- * possibles, toutes les deux refusées ici :
+ * `data/fixtures/actuariat-verifie.fixture.json` est écrit dans le contrat v1 et
+ * appartient à l'intégratrice. Le moteur, lui, lit le contrat v2. Deux
+ * mauvaises réponses possibles, toutes les deux refusées ici :
+ *
+ * (`data/catalogue.json` passait aussi par ici ; il disparaît avec la
+ * disposition v2, et les lignes qu'il portait sont maintenant figées dans
+ * `./donnees-actuariat.ts` — voir l'en-tête de ce fichier-là.)
  *
  *   - éditer ces fichiers : ils ne sont pas à moi, et le merge serait propre
  *     avec un résultat cassé ;
@@ -127,6 +130,12 @@ export function adapterCatalogue(brut: unknown): Catalogue {
         regle: traduireRegle(b.regle as unknown as RegleV1, `bloc ${b.id}`),
         regleBrut: b.regleBrut ?? "",
         cours: [...(b.cours ?? [])],
+        // La v1 n'a AUCUN moyen de dire qu'un bloc décrit son contenu en prose :
+        // elle ne distingue pas « ce bloc n'énumère rien » de « je n'ai pas su
+        // lire la liste ». `false` est donc la seule lecture honnête d'une
+        // donnée v1 — et si un tel bloc s'y trouvait, l'audit le signalerait de
+        // toute façon comme un bloc d'option sans cours.
+        contenuOuvert: b.contenuOuvert ?? false,
         notes: [], // la v1 n'avait pas ce champ : vide, pas inventé.
       };
     });
@@ -135,6 +144,11 @@ export function adapterCatalogue(brut: unknown): Catalogue {
       nom: p.nom,
       orientation: p.orientation ?? null,
       segments: [...new Set(blocs.map((b) => b.segment))],
+      // La v1 ne distinguait pas une PAGE d'un PARCOURS : son unique champ
+      // `orientation` désignait déjà un parcours. Un catalogue v1 traduit est
+      // donc un programme DÉJÀ PROJETÉ, d'où `orientations: []` — et non une
+      // page dont il resterait des alternatives à choisir.
+      orientations: [],
       cycle: null,
       faculte: null,
       typeProgramme: null,
@@ -283,6 +297,7 @@ export function programmeChevauchement(): Programme {
     regle: RegleBloc,
     regleBrut: string,
     cours: CodeCours[],
+    contenuOuvert = false,
   ): Bloc => ({
     id,
     cle: cleBloc("70", id),
@@ -291,6 +306,7 @@ export function programmeChevauchement(): Programme {
     regle,
     regleBrut,
     cours,
+    contenuOuvert,
     notes: [],
   });
 
@@ -299,6 +315,8 @@ export function programmeChevauchement(): Programme {
     nom: "Programme SYNTHÉTIQUE de chevauchement (blocs 70K/70L réels du bacc. en droit)",
     orientation: null,
     segments: ["70"],
+    // Déjà projeté : ce programme est un parcours, pas une page à alternatives.
+    orientations: [],
     cycle: "1er cycle",
     faculte: "Droit",
     typeProgramme: "Baccalauréat",
@@ -346,6 +364,112 @@ export function programmeChevauchement(): Programme {
     url: "https://exemple.test/programme-synthetique-chevauchement",
     scrapeISO: "2026-09-10T00:00:00.000Z",
   };
+}
+
+// ---------------------------------------------------------------------------
+// Un bloc à CONTENU OUVERT : le bloc « catégorie » qui n'énumère rien
+// ---------------------------------------------------------------------------
+
+/**
+ * /!\ PROGRAMME SYNTHÉTIQUE, minimal, autour d'un cas RÉEL.
+ *
+ * Ce qui est réel : la forme du bloc. Le contrat cite deux occurrences
+ * vérifiées dans le HTML (aucun lien de cours dans le bloc) —
+ * `baccalaureat-en-economie-et-politique` 71/71G et `baccalaureat-en-musique`
+ * 02/02E, toutes deux « Option - maximum 6 crédits » avec pour seule
+ * description un renvoi aux cours du Centre de langues. On reprend ici le
+ * couple segment 71 / bloc 71G, sa règle en MINUSCULE (une des cinq formes que
+ * la v1 ne savait pas lire) et son minimum de 0.
+ *
+ * Ce qui est inventé et marqué : le bloc obligatoire 71A, ses quatre cours, le
+ * bloc d'option ORDINAIRE 71H, le total de 12 crédits et les exigences par type.
+ *
+ * 71H existe pour une raison précise, découverte par test de mutation : sans un
+ * second bloc d'option, ORDINAIRE celui-là, le total du type « option » ne peut
+ * jamais être atteint quand 71G exige un minimum, et c'est ce total qui refuse
+ * la conformité — pas le contrôle du bloc invérifiable. Le test passait alors
+ * par le mauvais chemin. Avec 71H, l'étudiant peut satisfaire le TYPE tout en
+ * laissant 71G invérifié, ce qui isole exactement la règle à éprouver.
+ *
+ * `minimumLangues` permet d'éprouver le cas HYPOTHÉTIQUE d'un bloc ouvert qui
+ * exige un minimum : là, l'audit ne peut plus affirmer la conformité, et il doit
+ * le dire au lieu de déclarer le bloc satisfait.
+ */
+export function programmeContenuOuvert(minimumLangues = 0): Programme {
+  const bloc = (
+    id: string,
+    nom: string,
+    regle: RegleBloc,
+    regleBrut: string,
+    cours: CodeCours[],
+    contenuOuvert = false,
+    notes: string[] = [],
+  ): Bloc => ({
+    id,
+    cle: cleBloc("71", id),
+    segment: "71",
+    nom,
+    regle,
+    regleBrut,
+    cours,
+    contenuOuvert,
+    notes,
+  });
+
+  return {
+    id: "test-contenu-ouvert-71G",
+    nom: "Programme SYNTHÉTIQUE à bloc de contenu ouvert (forme réelle du bloc 71G)",
+    orientation: null,
+    segments: ["71"],
+    orientations: [],
+    cycle: "1er cycle",
+    faculte: "Arts et sciences",
+    typeProgramme: "Baccalauréat",
+    creditsTotal: 12, // INVENTÉ
+    exigences: {
+      brut: "12 crédits obligatoires et de 0 à 12 crédits à option, dont au plus 6 de langues (SYNTHÉTIQUE)",
+      obligatoire: { min: 12, max: 12 },
+      option: { min: minimumLangues, max: 12 },
+      choix: { min: 0, max: 0 },
+    },
+    blocs: [
+      bloc(
+        "71A",
+        "Tronc commun INVENTÉ",
+        { type: "obligatoire", bornes: { min: 12, max: 12 } },
+        "Obligatoire - 12 crédits.",
+        ["POL 1001", "POL 1002", "ECN 1001", "ECN 1002"],
+      ),
+      bloc(
+        "71H",
+        "Option ORDINAIRE INVENTÉE",
+        { type: "option", bornes: { min: 0, max: 6 } },
+        "Option - maximum 6 crédits.",
+        ["POL 2001", "POL 2002"],
+      ),
+      bloc(
+        "71G",
+        "Cours de langues",
+        { type: "option", bornes: { min: minimumLangues, max: 6 } },
+        "Option - maximum 6 crédits.",
+        [], // la page n'énumère AUCUN cours : c'est le point du test
+        true,
+        ["L'étudiant choisit ses cours parmi les cours de langues offerts par le Centre de langues."],
+      ),
+    ],
+    notes: [],
+    url: "https://exemple.test/programme-synthetique-contenu-ouvert",
+    scrapeISO: "2026-09-10T00:00:00.000Z",
+  };
+}
+
+export function catalogueContenuOuvert(minimumLangues = 0): Catalogue {
+  return catalogueTest(
+    [programmeContenuOuvert(minimumLangues)],
+    ["POL 1001", "POL 1002", "ECN 1001", "ECN 1002", "POL 2001", "POL 2002", "ZZZ 9001"].map((c) =>
+      ficheTest(c, 3),
+    ),
+  );
 }
 
 /** Catalogue synthétique couvrant le programme de chevauchement. */
