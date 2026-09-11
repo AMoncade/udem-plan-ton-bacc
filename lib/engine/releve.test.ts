@@ -25,21 +25,54 @@ const cours = (code: string): Cours => {
   return f;
 };
 
-// Les 10 lignes que la version précédente laissait opaques, VERBATIM depuis
-// data/catalogue.json (et non recopiées d'un message).
-const LIGNES_NON_PARSEES = catalogue.prealablesNonParses;
+/**
+ * Les 10 codes dont la version précédente du parseur laissait la ligne
+ * opaque — le relevé de docs/RELEVE-PREALABLES.md.
+ *
+ * Cette liste est écrite en dur EXPRÈS. La version précédente de ce fichier
+ * la lisait dans `catalogue.prealablesNonParses`, ce qui marchait tant que
+ * data/catalogue.json était lui-même périmé. Dès qu'un `npm run scrape` l'a
+ * régénéré avec le parseur étendu, cette liste est tombée à 2 et quatre
+ * tests ont échoué — non pas parce que le moteur avait régressé, mais parce
+ * que l'instrument de mesure lisait un artefact dérivé de ce qu'il mesurait.
+ * Les codes, eux, sont un fait historique, et chaque `brut` est relu de la
+ * fiche, donc toujours verbatim de la page.
+ */
+const CODES_DU_RELEVE = [
+  "ACT 3253", "ACT 3261", "ACT 4000", "IFT 1025", "IFT 3245",
+  "IFT 3700", "MAT 2717", "MAT 2719", "STT 2700", "STT 3795",
+] as const;
+
+const LIGNES_NON_PARSEES = CODES_DU_RELEVE.map((code) => ({
+  code,
+  brut: cours(code).prealablesBrut as string,
+}));
+
+/** Le catalogue tel que le parseur v1 le produisait : les 10 lignes du
+ *  relevé forcées en `opaque`. Sert d'état « avant » aux comparaisons, pour
+ *  qu'elles ne dépendent plus de la fraîcheur du fichier généré. */
+function catalogueV1(): Catalogue {
+  const coursV1: Record<string, Cours> = { ...fiches };
+  for (const { code, brut } of LIGNES_NON_PARSEES) {
+    coursV1[code] = { ...cours(code), prealables: { genre: "opaque", texte: brut } };
+  }
+  return { ...catalogue, cours: coursV1, prealablesNonParses: [...LIGNES_NON_PARSEES] };
+}
 
 describe("relevé du scraper — les 10 lignes laissées opaques par la version précédente", () => {
   it("sont bien les 10 annoncées, et elles viennent du catalogue lui-même", () => {
     expect(LIGNES_NON_PARSEES).toHaveLength(10);
-    expect(LIGNES_NON_PARSEES.map((l) => l.code).sort()).toEqual([
-      "ACT 3253", "ACT 3261", "ACT 4000", "IFT 1025", "IFT 3245",
-      "IFT 3700", "MAT 2717", "MAT 2719", "STT 2700", "STT 3795",
-    ]);
-    // Le brut consigné est bien celui de la fiche : pas de recopie divergente.
+    // Chaque ligne du relevé existe toujours dans les données, verbatim.
     for (const { code, brut } of LIGNES_NON_PARSEES) {
-      expect(cours(code).prealablesBrut).toBe(brut);
+      expect(cours(code).prealablesBrut, code).toBe(brut);
+      expect(brut.length, code).toBeGreaterThan(0);
     }
+    // Et le catalogue généré est À JOUR avec le parseur : il ne consigne plus
+    // que les 2 refus assumés. Si cette assertion tombe, data/catalogue.json
+    // vient d'une autre version du parseur — relancer `npm run scrape`.
+    expect(catalogue.prealablesNonParses.map((l) => l.code).sort()).toEqual([
+      "ACT 4000", "STT 3795",
+    ]);
   });
 
   it("8 des 10 sont maintenant LUES, et exactement 2 restent opaques", () => {
@@ -280,7 +313,7 @@ describe("catalogue réel — ce que le re-parsing change pour le moteur", () =>
     const cat = catalogueReparse();
     // Avant : noeud opaque -> avertissement, aucun manquant, aucune arête dans
     // le graphe. Après : le OU est lisible, donc le cours se verrouille.
-    const avant = diagnostiquerCours(catalogue, new Set()).get("MAT 2717");
+    const avant = diagnostiquerCours(catalogueV1(), new Set()).get("MAT 2717");
     expect(avant?.etat).toBe("avertissement");
     expect(avant?.manquants).toEqual([]);
 
@@ -309,7 +342,7 @@ describe("catalogue réel — ce que le re-parsing change pour le moteur", () =>
     }
     // 55 fiches + les 4 codes cités sans fiche.
     expect(d.size).toBe(59);
-    expect(diagnostiquerCours(catalogue, new Set()).size).toBe(56); // avant : seul IFT 1065 était visible
+    expect(diagnostiquerCours(catalogueV1(), new Set()).size).toBe(56); // avant : seul IFT 1065 était visible
   });
 
   it("un préalable qui se cite lui-même ne boucle pas", () => {

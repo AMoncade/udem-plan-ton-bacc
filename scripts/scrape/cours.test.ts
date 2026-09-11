@@ -145,22 +145,38 @@ describe("parseFicheCours — une fiche SANS exigence (IFT 1015)", () => {
   });
 });
 
-describe("parseFicheCours — ce que le parseur de préalables ne sait pas encore lire", () => {
-  it("MAT 2717 : parenthèses et « ou » minuscule -> opaque + non parsé", () => {
+describe("parseFicheCours — préalables à parenthèses, lus depuis la 2e passe", () => {
+  // Ces deux lignes étaient opaques quand le scraper a été écrit, et c'est
+  // son relevé des formes réelles qui a permis au moteur d'étendre le
+  // parseur. Ces tests épinglaient donc une incapacité, pas un comportement
+  // voulu : ils devaient changer avec elle.
+  it("MAT 2717 : « MAT1600 et (MAT1720 ou MAT1978) » est lu, brut verbatim", () => {
     const { cours, prealablesComplet } = fiche("mat-2717");
     expect(cours?.prealablesBrut).toBe("MAT1600 et (MAT1720 ou MAT1978)");
-    expect(prealablesComplet).toBe(false);
+    expect(prealablesComplet).toBe(true);
     expect(cours?.prealables).toEqual({
-      genre: "opaque",
-      texte: "MAT1600 et (MAT1720 ou MAT1978)",
+      genre: "et",
+      enfants: [
+        { genre: "cours", code: "MAT 1600" },
+        {
+          genre: "ou",
+          enfants: [
+            { genre: "cours", code: "MAT 1720" },
+            { genre: "cours", code: "MAT 1978" },
+          ],
+        },
+      ],
     });
   });
 
-  it("IFT 3245 : « ET (A OU B OU C) » en majuscules -> opaque + non parsé", () => {
+  it("IFT 3245 : le OU ternaire entre parenthèses est lu", () => {
     const { cours, prealablesComplet } = fiche("ift-3245");
     expect(cours?.prealablesBrut).toBe("IFT2015 ET (MAT1978 OU MAT1720 OU PHY2215)");
-    expect(prealablesComplet).toBe(false);
+    expect(prealablesComplet).toBe(true);
   });
+});
+
+describe("parseFicheCours — ce que le parseur refuse de deviner", () => {
 
   it("STT 3795 : barres obliques entre codes -> opaque + non parsé", () => {
     const { cours, prealablesComplet } = fiche("stt-3795");
@@ -188,13 +204,14 @@ describe("parseFicheCours — concomitants", () => {
   });
 
   it("ACT 3261 : le point collé au code est conservé VERBATIM", () => {
-    // « Préalable : ACT3251.; Concomitant : STT3790. » — le point final fait
-    // échouer le parseur actuel. C'est exact et c'est signalé, plutôt que
-    // nettoyé en cachette : à la session moteur de décider de le rogner.
+    // « Préalable : ACT3251.; Concomitant : STT3790. » — le point final
+    // faisait échouer le parseur de la 1re passe. Le brut le conserve
+    // verbatim plutôt que de le nettoyer en cachette, et c'est le moteur qui
+    // le rogne à la lecture : le brut reste ce que la page dit.
     const { cours, prealablesComplet } = fiche("act-3261");
     expect(cours?.prealablesBrut).toBe("ACT3251.");
     expect(cours?.concomitantsBrut).toBe("STT3790.");
-    expect(prealablesComplet).toBe(false);
+    expect(prealablesComplet).toBe(true);
   });
 });
 

@@ -163,7 +163,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques/structure-du-programme/",
-      "scrapeISO": "2026-09-11T03:00:15.143Z"
+      "scrapeISO": "2026-09-11T03:40:12.064Z"
     }
   ],
   "cours": {
@@ -192,7 +192,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1000/",
-      "scrapeISO": "2026-09-11T03:05:28.286Z"
+      "scrapeISO": "2026-09-11T03:40:12.919Z"
     },
     "MAT 1400": {
       "code": "MAT 1400",
@@ -215,7 +215,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1400/",
-      "scrapeISO": "2026-09-11T03:05:29.192Z"
+      "scrapeISO": "2026-09-11T03:40:14.021Z"
     },
     "MAT 1500": {
       "code": "MAT 1500",
@@ -238,7 +238,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1500/",
-      "scrapeISO": "2026-09-11T03:05:30.399Z"
+      "scrapeISO": "2026-09-11T03:40:15.240Z"
     },
     "MAT 1600": {
       "code": "MAT 1600",
@@ -261,7 +261,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1600/",
-      "scrapeISO": "2026-09-11T03:05:31.625Z"
+      "scrapeISO": "2026-09-11T03:40:16.458Z"
     },
     "MAT 1720": {
       "code": "MAT 1720",
@@ -288,7 +288,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1720/",
-      "scrapeISO": "2026-09-11T03:05:32.833Z"
+      "scrapeISO": "2026-09-11T03:40:17.649Z"
     },
     "MAT 2717": {
       "code": "MAT 2717",
@@ -299,8 +299,26 @@
       "description": "Chaînes de Markov. Processus de Galton-Watson. Processus de Poisson. Processus de mort et de naissance. Étude naïve du mouvement brownien. Applications diverses.",
       "prealablesBrut": "MAT1600 et (MAT1720 ou MAT1978)",
       "prealables": {
-        "genre": "opaque",
-        "texte": "MAT1600 et (MAT1720 ou MAT1978)"
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "MAT 1600"
+          },
+          {
+            "genre": "ou",
+            "enfants": [
+              {
+                "genre": "cours",
+                "code": "MAT 1720"
+              },
+              {
+                "genre": "cours",
+                "code": "MAT 1978"
+              }
+            ]
+          }
+        ]
       },
       "concomitantsBrut": null,
       "trimestres": [
@@ -314,7 +332,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2717/",
-      "scrapeISO": "2026-09-11T03:05:34.005Z"
+      "scrapeISO": "2026-09-11T03:40:18.905Z"
     },
     "STT 1700": {
       "code": "STT 1700",
@@ -337,7 +355,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1700/",
-      "scrapeISO": "2026-09-11T03:05:35.195Z"
+      "scrapeISO": "2026-09-11T03:40:20.052Z"
     },
     "ACT 1240": {
       "code": "ACT 1240",
@@ -360,7 +378,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-1240/",
-      "scrapeISO": "2026-09-11T03:05:36.697Z"
+      "scrapeISO": "2026-09-11T03:40:21.254Z"
     },
     "ACT 2243": {
       "code": "ACT 2243",
@@ -382,7 +400,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2243/",
-      "scrapeISO": "2026-09-11T03:05:38.902Z"
+      "scrapeISO": "2026-09-11T03:40:22.485Z"
     },
     "ACT 2250": {
       "code": "ACT 2250",
@@ -417,7 +435,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2250/",
-      "scrapeISO": "2026-09-11T03:00:18.452Z"
+      "scrapeISO": "2026-09-11T03:40:23.688Z"
     },
     "ACT 3201": {
       "code": "ACT 3201",
@@ -443,7 +461,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3201/",
-      "scrapeISO": "2026-09-11T03:05:52.740Z"
+      "scrapeISO": "2026-09-11T03:40:24.915Z"
     },
     "ACT 3251": {
       "code": "ACT 3251",
@@ -465,7 +483,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3251/",
-      "scrapeISO": "2026-09-11T03:05:54.708Z"
+      "scrapeISO": "2026-09-11T03:40:26.106Z"
     },
     "STT 2400": {
       "code": "STT 2400",
@@ -491,7 +509,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2400/",
-      "scrapeISO": "2026-09-11T03:05:56.370Z"
+      "scrapeISO": "2026-09-11T03:40:27.353Z"
     },
     "STT 2700": {
       "code": "STT 2700",
@@ -502,8 +520,26 @@
       "description": "Estimation ponctuelle et par intervalle. Tests d'hypothèses. Méthodes graphiques. Test du khi-deux. Théorie de la décision et inférence bayésienne. Comparaisons de deux échantillons. Lié aux examens CAS et agrément ICA.",
       "prealablesBrut": "(MAT1720 ou MAT1978) et STT1700",
       "prealables": {
-        "genre": "opaque",
-        "texte": "(MAT1720 ou MAT1978) et STT1700"
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "ou",
+            "enfants": [
+              {
+                "genre": "cours",
+                "code": "MAT 1720"
+              },
+              {
+                "genre": "cours",
+                "code": "MAT 1978"
+              }
+            ]
+          },
+          {
+            "genre": "cours",
+            "code": "STT 1700"
+          }
+        ]
       },
       "concomitantsBrut": null,
       "trimestres": [
@@ -521,7 +557,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2700/",
-      "scrapeISO": "2026-09-11T03:05:56.520Z"
+      "scrapeISO": "2026-09-11T03:40:28.556Z"
     },
     "IFT 1015": {
       "code": "IFT 1015",
@@ -548,7 +584,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1015/",
-      "scrapeISO": "2026-09-11T03:00:18.595Z"
+      "scrapeISO": "2026-09-11T03:40:29.764Z"
     },
     "IFT 1174": {
       "code": "IFT 1174",
@@ -571,7 +607,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1174/",
-      "scrapeISO": "2026-09-11T03:05:57.706Z"
+      "scrapeISO": "2026-09-11T03:40:30.920Z"
     },
     "STT 1682": {
       "code": "STT 1682",
@@ -594,7 +630,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1682/",
-      "scrapeISO": "2026-09-11T03:06:01.313Z"
+      "scrapeISO": "2026-09-11T03:40:32.183Z"
     },
     "ACT 2241": {
       "code": "ACT 2241",
@@ -616,7 +652,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2241/",
-      "scrapeISO": "2026-09-11T03:06:03.255Z"
+      "scrapeISO": "2026-09-11T03:40:33.369Z"
     },
     "ACT 2242": {
       "code": "ACT 2242",
@@ -638,7 +674,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2242/",
-      "scrapeISO": "2026-09-11T03:06:03.368Z"
+      "scrapeISO": "2026-09-11T03:40:34.588Z"
     },
     "ACT 2251": {
       "code": "ACT 2251",
@@ -660,7 +696,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2251/",
-      "scrapeISO": "2026-09-11T03:06:06.460Z"
+      "scrapeISO": "2026-09-11T03:40:35.776Z"
     },
     "ACT 2284": {
       "code": "ACT 2284",
@@ -691,7 +727,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2284/",
-      "scrapeISO": "2026-09-11T03:06:06.581Z"
+      "scrapeISO": "2026-09-11T03:40:37.001Z"
     },
     "ACT 3230": {
       "code": "ACT 3230",
@@ -722,7 +758,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3230/",
-      "scrapeISO": "2026-09-11T03:06:09.049Z"
+      "scrapeISO": "2026-09-11T03:40:38.175Z"
     },
     "ACT 3253": {
       "code": "ACT 3253",
@@ -733,13 +769,22 @@
       "description": "Types de risques traditionnels et non traditionnels (ex. risque d’entreprise, risques environnementaux). Méthodes qualitatives et quantitatives d'évaluation et de gestion des risques.",
       "prealablesBrut": "ACT2250 et ACT3251.",
       "prealables": {
-        "genre": "opaque",
-        "texte": "ACT2250 et ACT3251."
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "ACT 2250"
+          },
+          {
+            "genre": "cours",
+            "code": "ACT 3251"
+          }
+        ]
       },
       "concomitantsBrut": null,
       "trimestres": [],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3253/",
-      "scrapeISO": "2026-09-11T03:06:10.422Z"
+      "scrapeISO": "2026-09-11T03:40:39.362Z"
     },
     "ACT 3261": {
       "code": "ACT 3261",
@@ -750,8 +795,8 @@
       "description": "Techniques de description et de visualisation de données. Applications de modèles linéaires généralisés et d'arbres de décision. Techniques de regroupement de données. Communication et vulgarisation des résultats.",
       "prealablesBrut": "ACT3251.",
       "prealables": {
-        "genre": "opaque",
-        "texte": "ACT3251."
+        "genre": "cours",
+        "code": "ACT 3251"
       },
       "concomitantsBrut": "STT3790.",
       "trimestres": [
@@ -761,7 +806,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3261/",
-      "scrapeISO": "2026-09-11T03:06:12.281Z"
+      "scrapeISO": "2026-09-11T03:40:40.615Z"
     },
     "ACT 3282": {
       "code": "ACT 3282",
@@ -780,7 +825,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3282/",
-      "scrapeISO": "2026-09-11T03:06:14.134Z"
+      "scrapeISO": "2026-09-11T03:40:41.801Z"
     },
     "ACT 4000": {
       "code": "ACT 4000",
@@ -797,7 +842,7 @@
       "concomitantsBrut": null,
       "trimestres": [],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-4000/",
-      "scrapeISO": "2026-09-11T03:06:14.251Z"
+      "scrapeISO": "2026-09-11T03:40:42.981Z"
     },
     "MAT 2000": {
       "code": "MAT 2000",
@@ -824,7 +869,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2000/",
-      "scrapeISO": "2026-09-11T03:06:16.744Z"
+      "scrapeISO": "2026-09-11T03:40:44.255Z"
     },
     "MAT 3000": {
       "code": "MAT 3000",
@@ -851,7 +896,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3000/",
-      "scrapeISO": "2026-09-11T03:06:18.803Z"
+      "scrapeISO": "2026-09-11T03:40:45.443Z"
     },
     "STT 2000": {
       "code": "STT 2000",
@@ -870,7 +915,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2000/",
-      "scrapeISO": "2026-09-11T03:06:18.932Z"
+      "scrapeISO": "2026-09-11T03:40:47.024Z"
     },
     "STT 2105": {
       "code": "STT 2105",
@@ -892,7 +937,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2105/",
-      "scrapeISO": "2026-09-11T03:06:21.343Z"
+      "scrapeISO": "2026-09-11T03:40:47.826Z"
     },
     "STT 3220": {
       "code": "STT 3220",
@@ -923,7 +968,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3220/",
-      "scrapeISO": "2026-09-11T03:06:21.474Z"
+      "scrapeISO": "2026-09-11T03:40:51.177Z"
     },
     "STT 3260": {
       "code": "STT 3260",
@@ -954,7 +999,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3260/",
-      "scrapeISO": "2026-09-11T03:06:22.712Z"
+      "scrapeISO": "2026-09-11T03:40:51.361Z"
     },
     "STT 3410": {
       "code": "STT 3410",
@@ -985,7 +1030,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3410/",
-      "scrapeISO": "2026-09-11T03:06:23.867Z"
+      "scrapeISO": "2026-09-11T03:40:52.507Z"
     },
     "STT 3510": {
       "code": "STT 3510",
@@ -1007,7 +1052,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3510/",
-      "scrapeISO": "2026-09-11T03:06:26.880Z"
+      "scrapeISO": "2026-09-11T03:40:53.723Z"
     },
     "STT 3781": {
       "code": "STT 3781",
@@ -1029,7 +1074,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3781/",
-      "scrapeISO": "2026-09-11T03:06:28.700Z"
+      "scrapeISO": "2026-09-11T03:40:54.918Z"
     },
     "STT 3790": {
       "code": "STT 3790",
@@ -1064,7 +1109,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3790/",
-      "scrapeISO": "2026-09-11T03:06:31.015Z"
+      "scrapeISO": "2026-09-11T03:40:56.142Z"
     },
     "STT 3795": {
       "code": "STT 3795",
@@ -1086,7 +1131,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3795/",
-      "scrapeISO": "2026-09-11T03:06:32.384Z"
+      "scrapeISO": "2026-09-11T03:40:57.569Z"
     },
     "MAT 1410": {
       "code": "MAT 1410",
@@ -1112,7 +1157,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1410/",
-      "scrapeISO": "2026-09-11T03:06:34.962Z"
+      "scrapeISO": "2026-09-11T03:40:58.434Z"
     },
     "MAT 2050": {
       "code": "MAT 2050",
@@ -1138,7 +1183,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2050/",
-      "scrapeISO": "2026-09-11T03:06:35.112Z"
+      "scrapeISO": "2026-09-11T03:40:59.788Z"
     },
     "MAT 2100": {
       "code": "MAT 2100",
@@ -1160,7 +1205,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2100/",
-      "scrapeISO": "2026-09-11T03:06:36.380Z"
+      "scrapeISO": "2026-09-11T03:41:00.927Z"
     },
     "MAT 2115": {
       "code": "MAT 2115",
@@ -1191,7 +1236,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2115/",
-      "scrapeISO": "2026-09-11T03:06:37.493Z"
+      "scrapeISO": "2026-09-11T03:41:02.131Z"
     },
     "MAT 2130": {
       "code": "MAT 2130",
@@ -1213,7 +1258,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2130/",
-      "scrapeISO": "2026-09-11T03:06:38.730Z"
+      "scrapeISO": "2026-09-11T03:41:03.344Z"
     },
     "MAT 2412": {
       "code": "MAT 2412",
@@ -1244,7 +1289,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2412/",
-      "scrapeISO": "2026-09-11T03:06:39.976Z"
+      "scrapeISO": "2026-09-11T03:41:04.624Z"
     },
     "MAT 2719": {
       "code": "MAT 2719",
@@ -1255,13 +1300,31 @@
       "description": "Lien entre les marches aléatoires réversibles et les réseaux électriques. Exemples de graphes aléatoires, dont la percolation et les arbres couvrants. Marches aléatoires sur graphes aléatoires. Méthodes du premier et second moment.",
       "prealablesBrut": "MAT1000 et (MAT1720 ou MAT1978).",
       "prealables": {
-        "genre": "opaque",
-        "texte": "MAT1000 et (MAT1720 ou MAT1978)."
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "MAT 1000"
+          },
+          {
+            "genre": "ou",
+            "enfants": [
+              {
+                "genre": "cours",
+                "code": "MAT 1720"
+              },
+              {
+                "genre": "cours",
+                "code": "MAT 1978"
+              }
+            ]
+          }
+        ]
       },
       "concomitantsBrut": null,
       "trimestres": [],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2719/",
-      "scrapeISO": "2026-09-11T03:06:42.942Z"
+      "scrapeISO": "2026-09-11T03:41:05.741Z"
     },
     "MAT 6117": {
       "code": "MAT 6117",
@@ -1280,7 +1343,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-6117/",
-      "scrapeISO": "2026-09-11T03:06:44.757Z"
+      "scrapeISO": "2026-09-11T03:41:06.953Z"
     },
     "MAT 6701": {
       "code": "MAT 6701",
@@ -1299,7 +1362,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-6701/",
-      "scrapeISO": "2026-09-11T03:06:46.392Z"
+      "scrapeISO": "2026-09-11T03:41:08.153Z"
     },
     "DMO 1000": {
       "code": "DMO 1000",
@@ -1322,7 +1385,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-1000/",
-      "scrapeISO": "2026-09-11T03:06:48.066Z"
+      "scrapeISO": "2026-09-11T03:41:09.412Z"
     },
     "ECN 1000": {
       "code": "ECN 1000",
@@ -1349,7 +1412,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1000/",
-      "scrapeISO": "2026-09-11T03:06:48.217Z"
+      "scrapeISO": "2026-09-11T03:41:10.643Z"
     },
     "ECN 1040": {
       "code": "ECN 1040",
@@ -1375,7 +1438,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1040/",
-      "scrapeISO": "2026-09-11T03:06:49.420Z"
+      "scrapeISO": "2026-09-11T03:41:11.817Z"
     },
     "ECN 1050": {
       "code": "ECN 1050",
@@ -1402,7 +1465,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1050/",
-      "scrapeISO": "2026-09-11T03:06:50.607Z"
+      "scrapeISO": "2026-09-11T03:41:13.058Z"
     },
     "ECN 2165": {
       "code": "ECN 2165",
@@ -1421,7 +1484,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2165/",
-      "scrapeISO": "2026-09-11T03:06:51.826Z"
+      "scrapeISO": "2026-09-11T03:41:14.404Z"
     },
     "IFT 1025": {
       "code": "IFT 1025",
@@ -1432,8 +1495,17 @@
       "description": "Concepts avancés : classes, objets, héritage, interfaces, réutilisation, événements. Introduction aux structures de données et algorithmes : listes, arbres binaires, fichiers, recherche et tri. Notions d'analyse numérique : précision.",
       "prealablesBrut": "IFT1015 ou IFT1016",
       "prealables": {
-        "genre": "opaque",
-        "texte": "IFT1015 ou IFT1016"
+        "genre": "ou",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "IFT 1015"
+          },
+          {
+            "genre": "cours",
+            "code": "IFT 1016"
+          }
+        ]
       },
       "concomitantsBrut": null,
       "trimestres": [
@@ -1451,7 +1523,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1025/",
-      "scrapeISO": "2026-09-11T03:06:53.003Z"
+      "scrapeISO": "2026-09-11T03:41:15.420Z"
     },
     "IFT 2015": {
       "code": "IFT 2015",
@@ -1490,7 +1562,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2015/",
-      "scrapeISO": "2026-09-11T03:06:54.224Z"
+      "scrapeISO": "2026-09-11T03:41:16.597Z"
     },
     "IFT 3245": {
       "code": "IFT 3245",
@@ -1501,8 +1573,30 @@
       "description": "Modèles de simulation. Simulations continues et à événements discrets. Modélisation stochastique. Validation et réalisme. Analyse des résultats. Technique de réduction de la variance. Génération de valeurs pseudoaléatoires.",
       "prealablesBrut": "IFT2015 ET (MAT1978 OU MAT1720 OU PHY2215)",
       "prealables": {
-        "genre": "opaque",
-        "texte": "IFT2015 ET (MAT1978 OU MAT1720 OU PHY2215)"
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "IFT 2015"
+          },
+          {
+            "genre": "ou",
+            "enfants": [
+              {
+                "genre": "cours",
+                "code": "MAT 1978"
+              },
+              {
+                "genre": "cours",
+                "code": "MAT 1720"
+              },
+              {
+                "genre": "cours",
+                "code": "PHY 2215"
+              }
+            ]
+          }
+        ]
       },
       "concomitantsBrut": null,
       "trimestres": [
@@ -1512,7 +1606,7 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3245/",
-      "scrapeISO": "2026-09-11T03:06:56.796Z"
+      "scrapeISO": "2026-09-11T03:41:17.843Z"
     },
     "IFT 3700": {
       "code": "IFT 3700",
@@ -1523,8 +1617,30 @@
       "description": "Mise en contexte et applications des probabilités, statistiques, optimisation et outils informatiques pour la science des données; nettoyage et visualisation de données; enjeux statistiques de l'apprentissage automatique sur données structurées.",
       "prealablesBrut": "IFT2015 ET (MAT1978 OU MAT1720 OU STT1700)",
       "prealables": {
-        "genre": "opaque",
-        "texte": "IFT2015 ET (MAT1978 OU MAT1720 OU STT1700)"
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "IFT 2015"
+          },
+          {
+            "genre": "ou",
+            "enfants": [
+              {
+                "genre": "cours",
+                "code": "MAT 1978"
+              },
+              {
+                "genre": "cours",
+                "code": "MAT 1720"
+              },
+              {
+                "genre": "cours",
+                "code": "STT 1700"
+              }
+            ]
+          }
+        ]
       },
       "concomitantsBrut": null,
       "trimestres": [
@@ -1534,26 +1650,10 @@
         }
       ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3700/",
-      "scrapeISO": "2026-09-11T03:06:57.000Z"
+      "scrapeISO": "2026-09-11T03:41:19.062Z"
     }
   },
   "prealablesNonParses": [
-    {
-      "code": "MAT 2717",
-      "brut": "MAT1600 et (MAT1720 ou MAT1978)"
-    },
-    {
-      "code": "STT 2700",
-      "brut": "(MAT1720 ou MAT1978) et STT1700"
-    },
-    {
-      "code": "ACT 3253",
-      "brut": "ACT2250 et ACT3251."
-    },
-    {
-      "code": "ACT 3261",
-      "brut": "ACT3251."
-    },
     {
       "code": "ACT 4000",
       "brut": "57 crédits complétés dans le baccalauréat en mathématiques 1-190-1-0 avec une moyenne cumulative supérieure à 3.3."
@@ -1561,25 +1661,9 @@
     {
       "code": "STT 3795",
       "brut": "MAT1400/MAT1600/MAT1720 ou MAT1978"
-    },
-    {
-      "code": "MAT 2719",
-      "brut": "MAT1000 et (MAT1720 ou MAT1978)."
-    },
-    {
-      "code": "IFT 1025",
-      "brut": "IFT1015 ou IFT1016"
-    },
-    {
-      "code": "IFT 3245",
-      "brut": "IFT2015 ET (MAT1978 OU MAT1720 OU PHY2215)"
-    },
-    {
-      "code": "IFT 3700",
-      "brut": "IFT2015 ET (MAT1978 OU MAT1720 OU STT1700)"
     }
   ],
-  "scrapeISO": "2026-09-11T03:18:34.446Z",
+  "scrapeISO": "2026-09-11T03:41:19.066Z",
   "_journal": [
     {
       "gravite": "info",
