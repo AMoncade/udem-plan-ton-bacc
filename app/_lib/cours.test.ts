@@ -164,6 +164,34 @@ describe("arithmetiqueProgramme", () => {
     expect(Number.isNaN(a.capaciteOption)).toBe(false);
   });
 
+  it("ne déduit PAS quand l'obligatoire de la page est un intervalle", () => {
+    // Le piège : 101 − 68 = 33 a l'air d'un nombre, mais l'obligatoire vaut
+    // « de 68 à 71 ». Soustraire un intervalle donne un résultat plus large que
+    // la réalité, donc un audit trop clément. Le moteur refuse de déduire dans
+    // ce cas (`lib/engine/bornes.ts`) ; si l'UI déduisait quand même, la
+    // balance afficherait 33 pendant que la liste de problèmes juste en dessous
+    // auditerait contre la somme des minimums — deux nombres contradictoires
+    // sur le même écran, chacun cohérent avec lui-même.
+    const a = arithmetiqueProgramme(
+      programme(
+        [
+          bloc("70", "70A", { type: "obligatoire", bornes: { min: 68, max: 68 } }),
+          bloc("70", "70L", { type: "option", bornes: { min: 12, max: 27 } }),
+        ],
+        101,
+        {
+          brut: "de 68 à 71 crédits obligatoires",
+          obligatoire: { min: 68, max: 71 },
+          option: null,
+          choix: null,
+        },
+      ),
+    );
+    expect(a.exigeOption).toBeNull();
+    expect(a.origineOption).toBe("inconnu");
+    expect(a.ecart).toBeNull();
+  });
+
   it("ne déduit rien d'absurde quand l'obligatoire dépasse déjà le total", () => {
     const a = arithmetiqueProgramme(
       programme([bloc("01", "01A", { type: "obligatoire", bornes: { min: 40, max: 40 } })], 30),

@@ -1,16 +1,21 @@
 /**
- * LE PONT VERS LE MOTEUR — la pièce la plus risquée de ce chantier.
+ * CE QUE L'UI ATTEND DU MOTEUR.
  *
- * `lib/engine` lit encore la forme v1 de `RegleBloc` (`credits`/`min`/`max`)
- * alors que le contrat gelé porte `bornes`. Sans pont, le moteur ne renverrait
- * pas des nombres faux mais des `NaN`, et un `NaN` traverse toute l'UI sans
- * lever d'erreur. Ces tests surveillent donc trois choses, dans cet ordre
- * d'importance :
+ * Ces tests ont d'abord surveillé un PONT : `lib/engine` lisait encore la
+ * forme v1 de `RegleBloc` alors que le contrat portait déjà `bornes`, et l'UI
+ * traduisait. Le moteur v2 a été fusionné et le pont est parti.
  *
- *  1. aucun `NaN` ne sort de l'audit, jamais ;
- *  2. `EtatBloc.cleBloc` est rempli, et correctement apparié ;
- *  3. ce que le pont ne peut pas traduire fidèlement ressort dans
- *     `problemes` et interdit `conforme`.
+ * Les tests, eux, restent — et c'est le point. Ils ne décrivaient pas le pont,
+ * ils décrivaient ce dont les écrans ont besoin pour ne pas mentir :
+ *
+ *  1. aucun `NaN` ne sort de l'audit, jamais. Un `NaN` traverse toute l'UI
+ *     sans lever d'erreur et s'affiche tel quel à l'étudiant ;
+ *  2. `EtatBloc.cleBloc` est rempli et distingue deux blocs homonymes ;
+ *  3. les crédits perdus au-delà d'un plafond restent visibles ;
+ *  4. une restriction d'inscription n'est jamais lue comme un préalable.
+ *
+ * Ils valent donc contre le moteur v2 aussi bien que contre le pont, sans
+ * qu'une ligne d'assertion ait changé — sauf celles qui nommaient le pont.
  */
 import { describe, expect, it } from "vitest";
 import type { Audit, Bloc, Catalogue, Cours, Programme, RegleBloc } from "../../lib/types";
@@ -93,7 +98,7 @@ function nombresDe(audit: Audit): number[] {
   ];
 }
 
-describe("le pont v2 vers le moteur", () => {
+describe("ce que l'UI attend de l'audit", () => {
   it("ne laisse sortir aucun NaN des règles à bornes", () => {
     const { programme, catalogue } = monter([
       bloc("01", "01A", { type: "obligatoire", bornes: { min: 6, max: 6 } }, [
@@ -161,28 +166,22 @@ describe("le pont v2 vers le moteur", () => {
     for (const nombre of nombresDe(audit)) expect(Number.isFinite(nombre)).toBe(true);
   });
 
-  it("signale un bloc obligatoire à bornes inégales au lieu d'en choisir une", () => {
-    // La forme v1 ne sait écrire qu'UN nombre pour un bloc obligatoire ou au
-    // choix. Plutôt que de transmettre le min ou le max en silence, le pont le
-    // dit et refuse de déclarer l'audit conforme.
+  it("honore un intervalle sur un bloc au choix, sans en écraser une borne", () => {
+    // « Choix - Minimum 3 crédits, maximum 6 crédits. » : la forme v1 ne savait
+    // écrire qu'UN nombre pour ce type de bloc, et il fallait alors signaler la
+    // perte. Le moteur v2 lit l'intervalle, donc 6 crédits placés tiennent dans
+    // les bornes au lieu d'en faire 3 de perdus.
     const { programme, catalogue } = monter([
-      bloc("01", "01A", { type: "choix", bornes: { min: 3, max: 6 } }, ["MAT 1000"]),
+      bloc("01", "01A", { type: "choix", bornes: { min: 3, max: 6 } }, [
+        "MAT 1000",
+        "MAT 1010",
+      ]),
     ]);
-    const audit = auditProgramme(programme, catalogue, new Set(["MAT 1000"]));
-    expect(audit.conforme).toBe(false);
-    const texte = audit.problemes.join(" ");
-    expect(texte).toContain("01A");
-    expect(texte).toContain("sans perte");
-  });
-
-  it("ne signale RIEN quand toutes les bornes sont exprimables", () => {
-    const { programme, catalogue } = monter([
-      bloc("01", "01A", { type: "obligatoire", bornes: { min: 3, max: 3 } }, ["MAT 1000"]),
-      bloc("01", "01B", { type: "option", bornes: { min: 3, max: 9 } }, ["STT 1000"]),
-      bloc("01", "01Z", { type: "choix", bornes: { min: 3, max: 3 } }),
-    ]);
-    const audit = auditProgramme(programme, catalogue, new Set(["MAT 1000"]));
-    expect(audit.problemes.join(" ")).not.toContain("sans perte");
+    const audit = auditProgramme(programme, catalogue, new Set(["MAT 1000", "MAT 1010"]));
+    const etat = audit.blocs[0];
+    expect(etat.creditsAttribues).toBe(6);
+    expect(etat.creditsPerdus).toBe(0);
+    expect(etat.creditsManquants).toBe(0);
   });
 
   it("garde visibles les crédits perdus au-delà du plafond d'un bloc", () => {
@@ -216,7 +215,7 @@ describe("le pont v2 vers le moteur", () => {
   });
 });
 
-describe("le pont sur les programmes de démonstration", () => {
+describe("l'audit sur les programmes de démonstration", () => {
   it("audite l'actuariat sans NaN et retient le piège 18 contre 33", async () => {
     const { catalogue, programme } = await assembler(creerDepotDemo(), ID_ACTUARIAT);
     // Tous les cours obligatoires faits, et le minimum de chaque bloc d'option.
@@ -245,7 +244,7 @@ describe("le pont sur les programmes de démonstration", () => {
   });
 });
 
-describe("diagnostiquerCours passe sans pont", () => {
+describe("diagnostiquerCours", () => {
   it("marque un cours sans fiche « avertissement », jamais verrouillé", async () => {
     const { catalogue, programme } = await assembler(creerDepotDemo(), ID_ACTUARIAT);
     const diagnostics = diagnostiquerCours(catalogue, new Set());
@@ -269,8 +268,24 @@ describe("diagnostiquerCours passe sans pont", () => {
     ).toBeDefined();
     const diagnostics = diagnostiquerCours(catalogue, new Set());
     const etat = diagnostics.get((avecRestriction as Cours).code);
-    // Une restriction ne verrouille pas : le cours est disponible.
-    expect(etat?.etat).toBe("disponible");
+
+    // La règle, en deux moitiés qui doivent tenir ENSEMBLE.
+    //
+    // 1. Une restriction ne verrouille pas et n'invente aucun préalable
+    //    manquant. MUI 1162A n'a QUE des restrictions : un moteur qui les
+    //    confond avec des préalables y voit vingt cours requis.
+    expect(etat?.etat).not.toBe("verrouille");
     expect(etat?.manquants).toEqual([]);
+
+    // 2. Elle ne disparaît pas pour autant. Le moteur v2 la remonte en
+    //    avertissement — un cran de plus que ce que ce test exigeait quand il
+    //    a été écrit, où l'état attendu était simplement « disponible ». Une
+    //    exigence réelle que rien n'affiche est le repli silencieux que ce
+    //    projet combat, donc on vérifie qu'elle est bien DITE.
+    expect(etat?.etat).toBe("avertissement");
+    expect(etat?.avertissements.join(" ")).toContain("restriction d'inscription");
+    expect(etat?.avertissements.join(" ")).toContain(
+      (avecRestriction as Cours).restrictionsBrut as string,
+    );
   });
 });

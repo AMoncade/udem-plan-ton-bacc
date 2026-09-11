@@ -11,7 +11,6 @@
  */
 
 import { depot } from "@/app/_donnees/source";
-import { MOTEUR_LIT_CONTRAT_V1 } from "@/app/_lib/moteur";
 import { useEtat } from "./ProviderEtat";
 
 export function PiedApp() {
@@ -62,14 +61,6 @@ export function PiedApp() {
           {donnees.catalogue.prealablesNonParses.length} ligne(s) de préalables non
           réduite(s) en codes, affichée(s) telle(s) quelle(s) sur la fiche du cours
           concerné.
-        </p>
-      ) : null}
-
-      {MOTEUR_LIT_CONTRAT_V1 ? (
-        <p className="mt-1 text-avert">
-          Le moteur lit encore la forme v1 des règles de blocs ; l&apos;UI les lui
-          traduit (<code>app/_lib/moteur.ts</code>). Tout bloc dont la règle n&apos;a pas
-          pu être transmise sans perte ressort dans les problèmes de l&apos;audit.
         </p>
       ) : null}
     </footer>

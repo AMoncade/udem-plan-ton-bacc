@@ -259,16 +259,38 @@ export function arithmetiqueProgramme(programme: Programme): ArithmetiqueProgram
   }
 
   // Lu sur la page d'abord ; déduit seulement en dernier recours, et dit.
+  //
+  // L'ORDRE ET LES CONDITIONS SONT CEUX DU MOTEUR (`lib/engine/bornes.ts`,
+  // `resoudreExigences`), délibérément. Cette fonction alimente la balance du
+  // haut de l'écran ; le moteur alimente la liste des problèmes juste en
+  // dessous. Deux règles de déduction différentes donneraient deux nombres
+  // différents sur le MÊME écran — « Option 0/33 » au-dessus et « il manque
+  // 18 crédits d'option » en dessous — sans qu'aucun test de l'un ou l'autre
+  // ne tombe, puisque chacun serait cohérent avec lui-même.
+  const resolu = (
+    champ: "obligatoire" | "choix",
+    sommeDesBlocs: Intervalle,
+  ): Intervalle => programme.exigences?.[champ] ?? { min: sommeDesBlocs.min, max: sommeDesBlocs.min };
+  const estExact = (i: Intervalle): boolean => i.min === i.max;
+
+  const obligatoireResolu = resolu("obligatoire", obligatoire);
+  const choixResolu = resolu("choix", choix);
+
   let exigeOption: Intervalle | null = null;
   let origineOption: OrigineExigence = "inconnu";
   const surPage = programme.exigences?.option ?? null;
   if (surPage !== null) {
     exigeOption = surPage;
     origineOption = "page";
-  } else if (programme.creditsTotal !== null) {
-    // La déduction retire les MINIMUMS : c'est la borne basse de ce qu'il
-    // reste pour l'option. Elle vaut comme estimation, pas comme lecture.
-    const reste = programme.creditsTotal - obligatoire.min - choix.min;
+  } else if (
+    programme.creditsTotal !== null &&
+    // Soustraire des INTERVALLES donnerait un résultat plus large que la
+    // réalité, donc un audit trop clément : la déduction n'a de sens que si
+    // l'obligatoire et le choix sont des nombres exacts.
+    estExact(obligatoireResolu) &&
+    estExact(choixResolu)
+  ) {
+    const reste = programme.creditsTotal - obligatoireResolu.min - choixResolu.min;
     if (reste >= 0) {
       exigeOption = { min: reste, max: reste };
       origineOption = "deduit";
