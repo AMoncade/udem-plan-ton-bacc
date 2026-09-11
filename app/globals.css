@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * IDENTITÉ VISUELLE — « registre de parcours »
+ *
+ * Le vernaculaire du domaine est la table : table de mortalité, relevé de
+ * notes, balance de crédits. L'interface est donc un registre réglé — des
+ * filets d'un pixel, des chiffres alignables, des surfaces qui changent d'un
+ * demi-ton — et non un empilement de cartes arrondies.
+ *
+ * Règle qui tient tout : LA COULEUR APPARTIENT AUX ÉTATS. Le châssis est
+ * monochrome (encre + papier). Dès qu'une couleur apparaît, elle signifie
+ * quelque chose de précis : fait, disponible, verrouillé, avertissement,
+ * perdu. Rien n'est coloré pour décorer.
+ *
+ * L'inconnu se montre comme inconnu : filet tireté et « ? ». Un cours
+ * référencé par un bloc sans fiche de cours est l'état NORMAL du catalogue,
+ * pas une erreur à masquer par un zéro.
+ */
+
+@theme {
+  /* Encre : fond de registre, bleu de nuit désaturé. */
+  --color-encre: #0e1520;
+  --color-relief: #151f2c;
+  --color-creux: #0a1018;
+  --color-trait: #26344a;
+  --color-traitfort: #3d5273;
+
+  /* Papier : toute la typographie du châssis. */
+  --color-papier: #e6edf6;
+  --color-doux: #93a4bc;
+  --color-faible: #64758d;
+
+  /* États — le seul usage légitime de la couleur. */
+  --color-fait: #49b68a;
+  --color-dispo: #5aa9f0;
+  --color-verrou: #76889f;
+  --color-avert: #e0a53e;
+  --color-perdu: #e8685f;
+
+  --radius-net: 3px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-titre: var(--font-archivo);
+  --font-chiffre: var(--font-plex-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    color-scheme: dark;
+    background: var(--color-encre);
+  }
+
+  body {
+    background: var(--color-encre);
+    color: var(--color-papier);
+    font-family: var(--font-titre), ui-sans-serif, system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Les chiffres d'un registre s'alignent en colonne. */
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(--font-chiffre), ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-dispo) 35%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-papier);
+    outline-offset: 2px;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  * {
+    scrollbar-color: var(--color-trait) transparent;
+    scrollbar-width: thin;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility chiffres {
+  font-family: var(--font-chiffre), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hachure de l'écart : l'aire que personne ne réclame bloc par bloc. */
+@utility hachure {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    color-mix(in oklab, var(--color-avert) 55%, transparent) 0 1px,
+    transparent 1px 6px
+  );
+}
+
+/* Un cours dont la fiche manque : ni vide, ni zéro — tireté. */
+@utility tirete {
+  border-style: dashed;
+  border-color: var(--color-traitfort);
 }
