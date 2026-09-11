@@ -83,8 +83,17 @@ const MARQUEURS_ORIENTATION = ["Propre à l'orientation ", "Propre à l'option "
 export function parseTitreBloc(brut: string): { id: string; nom: string } | null {
   const t = brut.trim();
   // Préfixe avant : « MM-Bloc 73A ». Préfixe après : « Bloc MM-70A ».
+  // `[A-Z0-9]*` et non `[A-Z]*` : le DES en médecine vétérinaire numérote ses
+  // blocs « 70C1A », « 70C1B », « 70C2A »… — des chiffres APRÈS la lettre.
+  // S'arrêter à la première lettre donnait `70C` pour dix blocs différents du
+  // même segment, donc dix clés identiques et un audit qui les mélange.
+  // Et `(?:-[A-Z]{1,4})?` en fin d'identifiant : la maîtrise en physique et
+  // celle en études anglaises écrivent « Bloc 70A-MM », « Bloc 70D-ST »,
+  // « Bloc 70D-TD » — le même préfixe de cheminement, mais APRÈS le numéro.
+  // Troisième position pour la même idée, et la troisième à faire collisionner
+  // des clés si on l'ignore.
   const m =
-    /^([A-Za-z]{1,4}-)?Bloc\s+(?:([A-Za-z]{1,4})-)?(\d{2,3}[A-Z]*)\s*(.*)$/.exec(t);
+    /^([A-Za-z]{1,4}-)?Bloc\s+(?:([A-Za-z]{1,4})-)?(\d{2,3}[A-Z0-9]*(?:-[A-Z]{1,4})?)\s*(.*)$/.exec(t);
   if (!m) return null;
   const avant = m[1] ? m[1].replace(/-$/, "") : null;
   const apres = m[2] ?? null;
@@ -393,23 +402,6 @@ export function parseStructure(
         continue;
       }
 
-      const cle = cleBloc(entete.numero, titre.id);
-      const sujet = `${slug} bloc ${cle}`;
-      if (blocs.some((b) => b.cle === cle)) {
-        // `Bloc.id` n'est pas unique, mais `cle` doit l'être : si elle collisionne,
-        // l'audit mélangerait deux blocs. On le dit plutôt que de fusionner.
-        journal.inattendu(sujet, "deux blocs portent la même clé segment/id — le second est conservé à part");
-      }
-
-      const small = /<small\b[^>]*>([\s\S]*?)<\/small>/i.exec(titreHtml);
-      const regleBrut = small ? texteLigne(small[1]) : "";
-      if (!small) {
-        journal.manque(sujet, "règle de crédits (<small>) absente — regle = inconnu, bloc conservé");
-      }
-      const lue = parseRegleBloc(regleBrut);
-      if (lue.note) journal.inattendu(sujet, lue.note);
-      if (titre.nom === "") journal.manque(sujet, 'la page ne donne aucun nom à ce bloc (nom = "")');
-
       // Tout le texte de `div.bloc-notes`, une entrée par bloc de texte.
       // NE PAS passer par `tousContenus(..., "p")` : le bloc 02E du bacc. en
       // musique écrit sa prose EN TEXTE NU puis ajoute un `<p>` avec le lien.
@@ -423,6 +415,82 @@ export function parseStructure(
             .map((t) => t.trim())
             .filter((t) => t !== "")
         : [];
+
+      const small = /<small\b[^>]*>([\s\S]*?)<\/small>/i.exec(titreHtml);
+      const petit = small ? texteLigne(small[1]) : "";
+      let regleBrut = petit;
+      let lue = parseRegleBloc(petit);
+      /** Libellé du `<small>` quand il ne porte PAS la règle : il QUALIFIE le
+       *  bloc (une passerelle d'admission, un type de formation). */
+      let qualificatif: string | null = null;
+
+      // DEUXIÈME GABARIT, vérifié sur le doctorat en pathologie et biologie
+      // cellulaire et le DESS en intervention en déficience visuelle : le
+      // `<small>` porte un LIBELLÉ (« Accès direct du B. Sc. au Ph. D. »,
+      // « Formation générale ») et la vraie règle est la PREMIÈRE LIGNE de
+      // `div.bloc-notes` (« Obligatoire - 2 crédits. »). Trente blocs avaient
+      // ainsi une règle parfaitement lisible, classée « inconnu » parce qu'on
+      // la cherchait au mauvais endroit.
+      if (lue.regle.type === "inconnu" && notesBloc.length > 0) {
+        // La règle est parfois SUIVIE d'une autre phrase dans le même nœud de
+        // texte (« Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512
+        // sont équivalents au cours PBC 6051. »), et le saut de ligne de la
+        // page disparaît à la normalisation des espaces. On essaie donc la note
+        // entière, puis sa PREMIÈRE PHRASE — sans quoi onze blocs dont la règle
+        // est parfaitement lisible restaient « inconnu » à cause de la phrase
+        // qui la suit.
+        const entiere = notesBloc[0];
+        const premierePhrase = /^[^.]*\./.exec(entiere)?.[0] ?? entiere;
+        for (const candidate of [entiere, premierePhrase]) {
+          const surNote = parseRegleBloc(candidate);
+          if (surNote.regle.type === "inconnu") continue;
+          qualificatif = petit === "" ? null : petit;
+          regleBrut = candidate;
+          lue = surNote;
+          const reste = entiere.slice(candidate.length).trim();
+          notesBloc.shift();
+          if (reste !== "") notesBloc.unshift(reste);
+          if (qualificatif !== null) notesBloc.unshift(qualificatif);
+          break;
+        }
+      }
+
+      if (!small) {
+        journal.manque(
+          `${slug} bloc ${cleBloc(entete.numero, titre.id)}`,
+          "règle de crédits (<small>) absente — regle = inconnu, bloc conservé",
+        );
+      }
+
+      // Un qualificatif entre dans l'IDENTITÉ du bloc, parce que la page répète
+      // le même id une fois par qualificatif : le doctorat en pathologie porte
+      // `Bloc 70A` pour « Accès direct du B. Sc. au Ph. D. » ET pour « Accès de
+      // la M. Sc. au Ph. D. », dans le même segment. Sans lui, deux blocs
+      // différents partagent une clé, et l'audit les mélange.
+      const id = qualificatif === null ? titre.id : `${titre.id} — ${qualificatif}`;
+      const cle = cleBloc(entete.numero, id);
+      const sujet = `${slug} bloc ${cle}`;
+      if (blocs.some((b) => b.cle === cle)) {
+        journal.inattendu(
+          sujet,
+          "deux blocs portent la même clé segment/id — le second est conservé à part, " +
+            "mais l'audit ne saura pas les distinguer",
+        );
+      }
+      if (lue.note) journal.inattendu(sujet, lue.note);
+      if (lue.prefixe !== null) {
+        // « Cheminement régulier : option - Maximum 9 crédits. » — la règle ne
+        // vaut que pour ce cheminement-là, et `Bloc.regle` n'a qu'un
+        // emplacement. Le préfixe est conservé en note, et le journal signale
+        // qu'une autre règle vit peut-être dans la prose du bloc.
+        if (!notesBloc.includes(lue.prefixe)) notesBloc.unshift(lue.prefixe);
+        journal.inattendu(
+          sujet,
+          `la règle ne vaut que pour « ${lue.prefixe} » (« ${regleBrut} ») ; ` +
+            "`Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`",
+        );
+      }
+      if (titre.nom === "") journal.manque(sujet, 'la page ne donne aucun nom à ce bloc (nom = "")');
 
       const cours = parseCodesBloc(morceauBloc, sujet, journal);
       // `contenuOuvert` : le bloc n'énumère aucun cours ET décrit son contenu en
@@ -457,7 +525,7 @@ export function parseStructure(
       }
 
       blocs.push({
-        id: titre.id,
+        id,
         cle,
         segment: entete.numero,
         nom: titre.nom,

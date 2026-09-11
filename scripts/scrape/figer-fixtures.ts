@@ -116,6 +116,40 @@ const STRUCTURES: readonly CibleStructure[] = [
       "page de structure qui répond 200 et ne contient AUCUN div.programme-segment. " +
       "C'est le cas dangereux : aucun statut HTTP ne le signale. structureLue = false.",
   },
+  {
+    slug: "doctorat-en-pathologie-et-biologie-cellulaire",
+    segments: ["70"],
+    quoi:
+      "SECOND GABARIT : le <small> porte un LIBELLÉ de passerelle (« Accès direct du " +
+      "B. Sc. au Ph. D. ») et la vraie règle est la première ligne de div.bloc-notes " +
+      "(« Obligatoire - 2 crédits. »), suivie d'une autre phrase dans le même nœud de " +
+      "texte. La page répète le même « Bloc 70A » une fois par passerelle : sans le " +
+      "libellé dans l'identifiant, deux blocs différents partagent une clé.",
+  },
+  {
+    slug: "maitrise-en-physique",
+    segments: ["70"],
+    quoi:
+      "« Bloc 70A-MM » et « Bloc 70A-ST » : troisième position du préfixe de " +
+      "cheminement, APRÈS le numéro cette fois. Ignorée, elle faisait collisionner " +
+      "les clés de six blocs.",
+  },
+  {
+    slug: "des-en-medecine-veterinaire-2",
+    segments: ["70"],
+    quoi:
+      "identifiants « 70C1A », « 70C1B », « 70C2A » : des CHIFFRES après la lettre. " +
+      "S'arrêter à la première lettre donnait « 70C » pour dix blocs du même segment.",
+  },
+  {
+    slug: "baccalaureat-en-sociologie",
+    segments: ["01"],
+    quoi:
+      "« Cheminement régulier : option - Maximum 9 crédits. » dans le <small>, et la " +
+      "règle de l'AUTRE cheminement dans div.bloc-notes. `Bloc.regle` n'a qu'un " +
+      "emplacement : la règle du <small> est lue, le préfixe et l'autre règle " +
+      "restent dans `notes`, et le journal le dit.",
+  },
 ];
 
 interface Entree {

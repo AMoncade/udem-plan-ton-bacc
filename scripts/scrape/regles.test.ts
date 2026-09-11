@@ -68,6 +68,78 @@ describe("parseRegleBloc — les 9 formes, avec leur programme d'origine", () =>
   });
 });
 
+describe("parseRegleBloc — les orthographes trouvées sur les 1 088 programmes", () => {
+  // Ces 78 blocs étaient classés « inconnu » après la passe complète. Chaque
+  // chaîne ci-dessous est un verbatim du site, avec le programme où elle vit.
+  const cas: [string, string, { type: string; min: number; max: number }][] = [
+    // Le tiret est U+2010 (HYPHEN), pas U+002D. Invisible à l'œil, fatal à une
+    // regex — et c'était la forme la plus fréquente des non lues.
+    ["Option ‐ Maximum 6 crédits.", "maîtrise en aménagement", { type: "option", min: 0, max: 6 }],
+    ["Obligatoire ‐ 27 crédits.", "maîtrise en linguistique", { type: "obligatoire", min: 27, max: 27 }],
+    ["Option – Minimum 10 et maximum 21 crédits.", "DES en médecine vétérinaire (U+2013)", { type: "option", min: 10, max: 21 }],
+    // Un « de » inséré après chaque borne.
+    ["Option - Minimum de 2 crédits, maximum de 6 crédits", "doctorat en sciences de la vision", { type: "option", min: 2, max: 6 }],
+    // Point-virgule au lieu de la virgule.
+    ["Option - Minimum 21 crédits; maximum 30 crédits.", "bacc. en communication et politique", { type: "option", min: 21, max: 30 }],
+    // « et » au lieu de la virgule.
+    ["Option - Minimum 6 crédits et maximum 9 crédits", "DESS en santé environnementale mondiale", { type: "option", min: 6, max: 9 }],
+    ["Option – minimum 3 crédits et maximum 5 crédits", "maîtrise en sciences buccodentaires", { type: "option", min: 3, max: 5 }],
+    // Abréviations « min. » / « max. », avec et sans virgule.
+    ["Option – min. 3.0 crédits, max. 9.0 crédits.", "bacc. en enseignement des sciences", { type: "option", min: 3, max: 9 }],
+    ["Option – min. 3 max. 9 crédits.", "idem, sans virgule ni premier « crédits »", { type: "option", min: 3, max: 9 }],
+    // Un intervalle écrit avec « à ».
+    ["Option - 6 à 12 crédits.", "bacc. 4 ans en arts et lettres", { type: "option", min: 6, max: 12 }],
+    // Aucun séparateur du tout.
+    ["Obligatoire 12 crédits.", "certificat de gérontologie", { type: "obligatoire", min: 12, max: 12 }],
+    ["Option Minimum 15 crédits, maximum 18 crédits.", "maîtrise en musique", { type: "option", min: 15, max: 18 }],
+    // Séparateur collé au type, ou deux-points.
+    ["Option : Minimum 12 crédits, maximum 42 crédits.", "bacc. en sociologie", { type: "option", min: 12, max: 42 }],
+    // Types écrits autrement.
+    ["Cours obligatoire - 3 crédits.", "DESS en journalisme", { type: "obligatoire", min: 3, max: 3 }],
+    ["Au choix - Maximum 3 crédits", "DESS en santé environnementale mondiale", { type: "choix", min: 0, max: 3 }],
+  ];
+
+  for (const [brut, ou, attendu] of cas) {
+    it(`« ${brut} » (${ou})`, () => {
+      const lu = parseRegleBloc(brut);
+      expect(lu.regle).toEqual({
+        type: attendu.type,
+        bornes: { min: attendu.min, max: attendu.max },
+      });
+    });
+  }
+
+  it("normalise TOUS les tirets Unicode, pas seulement ceux déjà rencontrés", () => {
+    // Normaliser une fois vaut mieux qu'une variante de regex par tiret : la
+    // prochaine page qui emploiera U+2012 passera sans rien changer.
+    for (const tiret of ["‐", "‑", "‒", "–", "—", "―", "−", "-"]) {
+      expect(parseRegleBloc(`Option ${tiret} Maximum 6 crédits.`).regle, tiret).toEqual({
+        type: "option",
+        bornes: { min: 0, max: 6 },
+      });
+    }
+  });
+
+  it("lit un préfixe de cheminement et le REND au lieu de le jeter", () => {
+    // Le bacc. en sociologie écrit « Cheminement régulier : option - Maximum 9
+    // crédits. » : la règle ne vaut que pour ce cheminement-là. Jeter le préfixe
+    // ferait passer la règle d'un cheminement pour celle du bloc entier.
+    const lu = parseRegleBloc("Cheminement régulier : option - Maximum 9 crédits.");
+    expect(lu.regle).toEqual({ type: "option", bornes: { min: 0, max: 9 } });
+    expect(lu.prefixe).toBe("Cheminement régulier");
+    const autre = parseRegleBloc("Cheminement régulier Option : Minimum 12 crédits, maximum 42 crédits.");
+    expect(autre.regle).toEqual({ type: "option", bornes: { min: 12, max: 42 } });
+    expect(autre.prefixe).toBe("Cheminement régulier");
+  });
+
+  it("garde `regleBrut` VERBATIM, tiret Unicode compris", () => {
+    // La normalisation sert à RECONNAÎTRE, pas à réécrire ce que la page dit.
+    const brut = "Option ‐ Maximum 6 crédits.";
+    expect(parseRegleBloc(brut).regle).not.toHaveProperty("brut");
+    expect(formeDeRegle(brut)).toBe("option / max seul");
+  });
+});
+
 describe("parseRegleBloc — ce qui n'est pas avalé en silence", () => {
   it("une forme inconnue devient `inconnu` AVEC son brut, jamais null", () => {
     // En v1 une règle illisible rendait null et faisait IGNORER le bloc entier :
