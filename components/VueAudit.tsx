@@ -4,33 +4,65 @@
  * VUE 2 — AUDIT DES BLOCS.
  *
  * La vue existe pour une raison arithmétique précise. Pour l'actuariat, les
- * minimums des blocs d'option totalisent 18 crédits, alors que le programme en
- * exige 33 : un étudiant peut satisfaire CHAQUE bloc et ne pas diplômer. Un
- * relevé bloc par bloc ne le dit nulle part, donc la balance du haut montre
- * l'écart de 15 crédits comme une aire ouverte, hachurée.
+ * minimums des blocs d'option totalisent 18 crédits alors que le programme en
+ * exige 33 : un étudiant peut satisfaire CHAQUE bloc et ne pas diplômer. Aucun
+ * relevé ne le dit, donc la balance du haut montre l'écart comme une aire
+ * ouverte, hachurée.
  *
  * Deuxième information introuvable ailleurs : les crédits PERDUS. Au-delà du
  * maximum d'un bloc, un cours réussi ne compte pas vers le diplôme.
+ *
+ * ## Ce qui change en v2, et pourquoi
+ *
+ * La v1 écrivait « les quatre blocs d'option », « 90 − 54 − 3 » et « le seul
+ * bloc 75C » en dur. C'était juste pour un programme et faux pour les 1 087
+ * autres : certains ont deux blocs, d'autres trente, certains n'annoncent pas
+ * de total de crédits, et beaucoup écrivent leurs exigences en INTERVALLES
+ * (« de 30 à 33 à option »). Tout ce qui était un nombre écrit à la main est
+ * maintenant calculé, et tout ce qui peut manquer a un affichage pour son
+ * absence — « non annoncé », jamais 0, jamais « NaN ».
  */
 
-import { useState } from "react";
-import { catalogue, programme } from "@/app/_donnees/catalogue";
+import { useMemo, useState } from "react";
 import {
   arithmetiqueProgramme,
+  blocParCle,
+  bornesBloc,
   creditsDe,
   ficheDe,
-  maxBloc,
-  minBloc,
+  libelleIntervalle,
+  type ArithmetiqueProgramme,
 } from "@/app/_lib/cours";
-import type { EtatBloc } from "@/lib/types";
+import type { Bloc, Catalogue, EtatBloc, Intervalle, Programme } from "@/lib/types";
 import { Credits, TitreCours } from "./Etats";
-import { useEtat } from "./ProviderEtat";
-
-const exige = arithmetiqueProgramme(programme);
+import { useDonnees } from "./ProviderEtat";
 
 function pourcent(part: number, tout: number): number {
-  if (tout <= 0) return 0;
+  if (!Number.isFinite(tout) || tout <= 0) return 0;
   return Math.max(0, Math.min(100, (part / tout) * 100));
+}
+
+/** Prose normative d'un bloc ou d'un programme, rendue VERBATIM.
+ *  Elle existe dans le contrat pour être montrée : sans ce champ elle
+ *  disparaissait au scrape, et avec un champ qu'on n'affiche pas elle
+ *  disparaîtrait quand même. */
+function Notes({ notes, titre }: { notes: string[]; titre: string }) {
+  if (notes.length === 0) return null;
+  return (
+    <section className="mt-3">
+      <h3 className="text-[12px] text-faible">{titre}</h3>
+      <ul className="mt-1 space-y-1">
+        {notes.map((note) => (
+          <li
+            key={note}
+            className="border-l-2 border-trait pl-2.5 text-[12.5px] leading-relaxed text-doux"
+          >
+            {note}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
 }
 
 /**
@@ -42,34 +74,42 @@ function pourcent(part: number, tout: number): number {
 function BarreBloc({
   retenus,
   perdus,
-  min,
-  plafond,
+  bornes,
   reference,
 }: {
   retenus: number;
   perdus: number;
-  min: number;
-  plafond: number | null;
+  /** `null` quand la règle du bloc n'a pas été interprétée. */
+  bornes: Intervalle | null;
   reference: number;
 }) {
+  if (bornes === null) {
+    // Pas de bornes lues : pas de barre inventée. Un filet tireté dit
+    // « inconnu », là où une barre vide dirait « zéro ».
+    return (
+      <span className="flex h-2.5 w-full items-center">
+        <span className="tirete block h-2.5 w-full border" title="règle non interprétée" />
+      </span>
+    );
+  }
   // 78 % de la largeur pour l'échelle, le reste en réserve pour le débordement.
   const echelle = reference > 0 ? 78 / reference : 0;
-  const borne = plafond ?? Math.max(min, retenus, 1);
+  const borne = Math.max(bornes.max, bornes.min, retenus, 1);
   return (
     <span className="flex h-2.5 w-full items-stretch">
       <span
         className="relative block border border-trait bg-creux"
-        style={{ width: `${Math.max(2, borne * echelle)}%` }}
+        style={{ width: `${Math.max(2, bornes.max * echelle)}%` }}
       >
         <span
           className="absolute inset-y-0 left-0 bg-fait/60"
           style={{ width: `${pourcent(retenus, borne)}%` }}
         />
-        {min > 0 && plafond !== null && min < plafond ? (
+        {bornes.min > 0 && bornes.min < bornes.max ? (
           <span
             className="absolute inset-y-0 w-px bg-papier/70"
-            style={{ left: `${pourcent(min, borne)}%` }}
-            title={`minimum ${min} crédits`}
+            style={{ left: `${pourcent(bornes.min, borne)}%` }}
+            title={`minimum ${bornes.min} crédits`}
           />
         ) : null}
       </span>
@@ -84,15 +124,236 @@ function BarreBloc({
   );
 }
 
-export function VueAudit() {
-  const { audit, faits } = useEtat();
-  const totalPerdus = audit.blocs.reduce((somme, bloc) => somme + bloc.creditsPerdus, 0);
+interface SegmentBalance {
+  cle: string;
+  nom: string;
+  /** `null` quand rien n'annonce l'exigence de ce type. */
+  exige: Intervalle | null;
+  compte: number;
+}
 
-  const segments = [
+function LaBalance({
+  programme,
+  exige,
+  segments,
+  totalPerdus,
+  comptes,
+}: {
+  programme: Programme;
+  exige: ArithmetiqueProgramme;
+  segments: SegmentBalance[];
+  totalPerdus: number;
+  comptes: number;
+}) {
+  // Largeur d'un segment : son exigence si elle est connue, sinon ce qui y est
+  // compté. Jamais 0, sinon la colonne disparaît et l'étiquette avec elle.
+  const poids = (segment: SegmentBalance): number =>
+    Math.max(1, segment.exige?.max ?? segment.compte);
+
+  const resteAObtenir =
+    programme.creditsTotal === null ? null : Math.max(0, programme.creditsTotal - comptes);
+
+  return (
+    <section className="mt-7 border border-trait bg-relief/40 p-4 sm:p-5">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-[15px] font-semibold">
+          {programme.creditsTotal === null
+            ? "Les crédits du programme (total non annoncé)"
+            : `Les ${programme.creditsTotal} crédits du programme`}
+        </h2>
+        <p className="text-[12.5px] text-doux">
+          <span className="chiffres text-papier">{comptes}</span> comptés
+          {resteAObtenir === null ? null : (
+            <>
+              , <span className="chiffres text-papier">{resteAObtenir}</span> à obtenir
+            </>
+          )}
+          {totalPerdus > 0 ? (
+            <>
+              ,{" "}
+              <span
+                className="chiffres text-perdu"
+                title="Crédits réussis au-delà du maximum d'un bloc : ils ne comptent pas vers le diplôme"
+              >
+                {totalPerdus} perdus
+              </span>
+            </>
+          ) : null}
+        </p>
+      </div>
+
+      <div className="mt-4 flex items-stretch gap-1.5">
+        {segments.map((segment) => (
+          <div key={segment.cle} style={{ flexGrow: poids(segment), flexBasis: 0 }}>
+            <p className="flex items-baseline gap-1.5 text-[11.5px]">
+              <span className="min-w-0 truncate text-doux">{segment.nom}</span>
+              <span className="chiffres shrink-0 text-papier">
+                {segment.compte}
+                <span className="text-faible">
+                  /{segment.exige === null ? "?" : libelleIntervalle(segment.exige)}
+                </span>
+              </span>
+            </p>
+            <div
+              className={`relative mt-1 h-9 border bg-creux ${
+                segment.exige === null ? "tirete" : "border-trait"
+              }`}
+              title={
+                segment.exige === null
+                  ? `${segment.nom} : ${segment.compte} crédits comptés ; aucune exigence annoncée`
+                  : `${segment.nom} : ${segment.compte} crédits comptés sur ${libelleIntervalle(segment.exige)} exigés`
+              }
+            >
+              {segment.exige === null ? null : (
+                <div
+                  className="absolute inset-y-0 left-0 border-r border-fait/70 bg-fait/30"
+                  style={{ width: `${pourcent(segment.compte, segment.exige.min)}%` }}
+                />
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Deuxième étage, aligné sous « Option » : ce que les blocs réclament
+          vraiment, et l'écart que personne ne réclame bloc par bloc. */}
+      {exige.ecart !== null && exige.ecart > 0 && exige.exigeOption !== null ? (
+        <EtageEcart ecart={exige.ecart} exige={exige} segments={segments} poids={poids} />
+      ) : null}
+
+      <ExplicationEcart programme={programme} exige={exige} />
+    </section>
+  );
+}
+
+/** L'étage de l'écart, extrait pour que `ecart` soit un `number` prouvé et non
+ *  un `number | null` réduit à la main dans un attribut de style. */
+function EtageEcart({
+  ecart,
+  exige,
+  segments,
+  poids,
+}: {
+  ecart: number;
+  exige: ArithmetiqueProgramme;
+  segments: SegmentBalance[];
+  poids: (segment: SegmentBalance) => number;
+}) {
+  return (
+    <div className="mt-1.5 flex items-stretch gap-1.5">
+          {segments.map((segment) =>
+            segment.cle === "option" ? (
+              <div key={segment.cle} style={{ flexGrow: poids(segment), flexBasis: 0 }}>
+                <div className="flex h-6">
+                  <div
+                    style={{ flexGrow: Math.max(1, exige.minimumsOption), flexBasis: 0 }}
+                    className="flex items-center overflow-hidden border-l-2 border-traitfort bg-relief px-1.5"
+                    title={`Minimums des blocs d'option : ${exige.minimumsOption} crédits`}
+                  >
+                    <span className="truncate text-[10.5px] text-doux">
+                      minimums des blocs : {exige.minimumsOption}
+                    </span>
+                  </div>
+                  <div
+                    style={{ flexGrow: ecart, flexBasis: 0 }}
+                    className="hachure flex items-center overflow-hidden border-x border-avert/60 px-1.5"
+                    title={`${ecart} crédits d'option exigés qu'aucun minimum de bloc ne réclame`}
+                  >
+                    <span className="truncate text-[10.5px] text-avert">
+                      + {ecart} sans minimum
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div
+                key={segment.cle}
+                style={{ flexGrow: poids(segment), flexBasis: 0 }}
+              />
+            ),
+      )}
+    </div>
+  );
+}
+
+/** Le texte qui dit l'écart — généré, jamais recopié. La v1 écrivait « les
+ *  quatre blocs d'option » et « 90 − 54 − 3 » en dur. */
+function ExplicationEcart({
+  programme,
+  exige,
+}: {
+  programme: Programme;
+  exige: ArithmetiqueProgramme;
+}) {
+  const nbOption = programme.blocs.filter((b) => b.regle.type === "option").length;
+
+  if (exige.exigeOption === null) {
+    return (
+      <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
+        Ce programme n&apos;annonce ni total de crédits ni exigence par type, et la page
+        ne dit donc pas combien de crédits d&apos;option sont requis. Les minimums de ses{" "}
+        {nbOption} bloc{nbOption === 1 ? "" : "s"} d&apos;option totalisent{" "}
+        <span className="chiffres text-papier">{exige.minimumsOption}</span> crédits,
+        mais ce nombre n&apos;est pas l&apos;exigence du programme — on ne peut pas le
+        déduire, et il n&apos;est pas inventé ici.
+      </p>
+    );
+  }
+
+  if (exige.ecart === null || exige.ecart <= 0) {
+    return (
+      <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
+        Les minimums des {nbOption} bloc{nbOption === 1 ? "" : "s"} d&apos;option
+        totalisent <span className="chiffres text-papier">{exige.minimumsOption}</span>{" "}
+        crédits, pour{" "}
+        <span className="chiffres text-papier">
+          {libelleIntervalle(exige.exigeOption)}
+        </span>{" "}
+        exigés : satisfaire chaque bloc suffit donc à atteindre le total d&apos;option.
+        {exige.origineOption === "deduit"
+          ? " Cette exigence est déduite du total de crédits, pas lue sur la page."
+          : null}
+      </p>
+    );
+  }
+
+  return (
+    <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
+      Les {nbOption} blocs d&apos;option n&apos;exigent ensemble que{" "}
+      <span className="chiffres text-papier">{exige.minimumsOption}</span> crédits, alors
+      que le programme en demande{" "}
+      <span className="chiffres text-papier">{libelleIntervalle(exige.exigeOption)}</span>{" "}
+      {exige.origineOption === "page" ? (
+        <>
+          (tel qu&apos;écrit sur la page :{" "}
+          <span className="text-doux">« {programme.exigences?.brut} »</span>)
+        </>
+      ) : (
+        <>
+          ({programme.creditsTotal} au total − {exige.obligatoire.min} d&apos;obligatoires
+          − {exige.choix.min} au choix — <em>déduit</em>, la page ne l&apos;écrit pas)
+        </>
+      )}
+      . Les <span className="chiffres text-avert">{exige.ecart}</span> crédits de
+      différence se placent dans n&apos;importe quel bloc d&apos;option resté sous son
+      maximum. C&apos;est pourquoi « chaque bloc est conforme » ne veut pas dire « le
+      diplôme est atteint ».
+    </p>
+  );
+}
+
+export function VueAudit() {
+  const { catalogue, programme, audit } = useDonnees();
+  const exige = useMemo(() => arithmetiqueProgramme(programme), [programme]);
+
+  const totalPerdus = audit.blocs.reduce((somme, bloc) => somme + bloc.creditsPerdus, 0);
+  const blocsOption = programme.blocs.filter((bloc) => bloc.regle.type === "option");
+
+  const segments: SegmentBalance[] = [
     {
       cle: "obligatoire",
       nom: "Obligatoire",
-      exige: exige.obligatoire,
+      exige: programme.exigences?.obligatoire ?? exige.obligatoire,
       compte: audit.creditsObligatoires,
     },
     {
@@ -101,7 +362,12 @@ export function VueAudit() {
       exige: exige.exigeOption,
       compte: audit.creditsOption,
     },
-    { cle: "choix", nom: "Au choix", exige: exige.choix, compte: audit.creditsChoix },
+    {
+      cle: "choix",
+      nom: "Au choix",
+      exige: programme.exigences?.choix ?? exige.choix,
+      compte: audit.creditsChoix,
+    },
   ];
 
   return (
@@ -110,137 +376,113 @@ export function VueAudit() {
         <h1 className="text-[26px] font-semibold leading-tight tracking-[-0.02em]">
           Audit des blocs
         </h1>
+        <p className="mt-1.5 text-[13px] text-doux">
+          {programme.nom}
+          {programme.orientation === null
+            ? ""
+            : `, orientation ${programme.orientation.toLowerCase()}`}{" "}
+          — <span className="chiffres">{programme.blocs.length}</span> bloc
+          {programme.blocs.length === 1 ? "" : "s"} sur{" "}
+          <span className="chiffres">{programme.segments.length}</span> segment
+          {programme.segments.length === 1 ? "" : "s"} (
+          {programme.segments.join(", ") || "non annoncés"}).
+        </p>
         <p className="mt-2 text-doux">
           Ce que chaque bloc a reçu, ce qui lui manque, et ce qui dépasse son maximum —
           les crédits perdus, que les relevés ne comptent pas vers le diplôme.
         </p>
       </header>
 
-      {/* LA BALANCE — le geste central de l'interface. */}
-      <section className="mt-7 border border-trait bg-relief/40 p-4 sm:p-5">
-        <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h2 className="text-[15px] font-semibold">
-            Les {programme.creditsTotal} crédits du programme
-          </h2>
-          <p className="text-[12.5px] text-doux">
-            <span className="chiffres text-papier">{audit.creditsTotal}</span> comptés,{" "}
-            <span className="chiffres text-papier">
-              {Math.max(0, programme.creditsTotal - audit.creditsTotal)}
-            </span>{" "}
-            à obtenir
-            {totalPerdus > 0 ? (
-              <>
-                ,{" "}
-                <span
-                  className="chiffres text-perdu"
-                  title="Crédits réussis au-delà du maximum d'un bloc : ils ne comptent pas vers le diplôme"
-                >
-                  {totalPerdus} perdus
-                </span>
-              </>
-            ) : null}
-          </p>
-        </div>
-
-        <div className="mt-4 flex items-stretch gap-1.5">
-          {segments.map((segment) => (
-            <div key={segment.cle} style={{ flexGrow: segment.exige, flexBasis: 0 }}>
-              <p className="flex items-baseline gap-1.5 text-[11.5px]">
-                <span className="min-w-0 truncate text-doux">{segment.nom}</span>
-                <span className="chiffres shrink-0 text-papier">
-                  {segment.compte}
-                  <span className="text-faible">/{segment.exige}</span>
-                </span>
-              </p>
-              <div
-                className="relative mt-1 h-9 border border-trait bg-creux"
-                title={`${segment.nom} : ${segment.compte} crédits comptés sur ${segment.exige} exigés`}
-              >
-                <div
-                  className="absolute inset-y-0 left-0 bg-fait/30 border-r border-fait/70"
-                  style={{ width: `${pourcent(segment.compte, segment.exige)}%` }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Deuxième étage, aligné sous le segment « Option » : ce que les blocs
-            réclament vraiment, et l'écart que personne ne réclame. */}
-        <div className="mt-1.5 flex items-stretch gap-1.5">
-          <div style={{ flexGrow: exige.obligatoire, flexBasis: 0 }} />
-          <div style={{ flexGrow: exige.exigeOption, flexBasis: 0 }}>
-            <div className="flex h-6">
-              <div
-                style={{ flexGrow: exige.minimumsOption, flexBasis: 0 }}
-                className="flex items-center overflow-hidden border-l-2 border-traitfort bg-relief px-1.5"
-                title={`Minimums des blocs d'option : ${exige.minimumsOption} crédits`}
-              >
-                <span className="truncate text-[10.5px] text-doux">
-                  minimums des blocs : {exige.minimumsOption}
-                </span>
-              </div>
-              <div
-                style={{ flexGrow: exige.ecart, flexBasis: 0 }}
-                className="hachure flex items-center overflow-hidden border-x border-avert/60 px-1.5"
-                title={`${exige.ecart} crédits d'option exigés qu'aucun minimum de bloc ne réclame`}
-              >
-                <span className="truncate text-[10.5px] text-avert">
-                  + {exige.ecart} sans minimum
-                </span>
-              </div>
-            </div>
-          </div>
-          <div style={{ flexGrow: exige.choix, flexBasis: 0 }} />
-        </div>
-
-        <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
-          Les quatre blocs d&apos;option n&apos;exigent ensemble que{" "}
-          <span className="chiffres text-papier">{exige.minimumsOption}</span> crédits,
-          alors que le programme en demande{" "}
-          <span className="chiffres text-papier">{exige.exigeOption}</span> (
-          {programme.creditsTotal} − {exige.obligatoire} obligatoires − {exige.choix} au
-          choix). Les{" "}
-          <span className="chiffres text-avert">{exige.ecart}</span> crédits de
-          différence se placent dans n&apos;importe quel bloc d&apos;option resté sous son
-          maximum. C&apos;est pourquoi « chaque bloc est conforme » ne veut pas dire
-          « le diplôme est atteint ».
+      {programme.exigences !== null ? (
+        <p className="mt-4 max-w-prose border-l-2 border-traitfort pl-2.5 text-[12.5px] text-doux">
+          Exigences telles qu&apos;écrites sur la page :{" "}
+          <span className="text-papier">« {programme.exigences.brut} »</span>
         </p>
-      </section>
+      ) : null}
+
+      <LaBalance
+        programme={programme}
+        exige={exige}
+        segments={segments}
+        totalPerdus={totalPerdus}
+        comptes={audit.creditsTotal}
+      />
+
+      {/* LES RÈGLES NON LUES — un bloc dont la règle n'a pas été interprétée ne
+          disparaît pas d'une somme en silence. */}
+      {exige.blocsInconnus.length > 0 ? (
+        <section className="mt-8">
+          <h2 className="border-b border-avert/40 pb-2 text-[15px] font-semibold text-avert">
+            {exige.blocsInconnus.length} bloc
+            {exige.blocsInconnus.length === 1 ? "" : "s"} dont la règle n&apos;a pas été
+            lue
+          </h2>
+          <ul className="mt-3 space-y-1.5">
+            {exige.blocsInconnus.map((bloc) => (
+              <li key={bloc.cle} className="text-[12.5px]">
+                <span className="chiffres text-papier">{bloc.id}</span>{" "}
+                <span className="text-doux">
+                  règle publiée : « {bloc.regleBrut || "aucune"} »
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 max-w-prose text-[12px] text-faible">
+            Leurs crédits n&apos;entrent dans aucun total ci-dessus, et le programme ne
+            peut pas être déclaré conforme tant qu&apos;ils sont là. C&apos;est voulu :
+            une règle inconnue traitée comme « aucune exigence » rendrait l&apos;audit
+            faux sans qu&apos;aucun test échoue.
+          </p>
+        </section>
+      ) : null}
 
       {/* LES PLAFONDS — l'information que rien d'autre ne donne à l'étudiant :
           un bloc ne retient jamais plus que son maximum. */}
-      <section className="mt-8">
-        <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-trait pb-2">
-          <h2 className="text-[15px] font-semibold">Plafonds des blocs d&apos;option</h2>
-          <p className="chiffres text-[12px] text-faible">
-            capacité {exige.capaciteOption} crédits pour {exige.exigeOption} à placer
-          </p>
-        </div>
+      {blocsOption.length > 0 ? (
+        <section className="mt-8">
+          <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-trait pb-2">
+            <h2 className="text-[15px] font-semibold">
+              Plafonds des {blocsOption.length} bloc{blocsOption.length === 1 ? "" : "s"}{" "}
+              d&apos;option
+            </h2>
+            <p className="chiffres text-[12px] text-faible">
+              capacité {exige.capaciteOption} crédits pour{" "}
+              {exige.exigeOption === null
+                ? "un total non annoncé"
+                : `${libelleIntervalle(exige.exigeOption)} à placer`}
+            </p>
+          </div>
 
-        <ul className="mt-3 space-y-2.5">
-          {programme.blocs
-            .filter((bloc) => bloc.regle.type === "option")
-            .map((bloc) => {
-              const etat = audit.blocs.find((e) => e.idBloc === bloc.id);
+          <ul className="mt-3 space-y-2.5">
+            {blocsOption.map((bloc) => {
+              const etat = audit.blocs.find((e) => e.cleBloc === bloc.cle);
               if (etat === undefined) return null;
+              const bornes = bornesBloc(bloc.regle);
               return (
-                <li key={bloc.id} className="grid gap-x-3 gap-y-1 sm:grid-cols-[190px_1fr]">
+                <li
+                  key={bloc.cle}
+                  className="grid gap-x-3 gap-y-1 sm:grid-cols-[190px_1fr]"
+                >
                   <p className="text-[12.5px]">
                     <span className="chiffres text-papier">{bloc.id}</span>{" "}
-                    <span className="text-doux">{bloc.nom}</span>
+                    <span className="text-doux">
+                      {bloc.nom === "" ? (
+                        <span className="text-faible italic">sans nom sur la page</span>
+                      ) : (
+                        bloc.nom
+                      )}
+                    </span>
                   </p>
                   <div className="flex items-center gap-2">
                     <BarreBloc
                       retenus={etat.creditsAttribues}
                       perdus={etat.creditsPerdus}
-                      min={minBloc(bloc.regle)}
-                      plafond={maxBloc(bloc.regle)}
+                      bornes={bornes}
                       reference={exige.capaciteOptionMax}
                     />
                     <p className="chiffres shrink-0 text-[11.5px] text-doux">
                       {etat.creditsAttribues}
-                      <span className="text-faible">/{maxBloc(bloc.regle) ?? "∞"}</span>
+                      <span className="text-faible">/{bornes?.max ?? "?"}</span>
                       {etat.creditsPerdus > 0 ? (
                         <span className="text-perdu"> +{etat.creditsPerdus} perdus</span>
                       ) : null}
@@ -249,17 +491,18 @@ export function VueAudit() {
                 </li>
               );
             })}
-        </ul>
+          </ul>
 
-        <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
-          Les quatre blocs peuvent accueillir {exige.capaciteOption} crédits en tout,
-          largement de quoi couvrir les {exige.exigeOption} exigés — mais aucun bloc ne
-          retient plus que son propre maximum. Les {exige.exigeOption} crédits
-          d&apos;option placés dans le seul bloc 75C n&apos;en donneraient que 27 vers le
-          diplôme : les 6 autres seraient réussis, payés, et perdus. Le trait vertical
-          marque le minimum du bloc, la barre rouge ce qui dépasse son plafond.
-        </p>
-      </section>
+          <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
+            Ces blocs peuvent accueillir {exige.capaciteOption} crédits en tout, mais
+            aucun ne retient plus que son propre maximum. Empiler tous les crédits
+            d&apos;option dans le bloc le plus large n&apos;en donnerait que{" "}
+            <span className="chiffres">{exige.capaciteOptionMax}</span> vers le diplôme :
+            le reste serait réussi, payé, et perdu. Le trait vertical marque le minimum
+            du bloc, la barre rouge ce qui dépasse son plafond.
+          </p>
+        </section>
+      ) : null}
 
       <section className="mt-8">
         <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-trait pb-2">
@@ -267,8 +510,8 @@ export function VueAudit() {
             {audit.conforme ? "Aucun problème" : `Problèmes (${audit.problemes.length})`}
           </h2>
           <p className="text-[12px] text-faible">
-            {faits.size} cours marqué{faits.size === 1 ? "" : "s"} comme fait
-            {faits.size === 1 ? "" : "s"}
+            {audit.blocs.length} bloc{audit.blocs.length === 1 ? "" : "s"} audité
+            {audit.blocs.length === 1 ? "" : "s"}
           </p>
         </div>
         {audit.conforme ? (
@@ -308,28 +551,48 @@ export function VueAudit() {
                 <th className="py-1.5 font-normal">Conformité</th>
               </tr>
             </thead>
-            {programme.blocs.map((bloc) => {
-              const etat = audit.blocs.find((e) => e.idBloc === bloc.id);
-              if (etat === undefined) return null;
-              return <LigneBloc key={bloc.id} idBloc={bloc.id} etat={etat} />;
+            {/* Clé et recherche par `cle`, jamais par `id` : deux blocs d'un même
+                programme peuvent porter le même `id` (`MM-Bloc 73A` et
+                `S-Bloc 73A`), et React comme `find` prendraient le premier des
+                deux sans rien signaler. */}
+            {audit.blocs.map((etat) => {
+              const bloc = blocParCle(programme, etat.cleBloc);
+              if (bloc === undefined) return null;
+              return (
+                <LigneBloc
+                  key={etat.cleBloc}
+                  bloc={bloc}
+                  etat={etat}
+                  catalogue={catalogue}
+                />
+              );
             })}
           </table>
         </div>
         <p className="mt-2 max-w-prose text-[12px] text-faible">
           Un cours ne compte que dans un seul bloc. « Placés » est le total des cours
           rangés dans le bloc ; « retenus » est ce que le bloc donne vraiment au diplôme,
-          une fois son plafond appliqué. Ouvrez une ligne pour voir les cours attribués.
+          une fois son plafond appliqué. Ouvrez une ligne pour voir les cours attribués
+          et les remarques de la page.
         </p>
       </section>
+
+      <Notes notes={programme.notes} titre="Remarques de la page du programme" />
     </div>
   );
 }
 
-function LigneBloc({ idBloc, etat }: { idBloc: string; etat: EtatBloc }) {
+function LigneBloc({
+  bloc,
+  etat,
+  catalogue,
+}: {
+  bloc: Bloc;
+  etat: EtatBloc;
+  catalogue: Catalogue;
+}) {
   const [ouvert, setOuvert] = useState(false);
-  const bloc = programme.blocs.find((b) => b.id === idBloc)!;
-  const min = minBloc(bloc.regle);
-  const plafond = maxBloc(bloc.regle);
+  const bornes = bornesBloc(bloc.regle);
   const sansFiche = etat.coursAttribues.filter(
     (code) => ficheDe(catalogue, code) === undefined,
   ).length;
@@ -344,11 +607,31 @@ function LigneBloc({ idBloc, etat }: { idBloc: string; etat: EtatBloc }) {
             aria-expanded={ouvert}
             className="text-left hover:text-papier"
           >
-            <span className="chiffres text-papier">{idBloc}</span>
-            <span className="block text-[12px] text-doux">{bloc.nom}</span>
+            <span className="chiffres text-papier">{bloc.id}</span>
+            <span className="block text-[12px] text-doux">
+              {bloc.nom === "" ? (
+                <span className="text-faible italic">sans nom</span>
+              ) : (
+                bloc.nom
+              )}
+            </span>
+            <span className="chiffres block text-[11px] text-faible">
+              segment {bloc.segment}
+            </span>
           </button>
         </td>
-        <td className="py-2 pr-3 text-[12px] text-doux">{bloc.regleBrut}</td>
+        <td className="py-2 pr-3 text-[12px] text-doux">
+          {bloc.regleBrut === "" ? (
+            <span className="text-faible italic">aucune règle publiée</span>
+          ) : (
+            bloc.regleBrut
+          )}
+          {bornes === null ? (
+            <span className="mt-0.5 block text-[11.5px] text-avert">
+              règle non interprétée
+            </span>
+          ) : null}
+        </td>
         <td className="chiffres py-2 pr-3 text-right text-doux">
           {etat.creditsAttribues + etat.creditsPerdus}
         </td>
@@ -359,9 +642,8 @@ function LigneBloc({ idBloc, etat }: { idBloc: string; etat: EtatBloc }) {
           <BarreBloc
             retenus={etat.creditsAttribues}
             perdus={etat.creditsPerdus}
-            min={min}
-            plafond={plafond}
-            reference={Math.max(plafond ?? min, min, 1)}
+            bornes={bornes}
+            reference={Math.max(bornes?.max ?? 1, 1)}
           />
         </td>
         <td className="chiffres py-2 pr-3 text-right">
@@ -386,12 +668,18 @@ function LigneBloc({ idBloc, etat }: { idBloc: string; etat: EtatBloc }) {
         <td className="py-2">
           <span
             className={`border px-2 py-0.5 text-[11.5px] ${
-              etat.conforme
-                ? "border-fait/50 bg-fait/10 text-fait"
-                : "border-perdu/50 bg-perdu/10 text-perdu"
+              bornes === null
+                ? "tirete border text-avert"
+                : etat.conforme
+                  ? "border-fait/50 bg-fait/10 text-fait"
+                  : "border-perdu/50 bg-perdu/10 text-perdu"
             }`}
           >
-            {etat.conforme ? "dans ses bornes" : "hors bornes"}
+            {bornes === null
+              ? "non concluant"
+              : etat.conforme
+                ? "dans ses bornes"
+                : "hors bornes"}
           </span>
         </td>
       </tr>
@@ -434,22 +722,24 @@ function LigneBloc({ idBloc, etat }: { idBloc: string; etat: EtatBloc }) {
                     <span className="chiffres">
                       {etat.creditsAttribues + etat.creditsPerdus}
                     </span>{" "}
-                    crédits, pour un plafond de <span className="chiffres">{plafond}</span>
-                    . <span className="chiffres text-perdu">{etat.creditsPerdus}</span>{" "}
-                    crédits réussis ne comptent pas vers le diplôme, et aucun relevé ne le
-                    dira : il faut déplacer un cours vers un autre bloc d&apos;option, ou
-                    accepter de les avoir payés pour rien.
+                    crédits, pour un plafond de{" "}
+                    <span className="chiffres">{bornes?.max ?? "?"}</span>.{" "}
+                    <span className="chiffres text-perdu">{etat.creditsPerdus}</span>{" "}
+                    crédits réussis ne comptent pas vers le diplôme, et aucun relevé ne
+                    le dira : il faut déplacer un cours vers un autre bloc d&apos;option,
+                    ou accepter de les avoir payés pour rien.
                   </p>
                 ) : null}
                 {sansFiche > 0 ? (
                   <p className="mt-2 text-[12px] text-avert">
                     {sansFiche} de ces cours {sansFiche === 1 ? "n'a" : "n'ont"} pas de
                     fiche : {sansFiche === 1 ? "son poids" : "leur poids"} en crédits est
-                    supposé, pas connu.
+                    inconnu, donc compté comme 0 — le verdict est au pire trop sévère.
                   </p>
                 ) : null}
               </>
             )}
+            <Notes notes={bloc.notes} titre="Remarques de la page pour ce bloc" />
           </td>
         </tr>
       ) : null}

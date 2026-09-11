@@ -16,7 +16,6 @@
  */
 
 import { useMemo, useState } from "react";
-import { catalogue, programme } from "@/app/_donnees/catalogue";
 import { codesReferences, creditsDe, ficheDe } from "@/app/_lib/cours";
 import { saisonsOffertes, verifierOffre } from "@/app/_lib/offre";
 import { chargeTrimestre, coursDuTrimestre, verifierPlan } from "@/app/_lib/plan";
@@ -24,12 +23,14 @@ import {
   HORIZON_DEFAUT,
   SAISONS,
   cleTrimestre,
+  horizon,
   libelleTrimestre,
+  ordreTrimestre,
   sigleTrimestre,
 } from "@/app/_lib/trimestres";
-import type { CodeCours, Trimestre } from "@/lib/types";
+import type { Catalogue, CodeCours, Trimestre } from "@/lib/types";
 import { Credits, MarqueEtat, TitreCours } from "./Etats";
-import { useEtat } from "./ProviderEtat";
+import { useDonnees, useEtat } from "./ProviderEtat";
 
 interface Refus {
   code: CodeCours;
@@ -44,8 +45,9 @@ interface Reserve {
 }
 
 export function VuePlan() {
-  const { plan, faits, diagnostics, placer, retirer } = useEtat();
-  const tousLesCodes = useMemo(() => codesReferences(catalogue), []);
+  const { plan, faits, placer, retirer } = useEtat();
+  const { catalogue, programme, diagnostics } = useDonnees();
+  const tousLesCodes = useMemo(() => codesReferences(catalogue), [catalogue]);
 
   const [enMain, setEnMain] = useState<CodeCours | null>(null);
   const [refus, setRefus] = useState<Refus | null>(null);
@@ -56,14 +58,32 @@ export function VuePlan() {
 
   const anomalies = useMemo(
     () => verifierPlan(catalogue, plan, faits),
-    [plan, faits],
+    [catalogue, plan, faits],
   );
+
+  /**
+   * L'horizon part du premier trimestre RÉELLEMENT publié par les fiches
+   * chargées, et non d'une date écrite en dur. La v1 démarrait à l'automne 2026
+   * parce que c'était le premier trimestre de la fixture ; sur un programme dont
+   * l'horaire commence ailleurs, toutes les colonnes auraient été hors horaire
+   * et chaque placement « sous réserve » — un refus déguisé, et faux.
+   */
+  const horizonAffiche = useMemo(() => {
+    const publies = Object.values(catalogue.cours).flatMap((fiche) => fiche.trimestres);
+    if (publies.length === 0) return HORIZON_DEFAUT;
+    const premier = publies.reduce((plusTot, t) =>
+      ordreTrimestre(t) < ordreTrimestre(plusTot) ? t : plusTot,
+    );
+    return horizon(premier, 9);
+  }, [catalogue]);
 
   const disponiblesDansReserve = tousLesCodes.filter((code) => {
     if (plan[code] !== undefined) return false;
     if (!montrerFaits && faits.has(code)) return false;
     if (blocFiltre !== "tous") {
-      const bloc = programme.blocs.find((b) => b.id === blocFiltre);
+      // Recherche par `cle` : `id` n'est pas unique, et filtrer par `id`
+      // montrerait les cours du premier bloc homonyme pour les deux.
+      const bloc = programme.blocs.find((b) => b.cle === blocFiltre);
       if (bloc === undefined || !bloc.cours.includes(code)) return false;
     }
     const terme = recherche.trim().toLowerCase();
@@ -184,10 +204,10 @@ export function VuePlan() {
                 aria-label="Filtrer par bloc"
                 className="min-w-0 flex-1 border border-trait bg-creux px-2 py-1.5 text-[12.5px] focus:border-traitfort focus:outline-none"
               >
-                <option value="tous">Tous les blocs</option>
+                <option value="tous">Tous les blocs ({programme.blocs.length})</option>
                 {programme.blocs.map((bloc) => (
-                  <option key={bloc.id} value={bloc.id}>
-                    {bloc.id} — {bloc.nom}
+                  <option key={bloc.cle} value={bloc.cle}>
+                    {bloc.nom === "" ? bloc.id : `${bloc.id} — ${bloc.nom}`}
                   </option>
                 ))}
               </select>
@@ -234,7 +254,7 @@ export function VuePlan() {
                       <span className="min-w-0 flex-1 truncate text-[12px] text-doux">
                         <TitreCours titre={fiche?.titre} />
                       </span>
-                      <SaisonsOffre code={code} />
+                      <SaisonsOffre code={code} catalogue={catalogue} />
                     </button>
                   </li>
                 );
@@ -245,10 +265,11 @@ export function VuePlan() {
 
         <section>
           <div className="flex gap-2 overflow-x-auto pb-3">
-            {HORIZON_DEFAUT.map((trimestre) => (
+            {horizonAffiche.map((trimestre) => (
               <ColonneTrimestre
                 key={cleTrimestre(trimestre)}
                 trimestre={trimestre}
+                catalogue={catalogue}
                 enMain={enMain}
                 onPlacer={tenterPlacement}
                 onRetirer={(code) => {
@@ -295,7 +316,7 @@ export function VuePlan() {
 }
 
 /** Les trois saisons, celles où le cours est offert en évidence. */
-function SaisonsOffre({ code }: { code: CodeCours }) {
+function SaisonsOffre({ code, catalogue }: { code: CodeCours; catalogue: Catalogue }) {
   const fiche = ficheDe(catalogue, code);
   if (fiche === undefined || fiche.trimestres.length === 0) {
     return (
@@ -326,16 +347,19 @@ function SaisonsOffre({ code }: { code: CodeCours }) {
 
 function ColonneTrimestre({
   trimestre,
+  catalogue,
   enMain,
   onPlacer,
   onRetirer,
 }: {
   trimestre: Trimestre;
+  catalogue: Catalogue;
   enMain: CodeCours | null;
   onPlacer: (code: CodeCours, trimestre: Trimestre) => void;
   onRetirer: (code: CodeCours) => void;
 }) {
-  const { plan, diagnostics } = useEtat();
+  const { plan } = useEtat();
+  const { diagnostics } = useDonnees();
   const codes = coursDuTrimestre(plan, trimestre);
   const charge = chargeTrimestre(catalogue, plan, trimestre);
   const verdict =
