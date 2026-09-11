@@ -1,5 +1,5 @@
 {
-  "_avertissement": "Fixture PARTIELLE. Les 8 blocs viennent de la page de structure (fetchée 2026-09-10). Seuls 3 cours sont présents, et uniquement ceux dont la page a été réellement fetchée et les champs cités verbatim. Les ~53 autres codes référencés par les blocs sont ABSENTS de `cours` — c'est volontaire : le moteur doit gérer un code de bloc sans fiche de cours (cas réel pendant un scrape incrémental), pas planter ni inventer.",
+  "_avertissement": "Fixture PARTIELLE et VÉRIFIÉE. Les 8 blocs et les 3 fiches de cours sont recopiés tels quels de data/catalogue.json, lui-même scrapé des pages d'admission.umontreal.ca. Les ~52 autres codes référencés par les blocs sont ABSENTS de `cours` : c'est volontaire, le moteur doit gérer un code de bloc sans fiche de cours (cas réel pendant un scrape incrémental) sans planter ni inventer. Une version antérieure de ce fichier portait des noms de blocs INVENTÉS par l'intégratrice (« Actuariat - option » au lieu de « Compléments d'actuariat ») et mettait faculte: null / description: \"\" pour deux fiches dont la page donne les deux — exactement ce que CLAUDE.md interdit. Ne rien écrire ici qui ne vienne d'une page vérifiée.",
   "scrapeISO": "2026-09-10T00:00:00.000Z",
   "prealablesNonParses": [],
   "programmes": [
@@ -11,59 +11,244 @@
       "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques/structure-du-programme/",
       "scrapeISO": "2026-09-10T00:00:00.000Z",
       "blocs": [
-        { "id": "01A", "segment": "01", "nom": "Tronc commun", "regleBrut": "Obligatoire - 26 crédits",
-          "regle": { "type": "obligatoire", "credits": 26 },
-          "cours": ["MAT 1000", "MAT 1400", "MAT 1500", "MAT 1600", "MAT 1720", "MAT 2717", "STT 1700"] },
-        { "id": "75A", "segment": "75", "nom": "Actuariat - obligatoire", "regleBrut": "Obligatoire - 21 crédits",
-          "regle": { "type": "obligatoire", "credits": 21 },
-          "cours": ["ACT 1240", "ACT 2243", "ACT 2250", "ACT 3201", "ACT 3251", "STT 2400", "STT 2700"] },
-        { "id": "75B", "segment": "75", "nom": "Informatique et progiciels", "regleBrut": "Obligatoire - 7 crédits",
-          "regle": { "type": "obligatoire", "credits": 7 },
-          "cours": ["IFT 1015", "IFT 1174", "STT 1682"] },
-        { "id": "75C", "segment": "75", "nom": "Actuariat - option", "regleBrut": "Option - Minimum 12 crédits, maximum 27 crédits",
-          "regle": { "type": "option", "min": 12, "max": 27 },
-          "cours": ["ACT 2241", "ACT 2242", "ACT 2251", "ACT 2284", "ACT 3230", "ACT 3253", "ACT 3261", "ACT 3282", "ACT 4000", "MAT 2000", "MAT 3000"] },
-        { "id": "75D", "segment": "75", "nom": "Statistique - option", "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits",
-          "regle": { "type": "option", "min": 3, "max": 15 },
-          "cours": ["STT 2000", "STT 2105", "STT 3220", "STT 3260", "STT 3410", "STT 3510", "STT 3781", "STT 3790", "STT 3795"] },
-        { "id": "75E", "segment": "75", "nom": "Mathématiques - option", "regleBrut": "Option - Maximum 13 crédits",
-          "regle": { "type": "option", "min": null, "max": 13 },
-          "cours": ["MAT 1410", "MAT 2050", "MAT 2100", "MAT 2115", "MAT 2130", "MAT 2412", "MAT 2719", "MAT 6117", "MAT 6701"] },
-        { "id": "75Y", "segment": "75", "nom": "Disciplines connexes - option", "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits",
-          "regle": { "type": "option", "min": 3, "max": 12 },
-          "cours": ["DMO 1000", "ECN 1000", "ECN 1040", "ECN 1050", "ECN 2165", "IFT 1025", "IFT 2015", "IFT 3245", "IFT 3700"] },
-        { "id": "75Z", "segment": "75", "nom": "Cours au choix", "regleBrut": "Choix - 3 crédits",
-          "regle": { "type": "choix", "credits": 3 }, "cours": [] }
+        {
+          "id": "01A",
+          "segment": "01",
+          "nom": "",
+          "regleBrut": "Obligatoire - 26 crédits.",
+          "regle": {
+            "type": "obligatoire",
+            "credits": 26
+          },
+          "cours": [
+            "MAT 1000",
+            "MAT 1400",
+            "MAT 1500",
+            "MAT 1600",
+            "MAT 1720",
+            "MAT 2717",
+            "STT 1700"
+          ]
+        },
+        {
+          "id": "75A",
+          "segment": "75",
+          "nom": "Actuariat, mathématiques financières et statistique",
+          "regleBrut": "Obligatoire - 21 crédits.",
+          "regle": {
+            "type": "obligatoire",
+            "credits": 21
+          },
+          "cours": [
+            "ACT 1240",
+            "ACT 2243",
+            "ACT 2250",
+            "ACT 3201",
+            "ACT 3251",
+            "STT 2400",
+            "STT 2700"
+          ]
+        },
+        {
+          "id": "75B",
+          "segment": "75",
+          "nom": "Outils informatiques de base",
+          "regleBrut": "Obligatoire - 7 crédits.",
+          "regle": {
+            "type": "obligatoire",
+            "credits": 7
+          },
+          "cours": [
+            "IFT 1015",
+            "IFT 1174",
+            "STT 1682"
+          ]
+        },
+        {
+          "id": "75C",
+          "segment": "75",
+          "nom": "Compléments d'actuariat",
+          "regleBrut": "Option - Minimum 12 crédits, maximum 27 crédits.",
+          "regle": {
+            "type": "option",
+            "min": 12,
+            "max": 27
+          },
+          "cours": [
+            "ACT 2241",
+            "ACT 2242",
+            "ACT 2251",
+            "ACT 2284",
+            "ACT 3230",
+            "ACT 3253",
+            "ACT 3261",
+            "ACT 3282",
+            "ACT 4000",
+            "MAT 2000",
+            "MAT 3000"
+          ]
+        },
+        {
+          "id": "75D",
+          "segment": "75",
+          "nom": "Compléments de statistique",
+          "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+          "regle": {
+            "type": "option",
+            "min": 3,
+            "max": 15
+          },
+          "cours": [
+            "STT 2000",
+            "STT 2105",
+            "STT 3220",
+            "STT 3260",
+            "STT 3410",
+            "STT 3510",
+            "STT 3781",
+            "STT 3790",
+            "STT 3795"
+          ]
+        },
+        {
+          "id": "75E",
+          "segment": "75",
+          "nom": "Compléments de mathématiques",
+          "regleBrut": "Option - Maximum 13 crédits.",
+          "regle": {
+            "type": "option",
+            "min": null,
+            "max": 13
+          },
+          "cours": [
+            "MAT 1410",
+            "MAT 2050",
+            "MAT 2100",
+            "MAT 2115",
+            "MAT 2130",
+            "MAT 2412",
+            "MAT 2719",
+            "MAT 6117",
+            "MAT 6701"
+          ]
+        },
+        {
+          "id": "75Y",
+          "segment": "75",
+          "nom": "Contributions d'autres disciplines",
+          "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+          "regle": {
+            "type": "option",
+            "min": 3,
+            "max": 12
+          },
+          "cours": [
+            "DMO 1000",
+            "ECN 1000",
+            "ECN 1040",
+            "ECN 1050",
+            "ECN 2165",
+            "IFT 1025",
+            "IFT 2015",
+            "IFT 3245",
+            "IFT 3700"
+          ]
+        },
+        {
+          "id": "75Z",
+          "segment": "75",
+          "nom": "",
+          "regleBrut": "Choix - 3 crédits.",
+          "regle": {
+            "type": "choix",
+            "credits": 3
+          },
+          "cours": []
+        }
       ]
     }
   ],
   "cours": {
     "ACT 2250": {
-      "code": "ACT 2250", "titre": "Mathématiques de l'assurance-vie 1", "credits": 3.0,
-      "cycle": "1er cycle", "faculte": "Faculté des arts et des sciences",
+      "code": "ACT 2250",
+      "titre": "Mathématiques de l'assurance-vie 1",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
       "description": "Assurances à long terme, fonction de survie, probabilités de décès, force de mortalité, tables de mortalité, hypothèses pour âges fractionnaires, assurance-vie, rentes viagères, perte de l'assureur, calcul des primes périodiques nettes et brutes.",
       "prealablesBrut": "ACT1240 ET MAT1720",
-      "prealables": { "genre": "et", "enfants": [ { "genre": "cours", "code": "ACT 1240" }, { "genre": "cours", "code": "MAT 1720" } ] },
+      "prealables": {
+        "genre": "et",
+        "enfants": [
+          {
+            "genre": "cours",
+            "code": "ACT 1240"
+          },
+          {
+            "genre": "cours",
+            "code": "MAT 1720"
+          }
+        ]
+      },
       "concomitantsBrut": null,
-      "trimestres": [ { "saison": "Été", "annee": 2026 }, { "saison": "Automne", "annee": 2026 } ],
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        }
+      ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2250/",
-      "scrapeISO": "2026-09-10T00:00:00.000Z"
+      "scrapeISO": "2026-09-11T03:40:23.688Z"
     },
     "IFT 1015": {
-      "code": "IFT 1015", "titre": "Programmation 1", "credits": 3.0,
-      "cycle": "1er cycle", "faculte": null, "description": "",
-      "prealablesBrut": null, "prealables": null, "concomitantsBrut": null,
-      "trimestres": [ { "saison": "Été", "annee": 2026 }, { "saison": "Automne", "annee": 2026 }, { "saison": "Hiver", "annee": 2027 } ],
+      "code": "IFT 1015",
+      "titre": "Programmation 1",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Éléments de base d'un langage de programmation : types, expressions, énoncés conditionnels et itératifs, procédures, fonctions, paramètres, récursivité, tableaux, enregistrements, pointeurs et fichiers.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Été",
+          "annee": 2026
+        },
+        {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1015/",
-      "scrapeISO": "2026-09-10T00:00:00.000Z"
+      "scrapeISO": "2026-09-11T03:40:29.764Z"
     },
     "ECN 2165": {
-      "code": "ECN 2165", "titre": "Comptabilité 1", "credits": 3.0,
-      "cycle": "1er cycle", "faculte": null, "description": "",
-      "prealablesBrut": null, "prealables": null, "concomitantsBrut": null,
-      "trimestres": [ { "saison": "Hiver", "annee": 2027 } ],
+      "code": "ECN 2165",
+      "titre": "Comptabilité 1",
+      "credits": 3,
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "description": "Le modèle comptable : fondements théoriques et fonctionnement pratique, adaptation aux formes juridiques d'entreprises. Concept économique de la valeur et du profit vs théories classiques de la comptabilité. Introduction à la comptabilité nationale.",
+      "prealablesBrut": null,
+      "prealables": null,
+      "concomitantsBrut": null,
+      "trimestres": [
+        {
+          "saison": "Hiver",
+          "annee": 2027
+        }
+      ],
       "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2165/",
-      "scrapeISO": "2026-09-10T00:00:00.000Z"
+      "scrapeISO": "2026-09-11T03:41:14.404Z"
     }
   }
 }

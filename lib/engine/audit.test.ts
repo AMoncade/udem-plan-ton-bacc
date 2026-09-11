@@ -202,7 +202,7 @@ describe("auditProgramme — le piège symétrique : total atteint mais bloc sou
     expect(etat(a, "75D").creditsAttribues).toBe(0); // mais le minimum de 75D, non
     expect(a.conforme).toBe(false);
     expect(joint(a)).toMatch(
-      /il manque 3 crédits dans le bloc 75D \(Statistique - option\) : 0 crédit sur un minimum de 3 crédits/,
+      /il manque 3 crédits dans le bloc 75D \(Compléments de statistique\) : 0 crédit sur un minimum de 3 crédits/,
     );
     expect(joint(a)).not.toMatch(/cours d'option :/); // pas de faux problème de total
   });
