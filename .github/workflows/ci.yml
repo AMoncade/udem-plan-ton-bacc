@@ -18,8 +18,15 @@ jobs:
 
       - run: npm ci
 
-      # Les trois portes dans l'ordre du moins cher au plus cher, pour que
-      # l'échec le plus rapide arrive en premier.
+      # `app/layout.tsx` référence `LayoutProps`, un type que Next GÉNÈRE dans
+      # .next/types — répertoire ignoré par git, donc absent d'un checkout neuf.
+      # Sans cette étape, `tsc --noEmit` échoue en CI alors qu'il passe en local,
+      # où un build précédent avait laissé les types générés sur le disque.
+      - name: Types générés par Next
+        run: npx next typegen
+
+      # Portes ordonnées du moins cher au plus cher : l'échec le plus rapide sort
+      # en premier.
       - name: Types
         run: npx tsc --noEmit
 
