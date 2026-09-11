@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { parsePrealables, diagnostiquerCours, auditProgramme } from "./index";
 import type { Catalogue, Cours, NoeudPrealable } from "../types";
 import catalogueBrut from "../../data/catalogue.json";
+import { adapterCatalogue } from "./donnees-test";
 
 /**
  * Tests contre le CATALOGUE RÉEL scrapé le 2026-09-11 (55/55 fiches) et contre
@@ -15,7 +16,7 @@ import catalogueBrut from "../../data/catalogue.json";
  * re-parsent donc `prealablesBrut` (exactement ce que le scraper refera) pour
  * mesurer ce que le parseur sait lire aujourd'hui.
  */
-const catalogue = catalogueBrut as unknown as Catalogue;
+const catalogue = adapterCatalogue(catalogueBrut);
 const programme = catalogue.programmes[0];
 const fiches = catalogue.cours as Record<string, Cours>;
 
@@ -420,7 +421,11 @@ describe("audit sur le catalogue réel — crédits vrais, plus aucun inventé",
     const a = auditProgramme(programme, cat, new Set(faits));
     expect(a.creditsOption).toBe(33);
     expect(a.creditsTotal).toBe(90);
-    expect(a.problemes).toEqual([]);
+    // `data/catalogue.json` est en contrat v1 : il n'a pas de champ `exigences`,
+    // donc le moteur DÉDUIT les 33 crédits (90 − 54 − 3) et le déclare. C'est le
+    // seul problème attendu ; tout le reste doit rester vide.
+    expect(a.problemes.filter((p) => !p.includes("il est DÉDUIT"))).toEqual([]);
+    expect(a.problemes).toHaveLength(1);
     expect(a.conforme).toBe(true);
   });
 

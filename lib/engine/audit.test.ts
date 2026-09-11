@@ -1,10 +1,32 @@
 import { describe, it, expect } from "vitest";
 import { auditProgramme } from "./index";
+import { cleBloc } from "../codes";
 import type { Audit, Bloc, Catalogue, Cours, Programme } from "../types";
 import fixtureBrute from "../../data/fixtures/actuariat-verifie.fixture.json";
+import {
+  EXIGENCES_ACTUARIAT_VERIFIEES,
+  adapterCatalogue,
+  avecExigences,
+  ficheTest,
+  formeDetectee,
+} from "./donnees-test";
 
-const fixture = fixtureBrute as unknown as Catalogue;
+/**
+ * La fixture appartient à l'intégratrice et est écrite dans le contrat v1 ;
+ * le moteur lit le contrat v2. `adapterCatalogue()` la traduit mécaniquement,
+ * en échouant bruyamment sur toute forme qu'elle ne sait pas traduire, et en
+ * laissant `exigences: null` — ce qui force le moteur à se rabattre sur la
+ * déduction, exactement comme en v1. Voir `./donnees-test.ts`.
+ */
+const fixture: Catalogue = adapterCatalogue(fixtureBrute);
 const programme: Programme = fixture.programmes[0];
+/** Le même programme, mais avec les exigences VÉRIFIÉES de la page. */
+const programmeAvecExigences: Programme = avecExigences(programme, {
+  brut: EXIGENCES_ACTUARIAT_VERIFIEES.brut,
+  obligatoire: { ...EXIGENCES_ACTUARIAT_VERIFIEES.obligatoire },
+  option: { ...EXIGENCES_ACTUARIAT_VERIFIEES.option },
+  choix: { ...EXIGENCES_ACTUARIAT_VERIFIEES.choix },
+});
 
 // ---------------------------------------------------------------------------
 // CATALOGUE DE TRAVAIL
@@ -29,28 +51,13 @@ const CREDITS_INVENTES: Record<string, number> = {
 const HORS_BLOCS = ["ZZZ 9001", "ZZZ 9002"];
 
 function fiche(code: string): Cours {
-  return {
-    code,
-    titre: `Cours ${code}`,
-    credits: CREDITS_INVENTES[code] ?? 3,
-    cycle: "1er cycle",
-    faculte: null,
-    description: "",
-    prealablesBrut: null,
-    prealables: null,
-    concomitantsBrut: null,
-    trimestres: [],
-    url: `https://exemple.test/${code}`,
-    scrapeISO: "2026-09-10T00:00:00.000Z",
-  };
+  return ficheTest(code, CREDITS_INVENTES[code] ?? 3);
 }
 
 const codesDesBlocs = programme.blocs.flatMap((b) => b.cours);
 const catalogueComplet: Catalogue = {
-  programmes: fixture.programmes,
+  ...fixture,
   cours: Object.fromEntries([...codesDesBlocs, ...HORS_BLOCS].map((c) => [c, fiche(c)])),
-  prealablesNonParses: [],
-  scrapeISO: "2026-09-10T00:00:00.000Z",
 };
 
 function bloc(id: string): Bloc {
@@ -76,6 +83,15 @@ function etat(a: Audit, id: string) {
   if (!e) throw new Error(`bloc absent de l'audit : ${id}`);
   return e;
 }
+/** Les problèmes qui ne sont PAS la mise en garde sur la déduction. Sert à
+ *  garder les assertions « aucun problème » de la v1 sans les affaiblir : la
+ *  note de repli est attendue, tout le reste doit rester vide. */
+function problemesHorsRepli(a: Audit): string[] {
+  return a.problemes.filter((p) => !p.includes("il est DÉDUIT"));
+}
+/** La note de repli, qui doit TOUJOURS être là quand `exigences` vaut null. */
+const NOTE_DEDUCTION =
+  /le total de crédits à option n'est pas écrit dans les données de ce programme : il est DÉDUIT, 90 crédits au total − 54 crédits d'obligatoires − 3 crédits au choix = 33 crédits/;
 
 // Les 54 crédits obligatoires : tous les cours de 01A + 75A + 75B.
 const OBLIGATOIRES = [...bloc("01A").cours, ...bloc("75A").cours, ...bloc("75B").cours];
@@ -87,6 +103,43 @@ const CHOIX = ["ZZZ 9001"];
 
 // ---------------------------------------------------------------------------
 
+describe("pont v1 -> v2 — l'instrument de mesure lui-même", () => {
+  it("la fixture du dépôt est encore en contrat v1, et la traduction la rend lisible", () => {
+    // Le jour où le scraper livre du v2, CE test change de valeur attendue et
+    // dit lequel des deux mondes on est en train de mesurer. Sans lui, la
+    // traduction pourrait devenir un no-op ou un mensonge sans qu'on le voie.
+    expect(formeDetectee(fixtureBrute)).toBe("v1");
+    expect(formeDetectee(fixture)).toBe("v2");
+    for (const b of fixture.programmes[0].blocs) {
+      expect(b.regle.type).not.toBe("inconnu");
+      if (b.regle.type !== "inconnu") {
+        expect(typeof b.regle.bornes.min).toBe("number");
+        expect(typeof b.regle.bornes.max).toBe("number");
+      }
+    }
+    // La v1 n'avait pas ces champs : ils sont vides, pas inventés.
+    expect(programme.exigences).toBeNull();
+    expect(programme.notes).toEqual([]);
+    expect(fixture.journal).toEqual([]);
+  });
+
+  it("refuse de traduire une règle qu'elle ne connaît pas, au lieu de l'avaler", () => {
+    const casse = structuredClone(fixtureBrute) as unknown as {
+      programmes: { blocs: { regle: unknown }[] }[];
+    };
+    casse.programmes[0].blocs[0].regle = { type: "quota-par-sigle", credits: 9 };
+    expect(() => adapterCatalogue(casse)).toThrow(/type de règle v1 inconnu/);
+  });
+
+  it("refuse une règle d'option sans maximum : forme jamais relevée sur le site", () => {
+    const casse = structuredClone(fixtureBrute) as unknown as {
+      programmes: { blocs: { regle: unknown }[] }[];
+    };
+    casse.programmes[0].blocs[3].regle = { type: "option", min: 12, max: null };
+    expect(() => adapterCatalogue(casse)).toThrow(/sans maximum/);
+  });
+});
+
 describe("arithmétique de la fixture — vérification des affirmations du brief", () => {
   it("obligatoire = 54, choix = 3, minimums d'option = 18, capacité d'option = 67", () => {
     let obligatoire = 0;
@@ -94,28 +147,51 @@ describe("arithmétique de la fixture — vérification des affirmations du brie
     let minOption = 0;
     let maxOption = 0;
     for (const b of programme.blocs) {
-      if (b.regle.type === "obligatoire") obligatoire += b.regle.credits;
-      else if (b.regle.type === "choix") choix += b.regle.credits;
-      else {
-        minOption += b.regle.min ?? 0;
-        maxOption += b.regle.max ?? Infinity;
+      if (b.regle.type === "inconnu") throw new Error(`règle illisible : ${b.id}`);
+      // Contrat v2 : TOUT type connu porte `bornes`, et une exigence exacte
+      // s'écrit min === max. La v1 lisait `credits` / `min` / `max`.
+      const { min, max } = b.regle.bornes;
+      if (b.regle.type === "obligatoire") {
+        expect(min).toBe(max); // « Obligatoire - 26 crédits » est exact
+        obligatoire += min;
+      } else if (b.regle.type === "choix") {
+        expect(min).toBe(max);
+        choix += min;
+      } else {
+        minOption += min;
+        maxOption += max;
       }
     }
     expect(obligatoire).toBe(54); // 01A 26 + 75A 21 + 75B 7
     expect(choix).toBe(3); // 75Z
     expect(minOption).toBe(18); // 75C 12 + 75D 3 + 75E 0 + 75Y 3
     expect(maxOption).toBe(67); // 27 + 15 + 13 + 12
+
+    // `creditsTotal` peut être null dans le contrat v2 : il ne se suppose pas.
     expect(programme.creditsTotal).toBe(90);
-    // Le nombre central du projet n'est écrit NULLE PART dans les données : il
-    // se déduit. C'est pour ça que le moteur le calcule au lieu de le coder.
-    expect(programme.creditsTotal - obligatoire - choix).toBe(33);
+    const total = programme.creditsTotal;
+    if (total === null) throw new Error("total absent");
+    // Le nombre central du projet n'est écrit NULLE PART dans ces données : il
+    // se déduit. C'est pour ça que le moteur garde la déduction en repli.
+    expect(total - obligatoire - choix).toBe(33);
     expect(33 - minOption).toBe(15); // l'écart qui fait tout le piège
-    expect(JSON.stringify(fixture)).not.toContain('"33"');
+    expect(JSON.stringify(fixtureBrute)).not.toContain('"33"');
   });
 
-  it("hypothèse d'attribution vérifiée : aucun cours n'est cité par deux blocs", () => {
-    // S'il y avait chevauchement, l'attribution directe ne suffirait plus et il
-    // faudrait un solveur d'affectation sous bornes.
+  it("les clés de blocs sont uniques, et ce sont elles qui identifient", () => {
+    // `Bloc.id` n'est pas unique dans le contrat v2 (`MM-Bloc 73A` et
+    // `S-Bloc 73A` coexistent) : l'audit identifie par `cle`.
+    const cles = programme.blocs.map((b) => b.cle);
+    expect(new Set(cles).size).toBe(cles.length);
+    expect(cles).toContain(cleBloc("01", "01A"));
+    expect(cles).toContain(cleBloc("75", "75C"));
+    const a = auditer([]);
+    expect(a.blocs.map((b) => b.cleBloc)).toEqual(cles);
+    expect(a.blocs.map((b) => b.idBloc)).toEqual(programme.blocs.map((b) => b.id));
+  });
+
+  it("aucun cours n'est cité par deux blocs de l'actuariat (le solveur n'a rien à résoudre)", () => {
+    // Vrai ici, FAUX en droit (70K ⊂ 70L) : voir affectation.test.ts.
     const vus = new Map<string, string>();
     const chevauchements: string[] = [];
     for (const b of programme.blocs) {
@@ -174,6 +250,19 @@ describe("auditProgramme — LE PIÈGE 18-CONTRE-33", () => {
     expect(joint(a)).toMatch(/NE SUFFIT PAS/);
     // Le message dit quoi faire, et où il reste de la place.
     expect(joint(a)).toMatch(/place restante : 75C 15 crédits, 75D 12 crédits, 75E 13 crédits, 75Y 9 crédits/);
+    // Et il dit que le 33 est déduit, pas lu (contrat v2, point 3 du brief).
+    expect(joint(a)).toMatch(NOTE_DEDUCTION);
+  });
+
+  it("le même piège quand les 33 crédits sont LUS sur la page au lieu d'être déduits", () => {
+    // Chemin `Programme.exigences` : même verdict, sans mise en garde de repli.
+    const a = auditer([...OBLIGATOIRES, ...OPTION_AUX_MINIMUMS, ...CHOIX], catalogueComplet, programmeAvecExigences);
+    expect(a.creditsOption).toBe(18);
+    expect(a.conforme).toBe(false);
+    expect(joint(a)).toMatch(/il manque 15 crédits de cours d'option : 18 crédits sur les 33 crédits exigés/);
+    // La phrase de la page est citée, et AUCUNE mise en garde de déduction.
+    expect(joint(a)).toMatch(/d'après la page \(« 54 crédits obligatoires, 33 crédits à option et 3 crédits au choix »\)/);
+    expect(joint(a)).not.toMatch(/DÉDUIT/);
   });
 
   it("les 15 crédits manquants placés sous les maximums rendent le parcours conforme", () => {
@@ -182,6 +271,14 @@ describe("auditProgramme — LE PIÈGE 18-CONTRE-33", () => {
     expect(a.creditsOption).toBe(33);
     expect(a.creditsChoix).toBe(3);
     expect(a.creditsTotal).toBe(90);
+    expect(problemesHorsRepli(a)).toEqual([]);
+    expect(a.problemes).toHaveLength(1); // la seule note est celle du repli
+    expect(joint(a)).toMatch(NOTE_DEDUCTION);
+    expect(a.conforme).toBe(true);
+  });
+
+  it("le même parcours avec les exigences de la page : conforme et AUCUN problème", () => {
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, programmeAvecExigences);
     expect(a.problemes).toEqual([]);
     expect(a.conforme).toBe(true);
   });
@@ -191,6 +288,20 @@ describe("auditProgramme — LE PIÈGE 18-CONTRE-33", () => {
     const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, plusLong);
     expect(a.conforme).toBe(false);
     expect(joint(a)).toMatch(/il manque 3 crédits de cours d'option : 33 crédits sur les 36 crédits exigés/);
+  });
+
+  it("`creditsTotal: null` n'est PAS supposé valoir 90 : la déduction devient impossible et le dit", () => {
+    // Contrat v2, point 4 du brief. La v1 écrivait `creditsTotal ?? 0`, ce qui
+    // aurait déduit « 0 − 54 − 3 = −57 crédits d'option » sur un vrai programme.
+    const sansTotal: Programme = { ...programme, creditsTotal: null };
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, sansTotal);
+    expect(joint(a)).toMatch(/le total de crédits à option est INCONNU pour ce programme/);
+    expect(joint(a)).toMatch(/faute de total de crédits/);
+    expect(joint(a)).toMatch(/n'est donc pas concluant/);
+    expect(joint(a)).not.toMatch(/il est DÉDUIT/);
+    // Et surtout : aucun « incohérence, les obligatoires dépassent les 0 crédits
+    // du programme », qui serait le symptôme d'un 0 supposé.
+    expect(joint(a)).not.toMatch(/dépassent déjà les/);
   });
 });
 
@@ -230,7 +341,69 @@ describe("auditProgramme — crédits au-delà du maximum d'un bloc", () => {
     expect(etat(a, "75C").creditsPerdus).toBe(6);
     expect(a.creditsOption).toBe(33);
     expect(a.conforme).toBe(true);
+    expect(problemesHorsRepli(a)).toEqual([]);
+  });
+});
+
+describe("auditProgramme — les totaux par type sont des INTERVALLES", () => {
+  /**
+   * Droit : « de 30 à 33 crédits à option ». Au-delà, ça ne compte pas.
+   * Transposé ici sur les blocs réels de l'actuariat : 54 obligatoires, de 27 à
+   * 30 d'option, 3 au choix, pour un total de 84 — l'intervalle et le total sont
+   * COUPLÉS, donc 84 est le seul total que 27 d'option peut atteindre.
+   */
+  const avecIntervalle: Programme = avecExigences({ ...programme, creditsTotal: 84 }, {
+    brut: "54 crédits obligatoires, de 27 à 30 crédits à option et 3 crédits au choix (SYNTHÉTIQUE)",
+    obligatoire: { min: 54, max: 54 },
+    option: { min: 27, max: 30 },
+    choix: { min: 3, max: 3 },
+  });
+
+  it("un total d'option dans l'intervalle suffit : 27 sur « de 27 à 30 »", () => {
+    const a = auditer([...OBLIGATOIRES, ...prendre("75C", 7), ...prendre("75D", 1), ...prendre("75Y", 1), ...CHOIX], catalogueComplet, avecIntervalle);
+    expect(a.creditsOption).toBe(27);
+    expect(a.conforme).toBe(true);
     expect(a.problemes).toEqual([]);
+  });
+
+  it("sous le minimum de l'intervalle, le message cite l'intervalle au lieu d'un nombre exact", () => {
+    const a = auditer([...OBLIGATOIRES, ...OPTION_AUX_MINIMUMS, ...CHOIX], catalogueComplet, avecIntervalle);
+    expect(a.conforme).toBe(false);
+    expect(joint(a)).toMatch(
+      /il manque 9 crédits de cours d'option : 18 crédits sur le minimum de 27 crédits exigé \(l'intervalle du programme va de 27 crédits à 30 crédits\)/,
+    );
+  });
+
+  it("au-dessus du maximum de l'intervalle, le surplus est annoncé comme ne comptant pas", () => {
+    // 33 crédits d'option alors que le programme en autorise 30 au plus.
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, avecIntervalle);
+    expect(a.creditsOption).toBe(33);
+    expect(joint(a)).toMatch(
+      /3 crédits de cours d'option dépassent le maximum de 30 crédits que le programme autorise pour ce type/,
+    );
+  });
+
+  it("les intervalles sont COUPLÉS par la somme : être dans chacun ne suffit pas", () => {
+    // Le cas du droit, transposé : chaque type est dans son intervalle, mais la
+    // somme des crédits retenus n'atteint pas le total du programme.
+    const couple: Programme = avecExigences(
+      { ...programme, creditsTotal: 96 },
+      {
+        brut: "de 51 à 54 crédits obligatoires, de 30 à 39 crédits à option et un maximum de 3 crédits au choix (SYNTHÉTIQUE)",
+        obligatoire: { min: 51, max: 54 },
+        option: { min: 30, max: 39 },
+        choix: { min: 0, max: 3 },
+      },
+    );
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, couple);
+    expect(a.creditsObligatoires).toBe(54); // dans [51, 54]
+    expect(a.creditsOption).toBe(33); //       dans [30, 39]
+    expect(a.creditsChoix).toBe(3); //         dans [0, 3]
+    expect(a.conforme).toBe(false);
+    expect(joint(a)).toMatch(
+      /chaque type de crédits est dans son intervalle, mais il manque 6 crédits au total du programme : 90 crédits comptent sur les 96 crédits exigés/,
+    );
+    expect(joint(a)).toMatch(/couplés par la somme/);
   });
 });
 
@@ -291,21 +464,6 @@ describe("auditProgramme — ce que le moteur n'a pas pu interpréter ressort", 
     expect(joint(a)).toMatch(/MATH-1000/);
   });
 
-  it("détecte un chevauchement entre blocs au lieu de l'attribuer en silence", () => {
-    const avecChevauchement: Programme = {
-      ...programme,
-      blocs: programme.blocs.map((b) =>
-        b.id === "75C" ? { ...b, cours: ["ACT 2250", ...b.cours] } : b,
-      ),
-    };
-    const a = auditer([...OBLIGATOIRES, ...OPTION_AUX_MINIMUMS], catalogueComplet, avecChevauchement);
-    expect(joint(a)).toMatch(/1 cours figure\(nt\) dans plusieurs blocs \(ACT 2250 : 75A \+ 75C\)/);
-    expect(joint(a)).toMatch(/l'attribution est directe \(premier bloc déclaré\)/);
-    // Attribution déterministe : le premier bloc déclaré gagne.
-    expect(etat(a, "75A").coursAttribues).toContain("ACT 2250");
-    expect(etat(a, "75C").coursAttribues).not.toContain("ACT 2250");
-  });
-
   it("signale un programme dont les maximums d'option ne peuvent pas atteindre l'exigence", () => {
     const impossible: Programme = { ...programme, creditsTotal: 200 };
     const a = auditer([], catalogueComplet, impossible);
@@ -325,19 +483,76 @@ describe("auditProgramme — ce que le moteur n'a pas pu interpréter ressort", 
     expect(joint(a)).toMatch(/le bloc 75D exige un minimum de 3 crédits mais ne liste aucun cours/);
   });
 
-  it("signale une règle de bloc non interprétée au lieu de l'auditer comme vide", () => {
+  it("une règle `inconnu` du contrat v2 n'est PAS auditée comme vide", () => {
+    // C'est la forme prévue par le contrat : le scraper a vu une règle qu'il ne
+    // sait pas réduire et conserve son texte. Le moteur doit la faire ressortir.
+    const inconnue: Programme = {
+      ...programme,
+      blocs: programme.blocs.map((b) =>
+        b.id === "75E" ? { ...b, regle: { type: "inconnu", brut: "Option - trois cours de la même discipline." } } : b,
+      ),
+    };
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, inconnue);
+    expect(a.conforme).toBe(false);
+    expect(etat(a, "75E").conforme).toBe(false);
+    expect(joint(a)).toMatch(/la règle du bloc 75E n'a pas été interprétée/);
+  });
+
+  it("un type de règle hors contrat est refusé par la garde d'exhaustivité, pas avalé", () => {
     const casse: Programme = {
       ...programme,
       blocs: programme.blocs.map((b) =>
-        b.id === "75E"
-          ? ({ ...b, regle: { type: "quota-inconnu", credits: 9 } } as unknown as Bloc)
-          : b,
+        b.id === "75E" ? ({ ...b, regle: { type: "quota-inconnu", credits: 9 } } as unknown as Bloc) : b,
       ),
     };
     const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, casse);
     expect(a.conforme).toBe(false);
     expect(etat(a, "75E").conforme).toBe(false);
     expect(joint(a)).toMatch(/la règle du bloc 75E n'a pas été interprétée/);
+  });
+
+  it("des bornes impossibles (min > max) ressortent au lieu d'être réordonnées", () => {
+    const absurde: Programme = {
+      ...programme,
+      blocs: programme.blocs.map((b) =>
+        b.id === "75D" ? { ...b, regle: { type: "option", bornes: { min: 15, max: 3 } } } : b,
+      ),
+    };
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, absurde);
+    expect(a.conforme).toBe(false);
+    expect(joint(a)).toMatch(/la règle du bloc 75D n'a pas été interprétée/);
+  });
+
+  it("deux blocs qui portent la même clé sont signalés comme indiscernables", () => {
+    // Le cas `MM-Bloc 73A` / `S-Bloc 73A` de la maîtrise, poussé au bout : si le
+    // scraper produisait deux clés identiques, l'affectation fusionnerait les
+    // deux blocs en silence. C'est le bogue qui a mis 58 cours dans le mauvais
+    // bloc pendant la validation.
+    const doublon: Programme = {
+      ...programme,
+      blocs: programme.blocs.map((b) => (b.id === "75D" ? { ...b, cle: bloc("75C").cle } : b)),
+    };
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, doublon);
+    expect(a.conforme).toBe(false);
+    expect(joint(a)).toMatch(/deux blocs de ce programme portent la même clé « 75\/75C »/);
+  });
+
+  it("les notes normatives de la page sont annoncées comme NON évaluées", () => {
+    // « trois cours du bloc 79H ou du bloc 79Y dans la même discipline » est une
+    // exigence de diplôme que le contrat ne modélise pas. Le moteur ne peut pas
+    // la vérifier ; il doit refuser de faire comme si elle n'existait pas.
+    const avecNotes: Programme = {
+      ...programme,
+      notes: ["L'étudiant doit prendre trois cours du bloc 79 H ou du bloc 79 Y dans la même discipline."],
+      blocs: programme.blocs.map((b) =>
+        b.id === "75Z" ? { ...b, notes: ["Sauf exception autorisée, les cours au choix…"] } : b,
+      ),
+    };
+    const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, avecNotes);
+    expect(joint(a)).toMatch(/2 note\(s\) normative\(s\) de la page ne sont PAS évaluées par le moteur/);
+    // Elles ne rendent pas le parcours non conforme : le moteur n'a pas de quoi
+    // l'affirmer. Elles rendent le verdict CONDITIONNEL, et le disent.
+    expect(a.conforme).toBe(true);
   });
 });
 
