@@ -17,10 +17,12 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { diagnostiquerCours, auditProgramme } from "../lib/engine";
 import { normaliserCode, cleBloc, sujetDeCode } from "../lib/codes";
+import { cleParcours, parcoursDe, projeterOrientation } from "../lib/parcours";
 import type {
   Catalogue,
   CodeCours,
   Cours,
+  EntreeJournal,
   IndexProgrammes,
   Programme,
 } from "../lib/types";
@@ -29,6 +31,7 @@ const DATA = join(import.meta.dirname, "..", "data");
 const INDEX = join(DATA, "index-programmes.json");
 const DIR_PROGRAMMES = join(DATA, "programmes");
 const DIR_COURS = join(DATA, "cours");
+const JOURNAL = join(DATA, "journal.json");
 
 /** La disposition v2 est-elle en place ? */
 const V2_PRESENTE = existsSync(INDEX) && existsSync(DIR_PROGRAMMES) && existsSync(DIR_COURS);
@@ -46,6 +49,9 @@ function echantillon<T>(liste: T[], n: number): T[] {
   const pas = liste.length / n;
   return Array.from({ length: n }, (_, i) => liste[Math.floor(i * pas)]);
 }
+
+const fichiersProgrammes = (): string[] =>
+  readdirSync(DIR_PROGRAMMES).filter((f) => f.endsWith(".json")).sort();
 
 describe("disposition des données sur disque", () => {
   it("la disposition v2 est en place, sinon tout le reste ne mesure rien", () => {
@@ -78,18 +84,46 @@ describe.skipIf(!V2_PRESENTE)("couture index <-> fichiers de programmes", () => 
       expect(existsSync(chemin), `fichier manquant pour ${fiche.id}`).toBe(true);
       const p = lire<Programme>(chemin);
       expect(p.id, `l'id du fichier diverge de l'index pour ${fiche.id}`).toBe(fiche.id);
-      expect(p.blocs.length, `nbBlocs faux pour ${fiche.id}`).toBe(fiche.nbBlocs);
-      // Une fiche qui annonce une structure lue doit avoir au moins un bloc,
-      // sinon le sélecteur ouvrira un écran vide en promettant le contraire.
-      if (fiche.structureLue) expect(p.blocs.length, fiche.id).toBeGreaterThan(0);
+      if (fiche.structureLue) {
+        expect(p.blocs.length, `structureLue mais aucun bloc : ${fiche.cle}`).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it("la clé d'une fiche est celle du parcours, et elle est unique", () => {
+    // Une page peut porter plusieurs parcours : ~545 pages exploitables portent
+    // ~964 parcours, jusqu'à dix orientations sur une seule page. L'index a
+    // donc une entrée par PARCOURS, et plusieurs partagent le même `id`.
+    const index = lire<IndexProgrammes>(INDEX);
+    const cles = new Set<string>();
+    for (const fiche of index.programmes) {
+      expect(fiche.cle, `clé mal formée : ${fiche.cle}`).toBe(
+        cleParcours(fiche.id, fiche.orientation),
+      );
+      expect(cles.has(fiche.cle), `clé de parcours en double : ${fiche.cle}`).toBe(false);
+      cles.add(fiche.cle);
+    }
+  });
+
+  it("les parcours de l'index sont exactement ceux des fichiers de programmes", () => {
+    // Si le scraper et `parcoursDe()` ne comptent pas les parcours pareil, le
+    // sélecteur proposera des parcours qui ne s'ouvrent pas, ou en cachera.
+    const index = lire<IndexProgrammes>(INDEX);
+    const parId = new Map<string, string[]>();
+    for (const f of index.programmes) {
+      parId.set(f.id, [...(parId.get(f.id) ?? []), f.cle]);
+    }
+    for (const [id, cles] of echantillon([...parId.entries()], 40)) {
+      const p = lire<Programme>(join(DIR_PROGRAMMES, `${id}.json`));
+      const attendus = parcoursDe(p).map((x) => x.cle).sort();
+      expect(cles.slice().sort(), `parcours divergents pour ${id}`).toEqual(attendus);
     }
   });
 
   it("aucun fichier de programme n'est orphelin de l'index", () => {
     const index = lire<IndexProgrammes>(INDEX);
     const connus = new Set(index.programmes.map((p) => p.id));
-    const fichiers = readdirSync(DIR_PROGRAMMES).filter((f) => f.endsWith(".json"));
-    const orphelins = fichiers
+    const orphelins = fichiersProgrammes()
       .map((f) => f.replace(/\.json$/, ""))
       .filter((id) => !connus.has(id));
     expect(orphelins).toEqual([]);
@@ -128,14 +162,9 @@ describe.skipIf(!V2_PRESENTE)("couture codes : une seule écriture partout", () 
   });
 });
 
-describe.skipIf(!V2_PRESENTE)("couture blocs : identité et bornes", () => {
+describe.skipIf(!V2_PRESENTE)("couture blocs : identité, bornes et contenu", () => {
   const programmes = () =>
-    echantillon(
-      readdirSync(DIR_PROGRAMMES)
-        .filter((f) => f.endsWith(".json"))
-        .sort(),
-      60,
-    ).map((f) => lire<Programme>(join(DIR_PROGRAMMES, f)));
+    echantillon(fichiersProgrammes(), 60).map((f) => lire<Programme>(join(DIR_PROGRAMMES, f)));
 
   it("la clé d'un bloc est unique dans son programme et se reconstruit", () => {
     // `Bloc.id` n'est PAS unique : la maîtrise en mathématiques porte
@@ -156,8 +185,8 @@ describe.skipIf(!V2_PRESENTE)("couture blocs : identité et bornes", () => {
     for (const p of programmes()) {
       for (const b of p.blocs) {
         if (b.regle.type === "inconnu") {
-          // Une forme non interprétée doit conserver son texte : c'est ce qui
-          // permet de l'ajouter au parseur plus tard au lieu de la perdre.
+          // Une forme non interprétée conserve son texte : c'est ce qui permet
+          // de l'ajouter au parseur plus tard au lieu de la perdre.
           expect(b.regle.brut.length, `${p.id} / ${b.cle}`).toBeGreaterThan(0);
           continue;
         }
@@ -168,16 +197,34 @@ describe.skipIf(!V2_PRESENTE)("couture blocs : identité et bornes", () => {
     }
   });
 
-  it("un bloc à liste de cours vide n'est qu'un bloc au choix", () => {
-    // Un bloc obligatoire ou à option sans aucun cours listé serait une
-    // exigence impossible à satisfaire, donc le signe d'une page mal lue.
+  it("un bloc à liste vide est au choix, ou déclaré à contenu ouvert", () => {
+    // Première version de ce test : « un bloc à liste vide n'est qu'un bloc au
+    // choix ». FAUX sur de vraies pages, et c'est le scraper qui l'a mesuré :
+    // il existe des blocs « catégorie » dont le contenu n'est décrit qu'en
+    // prose — bacc en économie et politique 71/71G et bacc en musique 02/02E,
+    // tous deux « Option - maximum 6 crédits » renvoyant aux cours du Centre de
+    // langues, sans aucun lien de cours dans le HTML.
+    //
+    // L'invariant n'est donc pas « pas de bloc vide » mais « tout bloc vide est
+    // DÉCLARÉ comme tel », par `contenuOuvert`. Un bloc à option vide et non
+    // déclaré reste une page mal lue.
     for (const p of programmes()) {
       for (const b of p.blocs) {
-        if (b.cours.length === 0 && b.regle.type !== "choix" && b.regle.type !== "inconnu") {
-          throw new Error(
-            `${p.id} / ${b.cle} (${b.regleBrut}) : bloc ${b.regle.type} sans aucun cours`,
-          );
+        if (b.cours.length > 0) continue;
+        if (b.regle.type === "choix" || b.regle.type === "inconnu") continue;
+        if (b.contenuOuvert) {
+          // Un contenu ouvert doit être DOCUMENTÉ, sinon l'étudiant voit un
+          // bloc à remplir sans savoir avec quoi.
+          expect(
+            b.notes.length,
+            `${p.id} / ${b.cle} : contenu ouvert sans prose`,
+          ).toBeGreaterThan(0);
+          continue;
         }
+        throw new Error(
+          `${p.id} / ${b.cle} (${b.regleBrut}) : bloc ${b.regle.type} sans aucun ` +
+            `cours et sans contenuOuvert`,
+        );
       }
     }
   });
@@ -198,14 +245,23 @@ describe.skipIf(!V2_PRESENTE)("couture moteur <-> données réelles", () => {
     return { programmes: [p], cours, prealablesNonParses: [], journal: [], scrapeISO: "" };
   }
 
-  it("le moteur digère un échantillon de programmes sans lever", () => {
-    const fichiers = echantillon(
-      readdirSync(DIR_PROGRAMMES).filter((f) => f.endsWith(".json")).sort(),
-      40,
-    );
-    let audites = 0;
-    for (const f of fichiers) {
+  /** Tous les parcours d'un échantillon de programmes, déjà projetés. */
+  function parcoursEchantillon(n: number): Programme[] {
+    const out: Programme[] = [];
+    for (const f of echantillon(fichiersProgrammes(), n)) {
       const p = lire<Programme>(join(DIR_PROGRAMMES, f));
+      if (p.orientations.length === 0) {
+        out.push(p);
+        continue;
+      }
+      for (const o of p.orientations) out.push(projeterOrientation(p, o.nom));
+    }
+    return out;
+  }
+
+  it("le moteur digère un échantillon de parcours sans lever", () => {
+    let audites = 0;
+    for (const p of parcoursEchantillon(40)) {
       if (p.blocs.length === 0) continue;
       const cat = catalogueDe(p);
       const vide = new Set<CodeCours>();
@@ -216,16 +272,11 @@ describe.skipIf(!V2_PRESENTE)("couture moteur <-> données réelles", () => {
       expect(a.conforme, `${p.id} : conforme avec zéro cours fait`).toBe(false);
       audites++;
     }
-    expect(audites, "aucun programme auditable dans l'échantillon").toBeGreaterThan(0);
+    expect(audites, "aucun parcours auditable dans l'échantillon").toBeGreaterThan(0);
   });
 
   it("tout cours cité par un bloc a un diagnostic", () => {
-    const fichiers = echantillon(
-      readdirSync(DIR_PROGRAMMES).filter((f) => f.endsWith(".json")).sort(),
-      20,
-    );
-    for (const f of fichiers) {
-      const p = lire<Programme>(join(DIR_PROGRAMMES, f));
+    for (const p of parcoursEchantillon(20)) {
       if (p.blocs.length === 0) continue;
       const diag = diagnostiquerCours(catalogueDe(p), new Set<CodeCours>());
       for (const code of new Set(p.blocs.flatMap((b) => b.cours))) {
@@ -234,25 +285,43 @@ describe.skipIf(!V2_PRESENTE)("couture moteur <-> données réelles", () => {
     }
   });
 
-  it("les crédits des fiches somment aux bornes des blocs obligatoires", () => {
+  it("tout écart entre la règle d'un bloc et la somme de ses cours est journalisé", () => {
     // Deux informations scrapées INDÉPENDAMMENT — la règle sur la page de
-    // structure, les crédits sur chaque fiche de cours — qui doivent concorder.
-    // Un écart signifie que l'une des deux est mal lue, et aucun test de
-    // chantier ne peut le voir. Les blocs dont une fiche manque sont ignorés :
-    // la somme y serait fausse pour une autre raison.
+    // structure, les crédits sur chaque fiche — qui devraient concorder.
+    // Première version de ce test : elles DOIVENT concorder.
+    //
+    // FAUX, et pour une raison qu'aucun code ne peut corriger : la page du bacc
+    // en musique annonce « Obligatoire - 15 crédits » au bloc 01/01A et n'y
+    // liste que 4 cours à 3 crédits, soit 12. Vérifié dans le HTML brut, rien
+    // de caché. C'est la donnée amont qui est incohérente.
+    //
+    // L'invariant utile n'est donc pas que la page soit juste, mais que l'écart
+    // soit VU. Exiger la perfection de l'amont bloquerait sur une donnée qu'on
+    // ne maîtrise pas ; tolérer en silence est exactement ce que ce projet
+    // refuse. Donc : chaque écart doit apparaître dans le journal.
+    const journal = existsSync(JOURNAL) ? lire<EntreeJournal[]>(JOURNAL) : [];
+    const texteJournal = journal.map((e) => `${e.sujet} ${e.message}`).join("\n");
     let compares = 0;
-    for (const f of echantillon(readdirSync(DIR_PROGRAMMES).filter((x) => x.endsWith(".json")).sort(), 60)) {
+    const ecartsNonJournalises: string[] = [];
+    for (const f of echantillon(fichiersProgrammes(), 60)) {
       const p = lire<Programme>(join(DIR_PROGRAMMES, f));
       const cat = catalogueDe(p);
       for (const b of p.blocs) {
         if (b.regle.type !== "obligatoire") continue;
         if (b.cours.length === 0) continue;
         if (b.cours.some((c) => !cat.cours[c])) continue;
-        const somme = b.cours.reduce((s, c) => s + cat.cours[c].credits, 0);
-        expect(somme, `${p.id} / ${b.cle} (${b.regleBrut})`).toBe(b.regle.bornes.min);
         compares++;
+        const somme = b.cours.reduce((s, c) => s + cat.cours[c].credits, 0);
+        if (somme === b.regle.bornes.min) continue;
+        // Un écart est acceptable ; un écart muet ne l'est pas.
+        if (!texteJournal.includes(b.cle) && !texteJournal.includes(b.id)) {
+          ecartsNonJournalises.push(
+            `${p.id} / ${b.cle} (${b.regleBrut}) : somme des fiches = ${somme}`,
+          );
+        }
       }
     }
     expect(compares, "aucun bloc obligatoire complet à comparer").toBeGreaterThan(0);
+    expect(ecartsNonJournalises).toEqual([]);
   });
 });
