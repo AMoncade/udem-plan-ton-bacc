@@ -7,33 +7,71 @@ perd son travail au merge.
 
 ## Propriété des fichiers
 
+Le découpage est **par fichier**, pas par fonctionnalité : un brief exprimé en
+fonctionnalités se rencontre toujours dans un fichier partagé, et l'un des deux
+perd son travail au merge. Éprouvé sur sept chantiers parallèles — **cinq
+branches fusionnées sans un seul conflit**.
+
 | Fichiers | Propriétaire | Les autres |
 |---|---|---|
-| `lib/types.ts`, `lib/codes.ts` | **intégratrice** (gelés) | lisent, n'éditent pas |
+| `lib/types.ts`, `lib/codes.ts`, `lib/parcours.ts` | **intégratrice** (gelés) | lisent, n'éditent pas |
+| `tests/**` (coutures), `scripts/copier-donnees.mjs` | **intégratrice** | — |
 | `lib/engine/**` | session **moteur** | importent, n'éditent pas |
-| `scripts/scrape/**`, `data/catalogue.json` | session **scraper** | lisent le JSON |
-| `app/**`, `components/**`, `app/globals.css` | session **UI** | n'y touchent pas |
-| `data/fixtures/**` | **intégratrice** | lisent, n'éditent pas |
-| `package.json` | **intégratrice** | demandent l'ajout d'une dépendance |
+| `scripts/scrape/**`, `data/**` | session **scraper** | lisent |
+| `app/**` sauf `app/importer/`, `components/**` sauf `Import*` | session **UI** | — |
+| `lib/ics/**`, `app/importer/**`, `components/Import*.tsx` | session **import** | — |
+| `electron/**`, `next.config.ts` | session **bureau** | — |
+| `package.json` | **intégratrice**, sauf devDependencies et scripts `desktop:` | demandent |
 
-Besoin d'un changement dans un fichier qui n'est pas à vous : **demandez-le**
-au propriétaire, ne l'éditez pas. Une session a édité le fichier d'une autre
-sur un projet précédent ; le merge était propre et le résultat cassé.
+Besoin d'un changement dans un fichier qui n'est pas à vous : **demandez-le**,
+ne l'éditez pas. Un merge propre peut produire un résultat cassé.
 
-## Les deux seules coutures entre chantiers
+**Les worktrees des sessions partent de `main`, pas de la branche de travail.**
+Chaque session doit donc rapatrier la branche courante elle-même avant de
+commencer. Trois sessions sur quatre l'ont découvert seules ; la quatrième a
+construit contre le contrat v1 sans s'en apercevoir.
+
+## Les coutures entre chantiers
+
+Une couture n'est pas seulement une signature partagée : c'est aussi **qui
+régénère, et quand**. La leçon a coûté une passe entière.
 
 1. **`parsePrealables()` — moteur → scraper.** Le scraper remplit
-   `Cours.prealablesBrut` (verbatim) puis appelle `parsePrealables()` pour
-   remplir `Cours.prealables`. Le moteur possède ce fichier ; le socle actuel
-   ne couvre que « un code » et « A ET B ». Quand le moteur l'étend, le
-   scraper n'a rien à changer — même signature.
-   Toute ligne avec `complet: false` va dans `Catalogue.prealablesNonParses`.
+   `prealablesBrut` verbatim puis appelle le parseur du moteur. Étendre le
+   parseur ne change pas la signature, mais **périme `data/`** et casse les
+   tests du scraper qui épinglaient l'ancienne incapacité.
+2. **`normaliserCode()` / `extraireCodes()` — contrat → tous.** UdeM écrit
+   `ACT 2250`, `ACT2250`, `act-2250`. Comparer deux formes ne lève aucune
+   erreur : le graphe s'affiche sans arêtes.
+3. **`sujetDeCode()` — scraper → UI.** Le scraper découpe `data/cours/` par
+   sujet, l'UI charge par sujet. S'ils ne découpent pas pareil, l'UI affiche
+   « cours sans fiche » sans qu'aucun test de chantier n'échoue.
+4. **`cleParcours()` / `projeterOrientation()` — contrat → scraper et UI.**
+   L'index a une entrée par **parcours** ; l'UI projette avant d'appeler le
+   moteur. Trois projections différentes donneraient trois audits différents
+   pour le même étudiant, sans erreur visible.
+5. **`/donnees/...` — UI ↔ web et bureau.** L'UI charge avec `fetch`, qui lit
+   une URL et non un chemin. Côté web, `scripts/copier-donnees.mjs` copie
+   `data/` vers `public/donnees/` au build. Côté bureau, un schéma applicatif
+   sert le même chemin, parce que **Chromium refuse `fetch` sur `file://`**.
+6. **`app/_lib/stockage.ts` — UI → import.** La session d'import écrit l'état
+   de l'étudiant par `lireEtat()` / `ecrire()` sans éditer le fichier.
 
-2. **`Catalogue` et `Audit` — contrat → UI.** L'UI se construit contre
-   `data/fixtures/actuariat-verifie.fixture.json`, **jamais** contre le
-   catalogue scrapé (qui n'existe pas encore). Le jour où le scraper livre,
-   seule la source de données change.
+## Le motif qui est apparu TROIS fois
 
+Un test qui épingle une **incapacité** du code devient faux quand la capacité
+arrive, et il échoue alors pour une raison qui n'est pas une régression :
+
+- le scraper attendait `MAT 2717` opaque, le moteur a appris les parenthèses ;
+- le moteur mesurait son progrès en lisant `prealablesNonParses` du catalogue
+  **généré**, qui a cessé d'être périmé quand on l'a régénéré ;
+- l'import exigeait que `DRT 1151G` soit refusé, le contrat a accepté les codes
+  suffixés.
+
+Les trois fois, la bonne réaction était de corriger le test, pas de plier le
+code. Et la parade est la même : construire l'état « avant » explicitement, et
+ajouter une assertion qui exige que les données générées soient **à jour** avec
+le code qui les produit.
 ## L'arithmétique du programme, vérifiée
 
 Orientation actuariat, baccalauréat en mathématiques (segments 01 + 75), 90 crédits.
@@ -113,38 +151,75 @@ document tel qu'il était écrit plus haut :
   les crédits des fiches somment à la règle de chaque bloc obligatoire (26, 21,
   7) — deux informations scrapées indépendamment.
 
-## Ce que le contrat ne sait pas encore faire
+## Ce que le contrat v2 a corrigé, et ce qui reste
 
-`docs/VALIDATION-AUTRES-PROGRAMMES.md` a éprouvé ce modèle sur sept programmes.
-La forme générale tient partout ; quatre détails sont faux dès qu'on sort de
-l'actuariat. Par ordre de coût croissant :
+`docs/VALIDATION-AUTRES-PROGRAMMES.md` avait éprouvé le modèle v1 sur sept
+programmes et trouvé six choses fausses hors actuariat. Toutes sont traitées :
 
-1. **`RegleBloc` ne couvre que 4 des 9 formes écrites.** Manquent
-   `Option - 4 crédits.` (exact, sans min ni max — et c'est sur *notre* page, au
-   bloc 82B), `Choix - Maximum 3 crédits.`, `Choix - Minimum 3, maximum 6`, et
-   des variantes en minuscules. À l'inverse, la forme `min` sans `max` que le
-   contrat autorise n'apparaît **nulle part**. Le moteur ne les avale pas en
-   silence (`bornes.type !== "inconnu"` l'en empêche), mais il ne peut pas
-   auditer ces blocs.
-2. **`Programme` ne porte pas les totaux par type**, alors que la page les écrit
-   verbatim : « 54 crédits obligatoires, 33 crédits à option et 3 crédits au
-   choix ». Le moteur les déduit (90 − 54 − 3), ce qui marche ici ; ailleurs ce
-   sont des **intervalles** (droit : « de 30 à 33 à option »), indéductibles.
-   Le scraper consigne déjà la phrase dans son journal, faute de champ.
-3. **`Catalogue` n'a pas de champ pour le journal du scraper**, qui voyage donc
-   dans une clé `_journal` non typée. Une exigence réelle y est piégée et rien
-   ne peut l'afficher : `Restrictions d'inscription: DMO1000/DMO1010`. C'est le
-   repli silencieux que le projet combat, mais il est dans le contrat, pas dans
-   le code.
-4. **`Bloc.id` n'est pas unique et le segment ne s'en déduit pas** : la maîtrise
-   en mathématiques a `MM-Bloc 73A` **et** `S-Bloc 73A` dans le segment 73.
-   `segmentDeBloc()` se trompe dessus.
-5. **`CodeCours` n'est pas « trois lettres + quatre chiffres »** : 199 codes
-   suffixés (`DRT 1151G`, `MUI 1162A`) et quatre à cinq chiffres (`PSY 40001`).
-   `normaliserCode()` renvoie `null` pour eux — ce qui n'est pas silencieux
-   (l'UI les liste dans `codesIllisibles`), mais les exclut du graphe.
-6. **Le chevauchement entre blocs est réel** hors actuariat : en droit, le bloc
-   70K est entièrement contenu dans le 70L. L'attribution devient un problème
-   d'affectation sous bornes. L'attribution directe actuelle se trompe alors
-   dans un seul sens — elle peut déclarer non conforme un parcours conforme,
-   jamais l'inverse.
+| Trouvé faux en v1 | Traité par |
+|---|---|
+| `CodeCours` = 3 lettres + 4 chiffres | 4 ou 5 chiffres + suffixe ; `CRI 1600G` ≠ `CRI 1600` |
+| `RegleBloc` ne couvrait que 4 des 9 formes | un type + des bornes, plus `inconnu` jamais conforme |
+| `Bloc.id` non unique, segment déduit | `Bloc.cle`, `segment` lu sur la page |
+| pas de totaux par type, intervalles ailleurs | `ExigencesParType`, couplés par la somme |
+| journal hors contrat, restrictions piégées | `EntreeJournal` typé, `Cours.restrictionsBrut` |
+| chevauchement entre blocs | affectation sous bornes (`lib/engine/affectation.ts`) |
+
+Deux choses que la v2 a découvertes en plus, sur de vraies pages :
+
+- **`Programme.orientations`.** Le contrat confondait une PAGE et un PARCOURS.
+  La page du bacc en mathématiques énonce treize répartitions de crédits — sept
+  par orientation, six par segment — et `exigences` n'avait qu'un emplacement.
+  ~545 pages exploitables portent ~964 parcours.
+- **`Bloc.contenuOuvert`.** Il existe des blocs « catégorie » qui n'énumèrent
+  aucun cours et renvoient en prose à un ensemble extérieur (économie et
+  politique 71/71G, musique 02/02E : cours du Centre de langues). Invérifiables
+  mécaniquement — l'audit doit le dire, ni les déclarer satisfaits ni
+  impossibles.
+
+### Ce que les données amont ne garantissent pas
+
+Le bacc en musique annonce « Obligatoire - 15 crédits » au bloc 01/01A et ne
+liste que 4 cours à 3 crédits. Vérifié dans le HTML brut : c'est la page qui est
+incohérente. Les tests de couture n'exigent donc pas que l'amont soit juste,
+mais que **tout écart soit journalisé** — exiger la perfection bloquerait sur ce
+qu'on ne maîtrise pas, tolérer en silence est ce que ce projet refuse.
+
+## L'inventaire réel et le budget de scrape
+
+Mesuré, pas supposé (`docs/INVENTAIRE-PROGRAMMES.md`) :
+
+- **1 088 programmes** et **11 888 cours** au sitemap, unions distinctes,
+  chevauchement nul. Chaque sous-sitemap porte un `cHash` ; TYPO3 ignore tous
+  les paramètres dès que ce jeton ne correspond plus, donc **ne jamais fabriquer
+  ces URL** — suivre celles de l'index. Et `/sitemap.xml` lui-même n'est pas
+  stable : il sert parfois un `urlset` de programmes au lieu du `sitemapindex`.
+- **~545 pages exploitables** (IC95 458–630) portant **~964 parcours**.
+- **Le tri se fait sur le CONTENU, jamais sur le statut** : 110/110 répondent
+  200, et 31 % sont vides. Un test par HEAD conclurait « 100 % ont une
+  structure ».
+- **Passe programmes : 41 min** à 2 s de délai. **Passe cours : ~11,4 h** — une
+  fiche de cours répond en 1,45 s, cinq fois une page de programme. Calculer
+  `11888 × délai` sans le temps de réponse donne 6,6 h et c'est faux.
+- 278 slugs (`des-*`, stages postdoctoraux) sont à rendement nul. Ils sont
+  quand même récupérés et marqués `structureLue: false` : « ce programme existe
+  et n'a pas de structure exploitable » est une réponse, un trou muet n'en est
+  pas une.
+- **Une seule session à la fois sur le réseau.** Deux sessions qui scrapent le
+  même hôte rendent le délai poli sans objet.
+
+Ordre des passes : `--sans-cours` d'abord, puis `--cours-cites`.
+
+**L'union des codes cités ne doit pas être extrapolée : elle est un sous-produit
+gratuit de la passe programmes.** Un `Set` de codes normalisés accumulé pendant
+les 41 minutes donne l'union EXACTE sur la population entière, sans une requête
+de plus et sans intervalle de confiance à défendre. Normaliser avant d'insérer,
+sinon des doublons de forme (`ACT 1240` contre `ACT1240`) la gonflent.
+
+Le seul chiffre connu — 1328 codes sur 26 programmes, dont 6 des 26 derniers
+n'ajoutant rien — vient du **scraper** et porte un biais d'échantillon : ces 26
+sont de gros programmes de 1er cycle choisis à la main, qui partagent d'énormes
+troncs communs, donc l'union y sature **par construction de l'échantillon**. La
+queue réelle est faite de microprogrammes, DESS et maîtrises spécialisées dont
+les codes de niveau 6000-7000 n'apparaissent nulle part ailleurs. Extrapoler
+sous-estimerait l'union — et dans le sens qui arrange, ce qui est le pire cas.
