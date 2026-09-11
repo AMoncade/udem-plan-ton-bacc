@@ -364,6 +364,37 @@ function decouperEnPuces(texte: string): string[] {
 }
 
 /**
+ * Nom du CHEMINEMENT qu'une phrase de répartition qualifie, ou null.
+ *
+ * Un cheminement mémoire et un cheminement stage ont des répartitions de
+ * crédits différentes : ce sont donc deux parcours au sens où l'étudiant en
+ * choisit un, et c'est exactement ce que `Orientation` désigne. Ils sont
+ * aplatis en orientations plutôt que modélisés sur un troisième niveau —
+ * l'imbrication est une façon dont la PAGE est écrite, pas une nécessité du
+ * modèle, et un niveau de plus se propagerait dans le sélecteur, la clé de
+ * parcours, la projection et les tests de trois chantiers sans rien exprimer
+ * de neuf.
+ *
+ * Deux formulations réelles, sur deux pages du même cycle :
+ *   maîtrise en mathématiques : « - cheminement avec mémoire (MM) : 29 crédits… »
+ *   maîtrise en informatique  : « Les crédits de l'option avec mémoire (MM), sont répartis… »
+ * La seconde n'écrit même pas le mot « cheminement ». Leur seul noyau commun
+ * est le « avec X » suivi de son sigle entre parenthèses — d'où l'ancrage
+ * là-dessus, et non sur un mot-clé qui n'est pas toujours écrit.
+ */
+const CHEMINEMENT =
+  /(?:cheminements?|options?|orientations?)\s+(avec\s+[^(,:;.]{1,50}?)\s*(?:\(([A-Za-z]{1,4})\))?\s*[,:]/i;
+
+export function lireCheminement(phrase: string): string | null {
+  const m = CHEMINEMENT.exec(phrase);
+  if (!m) return null;
+  const qualificatif = m[1].replace(/\s+/g, " ").trim();
+  if (qualificatif === "") return null;
+  const sigle = m[2] ? ` (${m[2].toUpperCase()})` : "";
+  return `${qualificatif}${sigle}`;
+}
+
+/**
  * Parse une phrase de répartition en `ExigencesParType`.
  *
  * Un type absent de la phrase reste `null` : « 60 crédits obligatoires et 30

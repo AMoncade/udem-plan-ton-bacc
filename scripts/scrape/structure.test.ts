@@ -329,6 +329,28 @@ describe("maîtrise en mathématiques — deux blocs « 73A » dans le même seg
     expect(note).toContain("21 crédits obligatoires attribués à un stage");
   });
 
+  it("aplatit les CHEMINEMENTS en orientations, chacun avec sa répartition", () => {
+    // Un cheminement mémoire et un cheminement stage ont des répartitions
+    // différentes : ce sont deux parcours au sens où l'étudiant en choisit un.
+    // Les aplatir évite un troisième niveau de modèle qui se propagerait dans
+    // le sélecteur, la clé de parcours, la projection et trois chantiers de
+    // tests sans rien exprimer de neuf.
+    const noms = programme.orientations.map((o) => o.nom);
+    expect(noms).toContain("Actuariat — cheminement avec mémoire (MM)");
+    expect(noms).toContain("Actuariat — cheminement avec stage (S)");
+    const memoire = programme.orientations.find((o) => o.nom.includes("mémoire"));
+    const stage = programme.orientations.find((o) => o.nom.includes("stage"));
+    expect(memoire?.exigences?.obligatoire).toEqual({ min: 29, max: 29 });
+    expect(memoire?.exigences?.option).toEqual({ min: 10, max: 16 });
+    expect(memoire?.exigences?.choix).toEqual({ min: 0, max: 6 });
+    expect(stage?.exigences?.obligatoire).toEqual({ min: 21, max: 21 });
+    expect(stage?.exigences?.option).toEqual({ min: 15, max: 24 });
+    expect(stage?.exigences?.choix).toEqual({ min: 0, max: 9 });
+    // Mêmes segments que l'orientation parente : le cheminement ne change pas
+    // quels blocs sont candidats, seulement combien de crédits y sont exigés.
+    expect(memoire?.segments).toEqual(stage?.segments);
+  });
+
   it("mémoire et stage sont des cours ordinaires, dans des blocs à 29 et 21 crédits", () => {
     expect(programme.blocs.find((b) => b.cle === "73/MM-73C")?.cours).toEqual(["MAT 6916"]);
     expect(programme.blocs.find((b) => b.cle === "73/S-73C")?.cours).toEqual(["MAT 6908"]);
@@ -337,6 +359,19 @@ describe("maîtrise en mathématiques — deux blocs « 73A » dans le même seg
 
 describe("maîtrise en informatique — « Bloc MM-70A », préfixe de l'autre côté", () => {
   const { programme, journal } = lire("maitrise-en-informatique");
+
+  it("aplatit les trois cheminements que la page n'appelle jamais « cheminement »", () => {
+    // Cette page écrit « Les crédits de l'option avec mémoire (MM), sont
+    // répartis… » : la même idée que la maîtrise en mathématiques, sans le
+    // mot-clé. Ancrer la lecture dessus aurait raté les trois.
+    const noms = programme.orientations.map((o) => o.nom);
+    expect(noms).toContain("Générale — cheminement avec mémoire (MM)");
+    expect(noms).toContain("Générale — cheminement avec stage (ST)");
+    expect(noms).toContain("Générale — cheminement avec travaux dirigés (TD)");
+    expect(
+      programme.orientations.find((o) => o.nom.includes("travaux dirigés"))?.exigences?.obligatoire,
+    ).toEqual({ min: 22, max: 22 });
+  });
 
   it("retient les blocs préfixés au lieu de les ignorer", () => {
     const ids = programme.blocs.map((b) => b.id);

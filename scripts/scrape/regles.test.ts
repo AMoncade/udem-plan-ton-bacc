@@ -6,7 +6,14 @@
  * qu'on aurait aimé trouver. Aucun accès réseau.
  */
 import { describe, it, expect } from "vitest";
-import { formeDeRegle, parseExigencesParType, parseRegleBloc, trouverPhrasesExigences } from "./regles";
+import {
+  formeDeRegle,
+  lireCheminement,
+  lireOrientations,
+  parseExigencesParType,
+  parseRegleBloc,
+  trouverPhrasesExigences,
+} from "./regles";
 
 describe("parseRegleBloc — les 9 formes, avec leur programme d'origine", () => {
   const cas: [string, string, { type: string; bornes?: { min: number; max: number } }][] = [
@@ -122,6 +129,110 @@ describe("trouverPhrasesExigences", () => {
       "- orientation Actuariat COOP (segments 01 et 76) avec 60 crédits obligatoires et 30 crédits à option. " +
       "- orientation Statistique (segments 01 et 79) avec 60 crédits obligatoires, 27 à option et 3 crédits au choix.";
     expect(trouverPhrasesExigences(texte)).toHaveLength(3);
+  });
+});
+
+describe("lireOrientations — les parcours déclarés par une page", () => {
+  it("lit les sept puces du bacc. en mathématiques, nom et segments", () => {
+    const texte = [
+      "Le baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et est offert selon sept orientations :",
+      "- orientation Actuariat (segments 01 et 75) avec 54 crédits obligatoires, 33 crédits à option et 3 crédits au choix.",
+      "- orientation Actuariat COOP (segments 01 et 76) avec 60 crédits obligatoires et 30 crédits à option.",
+    ].join("\n");
+    const lues = lireOrientations(texte);
+    expect(lues.map((o) => o.nom)).toEqual(["Actuariat", "Actuariat COOP"]);
+    expect(lues[0].segments).toEqual(["01", "75"]);
+  });
+
+  it("ne fabrique PAS de parcours depuis la phrase d'introduction", () => {
+    // « … est offert selon 2 orientations et un cheminement particulier : »
+    // porte le mot « orientations » ET un numéro de segment. Un premier jet en
+    // tirait un parcours nommé « et un cheminement particulier » — une entrée
+    // d'index qui ne s'ouvre sur rien, pire qu'une orientation manquée.
+    const texte = [
+      "Le baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et est offert selon 2 orientations et un cheminement particulier :",
+      "- orientation générale (segment 76)",
+      "- cheminement honor (segment 78).",
+    ].join("\n");
+    expect(lireOrientations(texte).map((o) => o.nom)).toEqual(["générale", "honor"]);
+  });
+
+  it("coupe les puces réunies dans UN SEUL paragraphe par des virgules", () => {
+    // La maîtrise et le certificat écrivent leurs trois puces d'affilée. Un
+    // découpage qui ne coupe que sur les points n'en voyait qu'une : une page
+    // qui déclare trois parcours et n'en expose qu'un en cache deux, en silence.
+    const texte =
+      "Elle est offerte avec les options suivantes : - l'option Mathématiques pures, cheminement avec mémoire (segment 70), - l'option Mathématiques appliquées, cheminement avec mémoire (segment 71), - l'option Actuariat, cheminement avec mémoire ou avec stage (segment 73).";
+    const lues = lireOrientations(texte);
+    expect(lues.map((o) => o.nom)).toEqual([
+      "Mathématiques pures",
+      "Mathématiques appliquées",
+      "Actuariat",
+    ]);
+    expect(lues.map((o) => o.segments)).toEqual([["70"], ["71"], ["73"]]);
+  });
+
+  it("fusionne deux annonces de la même orientation, en gardant la répartition", () => {
+    // Le bacc. en informatique annonce ses orientations deux fois : une liste
+    // avec le segment propre, puis une avec les segments complets ET la
+    // répartition. Garder la première perdrait la répartition.
+    const texte = [
+      "- orientation générale (segment 76)",
+      "- orientation générale (segment 01 et 76) : 57 crédits obligatoires, 27 crédits à option et 6 crédits au choix",
+    ].join("\n");
+    const lues = lireOrientations(texte);
+    expect(lues).toHaveLength(1);
+    expect(lues[0].segments.sort()).toEqual(["01", "76"]);
+    expect(trouverPhrasesExigences(lues[0].phrase)).toHaveLength(1);
+  });
+
+  it("ne déclare aucun parcours sur une page sans puces", () => {
+    // Droit et psycho n'ont qu'un parcours. Une orientation manquée donne un
+    // parcours unique — faux mais visible ; un parcours fantôme est invisible.
+    expect(
+      lireOrientations(
+        "Les crédits du baccalauréat sont répartis de la façon suivante : 68 crédits obligatoires, de 30 à 33 crédits à option et un maximum de 3 crédits au choix.",
+      ),
+    ).toEqual([]);
+  });
+});
+
+describe("lireCheminement — deux formulations pour la même idée", () => {
+  it("« - cheminement avec mémoire (MM) : … » (maîtrise en mathématiques)", () => {
+    expect(
+      lireCheminement(
+        "- cheminement avec mémoire (MM) : 29 crédits obligatoires attribués à la recherche, de 10 à 16 crédits à option et un maximum de 6 crédits au choix.",
+      ),
+    ).toBe("avec mémoire (MM)");
+    expect(lireCheminement("- cheminement avec stage (S) : 21 crédits obligatoires")).toBe(
+      "avec stage (S)",
+    );
+  });
+
+  it("« Les crédits de l'option avec stage (ST), sont répartis… » (maîtrise en informatique)", () => {
+    // La même idée, sans jamais écrire le mot « cheminement ». Ancrer la lecture
+    // sur ce mot-clé aurait raté les trois cheminements de cette page.
+    expect(
+      lireCheminement(
+        "Les crédits de l'option avec stage (ST), sont répartis de la façon suivante : 22 crédits obligatoires attribués à un stage et 23 crédits à option.",
+      ),
+    ).toBe("avec stage (ST)");
+    expect(
+      lireCheminement(
+        "Les crédits de l'option avec travaux dirigés (TD), sont répartis de la façon suivante : 22 crédits obligatoires",
+      ),
+    ).toBe("avec travaux dirigés (TD)");
+  });
+
+  it("rend null quand la phrase ne qualifie AUCUN cheminement", () => {
+    // On n'invente pas un cheminement que la page ne nomme pas : sans nom, il
+    // n'y a rien à aplatir, et `exigences` doit rester null.
+    expect(
+      lireCheminement(
+        "Les crédits du baccalauréat sont répartis de la façon suivante : 68 crédits obligatoires, de 30 à 33 crédits à option et un maximum de 3 crédits au choix.",
+      ),
+    ).toBeNull();
+    expect(lireCheminement("L'Orientation comporte de 3 à 13 crédits à option.")).toBeNull();
   });
 });
 
