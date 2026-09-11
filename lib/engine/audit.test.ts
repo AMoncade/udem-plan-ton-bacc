@@ -383,6 +383,59 @@ describe("auditProgramme — les totaux par type sont des INTERVALLES", () => {
     );
   });
 
+  it("le minimum d'un TYPE est vérifié pour lui-même, pas seulement via le total", () => {
+    /**
+     * AJOUTÉ APRÈS UNE MUTATION SURVIVANTE, et c'est tout l'intérêt de la
+     * méthode. En retirant du verdict les trois contrôles `manques.* === 0`,
+     * AUCUN test ne tombait : sur l'actuariat, la contrainte de total rattrapait
+     * toujours le manque d'option, donc le contrôle par type était redondant
+     * dans tous mes cas. Le test nommé « 18-contre-33 » mesurait le bon verdict
+     * par le mauvais chemin.
+     *
+     * Le cas qui les sépare : il faut que les maximums par type laissent assez
+     * de MOU pour que la somme atteigne le total alors qu'un type reste sous son
+     * minimum. Avec un bloc au choix plafonné à 6 (« Choix - Maximum 6 crédits »,
+     * une forme réelle du site) :
+     *
+     *   54 obligatoires + 30 d'option + 6 au choix = 90 = le total exigé,
+     *   chaque bloc est dans ses bornes (75Z a un minimum de 0),
+     *   et pourtant le programme exige 33 crédits d'option : il en manque 3.
+     */
+    const avecMou: Programme = avecExigences(
+      {
+        ...programme,
+        blocs: programme.blocs.map((b) =>
+          b.id === "75Z"
+            ? { ...b, regle: { type: "choix", bornes: { min: 0, max: 6 } }, regleBrut: "Choix - Maximum 6 crédits." }
+            : b,
+        ),
+      },
+      {
+        brut: "54 crédits obligatoires, de 33 à 60 crédits à option et un maximum de 6 crédits au choix (SYNTHÉTIQUE)",
+        obligatoire: { min: 54, max: 54 },
+        option: { min: 33, max: 60 },
+        choix: { min: 0, max: 6 },
+      },
+    );
+    // 75C 8 cours = 24, 75D 3, 75Y 3 => 30 d'option. Puis 2 cours hors bloc = 6 au choix.
+    const faits = [...OBLIGATOIRES, ...prendre("75C", 8), ...prendre("75D", 1), ...prendre("75Y", 1), ...HORS_BLOCS];
+    const a = auditer(faits, catalogueComplet, avecMou);
+
+    // Chaque bloc est dans ses bornes : le niveau 1 est entièrement vert.
+    for (const b of a.blocs) expect(b.creditsManquants, `bloc ${b.idBloc}`).toBe(0);
+    // Et le total du programme est atteint : le niveau 3 est vert aussi.
+    expect(a.creditsObligatoires).toBe(54);
+    expect(a.creditsOption).toBe(30);
+    expect(a.creditsChoix).toBe(6);
+    expect(a.creditsTotal).toBe(90);
+    expect(joint(a)).not.toMatch(/il manque .* au total du programme/);
+    // Seul le minimum du TYPE « option » est violé, et il doit suffire à refuser.
+    expect(a.conforme).toBe(false);
+    expect(joint(a)).toMatch(
+      /il manque 3 crédits de cours d'option : 30 crédits sur le minimum de 33 crédits exigé \(l'intervalle du programme va de 33 crédits à 60 crédits\)/,
+    );
+  });
+
   it("les intervalles sont COUPLÉS par la somme : être dans chacun ne suffit pas", () => {
     // Le cas du droit, transposé : chaque type est dans son intervalle, mais la
     // somme des crédits retenus n'atteint pas le total du programme.
