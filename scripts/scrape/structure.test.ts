@@ -52,6 +52,19 @@ describe("parseTitreBloc — les deux côtés du préfixe de cheminement", () =>
     expect(parseTitreBloc("S-Bloc 73C Stage")).toEqual({ id: "S-73C", nom: "Stage" });
   });
 
+  it("« Bloc 70A-MM » : préfixe APRÈS le numéro (maîtrise en physique)", () => {
+    expect(parseTitreBloc("Bloc 70D-MM Mémoire")).toEqual({ id: "70D-MM", nom: "Mémoire" });
+    expect(parseTitreBloc("Bloc 70D-TD Travail dirigé")).toEqual({
+      id: "70D-TD",
+      nom: "Travail dirigé",
+    });
+  });
+
+  it("« Bloc 70C1A » : des chiffres APRÈS la lettre (DES en médecine vétérinaire)", () => {
+    expect(parseTitreBloc("Bloc 70C1A")).toEqual({ id: "70C1A", nom: "" });
+    expect(parseTitreBloc("Bloc 70C1C Stages")).toEqual({ id: "70C1C", nom: "Stages" });
+  });
+
   it("« Bloc MM-70A » : préfixe APRÈS le mot Bloc (maîtrise en informatique)", () => {
     // Deux orthographes pour la même idée, sur deux pages du même cycle. Ne
     // supporter que la première coûtait neuf blocs, ignorés sans erreur.
@@ -384,6 +397,103 @@ describe("maîtrise en informatique — « Bloc MM-70A », préfixe de l'autre c
     // Neuf de ces entrées, c'était l'état du premier jet : les blocs étaient
     // signalés, mais perdus quand même.
     expect(journal.entrees.filter((e) => e.message.includes("titre de bloc illisible"))).toEqual([]);
+  });
+});
+
+describe("doctorat en pathologie — la règle n'est PAS dans le <small>", () => {
+  // Second gabarit de page, trouvé après la passe complète : le `<small>` porte
+  // un LIBELLÉ de passerelle et la vraie règle est la première ligne de
+  // `div.bloc-notes`. Trente blocs avaient ainsi une règle parfaitement lisible
+  // classée « inconnu » parce qu'on la cherchait au mauvais endroit.
+  const { programme } = lire("doctorat-en-pathologie-et-biologie-cellulaire");
+
+  it("lit la règle dans `bloc-notes` quand le <small> n'en porte pas", () => {
+    const b = programme.blocs.find((x) => x.id.startsWith("70A — Accès direct"));
+    expect(b?.regle).toEqual({ type: "obligatoire", bornes: { min: 2, max: 2 } });
+    expect(b?.regleBrut).toBe("Obligatoire - 2 crédits.");
+  });
+
+  it("détache la règle de la phrase qui la SUIT dans le même nœud de texte", () => {
+    // « Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont
+    // équivalents au cours PBC 6051. » : le saut de ligne de la page disparaît
+    // à la normalisation des espaces, et la note entière ne parse pas.
+    const b = programme.blocs.find((x) => x.id.startsWith("70A — Accès direct"));
+    expect(b?.notes.some((n) => n.startsWith("Les cours PBC 60511"))).toBe(true);
+    expect(b?.notes.some((n) => n.includes("Obligatoire - 2 crédits"))).toBe(false);
+  });
+
+  it("le libellé de passerelle entre dans l'IDENTITÉ, sinon deux blocs collisionnent", () => {
+    // La page répète « Bloc 70A » une fois par passerelle, dans le même segment.
+    // Sans le libellé, deux blocs aux règles différentes partagent une clé et
+    // l'audit les mélange — le même défaut que `MM-Bloc 73A` / `S-Bloc 73A`.
+    const cles = programme.blocs.map((b) => b.cle);
+    expect(new Set(cles).size).toBe(cles.length);
+    expect(cles).toContain("70/70A — Accès direct du B. Sc. au Ph. D.");
+    expect(cles).toContain("70/70A — Accès de la M. Sc. au Ph. D.");
+    // Deux blocs DIFFÉRENTS : leurs règles ne sont pas les mêmes.
+    const direct = programme.blocs.find((b) => b.cle === "70/70A — Accès direct du B. Sc. au Ph. D.");
+    const msc = programme.blocs.find((b) => b.cle === "70/70A — Accès de la M. Sc. au Ph. D.");
+    expect(direct?.regle).toEqual({ type: "obligatoire", bornes: { min: 2, max: 2 } });
+    expect(msc?.regle).toEqual({ type: "option", bornes: { min: 3, max: 3 } });
+    // Et le libellé reste lisible en note, pas seulement enfoui dans la clé.
+    expect(direct?.notes[0]).toBe("Accès direct du B. Sc. au Ph. D.");
+  });
+});
+
+describe("identifiants de blocs qui faisaient collisionner des clés", () => {
+  it("maîtrise en physique : « Bloc 70A-MM », préfixe APRÈS le numéro", () => {
+    // Troisième position pour la même idée, après « MM-Bloc 73A » (avant le mot)
+    // et « Bloc MM-70A » (après le mot). Ignorée, six clés collisionnaient.
+    const { programme } = lire("maitrise-en-physique");
+    const ids = programme.blocs.map((b) => b.id);
+    expect(ids).toContain("70A-MM");
+    expect(ids).toContain("70A-ST");
+    const cles = programme.blocs.map((b) => b.cle);
+    expect(new Set(cles).size).toBe(cles.length);
+    // Deux cheminements, deux règles distinctes.
+    expect(programme.blocs.find((b) => b.id === "70A-MM")?.regle).toEqual({
+      type: "option",
+      bornes: { min: 3, max: 9 },
+    });
+    expect(programme.blocs.find((b) => b.id === "70A-ST")?.regle).toEqual({
+      type: "option",
+      bornes: { min: 15, max: 21 },
+    });
+  });
+
+  it("DES en médecine vétérinaire : « Bloc 70C1A », des CHIFFRES après la lettre", () => {
+    // S'arrêter à la première lettre donnait « 70C » pour dix blocs du même
+    // segment : dix clés identiques, et un audit qui les mélange.
+    const { programme } = lire("des-en-medecine-veterinaire-2");
+    const ids = programme.blocs.map((b) => b.id);
+    expect(ids).toContain("70C1A");
+    expect(ids).toContain("70C2A");
+    const cles = programme.blocs.map((b) => b.cle);
+    expect(new Set(cles).size).toBe(cles.length);
+  });
+});
+
+describe("bacc. en sociologie — une règle par cheminement, un seul emplacement", () => {
+  const { programme, journal } = lire("baccalaureat-en-sociologie");
+
+  it("lit la règle du <small> et garde son préfixe de cheminement en note", () => {
+    // « Cheminement régulier : option - Maximum 9 crédits. » dans le <small>, et
+    // « Cheminement international : option - 3 crédits. » dans bloc-notes. Le
+    // préfixe dit à QUI la règle s'applique : le jeter ferait passer la règle
+    // d'un cheminement pour celle du bloc entier.
+    const b = programme.blocs.find((x) => x.id === "01E");
+    expect(b?.regle).toEqual({ type: "option", bornes: { min: 0, max: 9 } });
+    expect(b?.regleBrut).toBe("Cheminement régulier : option - Maximum 9 crédits.");
+    expect(b?.notes).toContain("Cheminement régulier");
+    expect(b?.notes.some((n) => n.includes("Cheminement international"))).toBe(true);
+  });
+
+  it("journalise que `Bloc.regle` ne peut pas porter l'autre cheminement", () => {
+    expect(
+      journal.entrees.some(
+        (e) => e.genre === "inattendu" && e.message.includes("ne vaut que pour « Cheminement régulier »"),
+      ),
+    ).toBe(true);
   });
 });
 

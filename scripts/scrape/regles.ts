@@ -42,6 +42,11 @@ export interface RegleLue {
   regle: RegleBloc;
   /** Note à journaliser quand la lecture mérite d'être vérifiée. null sinon. */
   note: string | null;
+  /** Libellé qui précédait la règle et qui en délimite la portée
+   *  (« Cheminement régulier »). À ranger dans `Bloc.notes` : il dit à QUI la
+   *  règle s'applique, et le perdre ferait passer la règle d'un cheminement
+   *  pour celle du bloc entier. */
+  prefixe: string | null;
 }
 
 /** « 12 » et « 1,5 » et « 1.5 ». La page écrit des crédits fractionnaires. */
@@ -51,14 +56,55 @@ function nombre(brut: string): number {
 
 const NB = String.raw`\d+(?:[.,]\d+)?`;
 const CR = String.raw`cr[ée]dits?`;
-/** Tiret, demi-cadratin ou cadratin : la page utilise les trois selon la page. */
-const TIRET = String.raw`[-–—]`;
 
-const TYPES: { mot: RegExp; type: "obligatoire" | "option" | "choix" }[] = [
-  { mot: /^obligatoires?$/i, type: "obligatoire" },
-  { mot: /^options?$/i, type: "option" },
-  { mot: /^choix$/i, type: "choix" },
-];
+/**
+ * Tous les tirets Unicode, ramenés au tiret ASCII AVANT toute reconnaissance.
+ *
+ * Huit blocs écrivaient « Option ‐ Maximum 6 crédits. » avec U+2010 (HYPHEN) au
+ * lieu de U+002D, et un autre « Option – min. 3.0 crédits » avec U+2013 (EN
+ * DASH). À l'œil c'est le même caractère ; pour une expression régulière c'est
+ * un échec silencieux. Normaliser une fois vaut mieux qu'une variante de regex
+ * par tiret : la prochaine page qui emploiera U+2012 passera sans rien changer.
+ */
+const TIRETS_UNICODE = /[‐‑‒–—―−]/g;
+/** Espace insécable : même raison, `\s` ne la couvre pas partout. */
+const ESPACES_UNICODE = /[   ]/g;
+
+export function normaliserPonctuation(texte: string): string {
+  return texte.replace(TIRETS_UNICODE, "-").replace(ESPACES_UNICODE, " ");
+}
+
+/**
+ * Type du bloc, puis le reste. Le séparateur est OPTIONNEL et peut être un
+ * tiret ou un deux-points : la page écrit « Obligatoire - 26 crédits. » mais
+ * aussi « Obligatoire 12 crédits. » (certificat de gérontologie), « Option-
+ * Minimum 1 crédit. » (maîtrise en biologie moléculaire) et « Option : Minimum
+ * 12 crédits, maximum 42 crédits. » (bacc. en sociologie).
+ *
+ * « Cours obligatoire » (DESS en journalisme) et « Au choix » (DESS en santé
+ * environnementale mondiale) sont les mêmes types, écrits autrement.
+ */
+const RE_TYPE =
+  /^(cours\s+obligatoires?|obligatoires?|au\s+choix|choix|options?)\s*(?:[-:]\s*)?([\s\S]*)$/i;
+
+/**
+ * Préfixe de cheminement devant la règle, ancré sur le mot « Cheminement ».
+ *
+ * Le bacc. en sociologie écrit « Cheminement régulier : option - Maximum 9
+ * crédits. » dans le `<small>` et met la règle de l'AUTRE cheminement dans
+ * `bloc-notes`. Le préfixe n'est pas du bruit — il dit à quel cheminement la
+ * règle s'applique — donc il est retiré pour la lecture et rendu à l'appelant,
+ * qui le range dans `Bloc.notes`.
+ */
+const RE_PREFIXE_CHEMINEMENT = /^(Cheminements?\s+[^:]{1,40}?)\s*:?\s+(?=(?:cours\s+)?(?:obligatoire|option|choix|au\s+choix)\b)/i;
+
+function typeDeMot(mot: string): "obligatoire" | "option" | "choix" | null {
+  const m = mot.trim().toLowerCase().replace(/\s+/g, " ");
+  if (/^(?:cours )?obligatoires?$/.test(m)) return "obligatoire";
+  if (/^options?$/.test(m)) return "option";
+  if (/^(?:au )?choix$/.test(m)) return "choix";
+  return null;
+}
 
 type FormeBornes = "exacte" | "min-max" | "max" | "min-seul";
 
@@ -67,18 +113,44 @@ interface BornesLues {
   bornes: Intervalle | null;
 }
 
-/** Partie droite de la règle, après le tiret : les bornes seules. */
+/** « Minimum », « minimum de », « min. » — et pareil pour le maximum. */
+const MIN = String.raw`min(?:imum|\.)\s*(?:de\s+)?`;
+const MAX = String.raw`max(?:imum|\.)\s*(?:de\s+)?`;
+/** Ce qui sépare deux bornes : virgule, point-virgule, « et », ou rien. */
+const ENTRE_BORNES = String.raw`\s*(?:[,;]\s*)?(?:et\s+)?`;
+
+/**
+ * Partie droite de la règle : les bornes seules.
+ *
+ * Les orthographes acceptées viennent toutes de pages réelles, relevées sur les
+ * 1 088 programmes :
+ *   « Minimum 12 crédits, maximum 27 crédits »        forme majoritaire
+ *   « Minimum de 2 crédits, maximum de 6 crédits »    doctorat en sciences de la vision
+ *   « Minimum 21 crédits; maximum 30 crédits »        bacc. en communication et politique
+ *   « Minimum 6 crédits et maximum 9 crédits »        DESS en santé environnementale mondiale
+ *   « Minimum 10 et maximum 21 crédits »              DES en médecine vétérinaire
+ *   « min. 3.0 crédits, max. 9.0 crédits »            bacc. en enseignement des sciences
+ *   « min. 3 max. 9 crédits »                         idem, sans virgule ni premier « crédits »
+ *   « 6 à 12 crédits »                                bacc. 4 ans en arts et lettres
+ */
 export function parseBornes(droite: string): BornesLues | null {
   const t = droite.trim();
 
-  let m = new RegExp(`^Minimum\\s*(${NB})\\s*(?:${CR})?\\s*,?\\s*Maximum\\s*(${NB})\\s*(?:${CR})?$`, "i").exec(t);
+  let m = new RegExp(
+    `^${MIN}(${NB})\\s*(?:${CR})?${ENTRE_BORNES}${MAX}(${NB})\\s*(?:${CR})?$`,
+    "i",
+  ).exec(t);
   if (m) return { forme: "min-max", bornes: { min: nombre(m[1]), max: nombre(m[2]) } };
 
-  m = new RegExp(`^Maximum\\s*(${NB})\\s*(?:${CR})?$`, "i").exec(t);
+  m = new RegExp(`^${MAX}(${NB})\\s*(?:${CR})?$`, "i").exec(t);
   if (m) return { forme: "max", bornes: { min: 0, max: nombre(m[1]) } };
 
-  m = new RegExp(`^Minimum\\s*(${NB})\\s*(?:${CR})?$`, "i").exec(t);
+  m = new RegExp(`^${MIN}(${NB})\\s*(?:${CR})?$`, "i").exec(t);
   if (m) return { forme: "min-seul", bornes: null };
+
+  // « 6 à 12 crédits » : un intervalle écrit sans nommer ses bornes.
+  m = new RegExp(`^(${NB})\\s*[àa]\\s*(${NB})\\s*${CR}$`, "i").exec(t);
+  if (m) return { forme: "min-max", bornes: { min: nombre(m[1]), max: nombre(m[2]) } };
 
   m = new RegExp(`^(${NB})\\s*${CR}$`, "i").exec(t);
   if (m) return { forme: "exacte", bornes: { min: nombre(m[1]), max: nombre(m[1]) } };
@@ -96,22 +168,23 @@ export function parseBornes(droite: string): BornesLues | null {
  */
 export function parseRegleBloc(brut: string): RegleLue {
   const verbatim = brut.trim();
-  const sansPoint = verbatim.replace(/\.$/, "").trim();
+  // Normaliser AVANT de reconnaître : tirets Unicode et espaces insécables.
+  let t = normaliserPonctuation(verbatim).replace(/\.$/, "").trim();
 
-  const coupe = new RegExp(`^([^${"-–—"}]+?)\\s*${TIRET}\\s*([\\s\\S]+)$`).exec(sansPoint);
-  if (!coupe) {
-    return {
-      regle: { type: "inconnu", brut: verbatim },
-      note: `règle de bloc sans séparateur « type - bornes » : « ${verbatim} »`,
-    };
+  let prefixe: string | null = null;
+  const mPrefixe = RE_PREFIXE_CHEMINEMENT.exec(t);
+  if (mPrefixe) {
+    prefixe = mPrefixe[1].trim();
+    t = t.slice(mPrefixe[0].length).trim();
   }
 
-  const motType = coupe[1].trim();
-  const type = TYPES.find((t) => t.mot.test(motType))?.type;
-  if (!type) {
+  const coupe = RE_TYPE.exec(t);
+  const type = coupe ? typeDeMot(coupe[1]) : null;
+  if (!coupe || type === null) {
     return {
       regle: { type: "inconnu", brut: verbatim },
-      note: `type de bloc inconnu (« ${motType} ») dans la règle « ${verbatim} » — attendu obligatoire, option ou choix`,
+      note: `« ${verbatim} » ne commence pas par un type de bloc (obligatoire, option ou choix)`,
+      prefixe,
     };
   }
 
@@ -119,19 +192,24 @@ export function parseRegleBloc(brut: string): RegleLue {
   if (!lues) {
     return {
       regle: { type: "inconnu", brut: verbatim },
-      note: `bornes de crédits non reconnues dans « ${verbatim} » (partie « ${coupe[2].trim()} »)`,
+      note:
+        coupe[2].trim() === ""
+          ? `règle « ${verbatim} » : un type sans aucune borne de crédits`
+          : `bornes de crédits non reconnues dans « ${verbatim} » (partie « ${coupe[2].trim()} »)`,
+      prefixe,
     };
   }
   if (lues.bornes === null) {
     return {
       regle: { type: "inconnu", brut: verbatim },
       note:
-        `règle « ${verbatim} » : un minimum sans maximum. Forme jamais relevée, et ` +
-        "aucun maximum ne peut être nommé sans l'inventer — bloc laissé non auditable.",
+        `règle « ${verbatim} » : un minimum sans maximum. Aucun maximum ne peut ` +
+        "être nommé sans l'inventer — bloc laissé non auditable.",
+      prefixe,
     };
   }
 
-  return { regle: { type, bornes: lues.bornes }, note: null };
+  return { regle: { type, bornes: lues.bornes }, note: null, prefixe };
 }
 
 /** Nom court de la forme lue, pour le relevé imprimé en fin de scrape. */
