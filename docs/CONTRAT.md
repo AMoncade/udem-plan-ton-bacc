@@ -89,14 +89,62 @@ Les huit règles de blocs y sont également confirmées mot pour mot, y compris
 entre les minimums de blocs (18) et le total d'option exigé (33) n'est donc pas
 un artefact de lecture : c'est la règle du programme.
 
-## À faire après le merge des trois branches
+## État après le merge des quatre chantiers
 
-- `.gitattributes` (`* text=auto eol=lf`) : git convertit LF→CRLF sur cette
-  machine, et trois worktrees qui commitent séparément peuvent produire des
-  diffs de fichiers entiers. Volontairement reporté à après le merge pour ne pas
-  changer les fins de ligne sous les sessions en cours.
-- Balayer les **coutures**, pas les branches : chaque branche passe ses propres
-  tests, et les défauts de ce genre de projet apparaissent là où deux pièces
-  correctes se rencontrent — le scraper qui appelle `parsePrealables()` étendu
-  par le moteur, l'UI qui consomme un `Audit` réel au lieu de son faux, et les
-  codes de cours normalisés d'un côté mais pas de l'autre.
+Tout est fusionné sur `main`. Ce que le merge a appris, et qui contredit ce
+document tel qu'il était écrit plus haut :
+
+- **La couture 1 était mal décrite.** §1 affirmait que l'extension de
+  `parsePrealables()` ne demande rien au scraper « même signature ». La
+  signature, oui — mais l'extension **périme `data/catalogue.json`** et casse
+  les tests du scraper qui épinglaient l'ancienne incapacité. Une couture n'est
+  pas qu'une signature : c'est aussi *qui régénère, et quand*. Les deux ont été
+  corrigés au merge, et `lib/engine/releve.test.ts` exige maintenant que le
+  catalogue généré soit à jour avec le parseur.
+- **Les noms de blocs de la fixture étaient inventés** par l'intégratrice, les
+  huit. Corrigés depuis le catalogue réel. La règle « ne pas inventer de
+  données » a été violée par celle qui l'a écrite — et c'est une session
+  subordonnée qui l'a relevé, parce que son brief l'y invitait explicitement.
+- **Le `.gitattributes` prévu n'est pas nécessaire** : `git ls-files --eol`
+  montre un index uniformément `lf` sur les 73 fichiers. Le risque que la note
+  surveillait ne s'est pas matérialisé.
+- **Les tests de couture valent mieux que les tests de branche.** `tests/`
+  éprouve ce qu'aucun chantier ne peut tester seul. Le plus utile vérifie que
+  les crédits des fiches somment à la règle de chaque bloc obligatoire (26, 21,
+  7) — deux informations scrapées indépendamment.
+
+## Ce que le contrat ne sait pas encore faire
+
+`docs/VALIDATION-AUTRES-PROGRAMMES.md` a éprouvé ce modèle sur sept programmes.
+La forme générale tient partout ; quatre détails sont faux dès qu'on sort de
+l'actuariat. Par ordre de coût croissant :
+
+1. **`RegleBloc` ne couvre que 4 des 9 formes écrites.** Manquent
+   `Option - 4 crédits.` (exact, sans min ni max — et c'est sur *notre* page, au
+   bloc 82B), `Choix - Maximum 3 crédits.`, `Choix - Minimum 3, maximum 6`, et
+   des variantes en minuscules. À l'inverse, la forme `min` sans `max` que le
+   contrat autorise n'apparaît **nulle part**. Le moteur ne les avale pas en
+   silence (`bornes.type !== "inconnu"` l'en empêche), mais il ne peut pas
+   auditer ces blocs.
+2. **`Programme` ne porte pas les totaux par type**, alors que la page les écrit
+   verbatim : « 54 crédits obligatoires, 33 crédits à option et 3 crédits au
+   choix ». Le moteur les déduit (90 − 54 − 3), ce qui marche ici ; ailleurs ce
+   sont des **intervalles** (droit : « de 30 à 33 à option »), indéductibles.
+   Le scraper consigne déjà la phrase dans son journal, faute de champ.
+3. **`Catalogue` n'a pas de champ pour le journal du scraper**, qui voyage donc
+   dans une clé `_journal` non typée. Une exigence réelle y est piégée et rien
+   ne peut l'afficher : `Restrictions d'inscription: DMO1000/DMO1010`. C'est le
+   repli silencieux que le projet combat, mais il est dans le contrat, pas dans
+   le code.
+4. **`Bloc.id` n'est pas unique et le segment ne s'en déduit pas** : la maîtrise
+   en mathématiques a `MM-Bloc 73A` **et** `S-Bloc 73A` dans le segment 73.
+   `segmentDeBloc()` se trompe dessus.
+5. **`CodeCours` n'est pas « trois lettres + quatre chiffres »** : 199 codes
+   suffixés (`DRT 1151G`, `MUI 1162A`) et quatre à cinq chiffres (`PSY 40001`).
+   `normaliserCode()` renvoie `null` pour eux — ce qui n'est pas silencieux
+   (l'UI les liste dans `codesIllisibles`), mais les exclut du graphe.
+6. **Le chevauchement entre blocs est réel** hors actuariat : en droit, le bloc
+   70K est entièrement contenu dans le 70L. L'attribution devient un problème
+   d'affectation sous bornes. L'attribution directe actuelle se trompe alors
+   dans un seul sens — elle peut déclarer non conforme un parcours conforme,
+   jamais l'inverse.
