@@ -50,10 +50,25 @@ describe("lireSaisie", () => {
     for (const refuse of r.refuses) expect(refuse.raison.length).toBeGreaterThan(10);
   });
 
+  test("les codes suffixés et à cinq chiffres sont ACCEPTÉS", () => {
+    // Ce test épinglait l'inverse — que « DRT 1151G » soit refusé avec une
+    // raison mentionnant « suffixé », et « PSY 40001 » avec « cinq chiffres ».
+    // C'était exact sur la base v1, où normaliserCode() n'acceptait que trois
+    // lettres et quatre chiffres. Le contrat v2 les accepte, parce que ces
+    // codes EXISTENT à l'UdeM : 199 codes suffixés (152 en musique, 36 au
+    // certificat en droit) et quatre à cinq chiffres. Et le suffixe distingue
+    // deux cours : CRI 1600G est une fiche différente de CRI 1600.
+    //
+    // Le test mesurait donc une incapacité, pas un comportement voulu, et
+    // devait changer avec elle. C'est la troisième fois que ce motif apparaît
+    // sur ce projet ; voir docs/CONTRAT.md.
+    const r = lireSaisie("DRT 1151G\nPSY 40001");
+    expect(r.acceptes).toEqual(["DRT 1151G", "PSY 40001"]);
+    expect(r.refuses).toEqual([]);
+  });
+
   test("chaque forme de refus reçoit sa propre explication", () => {
     const raison = (brut: string) => lireSaisie(brut).refuses[0].raison;
-    expect(raison("DRT 1151G")).toContain("suffixé");
-    expect(raison("PSY 40001")).toContain("cinq chiffres");
     expect(raison("MATH 1400")).toContain("pas plus");
     expect(raison("MA 1400")).toContain("pas moins");
     expect(raison("ACT 225")).toContain("quatre chiffres");
