@@ -42,3 +42,6 @@ next-env.d.ts
 
 # cache du scraper
 scripts/scrape/.cache/
+
+# worktrees des sessions parallèles (dépôts git imbriqués)
+.claude/worktrees/
