@@ -50,6 +50,14 @@ function cr(x: number): string {
   return `${nb(x)} ${arrondi(x) >= 2 ? "crédits" : "crédit"}`;
 }
 
+/** « 75C (Compléments d'actuariat) », ou « 01A » tout court : le catalogue réel
+ *  a deux blocs sans nom (01A et 75Z, la page de structure ne leur en donne
+ *  pas), et « le bloc 01A () » est un message cassé. */
+function nomBloc(bloc: Bloc): string {
+  const nom = (bloc.nom ?? "").trim();
+  return nom === "" ? bloc.id : `${bloc.id} (${nom})`;
+}
+
 function listerCodes(codes: readonly string[], maximum = 10): string {
   const visibles = codes.slice(0, maximum).join(", ");
   const reste = codes.length - maximum;
@@ -255,9 +263,17 @@ function diagnostiquerUn(
     avertissements.push(`préalables non analysés, à lire tel quel : « ${fiche.prealablesBrut.trim()} »`);
   }
 
-  // Les concomitants ne sont pas encore mécanisés (aucune forme réelle relevée).
-  // Les laisser tomber silencieusement ferait afficher « disponible » sur un
-  // cours qui exige un cours en parallèle.
+  // Les concomitants ne sont pas mécanisés : aucun champ de `Cours` ne porte un
+  // arbre de concomitants. Les laisser tomber silencieusement ferait afficher
+  // « disponible » sur un cours qui exige un cours en parallèle.
+  //
+  // AVERTISSEMENT À QUI LES MÉCANISERA : la fiche réelle de STT 2000 publie
+  // « Concomitants: STT2000 et STT2700 » — elle se déclare concomitante
+  // d'elle-même (vérifié dans data/catalogue.json, relevé §4). Un moteur qui
+  // traiterait un concomitant comme un préalable mettrait STT 2000 en attente
+  // d'elle-même. Un cycle de longueur 1 existe donc dans les VRAIES données :
+  // il faudra un ensemble de codes déjà visités, ou exclure le cours courant de
+  // ses propres concomitants, avant d'évaluer quoi que ce soit.
   if (fiche.concomitantsBrut != null && fiche.concomitantsBrut.trim() !== "") {
     avertissements.push(`concomitants non analysés, à lire tel quel : « ${fiche.concomitantsBrut.trim()} »`);
   }
@@ -509,7 +525,7 @@ export function auditProgramme(
   for (const c of calculs) {
     if (c.manquants > 0) {
       problemes.push(
-        `il manque ${cr(c.manquants)} dans le bloc ${c.bloc.id} (${c.bloc.nom}) : ${cr(c.comptes)} sur un minimum de ${cr(c.bornes.min)}.`,
+        `il manque ${cr(c.manquants)} dans le bloc ${nomBloc(c.bloc)} : ${cr(c.comptes)} sur un minimum de ${cr(c.bornes.min)}.`,
       );
     }
   }
