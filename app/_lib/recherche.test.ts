@@ -225,6 +225,27 @@ describe("ficheParCle et libelleFiche", () => {
     expect(ficheParCle(prepare, "demo-inexistant")).toBeUndefined();
   });
 
+  it("ne rend jamais une ligne vide quand la page n'annonce pas de nom", () => {
+    // Le scrape réel contient une telle fiche. `fiche.nom` rendu tel quel
+    // donnait une ligne vide et cliquable dans le sélecteur : rien à lire, et
+    // rien qui dise pourquoi.
+    const anonyme: FicheIndex = {
+      cle: "microprogramme-x",
+      id: "microprogramme-x",
+      nom: "",
+      orientation: null,
+      cycle: null,
+      faculte: null,
+      typeProgramme: null,
+      creditsTotal: null,
+      nbBlocs: 0,
+      structureLue: false,
+    };
+    expect(libelleFiche(anonyme).trim()).not.toBe("");
+    expect(libelleFiche(anonyme)).toContain("microprogramme-x");
+    expect(libelleFiche(anonyme)).toContain("non publié");
+  });
+
   it("nomme l'orientation quand il y en a une", () => {
     const avecOrientation = prepare.entrees
       .map((e) => e.fiche)

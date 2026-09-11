@@ -270,9 +270,19 @@ export function ficheParCle(
   return prepare.entrees.find((entree) => entree.fiche.cle === cle)?.fiche;
 }
 
-/** « Baccalauréat en mathématiques — orientation actuariat ». */
+/**
+ * « Baccalauréat en mathématiques — orientation actuariat ».
+ *
+ * Une fiche PEUT n'avoir aucun nom : le scrape réel en contient une, dont la
+ * page n'annonce ni nom, ni cycle, ni faculté, ni type
+ * (`microprogramme-de-1er-cycle-en-cultures-et-patrimoines-autochtones`). Rendre
+ * `fiche.nom` tel quel donnait une ligne VIDE dans le sélecteur — cliquable,
+ * sans rien à lire. On se rabat sur le slug, qui est au moins lisible, et on
+ * dit que le nom manque plutôt que de laisser un trou.
+ */
 export function libelleFiche(fiche: FicheIndex): string {
+  const nom = fiche.nom.trim() === "" ? `${fiche.id} (nom non publié)` : fiche.nom;
   return fiche.orientation === null
-    ? fiche.nom
-    : `${fiche.nom} — orientation ${fiche.orientation.toLowerCase()}`;
+    ? nom
+    : `${nom} — orientation ${fiche.orientation.toLowerCase()}`;
 }
