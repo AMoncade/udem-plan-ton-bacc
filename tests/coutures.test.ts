@@ -39,6 +39,34 @@ const V2_PRESENTE = existsSync(INDEX) && existsSync(DIR_PROGRAMMES) && existsSyn
 const lire = <T,>(chemin: string): T => JSON.parse(readFileSync(chemin, "utf8")) as T;
 
 /**
+ * Les données portent-elles la VERSION COURANTE du contrat ?
+ *
+ * Distinct de `V2_PRESENTE` : les fichiers peuvent être là et dater d'une
+ * version antérieure du contrat. C'est arrivé, et sans ce garde-fou ça se
+ * manifestait par trois `TypeError: Cannot read properties of undefined` —
+ * un mode d'échec qui ne dit pas ce qui manque et fait soupçonner le code
+ * plutôt que la fraîcheur des données.
+ */
+function champsManquants(): string[] {
+  if (!V2_PRESENTE) return [];
+  const manques: string[] = [];
+  const index = lire<IndexProgrammes>(INDEX);
+  const f = index.programmes[0];
+  if (f && f.cle === undefined) manques.push("FicheIndex.cle");
+  const fichiers = readdirSync(DIR_PROGRAMMES).filter((x) => x.endsWith(".json")).sort();
+  if (fichiers.length > 0) {
+    const p0 = lire<Programme>(join(DIR_PROGRAMMES, fichiers[0]));
+    if (p0.orientations === undefined) manques.push("Programme.orientations");
+    const b0 = p0.blocs[0];
+    if (b0 && b0.contenuOuvert === undefined) manques.push("Bloc.contenuOuvert");
+  }
+  return manques;
+}
+
+const MANQUES = champsManquants();
+const PRET = V2_PRESENTE && MANQUES.length === 0;
+
+/**
  * Un échantillon de programmes, pas les 1 088 : la suite doit rester rapide.
  * Il est DÉTERMINISTE (pas de hasard) et réparti sur toute la liste triée, pour
  * qu'un défaut qui ne toucherait qu'une famille de programmes ait une chance
@@ -73,9 +101,22 @@ describe("disposition des données sur disque", () => {
     }
     expect(V2_PRESENTE).toBe(true);
   });
+
+  it("les données portent la version courante du contrat", () => {
+    // Sans ce test, un décalage de version se manifeste par des TypeError
+    // dispersés qui font soupçonner le code au lieu des données.
+    if (MANQUES.length > 0) {
+      throw new Error(
+        "Les données de data/ datent d'une version antérieure du contrat : " +
+          `champ(s) absent(s) ${MANQUES.join(", ")}. Relancer le scrape après ` +
+          "que le chantier scraper a rapatrié le contrat courant.",
+      );
+    }
+    expect(MANQUES).toEqual([]);
+  });
 });
 
-describe.skipIf(!V2_PRESENTE)("couture index <-> fichiers de programmes", () => {
+describe.skipIf(!PRET)("couture index <-> fichiers de programmes", () => {
   it("chaque fiche de l'index a son fichier, et annonce le bon nombre de blocs", () => {
     const index = lire<IndexProgrammes>(INDEX);
     expect(index.programmes.length).toBeGreaterThan(0);
@@ -130,7 +171,7 @@ describe.skipIf(!V2_PRESENTE)("couture index <-> fichiers de programmes", () => 
   });
 });
 
-describe.skipIf(!V2_PRESENTE)("couture codes : une seule écriture partout", () => {
+describe.skipIf(!PRET)("couture codes : une seule écriture partout", () => {
   it("chaque clé de fichier de cours est canonique et égale le champ code", () => {
     // LA couture la plus silencieuse du projet : UdeM écrit « ACT 2250 »,
     // « ACT2250 » et « act-2250 ». Une seule forme non normalisée d'un côté ne
@@ -162,7 +203,7 @@ describe.skipIf(!V2_PRESENTE)("couture codes : une seule écriture partout", () 
   });
 });
 
-describe.skipIf(!V2_PRESENTE)("couture blocs : identité, bornes et contenu", () => {
+describe.skipIf(!PRET)("couture blocs : identité, bornes et contenu", () => {
   const programmes = () =>
     echantillon(fichiersProgrammes(), 60).map((f) => lire<Programme>(join(DIR_PROGRAMMES, f)));
 
@@ -230,7 +271,7 @@ describe.skipIf(!V2_PRESENTE)("couture blocs : identité, bornes et contenu", ()
   });
 });
 
-describe.skipIf(!V2_PRESENTE)("couture moteur <-> données réelles", () => {
+describe.skipIf(!PRET)("couture moteur <-> données réelles", () => {
   /** Assemble un Catalogue minimal pour un programme, comme l'UI le fera. */
   function catalogueDe(p: Programme): Catalogue {
     const cours: Record<CodeCours, Cours> = {};
