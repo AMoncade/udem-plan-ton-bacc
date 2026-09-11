@@ -33,6 +33,7 @@ import type {
   Programme,
 } from "../../lib/types";
 import { sujetDeCode } from "../../lib/codes";
+import { parcoursDe, projeterOrientation } from "../../lib/parcours";
 
 export const RACINE_DEPOT = path.resolve(import.meta.dirname, "..", "..");
 export const DOSSIER_DONNEES = path.join(RACINE_DEPOT, "data");
@@ -49,19 +50,39 @@ async function ecrireJson(chemin: string, valeur: unknown): Promise<void> {
   await writeFile(chemin, `${JSON.stringify(valeur, null, 2)}\n`, "utf8");
 }
 
-/** Fiche légère d'un programme pour `data/index-programmes.json`. */
-export function ficheDeProgramme(programme: Programme, structureLue: boolean): FicheIndex {
-  return {
-    id: programme.id,
-    nom: programme.nom,
-    orientation: programme.orientation,
-    cycle: programme.cycle,
-    faculte: programme.faculte,
-    typeProgramme: programme.typeProgramme,
-    creditsTotal: programme.creditsTotal,
-    nbBlocs: programme.blocs.length,
-    structureLue,
-  };
+/**
+ * Fiches légères d'un programme : UNE PAR PARCOURS, pas une par page.
+ *
+ * Ce que le sélecteur propose, ce n'est pas une page mais un parcours suivable :
+ * la page du bacc. en mathématiques en porte sept, et « ouvrir le bacc. en
+ * mathématiques » n'a pas de sens — ses orientations sont des alternatives dont
+ * les blocs ne s'additionnent pas. À l'échelle mesurée, ~545 pages exploitables
+ * portent ~964 parcours.
+ *
+ * La clé vient de `cleParcours()` et l'énumération de `parcoursDe()`, tous deux
+ * dans `lib/parcours.ts` : si le scraper et l'UI ne comptaient pas les parcours
+ * de la même façon, le sélecteur en proposerait qui ne s'ouvrent pas, ou en
+ * cacherait — sans qu'aucune erreur apparaisse. D'où un seul endroit qui compte.
+ *
+ * `nbBlocs` est celui DU PARCOURS, pas de la page : c'est ce que le sélecteur
+ * annonce et ce que l'étudiant ouvrira.
+ */
+export function fichesDeProgramme(programme: Programme, structureLue: boolean): FicheIndex[] {
+  return parcoursDe(programme).map(({ cle, orientation }) => {
+    const projete = orientation === null ? programme : projeterOrientation(programme, orientation);
+    return {
+      cle,
+      id: programme.id,
+      nom: programme.nom,
+      orientation,
+      cycle: programme.cycle,
+      faculte: programme.faculte,
+      typeProgramme: programme.typeProgramme,
+      creditsTotal: programme.creditsTotal,
+      nbBlocs: projete.blocs.length,
+      structureLue,
+    };
+  });
 }
 
 export async function ecrireProgramme(programme: Programme): Promise<string> {
@@ -145,15 +166,23 @@ export async function ecrireIndex(
   fiches: FicheIndex[],
   scrapeISO: string,
 ): Promise<{ chemin: string; total: number }> {
-  let parId = new Map<string, FicheIndex>();
+  // Fusion par CLÉ DE PARCOURS, pas par id : plusieurs fiches partagent le même
+  // id (une par orientation de la même page). Fusionner par id n'en garderait
+  // qu'une, et le sélecteur perdrait six des sept orientations du bacc en maths.
+  let parCle = new Map<string, FicheIndex>();
   try {
     const ancien = JSON.parse(await readFile(CHEMIN_INDEX, "utf8")) as IndexProgrammes;
-    for (const f of ancien.programmes ?? []) parId.set(f.id, f);
+    for (const f of ancien.programmes ?? []) parCle.set(f.cle, f);
   } catch {
-    parId = new Map();
+    parCle = new Map();
   }
-  for (const f of fiches) parId.set(f.id, f);
-  const programmes = [...parId.values()].sort((a, b) => a.id.localeCompare(b.id, "fr"));
+  // Une page rescrapée peut avoir PERDU une orientation : ses anciennes fiches
+  // doivent disparaître, sinon l'index garderait un parcours que plus aucun
+  // fichier de programme ne déclare, et le test de couture le verrait.
+  const idsReecrits = new Set(fiches.map((f) => f.id));
+  for (const [cle, f] of [...parCle]) if (idsReecrits.has(f.id)) parCle.delete(cle);
+  for (const f of fiches) parCle.set(f.cle, f);
+  const programmes = [...parCle.values()].sort((a, b) => a.cle.localeCompare(b.cle, "fr"));
   const index: IndexProgrammes = {
     programmes,
     sujets: await sujetsSurDisque(),

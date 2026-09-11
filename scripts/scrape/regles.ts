@@ -250,6 +250,119 @@ function bornesDuFragment(fragment: string): Intervalle | null {
   return null;
 }
 
+// ---------------------------------------------------------------------------
+// Orientations — les PARCOURS déclarés par une page
+// ---------------------------------------------------------------------------
+
+export interface OrientationBrute {
+  nom: string;
+  segments: string[];
+  /** La phrase d'où l'orientation a été lue, verbatim. Elle porte parfois la
+   *  répartition, parfois seulement le nom et les segments. */
+  phrase: string;
+}
+
+/**
+ * Nom d'orientation : ce qui suit « orientation », « option » ou
+ * « cheminement », jusqu'à la première ponctuation ou au premier verbe.
+ *
+ * Formes réelles, toutes de la même page ou d'à côté :
+ *   « - orientation Actuariat (segments 01 et 75) avec 54 crédits… »
+ *   « - orientation générale (segment 01 et 76) : 57 crédits… »
+ *   « - cheminement honor (segment 01 et 78) : 54 crédits… »
+ *   « - l'option Mathématiques pures, cheminement avec mémoire (segment 70), »
+ *   « - L'orientation clinique comportant 105 crédits comprend les segments 01 et 80 avec… »
+ */
+const NOM_ORIENTATION =
+  /(?:orientations?|options?|cheminements?)\s+([A-Za-zÀ-ÿ0-9][^(,:;]{1,69}?)(?=\s*[,(:;]|\s+(?:comportant|comprend|avec|est|sont)\b|$)/i;
+
+/**
+ * Mots qui suivent « orientations » sans nommer une orientation.
+ *
+ * La phrase « Il comprend un tronc commun (segment 01) et est offert selon sept
+ * orientations : » porte à la fois le mot « orientations » et un numéro de
+ * segment : sans ce garde-fou, elle fabriquait un parcours fantôme, qui aurait
+ * donné une entrée d'index qui ne s'ouvre sur rien.
+ */
+const FAUX_NOMS = /^(?:suivantes?|suivants?|ci-dessous|distinctes?|différentes?|[\d\W]+)$/i;
+
+/** « (segments 01 et 75) », « (segment 70) », « comprend les segments 01 et 80 ». */
+const SEGMENTS_CITES = /segments?\s+((?:\d{1,3})(?:\s*(?:,|et|ou|&)\s*\d{1,3})*)/i;
+
+/**
+ * Orientations déclarées par un texte de description.
+ *
+ * POURQUOI ELLES EXISTENT. Un `Programme` est une PAGE ; ce qu'un étudiant
+ * choisit est un PARCOURS. La page du bacc. en mathématiques énonce sept
+ * répartitions de crédits, une par orientation : avec un seul emplacement
+ * `exigences`, désigner celle de l'actuariat serait un choix arbitraire déguisé
+ * en donnée. Chaque orientation porte donc la sienne.
+ *
+ * Une orientation n'est retenue que si la phrase donne À LA FOIS un nom et des
+ * segments. Sans segments, on ne saurait pas quels blocs lui appartiennent, et
+ * un parcours sans blocs vaut moins que pas de parcours du tout.
+ */
+export function lireOrientations(texte: string): OrientationBrute[] {
+  const puces = decouperEnPuces(texte);
+  // Si la description n'est PAS une liste à puces, on ne cherche pas
+  // d'orientations. La phrase d'introduction en contient toujours les mots :
+  // « Il comprend un tronc commun (segment 01) et est offert selon 2
+  // orientations et un cheminement particulier : » porte « orientations » ET un
+  // numéro de segment, et fabriquait un parcours nommé « et un cheminement
+  // particulier ». Une page sans puces déclare un seul parcours — et rater une
+  // orientation qui ne serait pas en puce donne un parcours unique, ce qui est
+  // faux mais visible, alors qu'un parcours fantôme est une entrée d'index qui
+  // ne s'ouvre sur rien.
+  if (puces.length === 0) return [];
+
+  const out: OrientationBrute[] = [];
+  for (const puce of puces) {
+    const mNom = NOM_ORIENTATION.exec(puce);
+    const mSeg = SEGMENTS_CITES.exec(puce);
+    if (!mNom || !mSeg) continue;
+    const nom = mNom[1]
+      .replace(/^(?:l['’]|la\s+|le\s+|les\s+)/i, "")
+      .replace(/\s+/g, " ")
+      .trim();
+    const segments = [...mSeg[1].matchAll(/\d{1,3}/g)].map((m) => m[0]);
+    if (nom === "" || nom.length < 2 || FAUX_NOMS.test(nom) || segments.length === 0) continue;
+
+    // Une même orientation est souvent annoncée DEUX FOIS : une liste qui donne
+    // son segment propre, puis une seconde qui donne ses segments complets et sa
+    // répartition (bacc. en informatique). On fusionne au lieu de garder la
+    // première : garder la première perdait la répartition, garder la seconde
+    // perdait rien mais c'est un hasard d'ordre.
+    const deja = out.find((o) => o.nom.toLowerCase() === nom.toLowerCase());
+    if (deja) {
+      deja.segments = [...new Set([...deja.segments, ...segments])];
+      if (trouverPhrasesExigences(deja.phrase).length === 0) deja.phrase = puce;
+      continue;
+    }
+    out.push({ nom, segments, phrase: puce });
+  }
+  return out;
+}
+
+/**
+ * Les PUCES d'un texte de description, une par entrée de liste.
+ *
+ * `texteBrut` met déjà chaque `<p>` sur sa ligne, et la page met une puce par
+ * `<p>` ; mais la maîtrise et le certificat écrivent leurs trois puces dans un
+ * même paragraphe, séparées par des virgules. D'où la seconde coupure.
+ * Une ligne qui ne commence pas par un tiret n'est pas une puce : c'est ce qui
+ * écarte la phrase d'introduction.
+ */
+function decouperEnPuces(texte: string): string[] {
+  const out: string[] = [];
+  for (const ligne of texte.split("\n")) {
+    for (const morceau of ligne.split(/(?<=[,;:.])\s+(?=[-–—]\s)/)) {
+      const t = morceau.trim();
+      if (/^[-–—]\s/.test(t)) out.push(t);
+    }
+  }
+  return out;
+}
+
 /**
  * Parse une phrase de répartition en `ExigencesParType`.
  *

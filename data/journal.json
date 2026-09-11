@@ -1,5 +1,290 @@
 [
   {
+    "genre": "inattendu",
+    "sujet": "microprogramme-de-1er-cycle-en-cultures-et-patrimoines-autochtones",
+    "message": "slug demandé par --programmes mais absent du sitemap — traité quand même"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 75/75Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 77/77Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 79/79Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 81/81Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 82/82Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-mathematiques",
+    "message": "7 parcours déclarés (Actuariat | Actuariat COOP | Mathématiques pures et appliquées | Statistique | Statistique COOP | Mathématiques financières | Sciences mathématiques) ; 7 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-droit bloc 70/70Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-psychologie-campus-montreal bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-musique bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-musique bloc 02/02E",
+    "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-musique bloc 02/02Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-musique",
+    "message": "2 parcours déclarés (Instrument | Connaissance du clavier) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-economie-et-politique bloc 71/71G",
+    "message": "contenu ouvert (règle « Option - maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-economie-et-politique bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-economie-et-politique",
+    "message": "« un minimum de 60 crédits à option » : total option présent mais sans bornes nommables (un minimum sans maximum, ou aucun nombre) — laissé à null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-informatique bloc 01/01Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-informatique",
+    "message": "3 parcours déclarés (générale | Coop | honor) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal",
+    "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal bloc 80/80A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal bloc 81/81A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal",
+    "message": "2 parcours déclarés (clinique | cheminement international) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 70/70B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 70/70Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 71/71A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 71/71B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 72/72A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 72/72B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 72/72Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "certificat-en-droit",
+    "message": "3 parcours déclarés (Droit général | Droit des affaires | Droit public) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "majeure-en-psychologie bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "mineure-en-mathematiques bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "mineure-arts-et-sciences bloc Z/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "mineure-arts-et-sciences",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-mathematiques",
+    "message": "orientation « Actuariat » : ses segments (73) énoncent 2 répartitions différentes, aucune n'est « celle de l'orientation » — exigences = null, les phrases restent dans `notes`"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-mathematiques",
+    "message": "3 parcours déclarés (Mathématiques pures | Mathématiques appliquées | Actuariat) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-informatique",
+    "message": "la page écrit « comporte un minimum de 45 crédits » : `creditsTotal` ne porte qu'un nombre, la nuance reste verbatim dans `notes`"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-informatique",
+    "message": "orientation « Générale » : ses segments (70) énoncent 3 répartitions différentes, aucune n'est « celle de l'orientation » — exigences = null, les phrases restent dans `notes`"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-informatique",
+    "message": "8 parcours déclarés (Générale | Apprentissage automatique | Imagerie | Intelligence artificielle | Biologie computationnelle | Informatique théorique et quantique | Programmation et génie logiciel | Recherche opérationnelle) ; 7 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "dess-en-bioethique bloc 74/74A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "dess-en-bioethique bloc 74/74G",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-mathematiques bloc 73/73A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-mathematiques",
+    "message": "4 parcours déclarés (Mathématiques pures | Mathématiques appliquées | Mathématiques de l'ingénieur | Actuariat et mathématiques financières) ; 4 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 71/71A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 71/71B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 73/73A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 73/73B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 78/78A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 78/78B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-psychologie",
+    "message": "3 parcours déclarés (générale | psychologie sociale | neuroscience cognitive et computationnelle) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-droit bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-droit",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
     "genre": "info",
     "sujet": "acces-fac",
     "message": "la page écrit « comporte un maximum de 24 crédits » : `creditsTotal` ne porte qu'un nombre, la nuance reste verbatim dans `notes`"
@@ -10,13 +295,2173 @@
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
-    "genre": "erreur",
-    "sujet": "actualisation-de-formation-en-enseignement",
-    "message": "absent du cache et --hors-ligne : aucune requête faite, donc rien n'est affirmé sur ce programme"
+    "genre": "info",
+    "sujet": "annee-preparatoire",
+    "message": "3 parcours déclarés (sciences humaines et sociales | arts et lettres | sciences) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
-    "genre": "erreur",
-    "sujet": "actualisation-de-formation-en-psychoeducation-campus-laval",
-    "message": "absent du cache et --hors-ligne : aucune requête faite, donc rien n'est affirmé sur ce programme"
+    "genre": "manque",
+    "sujet": "annee-preparatoire-au-doctorat-en-medecine bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "annee-preparatoire-au-doctorat-en-medecine",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-postdoctoral-en-informatique",
+    "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-postdoctoral-en-informatique",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-postdoctoral-en-informatique",
+    "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "des-en-anesthesiologie",
+    "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
+  },
+  {
+    "genre": "manque",
+    "sujet": "des-en-anesthesiologie",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "des-en-anesthesiologie",
+    "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "microprogramme-de-1er-cycle-en-cultures-et-patrimoines-autochtones",
+    "message": "page de structure absente (HTTP 404) — programme sans structure, structureLue = false"
+  },
+  {
+    "genre": "manque",
+    "sujet": "microprogramme-de-1er-cycle-en-cultures-et-patrimoines-autochtones",
+    "message": "page d'accueil aussi inaccessible (HTTP 404) — nom laissé vide"
+  },
+  {
+    "genre": "manque",
+    "sujet": "microprogramme-de-2e-cycle-en-bioethique bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "microprogramme-de-2e-cycle-en-bioethique bloc 70/70E",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "diplome-de-droit-notarial bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "diplome-de-droit-notarial",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "ACT 3253",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "ACT 4000",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 2719",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "MAT 1460",
+    "message": "exigence d'inscription non rangée (ni préalable, ni concomitant, ni restriction) : « (sans étiquette): 9 crédits de cours réussis de sigle ACT, IFT, MAT ou STT »"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 2460",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 3545",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PHI 2005",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3001",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3008",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3011",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3015",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3016",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3021",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3022",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3106",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3112",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3209",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3221",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3421",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3422",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3502",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3603",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3621",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3703",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3941",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3948",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3951",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3803",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3812",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3814",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3881",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 6845A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 6920",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 6950",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 3083",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 3088",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 2253",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 3247",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 3260",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 3037",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 40001",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "CHN 1913",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "CRL 1902",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "CRN 1911",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "CRN 1912",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "ESP 1907",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "FAS 1910",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "FAS 1911",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "HEB 1901",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "HEB 1902",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "INN 1904",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "JPN 1913",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "JPN 1914",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "JPN 1915",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "LSL 1901",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "LSL 1902",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PHI 2305",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "SVS 2104",
+    "message": "exigence d'inscription non rangée (ni préalable, ni concomitant, ni restriction) : « (sans étiquette): Préalables pour les étudiants du programme 1-257-1-0 Baccalauréat en psychologie et sociologie : 60 crédits complétés dans ce programme et avoir une moyenne cumulative de 3,4. »"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "SVS 2110",
+    "message": "exigence d'inscription non rangée (ni préalable, ni concomitant, ni restriction) : « (sans étiquette): Préalables pour les étudiants du programme 1-257-1-0 Baccalauréat en psychologie et sociologie : 60 crédits complétés dans ce programme et avoir une moyenne cumulative de 3,4. »"
+  },
+  {
+    "genre": "manque",
+    "sujet": "VIO 2012D",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUS 1015",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUS 1016",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 1107",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 1115",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 1116",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 2115",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 2116",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 2118",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MTE 2116",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MTE 2117",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MTE 3116",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MTE 12041",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 1749",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 2450",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUL 3344",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUS 3322X",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "EMU 1310",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "EMU 2101",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "EMU 2312",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MIN 1804",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1151",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1152",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1153",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1154",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1155",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1156",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1231",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1232",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1233",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1234",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1235",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1236",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1381",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1382",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1383",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1384",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1385",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1386",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1531",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1532",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1541",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1542",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1543",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1544",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1545",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1546",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1361",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1362",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1363",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1364",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1365",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUE 1366",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 1493A",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 1493B",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 1703A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 1703B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 1713A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 1713B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 1723B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2162A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2162B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2703A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2703B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2713A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2713B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2723A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2723B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2734A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 2734B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3703A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3703B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3713A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3713B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3723A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3723B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3734A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MUI 3734B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "ECN 3105",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "ECN 3550",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 2090",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 2160",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 2180",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 2410",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 2802",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 2849",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 2916",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3008",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3013",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3175",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3235",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3285",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3286",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3291",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3355",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3370",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3500",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3602",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3754",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3807",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3849",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3861",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "POL 3900",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 3375",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 3655",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIN 6003",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6010",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6042",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6080",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6080",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6172",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6180",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6255",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6561",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3404G",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 3807G",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 1350",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6125",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6129A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6139A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6220",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6335",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6339A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6350",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6359A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6461",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6467",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6475",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6476",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6493",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6623",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6654",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6709A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "ACT 6275",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "STT 6300",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "STT 6410",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "STT 6615",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "STT 6705V",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "STT 6705V",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 6908",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6370",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6056",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6057A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6057B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6076",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6078A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6078B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6085",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6095B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6114",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6151A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6151B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6161",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6164",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6168",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6195B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6233A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6233B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6251A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6251B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6272A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6272B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6289",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6293A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6293B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6299A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6299B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6504",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6580",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6580",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6581B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6755",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6756",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6757",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6766",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6767A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6767B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "IFT 6900",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 6503",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 6104",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 60191",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 60192",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 60201",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 60202",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 60211",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "BIE 60212",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PHI 6575",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 7900",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MAT 7902",
+    "message": "section.cours-description absente"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 70061",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6018",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "SOL 6211A",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "SOL 6211B",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "SOL 6211C",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 7860",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 7967",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6106",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6257",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6715",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6793",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6799",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 64071",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6423",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "PSY 6989",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 7012",
+    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "DRT 7700",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "manque",
+    "sujet": "MMD 10441",
+    "message": "crédits illisibles (étiquette « Crédits » absente) — fiche rejetée plutôt que mise à 0"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-musique bloc 01/01A",
+    "message": "la règle « Obligatoire - 15 crédits. » annonce 15 crédits, mais les 4 fiches du bloc en somment 12 (MTE 2210 3, MTE 2211 3, MUL 1102 3, MUL 1132 3). Deux lectures indépendantes qui divergent : page de structure mal lue, fiches mal lues, ou page de l'UdeM incohérente — rien n'est corrigé ici."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "diplome-de-droit-notarial bloc 70/70A",
+    "message": "la règle « Obligatoire - 36 crédits. » annonce 36 crédits, mais les 1 fiches du bloc en somment 3 (DRT 6355 3). Deux lectures indépendantes qui divergent : page de structure mal lue, fiches mal lues, ou page de l'UdeM incohérente — rien n'est corrigé ici."
+  },
+  {
+    "genre": "info",
+    "sujet": "ACT 4000",
+    "message": "ligne de préalables non réduite par parsePrealables : \"57 crédits complétés dans le baccalauréat en mathématiques 1-190-1-0 avec une moyenne cumulative supérieure à 3.3.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "STT 3795",
+    "message": "ligne de préalables non réduite par parsePrealables : \"MAT1400/MAT1600/MAT1720 ou MAT1978\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 2425",
+    "message": "ligne de préalables non réduite par parsePrealables : \"IFT1015, MAT1400 et MAT1600\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 3155",
+    "message": "ligne de préalables non réduite par parsePrealables : \"30 crédits IFT, MAT ou PHY.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "GEO 2122",
+    "message": "ligne de préalables non réduite par parsePrealables : \"((GEO1112 ou GEO1122 ou GEO1130) et (GEO1212 ou GEO1222)) ou 18 crédits de cours BIO, CHM, GEO, MAT, MCB et PHY\""
+  },
+  {
+    "genre": "info",
+    "sujet": "GEO 2152",
+    "message": "ligne de préalables non réduite par parsePrealables : \"((GEO1112 ou GEO1122 ou GEO1130) et (GEO1212 ou GEO1222)) ou (18 crédits de cours BIO, CHM, GEO et MAT)\""
+  },
+  {
+    "genre": "info",
+    "sujet": "PSY 3022",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Avoir complété un minimum de 30 crédits dans les programmes :1-183-1-0 ou 1-195-1-0 ou 1-195-2-0 ou 1-220-1-0 ou 1-220-1-2 ou 1-220-1-9 ou 1-220-2-0 ou 1-615-1-2 ou 1-615-2-1 OU avoir complété un minimum de 60 crédits dans 1-257-1-0.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "PSY 2065",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PSY1006 ou être étudiant du programme 1-530-1-0\""
+  },
+  {
+    "genre": "info",
+    "sujet": "NCM 2100",
+    "message": "ligne de préalables non réduite par parsePrealables : \"[PSY1006 et (PSY1035 ou PSY1048)] ou (MUS1300 et être étudiant dans l'un de ces programmes 1-600-1-1, 1-610-1-0, 1-615-1-1, 1-615-1-2, 1-615-2-1) ou être étudiant du programme 1-180-1-0 ou être étudiant du programme 1-530-1-0.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "PSY 3106",
+    "message": "ligne de préalables non réduite par parsePrealables : \"(PSY1035 et PSY1105) ou être inscrit au programme 2-220-2-1\""
+  },
+  {
+    "genre": "info",
+    "sujet": "NCM 2200",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PSY1004 et 1006 et (PSY1035 ou PSY1048)\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ABK 1902",
+    "message": "ligne de préalables non réduite par parsePrealables : \"EXI-ABK1901\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ALL 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue allemande.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ALL 1911",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue allemande.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1903",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1902 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1911",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1902 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1921",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1902 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1924",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1905 ou ANG1912 ou ANG1913 ou ANG1922 ou compétences équivalentes (Test de classement – site du Centre de langues)\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1925",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1924 ou compétences équivalentes (Test de classement – site du Centre de langues)\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1926",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1924 ou compétences équivalentes (Test de classement – site du Centre de langues)\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1933",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1903 ou ANG1904 ou ANG1911 ou ANG1921 ou compétences équivalentes (Test de classement – site du Centre de langues)\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ARA 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue arabe.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1903",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1050 ou CHN1050H ou CHN1902 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1904",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1901 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1906",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1905 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1908",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1907 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1909",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1908 ou CHN2085 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1911",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1910 ou CHN3060 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1912",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1911 ou CHN3070 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CHN 1913",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1912 ou CHN3080 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CRN 1903",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1902 ou compétence équivalente\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CRN 1905",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1904 ou compétence équivalente\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CRN 1907",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1906 ou compétence équivalente\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CRN 1909",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1908 ou compétence équivalente\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CRN 1910",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1909 ou compétence équivalente\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CTL 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue catalane.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CTL 1905",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CTL1904 ou compétence équivalente\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ESP 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue espagnole.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "GRM 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue grecque moderne.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "HOR 3200",
+    "message": "ligne de préalables non réduite par parsePrealables : \"avoir complété 45 crédits de cours universitaire.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 1969",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Collège 201-203-77 et 201-105-77\""
+  },
+  {
+    "genre": "info",
+    "sujet": "INN 1902",
+    "message": "ligne de préalables non réduite par parsePrealables : \"INN1901 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "INN 1903",
+    "message": "ligne de préalables non réduite par parsePrealables : \"INN1902 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "INN 1904",
+    "message": "ligne de préalables non réduite par parsePrealables : \"INN1903 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ITL 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue italienne.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1903",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1050 ou JPN1050H ou JPN1902 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1905",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1060 ou JPN1060H ou JPN1904 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1907",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1906 ou JPN2075 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1909",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1908 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1910",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1908 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1911",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1909 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1912",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1910 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1913",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1911 et JPN1912 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1914",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1911 et JPN1912 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "JPN 1915",
+    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1913 et JPN1914 ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "PTG 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue portugaise.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "RUS 1901",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue russe.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "SOL 1090",
+    "message": "ligne de préalables non réduite par parsePrealables : \"SOL1018 ou PSY1006 ne sont exigés que pour le baccalauréat (1-255-1-0), la majeure (1-255-2-0) et la mineure (1-255-4-0) en sociologie.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "SOL 2090",
+    "message": "ligne de préalables non réduite par parsePrealables : \"SOL1090 et avoir complété 45 crédits de cours\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2809",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "EPL 3900",
+    "message": "ligne de préalables non réduite par parsePrealables : \"(POL2809 ou ECN2160) et 54 crédits de sigle de cours ECN et/ou POL\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2007",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2011",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2050",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2090",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2100",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2101",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2102",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2111",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2120",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2140",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2170",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2215",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2250",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2322",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2400",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2403",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2404",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2405",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2410",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2510",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2560",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2602",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2606",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2802",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2829",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2849",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2859",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2916",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 2917",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3004",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3005",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3006",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3007",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3008",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3009",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3010",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3011",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3013",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3050",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3101",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3140",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3159",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3175",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3235",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3285",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3286",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3287",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3292",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3310",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3355",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3370",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3401",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3402",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3481",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3500",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3601",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3602",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3603",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3605",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3721",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3753",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3754",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3807",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3835",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3840",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3849",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3851",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3861",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3870",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3900",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3906",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3908",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3910",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3913",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3917",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "POL 3930",
+    "message": "ligne de préalables non réduite par parsePrealables : \"PEP1000 ou POL1000 ou 12 crédits\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 1065",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Collège 201-103-77 et 201-105-77.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 3335",
+    "message": "ligne de préalables non réduite par parsePrealables : \"30 crédits de sigle IFT\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 3375",
+    "message": "ligne de préalables non réduite par parsePrealables : \"IFT2105 et 27 crédits de sigle IFT\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 3150",
+    "message": "ligne de préalables non réduite par parsePrealables : \"avoir suivi 30 crédits de cours de sigle IFT\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 3151",
+    "message": "ligne de préalables non réduite par parsePrealables : \"avoir suivi 36 crédits dans le programme\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 2550",
+    "message": "ligne de préalables non réduite par parsePrealables : \"30 crédits IFT.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 4055",
+    "message": "ligne de préalables non réduite par parsePrealables : \"30 crédits IFT.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "CSS 2900",
+    "message": "ligne de préalables non réduite par parsePrealables : \"CSS1900 ou doit être étudiant des programmes 163012 ou 163019 - Baccalauréat en sciences infirmières - Formation intégrée DEC-bac.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "DRT 2402G",
+    "message": "ligne de préalables non réduite par parsePrealables : \"DRT2400G ou 12 crédits de sigle DRT\""
+  },
+  {
+    "genre": "info",
+    "sujet": "DRT 2923G",
+    "message": "ligne de préalables non réduite par parsePrealables : \"DRT1901G ou 18 crédits de sigle DRT\""
+  },
+  {
+    "genre": "info",
+    "sujet": "IFT 6917",
+    "message": "ligne de préalables non réduite par parsePrealables : \"IFT6135, IFT6390, IFT6758, et IFT6759\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1901A",
+    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue anglaise.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "ANG 1902",
+    "message": "ligne de préalables non réduite par parsePrealables : \"ANG1901A ou compétence équivalente.\""
+  },
+  {
+    "genre": "info",
+    "sujet": "BIO 1954",
+    "message": "ligne de préalables non réduite par parsePrealables : \"BI01953\""
   }
 ]

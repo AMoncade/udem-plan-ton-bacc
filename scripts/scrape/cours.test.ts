@@ -75,6 +75,15 @@ describe("parseExigences", () => {
     expect(e.autres).toEqual([]);
   });
 
+  it("accepte « Restriction: » tout court, sans « d'inscription » (SOL 6211A)", () => {
+    const e = parseExigences(
+      "<p>Restriction: Les étudiants ayant complété le cours SOL6211 ne sont pas autorisés à s'inscrire aux cours SOL6211A, SOL6211B ou SOL6211C.</p>",
+    );
+    expect(e.restrictionsBrut).toMatch(/^Les étudiants ayant complété/);
+    expect(e.prealablesBrut).toBeNull();
+    expect(e.autres).toEqual([]);
+  });
+
   it("range une étiquette VRAIMENT inconnue dans `autres`", () => {
     const e = parseExigences("<p>Condition spéciale: voir le département</p>");
     expect(e.prealablesBrut).toBeNull();

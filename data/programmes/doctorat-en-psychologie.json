@@ -9,6 +9,65 @@
     "73",
     "78"
   ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 3 à 9 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": null,
+        "option": {
+          "min": 3,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "psychologie sociale",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 73 sont répartis de la façon suivante : 3 à 9 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": null,
+        "option": {
+          "min": 3,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "neuroscience cognitive et computationnelle",
+      "segments": [
+        "01",
+        "78"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 78 sont répartis de la façon suivante : 3 à 9 crédits à option et un maximum de 4 crédits au choix.",
+        "obligatoire": null,
+        "option": {
+          "min": 3,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 4
+        }
+      }
+    }
+  ],
   "cycle": "Cycles supérieurs",
   "faculte": "Faculté des arts et des sciences",
   "typeProgramme": "Doctorat",
@@ -32,6 +91,7 @@
         "PSY 70061",
         "PSY 70062"
       ],
+      "contenuOuvert": false,
       "notes": [
         "Les cours PSY70061 et PSY70062 sont équivalents au cours PSY7006"
       ]
@@ -58,6 +118,7 @@
         "SOL 6211B",
         "SOL 6211C"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -77,6 +138,7 @@
         "PSY 6855",
         "PSY 6856"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -97,6 +159,7 @@
         "PSY 7962",
         "PSY 7967"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -130,6 +193,7 @@
         "PSY 6936",
         "SHA 7015"
       ],
+      "contenuOuvert": false,
       "notes": [
         "À choisir parmi les cours de niveau 6000 dans la banque de cours offerts au Département de psychologie, en fonction des besoins de formation de l'étudiant et avec l'approbation du responsable de programme. Remarque : cette liste n'est pas exhaustive. D'autres cours offerts par le Département pourront être suivis dans ce bloc."
       ]
@@ -148,6 +212,7 @@
       },
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours au choix approuvé par le responsable de programme."
       ]
@@ -171,6 +236,7 @@
         "PSY 6304",
         "PSY 6308"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -187,6 +253,7 @@
       },
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours au choix approuvé par le responsable de programme."
       ]
@@ -221,6 +288,7 @@
         "PSY 6983",
         "PSY 6989"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -237,6 +305,7 @@
       },
       "regleBrut": "Choix - Maximum 4 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours au choix approuvé par le responsable de programme."
       ]

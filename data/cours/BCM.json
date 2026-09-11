@@ -1,0 +1,45 @@
+{
+  "BCM 1501": {
+    "code": "BCM 1501",
+    "titre": "Origine biochimique de la vie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Caractéristiques de la vie. Conditions physico-chimiques. Structure et propriétés des glucides, lipides, acides aminés, protéines, nucléotides, vitamines. Des molécules organiques aux premières cellules. Évolution.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-1501/",
+    "scrapeISO": "2026-09-11T11:51:44.774Z"
+  },
+  "BCM 1503": {
+    "code": "BCM 1503",
+    "titre": "Acides nucléiques et génétique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Métabolisme des nucléotides. Structure de l'ADN, de l'ARN, de la chromatine et des chromosomes. Réplication, dégradation, mutation, réparation et recombinaison de l'ADN. Code génétique. Mécanismes de l'hérédité. Maladies génétiques.",
+    "prealablesBrut": "BCM1501",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 1501"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-1503/",
+    "scrapeISO": "2026-09-11T11:51:46.867Z"
+  }
+}

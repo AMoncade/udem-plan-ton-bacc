@@ -259,5 +259,1066 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3801/",
     "scrapeISO": "2026-09-11T11:19:25.482Z"
+  },
+  "ECN 1070": {
+    "code": "ECN 1070",
+    "titre": "Techniques d'analyse économique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Représentations fonctionnelles des relations économiques. Calcul différentiel, intégration et applications économiques. Théorème des fonctions implicites. Calcul matriciel et applications économiques. Analyse statique comparée.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1070/",
+    "scrapeISO": "2026-09-11T11:47:38.490Z"
+  },
+  "ECN 1075": {
+    "code": "ECN 1075",
+    "titre": "Techniques d'analyse économique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Problèmes d'optimisation économique sans et avec contraintes. Méthode de Lagrange. Méthode de Kuhn-Tucker. Applications économiques de l'intégration. Méthodes d'analyse dynamique en économique. Stabilité de l'équilibre. Remarques: Travaux pratiques.",
+    "prealablesBrut": "ECN1070 OU MAT1400",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 1070"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1400"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1075/",
+    "scrapeISO": "2026-09-11T11:47:40.171Z"
+  },
+  "ECN 1260": {
+    "code": "ECN 1260",
+    "titre": "Économétrie 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Objet, utilité et méthodes de l'économétrie. Notions de statistiques et de probabilités. Problèmes d'inférence statistique. Le modèle de régression simple : signification et utilisation. Remarques: Travaux pratiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1260/",
+    "scrapeISO": "2026-09-11T11:47:44.427Z"
+  },
+  "ECN 2160": {
+    "code": "ECN 2160",
+    "titre": "Économétrie 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "La régression multiple : hypothèses de base, estimation par moindres carrés ordinaires et maximum de vraisemblance, propriétés des estimateurs. Quelques extensions du modèle. Modèles de choix discrets. Exemples d'application. Remarques: Travaux pratiques.",
+    "prealablesBrut": "(ECN1070 OU MAT1400) ET (ECN1260 OU MAT1978 OU STT1700)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ECN 1070"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1400"
+            }
+          ]
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ECN 1260"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            },
+            {
+              "genre": "cours",
+              "code": "STT 1700"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2160/",
+    "scrapeISO": "2026-09-11T11:47:47.375Z"
+  },
+  "ECN 2311": {
+    "code": "ECN 2311",
+    "titre": "Problèmes économiques contemporains",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours examine certains aspects de la réalité économique contemporaine aux niveaux international, nord-américain et canadien.",
+    "prealablesBrut": "ECN1000 ET ECN1050",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 1050"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2311/",
+    "scrapeISO": "2026-09-11T11:47:52.876Z"
+  },
+  "ECN 2995": {
+    "code": "ECN 2995",
+    "titre": "Stage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage en milieu professionnel. Utilisation des outils et mise en application des notions apprises en sciences économiques.",
+    "prealablesBrut": "ECN1000 et ECN1050 et ECN1260",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 1050"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 1260"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2995/",
+    "scrapeISO": "2026-09-11T11:47:57.970Z"
+  },
+  "ECN 3995": {
+    "code": "ECN 3995",
+    "titre": "Stage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage en milieu professionnel comportant des éléments significatifs d'analyse économique. L'étudiant doit lui-même proposer et faire approuver son stage avant de s'inscrire à ce cours.",
+    "prealablesBrut": "ECN2045 ET ECN2055 ET ECN2160",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 2045"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2055"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2160"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3995/",
+    "scrapeISO": "2026-09-11T11:47:59.917Z"
+  },
+  "ECN 1350": {
+    "code": "ECN 1350",
+    "titre": "Histoire économique du monde occidental",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours pose les questions suivantes. Comment la taille des unités politiques et le degré de décentralisation de leur vie économique ont-ils changé ? Quelle relation y a-t-il entre ces changements et les innovations technologiques ?",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1350/",
+    "scrapeISO": "2026-09-11T11:48:06.866Z"
+  },
+  "ECN 1700": {
+    "code": "ECN 1700",
+    "titre": "Économie et mondialisation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours vise à fournir aux étudiants une meilleure compréhension des enjeux de la mondialisation à l'aide d'une analyse basée sur une approche économique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1700/",
+    "scrapeISO": "2026-09-11T11:48:07.030Z"
+  },
+  "ECN 1800": {
+    "code": "ECN 1800",
+    "titre": "Économies nord-américaines",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Éléments d'histoire économique nord-américaine; secteurs d'activités : primaire, secondaire, tertiaire; technologie de l'information et nouvelle économie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1800/",
+    "scrapeISO": "2026-09-11T11:48:09.461Z"
+  },
+  "ECN 1967": {
+    "code": "ECN 1967",
+    "titre": "Économie de l'Europe",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Indicateurs économiques. Structures industrielles. Sources et causes du développement économique de l'Europe. Communauté économique européenne et système monétaire européen.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1967/",
+    "scrapeISO": "2026-09-11T11:48:10.799Z"
+  },
+  "ECN 1971": {
+    "code": "ECN 1971",
+    "titre": "Économie de l'Amérique latine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Grandes étapes du développement économique de l'Amérique latine. Rôle des institutions économiques nationales et internationales. Ratios financiers associés à la gestion des dettes nationales.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1971/",
+    "scrapeISO": "2026-09-11T11:48:12.194Z"
+  },
+  "ECN 2015": {
+    "code": "ECN 2015",
+    "titre": "Comportements stratégiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation à la pensée stratégique. Environnements stratégiques : problèmes d'engagement et de crédibilité, coopération et coordination. Incitations. Applications économiques.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2015/",
+    "scrapeISO": "2026-09-11T11:48:12.353Z"
+  },
+  "ECN 2055": {
+    "code": "ECN 2055",
+    "titre": "Théorie macroéconomique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Comportement d'optimisation intertemporelle des ménages et des firmes; décisions de consommation et d'épargne; modèles de croissance et de convergence; politiques gouvernementales et influence de l'endettement public.",
+    "prealablesBrut": "ECN2050",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2050"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2055/",
+    "scrapeISO": "2026-09-11T11:48:15.391Z"
+  },
+  "ECN 2230": {
+    "code": "ECN 2230",
+    "titre": "Institutions et marchés financiers",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Monnaie et régimes monétaires. Les marchés financiers et la réglementation. Instruments financiers. Opérations bancaires. Gestion monétaire. Marchés des changes. Marchés boursiers.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2230/",
+    "scrapeISO": "2026-09-11T11:48:16.880Z"
+  },
+  "ECN 2260": {
+    "code": "ECN 2260",
+    "titre": "Économétrie appliquée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse des données économiques. Le cours fait le pont entre la théorie et la pratique, aide à comprendre les problèmes de spécification et d'estimation des modèles économétriques. Remarques : Utilisation de logiciels.",
+    "prealablesBrut": "ECN2160",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2160"
+    },
+    "concomitantsBrut": "ECN2050 et ECN2040",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2260/",
+    "scrapeISO": "2026-09-11T11:48:18.901Z"
+  },
+  "ECN 2405": {
+    "code": "ECN 2405",
+    "titre": "Économie du développement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principaux enjeux du développement économique: croissance et inégalités, éducation, microcrédit, commerce international, politiques de développement.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2405/",
+    "scrapeISO": "2026-09-11T11:48:20.882Z"
+  },
+  "ECN 2450": {
+    "code": "ECN 2450",
+    "titre": "Économie urbaine et régionale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "A) Théorie de la localisation. B) Le phénomène régional. C) Le phénomène urbain.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2450/",
+    "scrapeISO": "2026-09-11T11:48:22.250Z"
+  },
+  "ECN 2565": {
+    "code": "ECN 2565",
+    "titre": "Introduction à l'économie industrielle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts et modèles de la structure, du comportement et de la performance industrielle. Théorie de l'oligopole. Barrières à l'entrée. Normes pour la politique. Politique de concurrence canadienne, réglementation, sociétés d'État...",
+    "prealablesBrut": "ECN1000 ET ECN1040",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 1040"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2565/",
+    "scrapeISO": "2026-09-11T11:48:23.457Z"
+  },
+  "ECN 2700": {
+    "code": "ECN 2700",
+    "titre": "Relations économiques internationales",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Traits saillants de la structure du commerce et des relations internationales mondiales, balance des paiements, taux de change, théories et politiques commerciales, politique d'aide au développement, intégration commerciale.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2700/",
+    "scrapeISO": "2026-09-11T11:48:23.626Z"
+  },
+  "ECN 2800": {
+    "code": "ECN 2800",
+    "titre": "Institutions publiques et financières",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Secteur public et parapublic; institutions et marchés financiers; institutions financières internationales.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ECN2800 et ECN1000",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2800/",
+    "scrapeISO": "2026-09-11T11:48:24.796Z"
+  },
+  "ECN 2910": {
+    "code": "ECN 2910",
+    "titre": "Environnement et ressources naturelles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours vise à familiariser les étudiants avec les enjeux économiques associés à l'environnement et à la pollution, à l'écologie et à l'exploitation des ressources naturelles.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2910/",
+    "scrapeISO": "2026-09-11T11:48:27.954Z"
+  },
+  "ECN 2964": {
+    "code": "ECN 2964",
+    "titre": "Économie et finances publiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à la théorie des choix publics et des finances publiques. Application aux décisions d'allocation des biens et des services publics. Interaction entre le secteur privé et le secteur public. Gestion budgétaire.",
+    "prealablesBrut": "ECN1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-2964/",
+    "scrapeISO": "2026-09-11T11:48:29.935Z"
+  },
+  "ECN 3013": {
+    "code": "ECN 3013",
+    "titre": "Choix collectifs",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse axiomatique de l'efficacité, de l'équité et de la décentralisabilité des règles de choix collectifs dans les problèmes de vote, d'allocation de biens privés, de production de biens publics et de partage de coûts.",
+    "prealablesBrut": "ECN2045",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2045"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3013/",
+    "scrapeISO": "2026-09-11T11:48:31.829Z"
+  },
+  "ECN 3064": {
+    "code": "ECN 3064",
+    "titre": "Finances publiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Raisons d'être du gouvernement. Biens publics. Externalités. Modèles de choix politiques. Fédéralisme financier. Incidence et effets des impôts et taxes. Analyse avantages-coûts.",
+    "prealablesBrut": "ECN2045",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2045"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3064/",
+    "scrapeISO": "2026-09-11T11:48:33.266Z"
+  },
+  "ECN 3065": {
+    "code": "ECN 3065",
+    "titre": "Analyse coûts-bénéfices",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principes fondamentaux de l'analyse coûts-bénéfices de projets privés et publics. Efficacité économique. Équité. Applications économiques.",
+    "prealablesBrut": "ECN2040",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2040"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3065/",
+    "scrapeISO": "2026-09-11T11:48:33.400Z"
+  },
+  "ECN 3105": {
+    "code": "ECN 3105",
+    "titre": "Commerce international",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Causes et structure du commerce international : l'influence des technologies, des dotations de facteurs et des modes de concurrence. Politique commerciale : tarifs et quotas, libéralisation des échanges et formation d'unions douanières.",
+    "prealablesBrut": "ECN2040",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2040"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3105/",
+    "scrapeISO": "2026-09-11T11:48:35.665Z"
+  },
+  "ECN 3115": {
+    "code": "ECN 3115",
+    "titre": "Finance internationale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Marché des changes; système monétaire international; mouvements internationaux de capitaux; parités des pouvoirs d'achat et des taux d'intérêt. Ajustement des balances des paiements; intégration financière internationale.",
+    "prealablesBrut": "ECN2050",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2050"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3115/",
+    "scrapeISO": "2026-09-11T11:48:37.639Z"
+  },
+  "ECN 3355": {
+    "code": "ECN 3355",
+    "titre": "Histoire économique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "L'histoire économique depuis la Révolution industrielle. Textes scientifiques sur des thématiques telles la fin du colonialisme, le développement des économies émergentes, l'intégration économique et financière en Europe et en Amérique du Nord.",
+    "prealablesBrut": "(ECN1260 OU MAT1978 OU STT1700) ET ECN2040 ET ECN2050",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ECN 1260"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            },
+            {
+              "genre": "cours",
+              "code": "STT 1700"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2040"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2050"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3355/",
+    "scrapeISO": "2026-09-11T11:48:39.617Z"
+  },
+  "ECN 3405": {
+    "code": "ECN 3405",
+    "titre": "Développement économique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours pose la question : dans quelle mesure le mécanisme du marché peut-il assurer le développement des pays du Tiers-Monde? Les structures internes de ces économies, ainsi que leurs relations externes, sont analysées en détail.",
+    "prealablesBrut": "ECN2040 ET ECN2050",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 2040"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2050"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3405/",
+    "scrapeISO": "2026-09-11T11:48:40.915Z"
+  },
+  "ECN 3505": {
+    "code": "ECN 3505",
+    "titre": "Économie du travail",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Offre et demande de travail. Ajustement du marché : chômage, postes vacants, courbe de Phillips, prospection du marché. Syndicalisme et salaire. Contrats implicites. Disparités. Arbitrage. Institutions : salaire minimum, assurance-chômage.",
+    "prealablesBrut": "ECN2040",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2040"
+    },
+    "concomitantsBrut": "ECN3505 et ECN2160",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3505/",
+    "scrapeISO": "2026-09-11T11:48:42.784Z"
+  },
+  "ECN 3550": {
+    "code": "ECN 3550",
+    "titre": "Économie de la santé",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse microéconomique des systèmes de santé; incitations; financement.",
+    "prealablesBrut": "ECN2040",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2040"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3550/",
+    "scrapeISO": "2026-09-11T11:48:44.518Z"
+  },
+  "ECN 3565": {
+    "code": "ECN 3565",
+    "titre": "Économie industrielle avancée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Pouvoir de monopole : nature du produit, discrimination; comportements stratégiques : court terme et long terme, différentiation de produits; information et concurrence; recherche et développement.",
+    "prealablesBrut": "ECN2040",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2040"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3565/",
+    "scrapeISO": "2026-09-11T11:48:46.350Z"
+  },
+  "ECN 3705": {
+    "code": "ECN 3705",
+    "titre": "Économie de l'assurance",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théorie économique de l'assurance. Fonctions des marchés de l'assurance et partage du risque. Risque moral et sélection adverse. Assurance publique et privée.",
+    "prealablesBrut": "ECN2040",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2040"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3705/",
+    "scrapeISO": "2026-09-11T11:48:47.633Z"
+  },
+  "ECN 3750": {
+    "code": "ECN 3750",
+    "titre": "Inégalité et croissance économiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse des questions liées à l'inégalité, la répartition des revenus et la croissance de l'économie. Examen des tendances au fil du temps et dans différents pays. Théories existantes et appuis empiriques.",
+    "prealablesBrut": "ECN2055 ET ECN2160",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 2055"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2160"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3750/",
+    "scrapeISO": "2026-09-11T11:48:48.823Z"
+  },
+  "ECN 3820": {
+    "code": "ECN 3820",
+    "titre": "Économie des organisations",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Organisation interne de la firme quant à ses limites, structures et politiques en réponse aux nombreux problèmes d'incitation et de coordination qui l'animent.",
+    "prealablesBrut": "ECN2045",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2045"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3820/",
+    "scrapeISO": "2026-09-11T11:48:50.053Z"
+  },
+  "ECN 3900": {
+    "code": "ECN 3900",
+    "titre": "Sujets spéciaux de macro-économie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse de divers sujets en macro-économie liés à des facteurs d'incertitude tels que les fluctuations de revenu et la dynamique des entreprises. Étude des différents mécanismes économiques et de leur application empirique.",
+    "prealablesBrut": "ECN2055 ET ECN2160",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ECN 2055"
+        },
+        {
+          "genre": "cours",
+          "code": "ECN 2160"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3900/",
+    "scrapeISO": "2026-09-11T11:48:52.363Z"
+  },
+  "ECN 3910": {
+    "code": "ECN 3910",
+    "titre": "Économie de l'environnement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Problèmes environnementaux. Externalités. Interventions de l'État. Marchés. Taxes. Normes.",
+    "prealablesBrut": "ECN2045",
+    "prealables": {
+      "genre": "cours",
+      "code": "ECN 2045"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-3910/",
+    "scrapeISO": "2026-09-11T11:48:54.299Z"
+  },
+  "ECN 1901": {
+    "code": "ECN 1901",
+    "titre": "Initiation à l'économie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation à l'étude de l'économie : production de biens et services, détermination des prix, revenu national, taux d'intérêt, inflation, chômage, politiques économiques, échanges internationaux et taux de change. Remarque : Ce cours est exclusif aux étudiants des programmes 195541, 199010, 199011, 199012. Toutefois, il pourrait être reconnu comme cours hors programme dans d’autres programmes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ecn-1901/",
+    "scrapeISO": "2026-09-11T12:01:43.397Z"
   }
 }

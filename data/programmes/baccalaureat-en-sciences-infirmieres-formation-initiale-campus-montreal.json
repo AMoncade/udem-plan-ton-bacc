@@ -8,6 +8,46 @@
     "80",
     "81"
   ],
+  "orientations": [
+    {
+      "nom": "clinique",
+      "segments": [
+        "01",
+        "80"
+      ],
+      "exigences": {
+        "brut": "- L'orientation clinique comportant 105 crédits comprend les segments 01 et 80 avec 98 crédits obligatoires et 7 à option",
+        "obligatoire": {
+          "min": 80,
+          "max": 80
+        },
+        "option": {
+          "min": 7,
+          "max": 7
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "cheminement international",
+      "segments": [
+        "01",
+        "81"
+      ],
+      "exigences": {
+        "brut": "- L'orientation cheminement international comportant 106 crédits comprend les segments 01 et 81 avec 99 crédits obligatoires et 7 à option",
+        "obligatoire": {
+          "min": 81,
+          "max": 81
+        },
+        "option": {
+          "min": 7,
+          "max": 7
+        },
+        "choix": null
+      }
+    }
+  ],
   "cycle": "1er cycle",
   "faculte": "Faculté des sciences infirmières",
   "typeProgramme": "Baccalauréat",
@@ -40,6 +80,7 @@
         "SOI 1903",
         "SOI 1904"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -66,6 +107,7 @@
         "SOI 2904",
         "SOI 2913"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -87,6 +129,7 @@
         "SOI 2852",
         "SOI 2902"
       ],
+      "contenuOuvert": false,
       "notes": [
         "Les crédits de ce bloc sont répartis de la façon suivante : les étudiants ayant complété les 35 crédits du bloc 01A devront suivre les cours SOI2713 et SOI2902 tandis que les étudiants éligibles ayant réussi le microprogramme 1-630-6-1 devront suivre les cours SOI2753 et SOI2852."
       ]
@@ -113,6 +156,7 @@
         "SOI 3801",
         "SOI 3802"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -134,6 +178,7 @@
         "SOI 3922",
         "SOI 3932"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -153,6 +198,7 @@
         "SOI 3505",
         "SOI 3716"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -172,6 +218,7 @@
         "SOI 3516",
         "SOI 3716"
       ],
+      "contenuOuvert": false,
       "notes": []
     }
   ],

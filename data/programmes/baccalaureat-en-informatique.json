@@ -9,6 +9,76 @@
     "77",
     "78"
   ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "01",
+        "76",
+        "78"
+      ],
+      "exigences": {
+        "brut": "- orientation générale (segment 01 et 76) : 57 crédits obligatoires, 27 crédits à option et 6 crédits au choix",
+        "obligatoire": {
+          "min": 57,
+          "max": 57
+        },
+        "option": {
+          "min": 27,
+          "max": 27
+        },
+        "choix": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "Coop",
+      "segments": [
+        "01",
+        "77",
+        "78"
+      ],
+      "exigences": {
+        "brut": "- orientation Coop (segment 01 et 77) : 66 crédits obligatoires dont 9 de stages, 18 crédits à option et 6 crédits au choix",
+        "obligatoire": {
+          "min": 66,
+          "max": 66
+        },
+        "option": {
+          "min": 18,
+          "max": 18
+        },
+        "choix": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "honor",
+      "segments": [
+        "01",
+        "78"
+      ],
+      "exigences": {
+        "brut": "- cheminement honor (segment 01 et 78) : 54 crédits obligatoires, 30 crédits à option et 6 crédits au choix.",
+        "obligatoire": {
+          "min": 54,
+          "max": 54
+        },
+        "option": {
+          "min": 30,
+          "max": 30
+        },
+        "choix": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    }
+  ],
   "cycle": "1er cycle",
   "faculte": "Faculté des arts et des sciences",
   "typeProgramme": "Baccalauréat",
@@ -35,6 +105,7 @@
         "IFT 2015",
         "IFT 2035"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -56,6 +127,7 @@
         "IFT 2245",
         "IFT 2255"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -77,6 +149,7 @@
         "IFT 2105",
         "IFT 2125"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -97,6 +170,7 @@
         "MAT 1600",
         "MAT 1978"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -143,6 +217,7 @@
         "PSY 2065",
         "REI 1010"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -159,6 +234,7 @@
       },
       "regleBrut": "Choix - 6 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle IFT."
       ]
@@ -180,6 +256,7 @@
         "IFT 2905",
         "IFT 2935"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -199,6 +276,7 @@
         "IFT 3911",
         "IFT 3913"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -236,6 +314,7 @@
         "IFT 3700",
         "STT 2700"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -257,6 +336,7 @@
         "IFT 3151",
         "IFT 3710"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -276,6 +356,7 @@
         "IFT 2905",
         "IFT 2935"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -295,6 +376,7 @@
         "IFT 3911",
         "IFT 3913"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -315,6 +397,7 @@
         "IFT 3550",
         "IFT 3551"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -352,6 +435,7 @@
         "IFT 3700",
         "STT 2700"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -375,6 +459,7 @@
         "IFT 3655",
         "IFT 3700"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -393,6 +478,7 @@
       "cours": [
         "IFT 4055"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -429,6 +515,7 @@
         "IFT 6551",
         "IFT 6561"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -467,6 +554,7 @@
         "IFT 3913",
         "STT 2700"
       ],
+      "contenuOuvert": false,
       "notes": []
     }
   ],
