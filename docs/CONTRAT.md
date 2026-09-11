@@ -75,3 +75,28 @@ plaçables dans n'importe quel bloc d'option sous son maximum (capacité totale
   endpoint AJAX **non identifié** — inutile pour l'instant, on part des pages
   de structure.
 - `robots.txt` : n'interdit que `/fileadmin/fichiers/premium/`.
+
+## Confirmation directe du 54/33/3
+
+Le tableau ci-dessus a d'abord été *déduit* (somme des blocs obligatoires, puis
+90 − 54 − 3). Vérification faite ensuite sur la page de structure elle-même, qui
+énonce pour l'orientation actuariat, verbatim :
+
+> « 54 crédits obligatoires, 33 crédits à option et 3 crédits au choix »
+
+Les huit règles de blocs y sont également confirmées mot pour mot, y compris
+« Option - Maximum 13 crédits » pour 75E, sans minimum. L'écart de 15 crédits
+entre les minimums de blocs (18) et le total d'option exigé (33) n'est donc pas
+un artefact de lecture : c'est la règle du programme.
+
+## À faire après le merge des trois branches
+
+- `.gitattributes` (`* text=auto eol=lf`) : git convertit LF→CRLF sur cette
+  machine, et trois worktrees qui commitent séparément peuvent produire des
+  diffs de fichiers entiers. Volontairement reporté à après le merge pour ne pas
+  changer les fins de ligne sous les sessions en cours.
+- Balayer les **coutures**, pas les branches : chaque branche passe ses propres
+  tests, et les défauts de ce genre de projet apparaissent là où deux pièces
+  correctes se rencontrent — le scraper qui appelle `parsePrealables()` étendu
+  par le moteur, l'UI qui consomme un `Audit` réel au lieu de son faux, et les
+  codes de cours normalisés d'un côté mais pas de l'autre.
