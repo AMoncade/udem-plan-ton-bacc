@@ -27,6 +27,7 @@ import {
   type BlocAffectable,
   type ExigencesTotaux,
 } from "./affectation";
+import { lireContraintesSigles, verifierContraintesSigles } from "./sigles";
 
 export { parsePrealables } from "./prealables";
 export type { ResultatParsing } from "./prealables";
@@ -34,6 +35,16 @@ export { bornesDeRegle, resoudreExigences } from "./bornes";
 export type { Bornes, ExigencesResolues } from "./bornes";
 export { resoudreAffectation, compositions } from "./affectation";
 export type { Cout, ResultatAffectation } from "./affectation";
+export { lireContraintesSigles, verifierContraintesSigles } from "./sigles";
+export type {
+  ContrainteSigle,
+  EntreeVerification,
+  EtatContrainte,
+  LectureSigles,
+  ProseNonLue,
+  ResultatSigle,
+  Sigle,
+} from "./sigles";
 
 /**
  * MOTEUR — deux fonctions pures, point d'entrée gelé pour la session UI :
@@ -565,6 +576,37 @@ export function auditProgramme(
 
   // --- blocs à contenu ouvert : invérifiables, jamais avalés ---------------
   const ouvertsNonAffirmables = traiterContenuOuvert(calculs, problemes);
+
+  // --- quotas par sigle (R2) : vérifiés, plus seulement conservés ----------
+  // Ces règles ne se voient PAS bloc par bloc — c'est le piège de l'actuariat
+  // (18 vs 33) transposé aux sigles : chaque bloc peut être dans ses bornes
+  // sans que « 33 crédits POL et 33 crédits ECN » soit rempli. Voir
+  // `sigles.ts` pour ce qui est lu, ce qui est écarté, et pourquoi.
+  const { contraintes: contraintesSigles, nonLues: prosesNonLues } =
+    lireContraintesSigles(programme);
+  const attribuesParBloc = new Map(calculs.map((c) => [c.cle, [...c.attribues]]));
+  const retenus = new Set<CodeCours>();
+  for (const c of calculs) for (const code of c.attribues) retenus.add(code);
+  const resultatsSigles = verifierContraintesSigles(contraintesSigles, {
+    attribuesParBloc,
+    nonAttribues: [...acquis].filter((code) => !retenus.has(code)),
+    fiches,
+  });
+  // Un quota MINIMUM non atteint est une exigence de diplôme ratée ; un quota
+  // indéterminé (des cours retenus n'ont pas de fiche) rend le verdict non
+  // affirmable, exactement comme un bloc ouvert à minimum. Une EXCLUSION, elle,
+  // ne fait jamais échouer : la page écrit « Sauf exception autorisée ».
+  let siglesNonAffirmables = 0;
+  for (const r of resultatsSigles) {
+    if (r.etat === "satisfaite") continue;
+    if (r.contrainte.genre === "minimum") siglesNonAffirmables++;
+    problemes.push(r.message);
+  }
+  for (const p of prosesNonLues) {
+    problemes.push(
+      `prose de quota NON évaluée (${p.raison}) : « ${p.phrase} ». Le moteur ne l'applique pas — à lire soi-même.`,
+    );
+  }
   if (exigeOption < 0) {
     incoherence(
       `incohérence des données : les blocs obligatoires (${cr(exigences.obligatoire.intervalle.min)}) et au choix (${cr(exigences.choix.intervalle.min)}) dépassent déjà les ${cr(programme.creditsTotal ?? 0)} du programme.`,
@@ -714,6 +756,7 @@ export function auditProgramme(
     // (rien ne le prouve non plus). `conforme: false` avec un message qui dit
     // « pas établi » plutôt que « il vous manque des crédits ».
     ouvertsNonAffirmables === 0 &&
+    siglesNonAffirmables === 0 &&
     manques.obligatoire === 0 &&
     manques.option === 0 &&
     manques.choix === 0 &&
