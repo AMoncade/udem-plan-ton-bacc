@@ -1,79 +1,38 @@
 /**
- * Tests de lecture de la page de structure, sur un EXTRAIT FIGÉ d'une vraie
- * page (`__fixtures__/structure-bacc-mathematiques.html`). Aucun accès réseau.
+ * Lecture des pages de structure, sur des EXTRAITS FIGÉS de vraies pages
+ * (`__fixtures__/structure-*.html`). Aucun accès réseau.
  *
- * L'extrait garde les segments 01 (commun), 75 (Actuariat) et 76 (Actuariat
- * COOP). Le 76 est là exprès : c'est le piège qui ferait entrer les blocs d'une
- * autre orientation dans le programme si la sélection se faisait par préfixe.
+ * Les sept fixtures couvrent sept pièges DIFFÉRENTS, chacun rencontré sur une
+ * vraie page de l'UdeM — pas sept exemplaires du même moule. Le commentaire de
+ * chaque bloc `describe` dit lequel et ce qu'il casserait.
+ *
+ * Attention en lisant les attentes : une fixture ne garde qu'une partie des
+ * segments de sa page (voir son entête). `orientation` et le nombre de phrases
+ * d'exigences peuvent donc différer de ce que donne la page complète — c'est
+ * voulu, et signalé là où ça compte.
  */
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, it, expect } from "vitest";
-import { parseRegleBloc, parseStructure, parseTitreBloc, parseTitreSegment } from "./structure";
+import { cleBloc } from "../../lib/codes";
+import { parseStructure, parseTitreBloc, parseTitreSegment, typeDuNom } from "./structure";
 
-const HTML = readFileSync(
-  path.join(import.meta.dirname, "__fixtures__", "structure-bacc-mathematiques.html"),
-  "utf8",
-);
-const URL_PAGE =
-  "https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques/structure-du-programme/";
-const ISO = "2026-09-11T03:00:15.143Z";
+const ISO = "2026-09-11T11:05:32.006Z";
 
-function lire(orientation: string | null) {
-  return parseStructure(HTML, { id: "essai", url: URL_PAGE, orientation }, ISO);
+function lire(slug: string) {
+  const html = readFileSync(
+    path.join(import.meta.dirname, "__fixtures__", `structure-${slug}.html`),
+    "utf8",
+  );
+  const url = `https://admission.umontreal.ca/programmes/${slug}/structure-du-programme/`;
+  return { ...parseStructure(html, slug, url, ISO), html, url };
 }
 
-describe("parseRegleBloc — les 5 formes réellement présentes sur la page", () => {
-  it("lit « Obligatoire - 26 crédits. »", () => {
-    expect(parseRegleBloc("Obligatoire - 26 crédits.")).toEqual({
-      regle: { type: "obligatoire", credits: 26 },
-      note: null,
-    });
-  });
+// ---------------------------------------------------------------------------
+// Parsing des titres, isolément
+// ---------------------------------------------------------------------------
 
-  it("lit « Option - Minimum 12 crédits, maximum 27 crédits. »", () => {
-    expect(parseRegleBloc("Option - Minimum 12 crédits, maximum 27 crédits.")).toEqual({
-      regle: { type: "option", min: 12, max: 27 },
-      note: null,
-    });
-  });
-
-  it("lit « Option - Maximum 13 crédits. » — minimum ABSENT, pas zéro", () => {
-    // min: null dit « la page n'impose pas de minimum ». Mettre 0 affirmerait
-    // un minimum de 0 crédit, ce que la page n'écrit nulle part.
-    expect(parseRegleBloc("Option - Maximum 13 crédits.")).toEqual({
-      regle: { type: "option", min: null, max: 13 },
-      note: null,
-    });
-  });
-
-  it("lit « Choix - 3 crédits. »", () => {
-    expect(parseRegleBloc("Choix - 3 crédits.")).toEqual({
-      regle: { type: "choix", credits: 3 },
-      note: null,
-    });
-  });
-
-  it("signale la forme ambiguë « Option - 4 crédits. » (bloc 82B) au lieu de la gober", () => {
-    const lu = parseRegleBloc("Option - 4 crédits.");
-    expect(lu?.regle).toEqual({ type: "option", min: 4, max: 4 });
-    expect(lu?.note).toMatch(/ambigu/);
-  });
-
-  it("tolère l'absence du point final et la casse", () => {
-    expect(parseRegleBloc("obligatoire - 7 CRÉDITS")?.regle).toEqual({
-      type: "obligatoire",
-      credits: 7,
-    });
-  });
-
-  it("rend null sur une règle inconnue plutôt qu'une règle plausible", () => {
-    expect(parseRegleBloc("Obligatoire - tous les cours")).toBeNull();
-    expect(parseRegleBloc("")).toBeNull();
-  });
-});
-
-describe("parseTitreBloc / parseTitreSegment", () => {
+describe("parseTitreBloc — les deux côtés du préfixe de cheminement", () => {
   it("sépare l'id du nom, en écrasant le double espace de la page", () => {
     expect(parseTitreBloc("Bloc 75A  Actuariat, mathématiques financières et statistique")).toEqual({
       id: "75A",
@@ -85,11 +44,37 @@ describe("parseTitreBloc / parseTitreSegment", () => {
     expect(parseTitreBloc("Bloc 01A")).toEqual({ id: "01A", nom: "" });
   });
 
-  it("rend null sur un titre qui n'est pas un bloc", () => {
-    expect(parseTitreBloc("Liste des cours")).toBeNull();
+  it("« MM-Bloc 73A » : préfixe AVANT le mot Bloc (maîtrise en mathématiques)", () => {
+    expect(parseTitreBloc("MM-Bloc 73A Cheminement avec mémoire")).toEqual({
+      id: "MM-73A",
+      nom: "Cheminement avec mémoire",
+    });
+    expect(parseTitreBloc("S-Bloc 73C Stage")).toEqual({ id: "S-73C", nom: "Stage" });
   });
 
-  it("lit un segment commun et un segment d'orientation", () => {
+  it("« Bloc MM-70A » : préfixe APRÈS le mot Bloc (maîtrise en informatique)", () => {
+    // Deux orthographes pour la même idée, sur deux pages du même cycle. Ne
+    // supporter que la première coûtait neuf blocs, ignorés sans erreur.
+    expect(parseTitreBloc("Bloc MM-70A Fondements en informatique")).toEqual({
+      id: "MM-70A",
+      nom: "Fondements en informatique",
+    });
+    expect(parseTitreBloc("Bloc TD-70B Élargissement des connaissances")).toEqual({
+      id: "TD-70B",
+      nom: "Élargissement des connaissances",
+    });
+  });
+
+  it("refuse un titre qui n'est pas un bloc, au lieu d'en fabriquer un", () => {
+    expect(parseTitreBloc("Liste des cours")).toBeNull();
+    expect(parseTitreBloc("Bloc sans numéro")).toBeNull();
+    // Deux préfixes à la fois : forme inconnue, on ne devine pas lequel compte.
+    expect(parseTitreBloc("MM-Bloc ST-70A Quelque chose")).toBeNull();
+  });
+});
+
+describe("parseTitreSegment", () => {
+  it("lit un segment commun et un segment d'orientation (1er cycle)", () => {
     expect(parseTitreSegment("Segment 01 Commun aux sept orientations")).toEqual({
       numero: "01",
       libelle: "Commun aux sept orientations",
@@ -101,49 +86,89 @@ describe("parseTitreBloc / parseTitreSegment", () => {
       orientation: "Actuariat",
     });
   });
+
+  it("lit « Propre à l'option X », forme des cycles supérieurs, et le tiret", () => {
+    expect(parseTitreSegment("Segment 73 - Propre à l'option Actuariat")).toEqual({
+      numero: "73",
+      libelle: "Propre à l'option Actuariat",
+      orientation: "Actuariat",
+    });
+  });
+
+  it("lit un segment sans libellé (Accès - FAC)", () => {
+    expect(parseTitreSegment("Segment 70")).toEqual({ numero: "70", libelle: "", orientation: null });
+  });
+
+  it("lit un identifiant de segment NON NUMÉRIQUE (mineure arts et sciences)", () => {
+    // Avec `Segment\s+(\d+)`, ce programme perdait son unique segment et
+    // passait pour un programme sans structure.
+    expect(parseTitreSegment("Segment Z Cours au choix")).toEqual({
+      numero: "Z",
+      libelle: "Cours au choix",
+      orientation: null,
+    });
+  });
+
+  it("refuse ce qui n'est pas un entête de segment", () => {
+    expect(parseTitreSegment("Langue/language")).toBeNull();
+    expect(parseTitreSegment("Liste des cours")).toBeNull();
+  });
 });
 
-describe("parseStructure — orientation Actuariat", () => {
-  const { programme, journal } = lire("Actuariat");
+describe("typeDuNom", () => {
+  it("coupe au premier mot de liaison", () => {
+    expect(typeDuNom("Maîtrise en mathématiques")).toBe("Maîtrise");
+    expect(typeDuNom("DES en anesthésiologie")).toBe("DES");
+    expect(typeDuNom("Stage postdoctoral en informatique")).toBe("Stage postdoctoral");
+    expect(typeDuNom("Microprogramme de 2e cycle en bioéthique")).toBe("Microprogramme");
+    expect(typeDuNom("Accès - FAC")).toBe("Accès");
+  });
 
-  it("lit le programme et son total de crédits", () => {
+  it("garde deux mots au plus quand il n'y a aucun mot de liaison", () => {
+    expect(typeDuNom("Mineure arts et sciences")).toBe("Mineure");
+    expect(typeDuNom("Année préparatoire")).toBe("Année préparatoire");
+  });
+
+  it("rend null sur un nom vide plutôt qu'une chaîne vide", () => {
+    expect(typeDuNom("")).toBeNull();
+    expect(typeDuNom("   ")).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Bacc. en mathématiques : le programme de référence du projet
+// ---------------------------------------------------------------------------
+
+describe("bacc. en mathématiques — sept orientations sur une page", () => {
+  const { programme, structureLue, journal } = lire("baccalaureat-en-mathematiques");
+
+  it("lit l'entête : nom, faculté, cycle, type et total", () => {
     expect(programme.nom).toBe("Baccalauréat en mathématiques");
+    expect(programme.faculte).toBe("Faculté des arts et des sciences");
+    expect(programme.cycle).toBe("1er cycle");
+    expect(programme.typeProgramme).toBe("Baccalauréat");
     expect(programme.creditsTotal).toBe(90);
-    expect(programme.orientation).toBe("Actuariat");
-    expect(programme.url).toBe(URL_PAGE);
-    expect(programme.scrapeISO).toBe(ISO);
+    expect(structureLue).toBe(true);
   });
 
-  it("retient les 8 blocs des segments 01 et 75, dans l'ordre de la page", () => {
-    expect(programme.blocs.map((b) => b.id)).toEqual([
-      "01A",
-      "75A",
-      "75B",
-      "75C",
-      "75D",
-      "75E",
-      "75Y",
-      "75Z",
-    ]);
+  it("garde TOUS les segments de la page, sans filtrer par orientation", () => {
+    // La v1 extrayait un programme par orientation. La v2 écrit un fichier par
+    // slug : les orientations sont des segments, et c'est `Bloc.segment` qui
+    // sert à les regrouper. (Cette fixture ne garde que 01, 75 et 76.)
+    expect(programme.segments).toEqual(["01", "75", "76"]);
+    expect(programme.orientation).toBeNull();
   });
 
-  it("n'avale AUCUN bloc de l'orientation « Actuariat COOP »", () => {
-    // Le piège : une sélection par préfixe ferait entrer les blocs 76x, et
-    // l'audit compterait des crédits d'un autre programme.
-    expect(programme.blocs.filter((b) => b.segment === "76")).toEqual([]);
-  });
-
-  it("garde la règle de crédits VERBATIM, point final compris", () => {
-    const b75c = programme.blocs.find((b) => b.id === "75C");
-    expect(b75c?.regleBrut).toBe("Option - Minimum 12 crédits, maximum 27 crédits.");
-    expect(b75c?.regle).toEqual({ type: "option", min: 12, max: 27 });
-    expect(b75c?.segment).toBe("75");
+  it("`segment` est LU sur l'entête, pas déduit de l'id du bloc", () => {
+    for (const bloc of programme.blocs) {
+      expect(programme.segments).toContain(bloc.segment);
+      expect(bloc.cle).toBe(cleBloc(bloc.segment, bloc.id));
+    }
   });
 
   it("lit les 7 codes du bloc 01A, normalisés et dans l'ordre de la page", () => {
-    // Liste vérifiée sur la page ET identique à celle de
-    // `data/fixtures/actuariat-verifie.fixture.json`. MAT 2717 EST dans le
-    // tronc commun et ACT 1240 n'y est pas : c'est 75A qui ouvre sur ACT 1240.
+    // Liste vérifiée sur la page. MAT 2717 EST dans le tronc commun et
+    // ACT 1240 n'y est pas : c'est 75A qui ouvre sur ACT 1240.
     expect(programme.blocs.find((b) => b.id === "01A")?.cours).toEqual([
       "MAT 1000",
       "MAT 1400",
@@ -155,87 +180,356 @@ describe("parseStructure — orientation Actuariat", () => {
     ]);
   });
 
+  it("garde la règle VERBATIM, point final compris, et ses bornes", () => {
+    const b75c = programme.blocs.find((b) => b.id === "75C");
+    expect(b75c?.regleBrut).toBe("Option - Minimum 12 crédits, maximum 27 crédits.");
+    expect(b75c?.regle).toEqual({ type: "option", bornes: { min: 12, max: 27 } });
+    expect(b75c?.segment).toBe("75");
+    expect(b75c?.cle).toBe("75/75C");
+  });
+
+  it("« Option - Maximum 13 crédits. » devient {min:0, max:13}", () => {
+    // `Intervalle` n'accepte pas de null. 0 est la lecture littérale de la
+    // page — on peut n'en prendre aucun — et `regleBrut` garde le verbatim.
+    expect(programme.blocs.find((b) => b.id === "75E")?.regle).toEqual({
+      type: "option",
+      bornes: { min: 0, max: 13 },
+    });
+  });
+
   it("laisse le bloc « Choix » sans aucun cours", () => {
     expect(programme.blocs.find((b) => b.id === "75Z")?.cours).toEqual([]);
   });
 
   it("journalise les deux blocs auxquels la page ne donne pas de nom", () => {
-    const sansNom = programme.blocs.filter((b) => b.nom === "").map((b) => b.id);
-    expect(sansNom).toEqual(["01A", "75Z"]);
-    for (const id of sansNom) {
-      expect(journal.entrees.some((e) => e.ou === `bloc ${id}` && e.gravite === "manque")).toBe(true);
+    const sansNom = programme.blocs.filter((b) => b.nom === "").map((b) => b.cle);
+    expect(sansNom).toEqual(["01/01A", "75/75Z"]);
+    for (const cle of sansNom) {
+      expect(
+        journal.entrees.some((e) => e.sujet.endsWith(`bloc ${cle}`) && e.genre === "manque"),
+      ).toBe(true);
     }
   });
 
-  it("journalise verbatim la phrase des exigences par type (54 / 33 / 3)", () => {
-    // `Programme` n'a pas de champ pour ça, et c'est le coeur de l'audit :
-    // les minimums des blocs d'option ne font que 18 des 33 crédits exigés.
-    const info = journal.entrees.find((e) => e.gravite === "info");
-    expect(info?.quoi).toContain("54 crédits obligatoires, 33 crédits à option");
+  it("conserve les SEPT phrases de répartition, COOP comprises, dans `notes`", () => {
+    // `Programme.exigences` n'a qu'un emplacement : sept phrases, il reste null
+    // et rien n'est perdu. Les deux COOP sont le cas qu'un `\b` devant « à »
+    // faisait disparaître (« 60 crédits obligatoires et 30 crédits à option »,
+    // sans « au choix ») — elles doivent être là.
+    expect(programme.exigences).toBeNull();
+    const notes = programme.notes.join("\n");
+    expect(notes).toContain("54 crédits obligatoires, 33 crédits à option et 3 crédits au choix");
+    expect(notes).toContain(
+      "orientation Actuariat COOP (segments 01 et 76) avec 60 crédits obligatoires et 30 crédits à option",
+    );
+    expect(notes).toContain(
+      "orientation Statistique COOP (segments 01 et 80) avec 66 crédits obligatoires, 24 crédits à option",
+    );
+    // Les sept puces d'orientation y sont, chacune sans préambule collé.
+    const puces = programme.notes
+      .join("\n")
+      .split("\n")
+      .flatMap((l) => l.split(/(?=- orientation )/))
+      .filter((p) => p.startsWith("- orientation "));
+    expect(puces).toHaveLength(7);
+    const avis = journal.entrees.find((e) => e.message.includes("phrases de répartition"));
+    expect(avis?.genre).toBe("inattendu");
+    // Sept puces plus les totaux PAR SEGMENT que portent 75 et 76.
+    expect(avis?.message).toMatch(/^9 phrases de répartition/);
+    expect(avis?.message).toContain("« - orientation Actuariat (segments 01 et 75) avec 54 crédits");
   });
 
-  it("ne journalise rien d'inattendu sur cette page", () => {
-    expect(journal.entrees.filter((e) => e.gravite === "inattendu")).toEqual([]);
-  });
-});
-
-describe("parseStructure — autres orientations", () => {
-  it("retient les blocs d'Actuariat COOP quand c'est elle qu'on demande", () => {
-    const { programme } = lire("Actuariat COOP");
-    expect(programme.blocs.map((b) => b.id)).toEqual([
-      "01A",
-      "76A",
-      "76B",
-      "76C",
-      "76D",
-      "76E",
-      "76F",
-      "76Y",
-    ]);
-  });
-
-  it("garde tous les segments de la page quand aucune orientation n'est demandée", () => {
-    const { programme } = lire(null);
-    expect(programme.orientation).toBeNull();
-    // Le segment 76 (Actuariat COOP) a 7 blocs : il a un bloc de stages (76F)
-    // mais aucun bloc « au choix », contrairement au segment 75.
-    expect(programme.blocs.map((b) => b.segment)).toEqual([
-      "01",
-      ...Array(7).fill("75"),
-      ...Array(7).fill("76"),
-    ]);
-  });
-
-  it("journalise l'absence d'une orientation qui n'est pas sur la page", () => {
-    const { programme, journal } = lire("Gastronomie moléculaire");
-    expect(programme.blocs.map((b) => b.id)).toEqual(["01A"]);
-    expect(journal.entrees.some((e) => e.quoi.includes("aucun segment"))).toBe(true);
+  it("n'a aucune règle de bloc `inconnu` : les orientations sont toutes lisibles", () => {
+    expect(programme.blocs.filter((b) => b.regle.type === "inconnu")).toEqual([]);
   });
 });
 
-describe("parseStructure — indépendance aux fins de ligne", () => {
-  it("donne exactement le même résultat sur la fixture convertie en CRLF", () => {
-    // Le dépôt est en `core.autocrlf=true` : le prochain clone livrera ces
-    // fixtures en CRLF. Un parseur sensible au \r rendrait des titres et des
-    // règles de crédits avec un retour chariot collé, sans rien faire échouer.
-    const crlf = HTML.replace(/\r?\n/g, "\r\n");
-    const attendu = lire("Actuariat");
-    const obtenu = parseStructure(crlf, { id: "essai", url: URL_PAGE, orientation: "Actuariat" }, ISO);
-    expect(obtenu.programme).toEqual(attendu.programme);
-    expect(obtenu.journal.entrees).toEqual(attendu.journal.entrees);
+// ---------------------------------------------------------------------------
+// Les six autres pièges
+// ---------------------------------------------------------------------------
+
+describe("maîtrise en mathématiques — deux blocs « 73A » dans le même segment", () => {
+  // Le piège central de la v2 : un extracteur ancré sur « Bloc » a fusionné
+  // 58 cours dans le mauvais bloc pendant la validation, sans lever d'erreur.
+  const { programme } = lire("maitrise-en-mathematiques");
+
+  it("distingue MM-73A de S-73A par leur clé, et les garde tous les deux", () => {
+    const mm = programme.blocs.find((b) => b.cle === "73/MM-73A");
+    const s = programme.blocs.find((b) => b.cle === "73/S-73A");
+    expect(mm?.id).toBe("MM-73A");
+    expect(s?.id).toBe("S-73A");
+    expect(mm?.segment).toBe("73");
+    expect(s?.segment).toBe("73");
+    // Deux blocs DIFFÉRENTS : leurs règles ne sont pas les mêmes.
+    expect(mm?.regle).toEqual({ type: "option", bornes: { min: 10, max: 16 } });
+    expect(s?.regle).toEqual({ type: "option", bornes: { min: 15, max: 24 } });
+  });
+
+  it("toutes les clés de blocs sont uniques, alors que deux ids finissent par 73A", () => {
+    const cles = programme.blocs.map((b) => b.cle);
+    expect(new Set(cles).size).toBe(cles.length);
+    expect(programme.blocs.filter((b) => b.id.endsWith("73A"))).toHaveLength(2);
+  });
+
+  it("lit « Option - minimum 15 crédits, maximum 24 crédits. » en minuscules", () => {
+    expect(programme.blocs.find((b) => b.cle === "73/S-73A")?.regleBrut).toBe(
+      "Option - minimum 15 crédits, maximum 24 crédits.",
+    );
+  });
+
+  it("garde la prose de bloc dans `Bloc.notes` au lieu de la perdre", () => {
+    // « … et/ou un maximum de 6 crédits de cours de 1er cycle de sigle ACT, MAT
+    // ou STT … avec l'approbation du responsable de programme. » : un plafond
+    // imbriqué que `RegleBloc` ne peut pas porter. Sans `notes`, il disparaît.
+    const b = programme.blocs.find((x) => x.cle === "73/S-73B");
+    expect(b?.notes.join(" ")).toContain("approbation du responsable de programme");
+  });
+
+  it("met la prose de SEGMENT dans `Programme.notes`, préfixée par son segment", () => {
+    const note = programme.notes.find((n) => n.includes("cheminement avec stage (S)"));
+    expect(note).toMatch(/^Segment 73 /);
+    expect(note).toContain("21 crédits obligatoires attribués à un stage");
+  });
+
+  it("mémoire et stage sont des cours ordinaires, dans des blocs à 29 et 21 crédits", () => {
+    expect(programme.blocs.find((b) => b.cle === "73/MM-73C")?.cours).toEqual(["MAT 6916"]);
+    expect(programme.blocs.find((b) => b.cle === "73/S-73C")?.cours).toEqual(["MAT 6908"]);
   });
 });
 
-describe("parseStructure — page qui n'est pas celle attendue", () => {
-  it("ne fabrique ni nom ni crédits, et le dit", () => {
-    const { programme, journal } = parseStructure(
+describe("maîtrise en informatique — « Bloc MM-70A », préfixe de l'autre côté", () => {
+  const { programme, journal } = lire("maitrise-en-informatique");
+
+  it("retient les blocs préfixés au lieu de les ignorer", () => {
+    const ids = programme.blocs.map((b) => b.id);
+    expect(ids).toContain("MM-70A");
+    expect(ids).toContain("ST-70A");
+    expect(ids).toContain("TD-70A");
+  });
+
+  it("ne journalise aucun « titre de bloc illisible » sur ce segment", () => {
+    // Neuf de ces entrées, c'était l'état du premier jet : les blocs étaient
+    // signalés, mais perdus quand même.
+    expect(journal.entrees.filter((e) => e.message.includes("titre de bloc illisible"))).toEqual([]);
+  });
+});
+
+describe("mineure arts et sciences — « Segment Z »", () => {
+  const { programme, structureLue } = lire("mineure-arts-et-sciences");
+
+  it("retient le segment à identifiant de lettre et son bloc", () => {
+    expect(structureLue).toBe(true);
+    expect(programme.segments).toEqual(["Z"]);
+    expect(programme.blocs.map((b) => b.cle)).toEqual(["Z/71Z"]);
+    expect(programme.blocs[0].regle).toEqual({ type: "choix", bornes: { min: 30, max: 30 } });
+  });
+
+  it("un bloc « Choix » sans cours n'est PAS signalé comme suspect", () => {
+    // Vide est la norme pour un bloc au choix ; c'est un bloc à OPTION vide qui
+    // mérite un signalement.
+    expect(programme.blocs[0].cours).toEqual([]);
+  });
+});
+
+describe("Accès - FAC — « Maximum » capital au milieu, total en « maximum de »", () => {
+  const { programme, journal } = lire("acces-fac");
+
+  it("lit « Option - Minimum 3 crédits, Maximum 15 crédits. »", () => {
+    expect(programme.blocs.find((b) => b.id === "70B")?.regle).toEqual({
+      type: "option",
+      bornes: { min: 3, max: 15 },
+    });
+  });
+
+  it("lit « comporte un maximum de 24 crédits » et journalise la nuance", () => {
+    expect(programme.creditsTotal).toBe(24);
+    expect(
+      journal.entrees.some(
+        (e) => e.genre === "info" && e.message.includes("comporte un maximum de 24 crédits"),
+      ),
+    ).toBe(true);
+  });
+});
+
+describe("les trois totaux par type sont couplés par la somme", () => {
+  // Le droit écrit 68 obligatoires + « de 30 à 33 à option » + « maximum 3 au
+  // choix » pour 101 crédits : être dans chacun des trois ne suffit pas, puisque
+  // 68 + 30 + 0 = 98 les respecte tous et ne diplôme pas. Le scraper ne corrige
+  // rien, il vérifie que les quatre nombres sont compatibles et le dit sinon.
+  const basePsycho = lire("baccalaureat-en-psychologie-campus-montreal");
+
+  it("ne signale rien quand la somme est possible (psycho : 45 + 39-42 + 3-6 = 87-93 ∋ 90)", () => {
+    expect(basePsycho.programme.creditsTotal).toBe(90);
+    expect(
+      basePsycho.journal.entrees.some((e) => e.message.includes("somme incohérente")),
+    ).toBe(false);
+  });
+
+  it("signale une somme impossible au lieu de la propager jusqu'au verdict", () => {
+    const html =
+      '<div class="presentation-content structure-description"><p>Le programme comporte 120 crédits. ' +
+      "Les crédits sont répartis de la façon suivante : 45 crédits obligatoires, de 30 à 33 crédits à option " +
+      "et un maximum de 3 crédits au choix.</p></div>";
+    const { journal } = parseStructure(html, "essai", "u", ISO);
+    const avis = journal.entrees.find((e) => e.message.includes("somme incohérente"));
+    expect(avis?.genre).toBe("inattendu");
+    expect(avis?.message).toContain("de 75 à 81 crédits");
+    expect(avis?.message).toContain("annonce 120");
+  });
+
+  it("avec un type manquant, signale au moins un minimum qui dépasse le total", () => {
+    // Actuariat COOP n'énonce aucun crédit au choix : on ne peut contrôler que
+    // la borne basse, et c'est mieux que de ne rien contrôler.
+    const html =
+      '<div class="presentation-content structure-description"><p>Le programme comporte 60 crédits. ' +
+      "Il est offert avec 60 crédits obligatoires et 30 crédits à option.</p></div>";
+    const { journal } = parseStructure(html, "essai", "u", ISO);
+    expect(journal.entrees.some((e) => e.message.includes("somme impossible"))).toBe(true);
+  });
+});
+
+describe("bacc. en psychologie — une phrase coupée entre deux <p>", () => {
+  const { programme } = lire("baccalaureat-en-psychologie-campus-montreal");
+
+  it("recolle la phrase et en tire les trois totaux", () => {
+    // La page écrit « …de 39 à 42 crédits</p><p>à option et 3 à 6 crédits au
+    // choix. ». Lue paragraphe par paragraphe, elle donnait un `brut` tronqué à
+    // « à option et 3 à 6 crédits au choix. », obligatoire: null, option: null —
+    // une donnée FAUSSE, pas une absence.
+    expect(programme.exigences?.brut).toContain("45 crédits obligatoires");
+    expect(programme.exigences?.obligatoire).toEqual({ min: 45, max: 45 });
+    expect(programme.exigences?.option).toEqual({ min: 39, max: 42 });
+    expect(programme.exigences?.choix).toEqual({ min: 3, max: 6 });
+  });
+
+  it("lit « Choix - Minimum 3 crédits, maximum 6 crédits. » (bloc 71Z)", () => {
+    expect(programme.blocs.find((b) => b.id === "71Z")?.regle).toEqual({
+      type: "choix",
+      bornes: { min: 3, max: 6 },
+    });
+  });
+
+  it("lit les codes à CINQ chiffres du bloc 71V", () => {
+    expect(programme.blocs.find((b) => b.id === "71V")?.cours).toContain("PSY 40001");
+  });
+});
+
+describe("stage postdoctoral — 200 OK, aucun segment", () => {
+  const { programme, structureLue, journal } = lire("stage-postdoctoral-en-informatique");
+
+  it("dit `structureLue: false` sans rien inventer, et garde l'entête lisible", () => {
+    // C'est le cas dangereux : la page répond 200, donc aucun statut HTTP ne
+    // signale l'absence de structure. `acces-fac` et `annee-preparatoire`, que
+    // le brief donnait en exemple, ont au contraire une vraie structure.
+    expect(structureLue).toBe(false);
+    expect(programme.blocs).toEqual([]);
+    expect(programme.segments).toEqual([]);
+    expect(programme.nom).toBe("Stage postdoctoral en informatique");
+    expect(programme.faculte).toBe("Études supérieures et postdoctorales");
+    expect(programme.creditsTotal).toBeNull();
+    expect(programme.exigences).toBeNull();
+  });
+
+  it("journalise l'absence de structure plutôt que de la taire", () => {
+    expect(journal.entrees.some((e) => e.message.includes("aucun div.programme-segment"))).toBe(true);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Robustesse
+// ---------------------------------------------------------------------------
+
+describe("indépendance aux fins de ligne", () => {
+  // `core.autocrlf=true` dans ce dépôt : le prochain clone livrera ces fixtures
+  // en CRLF. Un parseur sensible au \r rendrait des titres et des règles de
+  // crédits avec un retour chariot collé, sans rien faire échouer.
+  for (const slug of [
+    "baccalaureat-en-mathematiques",
+    "maitrise-en-mathematiques",
+    "maitrise-en-informatique",
+    "acces-fac",
+    "baccalaureat-en-psychologie-campus-montreal",
+  ]) {
+    it(`${slug} : résultat identique en CRLF`, () => {
+      const { html, url } = lire(slug);
+      const a = parseStructure(html, slug, url, ISO);
+      const b = parseStructure(html.replace(/\r?\n/g, "\r\n"), slug, url, ISO);
+      expect(b.programme).toEqual(a.programme);
+      expect(b.structureLue).toBe(a.structureLue);
+      expect(b.journal.entrees).toEqual(a.journal.entrees);
+    });
+  }
+});
+
+describe("page qui n'est pas celle attendue", () => {
+  it("ne fabrique ni nom, ni crédits, ni blocs, et le dit", () => {
+    const { programme, structureLue, journal } = parseStructure(
       "<html><body><p>Page de maintenance</p></body></html>",
-      { id: "essai", url: URL_PAGE, orientation: "Actuariat" },
+      "essai",
+      "https://admission.umontreal.ca/programmes/essai/structure-du-programme/",
       ISO,
     );
+    expect(structureLue).toBe(false);
     expect(programme.blocs).toEqual([]);
     expect(programme.nom).toBe("");
-    expect(programme.creditsTotal).toBe(0);
-    expect(journal.entrees.filter((e) => e.gravite === "manque").length).toBeGreaterThanOrEqual(3);
+    expect(programme.creditsTotal).toBeNull();
+    expect(programme.exigences).toBeNull();
+    expect(programme.typeProgramme).toBeNull();
+    expect(journal.entrees.filter((e) => e.genre === "manque").length).toBeGreaterThanOrEqual(5);
+  });
+
+  it("un bloc à la règle illisible entre quand même, en `inconnu`", () => {
+    // En v1 il était IGNORÉ : un bloc disparu ne laisse aucune trace à l'écran,
+    // un bloc non auditable si.
+    const html =
+      '<div class="programme-segment"><h3>Segment 99 Essai</h3>' +
+      '<section class="bloc"><div class="bloc-titre"><h4><span>Bloc 99A Essai</span></h4>' +
+      "<small>Obligatoire - tous les cours du département</small></div></section></div>";
+    const { programme, journal } = parseStructure(html, "essai", "u", ISO);
+    expect(programme.blocs).toHaveLength(1);
+    expect(programme.blocs[0].regle).toEqual({
+      type: "inconnu",
+      brut: "Obligatoire - tous les cours du département",
+    });
+    expect(programme.blocs[0].regleBrut).toBe("Obligatoire - tous les cours du département");
+    expect(journal.entrees.some((e) => e.genre === "inattendu")).toBe(true);
+  });
+
+  it("un bloc sans <small> garde sa place, avec regle inconnu et regleBrut vide", () => {
+    const html =
+      '<div class="programme-segment"><h3>Segment 99 Essai</h3>' +
+      '<section class="bloc"><div class="bloc-titre"><h4><span>Bloc 99A</span></h4></div></section></div>';
+    const { programme, journal } = parseStructure(html, "essai", "u", ISO);
+    expect(programme.blocs[0].regle.type).toBe("inconnu");
+    expect(programme.blocs[0].regleBrut).toBe("");
+    expect(journal.entrees.some((e) => e.message.includes("<small>) absente"))).toBe(true);
+  });
+
+  it("un bloc OBLIGATOIRE ou à OPTION sans aucun code est signalé", () => {
+    // Bacc. en musique, bloc 02E « Cours de langue » / « Option - Maximum 6
+    // crédits. » : zéro code, seulement le renvoi au Centre de langues.
+    // Indistinguable d'un scrape raté sans ce signalement — et c'est la seule
+    // façon de tenir l'invariant des tests de couture (« un bloc à liste vide
+    // n'est qu'un bloc au choix ») sans le contredire en silence.
+    for (const regle of ["Option - Maximum 6 crédits.", "Obligatoire - 6 crédits."]) {
+      const html =
+        '<div class="programme-segment"><h3>Segment 02 Essai</h3>' +
+        '<section class="bloc"><div class="bloc-titre"><h4><span>Bloc 02E Cours de langue</span></h4>' +
+        `<small>${regle}</small></div></section></div>`;
+      const { journal } = parseStructure(html, "essai", "u", ISO);
+      expect(
+        journal.entrees.some((e) => e.message.includes("sans aucun code de cours")),
+        regle,
+      ).toBe(true);
+    }
+  });
+
+  it("un bloc au CHOIX sans aucun code n'est pas signalé : c'est la norme", () => {
+    const html =
+      '<div class="programme-segment"><h3>Segment 75 Essai</h3>' +
+      '<section class="bloc"><div class="bloc-titre"><h4><span>Bloc 75Z</span></h4>' +
+      "<small>Choix - 3 crédits.</small></div></section></div>";
+    const { journal } = parseStructure(html, "essai", "u", ISO);
+    expect(journal.entrees.some((e) => e.message.includes("sans aucun code de cours"))).toBe(false);
   });
 });

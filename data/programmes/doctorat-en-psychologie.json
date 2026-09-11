@@ -1,0 +1,254 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-psychologie",
+  "nom": "Doctorat en psychologie - Recherche (Ph. D.)",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "73",
+    "78"
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PSY 70061",
+        "PSY 70062"
+      ],
+      "notes": [
+        "Les cours PSY70061 et PSY70062 sont équivalents au cours PSY7006"
+      ]
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Méthodes d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PSY 6002",
+        "PSY 6008",
+        "PSY 6018",
+        "PSY 6019",
+        "SOL 6211A",
+        "SOL 6211B",
+        "SOL 6211C"
+      ],
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Stages de recherche et professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PSY 6855",
+        "PSY 6856"
+      ],
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "PSY 7860",
+        "PSY 7962",
+        "PSY 7967"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "NCM 6441",
+        "PSY 6093",
+        "PSY 6106",
+        "PSY 6257",
+        "PSY 6258",
+        "PSY 6304",
+        "PSY 6308",
+        "PSY 6415",
+        "PSY 6424",
+        "PSY 6712",
+        "PSY 6714",
+        "PSY 6715",
+        "PSY 6793",
+        "PSY 6799",
+        "PSY 6936",
+        "SHA 7015"
+      ],
+      "notes": [
+        "À choisir parmi les cours de niveau 6000 dans la banque de cours offerts au Département de psychologie, en fonction des besoins de formation de l'étudiant et avec l'approbation du responsable de programme. Remarque : cette liste n'est pas exhaustive. D'autres cours offerts par le Département pourront être suivis dans ce bloc."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours au choix approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "PSY 6093",
+        "PSY 6303",
+        "PSY 6304",
+        "PSY 6308"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours au choix approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "78A",
+      "cle": "78/78A",
+      "segment": "78",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 6758",
+        "NCM 6441",
+        "NSC 6084",
+        "PSY 6022",
+        "PSY 6308",
+        "PSY 64071",
+        "PSY 64072",
+        "PSY 6415",
+        "PSY 6423",
+        "PSY 6424",
+        "PSY 6936",
+        "PSY 6973",
+        "PSY 6976",
+        "PSY 6983",
+        "PSY 6989"
+      ],
+      "notes": []
+    },
+    {
+      "id": "78B",
+      "cle": "78/78B",
+      "segment": "78",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Choix - Maximum 4 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours au choix approuvé par le responsable de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 12 (H25)\nLe doctorat comporte 90 crédits répartis de la façon suivante : 78 crédits obligatoires, dont 75 attribués à la recherche et à la rédaction d'une thèse, de 9 à 12 crédits à option et jusqu'à 4 crédits au choix.\nIl comporte un tronc commun (segment 01) ainsi que les trois options suivantes :\n- l'option générale (segment 71);\n- l'option psychologie sociale (segment 73);\n- l'option neuroscience cognitive et computationnelle (segment 78).",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont répartis de la façon suivante : 78 crédits obligatoires, dont 75 attribués à la recherche et à la rédaction d'une thèse, et de 3 à 9 crédits à option.",
+    "Segment 71 Propre à l'option générale — Les crédits du segment 71 sont répartis de la façon suivante : 3 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 73 Propre à l'option psychologie sociale — Les crédits du segment 73 sont répartis de la façon suivante : 3 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 78 Propre à l'option neuroscience cognitive et computationnelle — Les crédits du segment 78 sont répartis de la façon suivante : 3 à 9 crédits à option et un maximum de 4 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-psychologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:46.435Z"
+}

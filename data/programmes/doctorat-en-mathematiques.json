@@ -1,0 +1,368 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-mathematiques",
+  "nom": "Doctorat en mathématiques",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "73",
+    "75"
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 8 crédits, maximum 12 crédits.",
+      "cours": [
+        "MAT 6117",
+        "MAT 6124",
+        "MAT 6125",
+        "MAT 6129A",
+        "MAT 6139A",
+        "MAT 6215",
+        "MAT 6220",
+        "MAT 6230",
+        "MAT 6330",
+        "MAT 6335",
+        "MAT 6339A",
+        "MAT 6350",
+        "MAT 6354",
+        "MAT 6359A",
+        "MAT 6461",
+        "MAT 6463",
+        "MAT 6465",
+        "MAT 6467",
+        "MAT 6473",
+        "MAT 6475",
+        "MAT 6476",
+        "MAT 6493",
+        "MAT 6495",
+        "MAT 6620",
+        "MAT 6621",
+        "MAT 6623",
+        "MAT 6650",
+        "MAT 6652",
+        "MAT 6654",
+        "MAT 6659A",
+        "MAT 6701",
+        "MAT 6703",
+        "MAT 6709A"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours d'autres disciplines ou hors UdeM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours de cycles supérieurs d'autres disciplines ou d'autres universités avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "MAT 7900",
+        "MAT 7910"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Mathématiques et sciences des données",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 8 crédits, maximum 12 crédits.",
+      "cours": [
+        "ACT 6230",
+        "ACT 6245",
+        "ACT 6275",
+        "MAT 6117",
+        "MAT 6124",
+        "MAT 6125",
+        "MAT 6129A",
+        "MAT 6139A",
+        "MAT 6215",
+        "MAT 6220",
+        "MAT 6230",
+        "MAT 6330",
+        "MAT 6335",
+        "MAT 6339A",
+        "MAT 6350",
+        "MAT 6354",
+        "MAT 6359A",
+        "MAT 6461",
+        "MAT 6463",
+        "MAT 6465",
+        "MAT 6467",
+        "MAT 6473",
+        "MAT 6475",
+        "MAT 6476",
+        "MAT 6493",
+        "MAT 6495",
+        "MAT 6620",
+        "MAT 6621",
+        "MAT 6623",
+        "MAT 6650",
+        "MAT 6652",
+        "MAT 6654",
+        "MAT 6659A",
+        "MAT 6701",
+        "MAT 6703",
+        "MAT 6709A",
+        "STT 6215",
+        "STT 6300",
+        "STT 6410",
+        "STT 6415",
+        "STT 6515",
+        "STT 6516",
+        "STT 6615",
+        "STT 6700",
+        "STT 6705V"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Cours d'autres disciplines ou hors UdeM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours de cycles supérieurs d'autres disciplines ou d'autres universités avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "MAT 7900",
+        "MAT 7910"
+      ],
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Choix - 15 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours choisi dans le répertoire des cours des études supérieures du Département de mathématiques et génie industriel de l'École Polytechnique et dans celui d'études supérieures de l'Université de Montréal, en particulier les cours du Département de mathématiques et de statistique et du Département d'informatique et de recherche opérationnelle."
+      ]
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "MAT 7900",
+        "MAT 7902"
+      ],
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "Actuariat, mathématiques financières, probabilités, science des données",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "ACT 6230",
+        "ACT 6245",
+        "ACT 6275",
+        "MAT 6493",
+        "MAT 6495",
+        "MAT 6701",
+        "MAT 6703",
+        "MAT 6709A",
+        "STT 6215",
+        "STT 6300",
+        "STT 6410",
+        "STT 6415",
+        "STT 6515",
+        "STT 6516",
+        "STT 6615",
+        "STT 6700",
+        "STT 6705V"
+      ],
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "MAT 6117",
+        "MAT 6124",
+        "MAT 6125",
+        "MAT 6129A",
+        "MAT 6139A",
+        "MAT 6215",
+        "MAT 6220",
+        "MAT 6230",
+        "MAT 6330",
+        "MAT 6335",
+        "MAT 6339A",
+        "MAT 6350",
+        "MAT 6354",
+        "MAT 6359A",
+        "MAT 6461",
+        "MAT 6463",
+        "MAT 6465",
+        "MAT 6467",
+        "MAT 6473",
+        "MAT 6475",
+        "MAT 6476",
+        "MAT 6620",
+        "MAT 6621",
+        "MAT 6623",
+        "MAT 6650",
+        "MAT 6652",
+        "MAT 6654",
+        "MAT 6659A"
+      ],
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Cours d'autres disciplines ou hors UdeM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours de cycles supérieurs d'autres disciplines ou d'autres universités avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "MAT 7900",
+        "MAT 7910"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A20)\nLe doctorat comporte 90 crédits. Il est offert avec les options suivantes :\n- l'option Mathématiques pures (segment 70),\n- l'option Mathématiques appliquées (segment 71),\n- l'option Mathématiques de l'ingénieur (segment 73),\n- l'option Actuariat et mathématiques financières (segment 75)\nLe département s'attend à ce que l'étudiant participe régulièrement, et ce tout au long de ses études, aux séminaires des étudiants de 2e et 3e cycles de mathématiques.",
+    "Segment 70 Propre à l'option Mathématiques pures — Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 8 à 12 crédits à option et un maximum de 6 crédits au choix.",
+    "Segment 70 Propre à l'option Mathématiques pures — Tous les cours sont du niveau des études supérieures et au moins 8 crédits sont de sigle MAT.",
+    "Segment 71 Propre à l'option Mathématiques appliquées — Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 8 à 12 crédits à option et un maximum de 6 crédits au choix.",
+    "Segment 73 Propre à l'option Mathématiques de l'ingénieur — Les crédits du doctorat sont répartis de la façon suivante : 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 15 crédits au choix.",
+    "Segment 75 Propre à l'option Actuariat et mathématiques financières — Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 8 à 12 crédits à option et un maximum de 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-mathematiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:44.546Z"
+}

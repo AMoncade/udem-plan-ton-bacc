@@ -1,0 +1,40 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "diplome-de-droit-notarial",
+  "nom": "Diplôme de droit notarial",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "Diplôme",
+  "creditsTotal": 36,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "DRT 6355"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H00)\nLe diplôme comporte 36 crédits.",
+    "Segment 70 — Tous les crédits du diplôme sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/diplome-de-droit-notarial/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:59.788Z"
+}

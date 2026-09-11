@@ -1,0 +1,968 @@
+{
+  "MAT 1000": {
+    "code": "MAT 1000",
+    "titre": "Analyse 1",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Propriétés des nombres réels, concepts topologiques dans R, suites et séries numériques, propriétés des fonctions continues et fonctions dérivables d'une variable réelle à valeurs réelles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1000/",
+    "scrapeISO": "2026-09-11T11:16:13.817Z"
+  },
+  "MAT 1400": {
+    "code": "MAT 1400",
+    "titre": "Calcul 1",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Suites, séries. Fonctions de plusieurs variables, continuité, dérivées partielles, différentielles, plan tangent, dérivation en chaîne. Gradient, surfaces de niveau, extremums. Intégrales multiples, changement de variables, jacobien.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1400/",
+    "scrapeISO": "2026-09-11T11:16:16.905Z"
+  },
+  "MAT 1500": {
+    "code": "MAT 1500",
+    "titre": "Mathématiques discrètes",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ensembles et fonctions. Lois de la logique, quantificateurs, preuves. Induction, pgcd, nombres premiers, algorithme d’Euclide-Bézout, congruence, récursion. Principes de comptage, structures discrètes, graphes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1500/",
+    "scrapeISO": "2026-09-11T11:16:17.107Z"
+  },
+  "MAT 1600": {
+    "code": "MAT 1600",
+    "titre": "Algèbre linéaire",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Systèmes d'équations linéaires, élimination de Gauss, inverse matricielle. Espace vectoriel, indépendance linéaire, transformations linéaires, changement de base. Produit scalaire. Déterminants. Diagonalisation. Exemples d'applications.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1600/",
+    "scrapeISO": "2026-09-11T11:16:18.232Z"
+  },
+  "MAT 1720": {
+    "code": "MAT 1720",
+    "titre": "Probabilités",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Espace de probabilité. Analyse combinatoire. Probabilité conditionnelle. Indépendance. Variable aléatoire. Fonction de répartition et fonction génératrice. Espérance mathématique. Loi faible des grands nombres. Théorème limite central.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1720/",
+    "scrapeISO": "2026-09-11T11:16:19.468Z"
+  },
+  "MAT 2717": {
+    "code": "MAT 2717",
+    "titre": "Processus stochastiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Chaînes de Markov. Processus de Galton-Watson. Processus de Poisson. Processus de mort et de naissance. Étude naïve du mouvement brownien. Applications diverses.",
+    "prealablesBrut": "MAT1600 et (MAT1720 ou MAT1978)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MAT 1720"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2717/",
+    "scrapeISO": "2026-09-11T11:16:22.758Z"
+  },
+  "MAT 2000": {
+    "code": "MAT 2000",
+    "titre": "Stage 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage supervisé faisant appel à des compétences actuarielles, mathématiques ou statistiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2000/",
+    "scrapeISO": "2026-09-11T11:16:59.083Z"
+  },
+  "MAT 3000": {
+    "code": "MAT 3000",
+    "titre": "Stage 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage supervisé faisant appel à des compétences actuarielles, mathématiques ou statistiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3000/",
+    "scrapeISO": "2026-09-11T11:17:01.037Z"
+  },
+  "MAT 1410": {
+    "code": "MAT 1410",
+    "titre": "Calcul 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Calcul vectoriel : divergence, rotationnel, laplacien. Formules de Green-Riemann, de Stokes et théorème de la divergence. Introduction aux équations différentielles. Équations différentielles linéaires d'ordre un et deux.",
+    "prealablesBrut": "MAT1400",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1400"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1410/",
+    "scrapeISO": "2026-09-11T11:17:14.918Z"
+  },
+  "MAT 2050": {
+    "code": "MAT 2050",
+    "titre": "Analyse 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "L'intégrale de Riemann, le théorème fondamental du calcul. Fonctions trigonométriques, exponentielles et leurs inverses. Suites et séries de fonctions, séries de Taylor, séries de Fourier.",
+    "prealablesBrut": "MAT1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2050/",
+    "scrapeISO": "2026-09-11T11:17:17.394Z"
+  },
+  "MAT 2100": {
+    "code": "MAT 2100",
+    "titre": "Analyse 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Topologie de Rn. Ensembles ouverts, compacts. Applications continues, différentiables. Jacobien. Théorème de Taylor. Extrema. Théorème des fonctions inverses et implicites.",
+    "prealablesBrut": "MAT1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2100/",
+    "scrapeISO": "2026-09-11T11:17:18.776Z"
+  },
+  "MAT 2115": {
+    "code": "MAT 2115",
+    "titre": "Équations différentielles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Équations du premier et du second ordre. Existence et unicité. Dépendance continue par rapport à la condition initiale. Méthodes analytiques, qualitatives. Systèmes linéaires et non linéaires. Dynamique discrète.",
+    "prealablesBrut": "MAT1400 ET MAT1600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1400"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2115/",
+    "scrapeISO": "2026-09-11T11:17:19.014Z"
+  },
+  "MAT 2130": {
+    "code": "MAT 2130",
+    "titre": "Variable complexe",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fonctions holomorphes d'une variable complexe. Représentation conforme. Équations de Cauchy-Riemann. Théorème de Cauchy. Séries de Laurent. Théorème fondamental des résidus.",
+    "prealablesBrut": "MAT1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2130/",
+    "scrapeISO": "2026-09-11T11:17:20.134Z"
+  },
+  "MAT 2412": {
+    "code": "MAT 2412",
+    "titre": "Analyse numérique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Propagation d'erreurs. Solution numérique d'équations non linéaires. Interpolation et approximation polynomiale. Dérivation et intégration numériques. Algèbre linéaire : méthodes directes et itératives. Approximation discrète par moindres carrés.",
+    "prealablesBrut": "MAT1400 ET MAT1600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1400"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2412/",
+    "scrapeISO": "2026-09-11T11:17:23.207Z"
+  },
+  "MAT 2719": {
+    "code": "MAT 2719",
+    "titre": "Marches et graphes aléatoires",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Lien entre les marches aléatoires réversibles et les réseaux électriques. Exemples de graphes aléatoires, dont la percolation et les arbres couvrants. Marches aléatoires sur graphes aléatoires. Méthodes du premier et second moment.",
+    "prealablesBrut": "MAT1000 et (MAT1720 ou MAT1978).",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1000"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MAT 1720"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2719/",
+    "scrapeISO": "2026-09-11T11:17:23.363Z"
+  },
+  "MAT 6117": {
+    "code": "MAT 6117",
+    "titre": "Mesure et intégration",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ensembles mesurables, mesure de Lebesgue, théorèmes de Lusin et de Egorov, intégrale de Lebesgue, théorème de Fubini, espaces Lp, éléments de la théorie ergodique, mesure et dimension de Hausdorff, ensembles fractals.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-6117/",
+    "scrapeISO": "2026-09-11T11:17:25.755Z"
+  },
+  "MAT 6701": {
+    "code": "MAT 6701",
+    "titre": "Probabilités",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Espace de probabilité, variables aléatoires, indépendance, espérance mathématique, modes de convergence, lois des grands nombres, théorème central limite, espérance conditionnelle et martingales. Introduction au mouvement brownien.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-6701/",
+    "scrapeISO": "2026-09-11T11:17:27.785Z"
+  },
+  "MAT 1460": {
+    "code": "MAT 1460",
+    "titre": "Modélisation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation à la modélisation. Formulation d'un problème bien cerné, identification des quantités-clés, collection de données fiables, formulation en termes de mathématiques et solution, comparaison des résultats aux données, communication des résultats.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1460/",
+    "scrapeISO": "2026-09-11T11:17:46.695Z"
+  },
+  "MAT 2300": {
+    "code": "MAT 2300",
+    "titre": "Géométrie différentielle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Courbes dans R3 : courbure, torsion, équations de Frenet. Surfaces dans R3 : première et seconde formes fondamentales, courbures de Gauss et moyenne. Isométries et theorema egregium.",
+    "prealablesBrut": "MAT1000 et MAT1400 et MAT1600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1400"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2300/",
+    "scrapeISO": "2026-09-11T11:17:46.818Z"
+  },
+  "MAT 2600": {
+    "code": "MAT 2600",
+    "titre": "Algèbre 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Exemples de groupes : groupe symétrique, groupes linéaires. Sous-groupes et théorème de Lagrange. Groupe quotient et théorèmes d'isomorphisme. Actions et actions linéaires. Théorème de Sylow.",
+    "prealablesBrut": "MAT1600",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1600"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2600/",
+    "scrapeISO": "2026-09-11T11:17:49.256Z"
+  },
+  "MAT 1681": {
+    "code": "MAT 1681",
+    "titre": "Mathématiques assistées par ordinateur",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Travaux pratiques en Mathematica : expressions, listes, fonctions, récursions, itérations, dérivations, intégrations, graphismes en 2 et 3 dimensions.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "MAT1681 et MAT1400 et MAT1600",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1681/",
+    "scrapeISO": "2026-09-11T11:17:50.663Z"
+  },
+  "MAT 2450": {
+    "code": "MAT 2450",
+    "titre": "Mathématiques et technologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de plusieurs sujets dans des domaines où les mathématiques jouent un rôle essentiel pour la technologie : informatique, cryptographie, transports, biotechnologie, pharmacie, traitement d'images, reconnaissances de formes, etc.",
+    "prealablesBrut": "MAT1400 et MAT1600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1400"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        }
+      ]
+    },
+    "concomitantsBrut": "MAT2450 et MAT1720 ou MAT1978",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2450/",
+    "scrapeISO": "2026-09-11T11:17:50.820Z"
+  },
+  "MAT 2460": {
+    "code": "MAT 2460",
+    "titre": "Dynamiques adaptatives",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux dynamiques adaptatives: évolution des génomes, quasi-espèces, dynamiques des jeux, dynamiques de population (finies et infinies), théorie adaptative sur graphes, automates. Applications : biologie, écologie, finance, médecine, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2460/",
+    "scrapeISO": "2026-09-11T11:17:53.060Z"
+  },
+  "MAT 2466": {
+    "code": "MAT 2466",
+    "titre": "Analyse appliquée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fonctions Gamma et Bêta, séries de Fourier et d'autres fonctions orthogonales. Problème de Sturm-Liouville, approximation en moyenne quadratique, séparation de variables pour les équations aux dérivées partielles, transformées de Fourier et Laplace.",
+    "prealablesBrut": "MAT1000 et MAT1400 et MAT1600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1400"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2466/",
+    "scrapeISO": "2026-09-11T11:17:55.136Z"
+  },
+  "MAT 2531": {
+    "code": "MAT 2531",
+    "titre": "Histoire des mathématiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les mathématiques dans l'Antiquité. Les mathématiques en Chine, en Inde et chez les Arabes. Les mathématiques en Europe de 500 à 1600. La géométrie analytique. Le calcul infinitésimal. Le développement de l'analyse. Les mathématiques du XXe siècle.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "MAT2531 et MAT1400 et MAT1600",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2531/",
+    "scrapeISO": "2026-09-11T11:17:56.478Z"
+  },
+  "MAT 2611": {
+    "code": "MAT 2611",
+    "titre": "Algèbre 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Anneaux, idéaux et modules, théorèmes d’isomorphisme, factorisation unique dans un domaine principal, forme normale d’un module noetherien sur un domaine principal, forme canonique et forme normale de Jordan d’une matrice.",
+    "prealablesBrut": "MAT2600",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 2600"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-2611/",
+    "scrapeISO": "2026-09-11T11:17:58.345Z"
+  },
+  "MAT 3162": {
+    "code": "MAT 3162",
+    "titre": "Équations aux dérivées partielles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Équations du premier ordre et du second ordre. Caractéristiques et classification. Équations elliptiques : de Laplace, de Poisson. Équation des ondes. Équation de la chaleur. Introduction aux fonctions de Green.",
+    "prealablesBrut": "MAT1000 et MAT2115",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 2115"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3162/",
+    "scrapeISO": "2026-09-11T11:18:00.292Z"
+  },
+  "MAT 3300": {
+    "code": "MAT 3300",
+    "titre": "Introduction aux variétés différentiables",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Variétés différentiables dans R^n. Espaces tangent et cotangent. Champs de vecteurs. Degré des applications, indices des zéros des champs des vecteurs. Théorème de point fixe de Brouwer. Théorème fondamental de l’algèbre. Théorème de Poincaré-Hopf.",
+    "prealablesBrut": "MAT2100.",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 2100"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3300/",
+    "scrapeISO": "2026-09-11T11:18:02.297Z"
+  },
+  "MAT 3363": {
+    "code": "MAT 3363",
+    "titre": "Topologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Espaces topologiques. Variétés topologiques, définitions et exemples. Théorème de classification des surfaces. Groupe fondamental. Théorème de Van Kampen. Revêtements.",
+    "prealablesBrut": "MAT1000",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3363/",
+    "scrapeISO": "2026-09-11T11:18:04.294Z"
+  },
+  "MAT 3450": {
+    "code": "MAT 3450",
+    "titre": "Introduction à la modélisation mathématique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Processus de modélisation mathématique: simplification du problème sous étude, formulation mathématique, analyse et interprétation dans la discipline d'origine. Étude de problèmes issus de la biologie contemporaine.",
+    "prealablesBrut": "MAT1400 ET MAT1600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1400"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3450/",
+    "scrapeISO": "2026-09-11T11:18:05.997Z"
+  },
+  "MAT 3460": {
+    "code": "MAT 3460",
+    "titre": "Modélisation mathématique spécialisée et appliquée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Processus de modélisation mathématiques avancés: simulations, estimation de paramètres, interprétation. Introduction à l’utilisation des mathématiques dans un milieu multidisciplinaire (médecine, neurosciences, etc.). Étude de cas et projet appliqué.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3460/",
+    "scrapeISO": "2026-09-11T11:18:07.915Z"
+  },
+  "MAT 3632": {
+    "code": "MAT 3632",
+    "titre": "Théorie des nombres",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théorème fondamental de l'arithmétique. Équations diophantiennes. Congruences linéaires. Théorèmes d'Euler et de Fermat. Théorie des indices. Racines primitives. Résidus quadratiques. Congruences générales. Nombres premiers.",
+    "prealablesBrut": "MAT1500 ou MAT2600",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1500"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 2600"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3632/",
+    "scrapeISO": "2026-09-11T11:18:09.273Z"
+  },
+  "MAT 3634": {
+    "code": "MAT 3634",
+    "titre": "Théorie analytique des nombres",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Arguments de comptage, estimations asymptotiques, fonctions arithmétiques et séries de Dirichlet, théorème des nombres premiers. Anatomie des entiers, arguments probabilistes, théorème d’Erdos-Kac.",
+    "prealablesBrut": "MAT3632.",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 3632"
+    },
+    "concomitantsBrut": "MAT2130",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3634/",
+    "scrapeISO": "2026-09-11T11:18:11.069Z"
+  },
+  "MAT 3661": {
+    "code": "MAT 3661",
+    "titre": "Théorie de Galois",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Compléments de théorie des groupes. Théorie des corps, groupe de Galois, corps de Galois, résolubilité d'équation par radicaux. Résolution de problèmes classiques.",
+    "prealablesBrut": "MAT2600",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 2600"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-3661/",
+    "scrapeISO": "2026-09-11T11:18:12.955Z"
+  },
+  "MAT 4000": {
+    "code": "MAT 4000",
+    "titre": "Mémoire de fin d'études",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Un projet est suggéré à chaque étudiant lui permettant de faire une synthèse de ses connaissances mathématiques. Remarques: L'étudiant soumet un rapport et fait un exposé oral à la fin du trimestre.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-4000/",
+    "scrapeISO": "2026-09-11T11:18:14.121Z"
+  },
+  "MAT 6124": {
+    "code": "MAT 6124",
+    "titre": "Analyse fonctionnelle",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Espaces d’Hilbert, de Banach, théorèmes de Hahn-Banach, de Banach-Steinhaus et du graphe fermé, topologies faibles, espaces réflexifs, décomposition spectrale des opérateurs auto-adjoints compacts.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-6124/",
+    "scrapeISO": "2026-09-11T11:18:16.060Z"
+  },
+  "MAT 1332": {
+    "code": "MAT 1332",
+    "titre": "Géométrie euclidienne",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Géométrie euclidienne dans le plan: figures semblables, aires planes. Éléments de géométrie dans l'espace: droites et plans, polyèdres, corps ronds. Systèmes d'axiomes et introduction aux géométries non euclidiennes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mat-1332/",
+    "scrapeISO": "2026-09-11T11:19:28.617Z"
+  }
+}

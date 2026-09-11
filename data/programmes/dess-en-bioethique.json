@@ -1,0 +1,187 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-bioethique",
+  "nom": "DESS en bioéthique",
+  "orientation": null,
+  "segments": [
+    "74"
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 12 crédits obligatoires, 15 à 18 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 18
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "BIE 6000",
+        "BIE 6012",
+        "BIE 6017",
+        "SPU 6600"
+      ],
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Axe de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 6003",
+        "BIE 6006",
+        "BIE 6008",
+        "BIE 6016"
+      ],
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 6001",
+        "BIE 6004",
+        "BIE 6503"
+      ],
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BIE 6104"
+      ],
+      "notes": [
+        "Veuillez noter que le cours BIE6104 est soumis à l'approbation de la direction du programme."
+      ]
+    },
+    {
+      "id": "74E",
+      "cle": "74/74E",
+      "segment": "74",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 60191",
+        "BIE 60192",
+        "BIE 60193",
+        "BIE 60201",
+        "BIE 60202",
+        "BIE 60203",
+        "BIE 60211",
+        "BIE 60212",
+        "BIE 60213"
+      ],
+      "notes": []
+    },
+    {
+      "id": "74F",
+      "cle": "74/74F",
+      "segment": "74",
+      "nom": "Thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 6155",
+        "ANT 6156",
+        "ASA 6754",
+        "PHI 6520",
+        "PHI 6575",
+        "PHI 6576",
+        "PHM 6071",
+        "PLU 6043"
+      ],
+      "notes": []
+    },
+    {
+      "id": "74G",
+      "cle": "74/74G",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": [
+        "Avec l'approbation de la direction du programme, choisir un cours jugé pertinent. Un maximum de 3 crédits de 1er cycle (de 3e année) est permis."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A20)\nLe D.E.S.S. comporte 30 crédits. Il est offert selon les trois axes de spécialisation suivants :\n- Éthique et soins de santé\n- Éthique de la recherche\n- Éthique et santé des populations",
+    "Segment 74 — Les crédits sont répartis de la façon suivante : 12 crédits obligatoires, 15 à 18 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-bioethique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:42.548Z"
+}

@@ -1,0 +1,132 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-apprentissage-automatique",
+  "nom": "DESS en apprentissage automatique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les cours du D.E.S.S. sont répartis de la façon suivante : 28 crédits obligatoires, dont 12 attribués à un stage, et 2 crédits à option.",
+    "obligatoire": {
+      "min": 28,
+      "max": 28
+    },
+    "option": {
+      "min": 2,
+      "max": 2
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements en apprentissage automatique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "IFT 6135",
+        "IFT 6390",
+        "IFT 6758",
+        "IFT 6759"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondir les connaissances",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "IFT 6010",
+        "IFT 6132",
+        "IFT 6162",
+        "IFT 6163",
+        "IFT 6164",
+        "IFT 6166",
+        "IFT 6167",
+        "IFT 6168",
+        "IFT 6169",
+        "IFT 6255",
+        "IFT 6269",
+        "IFT 6285",
+        "IFT 6289",
+        "IFT 6551",
+        "IFT 6756",
+        "IFT 6757",
+        "IFT 6760A",
+        "IFT 6760B",
+        "IFT 6760C",
+        "IFT 6765",
+        "MAT 6215",
+        "MAT 6493",
+        "MAT 6495"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Contextualiser les connaissances",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - Maximum 2 crédits.",
+      "cours": [
+        "IFT 6761",
+        "IFT 6762"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "IFT 6919"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A21)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les cours du D.E.S.S. sont répartis de la façon suivante : 28 crédits obligatoires, dont 12 attribués à un stage, et 2 crédits à option.",
+    "Segment 70 — Le choix de cours doit être conforme à l'un des plans d'études spécifiés par le Département selon le domaine choisi."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-apprentissage-automatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:40.678Z"
+}

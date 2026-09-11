@@ -1,0 +1,61 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-droit",
+  "nom": "Doctorat en droit",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "DRT 7001",
+        "DRT 7002"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Activité de recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits",
+      "cours": [
+        "DRT 7012",
+        "DRT 7700"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A26)\nLe doctorat comporte 90 crédits répartis de la façon suivante : 90 crédits obligatoires, dont 84 crédits attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 70 — Il est suggéré aux étudiants n'ayant pas étudié le droit au Canada de suivre un cours en surplus de recherche documentaire. Les crédits de ce cours ne seront pas inclus dans le total du programme.",
+    "Segment 70 — Pour les étudiants qui s'intéressent à l'innovation, science et technologie, il sera possible de suivre quelques cours spécifiquement conçus pour cette thématique en surplus. Les crédits de ces cours ne seront pas inclus dans le total du programme."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-droit/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:47.830Z"
+}

@@ -1,48 +1,61 @@
 /**
- * Journal des problèmes de scrape.
+ * Journal du scrape, TYPÉ par le contrat.
  *
- * `Catalogue` (gelé) n'a pas de champ pour ça : il n'expose que
- * `prealablesNonParses`. Or la règle du projet est qu'une information que la
- * page n'a pas livrée devient `null` PLUS une entrée dans un journal — un repli
- * muet rend l'audit faux sans faire échouer un seul test.
+ * En v1 le journal voyageait dans une clé `_journal` hors contrat : invisible
+ * pour l'UI, donc exactement le repli silencieux que le projet combat. La v2 lui
+ * donne `EntreeJournal` et `Catalogue.journal`, et ce fichier n'est plus qu'un
+ * accumulateur commode qui produit ce type-là — plus de forme parallèle.
  *
- * Donc le journal voyage à deux endroits : la sortie console du scrape, et la
- * clé `_journal` de `data/catalogue.json`. Cette clé supplémentaire ne casse
- * pas le contrat (un objet avec des clés en plus reste assignable à
- * `Catalogue`) et suit le précédent de `_avertissement` dans la fixture de
- * l'intégratrice. Si l'intégratrice préfère un champ typé, il faudra ajouter
- * `problemes: string[]` à `Catalogue` — demandé dans le rapport.
+ * La règle à laquelle ce journal sert : une information que la page n'a pas
+ * livrée devient `null` PLUS une entrée ici. Un champ vide sans entrée de
+ * journal est un bogue, pas une donnée.
  */
-
-export type GraviteProbleme = "manque" | "inattendu" | "info";
-
-export interface Probleme {
-  gravite: GraviteProbleme;
-  /** Où : un code de cours, un id de bloc, une URL. */
-  ou: string;
-  /** Quoi, en français, assez précis pour être vérifié à la main. */
-  quoi: string;
-}
+import type { EntreeJournal, GenreEntreeJournal } from "../../lib/types";
 
 export class Journal {
-  entrees: Probleme[] = [];
+  entrees: EntreeJournal[] = [];
 
-  /** La page n'a pas livré une information attendue : champ à `null`. */
-  manque(ou: string, quoi: string): void {
-    this.entrees.push({ gravite: "manque", ou, quoi });
-  }
-
-  /** La page a livré une forme que le code ne sait pas réduire. */
-  inattendu(ou: string, quoi: string): void {
-    this.entrees.push({ gravite: "inattendu", ou, quoi });
+  private pousser(genre: GenreEntreeJournal, sujet: string, message: string): void {
+    this.entrees.push({ genre, sujet, message });
   }
 
   /** Observation utile aux autres chantiers, pas un défaut. */
-  info(ou: string, quoi: string): void {
-    this.entrees.push({ gravite: "info", ou, quoi });
+  info(sujet: string, message: string): void {
+    this.pousser("info", sujet, message);
+  }
+
+  /** La page n'a pas livré une information attendue : le champ reste `null`. */
+  manque(sujet: string, message: string): void {
+    this.pousser("manque", sujet, message);
+  }
+
+  /** La page a livré une forme que le code ne sait pas réduire. */
+  inattendu(sujet: string, message: string): void {
+    this.pousser("inattendu", sujet, message);
+  }
+
+  /** Le scrape a échoué sur cet objet : rien n'a été produit pour lui. */
+  erreur(sujet: string, message: string): void {
+    this.pousser("erreur", sujet, message);
+  }
+
+  absorber(autre: Journal): void {
+    this.entrees.push(...autre.entrees);
   }
 
   get vide(): boolean {
     return this.entrees.length === 0;
+  }
+
+  /** Compte par genre, pour la ligne de résumé du scrape. */
+  comptes(): Record<GenreEntreeJournal, number> {
+    const out: Record<GenreEntreeJournal, number> = {
+      info: 0,
+      manque: 0,
+      inattendu: 0,
+      erreur: 0,
+    };
+    for (const e of this.entrees) out[e.genre] += 1;
+    return out;
   }
 }

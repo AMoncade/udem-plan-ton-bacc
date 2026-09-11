@@ -1,0 +1,425 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-droit",
+  "nom": "Baccalauréat en droit",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 101,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 68 crédits obligatoires, de 30 à 33 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 68,
+      "max": 68
+    },
+    "option": {
+      "min": 30,
+      "max": 33
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Éléments fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 31,
+          "max": 31
+        }
+      },
+      "regleBrut": "Obligatoire - 31 crédits.",
+      "cours": [
+        "DRT 1001",
+        "DRT 1010",
+        "DRT 1011",
+        "DRT 1221",
+        "DRT 1222",
+        "DRT 1223",
+        "DRT 1224",
+        "DRT 1225",
+        "DRT 1501",
+        "DRT 1502",
+        "DRT 1505"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 26,
+          "max": 26
+        }
+      },
+      "regleBrut": "Obligatoire - 26 crédits.",
+      "cours": [
+        "DRT 2002",
+        "DRT 2022",
+        "DRT 2100",
+        "DRT 2233",
+        "DRT 2234",
+        "DRT 2400",
+        "DRT 2402",
+        "DRT 2501",
+        "DRT 2505"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compétences transversales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "DRT 1911",
+        "DRT 1912",
+        "DRT 2923",
+        "DRT 2924",
+        "DRT 3935"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Systèmes juridiques et fondements théoriques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Maximum 24 crédits.",
+      "cours": [
+        "DRT 3001",
+        "DRT 3003",
+        "DRT 3005",
+        "DRT 3008",
+        "DRT 3011",
+        "DRT 3013",
+        "DRT 3015",
+        "DRT 3016",
+        "DRT 3021",
+        "DRT 3022"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Droit international",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Maximum 24 crédits.",
+      "cours": [
+        "DRT 3103",
+        "DRT 3104",
+        "DRT 3105",
+        "DRT 3106",
+        "DRT 3107",
+        "DRT 3108",
+        "DRT 3109",
+        "DRT 3112",
+        "DRT 3121"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Droit civil",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Maximum 30 crédits.",
+      "cours": [
+        "DRT 3201",
+        "DRT 3202",
+        "DRT 3203",
+        "DRT 3204",
+        "DRT 3205",
+        "DRT 3206",
+        "DRT 3209",
+        "DRT 3210",
+        "DRT 3221",
+        "DRT 3231"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Droit des affaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Maximum 27 crédits.",
+      "cours": [
+        "DRT 3401",
+        "DRT 3402",
+        "DRT 3404",
+        "DRT 3406",
+        "DRT 3407",
+        "DRT 3408",
+        "DRT 3421",
+        "DRT 3422"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Droit public et droit pénal",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Maximum 30 crédits.",
+      "cours": [
+        "DRT 3501",
+        "DRT 3502",
+        "DRT 3503",
+        "DRT 3505",
+        "DRT 3506",
+        "DRT 3508",
+        "DRT 3509",
+        "DRT 3521"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Droit du travail et droit social",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "DRT 3600",
+        "DRT 3603",
+        "DRT 3606",
+        "DRT 3621"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Droit fiscal",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "DRT 3701",
+        "DRT 3702",
+        "DRT 3703"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70K",
+      "cle": "70/70K",
+      "segment": "70",
+      "nom": "Formation pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "DRT 3910",
+        "DRT 3911",
+        "DRT 3912",
+        "DRT 3913",
+        "DRT 3914",
+        "DRT 3915",
+        "DRT 3916",
+        "DRT 3918",
+        "DRT 3940",
+        "DRT 3941",
+        "DRT 3999"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70L",
+      "cle": "70/70L",
+      "segment": "70",
+      "nom": "Formation pratique complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "DRT 3910",
+        "DRT 3911",
+        "DRT 3912",
+        "DRT 3913",
+        "DRT 3914",
+        "DRT 3915",
+        "DRT 3916",
+        "DRT 3918",
+        "DRT 3940",
+        "DRT 3941",
+        "DRT 3947",
+        "DRT 3948",
+        "DRT 3951",
+        "DRT 3965",
+        "DRT 3966",
+        "DRT 3990",
+        "DRT 3991",
+        "DRT 3999"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70M",
+      "cle": "70/70M",
+      "segment": "70",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Maximum 27 crédits.",
+      "cours": [
+        "DRT 3803",
+        "DRT 3806",
+        "DRT 3807",
+        "DRT 3808",
+        "DRT 3810",
+        "DRT 3811",
+        "DRT 3812",
+        "DRT 3814",
+        "DRT 3815",
+        "DRT 3881"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70W",
+      "cle": "70/70W",
+      "segment": "70",
+      "nom": "Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "DRT 6565",
+        "DRT 6566",
+        "DRT 6567",
+        "DRT 6568",
+        "DRT 6569",
+        "DRT 6570",
+        "DRT 6571",
+        "DRT 6572",
+        "DRT 6573",
+        "DRT 6830B",
+        "DRT 6845A",
+        "DRT 6910",
+        "DRT 6920",
+        "DRT 6950",
+        "DRT 6965C"
+      ],
+      "notes": [
+        "Cheminement régulier : 0 crédit Cheminement Honor : 12 crédits"
+      ]
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 11 (A22)\nLe baccalauréat comporte 101 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 68 crédits obligatoires, de 30 à 33 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 70 — En 1re année, l'étudiant s'inscrit aux cours du bloc 70A et aux cours DRT1911 et DRT1912 du bloc C à moins qu'il ne bénéficie d'une reconnaissance de crédits auquel cas il doit s'assurer d'avoir complété tous les cours du bloc ou des cours équivalents au terme de sa 1re année d'inscription dans le programme.",
+    "Segment 70 — Une combinaison de crédits choisis dans plusieurs blocs à option est recommandée."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-droit/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:21.892Z"
+}

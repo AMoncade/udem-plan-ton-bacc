@@ -27,8 +27,13 @@
  *     (STT 2400 : « Préalable : MAT1600; Concomitant : STT2700 »).
  *   - 4 fiches sur 55 n'ont AUCUN trimestre publié (ACT 3253, ACT 4000,
  *     MAT 2719) : `trimestres: []` est la vérité de la page, pas un oubli.
- *   - une étiquette inconnue existe (« Restrictions d'inscription », DMO 1000) :
- *     elle part au journal, elle n'est jamais rangée dans les préalables.
+ *   - « Restrictions d'inscription » est une exigence DISTINCTE, collée dans le
+ *     même texte derrière un point-virgule (DMO 1000 :
+ *     « Restrictions d'inscription: DMO1000/DMO1010 »). Elle a son champ en v2,
+ *     `Cours.restrictionsBrut` : en v1 elle tombait dans le journal non typé et
+ *     rien ne pouvait l'afficher. MUI 1162A est le cas pur — il n'a QUE des
+ *     restrictions, et un parseur qui les confondrait avec des préalables y
+ *     verrait une vingtaine de cours requis, donc un cours verrouillé à jamais.
  */
 import type { Cours, NoeudPrealable, Saison, Trimestre } from "../../lib/types";
 import { normaliserCode } from "../../lib/codes";
@@ -51,7 +56,8 @@ export interface SegmentExigence {
 export interface Exigences {
   prealablesBrut: string | null;
   concomitantsBrut: string | null;
-  /** Tout ce qui n'est ni préalable ni concomitant : doit finir au journal. */
+  restrictionsBrut: string | null;
+  /** Tout ce qui n'est ni préalable, ni concomitant, ni restriction : au journal. */
   autres: SegmentExigence[];
 }
 
@@ -63,7 +69,12 @@ export interface Exigences {
  * bien ce que dit la page. Ne pas confondre avec « je n'ai pas su lire ».
  */
 export function parseExigences(htmlExigence: string | null): Exigences {
-  const out: Exigences = { prealablesBrut: null, concomitantsBrut: null, autres: [] };
+  const out: Exigences = {
+    prealablesBrut: null,
+    concomitantsBrut: null,
+    restrictionsBrut: null,
+    autres: [],
+  };
   if (htmlExigence === null) return out;
 
   const paragraphes = tousContenus(htmlExigence, "p");
@@ -89,6 +100,14 @@ export function parseExigences(htmlExigence: string | null): Exigences {
         out.prealablesBrut = valeur;
       } else if (/^Concomitants?$/i.test(etiquette) && out.concomitantsBrut === null) {
         out.concomitantsBrut = valeur;
+      } else if (
+        // « Restrictions d'inscription », au singulier comme au pluriel, avec ou
+        // sans espace avant le deux-points. Jamais un préalable : c'est la liste
+        // des cours qu'on ne peut PAS cumuler avec celui-ci.
+        /^Restrictions?\s+d['’]inscription$/i.test(etiquette) &&
+        out.restrictionsBrut === null
+      ) {
+        out.restrictionsBrut = valeur;
       } else {
         out.autres.push({ etiquette, texte: valeur });
       }
@@ -213,7 +232,8 @@ export function parseFicheCours(
   for (const autre of exigences.autres) {
     journal.inattendu(
       code,
-      `exigence d'inscription non rangée (ni préalable ni concomitant) : « ${autre.etiquette ?? "(sans étiquette)"}: ${autre.texte} »`,
+      "exigence d'inscription non rangée (ni préalable, ni concomitant, ni restriction) : " +
+        `« ${autre.etiquette ?? "(sans étiquette)"}: ${autre.texte} »`,
     );
   }
 
@@ -237,6 +257,7 @@ export function parseFicheCours(
       prealablesBrut: exigences.prealablesBrut,
       prealables,
       concomitantsBrut: exigences.concomitantsBrut,
+      restrictionsBrut: exigences.restrictionsBrut,
       trimestres,
       url,
       scrapeISO: recupereISO,

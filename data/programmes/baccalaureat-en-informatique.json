@@ -1,0 +1,484 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-informatique",
+  "nom": "Baccalauréat en informatique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "76",
+    "77",
+    "78"
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Programmation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "IFT 1005",
+        "IFT 1015",
+        "IFT 1025",
+        "IFT 2015",
+        "IFT 2035"
+      ],
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Système",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "IFT 1215",
+        "IFT 1227",
+        "IFT 2245",
+        "IFT 2255"
+      ],
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Théorie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "IFT 1065",
+        "IFT 1575",
+        "IFT 2105",
+        "IFT 2125"
+      ],
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MAT 1400",
+        "MAT 1600",
+        "MAT 1978"
+      ],
+      "notes": []
+    },
+    {
+      "id": "01Y",
+      "cle": "01/01Y",
+      "segment": "01",
+      "nom": "Contributions d'autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANG 1903",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1501",
+        "BCM 1503",
+        "BIO 1203",
+        "COM 2001",
+        "DRT 1002S",
+        "ECN 1000",
+        "ECN 1050",
+        "ECN 2230",
+        "GEO 1532",
+        "GEO 1542",
+        "HOR 1200",
+        "LCO 2030",
+        "LNG 1080",
+        "LNG 1955",
+        "MAT 2450",
+        "MAT 2531",
+        "MCB 1979",
+        "PHI 1130",
+        "PHI 2005",
+        "PHY 1651",
+        "PSY 2055",
+        "PSY 2065",
+        "REI 1010"
+      ],
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle IFT."
+      ]
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "Interfaces et bases de données",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "IFT 2905",
+        "IFT 2935"
+      ],
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "Génie logiciel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 3911",
+        "IFT 3913"
+      ],
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "IFT 2425",
+        "IFT 2505",
+        "IFT 3065",
+        "IFT 3155",
+        "IFT 3205",
+        "IFT 3225",
+        "IFT 3245",
+        "IFT 3275",
+        "IFT 3295",
+        "IFT 3325",
+        "IFT 3335",
+        "IFT 3345",
+        "IFT 3355",
+        "IFT 3375",
+        "IFT 3395",
+        "IFT 3515",
+        "IFT 3545",
+        "IFT 3655",
+        "IFT 3700",
+        "STT 2700"
+      ],
+      "notes": []
+    },
+    {
+      "id": "76D",
+      "cle": "76/76D",
+      "segment": "76",
+      "nom": "Projet et stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "HOR 3200",
+        "IFT 3150",
+        "IFT 3151",
+        "IFT 3710"
+      ],
+      "notes": []
+    },
+    {
+      "id": "77A",
+      "cle": "77/77A",
+      "segment": "77",
+      "nom": "Interfaces et bases de données",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "IFT 2905",
+        "IFT 2935"
+      ],
+      "notes": []
+    },
+    {
+      "id": "77B",
+      "cle": "77/77B",
+      "segment": "77",
+      "nom": "Génie logiciel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 3911",
+        "IFT 3913"
+      ],
+      "notes": []
+    },
+    {
+      "id": "77C",
+      "cle": "77/77C",
+      "segment": "77",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "IFT 2550",
+        "IFT 3550",
+        "IFT 3551"
+      ],
+      "notes": []
+    },
+    {
+      "id": "77D",
+      "cle": "77/77D",
+      "segment": "77",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 2425",
+        "IFT 2505",
+        "IFT 3065",
+        "IFT 3155",
+        "IFT 3205",
+        "IFT 3225",
+        "IFT 3245",
+        "IFT 3275",
+        "IFT 3295",
+        "IFT 3325",
+        "IFT 3335",
+        "IFT 3345",
+        "IFT 3355",
+        "IFT 3375",
+        "IFT 3395",
+        "IFT 3515",
+        "IFT 3545",
+        "IFT 3655",
+        "IFT 3700",
+        "STT 2700"
+      ],
+      "notes": []
+    },
+    {
+      "id": "78A",
+      "cle": "78/78A",
+      "segment": "78",
+      "nom": "Méthodes formelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 2425",
+        "IFT 2505",
+        "IFT 3245",
+        "IFT 3395",
+        "IFT 3655",
+        "IFT 3700"
+      ],
+      "notes": []
+    },
+    {
+      "id": "78B",
+      "cle": "78/78B",
+      "segment": "78",
+      "nom": "Projet honor",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "IFT 4055"
+      ],
+      "notes": []
+    },
+    {
+      "id": "78C",
+      "cle": "78/78C",
+      "segment": "78",
+      "nom": "Cours de deuxième cycle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 7,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 7 crédits, maximum 8 crédits.",
+      "cours": [
+        "BIN 6002",
+        "BIN 6003",
+        "IFT 6010",
+        "IFT 6042",
+        "IFT 6080",
+        "IFT 6145",
+        "IFT 6150",
+        "IFT 6155",
+        "IFT 6172",
+        "IFT 6180",
+        "IFT 6232",
+        "IFT 6255",
+        "IFT 6261",
+        "IFT 6271",
+        "IFT 6291",
+        "IFT 6292",
+        "IFT 6521",
+        "IFT 6551",
+        "IFT 6561"
+      ],
+      "notes": []
+    },
+    {
+      "id": "78D",
+      "cle": "78/78D",
+      "segment": "78",
+      "nom": "Compléments",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "HOR 3200",
+        "IFT 2905",
+        "IFT 2935",
+        "IFT 3065",
+        "IFT 3151",
+        "IFT 3155",
+        "IFT 3205",
+        "IFT 3225",
+        "IFT 3275",
+        "IFT 3295",
+        "IFT 3325",
+        "IFT 3335",
+        "IFT 3345",
+        "IFT 3355",
+        "IFT 3375",
+        "IFT 3515",
+        "IFT 3545",
+        "IFT 3710",
+        "IFT 3911",
+        "IFT 3913",
+        "STT 2700"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 22 (A15)\nLe baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et est offert selon 2 orientations et un cheminement particulier :\n- orientation générale (segment 76)\n- orientation Coop (segment 77)\n- cheminement honor (segment 78).\nLes crédits du baccalauréat (tronc commun et orientations) sont répartis de la façon suivante :\n- orientation générale (segment 01 et 76) : 57 crédits obligatoires, 27 crédits à option et 6 crédits au choix\n- orientation Coop (segment 01 et 77) : 66 crédits obligatoires dont 9 de stages, 18 crédits à option et 6 crédits au choix\n- cheminement honor (segment 01 et 78) : 54 crédits obligatoires, 30 crédits à option et 6 crédits au choix.",
+    "Segment 01 Commun pour tous les étudiants du programme d'études — Les crédits du tronc commun sont répartis de la façon suivante : 51 crédits obligatoires, 6 crédits à option et 6 crédits au choix.",
+    "Segment 76 Propre à l'orientation générale — Les crédits de l'Orientation sont répartis de la façon suivante : 6 crédits obligatoires et 21 crédits à option.",
+    "Segment 77 Propre à l'orientation COOP — Les crédits de l'Orientation sont répartis de la façon suivante : 15 crédits obligatoires et 12 crédits à option.",
+    "Segment 77 Propre à l'orientation COOP — Pour être inscrit à l'orientation COOP, l'étudiant doit avoir réussi 30 crédits du Baccalauréat en maintenant une moyenne cumulative de 2,7 et conserver cette moyenne tout au long des études.",
+    "Segment 78 Propre au cheminement honor — Les crédits du cheminement sont répartis de la façon suivante : 3 crédits obligatoires et 24 crédits à option.",
+    "Segment 78 Propre au cheminement honor — Pour être inscrit au cheminement honor, l'étudiant doit avoir réussi 45 crédits du Baccalauréat en maintenant une moyenne cumulative de 3,5 et conserver cette moyenne tout au long des études."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:26.781Z"
+}

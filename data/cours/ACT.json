@@ -1,0 +1,356 @@
+{
+  "ACT 1240": {
+    "code": "ACT 1240",
+    "titre": "Mathématiques financières",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Mesures d'intérêt, valeurs présentes, accumulées, annuités certaines à paiements égaux et non-égaux, remboursement des prêts, obligations, flux monétaires généraux et portefeuilles, duration, immunisation, déterminants des taux d'intérêt.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-1240/",
+    "scrapeISO": "2026-09-11T11:16:26.177Z"
+  },
+  "ACT 2243": {
+    "code": "ACT 2243",
+    "titre": "Investissements",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Marchés financiers et actifs financiers qui s'y transigent (actions, titres à revenu fixe). Construction de portefeuilles, frontière efficace. Modèle CAPM. Efficience des marchés et finance comportementale. Mesures de risque.",
+    "prealablesBrut": "ACT1240",
+    "prealables": {
+      "genre": "cours",
+      "code": "ACT 1240"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2243/",
+    "scrapeISO": "2026-09-11T11:16:28.120Z"
+  },
+  "ACT 2250": {
+    "code": "ACT 2250",
+    "titre": "Mathématiques de l'assurance-vie 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Assurances à long terme, fonction de survie, probabilités de décès, force de mortalité, tables de mortalité, hypothèses pour âges fractionnaires, assurance-vie, rentes viagères, perte de l'assureur, calcul des primes périodiques nettes et brutes.",
+    "prealablesBrut": "ACT1240 ET MAT1720",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ACT 1240"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1720"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2250/",
+    "scrapeISO": "2026-09-11T11:16:30.091Z"
+  },
+  "ACT 3201": {
+    "code": "ACT 3201",
+    "titre": "Régimes de retraite",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Système canadien de régimes de retraite publics et privés. Types de régimes privés. Calcul de rentes. Principe de capitalisation. Méthodes actuarielles d'évaluation, hypothèses, gains et pertes. Contexte législatif.",
+    "prealablesBrut": "ACT2250",
+    "prealables": {
+      "genre": "cours",
+      "code": "ACT 2250"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3201/",
+    "scrapeISO": "2026-09-11T11:16:31.624Z"
+  },
+  "ACT 3251": {
+    "code": "ACT 3251",
+    "titre": "Théorie du risque",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modèles de fréquence et de sévérité des sinistres, modèles collectifs, distribution des pertes totales. Types de contrat d'assurance et de réassurance IARD. Effet de modifications de couverture.",
+    "prealablesBrut": "MAT1720",
+    "prealables": {
+      "genre": "cours",
+      "code": "MAT 1720"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3251/",
+    "scrapeISO": "2026-09-11T11:16:33.592Z"
+  },
+  "ACT 2241": {
+    "code": "ACT 2241",
+    "titre": "Produits dérivés et gestion de risque",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Options d'achat/vente, contrats à terme/à livrer, stratégies de gestion des risques, évaluation d'options, parité, arbitrage, modèle binomial, modèle de Black-Scholes, couverture dynamique.",
+    "prealablesBrut": "ACT1240",
+    "prealables": {
+      "genre": "cours",
+      "code": "ACT 1240"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2241/",
+    "scrapeISO": "2026-09-11T11:16:45.166Z"
+  },
+  "ACT 2242": {
+    "code": "ACT 2242",
+    "titre": "Finance corporative",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts de comptabilité et règlementation. Préparation et analyse d'états financiers. Calcul de ratios financiers. Coût de la dette et coût des capitaux propres. Décision d'investissement. Structure du capital, modèle M&M.",
+    "prealablesBrut": "ACT1240",
+    "prealables": {
+      "genre": "cours",
+      "code": "ACT 1240"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2242/",
+    "scrapeISO": "2026-09-11T11:16:46.964Z"
+  },
+  "ACT 2251": {
+    "code": "ACT 2251",
+    "titre": "Mathématiques de l'assurance-vie 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Réserves pour bénéfices; formules prospectives, rétrospective, récursive; réserves modifiées. Vies conjointes, dernier survivant; assurance, rente sur 2 vies; modèles à décréments multiples et applications.",
+    "prealablesBrut": "ACT2250",
+    "prealables": {
+      "genre": "cours",
+      "code": "ACT 2250"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2251/",
+    "scrapeISO": "2026-09-11T11:16:49.373Z"
+  },
+  "ACT 2284": {
+    "code": "ACT 2284",
+    "titre": "Mathématiques de l'assurance IARD",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théorie de l'estimation et de la sélection de modèles paramétriques. Théorie de la crédibilité. Tarification et réserves.",
+    "prealablesBrut": "ACT3251 et STT2700",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ACT 3251"
+        },
+        {
+          "genre": "cours",
+          "code": "STT 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-2284/",
+    "scrapeISO": "2026-09-11T11:16:49.486Z"
+  },
+  "ACT 3230": {
+    "code": "ACT 3230",
+    "titre": "Finance mathématique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Notions de probabilités et calcul stochastique, théorie de l'arbitrage, théorèmes fondamentaux, modèles binomiaux, modèle de Black-Scholes, modèles pour taux d'intérêt, calibration de modèles aux données de marché.",
+    "prealablesBrut": "ACT2241 et MAT2717",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ACT 2241"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 2717"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3230/",
+    "scrapeISO": "2026-09-11T11:16:51.820Z"
+  },
+  "ACT 3253": {
+    "code": "ACT 3253",
+    "titre": "Gestion des risques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Types de risques traditionnels et non traditionnels (ex. risque d’entreprise, risques environnementaux). Méthodes qualitatives et quantitatives d'évaluation et de gestion des risques.",
+    "prealablesBrut": "ACT2250 et ACT3251.",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ACT 2250"
+        },
+        {
+          "genre": "cours",
+          "code": "ACT 3251"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3253/",
+    "scrapeISO": "2026-09-11T11:16:53.615Z"
+  },
+  "ACT 3261": {
+    "code": "ACT 3261",
+    "titre": "Modélisation prédictive",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Techniques de description et de visualisation de données. Applications de modèles linéaires généralisés et d'arbres de décision. Techniques de regroupement de données. Communication et vulgarisation des résultats.",
+    "prealablesBrut": "ACT3251.",
+    "prealables": {
+      "genre": "cours",
+      "code": "ACT 3251"
+    },
+    "concomitantsBrut": "STT3790.",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3261/",
+    "scrapeISO": "2026-09-11T11:16:55.419Z"
+  },
+  "ACT 3282": {
+    "code": "ACT 3282",
+    "titre": "Laboratoire de mathématiques financières",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de problèmes complexes en mathématiques financières. Communication des résultats",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ACT3230",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-3282/",
+    "scrapeISO": "2026-09-11T11:16:56.611Z"
+  },
+  "ACT 4000": {
+    "code": "ACT 4000",
+    "titre": "Mémoire de fin d'études",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Un projet est suggéré à chaque étudiant lui permettant de faire une synthèse de ses connaissances en actuariat ou mathématiques financières. L'étudiant soumet un rapport et fait un exposé oral à la fin du trimestre.",
+    "prealablesBrut": "57 crédits complétés dans le baccalauréat en mathématiques 1-190-1-0 avec une moyenne cumulative supérieure à 3.3.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "57 crédits complétés dans le baccalauréat en mathématiques 1-190-1-0 avec une moyenne cumulative supérieure à 3.3."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-4000/",
+    "scrapeISO": "2026-09-11T11:16:57.790Z"
+  }
+}

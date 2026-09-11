@@ -1,0 +1,380 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-mathematiques",
+  "nom": "Maîtrise en mathématiques",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "73"
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 16
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 16 crédits.",
+      "cours": [
+        "MAT 6117",
+        "MAT 6124",
+        "MAT 6125",
+        "MAT 6129A",
+        "MAT 6139A",
+        "MAT 6215",
+        "MAT 6220",
+        "MAT 6230",
+        "MAT 6330",
+        "MAT 6335",
+        "MAT 6339A",
+        "MAT 6350",
+        "MAT 6354",
+        "MAT 6359A",
+        "MAT 6461",
+        "MAT 6463",
+        "MAT 6465",
+        "MAT 6467",
+        "MAT 6473",
+        "MAT 6475",
+        "MAT 6476",
+        "MAT 6493",
+        "MAT 6495",
+        "MAT 6620",
+        "MAT 6621",
+        "MAT 6623",
+        "MAT 6650",
+        "MAT 6652",
+        "MAT 6654",
+        "MAT 6659A",
+        "MAT 6701",
+        "MAT 6703",
+        "MAT 6709A"
+      ],
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Complément de formation et cours d'autres disciplines ou hors UdeM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Choix - Maximum 4 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours de cycle supérieurs d'autres disciplines ou d'autres universités ou cours de 1er cycle de sigle MAT de 2e ou 3e année avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 29,
+          "max": 29
+        }
+      },
+      "regleBrut": "Obligatoire - 29 crédits.",
+      "cours": [
+        "MAT 6916"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Mathématiques et sciences des données",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "regleBrut": "Option - Minimum 10 crédits, maximum 16 crédits.",
+      "cours": [
+        "ACT 6230",
+        "ACT 6245",
+        "ACT 6275",
+        "MAT 6117",
+        "MAT 6124",
+        "MAT 6125",
+        "MAT 6129A",
+        "MAT 6139A",
+        "MAT 6215",
+        "MAT 6220",
+        "MAT 6230",
+        "MAT 6330",
+        "MAT 6335",
+        "MAT 6339A",
+        "MAT 6350",
+        "MAT 6354",
+        "MAT 6359A",
+        "MAT 6461",
+        "MAT 6463",
+        "MAT 6465",
+        "MAT 6467",
+        "MAT 6473",
+        "MAT 6475",
+        "MAT 6476",
+        "MAT 6493",
+        "MAT 6495",
+        "MAT 6620",
+        "MAT 6621",
+        "MAT 6623",
+        "MAT 6650",
+        "MAT 6652",
+        "MAT 6654",
+        "MAT 6659A",
+        "MAT 6701",
+        "MAT 6703",
+        "MAT 6709A",
+        "STT 6215",
+        "STT 6300",
+        "STT 6410",
+        "STT 6415",
+        "STT 6515",
+        "STT 6516",
+        "STT 6615",
+        "STT 6700",
+        "STT 6705V"
+      ],
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Complément de formation et cours d'autres disciplines ou hors UdeM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours de cycles supérieurs d'autres disciplines ou d'autres universités et/ou cours de 1er cycle de sigle MAT de 2e ou 3e année avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 29,
+          "max": 29
+        }
+      },
+      "regleBrut": "Obligatoire - 29 crédits.",
+      "cours": [
+        "MAT 6916"
+      ],
+      "notes": []
+    },
+    {
+      "id": "MM-73A",
+      "cle": "73/MM-73A",
+      "segment": "73",
+      "nom": "Cheminement avec mémoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 10,
+          "max": 16
+        }
+      },
+      "regleBrut": "Option - Minimum 10 crédits, maximum 16 crédits.",
+      "cours": [
+        "ACT 6230",
+        "ACT 6245",
+        "ACT 6275",
+        "MAT 6117",
+        "MAT 6124",
+        "MAT 6129A",
+        "MAT 6215",
+        "MAT 6220",
+        "MAT 6461",
+        "MAT 6463",
+        "MAT 6465",
+        "MAT 6467",
+        "MAT 6473",
+        "MAT 6493",
+        "MAT 6495",
+        "MAT 6620",
+        "MAT 6621",
+        "MAT 6650",
+        "MAT 6701",
+        "MAT 6703",
+        "MAT 6709A",
+        "STT 6215",
+        "STT 6300",
+        "STT 6410",
+        "STT 6415",
+        "STT 6515",
+        "STT 6516",
+        "STT 6615",
+        "STT 6700",
+        "STT 6705V"
+      ],
+      "notes": []
+    },
+    {
+      "id": "MM-73B",
+      "cle": "73/MM-73B",
+      "segment": "73",
+      "nom": "Complément de formation et cours d'autres disciplines ou hors UdeM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours de cycle supérieurs d'autres disciplines ou d'autres universités et/ou cours de 1er cycle de sigle ACT, MAT ou STT et de 2e ou 3e année avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "MM-73C",
+      "cle": "73/MM-73C",
+      "segment": "73",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 29,
+          "max": 29
+        }
+      },
+      "regleBrut": "Obligatoire - 29 crédits.",
+      "cours": [
+        "MAT 6916"
+      ],
+      "notes": []
+    },
+    {
+      "id": "S-73A",
+      "cle": "73/S-73A",
+      "segment": "73",
+      "nom": "Cheminement avec stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - minimum 15 crédits, maximum 24 crédits.",
+      "cours": [
+        "ACT 6230",
+        "ACT 6245",
+        "ACT 6275",
+        "MAT 6117",
+        "MAT 6124",
+        "MAT 6129A",
+        "MAT 6215",
+        "MAT 6220",
+        "MAT 6461",
+        "MAT 6463",
+        "MAT 6465",
+        "MAT 6467",
+        "MAT 6473",
+        "MAT 6493",
+        "MAT 6495",
+        "MAT 6620",
+        "MAT 6621",
+        "MAT 6650",
+        "MAT 6701",
+        "MAT 6703",
+        "MAT 6709A",
+        "STT 6300",
+        "STT 6410",
+        "STT 6415",
+        "STT 6515",
+        "STT 6516",
+        "STT 6615",
+        "STT 6705V"
+      ],
+      "notes": []
+    },
+    {
+      "id": "S-73B",
+      "cle": "73/S-73B",
+      "segment": "73",
+      "nom": "Complément de formation et cours d'autres disciplines ou hors UdeM",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - Maximum 9 crédits.",
+      "cours": [],
+      "notes": [
+        "Cours de cycles supérieurs d'autres disciplines ou d'autres universités et/ou un maximum de 6 crédits de cours de 1er cycle de sigle ACT, MAT ou STT et de 2e ou 3e année avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "S-73C",
+      "cle": "73/S-73C",
+      "segment": "73",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "MAT 6908"
+      ],
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 09 (A20)\nLa maîtrise comporte 45 crédits. Elle est offerte avec les options suivantes :\n- l'option Mathématiques pures, cheminement avec mémoire (segment 70),\n- l'option Mathématiques appliquées, cheminement avec mémoire (segment 71),\n- l'option Actuariat, cheminement avec mémoire ou avec stage (segment 73).\nOutre les 45 crédits, jusqu'à 9 crédits de cours complémentaires peuvent être imposés à l'étudiant, soit pour parfaire ses connaissances de base en mathématiques, statistique ou informatique, soit pour l'initier à un domaine d'application particulier.\nLe département s'attend à ce que l'étudiant participe régulièrement, et ce tout au long de ses études, au séminaire des étudiants de 2e et 3e cycles de mathématiques.",
+    "Segment 70 Propre à l'option Mathématiques pures — Les crédits de l'option sont répartis de la façon suivante:",
+    "Segment 70 Propre à l'option Mathématiques pures — 29 crédits obligatoires attribués à la recherche, de 12 à 16 crédits à option et un maximum de 4 crédits au choix.",
+    "Segment 70 Propre à l'option Mathématiques pures — Au moins 3 crédits de cours de niveau des études supérieures dans trois des domaines suivants : algèbre, analyse, théorie des nombres, topologie, géométrie, probabilités.",
+    "Segment 71 Propre à l'option Mathématiques appliquées — Les crédits de l'option sont répartis de la façon suivante:",
+    "Segment 71 Propre à l'option Mathématiques appliquées — 29 crédits obligatoires attribués à la recherche, de 10 à 16 crédits à option et un maximum de 6 crédits au choix.",
+    "Segment 71 Propre à l'option Mathématiques appliquées — Au moins 3 crédits de cours de niveau des études supérieures dans trois des domaines suivants : algèbre, analyse, analyse numérique, équations différentielles, probabilités, biomathématiques, science des données.",
+    "Segment 73 Propre à l'option Actuariat — Les crédits de l'option sont répartis de la façon suivante:",
+    "Segment 73 Propre à l'option Actuariat — - cheminement avec mémoire (MM) : 29 crédits obligatoires attribués à la recherche, de 10 à 16 crédits à option et un maximum de 6 crédits au choix.",
+    "Segment 73 Propre à l'option Actuariat — - cheminement avec stage (S) : 21 crédits obligatoires attribués à un stage, de 15 à 24 crédits à option et un maximum de 9 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-mathematiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T11:10:35.682Z"
+}
