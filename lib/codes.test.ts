@@ -63,6 +63,62 @@ describe("extraireCodes", () => {
   });
 });
 
+/**
+ * Libellés d'évènements d'horaire Synchro, relevés sur le générateur réel et
+ * sur le seul export qui existe sur la machine. Il y a DEUX formats, parce que
+ * le générateur de l'extension a changé 21 minutes après cet export : les
+ * fichiers déjà produits sont en v1, les suivants seront en v2. Le lecteur ICS
+ * doit donc lire les deux, et c'est `extraireCodes()` qui porte cette charge.
+ */
+describe("extraireCodes — libellés d'horaire Synchro (v1 et v2)", () => {
+  it("lit le format v1 : sigle espacé, section collée au numéro, titre et type", () => {
+    expect(extraireCodes("MAT 1400-A Calcul 1 (TH)")).toEqual(["MAT 1400"]);
+    expect(extraireCodes("STT 1700-A103 Introduction à la statistique (TP)")).toEqual([
+      "STT 1700",
+    ]);
+    expect(extraireCodes("STT 1700 — Examen intra")).toEqual(["STT 1700"]);
+  });
+
+  it("lit le format v2 : sigle compact, tiret cadratin, plus de titre", () => {
+    expect(extraireCodes("MAT1400-A — Théorie")).toEqual(["MAT 1400"]);
+    expect(extraireCodes("PSY40001-A102 — Travaux pratiques")).toEqual(["PSY 40001"]);
+    expect(extraireCodes("DRT1151G — Examen intra")).toEqual(["DRT 1151G"]);
+  });
+
+  it("ne confond pas la lettre de section avec un suffixe de sigle", () => {
+    // LE piège : « MAT 1400-A » porte une SECTION A, pas un cours « MAT 1400A ».
+    // Et « DRT1151G-A » porte un suffixe G ET une section A. La différence ne
+    // tient qu'au tiret, donc un appelant qui retire les tirats avant de
+    // normaliser fabrique des cours qui n'existent pas.
+    expect(extraireCodes("MAT 1400-A Calcul 1 (TH)")).toEqual(["MAT 1400"]);
+    expect(extraireCodes("DRT1151G-A — Théorie")).toEqual(["DRT 1151G"]);
+  });
+
+  it("ne tire aucun code d'un évènement qui n'est pas un cours", () => {
+    expect(extraireCodes("Relâche")).toEqual([]);
+    expect(extraireCodes("Remise du travail final")).toEqual([]);
+  });
+});
+
+describe("normaliserCode — le piège du retrait global des tirets", () => {
+  it("refuse un libellé qui porte encore sa section", () => {
+    // Refuser est le bon comportement : « MAT 1400-A » n'est pas un code de
+    // cours, c'est un cours plus une section.
+    expect(normaliserCode("MAT 1400-A")).toBeNull();
+    expect(normaliserCode("MAT1400-A")).toBeNull();
+  });
+
+  it("accepterait un faux code si l'appelant avait retiré les tirets lui-même", () => {
+    // Démonstration du danger, pas une approbation : « MAT 1400-A » dont on a
+    // retiré le tiret devient « MAT1400A », que cette fonction lit comme un
+    // cours suffixé parfaitement valide — indiscernable d'un vrai DRT 1151G.
+    // D'où la règle : passer le libellé brut à extraireCodes(), jamais
+    // pré-nettoyer les séparateurs.
+    expect(normaliserCode("MAT1400A")).toBe("MAT 1400A");
+    expect(normaliserCode("DRT1151G")).toBe("DRT 1151G");
+  });
+});
+
 describe("cleBloc", () => {
   it("distingue deux blocs de même id dans un même segment", () => {
     // La maîtrise en mathématiques porte MM-Bloc 73A ET S-Bloc 73A : un
