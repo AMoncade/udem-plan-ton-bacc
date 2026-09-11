@@ -147,7 +147,7 @@ export function SelecteurProgramme() {
 
   function ouvrir(fiche: FicheIndex): void {
     if (!fiche.structureLue) return;
-    choisir(fiche.id);
+    choisir(fiche.cle);
     router.push("/");
   }
 
@@ -307,10 +307,10 @@ export function SelecteurProgramme() {
           {resultat.fiches.map((fiche) => {
             const rangSelectionnable = selectionnables.indexOf(fiche);
             const pointe = rangSelectionnable >= 0 && rangSelectionnable === survol;
-            const courant = fiche.id === selection;
+            const courant = fiche.cle === selection;
             return (
               <li
-                key={fiche.id}
+                key={fiche.cle}
                 role="option"
                 aria-selected={courant}
                 aria-disabled={!fiche.structureLue}

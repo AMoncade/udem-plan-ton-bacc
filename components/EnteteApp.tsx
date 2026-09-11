@@ -6,8 +6,13 @@ import { depot } from "@/app/_donnees/source";
 import { MOTEUR_EST_FACTICE } from "@/app/_lib/moteur";
 import { useEtat } from "@/components/ProviderEtat";
 
+/* L'ordre suit le parcours d'usage : on choisit un programme, on déclare ce
+ * qu'on a déjà fait, puis on lit les trois vues. « Relevé » est l'écran
+ * d'import livré par la session d'import ; il était prérendu mais n'apparaissait
+ * dans aucun onglet, donc inatteignable autrement qu'en tapant l'URL. */
 const ONGLETS = [
   { href: "/programmes", libelle: "Programmes" },
+  { href: "/importer", libelle: "Relevé" },
   { href: "/", libelle: "Préalables" },
   { href: "/audit", libelle: "Audit" },
   { href: "/trimestres", libelle: "Trimestres" },

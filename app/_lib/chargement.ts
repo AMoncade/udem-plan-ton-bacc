@@ -25,12 +25,12 @@ export type EtatIndex =
 
 export type EtatProgramme =
   | { phase: "aucun" }
-  | { phase: "chargement"; id: string }
-  | { phase: "pret"; id: string; assemble: CatalogueAssemble }
+  | { phase: "chargement"; cle: string }
+  | { phase: "pret"; cle: string; assemble: CatalogueAssemble }
   /** La fiche existe mais sa page n'a pas de structure exploitable. Ce n'est
    *  pas une erreur de chargement : c'est un fait sur le programme. */
-  | { phase: "sans-structure"; id: string; fiche: FicheIndex }
-  | { phase: "erreur"; id: string; message: string };
+  | { phase: "sans-structure"; cle: string; fiche: FicheIndex }
+  | { phase: "erreur"; cle: string; message: string };
 
 /** Instantanés stables : `useSyncExternalStore` compare par identité, donc une
  *  nouvelle valeur à chaque appel ferait boucler le rendu. */
@@ -108,29 +108,29 @@ let demandeCourante: string | null = null;
 
 /**
  * PRÉCONDITION : l'index doit être prêt avant d'appeler ceci, et `fiche` doit
- * être la fiche de `id` dans cet index. C'est pour ça que `fiche: undefined`
- * peut être interprété sans ambiguïté comme « cet identifiant n'est pas dans
+ * être la fiche de `cle` dans cet index. C'est pour ça que `fiche: undefined`
+ * peut être interprété sans ambiguïté comme « ce parcours n'est pas dans
  * l'index » — le cas d'un choix retenu d'une visite précédente dont le
- * programme a disparu du catalogue depuis.
+ * parcours a disparu du catalogue depuis.
  */
 export function demanderProgramme(
   depot: Depot,
-  id: string | null,
+  cle: string | null,
   fiche: FicheIndex | undefined,
 ): void {
-  if (id === null) {
+  if (cle === null) {
     demandeCourante = null;
     if (etatProgramme.phase !== "aucun") poserProgramme(AUCUN);
     return;
   }
-  if (demandeCourante === id) return;
-  demandeCourante = id;
+  if (demandeCourante === cle) return;
+  demandeCourante = cle;
 
   if (fiche === undefined) {
     poserProgramme({
       phase: "erreur",
-      id,
-      message: `« ${id} » ne figure pas dans l'index des programmes. Le choix retenu d'une visite précédente pointe peut-être sur un programme qui n'existe plus.`,
+      cle,
+      message: `« ${cle} » ne figure pas dans l'index des parcours. Le choix retenu d'une visite précédente pointe peut-être sur un parcours qui n'existe plus.`,
     });
     return;
   }
@@ -138,19 +138,19 @@ export function demanderProgramme(
   // Une fiche sans structure exploitable n'est pas chargée du tout : la page
   // n'a rien à en tirer, et l'écran doit le dire au lieu de se vider.
   if (!fiche.structureLue) {
-    poserProgramme({ phase: "sans-structure", id, fiche });
+    poserProgramme({ phase: "sans-structure", cle, fiche });
     return;
   }
 
-  poserProgramme({ phase: "chargement", id });
-  assembler(depot, id)
+  poserProgramme({ phase: "chargement", cle });
+  assembler(depot, cle)
     .then((assemble) => {
-      if (demandeCourante !== id) return;
-      poserProgramme({ phase: "pret", id, assemble });
+      if (demandeCourante !== cle) return;
+      poserProgramme({ phase: "pret", cle, assemble });
     })
     .catch((cause: unknown) => {
-      if (demandeCourante !== id) return;
-      poserProgramme({ phase: "erreur", id, message: message(cause) });
+      if (demandeCourante !== cle) return;
+      poserProgramme({ phase: "erreur", cle, message: message(cause) });
     });
 }
 

@@ -1,5 +1,14 @@
 /**
- * LE PROGRAMME CHOISI — un magasin externe, comme l'état de l'étudiant.
+ * LE PARCOURS CHOISI — un magasin externe, comme l'état de l'étudiant.
+ *
+ * Ce qui est retenu est une CLÉ DE PARCOURS (`slug` ou `slug#orientation`), et
+ * non un identifiant de page. L'étudiant ne suit pas « le baccalauréat en
+ * mathématiques » : il suit l'orientation actuariat ou l'orientation
+ * statistique, qui n'ont ni les mêmes blocs ni la même répartition de crédits.
+ *
+ * La clé de stockage porte `.v3` parce que `.v2` contenait des identifiants
+ * d'une autre forme. Les relire donnerait un écran d'erreur à quelqu'un qui
+ * n'a rien fait de mal ; les ignorer lui redemande simplement son parcours.
  *
  * Même raison que `stockage.ts` : le rendu serveur ne voit pas
  * `localStorage`. Lire le choix pendant le rendu produirait deux HTML
@@ -13,7 +22,7 @@
  * par la session d'import (`lireEtat`, `ecrire`, `abonner`) : y ajouter un
  * champ casserait son travail en silence.
  */
-const CLE = "plan-ton-bacc.programme.v2";
+const CLE = "plan-ton-bacc.parcours.v3";
 
 let choix: string | null = null;
 let lu = false;
@@ -63,11 +72,11 @@ export function lireSelectionServeur(): null {
   return null;
 }
 
-export function choisirProgramme(id: string | null): void {
-  choix = id;
+export function choisirParcours(cle: string | null): void {
+  choix = cle;
   try {
-    if (id === null) window.localStorage.removeItem(CLE);
-    else window.localStorage.setItem(CLE, id);
+    if (cle === null) window.localStorage.removeItem(CLE);
+    else window.localStorage.setItem(CLE, cle);
   } catch {
     // Navigation privée ou quota plein : le choix reste valable en mémoire.
   }

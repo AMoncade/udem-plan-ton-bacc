@@ -21,7 +21,7 @@ import { describe, expect, it } from "vitest";
 import type { Audit, Bloc, Catalogue, Cours, Programme, RegleBloc } from "../../lib/types";
 import { cleBloc } from "../../lib/codes";
 import { creerDepotDemo } from "../_demo/depot-demo";
-import { ID_ACTUARIAT, ID_MAITRISE_DOUBLE } from "../_demo/donnees-demo";
+import { CLE_ACTUARIAT, ID_MAITRISE_DOUBLE } from "../_demo/donnees-demo";
 import { assembler } from "./depot";
 import { auditProgramme, diagnostiquerCours } from "./moteur";
 
@@ -35,6 +35,7 @@ function bloc(segment: string, id: string, regle: RegleBloc, cours: string[] = [
     regleBrut: `règle publiée de ${id}`,
     cours,
     notes: [],
+    contenuOuvert: false,
   };
 }
 
@@ -70,6 +71,7 @@ function monter(blocs: Bloc[], creditsTotal: number | null = 90) {
     exigences: null,
     blocs,
     notes: [],
+    orientations: [],
     url: "https://exemple.invalid",
     scrapeISO: "1970-01-01T00:00:00.000Z",
   };
@@ -217,7 +219,7 @@ describe("ce que l'UI attend de l'audit", () => {
 
 describe("l'audit sur les programmes de démonstration", () => {
   it("audite l'actuariat sans NaN et retient le piège 18 contre 33", async () => {
-    const { catalogue, programme } = await assembler(creerDepotDemo(), ID_ACTUARIAT);
+    const { catalogue, programme } = await assembler(creerDepotDemo(), CLE_ACTUARIAT);
     // Tous les cours obligatoires faits, et le minimum de chaque bloc d'option.
     const faits = new Set(
       programme.blocs
@@ -246,7 +248,7 @@ describe("l'audit sur les programmes de démonstration", () => {
 
 describe("diagnostiquerCours", () => {
   it("marque un cours sans fiche « avertissement », jamais verrouillé", async () => {
-    const { catalogue, programme } = await assembler(creerDepotDemo(), ID_ACTUARIAT);
+    const { catalogue, programme } = await assembler(creerDepotDemo(), CLE_ACTUARIAT);
     const diagnostics = diagnostiquerCours(catalogue, new Set());
     const sansFiche = programme.blocs
       .flatMap((b) => b.cours)
@@ -258,7 +260,7 @@ describe("diagnostiquerCours", () => {
   });
 
   it("n'interprète JAMAIS une restriction d'inscription comme un préalable", async () => {
-    const { catalogue } = await assembler(creerDepotDemo(), ID_ACTUARIAT);
+    const { catalogue } = await assembler(creerDepotDemo(), CLE_ACTUARIAT);
     const avecRestriction = Object.values(catalogue.cours).find(
       (c) => c.restrictionsBrut !== null && c.prealables === null && c.prealablesBrut === null,
     );

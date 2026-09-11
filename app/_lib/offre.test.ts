@@ -5,7 +5,7 @@ import { saisonsOffertes, verifierOffre } from "./offre";
 import { ordreTrimestre } from "./trimestres";
 import { assembler } from "./depot";
 import { creerDepotDemo } from "../_demo/depot-demo";
-import { ID_ACTUARIAT } from "../_demo/donnees-demo";
+import { CLE_ACTUARIAT } from "../_demo/donnees-demo";
 
 const AUTOMNE_2026 = { saison: "Automne", annee: 2026 } as const;
 const HIVER_2027 = { saison: "Hiver", annee: 2027 } as const;
@@ -96,7 +96,7 @@ describe("contrainte d'offre", () => {
 
 describe("catalogue partiel", () => {
   it("référence des cours qui n'ont pas de fiche — l'état normal à gérer", async () => {
-    const { catalogue } = await assembler(creerDepotDemo(), ID_ACTUARIAT);
+    const { catalogue } = await assembler(creerDepotDemo(), CLE_ACTUARIAT);
     const codes = codesReferences(catalogue);
     const sansFiche = codes.filter((code) => ficheDe(catalogue, code) === undefined);
     expect(codes.length).toBeGreaterThan(0);

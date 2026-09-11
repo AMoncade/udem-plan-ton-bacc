@@ -25,6 +25,7 @@ function bloc(segment: string, id: string, regle: RegleBloc, cours: string[] = [
     regleBrut: "",
     cours,
     notes: [],
+    contenuOuvert: false,
   };
 }
 
@@ -45,6 +46,7 @@ function programme(
     exigences,
     blocs,
     notes: [],
+    orientations: [],
     url: "https://exemple.invalid",
     scrapeISO: "1970-01-01T00:00:00.000Z",
   };

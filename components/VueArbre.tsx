@@ -20,7 +20,13 @@
  */
 
 import { useMemo, useState } from "react";
-import { blocsDuCours, codesReferences, creditsDe, ficheDe } from "@/app/_lib/cours";
+import {
+  blocsDuCours,
+  codesReferences,
+  creditsDe,
+  ficheDe,
+  natureListe,
+} from "@/app/_lib/cours";
 import { horairePublie } from "@/app/_lib/offre";
 import type { Catalogue, CodeCours, EtatCours, NoeudPrealable } from "@/lib/types";
 import { Credits, HABITS, LegendeEtats, MarqueEtat, TitreCours } from "./Etats";
@@ -296,8 +302,16 @@ export function VueArbre() {
                   </ul>
                 ) : null}
                 {bloc.cours.length === 0 ? (
-                  <p className="px-3 py-3 text-[12.5px] text-faible">
-                    Aucune liste de cours : ce bloc accepte n&apos;importe quel cours.
+                  <p
+                    className={`px-3 py-3 text-[12.5px] ${
+                      natureListe(bloc) === "ouvert" ? "text-avert" : "text-faible"
+                    }`}
+                  >
+                    {natureListe(bloc) === "joker"
+                      ? "Aucune liste de cours : ce bloc accepte n'importe quel cours."
+                      : natureListe(bloc) === "ouvert"
+                        ? "Contenu décrit en prose, pas en liste de cours : l'outil ne peut pas vérifier ce bloc. Lisez les remarques ci-dessus et confirmez auprès du responsable de programme."
+                        : "Aucune liste de cours et aucune remarque : les données de ce bloc sont incomplètes, on ne sait pas quels cours l'alimentent."}
                   </p>
                 ) : (
                   <ul>

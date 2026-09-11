@@ -11,11 +11,14 @@
 import { describe, expect, it, vi } from "vitest";
 import { sujetDeCode } from "../../lib/codes";
 import type { Cours } from "../../lib/types";
+import { cleParcours } from "../../lib/parcours";
 import { creerDepotDemo } from "../_demo/depot-demo";
 import {
-  ID_ACTUARIAT,
+  CLE_ACTUARIAT,
   ID_DROIT_INTERVALLE,
   ID_MAITRISE_DOUBLE,
+  ID_MUSIQUE_OUVERT,
+  ID_PAGE_MATHS,
 } from "../_demo/donnees-demo";
 import { assembler, sujetsDesBlocs, sujetsDesPrealables, type Depot } from "./depot";
 
@@ -32,6 +35,7 @@ describe("sujetsDesBlocs", () => {
           regleBrut: "",
           cours: ["STT 1000", "ACT 1000", "act-2250", "ACT2251"],
           notes: [],
+          contenuOuvert: false,
         },
       ]),
     ).toEqual(["ACT", "STT"]);
@@ -49,6 +53,7 @@ describe("sujetsDesBlocs", () => {
           regleBrut: "",
           cours: ["pas un code", "MAT 1000"],
           notes: [],
+          contenuOuvert: false,
         },
       ]),
     ).toEqual(["MAT"]);
@@ -109,9 +114,15 @@ describe("assembler", () => {
   it("ne charge que les sujets utiles, et les compte", async () => {
     const depot = creerDepotDemo();
     const espion = vi.spyOn(depot, "chargerSujet");
-    const { catalogue, programme, sujets } = await assembler(depot, ID_ACTUARIAT);
+    const assemble = await assembler(depot, CLE_ACTUARIAT);
+    const { catalogue, programme, sujets } = assemble;
 
-    expect(programme.id).toBe(ID_ACTUARIAT);
+    // `id` nomme le FICHIER (la page), `cle` le PARCOURS. Les confondre était
+    // l'erreur du contrat v2 initial : la page du bacc en mathématiques porte
+    // quatre orientations exclusives et un seul fichier.
+    expect(programme.id).toBe(ID_PAGE_MATHS);
+    expect(assemble.cle).toBe(CLE_ACTUARIAT);
+    expect(programme.orientation).toBe("Actuariat");
     expect(catalogue.programmes).toHaveLength(1);
     expect(sujets.length).toBeGreaterThan(0);
 
@@ -131,7 +142,7 @@ describe("assembler", () => {
 
   it("suit les préalables d'un sujet à l'autre", async () => {
     const depot = creerDepotDemo();
-    const { programme, sujets } = await assembler(depot, ID_ACTUARIAT);
+    const { programme, sujets } = await assembler(depot, CLE_ACTUARIAT);
     const citesParLesBlocs = sujetsDesBlocs(programme.blocs);
     // Les blocs de l'actuariat citent ACT, MAT, STT, IFT, ECN ; leurs
     // préalables en amènent d'autres. Si l'expansion ne se faisait pas, les
@@ -186,9 +197,11 @@ describe("assembler", () => {
               // Trois écritures du MÊME cours, plus un code impossible.
               cours: ["ACT 2250", "ACT2250", "act-2250", "pas-un-code"],
               notes: [],
+              contenuOuvert: false,
             },
           ],
           notes: [],
+          orientations: [],
           url: "https://exemple.invalid",
           scrapeISO: "1970-01-01T00:00:00.000Z",
         };
@@ -219,14 +232,14 @@ describe("assembler", () => {
     const depot = creerDepotDemo();
     // Le bloc 75Y de l'actuariat cite des cours de niveau 7000, qui n'ont
     // jamais de fiche : c'est le cas « cité par un bloc, sans fiche ».
-    const { catalogue } = await assembler(depot, ID_ACTUARIAT);
+    const { catalogue } = await assembler(depot, CLE_ACTUARIAT);
     const cites = catalogue.programmes[0].blocs.flatMap((b) => b.cours);
     const sansFiche = cites.filter((code) => catalogue.cours[code] === undefined);
     expect(sansFiche.length).toBeGreaterThan(0);
   });
 
   it("recalcule les lignes de préalables non réduites sur les fiches chargées", async () => {
-    const { catalogue } = await assembler(creerDepotDemo(), ID_ACTUARIAT);
+    const { catalogue } = await assembler(creerDepotDemo(), CLE_ACTUARIAT);
     // Le jeu de démonstration en contient exprès (« avoir réussi 30 crédits »).
     expect(catalogue.prealablesNonParses.length).toBeGreaterThan(0);
     for (const ligne of catalogue.prealablesNonParses) {
@@ -257,7 +270,7 @@ describe("assembler", () => {
     // bloc et les crédits des fiches — doivent concorder. Sans ça l'audit
     // affiche des crédits manquants ou perdus sur un bloc obligatoire, ce qui
     // se lit comme un bogue de l'audit alors que c'est la donnée qui est fausse.
-    for (const id of [ID_ACTUARIAT, ID_DROIT_INTERVALLE, ID_MAITRISE_DOUBLE]) {
+    for (const id of [CLE_ACTUARIAT, ID_DROIT_INTERVALLE, ID_MAITRISE_DOUBLE]) {
       const { catalogue, programme } = await assembler(creerDepotDemo(), id);
       for (const bloc of programme.blocs) {
         if (bloc.regle.type !== "obligatoire") continue;
@@ -271,6 +284,82 @@ describe("assembler", () => {
         ).toBe(bloc.regle.bornes.min);
       }
     }
+  });
+
+  it("PROJETTE sur l'orientation demandée avant toute autre chose", async () => {
+    const depot = creerDepotDemo();
+    const actuariat = await assembler(depot, CLE_ACTUARIAT);
+
+    // La page porte cinq segments ; le parcours n'en garde que deux.
+    expect(actuariat.programme.segments).toEqual(["01", "75"]);
+    expect(actuariat.programme.blocs.every((b) => ["01", "75"].includes(b.segment))).toBe(
+      true,
+    );
+    // Et les exigences sont celles de l'orientation, pas celles de la page.
+    expect(actuariat.programme.exigences?.option).toEqual({ min: 33, max: 33 });
+    // Une page projetée ne porte plus d'orientations : elle EST un parcours.
+    expect(actuariat.programme.orientations).toEqual([]);
+
+    // Deux parcours de la même page ne donnent pas le même programme. Sans
+    // projection, l'audit additionnerait les segments 75 et 76, qui sont des
+    // alternatives — un « non conforme » que l'étudiant ne pourrait jamais
+    // corriger.
+    const stat = await assembler(depot, cleParcours(ID_PAGE_MATHS, "Statistique"));
+    expect(stat.programme.segments).toEqual(["01", "78"]);
+    expect(stat.programme.blocs.map((b) => b.cle)).not.toEqual(
+      actuariat.programme.blocs.map((b) => b.cle),
+    );
+    // Le tronc commun, lui, est partagé.
+    expect(stat.programme.blocs.some((b) => b.segment === "01")).toBe(true);
+  });
+
+  it("ne charge pas les sujets des parcours qu'on n'affiche pas", async () => {
+    // Conséquence directe de projeter AVANT d'étendre les sujets : les blocs
+    // des autres orientations ne sont plus là pour en réclamer.
+    const depot = creerDepotDemo();
+    const espion = vi.spyOn(depot, "chargerSujet");
+    await assembler(depot, CLE_ACTUARIAT);
+    const demandes = new Set(espion.mock.calls.map((a) => a[0]));
+    expect(demandes.size).toBeGreaterThan(0);
+    expect(demandes.size).toBeLessThan((await depot.chargerIndex()).sujets.length);
+  });
+
+  it("expose les parcours voisins de la page, pour pouvoir en changer", async () => {
+    const { parcoursVoisins } = await assembler(creerDepotDemo(), CLE_ACTUARIAT);
+    expect(parcoursVoisins.length).toBeGreaterThan(1);
+    expect(parcoursVoisins.map((p) => p.cle)).toContain(CLE_ACTUARIAT);
+    expect(parcoursVoisins.map((p) => p.orientation)).toContain("Statistique");
+  });
+
+  it("REFUSE d'auditer une page multi-orientations sans en nommer une", async () => {
+    // `projeterOrientation(p, null)` lève exprès. Le vérifier ici parce que
+    // c'est la garantie qu'un audit muet et faux est impossible : additionner
+    // deux orientations exclusives exigerait à la fois le segment 75 et le 76.
+    await expect(assembler(creerDepotDemo(), ID_PAGE_MATHS)).rejects.toThrow(
+      /orientations/,
+    );
+  });
+
+  it("refuse une orientation qui n'existe pas, plutôt que de tout garder", async () => {
+    await expect(
+      assembler(creerDepotDemo(), cleParcours(ID_PAGE_MATHS, "Astrologie")),
+    ).rejects.toThrow(/Astrologie/);
+  });
+
+  it("rejette une clé de parcours mal formée", async () => {
+    await expect(assembler(creerDepotDemo(), "#orpheline")).rejects.toThrow(/mal formée/);
+  });
+
+  it("porte un bloc à CONTENU OUVERT, distinct d'un bloc au choix", async () => {
+    const { programme } = await assembler(creerDepotDemo(), ID_MUSIQUE_OUVERT);
+    const ouvert = programme.blocs.find((b) => b.contenuOuvert);
+    expect(ouvert, "aucun bloc à contenu ouvert : ce cas n'est plus couvert").toBeDefined();
+    const bloc = ouvert as NonNullable<typeof ouvert>;
+    // Ni cours énumérés, ni bloc au choix : sa prose EST son contenu, donc
+    // elle doit exister pour que l'écran ait quelque chose à montrer.
+    expect(bloc.cours).toEqual([]);
+    expect(bloc.regle.type).not.toBe("choix");
+    expect(bloc.notes.length).toBeGreaterThan(0);
   });
 
   it("assemble aussi les deux programmes difficiles du contrat", async () => {

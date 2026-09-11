@@ -311,6 +311,29 @@ export function arithmetiqueProgramme(programme: Programme): ArithmetiqueProgram
   };
 }
 
+/**
+ * Pourquoi un bloc ne liste aucun cours. Trois raisons DIFFÉRENTES, qui se
+ * ressemblent à l'écran et ne veulent pas du tout dire la même chose :
+ *
+ *  - `joker`  : un bloc « Choix » sans liste — n'importe quel cours convient.
+ *  - `ouvert` : `contenuOuvert`, le contenu n'est décrit qu'en PROSE (bacc en
+ *               musique 02/02E : renvoi aux cours du Centre de langues). Ce
+ *               n'est pas un joker et ce n'est pas une erreur : c'est un bloc
+ *               que l'outil ne peut pas vérifier, et l'étudiant doit le savoir.
+ *  - `vide`   : un bloc d'option sans liste et sans prose, c'est-à-dire une
+ *               donnée incomplète — on ne sait pas quels cours l'alimentent.
+ *
+ * Les confondre ferait dire « n'importe quel cours convient » là où la page dit
+ * « voir les cours du Centre de langues », ce qui est un conseil faux.
+ */
+export type NatureListe = "enumere" | "joker" | "ouvert" | "vide";
+
+export function natureListe(bloc: Bloc): NatureListe {
+  if (bloc.cours.length > 0) return "enumere";
+  if (bloc.contenuOuvert) return "ouvert";
+  return bloc.regle.type === "choix" ? "joker" : "vide";
+}
+
 /** « 12 » ou « de 30 à 33 » — un intervalle tel qu'on le lit à voix haute. */
 export function libelleIntervalle(intervalle: Intervalle): string {
   return intervalle.min === intervalle.max

@@ -31,6 +31,7 @@ import {
   creditsDe,
   ficheDe,
   libelleIntervalle,
+  natureListe,
   type ArithmetiqueProgramme,
 } from "@/app/_lib/cours";
 import type { Bloc, Catalogue, EtatBloc, Intervalle, Programme } from "@/lib/types";
@@ -593,6 +594,7 @@ function LigneBloc({
 }) {
   const [ouvert, setOuvert] = useState(false);
   const bornes = bornesBloc(bloc.regle);
+  const nature = natureListe(bloc);
   const sansFiche = etat.coursAttribues.filter(
     (code) => ficheDe(catalogue, code) === undefined,
   ).length;
@@ -631,6 +633,14 @@ function LigneBloc({
               règle non interprétée
             </span>
           ) : null}
+          {/* Un bloc à contenu ouvert est INVÉRIFIABLE : l'audit ne doit ni le
+              déclarer satisfait, ni le traiter comme une exigence impossible.
+              Il doit le dire — le filet tireté porte l'état sans la couleur. */}
+          {nature === "ouvert" ? (
+            <span className="tirete mt-1 inline-block border px-1.5 py-px text-[11.5px] text-avert">
+              contenu décrit en prose — invérifiable
+            </span>
+          ) : null}
         </td>
         <td className="chiffres py-2 pr-3 text-right text-doux">
           {etat.creditsAttribues + etat.creditsPerdus}
@@ -666,9 +676,15 @@ function LigneBloc({
           )}
         </td>
         <td className="py-2">
+          {/* Un bloc à contenu ouvert n'est NI conforme NI non conforme : il est
+              invérifiable. Le moteur, lui, le voit comme un bloc d'option sans
+              cours ; quand son minimum est 0 il le déclare « dans ses bornes »,
+              en vert. Afficher ce vert à côté de « invérifiable » serait se
+              contredire sur la même ligne, et c'est le vert que l'étudiant
+              retiendrait. */}
           <span
             className={`border px-2 py-0.5 text-[11.5px] ${
-              bornes === null
+              bornes === null || nature === "ouvert"
                 ? "tirete border text-avert"
                 : etat.conforme
                   ? "border-fait/50 bg-fait/10 text-fait"
@@ -677,9 +693,11 @@ function LigneBloc({
           >
             {bornes === null
               ? "non concluant"
-              : etat.conforme
-                ? "dans ses bornes"
-                : "hors bornes"}
+              : nature === "ouvert"
+                ? "invérifiable"
+                : etat.conforme
+                  ? "dans ses bornes"
+                  : "hors bornes"}
           </span>
         </td>
       </tr>
@@ -689,9 +707,13 @@ function LigneBloc({
             {etat.coursAttribues.length === 0 ? (
               <p className="text-[12.5px] text-faible">
                 Aucun cours attribué à ce bloc.
-                {bloc.cours.length > 0
+                {nature === "enumere"
                   ? ` ${bloc.cours.length} cours y sont admissibles.`
-                  : " Ce bloc accepte n'importe quel cours."}
+                  : nature === "joker"
+                    ? " Ce bloc accepte n'importe quel cours."
+                    : nature === "ouvert"
+                      ? " Son contenu n'est décrit qu'en prose : voyez les remarques ci-dessous."
+                      : " Aucun cours n'y est listé et la page n'en dit rien : données incomplètes."}
               </p>
             ) : (
               <>
