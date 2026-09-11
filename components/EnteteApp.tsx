@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { programme } from "@/app/_donnees/catalogue";
 import { MOTEUR_EST_FACTICE } from "@/app/_lib/moteur";
-import { BoutonScenario } from "@/app/_demo/BoutonScenario"; // DÉMO — part avec app/_demo/
 import { useEtat } from "@/components/ProviderEtat";
 
 const ONGLETS = [
@@ -83,8 +82,6 @@ export function EnteteApp() {
           >
             {audit.conforme ? "Conforme" : "Non conforme"}
           </span>
-          {/* DÉMO — retirer cette ligne avec app/_demo/ */}
-          <BoutonScenario />
           <button
             type="button"
             onClick={toutEffacer}

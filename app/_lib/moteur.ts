@@ -5,20 +5,16 @@
  *   diagnostiquerCours(catalogue, faits) -> Map<CodeCours, DiagnosticCours>
  *   auditProgramme(programme, catalogue, faits) -> Audit
  *
- * Aujourd'hui elles viennent du faux de `app/_demo/`, parce que
- * `lib/engine/index.ts` est écrit en parallèle par une autre session.
+ * Branché sur le VRAI moteur depuis la fusion des chantiers. Le faux de
+ * `app/_demo/`, qui avait permis d'écrire l'UI avant que `lib/engine` existe,
+ * a été supprimé.
  *
- * POUR DÉBRANCHER LE FAUX, deux lignes ici :
- *   export { diagnostiquerCours, auditProgramme } from "../../lib/engine";
- *   export const MOTEUR_EST_FACTICE = false;
- * puis `app/_demo/` peut être supprimé en entier (il ne reste qu'un import du
- * bouton de scénario dans `components/EnteteApp.tsx`, signalé par un
- * commentaire « DÉMO »).
- *
- * Ce fichier vit hors de `app/_demo/` exprès : la bascule doit survivre à la
- * suppression du dossier qu'elle débranche.
+ * `MOTEUR_EST_FACTICE` reste exporté exprès : c'est le filet qui allume la
+ * bannière d'avertissement si quelqu'un rebranche un faux un jour. Un faux
+ * moteur qui alimente des écrans sans le dire est précisément le genre de
+ * chose qui finit par être pris pour la réalité.
  */
-export { diagnostiquerCours, auditProgramme } from "../_demo/moteur-factice";
+export { diagnostiquerCours, auditProgramme } from "../../lib/engine";
 
 /** Pilote la bannière qui prévient que les nombres viennent d'un faux moteur. */
-export const MOTEUR_EST_FACTICE = true;
+export const MOTEUR_EST_FACTICE = false;

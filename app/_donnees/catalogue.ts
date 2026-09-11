@@ -13,7 +13,7 @@
  * silence. Tout code illisible est consigné dans `codesIllisibles` et affiché
  * à l'écran — un repli muet rendrait l'audit faux sans casser un test.
  */
-import fixture from "../../data/fixtures/actuariat-verifie.fixture.json";
+import catalogueBrut from "../../data/catalogue.json";
 import { normaliserCode } from "../../lib/codes";
 import type {
   Bloc,
@@ -35,7 +35,7 @@ export interface SourceCatalogue {
 }
 
 function chargerSource(): SourceCatalogue {
-  const brut = fixture as unknown as Catalogue;
+  const brut = catalogueBrut as unknown as Catalogue;
   const illisibles: string[] = [];
 
   const norm = (code: string): CodeCours => {
@@ -79,8 +79,8 @@ function chargerSource(): SourceCatalogue {
 
   return {
     catalogue: { ...brut, programmes, cours },
-    origine: "data/fixtures/actuariat-verifie.fixture.json",
-    partielle: true,
+    origine: "data/catalogue.json",
+    partielle: false,
     codesIllisibles: illisibles,
   };
 }

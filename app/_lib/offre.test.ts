@@ -40,8 +40,19 @@ describe("contrainte d'offre", () => {
   });
 
   it("ne refuse jamais un cours sans fiche : l'offre est inconnue, pas interdite", () => {
-    expect(ficheDe(catalogue, "ACT 2251")).toBeUndefined();
-    const verdict = verifierOffre("ACT 2251", undefined, AUTOMNE_2026);
+    // Le code est DÉRIVÉ du catalogue, jamais écrit en dur. La version
+    // précédente de ce test nommait ACT 2251, qui n'avait pas de fiche
+    // dans la fixture partielle mais en a une dans le catalogue scrapé : sa
+    // prémisse s'est évaporée quand on a branché les vraies données, et le
+    // test a échoué pour une raison qui n'était pas celle qu'il surveille.
+    const sansFiche = codesReferences(catalogue).find(
+      (code) => ficheDe(catalogue, code) === undefined,
+    );
+    expect(
+      sansFiche,
+      "aucun cours référencé sans fiche : ce test n'a plus d'objet",
+    ).toBeDefined();
+    const verdict = verifierOffre(sansFiche as string, undefined, AUTOMNE_2026);
     expect(verdict.decision).toBe("reserve");
     if (verdict.decision !== "reserve") throw new Error("verdict inattendu");
     expect(verdict.raison).toContain("pas de fiche");
