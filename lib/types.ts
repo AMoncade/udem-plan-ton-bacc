@@ -135,6 +135,23 @@ export interface Bloc {
   regleBrut: string;
   /** Vide pour un bloc « Choix » : n'importe quel cours convient. */
   cours: CodeCours[];
+  /**
+   * Vrai quand le bloc n'énumère AUCUN cours et décrit son contenu en prose.
+   *
+   * Ce n'est ni un bloc au choix ni une page mal lue : il existe des blocs
+   * « catégorie » dont le contenu renvoie à un ensemble extérieur. Deux cas
+   * réels, vérifiés dans le HTML (aucun lien de cours dans le bloc) :
+   * `baccalaureat-en-economie-et-politique` 71/71G et `baccalaureat-en-musique`
+   * 02/02E, tous deux « Option - maximum 6 crédits » avec pour seule
+   * description un renvoi aux cours du Centre de langues.
+   *
+   * Le distinguer importe parce qu'un tel bloc est INVÉRIFIABLE
+   * mécaniquement : l'audit ne doit ni le déclarer satisfait, ni le traiter
+   * comme une exigence impossible. Il doit le dire. Sans ce champ, la seule
+   * façon de le reconnaître serait de deviner d'après `notes`, c'est-à-dire
+   * de coupler deux choses sans le dire.
+   */
+  contenuOuvert: boolean;
   /** Prose normative attachée au bloc, conservée telle quelle. Sans ce champ
    *  elle disparaît au scrape (autorisations, conditions, remarques). */
   notes: string[];
@@ -157,14 +174,50 @@ export interface ExigencesParType {
   choix: Intervalle | null;
 }
 
+/**
+ * Une orientation : un PARCOURS SUIVABLE à l'intérieur d'une page de programme.
+ *
+ * Ce type existe parce que le contrat confondait deux choses. Un `Programme`
+ * est une page, identifiée par son slug ; mais ce qu'un étudiant choisit, c'est
+ * un parcours. La page du baccalauréat en mathématiques énonce SEPT
+ * répartitions de crédits, une par orientation, plus six par segment — treize
+ * phrases, comptées. Avec un seul emplacement `exigences`, désigner celle de
+ * l'actuariat aurait été un choix arbitraire déguisé en donnée.
+ *
+ * L'échelle le confirme : ~545 pages exploitables portent ~964 parcours
+ * distincts, 17,3 % des pages ayant des orientations, jusqu'à dix.
+ *
+ * Les blocs d'un parcours sont ceux de `Programme.blocs` dont le `segment`
+ * figure dans `segments`. `projeterOrientation()` dans `lib/parcours.ts` fait
+ * cette projection, et c'est le seul endroit qui la fait.
+ */
+export interface Orientation {
+  /** « Actuariat », « Sciences mathématiques »… tel qu'écrit sur la page. */
+  nom: string;
+  /** Segments qui composent ce parcours : ["01", "75"]. */
+  segments: string[];
+  exigences: ExigencesParType | null;
+}
+
 export interface Programme {
   /** Slug d'URL, unique : « baccalaureat-en-mathematiques ». */
   id: string;
   nom: string;
-  /** Une orientation est une variante de segments d'un même programme. */
+  /**
+   * Renseigné UNIQUEMENT sur un programme déjà projeté sur une orientation
+   * (voir `projeterOrientation()`). Sur un programme lu du disque, il vaut
+   * null et c'est `orientations` qui porte l'information.
+   */
   orientation: string | null;
-  /** Segments qui composent cette orientation : ["01", "75"]. */
+  /** Segments du parcours. Sur un programme non projeté : tous ses segments. */
   segments: string[];
+  /**
+   * Les parcours déclarés par la page. Vide quand le programme n'en a qu'un.
+   *
+   * Quand ce tableau n'est pas vide, `exigences` vaut null : la page énonce
+   * plusieurs répartitions et aucune n'est « celle du programme ».
+   */
+  orientations: Orientation[];
   cycle: string | null;
   faculte: string | null;
   /** « Baccalauréat », « Certificat », « Maîtrise »… tel qu'écrit. */
@@ -188,6 +241,13 @@ export interface Programme {
  * tout le catalogue, donc on ne charge jamais 12 Mo pour afficher une liste.
  */
 export interface FicheIndex {
+  /**
+   * Clé unique du PARCOURS : le slug, ou `slug + "#" + orientation` quand la
+   * page en porte plusieurs. C'est ce que le sélecteur retient et ce que l'URL
+   * porte — plusieurs fiches partagent donc le même `id`.
+   */
+  cle: string;
+  /** Slug du programme, donc nom du fichier `data/programmes/<id>.json`. */
   id: string;
   nom: string;
   orientation: string | null;

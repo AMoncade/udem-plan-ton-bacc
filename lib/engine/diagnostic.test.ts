@@ -2,34 +2,18 @@ import { describe, it, expect } from "vitest";
 import { diagnostiquerCours, evaluerPrealables } from "./index";
 import type { Catalogue, Cours, NoeudPrealable } from "../types";
 import fixtureBrute from "../../data/fixtures/actuariat-verifie.fixture.json";
+import { adapterCatalogue, catalogueTest, ficheTest } from "./donnees-test";
 
-const fixture = fixtureBrute as unknown as Catalogue;
+/** La fixture est écrite dans le contrat v1 et appartient à une autre session :
+ *  elle est TRADUITE, pas éditée. Voir ./donnees-test.ts. */
+const fixture: Catalogue = adapterCatalogue(fixtureBrute);
 
 function fiche(code: string, extra: Partial<Cours> = {}): Cours {
-  return {
-    code,
-    titre: `Cours ${code}`,
-    credits: 3,
-    cycle: "1er cycle",
-    faculte: null,
-    description: "",
-    prealablesBrut: null,
-    prealables: null,
-    concomitantsBrut: null,
-    trimestres: [],
-    url: `https://exemple.test/${code}`,
-    scrapeISO: "2026-09-10T00:00:00.000Z",
-    ...extra,
-  };
+  return ficheTest(code, 3, extra);
 }
 
 function catalogueDe(cours: Cours[]): Catalogue {
-  return {
-    programmes: [],
-    cours: Object.fromEntries(cours.map((c) => [c.code, c])),
-    prealablesNonParses: [],
-    scrapeISO: "2026-09-10T00:00:00.000Z",
-  };
+  return catalogueTest([], cours);
 }
 
 const ET_2250: NoeudPrealable = {
@@ -149,6 +133,66 @@ describe("diagnostiquerCours — un noeud opaque ne verrouille jamais", () => {
     const d = diagnostiquerCours(cat, new Set()).get("ACT 4000");
     expect(d?.etat).toBe("avertissement");
     expect(d?.avertissements.join(" ")).toMatch(/concomitants non analysés.*MAT 1720/);
+  });
+});
+
+describe("diagnostiquerCours — restrictions d'inscription (champ nouveau du contrat v2)", () => {
+  it("une restriction n'est NI un préalable NI un concomitant : jamais évaluée, toujours signalée", () => {
+    // Donnée RÉELLE piégée hors contrat en v1 : la fiche de DMO 1000 publie
+    // « Restrictions d'inscription: DMO1000/DMO1010 », c'est-à-dire que les deux
+    // cours s'excluent — pas que DMO 1000 est son propre préalable. En v1 ce
+    // texte voyageait dans la clé `_journal` non typée et rien ne l'affichait.
+    const cat = catalogueDe([fiche("DMO 1000", { restrictionsBrut: "DMO1000/DMO1010" })]);
+    const d = diagnostiquerCours(cat, new Set()).get("DMO 1000");
+    expect(d?.etat).toBe("avertissement");
+    expect(d?.manquants).toEqual([]); // surtout PAS « il manque DMO 1000 »
+    expect(d?.avertissements.join(" ")).toMatch(
+      /restriction d'inscription non évaluée \(ce n'est ni un préalable ni un concomitant\).*DMO1000\/DMO1010/,
+    );
+  });
+
+  it("un cours qui n'a QUE des restrictions n'est pas verrouillé pour autant", () => {
+    // MUI 1162A n'a aucune ligne de préalables, seulement des restrictions : un
+    // parseur qui les confondrait y verrait vingt cours requis et verrouillerait.
+    const cat = catalogueDe([
+      fiche("MUI 1162A", {
+        prealablesBrut: null,
+        prealables: null,
+        restrictionsBrut: "MUI1111A/MUI1112A/MUI1113A/MUI1114A",
+      }),
+    ]);
+    const d = diagnostiquerCours(cat, new Set()).get("MUI 1162A");
+    expect(d?.etat).toBe("avertissement"); // et non « verrouille »
+    expect(d?.manquants).toEqual([]);
+  });
+
+  it("restriction ET préalable sur la même fiche : les deux ressortent, séparément", () => {
+    const cat = catalogueDe([
+      fiche("DMO 1000", {
+        prealablesBrut: "MAT1720",
+        prealables: { genre: "cours", code: "MAT 1720" },
+        restrictionsBrut: "DMO1000/DMO1010",
+      }),
+    ]);
+    const d = diagnostiquerCours(cat, new Set(["MAT 1720"])).get("DMO 1000");
+    expect(d?.etat).toBe("avertissement"); // préalable satisfait, restriction en attente
+    expect(d?.avertissements).toHaveLength(1);
+    expect(d?.avertissements[0]).toMatch(/restriction d'inscription/);
+
+    const bloque = diagnostiquerCours(cat, new Set()).get("DMO 1000");
+    expect(bloque?.etat).toBe("verrouille"); // le préalable, lui, verrouille
+    expect(bloque?.manquants).toEqual(["MAT 1720"]);
+    expect(bloque?.avertissements[0]).toMatch(/restriction d'inscription/);
+  });
+
+  it("une restriction vide ou absente ne fabrique pas d'avertissement", () => {
+    const cat = catalogueDe([
+      fiche("IFT 1015", { restrictionsBrut: null }),
+      fiche("IFT 1016", { restrictionsBrut: "   " }),
+    ]);
+    const d = diagnostiquerCours(cat, new Set());
+    expect(d.get("IFT 1015")?.etat).toBe("disponible");
+    expect(d.get("IFT 1016")?.etat).toBe("disponible");
   });
 });
 

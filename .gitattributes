@@ -1,0 +1,3 @@
+# Les fixtures ICS sont comparées octet par octet : git ne doit pas toucher
+# leurs fins de ligne. Le format exige CRLF (RFC 5545).
+*.ics -text
