@@ -1,0 +1,112 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-physiotherapie",
+  "nom": "Baccalauréat en physiothérapie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours de 1re année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 31,
+          "max": 31
+        }
+      },
+      "regleBrut": "Obligatoire - 31 crédits.",
+      "cours": [
+        "CHI 1045",
+        "CSS 1900",
+        "PHT 1201",
+        "PHT 1202",
+        "PHT 1203",
+        "PHT 1303",
+        "PHT 1309",
+        "PHT 1310",
+        "PSL 1984",
+        "REA 1001",
+        "REA 1002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours de 2e année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Obligatoire - 32 crédits.",
+      "cours": [
+        "CSS 2900",
+        "PBC 2060",
+        "PHT 1302",
+        "PHT 2311",
+        "PHT 2312",
+        "PHT 2314",
+        "PHT 2316",
+        "PHT 2319",
+        "PHT 2320",
+        "PHT 2351",
+        "PHT 2418",
+        "PHT 2453"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours de 3e année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "CSS 3900",
+        "PHL 2900",
+        "PHT 3313",
+        "PHT 3318",
+        "PHT 3320",
+        "PHT 3321",
+        "PHT 3322",
+        "PHT 3323",
+        "PHT 3331",
+        "PHT 3358",
+        "PST 1970",
+        "PSY 3955"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A21)\nLe baccalauréat en physiothérapie comporte 90 crédits. Il constitue la première composante du programme intégré baccalauréat-maîtrise en physiothérapie.",
+    "Segment 70 — Tous les cours du baccalauréat sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-physiotherapie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:44.628Z"
+}

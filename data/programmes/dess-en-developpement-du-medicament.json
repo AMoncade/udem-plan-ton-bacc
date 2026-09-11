@@ -1,0 +1,186 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-developpement-du-medicament",
+  "nom": "DESS en développement du médicament",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 7 à 10 crédits de cours à option ou un maximum de 3 crédits au choix.",
+    "obligatoire": null,
+    "option": null,
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "PHM 6010",
+        "PHM 6011",
+        "PHM 6015",
+        "PHM 6019",
+        "PHM 6153",
+        "PHM 6155",
+        "SBP 6004",
+        "SBP 6009",
+        "SBP 6046"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Recherche clinique et affaires médicales pharmaceutiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Maximum 10 crédits.",
+      "cours": [
+        "PHM 6014",
+        "PHM 6025",
+        "SBP 6109",
+        "SBP 6112",
+        "SBP 6118",
+        "SBP 6120",
+        "SBP 6206",
+        "SBP 6207"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Règlementation, fabrication, conformité et pharmacovigilance",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Maximum 10 crédits.",
+      "cours": [
+        "PHL 6092",
+        "PHM 6014",
+        "PHM 6025",
+        "PHM 6029",
+        "PHM 6084",
+        "PHM 6086",
+        "PHM 6157",
+        "SBP 6047",
+        "SBP 6109",
+        "SBP 6119",
+        "SBP 6120",
+        "SBP 6122",
+        "SBP 6123",
+        "SBP 6204",
+        "SBP 6205"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche évaluative, pharmacoéconomie et accès au marché",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Maximum 10 crédits.",
+      "cours": [
+        "PHL 6092",
+        "PHM 6008",
+        "PHM 6009",
+        "PHM 6014",
+        "PHM 6025",
+        "PHM 6032",
+        "SBP 6121",
+        "SBP 6123"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours transversaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHM 6154",
+        "SBP 6105",
+        "SBP 6106",
+        "SBP 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de ces cours doit être approuvé par le responsable du programme"
+      ]
+    }
+  ],
+  "notes": [
+    "Version 05 (A26)\nLe D.E.S.S. comporte 30 crédits.\nAfin de poursuivre à la Maîtrise en sciences pharmaceutiques, option développement du médicament (2-670-1-1) et pouvoir y transférer ses cours à option menant à des cheminements spécifiques, l'étudiant (e) doit suivre un cheminement proposé par le conseiller ou la conseillère en gestion des études du programme.",
+    "Segment 01 — Les crédits du segment sont répartis de la façon suivante : 20 crédits obligatoires",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 7 à 10 crédits de cours à option ou un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-developpement-du-medicament/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:48.654Z"
+}

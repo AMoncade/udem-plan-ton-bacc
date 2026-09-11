@@ -1,0 +1,205 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-securite-et-etudes-policieres",
+  "nom": "Baccalauréat en sécurité et études policières",
+  "orientation": null,
+  "segments": [
+    "01"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 69 crédits obligatoires,18 crédits optionnels et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 69,
+      "max": 69
+    },
+    "option": null,
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Connaissances criminologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "CRI 2531",
+        "CRI 3013",
+        "CRI 3361"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Connaissances en droit",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "DRT 1002S",
+        "DRT 1505"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Formation complémentaire générale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "CRI 1050",
+        "CRI 1100",
+        "CRI 1511",
+        "CRI 2005",
+        "CRI 2410",
+        "CRI 3001",
+        "CRI 3201",
+        "CRI 3305",
+        "CRI 3341",
+        "CRI 3495",
+        "CRI 3540",
+        "DRT 1222",
+        "DRT 1224",
+        "DRT 1502",
+        "DRT 3503",
+        "DRT 3505",
+        "DRT 3603",
+        "DRT 3806",
+        "HOR 1200",
+        "HOR 3200",
+        "IFT 1912",
+        "IFT 1931",
+        "PHI 1400",
+        "PHI 3660",
+        "POL 1954",
+        "PSY 1075",
+        "SOL 2410"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Connaissances en sécurité et études policières",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 54,
+          "max": 54
+        }
+      },
+      "regleBrut": "Obligatoire - 54 crédits.",
+      "cours": [
+        "CRI 1006",
+        "CRI 3950",
+        "PHI 2990",
+        "SIP 1000",
+        "SIP 2010",
+        "SIP 2030",
+        "SIP 2040",
+        "SIP 2080",
+        "SIP 2085",
+        "SIP 2242",
+        "SIP 2990",
+        "SIP 3001",
+        "SIP 3006",
+        "SIP 3040",
+        "SIP 3060",
+        "SIP 3070",
+        "SIP 3090",
+        "SIP 3100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Formation complémentaire en sécurité et études policières",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "CRI 1730",
+        "CRI 3040",
+        "CRI 3213",
+        "CRI 3318",
+        "DRT 2510G",
+        "DRT 2520G",
+        "SIP 1500G",
+        "SIP 2050",
+        "SIP 3030",
+        "SIP 3050",
+        "SIP 3071",
+        "SIP 3082",
+        "SIP 3085",
+        "SIP 3242"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A22)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 01 — Les crédits sont répartis de la façon suivante : 69 crédits obligatoires,18 crédits optionnels et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-securite-et-etudes-policieres/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:27.170Z"
+}

@@ -1,0 +1,288 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-detudes-individualisees-es-arts",
+  "nom": "Certificat d'études individualisées ès arts",
+  "orientation": null,
+  "segments": [
+    "01",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "99"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 15,
+          "max": 21
+        }
+      },
+      "regleBrut": "Choix - Minimum 15 crédits, maximum 21 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "57A",
+      "cle": "57/57A",
+      "segment": "57",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "COM 1500G",
+        "LNG 1061G",
+        "RED 2041"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "57B",
+      "cle": "57/57B",
+      "segment": "57",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "EDP 2500",
+        "PBT 1111",
+        "RED 2500",
+        "REP 2300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "58A",
+      "cle": "58/58A",
+      "segment": "58",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "REP 1000",
+        "REP 2100",
+        "REP 3101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "58B",
+      "cle": "58/58B",
+      "segment": "58",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "COM 1500G",
+        "REP 2200",
+        "REP 2300",
+        "REP 2500",
+        "REP 3104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "59A",
+      "cle": "59/59A",
+      "segment": "59",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PBT 1001",
+        "PBT 1004",
+        "PBT 2006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "59B",
+      "cle": "59/59B",
+      "segment": "59",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "PBT 1002",
+        "PBT 2007",
+        "PBT 3008",
+        "PBT 3009"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "60A",
+      "cle": "60/60A",
+      "segment": "60",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "JOU 1001",
+        "JOU 1100",
+        "JOU 1200",
+        "JOU 3300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "60B",
+      "cle": "60/60B",
+      "segment": "60",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "JOU 1450",
+        "JOU 2103",
+        "JOU 2201",
+        "JOU 2400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "61A",
+      "cle": "61/61A",
+      "segment": "61",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "EDP 1003",
+        "EDP 1200",
+        "EDP 2500",
+        "RED 2041"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "61B",
+      "cle": "61/61B",
+      "segment": "61",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EDP 1400",
+        "EDP 2401",
+        "EDP 2900",
+        "REP 2300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99A",
+      "cle": "99/99A",
+      "segment": "99",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (É26)\nLe certificat comporte 30 crédits.\nIl est défini selon les besoins de formation professionnelle et personnelle de l'étudiant et comprend généralement de 9 à 15 crédits de cours spécifiques à une concentration et de 15 à 21 crédits de cours complémentaires. Dans tous les cas, le projet d'études est soumis à l'approbation du responsable de programme.\nLe certificat comprend un tronc commun (segment 01) et les 6 concentrations suivantes:\nCommunication et pratiques rédactionnelles (segment 57)\nCommunication et relations publiques (segment 58)\nPublicité et communication créative (segment 59)\nJournalisme multiplateforme (segment 60)\nCréation et gestion de contenus (segment 61)\nMicroprogrammes liés au secteur ès arts (segment 99)\nDans le cas où l'étudiant souhaite qu'un microprogramme soit considéré comme la concentration de son certificat d'études individualisées ès arts, il doit s'inscrire à ce microprogramme préalablement à sa demande d'admission au certificat d'études individualisées ès arts.\nTout microprogramme ès arts de l'Université de Montréal est susceptible de constituer le segment 99 du certificat en études individualisées ès arts en autant qu'il respecte les critères suivants :\n- Être un microprogramme de 1er cycle;\n- Être attesté par sa faculté;\n- Compter au minimum 9 crédits.\nVeuillez noter que les cours du microprogramme feront l'objet d'un transfert dans le CEI. Le transfert de cours est encadré par l'article 8 du Règlement des études de premier cycle et ne peut être autorisé, sauf exception, pour des crédits obtenus depuis plus de 10 ans.\nListe des microprogrammes liés au secteur ès arts:\nDroit 1-325-6-5;\nLangue espagnole et cultures hispaniques 1-105-6-1\nLangue et culture allemandes 1-085-7-0;\nLangue et culture anglaises 1-135-7-0;\nLangue et culture arabes 1-117-7-0;\nLangue et culture catalanes 1-104-7-0;\nLangue et culture chinoises 1-097-7-0;\nLangue et culture coréenne 1-097-7-1;\nLangue et culture de la Grèce moderne 1-130-6-1\nLangue et culture grecques 1-095-7-1;\nLangue et culture hispaniques 1-105-7-0 (fermé à l’admission);\nLangue et culture innues 1-081-6-1\nLangue et culture italiennes 1-110-7-0;\nLangue et culture japonaises 1-097-7-2;\nLangue et culture latines 1-095-7-0;\nLangue et culture néo-helléniques 1-130-7-0 (fermé à l’admission);\nLangue et culture russes 1-121-7-0;\nLangue portugaise et cultures lusophones 1-091-7-0;\nRédaction professionnelle 1-186-6-2.",
+    "Segment 01 Tronc commun — Tronc commun à toutes les concentrations.",
+    "Segment 57 Propre à la concentration Communication et pratiques rédactionnelles — Cette concentration totalise 9 crédits de cours obligatoires et 6 crédits de cours à option.",
+    "Segment 58 Propre à la concentration Communication et relations publiques — Cette concentration totalise 9 crédits de cours obligatoires et 6 crédits de cours à option.",
+    "Segment 59 Propre à la concentration publicité et communication créative — Cette concentration totalise 9 crédits de cours obligatoires et 6 crédits de cours à option.",
+    "Segment 60 Propre à la concentration journalisme multiplateforme — Cette concentration totalise 12 crédits de cours obligatoires et 3 crédits de cours à option.",
+    "Segment 61 Propre à la concentration création et gestion de contenus — Cette concentration totalise 12 crédits de cours obligatoires et 3 crédits de cours à option.",
+    "Segment 99 Propre à la concentration microprogrammes ès arts — Voir structure du microprogramme désiré.",
+    "Segment 99 Propre à la concentration microprogrammes ès arts — Dans le cas où l'étudiant souhaite qu'un microprogramme soit considéré comme la concentration de son certificat d'études individualisées ès arts, il doit s'inscrire à ce microprogramme préalablement à sa demande d'admission au certificat d'études individualisées ès arts."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-detudes-individualisees-es-arts/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:45.758Z"
+}

@@ -1,0 +1,104 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-droit-de-la-citoyennete-de-limmigration-et-des-refugies",
+  "nom": "DESS en droit de la citoyenneté, de l’immigration et des réfugiés",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 24 crédits obligatoires, de 3 à 6 crédits à option et de 0 à 3 crédits au choix.",
+    "obligatoire": {
+      "min": 70,
+      "max": 70
+    },
+    "option": {
+      "min": 3,
+      "max": 6
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "DRT 6246",
+        "DRT 6248",
+        "DRT 6444",
+        "DRT 6445",
+        "DRT 6446",
+        "DRT 6447",
+        "DRT 6448",
+        "DRT 6449"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 6247",
+        "DRT 6249",
+        "DRT 6830G",
+        "DRT 6851"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Minimum 0 crédit, maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours au choix. Le cours au choix est choisi dans l'ensemble des cours offerts par l'Université ou, le cas échéant, dans une autre institution universitaire sous approbation du responsable de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A24)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du segment 70 sont répartis de la façon suivante : 24 crédits obligatoires, de 3 à 6 crédits à option et de 0 à 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-droit-de-la-citoyennete-de-limmigration-et-des-refugies/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:51.896Z"
+}

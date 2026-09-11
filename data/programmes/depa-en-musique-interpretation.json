@@ -1,0 +1,94 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-musique-interpretation",
+  "nom": "DEPA en musique - Interprétation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 24 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours d'instrument",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUI 7##4A, MUI7##4B, MUE7##1 et 7##2 dont le numéro est fonction de l'instrument ou de l'ensemble."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Séminaire théorique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis parmi les séminaires offerts chaque année à la Faculté de musique. Aucun sujet spécial (recherche supervisée remplaçant un séminaire) ne sera accepté en remplacement de ces séminaires."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Récital",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "MIN 7500",
+        "MIN 7950"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un mois avant le récital, l'étudiant remet son programme selon les normes de la Faculté de musique ainsi que des notes de programmes sur les oeuvres qui seront jouées."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (H19)\nLe D.E.P.A. comporte un total de 30 crédits.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 24 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-musique-interpretation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:45.181Z"
+}

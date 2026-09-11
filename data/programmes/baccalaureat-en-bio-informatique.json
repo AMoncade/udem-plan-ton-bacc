@@ -1,0 +1,378 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-bio-informatique",
+  "nom": "Baccalauréat en bio-informatique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "02",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences, Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Bio-informatique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "BCM 2003",
+        "BIN 1002",
+        "BIN 3002",
+        "BIN 3005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Fondement en informatique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "IFT 1015",
+        "IFT 1025",
+        "IFT 1065",
+        "IFT 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Fondement en biologie moléculaire, biochimie, et génétique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "BCM 1501",
+        "BCM 1503",
+        "BCM 2002",
+        "BCM 2004",
+        "BCM 2502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02A",
+      "cle": "02/02A",
+      "segment": "02",
+      "nom": "Fondement en mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 8 crédits.",
+      "cours": [
+        "MAT 1400",
+        "MAT 1600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02B",
+      "cle": "02/02B",
+      "segment": "02",
+      "nom": "Fondements en probabilités et statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 4 crédits.",
+      "cours": [
+        "BIO 2043",
+        "MAT 1978",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02C",
+      "cle": "02/02C",
+      "segment": "02",
+      "nom": "Compléments en informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 21 crédits.",
+      "cours": [
+        "IFT 1005",
+        "IFT 1215",
+        "IFT 1575",
+        "IFT 2035",
+        "IFT 2105",
+        "IFT 2125",
+        "IFT 2255",
+        "IFT 2425",
+        "IFT 2905",
+        "IFT 2935",
+        "IFT 3295",
+        "IFT 3355"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02D",
+      "cle": "02/02D",
+      "segment": "02",
+      "nom": "Compléments en sciences de la Nature",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 8 crédits, maximum 18 crédits.",
+      "cours": [
+        "BCM 1502",
+        "BCM 1521",
+        "BCM 2501",
+        "BCM 2550",
+        "BCM 3515",
+        "BCM 3526",
+        "BIO 1153",
+        "CHM 1301",
+        "MCB 1979"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02Y",
+      "cle": "02/02Y",
+      "segment": "02",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1903",
+        "ANG 1913",
+        "ANG 1921",
+        "ANT 1511",
+        "BIO 1284",
+        "BIO 1534",
+        "BIO 1634",
+        "BIO 1803",
+        "BIO 2306",
+        "BIO 2405",
+        "BIO 3283",
+        "CHM 1302",
+        "CHM 1990",
+        "CHM 3450",
+        "DMO 1000",
+        "GEO 1532",
+        "GEO 2512",
+        "MAT 2531",
+        "PHI 1130",
+        "PHI 1300",
+        "PHI 1365",
+        "PHI 2418",
+        "PHY 1234",
+        "PHY 1973",
+        "POL 3235",
+        "PSL 1982",
+        "PSL 3062",
+        "PSY 1035",
+        "REI 1030",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02Z",
+      "cle": "02/02Z",
+      "segment": "02",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Génétique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "BCM 3525",
+        "BIO 3203",
+        "BIO 3204",
+        "PHL 3600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Médecine moléculaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "BCM 2503",
+        "BCM 2505",
+        "BCM 2532",
+        "BCM 2562",
+        "BCM 3512",
+        "BCM 3514",
+        "PBC 3060",
+        "PHL 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Langages et conception de logiciel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "IFT 3065",
+        "IFT 3225",
+        "IFT 3911",
+        "IFT 3913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Informatique théorique et optimisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "IFT 2505",
+        "IFT 3375",
+        "IFT 3515",
+        "IFT 3545"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Statistique et apprentissage machine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "IFT 3205",
+        "IFT 3245",
+        "IFT 3335",
+        "IFT 3395",
+        "IFT 3655",
+        "IFT 3700",
+        "MAT 1720",
+        "MAT 2717",
+        "STT 2000",
+        "STT 2700",
+        "STT 3510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A19)\nLe baccalauréat comporte 90 crédits.\nLe programme comprend 42 crédits obligatoires, 42 crédits à option et 6 crédits au choix. Dans le segment 70 Formation spécialisée, les étudiants peuvent choisir jusqu'à un maximum de 15 crédits de cours.",
+    "Segment 01 Commun à tous les étudiants — Tous les crédits du segment sont obligatoires.",
+    "Segment 02 Formation complémentaire — Le segment comporte un minimum de 27 crédits de cours à option et 6 au choix",
+    "Segment 70 Formation spécialisée — Tous les crédits du segment sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-bio-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:17.663Z"
+}

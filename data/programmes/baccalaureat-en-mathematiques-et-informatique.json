@@ -1,0 +1,382 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-mathematiques-et-informatique",
+  "nom": "Baccalauréat en mathématiques et informatique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 91,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Bases de mathématiques, informatique et statistique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 43,
+          "max": 43
+        }
+      },
+      "regleBrut": "Obligatoire - 43 crédits.",
+      "cours": [
+        "IFT 1015",
+        "IFT 1025",
+        "IFT 1065",
+        "IFT 1215",
+        "IFT 1575",
+        "IFT 2015",
+        "IFT 2105",
+        "IFT 2125",
+        "MAT 1000",
+        "MAT 1400",
+        "MAT 1600",
+        "MAT 1720",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Perfectionnement en mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "MAT 1410",
+        "MAT 2050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 24 crédits.",
+      "cours": [
+        "IFT 1005",
+        "IFT 1227",
+        "IFT 2035",
+        "IFT 2245",
+        "IFT 2255",
+        "IFT 2425",
+        "IFT 2505",
+        "IFT 2905",
+        "IFT 2935",
+        "IFT 3065",
+        "IFT 3155",
+        "IFT 3205",
+        "IFT 3225",
+        "IFT 3245",
+        "IFT 3275",
+        "IFT 3295",
+        "IFT 3325",
+        "IFT 3335",
+        "IFT 3345",
+        "IFT 3355",
+        "IFT 3375",
+        "IFT 3395",
+        "IFT 3515",
+        "IFT 3545",
+        "IFT 3655",
+        "IFT 3700",
+        "IFT 3710",
+        "IFT 3911",
+        "IFT 3913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stages et travaux dirigés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "IFT 3150",
+        "IFT 3151",
+        "MAT 4000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Mathématiques et statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 24 crédits.",
+      "cours": [
+        "MAT 2100",
+        "MAT 2115",
+        "MAT 2130",
+        "MAT 2300",
+        "MAT 2412",
+        "MAT 2460",
+        "MAT 2466",
+        "MAT 2600",
+        "MAT 2611",
+        "MAT 2717",
+        "MAT 2719",
+        "MAT 3162",
+        "MAT 3300",
+        "MAT 3363",
+        "MAT 3450",
+        "MAT 3460",
+        "MAT 3632",
+        "MAT 3634",
+        "MAT 3661",
+        "STT 2000",
+        "STT 2105",
+        "STT 2400",
+        "STT 2700",
+        "STT 3410",
+        "STT 3781",
+        "STT 3790",
+        "STT 3795"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Perfectionnement en statistique, informatique et mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "IFT 3700",
+        "MAT 2412",
+        "STT 2400",
+        "STT 2700",
+        "STT 3790"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 18 crédits.",
+      "cours": [
+        "MAT 2717",
+        "MAT 2719",
+        "STT 2000",
+        "STT 2105",
+        "STT 3220",
+        "STT 3260",
+        "STT 3410",
+        "STT 3510",
+        "STT 3781",
+        "STT 3795"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 21 crédits.",
+      "cours": [
+        "IFT 1005",
+        "IFT 1227",
+        "IFT 2035",
+        "IFT 2245",
+        "IFT 2255",
+        "IFT 2425",
+        "IFT 2505",
+        "IFT 2905",
+        "IFT 2935",
+        "IFT 3065",
+        "IFT 3155",
+        "IFT 3205",
+        "IFT 3225",
+        "IFT 3245",
+        "IFT 3275",
+        "IFT 3295",
+        "IFT 3325",
+        "IFT 3335",
+        "IFT 3345",
+        "IFT 3355",
+        "IFT 3375",
+        "IFT 3395",
+        "IFT 3515",
+        "IFT 3545",
+        "IFT 3655",
+        "IFT 3710",
+        "IFT 3911",
+        "IFT 3913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Stages et travaux dirigés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits",
+      "cours": [
+        "IFT 3150",
+        "IFT 3151",
+        "STT 4000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Actuariat et finance mathématique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ACT 1240",
+        "ACT 2241",
+        "ACT 2243",
+        "ACT 2284",
+        "ACT 3230",
+        "ACT 3251",
+        "ACT 3253",
+        "ACT 3261",
+        "ACT 3282"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "MAT 1410",
+        "MAT 2050",
+        "MAT 2100",
+        "MAT 2115",
+        "MAT 2130",
+        "MAT 2460",
+        "MAT 2466",
+        "MAT 3300",
+        "MAT 3450",
+        "MAT 3460",
+        "MAT 3634"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A19)\nLe baccalauréat comporte 91 crédits.\nIl est offert selon 2 cheminements:\nCheminement Propre à l'orientation mathématiques et informatique (segment 01 et segment 70) : 49 crédits obligatoires, 39 crédits à option et de 3 crédits au choix.\nCheminement Propre à l'orientation science des données (segment 01 et segment 71) : 58 crédits obligatoires, 30 crédits à option et 3 crédits au choix.",
+    "Segment 01 — Tronc commun aux deux orientations",
+    "Segment 70 Propre à l'orientation mathématiques et informatique — Les crédits sont répartis de la façon suivante : 6 crédits obligatoires et 39 crédits à option.",
+    "Segment 71 Propre à l'orientation science des données — Les crédits sont répartis de la façon suivante : 15 crédits obligatoires et 30 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques-et-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:05.473Z"
+}

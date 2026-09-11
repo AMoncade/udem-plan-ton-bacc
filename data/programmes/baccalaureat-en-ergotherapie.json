@@ -1,0 +1,111 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-ergotherapie",
+  "nom": "Baccalauréat en ergothérapie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours de 1re année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Obligatoire - 32 crédits.",
+      "cours": [
+        "CHI 1045",
+        "CSS 1900",
+        "ERT 1401",
+        "ERT 1403",
+        "ERT 1405",
+        "ERT 1406",
+        "ERT 14511",
+        "ERT 14512",
+        "ERT 1460",
+        "ERT 1461",
+        "PSL 1984",
+        "PST 1964",
+        "PSY 1984",
+        "REA 1001",
+        "REA 1002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours de 2e année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 31,
+          "max": 31
+        }
+      },
+      "regleBrut": "Obligatoire - 31 crédits.",
+      "cours": [
+        "CSS 2900",
+        "ERT 2400",
+        "ERT 2401",
+        "ERT 2402",
+        "ERT 2403",
+        "ERT 2404",
+        "ERT 24511",
+        "ERT 24512",
+        "ERT 2461"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours de 3e année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "CSS 3900",
+        "ERT 3401",
+        "ERT 3402",
+        "ERT 3403",
+        "ERT 3405",
+        "ERT 3411",
+        "ERT 34511",
+        "ERT 34512",
+        "ERT 3460",
+        "SOL 1956"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A24)\nLe baccalauréat comporte 90 crédits. Il constitue la première composante du programme intégré baccalauréat-maîtrise en ergothérapie.",
+    "Segment 70 — Tous les cours du baccalauréat sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-ergotherapie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:03.110Z"
+}

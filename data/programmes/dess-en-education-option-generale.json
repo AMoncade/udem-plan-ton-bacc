@@ -1,0 +1,92 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-education-option-generale",
+  "nom": "DESS en éducation, option Générale",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 3 crédits obligatoires, de 24 à 27 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 24,
+      "max": 27
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EDU 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 24,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 24 crédits, maximum 27 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours de 2e cycle de la Faculté des sciences de l'éducation en respectant un maximum de 12 crédits par domaine."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H98)\nLe D.E.S.S. comporte un minimum de 30 crédits de cours, dont au minimum 27 du niveau des études supérieures.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 3 crédits obligatoires, de 24 à 27 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-education-option-generale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:03.684Z"
+}

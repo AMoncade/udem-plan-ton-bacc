@@ -1,0 +1,76 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-philosophie",
+  "nom": "Doctorat en philosophie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : : 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 15 crédits à option.",
+    "obligatoire": {
+      "min": 75,
+      "max": 75
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "5 cours ou séminaires PHI de niveau 6000. Les inscriptions aux cours PHI6401, PHI6402 et PHI6410 ne sont pas autorisées."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "PHI 7000",
+        "PHI 7940",
+        "PHI 7946",
+        "PHI 7950",
+        "PHI 7955"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A13)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : : 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-philosophie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:00.957Z"
+}

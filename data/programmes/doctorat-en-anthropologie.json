@@ -1,0 +1,123 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-anthropologie",
+  "nom": "Doctorat en anthropologie",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "muséologie",
+      "segments": [
+        "71"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "ANT 7806",
+        "ANT 7810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 83,
+          "max": 83
+        }
+      },
+      "regleBrut": "Obligatoire - 83 crédits.",
+      "cours": [
+        "ANT 7900",
+        "ANT 7919",
+        "ANT 7921"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [
+        "ANT 7806",
+        "ANT 7810",
+        "PLU 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 80,
+          "max": 80
+        }
+      },
+      "regleBrut": "Obligatoire - 80 crédits.",
+      "cours": [
+        "ANT 7900",
+        "ANT 7919",
+        "ANT 7931"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A23)\nLe doctorat comporte 90 crédits obligatoires. Il est offert selon les deux options suivantes :\n- option générale (segment 70)\n- option muséologie (segment 71)",
+    "Segment 70 Propre à l'option générale — Le segment 70 comporte 90 crédits obligatoires, dont 83 crédits attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 71 Propre à l'option muséologie — Le segment 71 comporte 90 crédits obligatoires, dont 80 crédits attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-anthropologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:05.730Z"
+}

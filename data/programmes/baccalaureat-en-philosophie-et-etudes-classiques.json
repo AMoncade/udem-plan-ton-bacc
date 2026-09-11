@@ -1,0 +1,373 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-philosophie-et-etudes-classiques",
+  "nom": "Baccalauréat en philosophie et études classiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 36 crédits obligatoires, 51 crédits à option et 3 au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 51,
+      "max": 51
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "GRC 1031",
+        "GRC 1111",
+        "HGL 1011",
+        "HGL 2005",
+        "HST 1031",
+        "LAT 1031",
+        "LAT 1111",
+        "PHI 1400",
+        "PHI 1600",
+        "PHI 1710",
+        "PHI 1800",
+        "PHI 1860"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Philosophie ancienne (philosophie)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "PHI 2800",
+        "PHI 2810",
+        "PHI 2820",
+        "PHI 3840",
+        "PHI 3850"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Histoire de la philosophie (philosophie)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "PHI 2605",
+        "PHI 2615",
+        "PHI 2650",
+        "PHI 2670",
+        "PHI 2870",
+        "PHI 2960",
+        "PHI 2965",
+        "PHI 2980",
+        "PHI 3540",
+        "PHI 3866",
+        "PHI 3870"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Philosophie continentale (philosophie)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "PHI 1205",
+        "PHI 1220",
+        "PHI 1255",
+        "PHI 1520",
+        "PHI 2195",
+        "PHI 2205",
+        "PHI 2210",
+        "PHI 2215",
+        "PHI 2230",
+        "PHI 2235",
+        "PHI 2255",
+        "PHI 2260",
+        "PHI 3015",
+        "PHI 3250",
+        "PHI 3640",
+        "PHI 3755",
+        "PHI 3760",
+        "PHI 3775",
+        "PHI 3780",
+        "PHI 3785",
+        "PHI 3905"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Philosophie analytique (philosophie)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 1300",
+        "PHI 1365",
+        "PHI 2005",
+        "PHI 2150",
+        "PHI 2160",
+        "PHI 2220",
+        "PHI 2305",
+        "PHI 2320",
+        "PHI 2330",
+        "PHI 2340",
+        "PHI 2350",
+        "PHI 3155",
+        "PHI 3320",
+        "PHI 3330",
+        "PHI 3365",
+        "PHI 3710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Éthique et philosophie politique (philosophie)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "PHI 1440",
+        "PHI 2405",
+        "PHI 2406",
+        "PHI 2415",
+        "PHI 2417",
+        "PHI 2418",
+        "PHI 2419",
+        "PHI 2425",
+        "PHI 2430",
+        "PHI 2450",
+        "PHI 2480",
+        "PHI 2490",
+        "PHI 3422",
+        "PHI 3445",
+        "PHI 3450",
+        "PHI 3480",
+        "PHI 3615",
+        "PHI 3625",
+        "PHI 3660"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Littérature gréco-latine (ét. classiques)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "GRC 3100",
+        "GRC 3120",
+        "GRC 3140",
+        "GRC 3170",
+        "LAT 3120",
+        "LAT 3140",
+        "LAT 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Histoire de l'Antiquité (ét. classiques)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "HGL 1021",
+        "HGL 1031",
+        "HGL 3021",
+        "HST 2108",
+        "HST 2109",
+        "HST 2110",
+        "HST 2111",
+        "HST 2113",
+        "HST 3105",
+        "HST 3111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Archéologie gréco-romaine (ét. classiques)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "HGL 2031",
+        "HGL 2032",
+        "HGL 2061",
+        "HGL 2062",
+        "HGL 3070",
+        "PHI 3422"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Langues anciennes (ét. classiques)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "ETM 1200",
+        "ETM 2200",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70K",
+      "cle": "70/70K",
+      "segment": "70",
+      "nom": "Langues modernes (philosophie/ét. classiques)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts. Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A25)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 36 crédits obligatoires, 51 crédits à option et 3 au choix.",
+    "Segment 70 — Quels que soient les cours à option choisis, 42 crédits de cours de philosophie et 42 crédits de cours d'études classiques devront avoir été complétés."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-philosophie-et-etudes-classiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:41.362Z"
+}

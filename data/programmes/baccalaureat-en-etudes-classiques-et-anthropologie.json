@@ -1,0 +1,403 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-etudes-classiques-et-anthropologie",
+  "nom": "Baccalauréat en études classiques et anthropologie",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 30 crédits obligatoires, 57 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 30,
+      "max": 30
+    },
+    "option": {
+      "min": 57,
+      "max": 57
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Formation de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "ANT 1013",
+        "ANT 1065",
+        "ANT 1210",
+        "ANT 1513",
+        "ANT 1611",
+        "HGL 1011",
+        "HGL 1021",
+        "HGL 1031",
+        "HGL 2005",
+        "HST 1031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Méthodes et techniques de l'archéologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 2210",
+        "ANT 2266",
+        "ANT 2280",
+        "ANT 3102",
+        "ANT 3270",
+        "ANT 3283",
+        "ANT 3287",
+        "ANT 3806",
+        "HGL 2422"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Compléments en archéologie anthropologique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1213",
+        "ANT 1280",
+        "ANT 2260",
+        "ANT 2270",
+        "ANT 3213",
+        "ANT 3230",
+        "ANT 3260",
+        "ANT 3881",
+        "ANT 3882"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Compléments en archéologie méditerranéenne",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "HGL 2030",
+        "HGL 2031",
+        "HGL 2032",
+        "HGL 2060",
+        "HGL 2061",
+        "HGL 2062",
+        "HGL 3040",
+        "HGL 3070",
+        "HGL 3170"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Compléments en ethnologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1018",
+        "ANT 2020",
+        "ANT 2023",
+        "ANT 2026",
+        "ANT 2036",
+        "ANT 2037",
+        "ANT 2042",
+        "ANT 2055",
+        "ANT 2088",
+        "ANT 3035",
+        "ANT 3809",
+        "ANT 3811",
+        "HOR 1200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Compléments en bioanthropologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "ANT 1511",
+        "ANT 2430",
+        "ANT 2440",
+        "ANT 2454",
+        "ANT 2470",
+        "ANT 3460",
+        "ANT 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Compléments en anthropologie linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANT 2611",
+        "ANT 2624",
+        "ANT 2660",
+        "ANT 3625",
+        "ANT 3876"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Histoire antique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "HGL 3021",
+        "HGL 3423",
+        "HST 2108",
+        "HST 2109",
+        "HST 2110",
+        "HST 2111",
+        "HST 2113",
+        "HST 3105",
+        "HST 3111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71I",
+      "cle": "71/71I",
+      "segment": "71",
+      "nom": "Histoire littéraire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "GRC 1031",
+        "LAT 1031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71J",
+      "cle": "71/71J",
+      "segment": "71",
+      "nom": "Langues anciennes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "GRC 1111",
+        "GRC 1121",
+        "LAT 1111",
+        "LAT 1121"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71K",
+      "cle": "71/71K",
+      "segment": "71",
+      "nom": "Langues : lecture de textes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71L",
+      "cle": "71/71L",
+      "segment": "71",
+      "nom": "Littérature",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "GRC 3100",
+        "GRC 3120",
+        "GRC 3140",
+        "GRC 3165",
+        "GRC 3170",
+        "LAT 3120",
+        "LAT 3130",
+        "LAT 3140",
+        "LAT 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71M",
+      "cle": "71/71M",
+      "segment": "71",
+      "nom": "Langues modernes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A12)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 71 — Les crédits du baccalauréat sont répartis de la façon suivante : 30 crédits obligatoires, 57 crédits à option et 3 crédits au choix.",
+    "Segment 71 — Quels que soient les cours à option choisis, 42 crédits de cours d'anthropologie et 42 crédits de cours d'études classiques devront avoir été complétés.",
+    "Segment 71 — L'accès à la maîtrise en études classiques est assuré moyennant un minimum de crédits requis en langues anciennes qui varie selon l'option retenue."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-etudes-classiques-et-anthropologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:16.626Z"
+}

@@ -1,0 +1,384 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-cinema-et-arts-mediatiques",
+  "nom": "Baccalauréat en cinéma et arts médiatiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du Baccalauréat sont répartis de la façon suivante : 48 crédits obligatoires, jusqu'à 42 crédits à option et jusqu'à 6 crédits au choix.",
+    "obligatoire": {
+      "min": 48,
+      "max": 48
+    },
+    "option": null,
+    "choix": {
+      "min": 42,
+      "max": 42
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Études cinématographiques et médiatiques - Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 1104",
+        "CIN 2102",
+        "CIN 2103",
+        "CIN 2104",
+        "CIN 2128",
+        "CIN 3030",
+        "CIN 3102",
+        "HAR 1210"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Pratiques cinématographiques et médiatiques - Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "CIN 1002",
+        "CIN 1003",
+        "CIN 1004",
+        "CIN 1801",
+        "CIN 1802",
+        "CIN 1803",
+        "CIN 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Études cinématographiques et médiatiques - Approfondissements",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 27 crédits.",
+      "cours": [
+        "CIN 1105",
+        "CIN 1106",
+        "CIN 1107",
+        "CIN 1109",
+        "CIN 1110",
+        "CIN 1121",
+        "CIN 2105",
+        "CIN 2106",
+        "CIN 2109",
+        "CIN 2122",
+        "CIN 2125",
+        "CIN 2126",
+        "CIN 2200",
+        "CIN 3103",
+        "CIN 3104",
+        "CIN 3106",
+        "CIN 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Pratiques cinématographiques et médiatiques - Approfondissements",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CIN 20221",
+        "CIN 20222",
+        "CIN 2032",
+        "CIN 2033"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Pratiques cinématographiques et médiatiques - Concentrations",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CIN 2003",
+        "CIN 2006",
+        "CIN 3003",
+        "CIN 3006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Pratiques cinématographiques et médiatiques - Spécialisations",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "CIN 2804",
+        "CIN 2805",
+        "CIN 2806",
+        "CIN 3002",
+        "CIN 3807",
+        "CIN 3808",
+        "CIN 3809"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Pratiques cinématographiques et médiatiques - Projets",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CIN 30011",
+        "CIN 30012",
+        "CIN 30021",
+        "CIN 30022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Approches interdisciplinaires et intermédiales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 27 crédits.",
+      "cours": [
+        "CIN 1108",
+        "CIN 2107",
+        "CIN 2108",
+        "CIN 2110",
+        "CIN 2111",
+        "CIN 2112",
+        "CIN 2113",
+        "CIN 2116",
+        "CIN 2120",
+        "CIN 2123",
+        "CIN 2124",
+        "CIN 3107",
+        "HAR 2330",
+        "HAR 2355",
+        "HOR 1200",
+        "JEU 1003",
+        "JEU 1004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Ouverture et disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "AES 2014",
+        "AES 3021",
+        "ALL 2321",
+        "ANG 1700",
+        "ANG 2461",
+        "ANT 1020",
+        "ANT 1511",
+        "ANT 2036",
+        "ANT 2042",
+        "ANT 2043",
+        "ANT 3025",
+        "ANT 3141",
+        "ANT 3142",
+        "ARA 2040",
+        "ART 1800",
+        "ART 1900",
+        "ART 2060",
+        "ARV 1050",
+        "AUT 2000",
+        "COM 1300",
+        "COM 1350",
+        "COM 1600",
+        "COM 2215",
+        "COM 2450",
+        "COM 2570",
+        "COM 2571",
+        "COM 2590",
+        "COM 2660",
+        "COM 2720",
+        "COM 2920",
+        "COM 2925",
+        "COM 2945",
+        "COM 3035",
+        "COM 3060",
+        "COM 3562",
+        "COM 3570",
+        "ESP 2400",
+        "ESP 3335",
+        "FEM 1000",
+        "FEM 2000",
+        "FRA 2500",
+        "FRA 2517",
+        "FRA 3306",
+        "FRA 3500",
+        "FRA 3511",
+        "FRA 3826",
+        "GEO 1312",
+        "HAR 1032",
+        "HAR 1200",
+        "HAR 1640",
+        "HAR 2121",
+        "HAR 2195",
+        "HAR 2460",
+        "HAR 2650",
+        "HAR 2780",
+        "HAR 2781",
+        "HAR 2785",
+        "HAR 2786",
+        "HAR 3290",
+        "HAR 3550",
+        "HST 2007",
+        "HST 2371",
+        "HST 2430",
+        "HST 2444",
+        "HST 3510",
+        "IFT 1135",
+        "IFT 1144",
+        "IFT 1155",
+        "IFT 1810",
+        "IFT 1931",
+        "IFT 1945",
+        "IFT 2720",
+        "IFT 2821",
+        "INU 1001",
+        "INU 1010",
+        "ITL 2160",
+        "LCO 1001",
+        "LCO 1030",
+        "LCO 2030",
+        "LCO 2100",
+        "LCO 3001",
+        "LCO 3060",
+        "MUL 2109",
+        "MUL 2119",
+        "MUS 2325",
+        "PHI 1255",
+        "PHI 2210",
+        "PHI 2215",
+        "PHI 2255",
+        "PHI 2419",
+        "PHI 3015",
+        "POL 3013",
+        "POL 3605",
+        "POL 3930",
+        "PSY 1075",
+        "REL 1930",
+        "SCI 2955",
+        "SOL 2111",
+        "SOL 2301",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A23)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du Baccalauréat sont répartis de la façon suivante : 48 crédits obligatoires, jusqu'à 42 crédits à option et jusqu'à 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-cinema-et-arts-mediatiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:25.701Z"
+}

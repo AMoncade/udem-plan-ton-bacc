@@ -1,0 +1,219 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-architecture",
+  "nom": "Baccalauréat en architecture",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 95,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 74 crédits obligatoires, 18 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 74,
+      "max": 74
+    },
+    "option": {
+      "min": 18,
+      "max": 18
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Ateliers d'architecture",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "ARC 1011",
+        "ARC 1012",
+        "ARC 2011",
+        "ARC 2012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Ateliers optionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "AME 3030",
+        "ARC 3017",
+        "ARC 3018",
+        "ARC 3019",
+        "ARC 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Histoire et théories",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "ARC 1101",
+        "ARC 1102",
+        "ARC 2104",
+        "ARC 3104",
+        "ARC 3305",
+        "ARC 3306"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Dessin et informatique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "ARC 1214",
+        "ARC 1215",
+        "ARC 2214",
+        "ARC 4723"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Construction",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "ARC 1311",
+        "ARC 1312",
+        "ARC 2313",
+        "ARC 2314",
+        "ARC 4324",
+        "ARC 5314"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Cours d'intégration",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ARC 1801",
+        "ARC 1802",
+        "ARC 1803"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "APA 1130",
+        "ARC 2340",
+        "ARC 3614",
+        "ARC 3626",
+        "ARC 3640",
+        "ARC 4000F",
+        "ARC 4328",
+        "ARC 5401",
+        "ARC 5403",
+        "ARC 5405",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A25)\nLe baccalauréat comporte 95 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 74 crédits obligatoires, 18 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-architecture/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:16.270Z"
+}

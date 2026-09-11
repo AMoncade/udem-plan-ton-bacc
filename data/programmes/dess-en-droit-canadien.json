@@ -1,0 +1,80 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-droit-canadien",
+  "nom": "DESS en droit canadien",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 27 crédits obligatoires et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 70,
+      "max": 70
+    },
+    "option": null,
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "DRT 6200",
+        "DRT 6466",
+        "DRT 6502",
+        "DRT 6583",
+        "DRT 6593",
+        "DRT 6594",
+        "DRT 6595",
+        "DRT 6597",
+        "DRT 6598"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant doit suivre 3 crédits de cours choisis avec l'accord du doyen ou de son représentant. Ce cours est choisi parmi les cours des programmes de 2e cycle ou du 1er cycle en droit ou dans le répertoire de cours de langue du 1er cycle."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00, A2024\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du segment 70 sont répartis de la façon suivante : 27 crédits obligatoires et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-droit-canadien/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:50.429Z"
+}

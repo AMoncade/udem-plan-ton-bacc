@@ -1,0 +1,74 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "diplome-detudes-postdoctorales-en-biochimie-clinique",
+  "nom": "Diplôme d'études postdoctorales en biochimie clinique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Diplôme",
+  "creditsTotal": 69,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "BCM 6041",
+        "BCM 6042",
+        "BCM 6153",
+        "BCM 6155",
+        "BCM 6160",
+        "BCM 6171",
+        "BCM 6180"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 51,
+          "max": 51
+        }
+      },
+      "regleBrut": "Obligatoire - 51 crédits.",
+      "cours": [
+        "BCM 7004A",
+        "BCM 7004B",
+        "BCM 7004C",
+        "BCM 7004D",
+        "BCM 7004E",
+        "BCM 7004F"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Ce bloc est d'une durée de deux ans, composé de 6 stages de 4 mois chacun et effectués à temps plein. Il doit être réalisé dans un laboratoire d'accueil en milieu hospitalier universitaire ou affilié. Il est dédié à l'apprentissage pratique de tous les aspects de la biochimie clinique sous la direction du directeur de stage, spécialiste en biochimie clinique."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (A18)\nLe D.E.P.D. comporte 69 crédits.",
+    "Segment 70 — Le D.E.P.D. comporte 69 crédits obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/diplome-detudes-postdoctorales-en-biochimie-clinique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:47.459Z"
+}

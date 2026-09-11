@@ -1,0 +1,227 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-urbanisme",
+  "nom": "Baccalauréat en urbanisme",
+  "orientation": null,
+  "segments": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "URB 1111",
+        "URB 1113",
+        "URB 1114",
+        "URB 1115"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02A",
+      "cle": "02/02A",
+      "segment": "02",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "URB 1116",
+        "URB 1117",
+        "URB 2212",
+        "URB 2213"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "03A",
+      "cle": "03/03A",
+      "segment": "03",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "URB 1118",
+        "URB 2046",
+        "URB 3047",
+        "URB 3312",
+        "URB 3345"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "03B",
+      "cle": "03/03B",
+      "segment": "03",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "URB 2322",
+        "URB 2323",
+        "URB 2342",
+        "URB 2344",
+        "URB 2347",
+        "URB 2348"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "04A",
+      "cle": "04/04A",
+      "segment": "04",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "URB 1412",
+        "URB 1414",
+        "URB 2415",
+        "URB 2430"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "05A",
+      "cle": "05/05A",
+      "segment": "05",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "URB 2513",
+        "URB 2514",
+        "URB 3519"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "05B",
+      "cle": "05/05B",
+      "segment": "05",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "AME 3030",
+        "URB 3514"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "URB 3589",
+        "URB 3599",
+        "URB 4011"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À faire obligatoirement."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 09 (A13)\nLe baccalauréat comprend 90 crédits. Ils sont répartis de la façon suivante : 69 crédits obligatoires, 18 crédits à option et 3 crédits au choix à prendre hors faculté. Les cours obligatoires et à option sont regroupés en blocs se rattachant à des secteurs de connaissance et d'apprentissage de l'urbanisme :\nLes villes et l'urbanisation (segment 01)\nLa ville, les formes, les fonctions et les acteurs (segment 02)\nLes pratiques et les méthodes de l'urbanisme (segment 03)\nLes compétences techniques (segment 04)\nLes laboratoires-ateliers (segment 05).",
+    "Segment 01 Les villes et l'urbanisation — Tous les crédits du segment sont obligatoires.",
+    "Segment 02 La ville : formes, fonctions et acteurs — Tous les crédits du segment sont obligatoires.",
+    "Segment 03 Les pratiques et les méthodes de l'urbanisme — Les crédits du segment sont répartis de la façon suivante : 15 crédits obligatoires et de 6 à 12 crédits à option.",
+    "Segment 04 Les compétences techniques — Tous les crédits du segment sont obligatoires.",
+    "Segment 05 Laboratoires-ateliers — Les crédits du segment sont répartis de la façon suivante : 18 crédits obligatoires et de 6 à 12 crédits à option.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : un maximum de 6 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-urbanisme/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:39.042Z"
+}

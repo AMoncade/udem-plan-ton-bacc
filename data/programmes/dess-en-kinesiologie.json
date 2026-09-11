@@ -1,0 +1,87 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-kinesiologie",
+  "nom": "DESS en kinésiologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "KIN 6500",
+        "KIN 6530",
+        "KIN 6800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - 21 crédits.",
+      "cours": [
+        "KIN 6510",
+        "KIN 6515",
+        "KIN 6520",
+        "KIN 6525",
+        "KIN 6825",
+        "KIN 6830",
+        "KIN 6831",
+        "KIN 6832",
+        "KIN 6833",
+        "KIN 6837",
+        "KIN 6842",
+        "KIN 6843",
+        "KIN 6848"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A22)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option.",
+    "Segment 70 — Après examen du dossier, certains cours préparatoires pourraient être exigés selon la formation initiale du candidat."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-kinesiologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:36.262Z"
+}

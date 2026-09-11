@@ -1,0 +1,336 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-musique-interpretation-chant-classique",
+  "nom": "Baccalauréat en musique - Interprétation chant classique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 69 crédits obligatoires, 21 crédits à option.",
+    "obligatoire": {
+      "min": 69,
+      "max": 69
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 69,
+          "max": 69
+        }
+      },
+      "regleBrut": "Obligatoire - 69 crédits.",
+      "cours": [
+        "MIN 1096",
+        "MIN 1097",
+        "MIN 1493",
+        "MIN 1494",
+        "MIN 1931",
+        "MIN 1941",
+        "MIN 1942",
+        "MIN 1943",
+        "MIN 1944",
+        "MIN 1945",
+        "MIN 1946",
+        "MIN 1951",
+        "MIN 1961",
+        "MIN 1962",
+        "MIN 1963",
+        "MIN 1964",
+        "MIN 1965",
+        "MIN 1966",
+        "MTE 2210",
+        "MUE 1161",
+        "MUE 1162",
+        "MUI 1136A",
+        "MUI 1136B",
+        "MUI 2136A",
+        "MUI 2136B",
+        "MUI 3136A",
+        "MUI 3136B",
+        "MUL 1132",
+        "MUS 2001",
+        "MUS 2002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "MUS 1011",
+        "MUS 1012",
+        "MUS 1013",
+        "MUS 1014",
+        "MUS 1015",
+        "MUS 1016"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MUS 1011 à 1016 - Solfège et dictée 1 à 6 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Histoire, théorie et formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MTE 1100",
+        "MTE 1120",
+        "MTE 1220",
+        "MTE 1221",
+        "MTE 2211",
+        "MUL 1245",
+        "MUL 2109",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3208X",
+        "MUL 3333X",
+        "MUL 3334",
+        "MUL 3335X",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1315",
+        "MUS 2135"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MTE 1100 & 1120 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Histoire de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MUL 1102",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1117",
+        "MUL 1749"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Sciences et technologies de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MTE 3300",
+        "MUS 1127",
+        "MUS 1300",
+        "MUS 1321",
+        "MUS 1327",
+        "MUS 1330",
+        "MUS 1331",
+        "MUS 2325",
+        "MUS 3314X",
+        "MUS 3315X",
+        "MUS 3321",
+        "MUS 3322X",
+        "MUS 3323",
+        "MUS 3324X",
+        "MUS 3326X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Communication et outils professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DRT 3812",
+        "EMU 1310",
+        "EMU 2312",
+        "MIN 1804",
+        "MIN 1811",
+        "MUI 1162A",
+        "MUI 1162B",
+        "MUS 1232",
+        "MUS 2134",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Grands ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1285",
+        "MUE 1286",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1345",
+        "MUE 1346",
+        "MUE 1561",
+        "MUE 1562",
+        "MUE 1563"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Autres ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MUE 1241",
+        "MUE 1242",
+        "MUE 1243",
+        "MUE 1244",
+        "MUE 1245",
+        "MUE 1246",
+        "MUE 1261",
+        "MUE 1262",
+        "MUE 1263",
+        "MUE 1264",
+        "MUE 1265",
+        "MUE 1266"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "MIN 1932",
+        "MIN 1952",
+        "MUE 1411",
+        "MUE 1412",
+        "MUE 1413",
+        "MUE 1451",
+        "MUE 1452",
+        "MUE 1453",
+        "MUE 1454",
+        "MUE 1455",
+        "MUE 1456",
+        "MUE 2101",
+        "MUE 2102",
+        "MUE 2103",
+        "MUE 2104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A26)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 69 crédits obligatoires, 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-musique-interpretation-chant-classique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:27.502Z"
+}

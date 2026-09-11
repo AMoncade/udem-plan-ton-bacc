@@ -1,0 +1,296 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-physique",
+  "nom": "Doctorat en physique",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": null,
+        "choix": {
+          "min": 9,
+          "max": 9
+        }
+      }
+    },
+    {
+      "nom": "biophysique et physiologie moléculaire",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires dont 79 crédits attribués à la recherche et à la rédaction d'une thèse, 3 crédits à option et 6 crédits au choix.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "physique médicale",
+      "segments": [
+        "72"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "PHY 6035",
+        "PHY 6051X",
+        "PHY 6210",
+        "PHY 6445",
+        "PHY 6450",
+        "PHY 6450B",
+        "PHY 6460",
+        "PHY 6485",
+        "PHY 6505",
+        "PHY 6530",
+        "PHY 6580O",
+        "PHY 6580R",
+        "PHY 6580S",
+        "PHY 6611A",
+        "PHY 6611B",
+        "PHY 6638",
+        "PHY 6639",
+        "PHY 6650",
+        "PHY 6651",
+        "PHY 6669",
+        "PHY 6710",
+        "PHY 6756",
+        "PHY 6771",
+        "PHY 6780",
+        "PHY 6792",
+        "PHY 6795P",
+        "PHY 6812",
+        "PHY 6822",
+        "PHY 6890",
+        "PHY 6918",
+        "PHY 6940"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "À choisir parmi la liste des cours de cycles supérieures du Département avec l'approbation du directeur de recherche."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - Maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit tout autre cours de cycles supérieurs jugé pertinent avec l'approbation du directeur de recherche."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 81,
+          "max": 81
+        }
+      },
+      "regleBrut": "Obligatoire - 81 crédits.",
+      "cours": [
+        "PHY 7000",
+        "PHY 7010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSL 6020",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "PSL 60611",
+        "PSL 60612",
+        "PSL 60621",
+        "PSL 60622"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant choisit tout autre cours de cycles supérieurs jugé pertinent avec l'approbation du directeur de recherche."
+      ]
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
+      },
+      "regleBrut": "Obligatoire - 79 crédits.",
+      "cours": [
+        "PHY 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 25,
+          "max": 25
+        }
+      },
+      "regleBrut": "Obligatoire - 25 crédits.",
+      "cours": [
+        "IFT 6150",
+        "PHY 6292",
+        "PHY 6639",
+        "PHY 6912",
+        "PHY 6915",
+        "PHY 69801",
+        "PHY 69802",
+        "PHY 6985",
+        "PHY 6990",
+        "PHY 69961",
+        "PHY 69962"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 65,
+          "max": 65
+        }
+      },
+      "regleBrut": "Obligatoire - 65 crédits.",
+      "cours": [
+        "PHY 7000",
+        "PHY 7015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A26).\nLe doctorat comporte 90 crédits.\nIl comporte les trois options suivantes :\n- option générale (segment 70)\n- option biophysique et physiologie moléculaire (segment 71)\n- option physique médicale (segment 72)",
+    "Segment 70 Propre à l'option générale — Les crédits du segment 70 sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option ou au choix.",
+    "Segment 71 Propre à l'option Biophysique et physiologie moléculaire — Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires dont 79 crédits attribués à la recherche et à la rédaction d'une thèse, 3 crédits à option et 6 crédits au choix.",
+    "Segment 72 Propre à l'option Physique médicale — Les 90 crédits du segment 72 sont obligatoires, dont 65 crédits attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-physique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:05.172Z"
+}

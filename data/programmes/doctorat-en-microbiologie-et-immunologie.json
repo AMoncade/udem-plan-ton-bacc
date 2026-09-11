@@ -1,0 +1,68 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-microbiologie-et-immunologie",
+  "nom": "Doctorat en microbiologie et immunologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "MCB 7001",
+        "MCB 70521",
+        "MCB 70522",
+        "MCB 70531",
+        "MCB 70532"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours MCB 70521 et MCB 70522 sont équivalents au cours MCB 7052. Les cours MCB 70531 et MCB 70532 sont équivalents au cours MCB 7053."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 87,
+          "max": 87
+        }
+      },
+      "regleBrut": "Obligatoire - 87 crédits.",
+      "cours": [
+        "MCB 7000",
+        "MCB 7902"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (H98)\nLe doctorat comporte 90 crédits.\nIl comporte aussi des cours additionnels selon les besoins du candidat. La participation à une des unités de séminaire du département est obligatoire tout au long de la formation de l'étudiant.\nLa recherche doit se faire en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine, soit dans un laboratoire de la Faculté de médecine vétérinaire.",
+    "Segment 70 — Tous les crédits du doctorat sont obligatoires, 87 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-microbiologie-et-immunologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:41.862Z"
+}

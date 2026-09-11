@@ -1,0 +1,115 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-education-option-intervention-educative",
+  "nom": "DESS en éducation, option Intervention éducative",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 6 crédits obligatoires, de 21 à 24 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 21,
+      "max": 24
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PPA 6001",
+        "PPA 6006",
+        "PPA 6008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation fondamentale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 24 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours à choisir parmi les trois champs d'études du département: Psychopédagogie (PPA 62##), Orthopédagogie (PPA 64##), et Andragogie (PPA 66##)."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation complémentaire en éducation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis dans la banque de cours des études supérieures de la Faculté des sciences de l'éducation (sigle DID, ETA, PLU ou PPA)."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours libres. Élargissement culturel de 1er ou de 2e cycle. Les cours de base en informatique et les cours de langue sont exclus."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (E08)\nLe D.E.S.S. comporte 30 crédits dont un minimum de 27 crédits de 2e cycle.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 6 crédits obligatoires, de 21 à 24 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-education-option-intervention-educative/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:05.075Z"
+}

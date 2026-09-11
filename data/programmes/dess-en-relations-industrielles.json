@@ -1,0 +1,210 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-relations-industrielles",
+  "nom": "DESS en relations industrielles",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 6 crédits obligatoires et 24 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 24,
+      "max": 24
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "REI 6600",
+        "REI 6601"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Gestion des ressources humaines et des organisations",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "REI 6604",
+        "REI 6606",
+        "REI 6608",
+        "REI 6610",
+        "REI 6611",
+        "REI 6613",
+        "REI 6625",
+        "REI 6632"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Relations du travail et syndicalisme",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "REI 6300",
+        "REI 6605",
+        "REI 6616",
+        "REI 6629"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Droit et régulation du travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "DRI 6106",
+        "DRI 6110",
+        "DRI 6115",
+        "DRI 6120",
+        "DRI 6125",
+        "DRI 6130"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Politiques du travail et de l'emploi",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "PLU 6911A",
+        "REI 6614",
+        "REI 6617",
+        "REI 6631"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Santé, sécurité et mieux être au travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "REI 6170",
+        "REI 6630",
+        "SST 6100",
+        "SST 6200",
+        "SST 6400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REI 6615",
+        "REI 6626"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisi parmi les cours de niveau 3000 en relations industrielles."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A19)\nLe D.E.S.S. comporte 30 crédits.\nL'étudiant titulaire d'un grade de 1er cycle dans une autre discipline que les relations industrielles doit compléter une scolarité préparatoire pouvant comprendre jusqu'à 16 crédits de cours :\nREI 6022 - 4 crédits - Politiques publiques et emploi\nREI 6033 - 4 crédits - Aspects juridiques des RI\nREI 6044 - 4 crédits - Gestion des ressources humaines\nREI 6055 - 4 crédits - Relation du travail",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 6 crédits obligatoires et 24 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-relations-industrielles/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:10.053Z"
+}

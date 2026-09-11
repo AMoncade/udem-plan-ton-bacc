@@ -1,0 +1,256 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-demographie-et-statistique",
+  "nom": "Baccalauréat en démographie et statistique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 48 crédits obligatoires, 39 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 48,
+      "max": 48
+    },
+    "option": {
+      "min": 39,
+      "max": 39
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Concepts et techniques d'analyse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "DMO 1000",
+        "DMO 2311",
+        "DMO 2312",
+        "DMO 3307",
+        "STT 1700",
+        "STT 2000",
+        "STT 2400",
+        "STT 2700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Outils et techniques pour la cueillette des données",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "DMO 2200",
+        "SOL 3017"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Outils et techniques pour les mathématiques et l'informatique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "IFT 1969",
+        "MAT 1400",
+        "MAT 1600",
+        "MAT 1720"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Connaissances fondamentales en démographie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 21 crédits.",
+      "cours": [
+        "DMO 1100",
+        "DMO 1200",
+        "DMO 2170",
+        "DMO 2500",
+        "DMO 2700",
+        "DMO 3100",
+        "DMO 3150",
+        "DMO 3250",
+        "DMO 3400",
+        "DMO 3420",
+        "DMO 3450",
+        "DMO 3900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Cours complémentaires en statistique mathématique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "STT 2105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Cours complémentaires en statistique appliquée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "STT 3220",
+        "STT 3260",
+        "STT 3410",
+        "STT 3510",
+        "STT 3781",
+        "STT 3790",
+        "STT 3795"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Cours complémentaires en mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - Maximum 7 crédits.",
+      "cours": [
+        "MAT 1000",
+        "MAT 1410",
+        "MAT 2050",
+        "MAT 2412",
+        "MAT 2717"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "Connaissances complémentaires à la démographie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "ECN 2311",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 1532",
+        "GEO 2512",
+        "GEO 3463",
+        "HOR 3200",
+        "HST 1042",
+        "HST 2348",
+        "HST 2446",
+        "SOL 1013",
+        "SOL 1967",
+        "SOL 3201"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A16)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 71 — Les crédits du baccalauréat sont répartis de la façon suivante : 48 crédits obligatoires, 39 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-demographie-et-statistique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:36.883Z"
+}

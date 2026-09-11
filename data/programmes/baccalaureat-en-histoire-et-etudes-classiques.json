@@ -1,0 +1,358 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-histoire-et-etudes-classiques",
+  "nom": "Baccalauréat en histoire et études classiques",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 24 crédits obligatoires, 63 crédits à option et 3 au choix.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 63,
+      "max": 63
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "GRC 1031",
+        "HGL 1011",
+        "HGL 2005",
+        "HST 1032",
+        "HST 1041",
+        "HST 2108",
+        "HST 2110",
+        "LAT 1031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Introduction complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "HST 1042",
+        "HST 1043",
+        "HST 1051",
+        "HST 1052",
+        "HST 2023"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Langues anciennes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "GRC 1111",
+        "LAT 1111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Langues anciennes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "GRC 1121",
+        "LAT 1121"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Langues anciennes, lecture de textes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Sciences auxiliaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ARV 1050",
+        "ETM 1400",
+        "ETM 3202",
+        "HOR 1200",
+        "HST 2001",
+        "HST 2007",
+        "HST 2013"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Littérature gréco-romaine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "GRC 3100",
+        "GRC 3120",
+        "GRC 3140",
+        "GRC 3170",
+        "LAT 3120",
+        "LAT 3130",
+        "LAT 3140",
+        "LAT 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Histoire de l'Antiquité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "HGL 1021",
+        "HGL 1031",
+        "HGL 3021",
+        "HST 2109",
+        "HST 2111",
+        "HST 2113",
+        "HST 3105",
+        "HST 3111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71I",
+      "cle": "71/71I",
+      "segment": "71",
+      "nom": "Histoire médiévale et moderne",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "ETM 2200",
+        "HST 2125",
+        "HST 2126",
+        "HST 2128",
+        "HST 2262",
+        "HST 3130",
+        "HST 3206"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71J",
+      "cle": "71/71J",
+      "segment": "71",
+      "nom": "Histoire contemporaine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "HST 2267",
+        "HST 2274",
+        "HST 2284",
+        "HST 2351",
+        "HST 2352",
+        "HST 2370",
+        "HST 2371"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71K",
+      "cle": "71/71K",
+      "segment": "71",
+      "nom": "Archéologie gréco-romaine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "HGL 2030",
+        "HGL 2031",
+        "HGL 2032",
+        "HGL 2060",
+        "HGL 2061",
+        "HGL 2062",
+        "HGL 2421",
+        "HGL 3040",
+        "HGL 3070"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71L",
+      "cle": "71/71L",
+      "segment": "71",
+      "nom": "Compléments linguistiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A05)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 71 — Les crédits du baccalauréat sont répartis de la façon suivante : 24 crédits obligatoires, 63 crédits à option et 3 au choix.",
+    "Segment 71 — Quels que soient les cours à option choisis, 42 crédits de cours d'histoire et 42 crédits de cours d'études classiques devront avoir été complétés. Pour être admissible à la maîtrise en études classiques, il faut avoir suivi tous les cours des blocs 71C et 71D."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-histoire-et-etudes-classiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:45.349Z"
+}

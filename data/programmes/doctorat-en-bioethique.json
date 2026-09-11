@@ -1,0 +1,85 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-bioethique",
+  "nom": "Doctorat en bioéthique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIE 7500",
+        "BIE 7700",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "À suivre au cours des trois premiers trimestres suivant l'inscription au programme."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À suivre au cours des trois premiers trimestres suivant l'inscription au programme. Cours choisis parmi les cours offerts par les différentes facultés, notamment, les facultés des arts et sciences, médecine, droit et pharmacie. Consultez la liste publiée sur le site des programmes en bioéthique ou tout autre cours de 2e ou de 3e cycle pertinent avec l'approbation du responsable des études."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "BIE 7000",
+        "BIE 7011"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A18)\nL'étudiant a deux années pour faire les 5 cours exigés et préparer son examen de synthèse, ce qui permettra le maintien d'engagements professionnels. Au cours des deux premières années de scolarité de Ph. D., les étudiants doivent prendre un minimum de 15 crédits de cours, dont 9 crédits obligatoires (SPU6600, BIE7500, BIE7700) et 6 crédits au choix. La scolarité de Ph. D. pourra aussi comporter des cours supplémentaires selon les besoins du candidat, déterminés en consultation avec le directeur de thèse et la direction du programme.",
+    "Segment 70 — Le doctorat comporte un minimum de 90 crédits, dont 75 crédits consacrés à la thèse, 9 crédits de cours obligatoires et 6 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-bioethique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:09.017Z"
+}

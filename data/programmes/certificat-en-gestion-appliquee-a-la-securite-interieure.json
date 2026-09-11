@@ -1,0 +1,103 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-gestion-appliquee-a-la-securite-interieure",
+  "nom": "Certificat en gestion appliquée à la sécurité intérieure",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 24 crédits obligatoires, de 3 à 6 crédits de cours à option et 0 à 3 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 3,
+      "max": 6
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "GSP 1100",
+        "GSP 1200",
+        "GSP 2122",
+        "GSP 2300",
+        "GSP 2360",
+        "GSP 2370",
+        "GSP 2500",
+        "GSP 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation spécifique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "GSP 1160",
+        "GSP 2600Z",
+        "GSP 3000",
+        "GSP 3010",
+        "SIP 2242"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A26)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 24 crédits obligatoires, de 3 à 6 crédits de cours à option et 0 à 3 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-gestion-appliquee-a-la-securite-interieure/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:38.835Z"
+}

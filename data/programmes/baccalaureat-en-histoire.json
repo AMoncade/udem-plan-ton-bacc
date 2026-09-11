@@ -1,0 +1,583 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-histoire",
+  "nom": "Baccalauréat en histoire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Fondement méthodologique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "HST 1010",
+        "HST 2023"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Fondement, histoire de l'Europe",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "HST 1031",
+        "HST 1032",
+        "HST 1041",
+        "HST 1042"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Fondement, histoire du Québec, du Canada et des Amériques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "HST 1043",
+        "HST 1044",
+        "HST 1048",
+        "HST 1051",
+        "HST 1052",
+        "HST 1053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Fondement, histoire de l'Afrique et de l'Orient",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "HST 1061",
+        "HST 1062",
+        "HST 1063",
+        "HST 1070",
+        "HST 1080"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Méthode et pratique de l'histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "ARV 1050",
+        "ETM 3202",
+        "HGL 1011",
+        "HGL 2005",
+        "HGL 2422",
+        "HST 1015",
+        "HST 2001",
+        "HST 2002",
+        "HST 2007",
+        "HST 2013",
+        "HST 2101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 30 crédits.",
+      "cours": [
+        "HST 2070",
+        "HST 2080",
+        "HST 2108",
+        "HST 2109",
+        "HST 2110",
+        "HST 2111",
+        "HST 2113",
+        "HST 2125",
+        "HST 2126",
+        "HST 2128",
+        "HST 2132",
+        "HST 2139",
+        "HST 2151",
+        "HST 2212",
+        "HST 2246",
+        "HST 2262",
+        "HST 2263",
+        "HST 2264",
+        "HST 2267",
+        "HST 2273",
+        "HST 2274",
+        "HST 2276",
+        "HST 2284",
+        "HST 2288",
+        "HST 2295",
+        "HST 2296",
+        "HST 2297",
+        "HST 2298",
+        "HST 2348",
+        "HST 2351",
+        "HST 2352",
+        "HST 2362",
+        "HST 2370",
+        "HST 2371",
+        "HST 2401",
+        "HST 2402",
+        "HST 2410",
+        "HST 2420",
+        "HST 2427",
+        "HST 2430",
+        "HST 2443",
+        "HST 2444",
+        "HST 2446",
+        "HST 2453",
+        "HST 2618",
+        "HST 2621",
+        "HST 2624",
+        "HST 2625",
+        "HST 2627",
+        "HST 2628",
+        "HST 2820",
+        "HST 2875",
+        "HST 2885",
+        "HST 2904",
+        "HST 2911"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01I",
+      "cle": "01/01I",
+      "segment": "01",
+      "nom": "Langues anciennes et modernes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1926",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRL 1901",
+        "CRL 1902",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ETM 2200",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HEB 1901",
+        "HEB 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "LSL 1901",
+        "LSL 1902",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904",
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "01Y",
+      "cle": "01/01Y",
+      "segment": "01",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 1018",
+        "ANT 1611",
+        "ANT 3553",
+        "ANT 3851",
+        "CIN 2111",
+        "CIN 3107",
+        "COM 1150",
+        "DMO 1000",
+        "DMO 2700",
+        "ETM 1200",
+        "ETM 1400",
+        "ETM 2008",
+        "ETM 2102",
+        "FEM 3300",
+        "FRA 1027",
+        "FRA 1130",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 1312",
+        "GEO 1412",
+        "GEO 3463",
+        "HAR 1166",
+        "HAR 1167",
+        "HAR 1200",
+        "HAR 2195",
+        "HGL 1021",
+        "HGL 1031",
+        "HOR 1200",
+        "HOR 3200",
+        "IFT 1931",
+        "IFT 2720",
+        "INU 1001",
+        "LCO 1000",
+        "LCO 1030",
+        "LLM 2000",
+        "PHI 1800",
+        "PHI 1860",
+        "POL 1954",
+        "REL 1230",
+        "REL 2240",
+        "REL 2710",
+        "REL 3221",
+        "SCI 2955",
+        "SOL 1015",
+        "SOL 1150",
+        "SOL 3221",
+        "URB 1118"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle HST."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 30 crédits.",
+      "cours": [
+        "HST 3070",
+        "HST 3080",
+        "HST 3100",
+        "HST 3105",
+        "HST 3108",
+        "HST 3111",
+        "HST 3130",
+        "HST 3131",
+        "HST 3133",
+        "HST 3206",
+        "HST 3210",
+        "HST 3249",
+        "HST 3253",
+        "HST 3257",
+        "HST 3259",
+        "HST 3276",
+        "HST 3352",
+        "HST 3361",
+        "HST 3371",
+        "HST 3430",
+        "HST 3432",
+        "HST 3440",
+        "HST 3441",
+        "HST 3450",
+        "HST 3480",
+        "HST 3510",
+        "HST 3570",
+        "HST 3571",
+        "HST 3574",
+        "HST 3611",
+        "HST 3700",
+        "HST 3710",
+        "HST 3720"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "HST 3070",
+        "HST 3080",
+        "HST 3100",
+        "HST 3105",
+        "HST 3108",
+        "HST 3111",
+        "HST 3130",
+        "HST 3131",
+        "HST 3133",
+        "HST 3206",
+        "HST 3210",
+        "HST 3249",
+        "HST 3253",
+        "HST 3257",
+        "HST 3259",
+        "HST 3276",
+        "HST 3352",
+        "HST 3361",
+        "HST 3371",
+        "HST 3430",
+        "HST 3432",
+        "HST 3440",
+        "HST 3441",
+        "HST 3450",
+        "HST 3480",
+        "HST 3510",
+        "HST 3570",
+        "HST 3571",
+        "HST 3574",
+        "HST 3611",
+        "HST 3710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71V",
+      "cle": "71/71V",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "HST 4000",
+        "HST 4010",
+        "HST 6033"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71W",
+      "cle": "71/71W",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "HST 3700",
+        "HST 3720"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 13 (A18)\nLe baccalauréat comporte 90 crédits. Il est offert selon 2 cheminements: le cheminement régulier ou le cheminement honor.\nCheminement régulier (segment 01 et segment 70) : 6 crédits obligatoires, de 78 à 81 crédits à option et 3 à 6 crédits aux choix.\nCheminement honor (segment 01 et segment 71) : 15 crédits obligatoires (dont les 9 crédits du bloc 71V), de 69 à 72 crédits à option (donc 3 crédits minimum du bloc 71A et 3 crédits minimum du bloc 71W) et 3 à 6 crédits aux choix.",
+    "Segment 01 Tronc commun aux deux cheminements. — Cheminement régulier (segment 01 et segment 70) : 6 crédits obligatoires, de 78 à 81 crédits à option et 3 à 6 crédits aux choix.",
+    "Segment 01 Tronc commun aux deux cheminements. — Cheminement honor (segment 01 et segment 71) : 15 crédits obligatoires (dont les 9 crédits du bloc 71V), de 69 à 72 crédits à option (donc 3 crédits minimum du bloc 71A et 3 crédits minimum du bloc 71W) et 3 à 6 crédits aux choix.",
+    "Segment 70 Cheminement régulier — L'étudiant du cheminement régulier doit compléter de 15 à 30 crédits du bloc 70A.",
+    "Segment 71 Cheminement honor — Les crédits du cheminement honor sont répartis de la façon suivante : 9 crédits obligatoires et de 6 à 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-histoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:39.762Z"
+}

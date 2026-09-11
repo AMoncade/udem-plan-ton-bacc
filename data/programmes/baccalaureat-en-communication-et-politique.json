@@ -1,0 +1,354 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-communication-et-politique",
+  "nom": "Baccalauréat en communication et politique",
+  "orientation": null,
+  "segments": [
+    "99"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 36 crédits obligatoires, 48 à 52 crédits à option et maximum 6 crédits au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": null,
+    "choix": {
+      "min": 48,
+      "max": 52
+    }
+  },
+  "blocs": [
+    {
+      "id": "99A",
+      "cle": "99/99A",
+      "segment": "99",
+      "nom": "Connaissances théoriques et méthod. fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "COM 1100",
+        "COM 1300",
+        "COM 1500",
+        "COM 1600",
+        "POL 1000",
+        "POL 1020",
+        "POL 1330",
+        "POL 1803"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99B",
+      "cle": "99/99B",
+      "segment": "99",
+      "nom": "Fondements théoriques en communication politique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CEP 1000",
+        "CEP 1500",
+        "CEP 2000",
+        "CEP 3000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99C",
+      "cle": "99/99C",
+      "segment": "99",
+      "nom": "Méthodologie spécialisée en sciences de la communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 2008",
+        "COM 2009"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99D",
+      "cle": "99/99D",
+      "segment": "99",
+      "nom": "Méthodologie spécialisée en science politique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "POL 2120",
+        "POL 2215",
+        "POL 2809",
+        "POL 2829",
+        "POL 2849"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99E",
+      "cle": "99/99E",
+      "segment": "99",
+      "nom": "Communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 21,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 21 crédits, maximum 30 crédits.",
+      "cours": [
+        "COM 1150",
+        "COM 1350",
+        "COM 1560",
+        "COM 1570",
+        "COM 1750",
+        "COM 2001",
+        "COM 2018",
+        "COM 2019",
+        "COM 2020",
+        "COM 2021",
+        "COM 2104",
+        "COM 2130",
+        "COM 2150",
+        "COM 2200",
+        "COM 2215",
+        "COM 2220",
+        "COM 2320",
+        "COM 2440",
+        "COM 2450",
+        "COM 2460",
+        "COM 2505",
+        "COM 2540",
+        "COM 2550",
+        "COM 2565",
+        "COM 2570",
+        "COM 2571",
+        "COM 2580",
+        "COM 2590",
+        "COM 2660",
+        "COM 2710",
+        "COM 2720",
+        "COM 2920",
+        "COM 2925",
+        "COM 2945",
+        "COM 3011",
+        "COM 3035",
+        "COM 3060",
+        "COM 3065",
+        "COM 3118",
+        "COM 3155",
+        "COM 3220",
+        "COM 3305",
+        "COM 3320",
+        "COM 3400",
+        "COM 3410",
+        "COM 3420",
+        "COM 3562",
+        "COM 3570"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99F",
+      "cle": "99/99F",
+      "segment": "99",
+      "nom": "Politique",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum 21 crédits; maximum 30 crédits."
+      },
+      "regleBrut": "Option - Minimum 21 crédits; maximum 30 crédits.",
+      "cours": [
+        "POL 1008",
+        "POL 1009",
+        "POL 1200",
+        "POL 1600",
+        "POL 2005",
+        "POL 2007",
+        "POL 2011",
+        "POL 2050",
+        "POL 2090",
+        "POL 2100",
+        "POL 2102",
+        "POL 2111",
+        "POL 2140",
+        "POL 2150",
+        "POL 2160",
+        "POL 2170",
+        "POL 2180",
+        "POL 2250",
+        "POL 2322",
+        "POL 2400",
+        "POL 2403",
+        "POL 2404",
+        "POL 2405",
+        "POL 2410",
+        "POL 2510",
+        "POL 2560",
+        "POL 2602",
+        "POL 2606",
+        "POL 2802",
+        "POL 2806",
+        "POL 2850",
+        "POL 2859",
+        "POL 2916",
+        "POL 2917",
+        "POL 3004",
+        "POL 3005",
+        "POL 3006",
+        "POL 3007",
+        "POL 3008",
+        "POL 3009",
+        "POL 3010",
+        "POL 3011",
+        "POL 3013",
+        "POL 3050",
+        "POL 3101",
+        "POL 3102",
+        "POL 3140",
+        "POL 3159",
+        "POL 3175",
+        "POL 3235",
+        "POL 3285",
+        "POL 3286",
+        "POL 3287",
+        "POL 3291",
+        "POL 3292",
+        "POL 3310",
+        "POL 3355",
+        "POL 3370",
+        "POL 3401",
+        "POL 3402",
+        "POL 3481",
+        "POL 3500",
+        "POL 3601",
+        "POL 3602",
+        "POL 3603",
+        "POL 3605",
+        "POL 3721",
+        "POL 3753",
+        "POL 3754",
+        "POL 3807",
+        "POL 3835",
+        "POL 3840",
+        "POL 3849",
+        "POL 3851",
+        "POL 3861",
+        "POL 3870",
+        "POL 3900",
+        "POL 3904",
+        "POL 3906",
+        "POL 3908",
+        "POL 3910",
+        "POL 3913",
+        "POL 3917",
+        "POL 3919",
+        "POL 3930"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99G",
+      "cle": "99/99G",
+      "segment": "99",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "COM 3000",
+        "COM 3030",
+        "COM 3032",
+        "POL 3240",
+        "POL 3241"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99Y",
+      "cle": "99/99Y",
+      "segment": "99",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "99Z",
+      "cle": "99/99Z",
+      "segment": "99",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que les sigles COM et POL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 09 (A20)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 99 — Les crédits du baccalauréat sont répartis de la façon suivante : 36 crédits obligatoires, 48 à 52 crédits à option et maximum 6 crédits au choix.",
+    "Segment 99 — Un minimum de 33 crédits de POL et 33 crédits de COM est à respecter. Ceci inclut les cours obligatoires. Les étudiants doivent suivre au moins 12 crédits de cours de niveau 3000."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-communication-et-politique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:28.726Z"
+}

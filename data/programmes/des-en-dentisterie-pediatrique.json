@@ -1,0 +1,184 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "des-en-dentisterie-pediatrique",
+  "nom": "DES en dentisterie pédiatrique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine dentaire",
+  "typeProgramme": "DES",
+  "creditsTotal": 79,
+  "exigences": {
+    "brut": "Les crédits du D.E.S. sont répartis de la façon suivante : 72 crédits obligatoires, 4 à 7 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 72,
+      "max": 72
+    },
+    "option": {
+      "min": 4,
+      "max": 7
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 72,
+          "max": 72
+        }
+      },
+      "regleBrut": "Obligatoire - 72 crédits.",
+      "cours": [
+        "DER 6033",
+        "DER 6034",
+        "DER 60741",
+        "DER 60742",
+        "DER 60743",
+        "DER 6075",
+        "DER 60841",
+        "DER 60842",
+        "DER 60843",
+        "DER 60941",
+        "DER 60942",
+        "DER 60943",
+        "DER 6120",
+        "DER 6230",
+        "PDT 49521",
+        "PDT 49522",
+        "PDT 49523",
+        "PDT 49524",
+        "PDT 49525",
+        "PDT 49526",
+        "PDT 49527",
+        "PDT 49528",
+        "PDT 49529",
+        "PDT 49541",
+        "PDT 49542",
+        "PDT 49543",
+        "PDT 49561",
+        "PDT 49562",
+        "PDT 49563",
+        "SAB 6062",
+        "SAB 6070",
+        "SAB 6100",
+        "SAB 6101",
+        "SAB 6102",
+        "SAB 61141",
+        "SAB 61142",
+        "SAB 61143",
+        "SAB 62141",
+        "SAB 62142",
+        "SAB 62143",
+        "SAB 6290",
+        "SAB 6300A",
+        "SAB 6300B",
+        "SAB 6307A",
+        "SAB 6307B",
+        "SAB 63141",
+        "SAB 63142",
+        "SAB 63143",
+        "SAB 6325A",
+        "SAB 6325B",
+        "SAB 6340A",
+        "SAB 6340B",
+        "SAB 6340C",
+        "SAB 6341A",
+        "SAB 6341B",
+        "SAB 6341C",
+        "SAB 6342A",
+        "SAB 6342B",
+        "SAB 6342C",
+        "SAB 6343A",
+        "SAB 6343B",
+        "SAB 6343C",
+        "SAB 6344",
+        "SAB 6345A",
+        "SAB 6345B",
+        "SAB 6345C",
+        "SAB 6345D",
+        "SAB 6345E",
+        "SAB 6345F",
+        "SAB 6345G",
+        "SAB 6345H",
+        "SAB 6345I",
+        "SAB 6346A",
+        "SAB 6346B",
+        "SAB 6346C",
+        "SAB 6347A",
+        "SAB 6347B",
+        "SAB 6347C",
+        "SAB 6349",
+        "SAB 6401",
+        "STO 6041",
+        "STO 6310",
+        "STO 6312"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 7 crédits.",
+      "cours": [
+        "DER 6130",
+        "DER 6195",
+        "DER 6222",
+        "MSO 6060",
+        "MSO 6061",
+        "SAB 6351",
+        "SAB 6352",
+        "SAB 6353",
+        "STO 6306"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Avec l'approbation du directeur du programme, l'étudiant peut choisir un cours en lien avec son programme dans le répertoire des cours de 1er et de 2e cycles de l'Université de Montréal."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (E19)\nLe diplôme d'études spécialisées en dentisterie pédiatrique comporte 79 crédits répartis sur 3 années (9 trimestres).",
+    "Segment 70 — Les crédits du D.E.S. sont répartis de la façon suivante : 72 crédits obligatoires, 4 à 7 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/des-en-dentisterie-pediatrique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:43:58.269Z"
+}

@@ -1,0 +1,70 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-de-residence-multidisciplinaire-en-medecine-dentaire",
+  "nom": "Certificat de résidence multidisciplinaire en médecine dentaire",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine dentaire",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 52,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SRS 6012",
+        "SRS 6013",
+        "SRS 6014",
+        "SRS 6015",
+        "SRS 6016",
+        "SRS 6017"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Obligatoire - 40 crédits.",
+      "cours": [
+        "SRS 6018",
+        "SRS 6019",
+        "SRS 6020",
+        "SRS 6021",
+        "SRS 6022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (H18)\nLe certificat comporte 52 crédits.",
+    "Segment 70 — Tous les crédits du Certificat sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-de-residence-multidisciplinaire-en-medecine-dentaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:10.167Z"
+}

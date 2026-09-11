@@ -1,0 +1,170 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-education-prescolaire-et-enseignement-primaire-campus-montreal",
+  "nom": "Baccalauréat en éducation préscolaire et enseignement primaire - Campus Montréal",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 120,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 114 crédits obligatoire et 6 crédits à option.",
+    "obligatoire": {
+      "min": 114,
+      "max": 114
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Initiation à la profession enseignante",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ETA 1001",
+        "ETA 1002",
+        "ETA 1111",
+        "ETA 1900",
+        "ETA 2200",
+        "ETA 2550",
+        "ETA 3012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Intervention éducative",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "PPA 1300",
+        "PPA 1363",
+        "PPA 2101",
+        "PPA 2103",
+        "PPA 2200",
+        "PPA 2301",
+        "PPA 2368",
+        "PPA 31051",
+        "PPA 31052",
+        "PPA 3205",
+        "PPA 4365"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Didactique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 46,
+          "max": 46
+        }
+      },
+      "regleBrut": "Obligatoire - 46 crédits.",
+      "cours": [
+        "DID 10101",
+        "DID 10102",
+        "DID 1111",
+        "DID 1206",
+        "DID 2000",
+        "DID 2110",
+        "DID 2203",
+        "DID 2205",
+        "DID 2224",
+        "DID 3209",
+        "DID 3222",
+        "DID 3309",
+        "DID 3920",
+        "DID 4112",
+        "DID 4213",
+        "DID 4310",
+        "DID 4804"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stages et projet pédagogique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Obligatoire - 23 crédits.",
+      "cours": [
+        "EDU 1002",
+        "EDU 2002",
+        "EDU 3002",
+        "EDU 4002",
+        "EDU 4211P"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Arts et cultures",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "DID 2910",
+        "DID 4442",
+        "DID 4443",
+        "DID 4444",
+        "DID 4445",
+        "PPA 2550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 15 (A23)\nCe programme comporte 120 crédits.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 114 crédits obligatoire et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-education-prescolaire-et-enseignement-primaire-campus-montreal/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:42.390Z"
+}

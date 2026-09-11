@@ -1,0 +1,356 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-neurosciences",
+  "nom": "Baccalauréat en neurosciences",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "régulier",
+      "segments": [
+        "01",
+        "70",
+        "71"
+      ],
+      "exigences": {
+        "brut": "- Le cheminement régulier comprend les segments 01 et 70 et totalise 90 crédits répartis de la façon suivante : 72 crédits obligatoires, de 12 à 18 crédits à option et 0 à 6 crédits au choix.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 12,
+          "max": 18
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "honor",
+      "segments": [
+        "01",
+        "70",
+        "71"
+      ],
+      "exigences": {
+        "brut": "- Le cheminement honor comprend les segments 01 et 71 et totalise 90 crédits répartis de la façon suivante : 75 crédits obligatoires, 12 à 15 crédits à option et 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 12,
+          "max": 15
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 57,
+          "max": 57
+        }
+      },
+      "regleBrut": "Obligatoire - 57 crédits.",
+      "cours": [
+        "BCM 1531",
+        "BIO 1101",
+        "BIO 1157",
+        "BIO 2043",
+        "BIO 2110",
+        "BIO 2471",
+        "IFT 1016",
+        "NSC 1001",
+        "NSC 1002",
+        "NSC 1003",
+        "NSC 1004",
+        "NSC 1006",
+        "NSC 2001",
+        "NSC 2002",
+        "NSC 2003",
+        "NSC 2004",
+        "NSC 2005",
+        "NSC 2006",
+        "NSC 3040",
+        "PBC 1011",
+        "PHL 2025",
+        "PHL 2100",
+        "PSL 1993",
+        "PSY 2065"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Neurobiologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "NSC 3001",
+        "NSC 3005",
+        "NSC 3009",
+        "NSC 3013",
+        "PSL 3062"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Systèmes et neurosciences computationnelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "NSC 3003",
+        "NSC 3084",
+        "PSL 3063",
+        "PSY 2008",
+        "PSY 3019"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les NSC3084 et NSC6084 sont mutuellement exclusifs. L'étudiant du cheminement honor qui aurait déjà suivi le NSC3084 ne pourra pas s'inscrire au NSC6084 et inversement."
+      ]
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Psychopathologie et santé mentale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "NSC 3005",
+        "PST 3100",
+        "PSY 3032",
+        "PSY 3035"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Sciences de l'audition",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "AUD 1131",
+        "AUD 1132",
+        "LNG 1400",
+        "ORA 1531",
+        "PSY 1095",
+        "PSY 2254"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants de la filière sciences de l'audition souhaitant poursuivre leurs études à la Maîtrise professionnelle en sciences de l'audition peuvent suivre soit le LNG1400, soit l'ORA1531. Ceux de la filière sciences de l'audition qui souhaitent plutôt aller vers la Maîtrise professionnelle en orthophonie devraient plutôt suivre l'ORA1531. Par ailleurs, en raison du nombre de places limitées, l'inscription aux cours PSY ci-dessous doit être approuvée par la responsable de programme. En plus des cours LNG1400, AUD1131 et AUD1132, les étudiants de la filière sciences de l'audition doivent prendre au moins l'un ou l'autre des cours PSY1095 ou PSY2254."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "NSC 3010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis à l'extérieur du Département de neurosciences. L'étudiant de la filière sciences de l'audition qui souhaiterait poursuivre ses études à la Maîtrise professionnelle en orthophonie (MPO) devrait suivre les ORA1131 et ORA2001 (préalables à la MPO)."
+      ]
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "NSC 4010",
+        "NSC 4041",
+        "NSC 6044"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Neurobiologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits",
+      "cours": [
+        "NSC 6060",
+        "NSC 6061",
+        "PHL 6031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Neurocomputation et systèmes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "NSC 6051",
+        "NSC 6070",
+        "NSC 6084"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les NSC3084 et NSC6084 sont mutuellement exclusifs. L'étudiant du cheminement honor qui aurait déjà suivi le NSC3084 ne pourra pas s'inscrire au NSC6084 et inversement."
+      ]
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Psychopathologie et santé mentale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits",
+      "cours": [
+        "PST 6100",
+        "PSY 6022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis à l'extérieur du Département de neurosciences. Pour être admissible à la Maîtrise professionnelle en orthophonie (MPO), l'étudiant de la filière sciences de l'audition devrait suivre les ORA1131 et ORA2001 (préalables à la MPO)."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A24)\nLe baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et deux cheminements.\n- Le cheminement régulier comprend les segments 01 et 70 et totalise 90 crédits répartis de la façon suivante : 72 crédits obligatoires, de 12 à 18 crédits à option et 0 à 6 crédits au choix.\n- Le cheminement honor comprend les segments 01 et 71 et totalise 90 crédits répartis de la façon suivante : 75 crédits obligatoires, 12 à 15 crédits à option et 0 à 3 crédits au choix.",
+    "Segment 01 Commun aux deux cheminements — Le segment 01 comporte 57 crédits obligatoires, de 6 à 18 crédits à option.",
+    "Segment 01 Commun aux deux cheminements — Cheminement régulier : 57 crédits obligatoires, de 12 à 18 crédits à option.",
+    "Segment 01 Commun aux deux cheminements — Cheminement honor : 57 crédits obligatoires, de 6 à 15 crédits à option.",
+    "Segment 70 Propre au cheminement régulier — Les crédits du cheminement général sont répartis de la façon suivante : 15 crédits obligatoires et de 0 à 6 crédits au choix.",
+    "Segment 71 Propre au cheminement honor — Les crédits du cheminement honor sont répartis de la façon suivante : 18 crédits obligatoires, de 0 à 6 crédits à option et de 0 à 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-neurosciences/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:36.491Z"
+}

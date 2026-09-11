@@ -1,0 +1,608 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sciences-biomedicales",
+  "nom": "Baccalauréat en sciences biomédicales",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "- l'orientation générale (segments 01 et 70) est composée de 60 crédits obligatoires, de 24 à 30 crédits à option et de 0 à 6 crédits au choix;",
+        "obligatoire": {
+          "min": 60,
+          "max": 60
+        },
+        "option": {
+          "min": 24,
+          "max": 30
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "pharmacologie et physiologie",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "- l'orientation pharmacologie et physiologie (segments 01 et 72) est composée de 60 crédits obligatoires, de 27 à 30 crédits à option et de 0 à 3 crédits au choix;",
+        "obligatoire": {
+          "min": 60,
+          "max": 60
+        },
+        "option": {
+          "min": 27,
+          "max": 30
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "neurosciences",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": {
+        "brut": "- l'orientation neurosciences (segments 01 et 73) est composée de 60 crédits obligatoires, de 27 à 30 crédits à option et de 0 à 3 crédits au choix;",
+        "obligatoire": {
+          "min": 60,
+          "max": 60
+        },
+        "option": {
+          "min": 27,
+          "max": 30
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "sciences de l'audition et du langage",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": {
+        "brut": "- l'orientation sciences de l'audition et du langage (segments 01 et 74) est composée de 75 crédits obligatoires, de 12 à 15 crédits à option et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 75,
+          "max": 75
+        },
+        "option": {
+          "min": 12,
+          "max": 15
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "BCM 1521",
+        "BCM 1531",
+        "BIO 1101",
+        "BIO 1157",
+        "BIO 1203",
+        "BIO 2110",
+        "MCB 1979",
+        "MCB 2985",
+        "MCB 2987",
+        "MSN 2100",
+        "PBC 1013",
+        "PBC 2000",
+        "PHI 1968",
+        "PHL 1400",
+        "PHL 2025",
+        "PHL 2100",
+        "PHL 3300",
+        "SBM 1002",
+        "SBM 2003",
+        "SBM 2004",
+        "SBM 2005",
+        "SBM 2007",
+        "SBM 2008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "AUD 1131",
+        "AUD 1132",
+        "BCM 2501",
+        "BCM 2502",
+        "BCM 2503",
+        "BCM 2505",
+        "BCM 2531",
+        "BCM 2550",
+        "BCM 2562",
+        "BCM 3512",
+        "BCM 3513",
+        "BCM 3514",
+        "BCM 3525",
+        "BIO 3661",
+        "BIO 3674",
+        "LNG 1540",
+        "LNG 2002",
+        "MCB 2094",
+        "MCB 2979",
+        "MCB 2991",
+        "MCB 2992",
+        "MCB 3008",
+        "MCB 3010",
+        "MCB 3080",
+        "MSO 3001",
+        "NSC 2003",
+        "NSC 2004",
+        "NSC 3001",
+        "NSC 3003",
+        "NSC 3005",
+        "NSC 3009",
+        "NSC 3040",
+        "OPM 2551",
+        "OPM 3551",
+        "OPM 3552",
+        "ORA 1900",
+        "ORA 2900",
+        "PBC 3050",
+        "PBC 3060",
+        "PHL 3100",
+        "PHL 3200",
+        "PHL 3500",
+        "PHL 3600",
+        "PSE 1203",
+        "PSL 3062",
+        "PSL 3063",
+        "PST 3100",
+        "PSY 1035",
+        "PSY 1048",
+        "PSY 1095",
+        "PSY 2254",
+        "PSY 3032",
+        "PSY 3033",
+        "PSY 3035",
+        "SBM 3003",
+        "SBM 3200",
+        "SCV 2153",
+        "SCV 2452"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "-orientation générale : en cheminement régulier, de 9 à 15 crédits; en cheminement honor, de 3 à 15 crédits; - orientation pharmacologie et physiologie : en cheminement régulier, 0 à 9 crédits; en cheminement honor, de 0 à 15 crédits; - orientation neurosciences : en cheminement régulier, 0 à 9 crédits; en cheminement honor, de 0 à 15 crédits; - orientation sciences de l'audition et du langage : en cheminement régulier, 0 à 6 crédits; en cheminement honor, de 0 à 3 crédits. Durant les deux premières années d'études dans le programme, l'inscription aux cours de ce bloc doit être approuvée."
+      ]
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "- orientation générale : de 0 à 6 crédits; - orientation pharmacologie et physiologie : de 0 à 3 crédits; - orientation neurosciences : de 0 à 3 crédits; - orientation sciences de l'audition et du langage : de 0 à 3 crédits. Durant les deux premières années d'études dans le programme, l'inscription à des cours au choix doit être approuvée."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Recherche et stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "SBM 3008",
+        "SBM 3014",
+        "SBM 4008"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- cheminement régulier : de 9 à 15 crédits; - cheminement honor : 15 crédits."
+      ]
+    },
+    {
+      "id": "70W",
+      "cle": "70/70W",
+      "segment": "70",
+      "nom": "Propre au cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BCM 6026",
+        "BCM 6210",
+        "MCB 6031",
+        "MCB 6210",
+        "MSO 6011",
+        "MSO 6061",
+        "PHL 6011",
+        "PHL 6031",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6093",
+        "PHL 6095",
+        "PHL 6097",
+        "PSL 6020",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E",
+        "PSL 6090",
+        "PSL 6170",
+        "PST 6100",
+        "PST 6200",
+        "SCV 6007",
+        "SCV 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- cheminement régulier : 0 crédit; - cheminement honor : de 0 à 6 crédits."
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Stages en milieu de travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "SBM 3015",
+        "SBM 4015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Compléments de formation en pharmacologie et physiologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "BIO 3674",
+        "PBC 3050",
+        "PHL 3100",
+        "PHL 3200",
+        "PHL 3500",
+        "PHL 3600",
+        "SBM 3003",
+        "SBM 3200"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- cheminement régulier, de 6 à 12 crédits, - cheminement honor, de 0 à 6 crédits."
+      ]
+    },
+    {
+      "id": "72W",
+      "cle": "72/72W",
+      "segment": "72",
+      "nom": "Cheminement Honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHL 6011",
+        "PHL 6031",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6093",
+        "PHL 6095",
+        "PHL 6097",
+        "PSL 6020",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E",
+        "PSL 6090",
+        "PSL 6170"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- cheminement régulier : 0 crédit, - cheminement honor, de 0 à 6 crédits."
+      ]
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Stages en milieu de travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "SBM 3010",
+        "SBM 4010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Compléments formation en neurosciences",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "BIO 3661",
+        "NSC 2003",
+        "NSC 2004",
+        "NSC 3001",
+        "NSC 3003",
+        "NSC 3005",
+        "NSC 3009",
+        "PSL 3062",
+        "PSL 3063",
+        "PST 3100",
+        "PSY 3032",
+        "PSY 3033",
+        "PSY 3035",
+        "SBM 3200"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- cheminement régulier, de 6 à 12 crédits, - cheminement honor, de 0 à 6 crédits."
+      ]
+    },
+    {
+      "id": "73W",
+      "cle": "73/73W",
+      "segment": "73",
+      "nom": "Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHL 6031",
+        "PHL 6032",
+        "PHL 6035"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- cheminement régulier : 0 crédit; - cheminement honor : de 0 à 6 crédits."
+      ]
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Formation initiale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "AUD 1131",
+        "AUD 1132",
+        "LNG 1400",
+        "PSY 1095",
+        "PSY 2254"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Compléments de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 15 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1540",
+        "LNG 2002",
+        "NSC 3001",
+        "ORA 1531",
+        "ORA 1900",
+        "ORA 2900",
+        "PBC 3060",
+        "PSE 1203",
+        "PSL 3062",
+        "PSL 3063",
+        "PSY 1035",
+        "PSY 1048",
+        "PSY 3032",
+        "PSY 3033"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- cheminement régulier, de 12 crédits à 15 crédits, - cheminement honor, de 0 à 3 crédits."
+      ]
+    },
+    {
+      "id": "74V",
+      "cle": "74/74V",
+      "segment": "74",
+      "nom": "Cheminement honor (stage)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option- Maximum 15 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "- cheminement régulier : 0 crédit; - cheminement honor : 15 crédits (ou avoir suivi 12 crédits dans le bloc 74W)."
+      ]
+    },
+    {
+      "id": "74W",
+      "cle": "74/74W",
+      "segment": "74",
+      "nom": "Cheminement honor (approfondissement)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits",
+      "cours": [
+        "AUD 6171",
+        "AUD 6172",
+        "AUD 6181",
+        "AUD 6282",
+        "AUD 6817",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6061",
+        "NSC 6060",
+        "NSC 6061",
+        "NSC 6070",
+        "ORA 6868",
+        "PHL 6011",
+        "PSL 6020",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "(ou avoir suivi le stage AUD4000 – bloc 74V). - cheminement régulier : 0 crédit; - cheminement honor : de 0 à 12 crédits."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 09 (A23)\nLe baccalauréat comporte 90 crédits. Il est offert selon quatre orientations. Outre le cheminement régulier, un cheminement honor est offert dans chacune des orientations :\n- l'orientation générale (segments 01 et 70) est composée de 60 crédits obligatoires, de 24 à 30 crédits à option et de 0 à 6 crédits au choix;\n- l'orientation pharmacologie et physiologie (segments 01 et 72) est composée de 60 crédits obligatoires, de 27 à 30 crédits à option et de 0 à 3 crédits au choix;\n- l'orientation neurosciences (segments 01 et 73) est composée de 60 crédits obligatoires, de 27 à 30 crédits à option et de 0 à 3 crédits au choix;\n- l'orientation sciences de l'audition et du langage (segments 01 et 74) est composée de 75 crédits obligatoires, de 12 à 15 crédits à option et de 0 à 3 crédits au choix.",
+    "Segment 01 commun à toutes les orientations — Les crédits du segment 01 sont répartis de la façon suivante : 60 crédits obligatoires, de 0 à 30 crédits à option et de 0 à 6 crédits au choix.",
+    "Segment 70 Propre à l'orientation générale — Les crédits du segment 70 sont répartis de la façon suivante :",
+    "Segment 70 Propre à l'orientation générale — - cheminement régulier : de 9 à 15 crédits à option;",
+    "Segment 70 Propre à l'orientation générale — - cheminement honor : de 15 à 21 crédits à option.",
+    "Segment 72 Propre à l'orientation pharmacologie et physiologie — Les crédits du segment 72 sont répartis de la façon suivante :",
+    "Segment 72 Propre à l'orientation pharmacologie et physiologie — - cheminement régulier : de 21 à 27 crédits à option;",
+    "Segment 72 Propre à l'orientation pharmacologie et physiologie — - cheminement honor : de 15 à 27 crédits à option.",
+    "Segment 73 Propre à l'orientation neurosciences — Les crédits du segment 73 sont répartis de la façon suivante :",
+    "Segment 73 Propre à l'orientation neurosciences — - cheminement régulier : de 21 à 27 crédits à option;",
+    "Segment 73 Propre à l'orientation neurosciences — - cheminement honor : de 15 à 27 crédits à option.",
+    "Segment 74 Propre à l'orientation sciences de l'audition et du langage — Les crédits du segment 74 sont répartis de la façon suivante :",
+    "Segment 74 Propre à l'orientation sciences de l'audition et du langage — - en cheminement régulier : 15 crédits obligatoires et de 12 à 15 crédits à option;",
+    "Segment 74 Propre à l'orientation sciences de l'audition et du langage — - en cheminement honor : 15 crédits obligatoires, de 12 à 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sciences-biomedicales/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:12.343Z"
+}

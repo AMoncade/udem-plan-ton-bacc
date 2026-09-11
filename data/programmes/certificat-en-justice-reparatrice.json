@@ -1,0 +1,135 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-justice-reparatrice",
+  "nom": "Certificat en justice réparatrice",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 18 crédits de cours obligatoires, de 9 à 12 crédits de cours à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 9,
+      "max": 12
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements de la justice réparatrice",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "VIO 1500",
+        "VIO 1800",
+        "VIO 2015",
+        "VIO 2500",
+        "VIO 2800",
+        "VIO 3800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Thématiques connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "AEG 3137",
+        "AUT 2500",
+        "CRI 1730G",
+        "CRI 2000G",
+        "CRI 2015G",
+        "CRI 2301G",
+        "CRI 3001",
+        "CRI 3810G",
+        "JES 2008",
+        "PSE 2502",
+        "SME 3010",
+        "SVS 2378",
+        "TXM 1000D",
+        "VIO 1000",
+        "VIO 2009",
+        "VIO 2012",
+        "VIO 2016",
+        "VIO 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours exigés pour le BACCAP ÉPC",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédit.",
+      "cours": [
+        "CRI 1200G",
+        "CRI 1600G",
+        "CRI 3401G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A26)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 18 crédits de cours obligatoires, de 9 à 12 crédits de cours à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-justice-reparatrice/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:55.816Z"
+}

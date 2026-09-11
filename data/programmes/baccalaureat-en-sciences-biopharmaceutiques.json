@@ -1,0 +1,223 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sciences-biopharmaceutiques",
+  "nom": "Baccalauréat en sciences biopharmaceutiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 72 crédits obligatoires, de 12 à 18 crédits à option et de 0 à 6 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 72,
+      "max": 72
+    },
+    "option": {
+      "min": 12,
+      "max": 18
+    },
+    "choix": {
+      "min": 0,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Première année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 29.5,
+          "max": 29.5
+        }
+      },
+      "regleBrut": "Obligatoire - 29.5 crédits.",
+      "cours": [
+        "SBP 1000",
+        "SBP 1012",
+        "SBP 1030",
+        "SBP 1100",
+        "SBP 1101",
+        "SBP 1110",
+        "SBP 1111",
+        "SBP 1130",
+        "SBP 1150",
+        "SBP 1300",
+        "SBP 1301",
+        "SBP 2028",
+        "SBP 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Deuxième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30.5,
+          "max": 30.5
+        }
+      },
+      "regleBrut": "Obligatoire - 30.5 crédits.",
+      "cours": [
+        "SBP 2015",
+        "SBP 2041",
+        "SBP 2045",
+        "SBP 2052",
+        "SBP 2100",
+        "SBP 2110",
+        "SBP 2310",
+        "SBP 2320",
+        "SBP 2330",
+        "SBP 2340",
+        "SBP 2350",
+        "SBP 3016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Troisième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SBP 3045",
+        "SBP 3050",
+        "SBP 3060",
+        "SBP 3601",
+        "SBP 3602"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours d'approfondissement des compétences",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "SBP 3100",
+        "SBP 3200",
+        "SBP 3300",
+        "SBP 3401"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Propre au cheminement régulier",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - maximum 15 crédits.",
+      "cours": [
+        "ANG 1913",
+        "ANG 1921",
+        "BCM 2562",
+        "PHL 3300",
+        "PHM 6032",
+        "PHM 6156A",
+        "SBP 3420",
+        "SBP 3440",
+        "SBP 3450",
+        "SBP 3500",
+        "SBP 3610"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier - 15 crédits. Cheminement Honor et cheminement International : 0 crédits. À l'intention des étudiants au cheminement régulier, l'étudiant doit être inscrit à un des cours suivants: SBP 3440 ou SBP 3610 pour pouvoir suivre le cours PHM 6077 (2 crédits) du bloc 70F."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Propre aux cheminements honor et international",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - maximum 15 crédits.",
+      "cours": [
+        "PHM 6077",
+        "SBP 3500E",
+        "SBP 3501",
+        "SBP 3502",
+        "SBP 3503A",
+        "SBP 3503B",
+        "SBP 3503C",
+        "SBP 3503D",
+        "SBP 3503E",
+        "SBP 4001"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement Honor : 15 crédits (PHM6077 et SBP4001). Cheminement international : 15 crédits."
+      ]
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cheminement Honor et cheminement International : 0 crédits."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 05 (A24)\nLe baccalauréat comporte 90 crédits. Il est offert selon 3 cheminements: le Cheminement régulier, le Cheminement Honor ou le Cheminement international.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 72 crédits obligatoires, de 12 à 18 crédits à option et de 0 à 6 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sciences-biopharmaceutiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:14.081Z"
+}

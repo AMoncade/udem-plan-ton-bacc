@@ -1,0 +1,184 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-traduction",
+  "nom": "Doctorat en traduction",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "Traductologie",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires dont 78 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Terminologie",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires dont 78 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Séminaires obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 7100",
+        "TRA 7200"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours TRA71001 et TRA71002 sont équivalents au cours TRA7100."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Séminaires à option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À déterminer en fonction des intérêts de recherche de l'étudiant et de ses besoins de formation. Le choix des séminaires devra être approuvé par le directeur de recherche de l'étudiant et par le directeur du Département."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "TRA 7000",
+        "TRA 7500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Séminaires obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 7100",
+        "TRA 7200"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours TRA71001 et TRA71002 sont équivalents au cours TRA7100."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Séminaires à option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À déterminer en fonction des intérêts de recherche de l'étudiant et de ses besoins de formation. Le choix des séminaires devra être approuvé par le directeur de recherche de l'étudiant et par le directeur du Département."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "TRA 7000",
+        "TRA 7500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A00)\nLe doctorat comporte 90 crédits. Il est offert avec deux options :\n- l'option Traductologie (segment 70),\n- l'option Terminologie (segment 71).",
+    "Segment 70 Propre à l'option Traductologie — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires dont 78 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option.",
+    "Segment 71 Propre à l'option Terminologie — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires dont 78 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-traduction/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:07.482Z"
+}

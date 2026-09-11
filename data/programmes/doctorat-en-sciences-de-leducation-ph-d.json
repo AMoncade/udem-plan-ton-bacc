@@ -1,0 +1,207 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-de-leducation-ph-d",
+  "nom": "Doctorat en sciences de l'éducation",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Le tronc commun comporte 12 crédits, répartis de la façon suivante : 6 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "EDU 77011",
+        "EDU 77012",
+        "EDU 77021",
+        "EDU 77022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EDU 7715",
+        "EDU 7716"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "DID 6040",
+        "DID 6208",
+        "DID 6225",
+        "DID 6226",
+        "DID 6231",
+        "DID 6232",
+        "DID 6233",
+        "DID 6280",
+        "DID 6484",
+        "DID 6696",
+        "DID 6740",
+        "DID 7020",
+        "EDU 6410",
+        "EDU 7000",
+        "EDU 7001",
+        "EDU 7751",
+        "EDU 7752",
+        "ETA 6105",
+        "ETA 6120",
+        "ETA 6145",
+        "ETA 6400",
+        "ETA 6401",
+        "ETA 6402",
+        "ETA 6536",
+        "ETA 6809",
+        "ETA 6810",
+        "ETA 6917",
+        "ETA 6937",
+        "ETA 6997",
+        "ETA 7910",
+        "PPA 6226",
+        "PPA 6256",
+        "PPA 6274",
+        "PPA 6276",
+        "PPA 6278",
+        "PPA 6304",
+        "PPA 6403",
+        "PPA 6413",
+        "PPA 6428",
+        "PPA 6430",
+        "PPA 6432",
+        "PPA 6445",
+        "PPA 7210",
+        "PPA 7610"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "DID 7491",
+        "DID 7495",
+        "EDU 7490"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "EDU 7490",
+        "ETA 7491",
+        "ETA 7495"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "EDU 7490",
+        "PPA 7491",
+        "PPA 7495"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A25)\nLe doctorat comporte 90 crédits, répartis de la façon suivante : un tronc commun (segment 01) et trois concentrations (segments 70, 71 et 72).",
+    "Segment 01 Tronc commun — Le tronc commun comporte 12 crédits, répartis de la façon suivante : 6 crédits obligatoires et 6 crédits à option.",
+    "Segment 70 Didactique — Cette concentration comporte 78 crédits obligatoires.",
+    "Segment 71 Administration et fondements de l'éducation — Cette concentration comporte 78 crédits obligatoires.",
+    "Segment 72 Psychopédagogie et andragogie — Cette concentration comporte 78 crédits obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-de-leducation-ph-d/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:32.411Z"
+}

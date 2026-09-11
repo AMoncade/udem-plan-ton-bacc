@@ -1,0 +1,171 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-de-relations-industrielles",
+  "nom": "Certificat de relations industrielles",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 12 crédits obligatoires, de 15 à 18 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 18
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements de la pratique professionnelle",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "REI 1010G",
+        "REI 1140G",
+        "REI 1240G",
+        "REI 2305G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation pluridisciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - minimum 3, maximum 6 crédits.",
+      "cours": [
+        "REI 1020G",
+        "REI 1030G",
+        "REI 1040G",
+        "REI 1420G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Relations du travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - minimum 6, maximum 9 crédits.",
+      "cours": [
+        "REI 2310G",
+        "REI 2320G",
+        "REI 2340G",
+        "REI 3345G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Gestion des ressources humaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "REI 2211G",
+        "REI 2215G",
+        "REI 2230G",
+        "SST 1010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "AEG 2110",
+        "COM 1500G",
+        "PPL 3040",
+        "PSY 1045",
+        "REI 1610G",
+        "SOL 1012",
+        "VIO 2011",
+        "VIO 2011D",
+        "VIO 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisi parmi ceux offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A18)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 12 crédits obligatoires, de 15 à 18 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-de-relations-industrielles/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:05.264Z"
+}

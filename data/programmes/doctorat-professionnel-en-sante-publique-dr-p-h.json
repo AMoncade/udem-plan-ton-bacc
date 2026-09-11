@@ -1,0 +1,103 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-professionnel-en-sante-publique-dr-p-h",
+  "nom": "Doctorat professionnel en santé publique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Doctorat professionnel",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 60 crédits obligatoires, dont 24 crédits attribués à un essai doctoral, et 30 crédits à option.",
+    "obligatoire": {
+      "min": 60,
+      "max": 60
+    },
+    "option": {
+      "min": 30,
+      "max": 30
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "SPU 7007",
+        "SPU 7008",
+        "SPU 7009",
+        "SPU 7012",
+        "SPU 7020",
+        "SPU 7110",
+        "SPU 7501",
+        "SPU 7605",
+        "SPU 7652",
+        "SPU 7653"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - 30 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir 30 crédits de cours en lien avec le projet doctoral et le profil de compétences recherché, parmi ceux offerts par l'École de santé publique, l'Université de Montréal ou toute autre université, avec l'approbation de la direction du programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Projet doctoral et essai doctoral",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "SPU 7090",
+        "SPU 7120",
+        "SPU 7130",
+        "SPU 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A26)\nCe programme d'études comporte un total de 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 60 crédits obligatoires, dont 24 crédits attribués à un essai doctoral, et 30 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-professionnel-en-sante-publique-dr-p-h/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:15.088Z"
+}

@@ -1,0 +1,361 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-musique-composition",
+  "nom": "Baccalauréat en musique - Composition",
+  "orientation": null,
+  "segments": [
+    "75"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 63,
+          "max": 63
+        }
+      },
+      "regleBrut": "Obligatoire - 63 crédits.",
+      "cours": [
+        "MCT 1601",
+        "MCT 1602",
+        "MCT 3011",
+        "MCT 3012",
+        "MTE 1110",
+        "MTE 1111",
+        "MTE 1205",
+        "MTE 1206",
+        "MTE 1220",
+        "MTE 1221",
+        "MTE 1403",
+        "MTE 1404",
+        "MTE 1503",
+        "MTE 2114",
+        "MTE 2115",
+        "MUL 1117",
+        "MUS 1300",
+        "MUS 1321",
+        "MUS 3101X",
+        "MUS 3324X",
+        "MUS 3411",
+        "MUS 3412"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "MUS 1011",
+        "MUS 1012",
+        "MUS 1013",
+        "MUS 1014",
+        "MUS 1015",
+        "MUS 1016"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MUS 1011 à 1016 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Composition",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MCT 1603",
+        "MCT 1604",
+        "MCT 1701",
+        "MCT 1702",
+        "MCT 1801",
+        "MCT 1802"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "À ce bloc, l'étudiant choisit une spécialisation : composition instrumentale, mixte ou pour l'image. Les 6 crédits exigés doivent être suivis dans cette même spécialisation."
+      ]
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "HAR 1200",
+        "HAR 2195",
+        "HAR 3900",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1134",
+        "MUL 1245",
+        "MUL 1246",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 3314",
+        "MUL 3333X",
+        "MUL 3334",
+        "MUL 3344",
+        "SOL 1017",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75E",
+      "cle": "75/75E",
+      "segment": "75",
+      "nom": "Théorie, écriture et analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MCT 3511X",
+        "MCT 3512X",
+        "MTE 12041",
+        "MTE 12042",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 2110",
+        "MTE 2111",
+        "MTE 2210",
+        "MTE 2211",
+        "MTE 2315",
+        "MTE 2316",
+        "MTE 3114",
+        "MTE 3115",
+        "MTE 3115X",
+        "MUS 3321"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75F",
+      "cle": "75/75F",
+      "segment": "75",
+      "nom": "Électroacoustique, informatique musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MTE 3300",
+        "MUS 1217",
+        "MUS 1330",
+        "MUS 1331",
+        "MUS 2325",
+        "MUS 2327",
+        "MUS 2328",
+        "MUS 3127X",
+        "MUS 3314X",
+        "MUS 3315X",
+        "MUS 3322X",
+        "MUS 3323",
+        "MUS 3326X",
+        "MUS 3328X",
+        "MUS 3329X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75G",
+      "cle": "75/75G",
+      "segment": "75",
+      "nom": "Ateliers professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "MUS 1232",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106",
+        "PLU 2800U"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75H",
+      "cle": "75/75H",
+      "segment": "75",
+      "nom": "Pratiques musicales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "EMU 1310",
+        "EMU 2312",
+        "MUE 1151",
+        "MUE 1152",
+        "MUE 1153",
+        "MUE 1161",
+        "MUE 1162",
+        "MUE 1171",
+        "MUE 1172",
+        "MUE 1173",
+        "MUE 1191",
+        "MUE 1192",
+        "MUE 1193",
+        "MUE 1211",
+        "MUE 1212",
+        "MUE 1213",
+        "MUE 1221",
+        "MUE 1222",
+        "MUE 1223",
+        "MUE 1231",
+        "MUE 1232",
+        "MUE 1233",
+        "MUE 1241",
+        "MUE 1242",
+        "MUE 1243",
+        "MUE 1251",
+        "MUE 1252",
+        "MUE 1253",
+        "MUE 1261",
+        "MUE 1262",
+        "MUE 1263",
+        "MUE 1271",
+        "MUE 1272",
+        "MUE 1273",
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1363",
+        "MUE 1381",
+        "MUE 1382",
+        "MUE 1383",
+        "MUE 1431",
+        "MUE 1441",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1531",
+        "MUE 1532",
+        "MUE 1571",
+        "MUE 1572",
+        "MUE 1573",
+        "MUE 1621",
+        "MUE 1622",
+        "MUE 2351",
+        "MUE 2352",
+        "MUI 1023A",
+        "MUI 1033A",
+        "MUI 1043A",
+        "MUI 1053A",
+        "MUI 1073A",
+        "MUI 1083A",
+        "MUI 1103A",
+        "MUI 1123A",
+        "MUI 1132A",
+        "MUI 1143A",
+        "MUI 1153A",
+        "MUI 1162A",
+        "MUI 1173A",
+        "MUI 1183A",
+        "MUI 1193A",
+        "MUI 1203A",
+        "MUI 1213A",
+        "MUI 1223A",
+        "MUI 1233A",
+        "MUI 1243A",
+        "MUI 1253A",
+        "MUI 1263A",
+        "MUI 1273A",
+        "MUI 1283A",
+        "MUI 1293A",
+        "MUI 1303A",
+        "MUI 1313A",
+        "MUI 1403A",
+        "MUI 1413A",
+        "MUI 1423A",
+        "MUI 1453A",
+        "MUI 1463A",
+        "MUI 1473A",
+        "MUI 1483A",
+        "MUI 1523A",
+        "MUI 1533A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A26)\nLe baccalauréat comporte 90 crédits répartis de la façon suivante: 63 crédits obligatoires et 27 crédits à option.",
+    "Segment 75 — Les crédits du segment sont répartis de la façon suivante : 63 crédits obligatoires et 27 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-musique-composition/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:18.586Z"
+}

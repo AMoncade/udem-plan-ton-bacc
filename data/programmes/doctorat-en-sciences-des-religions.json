@@ -1,0 +1,237 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-des-religions",
+  "nom": "Doctorat en sciences des religions",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix.",
+        "obligatoire": {
+          "min": 81,
+          "max": 81
+        },
+        "option": {
+          "min": 6,
+          "max": 9
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Spiritualité",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix.",
+        "obligatoire": {
+          "min": 81,
+          "max": 81
+        },
+        "option": {
+          "min": 6,
+          "max": 9
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours et séminaires thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "FAS 60011",
+        "FAS 60012",
+        "PLU 6110",
+        "REL 6103",
+        "REL 6112",
+        "REL 6113",
+        "REL 6115",
+        "REL 6122",
+        "REL 6123",
+        "REL 6124",
+        "REL 6126",
+        "REL 6127",
+        "REL 6131",
+        "REL 6132",
+        "REL 6136",
+        "REL 6137",
+        "REL 6138",
+        "REL 6151",
+        "REL 6160",
+        "REL 6170",
+        "REL 6171",
+        "REL 6212",
+        "REL 6215",
+        "REL 6217",
+        "REL 6400",
+        "REL 6500",
+        "REL 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours REL de 2e cycle de l'Institut d'études religieuses ou hors Institut. Dans ce second cas, avec approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 81,
+          "max": 81
+        }
+      },
+      "regleBrut": "Obligatoire - 81 crédits.",
+      "cours": [
+        "REL 7000",
+        "REL 7140",
+        "REL 7141",
+        "REL 7150",
+        "REL 7151",
+        "REL 7160",
+        "REL 7200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "PLU 6043",
+        "REL 6112",
+        "REL 6127",
+        "REL 6131",
+        "REL 6137",
+        "REL 6151",
+        "REL 6160",
+        "REL 6171",
+        "REL 6211",
+        "REL 6212",
+        "REL 6214",
+        "REL 6215",
+        "REL 6217",
+        "REL 6218",
+        "REL 6219",
+        "REL 6220",
+        "REL 6500",
+        "REL 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours REL de 2e cycle de l'Institut d'études religieuses ou hors Institut. Dans ce second cas, avec approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 81,
+          "max": 81
+        }
+      },
+      "regleBrut": "Obligatoire - 81 crédits.",
+      "cours": [
+        "REL 7000",
+        "REL 7140",
+        "REL 7141",
+        "REL 7150",
+        "REL 7151",
+        "REL 7160",
+        "REL 7200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A15)\nLe doctorat comporte 90 crédits et comprend les deux options suivantes :\n- l'option Générale (segment 70)\n- l'option Spiritualité (segment 71)\nLa personne qui, durant ses études antérieures, n'a pas suivi le cours REL6120 Théories en sciences des religions ou l'équivalent doit le suivre en plus des 90 crédits de cours de ce programme d'études.",
+    "Segment 70 Propre à l'option Générale — Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix.",
+    "Segment 71 Propre à l'option Spiritualité — Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-des-religions/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:49.062Z"
+}

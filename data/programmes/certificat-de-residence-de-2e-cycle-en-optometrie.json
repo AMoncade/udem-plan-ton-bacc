@@ -1,0 +1,258 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-de-residence-de-2e-cycle-en-optometrie",
+  "nom": "Certificat de résidence de 2e cycle en optométrie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "Optométrie pédiatrique et orthoptique",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Physiologie cornéenne et lentilles cornéennes",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Réadaptation du handicap visuel",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Santé oculaire",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Optométrie communautaire",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits de cette option, incluant le segment 01, sont répartis de la façon suivante: 33 crédits obligatoires et 6 crédits à option.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École d'optométrie",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 39,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Cours et stages obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "OPM 6020A",
+        "OPM 6020B",
+        "OPM 6020C",
+        "OPM 6021A",
+        "OPM 6021B",
+        "OPM 6021C",
+        "OPM 6024A",
+        "OPM 6024B",
+        "OPM 6024C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours et stages de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "OPM 6001",
+        "OPM 6002",
+        "OPM 6003",
+        "OPM 6011A",
+        "OPM 6011B",
+        "OPM 6011C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Cours et stages de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "OPM 6004",
+        "OPM 6005",
+        "OPM 6013A",
+        "OPM 6013B",
+        "OPM 6013C",
+        "SCV 6013"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Cours et stages de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "IDV 6017",
+        "OPM 6006",
+        "OPM 6007",
+        "OPM 6012A",
+        "OPM 6012B",
+        "OPM 6012C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Cours et stages de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "OPM 6005",
+        "OPM 6014A",
+        "OPM 6014B",
+        "OPM 6014C",
+        "OPM 6022",
+        "OPM 6023"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Cours et stages de spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "OPM 6036",
+        "OPM 6037A",
+        "OPM 6037B",
+        "OPM 6037C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Cours complémentaires de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ASA 6734",
+        "ASA 6754",
+        "BIE 6016",
+        "MSO 6011",
+        "MSO 6300",
+        "MSO 6500",
+        "MSO 6501",
+        "SPU 6001",
+        "SPU 6002",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (E19)\nLe certificat comporte 39 crédits. Il est offert avec les cinq options suivantes :\n- Option Optométrie pédiatrique et orthoptique (segments 01 et 70).\n- Option Physiologie cornéenne et lentilles cornéennes (segments 01 et 71).\n- Option Réadaptation du handicap visuel (segments 01 et 72).\n- Option Santé oculaire (segments 01 et 73).\n- Option Optométrie communautaire (segments 01 et 74).",
+    "Segment 01 Tronc commun — Le tronc commun comporte 12 crédits obligatoires.",
+    "Segment 70 Propre à l'option Optométrie pédiatrique et orthoptique — Les 39 crédits de cette option, incluant le segment 01, sont tous obligatoires.",
+    "Segment 71 Propre à l'option Physiologie cornéenne et lentilles cornéennes — Les 39 crédits de cette option, incluant le segment 01, sont tous obligatoires.",
+    "Segment 72 Propre à l'option Réadaptation du handicap visuel — Les 39 crédits de cette option, incluant le segment 01, sont tous obligatoires.",
+    "Segment 73 Propre à l'option Santé oculaire — Les 39 crédits de cette option, incluant le segment 01, sont tous obligatoires.",
+    "Segment 74 Propre à l'option Optométrie communautaire — Les crédits de cette option, incluant le segment 01, sont répartis de la façon suivante: 33 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-de-residence-de-2e-cycle-en-optometrie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:08.716Z"
+}

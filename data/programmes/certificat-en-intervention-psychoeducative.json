@@ -1,0 +1,153 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-intervention-psychoeducative",
+  "nom": "Certificat en intervention psychoéducative",
+  "orientation": null,
+  "segments": [
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires, 12 à 15 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 12,
+      "max": 15
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Initiation à la psychoéducation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "PSE 1009",
+        "PSE 1020",
+        "PSE 1502",
+        "PSE 1503",
+        "PSE 2500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Milieux d'intervention psychoéducative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "PSE 2501",
+        "PSE 2502",
+        "PSE 2504",
+        "PSE 2505",
+        "PSE 2506",
+        "PSE 2507",
+        "SPU 3033G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Intégration des apprentissages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "PSE 3012",
+        "PSE 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Formation continue en intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - maximum 3 crédits",
+      "cours": [
+        "AEG 3137",
+        "ASA 3250G",
+        "CRI 3401G",
+        "GER 1000D",
+        "IDI 1010",
+        "IDI 1040",
+        "SME 3010",
+        "SPU 2300G",
+        "SPU 3010G",
+        "SXS 1001",
+        "TXM 1150D",
+        "VIO 1000",
+        "VIO 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80Z",
+      "cle": "80/80Z",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H26)\nLe certificat comporte 30 crédits.",
+    "Segment 80 — Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires, 12 à 15 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-intervention-psychoeducative/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:52.279Z"
+}

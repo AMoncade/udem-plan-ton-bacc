@@ -1,0 +1,114 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-physiotherapie-diplome-de-qualification",
+  "nom": "Certificat en physiothérapie (diplôme de qualification)",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Certificat",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Hiver",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "PHL 2900",
+        "PHT 2418",
+        "PHT 3322",
+        "QPP 6001",
+        "QPP 6009"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Été",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [
+        "QPP 6002",
+        "QPP 6011",
+        "QPP 6020",
+        "REA 6301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Automne",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "PSY 3955",
+        "PSY 6012",
+        "QPP 6003",
+        "QPP 6005",
+        "QPP 6010",
+        "QPP 6018",
+        "REA 6300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Hiver",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "QPP 6006",
+        "QPP 6007",
+        "QPP 6008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A15)\nLe programme d'appoint comprend 39 crédits de cours et 15 crédits de stages d'intégration clinique de niveau d'études supérieures (2e cycle). Le programme est offert à temps plein sur une période de 16 mois. Il se répartit sur quatre trimestres (hiver, été, automne et hiver). Le dernier trimestre (hiver) est composé uniquement de stages cliniques.",
+    "Segment 70 — Tous les crédits du Programme sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-physiotherapie-diplome-de-qualification/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:05.493Z"
+}

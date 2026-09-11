@@ -1,0 +1,95 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-sante-environnementale-mondiale",
+  "nom": "DESS en santé environnementale mondiale",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 21 crédits obligatoires, 6 et 9 crédits à option et au maximum 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": null,
+    "choix": {
+      "min": 9,
+      "max": 9
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits",
+      "cours": [
+        "ASA 6734",
+        "ENV 6002",
+        "MSN 6027",
+        "MSN 6028",
+        "MSN 6115",
+        "MSO 6500",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum 6 crédits et maximum 9 crédits"
+      },
+      "regleBrut": "Option - Minimum 6 crédits et maximum 9 crédits",
+      "cours": [
+        "MSN 6021",
+        "MSN 6136",
+        "MSN 6144",
+        "MSN 6148",
+        "MSO 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Au choix - Maximum 3 crédits"
+      },
+      "regleBrut": "Au choix - Maximum 3 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi les répertoires des cours des départements de médecine sociale et préventive, de gestion, d'évaluation et de politique de santé, de santé environnementale et santé au travail, ou autre, sauf les cours TXL 6010 et MSN 6026 qui sont redondants avec le MSN 6027. Ce choix de cours est sujet à l'approbation du directeur du programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (A20)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 21 crédits obligatoires, 6 et 9 crédits à option et au maximum 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-sante-environnementale-mondiale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:12.790Z"
+}

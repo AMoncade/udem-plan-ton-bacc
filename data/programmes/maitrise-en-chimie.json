@@ -1,0 +1,228 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-chimie",
+  "nom": "Maîtrise en chimie",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 36 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, et 9 crédits à option.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "chimie des matériaux",
+      "segments": [
+        "71"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Approfondissement de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CHM 6110",
+        "CHM 6140",
+        "CHM 6160",
+        "CHM 6221",
+        "CHM 6240",
+        "CHM 6310",
+        "CHM 6315",
+        "CHM 6330",
+        "CHM 6340",
+        "CHM 6365",
+        "CHM 6375",
+        "CHM 6381",
+        "CHM 6422",
+        "CHM 6450",
+        "CHM 6461",
+        "CHM 6462",
+        "CHM 6465",
+        "CHM 6485",
+        "CHM 6492",
+        "CHM 6767",
+        "CHM 6802",
+        "CHM 6810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CHM 3101",
+        "CHM 3102",
+        "CHM 3103",
+        "CHM 3112",
+        "CHM 3210",
+        "CHM 3230",
+        "CHM 3305",
+        "CHM 3331",
+        "CHM 3333",
+        "CHM 3340",
+        "CHM 3350",
+        "CHM 3360",
+        "CHM 3381",
+        "CHM 3401",
+        "CHM 3402",
+        "CHM 3404",
+        "CHM 3405",
+        "CHM 3450",
+        "CHM 3481",
+        "CHM 3483",
+        "CHM 3602",
+        "CHM 3604",
+        "CHM 3605"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "CHM 6900",
+        "CHM 6905",
+        "CHM 6910",
+        "CHM 6915",
+        "CHM 6920",
+        "CHM 6925"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Formation internationale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CHM 6100E",
+        "CHM 6101E",
+        "CHM 6102E",
+        "CHM 6103E",
+        "CHM 6104E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours donnés à l'Université Toulouse III - Paul-Sabatier."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "CHM 6461",
+        "CHM 6462",
+        "CHM 6465",
+        "CHM 6485",
+        "CHM 6492",
+        "PHY 6445",
+        "PHY 6485",
+        "PHY 6505",
+        "PHY 6530"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "CHM 6927"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A23)\nLa maîtrise comporte 45 crédits répartis de la façon suivante : de 36 à 39 crédits obligatoires, parmi lesquels 27 à 36 crédits sont attribués à la recherche et à la rédaction d'un mémoire, et de 6 à 9 crédits à option.\nElle est offerte selon deux options :\n- l'option générale, avec mémoire (segment 70)\n- l'option chimie des matériaux, des surfaces et des interfaces - cheminement international, avec mémoire (segment 71).",
+    "Segment 70 Propre à l'option générale avec mémoire — Les crédits du segment 70 sont répartis de la façon suivante : 36 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, et 9 crédits à option.",
+    "Segment 71 Option chimie des matériaux/surfaces/interfaces - Chem. international — Les crédits du segment 71 sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-chimie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:22.355Z"
+}

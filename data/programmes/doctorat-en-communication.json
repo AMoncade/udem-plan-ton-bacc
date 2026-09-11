@@ -1,0 +1,252 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-communication",
+  "nom": "Doctorat en communication",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires, dont 72 attribués à la recherche et à la rédaction d'une thèse, et 6 crédits à option.",
+    "obligatoire": {
+      "min": 84,
+      "max": 84
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "COM 7151",
+        "COM 7169"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Études médiatiques et Cultural Studies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6135",
+        "COM 6174",
+        "COM 6175",
+        "COM 6341",
+        "COM 6394",
+        "COM 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Études du journalisme",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6122",
+        "COM 6710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Communication organisationnelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6201",
+        "COM 6500",
+        "COM 6505",
+        "COM 6915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Communication politique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6148",
+        "COM 6331",
+        "COM 6335",
+        "COM 6355",
+        "COM 6374",
+        "COM 6502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Création et pratiques médiatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6402",
+        "COM 6531",
+        "COM 6715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Technologies numériques et collaboration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6421",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Cours à contenu variable",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "COM 6840",
+        "COM 6841",
+        "COM 7199",
+        "COM 7200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Forum doctoral",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "COM 72501",
+        "COM 72502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 72,
+          "max": 72
+        }
+      },
+      "regleBrut": "Obligatoire - 72 crédits.",
+      "cours": [
+        "COM 7225",
+        "COM 7275",
+        "COM 7502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A19)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires, dont 72 attribués à la recherche et à la rédaction d'une thèse, et 6 crédits à option.",
+    "Segment 70 — En 1re année, l'étudiant doit suivre quatre séminaires: deux obligatoires et deux à option.",
+    "Segment 70 — En 2e année, il suit le forum doctoral.",
+    "Segment 70 — Dans tous les cas, le choix des séminaires doit être approuvé par le responsable du programme qui s'assure que l'étudiant bénéficie d'une formation adéquate."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-communication/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:17.090Z"
+}

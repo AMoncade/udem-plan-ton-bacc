@@ -1,0 +1,352 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-cliniques-et-biomedicales",
+  "nom": "Doctorat en sciences cliniques et biomédicales",
+  "orientation": null,
+  "segments": [
+    "78",
+    "80",
+    "81",
+    "82"
+  ],
+  "orientations": [
+    {
+      "nom": "sciences du vieillissement",
+      "segments": [
+        "78"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 78 sont répartis de la façon suivante : 81 crédits obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse, et 9 crédits à option.",
+        "obligatoire": {
+          "min": 78,
+          "max": 78
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "médecine expérimentale",
+      "segments": [
+        "80"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "éthique clinique",
+      "segments": [
+        "81"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 81 sont répartis de la façon suivante : 84 crédits obligatoires, dont 72 crédits attribués à la recherche et la rédaction d'une thèse, de 3 à 6 crédits à option et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 81,
+          "max": 81
+        },
+        "option": {
+          "min": 3,
+          "max": 6
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "sciences buccodentaires",
+      "segments": [
+        "82"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse, et 3 crédits au choix.",
+        "obligatoire": {
+          "min": 87,
+          "max": 87
+        },
+        "option": null,
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "78A",
+      "cle": "78/78A",
+      "segment": "78",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "MMD 70001",
+        "MMD 70002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78B",
+      "cle": "78/78B",
+      "segment": "78",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "MSO 6014",
+        "ORT 6873",
+        "PSY 6022",
+        "PSY 64071",
+        "PSY 64072",
+        "PSY 6415"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Ou tout autre cours jugé approprié. Si l'étudiant a déjà suivi un de ces cours lors de ses études de maîtrise, un autre cours du bloc de cours à option devra être suivi. Il est fortement recommandé que le cours NRL 6051 précède les cours RAD 6005 et PSY 6413. Les cours PSY 64071 et PSY 64072 sont équivalents au cours PSY 6407."
+      ]
+    },
+    {
+      "id": "78C",
+      "cle": "78/78C",
+      "segment": "78",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "SMC 7000",
+        "SMC 7025"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "MMD 6100R",
+        "MMD 70011",
+        "MMD 70012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 85,
+          "max": 85
+        }
+      },
+      "regleBrut": "Obligatoire - 85 crédits.",
+      "cours": [
+        "SMC 7000",
+        "SMC 7912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MMD 7002",
+        "MMD 7003",
+        "MMD 7106",
+        "MMD 71071",
+        "MMD 71072",
+        "MMD 7108"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ASA 6177",
+        "ASA 6704",
+        "BIE 6104",
+        "ETA 6512",
+        "MMD 6101",
+        "MMD 6109",
+        "MMD 6111",
+        "MMD 6380",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent en accord avec le responsable de l'option."
+      ]
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 72,
+          "max": 72
+        }
+      },
+      "regleBrut": "Obligatoire - 72 crédits.",
+      "cours": [
+        "SMC 7000",
+        "SMC 7913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MMD 6100R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent en accord avec le responsable de l'option."
+      ]
+    },
+    {
+      "id": "82C",
+      "cle": "82/82C",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "SMC 7000",
+        "SMC 7020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 17 (A23)\nLe doctorat comporte 90 crédits répartis de la façon suivante : de 81 à 90 crédits obligatoires, dont 72 à 85 sont attribués à la recherche et à la rédaction d'une thèse, de 0 à 9 crédits à option et de 0 à 3 crédits au choix. Il inclut les options suivantes :\n- l'option sciences du vieillissement (segment 78),\n- l'option médecine expérimentale (segment 80),\n- l'option éthique clinique (segment 81),\n- l'option sciences buccodentaires (segment 82).",
+    "Segment 78 Propre à l'option sciences du vieillissement — Les crédits du segment 78 sont répartis de la façon suivante : 81 crédits obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse, et 9 crédits à option.",
+    "Segment 80 Propre à l'option médecine expérimentale — Le segment 80 comporte 90 crédits obligatoires, dont 85 crédits attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 81 Propre à l'option éthique clinique — Les crédits du segment 81 sont répartis de la façon suivante : 84 crédits obligatoires, dont 72 crédits attribués à la recherche et la rédaction d'une thèse, de 3 à 6 crédits à option et de 0 à 3 crédits au choix.",
+    "Segment 82 Propre à l'option sciences buccodentaires — Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse, et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-cliniques-et-biomedicales/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:25.738Z"
+}

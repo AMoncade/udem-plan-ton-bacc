@@ -1,0 +1,109 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-musique-option-direction-dorchestre",
+  "nom": "Doctorat en musique, option Direction d'orchestre",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 27 crédits de cours obligatoires (incluant 9 crédits de tutorat), 3 crédits à option de cours ou de séminaires du niveau des études supérieures et 60 crédits attribués à la recherche et aux récitals se répartissant comme suit: 12 crédits pour un récital de 1ère année, 12 crédits pour un récital de 2e année et 36 crédits pour le récital final.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "MIN 7383",
+        "MUI 7380A",
+        "MUI 7380B",
+        "MUI 7380C",
+        "MUI 7380D",
+        "MUI 7382A",
+        "MUI 7382B",
+        "MUI 7382C",
+        "MUI 7382D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Tutorat",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EMU 7310",
+        "EMU 7312",
+        "MIN 6948",
+        "MIN 6949",
+        "MIN 6957",
+        "MUS 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours de 3 crédits choisi parmi un ensemble de cours et séminaires offerts chaque année."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "MIN 7945",
+        "MIN 7968",
+        "MIN 7969",
+        "MIN 7970"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H19)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits sont répartis de la façon suivante : 27 crédits de cours obligatoires (incluant 9 crédits de tutorat), 3 crédits à option de cours ou de séminaires du niveau des études supérieures et 60 crédits attribués à la recherche et aux récitals se répartissant comme suit: 12 crédits pour un récital de 1ère année, 12 crédits pour un récital de 2e année et 36 crédits pour le récital final."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-musique-option-direction-dorchestre/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:49.647Z"
+}

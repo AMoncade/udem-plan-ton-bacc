@@ -1,0 +1,119 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "diplome-complementaire-en-analyse-et-evaluation-des-interventions-en-sante",
+  "nom": "Diplôme complémentaire en Analyse et évaluation des interventions en santé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Diplôme complémentaire",
+  "creditsTotal": 12,
+  "exigences": {
+    "brut": "Les crédits du diplôme sont répartis de la façon suivante : 6 crédits obligatoires, de 3 à 6 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 3,
+      "max": 6
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "ASA 6178",
+        "SPU 7501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PLU 6048"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ASA 6175",
+        "ASA 6402",
+        "ASA 6732",
+        "CRI 6001",
+        "ECN 6873",
+        "MSN 6136",
+        "PHM 6025",
+        "PHM 6032"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A16)\nLe diplôme comporte 12 crédits dont 6 crédits peuvent être puisés à même la scolarité du doctorat de l'étudiant.\nÀ ces crédits s'ajoute un crédit attribué à l'un des cours en éthique suivants :\nPLU 6046A Éthique de la recherche : introduction, 1 crédit, MMD 6005 Éthique et recherche en santé, 1 crédit, ou à un cours équivalent.",
+    "Segment 70 — Les crédits du diplôme sont répartis de la façon suivante : 6 crédits obligatoires, de 3 à 6 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/diplome-complementaire-en-analyse-et-evaluation-des-interventions-en-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:41.290Z"
+}

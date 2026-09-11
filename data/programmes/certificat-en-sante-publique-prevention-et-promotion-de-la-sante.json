@@ -1,0 +1,150 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-sante-publique-prevention-et-promotion-de-la-sante",
+  "nom": "Certificat en santé publique : prévention et promotion de la santé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Ce programme totalise 15 crédits de cours obligatoires, entre 12 et 15 crédits de cours à option et un maximum de 3 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Notions fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "SPU 1000G",
+        "SPU 1010G",
+        "SPU 2100G",
+        "SPU 2300G",
+        "SPU 3300G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Intervention en santé publique - clientèles et problémat. scpécifiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "SPU 2310G",
+        "SPU 3010G",
+        "SPU 3020G",
+        "SPU 3030G",
+        "SPU 3033G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Pratique infirmière en santé publique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "SOI 2223",
+        "SOI 2233"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Thématiques complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ASA 2350G",
+        "ASA 3300G",
+        "AUT 2500",
+        "PEF 2180D",
+        "PPL 3040",
+        "PST 2955G",
+        "SME 3010",
+        "SPU 1020G",
+        "SPU 2000D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisi parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A18)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Ce programme totalise 15 crédits de cours obligatoires, entre 12 et 15 crédits de cours à option et un maximum de 3 crédits de cours au choix.",
+    "Segment 70 — Les cours SPU1000G et SPU 1010G doivent être suivis en début de programme, idéalement avant tout autre cours, ou de façon concomitante si l'étudiant est à temps plein."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-sante-publique-prevention-et-promotion-de-la-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:20.672Z"
+}

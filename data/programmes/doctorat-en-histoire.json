@@ -1,0 +1,67 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-histoire",
+  "nom": "Doctorat en histoire",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "HST 7002",
+        "HST 7010",
+        "HST 7015",
+        "HST 7020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "HST 7001",
+        "HST 7130",
+        "HST 7135",
+        "HST 7145"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A19)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont tous obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-histoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:30.645Z"
+}

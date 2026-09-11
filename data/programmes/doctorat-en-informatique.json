@@ -1,0 +1,412 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-informatique",
+  "nom": "Doctorat en informatique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires dont 77 attribués à la recherche et à la rédaction d'une thèse et de 12 crédits à option.",
+    "obligatoire": {
+      "min": 78,
+      "max": 78
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Obligatoire - 1 crédit.",
+      "cours": [
+        "IFT 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Apprentissage automatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6010",
+        "IFT 6085",
+        "IFT 6132",
+        "IFT 6135",
+        "IFT 6162",
+        "IFT 6164",
+        "IFT 6166",
+        "IFT 6167",
+        "IFT 6168",
+        "IFT 6169",
+        "IFT 6269",
+        "IFT 6390",
+        "IFT 6756",
+        "IFT 6758",
+        "IFT 6760A",
+        "IFT 6760B",
+        "IFT 6760C",
+        "IFT 6765",
+        "IFT 6766"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Bio-informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6291",
+        "IFT 6292",
+        "IFT 6299A",
+        "IFT 6299B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cybersécurité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6261",
+        "IFT 6271",
+        "IFT 6272A",
+        "IFT 6272B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Génie logiciel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6251A",
+        "IFT 6251B",
+        "IFT 6253",
+        "IFT 6256",
+        "IFT 6755"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Infographie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6042",
+        "IFT 6095A",
+        "IFT 6095B",
+        "IFT 6113",
+        "IFT 6114",
+        "IFT 6115"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Informatique théorique et quantique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6155",
+        "IFT 6161",
+        "IFT 6180",
+        "IFT 6195A",
+        "IFT 6195B",
+        "IFT 6370"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Interaction humain-machine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6075",
+        "IFT 6076",
+        "IFT 6077",
+        "IFT 6078A",
+        "IFT 6078B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Langages et compilation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6172",
+        "IFT 6232",
+        "IFT 6233A",
+        "IFT 6233B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Linguistique informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6255",
+        "IFT 6285",
+        "IFT 6289",
+        "IFT 6293A",
+        "IFT 6293B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70K",
+      "cle": "70/70K",
+      "segment": "70",
+      "nom": "Recherche opérationnelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6504",
+        "IFT 6512",
+        "IFT 6521",
+        "IFT 6551",
+        "IFT 6561",
+        "IFT 6575",
+        "IFT 6580",
+        "IFT 6581A",
+        "IFT 6581B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70L",
+      "cle": "70/70L",
+      "segment": "70",
+      "nom": "Réseaux de communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6056",
+        "IFT 6057A",
+        "IFT 6057B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70M",
+      "cle": "70/70M",
+      "segment": "70",
+      "nom": "Robotique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6163",
+        "IFT 6757",
+        "IFT 6767A",
+        "IFT 6767B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70N",
+      "cle": "70/70N",
+      "segment": "70",
+      "nom": "Traitements d'images et vision tridimensionnelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "IFT 6145",
+        "IFT 6150",
+        "IFT 6151A",
+        "IFT 6151B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70O",
+      "cle": "70/70O",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - Maximum 1 crédit.",
+      "cours": [
+        "IPR 6006",
+        "IPR 6008",
+        "IPR 6011",
+        "IPR 6012",
+        "IPR 6014",
+        "PLU 6055",
+        "PLU 6065",
+        "PLU 6150",
+        "PLU 6160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70P",
+      "cle": "70/70P",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 77,
+          "max": 77
+        }
+      },
+      "regleBrut": "Obligatoire - 77 crédits.",
+      "cours": [
+        "IFT 7000",
+        "IFT 7915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A25)\nLe doctorat comporte de 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires dont 77 attribués à la recherche et à la rédaction d'une thèse et de 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:34.294Z"
+}

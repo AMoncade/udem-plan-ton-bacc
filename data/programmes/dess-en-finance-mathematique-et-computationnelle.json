@@ -1,0 +1,117 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-finance-mathematique-et-computationnelle",
+  "nom": "DESS en finance mathématique et computationnelle",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 16 crédits obligatoires et 14 crédits à option.",
+    "obligatoire": {
+      "min": 16,
+      "max": 16
+    },
+    "option": {
+      "min": 14,
+      "max": 14
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "ECN 6573",
+        "ECN 6578",
+        "IFT 6561",
+        "MAT 6717",
+        "MAT 6798"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ACT 6230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ECN 6238",
+        "STT 6615"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - 8 crédits.",
+      "cours": [
+        "IFT 6390",
+        "IFT 6521",
+        "MAT 6470"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A99)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 16 crédits obligatoires et 14 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-finance-mathematique-et-computationnelle/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:19.515Z"
+}

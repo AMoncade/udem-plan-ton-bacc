@@ -1,0 +1,92 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-professionnel-en-administration-de-leducation",
+  "nom": "Doctorat professionnel en administration de l'éducation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Doctorat professionnel",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Savoirs fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ETA 7901",
+        "ETA 7902",
+        "ETA 7905",
+        "ETA 7916"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Essai d'habilitation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "ETA 7910",
+        "ETA 79171",
+        "ETA 79172",
+        "ETA 79173",
+        "ETA 7918"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Essai doctoral",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "ETA 7900",
+        "ETA 7913",
+        "ETA 7919",
+        "ETA 79211",
+        "ETA 79212",
+        "ETA 7925"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H20)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du D. Ed. sont tous obligatoires, dont 60 crédits attribués à la recherche et à la rédaction d'un essai doctoral."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-professionnel-en-administration-de-leducation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:13.620Z"
+}

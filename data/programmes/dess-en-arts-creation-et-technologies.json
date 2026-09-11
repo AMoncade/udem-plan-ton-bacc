@@ -1,0 +1,179 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-arts-creation-et-technologies",
+  "nom": "DESS en arts, création et technologies",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Le DESS comporte 30 crédits répartis de la façon suivante : 7 crédits de cours obligatoires, 23 crédits de cours à option, dont de 3 à 9 crédits attribués à un projet de création, à un stage, ou à un travail dirigé.",
+    "obligatoire": {
+      "min": 30,
+      "max": 30
+    },
+    "option": {
+      "min": 23,
+      "max": 23
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "ART 6001",
+        "ART 6021",
+        "ART 6100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Ateliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 8 crédits.",
+      "cours": [
+        "ART 6008",
+        "ART 6009",
+        "ART 6011",
+        "ART 6012",
+        "ART 6013",
+        "ART 6014",
+        "ART 6015",
+        "ART 6016",
+        "ART 6017",
+        "ART 6019",
+        "ART 6020",
+        "ART 6022",
+        "ART 6023"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Pratiques d'arts technologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ART 6300",
+        "ART 6400",
+        "ART 6500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours disciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CIN 6015",
+        "CIN 6050",
+        "CIN 6054",
+        "CIN 6056",
+        "CIN 6057",
+        "CIN 6058",
+        "CIN 6061",
+        "COM 6341",
+        "COM 6402",
+        "COM 6501",
+        "COM 6531",
+        "COM 6715",
+        "FRA 6443",
+        "FRA 6486",
+        "FRA 6501",
+        "FRA 6505",
+        "HAR 6083",
+        "IFT 6256",
+        "JEU 6002",
+        "JEU 6003",
+        "MUS 6314X",
+        "MUS 6321",
+        "MUS 6322X",
+        "MUS 6323",
+        "MUS 6324X",
+        "MUS 6328X",
+        "MUS 6329X",
+        "PLU 6042",
+        "PLU 6060",
+        "PLU 6300",
+        "PLU 6350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Projet",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ART 6051",
+        "ART 6052",
+        "ART 6053",
+        "ART 6054",
+        "ART 6055"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A25)",
+    "Segment 70 — Le DESS comporte 30 crédits répartis de la façon suivante : 7 crédits de cours obligatoires, 23 crédits de cours à option, dont de 3 à 9 crédits attribués à un projet de création, à un stage, ou à un travail dirigé."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-arts-creation-et-technologies/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:38.219Z"
+}

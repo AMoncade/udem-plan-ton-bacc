@@ -1,0 +1,388 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-histoire-de-lart",
+  "nom": "Doctorat en histoire de l'art",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "histoire et théorie de l'art",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 81 crédits obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse, de 3 à 6 crédits à option, et de 3 à 6 crédits au choix..",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 3,
+          "max": 6
+        },
+        "choix": {
+          "min": 3,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "muséologie",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, de 3 à 6 crédits à option, et de 3 à 6 crédits au choix.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 3,
+          "max": 6
+        },
+        "choix": {
+          "min": 3,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "recherche-création",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 72 sont répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche, à la réalisation et à la rédaction d'une thèse, et 9 crédits à option.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Théories et méthodes",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "HAR 7008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approches thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "HAR 7002",
+        "HAR 7002A",
+        "HAR 7005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "HAR 7007",
+        "HAR 7015",
+        "HAR 7200",
+        "HAR 7300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Théories et méthodes",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "HAR 7008",
+        "PLU 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Approches thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "HAR 7002",
+        "HAR 7002A",
+        "HAR 7005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "HAR 7007",
+        "HAR 7015",
+        "HAR 7200",
+        "HAR 7400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CIN 70081",
+        "CIN 70082",
+        "HAR 70091",
+        "HAR 70092"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Approfondissement en histoire de l'art",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "HAR 7002",
+        "HAR 7002A",
+        "HAR 7005",
+        "HAR 7008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Approfondissement en cinéma",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CIN 6009",
+        "CIN 6015",
+        "CIN 6048",
+        "CIN 6050",
+        "CIN 6051",
+        "CIN 6054",
+        "CIN 6057",
+        "CIN 6058",
+        "CIN 6059",
+        "CIN 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Pratiques médiatiques et interdisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ART 6008",
+        "ART 6009",
+        "ART 6011",
+        "ART 6012",
+        "ART 6013",
+        "ART 6014",
+        "ART 6015",
+        "ART 6016",
+        "ART 6017",
+        "ART 6022",
+        "COM 6402",
+        "COM 6715",
+        "FRA 6501",
+        "FRA 6505",
+        "HNU 6000",
+        "HNU 6051",
+        "HNU 6052",
+        "HNU 6053",
+        "HNU 6054",
+        "HNU 6055",
+        "HNU 6056",
+        "HNU 6057",
+        "HNU 6058",
+        "HNU 6059",
+        "JEU 6003",
+        "PLU 6042",
+        "PLU 6133",
+        "PLU 6350",
+        "PLU 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "HAR 7007",
+        "HAR 7015",
+        "HAR 7200",
+        "HAR 7400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A20)\nLe doctorat comporte 90 crédits répartis de la façon suivante : 81 crédits obligatoires dont de 75 à 78 crédits attribués à la recherche et à la rédaction d'une thèse, de 3 à 9 crédits à option, et de 0 à 6 crédits au choix. Il est offert selon trois options:\n- option histoire et théorie de l'art (segment 70)\n- option muséologie (segment 71)\n- option recherche-création (segment 72)",
+    "Segment 70 Propre à l'option histoire et théorie de l'art — Les crédits du segment 70 sont répartis de la façon suivante : 81 crédits obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse, de 3 à 6 crédits à option, et de 3 à 6 crédits au choix..",
+    "Segment 71 Propre à l'option muséologie — Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, de 3 à 6 crédits à option, et de 3 à 6 crédits au choix.",
+    "Segment 72 Propre à l'option recherche-création — Les crédits du segment 72 sont répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche, à la réalisation et à la rédaction d'une thèse, et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-histoire-de-lart/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:30.802Z"
+}

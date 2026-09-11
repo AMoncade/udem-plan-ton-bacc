@@ -1,0 +1,280 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-travail-social-campus-laval",
+  "nom": "Baccalauréat en travail social - Campus Laval",
+  "orientation": null,
+  "segments": [
+    "77"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 78 crédits obligatoires, 9 à 12 crédits à option et maximum 3 crédits au choix.",
+    "obligatoire": {
+      "min": 78,
+      "max": 78
+    },
+    "option": null,
+    "choix": {
+      "min": 9,
+      "max": 12
+    }
+  },
+  "blocs": [
+    {
+      "id": "77A",
+      "cle": "77/77A",
+      "segment": "77",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "SVS 1005",
+        "SVS 1101",
+        "SVS 1102",
+        "SVS 1107",
+        "SVS 1341",
+        "SVS 2142"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77B",
+      "cle": "77/77B",
+      "segment": "77",
+      "nom": "Formation pratique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 44,
+          "max": 44
+        }
+      },
+      "regleBrut": "Obligatoire - 44 crédits.",
+      "cours": [
+        "CSS 1900",
+        "CSS 2900",
+        "CSS 3900",
+        "SVS 1510",
+        "SVS 1575",
+        "SVS 1577",
+        "SVS 1578",
+        "SVS 2107",
+        "SVS 2108",
+        "SVS 2577",
+        "SVS 2578",
+        "SVS 3109",
+        "SVS 3301",
+        "SVS 3302",
+        "SVS 3311",
+        "SVS 3312"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77C",
+      "cle": "77/77C",
+      "segment": "77",
+      "nom": "Formation pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "SVS 2575",
+        "SVS 2576"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77D",
+      "cle": "77/77D",
+      "segment": "77",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "SVS 1160",
+        "SVS 1443",
+        "SVS 2101",
+        "SVS 2104",
+        "SVS 2105",
+        "SVS 2110"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77E",
+      "cle": "77/77E",
+      "segment": "77",
+      "nom": "Champs et pratiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "SVS 3015",
+        "SVS 3175",
+        "SVS 3184",
+        "SVS 3207",
+        "SVS 3275",
+        "SVS 3356",
+        "SVS 3362",
+        "SVS 3383",
+        "SVS 3445",
+        "SVS 3486",
+        "SVS 3517",
+        "SVS 3732",
+        "SVS 3735",
+        "SVS 3742",
+        "SVS 3746",
+        "SVS 3747",
+        "SVS 37481",
+        "SVS 37482",
+        "SVS 3756",
+        "SVS 3941"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77Y",
+      "cle": "77/77Y",
+      "segment": "77",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ANT 2031",
+        "ANT 2043",
+        "COM 3065",
+        "CRI 1511",
+        "CRI 1950",
+        "CRI 3001",
+        "CRI 3341",
+        "FEM 2000",
+        "FEM 3200",
+        "FEM 3300",
+        "GER 1020D",
+        "GER 2022D",
+        "GER 3066D",
+        "GER 3067D",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 2402",
+        "IDI 2110",
+        "PHI 1400",
+        "PHI 1440",
+        "PHI 2417",
+        "PHI 2418",
+        "PHI 2419",
+        "PHI 3445",
+        "POL 2802",
+        "POL 2806",
+        "POL 3102",
+        "POL 3602",
+        "POL 3906",
+        "POL 3910",
+        "PPL 1060",
+        "PPL 1080",
+        "PPL 2130",
+        "PPL 2140",
+        "PPL 2160",
+        "PPL 3025",
+        "PPL 3035",
+        "PSE 1201",
+        "PSE 1203",
+        "PSY 1045",
+        "PSY 1075",
+        "PSY 2044",
+        "PSY 2098",
+        "PSY 2115",
+        "REL 1208",
+        "REL 2270",
+        "REL 3960",
+        "SME 3010",
+        "SOL 1967",
+        "SOL 2503",
+        "TXM 1000D",
+        "TXM 1111",
+        "TXM 1111D",
+        "TXM 1150D",
+        "TXM 1200D",
+        "TXM 2000D",
+        "TXM 2100D",
+        "TXM 3500",
+        "TXM 3530",
+        "VIO 2009",
+        "VIO 2009D",
+        "VIO 2012",
+        "VIO 2012D",
+        "VIO 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours à option du bloc 77Y possible si les 3 crédits du bloc 77Z ne sont pas complétés."
+      ]
+    },
+    {
+      "id": "77Z",
+      "cle": "77/77Z",
+      "segment": "77",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours au choix du bloc 77Z possible si les 3 crédits du bloc 77Y ne sont pas complétés."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A25)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 77 — Les crédits du baccalauréat sont répartis de la façon suivante : 78 crédits obligatoires, 9 à 12 crédits à option et maximum 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-travail-social-campus-laval/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:36.335Z"
+}

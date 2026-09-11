@@ -1,0 +1,186 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-administration-des-services-de-sante-option-administration-sociale",
+  "nom": "Maîtrise en administration des services de santé, option Administration sociale",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 42 crédits obligatoires, donc 12 crédits attribués à un stage ou à un travail dirigé, et 3 crédits à option.",
+    "obligatoire": {
+      "min": 42,
+      "max": 42
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "- ST Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ASA 6765"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "- TD Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ASA 6177"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Gestion (ESPUM)",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ASA 6120",
+        "ASA 6152",
+        "ASA 6754",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "APC 6004",
+        "APC 6017",
+        "APC 6019",
+        "APC 6021",
+        "APC 6023"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6708",
+        "ASA 6764",
+        "COM 6201",
+        "COM 6505",
+        "COM 6960",
+        "CRI 6530",
+        "PLU 6911A",
+        "POL 6629",
+        "PRX 6002",
+        "REI 6614",
+        "SST 6400",
+        "SVS 6442"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "- ST Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "APC 6100",
+        "APC 6105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "- TD Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "APC 6110"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A26)\nLa maîtrise comporte 45 crédits.\nElle est offerte selon deux modalités :\n- modalité avec stage (ST)\n- modalité avec travail dirigé (TD)",
+    "Segment 70 Propre à l'option Administration sociale — Les crédits du segment sont répartis de la façon suivante : 42 crédits obligatoires, donc 12 crédits attribués à un stage ou à un travail dirigé, et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-administration-des-services-de-sante-option-administration-sociale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:48.507Z"
+}

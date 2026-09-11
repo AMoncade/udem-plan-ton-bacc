@@ -1,0 +1,138 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sociologie",
+  "nom": "Doctorat en sociologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, de 3 à 6 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 84,
+      "max": 84
+    },
+    "option": {
+      "min": 3,
+      "max": 6
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SOL 7011A",
+        "SOL 7011B",
+        "SOL 7021",
+        "SOL 7022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "SOL 7040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisis parmi les séminaires théoriques et thématiques de cycles supérieurs offerts par le Département de sociologie."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisis parmi les séminaires de cycles supérieurs de la banque de cours de l'Université de Montréal ou, le cas échéant, d'une autre institution universitaire."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "SOL 7050",
+        "SOL 7070",
+        "SOL 7120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A14)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, de 3 à 6 crédits à option et, au maximum, 3 crédits au choix.",
+    "Segment 70 — La première année, qui doit être suivie à temps plein, est consacrée aux séminaires généraux de doctorat et à l'examen général de synthèse dont la réussite est obligatoire pour poursuivre la scolarité. La 2e année est consacrée au séminaire de thèse qui mène à la soutenance du projet de thèse. Les étudiants doivent également suivre deux autres séminaires durant leur scolarité."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sociologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:02.595Z"
+}

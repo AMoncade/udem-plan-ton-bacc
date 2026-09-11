@@ -1,0 +1,342 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-enseignement-en-adaptation-scolaire-campus-laval",
+  "nom": "Baccalauréat en enseignement en adaptation scolaire - Campus Laval",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "enseignement au primaire",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'orientation sont répartis de la façon suivante : 42 crédits obligatoires et 6 crédits à option.",
+        "obligatoire": {
+          "min": 42,
+          "max": 42
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "enseignement au secondaire",
+      "segments": [
+        "01",
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'orientation sont répartis de la façon suivante : 45 crédits obligatoires et 3 crédits à option.",
+        "obligatoire": {
+          "min": 45,
+          "max": 45
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Initiation à la profession enseignante",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ETA 1001",
+        "ETA 1002",
+        "ETA 1111",
+        "ETA 1900",
+        "ETA 2200",
+        "ETA 2550",
+        "ETA 3250"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Intervention éducative en adaptation scolaire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Obligatoire - 32 crédits.",
+      "cours": [
+        "PPA 1111",
+        "PPA 1114",
+        "PPA 1384",
+        "PPA 2024",
+        "PPA 2110",
+        "PPA 2208",
+        "PPA 2380",
+        "PPA 2403",
+        "PPA 3205",
+        "PPA 34141",
+        "PPA 34142"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Fondements en didactiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "DID 1001",
+        "DID 10101",
+        "DID 10102",
+        "DID 1217",
+        "DID 2000",
+        "DID 2031",
+        "DID 2240"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Stages et projet pédagogique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "EDU 1410",
+        "EDU 2410",
+        "EDU 4215A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Didactique et orthodidactique des matières enseignées",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "DID 1220",
+        "DID 3220",
+        "DID 3230",
+        "DID 3238",
+        "DID 3280",
+        "DID 3309",
+        "DID 4252",
+        "DID 4940"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Besoins des élèves HDAA au primaire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PPA 2401"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "EDU 3003",
+        "EDU 4103"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "PPA 2550",
+        "PPA 4300",
+        "PPA 4406",
+        "PPA 4407"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "Didactique et orthodidactique des matières enseignées",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "DID 2030",
+        "DID 2040",
+        "DID 2250",
+        "DID 3120",
+        "DID 3130",
+        "DID 3140",
+        "DID 4040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Besoins des élèves HDAA au secondaire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PPA 2402",
+        "PPA 4415",
+        "PPA 4675"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "EDU 3110",
+        "EDU 4310"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "DID 4950",
+        "PPA 2550",
+        "PPA 4300",
+        "PPA 4406",
+        "PPA 4407"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A23)\nLe programme totalise 120 crédits.Il comprend 72 crédits obligatoires communs aux deux orientations et 48 crédits propres à chacune des orientations :\n- orientation enseignement au primaire (segment 70),\n- orientation enseignement au secondaire (segment 75).",
+    "Segment 01 Commun aux deux orientations — Tous les crédits du tronc commun sont obligatoires.",
+    "Segment 70 Propre à l'orientation enseignement au primaire — Les crédits de l'orientation sont répartis de la façon suivante : 42 crédits obligatoires et 6 crédits à option.",
+    "Segment 75 Propre à l'orientation enseignement au secondaire — Les crédits de l'orientation sont répartis de la façon suivante : 45 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-enseignement-en-adaptation-scolaire-campus-laval/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:57.564Z"
+}

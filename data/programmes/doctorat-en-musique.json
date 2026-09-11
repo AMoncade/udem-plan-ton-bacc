@@ -1,0 +1,103 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-musique",
+  "nom": "Doctorat en musique",
+  "orientation": null,
+  "segments": [
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 78,
+      "max": 78
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Séminaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option – Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l'accord de la direction de recherche."
+      ]
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Cours et ateliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option – Maximum 3 crédits.",
+      "cours": [
+        "MIN 7491",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Recherche et rédaction de la thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "MUL 7521",
+        "MUL 7522",
+        "MUL 7523",
+        "MUL 7524",
+        "MUL 7930",
+        "MUL 7945",
+        "MUL 7990"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A26)\nLe doctorat comporte 90 crédits.",
+    "Segment 80 Propre à l'option Générale — Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-musique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:43.850Z"
+}

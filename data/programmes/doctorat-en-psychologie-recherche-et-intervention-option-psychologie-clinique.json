@@ -1,0 +1,269 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-psychologie-recherche-et-intervention-option-psychologie-clinique",
+  "nom": "Doctorat en psychologie - Recherche et intervention, option Psychologie clinique (Ph. D. R-I)",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 156,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 144 crédits obligatoires dont 60 crédits attribués à des stages et 63 crédits à la recherche et à la rédaction d'une thèse, 9 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 144,
+      "max": 144
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 7422",
+        "PSY 7903",
+        "PSY 7907"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Stages et internats",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "PSY 7948",
+        "PSY 79491",
+        "PSY 79492",
+        "PSY 79521",
+        "PSY 79522",
+        "PSY 79531",
+        "PSY 79532",
+        "PSY 7954",
+        "PSY 79561",
+        "PSY 79562",
+        "PSY 79563"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1 Psychopathologie et évaluation - Axe: Évaluation enfants - adolescents",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 7236",
+        "PSY 7905",
+        "PSY 7915"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant doit choisir les cours du profil Enfants/adolescents, OU du profil Adultes."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2 Psychopathologie et évaluation - Axe : Évaluation adultes",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 7229",
+        "PSY 7906",
+        "PSY 7916"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant doit choisir les cours du profil Enfants/adolescents, ou du profil Adultes."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Intervention 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSY 6127",
+        "PSY 6137",
+        "PSY 6228",
+        "PSY 6258",
+        "PSY 6329",
+        "PSY 6616",
+        "PSY 6671",
+        "PSY 6674",
+        "PSY 6678",
+        "PSY 6928",
+        "PSY 6937",
+        "PSY 6946",
+        "PSY 6968",
+        "PSY 7221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Intervention 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSY 6253",
+        "PSY 6552",
+        "PSY 6679"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Méthodologie 1",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PSY 79191",
+        "PSY 79192"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Méthodologie 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSY 6002",
+        "PSY 6008",
+        "PSY 6018",
+        "PSY 6019",
+        "PSY 7005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours du Département ou des études supérieures et postdoctorales en fonction des besoins de formation de l'étudiant."
+      ]
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 63,
+          "max": 63
+        }
+      },
+      "regleBrut": "Obligatoire - 63 crédits.",
+      "cours": [
+        "PSY 7860",
+        "PSY 7923",
+        "PSY 7926"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A25)\nLe doctorat comporte 156 crédits.\nUn crédit de stage ou d'internat équivaut pour l'étudiant à 3 heures par semaine, pendant 15 semaines.",
+    "Segment 70 Propre à l'option Psychologie clinique — Les crédits de l'option sont répartis de la façon suivante : 144 crédits obligatoires dont 60 crédits attribués à des stages et 63 crédits à la recherche et à la rédaction d'une thèse, 9 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-psychologie-recherche-et-intervention-option-psychologie-clinique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:11.589Z"
+}

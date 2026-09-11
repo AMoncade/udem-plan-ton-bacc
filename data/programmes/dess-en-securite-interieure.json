@@ -1,0 +1,149 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-securite-interieure",
+  "nom": "DESS en sécurité intérieure",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : de 27 à 30 crédits à option, et de 0 à 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 30
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Méthodologie et outils d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 6001",
+        "CRI 6002",
+        "CRI 6003",
+        "CRI 6220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Aspects de la sécurité intérieure",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 21 crédits.",
+      "cours": [
+        "CRI 6006",
+        "CRI 6007",
+        "CRI 6226",
+        "CRI 6720",
+        "CRI 6721",
+        "CRI 6722",
+        "CRI 6723",
+        "CRI 6725",
+        "CRI 6726",
+        "CRI 6727",
+        "CRI 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CRI 6008",
+        "CRI 6010",
+        "CRI 6112",
+        "CRI 6113",
+        "CRI 6114",
+        "CRI 6115",
+        "CRI 6118",
+        "CRI 6119",
+        "CRI 6121",
+        "CRI 6122",
+        "CRI 6223",
+        "CRI 6224",
+        "CRI 6228",
+        "CRI 6229",
+        "CRI 6231",
+        "CRI 6232",
+        "CRI 6233",
+        "CRI 6234",
+        "CRI 6530",
+        "CRI 6531",
+        "CRI 6532",
+        "CRI 6533",
+        "CRI 6535",
+        "CRI 6536",
+        "CRI 6538",
+        "CRI 6539",
+        "CRI 6540"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir au maximum 3 crédits de cycles supérieurs dans le répertoire des cours de l'Université de Montréal ou toute autre université, avec l'approbation de la personne responsable du programme d'études suite à la recommandation du directeur de recherche."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A23)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : de 27 à 30 crédits à option, et de 0 à 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-securite-interieure/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:21.740Z"
+}

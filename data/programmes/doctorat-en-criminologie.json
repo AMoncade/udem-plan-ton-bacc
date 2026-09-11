@@ -1,0 +1,98 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-criminologie",
+  "nom": "Doctorat en criminologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 87 crédits obligatoires obligatoires, dont 81 attribués à la recherche et à la rédaction d'une thèse et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 87,
+      "max": 87
+    },
+    "option": null,
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CRI 74201",
+        "CRI 74202",
+        "CRI 74301",
+        "CRI 74302"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours CRI 74201 et CRI 74202 sont équivalents au cours CRI 7420. Les cours CRI 74301 et CRI 74302 sont équivalents au cours CRI 7430."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Un cours du niveau des études supérieures."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 81,
+          "max": 81
+        }
+      },
+      "regleBrut": "Obligatoire - 81 crédits.",
+      "cours": [
+        "CRI 7900",
+        "CRI 7910",
+        "CRI 7940"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A91)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 87 crédits obligatoires obligatoires, dont 81 attribués à la recherche et à la rédaction d'une thèse et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-criminologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:18.909Z"
+}

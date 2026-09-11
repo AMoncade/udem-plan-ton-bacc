@@ -1,0 +1,69 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-intervention-en-deficience-visuelle-readaptation",
+  "nom": "DESS en intervention en déficience visuelle - Réadaptation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École d'optométrie",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 10 crédits obligatoires et 20 crédits à option.",
+    "obligatoire": {
+      "min": 10,
+      "max": 10
+    },
+    "option": {
+      "min": 20,
+      "max": 20
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Interv. en déficience visuelle",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Formation générale"
+      },
+      "regleBrut": "Formation générale",
+      "cours": [
+        "IDV 6017",
+        "IDV 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Obligatoire - 10 crédits."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Réadaptation en déficience visuelle",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Formation spécialisée"
+      },
+      "regleBrut": "Formation spécialisée",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Option - 20 crédits."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (H14)\nLe D.E.S.S. comporte 30 crédits.\nIl est constitué de deux modules :\n- le module 1 de formation générale destiné à donner une formation générale sur l'intervention en déficience visuelle,\n- le module 2 de formation spécialisée préparant à l'intervention professionnelle dans le domaine de la réadaptation en déficience visuelle.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 10 crédits obligatoires et 20 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-intervention-en-deficience-visuelle-readaptation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:29.899Z"
+}

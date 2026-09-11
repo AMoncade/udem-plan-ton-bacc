@@ -1,0 +1,1007 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sciences-biologiques",
+  "nom": "Baccalauréat en sciences biologiques",
+  "orientation": null,
+  "segments": [
+    "01",
+    "82",
+    "83",
+    "84",
+    "94"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Connaissances fondamentales en biologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "BIO 1001",
+        "BIO 1153",
+        "BIO 1203",
+        "BIO 1284",
+        "BIO 1334",
+        "BIO 1434",
+        "BIO 1534",
+        "BIO 1634",
+        "BIO 1803",
+        "BIO 2041",
+        "BIO 2102",
+        "BIO 3002",
+        "MCB 1979"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Connaissances connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1913",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "ANT 2454",
+        "ANT 3553",
+        "BCM 1501",
+        "CHM 1600",
+        "CHM 1950",
+        "CHM 1984",
+        "DRT 1004",
+        "GEO 1312",
+        "GEO 2122",
+        "GEO 3132",
+        "GER 1016D",
+        "HOR 1200",
+        "HOR 3200",
+        "PHI 1130",
+        "PHI 1365",
+        "PHI 2480",
+        "PHY 1972",
+        "PHY 1973",
+        "SOL 2200",
+        "URB 1114"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "On recommande aux étudiants de l'orientation Biologie moléculaire et cellulaire de s'inscrire au cours CHM 1984."
+      ]
+    },
+    {
+      "id": "01S",
+      "cle": "01/01S",
+      "segment": "01",
+      "nom": "Stages en milieu de travail et de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Maximum 10 crédits.",
+      "cours": [
+        "BIO 2050",
+        "BIO 3020",
+        "BIO 3050",
+        "BIO 3080"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : maximum 10 crédits. - Cheminement honor : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "01V",
+      "cle": "01/01V",
+      "segment": "01",
+      "nom": "Propre au Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "BIO 4000",
+        "BIO 4050",
+        "BIO 4060"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : 0 crédit. - Cheminement honor : 12 crédits."
+      ]
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les 3 crédits au choix sont obligatoires et ne sont pas de sigle BIO."
+      ]
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "Connaissances disciplinaires obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIO 2162",
+        "BIO 2240",
+        "BIO 3150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "Travaux en laboratoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "BIO 2155",
+        "BIO 2255",
+        "BIO 3102",
+        "BIO 3103"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82C",
+      "cle": "82/82C",
+      "segment": "82",
+      "nom": "Connaissances en biologie moléculaire et cellulaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 30 crédits",
+      "cours": [
+        "BCM 3512",
+        "BCM 3514",
+        "BIO 2150",
+        "BIO 2372",
+        "BIO 2402",
+        "BIO 2412",
+        "BIO 3106",
+        "BIO 3160",
+        "BIO 3203",
+        "BIO 3204",
+        "BIO 3205",
+        "BIO 3293",
+        "BIO 3701",
+        "BIO 3702",
+        "MCB 2985",
+        "MCB 2987",
+        "MCB 2991",
+        "MCB 2999",
+        "NSC 1001",
+        "NSC 2001"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 12 crédits, maximum 30 crédits. - Cheminement honor : minimum 12 crédits, maximum 20 crédits."
+      ]
+    },
+    {
+      "id": "82D",
+      "cle": "82/82D",
+      "segment": "82",
+      "nom": "Connaissances en biologie quantitative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits",
+      "cours": [
+        "BIO 2042",
+        "BIO 2044",
+        "BIO 2045",
+        "BIO 3033",
+        "BIO 3044",
+        "BIO 3207",
+        "BIO 3866"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 15 crédits. - Cheminement honor : minimum 3 crédits, maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "82E",
+      "cle": "82/82E",
+      "segment": "82",
+      "nom": "Connaissances spécialisées complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 17
+        }
+      },
+      "regleBrut": "Option - Maximum 17 crédits",
+      "cours": [
+        "ANT 3475",
+        "ANT 3476",
+        "BCM 2003",
+        "BCM 2501",
+        "BCM 2505",
+        "BIO 2260",
+        "BIO 2350",
+        "BIO 2405",
+        "BIO 2470",
+        "BIO 2471",
+        "BIO 2541",
+        "BIO 2621",
+        "BIO 2720",
+        "BIO 2820",
+        "BIO 2821",
+        "BIO 2855",
+        "BIO 3008",
+        "BIO 3441",
+        "BIO 3659",
+        "BIO 3665",
+        "BIO 3682",
+        "BIO 3721",
+        "BIO 3781",
+        "BIO 3843",
+        "BIO 3851",
+        "BIO 3893",
+        "BIO 3900",
+        "MCB 2094",
+        "MCB 2979",
+        "MCB 3095",
+        "MCB 3637",
+        "MCB 3984",
+        "PHL 2025",
+        "PHL 2100",
+        "RED 2301",
+        "SPU 2000D"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : maximum 17 crédits. - Cheminement honor : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "83A",
+      "cle": "83/83A",
+      "segment": "83",
+      "nom": "Connaissances en biologie moléculaire et cellulaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits",
+      "cours": [
+        "BIO 2162",
+        "BIO 2240",
+        "BIO 3106",
+        "BIO 3150",
+        "BIO 3160",
+        "BIO 3900"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 6 crédits, maximum 18 crédits. - Cheminement honor : 6 crédits."
+      ]
+    },
+    {
+      "id": "83B",
+      "cle": "83/83B",
+      "segment": "83",
+      "nom": "Connaissances en physiologie animale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits",
+      "cours": [
+        "BIO 2402",
+        "BIO 2412",
+        "BIO 2470",
+        "BIO 2471",
+        "BIO 2621",
+        "BIO 2862",
+        "BIO 3651",
+        "BIO 3659",
+        "BIO 3665",
+        "BIO 3682"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 9 crédits, maximum 24 crédits. - Cheminement honor : minimum 6 crédits, maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "83C",
+      "cle": "83/83C",
+      "segment": "83",
+      "nom": "Connaissances en biologie évolutive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits",
+      "cours": [
+        "BIO 2260",
+        "BIO 2855",
+        "BIO 3203",
+        "BIO 3204",
+        "BIO 3206",
+        "BIO 3283",
+        "BIO 3293"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 6 crédits, maximum 18 crédits. - Cheminement honor : 6 crédits"
+      ]
+    },
+    {
+      "id": "83D",
+      "cle": "83/83D",
+      "segment": "83",
+      "nom": "Connaissances en biodiversité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 21 crédits",
+      "cours": [
+        "BIO 2150",
+        "BIO 2431",
+        "BIO 2440",
+        "BIO 2476",
+        "BIO 2478",
+        "BIO 2480",
+        "BIO 2490",
+        "BIO 3872"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 6 crédits, maximum 21 crédits. - Cheminement honor : minimum 6 crédits, maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "83E",
+      "cle": "83/83E",
+      "segment": "83",
+      "nom": "Cours pratiques en laboratoire ou sur le terrain",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 7,
+          "max": 22
+        }
+      },
+      "regleBrut": "Option - Minimum 7 crédits, maximum 22 crédits",
+      "cours": [
+        "ANT 3476",
+        "BIO 2155",
+        "BIO 2255",
+        "BIO 2432",
+        "BIO 2854",
+        "BIO 3102",
+        "BIO 3103",
+        "BIO 3441",
+        "BIO 3661",
+        "BIO 3674",
+        "BIO 3865"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 7 crédits, maximum 22 crédits. - Cheminement honor : minimum 3 crédits, maximum 10 crédits."
+      ]
+    },
+    {
+      "id": "83F",
+      "cle": "83/83F",
+      "segment": "83",
+      "nom": "Connaissance en biologie quantitative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "BIO 2042",
+        "BIO 2044",
+        "BIO 2045",
+        "BIO 3033",
+        "BIO 3044",
+        "BIO 3207",
+        "BIO 3866"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 15 crédits. - Cheminement honor : minimum 3 crédits, maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "83G",
+      "cle": "83/83G",
+      "segment": "83",
+      "nom": "Connaissances spécialisées complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ANT 2430",
+        "ANT 3475",
+        "BIO 2315",
+        "BIO 2350",
+        "BIO 2386",
+        "BIO 2720",
+        "BIO 2820",
+        "BIO 3008",
+        "BIO 3205",
+        "BIO 3781",
+        "BIO 3790",
+        "BIO 3801",
+        "BIO 3851",
+        "BIO 3893",
+        "GEO 3320",
+        "MCB 2094",
+        "MCB 2979",
+        "MCB 2985",
+        "MCB 2987",
+        "MCB 2991",
+        "MCB 3637",
+        "MSN 2100",
+        "PHL 2025",
+        "PHL 2100",
+        "RED 2301",
+        "SPU 2000D"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : Maximum 15 crédits. - Cheminement honor : Maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "84A",
+      "cle": "84/84A",
+      "segment": "84",
+      "nom": "Connaissances en biologie moléculaire et cellulaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 26
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 26 crédits",
+      "cours": [
+        "BIO 2155",
+        "BIO 2162",
+        "BIO 2240",
+        "BIO 2255",
+        "BIO 3102",
+        "BIO 3103",
+        "BIO 3106",
+        "BIO 3150",
+        "BIO 3160",
+        "BIO 3900"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 9 crédits, maximum 26 crédits. - Cheminement honor : minimum 9 crédits, maximum 14 crédits."
+      ]
+    },
+    {
+      "id": "84B",
+      "cle": "84/84B",
+      "segment": "84",
+      "nom": "Connaissances en biologie végétale fonctionnelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 16
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 16 crédits.",
+      "cours": [
+        "BIO 2372",
+        "BIO 2541",
+        "BIO 3390",
+        "BIO 3701",
+        "BIO 3702"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 16 crédits. - Cheminement honor : minimum 3 crédits, maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "84C",
+      "cle": "84/84C",
+      "segment": "84",
+      "nom": "Connaissances en biologie évolutive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 30 crédits.",
+      "cours": [
+        "BIO 2260",
+        "BIO 2315",
+        "BIO 2386",
+        "BIO 2855",
+        "BIO 3203",
+        "BIO 3204",
+        "BIO 3205",
+        "BIO 3206",
+        "BIO 3283",
+        "BIO 3293"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 6 crédits, maximum 30 crédits. - Cheminement honor : minimum 6 crédits, maximum 18 crédits."
+      ]
+    },
+    {
+      "id": "84D",
+      "cle": "84/84D",
+      "segment": "84",
+      "nom": "Connaissances en biodiversité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 27 crédits.",
+      "cours": [
+        "BIO 2150",
+        "BIO 2306",
+        "BIO 2350",
+        "BIO 2440",
+        "BIO 2720",
+        "BIO 3781",
+        "BIO 3872"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 27 crédits. - Cheminement honor : minimum 3 crédits, maximum 15 crédits."
+      ]
+    },
+    {
+      "id": "84E",
+      "cle": "84/84E",
+      "segment": "84",
+      "nom": "Connaissances en environnement, écologie et biologie végétale appliquée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 23
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 23 crédits.",
+      "cours": [
+        "BIO 1306",
+        "BIO 2703",
+        "BIO 2821",
+        "BIO 3441",
+        "BIO 3721",
+        "BIO 3753",
+        "BIO 3754",
+        "BIO 3756",
+        "BIO 3801",
+        "BIO 3851"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 23 crédits. - Cheminement honor : minimum 3 crédits, maximum 11 crédits."
+      ]
+    },
+    {
+      "id": "84F",
+      "cle": "84/84F",
+      "segment": "84",
+      "nom": "Connaissance en biologie quantitative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "BIO 2042",
+        "BIO 2044",
+        "BIO 2045",
+        "BIO 3033",
+        "BIO 3044",
+        "BIO 3207",
+        "BIO 3866"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 15 crédits. - Cheminement honor : 9 crédits"
+      ]
+    },
+    {
+      "id": "84G",
+      "cle": "84/84G",
+      "segment": "84",
+      "nom": "Connaissances spécialisées complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "ANT 3475",
+        "ANT 3476",
+        "BIO 2431",
+        "BIO 2432",
+        "BIO 2476",
+        "BIO 2478",
+        "BIO 2480",
+        "BIO 2490",
+        "BIO 2621",
+        "BIO 2854",
+        "BIO 2855",
+        "BIO 3008",
+        "BIO 3790",
+        "GEO 1532",
+        "GEO 1542",
+        "GEO 2512",
+        "GEO 3320",
+        "MCB 2094",
+        "MCB 2979",
+        "MCB 2985",
+        "MCB 2987",
+        "MCB 2991",
+        "MCB 3637",
+        "PHL 2100",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : maximum 18 crédits. - Cheminement honor : maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "94A",
+      "cle": "94/94A",
+      "segment": "94",
+      "nom": "Connaissances disciplinaires obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "BIO 2042"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "94B",
+      "cle": "94/94B",
+      "segment": "94",
+      "nom": "Connaissances en écologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 27 crédits.",
+      "cours": [
+        "BIO 2811",
+        "BIO 2820",
+        "BIO 2821",
+        "BIO 3043",
+        "BIO 3651",
+        "BIO 3721",
+        "BIO 3754",
+        "BIO 3790",
+        "BIO 3801",
+        "BIO 3831",
+        "BIO 3839",
+        "BIO 3851",
+        "BIO 3853",
+        "BIO 3893"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 6 crédits, maximum 27 crédits. - Cheminement honor : minimum 6 crédits, maximum 18 crédits."
+      ]
+    },
+    {
+      "id": "94C",
+      "cle": "94/94C",
+      "segment": "94",
+      "nom": "Connaissances en évolution",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "ANT 2430",
+        "BIO 2260",
+        "BIO 2405",
+        "BIO 2855",
+        "BIO 3203",
+        "BIO 3204",
+        "BIO 3205",
+        "BIO 3206",
+        "BIO 3283",
+        "BIO 3293"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 6 crédits, maximum 18 crédits. - Cheminement honor : minimum 6 crédits, maximum 15 crédits."
+      ]
+    },
+    {
+      "id": "94D",
+      "cle": "94/94D",
+      "segment": "94",
+      "nom": "Connaissance en biodiversité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "BIO 2150",
+        "BIO 2306",
+        "BIO 2315",
+        "BIO 2350",
+        "BIO 2386",
+        "BIO 2431",
+        "BIO 2440",
+        "BIO 2476",
+        "BIO 2478",
+        "BIO 2480",
+        "BIO 2490",
+        "BIO 3781",
+        "BIO 3872",
+        "MCB 2999",
+        "MCB 3984"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 6 crédits, maximum 18 crédits. - Cheminement honor : minimum 6 crédits, maximum 15 crédits."
+      ]
+    },
+    {
+      "id": "94E",
+      "cle": "94/94E",
+      "segment": "94",
+      "nom": "Connaissances en biologie quantitative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "BIO 2044",
+        "BIO 2045",
+        "BIO 3033",
+        "BIO 3044",
+        "BIO 3207",
+        "BIO 3866"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 12 crédits. - Cheminement honor : minimum 3 crédits, maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "94F",
+      "cle": "94/94F",
+      "segment": "94",
+      "nom": "Connaissances spécialisées et complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "ANT 3475",
+        "AUT 2500",
+        "BIO 2155",
+        "BIO 2162",
+        "BIO 2240",
+        "BIO 2255",
+        "BIO 2372",
+        "BIO 2402",
+        "BIO 2470",
+        "BIO 2471",
+        "BIO 2541",
+        "BIO 2621",
+        "BIO 2862",
+        "BIO 3008",
+        "BIO 3160",
+        "BIO 3390",
+        "BIO 3682",
+        "BIO 3701",
+        "BIO 3702",
+        "BIO 3865",
+        "BIO 3900",
+        "GEO 1532",
+        "GEO 1542",
+        "GEO 2132",
+        "GEO 2143",
+        "GEO 2152",
+        "GEO 2512",
+        "GEO 3312",
+        "GEO 3320",
+        "MCB 2979",
+        "MCB 3095",
+        "MCB 3637",
+        "MSN 1001",
+        "MSN 2100",
+        "PHL 2025",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : maximum 18 crédits. - Cheminement honor : maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "94G",
+      "cle": "94/94G",
+      "segment": "94",
+      "nom": "Cours pratiques sur le terrain",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 20
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 20 crédits.",
+      "cours": [
+        "ANT 3476",
+        "BIO 1306",
+        "BIO 2432",
+        "BIO 2703",
+        "BIO 2720",
+        "BIO 2854",
+        "BIO 3441",
+        "BIO 3753",
+        "BIO 3756",
+        "BIO 3843"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Cheminement régulier : minimum 3 crédits, maximum 20 crédits. - Cheminement honor : minimum 3 crédits, maximum 15 crédits."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 21 (A25)\nLe baccalauréat comporte 90 crédits, répartis de la façon suivante : de 35 à 52 crédits obligatoires, de 35 à 52 crédits à options et de 3 crédits au choix. Il comprend un tronc commun (segment 01) et est offert selon les quatre orientations suivantes :\n- biologie moléculaire, cellulaire et génétique (segment 82)\n- biologie intégrative animale(segment 83)\n- biologie intégrative végétale (segment 84)\n- biodiversité, écologie et évolution (segment 94)\nIl est offert en deux cheminements : cheminement régulier et cheminement honor.",
+    "Segment 01 Commun aux quatre orientations — Les crédits du segment 01 sont répartis de la façon suivante :",
+    "Segment 01 Commun aux quatre orientations — - en cheminement régulier : 35 crédits obligatoires, 0 à 16 crédits optionnels et 3 crédits au choix.",
+    "Segment 01 Commun aux quatre orientations — - en cheminement honor : 35 crédits obligatoires, 12 à 28 crédits à option (dont 12 crédits dans le bloc 01V) et 3 crédits au choix.",
+    "Segment 82 Propre à l'orientation biologie moléculaire, cellulaire et génétique — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 82 Propre à l'orientation biologie moléculaire, cellulaire et génétique — - en cheminement régulier : 17 crédits obligatoires et de 19 à 35 crédits à option.",
+    "Segment 82 Propre à l'orientation biologie moléculaire, cellulaire et génétique — - en cheminement honor : 17 crédits obligatoires et de 7 à 23 crédits à option.",
+    "Segment 83 propre à l'orientation biologie intégrative animale — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 83 propre à l'orientation biologie intégrative animale — - en cheminement régulier : 36 à 52 crédits à option",
+    "Segment 83 propre à l'orientation biologie intégrative animale — - en cheminement honor : 24 à 40 crédits à option.",
+    "Segment 84 propre à l'orientation biologie intégrative végétale — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 84 propre à l'orientation biologie intégrative végétale — - en cheminement régulier : 36 à 52 crédits à option.",
+    "Segment 84 propre à l'orientation biologie intégrative végétale — - en cheminement honor : 28 à 40 crédits à option.",
+    "Segment 94 Propre à l'orientation biodiversité, écologie et évolution — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 94 Propre à l'orientation biodiversité, écologie et évolution — - en cheminement régulier : 3 crédits obligatoires et de 33 à 49 crédits à option",
+    "Segment 94 Propre à l'orientation biodiversité, écologie et évolution — - en cheminement honor : 3 crédits obligatoires et de 24 à 37 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sciences-biologiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:09.684Z"
+}

@@ -1,0 +1,280 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sante-environnementale-et-sante-au-travail",
+  "nom": "Baccalauréat en santé environnementale et santé au travail",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "santé environnementale",
+      "segments": [
+        "01",
+        "70",
+        "71"
+      ],
+      "exigences": {
+        "brut": "- Orientation santé environnementale : 11crédits obligatoires et 20 crédits à option (Segment 70 et bloc 01C)",
+        "obligatoire": {
+          "min": 11,
+          "max": 11
+        },
+        "option": {
+          "min": 20,
+          "max": 20
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "santé au travail",
+      "segments": [
+        "01",
+        "70",
+        "71"
+      ],
+      "exigences": {
+        "brut": "- Orientation santé au travail : 15 crédits obligatoires et 16 crédits à option (segment 71 et bloc 01C)",
+        "obligatoire": {
+          "min": 15,
+          "max": 15
+        },
+        "option": {
+          "min": 16,
+          "max": 16
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Première année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 29,
+          "max": 29
+        }
+      },
+      "regleBrut": "Obligatoire - 29 crédits.",
+      "cours": [
+        "BCM 1531",
+        "CHM 1600",
+        "MCB 1979",
+        "MSN 1001",
+        "MSN 1002",
+        "MSN 1011",
+        "MSN 3006",
+        "MSO 3001",
+        "PSL 1001",
+        "SPU 1001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Deuxième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "MSN 2001",
+        "MSN 2002",
+        "MSN 2100",
+        "MSN 3011",
+        "MSN 3012",
+        "MSO 2160",
+        "REI 2535",
+        "SPU 2002",
+        "SPU 2003",
+        "SPU 2004",
+        "SPU 2005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option"
+      },
+      "regleBrut": "Option",
+      "cours": [
+        "AUT 2500",
+        "BCM 2505",
+        "BCM 2562",
+        "BIO 1101",
+        "BIO 1153",
+        "BIO 1203",
+        "BIO 2350",
+        "BIO 2405",
+        "BIO 3893",
+        "CHM 1950",
+        "CHM 3602",
+        "DMO 1000",
+        "GEO 1312",
+        "GEO 1532",
+        "GEO 2232",
+        "MCB 2979",
+        "MSN 1012",
+        "MSN 1013",
+        "MSN 3001",
+        "MSN 3013",
+        "NUT 1956",
+        "PHI 2418",
+        "POL 3235",
+        "PPL 3040",
+        "SOL 2200",
+        "SPU 3033G",
+        "SST 2120",
+        "SST 2310",
+        "URB 1114",
+        "URB 2347"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "- Max. 12 crédits pour la spécialisation SE - Max. 9 crédits pour la spécialisation ST"
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MSN 3001",
+        "NUT 1016",
+        "PTM 4901A",
+        "PTM 4901B",
+        "SPU 3001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - 8 crédits.",
+      "cours": [
+        "MSN 4001",
+        "MSN 4002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits",
+      "cours": [
+        "MSN 3002",
+        "MSN 3003",
+        "MSN 3004",
+        "MSN 3005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MSN 3002",
+        "MSN 3003",
+        "MSN 3004",
+        "MSN 3005",
+        "SST 2310"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - 7 crédits.",
+      "cours": [
+        "MSN 4003",
+        "MSN 4004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A26)\nLe baccalauréat comporte 90 crédits.\nLes crédits du baccalauréat sont répartis de la façon suivante:\n- Tronc commun de 59 crédits obligatoires (segment 01)\n- Orientation santé environnementale : 11crédits obligatoires et 20 crédits à option (Segment 70 et bloc 01C)\n- Orientation santé au travail : 15 crédits obligatoires et 16 crédits à option (segment 71 et bloc 01C)",
+    "Segment 01 Tronc commun — Tous les crédits sont obligatoires.",
+    "Segment 70 Troisième année - Orientation santé environnementale (SE) — Les crédits du segment sont répartis de la façon suivante : 11 crédits obligatoires et un maximum de 20 crédits optionnels",
+    "Segment 71 Troisième année - Orientation santé au travail — Les crédits du segment sont répartis de la façon suivante: 15 crédits obligatoires et 7 crédits optionnels"
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sante-environnementale-et-sante-au-travail/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:05.086Z"
+}

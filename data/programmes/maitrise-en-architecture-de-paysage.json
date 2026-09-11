@@ -1,0 +1,211 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-architecture-de-paysage",
+  "nom": "Maîtrise en architecture de paysage",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante: 39 crédits obligatoires, dont 9 crédits attribués à la rédaction d'un projet de fin d'études, et 6 crédits à option.",
+    "obligatoire": {
+      "min": 39,
+      "max": 39
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements, principes et pratique du design",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "APA 6508",
+        "APA 6509",
+        "APA 6510",
+        "APA 6519",
+        "APA 6520",
+        "APA 6524"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Histoire, théorie et critique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "APA 6001",
+        "APA 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Histoire, théorie et critique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "APA 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Technologies, matériaux, systèmes, réalisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Obligatoire - 1 crédit.",
+      "cours": [
+        "APA 6802"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Technologies, matériaux, systèmes, réalisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Végétaux, écologie, développement durable",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "APA 6006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Végétaux, écologie, développement durable",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "APA 6013"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Activités dirigées",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "APA 6014",
+        "APA 6801"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Activités dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "APA 6902",
+        "APA 6903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A18)\nLa maîtrise comporte 45 crédits.\nLes étudiants qui ne détiennent pas un diplôme de baccalauréat en architecture de paysage devront compléter un maximum de 24 crédits de cours préparatoires avant d'entreprendre leur scolarité de maîtrise.\nCours préparatoires\nMaximum - 24 crédits\nAPA6506 Caractérisation et analyse : sites et paysages 2 cr.\nAPA6507 Atelier Processus de projet et méthodes de design 4.5 cr.\nAPA6511 Connaissance des végétaux et horticulture 2 cr.\nAPA6512 Design avec les végétaux 1.5 cr.\nAPA6513 Matériaux et techniques de construction 2 cr.\nAPA6514 Histoire de l'architecture de paysage 2 cr.\nAPA6515 Écologie végétale appliquée 2 cr.\nAPA6516 Nivèlement et gestion des eaux de ruissèlement 2 cr.\nAPA6517 Informatique appliquée à l'architecture de paysage 2 cr.\nAPA6526 Géomatique appliquée à l'architecture de paysage 2 cr.\nAPA6518 Dessins d'exécution et devis 2 cr.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante: 39 crédits obligatoires, dont 9 crédits attribués à la rédaction d'un projet de fin d'études, et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-architecture-de-paysage/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:05.184Z"
+}

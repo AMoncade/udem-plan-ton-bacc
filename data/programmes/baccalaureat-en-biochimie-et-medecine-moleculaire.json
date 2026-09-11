@@ -1,0 +1,652 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-biochimie-et-medecine-moleculaire",
+  "nom": "Baccalauréat en biochimie et médecine moléculaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "91",
+    "92",
+    "93"
+  ],
+  "orientations": [
+    {
+      "nom": "biochimie",
+      "segments": [
+        "01",
+        "91"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "médecine moléculaire",
+      "segments": [
+        "01",
+        "92"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "génétique et génomique humaine",
+      "segments": [
+        "01",
+        "93"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Connaissances fondamentales en biochimie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "BCM 1501",
+        "BCM 1502",
+        "BCM 1503",
+        "BCM 1521",
+        "BCM 2501",
+        "BCM 2502",
+        "BCM 2503",
+        "BCM 2532",
+        "BCM 3512",
+        "BCM 3513",
+        "BCM 3515",
+        "BCM 3553"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Connaissances fondamentales en chimie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "CHM 1301",
+        "CHM 1302",
+        "CHM 1979",
+        "CHM 1990",
+        "CHM 2302",
+        "CHM 2971"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Connaissances fondamentales en biologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIO 1153",
+        "BIO 2043",
+        "MCB 1979"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Cours de langue anglaise",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1921",
+        "ANG 1922"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : maximum 3 crédits; cheminement honor : 0 crédit; cheminement international : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Connaissances complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "MAT 1958",
+        "MSN 2100",
+        "PHI 1130",
+        "PHI 1300",
+        "PHY 1973",
+        "POL 3235",
+        "PSY 1035",
+        "REI 1030",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : maximum 3 crédits; cheminement honor : 0 crédit; cheminement international : 0 crédit."
+      ]
+    },
+    {
+      "id": "01I",
+      "cle": "01/01I",
+      "segment": "01",
+      "nom": "Cours de langues et culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "AES 3032",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1912",
+        "ALL 1913",
+        "ARA 1001",
+        "ARA 1002",
+        "ESP 1215",
+        "ESP 1317",
+        "ESP 1327",
+        "ESP 1903",
+        "ESP 1904",
+        "FAS 1900",
+        "FAS 1910",
+        "FAS 1911",
+        "FRA 2318",
+        "FRA 3641",
+        "ITL 1120",
+        "ITL 1903",
+        "ITL 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 0 crédit; cheminement international : maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "01J",
+      "cle": "01/01J",
+      "segment": "01",
+      "nom": "Stage et travaux pratiques à l'étranger",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 0 crédit; cheminement international : minimum 3 crédits, maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "91A",
+      "cle": "91/91A",
+      "segment": "91",
+      "nom": "Connaissances disciplinaires obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire - 13 crédits.",
+      "cours": [
+        "BCM 2505",
+        "BCM 2531",
+        "BCM 3514",
+        "CHM 2979",
+        "CHM 2995"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "91B",
+      "cle": "91/91B",
+      "segment": "91",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "BCM 3531",
+        "BCM 3532",
+        "BCM 3536"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 9 crédits; cheminement honor : 0 crédit; cheminement international : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "91C",
+      "cle": "91/91C",
+      "segment": "91",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BCM 2533",
+        "BCM 2550",
+        "BCM 2562",
+        "BCM 3525",
+        "BIO 3702",
+        "CHM 3331",
+        "CHM 3450",
+        "PBC 3060",
+        "PHL 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : minimum 3 crédits, maximum 6 crédits; cheminement honor : 0 crédit; cheminement international : maximum 3 crédits."
+      ]
+    },
+    {
+      "id": "91V",
+      "cle": "91/91V",
+      "segment": "91",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 11
+        }
+      },
+      "regleBrut": "Option - Maximum 11 crédits.",
+      "cours": [
+        "BCM 4001",
+        "BCM 4002A"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 11 crédits; cheminement international : 0 crédit."
+      ]
+    },
+    {
+      "id": "91W",
+      "cle": "91/91W",
+      "segment": "91",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "BCM 6026",
+        "BCM 6062",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "BCM 6210",
+        "BCM 6225",
+        "BIM 6026",
+        "BIM 6028",
+        "BIO 6157",
+        "MCB 6031",
+        "MCB 6210",
+        "MSO 6018",
+        "NUT 6033",
+        "PHL 6011",
+        "PHL 6041",
+        "PHL 6093",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 4 crédits; cheminement international : 0 crédit."
+      ]
+    },
+    {
+      "id": "92A",
+      "cle": "92/92A",
+      "segment": "92",
+      "nom": "Connaissances disciplinaires obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "BCM 2505",
+        "BCM 2531",
+        "BCM 2562",
+        "MCB 2987",
+        "PBC 3060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "92B",
+      "cle": "92/92B",
+      "segment": "92",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "BCM 3531",
+        "BCM 3532",
+        "BCM 3536"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 9 crédits; cheminement honor : 0 crédit; cheminement international : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "92C",
+      "cle": "92/92C",
+      "segment": "92",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 2533",
+        "BCM 3514",
+        "BCM 3525",
+        "BIO 1634",
+        "BIO 2402",
+        "BIO 2412",
+        "CHM 2995",
+        "NSC 3040",
+        "PHL 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 3 crédits; cheminement honor : 0 crédit; cheminement international : maximum 3 crédits."
+      ]
+    },
+    {
+      "id": "92V",
+      "cle": "92/92V",
+      "segment": "92",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 11
+        }
+      },
+      "regleBrut": "Option - Maximum 11 crédits.",
+      "cours": [
+        "BCM 4001",
+        "BCM 4002A"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 11 crédits; cheminement international : 0 crédit."
+      ]
+    },
+    {
+      "id": "92W",
+      "cle": "92/92W",
+      "segment": "92",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 6026",
+        "BCM 6062",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "BCM 6210",
+        "BCM 6225",
+        "BIM 6026",
+        "BIM 6028",
+        "BIO 6157",
+        "MCB 6031",
+        "MCB 6210",
+        "MSO 6018",
+        "NUT 6033",
+        "PHL 6011",
+        "PHL 6041",
+        "PHL 6093",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 3 crédits; cheminement international : 0 crédit."
+      ]
+    },
+    {
+      "id": "93A",
+      "cle": "93/93A",
+      "segment": "93",
+      "nom": "Connaissances disciplinaires obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "BCM 2002",
+        "BCM 2550",
+        "BCM 3514",
+        "BCM 3525",
+        "BCM 3526"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "93B",
+      "cle": "93/93B",
+      "segment": "93",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "BCM 3531",
+        "BCM 3533",
+        "BCM 3536"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 9 crédits; cheminement honor : 0 crédit; cheminement international : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "93C",
+      "cle": "93/93C",
+      "segment": "93",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 2533",
+        "BIO 2402",
+        "BIO 3203",
+        "BIO 3283",
+        "CHM 2995",
+        "PBC 3060",
+        "PHL 1400"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 3 crédits; cheminement honor : 0 crédit; cheminement international : maximum 3 crédits."
+      ]
+    },
+    {
+      "id": "93V",
+      "cle": "93/93V",
+      "segment": "93",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 11
+        }
+      },
+      "regleBrut": "Option - Maximum 11 crédits.",
+      "cours": [
+        "BCM 4003",
+        "BCM 4004A"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 11 crédits; cheminement international : 0 crédit."
+      ]
+    },
+    {
+      "id": "93W",
+      "cle": "93/93W",
+      "segment": "93",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 6026",
+        "BCM 6062",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "BCM 6210",
+        "BCM 6225",
+        "BIM 6026",
+        "BIM 6028",
+        "BIO 6157",
+        "MCB 6031",
+        "MCB 6210",
+        "MSO 6018",
+        "NUT 6033",
+        "PGM 6001",
+        "PHL 6011",
+        "PHL 6041",
+        "PHL 6093",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : 0 crédit; cheminement honor : 3 crédits; cheminement international : 0 crédit."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (A23)\nLe baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et est offert avec les orientations suivantes :\n- l'orientation biochimie (segment 91);\n- l'orientation médecine moléculaire (segment 92);\n- l'orientation génétique et génomique humaine (segment 93).\nLe programme de baccalauréat en biochimie et médecine moléculaire offre trois orientations: l'orientation biochimie, l'orientation médecine moléculaire et l'orientation génétique et génomique humaine. Pour chacune des orientations, il y a 3 cheminements: le cheminement général, le cheminement honor et et le cheminement International. Le programme s'articule comme suit:\nDans l'orientation biochimie :\nLe cheminement général comprend les blocs 01A, 01B, 01C, 01D et 01E et les blocs 91A, 91B et 91C avec 75 crédits obligatoires et 15 crédits à option.\nLe cheminement honor comprend les blocs 01A, 01B, 01C et les blocs 91A, 91V et 91W avec 75 crédits obligatoires et 15 crédits à option.\nLe cheminement international comprend les blocs 01A, 01B, 01C, 01D, 01I et 01J et les blocs 91A, 91B et 91C avec 75 crédits obligatoires et 15 crédits à option.\nDans l'orientation médecine moléculaire :\nLe cheminement général comprend les blocs 01A, 01B, 01C, 01D et 01E et les blocs 92A, 92B et 92C avec 76 crédits obligatoires et 14 crédits à option.\nLe cheminement honor comprend les blocs 01A, 01B, 01C et les blocs 92A, 92V et 92W avec 76 crédits obligatoires et 14 crédits à option.\nLe cheminement international comprend les blocs 01A, 01B, 01C, 01D, 01I et 01J et les blocs 92A, 92B et 92C avec 76 crédits obligatoires et 14 crédits à option.\nDans l'orientation génétique et génomique humaine :\nLe cheminement général comprend les blocs 01A, 01B, 01C, 01D et 01E et les blocs 93A, 93B et 93C avec 76 crédits obligatoires et 14 crédits à option.\nLe cheminement honor comprend les blocs 01A, 01B et 01C et les blocs 93A, 93V et 93W avec 76 crédits obligatoires et 14 crédits à option.\nLe cheminement international comprend les blocs 01A, 01B, 01C, 01D, 01I et 01J et les blocs 93A, 93B et 93C avec 76 crédits obligatoires et 14 crédits à option.",
+    "Segment 01 Commun à toutes les orientations — Le nombre de crédits requis par cheminement peut varier.",
+    "Segment 91 Propre à l'orientation biochimie — Le nombre de crédits requis par cheminement peut varier.",
+    "Segment 92 Propre à l'orientation médecine moléculaire — Le nombre de crédits requis par cheminement peut varier.",
+    "Segment 93 Propre à l'orientation génétique et génomique humaine — Le nombre de crédits requis par cheminement peut varier."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-biochimie-et-medecine-moleculaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:18.758Z"
+}

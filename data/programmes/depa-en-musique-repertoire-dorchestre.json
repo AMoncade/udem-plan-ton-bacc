@@ -1,0 +1,121 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-musique-repertoire-dorchestre",
+  "nom": "DEPA en musique – Répertoire d’orchestre",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de ce D.E.P.A. sont répartis de la façon suivante : 18 crédits obligatoires et 12 crédits à option.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "MIN 6445",
+        "MIN 6446",
+        "MUE 6461",
+        "MUE 6462"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Tutorat",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - 8 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUI 7###, dont le sigle est fonction de l'instrument étudié."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Grands ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - 4 crédits.",
+      "cours": [
+        "MUE 6431",
+        "MUE 6432",
+        "MUE 7441",
+        "MUE 7442",
+        "MUE 7561",
+        "MUE 7562"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Auditions",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "MIN 7541",
+        "MIN 7542",
+        "MIN 7543",
+        "MIN 7544"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A26)\nLe diplôme d'études professionnelles approfondies (D.E.P.A.) comporte 30 crédits.",
+    "Segment 70 — Les crédits de ce D.E.P.A. sont répartis de la façon suivante : 18 crédits obligatoires et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-musique-repertoire-dorchestre/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:49.197Z"
+}

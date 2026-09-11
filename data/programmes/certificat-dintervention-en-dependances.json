@@ -1,0 +1,110 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-dintervention-en-dependances",
+  "nom": "Certificat d'intervention en dépendances",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat d'intervention",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Notions fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "TXM 1000D",
+        "TXM 1111",
+        "TXM 1150D",
+        "TXM 1200D",
+        "TXM 2000D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Pratiques en dépendances - ateliers et stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "TXM 3400",
+        "TXM 3500",
+        "TXM 3510",
+        "TXM 3520",
+        "TXM 3530",
+        "TXM 3600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Problématiques associées et spécifiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "AUT 2500",
+        "CRI 1200G",
+        "CRI 1600G",
+        "CRI 3401G",
+        "GER 2040D",
+        "JES 2015Z",
+        "SME 3010",
+        "SXS 2006",
+        "TXM 1221",
+        "TXM 2100D",
+        "TXM 3540"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A26)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-dintervention-en-dependances/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:59.841Z"
+}

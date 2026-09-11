@@ -1,0 +1,504 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-geographie-environnementale",
+  "nom": "Baccalauréat en géographie environnementale",
+  "orientation": null,
+  "segments": [
+    "01",
+    "81",
+    "82"
+  ],
+  "orientations": [
+    {
+      "nom": "environnement physique",
+      "segments": [
+        "01",
+        "81"
+      ],
+      "exigences": {
+        "brut": "- l'orientation environnement physique (segment 01 et 81) est composé de 48 crédits obligatoires, de 39 à 42 crédits à option et d'un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 48,
+          "max": 48
+        },
+        "option": null,
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "environnement humain",
+      "segments": [
+        "01",
+        "82"
+      ],
+      "exigences": {
+        "brut": "- l'orientation environnement humain (segment 01 et 82) est composé de 48 crédits obligatoires, de 39 à 42 crédits à option et d'un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 48,
+          "max": 48
+        },
+        "option": null,
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "GEO 1112",
+        "GEO 1122",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 1312",
+        "GEO 1315",
+        "GEO 1512",
+        "GEO 1532",
+        "GEO 1550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 36
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 36 crédits.",
+      "cours": [
+        "GEO 1412",
+        "GEO 1542",
+        "GEO 2312",
+        "GEO 2512",
+        "GEO 2522",
+        "GEO 3015",
+        "GEO 3031",
+        "GEO 3032",
+        "GEO 3033",
+        "GEO 3262",
+        "GEO 3312",
+        "GEO 3320",
+        "GEO 3322",
+        "GEO 3412",
+        "GEO 3442",
+        "GEO 3452",
+        "GEO 3462",
+        "GEO 3463",
+        "GEO 3482",
+        "GEO 3492",
+        "GEO 3532"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 9 crédits, maximum 36 crédits. Cheminement honor : minimum 9 crédits, maximum 24 crédits. Cheminement international : minimum 9 crédits, maximum 24 crédits"
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Projets individuels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GEO 3010",
+        "GEO 3022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Études internationales - Compléments",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHI 2415",
+        "POL 1954",
+        "PPL 3040",
+        "REL 3310",
+        "SOL 2050",
+        "SOL 2201",
+        "SOL 3201"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Possibilité de prendre 3 crédits de cours PLU (Cours d'études supérieures de l'École d'été du CÉRIUM) après l'obtention de 60 crédits."
+      ]
+    },
+    {
+      "id": "01Y",
+      "cle": "01/01Y",
+      "segment": "01",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANT 2042",
+        "ANT 2043",
+        "BCM 1531",
+        "BIO 2306",
+        "BIO 2855",
+        "BIO 3831",
+        "BIO 3893",
+        "CHM 1600",
+        "COM 1300",
+        "DMO 1000",
+        "DMO 1200",
+        "DMO 2170",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "FEM 3300",
+        "HOR 3200",
+        "HST 1063",
+        "IFT 1015",
+        "IFT 1025",
+        "IFT 1800",
+        "IFT 1810",
+        "PHI 2418",
+        "POL 1000",
+        "SOL 1013",
+        "SOL 1090",
+        "SOL 2020",
+        "SOL 2090",
+        "SOL 2103",
+        "SOL 2200",
+        "SOL 3017",
+        "SOL 3221",
+        "SOL 3410",
+        "URB 1114",
+        "URB 2323",
+        "URB 2342",
+        "URB 2344",
+        "URB 2347",
+        "URB 3345"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle GEO."
+      ]
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "Environnement physique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "GEO 2112",
+        "GEO 2122",
+        "GEO 2132",
+        "GEO 2143",
+        "GEO 2152",
+        "GEO 2533",
+        "GEO 3182"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "Intégration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 30 crédits.",
+      "cours": [
+        "GEO 2222",
+        "GEO 2232",
+        "GEO 2242",
+        "GEO 2252",
+        "GEO 2262",
+        "GEO 2532",
+        "GEO 3032",
+        "GEO 3132",
+        "GEO 3152",
+        "GEO 3162",
+        "GEO 3333"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 3 crédits, maximum 30 crédits. Cheminement honor : minimum 3 crédits, maximum 18 crédits. Cheminement international : minimum 3 crédits, maximum 18 crédits."
+      ]
+    },
+    {
+      "id": "81V",
+      "cle": "81/81V",
+      "segment": "81",
+      "nom": "Propre au cheminement honor - Projet",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "GEO 3544",
+        "GEO 3546",
+        "GEO 3562"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81W",
+      "cle": "81/81W",
+      "segment": "81",
+      "nom": "Propre au cheminement honor - Formation avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "GEO 6100",
+        "GEO 6102",
+        "GEO 6142",
+        "GEO 6148",
+        "GEO 6200",
+        "GEO 6201",
+        "GEO 6202",
+        "GEO 6204",
+        "GEO 6205",
+        "GEO 6302",
+        "GEO 6303",
+        "GEO 6341",
+        "GEO 6343",
+        "GEO 6352"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "Environnement humain",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "GEO 2222",
+        "GEO 2232",
+        "GEO 2242",
+        "GEO 2252",
+        "GEO 2262",
+        "GEO 2532",
+        "GEO 3282"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "Intégration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 30 crédits.",
+      "cours": [
+        "GEO 2112",
+        "GEO 2122",
+        "GEO 2132",
+        "GEO 2143",
+        "GEO 2152",
+        "GEO 2533",
+        "GEO 3033",
+        "GEO 3132",
+        "GEO 3152",
+        "GEO 3162",
+        "GEO 3333"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 3 crédits, maximum 30 crédits. Cheminement honor : minimum 3 crédits, maximum 18 crédits. Cheminement international : minimum 3 crédits, maximum 18 crédits."
+      ]
+    },
+    {
+      "id": "82V",
+      "cle": "82/82V",
+      "segment": "82",
+      "nom": "Propre au cheminement honor - Projet",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "GEO 3554",
+        "GEO 3556",
+        "GEO 3562"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82W",
+      "cle": "82/82W",
+      "segment": "82",
+      "nom": "Propre au cheminement honor - Formation avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "GEO 6100",
+        "GEO 6102",
+        "GEO 6142",
+        "GEO 6200",
+        "GEO 6201",
+        "GEO 6202",
+        "GEO 6204",
+        "GEO 6205",
+        "GEO 6302",
+        "GEO 6303",
+        "GEO 6341",
+        "GEO 6343",
+        "GEO 6352",
+        "GEO 6360"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 21 (A23)\nLe baccalauréat comporte 90 crédits. Il offre deux orientations: l'orientation environnement physique et l'orientation environnement humain. Dans chacune des orientations, il est possible de choisir un des trois cheminements: le cheminement régulier, honor ou international.\n- l'orientation environnement physique (segment 01 et 81) est composé de 48 crédits obligatoires, de 39 à 42 crédits à option et d'un maximum de 3 crédits au choix.\n- l'orientation environnement humain (segment 01 et 82) est composé de 48 crédits obligatoires, de 39 à 42 crédits à option et d'un maximum de 3 crédits au choix.",
+    "Segment 01 Commun aux deux orientations — Les crédits du segment 01 sont répartis de la façon suivante :",
+    "Segment 01 Commun aux deux orientations — - en cheminement régulier : 27 crédits obligatoires, de 12 à 39 crédits à option et d'un maximum de 3 crédits au choix;",
+    "Segment 01 Commun aux deux orientations — - en cheminement honor : 27 crédits obligatoires, de 12 à 27 crédits à option et d'un maximum de 3 crédits au choix;",
+    "Segment 01 Commun aux deux orientations — - en cheminement international : 27 crédits obligatoires, de 24 à 39 crédits à option et d'un maximum de 3 crédits au choix. L'étudiant doit faire 6 crédits dans chacun des blocs 01D et 01E. Il doit également compléter l'équivalent d'un ou deux trimestres (15 ou 30 crédits) dans une université à l'étranger.",
+    "Segment 81 Propre à l'orientation environnement physique — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 81 Propre à l'orientation environnement physique — - en cheminement régulier : 21 crédits obligatoires et de 3 à 30 crédits à option choisis dans le bloc 81B.",
+    "Segment 81 Propre à l'orientation environnement physique — - en cheminement honor : 21 crédits obligatoires et de 3 à 18 crédits à option choisis dans le bloc 81B. L'étudiant doit s'inscrire aux 9 crédits du bloc 81V et à 3 crédits du bloc 81W.",
+    "Segment 81 Propre à l'orientation environnement physique — - en cheminement international : 21 crédits obligatoires et de 3 à 18 crédits à option choisis dans le bloc 81B.",
+    "Segment 82 Propre à l'orientation environnement humain — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 82 Propre à l'orientation environnement humain — - en cheminement régulier : 21 crédits obligatoires et de 3 à 30 crédits à option choisis dans le bloc 82B.",
+    "Segment 82 Propre à l'orientation environnement humain — - en cheminement honor : 21 crédits obligatoires et de 3 à 18 crédits à option choisis dans le bloc 82B. L'étudiant doit s'inscrire aux 9 crédits du bloc 82V et à 3 crédits du bloc 82W.",
+    "Segment 82 Propre à l'orientation environnement humain — - en cheminement international: 21 crédits obligatoires et de 3 à 18 crédits à option choisis dans le bloc 82B."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-geographie-environnementale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:28.382Z"
+}

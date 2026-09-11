@@ -1,0 +1,249 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-psychologie-option-psychologie-clinique",
+  "nom": "Doctorat en psychologie, option Psychologie clinique (D. Psy.)",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 123,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 102 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un essai doctoral et 60 crédits attribués à des stages, et 21 crédits à option.",
+    "obligatoire": {
+      "min": 102,
+      "max": 102
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 7422",
+        "PSY 7903",
+        "PSY 7907"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Stages et internats",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "PSY 7948",
+        "PSY 79491",
+        "PSY 79492",
+        "PSY 79521",
+        "PSY 79522",
+        "PSY 79531",
+        "PSY 79532",
+        "PSY 7954",
+        "PSY 79561",
+        "PSY 79562",
+        "PSY 79563"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1 Psychopathologie et évaluation - Axe Évaluation enfants - adolescents",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 7236",
+        "PSY 7905",
+        "PSY 7915"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant doit choisir les cours du profil Enfants/adolescents OU du profil Adultes."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2 Psychopathologie et évaluation - Axe Évaluation adultes",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 7229",
+        "PSY 7906",
+        "PSY 7916"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant doit choisir les cours du profil Enfants/adolescents OU du profil Adultes."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Intervention 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSY 6127",
+        "PSY 6137",
+        "PSY 6228",
+        "PSY 6258",
+        "PSY 6329",
+        "PSY 6616",
+        "PSY 6671",
+        "PSY 6674",
+        "PSY 6678",
+        "PSY 6928",
+        "PSY 6937",
+        "PSY 6946",
+        "PSY 6968",
+        "PSY 7221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Intervention 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSY 6253",
+        "PSY 6552",
+        "PSY 6679"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "PSY 6002",
+        "PSY 6008",
+        "PSY 6018",
+        "PSY 6019",
+        "PSY 79191",
+        "PSY 79192",
+        "PSY 79901",
+        "PSY 79902"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours et de stages du Département de psychologie, en fonction des besoins de formation de l'étudiant et avec l'approbation du comité de programme."
+      ]
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Essai doctoral d'intégration",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "PSY 7860",
+        "PSY 7993",
+        "PSY 7994"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A25)\nLe doctorat comporte 123 crédits.",
+    "Segment 70 Psychologie clinique — Les crédits du doctorat sont répartis de la façon suivante : 102 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un essai doctoral et 60 crédits attribués à des stages, et 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-psychologie-option-psychologie-clinique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:16.284Z"
+}

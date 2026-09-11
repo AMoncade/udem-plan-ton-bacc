@@ -1,0 +1,329 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-enseignement-du-francais-au-secondaire",
+  "nom": "Baccalauréat en enseignement du français au secondaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 123,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Initiation à la profession enseignante",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "ETA 1001",
+        "ETA 1002",
+        "ETA 1900",
+        "ETA 3346",
+        "ETA 3551"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Intervention éducative",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PPA 1210",
+        "PPA 2000",
+        "PPA 2220",
+        "PPA 3120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Didactique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Obligatoire - 23 crédits.",
+      "cours": [
+        "DID 10101",
+        "DID 10102",
+        "DID 2000",
+        "DID 2211",
+        "DID 3210",
+        "DID 3212",
+        "DID 3215",
+        "DID 3225",
+        "DID 3285",
+        "DID 4212"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "EDU 1012",
+        "EDU 2212",
+        "EDU 3212",
+        "EDU 4015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Élève et son milieu",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ETA 2200",
+        "PPA 3300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Élèves à besoins particuliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PPA 3104",
+        "PPA 4420A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Introduction à la littérature",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "FRA 1000",
+        "FRA 1005",
+        "FRA 1027",
+        "FRA 2031",
+        "FRA 2184",
+        "FRA 2210",
+        "FRA 2284"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Bases de la linguistique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2045",
+        "LNG 2100",
+        "LNG 2350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Introduction aux littératures de la langue française",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FRA 1100",
+        "FRA 1102",
+        "FRA 1110",
+        "FRA 1120",
+        "FRA 1130",
+        "FRA 1140",
+        "FRA 1160",
+        "FRA 1161",
+        "FRA 1203",
+        "FRA 1204",
+        "FRA 1205",
+        "FRA 1260"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Histoire et poétique des littératures",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FRA 2100",
+        "FRA 2103",
+        "FRA 2110",
+        "FRA 2111",
+        "FRA 2112",
+        "FRA 2124",
+        "FRA 2131",
+        "FRA 2141",
+        "FRA 2142",
+        "FRA 2143",
+        "FRA 2180",
+        "FRA 2181",
+        "FRA 2183",
+        "FRA 2203",
+        "FRA 2204",
+        "FRA 2220",
+        "FRA 2221",
+        "FRA 2223",
+        "FRA 2241",
+        "FRA 2261",
+        "FRA 2263",
+        "FRA 2264",
+        "FRA 2285",
+        "FRA 2500",
+        "FRA 2517"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Compléments de formation en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "LNG 1126",
+        "LNG 2050",
+        "LNG 2080",
+        "LNG 2122",
+        "LNG 2240",
+        "LNG 2470"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80F",
+      "cle": "80/80F",
+      "segment": "80",
+      "nom": "Compléments de formation en langue et cognition",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "LNG 1010",
+        "LNG 2140",
+        "LNG 2160",
+        "LNG 2340",
+        "LNG 2355"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 11 (A23)\nCe programme comporte 123 crédits répartis comme suit : 72 crédits du segment 01 Éducation, dont 6 à option; et 51 crédits du segment 80 Français et linguistique, dont 12 à option.",
+    "Segment 01 propre au volet Éducation — Les crédits du segment sont répartis de la façon suivante : 66 crédits obligatoires et 6 crédits à option.",
+    "Segment 80 propre au volet Français et linguistique — Les crédits du segment sont répartis de la façon suivante : 39 crédits obligatoires et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-enseignement-du-francais-au-secondaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:54.596Z"
+}

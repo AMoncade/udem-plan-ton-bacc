@@ -1,0 +1,137 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-petite-enfance-et-famille-education-et-intervention-precoce",
+  "nom": "Certificat en petite enfance et famille: éducation et intervention précoce",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires, de 12 à 15 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 12,
+      "max": 15
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Notions fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "PEF 1050",
+        "PEF 2060",
+        "PEF 3050",
+        "PEF 3500"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Pour compléter son programme, l'étudiant doit suivre le cours obligatoire PEF3200D, en remplacement du cours PEF3200W, aboli."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Problématiques et pratiques spécifiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "PEF 1200D",
+        "PEF 2180D",
+        "PEF 2315",
+        "PEF 2510",
+        "PEF 2710D",
+        "PEF 2715",
+        "PEF 3200Y",
+        "PEF 3250"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "AEG 2110",
+        "ASA 1050G",
+        "DRT 3803",
+        "IDI 1040",
+        "PSE 1201",
+        "PSY 1095",
+        "PSY 3090",
+        "REI 1040G",
+        "REL 1330",
+        "SME 1050",
+        "SVS 2378",
+        "VIO 2009",
+        "VIO 2009D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du certificat."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A13)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires, de 12 à 15 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-petite-enfance-et-famille-education-et-intervention-precoce/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:03.504Z"
+}

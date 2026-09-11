@@ -1,0 +1,136 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-sexualite-enjeux-de-societe-et-pratiques-dintervention",
+  "nom": "Certificat en sexualité : enjeux de société et pratiques d'intervention",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 12 crédits obligatoires, de 15 à 18 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 18
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SXS 1000",
+        "SXS 1001",
+        "SXS 3000",
+        "SXS 3001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 18 crédits.",
+      "cours": [
+        "JES 2009",
+        "PSY 3012G",
+        "SXS 2000",
+        "SXS 2001",
+        "SXS 2002",
+        "SXS 2003",
+        "SXS 2003D",
+        "SXS 2004",
+        "SXS 2006"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le cours PSY3012G est obligatoire pour les étudiants détenteurs d'un DEC général."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "AEG 3137",
+        "ANT 1020",
+        "CIN 2112",
+        "CRI 3401G",
+        "CRI 3810G",
+        "REL 3920",
+        "SOL 3404",
+        "VIO 2009",
+        "VIO 2009D",
+        "VIO 2012",
+        "VIO 2012D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le cours au choix est suivi moyennant l'approbation de la responsable de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A18)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 12 crédits obligatoires, de 15 à 18 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-sexualite-enjeux-de-societe-et-pratiques-dintervention/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:23.348Z"
+}

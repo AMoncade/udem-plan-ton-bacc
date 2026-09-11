@@ -1,0 +1,137 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-travail-social",
+  "nom": "Doctorat en travail social",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, 6 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 81,
+      "max": 81
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "SVS 7000",
+        "SVS 70011",
+        "SVS 70012",
+        "SVS 70013"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "SVS 7003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "SVS 7004",
+        "SVS 7005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Un cours choisi parmi les cours de niveau maîtrise offerts dans une École de travail social ou un cours de niveau maîtrise ou doctorat offert dans une discipline connexe. Le cours au choix doit être pertinent au sujet de thèse de l'étudiant et il doit être autorisé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "SVS 7800",
+        "SVS 7910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A24)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, 6 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-travail-social/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:08.815Z"
+}

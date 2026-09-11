@@ -1,0 +1,125 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-anthropologie",
+  "nom": "DESS en anthropologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 à 30 crédits à option et, au maximum, 12 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 18,
+      "max": 30
+    },
+    "choix": {
+      "min": 12,
+      "max": 12
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 30 crédits.",
+      "cours": [
+        "ANT 6020",
+        "ANT 6030",
+        "ANT 6033",
+        "ANT 6038",
+        "ANT 6040",
+        "ANT 6100",
+        "ANT 6100A",
+        "ANT 6113",
+        "ANT 6117",
+        "ANT 6138",
+        "ANT 6150",
+        "ANT 6154",
+        "ANT 6155",
+        "ANT 6156",
+        "ANT 6160",
+        "ANT 6200",
+        "ANT 6213",
+        "ANT 6220",
+        "ANT 6230",
+        "ANT 6235",
+        "ANT 6245",
+        "ANT 6259",
+        "ANT 6458",
+        "ANT 6463",
+        "ANT 6470",
+        "ANT 6600",
+        "ANT 6610",
+        "ANT 6626",
+        "ANT 6630",
+        "ANT 6632",
+        "ANT 6810",
+        "ANT 6880Z",
+        "ANT 6881",
+        "ANT 6882"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANT 6802",
+        "ANT 6806"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Choix - Maximum 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Avec l'approbation du responsable, l'étudiant choisit des cours dans la banque de cours de l'Université de Montréal ou d'une autre université. Un maximum de 6 crédits de cours de premier cycle peut être autorisé. Un maximum de 6 crédits de cours hors département ou hors institution peut être autorisé."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H20)\nCe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 à 30 crédits à option et, au maximum, 12 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-anthropologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:36.688Z"
+}

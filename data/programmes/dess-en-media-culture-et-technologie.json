@@ -1,0 +1,157 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-media-culture-et-technologie",
+  "nom": "DESS en média, culture et technologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 3 crédits obligatoires, de 21 à 27 crédits à option, et un maximum de 6 crédits au choix.",
+    "obligatoire": {
+      "min": 3,
+      "max": 3
+    },
+    "option": {
+      "min": 21,
+      "max": 27
+    },
+    "choix": {
+      "min": 0,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "COM 6550"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Séminaires de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "COM 6115",
+        "COM 6122",
+        "COM 6135",
+        "COM 6148",
+        "COM 6174",
+        "COM 6175",
+        "COM 6331",
+        "COM 6341",
+        "COM 6374",
+        "COM 6394",
+        "COM 6402",
+        "COM 6421",
+        "COM 6501",
+        "COM 6531",
+        "COM 6710",
+        "COM 6715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation complémentaire en communication",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "COM 6020",
+        "COM 6201",
+        "COM 6205",
+        "COM 6285",
+        "COM 6335",
+        "COM 6355",
+        "COM 6502",
+        "COM 6840",
+        "COM 6841",
+        "COM 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant peut choisir parmi les cours de 2e cycle d'autres disciplines et départements de l'Université de Montréal ou d'une autre université. Il peut également suivre jusqu'à un maximum de 6 crédits de cours du programme de baccalauréat en sciences de la communication sur approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Activité d'intégration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "COM 6912",
+        "COM 6975"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A16)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 3 crédits obligatoires, de 21 à 27 crédits à option, et un maximum de 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-media-culture-et-technologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:40.213Z"
+}

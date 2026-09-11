@@ -1,0 +1,164 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-amenagement-option-ville-territoire-paysage",
+  "nom": "Maîtrise en aménagement, option Ville, territoire, paysage",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 26 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [
+        "AME 6502",
+        "AME 6870",
+        "AME 6871",
+        "AME 6872",
+        "AME 6873",
+        "AME 6874"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "APA 6001",
+        "APA 6003",
+        "APA 6006",
+        "APA 6013",
+        "APA 6015",
+        "APA 6511",
+        "APA 6514",
+        "APA 6515",
+        "URB 6280",
+        "URB 6287",
+        "URB 6288",
+        "URB 6289",
+        "URB 6729",
+        "URB 6751",
+        "URB 6753",
+        "URB 6754",
+        "URB 6767",
+        "URB 6770",
+        "URB 6772",
+        "URB 6774",
+        "URB 6778",
+        "URB 6850"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Lecture dirigée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "AME 6420",
+        "AME 6421"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 2e cycle à choisir dans le répertoire de la Maîtrise en aménagement, dans les autres répertoires de la Faculté de l'aménagement, dans ceux de l'Université de Montréal ou des autres universités montréalaises. Le choix de ces cours doit être approuvé par le responsable de l'option."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 26,
+          "max": 26
+        }
+      },
+      "regleBrut": "Obligatoire - 26 crédits.",
+      "cours": [
+        "AME 6971",
+        "AME 6972",
+        "AME 6973",
+        "AME 6974",
+        "AME 6975",
+        "AME 6995"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A17)\nL'option Ville, territoire, paysage de la maîtrise en aménagement comporte 45 crédits.",
+    "Segment 70 Propre à l'option Ville, territoire, paysage — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 26 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 à 9 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-amenagement-option-ville-territoire-paysage/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:58.949Z"
+}

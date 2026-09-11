@@ -1,0 +1,131 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-de-lorthophonie-et-de-laudiologie",
+  "nom": "Doctorat en sciences de l’orthophonie et de l’audiologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Le doctorat comporte 90 crédits répartis de la façon suivante : 81 crédits obligatoires, dont 79 crédits attribués à la rédaction d'une thèse, 6 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 90,
+      "max": 90
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "ORA 70101",
+        "ORA 70102",
+        "ORA 70201",
+        "ORA 70202"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "AUD 6171",
+        "AUD 6172",
+        "AUD 6181",
+        "AUD 6273",
+        "AUD 6282",
+        "AUD 6817",
+        "CSS 6100",
+        "ORA 6868",
+        "ORT 6303",
+        "ORT 6817",
+        "ORT 6872",
+        "ORT 6873",
+        "PSY 6022"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants doivent choisir un minimum de 3 crédits de sigle ORT ou AUD."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de 3 crédits pertinent à la formation du candidat parmi la liste de cours disponibles."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
+      },
+      "regleBrut": "Obligatoire - 79 crédits.",
+      "cours": [
+        "ORA 7000",
+        "ORA 7911"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A21)\nLe doctorat comporte un total de 90 crédits.",
+    "Segment 70 — Le doctorat comporte 90 crédits répartis de la façon suivante : 81 crédits obligatoires, dont 79 crédits attribués à la rédaction d'une thèse, 6 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-de-lorthophonie-et-de-laudiologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:44.520Z"
+}

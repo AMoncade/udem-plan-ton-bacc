@@ -1,0 +1,136 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-sante-numerique",
+  "nom": "DESS en santé numérique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "La répartition des crédits de ce programme est la suivante : 15 crédits obligatoires et 15 crédits à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ASA 6708",
+        "ASA 6768",
+        "ASA 6769",
+        "DRT 6601",
+        "SCI 6137"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Implantation, performance et évaluation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ASA 6402",
+        "ASA 6618",
+        "ASA 6619",
+        "ASA 6732",
+        "ASA 6754",
+        "ASA 6764",
+        "ASA 6765",
+        "ASA 6766",
+        "PLU 6048"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Parmi les cours suivants ou tout autre cours autorisé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Analytique et science des données",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "IFT 6501",
+        "MMD 6020",
+        "MSO 6061",
+        "MSO 6067",
+        "MSO 6611",
+        "MSO 6624",
+        "PHM 6078"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Parmi les cours suivants ou tout autre cours autorisé par le responsable de programme. Veuillez noter que le choix du cours IFT 6501 implique de faire les 2 cours de 1 crédit du bloc 70D."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Éthique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BIE 6501",
+        "BIE 6502",
+        "BIE 6503"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Parmi les cours suivants ou tout autre cours autorisé par le responsable de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — La répartition des crédits de ce programme est la suivante : 15 crédits obligatoires et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-sante-numerique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:14.364Z"
+}

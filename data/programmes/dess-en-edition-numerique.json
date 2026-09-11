@@ -1,0 +1,215 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-edition-numerique",
+  "nom": "DESS en édition numérique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du programme sont répartis de la façon suivante : 9 crédits obligatoires et 18 à 21 crédits à option, dont 6 crédits attribués à un projet de création ou à un stage, et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 18,
+      "max": 21
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "EDN 6001",
+        "EDN 6002",
+        "EDN 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Aspects théoriques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 6740",
+        "CIN 6056",
+        "COM 6175",
+        "COM 6421",
+        "FRA 6730",
+        "HNU 6000",
+        "JEU 6002",
+        "LCO 6546",
+        "MSL 6523",
+        "MSL 6529",
+        "PLU 6042",
+        "PLU 6060",
+        "SCI 6304",
+        "SCI 6344",
+        "SCI 6348",
+        "SCI 6355",
+        "SCI 6370"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Aspects technologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "EDN 6015",
+        "SCI 6137",
+        "SCI 6306",
+        "SCI 6373"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Ateliers techniques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ART 6008",
+        "ART 6009",
+        "ART 6011",
+        "ART 6012",
+        "ART 6013",
+        "ART 6017",
+        "ART 6019",
+        "ART 6020",
+        "EDN 6101",
+        "EDN 6103",
+        "HNU 6051",
+        "HNU 6052",
+        "HNU 6053",
+        "HNU 6054",
+        "HNU 6055",
+        "HNU 6056",
+        "HNU 6057",
+        "HNU 6058",
+        "HNU 6059"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Compléments de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "COM 2925",
+        "FRA 2805",
+        "FRA 3500",
+        "FRA 3715",
+        "IFT 2720",
+        "INU 3011"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de niveau 6000 à choisir dans la banque de cours de l'Université de Montréal ou d'une autre université avec l'accord du responsable de programme."
+      ]
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Espace projet",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "EDN 6501",
+        "EDN 6502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A21)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du programme sont répartis de la façon suivante : 9 crédits obligatoires et 18 à 21 crédits à option, dont 6 crédits attribués à un projet de création ou à un stage, et un maximum de 3 crédits au choix. Un minimum de 24 crédits doit être des crédits de cours de cycles supérieurs."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-edition-numerique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:00.213Z"
+}

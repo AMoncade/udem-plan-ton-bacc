@@ -1,0 +1,288 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-linguistique",
+  "nom": "Doctorat en linguistique",
+  "orientation": null,
+  "segments": [
+    "70",
+    "73"
+  ],
+  "orientations": [
+    {
+      "nom": "linguistique",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 12 crédits à option.",
+        "obligatoire": {
+          "min": 78,
+          "max": 78
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "neurosciences du langage",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 81 crédits obligatoires, dont 78 attribués à la recherche et à la rédaction d'une thèse, et 9 crédits à option.Si l'étudiant a déjà suivi le cours du bloc obligatoire (73A) à la maîtrise, ce cours peut être substitué par un autre cours jugé approprié.",
+        "obligatoire": {
+          "min": 81,
+          "max": 81
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Formation en linguistique fondamentale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "LNG 6300",
+        "LNG 6320",
+        "LNG 6360",
+        "LNG 6765",
+        "LNG 6775"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Si l'étudiante a déjà suivi un cours du bloc à option (70A) à la maîtrise, ce cours peut être substitué par un cours choisi parmi les cours ou séminaires du bloc 70B."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation complémentaire en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LNG 6021",
+        "LNG 6030",
+        "LNG 6105",
+        "LNG 6380",
+        "LNG 6390",
+        "LNG 6570",
+        "LNG 6572",
+        "LNG 6581"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compléments de formation en linguistique informatique et appliquée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "SCI 6203",
+        "TRA 6008",
+        "TRA 6021"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'inscription aux cours IFT6285 – 4 crédits – Traitement automatique des langues naturelles et IFT6390 – 4 crédits – Fondement de l'apprentissage machine est également possible avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Compléments de formation en sociolinguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANT 6117",
+        "ANT 6600",
+        "ANT 6630",
+        "SOL 6210",
+        "SOL 6212"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Compléments de formation en psycho-neurolinguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ETA 6512",
+        "MSO 6061",
+        "MSO 6067",
+        "ORT 6873",
+        "PSE 6573",
+        "PSY 6419"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "LNG 7000",
+        "LNG 7100",
+        "LNG 7300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Fondements en neurosciences",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "NSC 6051"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Neuro et psycholinguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "LNG 6030",
+        "LNG 6105",
+        "LNG 6570",
+        "LNG 6572",
+        "ORT 6873",
+        "PSY 6419"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Compléments de formation en neuropsychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSY 6022",
+        "PSY 7425"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "LNG 7000",
+        "LNG 7100",
+        "LNG 7300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A22)\nLe doctorat comporte 90 crédits. Il est offert avec deux options :\n- l'option linguistique (segment 70),\n- l'option neurosciences du langage (segment 73).",
+    "Segment 70 Propre à l'option linguistique — Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 12 crédits à option.",
+    "Segment 73 Propre à l'option neurosciences du langage — Les crédits de l'option sont répartis de la façon suivante : 81 crédits obligatoires, dont 78 attribués à la recherche et à la rédaction d'une thèse, et 9 crédits à option.Si l'étudiant a déjà suivi le cours du bloc obligatoire (73A) à la maîtrise, ce cours peut être substitué par un autre cours jugé approprié."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-linguistique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:36.230Z"
+}

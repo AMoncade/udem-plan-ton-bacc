@@ -1,0 +1,145 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-musique-et-arts",
+  "nom": "Certificat en musique et arts",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MUL 1245",
+        "MUL 3333X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Histoire de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUL 1102",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1117",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3208X",
+        "MUL 3335X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Musique et sociétés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "DRT 3812",
+        "MTE 1100",
+        "MTE 1120",
+        "MUL 1132",
+        "MUL 1246",
+        "MUL 3314",
+        "MUL 3334",
+        "MUL 3344",
+        "MUS 1300",
+        "MUS 1315",
+        "MUS 1327",
+        "MUS 2135"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Histoire de l'art",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "HAR 1090",
+        "HAR 1130",
+        "HAR 1145",
+        "HAR 1200",
+        "HAR 2070",
+        "HAR 2090",
+        "HAR 2195",
+        "HAR 2780",
+        "HAR 3056",
+        "HAR 3420",
+        "HAR 3450"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A18)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-musique-et-arts/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:00.115Z"
+}

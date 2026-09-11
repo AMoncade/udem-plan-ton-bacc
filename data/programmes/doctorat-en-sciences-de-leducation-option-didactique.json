@@ -1,0 +1,92 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-de-leducation-option-didactique",
+  "nom": "Doctorat en sciences de l'éducation, option Didactique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 6 crédits de cours à option de 2e cycle ou de doctorat et 84 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse.",
+    "obligatoire": {
+      "min": 84,
+      "max": 84
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 0,
+          "max": 0
+        }
+      },
+      "regleBrut": "Obligatoire - 0 crédit.",
+      "cours": [
+        "DID 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 2e ou de 3e cycle."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits.",
+      "cours": [
+        "DID 7090",
+        "DID 7095"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (E90)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 6 crédits de cours à option de 2e cycle ou de doctorat et 84 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-de-leducation-option-didactique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:36.987Z"
+}

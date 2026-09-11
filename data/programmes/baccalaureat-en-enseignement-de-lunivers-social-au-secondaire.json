@@ -1,0 +1,317 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-enseignement-de-lunivers-social-au-secondaire",
+  "nom": "Baccalauréat en enseignement de l'univers social au secondaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 123,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Initiation à la profession enseignante",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "ETA 1001",
+        "ETA 1002",
+        "ETA 1900",
+        "ETA 3346",
+        "ETA 3554"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Intervention éducative",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PPA 1210",
+        "PPA 2000",
+        "PPA 2220",
+        "PPA 3120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Didactique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "DID 10101",
+        "DID 10102",
+        "DID 1098",
+        "DID 1876",
+        "DID 2000",
+        "DID 2876",
+        "DID 3373",
+        "DID 3465",
+        "DID 4297",
+        "DID 4876"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "EDU 1012",
+        "EDU 2212",
+        "EDU 3212",
+        "EDU 4016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Élève et son milieu",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ETA 2200",
+        "PPA 3300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Élève à besoins particuliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PPA 3104",
+        "PPA 4420A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Histoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "HST 1010",
+        "HST 1031",
+        "HST 1032",
+        "HST 1041",
+        "HST 1042",
+        "HST 1043",
+        "HST 1051",
+        "HST 1052"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Compléments de formation en histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "HST 1053",
+        "HST 2352",
+        "HST 2401",
+        "HST 2402",
+        "HST 2410",
+        "HST 2420",
+        "HST 2427",
+        "HST 2443",
+        "HST 2444",
+        "HST 2446",
+        "HST 2453",
+        "HST 2904",
+        "HST 3080",
+        "HST 3130",
+        "HST 3253",
+        "HST 3432",
+        "HST 3480"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Géographie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "GEO 1130",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 1312",
+        "GEO 1412"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Compléments de formation en géographie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "GEO 1532",
+        "GEO 2222",
+        "GEO 2232",
+        "GEO 2242",
+        "GEO 2252",
+        "GEO 2262",
+        "GEO 2312",
+        "GEO 3320",
+        "GEO 3333",
+        "GEO 3463",
+        "GEO 3482"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Histoire, géographie et autres disciplines de l'univers social",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "ECN 1800",
+        "GEO 3322",
+        "GEO 3412",
+        "GEO 3442",
+        "GEO 3452",
+        "GEO 3492",
+        "HST 1044",
+        "HST 1061",
+        "HST 1062",
+        "HST 1080",
+        "HST 2023",
+        "HST 2109",
+        "HST 2111",
+        "HST 2126",
+        "HST 2132",
+        "HST 2212",
+        "HST 2264",
+        "HST 2276",
+        "HST 2371",
+        "HST 2624",
+        "POL 1000",
+        "POL 2180",
+        "SOL 1400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A23)\nCe programme comporte 123 crédits répartis comme suit : 69 crédits du segment 01 Éducation, dont 6 à option et 54 crédits du segment 80 Histoire et Géographie, dont 15 à option.",
+    "Segment 01 propre au volet Éducation — Les crédits du segment sont répartis de la façon suivante : 61 crédits obligatoires et 5 crédits à option.",
+    "Segment 80 propre au volet Histoire, géographie — Les crédits du segment sont répartis de la façon suivante : 39 crédits obligatoires et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-enseignement-de-lunivers-social-au-secondaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:48.816Z"
+}

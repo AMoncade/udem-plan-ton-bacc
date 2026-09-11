@@ -1,0 +1,91 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-de-leducation-option-education-comparee-et-fondements-de-leducation",
+  "nom": "Doctorat en sciences de l'éducation, option Éducation comparée et fondements de l'éducation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : un minimum de 12 crédits de cours obligatoires et 3 crédits de cours à option de cycle supérieur, 30 crédits accordés au projet de recherche et 45 crédits accordés à la rédaction et à la soutenance de la thèse.",
+    "obligatoire": null,
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours ETA 7001 et 7002 sont préalables à l'examen général de doctorat ( ETA7100) et au séminaire de recherche (ETA 70001 et ETA 70002)."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PLU 6035"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un cours à choisir dans la banque des cours relevant des options Éducation comparée et fondements de l'éducation, Mesure et évaluation et Administration de l'éducation, ou le cours PLU6035 La pratique de l'enseignement supérieur."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "ETA 7191",
+        "ETA 7195"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A12)\nLe doctorat comporte 90 crédits.\nDes cours préparatoires ou complémentaires peuvent être ajoutés en fonction du projet de l'étudiant et de ses études antérieures.\nETA 6505 Méthodes quantitatives en éducation, 3 cr.\nETA 6507 Démar. d'invest. de pratiques, 3 cr.\nETA 6512 L'analyse des données qualitatives, 3 cr.\nETA 6032 Méthodes de recherche en éducation, 3 cr.\net, le cas échéant, tout autre cours choisi dans la banque des cours relevant des options Éducation comparée et fondements de l'éducation, Mesure et évaluation ou Administration de l'éducation.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : un minimum de 12 crédits de cours obligatoires et 3 crédits de cours à option de cycle supérieur, 30 crédits accordés au projet de recherche et 45 crédits accordés à la rédaction et à la soutenance de la thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-de-leducation-option-education-comparee-et-fondements-de-leducation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:38.398Z"
+}

@@ -1,0 +1,625 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-musique-interpretation-jazz",
+  "nom": "Baccalauréat en musique - Interprétation jazz",
+  "orientation": null,
+  "segments": [
+    "01",
+    "81",
+    "82"
+  ],
+  "orientations": [
+    {
+      "nom": "Chant jazz",
+      "segments": [
+        "01",
+        "81"
+      ],
+      "exigences": {
+        "brut": "- Orientation Chant jazz (segments 01 et 81) avec 65 crédits obligatoires, de 22 à 25 crédits à option, et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 65,
+          "max": 65
+        },
+        "option": {
+          "min": 22,
+          "max": 25
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Instrument jazz",
+      "segments": [
+        "01",
+        "82"
+      ],
+      "exigences": {
+        "brut": "- Orientation Instrument jazz (segments 01 et 82) avec 34 crédits obligatoires, de 53 à 56 crédits à option, et de 0 à 3 crédits au choix.",
+        "obligatoire": {
+          "min": 34,
+          "max": 34
+        },
+        "option": {
+          "min": 53,
+          "max": 56
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 22,
+          "max": 22
+        }
+      },
+      "regleBrut": "Obligatoire - 22 crédits.",
+      "cours": [
+        "MCT 1301",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 2315",
+        "MUE 1461A",
+        "MUE 1461B",
+        "MUE 1462A",
+        "MUE 1462B",
+        "MUS 1213",
+        "MUS 1214",
+        "MUS 1215"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Histoire et théorie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANG 1500",
+        "MUL 1102",
+        "MUL 1116",
+        "MUL 1117",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3314"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Communications et outils professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EMU 1310",
+        "EMU 2101",
+        "EMU 2312",
+        "MIN 1804",
+        "MUL 1132",
+        "MUS 2134",
+        "PLU 2800U"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Ateliers professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "MIN 1811",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Formation musicale complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "MUS 1127",
+        "MUS 1232",
+        "MUS 1300",
+        "MUS 1330",
+        "MUS 1331",
+        "MUS 2325",
+        "MUS 3314X",
+        "MUS 3315X",
+        "MUS 3326X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 19,
+          "max": 19
+        }
+      },
+      "regleBrut": "Obligatoire - 19 crédits.",
+      "cours": [
+        "MCT 1200",
+        "MIN 1791",
+        "MIN 1792",
+        "MIN 1921",
+        "MIN 1922",
+        "MIN 1971",
+        "MIN 1972",
+        "MUE 1641",
+        "MUE 1642",
+        "MUE 1643",
+        "MUE 1644"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "Instrument",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "MUI 1424A",
+        "MUI 1424B",
+        "MUI 2424A",
+        "MUI 2424B",
+        "MUI 3424A",
+        "MUI 3424B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "Ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 8 crédits.",
+      "cours": [
+        "MUE 1261",
+        "MUE 1262",
+        "MUE 1263",
+        "MUE 1264",
+        "MUE 1265",
+        "MUE 1266",
+        "MUE 1365",
+        "MUE 1366",
+        "MUE 1367",
+        "MUE 1368",
+        "MUE 1391",
+        "MUE 1392",
+        "MUE 1393",
+        "MUE 1394",
+        "MUE 1395",
+        "MUE 1396",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1473",
+        "MUE 1474",
+        "MUE 1475",
+        "MUE 1476",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1495",
+        "MUE 1496",
+        "MUE 1521",
+        "MUE 1522",
+        "MUE 1523",
+        "MUE 1524",
+        "MUE 1525",
+        "MUE 1526",
+        "MUE 1551",
+        "MUE 1552",
+        "MUE 1611",
+        "MUE 1612",
+        "MUE 1613",
+        "MUE 1614",
+        "MUE 1631",
+        "MUE 1632",
+        "MUE 1633",
+        "MUE 1634",
+        "MUE 1635",
+        "MUE 1636",
+        "MUE 1645",
+        "MUE 1646"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Formation complémentaire en jazz et musique du monde",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 8 crédits.",
+      "cours": [
+        "MCT 1302",
+        "MIN 1088",
+        "MIN 1089",
+        "MIN 1098",
+        "MIN 1099",
+        "MIN 3098X",
+        "MIN 3099X",
+        "MTE 2316",
+        "MTE 3601X",
+        "MTE 3611X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MIN 1098",
+        "MIN 1099",
+        "MUE 1463A",
+        "MUE 1463B",
+        "MUE 1464A",
+        "MUE 1464B",
+        "MUE 1465A",
+        "MUE 1465B",
+        "MUE 1466A",
+        "MUE 1466B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "Instruments",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - 24 crédits.",
+      "cours": [
+        "MUI 1404A",
+        "MUI 1404B",
+        "MUI 1414A",
+        "MUI 1414B",
+        "MUI 1424A",
+        "MUI 1424B",
+        "MUI 1434A",
+        "MUI 1434B",
+        "MUI 1444A",
+        "MUI 1444B",
+        "MUI 1454A",
+        "MUI 1454B",
+        "MUI 1464A",
+        "MUI 1464B",
+        "MUI 1474A",
+        "MUI 1474B",
+        "MUI 1484A",
+        "MUI 1484B",
+        "MUI 1494A",
+        "MUI 1494B",
+        "MUI 1504A",
+        "MUI 1504B",
+        "MUI 1524A",
+        "MUI 1524B",
+        "MUI 1534A",
+        "MUI 1534B",
+        "MUI 1564A",
+        "MUI 1564B",
+        "MUI 2404A",
+        "MUI 2404B",
+        "MUI 2414A",
+        "MUI 2414B",
+        "MUI 2434A",
+        "MUI 2434B",
+        "MUI 2444A",
+        "MUI 2444B",
+        "MUI 2454A",
+        "MUI 2454B",
+        "MUI 2464A",
+        "MUI 2464B",
+        "MUI 2474A",
+        "MUI 2474B",
+        "MUI 2484A",
+        "MUI 2484B",
+        "MUI 2494A",
+        "MUI 2494B",
+        "MUI 2504A",
+        "MUI 2504B",
+        "MUI 2524A",
+        "MUI 2524B",
+        "MUI 2534A",
+        "MUI 2534B",
+        "MUI 2564A",
+        "MUI 2564B",
+        "MUI 3404A",
+        "MUI 3404B",
+        "MUI 3414A",
+        "MUI 3414B",
+        "MUI 3434A",
+        "MUI 3434B",
+        "MUI 3444A",
+        "MUI 3444B",
+        "MUI 3454A",
+        "MUI 3454B",
+        "MUI 3464A",
+        "MUI 3464B",
+        "MUI 3474A",
+        "MUI 3474B",
+        "MUI 3484A",
+        "MUI 3484B",
+        "MUI 3494A",
+        "MUI 3494B",
+        "MUI 3504A",
+        "MUI 3504B",
+        "MUI 3524A",
+        "MUI 3524B",
+        "MUI 3534A",
+        "MUI 3534B",
+        "MUI 3564A",
+        "MUI 3564B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82C",
+      "cle": "82/82C",
+      "segment": "82",
+      "nom": "Ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUE 1120",
+        "MUE 1130",
+        "MUE 1261",
+        "MUE 1262",
+        "MUE 1263",
+        "MUE 1264",
+        "MUE 1265",
+        "MUE 1266",
+        "MUE 1365",
+        "MUE 1366",
+        "MUE 1367",
+        "MUE 1368",
+        "MUE 1391",
+        "MUE 1392",
+        "MUE 1393",
+        "MUE 1394",
+        "MUE 1395",
+        "MUE 1396",
+        "MUE 1421",
+        "MUE 1422",
+        "MUE 1423",
+        "MUE 1424",
+        "MUE 1425",
+        "MUE 1426",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1473",
+        "MUE 1474",
+        "MUE 1475",
+        "MUE 1476",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1495",
+        "MUE 1496",
+        "MUE 1501",
+        "MUE 1502",
+        "MUE 1503",
+        "MUE 1504",
+        "MUE 1505",
+        "MUE 1506",
+        "MUE 1521",
+        "MUE 1522",
+        "MUE 1523",
+        "MUE 1524",
+        "MUE 1525",
+        "MUE 1526",
+        "MUE 1551",
+        "MUE 1552",
+        "MUE 1611",
+        "MUE 1612",
+        "MUE 1613",
+        "MUE 1614",
+        "MUE 1631",
+        "MUE 1632",
+        "MUE 1633",
+        "MUE 1634",
+        "MUE 1635",
+        "MUE 1636"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82D",
+      "cle": "82/82D",
+      "segment": "82",
+      "nom": "Théorie jazz appliquée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 8 crédits.",
+      "cours": [
+        "MIN 1088",
+        "MIN 1089",
+        "MIN 1791",
+        "MIN 1792"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82E",
+      "cle": "82/82E",
+      "segment": "82",
+      "nom": "Formation complémentaire en jazz et musique du monde",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MCT 1200",
+        "MCT 1302",
+        "MIN 1921",
+        "MIN 1922",
+        "MIN 1971",
+        "MIN 1972",
+        "MIN 3098X",
+        "MIN 3099X",
+        "MTE 2316",
+        "MTE 3601X",
+        "MTE 3611X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A25)\nLe baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et est offert selon deux (2) orientations :\n- Orientation Chant jazz (segments 01 et 81) avec 65 crédits obligatoires, de 22 à 25 crédits à option, et de 0 à 3 crédits au choix.\n- Orientation Instrument jazz (segments 01 et 82) avec 34 crédits obligatoires, de 53 à 56 crédits à option, et de 0 à 3 crédits au choix.",
+    "Segment 01 Commun aux deux (2) orientations — Les crédits du tronc commun sont répartis comme suit : 22 crédits obligatoires, un minimum de 11 crédits à option, et de 0 à 3 crédits au choix.",
+    "Segment 81 Propre à l'orientation Chant jazz — Les crédits de l'orientation sont répartis comme suit : 43 crédits obligatoires et un minimum de 9 crédits à option.",
+    "Segment 82 Propre à l'orientation Instrument jazz — Les crédits de l'orientation sont répartis comme suit : 12 crédits obligatoires et un minimum de 37 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-musique-interpretation-jazz/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:31.674Z"
+}

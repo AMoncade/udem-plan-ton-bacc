@@ -1,0 +1,95 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-musique-composition-pour-lecran-et-la-scene",
+  "nom": "DEPA en musique - Composition pour l'écran et la scène",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.P.A. sont répartis de la façon suivante : 27 crédits obligatoires et 3 crédits à option.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Tutorat en composition et poétique audio-visuel",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "CIN 6054"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les séminaires (MCT) de ce bloc obligatoire seront réservés aux étudiants du DEPA mais les places restantes pourraient être attribuées aux étudiants du doctorat en composition."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Séminaires théoriques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MUS 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un cours de trois crédits sera choisi parmi les séminaires aux cycles supérieurs offerts chaque année à la Faculté de musique. Aucun sujet spécial (recherche supervisée remplaçant un séminaire) ne sera accepté en remplacement de ces séminaires."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Ces projets de composition pourraient être terminés dans le courant de la 3e session (session d'été)."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A13)\nLe D.E.P.A. comporte 30 crédits.\nLes cours de 1er cycle suivants seront recommandés mais pas obligatoires.\nCIN 1101 Mouvements de l'histoire du cinéma (3 crédits)\nCIN 1102 Langage et matières de l'expression (3 crédits)\nCIN 1103 Courants du cinéma contemporain (3 crédits)\nCIN 1105 Cinéma d'animation et images composites (3 crédits)\nCIN 2108 Cinéma expérimental et art vidéo (3 crédits)\nCIN 2110 Le cinéma et les autres arts (3 crédits)\nLes cours de 1er cycle suivants ou l'équivalent seront préalables au DEPA :\nMUS 1127 Création maquettes audio/MIDI (3 crédits)\nMUS 1128 Édition mus. assistée ordinateur (3 crédits)\nMUL 2109 Musiques et images en mouvement (3 crédits)\nMUL 2119 Histoire de la musique de film (3 crédits)\nMUS 2325 Prise de son créative (3 crédits)\nCIN 2000 Pratique et esthétique du son (3 crédits)",
+    "Segment 70 — Les crédits du D.E.P.A. sont répartis de la façon suivante : 27 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-musique-composition-pour-lecran-et-la-scene/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:43.785Z"
+}

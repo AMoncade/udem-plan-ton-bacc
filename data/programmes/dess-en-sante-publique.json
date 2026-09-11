@@ -1,0 +1,77 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-sante-publique",
+  "nom": "DESS en santé publique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires et 12 crédits au choix.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": null,
+    "choix": {
+      "min": 12,
+      "max": 12
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "ASA 6754",
+        "MSN 6115",
+        "MSO 6011",
+        "MSO 6060",
+        "MSO 6612",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Choix - 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi les cours des répertoires des programmes de médecine sociale et préventive, de gestion, d'évaluation et politiques de santé, de santé environnementale et santé au travail ou tout autre cours avec l'approbation du directeur de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A18)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires et 12 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-sante-publique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:17.711Z"
+}

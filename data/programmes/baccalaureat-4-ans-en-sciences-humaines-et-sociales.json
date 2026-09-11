@@ -1,0 +1,221 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-4-ans-en-sciences-humaines-et-sociales",
+  "nom": "Baccalauréat 4 ans en sciences humaines et sociales",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Démarche intellectuelle",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "FAS 1901",
+        "PHI 1901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Perfectionnement en français",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "FRS 1504",
+        "FRS 1604"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant ayant déposé des documents correspondant à un parcours d'études en français reconnu par l'Université, ou ayant obtenu un résultat satisfaisant à l'épreuve d'expression écrite d'un test de français accepté par l'Université de Montréal, peut être exempté des cours de ce bloc."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Formation en sciences humaines et sociales",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - 9 à 18 crédits."
+      },
+      "regleBrut": "Option - 9 à 18 crédits.",
+      "cours": [
+        "ANT 1902",
+        "ECN 1901",
+        "HST 1901",
+        "POL 1901",
+        "PSY 1901",
+        "REL 1901",
+        "SOL 1901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation en arts et lettres",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "FRA 1903",
+        "FRA 1904",
+        "HAR 1901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation en langue anglaise",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1901A",
+        "ANG 1902",
+        "ANG 1903",
+        "ANG 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Formation en informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "IFT 1901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Formation en statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "STT 1901",
+        "STT 1903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Formation en mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MAT 1903",
+        "MAT 1905",
+        "MAT 1923"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Formation en sciences humaines et sociales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ANT 1902",
+        "ECN 1901",
+        "HST 1901",
+        "POL 1901",
+        "PSY 1901",
+        "REL 1901",
+        "SOL 1901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A25)\nLa première année du baccalauréat 4 ans en sciences humaines et sociales comporte 30 crédits. Elle est offerte selon douze orientations (réparties sur les segments 70 et 71)\n-orientation Anthropologie (1-050-1-0) (segment 70)\n-orientation Communication et politique (1-227-1-0) (segment 70)\n-orientation Démographie et anthropologie (1-074-1-0) (segment 70)\n-orientation Démographie et géographie (1-071-1-0) (segment 70)\n-orientation Économie et politique (1-224-1-0) (segment 70)\n-orientation Géographie environnementale (1-155-1-0) (segment 70)\n-orientation Linguistique (1-180-1-0) (segment 70)\n-orientation Psychologie et sociologie (1-257-1-0) (segment 70)\n-orientation Sciences politique (1-245-1-0) (segment 70)\n-orientation Sciences politique et philosophie (1-247-1-0) (segment 70)\n-orientation Sociologie (1-255-1-0) (segment 70)\n-orientation Démographie et statistique (1-073-1-1) (segment 71)\n-orientation Sciences économiques (1-240-1-0) (segment 71)",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont répartis de la façon suivante: 6 crédits obligatoires et 6 crédits à option.",
+    "Segment 70 — Anthropologie (1-050-1-0), communication et politique (1-227-1-0), démographie et anthropologie (1-074-1-0), démographie et géographie (1-071-1-0), économie et politique (1-244-1-0), géographie environnementale (1-155-1-0), linguistique (1-180-1-0), psychologie et sociologie (1-257-1-0), science politique (1-245-1-0), science politique et philosophie (1-247-1-0), sociologie (1-255-1-0)",
+    "Segment 70 — Le segment 70 comporte 18 crédits à option.",
+    "Segment 71 — Démographie/statistique (1-073-1-1), sciences économiques (1-240-1-0)",
+    "Segment 71 — Les crédits du segment 71 sont répartis de la façon suivante: de 9 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-4-ans-en-sciences-humaines-et-sociales/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:09.405Z"
+}

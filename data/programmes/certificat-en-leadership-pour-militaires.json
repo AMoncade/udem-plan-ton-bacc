@@ -1,0 +1,110 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-leadership-pour-militaires",
+  "nom": "Certificat en leadership pour militaires",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "AEG 2110",
+        "COM 1500G",
+        "CRE 1001",
+        "VIO 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Problématiques et pratiques reliées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 15 crédits.",
+      "cours": [
+        "ASA 2350G",
+        "ASA 3250G",
+        "CRE 3032",
+        "GSP 2360",
+        "HST 1052",
+        "POL 1954",
+        "PPL 3140",
+        "PSY 1105",
+        "REI 1030G",
+        "REI 1040G",
+        "REI 1240G",
+        "REI 1610G",
+        "SPU 2310G",
+        "TXM 1000D",
+        "VIO 2016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PPL 3040",
+        "PSY 1045",
+        "VIO 2016D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A17)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-leadership-pour-militaires/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:56.995Z"
+}

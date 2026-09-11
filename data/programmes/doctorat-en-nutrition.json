@@ -1,0 +1,67 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-nutrition",
+  "nom": "Doctorat en nutrition",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "NUT 70501",
+        "NUT 70502",
+        "NUT 70511",
+        "NUT 70512"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours NUT 70501 et NUT 70502 sont équivalents au cours NUT 7050. Les cours NUT 70511 et NUT 70512 sont équivalents au cours NUT 7051."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits.",
+      "cours": [
+        "NUT 7000",
+        "NUT 7900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (E90)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Tous les crédits du doctorat sont obligatoires, 84 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-nutrition/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:55.913Z"
+}

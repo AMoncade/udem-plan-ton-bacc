@@ -1,0 +1,130 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-synthese-et-architectures-moleculaires",
+  "nom": "DESS en synthèse et architectures moléculaires",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires, dont 12 crédits attribués à un stage, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CHM 6700",
+        "CHM 6710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Spécialisation en synthèse et architectures moléculaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "CHM 6221",
+        "CHM 6310",
+        "CHM 6315",
+        "CHM 6330",
+        "CHM 6340",
+        "CHM 6365",
+        "CHM 6375",
+        "CHM 6381",
+        "CHM 6767"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Fondements en synthèse et architectures moléculaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CHM 3210",
+        "CHM 3230",
+        "CHM 3305",
+        "CHM 3331",
+        "CHM 3333",
+        "CHM 3340",
+        "CHM 3350",
+        "CHM 3360",
+        "CHM 3381",
+        "CHM 3405"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Note : Les cours ne peuvent pas avoir été déjà suivis dans le cadre d'un autre programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CHM 6720"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)\nCe programme comporte un total de 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires, dont 12 crédits attribués à un stage, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-synthese-et-architectures-moleculaires/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:27.924Z"
+}

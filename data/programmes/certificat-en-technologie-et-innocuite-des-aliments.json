@@ -1,0 +1,115 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-technologie-et-innocuite-des-aliments",
+  "nom": "Certificat en technologie et innocuité des aliments",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 16 crédits obligatoires et 14 crédits à option.",
+    "obligatoire": {
+      "min": 16,
+      "max": 16
+    },
+    "option": {
+      "min": 14,
+      "max": 14
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "PTM 4412",
+        "PTM 4900",
+        "PTM 4901A",
+        "PTM 4901B",
+        "PTM 4904",
+        "PTM 4909",
+        "PTM 4911",
+        "SPV 4903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 10 crédits.",
+      "cours": [
+        "PTM 4416",
+        "PTM 4902",
+        "PTM 4903",
+        "PTM 4908",
+        "PTM 4910",
+        "PTM 4912",
+        "PTM 4913",
+        "PTM 4916",
+        "PTM 4917"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 8 crédits.",
+      "cours": [
+        "TIA 4811A",
+        "TIA 4811B",
+        "TIA 4811C",
+        "TIA 4811D",
+        "TIA 4821A",
+        "TIA 4821B",
+        "TIA 4821C",
+        "TIA 4821D"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un préalable de 16 crédits de cours obligatoires est nécessaire avant de s'inscrire à un stage (4 crédits minimum et 8 crédits maximum)."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A24)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 16 crédits obligatoires et 14 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-technologie-et-innocuite-des-aliments/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:25.333Z"
+}

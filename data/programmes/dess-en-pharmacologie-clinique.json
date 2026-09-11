@@ -1,0 +1,90 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-pharmacologie-clinique",
+  "nom": "DESS en pharmacologie clinique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 24 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "PGM 6001",
+        "PHL 6060",
+        "PHL 6064",
+        "PHL 6065",
+        "PHL 6074",
+        "PHL 6092",
+        "PHL 6094",
+        "PHL 6095"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ASA 6175",
+        "BIE 6003",
+        "PGM 6078",
+        "PHL 3300",
+        "PHL 6032",
+        "PHL 6035",
+        "PHL 6041",
+        "PHL 6071",
+        "PHL 6093",
+        "PHL 6097",
+        "PHL 6099",
+        "PHM 6032"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A24)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 24 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-pharmacologie-clinique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:00.376Z"
+}

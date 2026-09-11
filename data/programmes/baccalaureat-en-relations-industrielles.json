@@ -1,0 +1,431 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-relations-industrielles",
+  "nom": "Baccalauréat en relations industrielles",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "- en cheminement régulier et en cheminement international : 63 crédits obligatoires, 24 crédits à option et 3 crédits au choix, - en cheminement Honor, 63 crédits obligatoires, 24 crédits à option et 3 crédits au choix",
+    "obligatoire": {
+      "min": 63,
+      "max": 63
+    },
+    "option": {
+      "min": 24,
+      "max": 24
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Formation de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "REI 1010",
+        "REI 1020",
+        "REI 1030",
+        "REI 1040",
+        "REI 1105",
+        "REI 1130",
+        "REI 1140",
+        "REI 3220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Gestion des ressources humaines",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "REI 1240",
+        "REI 2211",
+        "REI 2215",
+        "REI 2230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Relations du travail et droit du travail",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "REI 2305",
+        "REI 2310",
+        "REI 2320",
+        "REI 2330",
+        "REI 2340"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Politiques gouvernementales du travail",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "REI 1420",
+        "REI 2470",
+        "REI 2475"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Santé et sécurité du travail",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "REI 2510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72F",
+      "cle": "72/72F",
+      "segment": "72",
+      "nom": "Stage professionnel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "REI 3680"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72G",
+      "cle": "72/72G",
+      "segment": "72",
+      "nom": "Approfondissement en gestion des ress. humaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REI 3206",
+        "REI 3270",
+        "REI 3275"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72H",
+      "cle": "72/72H",
+      "segment": "72",
+      "nom": "Approfondissement en rel. du trav./droit du trav.",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REI 3335",
+        "REI 3345",
+        "REI 3375"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72I",
+      "cle": "72/72I",
+      "segment": "72",
+      "nom": "Approfondissement en politiques gouv. du travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "REI 3435"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72J",
+      "cle": "72/72J",
+      "segment": "72",
+      "nom": "Approfondissement en santé et sécurité du travail",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REI 3525",
+        "REI 3535"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72K",
+      "cle": "72/72K",
+      "segment": "72",
+      "nom": "Cours synthèses en relations industrielles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "REI 3700",
+        "REI 3710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72V",
+      "cle": "72/72V",
+      "segment": "72",
+      "nom": "propre au Cheminement Honor 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "REI 4001",
+        "REI 4002"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours REI4001 et REI4002 sont équivalents au cours REI4000."
+      ]
+    },
+    {
+      "id": "72W",
+      "cle": "72/72W",
+      "segment": "72",
+      "nom": "propre au Cheminement Honor 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DRI 6110",
+        "DRI 6120",
+        "DRI 6125",
+        "REI 6170",
+        "REI 6300",
+        "REI 6604",
+        "REI 6605",
+        "REI 6606",
+        "REI 6608",
+        "REI 6610",
+        "REI 6611",
+        "REI 6613",
+        "REI 6614",
+        "REI 6615",
+        "REI 6625",
+        "SST 6100",
+        "SST 6400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72X",
+      "cle": "72/72X",
+      "segment": "72",
+      "nom": "propre au Cheminement international",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "REI 3280",
+        "REI 3315",
+        "REI 3415",
+        "REI 3800",
+        "REI 3810",
+        "REI 3815",
+        "REI 3820"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Pour l'étudiant inscrit au cheminement international, minimum 3 crédits, maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "72Y",
+      "cle": "72/72Y",
+      "segment": "72",
+      "nom": "Connaissances connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "AUT 2500",
+        "COM 1500",
+        "COM 2020",
+        "CRI 3341",
+        "DRT 1501",
+        "DRT 3106",
+        "ECN 1700",
+        "ECN 2165",
+        "ESP 1901",
+        "ESP 1902",
+        "FEM 2000",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 2820",
+        "HST 2904",
+        "PHI 1400",
+        "PHI 1440",
+        "POL 2250",
+        "POL 2560",
+        "POL 3906",
+        "PSY 1045",
+        "PSY 1105",
+        "PTG 1901",
+        "PTG 1902",
+        "REL 1208",
+        "REL 1330",
+        "REL 3940",
+        "SOL 1012",
+        "SOL 2104",
+        "SOL 3017",
+        "SVS 2104",
+        "TXM 1111",
+        "VIO 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les crédits au choix ne sont pas de sigle REI."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A14)\nLe programme comporte 90 crédits. Il est offert selon trois cheminements :\n- le cheminement régulier\n- le cheminement honor\n- le cheminement international.",
+    "Segment 72 — Les crédits du baccalauréat sont répartis de la façon suivante :",
+    "Segment 72 — - en cheminement régulier et en cheminement international : 63 crédits obligatoires, 24 crédits à option et 3 crédits au choix,",
+    "Segment 72 — - en cheminement Honor, 63 crédits obligatoires, 24 crédits à option et 3 crédits au choix"
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-relations-industrielles/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:00.803Z"
+}

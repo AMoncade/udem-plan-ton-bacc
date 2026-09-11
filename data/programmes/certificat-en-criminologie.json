@@ -1,0 +1,178 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-criminologie",
+  "nom": "Certificat en criminologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 6 crédits obligatoires, de 21 à 24 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 21,
+      "max": 24
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements de la criminologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CRI 1050G",
+        "CRI 1100G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "CRI 1200G",
+        "CRI 1600G",
+        "CRI 3213G",
+        "CRI 3318"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "La criminologie comme champ disciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "CRI 1151G",
+        "CRI 1511G",
+        "CRI 1730G",
+        "CRI 2410G",
+        "CRI 3401G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "L'intervention criminologique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "CRI 1401G",
+        "CRI 2000G",
+        "CRI 2015G",
+        "CRI 2052G",
+        "CRI 2455G",
+        "CRI 3010G",
+        "CRI 3465G",
+        "PSY 3012G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "CRI 3305G",
+        "CRI 3341G",
+        "CRI 3420G",
+        "CRI 3425G",
+        "CRI 3810G",
+        "CRI 3900G",
+        "GSP 2600Z",
+        "JES 2015Z",
+        "PPL 3040",
+        "SIP 1500G",
+        "SIP 3040G",
+        "VIO 2009",
+        "VIO 2009D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisi parmi ceux offerts à la Faculté ou ailleurs à l'Université, ou parmi les cours à option du programme. Ce choix est sujet à l'approbation du responsable du Certificat."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 06 (A18)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 6 crédits obligatoires, de 21 à 24 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-criminologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:30.350Z"
+}

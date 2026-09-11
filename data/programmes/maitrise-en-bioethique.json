@@ -1,0 +1,331 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-bioethique",
+  "nom": "Maîtrise en bioéthique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIE 6000",
+        "BIE 6017",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "- Thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 6155",
+        "ANT 6156",
+        "ASA 6754",
+        "PHI 6520",
+        "PHI 6575",
+        "PHI 6576",
+        "PHM 6071",
+        "PLU 6043"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Avec l'approbation de la direction du programme, choisir un cours jugé pertinent. Un maximum de 3 crédits de 1er cycle (de 3e année) est permis."
+      ]
+    },
+    {
+      "id": "MM-70A",
+      "cle": "70/MM-70A",
+      "segment": "70",
+      "nom": "Axe de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 6003",
+        "BIE 6006",
+        "BIE 6008",
+        "BIE 6016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70B",
+      "cle": "70/MM-70B",
+      "segment": "70",
+      "nom": "Thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 6001",
+        "BIE 6004",
+        "BIE 6012",
+        "BIE 6503"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70C",
+      "cle": "70/MM-70C",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6177",
+        "ASA 6704",
+        "BIE 6104",
+        "ETA 6512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70D",
+      "cle": "70/MM-70D",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BIE 60191",
+        "BIE 60192",
+        "BIE 60193",
+        "BIE 60201",
+        "BIE 60202",
+        "BIE 60203",
+        "BIE 60211",
+        "BIE 60212",
+        "BIE 60213"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "MM-70E",
+      "cle": "70/MM-70E",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "BIE 6131"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70A",
+      "cle": "70/TD-70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "BIE 6012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70B",
+      "cle": "70/TD-70B",
+      "segment": "70",
+      "nom": "Axe de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 6003",
+        "BIE 6006",
+        "BIE 6008",
+        "BIE 6016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70C",
+      "cle": "70/TD-70C",
+      "segment": "70",
+      "nom": "Thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 6001",
+        "BIE 6004",
+        "BIE 6503"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70D",
+      "cle": "70/TD-70D",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BIE 6104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70E",
+      "cle": "70/TD-70E",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BIE 60191",
+        "BIE 60192",
+        "BIE 60193",
+        "BIE 60201",
+        "BIE 60202",
+        "BIE 60203",
+        "BIE 60211",
+        "BIE 60212",
+        "BIE 60213"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "TD-70F",
+      "cle": "70/TD-70F",
+      "segment": "70",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "BIE 6135"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A20)\nLa maîtrise comporte 45 crédits. Elle est offerte selon les trois axes de spécialisation suivants :\n- Éthique et soins de santé\n- Éthique de la recherche\n- Éthique et santé des populations\nElle est offerte selon deux modalités :\n- avec mémoire (MM)\n- avec travail dirigé (TD)",
+    "Segment 01 Tronc commun — Les crédits du tronc commun sont répartis de la façon suivante: 9 crédits obligatoires et un maximum de 3 crédits à option et au choix.",
+    "Segment 70 — Les crédits de la modalité avec mémoire (MM), incluant ceux du tronc commun, sont répartis de la façon suivante : 33 crédits obligatoires, dont 24 crédits attribués à la rédaction d'un mémoire, de 9 à 12 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 70 — Les crédits de la modalité avec travail dirigé (TD), incluant ceux du tronc commun, sont répartis de la façon suivante : 27 crédits obligatoires, dont 15 crédits attribués à la rédaction d'un travail dirigé, de 15 à 18 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-bioethique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:09.249Z"
+}

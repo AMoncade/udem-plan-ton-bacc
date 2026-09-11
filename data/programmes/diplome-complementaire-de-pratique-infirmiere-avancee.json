@@ -1,0 +1,234 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "diplome-complementaire-de-pratique-infirmiere-avancee",
+  "nom": "Diplôme complémentaire de pratique infirmière avancée",
+  "orientation": null,
+  "segments": [
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "Soins de première ligne",
+      "segments": [
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Soins aux adultes",
+      "segments": [
+        "73"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Soins en santé mentale",
+      "segments": [
+        "74"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Diplôme complémentaire",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "MDF 6000",
+        "PHL 6075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Cours spécialisés",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "MMD 6410C",
+        "PHL 6079",
+        "SOI 6223",
+        "SOI 6224"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Stage spécialisé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "SOM 6429"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "MDF 6000",
+        "PHL 6075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Cours spécialisés",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "MMD 64111",
+        "MMD 64112",
+        "MMD 6412",
+        "PHL 6082"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Stage spécialisé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "SOM 6430"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "MDF 6000",
+        "PHL 6075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Cours spécialisés",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 17,
+          "max": 17
+        }
+      },
+      "regleBrut": "Obligatoire - 17 crédits.",
+      "cours": [
+        "PST 6525",
+        "PST 6526",
+        "PST 6527",
+        "SOI 6206",
+        "SOI 6239",
+        "SOI 6308"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Stage spécialisé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "SOM 6431"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A20)\nLe diplôme est offert selon 3 options comportant chacune un nombre de crédits différents :\n- option Soins de première ligne, 29 crédits (segment 72),\n- option Soins aux adultes, 27 crédits (segment 73),\n- option Soins en santé mentale, 28 crédits (segment 74).",
+    "Segment 72 Propre à l'option Soins de première ligne — Tous les crédits de l'Option sont obligatoires.",
+    "Segment 73 Propre à l'option Soins aux adultes — Tous les crédits de l'Option sont obligatoires.",
+    "Segment 74 Propre à l'option Soins en santé mentale — Tous les crédits de l'Option sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/diplome-complementaire-de-pratique-infirmiere-avancee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:37.328Z"
+}

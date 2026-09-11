@@ -1,0 +1,250 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-enseignement-des-sciences-et-des-technologies-au-secondaire",
+  "nom": "Baccalauréat en enseignement des sciences et des technologies au secondaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 120,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Initiation à la profession enseignante",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "DID 10101",
+        "DID 10102",
+        "DID 2000",
+        "ETA 1002",
+        "ETA 1900",
+        "ETA 3346"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Intervention éducative",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PPA 1210",
+        "PPA 2000",
+        "PPA 3104",
+        "PPA 3120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Équité, diversité, inclusion",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ETA 2200",
+        "ETA 2550",
+        "PPA 3300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option – min. 3.0 crédits, max. 9.0 crédits."
+      },
+      "regleBrut": "Option – min. 3.0 crédits, max. 9.0 crédits.",
+      "cours": [
+        "DID 1009",
+        "DID 3254",
+        "EDU 3333",
+        "EDU 4444",
+        "ETA 1001",
+        "PPA 1214",
+        "PPA 1435",
+        "PPA 2220",
+        "PPA 4420A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "EDU 1012",
+        "EDU 2212",
+        "EDU 3218",
+        "EDU 4014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Didactique et enseignement des sciences et technologies",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 23,
+          "max": 23
+        }
+      },
+      "regleBrut": "Obligatoire - 23 crédits.",
+      "cours": [
+        "DID 1056",
+        "DID 2056",
+        "DID 2276",
+        "DID 3256",
+        "DID 3416",
+        "DID 4256",
+        "DID 4396",
+        "ETA 3558"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation disciplinaire obligatoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 39,
+          "max": 39
+        }
+      },
+      "regleBrut": "Obligatoire - 39 crédits.",
+      "cours": [
+        "BIO 1803",
+        "CHM 1201",
+        "CHM 1501",
+        "CHM 1602",
+        "DID 1956",
+        "DID 2026",
+        "GEO 1112",
+        "IFT 1410",
+        "PHI 1130",
+        "PHY 1972",
+        "PSL 1001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Complément de formation disciplinaire",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option – min. 3 max. 9 crédits."
+      },
+      "regleBrut": "Option – min. 3 max. 9 crédits.",
+      "cours": [
+        "ANT 1513",
+        "BIO 1153",
+        "BIO 1203",
+        "BIO 1334",
+        "BIO 1434",
+        "BIO 1534",
+        "BIO 1634",
+        "BIO 2820",
+        "BIO 2855",
+        "CHM 1502",
+        "CHM 1950",
+        "CHM 1955",
+        "CHM 1990",
+        "DID 1050",
+        "EDD 1001",
+        "EDD 1002",
+        "GEO 1122",
+        "GEO 1312",
+        "GEO 2122",
+        "HOR 1200",
+        "HOR 3200",
+        "IFT 1015",
+        "IFT 1119",
+        "IFT 1144",
+        "IFT 1178",
+        "IFT 1400",
+        "IFT 1810",
+        "IFT 1969",
+        "IFT 2720",
+        "MCB 1979",
+        "MSN 1002",
+        "NUT 1956",
+        "PHI 2160",
+        "PHI 3155",
+        "PHY 1234",
+        "PHY 1651",
+        "PHY 1652",
+        "PHY 1973",
+        "PHY 3012",
+        "PPL 3025",
+        "PSY 2098",
+        "SPU 2300G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 09 (A26)\nCe programme comporte 120 crédits répartis comme suit : 49 à 55 crédits du segment 01 propre au volet Éducation, dont 6 à 12 crédits à option; et 65 à 71 crédits du segment 70 propre à l'enseignement des sciences et technologies, dont 3 à 9 crédits à option.",
+    "Segment 01 Propre au volet Éducation — Les crédits du segment sont répartis de la façon suivante : 43 crédits obligatoires et 6 à 12 crédits à option.",
+    "Segment 70 Propre à l'enseignement des sciences et technologies — Les crédits du segment sont répartis de la façon suivante : 62 crédits obligatoires et de 3 à 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-enseignement-des-sciences-et-des-technologies-au-secondaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:53.363Z"
+}

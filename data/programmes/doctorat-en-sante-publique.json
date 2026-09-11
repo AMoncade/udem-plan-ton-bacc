@@ -1,0 +1,416 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sante-publique",
+  "nom": "Doctorat en santé publique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "73",
+    "74",
+    "76",
+    "79"
+  ],
+  "orientations": [
+    {
+      "nom": "Épidémiologie",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Promotion de la santé",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Toxicologie et analyse du risque",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Santé mondiale",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Systèmes",
+      "segments": [
+        "01"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "BIE 70501",
+        "BIE 70502",
+        "SPU 7001",
+        "SPU 70501",
+        "SPU 70502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "PHM 7078",
+        "SPU 7100",
+        "SPU 7150",
+        "SPU 7152",
+        "SPU 7153"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi le répertoire de cours de deuxième ou de troisième cycle de l'École de santé publique et avec l'approbation du directeur de recherche, choisir un cours de méthode relié au sujet de la thèse de 3 crédits."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 67,
+          "max": 67
+        }
+      },
+      "regleBrut": "Obligatoire - 67 crédits.",
+      "cours": [
+        "SPU 7000",
+        "SPU 7912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SPU 7300",
+        "SPU 7351",
+        "SPU 73521",
+        "SPU 73522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "MSO 6612"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi le répertoire de cours de deuxième ou de troisième cycle de l'École de santé publique ou à l'Université de Montréal et avec l'approbation du directeur de recherche, choisir un cours avancé de méthodologie avancée relié au sujet de la thèse de 3 crédits et un cours de contenu relié au sujet de la thèse de 3 crédits. Après consultation avec le responsable de l'option, l'étudiant peut suivre un cours de niveau maîtrise en promotion de la santé ou choisir un cours avancé en promotion de la santé relié au sujet de la thèse."
+      ]
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 67,
+          "max": 67
+        }
+      },
+      "regleBrut": "Obligatoire - 67 crédits.",
+      "cours": [
+        "SPU 7000",
+        "SPU 7912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SPU 7400",
+        "SPU 7421",
+        "SPU 74231",
+        "SPU 74232"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi le répertoire de cours de deuxième ou de troisième cycle de l'École de santé publique ou à l'Université de Montréal et avec l'approbation du directeur de recherche, choisir un cours relié au sujet de la thèse de 3 crédits."
+      ]
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 70,
+          "max": 70
+        }
+      },
+      "regleBrut": "Obligatoire - 70 crédits.",
+      "cours": [
+        "SPU 7000",
+        "SPU 7911"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SPU 7600",
+        "SPU 7601",
+        "SPU 7650"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi le répertoire de cours de deuxième ou de troisième cycle de l'École de santé publique ou à l'Université de Montréal et avec l'approbation du directeur de recherche, choisir un ou deux cours de méthodologie avancé relié au sujet de la thèse de 3 crédits et un ou deux cours de contenu relié au sujet de la thèse de 3 crédits."
+      ]
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 67,
+          "max": 67
+        }
+      },
+      "regleBrut": "Obligatoire - 67 crédits.",
+      "cours": [
+        "SPU 7000",
+        "SPU 7912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "79A",
+      "cle": "79/79A",
+      "segment": "79",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SPU 7200",
+        "SPU 7201",
+        "SPU 7250"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "79B",
+      "cle": "79/79B",
+      "segment": "79",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi le répertoire de cours de deuxième ou de troisième cycle de l'École de santé publique ou à l'Université de Montréal et Écoles affiliées, et avec l'approbation du directeur de recherche, choisir trois cours pertinents à la réalisation de la recherche doctorale."
+      ]
+    },
+    {
+      "id": "79C",
+      "cle": "79/79C",
+      "segment": "79",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 67,
+          "max": 67
+        }
+      },
+      "regleBrut": "Obligatoire - 67 crédits.",
+      "cours": [
+        "SPU 7000",
+        "SPU 7912"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A19)\nLe doctorat comporte 90 crédits. Il est offert selon 5 options:\n- option Épidémiologie (segment 01 et segment 71),\n- option Promotion de la santé (segment 01 et segment 73),\n- option Toxicologie et analyse du risque (segment 01 et segment 74),\n- option Santé mondiale (segment 01 et segment 76)\n- option Systèmes, organisations et politiques de santé (segment 01 et segment 79).",
+    "Segment 01 Tronc commun — Ces crédits sont obligatoires pour toutes les options.",
+    "Segment 71 Propre à l'option Épidémiologie — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante : 87 crédits obligatoires, dont 67 crédits sont attribués à la recherche et la rédaction d'une thèse, et 3 crédits au choix.",
+    "Segment 71 Propre à l'option Épidémiologie — Un crédit complémentaire (MSO 6634 Synthèse des connaissances : revue systématique) devra être fait dans la première année d'inscription par les étudiants qui n'ont pas fait ce cours ou l'équivalent dans le cadre de leurs études antérieures.",
+    "Segment 73 Propre à l'option Promotion de la santé — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante : 81 crédits obligatoires, dont 67 crédits attribués à la recherche et à la rédaction d'une thèse, un maximum de 3 crédits à option et 6 à 9 crédits au choix.",
+    "Segment 74 Propre à l'option Toxicologie et analyse du risque — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante : 87 crédits obligatoires, dont 70 sont attribués à la recherche et à la rédaction d'une thèse et 3 crédits au choix.",
+    "Segment 76 Propre à l'option Santé mondiale — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante : 81 crédits obligatoires dont 67 crédits sont attribués à la recherche et à la rédaction d'une thèse et 9 crédits au choix.",
+    "Segment 79 Propre à l'option Systèmes, organisations et politiques de santé — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante: 81 crédits obligatoires, dont 67 crédits sont attribués à la recherche et à la rédaction d'une thèse, et 9 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sante-publique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:22.215Z"
+}

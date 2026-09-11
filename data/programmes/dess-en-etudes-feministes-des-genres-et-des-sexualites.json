@@ -1,0 +1,187 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-etudes-feministes-des-genres-et-des-sexualites",
+  "nom": "DESS en études féministes, des genres et des sexualités",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Le D.E.S.S. comporte 30 crédits répartis de la façon suivante : 6 crédits obligatoires, de 21 à 24 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 30,
+      "max": 30
+    },
+    "option": {
+      "min": 21,
+      "max": 24
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Enjeux et théorie féministes, des genres et des sexualités",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "FEM 6000",
+        "PRX 60101",
+        "PRX 60102"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Différences et questions de genre",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "COM 6351",
+        "CRI 6723",
+        "CRI 6727",
+        "REI 6614",
+        "REL 6127",
+        "SOL 6017",
+        "SOL 6052",
+        "SOL 6053",
+        "SOL 6915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Interventions féministes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "CRI 6232",
+        "CRI 6533",
+        "PLU 6115",
+        "PRX 6002",
+        "PSE 6578",
+        "SOL 6541",
+        "SOL 6857",
+        "SVS 6095",
+        "SVS 6103",
+        "SVS 6355",
+        "SVS 6455",
+        "SVS 6473"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Transformation de la place des femmes dans le genre",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANG 6430",
+        "ANG 6720",
+        "CIN 6100",
+        "COM 6341",
+        "DMO 6500",
+        "FRA 6343",
+        "HAR 6100",
+        "HST 6630",
+        "LCO 6111",
+        "PHI 6545",
+        "SOL 6657"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Résistances",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "COM 6331",
+        "COM 6502",
+        "GEO 6200",
+        "POL 6609",
+        "POL 6666",
+        "REI 6605"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours à choisir dans la banque de cours de l'Université de Montréal ou d'une autre université avec l'accord du responsable de programme. Un maximum de 3 crédits de cours de niveau 3000 peut être autorisé."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A21)",
+    "Segment 70 — Le D.E.S.S. comporte 30 crédits répartis de la façon suivante : 6 crédits obligatoires, de 21 à 24 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-etudes-feministes-des-genres-et-des-sexualites/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:12.797Z"
+}

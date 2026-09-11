@@ -1,0 +1,170 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-geomatique-et-cartographie-dynamique",
+  "nom": "DESS en géomatique et cartographie dynamique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 12 crédits obligatoires attribués à un travail dirigé, 15 à 18 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 18
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Géomatique et analyse spatiale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 15 crédits.",
+      "cours": [
+        "GEO 6149",
+        "GEO 6302",
+        "GEO 6303",
+        "GEO 6315",
+        "GEO 6341",
+        "GEO 6343",
+        "GEO 6352",
+        "GEO 6360",
+        "GEO 6361",
+        "GEO 6393"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Environnement physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GEO 6100",
+        "GEO 6102",
+        "GEO 6142",
+        "GEO 6148",
+        "GEO 6157",
+        "GEO 6193"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Environnement humain",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "GEO 6200",
+        "GEO 6201",
+        "GEO 6202",
+        "GEO 6204",
+        "GEO 6205",
+        "GEO 6293"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Environnement interdisciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "EDD 6040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Ouverture multidisciplinaire",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de cycles supérieurs du département ou d'autres départements, ou d'autres universités, incluant les ateliers des Saisons des ESP, avec l'approbation du responsable du programme."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Travail dirigé en géomatique et cartographie dynamique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "GEO 6310"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 12 crédits obligatoires attribués à un travail dirigé, 15 à 18 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-geomatique-et-cartographie-dynamique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:22.917Z"
+}

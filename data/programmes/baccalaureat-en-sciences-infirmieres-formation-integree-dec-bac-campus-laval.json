@@ -1,0 +1,210 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sciences-infirmieres-formation-integree-dec-bac-campus-laval",
+  "nom": "Baccalauréat en sciences infirmières - Formation intégrée DEC-BAC - Campus Laval",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "Clinique",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "- l'orientation Clinique comportant 105 crédits comprend les segments 01 et 70 avec 103 crédits obligatoires et 2 crédits à option",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 2,
+          "max": 2
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Cheminement international",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "- l'orientation Cheminement international comportant 106 crédits comprend les segments 01 et 71 avec 104 crédits obligatoires et 2 crédits à option",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 2,
+          "max": 2
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "- Cours de la première année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "CSS 1900",
+        "SOI 1613",
+        "SOI 1624",
+        "SOI 1702",
+        "SOI 1705",
+        "SOI 1803",
+        "SOI 1814",
+        "SOI 1823",
+        "SOI 1833",
+        "SOI 1903",
+        "SOI 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "- Cours de la deuxième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "CSS 2900",
+        "SOI 2103",
+        "SOI 2114",
+        "SOI 2125",
+        "SOI 2514",
+        "SOI 2515",
+        "SOI 2723",
+        "SOI 2802",
+        "SOI 2804",
+        "SOI 2824"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "- Cours de la troisième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 22,
+          "max": 22
+        }
+      },
+      "regleBrut": "Obligatoire - 22 crédits.",
+      "cours": [
+        "CSS 3900",
+        "SOI 3606",
+        "SOI 3614",
+        "SOI 3624",
+        "SOI 3724",
+        "SOI 3801",
+        "SOI 3802"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "- Cours de la troisième année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "SOI 3902",
+        "SOI 3912",
+        "SOI 3922",
+        "SOI 3932"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "SOI 3505",
+        "SOI 3716"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SOI 3516",
+        "SOI 3716"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A25)\nLe baccalauréat comprend 2 orientations :\n- l'orientation Clinique comportant 105 crédits comprend les segments 01 et 70 avec 103 crédits obligatoires et 2 crédits à option\n- l'orientation Cheminement international comportant 106 crédits comprend les segments 01 et 71 avec 104 crédits obligatoires et 2 crédits à option",
+    "Segment 01 Commun aux deux orientations — Les crédits du segment 01 sont répartis de la façon suivante: 92 crédits obligatoires et 2 crédits à option.",
+    "Segment 70 Propre à l'orientation clinique — Tous les crédits du segment sont obligatoires.",
+    "Segment 71 Propre à l'orientation cheminement international — Tous les crédits du segment sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sciences-infirmieres-formation-integree-dec-bac-campus-laval/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:24.504Z"
+}

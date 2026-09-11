@@ -1,0 +1,484 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-anthropologie",
+  "nom": "Baccalauréat en anthropologie",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 15 crédits obligatoires, 66 crédits à option et 9 crédits au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 66,
+      "max": 66
+    },
+    "choix": {
+      "min": 9,
+      "max": 9
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ANT 1013",
+        "ANT 1065",
+        "ANT 1210",
+        "ANT 1513",
+        "ANT 1611"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Cours de base : ethnologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Cours de base : archéologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANT 1213",
+        "ANT 1280"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Cours de base : bioanthropologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANT 1511",
+        "ANT 2440"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Cours de base : anthropologie linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANT 2610",
+        "ANT 2660"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Cours de base : méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "ANT 2070",
+        "ANT 2088",
+        "ANT 2210",
+        "ANT 2280",
+        "ANT 2665",
+        "ANT 3073",
+        "ANT 3284",
+        "BIO 2041"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Cours thématiques : ethnologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 36
+        }
+      },
+      "regleBrut": "Option - Maximum 36 crédits.",
+      "cours": [
+        "ANT 1020",
+        "ANT 2020",
+        "ANT 2023",
+        "ANT 2026",
+        "ANT 2030",
+        "ANT 2031",
+        "ANT 2036",
+        "ANT 2037",
+        "ANT 2040",
+        "ANT 2042",
+        "ANT 2043",
+        "ANT 2050",
+        "ANT 2055",
+        "ANT 2830",
+        "ANT 3000",
+        "ANT 3025",
+        "ANT 3030",
+        "ANT 3035",
+        "ANT 3053",
+        "ANT 3082",
+        "ANT 3090",
+        "ANT 3100",
+        "ANT 3141",
+        "ANT 3142",
+        "ANT 3164",
+        "ANT 3171",
+        "ANT 3172",
+        "ANT 3809",
+        "ANT 3809Z",
+        "ANT 3811",
+        "ANT 3820",
+        "ANT 3851",
+        "ANT 3854",
+        "ANT 3855",
+        "ANT 3864",
+        "ANT 3866",
+        "ANT 3867",
+        "AUT 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Cours thématiques : archéologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 36
+        }
+      },
+      "regleBrut": "Option - Maximum 36 crédits.",
+      "cours": [
+        "ANT 2230",
+        "ANT 2260",
+        "ANT 2266",
+        "ANT 2270",
+        "ANT 2290",
+        "ANT 3213",
+        "ANT 3214",
+        "ANT 3230",
+        "ANT 3260",
+        "ANT 3270",
+        "ANT 3283",
+        "ANT 3285",
+        "ANT 3286",
+        "ANT 3287",
+        "ANT 3288",
+        "ANT 3290",
+        "ANT 3472",
+        "ANT 3857",
+        "ANT 3881",
+        "ANT 3882"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71I",
+      "cle": "71/71I",
+      "segment": "71",
+      "nom": "Cours thématiques : bioanthropologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Maximum 30 crédits.",
+      "cours": [
+        "ANT 2430",
+        "ANT 2454",
+        "ANT 2470",
+        "ANT 3450",
+        "ANT 3457",
+        "ANT 3460",
+        "ANT 3470",
+        "ANT 3471",
+        "ANT 3475",
+        "ANT 3476",
+        "ANT 3490",
+        "ANT 3553",
+        "ANT 3814",
+        "ANT 3891"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71J",
+      "cle": "71/71J",
+      "segment": "71",
+      "nom": "Cours thématiques : anthropologie linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Maximum 27 crédits.",
+      "cours": [
+        "ANT 2611",
+        "ANT 2624",
+        "ANT 2625",
+        "ANT 2630",
+        "ANT 3625",
+        "ANT 3632",
+        "ANT 3875",
+        "ANT 3876",
+        "ANT 3877"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71K",
+      "cle": "71/71K",
+      "segment": "71",
+      "nom": "Pratiques de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANT 3102",
+        "ANT 3802",
+        "ANT 3806"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "AES 3800",
+        "ALL 1901",
+        "ALL 1902",
+        "ANG 1022",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1911",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1912",
+        "ARV 1050",
+        "BIO 1434",
+        "BIO 2470",
+        "BIO 2490",
+        "BIO 2855",
+        "BIO 3204",
+        "BIO 3853",
+        "CHN 1901",
+        "CHN 1902",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1905",
+        "DMO 1000",
+        "DMO 1100",
+        "DMO 1200",
+        "DMO 2200",
+        "DMO 3400",
+        "DMO 3420",
+        "ECN 1700",
+        "ECN 1971",
+        "ESP 1901",
+        "ESP 1902",
+        "FEM 3300",
+        "GEO 1112",
+        "GEO 1212",
+        "GEO 1312",
+        "GEO 1412",
+        "GEO 1532",
+        "GEO 2512",
+        "GEO 3412",
+        "GRC 1111",
+        "GRC 1121",
+        "GRM 1901",
+        "GRM 1902",
+        "HAR 1115",
+        "HGL 1011",
+        "HGL 2030",
+        "HGL 2031",
+        "HGL 2421",
+        "HGL 3040",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 1031",
+        "HST 1044",
+        "HST 1048",
+        "HST 1051",
+        "HST 1052",
+        "HST 1061",
+        "HST 1063",
+        "HST 2013",
+        "HST 2362",
+        "HST 2446",
+        "HST 2624",
+        "HST 2625",
+        "HST 2904",
+        "HST 3352",
+        "HST 3432",
+        "IFT 1990",
+        "INN 1901",
+        "INN 1902",
+        "ITL 1901",
+        "ITL 1902",
+        "JPN 1901",
+        "JPN 1902",
+        "LAT 1111",
+        "LAT 1121",
+        "LCO 1000",
+        "LLM 2000",
+        "LNG 1126",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2140",
+        "LNG 2340",
+        "LNG 2350",
+        "MUL 1246",
+        "MUL 3314",
+        "PBC 1040",
+        "PHI 1130",
+        "PHI 1300",
+        "POL 1954",
+        "POL 2606",
+        "POL 3010",
+        "PSE 2215",
+        "PSL 1993",
+        "PSY 1085",
+        "PSY 1983",
+        "PTG 1901",
+        "PTG 1902",
+        "RUS 1901",
+        "RUS 1902",
+        "SOL 2104",
+        "SOL 3104",
+        "TRA 2115"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 12 (A14)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 71 — Les crédits du baccalauréat sont répartis de la façon suivante : 15 crédits obligatoires, 66 crédits à option et 9 crédits au choix.",
+    "Segment 71 — L'étudiant suit dès son premier trimestre à l'Université les cours ANT dont le numéro commence par le chiffre 1; après avoir complété un trimestre, il peut aborder ceux dont le numéro commence par 2, et après deux trimestres ceux dont le numéro commence par 3."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-anthropologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:13.857Z"
+}

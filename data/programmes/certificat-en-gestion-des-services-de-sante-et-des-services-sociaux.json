@@ -1,0 +1,135 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-gestion-des-services-de-sante-et-des-services-sociaux",
+  "nom": "Certificat en gestion des services de santé et des services sociaux",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires, de 12 à 15 crédits de cours à option et de 0 à 3 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 12,
+      "max": 15
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ASA 1050G",
+        "ASA 2221G",
+        "ASA 2350G",
+        "ASA 3300G",
+        "SPU 1000G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 15 crédits.",
+      "cours": [
+        "ASA 1910G",
+        "ASA 2000G",
+        "ASA 2010G",
+        "ASA 3150G",
+        "ASA 3250G",
+        "ASA 3620G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CRI 1730G",
+        "GER 1016D",
+        "GER 3045",
+        "GER 3045D",
+        "IDI 1010",
+        "IDI 1040",
+        "JES 1001",
+        "JES 2005",
+        "PEF 2710D",
+        "PEF 3050",
+        "PPL 3035",
+        "PPL 3040",
+        "SME 3035Y",
+        "VIO 2011",
+        "VIO 2011D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A22)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 15 crédits obligatoires, de 12 à 15 crédits de cours à option et de 0 à 3 crédits de cours au choix.",
+    "Segment 70 — Les cours ASA 1050G et SPU 1000G doivent être suivis en début de programme, idéalement avant tout autre cours, ou de façon concomitante si l'étudiant est à temps plein."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-gestion-des-services-de-sante-et-des-services-sociaux/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:44.564Z"
+}

@@ -1,0 +1,232 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-nutrition",
+  "nom": "Baccalauréat en nutrition",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 120,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 114 crédits obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 114,
+      "max": 114
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours de 1ère année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Obligatoire - 32 crédits.",
+      "cours": [
+        "CSS 1900",
+        "MCB 2956",
+        "NUT 1001",
+        "NUT 1002",
+        "NUT 1026",
+        "NUT 1027",
+        "NUT 1036",
+        "NUT 1053",
+        "NUT 1054",
+        "NUT 1055",
+        "NUT 1056",
+        "NUT 1057",
+        "NUT 1064",
+        "NUT 1973"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours de 2e année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Obligatoire - 32 crédits.",
+      "cours": [
+        "NUT 2001",
+        "NUT 2024A",
+        "NUT 2024B",
+        "NUT 2055",
+        "NUT 2056",
+        "NUT 2057",
+        "NUT 2058",
+        "NUT 2059",
+        "NUT 2060",
+        "NUT 2064",
+        "NUT 2066",
+        "NUT 2074C",
+        "NUT 2973"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours de 3e année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 26,
+          "max": 26
+        }
+      },
+      "regleBrut": "Obligatoire - 26 crédits.",
+      "cours": [
+        "CSS 2900",
+        "NUT 30011",
+        "NUT 30012",
+        "NUT 3029",
+        "NUT 3056",
+        "NUT 3057",
+        "NUT 3064",
+        "NUT 3069A",
+        "NUT 3077C",
+        "NUT 3078C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Cours de 3e année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "AEG 2110",
+        "ANT 1511",
+        "ANT 2042",
+        "ANT 3025",
+        "ANT 3820",
+        "ASA 2221G",
+        "ASA 2350G",
+        "ASA 3620G",
+        "AUT 2500",
+        "COM 1150",
+        "ECN 2910",
+        "FRS 1508",
+        "GER 1020D",
+        "HST 2444",
+        "IFT 1945",
+        "JES 1000",
+        "PEF 2180D",
+        "PPL 1060",
+        "PPL 3025",
+        "PPL 3040",
+        "PPL 3076",
+        "PSY 1045",
+        "PSY 1075",
+        "PSY 1085",
+        "PSY 1095",
+        "PSY 1983",
+        "PSY 2254",
+        "RED 2040",
+        "REI 1040",
+        "SME 2055V",
+        "SOL 1967",
+        "SOL 2015",
+        "SOL 2503",
+        "SOL 3107",
+        "SPU 1010G",
+        "SPU 2100G",
+        "SPU 2300G",
+        "SPU 2310G",
+        "SPU 3010G",
+        "SPU 3020G",
+        "SPU 3030G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Cours de 4e année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "CSS 3900",
+        "NUT 4001",
+        "NUT 4013",
+        "NUT 4024",
+        "NUT 4069",
+        "NUT 4074C",
+        "NUT 4078C",
+        "NUT 4170A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Cours de 4e année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "NUT 4062",
+        "NUT 4063",
+        "NUT 4064"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 20 (A21)\nLe baccalauréat comporte 120 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 114 crédits obligatoires et 6 crédits à option.",
+    "Segment 70 — Les stages dirigés totalisent 31 crédits obligatoires répartis sur 40 semaines."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-nutrition/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:39.883Z"
+}

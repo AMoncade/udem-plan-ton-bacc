@@ -1,0 +1,893 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-physique",
+  "nom": "Baccalauréat en physique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "et 3 crédits au choix",
+      "segments": [
+        "01",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "exigences": {
+        "brut": "- Astronomie et astrophysique (segments 01 et 71), 60 crédits obligatoires, 27 crédits à option et 3 crédits au choix",
+        "obligatoire": {
+          "min": 60,
+          "max": 60
+        },
+        "option": {
+          "min": 27,
+          "max": 27
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "et 3 crédits au choix.",
+      "segments": [
+        "01",
+        "75"
+      ],
+      "exigences": {
+        "brut": "- Générale (segments 01 et 75), 57 crédits obligatoires, 30 crédits à option et 3 crédits au choix.",
+        "obligatoire": {
+          "min": 57,
+          "max": 57
+        },
+        "option": {
+          "min": 30,
+          "max": 30
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Physique fondamentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 28,
+          "max": 28
+        }
+      },
+      "regleBrut": "Obligatoire - 28 crédits.",
+      "cours": [
+        "PHY 1111",
+        "PHY 1441",
+        "PHY 1620",
+        "PHY 1651",
+        "PHY 1652",
+        "PHY 2215",
+        "PHY 2441",
+        "PHY 2810",
+        "PHY 2813"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Formation expérimentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PHY 1501",
+        "PHY 2476",
+        "PHY 3040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Outils mathématiques de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MAT 1400",
+        "MAT 1410",
+        "MAT 1600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Méthodes de solution de problèmes en physique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PHY 1234",
+        "PHY 2345"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Complément de physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHY 3012",
+        "PHY 3051"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Outils mathématiques complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "MAT 1720",
+        "MAT 2115",
+        "MAT 3450"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01G",
+      "cle": "01/01G",
+      "segment": "01",
+      "nom": "Outils informatiques complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "IFT 1166",
+        "IFT 1170",
+        "IFT 1575",
+        "MAT 1681"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01H",
+      "cle": "01/01H",
+      "segment": "01",
+      "nom": "Stage en industrie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHY 2031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les crédits au choix ne sont pas de sigle PHY."
+      ]
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Cours de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PHY 2701",
+        "PHY 3030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "PHY 3140",
+        "PHY 3701",
+        "PHY 3711"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Autres disciplines de la physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2300",
+        "PHY 2400",
+        "PHY 2500",
+        "PHY 2601",
+        "PHY 2900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Physique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "PHY 3070",
+        "PHY 3075",
+        "PHY 3080",
+        "PHY 3131",
+        "PHY 3214",
+        "PHY 3320",
+        "PHY 3442",
+        "PHY 3510",
+        "PHY 3600",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "Contributions d'autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANG 1903",
+        "BCM 1531",
+        "BIO 1101",
+        "BIO 1153",
+        "CHM 3450",
+        "ECN 1000",
+        "ECN 1050",
+        "GEO 2122",
+        "HOR 3200",
+        "IFT 2425",
+        "IFT 3155",
+        "PHI 1130",
+        "PHI 1300",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Cours de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PHY 2400",
+        "PHY 2500",
+        "PHY 3030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CHM 3483",
+        "PHY 3320",
+        "PHY 3510"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Autres disciplines de la physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2300",
+        "PHY 2601",
+        "PHY 2701",
+        "PHY 2900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Physique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "PHY 3070",
+        "PHY 3075",
+        "PHY 3080",
+        "PHY 3131",
+        "PHY 3140",
+        "PHY 3214",
+        "PHY 3442",
+        "PHY 3600",
+        "PHY 3701",
+        "PHY 3711",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Y",
+      "cle": "72/72Y",
+      "segment": "72",
+      "nom": "Contributions d'autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANG 1903",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1531",
+        "BIO 1101",
+        "BIO 1153",
+        "CHM 3450",
+        "ECN 1000",
+        "ECN 1050",
+        "GEO 2122",
+        "HOR 3200",
+        "IFT 2425",
+        "IFT 3155",
+        "PHI 1130",
+        "PHI 1300",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Cours de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PHY 2300",
+        "PHY 2900",
+        "PHY 3030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "BCM 1531",
+        "BIO 1101",
+        "BIO 1153",
+        "PSL 1993"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Autres disciplines de la physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2400",
+        "PHY 2500",
+        "PHY 2601",
+        "PHY 2701"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Physique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "PHY 3070",
+        "PHY 3075",
+        "PHY 3080",
+        "PHY 3131",
+        "PHY 3140",
+        "PHY 3214",
+        "PHY 3320",
+        "PHY 3442",
+        "PHY 3510",
+        "PHY 3600",
+        "PHY 3701",
+        "PHY 3711",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73Y",
+      "cle": "73/73Y",
+      "segment": "73",
+      "nom": "Contributions d'autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANG 1903",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "CHM 3450",
+        "ECN 1000",
+        "ECN 1050",
+        "GEO 2122",
+        "HOR 3200",
+        "IFT 2425",
+        "IFT 3155",
+        "PHI 1130",
+        "PHI 1300",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Cours de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PHY 2601",
+        "PHY 3030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "PHY 3070",
+        "PHY 3080",
+        "PHY 3600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Autres disciplines de la physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2300",
+        "PHY 2400",
+        "PHY 2500",
+        "PHY 2701",
+        "PHY 2900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Physique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "PHY 3075",
+        "PHY 3131",
+        "PHY 3140",
+        "PHY 3214",
+        "PHY 3320",
+        "PHY 3442",
+        "PHY 3510",
+        "PHY 3701",
+        "PHY 3711",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74Y",
+      "cle": "74/74Y",
+      "segment": "74",
+      "nom": "Contributions d'autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANG 1903",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1531",
+        "BIO 1101",
+        "BIO 1153",
+        "CHM 3450",
+        "ECN 1000",
+        "ECN 1050",
+        "GEO 2122",
+        "HOR 3200",
+        "IFT 2425",
+        "IFT 3155",
+        "PHI 1130",
+        "PHI 1300",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHY 3030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Disciplines de la physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2300",
+        "PHY 2400",
+        "PHY 2500",
+        "PHY 2601",
+        "PHY 2701",
+        "PHY 2900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Physique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Maximum 21 crédits.",
+      "cours": [
+        "PHY 3070",
+        "PHY 3075",
+        "PHY 3080",
+        "PHY 3131",
+        "PHY 3140",
+        "PHY 3214",
+        "PHY 3320",
+        "PHY 3442",
+        "PHY 3510",
+        "PHY 3600",
+        "PHY 3701",
+        "PHY 3711",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75Y",
+      "cle": "75/75Y",
+      "segment": "75",
+      "nom": "Contributions d'autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANG 1903",
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1531",
+        "BIO 1101",
+        "BIO 1153",
+        "CHM 3450",
+        "CHM 3483",
+        "ECN 1000",
+        "ECN 1050",
+        "GEO 2122",
+        "HOR 3200",
+        "IFT 2425",
+        "IFT 3155",
+        "PHI 1130",
+        "PHI 1300",
+        "RED 2301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 16 (A26)\nLe baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et est offert selon 5 orientations :\n- Astronomie et astrophysique (segments 01 et 71), 60 crédits obligatoires, 27 crédits à option et 3 crédits au choix\n- Physique des matériaux (segments 01 et 72), 63 crédits obligatoires, 24 crédits à option et 3 crédits au choix\n- Physique du vivant (segments 01 et 73), 63 crédits obligatoires, 24 crédits à option et 3 crédits au choix\n- Physique subatomique (segments 01 et 74), 60 crédits obligatoires, 27 crédits à option et 3 crédits au choix\n- Générale (segments 01 et 75), 57 crédits obligatoires, 30 crédits à option et 3 crédits au choix.",
+    "Segment 01 Commun à toutes les orientations — Les crédits du tronc commun sont répartis de la façon suivante : 54 crédits obligatoires, de 3 à 15 crédits à option et 3 crédits au choix.",
+    "Segment 71 Propre à l'orientation Astronomie et astrophysique — Les crédits de l'orientation sont répartis de la façon suivante : 6 crédits obligatoires et de 12 à 24 crédits à option. Pour être admissible aux cycles supérieurs en physique, l'étudiant doit avoir réussi au moins 9 crédits PHY de niveau 3000 parmi les blocs 71B et 71D.",
+    "Segment 72 Propre à l'orientation Physique des matériaux — Les crédits de l'orientation sont répartis de la façon suivante : 9 crédits obligatoires et de 9 à 21 crédits à option. Pour être admissible aux cycles supérieurs en physique, l'étudiant doit avoir réussi au moins 9 crédits PHY de niveau 3000 parmi les blocs 72B et 72D.",
+    "Segment 73 Propre à l'orientation Physique du vivant — Les crédits de l'orientation sont répartis de la façon suivante : 9 crédits obligatoires et de 9 à 21 crédits à option. Pour être admissible aux cycles supérieurs en physique, l'étudiant doit avoir réussi au moins 9 crédits PHY de niveau 3000 au bloc 73D.",
+    "Segment 74 Propre à l'orientation Physique subatomique — Les crédits de l'orientation sont répartis de la façon suivante : 6 crédits obligatoires et de 12 à 24 crédits à option. Pour être admissible aux cycles supérieurs en physique, l'étudiant doit avoir réussi au moins 9 crédits PHY de niveau 3000 parmi les blocs 74B et 74D.",
+    "Segment 75 Propre à l'orientation générale — Les crédits de l'orientation sont répartis de la façon suivante : 3 crédits obligatoires et de 15 à 27 crédits à option. Pour être admissible aux cycles supérieurs en physique, l'étudiant doit avoir réussi au moins 9 crédits PHY de niveau 3000 au bloc 75C."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-physique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:44.876Z"
+}

@@ -1,0 +1,126 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-communication-appliquee",
+  "nom": "Certificat en communication appliquée",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "COM 1500G"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant choisit le cours RED 2010 offert en classe ou le cours RED 2010D offert à distance. L'étudiant doit suivre le cours obligatoire COM1600, en remplacement du cours COM1600G, aboli."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Médias et communications appliquées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "COM 2540G",
+        "EDP 2400",
+        "EDP 2500",
+        "JOU 1100",
+        "PBT 1001",
+        "REP 1000",
+        "REP 2200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Communication et gestion",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "AEG 2110",
+        "PBT 1004",
+        "REI 1030G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Informatique et nouvelles technologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "IFT 1810",
+        "IFT 1941",
+        "IFT 1945",
+        "IFT 2720",
+        "INU 1001",
+        "RED 2041"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (H23)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du certificat sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option.",
+    "Segment 70 — L'étudiant doit avoir réussi tous les cours obligatoires du bloc 70A avant de s'inscrire aux cours à option portant les sigles JOU, RED et REP."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-communication-appliquee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:21.844Z"
+}

@@ -1,0 +1,159 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-victimologie",
+  "nom": "Certificat en victimologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du Certificat sont répartis de la façon suivante : 12 crédits obligatoires, de 15 à 18 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 12,
+      "max": 12
+    },
+    "option": {
+      "min": 15,
+      "max": 18
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CRI 1730G",
+        "CRI 2301G",
+        "VIO 2017",
+        "VIO 3100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formes violences/contextes partic. victimisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "CRI 3305G",
+        "VIO 2009",
+        "VIO 2009D",
+        "VIO 2011",
+        "VIO 2011D",
+        "VIO 2012",
+        "VIO 2012D",
+        "VIO 2040Z",
+        "VIO 2060D",
+        "VIO 3020",
+        "VIO 3020D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "AEG 3137",
+        "CRI 3010G",
+        "CRI 3401G",
+        "JES 2014Z",
+        "PSY 3012G",
+        "VIO 1000",
+        "VIO 2015",
+        "VIO 2016",
+        "VIO 2016D",
+        "VIO 3030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Connaissances connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AUT 2500",
+        "CRI 1200G",
+        "CRI 1600G",
+        "JES 2015D",
+        "JES 2015Y",
+        "SVS 2378"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant peut prendre 3 crédits de cours au choix parmi les cours offerts par la Faculté de l'apprentissage continu, les autres facultés, les écoles et les départements de l'Université."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (A26)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du Certificat sont répartis de la façon suivante : 12 crédits obligatoires, de 15 à 18 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-victimologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:26.711Z"
+}

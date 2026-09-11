@@ -1,0 +1,157 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-administration-sociale",
+  "nom": "DESS en administration sociale",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 21 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "APC 6004",
+        "APC 6017",
+        "APC 6018",
+        "APC 6019",
+        "APC 6021",
+        "APC 6022",
+        "APC 6023"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ASA 6132",
+        "COM 6500",
+        "COM 6505",
+        "COM 6960",
+        "CRI 6006",
+        "CRI 6232",
+        "CRI 6530",
+        "CRI 6531",
+        "CRI 6533",
+        "CRI 6720",
+        "CRI 6726",
+        "DMO 6050",
+        "DMO 6502",
+        "PLU 6115",
+        "PLU 6911A",
+        "POL 6629",
+        "PRX 6002",
+        "PSY 6714",
+        "PSY 6715",
+        "PSY 6716",
+        "PSY 6717",
+        "PSY 6732",
+        "PSY 6734",
+        "PSY 6799",
+        "REI 6300",
+        "REI 6604",
+        "REI 6610",
+        "REI 6613",
+        "REI 6614",
+        "REI 6616",
+        "REI 6632",
+        "SST 6400",
+        "SVS 6465",
+        "SVS 6475"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 3150G",
+        "PHE 2010",
+        "PHE 2020",
+        "POL 2403",
+        "POL 3102",
+        "REI 2475",
+        "REI 2510",
+        "REI 3275",
+        "SOL 2403"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "APC 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A16)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 21 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-administration-sociale/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:33.781Z"
+}

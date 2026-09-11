@@ -1,0 +1,107 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-leadership-et-gestion-des-etablissements-scolaires",
+  "nom": "DESS en leadership et gestion des établissements scolaires",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 24 crédits de cours obligatoires et 6 crédits à option.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Activités d'introduction et d'intégration des compétences",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ETA 6800",
+        "ETA 6806",
+        "ETA 6825"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ETA 6801",
+        "ETA 6802",
+        "ETA 6803",
+        "ETA 6940",
+        "ETA 6947"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ETA 6655",
+        "ETA 6807",
+        "ETA 6808",
+        "ETA 6810",
+        "ETA 6937",
+        "ETA 69811",
+        "ETA 69812",
+        "ETA 69831",
+        "ETA 69832",
+        "ETA 6984",
+        "ETA 6997"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A18)\nLe D.E.S.S. comporte 30 crédits de 2e cycle.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 24 crédits de cours obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-leadership-et-gestion-des-etablissements-scolaires/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:38.647Z"
+}

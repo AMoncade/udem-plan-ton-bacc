@@ -1,0 +1,135 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-theologie-pratique",
+  "nom": "Doctorat en théologie pratique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 81,
+      "max": 81
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours en théologie pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "REL 6211",
+        "REL 6215",
+        "REL 6319",
+        "REL 6321",
+        "REL 6322"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FAS 60011",
+        "FAS 60012",
+        "REL 6112",
+        "REL 6113",
+        "REL 6122",
+        "REL 6138",
+        "REL 6217",
+        "REL 6218",
+        "REL 6219",
+        "REL 6314",
+        "REL 6318",
+        "REL 6500",
+        "REL 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir parmi les cours de sigle REL de 2e cycle de l'Institut d'études religieuses ou hors Institut. Dans ce second cas, avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 81,
+          "max": 81
+        }
+      },
+      "regleBrut": "Obligatoire - 81 crédits.",
+      "cours": [
+        "REL 7000",
+        "REL 7140",
+        "REL 7141",
+        "REL 7150",
+        "REL 7151",
+        "REL 7160",
+        "REL 7200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A15)\nLe doctorat comporte 90 crédits.\nLes étudiants doivent suivre le cours REL6311 Praxéologie (3 crédits) s'ils ne l'ont pas déjà fait dans leur curriculum de formation antérieure. Ce cours s'ajoute alors à leur scolarité.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-theologie-pratique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:04.798Z"
+}

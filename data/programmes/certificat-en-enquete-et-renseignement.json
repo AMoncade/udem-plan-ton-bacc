@@ -1,0 +1,135 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-enquete-et-renseignement",
+  "nom": "Certificat en enquête et renseignement",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du Certificat sont répartis de la façon suivante : 21 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "DRT 2510G",
+        "DRT 2520G",
+        "SIP 1500G",
+        "SIP 2500G",
+        "SIP 2505G",
+        "SIP 3090G",
+        "SIP 3500G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Problématiques et pratiques reliées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CRI 1200G",
+        "CRI 1600G",
+        "CRI 3013",
+        "CRI 3950",
+        "GSP 1100",
+        "GSP 2600Z",
+        "GSP 3020",
+        "SIP 2242",
+        "SIP 3040G",
+        "SIP 3050",
+        "SIP 3060",
+        "SIP 3082"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CRE 1001",
+        "CRI 3213G",
+        "CRI 3318",
+        "CRI 3401G",
+        "GSP 1160",
+        "REI 1030G",
+        "REI 1240G",
+        "SIP 2080"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A24)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du Certificat sont répartis de la façon suivante : 21 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-enquete-et-renseignement/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:30.530Z"
+}

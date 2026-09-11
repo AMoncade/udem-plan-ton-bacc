@@ -1,0 +1,131 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-analyses-environnementales-et-industrielles",
+  "nom": "DESS en analyses environnementales et industrielles",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires, dont 12 crédits attribués à un stage, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CHM 6700",
+        "CHM 6715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Spécialisation en méthodes d'analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "CHM 6110",
+        "CHM 6140",
+        "CHM 6160",
+        "CHM 6450",
+        "CHM 6461",
+        "CHM 6462",
+        "CHM 6465",
+        "CHM 6492",
+        "CHM 6802",
+        "CHM 6810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Fondements en analyses chimiques et matériaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CHM 3102",
+        "CHM 3103",
+        "CHM 3112",
+        "CHM 3404",
+        "CHM 3450",
+        "CHM 3481",
+        "CHM 3483",
+        "CHM 3602",
+        "CHM 3604",
+        "CHM 3605"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Note : Les cours, ou leur équivalent, ne peuvent pas avoir été déjà suivis dans le cadre d'un autre programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CHM 6720"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)\nCe programme comporte un total de 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires, dont 12 crédits attribués à un stage, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-analyses-environnementales-et-industrielles/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:35.191Z"
+}

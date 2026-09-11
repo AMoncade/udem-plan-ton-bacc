@@ -1,0 +1,328 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire",
+  "nom": "DES en médecine vétérinaire, option Diagnostic en laboratoire",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "DES",
+  "creditsTotal": 108,
+  "exigences": {
+    "brut": "Les crédits de cette concentration sont répartis de la façon suivante : 18 crédits obligatoires et 90 crédits à option.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 90,
+      "max": 90
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "MMV 6682",
+        "MMV 6685"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1B",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - 15 crédits.",
+      "cours": [
+        "MMV 6612",
+        "MMV 6670",
+        "PTM 6601",
+        "PTM 6608",
+        "PTM 6650",
+        "PTM 6659",
+        "PTM 6674",
+        "PTM 6677"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1C",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MMV 6611",
+        "PTM 6601",
+        "PTM 6674"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1D Stages 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Option - 60 crédits.",
+      "cours": [
+        "PTM 6690A",
+        "PTM 6690B",
+        "PTM 6690C",
+        "PTM 6690D",
+        "PTM 6690E",
+        "PTM 6691A",
+        "PTM 6691B",
+        "PTM 6691C",
+        "PTM 6691D",
+        "PTM 6691E",
+        "PTM 6692A",
+        "PTM 6692B",
+        "PTM 6692C",
+        "PTM 6692D",
+        "PTM 6692E",
+        "PTM 6693A",
+        "PTM 6693B",
+        "PTM 6693C",
+        "PTM 6693D",
+        "PTM 6693E",
+        "PTM 6695A",
+        "PTM 6695B",
+        "PTM 6695C",
+        "PTM 6695D",
+        "PTM 6695E",
+        "PTM 6695F",
+        "PTM 6695V",
+        "PTM 6695W",
+        "PTM 6696A",
+        "PTM 6696B",
+        "PTM 6696C",
+        "PTM 6696D",
+        "PTM 6696E",
+        "PTM 6696F",
+        "PTM 6697A",
+        "PTM 6697B",
+        "PTM 6697C",
+        "PTM 6697D",
+        "PTM 6697E",
+        "PTM 6697F",
+        "PTM 6698A",
+        "PTM 6698B",
+        "PTM 6698C",
+        "PTM 6698D",
+        "PTM 6698E",
+        "PTM 6698F"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1E Stages 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "PTM 6678A",
+        "PTM 6678B",
+        "PTM 6678C",
+        "PTM 6694A",
+        "PTM 6694B",
+        "PTM 6694C",
+        "PTM 6694D",
+        "PTM 6694E",
+        "PTM 6699A",
+        "PTM 6699B",
+        "PTM 6699C",
+        "PTM 6699D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "1FRecherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MMV 6630A",
+        "MMV 6630B",
+        "MMV 6630C",
+        "MMV 6630D",
+        "MMV 6630E",
+        "MMV 6630F"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2A",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "MMV 6682",
+        "MMV 6685"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2B",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "MMV 6611",
+        "PTM 6601",
+        "PTM 6610",
+        "PTM 6611",
+        "PTM 6612",
+        "PTM 6613",
+        "PTM 6614",
+        "PTM 6650",
+        "PTM 6659"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2C Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 63,
+          "max": 63
+        }
+      },
+      "regleBrut": "Obligatoire - 63 crédits.",
+      "cours": [
+        "PTM 6615",
+        "PTM 6690A",
+        "PTM 6690B",
+        "PTM 6690C",
+        "PTM 6690D",
+        "PTM 6690E",
+        "PTM 6691A",
+        "PTM 6691B",
+        "PTM 6691C",
+        "PTM 6691D",
+        "PTM 6691E",
+        "PTM 6692A",
+        "PTM 6692B",
+        "PTM 6692C",
+        "PTM 6692D",
+        "PTM 6692E",
+        "PTM 6693A",
+        "PTM 6693B",
+        "PTM 6693C",
+        "PTM 6693D",
+        "PTM 6693E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "2D Recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MMV 6630A",
+        "MMV 6630B",
+        "MMV 6630C",
+        "MMV 6630D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A16)\nLe D.E.S. comporte 108 crédits. Il comprend des cours, des stages et des activités de recherche répartis normalement sur une période de trois ans (neuf trimestres).\nIl est offert selon l'option Diagnostic en laboratoire, incluant les concentrations suivantes :\n- concentration Microbiologie vétérinaire (segment 70C1),\n- concentration Pathologie clinique (segment 70C2).",
+    "Segment 70 C1 Diagnostic en laboratoire: Microbiologie vétérinaire — Les crédits de cette concentration sont répartis de la façon suivante : 18 crédits obligatoires et 90 crédits à option.",
+    "Segment 70 C2 Diagnostic en laboratoire: Pathologie clinique — Les crédits de cette concentration sont répartis de la façon suivante : 108 crédits obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/des-en-medecine-veterinaire-option-diagnostic-en-laboratoire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:45:34.525Z"
+}

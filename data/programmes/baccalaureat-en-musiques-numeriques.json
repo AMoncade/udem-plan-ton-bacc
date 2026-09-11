@@ -1,0 +1,475 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-musiques-numeriques",
+  "nom": "Baccalauréat en musiques numériques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 48 crédits obligatoires, 39 à option et 3 au choix.",
+    "obligatoire": {
+      "min": 48,
+      "max": 48
+    },
+    "option": {
+      "min": 39,
+      "max": 39
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "MTE 1503",
+        "MTE 1504",
+        "MUL 1132",
+        "MUL 3208X",
+        "MUS 1217",
+        "MUS 1300",
+        "MUS 1321",
+        "MUS 2325",
+        "MUS 3321",
+        "MUS 3323",
+        "MUS 3324X",
+        "MUS 3326X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Projets",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MCT 2511",
+        "MCT 2512",
+        "MCT 2513",
+        "MCT 2514"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Électroacoustique et informatique musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 21 crédits.",
+      "cours": [
+        "IFT 1135",
+        "IFT 1144",
+        "IFT 1155",
+        "IFT 1166",
+        "IFT 1810",
+        "MCT 3530",
+        "MTE 3300",
+        "MUS 1127",
+        "MUS 1330",
+        "MUS 1331",
+        "MUS 3101X",
+        "MUS 3127X",
+        "MUS 3322X",
+        "MUS 3328X",
+        "MUS 3329X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Musique et multimédia",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 1105",
+        "CIN 2000",
+        "CIN 2103",
+        "CIN 2108",
+        "CIN 2110",
+        "CIN 2113",
+        "IFT 1941",
+        "IFT 2720",
+        "JEU 1001",
+        "JEU 1002",
+        "JEU 1003",
+        "MCT 3511X",
+        "MCT 3512X",
+        "MUL 2109",
+        "MUL 2119",
+        "MUS 2327",
+        "MUS 2328",
+        "MUS 3314X",
+        "MUS 3315X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Musique et cognition",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "MUS 1232",
+        "NCM 2000",
+        "NCM 2100",
+        "PSY 1006",
+        "PSY 1035",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 3022",
+        "PSY 3033"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Écriture, analyse et théorie musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "MCT 3011",
+        "MCT 3012",
+        "MTE 1100",
+        "MTE 1110",
+        "MTE 1111",
+        "MTE 1120",
+        "MTE 1205",
+        "MTE 1206",
+        "MTE 1220",
+        "MTE 1221",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 1403",
+        "MTE 1404",
+        "MTE 2114",
+        "MTE 2115",
+        "MTE 2210",
+        "MTE 2211",
+        "MTE 2315",
+        "MTE 2316",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1011",
+        "MUS 1012",
+        "MUS 1013",
+        "MUS 1014",
+        "MUS 1015",
+        "MUS 1016",
+        "MUS 1315"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours de solfège et dictée, de contrepoint, d'harmonie et d'analyse musicale nécessite une prescription obtenue à la suite des tests de classement."
+      ]
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Culture musicale et artistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "HAR 1200",
+        "HAR 2195",
+        "HAR 3900",
+        "MUL 1102",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1117",
+        "MUL 1134",
+        "MUL 1245",
+        "MUL 1246",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 3314",
+        "MUL 3333X",
+        "MUL 3334",
+        "MUL 3344",
+        "SOL 1017",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours doivent être choisis parmi la liste des cours offerts par le Centre de langues de l'UdeM: allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, italien, japonais, portugais et russe. Plusieurs niveaux sont offerts. Consultez le : http://centre-de-langues.umontreal.ca/cours-et-horaires/cours/"
+      ]
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Communication et outils professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "DRT 3812",
+        "FRA 1009",
+        "MUS 2134",
+        "MUS 2135",
+        "MUS 4105",
+        "PLU 2800U"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Musique d'ensemble",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUE 1171",
+        "MUE 1172",
+        "MUE 1173",
+        "MUE 1174",
+        "MUE 1191",
+        "MUE 1192",
+        "MUE 1193",
+        "MUE 1194",
+        "MUE 1211",
+        "MUE 1212",
+        "MUE 1213",
+        "MUE 1214",
+        "MUE 1221",
+        "MUE 1222",
+        "MUE 1223",
+        "MUE 1224",
+        "MUE 1231",
+        "MUE 1232",
+        "MUE 1233",
+        "MUE 1234",
+        "MUE 1251",
+        "MUE 1252",
+        "MUE 1253",
+        "MUE 1254",
+        "MUE 1271",
+        "MUE 1272",
+        "MUE 1273",
+        "MUE 1274",
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1285",
+        "MUE 1286",
+        "MUE 1287",
+        "MUE 1288",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1345",
+        "MUE 1346",
+        "MUE 1347",
+        "MUE 1348",
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1363",
+        "MUE 1364",
+        "MUE 1365",
+        "MUE 1366",
+        "MUE 1367",
+        "MUE 1368",
+        "MUE 1381",
+        "MUE 1382",
+        "MUE 1383",
+        "MUE 1384",
+        "MUE 1441",
+        "MUE 1442",
+        "MUE 1443",
+        "MUE 1444",
+        "MUE 1445",
+        "MUE 1446",
+        "MUE 1447",
+        "MUE 1448",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1473",
+        "MUE 1474",
+        "MUE 1475",
+        "MUE 1476",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1495",
+        "MUE 1496",
+        "MUE 1571",
+        "MUE 1572",
+        "MUE 1573",
+        "MUE 1574",
+        "MUE 1575",
+        "MUE 1576",
+        "MUE 1611",
+        "MUE 1612",
+        "MUE 1613",
+        "MUE 1614",
+        "MUE 1615",
+        "MUE 1621",
+        "MUE 1622",
+        "MUE 1623",
+        "MUE 1624",
+        "MUE 1625",
+        "MUE 1626",
+        "MUE 2351",
+        "MUE 2352",
+        "SST 2305"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70K",
+      "cle": "70/70K",
+      "segment": "70",
+      "nom": "Instrument",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 13
+        }
+      },
+      "regleBrut": "Option - Maximum 13 crédits.",
+      "cours": [
+        "MUI 1162A",
+        "MUI 1162B",
+        "MUI 1323A",
+        "MUI 1323B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A26)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 48 crédits obligatoires, 39 à option et 3 au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-musiques-numeriques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:35.032Z"
+}

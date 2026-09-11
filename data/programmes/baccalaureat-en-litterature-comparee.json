@@ -1,0 +1,510 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-litterature-comparee",
+  "nom": "Baccalauréat en littérature comparée",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 15 crédits obligatoires et 75 à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 75,
+      "max": 75
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "LCO 1000",
+        "LCO 1008",
+        "LCO 2040",
+        "LCO 2200",
+        "LCO 3010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Outils avancés d'interprétation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "LCO 1020",
+        "LCO 2060",
+        "LCO 3030",
+        "LCO 3050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Littératures comparées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "LCO 1050",
+        "LCO 1080",
+        "LCO 2000",
+        "LCO 2011",
+        "LCO 2070",
+        "LCO 3040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Dynamiques entre textes et médias",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "HNU 1000",
+        "HNU 2000",
+        "LCO 1001",
+        "LCO 2030",
+        "LCO 2090",
+        "LCO 3001",
+        "LCO 3060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Regards politiques et interculturels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "LCO 1030",
+        "LCO 2100",
+        "LCO 2300",
+        "LCO 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Spécialisation : savoirs et théories littéraires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "HST 1031",
+        "HST 1032",
+        "HST 1041",
+        "HST 1042",
+        "PHI 1205",
+        "PHI 1255",
+        "PHI 1520",
+        "PHI 2210",
+        "PHI 2215",
+        "PHI 3015",
+        "PHI 3250",
+        "SOL 1015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Spécialisation : traditions littéraires comparées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "AES 2011",
+        "AES 2012",
+        "AES 2020",
+        "AES 2021",
+        "ALL 2200",
+        "ALL 2214",
+        "ALL 2270",
+        "ALL 3263",
+        "ALL 3273",
+        "ANG 1325",
+        "ANG 2153",
+        "ANG 2361",
+        "ANG 2404",
+        "ARA 2050",
+        "CTL 1140",
+        "ESP 1225",
+        "ESP 1325",
+        "ESP 3222",
+        "ETM 1400",
+        "FEM 3300",
+        "FRA 1100",
+        "FRA 1102",
+        "FRA 1110",
+        "FRA 1120",
+        "FRA 1130",
+        "FRA 2141",
+        "FRA 2142",
+        "FRA 2143",
+        "GRC 1031",
+        "ITL 1141",
+        "ITL 3075",
+        "LAT 1031",
+        "LLM 1310",
+        "REL 1930",
+        "REL 2380"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Spécialisation : médias",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "AES 2014",
+        "AES 3021",
+        "ALL 2321",
+        "ANG 1700",
+        "ARA 2040",
+        "CIN 1107",
+        "CIN 1108",
+        "CIN 2110",
+        "CIN 2113",
+        "CIN 3103",
+        "COM 2001",
+        "ESP 2400",
+        "FRA 3360",
+        "FRA 3715",
+        "HAR 1032",
+        "HAR 1145",
+        "HAR 1640",
+        "HAR 2185",
+        "ITL 2160",
+        "SCI 2955"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Spécialisation : interculturel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "AES 3010",
+        "AES 3022",
+        "ALL 1310",
+        "ANT 1611",
+        "ANT 2020",
+        "ANT 3625",
+        "ARA 1001",
+        "ARA 1002",
+        "ARA 2001",
+        "ARA 2030",
+        "CTL 1120",
+        "ESP 1215",
+        "ESP 1317",
+        "HST 1062",
+        "ITL 1120",
+        "ITL 2880",
+        "LLM 2000",
+        "PHI 2960",
+        "PTG 1220",
+        "SOL 1150",
+        "TRA 2115"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 21 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1110",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2010",
+        "ALL 2110",
+        "ANG 1052",
+        "ANG 1053",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1926",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRL 1901",
+        "CRL 1902",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510",
+        "ESP 2525",
+        "ESP 2535",
+        "ETM 1200",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HEB 1901",
+        "HEB 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "ITL 1070",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "LSL 1901",
+        "LSL 1902",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904",
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "70V",
+      "cle": "70/70V",
+      "segment": "70",
+      "nom": "Cheminement Honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - maximum 9 crédits",
+      "cours": [
+        "LCO 4000",
+        "LCO 4001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70W",
+      "cle": "70/70W",
+      "segment": "70",
+      "nom": "Cheminement Honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - maximum 3 crédits",
+      "cours": [
+        "LCO 6019",
+        "LCO 6100",
+        "LCO 6111",
+        "LCO 6312",
+        "LCO 6467",
+        "LCO 6469",
+        "LCO 6546"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A14)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 15 crédits obligatoires et 75 à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-litterature-comparee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:49.609Z"
+}

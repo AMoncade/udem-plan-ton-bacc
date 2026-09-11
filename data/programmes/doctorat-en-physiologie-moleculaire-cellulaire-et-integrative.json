@@ -1,0 +1,319 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-physiologie-moleculaire-cellulaire-et-integrative",
+  "nom": "Doctorat en physiologie moléculaire, cellulaire et intégrative",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 82 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 2 crédits à option et 6 crédits au choix.",
+        "obligatoire": {
+          "min": 82,
+          "max": 82
+        },
+        "option": {
+          "min": 2,
+          "max": 2
+        },
+        "choix": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "Physiologie et biophysique moléculaires",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 79 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 11 crédits à option.",
+        "obligatoire": {
+          "min": 79,
+          "max": 79
+        },
+        "option": {
+          "min": 11,
+          "max": 11
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Physiologie cardiovasculaire",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 82 crédits obligatoires, dont 79 crédits attribués à la recherche et à la rédaction d'une thèse, et de 8 à 9 crédits à option.",
+        "obligatoire": {
+          "min": 82,
+          "max": 82
+        },
+        "option": {
+          "min": 8,
+          "max": 9
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "PSL 60611",
+        "PSL 60612",
+        "PSL 60621",
+        "PSL 60622"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant doit réussir 2 crédits sur deux ans en suivant les deux composantes consécutives d'un même sigle. Les cours PSL60611 et PSL60612 sont exclus des choix possibles s'ils ont été suivis à la maîtrise."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi la liste des cours disponibles en physiologie ou tout autre cours jugé pertinent."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 82,
+          "max": 82
+        }
+      },
+      "regleBrut": "Obligatoire - 82 crédits.",
+      "cours": [
+        "PSL 7000",
+        "PSL 7902"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "PSL 60611",
+        "PSL 60612",
+        "PSL 60621",
+        "PSL 60622"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant doit réussir 2 crédits sur deux ans en suivant les deux composantes consécutives d'un même sigle. Les cours PSL60611 et PSL60612 sont exclus des choix possibles s'ils ont été suivis à la maîtrise."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Parmi la liste des cours disponibles en physiologie (LE COURS PSL6090 EST FORTEMENT RECOMMANDÉ) ou provenant d'autres départements des sciences fondamentales de la Faculté de médecine, selon la pertinence par rapport au projet de recherche."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "PSL 6020",
+        "PSL 6021B",
+        "PSL 6021C",
+        "PSL 6021D",
+        "PSL 6021E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
+      },
+      "regleBrut": "Obligatoire - 79 crédits.",
+      "cours": [
+        "PSL 7000",
+        "PSL 7903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "PSL 60611",
+        "PSL 60612",
+        "PSL 60621",
+        "PSL 60622"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant doit réussir 2 crédits sur deux ans en suivant les deux composantes consécutives d'un même sigle. Les cours PSL60611 et PSL60612 sont exclus des choix possibles s'ils ont été suivis à la maîtrise."
+      ]
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 7 crédits.",
+      "cours": [
+        "PHL 6071"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Choisir parmi la liste des cours ci-dessous ou parmi les cours de cycles supérieurs provenant d'autres départements de sciences fondamentales de la Faculté de médecine, selon la pertinence par rapport au projet de recherche et avec l'accord du responsable du programme."
+      ]
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
+      },
+      "regleBrut": "Obligatoire - 79 crédits.",
+      "cours": [
+        "PSL 7000",
+        "PSL 7903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H18)\nLe doctorat comporte 90 crédits. Il est offert selon les trois options suivantes:\n- l'option Générale (segment 70)\n- l'option Physiologie et biophysique moléculaires (segment 71)\n- l'option Physiologie cardiovasculaire (segment 72)\nLa recherche doit se faire en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine.",
+    "Segment 70 Propre à l'option Générale — Les crédits de l'option sont répartis de la façon suivante : 82 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 2 crédits à option et 6 crédits au choix.",
+    "Segment 70 Propre à l'option Générale — Le candidat inscrit à cette option devra avoir complété les cours obligatoires (sauf les séminaires) spécifiques à l'option Générale de la maîtrise en physiologie moléculaire, cellulaire et intégrative ou l'équivalent. Dans le cas contraire, les cours PSL6090, PLU6044 et MMD6005R seront ajoutés à son programme de doctorat à titre de cours complémentaires.",
+    "Segment 71 Propre à l'option Physiologie et biophysique moléculaires — Les crédits de l'option sont répartis de la façon suivante : 79 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 11 crédits à option.",
+    "Segment 71 Propre à l'option Physiologie et biophysique moléculaires — Le candidat inscrit à cette option devra avoir complété les cours obligatoires (sauf les séminaires) spécifiques à l'option Physiologie et biophysique moléculaires de la maîtrise en physiologie moléculaire, cellulaire et intégrative ou l'équivalent. Dans le cas contraire, les cours PSL6020 ou PSL6021, PLU6044 et MMD6005R seront ajoutés à son programme de doctorat à titre de cours complémentaires.",
+    "Segment 72 Propre à l'option Physiologie cardiovasculaire — Les crédits de l'option sont répartis de la façon suivante : 82 crédits obligatoires, dont 79 crédits attribués à la recherche et à la rédaction d'une thèse, et de 8 à 9 crédits à option.",
+    "Segment 72 Propre à l'option Physiologie cardiovasculaire — Le candidat inscrit à cette option devra avoir complété les cours obligatoires (sauf les séminaires) spécifiques à l'option Physiologie cardiovasculaire de la maîtrise en physiologie moléculaire, cellulaire et intégrative ou l'équivalent. Dans le cas contraire, les cours PSL6090, PSL6170, PLU6044 et MMD6005R seront ajoutés à son programme de doctorat à titre de cours complémentaires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-physiologie-moleculaire-cellulaire-et-integrative/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:03.186Z"
+}

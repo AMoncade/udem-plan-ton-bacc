@@ -1,0 +1,1149 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-detudes-individualisees-es-sciences",
+  "nom": "Certificat d'études individualisées ès sciences",
+  "orientation": null,
+  "segments": [
+    "01",
+    "51",
+    "52",
+    "53",
+    "55",
+    "56",
+    "59",
+    "61",
+    "62",
+    "64",
+    "65",
+    "67",
+    "68",
+    "69",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75",
+    "94",
+    "95",
+    "96",
+    "97",
+    "98",
+    "99"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 15,
+          "max": 21
+        }
+      },
+      "regleBrut": "Choix - Minimum 15 crédits, maximum 21 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "51A",
+      "cle": "51/51A",
+      "segment": "51",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CRI 1050G",
+        "CRI 1100G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "51B",
+      "cle": "51/51B",
+      "segment": "51",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 1151G",
+        "CRI 1511G",
+        "CRI 1730G",
+        "CRI 2410G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "51C",
+      "cle": "51/51C",
+      "segment": "51",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CRI 2000G",
+        "CRI 2015G",
+        "CRI 2052G",
+        "CRI 2455G",
+        "CRI 3465G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "51D",
+      "cle": "51/51D",
+      "segment": "51",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CRI 3305G",
+        "CRI 3341G",
+        "CRI 3420G",
+        "CRI 3425G",
+        "CRI 3810G",
+        "CRI 3900G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "52A",
+      "cle": "52/52A",
+      "segment": "52",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "GER 1000D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "52B",
+      "cle": "52/52B",
+      "segment": "52",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "GER 1016D",
+        "GER 1020D",
+        "GER 2015D",
+        "GER 2019D",
+        "GER 2021D",
+        "GER 2022D",
+        "GER 3045",
+        "GER 3045D",
+        "GER 3046D",
+        "GER 3066D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "53A",
+      "cle": "53/53A",
+      "segment": "53",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "GSP 1100",
+        "GSP 1200",
+        "GSP 2300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "55A",
+      "cle": "55/55A",
+      "segment": "55",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "JES 1000",
+        "JES 1001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "55B",
+      "cle": "55/55B",
+      "segment": "55",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "JES 1010",
+        "JES 2005",
+        "JES 2006D",
+        "JES 2008",
+        "JES 2009",
+        "JES 2014Z",
+        "JES 2015D",
+        "JES 2015Y",
+        "JES 2015Z",
+        "JES 2016Z"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "56A",
+      "cle": "56/56A",
+      "segment": "56",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "IDI 1010",
+        "IDI 1040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "56B",
+      "cle": "56/56B",
+      "segment": "56",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "IDI 2110",
+        "IDI 2120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "56C",
+      "cle": "56/56C",
+      "segment": "56",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 3040G",
+        "IDI 2020",
+        "IDI 2130",
+        "IDI 2140",
+        "IDI 3030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "59A",
+      "cle": "59/59A",
+      "segment": "59",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "REI 1010G",
+        "REI 1140G",
+        "REI 1240G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "59B",
+      "cle": "59/59B",
+      "segment": "59",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "REI 1030G",
+        "REI 1040G",
+        "REI 1610G",
+        "REI 2230G",
+        "REI 2310G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "61A",
+      "cle": "61/61A",
+      "segment": "61",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "SST 1010",
+        "SST 2025"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "61B",
+      "cle": "61/61B",
+      "segment": "61",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "SST 1110",
+        "SST 2120",
+        "SST 2130",
+        "SST 2220",
+        "SST 2310D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "62A",
+      "cle": "62/62A",
+      "segment": "62",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PST 2955G",
+        "SME 1000",
+        "SVS 2901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "62B",
+      "cle": "62/62B",
+      "segment": "62",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "GER 2021D",
+        "SME 1020",
+        "SME 1050",
+        "SME 2055T",
+        "SME 2055V",
+        "SME 3005",
+        "SME 3010",
+        "SME 3030Z",
+        "SME 3035V",
+        "SME 3035Y",
+        "SME 3035Z",
+        "SXS 2002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "64A",
+      "cle": "64/64A",
+      "segment": "64",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CRI 1730G",
+        "VIO 2017D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "64B",
+      "cle": "64/64B",
+      "segment": "64",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "CRI 2301G",
+        "VIO 1000",
+        "VIO 2009",
+        "VIO 2009D",
+        "VIO 2011",
+        "VIO 2011D",
+        "VIO 2012",
+        "VIO 2012D",
+        "VIO 2015",
+        "VIO 2016",
+        "VIO 2016D",
+        "VIO 3020",
+        "VIO 3020D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "65A",
+      "cle": "65/65A",
+      "segment": "65",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "CRI 3305G",
+        "CRI 3810G",
+        "VIO 2009",
+        "VIO 2009D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "65B",
+      "cle": "65/65B",
+      "segment": "65",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "JES 2008",
+        "VIO 1000",
+        "VIO 2011",
+        "VIO 2012",
+        "VIO 2040Z",
+        "VIO 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "67A",
+      "cle": "67/67A",
+      "segment": "67",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "AEG 3137",
+        "REI 1030G",
+        "REI 1040G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "67B",
+      "cle": "67/67B",
+      "segment": "67",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "COM 1500G",
+        "PSY 1075",
+        "REI 1610G",
+        "SST 2310D",
+        "VIO 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "68A",
+      "cle": "68/68A",
+      "segment": "68",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "AEG 2110",
+        "COM 1500G",
+        "CRE 1001",
+        "VIO 2015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69A",
+      "cle": "69/69A",
+      "segment": "69",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "SXS 1000",
+        "SXS 1001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69B",
+      "cle": "69/69B",
+      "segment": "69",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "JES 2009",
+        "SXS 2000",
+        "SXS 2001",
+        "SXS 2002",
+        "SXS 2003",
+        "SXS 2003D",
+        "SXS 2004",
+        "SXS 2006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DRT 2510G",
+        "DRT 2520G",
+        "SIP 1500G",
+        "SIP 2500G",
+        "SIP 2505G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PPL 3035",
+        "SOL 1012",
+        "SVS 2105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANT 1020",
+        "DMO 3420",
+        "PHI 1400",
+        "SOL 2104",
+        "SOL 3404",
+        "SVS 1101",
+        "SXS 2000",
+        "SXS 2001",
+        "VIO 2015",
+        "VIO 2040Z"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SPU 1000G",
+        "SPU 1010G",
+        "SPU 2100G",
+        "SPU 2300G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "SPU 2310G",
+        "SPU 3010G",
+        "SPU 3020G",
+        "SPU 3030G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "PPL 1060",
+        "PPL 1080"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "PPL 2120",
+        "PPL 2130",
+        "PPL 2140",
+        "PPL 2160",
+        "PPL 2210",
+        "PPL 2230",
+        "PPL 3025",
+        "PPL 3035",
+        "PPL 3076",
+        "PPL 3078",
+        "PPL 3120",
+        "PPL 3140",
+        "PPL 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PSE 1009",
+        "PSE 1020",
+        "PSE 1502",
+        "PSE 1503"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "PSE 2500",
+        "PSE 2501",
+        "PSE 2502",
+        "PSE 2504",
+        "PSE 2505",
+        "PSE 2506",
+        "PSE 2507"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire -12 crédits.",
+      "cours": [
+        "TXM 1000D",
+        "TXM 1111D",
+        "TXM 1150D",
+        "TXM 1200D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "TXM 2000D",
+        "TXM 2100D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "94A",
+      "cle": "94/94A",
+      "segment": "94",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "94B",
+      "cle": "94/94B",
+      "segment": "94",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "95A",
+      "cle": "95/95A",
+      "segment": "95",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "95B",
+      "cle": "95/95B",
+      "segment": "95",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "96A",
+      "cle": "96/96A",
+      "segment": "96",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "96B",
+      "cle": "96/96B",
+      "segment": "96",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "97A",
+      "cle": "97/97A",
+      "segment": "97",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "97B",
+      "cle": "97/97B",
+      "segment": "97",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "98A",
+      "cle": "98/98A",
+      "segment": "98",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "98B",
+      "cle": "98/98B",
+      "segment": "98",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "99A",
+      "cle": "99/99A",
+      "segment": "99",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (É26)\nLe certificat comporte 30 crédits. Il comprend un tronc commun (segment 01) et les 25 concentrations suivantes :\nCriminologie (segment 51)\nGérontologie (segment 52)\nGestion appliquée à la police et à la sécurité (segment 53)\nIntervention auprès des jeunes (segment 55)\nIntervention en DI et en TSA (segment 56)\nRelations industrielles (segment 59)\nSanté et sécurité du travail (segment 61)\nSanté mentale (segment 62)\nVictimologie (segment 64)\nViolence et société (segment 65)\nIntervention: groupes et organisations (segment 67)\nLeadership militaire (segment 68)\nSexualité: société et intervention (segment 69)\nEnquête et renseignement (segment 70)\nRelations sociales: égalité et intervention (segment 71)\nSanté publique (segment 72)\nCoopération et solidarité internationales (segment 73)\nIntervention psychoéducative (segment 74)\nIntervention en dépendances (segment 75)\nAffaires internationales (HEC-Montréal) (segment 94)\nGestion des opérations et de la logistique (HEC-Montréal) (segment 95)\nGestion des ressources humaines (HEC-Montréal) (segment 96)\nManagement (HEC-Montréal) (segment 97)\nMarketing (HEC-Montréal) (segment 98)\nMicroprogramme de premier cycle ès sciences (segment 99)\nDans le cas où l'étudiant souhaite qu'un microprogramme soit considéré comme la concentration de son certificat d'études individualisées ès sciences, il doit s'inscrire à ce microprogramme préalablement à sa demande d'admission au certificat d'études individualisées ès sciences.\nTout microprogramme ès sciences de l'Université de Montréal est susceptible de constituer le segment 99 du certificat en études individualisées ès sciences en autant qu'il respecte les critères suivants :\n- Être un microprogramme de 1er cycle;\n- Être attesté par sa faculté;\n- Compter au minimum 9 crédits.\nVeuillez noter que les cours du microprogramme feront l'objet d'un transfert dans le CEI. Le transfert de cours est encadré par l'article 8 du Règlement des études de premier cycle et ne peut être autorisé, sauf exception, pour des crédits obtenus depuis plus de 10 ans.\nListe des microprogrammes offerts à l'Université de Montréal et liés au secteur ès sciences:\nAdministration des systèmes informatiques 1-175-7-3\nBureautique 1-175-7-0 (fermé à l’admission)\nÉtudes autochtones 1-081-7-0\nÉvaluation de la santé et interventions 1-630-7-5\nFinancement des organismes à but non lucratif 1-067-6-1\nGestion de la qualité de vie au travail 1-230-6-0\nGestion des services de santé et des services sociaux 1-631-7-2\nGestion et intégration de l’intelligence artificielle 1-176-6-3\nIntelligence artificielle : utilisation responsable 1-176-6-1\nInitiation à la programmation 1-175-7-1 (fermé à l’admission)\nInitiation au multimédia 1-175-7-6 (fermé à l’admission)\nMultimédia 1-175-7-4\nOptimisation des affaires et intelligence artificielle 1-176-6-2\nPair-aidance 1-540-6-1\nProgrammation 1-175-7-2\nProgrammation Internet 1-175-7-7\nRelations ethniques 1-101-7-0\nSanté mentale : mentorat pour pairs aidants 1-540-7-0 (admissions suspendues)\nSoins palliatifs et de fin de vie 1-630-6-0\nLes microprogrammes des écoles affiliées, HEC Montréal et École polytechnique, sont également acceptés en concentration. Ces microprogrammes doivent être attestés au préalable et comporter entre 9 et 15 crédits.",
+    "Segment 01 Commun à toutes les orientations — Tous les crédits du segment commun sont au choix.",
+    "Segment 51 Propre à la concentration Criminologie — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et de 9 crédits à option.",
+    "Segment 52 Propre à la concentration Gérontologie — Les crédits de la concentration sont répartis de la façon suivante: 3 crédits obligatoires et 12 crédits à option.",
+    "Segment 53 Propre à la concentration Gestion appl. à la police et à la sécurité — Tous les crédits de la concentration sont obligatoires.",
+    "Segment 55 Propre à la concentration Intervention auprès des jeunes — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et 9 crédits à option.",
+    "Segment 56 Propre à la concentration Intervention en DI et en TSA — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et de 6 à 9 crédits à option.",
+    "Segment 59 Propre à la concentration Relations industrielles — Les crédits de la concentration sont répartis de la façon suivante: 9 crédits obligatoires et 6 crédits à option.",
+    "Segment 61 Propre à la concentration Santé et sécurité du travail — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et 9 crédits à option.",
+    "Segment 62 Propre à la concentration Santé mentale — Les crédits de la concentration sont répartis de la façon suivante: 9 crédits obligatoires et 6 crédits à option.",
+    "Segment 64 Propre à la concentration Victimologie — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et 9 crédits à option.",
+    "Segment 65 Propre à la concentration Violence et société — Les crédits de la concentration sont répartis de la façon suivante: 9 crédits obligatoires et 6 crédits à option",
+    "Segment 67 Propre à la concentration Intervention: groupes et organisations — Les crédits de la concentration sont répartis de la façon suivante: 9 crédits obligatoires et 6 crédits à option.",
+    "Segment 68 Propre à la concentration Leadership militaire — Les crédits de la concentration sont répartis de la façon suivante: 15 crédits obligatoires.",
+    "Segment 69 Propre à la concentration Sexualité : société et intervention — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et 9 crédits à option.",
+    "Segment 70 Propre à la concentration Enquête et renseignement — Les crédits de la concentration sont répartis de la façon suivante: 15 crédits obligatoires.",
+    "Segment 71 Propre à la concentration Relations sociales: égalité et intégration — Les crédits de la concentration sont répartis de la façon suivante: 9 crédits obligatoires et 6 crédits à option.",
+    "Segment 72 Propre à la concentration Santé publique — Les crédits de la concentration sont répartis de la façon suivante: 12 crédits obligatoires et 3 crédits à option.",
+    "Segment 73 Propre à la concentration en Coopération et solidarité internationale — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et 9 crédits à option.",
+    "Segment 74 Propre à la concentration Intervention psychoéducative — Les crédits de la concentration sont répartis de la façon suivante: 12 crédits obligatoires et 3 crédits à option.",
+    "Segment 75 Propre à la concentration Intervention en dépendances — Les crédits de la concentration sont répartis de la façon suivante:12 crédits obligatoires et 3 crédits à option.",
+    "Segment 94 Propre à la concentration Affaires internationales (HEC-Montréal) — Les crédits de la concentration sont répartis de la façon suivante: 3 crédits obligatoires et 12 crédits à option.",
+    "Segment 95 Propre à la concentration Gestion opérations et logistique (HEC-Mtl) — Les crédits de la concentration sont répartis de la façon suivante: 3 crédits obligatoires et 12 crédits à option.",
+    "Segment 96 Propre à la concentration Gestion des ressources humaines (HEC-Mtl) — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et 9 crédits à option.",
+    "Segment 97 Propre à la concentration Management (HEC-Montréal) — Les crédits de la concentration sont répartis de la façon suivante: 6 crédits obligatoires et 9 crédits à option.",
+    "Segment 98 Propre à la concentration Marketing (HEC-Montréal) — Les crédits de la concentration sont répartis de la façon suivante: 3 crédits obligatoires et 12 crédits à option.",
+    "Segment 99 Propre à la concentration Microprogramme ès sciences — Les crédits de la concentration sont répartis de la façon suivante: 9 à 15 crédits à option.",
+    "Segment 99 Propre à la concentration Microprogramme ès sciences — Dans le cas où l'étudiant souhaite qu'un microprogramme soit considéré comme la concentration de son certificat d'études individualisées ès sciences, il doit s'inscrire à ce microprogramme préalablement à sa demande d'admission au certificat d'études individualisées ès sciences."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-detudes-individualisees-es-sciences/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:48.717Z"
+}

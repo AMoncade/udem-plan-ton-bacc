@@ -1,0 +1,351 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sciences-economiques",
+  "nom": "Baccalauréat en sciences économiques",
+  "orientation": null,
+  "segments": [
+    "01",
+    "91",
+    "92"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "01",
+        "91",
+        "92"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Honor",
+      "segments": [
+        "01",
+        "92"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Cours de première année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "ECN 1070",
+        "ECN 1075",
+        "ECN 1260",
+        "ECN 1800",
+        "ECN 2160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Cours de deuxième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "ECN 1350",
+        "ECN 2040",
+        "ECN 2045",
+        "ECN 2050",
+        "ECN 2055",
+        "ECN 2260",
+        "ECN 2800",
+        "ECN 3950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Cours de spécialisation de première année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ECN 1160",
+        "ECN 1700",
+        "ECN 1967",
+        "ECN 1971",
+        "ECN 2405"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Cours de spécialisation de deuxième année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 10 crédits.",
+      "cours": [
+        "DMO 3450",
+        "ECN 2015",
+        "ECN 2165",
+        "ECN 2230",
+        "ECN 2311",
+        "ECN 2450",
+        "ECN 2565",
+        "ECN 2700",
+        "ECN 2910",
+        "ECN 2964",
+        "HST 3450",
+        "MAT 1400",
+        "MAT 1600",
+        "MAT 1978",
+        "REI 2475"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Y",
+      "cle": "01/01Y",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ANG 1103",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1911",
+        "ANG 1913",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ANT 1013",
+        "DMO 1000",
+        "DMO 3100",
+        "DMO 3150",
+        "DMO 3400",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "GEO 2222",
+        "HOR 3200",
+        "HST 2443",
+        "HST 2820",
+        "IFT 1800",
+        "IFT 1990",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "PHI 1130",
+        "PHI 1400",
+        "POL 1000",
+        "POL 1600",
+        "PSY 1075",
+        "QCF 1050",
+        "REI 1010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ECN."
+      ]
+    },
+    {
+      "id": "91A",
+      "cle": "91/91A",
+      "segment": "91",
+      "nom": "Cours avancés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 21,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 21 crédits, maximum 24 crédits.",
+      "cours": [
+        "ECN 3013",
+        "ECN 3064",
+        "ECN 3065",
+        "ECN 3105",
+        "ECN 3115",
+        "ECN 3355",
+        "ECN 3405",
+        "ECN 3505",
+        "ECN 3550",
+        "ECN 3565",
+        "ECN 3705",
+        "ECN 3750",
+        "ECN 3801",
+        "ECN 3820",
+        "ECN 3900",
+        "ECN 3910",
+        "ECN 3995"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "92A",
+      "cle": "92/92A",
+      "segment": "92",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ECN 4040",
+        "ECN 4050",
+        "ECN 4160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "92B",
+      "cle": "92/92B",
+      "segment": "92",
+      "nom": "Cours de spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "ECN 3013",
+        "ECN 3064",
+        "ECN 3065",
+        "ECN 3105",
+        "ECN 3115",
+        "ECN 3355",
+        "ECN 3405",
+        "ECN 3505",
+        "ECN 3550",
+        "ECN 3565",
+        "ECN 3705",
+        "ECN 3750",
+        "ECN 3801",
+        "ECN 3820",
+        "ECN 3900",
+        "ECN 3910",
+        "ECN 3995"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "92C",
+      "cle": "92/92C",
+      "segment": "92",
+      "nom": "Cours de spécialisation avancés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ECN 6233",
+        "ECN 6238",
+        "ECN 6248",
+        "ECN 6258",
+        "ECN 6338",
+        "ECN 6370",
+        "ECN 6478",
+        "ECN 6523",
+        "ECN 6573",
+        "ECN 6578",
+        "ECN 6623",
+        "ECN 6643",
+        "ECN 6828",
+        "ECN 6873"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 11 (A18)\nLe baccalauréat comporte 90 crédits. Il comprend un tronc commun (segment 01) et est offert avec deux orientations:\n- l'orientation générale (segment 91)\n- l'orientation Honor (segment 92).",
+    "Segment 01 Tronc commun — Les crédits du tronc commun sont répartis de la façon suivante : 48 crédits obligatoires, de 14 à 16 crédits à option et 3 crédits au choix.",
+    "Segment 91 Propre à l'orientation générale — L'Orientation comporte de 21 à 24 crédits à option.",
+    "Segment 92 propre à l'orientation Honor — Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires et de 12 à 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sciences-economiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:18.398Z"
+}

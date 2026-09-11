@@ -1,0 +1,207 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-mathematiques-et-physique",
+  "nom": "Baccalauréat en mathématiques et physique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 68 crédits obligatoires, 19 à option et 3 au choix.",
+    "obligatoire": {
+      "min": 68,
+      "max": 68
+    },
+    "option": {
+      "min": 19,
+      "max": 19
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Éléments mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "MAT 1000",
+        "MAT 1400",
+        "MAT 1410",
+        "MAT 1600",
+        "MAT 1720",
+        "MAT 2050",
+        "MAT 2115",
+        "MAT 2130",
+        "MAT 2300",
+        "MAT 2466"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Physique fondamentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "PHY 1111",
+        "PHY 1234",
+        "PHY 1441",
+        "PHY 1501",
+        "PHY 1620",
+        "PHY 1651",
+        "PHY 1652",
+        "PHY 2215",
+        "PHY 2441",
+        "PHY 2810",
+        "PHY 2813"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Compléments de mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 13
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 13 crédits.",
+      "cours": [
+        "MAT 1681",
+        "MAT 2100",
+        "MAT 2412",
+        "MAT 2450",
+        "MAT 2600",
+        "MAT 2611",
+        "MAT 2717",
+        "MAT 2719",
+        "MAT 3162",
+        "MAT 3300",
+        "MAT 3363",
+        "MAT 3450",
+        "MAT 3460",
+        "MAT 3632",
+        "MAT 3661",
+        "STT 1700",
+        "STT 2700",
+        "STT 3795"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Compléments de physique 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2300",
+        "PHY 2400",
+        "PHY 2476",
+        "PHY 2500",
+        "PHY 2601",
+        "PHY 2701",
+        "PHY 2900",
+        "PHY 3012",
+        "PHY 3051"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Compléments de physique 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "PHY 3070",
+        "PHY 3075",
+        "PHY 3080",
+        "PHY 3131",
+        "PHY 3140",
+        "PHY 3214",
+        "PHY 3320",
+        "PHY 3442",
+        "PHY 3510",
+        "PHY 3600",
+        "PHY 3701",
+        "PHY 3711",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 12 (A26)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 68 crédits obligatoires, 19 à option et 3 au choix.",
+    "Segment 70 — Pour être admissible aux cycles supérieurs en physique, l'étudiant doit avoir réussi au moins 9 crédits PHY de niveau 3000 au bloc 70E."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques-et-physique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:09.631Z"
+}

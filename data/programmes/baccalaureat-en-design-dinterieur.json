@@ -1,0 +1,241 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-design-dinterieur",
+  "nom": "Baccalauréat en design d'intérieur",
+  "orientation": null,
+  "segments": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "DEI 1000",
+        "DEI 1005",
+        "DEI 1511",
+        "DEI 2001",
+        "DEI 2002",
+        "DEI 3555"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "APA 1110",
+        "APA 2110",
+        "ARC 3104",
+        "DIN 3211",
+        "DIN 3212",
+        "HAR 1200",
+        "HAR 3220",
+        "HST 3432",
+        "PHI 1255",
+        "SOL 1150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02A",
+      "cle": "02/02A",
+      "segment": "02",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "DEI 1012",
+        "DEI 1018",
+        "DEI 1019",
+        "DEI 2010",
+        "DEI 2100",
+        "DEI 3040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "02B",
+      "cle": "02/02B",
+      "segment": "02",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "AME 3030",
+        "DEI 3000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "03A",
+      "cle": "03/03A",
+      "segment": "03",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "DEI 1031",
+        "DEI 2031",
+        "DEI 2325",
+        "DEI 3003",
+        "DEI 3020",
+        "DEI 3031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "03B",
+      "cle": "03/03B",
+      "segment": "03",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ARC 4328",
+        "DEI 3330",
+        "DIN 3333",
+        "ENT 1010",
+        "ENT 1020",
+        "ENT 1030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "04A",
+      "cle": "04/04A",
+      "segment": "04",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "AME 1212",
+        "DEI 1120",
+        "DEI 1211",
+        "DEI 2013",
+        "DEI 2130"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "04B",
+      "cle": "04/04B",
+      "segment": "04",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DEI 2140",
+        "DIN 3132",
+        "DIN 3140"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DEI 2119",
+        "DEI 2120",
+        "DEI 2121",
+        "DEI 4200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A20)\nLe baccalauréat comporte 90 crédits. Ils sont répartis comme suit: 78 crédits obligatoires et 12 crédits à option. Les cours et ateliers sont regroupés en cinq segments rattachés à des catégories de connaissances et d'apprentissage du design d'intérieur.",
+    "Segment 01 Histoire et théories du design d'intérieur — Les crédits du segment sont répartis de la façon suivante : 18 crédits obligatoires et, au maximum, 6 crédits à option.",
+    "Segment 02 Création et design d'intérieur — Les crédits du segment sont répartis de la façon suivante : 27 crédits obligatoires et 6 crédits à option.",
+    "Segment 03 Connaissances techniques et professionnelles — Les crédits du segment sont répartis de la façon suivante : 18 crédits obligatoires et, au maximum, 6 crédits à option.",
+    "Segment 04 Communication visuelle — Les crédits du segment sont répartis de la façon suivante : 15 crédits obligatoires et, au maximum, 6 crédits à option.",
+    "Segment 70 Stage et travaux dirigés — Le segment comporte un maximum de 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-design-dinterieur/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:37.084Z"
+}

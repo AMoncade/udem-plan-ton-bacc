@@ -1,0 +1,137 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "diplome-complementaire-en-pharmacotherapie-avancee",
+  "nom": "Diplôme complémentaire en pharmacothérapie avancée",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Diplôme complémentaire",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 11 crédits obligatoires et 4 crédits à option propre à la concentration pratique en établissement de santé (72C1), et 15 crédits obligatoires propre à la concentration pratique ambulatoire (72C2).",
+    "obligatoire": {
+      "min": 11,
+      "max": 11
+    },
+    "option": {
+      "min": 4,
+      "max": 4
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Commun aux deux concentrations",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PHA 6133",
+        "PHA 6225",
+        "PHA 6320"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "1A Concentration pratique en établissement de santé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "PHA 6110"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "1B Concentration pratique en établissement de santé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "PHA 6001W",
+        "PHA 6014W",
+        "PHA 6120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "1C Concentration pratique en établissement de santé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits",
+      "cours": [
+        "PHA 6140",
+        "PHA 6150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "2A Concentration pratique ambulatoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits",
+      "cours": [
+        "PHA 6002W",
+        "PHA 6011W",
+        "PHA 6014W",
+        "PHA 6150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A24)\nLe Diplôme complémentaire en pharmacothérapie avancée comporte 15 crédits. Il est offert selon deux concentrations :\n- Pratique en établissement de santé (blocs 72C1A, 72C1B et 72C1C)\n- Pratique ambulatoire (bloc 72C2A)",
+    "Segment 72 — Les crédits du segment sont répartis de la façon suivante : 11 crédits obligatoires et 4 crédits à option propre à la concentration pratique en établissement de santé (72C1), et 15 crédits obligatoires propre à la concentration pratique ambulatoire (72C2)."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/diplome-complementaire-en-pharmacotherapie-avancee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:44.494Z"
+}

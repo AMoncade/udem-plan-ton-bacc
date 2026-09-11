@@ -1,0 +1,97 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-musique-repertoire-dorchestre",
+  "nom": "DESS en musique - Répertoire d'orchestre",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du DESS sont répartis de la façon suivante : 24 crédits obligatoires, dont 20 crédits attribués sur la base de trois évaluations périodiques d'audition et d'une audition finale, et 6 crédits à option.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "MIN 6445",
+        "MIN 6446",
+        "MUE 6461",
+        "MUE 6462"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Tutorat",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUI6##3A et MUI6##3B dont le numéro est fonction de l'instrument choisi."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Auditions",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "MIN 6541",
+        "MIN 6542",
+        "MIN 6543",
+        "MIN 6544"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A20)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du DESS sont répartis de la façon suivante : 24 crédits obligatoires, dont 20 crédits attribués sur la base de trois évaluations périodiques d'audition et d'une audition finale, et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-musique-repertoire-dorchestre/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:48.779Z"
+}

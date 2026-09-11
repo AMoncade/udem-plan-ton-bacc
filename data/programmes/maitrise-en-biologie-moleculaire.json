@@ -1,0 +1,435 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-biologie-moleculaire",
+  "nom": "Maîtrise en biologie moléculaire",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "générale -",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires, dont 34 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "biologie des systèmes -",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 10 crédits obligatoires et 35 crédits à option, dont 32 attribués à un mémoire ou à des travaux dirigés.",
+        "obligatoire": {
+          "min": 10,
+          "max": 10
+        },
+        "option": {
+          "min": 35,
+          "max": 35
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "médecine cellulaire et moléculaire -",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 13 crédits obligatoires, et 32 crédits à option attribués à la recherche.",
+        "obligatoire": {
+          "min": 13,
+          "max": 13
+        },
+        "option": {
+          "min": 32,
+          "max": 32
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "biologie du cancer – cheminement international",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 44 crédits obligatoires, dont 20 attribués à la recherche, et 1 crédit à option.",
+        "obligatoire": {
+          "min": 44,
+          "max": 44
+        },
+        "option": {
+          "min": 1,
+          "max": 1
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "BIM 6024",
+        "BIM 6035",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "BIM 6026",
+        "BIM 6028"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "À faire dans ce bloc: 0 crédit OU 4 crédits. L'étudiant qui suit les cours de ce bloc n'aura pas à faire les cours des blocs C et D."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - Maximum 2 crédits.",
+      "cours": [
+        "BIM 6064A"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le cours BIM6064A est préalable ou concomitant au bloc D: ainsi, l'étudiant qui sélectionne ce cours devra également s'inscrire à un des trois cours du bloc D."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - Maximum 2 crédits.",
+      "cours": [
+        "BIM 6064C",
+        "BIM 6064D"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le cours BIM6064A est préalable ou concomitant à chacun de ces trois cours."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Mnimum 2 crédits, maximum 4 crédits."
+      },
+      "regleBrut": "Option - Mnimum 2 crédits, maximum 4 crédits.",
+      "cours": [
+        "BCM 6100",
+        "BIM 6030A",
+        "BIM 6030E",
+        "BIM 6030F",
+        "BIM 6030H",
+        "BIM 6030I",
+        "BIM 6070",
+        "GBM 6119",
+        "GBM 6300",
+        "MSO 6061",
+        "NSC 6030",
+        "PAA 6619",
+        "PHL 6041",
+        "PHL 6064"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "BIM 6016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [
+        "BIM 6035",
+        "BIM 6064A",
+        "BIM 6064C",
+        "BIM 6065A",
+        "BIM 6065C",
+        "BIM 6065E",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "BIM 6064D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "BIM 6065D"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants qui s'inscrivent au cours BIM 6065B Modèles génétiques du cancer doivent obligatoirement suivre de façon concomitante le cours BIM 6064B Génétique moléculaire des eucaryotes."
+      ]
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Recherche Option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Option - 32 crédits.",
+      "cours": [
+        "BIM 6017",
+        "BIM 6078A",
+        "BIM 6078B"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants doivent choisir la modalité de recherche: mémoire ou travail dirigé."
+      ]
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire - 13 crédits.",
+      "cours": [
+        "BIM 6026",
+        "BIM 6028",
+        "BIM 6035",
+        "BIM 6073",
+        "BIM 6074",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 32,
+          "max": 32
+        }
+      },
+      "regleBrut": "Option- 32 crédits.",
+      "cours": [
+        "BIM 6017",
+        "BIM 6078A",
+        "BIM 6078B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "BCM 6062",
+        "BIM 6026",
+        "BIM 6030F",
+        "BIM 6063E",
+        "BIM 6064A",
+        "BIM 6064C",
+        "BIM 6070",
+        "PBC 6086",
+        "PBC 6087"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option- Minimum 1 crédit."
+      },
+      "regleBrut": "Option- Minimum 1 crédit.",
+      "cours": [
+        "BIM 6030E",
+        "BIM 6064D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Option - 20 crédits.",
+      "cours": [
+        "BIM 6011",
+        "BIM 6012",
+        "BIM 6012E"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 12 (A24)\nLa maîtrise comporte 45 crédits répartis de la façon suivante : de 10 à 39 crédits obligatoires et de 6 à 35 crédits à option parmi lesquels 20 à 34 crédits sont attribués à la recherche et à la rédaction d'un mémoire ou de travaux dirigés.\nElle inclut quatre options :\n- Option générale - avec mémoire (segment 70)\n- Option biologie des systèmes - avec mémoire ou avec travaux dirigés (segment 71)\n- Option médecine cellulaire et moléculaire - avec mémoire ou avec travaux dirigés ou mémoire (segment 73).\n- Option biologie du cancer – cheminement international (segment 74) L'étudiant dont la préparation est jugée insuffisante pourra se voir imposer des cours complémentaires.",
+    "Segment 70 Propre à l'option générale — Les crédits de l'option sont répartis de la façon suivante : 39 crédits obligatoires, dont 34 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+    "Segment 71 Propre à l'option biologie des systèmes — Les crédits de l'option sont répartis de la façon suivante : 10 crédits obligatoires et 35 crédits à option, dont 32 attribués à un mémoire ou à des travaux dirigés.",
+    "Segment 73 Propre à l'option Médecine cellulaire et moléculaire — Les crédits de l'option sont répartis de la façon suivante : 13 crédits obligatoires, et 32 crédits à option attribués à la recherche.",
+    "Segment 74 Propre à l'option biologie du cancer - cheminement international — Cette option s'adresse à un nombre limité d'étudiants, présélectionnés par le Consortium Mad4Cancer (voir section Règlements propres au programme).",
+    "Segment 74 Propre à l'option biologie du cancer - cheminement international — Les crédits de l'option sont répartis de la façon suivante : 44 crédits obligatoires, dont 20 attribués à la recherche, et 1 crédit à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-biologie-moleculaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:12.923Z"
+}

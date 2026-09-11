@@ -1,0 +1,619 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-traduction",
+  "nom": "Baccalauréat en traduction",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80",
+    "81"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Transfert linguistique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "TRA 1500",
+        "TRA 1550",
+        "TRA 2505",
+        "TRA 2650",
+        "TRA 3555"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Communication",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "TRA 1005",
+        "TRA 1015",
+        "TRA 1300",
+        "TRA 2330"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Recherche et outils informatiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "TRA 1400",
+        "TRA 1600",
+        "TRA 2600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Terminologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits",
+      "cours": [
+        "TRA 2450",
+        "TRA 3455"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Exercice de la profession",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 3900",
+        "TRA 3915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Évolution de la discipline",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "TRA 2115",
+        "TRA 3125"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01G",
+      "cle": "01/01G",
+      "segment": "01",
+      "nom": "Anglais",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "TRA 1025",
+        "TRA 1750",
+        "TRA 2750"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants seront classés selon leurs connaissances à l'arrivée à l'Université par un test d'admission. Les personnes classées de niveau 1 pourront suivre le cours TRA1025 et celles de niveau 2 pourront suivre le cours TRA1750 ou TRA2750. L'inscription à ce cours doit être faite par le département."
+      ]
+    },
+    {
+      "id": "01H",
+      "cle": "01/01H",
+      "segment": "01",
+      "nom": "Formation en contexte professionnel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2900",
+        "TRA 2920",
+        "TRA 2950H"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : Option - Minimum 3 crédits, maximum 6 crédits Cheminenent COOP : 0 crédit."
+      ]
+    },
+    {
+      "id": "01I",
+      "cle": "01/01I",
+      "segment": "01",
+      "nom": "Formation en contexte professionnel COOP",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits",
+      "cours": [
+        "TRA 2001",
+        "TRA 3001",
+        "TRA 3002"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : 0 crédit. Cheminement COOP : Option - 9 crédits."
+      ]
+    },
+    {
+      "id": "01J",
+      "cle": "01/01J",
+      "segment": "01",
+      "nom": "Langues et notions",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "TRA 2210",
+        "TRA 2220",
+        "TRA 2240",
+        "TRA 2260"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Thématiques particulières",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "TRA 3650",
+        "TRA 3850"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Connaissances linguistiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1126",
+        "LNG 1955",
+        "LNG 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Filière scientifique et technique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2515",
+        "TRA 3250",
+        "TRA 3355",
+        "TRA 3515"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Filière juridique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 3565"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Filière biomédicale et pharmaceutique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2545",
+        "TRA 3545"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80F",
+      "cle": "80/80F",
+      "segment": "80",
+      "nom": "Filière commerciale, économique et administrative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2525",
+        "TRA 3525",
+        "TRA 3575"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80G",
+      "cle": "80/80G",
+      "segment": "80",
+      "nom": "Filière littéraire et multimodale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "TRA 2570",
+        "TRA 3580",
+        "TRA 3590"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80Z",
+      "cle": "80/80Z",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisé, le cours au choix doit être choisi parmi les cours identifiés par un sigle autres que TRA et LNG."
+      ]
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "Thématiques particulières",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 3650",
+        "TRA 3850"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "Connaissances linguistiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1126",
+        "LNG 1955"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "Filière scientifique et technique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 2515",
+        "TRA 3250",
+        "TRA 3355",
+        "TRA 3515"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Filière juridique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 3565"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81E",
+      "cle": "81/81E",
+      "segment": "81",
+      "nom": "Filière biomédicale et pharmaceutique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 2545",
+        "TRA 3545"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81F",
+      "cle": "81/81F",
+      "segment": "81",
+      "nom": "Filière commerciale, économique et administrative",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 2525",
+        "TRA 3525",
+        "TRA 3575"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81G",
+      "cle": "81/81G",
+      "segment": "81",
+      "nom": "Filière littéraire et multimodale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "TRA 2570",
+        "TRA 3580",
+        "TRA 3590"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81H",
+      "cle": "81/81H",
+      "segment": "81",
+      "nom": "Propre au cheminement international - Perfect. connaissance 3e langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ALL 1310",
+        "ALL 1906",
+        "ALL 1913",
+        "ALL 2010",
+        "ALL 2110",
+        "ALL 2200",
+        "ALL 3111",
+        "ALL 3112",
+        "ESP 1317",
+        "ESP 1325",
+        "ESP 1905",
+        "ESP 2535",
+        "ESP 2536",
+        "ESP 2700",
+        "ESP 2710",
+        "ESP 2720",
+        "ESP 2730",
+        "ITL 1141",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "ITL 2195",
+        "ITL 3002",
+        "PTG 1220",
+        "PTG 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81I",
+      "cle": "81/81I",
+      "segment": "81",
+      "nom": "Propre au cheminement international - Ét. à l'étranger - transfert ling",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Seuls des cours équivalents aux cours des blocs à option du Baccalauréat en traduction peuvent être reconnus dans ce bloc."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 15 (A22)\nLe baccalauréat comporte 90 crédits\n- Les cheminement réguliers et COOP comprennent 54 crédits obligatoires, 33 à 36 crédits à option et un maximum de 3 crédits au choix.\n- Le cheminement international comprend 54 crédits obligatoires et 36 à option.",
+    "Segment 01 Commun à tous les cheminements — Les crédits du segment 01 sont répartis de la façon suivante:",
+    "Segment 01 Commun à tous les cheminements — - en cheminement régulier : 54 crédits obligatoires et 12 à 15 crédits optionnels (dont 3 à 6 crédits au bloc 01H Formation en contexte professionnel).",
+    "Segment 01 Commun à tous les cheminements — - en cheminement COOP : 54 crédits obligatoires et 18 crédits optionnels (dont 9 crédits dans le bloc 01I Formation en contexte professionnel COOP).",
+    "Segment 80 Propre aux cheminements régulier et COOP — Les crédits sont répartis de la façon suivante :",
+    "Segment 80 Propre aux cheminements régulier et COOP — - en cheminement régulier : 21 à 24 crédits optionnels et 0 à 3 crédits au choix.",
+    "Segment 80 Propre aux cheminements régulier et COOP — - en cheminement COOP : 15 à 18 crédits optionnels et 0 à 3 crédits au choix.",
+    "Segment 81 Propre au cheminement international — Les étudiants du cheminement international doivent compléter de 18 à 24 crédits optionnels incluant les 12 crédits du bloc 81I et de 6 à 12 crédits dans les blocs 81C-81D-81E-81F-81G."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-traduction/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:33.803Z"
+}

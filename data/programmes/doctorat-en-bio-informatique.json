@@ -1,0 +1,66 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-bio-informatique",
+  "nom": "Doctorat en bio-informatique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "BIN 70051",
+        "BIN 70052",
+        "BIN 70061",
+        "BIN 70062"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits.",
+      "cours": [
+        "BIN 7000",
+        "BIN 7010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A13)\nLe doctorat comporte 90 crédits répartis de la façon suivante: 6 crédits de cours obligatoires et 84 crédits attribués à la recherche et à la rédaction d'une thèse.\nUn étudiant n'ayant pas suivi le cours BIE6046 (Intro: éthique de la recherche) doit le réussir.",
+    "Segment 70 — Tous les crédits du doctorat sont obligatoires.",
+    "Segment 70 — La participation aux conférences est obligatoire tout au long de la formation de l'étudiant."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-bio-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:07.631Z"
+}

@@ -1,0 +1,164 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-musique-option-interpretation",
+  "nom": "Doctorat en musique, option Interprétation",
+  "orientation": null,
+  "segments": [
+    "73"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 63 crédits obligatoires, dont 47 crédits attribués à des récitals, et 27 crédits à option.",
+    "obligatoire": {
+      "min": 63,
+      "max": 63
+    },
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "MUL 62171",
+        "MUL 62172"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Séminaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l'accord de la direction de recherche."
+      ]
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Cours et ateliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option – Maximum 3 crédits.",
+      "cours": [
+        "EMU 7310",
+        "EMU 7312",
+        "MIN 6949",
+        "MIN 7491",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUE 6### et MUE 7###, dont le sigle est en fonction du grand ensemble. L'étudiant·e suivant le programme avec un instrument d'orchestre (cordes, vents, percussions) doit se présenter à une audition obligatoire à chaque trimestre de sa scolarité. Les résultats de cette audition déterminent la prescription d'ensemble qui lui sera attribuée."
+      ]
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Tutorat",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - 18 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUI 7###, dont le sigle est en fonction de l'instrument étudié."
+      ]
+    },
+    {
+      "id": "73F",
+      "cle": "73/73F",
+      "segment": "73",
+      "nom": "Recherche-création et récitals",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "MIN 6831",
+        "MIN 6832",
+        "MIN 7945",
+        "MIN 7961",
+        "MIN 7962",
+        "MIN 7963",
+        "MIN 7964"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 11 (A26)\nLe doctorat comporte 90 crédits.",
+    "Segment 73 — Les crédits sont répartis de la façon suivante : 63 crédits obligatoires, dont 47 crédits attribués à des récitals, et 27 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-musique-option-interpretation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:51.763Z"
+}

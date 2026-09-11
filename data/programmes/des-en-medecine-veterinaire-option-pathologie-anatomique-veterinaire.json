@@ -1,0 +1,193 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "des-en-medecine-veterinaire-option-pathologie-anatomique-veterinaire",
+  "nom": "DES en médecine vétérinaire, option Pathologie anatomique vétérinaire",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "DES",
+  "creditsTotal": 108,
+  "exigences": {
+    "brut": "Les crédits de l'Option sont répartis de la façon suivante : 87 crédits obligatoires et 21 crédits à option.",
+    "obligatoire": {
+      "min": 87,
+      "max": 87
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MMV 6682",
+        "MMV 6685A",
+        "PTM 6620",
+        "PTM 6621",
+        "PTM 6622",
+        "PTM 6623",
+        "PTM 6624",
+        "PTM 6626"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 11
+        }
+      },
+      "regleBrut": "Option – Maximum 11 crédits.",
+      "cours": [
+        "MMV 6630D",
+        "MMV 6630E",
+        "MMV 6630F",
+        "MMV 6670",
+        "MMV 6684",
+        "PTM 6601",
+        "PTM 6625",
+        "PTM 6651",
+        "PTM 6652",
+        "PTM 6657",
+        "PTM 6659",
+        "PTM 6682",
+        "PTM 6683",
+        "PTM 6700",
+        "PTM 6701"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 63,
+          "max": 63
+        }
+      },
+      "regleBrut": "Obligatoire – 63 crédits.",
+      "cours": [
+        "PTM 6606A",
+        "PTM 6678A",
+        "PTM 6678B",
+        "PTM 6678C",
+        "PTM 6678D",
+        "PTM 6678E",
+        "PTM 6678F",
+        "PTM 6679A",
+        "PTM 6679B",
+        "PTM 6679C",
+        "PTM 6679D",
+        "PTM 6679E",
+        "PTM 6679F",
+        "PTM 6680A",
+        "PTM 6680B",
+        "PTM 6680C",
+        "PTM 6680D",
+        "PTM 6680E",
+        "PTM 6681A",
+        "PTM 6681B",
+        "PTM 6684"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stages complémentaires",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option – Minimum 10 et maximum 21 crédits."
+      },
+      "regleBrut": "Option – Minimum 10 et maximum 21 crédits.",
+      "cours": [
+        "PTM 6609A",
+        "PTM 6609B",
+        "PTM 6609C",
+        "PTM 6609D",
+        "PTM 6609E",
+        "PTM 6609F",
+        "PTM 6609G",
+        "PTM 6609H",
+        "PTM 6609I",
+        "PTM 6616A",
+        "PTM 6616B",
+        "PTM 6616C",
+        "PTM 6616D",
+        "PTM 6616E",
+        "PTM 6616F",
+        "PTM 6616G",
+        "PTM 6616H",
+        "PTM 6616I",
+        "PTM 6678V",
+        "PTM 6679G",
+        "PTM 6679H",
+        "PTM 6679I",
+        "PTM 6680G",
+        "PTM 6680H",
+        "PTM 6680I"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MMV 6630A",
+        "MMV 6630B",
+        "MMV 6630C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A26)\nLe D.E.S. comporte 108 crédits.",
+    "Segment 70 Propre à l'option Pathologie anatomique vétérinaire — Les crédits de l'Option sont répartis de la façon suivante : 87 crédits obligatoires et 21 crédits à option. Il comprend 63 à 73 crédits de stages ainsi que des cours et des activités de recherche."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/des-en-medecine-veterinaire-option-pathologie-anatomique-veterinaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:45:36.567Z"
+}

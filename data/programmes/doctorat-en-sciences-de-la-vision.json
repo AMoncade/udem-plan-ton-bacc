@@ -1,0 +1,241 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-de-la-vision",
+  "nom": "Doctorat en sciences de la vision",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75",
+    "76"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École d'optométrie",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Tronc commun",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "SCV 70011",
+        "SCV 70012",
+        "SCV 70021",
+        "SCV 70022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Tronc commun",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "PLU 6044"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Une exemption de 1 crédit sera portée au dossier de l'étudiant s'il a complété un des cours d'éthique à la maitrise. L'étudiant devra faire l'un des quatre cours d'éthique suivants selon que l'étudiant utilise un modèle humain ou animal."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Tronc commun",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Choix - Maximum 4 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de cours doit être approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Tronc commun - Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 80,
+          "max": 80
+        }
+      },
+      "regleBrut": "Obligatoire - 80 crédits",
+      "cours": [
+        "SCV 7004",
+        "SCV 7005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Obligatoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "SCV 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "- Option",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits."
+      },
+      "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits.",
+      "cours": [
+        "IDV 6017",
+        "IDV 6020",
+        "SCV 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "- Option",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+      },
+      "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
+      "cours": [
+        "SCV 6013",
+        "SCV 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "- Option",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+      },
+      "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
+      "cours": [
+        "OPM 6008",
+        "SCV 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "- Option",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+      },
+      "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
+      "cours": [
+        "SCV 6007",
+        "SCV 6010",
+        "SCV 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "- Option",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+      },
+      "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
+      "cours": [
+        "SCV 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "- Option",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+      },
+      "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
+      "cours": [
+        "SCV 6011",
+        "SCV 6014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (E14)\nLe doctorat comporte un minimum de 90 crédits. Il est offert selon sept options :\nGénérale (segment 70)\nBasse vision et réadaptation visuelle (segment 71)\nBiologie cellulaire et moléculaire (segment 72)\nBiologie des maladies de la vision (segment 73)\nNeurosciences de la vision et psychophysique (segment 74)\nOptique, instrumentation et imagerie (segment 75)\nSciences cliniques et épidémiologie (segment 76).\nLa recherche doit se faire en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut ou centre affilié à l'Université de Montréal.",
+    "Segment 01 Tronc commun — Les crédits du tronc commun sont répartis de la façon suivante: 80 crédits obligatoires, 4 crédits à option et un maximum de 4 crédits au choix. Les cours choisis dans le Bloc 70C déterminent l'option du Doctorat.",
+    "Segment 70 Propre à l'option Générale — Les crédits de l'option sont répartis de la façon suivante : 82 crédits obligatoires dont 80 crédits attribués à la rédaction d'une thèse, 4 crédits à option et 4 crédits au choix.",
+    "Segment 71 Propre à l'option Basse vision et réadaptation visuelle — Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix.",
+    "Segment 72 Propre à l'option Biologie cellulaire et moléculaire — Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix.",
+    "Segment 73 Propre à l'option Biologie des maladies de la vision — Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix.",
+    "Segment 74 Propre à l'option Neurosciences de la vision et psychophysique — Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix.",
+    "Segment 75 Propre à l'option Optique, instrument et imagerie — Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix.",
+    "Segment 76 Propre à l'option Sciences cliniques et épidémiologie — Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-de-la-vision/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:47.391Z"
+}

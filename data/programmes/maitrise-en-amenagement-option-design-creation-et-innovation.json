@@ -1,0 +1,190 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-amenagement-option-design-creation-et-innovation",
+  "nom": "Maîtrise en aménagement, option Design, création et innovation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 31 crédits obligatoires, 11 à 14 crédits de cours à option et un maximum de 3 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 31,
+      "max": 31
+    },
+    "option": {
+      "min": 11,
+      "max": 14
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      "regleBrut": "Obligatoire - 10 crédits.",
+      "cours": [
+        "AME 6502",
+        "AME 6711",
+        "AME 6816",
+        "DIN 6760"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Disciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 11
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 11 crédits.",
+      "cours": [
+        "AME 6741",
+        "AME 6742",
+        "AME 6743",
+        "AME 6744",
+        "AME 6745",
+        "AME 6746",
+        "AME 6747",
+        "AME 6748",
+        "AME 6749",
+        "AME 6751",
+        "AME 6752",
+        "AME 6761"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours et activités de transfert",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits",
+      "cours": [
+        "AME 6817",
+        "DEI 6112",
+        "DEJ 6000",
+        "DEJ 6003",
+        "DEJ 6011",
+        "DEJ 6012",
+        "DIN 6001",
+        "DIN 6740",
+        "DIN 6900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Interdisciplinaire",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Option ‐ Maximum 6 crédits."
+      },
+      "regleBrut": "Option ‐ Maximum 6 crédits.",
+      "cours": [
+        "AME 6043",
+        "AME 6201",
+        "AME 6202",
+        "AME 6203",
+        "AME 6204",
+        "AME 6205",
+        "AME 6206",
+        "AME 6420",
+        "AME 6421",
+        "AME 6871",
+        "AME 6872",
+        "AME 6873",
+        "AME 6874",
+        "AME 6990",
+        "EDD 6070",
+        "PHI 6990",
+        "URB 6729",
+        "URB 6753",
+        "URB 6767"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans le répertoire de la Maîtrise en aménagement, dans les autres répertoires de 2e cycle de la Faculté de l'aménagement, de l'Université de Montréal ou des autres universités."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Ateliers de design avancé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "DIN 6710",
+        "DIN 6720",
+        "DIN 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A21)\nLa maîtrise comporte 45 crédits.",
+    "Segment 70 Propre à l'option Design, création et innovation — Les crédits de l'option sont répartis de la façon suivante : 31 crédits obligatoires, 11 à 14 crédits de cours à option et un maximum de 3 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-amenagement-option-design-creation-et-innovation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:53.583Z"
+}

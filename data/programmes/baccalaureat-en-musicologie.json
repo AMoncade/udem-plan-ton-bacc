@@ -1,0 +1,602 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-musicologie",
+  "nom": "Baccalauréat en musicologie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "83",
+    "84"
+  ],
+  "orientations": [
+    {
+      "nom": "Instrument",
+      "segments": [
+        "01",
+        "83",
+        "84"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Connaissance du clavier",
+      "segments": [
+        "01",
+        "83",
+        "84"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Connaissances fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 42,
+          "max": 42
+        }
+      },
+      "regleBrut": "Obligatoire - 42 crédits.",
+      "cours": [
+        "MTE 2210",
+        "MTE 2211",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1117",
+        "MUL 1132",
+        "MUL 1134",
+        "MUL 1245",
+        "MUL 3314",
+        "MUL 3334",
+        "MUS 1300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MUS 1011",
+        "MUS 1012",
+        "MUS 1013",
+        "MUS 1014",
+        "MUS 1015",
+        "MUS 1016"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MUS 1011 à 1016 - Solfège et dictée 1 à 6 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Éléments de théorie musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MTE 1100",
+        "MTE 1120",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1213",
+        "MUS 1214",
+        "MUS 1217",
+        "MUS 1315"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MTE 1100 & 1120 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Histoire de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3208X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Analyse musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "MTE 12041",
+        "MTE 12042",
+        "MTE 1205",
+        "MTE 1206",
+        "MTE 3300",
+        "MUL 2109"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Écriture musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "MCT 3011",
+        "MCT 3012",
+        "MTE 1110",
+        "MTE 1111",
+        "MTE 1220",
+        "MTE 1221",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 2116",
+        "MTE 2117",
+        "MTE 2315",
+        "MTE 2316",
+        "MTE 3116"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01G",
+      "cle": "01/01G",
+      "segment": "01",
+      "nom": "Théories et sciences de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUL 2450",
+        "MUL 3333X",
+        "MUL 3335X",
+        "MUS 1327",
+        "MUS 3321",
+        "MUS 3322X",
+        "MUS 3323"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01H",
+      "cle": "01/01H",
+      "segment": "01",
+      "nom": "Musiques, cultures et sociétés",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "MUL 1246",
+        "MUL 3344",
+        "MUS 2135"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01I",
+      "cle": "01/01I",
+      "segment": "01",
+      "nom": "Outils professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "DRT 3812",
+        "MUS 1127",
+        "MUS 1232",
+        "MUS 2134",
+        "PLU 2800U"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01J",
+      "cle": "01/01J",
+      "segment": "01",
+      "nom": "Cours de langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts. Consultez l'information sur le site du Centre de langues",
+        "Les étudiants sont encouragés à prendre des cours autres que les cours d'anglais."
+      ]
+    },
+    {
+      "id": "01K",
+      "cle": "01/01K",
+      "segment": "01",
+      "nom": "Petits ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MUE 1151",
+        "MUE 1152",
+        "MUE 1153",
+        "MUE 1154",
+        "MUE 1155",
+        "MUE 1156",
+        "MUE 1161",
+        "MUE 1162",
+        "MUE 1171",
+        "MUE 1172",
+        "MUE 1173",
+        "MUE 1174",
+        "MUE 1175",
+        "MUE 1176",
+        "MUE 1191",
+        "MUE 1192",
+        "MUE 1193",
+        "MUE 1194",
+        "MUE 1195",
+        "MUE 1196",
+        "MUE 1211",
+        "MUE 1212",
+        "MUE 1213",
+        "MUE 1214",
+        "MUE 1215",
+        "MUE 1216",
+        "MUE 1231",
+        "MUE 1232",
+        "MUE 1233",
+        "MUE 1234",
+        "MUE 1235",
+        "MUE 1236",
+        "MUE 1241",
+        "MUE 1242",
+        "MUE 1243",
+        "MUE 1244",
+        "MUE 1245",
+        "MUE 1246",
+        "MUE 1261",
+        "MUE 1262",
+        "MUE 1263",
+        "MUE 1264",
+        "MUE 1265",
+        "MUE 1266",
+        "MUE 1381",
+        "MUE 1382",
+        "MUE 1383",
+        "MUE 1384",
+        "MUE 1385",
+        "MUE 1386",
+        "MUE 1391",
+        "MUE 1392",
+        "MUE 1393",
+        "MUE 1394",
+        "MUE 1395",
+        "MUE 1396",
+        "MUE 1491",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1495",
+        "MUE 1496",
+        "MUE 1501",
+        "MUE 1502",
+        "MUE 1503",
+        "MUE 1504",
+        "MUE 1505",
+        "MUE 1506",
+        "MUE 1531",
+        "MUE 1532"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : La participation aux ateliers et ensembles de ce bloc requiert que les étudiants passent une audition et/ou rencontrent le professeur responsable."
+      ]
+    },
+    {
+      "id": "01L",
+      "cle": "01/01L",
+      "segment": "01",
+      "nom": "Grands ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1285",
+        "MUE 1286",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1345",
+        "MUE 1346",
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1363",
+        "MUE 1364",
+        "MUE 1365",
+        "MUE 1366",
+        "MUE 1441",
+        "MUE 1442",
+        "MUE 1443",
+        "MUE 1444",
+        "MUE 1445",
+        "MUE 1446",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1473",
+        "MUE 1474",
+        "MUE 1475",
+        "MUE 1476",
+        "MUE 1531",
+        "MUE 1532"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01V",
+      "cle": "01/01V",
+      "segment": "01",
+      "nom": "Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "MUS 4000",
+        "MUS 4001",
+        "MUS 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'étudiant est admis dans ce segment du programme sur l'analyse du dossier. Il doit en faire la demande par écrit auprès du responsable de programme. Sa moyenne doit être d'au moins 3,7 et il doit avoir complété au moins 45 crédits du programme. Pour compléter le cheminement honor, l'étudiant doit faire 12 crédits, comprenant 2 à 3 séminaires choisis dans la banque de séminaires offerts aux cycles supérieurs et 1 ou 2 travaux dirigés de 20 à 30 pages chacun, sous la direction d'un professeur. Certains cours de niveau 6000 de ce bloc peuvent être reconnus dans un programme d'études supérieures."
+      ]
+    },
+    {
+      "id": "83A",
+      "cle": "83/83A",
+      "segment": "83",
+      "nom": "Instrument",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 13
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 13 crédits.",
+      "cours": [
+        "MUI 1103A",
+        "MUI 1103B",
+        "MUI 1123A",
+        "MUI 1123B",
+        "MUI 1132A",
+        "MUI 1132B",
+        "MUI 1143A",
+        "MUI 1143B",
+        "MUI 1162A",
+        "MUI 1162B",
+        "MUI 1173A",
+        "MUI 1173B",
+        "MUI 1183A",
+        "MUI 1183B",
+        "MUI 1193A",
+        "MUI 1193B",
+        "MUI 1203A",
+        "MUI 1203B",
+        "MUI 1213A",
+        "MUI 1213B",
+        "MUI 1223A",
+        "MUI 1223B",
+        "MUI 1233A",
+        "MUI 1233B",
+        "MUI 1243A",
+        "MUI 1243B",
+        "MUI 1253A",
+        "MUI 1253B",
+        "MUI 1263A",
+        "MUI 1263B",
+        "MUI 1273A",
+        "MUI 1273B",
+        "MUI 1283A",
+        "MUI 1283B",
+        "MUI 1293A",
+        "MUI 1293B",
+        "MUI 1303A",
+        "MUI 1303B",
+        "MUI 1313A",
+        "MUI 1313B",
+        "MUI 1403A",
+        "MUI 1403B",
+        "MUI 1413A",
+        "MUI 1413B",
+        "MUI 1423A",
+        "MUI 1423B",
+        "MUI 1453A",
+        "MUI 1453B",
+        "MUI 1463A",
+        "MUI 1463B",
+        "MUI 1473A",
+        "MUI 1473B",
+        "MUI 1483A",
+        "MUI 1483B",
+        "MUI 1493A",
+        "MUI 1493B",
+        "MUI 1523A",
+        "MUI 1523B",
+        "MUI 1533A",
+        "MUI 1533B",
+        "MUI 1723A",
+        "MUI 1723B",
+        "MUI 2103A",
+        "MUI 2123A",
+        "MUI 2132A",
+        "MUI 2143A",
+        "MUI 2162A",
+        "MUI 2162B",
+        "MUI 2173A",
+        "MUI 2183A",
+        "MUI 2193A",
+        "MUI 2203A",
+        "MUI 2213A",
+        "MUI 2223A",
+        "MUI 2233A",
+        "MUI 2243A",
+        "MUI 2253A",
+        "MUI 2263A",
+        "MUI 2273A",
+        "MUI 2283A",
+        "MUI 2293A",
+        "MUI 2303A",
+        "MUI 2313A",
+        "MUI 2403A",
+        "MUI 2413A",
+        "MUI 2423A",
+        "MUI 2453A",
+        "MUI 2463A",
+        "MUI 2473A",
+        "MUI 2483A",
+        "MUI 2493A",
+        "MUI 2523A",
+        "MUI 2533A",
+        "MUI 2543A",
+        "MUI 2723A",
+        "MUI 2723B",
+        "MUI 3723A",
+        "MUI 3723B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "84A",
+      "cle": "84/84A",
+      "segment": "84",
+      "nom": "Instrument",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 8 crédits.",
+      "cours": [
+        "MUI 1162A",
+        "MUI 1162B",
+        "MUI 2162A",
+        "MUI 2162B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 12 (A26)\nLe baccalauréat comporte 90 crédits. Il est offert avec un tronc commun (segment 01) et deux (2) orientations :\n- orientation Instrument (segment 83)\n- orientation Connaissance du clavier (segment 84)",
+    "Segment 01 — Les crédits du programme sont répartis de la façon suivante: 42 crédits obligatoires et 48 crédits à options.",
+    "Segment 83 Instrument — L'orientation comporte de 3 à 13 crédits à option.",
+    "Segment 83 Instrument — NOTE : Les cours de ce bloc sont accessibles sur audition. L'étudiant ne peut s'inscrire qu'au cours pour lequel il a été admis. Tout changement d'instrument doit faire l'objet d'une demande écrite et être autorisé par le vice-doyen aux affaires étudiantes et aux études.",
+    "Segment 84 Connaissance du clavier — L'orientation comporte de 2 à 8 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-musicologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:18.343Z"
+}

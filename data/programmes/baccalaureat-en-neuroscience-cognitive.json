@@ -1,0 +1,1033 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-neuroscience-cognitive",
+  "nom": "Baccalauréat en neuroscience cognitive",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "Fondamentale",
+      "segments": [
+        "01",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "exigences": {
+        "brut": "- L'orientation Fondamentale comprend les segments 01 et 71 avec 54 crédits obligatoires, 33 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 33,
+          "max": 33
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Neuropsychologie",
+      "segments": [
+        "01",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "exigences": {
+        "brut": "- L'orientation Neuropsychologie comprend les segments 01 et 72 avec 66 crédits obligatoires, 21 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 21,
+          "max": 21
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Neurolinguistique",
+      "segments": [
+        "01",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "exigences": {
+        "brut": "- L'orientation Neurolinguistique comprend les segments 01 et 73 avec 66 crédits obligatoires, 21 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 21,
+          "max": 21
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Neurocognition de la musique",
+      "segments": [
+        "01",
+        "71",
+        "72",
+        "73",
+        "74"
+      ],
+      "exigences": {
+        "brut": "- L'orientation Neurocognition de la musique comprend les segments 01 et 74 avec 54 crédits obligatoires, 33 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 74,
+          "max": 74
+        },
+        "option": {
+          "min": 33,
+          "max": 33
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Méthodes",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "IFT 1016",
+        "PSY 1004",
+        "PSY 1006",
+        "PSY 2008",
+        "PSY 3018",
+        "PSY 3204"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Bases en neuroscience cognitive",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "LNG 1010",
+        "NCM 2000",
+        "PSY 1048",
+        "PSY 1049",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 3032"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Neuroscience et neuropsychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANT 3450",
+        "LNG 3090",
+        "PSY 3033",
+        "PSY 3088",
+        "PSY 3273"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Approfondissement des méthodes et rédaction en anglais",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "IFT 1025",
+        "PSY 3008",
+        "PSY 3009",
+        "PSY 3913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Neuroanatomie et neuropsychophysiologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "AUD 1131",
+        "AUD 1132",
+        "BIO 1153",
+        "KIN 1016",
+        "KIN 1021",
+        "KIN 1024",
+        "NSC 1001",
+        "NSC 1002",
+        "PSY 3035",
+        "PSY 3036",
+        "SBM 3200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Génétique, évolution et cognition",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANT 1511",
+        "ANT 2440",
+        "ANT 3553",
+        "BIO 1203",
+        "PSY 2253"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01G",
+      "cle": "01/01G",
+      "segment": "01",
+      "nom": "Philosophie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "PHI 1005",
+        "PHI 1300",
+        "PHI 1400",
+        "PHI 1968",
+        "PHI 2005",
+        "PHI 2305",
+        "PHI 2320",
+        "PHI 2350",
+        "PHI 2490",
+        "PHI 3330"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01V",
+      "cle": "01/01V",
+      "segment": "01",
+      "nom": "Cheminement honor 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option – Maximum 9 crédits.",
+      "cours": [
+        "PSY 40001",
+        "PSY 40002",
+        "PSY 6028"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : 0 crédit. Cheminement honor : 9 crédits."
+      ]
+    },
+    {
+      "id": "01W",
+      "cle": "01/01W",
+      "segment": "01",
+      "nom": "Cheminement honor 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PSY 6022",
+        "PSY 6913"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : 0 crédit. Cheminement honor : 3 crédits."
+      ]
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Modélisation et programmation en neuroscience cognitive",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MAT 1919",
+        "NSC 3084",
+        "PSY 2038",
+        "PSY 3019",
+        "STT 3910"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Laboratoires en neuroscience cognitive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "NCM 2200",
+        "PSY 2007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Psychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "PSE 1204",
+        "PSY 1045",
+        "PSY 1075",
+        "PSY 1095",
+        "PSY 1105",
+        "PSY 2003",
+        "PSY 2044",
+        "PSY 2048",
+        "PSY 2084",
+        "PSY 2093",
+        "PSY 2115",
+        "PSY 2254",
+        "PSY 3022",
+        "PSY 3037",
+        "PSY 3063",
+        "PSY 3083",
+        "PSY 3090",
+        "PSY 3099",
+        "PSY 3114",
+        "PSY 3247",
+        "PSY 3258"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Audition et neurocognition musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "MTE 1100",
+        "MTE 1120",
+        "MUL 1102",
+        "MUL 1134",
+        "MUL 1246",
+        "MUL 3314",
+        "MUS 1300",
+        "MUS 1315",
+        "MUS 3321",
+        "MUS 3322X",
+        "NCM 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2002",
+        "LNG 2050",
+        "LNG 2080",
+        "LNG 2140",
+        "LNG 2160",
+        "LNG 2340",
+        "LNG 2355",
+        "LNG 2360",
+        "LNG 2400",
+        "LNG 2470",
+        "ORA 1900",
+        "ORA 2900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Psychologie générale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "PSY 1045",
+        "PSY 1075",
+        "PSY 1095",
+        "PSY 1105",
+        "PSY 2003",
+        "PSY 2084",
+        "PSY 2115",
+        "PSY 2254",
+        "PSY 3022"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Laboratoires en neuroscience cognitive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "NCM 2200",
+        "PSY 2007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Psychologie avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "PSE 1204",
+        "PSY 2044",
+        "PSY 2048",
+        "PSY 2093",
+        "PSY 3037",
+        "PSY 3063",
+        "PSY 3083",
+        "PSY 3090",
+        "PSY 3099",
+        "PSY 3114",
+        "PSY 3129",
+        "PSY 3247",
+        "PSY 3258"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2002",
+        "LNG 2050",
+        "LNG 2080",
+        "LNG 2140",
+        "LNG 2160",
+        "LNG 2340",
+        "LNG 2355",
+        "LNG 2360",
+        "LNG 2400",
+        "LNG 2470",
+        "ORA 1531",
+        "ORA 1900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Modélisation et programmation en neuroscience cognitive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "MAT 1919",
+        "PSY 2038",
+        "PSY 3019"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72F",
+      "cle": "72/72F",
+      "segment": "72",
+      "nom": "Audition et neurocognition musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "MTE 1100",
+        "MTE 1120",
+        "MUL 1102",
+        "MUL 1134",
+        "MUL 1246",
+        "MUL 3314",
+        "MUS 1300",
+        "MUS 1315",
+        "MUS 3321",
+        "MUS 3322X",
+        "NCM 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Linguistique générale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2002",
+        "LNG 2400",
+        "LNG 2470",
+        "LNG 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Développement humain",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits",
+      "cours": [
+        "PSY 1095",
+        "PSY 2254"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Linguistique avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "LNG 2050",
+        "LNG 2080",
+        "LNG 2140",
+        "LNG 2160",
+        "LNG 2340",
+        "LNG 2355",
+        "LNG 2360",
+        "ORA 1531",
+        "ORA 1900",
+        "ORA 2900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Psychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "PSE 1204",
+        "PSY 1045",
+        "PSY 1075",
+        "PSY 1105",
+        "PSY 2003",
+        "PSY 2007",
+        "PSY 2044",
+        "PSY 2048",
+        "PSY 2084",
+        "PSY 2093",
+        "PSY 2115",
+        "PSY 3022",
+        "PSY 3037",
+        "PSY 3063",
+        "PSY 3083",
+        "PSY 3090",
+        "PSY 3099",
+        "PSY 3114",
+        "PSY 3247",
+        "PSY 3258"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Audition et neurocognition musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "MTE 1100",
+        "MTE 1120",
+        "MUL 1102",
+        "MUL 1134",
+        "MUL 1246",
+        "MUL 3314",
+        "MUS 1300",
+        "MUS 1315",
+        "MUS 3321",
+        "MUS 3322X",
+        "NCM 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73F",
+      "cle": "73/73F",
+      "segment": "73",
+      "nom": "Modélisation et programmation en neuroscience cognitive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "MAT 1919",
+        "PSY 2038",
+        "PSY 3019"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73G",
+      "cle": "73/73G",
+      "segment": "73",
+      "nom": "Spécialisation en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LNG 3040",
+        "LNG 3050",
+        "LNG 3070",
+        "LNG 3120",
+        "LNG 3400",
+        "LNG 3510G",
+        "LNG 3560"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "MUS 1300",
+        "MUS 1315",
+        "NCM 2100",
+        "NCM 2200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Audition et musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "MTE 1100",
+        "MTE 1120",
+        "MUL 1102",
+        "MUL 1134",
+        "MUL 1246",
+        "MUS 3321",
+        "MUS 3322X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Musiques numériques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "MUS 1127",
+        "MUS 1217",
+        "MUS 1321",
+        "MUS 3324X",
+        "MUS 3329X"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Psychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "PSE 1204",
+        "PSY 1045",
+        "PSY 1075",
+        "PSY 1095",
+        "PSY 1105",
+        "PSY 2003",
+        "PSY 2044",
+        "PSY 2048",
+        "PSY 2084",
+        "PSY 2093",
+        "PSY 2115",
+        "PSY 2254",
+        "PSY 3022",
+        "PSY 3037",
+        "PSY 3063",
+        "PSY 3083",
+        "PSY 3090",
+        "PSY 3099",
+        "PSY 3114",
+        "PSY 3247",
+        "PSY 3258"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74E",
+      "cle": "74/74E",
+      "segment": "74",
+      "nom": "Linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2002",
+        "LNG 2050",
+        "LNG 2080",
+        "LNG 2140",
+        "LNG 2160",
+        "LNG 2340",
+        "LNG 2355",
+        "LNG 2360",
+        "LNG 2400",
+        "LNG 2470",
+        "ORA 1900",
+        "ORA 2900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74F",
+      "cle": "74/74F",
+      "segment": "74",
+      "nom": "Modélisation et programmation en neuroscience cognitive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "MAT 1919",
+        "PSY 2038",
+        "PSY 3019"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A23)\nLe baccalauréat comporte 90 crédits et quatre orientations.\n- L'orientation Fondamentale comprend les segments 01 et 71 avec 54 crédits obligatoires, 33 à option et 3 au choix.\n- L'orientation Neuropsychologie comprend les segments 01 et 72 avec 66 crédits obligatoires, 21 à option et 3 au choix.\n- L'orientation Neurolinguistique comprend les segments 01 et 73 avec 66 crédits obligatoires, 21 à option et 3 au choix.\n- L'orientation Neurocognition de la musique comprend les segments 01 et 74 avec 54 crédits obligatoires, 33 à option et 3 au choix.\n- Le cheminement Honor comporte obligatoirement les 12 crédits du bloc 01V.",
+    "Segment 01 Commun à toutes les orientations — Cheminement régulier : 39 crédits obligatoires, jusqu'à 33 crédits à option et 3 crédits au choix.",
+    "Segment 01 Commun à toutes les orientations — Cheminement honor : 39 crédits obligatoires, les 12 crédits du bloc 01V et jusqu'à 21 crédits à option et 3 crédits au choix.",
+    "Segment 71 propre à l'orientation Fondamentale — Cheminement régulier : 15 crédits obligatoires du bloc 71A et de 3 crédits jusqu'à un maximum de 33 crédits à option.",
+    "Segment 71 propre à l'orientation Fondamentale — Cheminement honor : 15 crédits obligatoires du bloc 71A et de 3 crédits jusqu'à un maximum de 21 crédits à option.",
+    "Segment 71 propre à l'orientation Fondamentale — Les étudiants qui veulent accéder à l'orientation Fondamentale devront avoir fait les cours collégiaux de mathématiques 103, 105 et 203 ou leurs équivalents (par exemple MAT1903, MAT1905 et MAT1923) au plus tard à la fin du troisième trimestre au programme.",
+    "Segment 72 propre à l'orientation Neuropsychologie — Cheminement régulier : 27 crédits obligatoires du bloc 72A et de 3 crédits jusqu'à un maximum de 21 crédits à option.",
+    "Segment 72 propre à l'orientation Neuropsychologie — Cheminement honor : 27 crédits obligatoires du bloc 72A et de 3 crédits jusqu'à un maximum de 9 crédits à option.",
+    "Segment 73 propre à l'orientation Neurolinguistique — Cheminement régulier : 27 crédits obligatoires (blocs 73A et 73B) et jusqu'à un maximum de 21 crédits à option",
+    "Segment 73 propre à l'orientation Neurolinguistique — Cheminement honor : 27 crédits obligatoires (blocs 73A et 73B) et jusqu'à un maximum de 9 crédits à option.",
+    "Segment 74 propre à l'orientation Neurocognition de la musique — Cheminement régulier : 15 crédits obligatoires du bloc 74A et jusqu'à un maximum de 33 crédits à option.",
+    "Segment 74 propre à l'orientation Neurocognition de la musique — Cheminement honor : 15 crédits obligatoires du bloc 74A et jusqu'à un maximum de 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-neuroscience-cognitive/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:35.289Z"
+}

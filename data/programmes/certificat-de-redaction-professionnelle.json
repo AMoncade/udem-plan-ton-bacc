@@ -1,0 +1,107 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-de-redaction-professionnelle",
+  "nom": "Certificat en pratiques rédactionnelles",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du Certificat sont répartis de la façon suivante : 21 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "FRA 1300G",
+        "FRA 2953G",
+        "LNG 1061G",
+        "LNG 1062G",
+        "RED 2040",
+        "RED 2500",
+        "RED 3000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Rédaction spécialisée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "JOU 1001",
+        "PBT 1111",
+        "RED 2041",
+        "RED 2101",
+        "RED 2301",
+        "RED 3001",
+        "REP 2100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "CRE 1001",
+        "EDP 1200",
+        "IFT 1410",
+        "JOU 2310",
+        "REP 3105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H26)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Les crédits du Certificat sont répartis de la façon suivante : 21 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-de-redaction-professionnelle/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:16.435Z"
+}

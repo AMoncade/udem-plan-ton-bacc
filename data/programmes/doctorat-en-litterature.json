@@ -1,0 +1,1097 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-litterature",
+  "nom": "Doctorat en littérature",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "73",
+    "74",
+    "75",
+    "78"
+  ],
+  "orientations": [
+    {
+      "nom": "études allemandes",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 75 crédits obligatoires dont 72 crédits attribués à la recherche et à la rédaction d'une thèse et 15 crédits à option.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "littérature comparée et générale",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "théorie et épistémologie de la littérature",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 73 sont répartis de la façon suivante : 81 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "études hispaniques",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 74 sont répartis de la façon suivante : 75 crédits obligatoires dont 72 crédits attribués à la recherche et à la rédaction d'une thèse et 15 crédits à option.",
+        "obligatoire": {
+          "min": 74,
+          "max": 74
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "études littéraires et intermédiales",
+      "segments": [
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 75 sont répartis de la façon suivante : 81 crédits obligatoires dont 72 crédits attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option.",
+        "obligatoire": {
+          "min": 75,
+          "max": 75
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "humanités numériques",
+      "segments": [
+        "78"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 78 sont répartis de la façon suivante : 78 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et 12 crédits à option.",
+        "obligatoire": {
+          "min": 78,
+          "max": 78
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "LCO 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Littérature",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ALL 60111",
+        "ALL 60112",
+        "ALL 6231",
+        "ALL 6242"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours ALL60111 et ALL60112 sont équivalents au cours ALL6011."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Enseignement de l'allemand langue étrangère",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ALL 6200",
+        "ALL 6300",
+        "ALL 6405",
+        "ALL 6415",
+        "ALL 6435"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Civilisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ALL 6322",
+        "ALL 6331",
+        "ALL 6332"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Séminaires à sujet ouvert",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 6505",
+        "FAS 6010",
+        "LLM 6000",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 72,
+          "max": 72
+        }
+      },
+      "regleBrut": "Obligatoire - 72 crédits.",
+      "cours": [
+        "LIT 7015",
+        "LIT 7070"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "LCO 6000",
+        "LCO 7610"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Traditions / résonances - groupe 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LCO 6360"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Traditions / résonances - groupe 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LCO 6447"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Traditions / résonances - groupe 3",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "LCO 6320"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FAS 6010",
+        "LCO 6111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Savoirs et médias",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "HNU 6000",
+        "LCO 6019",
+        "LCO 6100",
+        "LCO 6312",
+        "LCO 6333",
+        "LCO 6467",
+        "LCO 6469",
+        "LCO 6546",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANG 6505",
+        "LCO 6525",
+        "LLM 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Séminaires de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "LCO 6820",
+        "LCO 6830",
+        "LCO 6840",
+        "LCO 6870"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71I",
+      "cle": "71/71I",
+      "segment": "71",
+      "nom": "Lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "LCO 6610",
+        "LCO 6640Z",
+        "LCO 6661"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71J",
+      "cle": "71/71J",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "LIT 7005",
+        "LIT 7071"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "LCO 6000",
+        "LCO 7610"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Traditions et résonances - groupe 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LCO 6360"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Traditions et résonances - groupe 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LCO 6447"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Traditions et résonances - groupe 3",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "LCO 6320"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Méthodologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FAS 6010",
+        "LCO 6111"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73F",
+      "cle": "73/73F",
+      "segment": "73",
+      "nom": "Savoirs et médias",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "HNU 6000",
+        "LCO 6019",
+        "LCO 6100",
+        "LCO 6312",
+        "LCO 6333",
+        "LCO 6467",
+        "LCO 6469",
+        "LCO 6546",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73G",
+      "cle": "73/73G",
+      "segment": "73",
+      "nom": "Culture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANG 6505",
+        "LCO 6525",
+        "LLM 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73H",
+      "cle": "73/73H",
+      "segment": "73",
+      "nom": "Séminaires de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "LCO 6820",
+        "LCO 6830",
+        "LCO 6840",
+        "LCO 6870"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73I",
+      "cle": "73/73I",
+      "segment": "73",
+      "nom": "Lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "LCO 6610",
+        "LCO 6640Z",
+        "LCO 6661"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73J",
+      "cle": "73/73J",
+      "segment": "73",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "LIT 7005",
+        "LIT 7073"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "LCO 6000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Études de la langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ESP 6170",
+        "ESP 6180",
+        "ESP 6210",
+        "ESP 6300",
+        "ESP 6301"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Littérature espagnole classique et moderne",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ESP 6085",
+        "ESP 6091",
+        "ESP 6880"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Littérature hispano-américaine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ESP 6135",
+        "ESP 6145"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74E",
+      "cle": "74/74E",
+      "segment": "74",
+      "nom": "Séminaires à sujet ouvert",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANG 6505",
+        "ESP 6701",
+        "ESP 6702",
+        "ESP 6703",
+        "ESP 7510",
+        "ESP 7520",
+        "FAS 6010",
+        "LLM 6000",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74F",
+      "cle": "74/74F",
+      "segment": "74",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 72,
+          "max": 72
+        }
+      },
+      "regleBrut": "Obligatoire - 72 crédits.",
+      "cours": [
+        "LIT 7015",
+        "LIT 7074"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "LCO 6000",
+        "LCO 7610",
+        "PLU 6060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Traditions textuelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ANG 6505",
+        "ANG 6530",
+        "ESP 6145",
+        "FRA 6343",
+        "FRA 6350",
+        "FRA 6351",
+        "LCO 6100",
+        "LCO 6320",
+        "LCO 6525"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Savoirs et médias",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ALL 6231",
+        "ALL 6242",
+        "ANG 6740",
+        "CIN 6013",
+        "CIN 6050",
+        "COM 6205",
+        "COM 6331",
+        "HAR 6080",
+        "HAR 6082",
+        "HNU 6000",
+        "JEU 6002",
+        "LCO 6333",
+        "LCO 6469",
+        "LCO 6546"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Théories de la représentation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "FRA 6146",
+        "HAR 6055",
+        "LCO 6312",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75E",
+      "cle": "75/75E",
+      "segment": "75",
+      "nom": "Approches pluridisciplinaires et méthodologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "EAE 6004",
+        "FAS 6010",
+        "LCO 6610",
+        "LCO 6661",
+        "LLM 6000",
+        "PLU 6042"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours suivants ou, en accord avec le comité des études supérieures, tout autre séminaire pertinent. Les cours PLU 60421 et PLU 60422 sont équivalents au cours PLU 6042."
+      ]
+    },
+    {
+      "id": "75F",
+      "cle": "75/75F",
+      "segment": "75",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 72,
+          "max": 72
+        }
+      },
+      "regleBrut": "Obligatoire - 72 crédits.",
+      "cours": [
+        "LIT 7005",
+        "LIT 7077"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78A",
+      "cle": "78/78A",
+      "segment": "78",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "HNU 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78B",
+      "cle": "78/78B",
+      "segment": "78",
+      "nom": "Théorie et technique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 6740",
+        "COM 6421",
+        "EDN 6001",
+        "EDN 6002",
+        "FAS 6010",
+        "FRA 6730",
+        "HNU 6000",
+        "HNU 6051",
+        "HNU 6052",
+        "HNU 6053",
+        "HNU 6054",
+        "HNU 6055",
+        "HNU 6056",
+        "HNU 6057",
+        "HNU 6058",
+        "HNU 6059",
+        "HNU 6100",
+        "LCO 6546",
+        "MSL 6529",
+        "SCI 6203",
+        "SCI 6204",
+        "SCI 6304",
+        "SCI 6348",
+        "SCI 6370"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78C",
+      "cle": "78/78C",
+      "segment": "78",
+      "nom": "Traditions littéraires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ALL 6231",
+        "ALL 6242",
+        "ANG 6092",
+        "ANG 6130",
+        "ANG 6165",
+        "ANG 6185",
+        "ANG 6190",
+        "ANG 6430",
+        "ANG 6505",
+        "ANG 6530",
+        "ANG 6605",
+        "ANG 6650",
+        "ANG 6660",
+        "ANG 6670",
+        "ANG 6720",
+        "ESP 6085",
+        "ESP 6091",
+        "ESP 6135",
+        "ESP 6145",
+        "ESP 6880",
+        "LCO 6000",
+        "LCO 6019",
+        "LCO 6100",
+        "LCO 6111",
+        "LCO 6312",
+        "LCO 6333",
+        "LCO 6360",
+        "LCO 6447",
+        "LCO 6467",
+        "LCO 6469",
+        "LLM 6000",
+        "PLU 6060",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78D",
+      "cle": "78/78D",
+      "segment": "78",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "LIT 7005",
+        "LIT 7071"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 09 (A23)\nLe doctorat comporte 90 crédits répartis de la façon suivante : de 75 à 81 crédits obligatoires, parmi lesquels 72 à 75 crédits sont attribués à la recherche et à la rédaction d'une thèse, et de 9 à 15 crédits à option. Il est offert selon les six options suivantes :\n- l'option études allemandes (segment 70),\n- l'option littérature comparée et générale (segment 71),\n- l'option théorie et épistémologie de la littérature (segment 73),\n- l'option études hispaniques (segment 74),\n- l'option études littéraires et intermédiales (segment 75),\n- l'option humanités numériques (segment 78).",
+    "Segment 70 Propre à l'option études allemandes — Les crédits du segment 70 sont répartis de la façon suivante : 75 crédits obligatoires dont 72 crédits attribués à la recherche et à la rédaction d'une thèse et 15 crédits à option.",
+    "Segment 71 Propre à l'option littérature comparée et générale — Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option.",
+    "Segment 73 Propre à l'option théorie et épistémologie de la littérature — Les crédits du segment 73 sont répartis de la façon suivante : 81 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option.",
+    "Segment 74 Propre à l'option études hispaniques — Les crédits du segment 74 sont répartis de la façon suivante : 75 crédits obligatoires dont 72 crédits attribués à la recherche et à la rédaction d'une thèse et 15 crédits à option.",
+    "Segment 75 Propre à l'option études littéraires et intermédiales — Les crédits du segment 75 sont répartis de la façon suivante : 81 crédits obligatoires dont 72 crédits attribués à la recherche et à la rédaction d'une thèse et 9 crédits à option.",
+    "Segment 78 Propre à l'option humanités numériques — Les crédits du segment 78 sont répartis de la façon suivante : 78 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-litterature/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:36.478Z"
+}

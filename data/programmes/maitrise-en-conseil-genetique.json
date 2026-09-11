@@ -1,0 +1,114 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-conseil-genetique",
+  "nom": "Maîtrise en conseil génétique",
+  "orientation": null,
+  "segments": [
+    "85"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 42 crédits obligatoires, dont 24 crédits attribués à des stages, et 3 crédits à option.",
+    "obligatoire": {
+      "min": 42,
+      "max": 42
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "85A",
+      "cle": "85/85A",
+      "segment": "85",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "CGE 6001",
+        "CGE 6002",
+        "CGE 6003",
+        "CGE 6004",
+        "CGE 6009",
+        "CGE 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "85B",
+      "cle": "85/85B",
+      "segment": "85",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits",
+      "cours": [
+        "BCM 6023",
+        "BCM 6210",
+        "BIE 6001",
+        "BIE 6008",
+        "MSO 6011",
+        "MSO 6060",
+        "NSC 6035",
+        "PGM 6001",
+        "PHI 6520",
+        "PSY 6093",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "85C",
+      "cle": "85/85C",
+      "segment": "85",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "CGE 6020A",
+        "CGE 6020B",
+        "CGE 6021A",
+        "CGE 6021B",
+        "CGE 6022A",
+        "CGE 6022B",
+        "CGE 6023",
+        "CGE 6024A",
+        "CGE 6024B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A22)\nLa maîtrise comporte 45 crédits. Elle inclut des stages.\nAu moins deux trimestres consécutifs doivent être accomplis en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine.",
+    "Segment 85 — Les crédits sont répartis de la façon suivante : 42 crédits obligatoires, dont 24 crédits attribués à des stages, et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-conseil-genetique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:29.359Z"
+}

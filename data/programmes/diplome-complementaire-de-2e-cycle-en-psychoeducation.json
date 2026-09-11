@@ -1,0 +1,77 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "diplome-complementaire-de-2e-cycle-en-psychoeducation",
+  "nom": "Diplôme complémentaire de 2e cycle en psychoéducation",
+  "orientation": null,
+  "segments": [
+    "01"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Diplôme complémentaire",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Le diplôme complémentaire de 2e cycle comporte 27 crédits répartis de la façon suivante : 24 crédits obligatoires, dont 15 crédits attribués à un stage, et 3 crédits à option.",
+    "obligatoire": {
+      "min": 2,
+      "max": 2
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "PSE 6114",
+        "PSE 6308",
+        "PSE 6562",
+        "PSE 66091",
+        "PSE 66092"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Méthodologie de recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ETA 6512",
+        "PSE 6573"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)",
+    "Segment 01 — Le diplôme complémentaire de 2e cycle comporte 27 crédits répartis de la façon suivante : 24 crédits obligatoires, dont 15 crédits attribués à un stage, et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/diplome-complementaire-de-2e-cycle-en-psychoeducation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:35.416Z"
+}

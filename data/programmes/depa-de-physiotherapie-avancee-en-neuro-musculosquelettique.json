@@ -1,0 +1,124 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-de-physiotherapie-avancee-en-neuro-musculosquelettique",
+  "nom": "DEPA de physiothérapie avancée en neuro-musculosquelettique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de ce D.E.P.A. sont répartis de la façon suivante: 13 crédits obligatoires, 14 à 17 crédits à option, dont 11 crédits attribués à l'activité d'intégration, et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 13,
+      "max": 13
+    },
+    "option": {
+      "min": 14,
+      "max": 17
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire - 13 crédits.",
+      "cours": [
+        "PHT 6401",
+        "PHT 6402",
+        "PHT 6403",
+        "PHT 6404",
+        "PHT 7400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits",
+      "cours": [
+        "PHT 7404",
+        "REA 7000",
+        "SPU 7009",
+        "SPU 7201",
+        "SPU 7300",
+        "SPU 7504"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours en lien avec l'activité d'intégration du bloc 70D et avec l'approbation du responsable du programme d'études."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Activité d'intégration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Option - 11 crédits.",
+      "cours": [
+        "PHT 7401",
+        "PHT 7402",
+        "PHT 7403"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H20)\nLe diplôme d'études professionnelles approfondies (D.E.P.A.) comporte 30 crédits.",
+    "Segment 70 — Les crédits de ce D.E.P.A. sont répartis de la façon suivante: 13 crédits obligatoires, 14 à 17 crédits à option, dont 11 crédits attribués à l'activité d'intégration, et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-de-physiotherapie-avancee-en-neuro-musculosquelettique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:40.048Z"
+}

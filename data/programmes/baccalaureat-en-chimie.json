@@ -1,0 +1,670 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-chimie",
+  "nom": "Baccalauréat en chimie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "81",
+    "82",
+    "83"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 51,
+          "max": 51
+        }
+      },
+      "regleBrut": "Obligatoire - 51 crédits.",
+      "cours": [
+        "CHM 1201",
+        "CHM 1301",
+        "CHM 1302",
+        "CHM 1401",
+        "CHM 1402",
+        "CHM 1501",
+        "CHM 1502",
+        "CHM 1503",
+        "CHM 1510",
+        "CHM 1511",
+        "CHM 1602",
+        "CHM 2101",
+        "CHM 2103",
+        "CHM 2201",
+        "CHM 2320",
+        "CHM 2411",
+        "CHM 2420",
+        "CHM 2501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Cours avec stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CHM 3551",
+        "CHM 3552",
+        "CHM 3553",
+        "CHM 3554",
+        "CHM 3555",
+        "CHM 3556"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : maximum 6 crédits. Cheminement honor : maximum 3 crédits."
+      ]
+    },
+    {
+      "id": "01V",
+      "cle": "01/01V",
+      "segment": "01",
+      "nom": "Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CHM 4000",
+        "CHM 4100"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : 0 crédit. Cheminement honor : 6 crédits."
+      ]
+    },
+    {
+      "id": "01W",
+      "cle": "01/01W",
+      "segment": "01",
+      "nom": "Cheminement honor : formation avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CHM 6110",
+        "CHM 6140",
+        "CHM 6160",
+        "CHM 6221",
+        "CHM 6240",
+        "CHM 6310",
+        "CHM 6315",
+        "CHM 6330",
+        "CHM 6340",
+        "CHM 6365",
+        "CHM 6375",
+        "CHM 6381",
+        "CHM 6422",
+        "CHM 6450",
+        "CHM 6461",
+        "CHM 6462",
+        "CHM 6465",
+        "CHM 6492",
+        "CHM 6802",
+        "CHM 6810"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : 0 crédit. Cheminement honor : 3 crédits."
+      ]
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les crédits au choix ne sont pas de sigle CHM."
+      ]
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "CHM 2112",
+        "CHM 2231",
+        "CHM 2302",
+        "CHM 3305",
+        "CHM 3350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "Cours de laboratoire avancé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "CHM 3101",
+        "CHM 3115"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81C",
+      "cle": "81/81C",
+      "segment": "81",
+      "nom": "Spécialisation en chimie de la santé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "CHM 3112",
+        "CHM 3230",
+        "CHM 3331",
+        "CHM 3333",
+        "CHM 3340",
+        "CHM 3360"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 6 crédits, maximum 18 crédits. Cheminement honor : maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "81D",
+      "cle": "81/81D",
+      "segment": "81",
+      "nom": "Spécialisation en chimie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "CHM 2412",
+        "CHM 3103",
+        "CHM 3210",
+        "CHM 3402",
+        "CHM 3404",
+        "CHM 3450",
+        "CHM 3481",
+        "CHM 3483",
+        "CHM 3604",
+        "CHM 3605"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : maximum 12 crédits. Cheminement honor : maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "81E",
+      "cle": "81/81E",
+      "segment": "81",
+      "nom": "Spécialisation en chimie industrielle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CHM 3700",
+        "CHM 3715"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : maximum 6 crédits. Cheminement honor : 0 crédit."
+      ]
+    },
+    {
+      "id": "81F",
+      "cle": "81/81F",
+      "segment": "81",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1503",
+        "BCM 1531",
+        "BIO 1153",
+        "HOR 3200",
+        "MAT 1720",
+        "MAT 1951",
+        "MCB 1979",
+        "PHL 3200",
+        "PHM 2953",
+        "PHY 1961",
+        "PHY 2300",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "CHM 2112",
+        "CHM 3101",
+        "CHM 3103",
+        "CHM 3604",
+        "CHM 3605"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "Cours de laboratoire avancé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "CHM 3401",
+        "CHM 3606",
+        "CHM 3715"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82C",
+      "cle": "82/82C",
+      "segment": "82",
+      "nom": "Spécialisation en biophysicochimie et chimie verte",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "CHM 2302",
+        "CHM 2412",
+        "CHM 3112",
+        "CHM 3333",
+        "CHM 3360",
+        "CHM 3404",
+        "CHM 3483",
+        "CHM 3602"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 3 crédits, maximum 12 crédits. Cheminement honor : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "82D",
+      "cle": "82/82D",
+      "segment": "82",
+      "nom": "Spécialisation en chimie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "CHM 3210",
+        "CHM 3230",
+        "CHM 3340",
+        "CHM 3350",
+        "CHM 3402",
+        "CHM 3450",
+        "CHM 3481"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : maximum 12 crédits. Cheminement honor : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "82E",
+      "cle": "82/82E",
+      "segment": "82",
+      "nom": "Spécialisation en chimie industrielle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CHM 3700"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : maximum 3 crédits. Cheminement honor : 0 crédit."
+      ]
+    },
+    {
+      "id": "82F",
+      "cle": "82/82F",
+      "segment": "82",
+      "nom": "Formation complémentaire en sciences naturelles de l'environnement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1531",
+        "BIO 1153",
+        "BIO 1803",
+        "BIO 2041",
+        "BIO 2042",
+        "BIO 2043",
+        "BIO 2405",
+        "BIO 2820",
+        "BIO 3831",
+        "BIO 3839",
+        "BIO 3893",
+        "GEO 1130",
+        "GEO 1312",
+        "GEO 1532",
+        "GEO 1542",
+        "GEO 2122",
+        "GEO 2152",
+        "GEO 2512",
+        "GEO 2522",
+        "GEO 2533",
+        "GEO 3015",
+        "GEO 3152",
+        "GEO 3182",
+        "GEO 3312",
+        "GEO 3320",
+        "HOR 3200",
+        "IFT 1969",
+        "MAT 1720",
+        "MAT 1951",
+        "MCB 1979",
+        "MSN 1001",
+        "MSN 1002",
+        "MSN 2002",
+        "PHY 1961",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83A",
+      "cle": "83/83A",
+      "segment": "83",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "CHM 2112",
+        "CHM 2302",
+        "CHM 2412",
+        "CHM 3401",
+        "CHM 3405",
+        "CHM 3483"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83B",
+      "cle": "83/83B",
+      "segment": "83",
+      "nom": "Cours de laboratoire avancé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "CHM 2231",
+        "CHM 3101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83C",
+      "cle": "83/83C",
+      "segment": "83",
+      "nom": "Autres cours en chimie des matériaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "CHM 3210",
+        "CHM 3333",
+        "CHM 3402",
+        "CHM 3404",
+        "CHM 3450",
+        "CHM 3481"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 3 crédits, maximum 15 crédits. Cheminement honor : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "83D",
+      "cle": "83/83D",
+      "segment": "83",
+      "nom": "Spécialisation en chimie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "CHM 3103",
+        "CHM 3112",
+        "CHM 3230",
+        "CHM 3331",
+        "CHM 3340",
+        "CHM 3350",
+        "CHM 3360",
+        "CHM 3604",
+        "CHM 3605"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : maximum 9 crédits. Cheminement honor : maximum 6 crédits."
+      ]
+    },
+    {
+      "id": "83E",
+      "cle": "83/83E",
+      "segment": "83",
+      "nom": "Spécialisation en chimie industrielle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CHM 3700",
+        "CHM 3715"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : maximum 6 crédits. Cheminement honor : 0 crédit."
+      ]
+    },
+    {
+      "id": "83F",
+      "cle": "83/83F",
+      "segment": "83",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "ANG 1924",
+        "ANG 1926",
+        "ANG 1933",
+        "BCM 1531",
+        "BIN 1002",
+        "BIO 1153",
+        "HOR 3200",
+        "IFT 1931",
+        "IFT 1969",
+        "MAT 1340",
+        "MAT 1350",
+        "MAT 1720",
+        "MAT 1951",
+        "PHY 1961",
+        "PHY 2500",
+        "PHY 2900",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 18 (A25)\nLe baccalauréat comporte 90 crédits, répartis de la façon suivante : de 66 à 69 crédits obligatoires, de 18 à 21 crédits à options et de 3 crédits au choix. Il comprend un tronc commun (segment 01) et est offert selon 3 orientations :\n- chimie de la santé (segment 81).\n- chimie environnementale (segment 82)\n- chimie de l'énergie et des matériaux (segment 83)\nIl est offert en deux cheminements : cheminement régulier et cheminement honor.",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont répartis de la façon suivante :",
+    "Segment 01 Tronc commun — - en cheminement régulier : 51 crédits obligatoires, 0 à 6 crédits optionnels et 3 crédits au choix.",
+    "Segment 01 Tronc commun — - en cheminement honor : 51 crédits obligatoires et 9 à 12 crédits à option (dont 6 crédits dans le bloc 01V et 3 crédits dans le bloc 01W) et 3 crédits au choix.",
+    "Segment 81 Propre à l'orientation chimie de la santé — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 81 Propre à l'orientation chimie de la santé — - en cheminement régulier : 15 crédits obligatoires et 15 à 21 crédits à option.",
+    "Segment 81 Propre à l'orientation chimie de la santé — - en cheminement honor : 15 crédits obligatoires et 9 à 12 crédits à option.",
+    "Segment 81 Propre à l'orientation chimie de la santé — Le cours CHM de niveau 3000 du bloc 81A ou 81C suivi dans le cadre du cheminement honor, s'accompagne d'exigences additionnelles.",
+    "Segment 82 Propre à l'orientation chimie environnementale — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 82 Propre à l'orientation chimie environnementale — - en cheminement régulier : 15 crédits obligatoires et 15 à 21 crédits à option..",
+    "Segment 82 Propre à l'orientation chimie environnementale — - en cheminement honor : 15 crédits obligatoires et 6 à 12 crédits à option.",
+    "Segment 82 Propre à l'orientation chimie environnementale — Le cours CHM de niveau 3000 du bloc 82A ou 82C suivi dans le cadre du cheminement honor, s'accompagne d'exigences additionnelles.",
+    "Segment 83 Propre à l'orientation chimie de l'énergie et des matériaux — Les crédits de l'orientation sont répartis de la façon suivante :",
+    "Segment 83 Propre à l'orientation chimie de l'énergie et des matériaux — - en cheminement régulier : 18 crédits obligatoires et 12 à 18 crédits à option.",
+    "Segment 83 Propre à l'orientation chimie de l'énergie et des matériaux — - en cheminement honor : 18 crédits obligatoires et 6 à 9 crédits à option.",
+    "Segment 83 Propre à l'orientation chimie de l'énergie et des matériaux — Le cours CHM de niveau 3000 du bloc 83A ou 83C suivi dans le cadre du cheminement honor,",
+    "Segment 83 Propre à l'orientation chimie de l'énergie et des matériaux — s'accompagne d'exigences additionnelles."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-chimie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:22.971Z"
+}

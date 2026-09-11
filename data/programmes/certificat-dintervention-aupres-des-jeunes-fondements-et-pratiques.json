@@ -1,0 +1,150 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-dintervention-aupres-des-jeunes-fondements-et-pratiques",
+  "nom": "Certificat d'intervention auprès des jeunes : fondements et pratiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Ce programme totalise 9 crédits de cours obligatoires, 18 à 21 crédits de cours à option et 0 à 3 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 18,
+      "max": 21
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements de l'intervention",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "JES 1000",
+        "JES 1001",
+        "JES 1010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Intégration des apprentissages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "JES 3010",
+        "JES 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Pratiques de l'intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "JES 2005",
+        "JES 2006D",
+        "JES 2008",
+        "JES 2009",
+        "JES 2014Z",
+        "JES 2015D",
+        "JES 2015Y",
+        "JES 2015Z",
+        "JES 2016Z"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CRI 1511G",
+        "CRI 3401G",
+        "CRI 3900G",
+        "PSY 3012G",
+        "REL 2330",
+        "SME 2044",
+        "VIO 2009D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le cours au choix est suivi moyennant l'approbation du responsable de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (H17)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Ce programme totalise 9 crédits de cours obligatoires, 18 à 21 crédits de cours à option et 0 à 3 crédits de cours au choix.",
+    "Segment 70 — Le cours JES1000 doit être suivi en début de programme."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-dintervention-aupres-des-jeunes-fondements-et-pratiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:56.386Z"
+}

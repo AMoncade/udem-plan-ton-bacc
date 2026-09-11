@@ -1,0 +1,340 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-etudes-religieuses",
+  "nom": "Baccalauréat en études religieuses",
+  "orientation": null,
+  "segments": [
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Concepts fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "REL 1111",
+        "REL 1112",
+        "REL 1500"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Traditions spirituelles et religieuses",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "REL 1220",
+        "REL 1230",
+        "REL 1240",
+        "REL 1250",
+        "REL 1251"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Textes et histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 48
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 48 crédits.",
+      "cours": [
+        "AES 3800",
+        "REL 1130",
+        "REL 1510",
+        "REL 1520",
+        "REL 1930",
+        "REL 2140",
+        "REL 2233",
+        "REL 2240",
+        "REL 2250",
+        "REL 2255",
+        "REL 2270",
+        "REL 2310",
+        "REL 2320",
+        "REL 2360",
+        "REL 2380",
+        "REL 2520",
+        "REL 2610",
+        "REL 2700",
+        "REL 2710",
+        "REL 2720",
+        "REL 2732",
+        "REL 2733",
+        "REL 3221",
+        "REL 3234",
+        "REL 3600",
+        "REL 3970"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Théories et méthodes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 48
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 48 crédits.",
+      "cours": [
+        "AES 2800",
+        "REL 1320",
+        "REL 1330",
+        "REL 1340",
+        "REL 2311",
+        "REL 2340",
+        "REL 2350",
+        "REL 2410",
+        "REL 2440",
+        "REL 2980",
+        "REL 3310",
+        "REL 3340",
+        "REL 3350",
+        "REL 3920",
+        "REL 3930",
+        "REL 3980"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Pratiques, éthique et intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 33
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 33 crédits.",
+      "cours": [
+        "REL 2330",
+        "REL 2402",
+        "REL 2420",
+        "REL 2430",
+        "REL 2670",
+        "REL 3320",
+        "REL 3402",
+        "REL 3800",
+        "REL 3940",
+        "REL 3960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80F",
+      "cle": "80/80F",
+      "segment": "80",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "ETM 2200",
+        "GRC 1111",
+        "GRC 1121",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "REL 1720",
+        "REL 1721"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Ou tout autre cours de langue ancienne ou moderne jugé utile au cheminement de l'étudiant et approuvé par la direction des études de 1er cycle."
+      ]
+    },
+    {
+      "id": "80G",
+      "cle": "80/80G",
+      "segment": "80",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANT 2020",
+        "ANT 2830",
+        "ANT 3035",
+        "ANT 3875",
+        "ARA 1001",
+        "ETM 1400",
+        "GER 1020D",
+        "HGL 1021",
+        "HGL 1031",
+        "HOR 1200",
+        "HST 2111",
+        "HST 2128",
+        "HST 2621",
+        "HST 3108",
+        "JES 1000",
+        "LCO 1030",
+        "PHI 1400",
+        "PHI 1520",
+        "PHI 2870",
+        "PHI 2965",
+        "PHI 3870",
+        "PHI 3905",
+        "SOL 2050",
+        "SOL 2104",
+        "SVS 2378",
+        "SVS 3207",
+        "VIO 2015",
+        "VIO 2040Z"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80V",
+      "cle": "80/80V",
+      "segment": "80",
+      "nom": "Propre au Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cheminement régulier: 0 crédit; cheminement honor : 6 crédits. (Pour compléter le cheminement honor, les étudiants doivent réussir les cours REL 4000 et REL 4001)."
+      ]
+    },
+    {
+      "id": "80W",
+      "cle": "80/80W",
+      "segment": "80",
+      "nom": "Propre au cheminement honor : formation avancée 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "REL 6120",
+        "REL 6210",
+        "REL 6311"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier: 0 crédit; cheminement honor : 3 crédits"
+      ]
+    },
+    {
+      "id": "80X",
+      "cle": "80/80X",
+      "segment": "80",
+      "nom": "Cheminement honor: formation avancée 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "REL 6113",
+        "REL 6124",
+        "REL 6220"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier: 0 crédit; cheminement honor : 3 crédits. Un cours de niveau 6000 doit être pris parmi les cours suivants ou parmi les autres cours de niveau 6000 offerts par l'Institut. Il devra être approuvé par le directeur du programme."
+      ]
+    },
+    {
+      "id": "80Z",
+      "cle": "80/80Z",
+      "segment": "80",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un autre sigle que REL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (H26)\nLe Baccalauréat comporte 90 crédits.\nIl est offert en deux cheminements : cheminement régulier et cheminement honor.",
+    "Segment 80 — Les crédits du segment 80 sont répartis de la façon suivante :",
+    "Segment 80 — - en cheminement régulier : 24 crédits obligatoires, 60 crédits à option et 6 crédits de cours au choix.",
+    "Segment 80 — - en cheminement honor : 24 crédits obligatoires, 60 crédits à option (incluant 6 crédits dans le bloc 80V, 3 crédits dans le bloc 80W et 3 crédits dans le bloc 80X) et 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-etudes-religieuses/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:24.935Z"
+}

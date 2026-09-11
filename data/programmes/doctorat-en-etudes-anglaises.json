@@ -1,0 +1,152 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-etudes-anglaises",
+  "nom": "Doctorat en études anglaises",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 78,
+      "max": 78
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ANG 6032"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les étudiants qui ont suivi ce cours à la maîtrise doivent le remplacer par un autre cours."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Littératures, cultures, genres et perspectives historiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANG 6092",
+        "ANG 6130",
+        "ANG 6165",
+        "ANG 6185",
+        "ANG 6190",
+        "ANG 6430",
+        "ANG 6480",
+        "ANG 6505",
+        "ANG 6530",
+        "ANG 6605",
+        "ANG 6650",
+        "ANG 6660",
+        "ANG 6670",
+        "ANG 6720",
+        "FAS 6010",
+        "HNU 6000",
+        "LLM 6000",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours ANG de niveau 6000 de 3 crédits chacun ou tout autre cours de niveau 6000 doivent être choisis avec l'approbation du responsable du doctorat. Le cours ANG6405 sera imposé à tout étudiant dont la connaissance de la littérature canadienne est jugée insuffisante."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Séminaires de lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANG 6090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Séminaires de professeurs invités",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 68951",
+        "ANG 68952",
+        "ANG 6896"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Obligatoire ‐ 75 crédits."
+      },
+      "regleBrut": "Obligatoire ‐ 75 crédits.",
+      "cours": [
+        "ANG 7910",
+        "ANG 79211",
+        "ANG 79212",
+        "ANG 7930"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A21)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, et 12 crédits à option. Les cours sont choisis avec l'approbation du responsable du doctorat."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-etudes-anglaises/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:24.260Z"
+}

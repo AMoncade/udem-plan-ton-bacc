@@ -1,0 +1,286 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-cinema",
+  "nom": "Baccalauréat en cinéma",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du Baccalauréat sont répartis de la façon suivante : 45 crédits obligatoires, 42 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 45,
+      "max": 45
+    },
+    "option": {
+      "min": 42,
+      "max": 42
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Étude du cinéma: cours fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 1104",
+        "CIN 2102",
+        "CIN 2103",
+        "CIN 2104",
+        "CIN 3102"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Pratique du cinéma : cours fondamentaux",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "CIN 1002",
+        "CIN 1003",
+        "CIN 1004",
+        "CIN 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Approches spécifiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "CIN 1105",
+        "CIN 1106",
+        "CIN 1107",
+        "CIN 2105",
+        "CIN 2106",
+        "CIN 2107",
+        "CIN 2108",
+        "CIN 2109",
+        "CIN 2125",
+        "CIN 3103",
+        "CIN 3104",
+        "CIN 3106",
+        "CIN 3160"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le cours CIN 21171 est équivalent au cours CIN 2117A. Le cours CIN 21061 est équivalent au cours CIN 2106."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Approfondissement pratiques cinématographiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Maximum 21 crédits.",
+      "cours": [
+        "CIN 2003",
+        "CIN 30011",
+        "CIN 30012",
+        "CIN 3002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Approches interdisciplinaires ou intermédiales du cinéma",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "CIN 1108",
+        "CIN 1109",
+        "CIN 1110",
+        "CIN 1121",
+        "CIN 2110",
+        "CIN 2111",
+        "CIN 2112",
+        "CIN 2113",
+        "CIN 2116",
+        "CIN 2120",
+        "CIN 2122",
+        "CIN 2123",
+        "CIN 2124",
+        "CIN 2200",
+        "JEU 1003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Ouvertures aux arts et lettres",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ART 1800",
+        "CIN 2127",
+        "FRA 1027",
+        "FRA 1160",
+        "FRA 1161",
+        "FRA 2131",
+        "FRA 2210",
+        "HAR 1032",
+        "HAR 1145",
+        "HAR 1167",
+        "HAR 1200",
+        "HAR 1210",
+        "HAR 1610",
+        "HAR 2185",
+        "HAR 2195",
+        "HAR 2460",
+        "HAR 3185",
+        "HAR 3220",
+        "HAR 3900",
+        "MUL 1246",
+        "MUL 2109",
+        "MUL 2119",
+        "MUL 3333X",
+        "MUS 1217",
+        "MUS 2325",
+        "MUS 2327",
+        "MUS 2328",
+        "SCI 2955"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Ouvertures aux sciences humaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANT 1511",
+        "ANT 3141",
+        "COM 1300",
+        "COM 1571",
+        "COM 1600",
+        "COM 2540",
+        "COM 2710",
+        "COM 2720",
+        "ECN 1000",
+        "ECN 1700",
+        "GEO 1212",
+        "HST 1042",
+        "HST 2013",
+        "HST 2371",
+        "HST 2904",
+        "LCO 1001",
+        "LCO 2030",
+        "LCO 2100",
+        "LCO 3010",
+        "PHI 1130",
+        "PHI 1255",
+        "PHI 1600",
+        "POL 1954",
+        "POL 2102",
+        "PSY 1045",
+        "PSY 2055",
+        "PSY 2065",
+        "REL 1111",
+        "REL 1930",
+        "SOL 1150",
+        "SOL 2107",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A13)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du Baccalauréat sont répartis de la façon suivante : 45 crédits obligatoires, 42 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-cinema/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:25.469Z"
+}

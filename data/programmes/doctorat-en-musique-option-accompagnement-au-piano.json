@@ -1,0 +1,163 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-musique-option-accompagnement-au-piano",
+  "nom": "Doctorat en musique, option Accompagnement au piano",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du tronc commun sont répartis de la façon suivante : 79 crédits obligatoire, dont 60 crédits attribués à des récitals, et 11 crédits à option.",
+    "obligatoire": {
+      "min": 79,
+      "max": 79
+    },
+    "option": {
+      "min": 11,
+      "max": 11
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 19,
+          "max": 19
+        }
+      },
+      "regleBrut": "Obligatoire - 19 crédits.",
+      "cours": [
+        "MIN 7042",
+        "MUI 7394A",
+        "MUI 7394B",
+        "MUI 7394C",
+        "MUI 7394D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EMU 7310",
+        "EMU 7312",
+        "MUS 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours de 3 crédits du niveau des études supérieures choisi parmi un ensemble de cours, séminaires, travaux et lectures dirigées ou sujets spéciaux offerts chaque année."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Récital final",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "MIN 7945",
+        "MIN 7958",
+        "MIN 7959",
+        "MIN 7960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "MUE 7103",
+        "MUE 7104",
+        "MUE 7105",
+        "MUE 7106",
+        "MUE 7241",
+        "MUE 7242",
+        "MUE 7561"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - 8 crédits.",
+      "cours": [
+        "MIN 6040",
+        "MIN 6041",
+        "MIN 6043",
+        "MUE 7002",
+        "MUE 7101",
+        "MUE 7102",
+        "MUE 7411",
+        "MUE 7412",
+        "MUE 7562",
+        "MUE 7563",
+        "MUE 7564",
+        "MUE 7565",
+        "MUE 7621",
+        "MUE 7622"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H19)\nLe doctorat comporte 90 crédits.",
+    "Segment 01 Tronc commun — Les crédits du tronc commun sont répartis de la façon suivante : 79 crédits obligatoire, dont 60 crédits attribués à des récitals, et 11 crédits à option.",
+    "Segment 70 Concentration accompagnement instrumental — Les crédits de la concentration sont répartis de la façon suivante : 8 crédits obligatoire.",
+    "Segment 71 Concentration accompagnement vocal — Les crédits de la concentration sont répartis de la façon suivante : 8 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-musique-option-accompagnement-au-piano/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:45.759Z"
+}

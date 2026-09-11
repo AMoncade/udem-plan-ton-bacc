@@ -1,0 +1,134 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-musique-option-composition-et-creation-sonore",
+  "nom": "Doctorat en musique, option Composition et création sonore",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires, dont 63 crédits attribués à un projet de composition et création sonore, et 9 crédits à option.",
+    "obligatoire": {
+      "min": 81,
+      "max": 81
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Tutorat",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "MCT 7130A",
+        "MCT 7130B",
+        "MCT 7130C",
+        "MCT 7130D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Séminaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option – Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l'accord de la direction de recherche."
+      ]
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Cours et ateliers",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option – Maximum 3 crédits.",
+      "cours": [
+        "EMU 7310",
+        "EMU 7312",
+        "MIN 7491",
+        "MUE 7491",
+        "MUE 7492",
+        "MUE 7493",
+        "MUE 7494",
+        "MUE 7495",
+        "MUE 7496",
+        "MUS 4101",
+        "MUS 4102",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106",
+        "MUS 6316"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Projet de recherche et de création",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 63,
+          "max": 63
+        }
+      },
+      "regleBrut": "Obligatoire - 63 crédits.",
+      "cours": [
+        "MCT 7930",
+        "MCT 7945",
+        "MCT 7962",
+        "MUS 7411",
+        "MUS 7412",
+        "MUS 7413",
+        "MUS 7414"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A26)\nLe doctorat comporte 90 crédits. Il est offert selon l'option suivante :\n- Composition et création sonore (Segment 72)",
+    "Segment 72 Propre à l'option Composition et création sonore — Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires, dont 63 crédits attribués à un projet de composition et création sonore, et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-musique-option-composition-et-creation-sonore/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:47.311Z"
+}

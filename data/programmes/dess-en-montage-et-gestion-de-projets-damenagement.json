@@ -1,0 +1,114 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-montage-et-gestion-de-projets-damenagement",
+  "nom": "DESS en montage et gestion de projets d'aménagement",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires, de 9 à 12 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 9,
+      "max": 12
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "AME 6043",
+        "AME 6046",
+        "AME 6070",
+        "AME 6916"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Afin de compléter ce bloc, vous devrez vous inscrire aux cours HEC6101 - Direction et leadership des projets (440999) et HEC6112A - Le management: les milieux et la pratique (443594), ou tout autre cours jugé pertinent approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 12 crédits.",
+      "cours": [
+        "AME 6047",
+        "AME 6054",
+        "AME 6210",
+        "AME 6311",
+        "AME 6330",
+        "AME 6431",
+        "AME 6850",
+        "AME 6917",
+        "AME 6920",
+        "AME 6990",
+        "EDD 6070",
+        "PHI 6990",
+        "URB 6287",
+        "URB 6751",
+        "URB 6772",
+        "URB 6778"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans le répertoire de la Maîtrise en aménagement, dans les autres répertoires de la Faculté de l'aménagement, dans ceux de l'Université de Montréal ou des autres universités montréalaises."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (A20)\nLe D.E.S.S. comporte un minimum de 30 crédits dont 27 doivent être du niveau des études supérieures.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires, de 9 à 12 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-montage-et-gestion-de-projets-damenagement/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:43.457Z"
+}

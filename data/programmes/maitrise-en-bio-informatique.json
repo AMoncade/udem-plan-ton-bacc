@@ -1,0 +1,427 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-bio-informatique",
+  "nom": "Maîtrise en bio-informatique",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "avec mémoire",
+      "segments": [
+        "70",
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "avec stage",
+      "segments": [
+        "70",
+        "71"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "BIE 6046",
+        "BIN 60051",
+        "BIN 60052"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Bio-informatique génomique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "BCM 6210",
+        "BIN 6000",
+        "BIN 6002",
+        "PGM 6078"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Bio-informatique évolutive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIO 6245",
+        "MSO 6018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Bio-informatique stat. et apprentissage machine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "BIN 6012",
+        "IFT 6132",
+        "IFT 6135",
+        "IFT 6269",
+        "IFT 6390"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Bio-informatique structurale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "BCM 6200",
+        "BIN 6001",
+        "BIN 6003",
+        "CHM 6330"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Bio-informatique des systèmes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIM 6064C",
+        "GBM 6106",
+        "GBM 6118"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BCM 6071",
+        "BCM 6100",
+        "IFT 6150",
+        "IFT 6255",
+        "IFT 6285",
+        "IFT 6370",
+        "IFT 6575",
+        "PHY 6940"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Choix - Maximum 4 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un/des cours parmi la banque de cours de cycles supérieurs de l'Université de Montréal."
+      ]
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "BIN 6008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Obligatoire - 1 crédit.",
+      "cours": [
+        "BIE 6046"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Bio-informatique génomique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 17
+        }
+      },
+      "regleBrut": "Option - Maximum 17 crédits.",
+      "cours": [
+        "BCM 6210",
+        "BIN 6000",
+        "BIN 6002",
+        "PGM 6078"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Bio-informatique évolutive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 7
+        }
+      },
+      "regleBrut": "Option - Maximum 7 crédits.",
+      "cours": [
+        "BIO 6245",
+        "MSO 6018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Bio-informatique stat. et apprentissage machine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 16
+        }
+      },
+      "regleBrut": "Option - Maximum 16 crédits.",
+      "cours": [
+        "IFT 6132",
+        "IFT 6135",
+        "IFT 6269",
+        "IFT 6390"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Bio-informatique structurale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 13
+        }
+      },
+      "regleBrut": "Option - Maximum 13 crédits.",
+      "cours": [
+        "BCM 6200",
+        "BIN 6001",
+        "BIN 6003",
+        "CHM 6330"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Bio-informatique des systèmes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "BIM 6064C",
+        "GBM 6106",
+        "GBM 6118"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 14
+        }
+      },
+      "regleBrut": "Option - Maximum 14 crédits.",
+      "cours": [
+        "BCM 6071",
+        "BCM 6100",
+        "BIN 60051",
+        "BIN 60052",
+        "IFT 6150",
+        "IFT 6255",
+        "IFT 6285",
+        "IFT 6370",
+        "IFT 6575",
+        "PHY 6940"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Choix - Maximum 4 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un/des cours parmi la banque de cours de cycles supérieurs de l'Université de Montréal."
+      ]
+    },
+    {
+      "id": "71I",
+      "cle": "71/71I",
+      "segment": "71",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 22,
+          "max": 22
+        }
+      },
+      "regleBrut": "Obligatoire - 22 crédits.",
+      "cours": [
+        "BIN 6007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A19)\nLa maîtrise comporte 45 crédits. Elle est offerte selon deux cheminements :\n- Cheminement avec mémoire (segment 70),\n- Cheminement avec stage (segment 71).",
+    "Segment 70 Propre au cheminement avec Mémoire — Les crédits du cheminement sont répartis de la façon suivante : 33 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, de 8 à 12 crédits à option, dont au minimum deux cours de sigle BIN, et de 0 à 4 crédits de cours au choix.",
+    "Segment 71 Propre au cheminement avec Stage — Les crédits du cheminement sont répartis de la façon suivante : 23 crédits de cours obligatoires dont 22 crédits attribués à des stages, de 18 à 22 crédits à option, dont au moins deux cours BIN, et un maximum de 4 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-bio-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:06.911Z"
+}

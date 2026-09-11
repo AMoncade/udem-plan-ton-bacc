@@ -1,0 +1,167 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-informatique-appliquee-campus-brossard",
+  "nom": "Certificat en informatique appliquée - Campus Brossard",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : de 24 à 30 crédits à option et, au maximum, 6 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 24,
+      "max": 30
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Langages de programmation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "IFT 1166",
+        "IFT 1170",
+        "IFT 1175",
+        "IFT 1179",
+        "IFT 1810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Compléments d'informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "IFT 1155",
+        "IFT 1169",
+        "IFT 1176",
+        "IFT 2810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Administration des systèmes informatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "IFT 2821",
+        "IFT 2830",
+        "IFT 3820",
+        "IFT 3830"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Multimédia",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Maximum 21 crédits.",
+      "cours": [
+        "IFT 1119",
+        "IFT 1135",
+        "IFT 1941",
+        "IFT 2200",
+        "IFT 2720",
+        "IFT 2740"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Programmation internet",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Maximum 18 crédits.",
+      "cours": [
+        "IFT 1142",
+        "IFT 1144",
+        "IFT 1147",
+        "IFT 1148",
+        "IFT 1152"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle IFT."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H24)\nLe certificat comporte 30 crédits.",
+    "Segment 72 — Les crédits du certificat sont répartis de la façon suivante : de 24 à 30 crédits à option et, au maximum, 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-informatique-appliquee-campus-brossard/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:49.675Z"
+}

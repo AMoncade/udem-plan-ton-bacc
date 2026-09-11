@@ -1,0 +1,598 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "internat-de-perfectionnement-en-sciences-appliquees-veterinaires",
+  "nom": "Internat de perfectionnement en sciences appliquées vétérinaires",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "72",
+    "73",
+    "74",
+    "78",
+    "79",
+    "80",
+    "81",
+    "82",
+    "83"
+  ],
+  "orientations": [
+    {
+      "nom": "médecine des animaux de compagnie",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "médecine équine",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "médecine porcine",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "médecine zoologique",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "ambulatoire équin",
+      "segments": [
+        "01",
+        "78"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "médecine et chirurgie des animaux de la ferme",
+      "segments": [
+        "01",
+        "79",
+        "80",
+        "81"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "médecine des animaux de la ferme et équine",
+      "segments": [
+        "01",
+        "82",
+        "83"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "Internat",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "MMV 6401A",
+        "MMV 6401B",
+        "MMV 6474"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Option - 40 crédits.",
+      "cours": [
+        "MEV 6406A",
+        "MEV 6406B",
+        "MEV 6406C",
+        "MEV 6406D",
+        "MEV 6406J",
+        "MEV 6406K",
+        "MEV 6407A",
+        "MEV 6407B",
+        "MEV 6407C",
+        "MEV 6407D",
+        "MEV 6407G",
+        "MEV 6407H",
+        "MEV 6407J",
+        "MEV 6407K",
+        "MEV 6408D",
+        "MEV 6408E",
+        "MEV 6408F",
+        "MEV 6408G",
+        "MEV 6408H",
+        "MEV 6411A",
+        "MEV 6412A",
+        "MEV 6412B",
+        "MEV 6413A",
+        "MEV 6413B",
+        "MEV 6413C",
+        "MEV 6413D",
+        "MEV 6419A",
+        "MEV 6419B",
+        "MEV 6422A",
+        "MEV 6422B",
+        "MEV 6424A",
+        "MEV 6424B",
+        "MEV 6451A",
+        "MEV 6451B",
+        "MEV 6451C",
+        "MEV 6451D",
+        "MEV 6451E",
+        "MEV 6452A",
+        "MEV 6452B",
+        "MEV 6452C",
+        "MEV 6452D",
+        "MEV 6452E",
+        "MEV 6452F",
+        "MEV 6453A",
+        "MEV 6453B",
+        "MEV 6453C",
+        "MEV 6453D",
+        "MEV 6453E",
+        "MEV 6453F",
+        "MEV 6465A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Option - 40 crédits.",
+      "cours": [
+        "MEV 6403A",
+        "MEV 6403B",
+        "MEV 6403C",
+        "MEV 6403D",
+        "MEV 6403K",
+        "MEV 6404A",
+        "MEV 6404B",
+        "MEV 6404C",
+        "MEV 6404D",
+        "MEV 6404K",
+        "MEV 6405A",
+        "MEV 6405B",
+        "MEV 6405G",
+        "MEV 6405H",
+        "MEV 6414A",
+        "MEV 6414B",
+        "MEV 6414C",
+        "MEV 6414D",
+        "MEV 6420A",
+        "MEV 6420B",
+        "MEV 6420C",
+        "MEV 6420D",
+        "MEV 6420E",
+        "MEV 6420F",
+        "MEV 6457A",
+        "MEV 6457B",
+        "MEV 6457C",
+        "MEV 6457D",
+        "MEV 6457E",
+        "MEV 6457F",
+        "MEV 6458A",
+        "MEV 6458B",
+        "MEV 6458C"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Obligatoire - 40 crédits.",
+      "cours": [
+        "MMV 6463L",
+        "MMV 6463M",
+        "PTM 6461E",
+        "PTM 6461F",
+        "PTM 6461G",
+        "PTM 6461H",
+        "PTM 6461J",
+        "PTM 6461K"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Option - 40 crédits.",
+      "cours": [
+        "MEV 6416A",
+        "MEV 6416B",
+        "MEV 6416C",
+        "MEV 6416D",
+        "MEV 6416E",
+        "MEV 6416F",
+        "MEV 6447A",
+        "MEV 6447B",
+        "MEV 6447C",
+        "MEV 6447D",
+        "MEV 6447E",
+        "MEV 6447F",
+        "MEV 6447G",
+        "MEV 6447H",
+        "MEV 6447J",
+        "MEV 6447K",
+        "MEV 6450A",
+        "MEV 6450B",
+        "MEV 6450C",
+        "MEV 6450D",
+        "MEV 6450E",
+        "MEV 6450F",
+        "MEV 6450G",
+        "MEV 6450H",
+        "MEV 6450J",
+        "MEV 6450K",
+        "PTM 6453A",
+        "PTM 6453B",
+        "PTM 6458C",
+        "PTM 6458D",
+        "PTM 6458E",
+        "PTM 6458F"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "78A",
+      "cle": "78/78A",
+      "segment": "78",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Obligatoire - 40 crédits.",
+      "cours": [
+        "MEV 6457A",
+        "MEV 6457B",
+        "MEV 6457C",
+        "MEV 6457D",
+        "MEV 6457E",
+        "MEV 6457F",
+        "MEV 6457G",
+        "MEV 6457H",
+        "MEV 6457I",
+        "MEV 6457J",
+        "MEV 6457K",
+        "MEV 6457L",
+        "MEV 6457M",
+        "MEV 6457N",
+        "MEV 6457O",
+        "MEV 6457P",
+        "MEV 6457Q",
+        "MEV 6457R",
+        "MEV 6457S",
+        "MEV 6457T"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "79A",
+      "cle": "79/79A",
+      "segment": "79",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Option - 40 crédits.",
+      "cours": [
+        "MEV 6402A",
+        "MEV 6402B",
+        "MEV 6402C",
+        "MEV 6421A",
+        "MEV 6421B",
+        "MEV 6421C",
+        "MEV 6421D",
+        "MEV 6421E",
+        "MEV 6421F",
+        "MEV 6421G",
+        "MEV 6455A",
+        "MEV 6456A",
+        "MEV 6456B",
+        "MEV 6456C",
+        "MEV 6456D",
+        "MEV 6456E",
+        "MEV 6456F",
+        "MEV 6456G",
+        "MEV 6456H",
+        "MEV 6456I",
+        "MEV 6456J",
+        "MEV 6474A",
+        "MEV 6474B",
+        "MEV 6474C",
+        "MEV 6474D",
+        "MEV 6474E",
+        "MEV 6474F",
+        "MEV 6474G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Option - 40 crédits.",
+      "cours": [
+        "MEV 6400A",
+        "MEV 6400B",
+        "MEV 6400C",
+        "MEV 6400D",
+        "MEV 6400E",
+        "MEV 6400F",
+        "MEV 6400G",
+        "MEV 6400H",
+        "MEV 6400I",
+        "MEV 6400J",
+        "MEV 6400K",
+        "MEV 6400L",
+        "MEV 6401A",
+        "MEV 6401B",
+        "MEV 6401C",
+        "MEV 6401D",
+        "MEV 6401E",
+        "MEV 6401F",
+        "MEV 6401G",
+        "MEV 6401H",
+        "MEV 6401I",
+        "MEV 6401J",
+        "MEV 6401K"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Option - 40 crédits.",
+      "cours": [
+        "MEV 6400A",
+        "MEV 6400B",
+        "MEV 6400C",
+        "MEV 6400D",
+        "MEV 6400E",
+        "MEV 6400F",
+        "MEV 6400G",
+        "MEV 6400H",
+        "MEV 6400J",
+        "MEV 6400K",
+        "MEV 6401A",
+        "MEV 6401B",
+        "MEV 6401C",
+        "MEV 6401D",
+        "MEV 6401E",
+        "MEV 6401F",
+        "MEV 6401G",
+        "MEV 6401H",
+        "MEV 6401I",
+        "MEV 6401J",
+        "MEV 6401K",
+        "MEV 6402A",
+        "MEV 6402B",
+        "MEV 6402C",
+        "MEV 6402D",
+        "MEV 6402E",
+        "MEV 6402F",
+        "MEV 6402G",
+        "MEV 6402H",
+        "MEV 6421A",
+        "MEV 6421B",
+        "MEV 6421C",
+        "MEV 6421D",
+        "MEV 6421E",
+        "MEV 6421F",
+        "MEV 6421G",
+        "MEV 6455A",
+        "MEV 6456A",
+        "MEV 6456B",
+        "MEV 6456C",
+        "MEV 6456D",
+        "MEV 6456E",
+        "MEV 6456F",
+        "MEV 6456G",
+        "MEV 6456H",
+        "MEV 6456I",
+        "MEV 6456J",
+        "MEV 6474A",
+        "MEV 6474B",
+        "MEV 6474C",
+        "MEV 6474D",
+        "MEV 6474E",
+        "MEV 6474F",
+        "MEV 6474G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Obligatoire - 40 crédits.",
+      "cours": [
+        "MEV 6456A",
+        "MEV 6456B",
+        "MEV 6456C",
+        "MEV 6456D",
+        "MEV 6456E",
+        "MEV 6456F",
+        "MEV 6456G",
+        "MEV 6456H",
+        "MEV 6456I",
+        "MEV 6456J",
+        "MEV 6457A",
+        "MEV 6457B",
+        "MEV 6457C",
+        "MEV 6457D",
+        "MEV 6457E",
+        "MEV 6457F",
+        "MEV 6457G",
+        "MEV 6457H",
+        "MEV 6457I",
+        "MEV 6457J"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83A",
+      "cle": "83/83A",
+      "segment": "83",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 40,
+          "max": 40
+        }
+      },
+      "regleBrut": "Option - 40 crédits.",
+      "cours": [
+        "MEV 6400A",
+        "MEV 6400B",
+        "MEV 6400C",
+        "MEV 6400D",
+        "MEV 6400E",
+        "MEV 6400F",
+        "MEV 6400G",
+        "MEV 6400H",
+        "MEV 6401A",
+        "MEV 6401B",
+        "MEV 6401C",
+        "MEV 6401D",
+        "MEV 6401E",
+        "MEV 6401F",
+        "MEV 6401G",
+        "MEV 6401H",
+        "MEV 6403A",
+        "MEV 6403B",
+        "MEV 6403C",
+        "MEV 6403D",
+        "MEV 6403K",
+        "MEV 6404A",
+        "MEV 6404B",
+        "MEV 6404C",
+        "MEV 6404D",
+        "MEV 6404K"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (E23)\nLe certificat comporte 45 crédits répartis de la façon suivante : de 5 à 45 crédits obligatoires et de 0 à 40 crédits à option. Il inclut un tronc commun (segment 01) et est offert selon les sept options suivantes:\n- option médecine des animaux de compagnie (segment 70)\n- option médecine équine (segment 72)\n- option médecine porcine (segment 73)\n- option médecine zoologique (segment 74)\n- option ambulatoire équin (segment 78)\n- option médecine et chirurgie des animaux de la ferme : pratique ambulatoire (segment 79)\n- option médecine et chirurgie des animaux de la ferme : pratique hospitalière (segment 80)\n- option médecine et chirurgie des animaux de la ferme : pratiques ambulatoire et hospitalière (segment 81)\n- option médecine des animaux de la ferme et équine : pratique ambulatoire (segment 82)\n- option médecine des animaux de la ferme et équine : pratique hospitalière (segment 83)",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont obligatoires.",
+    "Segment 70 Propre à l'option médecine des animaux de compagnie — Le segment 70 comporte 40 crédits à option.",
+    "Segment 72 Propre à l'option médecine équine — Le segment 72 comporte 40 crédits à option.",
+    "Segment 73 Propre à l'option médecine porcine — Le segment 73 comporte 40 crédits obligatoires.",
+    "Segment 74 Propre à l'option médecine zoologique — Le segment 74 comporte 40 crédits à option.",
+    "Segment 78 Propre à l'option ambulatoire équin — Le segment 78 comporte 40 crédits obligatoires.",
+    "Segment 79 Propre à l'option méd. et chir./animaux /ferme : pratique ambulatoire — Le segment 79 comporte 40 crédits à option.",
+    "Segment 80 Propre à l'option méd. et chir./animaux/ferme: pratique hospitalière — Le segment 80 comporte 40 crédits à option.",
+    "Segment 81 Propre à l'option méd. et chir./animaux/ferme: prat. ambul./hospit. — Le segment 81 comporte 40 crédits à option.",
+    "Segment 82 Propre à l'option médecine des animaux/ferme et équine : prat. ambul. — Le segment 82 comporte 40 crédits obligatoires.",
+    "Segment 83 Propre à l'option médecine des animaux/ferme et équine : prat. hospi. — Le segment 83 comporte 40 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/internat-de-perfectionnement-en-sciences-appliquees-veterinaires/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:42.245Z"
+}

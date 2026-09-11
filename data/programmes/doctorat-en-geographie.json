@@ -1,0 +1,122 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-geographie",
+  "nom": "Doctorat en géographie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 3 à 9 crédits à option et un maximum de 6 crédits au choix.",
+    "obligatoire": {
+      "min": 81,
+      "max": 81
+    },
+    "option": {
+      "min": 3,
+      "max": 9
+    },
+    "choix": {
+      "min": 0,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "GEO 6100",
+        "GEO 6102",
+        "GEO 6142",
+        "GEO 6148",
+        "GEO 6149",
+        "GEO 6157",
+        "GEO 6193",
+        "GEO 6200",
+        "GEO 6201",
+        "GEO 6202",
+        "GEO 6204",
+        "GEO 6205",
+        "GEO 6293",
+        "GEO 6302",
+        "GEO 6303",
+        "GEO 6315",
+        "GEO 6341",
+        "GEO 6343",
+        "GEO 6352",
+        "GEO 6360",
+        "GEO 6361",
+        "GEO 6393"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis parmi les cours de cycles supérieurs de l'université ou des cours de même niveau d'autres universités."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 81,
+          "max": 81
+        }
+      },
+      "regleBrut": "Obligatoire - 81 crédits.",
+      "cours": [
+        "GEO 7031",
+        "GEO 7032",
+        "GEO 7033",
+        "GEO 7034",
+        "GEO 7035",
+        "GEO 7036",
+        "GEO 7037",
+        "GEO 7039"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A20)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 3 à 9 crédits à option et un maximum de 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-geographie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:27.687Z"
+}

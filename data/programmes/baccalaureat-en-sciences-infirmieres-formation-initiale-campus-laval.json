@@ -1,0 +1,233 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-laval",
+  "nom": "Baccalauréat en sciences infirmières - Formation initiale - Campus Laval",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80",
+    "81"
+  ],
+  "orientations": [
+    {
+      "nom": "clinique",
+      "segments": [
+        "01",
+        "80"
+      ],
+      "exigences": {
+        "brut": "- L'orientation clinique comportant 105 crédits comprend les segments 01 et 80 avec 98 crédits obligatoires et 7 à option",
+        "obligatoire": {
+          "min": 80,
+          "max": 80
+        },
+        "option": {
+          "min": 7,
+          "max": 7
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "cheminement international",
+      "segments": [
+        "01",
+        "81"
+      ],
+      "exigences": {
+        "brut": "- L'orientation cheminement international comportant 106 crédits comprend les segments 01 et 81 avec 99 crédits obligatoires et 7 à option",
+        "obligatoire": {
+          "min": 81,
+          "max": 81
+        },
+        "option": {
+          "min": 7,
+          "max": 7
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": null,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "- Cours de la première année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 35,
+          "max": 35
+        }
+      },
+      "regleBrut": "Obligatoire - 35 crédits.",
+      "cours": [
+        "CSS 1900",
+        "SOI 1613",
+        "SOI 1624",
+        "SOI 1702",
+        "SOI 1705",
+        "SOI 1803",
+        "SOI 1814",
+        "SOI 1823",
+        "SOI 1833",
+        "SOI 1903",
+        "SOI 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "- Cours de la deuxième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "CSS 2900",
+        "SOI 2514",
+        "SOI 2515",
+        "SOI 2604",
+        "SOI 2723",
+        "SOI 2802",
+        "SOI 2824",
+        "SOI 2904",
+        "SOI 2913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "- Cours de la deuxième année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Option - 5 crédits.",
+      "cours": [
+        "SOI 2713",
+        "SOI 2753",
+        "SOI 2852",
+        "SOI 2902"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les crédits de ce bloc sont répartis de la façon suivante : les étudiants ayant complété les 35 crédits du bloc 01A devront suivre les cours SOI2713 et SOI2902 tandis que les étudiants éligibles ayant réussi le microprogramme 1-630-6-1 devront suivre les cours SOI2753 et SOI2852."
+      ]
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Cours de la troisième année",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 22,
+          "max": 22
+        }
+      },
+      "regleBrut": "Obligatoire - 22 crédits.",
+      "cours": [
+        "CSS 3900",
+        "SOI 3606",
+        "SOI 3614",
+        "SOI 3624",
+        "SOI 3724",
+        "SOI 3801",
+        "SOI 3802"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Cours de la 3e année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "SOI 3902",
+        "SOI 3912",
+        "SOI 3922",
+        "SOI 3932"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "SOI 3505",
+        "SOI 3716"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SOI 3516",
+        "SOI 3716"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A24)\nLe baccalauréat comprend deux orientations :\n- L'orientation clinique comportant 105 crédits comprend les segments 01 et 80 avec 98 crédits obligatoires et 7 à option\n- L'orientation cheminement international comportant 106 crédits comprend les segments 01 et 81 avec 99 crédits obligatoires et 7 à option",
+    "Segment 01 Commun aux deux orientations — Les crédits du segment 01 sont répartis de la façon suivante: 87 crédits obligatoires et 7 crédits à option.",
+    "Segment 80 Propre à l'orientation clinique — Les crédits du segment sont obligatoires.",
+    "Segment 81 Propre à l'orientation cheminement international — Les crédits du segment sont obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sciences-infirmieres-formation-initiale-campus-laval/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:22.125Z"
+}

@@ -1,0 +1,126 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-de-linformation",
+  "nom": "Doctorat en sciences de l'information",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Muséologie",
+      "segments": [
+        "71"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Obligatoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "SCI 7000",
+        "SCI 7001",
+        "SCI 7002",
+        "SCI 7003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "SCI 7010",
+        "SCI 7020",
+        "SCI 7050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PLU 7000",
+        "SCI 7000",
+        "SCI 7002",
+        "SCI 7003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "SCI 7010",
+        "SCI 7020",
+        "SCI 7050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A14)\nLe doctorat comporte 90 crédits. Il est offert en deux options:\n- option Générale (segment 70)\n- option Muséologie (segment 71)",
+    "Segment 70 Propre à l'option Générale — Tous les crédits de l'option sont obligatoires, dont 78 crédits sont attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 71 Propre à l'option Muséologie — Tous les crédits de l'option sont obligatoires, dont 78 crédits sont attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-de-linformation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:43.053Z"
+}

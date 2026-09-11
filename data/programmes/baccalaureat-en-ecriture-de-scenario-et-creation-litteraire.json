@@ -1,0 +1,365 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-ecriture-de-scenario-et-creation-litteraire",
+  "nom": "Baccalauréat en écriture de scénario et création littéraire",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 48 crédits obligatoires, 39 à 42 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 48,
+      "max": 48
+    },
+    "option": {
+      "min": 39,
+      "max": 42
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Fondements en cinéma et littérature",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 1102",
+        "CIN 1103",
+        "CIN 1104",
+        "CIN 3104",
+        "FRA 1000",
+        "FRA 1005",
+        "FRA 1009",
+        "FRA 1027",
+        "FRA 2007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Écritures scénaristique et littéraire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "CIN 1014",
+        "CIN 2013",
+        "CIN 3105",
+        "FRA 1710",
+        "FRA 2710",
+        "FRA 3710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Compléments aux cours d'écriture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "CIN 2109",
+        "CIN 2127",
+        "FRA 1705",
+        "FRA 1706",
+        "FRA 1707",
+        "FRA 2707",
+        "FRA 2760",
+        "FRA 2805",
+        "FRA 2807",
+        "FRA 3715",
+        "FRA 3819",
+        "FRA 3825",
+        "JEU 1006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Histoire des littératures de langue française",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "FRA 1100",
+        "FRA 1102",
+        "FRA 1110",
+        "FRA 1120",
+        "FRA 1130",
+        "FRA 1140",
+        "FRA 1160",
+        "FRA 1161",
+        "FRA 2100",
+        "FRA 2103",
+        "FRA 2110",
+        "FRA 2111",
+        "FRA 2112",
+        "FRA 2124",
+        "FRA 2131",
+        "FRA 2141",
+        "FRA 2142",
+        "FRA 2143",
+        "FRA 2180",
+        "FRA 2181",
+        "FRA 2183",
+        "FRA 2184",
+        "FRA 2615",
+        "FRA 2620",
+        "FRA 30301",
+        "FRA 30302"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Poétique et parcours de lecture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "FRA 1203",
+        "FRA 1204",
+        "FRA 1205",
+        "FRA 1260",
+        "FRA 2203",
+        "FRA 2204",
+        "FRA 2210",
+        "FRA 2220",
+        "FRA 2221",
+        "FRA 2241",
+        "FRA 2261",
+        "FRA 2263",
+        "FRA 2264",
+        "FRA 2265",
+        "FRA 2284",
+        "FRA 2285",
+        "FRA 3230",
+        "FRA 3241",
+        "FRA 3242"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Approches théoriques et culturelles de la littérature",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FRA 1980",
+        "FRA 2012",
+        "FRA 2311",
+        "FRA 2314",
+        "FRA 2318",
+        "FRA 2500",
+        "FRA 2517",
+        "FRA 3302",
+        "FRA 3306",
+        "FRA 3308",
+        "FRA 3310",
+        "FRA 3313",
+        "FRA 3314",
+        "FRA 3360",
+        "FRA 3500",
+        "FRA 3503",
+        "FRA 3508",
+        "FRA 3511",
+        "FRA 3641"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Approches spécifiques du cinéma",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 1105",
+        "CIN 1106",
+        "CIN 1107",
+        "CIN 2102",
+        "CIN 2103",
+        "CIN 2104",
+        "CIN 2105",
+        "CIN 2106",
+        "CIN 2107",
+        "CIN 2108",
+        "CIN 3030",
+        "CIN 3102",
+        "CIN 3103",
+        "CIN 3106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Appr. interdisciplinaires/intermédiales du cinéma",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CIN 1108",
+        "CIN 1109",
+        "CIN 1110",
+        "CIN 1121",
+        "CIN 2110",
+        "CIN 2111",
+        "CIN 2112",
+        "CIN 2113",
+        "CIN 2116",
+        "CIN 2120",
+        "CIN 2122",
+        "CIN 2123",
+        "CIN 2125",
+        "CIN 2200",
+        "JEU 1003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71I",
+      "cle": "71/71I",
+      "segment": "71",
+      "nom": "Ouvertures aux sciences humaines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 1611",
+        "ANT 3141",
+        "COM 1300",
+        "COM 1600",
+        "COM 2710",
+        "COM 2720",
+        "FEM 3300",
+        "HAR 1167",
+        "HAR 1200",
+        "HAR 1210",
+        "HAR 2185",
+        "HAR 2330",
+        "HAR 2361",
+        "HAR 3040",
+        "HAR 3900",
+        "LCO 1001",
+        "LCO 2030",
+        "PHI 1255",
+        "PHI 1600",
+        "REL 3221",
+        "SOL 1150"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Un cours de 3 crédits doit être pris dans les blocs 71I ou 71Z."
+      ]
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Un cours de 3 crédits doit être pris dans les blocs 71I ou 71Z."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A25)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 71 — Les crédits du baccalauréat sont répartis de la façon suivante : 48 crédits obligatoires, 39 à 42 crédits à option et un maximum de 3 crédits au choix. Un cours de 3 crédits doit être suivi dans le bloc 71I ou 71Z.",
+    "Segment 71 — Quels que soient les cours à option choisis, l'étudiant doit compléter au moins 42 crédits de cours CIN ou JEU et au moins 42 crédits de cours FRA.",
+    "Segment 71 — Le cheminement comprend 27 crédits obligatoires durant la première année, 12 pendant la deuxième année et 9 pendant la dernière année. Les cours de création littéraire et de scénarisation de deuxième et troisième années ont respectivement pour préalables les cours de création et de scénarisation de première et de deuxième années."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-ecriture-de-scenario-et-creation-litteraire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:41.176Z"
+}

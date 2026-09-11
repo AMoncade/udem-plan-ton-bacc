@@ -1,0 +1,97 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-etudes-neo-helleniques",
+  "nom": "Certificat en études néo-helléniques",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 27,
+      "max": 27
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Langue",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Lettres et civilisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 27 crédits.",
+      "cours": [
+        "GRM 3000",
+        "GRM 3006",
+        "GRM 3100",
+        "HNU 1000",
+        "HNU 2000",
+        "LLM 1000",
+        "LLM 1310"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H03)\nLe certificat comporte 30 crédits.",
+    "Segment 72 — Les crédits du certificat sont répartis de la façon suivante : 27 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-etudes-neo-helleniques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:35.708Z"
+}

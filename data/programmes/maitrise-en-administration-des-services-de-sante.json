@@ -1,0 +1,436 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-administration-des-services-de-sante",
+  "nom": "Maîtrise en administration des services de santé",
+  "orientation": null,
+  "segments": [
+    "01",
+    "69",
+    "70",
+    "76"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "01",
+        "69",
+        "76"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 39 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 crédits à option.",
+        "obligatoire": {
+          "min": 39,
+          "max": 39
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "gestion du système de santé",
+      "segments": [
+        "01",
+        "70",
+        "76"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 30 crédits obligatoires et 15 crédits à option dont 6 crédits attribués à un stage ou à un travail dirigé.",
+        "obligatoire": {
+          "min": 30,
+          "max": 30
+        },
+        "option": {
+          "min": 15,
+          "max": 15
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "gestion de la qualité et de la sécurité des patients",
+      "segments": [
+        "01",
+        "76"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ASA 6120",
+        "ASA 6754",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69A",
+      "cle": "69/69A",
+      "segment": "69",
+      "nom": "Fondements en recherche",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ASA 6177",
+        "ASA 6704",
+        "MSO 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69B",
+      "cle": "69/69B",
+      "segment": "69",
+      "nom": "Analyse et gestion des services socio-sanitaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 6002",
+        "ASA 6132",
+        "ASA 6152",
+        "ASA 6703",
+        "ASA 6705",
+        "ASA 6709",
+        "ASA 6764",
+        "ASA 6765",
+        "BIE 6003",
+        "SPU 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69C",
+      "cle": "69/69C",
+      "segment": "69",
+      "nom": "Évaluation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 6175",
+        "ASA 6178",
+        "ASA 6732",
+        "MSO 6067",
+        "PHM 6032",
+        "PLU 6048"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69D",
+      "cle": "69/69D",
+      "segment": "69",
+      "nom": "Gestion de la qualité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 6402",
+        "ASA 6612",
+        "ASA 6618",
+        "ASA 6619",
+        "MMD 6380"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69E",
+      "cle": "69/69E",
+      "segment": "69",
+      "nom": "Santé mondiale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 6734",
+        "MSO 6500",
+        "MSO 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69F",
+      "cle": "69/69F",
+      "segment": "69",
+      "nom": "Santé numérique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 6708",
+        "ASA 6768",
+        "ASA 6769",
+        "DRT 6601",
+        "MSO 6624",
+        "SCI 6137"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69G",
+      "cle": "69/69G",
+      "segment": "69",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ASA 6729"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Grandes fonctions de gestion",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire- 21 crédits.",
+      "cours": [
+        "ASA 6152",
+        "ASA 6703",
+        "ASA 6705",
+        "ASA 6708",
+        "ASA 6724",
+        "ASA 6765",
+        "ASA 6766"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Gestion de projets",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6002",
+        "ASA 6764"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Habiletés complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6132",
+        "ASA 6175",
+        "ASA 6402",
+        "ASA 6732",
+        "ASA 6734",
+        "ASA 6767",
+        "MSO 6500",
+        "SOL 6650",
+        "SVS 6414"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stage ou travail dirigé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ASA 6037",
+        "ASA 6733",
+        "ASA 6760"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "Grandes fonctions de gestion",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ASA 6152",
+        "ASA 6703",
+        "ASA 6765"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ASA 6402",
+        "ASA 6612",
+        "ASA 6618",
+        "ASA 6619",
+        "MMD 6380"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Gestion de projets",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6002",
+        "ASA 6764"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76D",
+      "cle": "76/76D",
+      "segment": "76",
+      "nom": "Stage ou projet d'intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ASA 6617",
+        "ASA 6620"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 18 (A23)\nLa maîtrise comporte 45 crédits. Elle est offerte selon trois options :\n- option générale avec modalité mémoire (segments 01 et 69),\n- option gestion du système de santé avec stage ou travail dirigé (segments 01 et 70),\n- option gestion de la qualité et de la sécurité des patients avec stage ou travail dirigé (segments 01 et 76).\nN.B. Pour visualiser la structure des options administration sociale et gestion des services infirmiers, veuillez vous référer aux fiches des programmes 2-259-1-2 et 2-631-1-1 respectivement.",
+    "Segment 01 Tronc commun à toutes les options — Les crédits du segment 01 sont tous obligatoires.",
+    "Segment 69 Propre à l'option générale — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 39 crédits obligatoires, dont 21 crédits attribués à la recherche et à la rédaction d'un mémoire, 6 crédits à option.",
+    "Segment 70 Propre à l'option gestion du système de santé — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 30 crédits obligatoires et 15 crédits à option dont 6 crédits attribués à un stage ou à un travail dirigé.",
+    "Segment 76 Propre à gestion de la qualité et de la sécurité des patients — Les crédits de l'option, incluant le tronc commun, sont répartis de la façon suivante : 33 crédits obligatoires et 12 crédits à option, dont 9 crédits attribués à un stage ou à un travail dirigé."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-administration-des-services-de-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:45.775Z"
+}

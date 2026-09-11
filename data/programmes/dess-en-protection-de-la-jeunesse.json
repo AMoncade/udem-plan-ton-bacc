@@ -1,0 +1,121 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-protection-de-la-jeunesse",
+  "nom": "D.E.S.S. en protection de la jeunesse",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "D.E.S.S.",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante: 27 crédits obligatoires et 3 crédits à option.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Concepts de base et intervention",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "JES 6000",
+        "JES 6001",
+        "JES 6002",
+        "JES 6003",
+        "JES 6004",
+        "JES 6005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Problématiques en protection de la jeunesse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "CRI 6010",
+        "CRI 6121",
+        "CRI 6538",
+        "JES 6020",
+        "PSE 6104",
+        "PSE 6309",
+        "PSE 6574",
+        "PSE 6578",
+        "PSE 6721",
+        "PSE 6722",
+        "PSE 6723",
+        "PSE 6724",
+        "PSE 6726",
+        "PSE 6727",
+        "PSE 6729",
+        "PSE 6730",
+        "PSY 6253",
+        "PSY 6329",
+        "SVS 6161",
+        "SVS 6195",
+        "SVS 6415",
+        "SVS 6445",
+        "SVS 6473"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Stages et séminaires d'accompagnement",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "JES 6101",
+        "JES 6102",
+        "JES 6103",
+        "JES 6104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A25)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits sont répartis de la façon suivante: 27 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-protection-de-la-jeunesse/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:37.604Z"
+}

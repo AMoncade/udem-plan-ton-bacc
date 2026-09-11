@@ -1,0 +1,353 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-litteratures-de-langue-francaise",
+  "nom": "Doctorat en littératures de langue française",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72"
+  ],
+  "orientations": [
+    {
+      "nom": "recherche",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante: 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, et de 0 à 3 crédits à option.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 0,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "recherche-création",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante: 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, et d'un maximum de 3 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 0,
+          "max": 3
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "humanités numériques",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 72 sont répartis de la façon suivante: 78 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, et de 0 à 6 crédits à option.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 0,
+          "max": 6
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "FRA 70701",
+        "FRA 70702"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Littératures de langue française",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FRA 60301",
+        "FRA 60302",
+        "FRA 6080",
+        "FRA 6144",
+        "FRA 6145",
+        "FRA 6146",
+        "FRA 6193",
+        "FRA 6194",
+        "FRA 6195",
+        "FRA 6260",
+        "FRA 6262",
+        "FRA 6264",
+        "FRA 6342",
+        "FRA 6343",
+        "FRA 6347",
+        "FRA 6348",
+        "FRA 6349",
+        "FRA 6351",
+        "FRA 6420",
+        "FRA 6421",
+        "FRA 6443",
+        "FRA 6484",
+        "FRA 6486",
+        "FRA 6610",
+        "FRA 6960"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Création littéraire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "FRA 6501",
+        "FRA 6505",
+        "PLU 61232",
+        "PLU 6300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Littératures de langue française et numérique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "FRA 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "FRA 7000",
+        "FRA 7003",
+        "FRA 7915",
+        "FRA 7925",
+        "FRA 7936"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Littératures de langue française et numérique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "FRA 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Recherche-création et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "FRA 7000",
+        "FRA 7003",
+        "FRA 7915",
+        "FRA 7925",
+        "FRA 7936"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits",
+      "cours": [
+        "HNU 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Littératures de langue française et numérique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "FRA 6162",
+        "FRA 6180",
+        "FRA 6730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Études numériques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits",
+      "cours": [
+        "ANG 6740",
+        "COM 6421",
+        "EDN 6001",
+        "EDN 6002",
+        "HNU 6051",
+        "HNU 6052",
+        "HNU 6053",
+        "HNU 6054",
+        "HNU 6055",
+        "HNU 6056",
+        "HNU 6057",
+        "HNU 6058",
+        "HNU 6059",
+        "SCI 6203",
+        "SCI 6304",
+        "SCI 6348"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Humanités numériques et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "FRA 7000",
+        "FRA 7003",
+        "FRA 7915",
+        "FRA 7925",
+        "FRA 7936"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A23)\nLe doctorat comporte 90 crédits répartis de la façon suivante : de 78 à 81 crédits obligatoires, dont 75 crédits sont attribués à la recherche et à la rédaction d'une thèse, et de 9 à 12 crédits à option. Il comporte un tronc commun (segment 01) ainsi que les trois options suivantes :\n- option recherche (segments 01 et 70)\n- option recherche-création (segments 01 et 71)\n- option humanités numériques (segments 01 et 72)",
+    "Segment 01 Tronc commun — Les crédits du segment 01 sont répartis de la façon suivante: 3 crédits obligatoires, et de 3 à 6 crédits à option.",
+    "Segment 70 Propre à l'option recherche — Les crédits du segment 70 sont répartis de la façon suivante: 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, et de 0 à 3 crédits à option.",
+    "Segment 71 Propre à l'option recherche-création — Les crédits du segment 71 sont répartis de la façon suivante: 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, et d'un maximum de 3 crédits à option.",
+    "Segment 72 Propre à l'option humanités numériques — Les crédits du segment 72 sont répartis de la façon suivante: 78 crédits obligatoires, dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, et de 0 à 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-litteratures-de-langue-francaise/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:39.822Z"
+}

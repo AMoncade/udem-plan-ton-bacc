@@ -1,0 +1,115 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-evaluation-des-technologies-de-la-sante",
+  "nom": "DESS en évaluation des technologies de la santé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 21 crédits obligatoires et 9 crédits à option.",
+    "obligatoire": {
+      "min": 21,
+      "max": 21
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ASA 6175",
+        "ASA 6178",
+        "ASA 6732",
+        "ASA 6764",
+        "BIE 6006",
+        "MSO 6011",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Méthodes et technologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option – Maximum 9 crédits.",
+      "cours": [
+        "ASA 6177",
+        "ASA 6704",
+        "ASA 6708",
+        "ASA 6769",
+        "MSO 6067",
+        "MSO 6075",
+        "MSO 6616",
+        "PHM 6010",
+        "PHM 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Gestion et système de santé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option – Maximum 9 crédits.",
+      "cours": [
+        "ASA 6703",
+        "ASA 6754",
+        "ASA 6765",
+        "ASA 6767",
+        "MSO 6634",
+        "MSO 6635",
+        "PLU 6048",
+        "SBP 6204",
+        "SPU 6001",
+        "SPU 6004",
+        "SPU 6005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A26)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits sont répartis de la façon suivante : 21 crédits obligatoires et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-evaluation-des-technologies-de-la-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:17.627Z"
+}

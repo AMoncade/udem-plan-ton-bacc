@@ -1,0 +1,232 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-de-traduction-3e-langue",
+  "nom": "Certificat de traduction 3e langue",
+  "orientation": null,
+  "segments": [
+    "01",
+    "81",
+    "82"
+  ],
+  "orientations": [
+    {
+      "nom": "Traduction allemand-français",
+      "segments": [
+        "01",
+        "81",
+        "82"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Traduction espagnol-français",
+      "segments": [
+        "01",
+        "82"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ALL 3191",
+        "ALL 3192",
+        "ESP 3900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ALL 2010",
+        "ALL 2110",
+        "ESP 2536",
+        "ESP 2710",
+        "TRA 1005",
+        "TRA 1400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "TRA 2115",
+        "TRA 2210",
+        "TRA 2220",
+        "TRA 2450",
+        "TRA 3125",
+        "TRA 3250",
+        "TRA 3580"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81A",
+      "cle": "81/81A",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ALL 3111",
+        "ALL 3112",
+        "ALL 3131",
+        "ALL 3145"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "81B",
+      "cle": "81/81B",
+      "segment": "81",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ALL 2200",
+        "ALL 2270",
+        "ALL 2321",
+        "ALL 2333",
+        "ALL 2340",
+        "ALL 3263",
+        "ALL 3273",
+        "LLM 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82A",
+      "cle": "82/82A",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ESP 2535",
+        "ESP 2700",
+        "ESP 2720",
+        "ESP 2730"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "82B",
+      "cle": "82/82B",
+      "segment": "82",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ESP 1225",
+        "ESP 1325",
+        "ESP 1327",
+        "ESP 2651",
+        "ESP 2652",
+        "ESP 3252",
+        "ESP 3324",
+        "ESP 3355",
+        "ESP 3444",
+        "ESP 3537",
+        "ESP 3550",
+        "LLM 2000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A97)\nLe certificat comporte 30 crédits. Il comporte un tronc commun (segment 01) et est offert avec deux orientations :\n- l'orientation Traduction allemand-français (segment 81)\n- l'orientation Traduction espagnol-français, français-espagnol (segment 82).",
+    "Segment 01 Commun aux deux orientations — Les crédits du tronc commun sont répartis de la façon suivante : de 15 à 21 crédits à option et 3 crédits au choix.",
+    "Segment 81 Propre à l'orientation Traduction allemand-français — L'Orientation comporte de 6 à 12 crédits à option.",
+    "Segment 82 Propre à l'orient. Traduction espagnol-français, franç.-esp. — L'Orientation comporte de 6 à 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-de-traduction-3e-langue/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:16.827Z"
+}

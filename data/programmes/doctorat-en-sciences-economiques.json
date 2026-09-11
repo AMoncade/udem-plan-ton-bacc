@@ -1,0 +1,108 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-economiques",
+  "nom": "Doctorat en sciences économiques",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires dont 60 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option.",
+    "obligatoire": {
+      "min": 84,
+      "max": 84
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "ECN 7040",
+        "ECN 7045",
+        "ECN 7050",
+        "ECN 7055",
+        "ECN 7060",
+        "ECN 7065",
+        "ECN 7075",
+        "ECN 70951",
+        "ECN 70952",
+        "ECN 70953",
+        "ECN 70954"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours ECN 70951, ECN 70952, ECN 70953 et ECN 70954 sont équivalents au cours ECN 7095."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ECN 7049A",
+        "ECN 7059A",
+        "ECN 7059B",
+        "ECN 7923A",
+        "ECN 7923B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 60,
+          "max": 60
+        }
+      },
+      "regleBrut": "Obligatoire - 60 crédits.",
+      "cours": [
+        "ECN 7001",
+        "ECN 7005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 04 (A93)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires dont 60 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-economiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:49.587Z"
+}

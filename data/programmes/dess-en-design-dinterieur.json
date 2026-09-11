@@ -1,0 +1,79 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-design-dinterieur",
+  "nom": "DESS en design d'intérieur",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du programme de D.E.S.S. en design d'intérieur sont répartis comme suit : 27 crédits obligatoires et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": null,
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "DEI 6111",
+        "DEI 6112",
+        "DEI 6113",
+        "DEI 6311",
+        "DEI 6322",
+        "DEI 6333",
+        "DEI 6817"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 2e cycle à choisir dans le répertoire des cours de la Faculté de l'aménagement, de l'Université de Montréal ou des autres universités montréalaises, avec l'accord du responsable du programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A17)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du programme de D.E.S.S. en design d'intérieur sont répartis comme suit :",
+    "Segment 70 — 27 crédits obligatoires et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-design-dinterieur/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:45.240Z"
+}

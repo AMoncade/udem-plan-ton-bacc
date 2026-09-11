@@ -1,0 +1,160 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-spiritualite-et-sante",
+  "nom": "DESS en spiritualité et santé",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante: 24 à 30 crédits à option, dont 12 à 24 crédits attribués à des stages, et un maximum de 6 crédits au choix.",
+    "obligatoire": null,
+    "option": {
+      "min": 24,
+      "max": 30
+    },
+    "choix": {
+      "min": 0,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Spiritualité, santé et accompagnement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "BIE 6000",
+        "PLU 6043",
+        "REL 6211",
+        "REL 6215",
+        "REL 6221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Culture spirituelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "PLU 6110",
+        "REL 6122",
+        "REL 6124",
+        "REL 6138",
+        "REL 6171",
+        "REL 6210",
+        "REL 6212",
+        "REL 6214",
+        "REL 6218",
+        "REL 6219",
+        "REL 6220",
+        "REL 6318",
+        "REL 6321"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Apprentissages interdisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 6754",
+        "BIE 6004",
+        "BIE 6008",
+        "PAL 6111",
+        "PST 6110",
+        "PSY 6093",
+        "PSY 6106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir dans la banque de cours REL de 2e cycle de l'Institut d'études religieuses ou un cours hors Institut. Dans ce dernier cas, il doit être approuvé par le responsable de programme."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Stages cliniques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 24 crédits.",
+      "cours": [
+        "REL 66101",
+        "REL 66102",
+        "REL 66201",
+        "REL 66202",
+        "REL 6650",
+        "REL 6651",
+        "REL 6653",
+        "REL 6654"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours REL 66101 et REL 66102 sont équivalents au cours REL 6610. Les cours REL 66201 et REL 66202 sont équivalents au cours REL 6620. Les cours REL66501 et REL66502 sont équivalents au cours REL6650. Les cours REL66511 et REL66512 sont équivalents au cours REL6651."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A15)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante: 24 à 30 crédits à option, dont 12 à 24 crédits attribués à des stages, et un maximum de 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-spiritualite-et-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:25.970Z"
+}

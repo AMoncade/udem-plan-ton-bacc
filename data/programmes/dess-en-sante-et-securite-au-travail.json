@@ -1,0 +1,85 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-sante-et-securite-au-travail",
+  "nom": "DESS en santé et sécurité au travail",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 27 crédits obligatoires et 3 crédits à option.",
+    "obligatoire": {
+      "min": 27,
+      "max": 27
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "REI 6600",
+        "REI 6601",
+        "SST 6100",
+        "SST 6200",
+        "SST 6300",
+        "SST 6400",
+        "SST 6450",
+        "SST 6525",
+        "SST 6550"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Le cours SST6550 sera suivi après les autres cours obligatoires."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondissement des connaissances",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MSN 6111",
+        "REI 6627",
+        "REI 6630",
+        "TXL 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H21)\nLe D.E.S.S. comporte 30 crédits.\nÀ l'intention des étudiants dont la préparation est jugée insuffisante. Les étudiants peuvent être appelés à suivre jusqu'à 9 crédits de cours préparatoires incluant 3 crédits de cours dans chacun des blocs (minimum 0 crédits, maximum 9 crédits)\n- Bloc 1\nSST1110 - 3 crédits - Sécurité du travail\nSST2120 - 3 crédits - Ergonomie\n- Bloc 2\nREI2510 - 3 crédits - Gestion de la SST\nSST1010 - 3 crédits - Introduction à la gestion de la SST\n- Bloc 3\nSST2130 - 3 crédits - Hygiène du travail\nREI3525 - 3 crédits - Évaluations et enquêtes en SST",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 27 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-sante-et-securite-au-travail/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:14.166Z"
+}

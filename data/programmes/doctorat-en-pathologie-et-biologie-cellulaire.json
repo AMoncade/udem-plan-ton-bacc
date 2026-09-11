@@ -1,0 +1,767 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-pathologie-et-biologie-cellulaire",
+  "nom": "Doctorat en pathologie et biologie cellulaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "Biologie cellulaire",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Biologie du cancer",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Biopathologie cardiovasculaire",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Cytogénétique",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Système nerveux",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+        "obligatoire": {
+          "min": 84,
+          "max": 84
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MCB 6043",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+      ]
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 87,
+          "max": 87
+        }
+      },
+      "regleBrut": "Obligatoire - 87 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 3 crédits."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 3 crédits."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 87 crédits."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 79 crédits."
+      ]
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+      ]
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 3 crédits."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 3 crédits. Les cours PBC 60851 et PBC 60852 sont équivalents au cours PBC 6085."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 87 crédits."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+      ]
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 79 crédits."
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 3 crédits."
+      ]
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 3 crédits."
+      ]
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 87 crédits."
+      ]
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+      ]
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 79 crédits."
+      ]
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+      ]
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 3 crédits."
+      ]
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 3 crédits."
+      ]
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 87 crédits."
+      ]
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+      ]
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 79 crédits."
+      ]
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+      ]
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 3 crédits."
+      ]
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 3 crédits."
+      ]
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès de la M. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 87 crédits."
+      ]
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "MSO 6061",
+        "PHL 6041",
+        "PHL 6064",
+        "PHL 6071",
+        "PSL 6170",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+      ]
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Accès direct du B. Sc. au Ph. D."
+      },
+      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Obligatoire - 79 crédits."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (H98)\nLe doctorat comporte 90 crédits. Selon la modalité Accès direct au doctorat, il est offert avec les options suivantes :\n- l'option Biologie cellulaire (segment 70),\n- l'option Biologie du cancer (segment 71),\n- l'option Biopathologie cardiovasculaire (segment 72),\n- l'option Cytogénétique (segment 73),\n- l'option Système nerveux (segment 74).\nAu besoin, des cours complémentaires sont imposés aux candidats, selon leur formation antérieure et les exigences de leur recherche.\nLa modalité d'accès au doctorat (accès de la maîtrise au doctorat ou accès direct au doctorat) détermine le programme de l'étudiant.",
+    "Segment 01 Accès de la M. Sc. au Ph. D. — Les crédits du doctorat sont répartis de la façon suivante : 87 crédits obligatoires et 3 crédits à option.",
+    "Segment 70 Propre à l'option Biologie cellulaire accès direct — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+    "Segment 71 Propre à l'option Biologie du cancer accès direct — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+    "Segment 72 Propre à l'option Biopathologie cardiovasculaire accès direct — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+    "Segment 73 Propre à l'option Cytogénétique accès direct — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option.",
+    "Segment 74 Propre à l'option Système nerveux accès direct — Les crédits du doctorat sont répartis de la façon suivante : 84 crédits obligatoires et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-pathologie-et-biologie-cellulaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:57.606Z"
+}

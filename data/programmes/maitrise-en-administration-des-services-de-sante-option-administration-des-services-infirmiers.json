@@ -1,0 +1,131 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-administration-des-services-de-sante-option-administration-des-services-infirmiers",
+  "nom": "Maîtrise en administration des services de santé, option Administration des services infirmiers",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 9 crédits attribués à un stage, et 12 crédits à option.",
+    "obligatoire": {
+      "min": 33,
+      "max": 33
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Administration",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "ASA 6120",
+        "ASA 6152",
+        "ASA 6754",
+        "ASA 6765",
+        "SPU 6600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Spécialisation en soins infirmiers",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SOI 6230",
+        "SOI 6237",
+        "SOI 6900"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "ASA 6132",
+        "ASA 6703",
+        "ASA 6705",
+        "ASA 6708",
+        "ASA 6724",
+        "ASA 6767",
+        "ASA 6768",
+        "SOI 6022",
+        "SOI 6102",
+        "SOI 6177",
+        "SOI 6213",
+        "SOI 6920",
+        "SOI 6940",
+        "SOI 6941"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Tout autre cours jugé pertinent de niveau des études supérieures avec l'approbation de la responsable de programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "SOI 6309"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H24)\nCette option conjointe avec la Faculté des sciences infirmières de la maîtrise en administration des services de la santé comporte 45 crédits. Elle est offerte avec la modalité avec stage.",
+    "Segment 70 Propre à l'option administration des services infirmiers — Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 9 crédits attribués à un stage, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-administration-des-services-de-sante-option-administration-des-services-infirmiers/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:45.977Z"
+}

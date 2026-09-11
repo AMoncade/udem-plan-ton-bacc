@@ -1,0 +1,187 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "complements-de-formation",
+  "nom": "Compléments de formation",
+  "orientation": null,
+  "segments": [
+    "74"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Compléments",
+  "creditsTotal": null,
+  "exigences": {
+    "brut": "Le programme compléments de formation peut totaliser jusqu'à 36 crédits de cours à option et jusqu'à 6 crédits de cours au choix.",
+    "obligatoire": null,
+    "option": null,
+    "choix": {
+      "min": 36,
+      "max": 36
+    }
+  },
+  "blocs": [
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Pratique de laboratoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "FAS 1903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Compléments de formation en biologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "BIO 1953",
+        "BIO 1954"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Compléments de formation en chimie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "CHM 1963",
+        "CHM 1982"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Compléments de formation en mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "MAT 1903",
+        "MAT 1905",
+        "MAT 1923"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74E",
+      "cle": "74/74E",
+      "segment": "74",
+      "nom": "Compléments de formation en physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHY 1901",
+        "PHY 1902"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74F",
+      "cle": "74/74F",
+      "segment": "74",
+      "nom": "Compléments de formation en psychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PSY 1901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74G",
+      "cle": "74/74G",
+      "segment": "74",
+      "nom": "- Compléments de formation en statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "STT 1901",
+        "STT 1903"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74Z",
+      "cle": "74/74Z",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A13)\nLe programme d'études totalise 36 crédits.",
+    "Segment 74 — Le programme compléments de formation peut totaliser jusqu'à 36 crédits de cours à option et jusqu'à 6 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/complements-de-formation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:32.697Z"
+}

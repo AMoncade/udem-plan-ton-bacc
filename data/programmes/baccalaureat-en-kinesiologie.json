@@ -1,0 +1,249 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-kinesiologie",
+  "nom": "Baccalauréat en kinésiologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "- en cheminement régulier : 66 crédits obligatoires et 24 crédits à option, - en cheminement Honor : 66 crédits obligatoires (Blocs 70A, 70B et 70D), 9 crédits à option (bloc 70C), 3 crédits à option (bloc 70E) et 12 crédits des blocs à option 70V et 70W.",
+    "obligatoire": {
+      "min": 66,
+      "max": 66
+    },
+    "option": {
+      "min": 24,
+      "max": 24
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Connaissances fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 28,
+          "max": 28
+        }
+      },
+      "regleBrut": "Obligatoire - 28 crédits.",
+      "cours": [
+        "CSS 1900",
+        "KIN 1013",
+        "KIN 1016",
+        "KIN 1018",
+        "KIN 1020",
+        "KIN 1021",
+        "KIN 1022",
+        "KIN 1024",
+        "KIN 1025",
+        "KIN 1030",
+        "KIN 1031"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Connaissances appliquées",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "CSS 2900",
+        "KIN 1037",
+        "KIN 2037",
+        "KIN 2038",
+        "KIN 2040",
+        "KIN 2041",
+        "KIN 2047",
+        "KIN 2048",
+        "KIN 2060",
+        "NUT 2962"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Pratique professionnelle et clinique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "KIN 3040A",
+        "KIN 3040B",
+        "KIN 3049",
+        "KIN 30491",
+        "KIN 30492"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Intégration des connaissances",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "CSS 3900",
+        "KIN 2024",
+        "KIN 3032",
+        "KIN 3046",
+        "KIN 3090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Formation spécialisée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "KIN 2010",
+        "KIN 2015",
+        "KIN 3020",
+        "KIN 3022",
+        "KIN 3023",
+        "KIN 3037",
+        "KIN 3038",
+        "KIN 3050",
+        "KIN 3051",
+        "KIN 3072",
+        "KIN 3073"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier: Minimum 12 crédits, maximum 15 crédits. Cheminement honor: 3 crédits."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "- Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "AEG 2110",
+        "IFT 1912",
+        "IFT 1945",
+        "IFT 1990",
+        "KIN 1985",
+        "PPL 3040",
+        "PSY 2048",
+        "SOL 1967",
+        "SOL 2103",
+        "SOL 2104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70V",
+      "cle": "70/70V",
+      "segment": "70",
+      "nom": "Cheminement honor : initiation à la recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "KIN 4074",
+        "KIN 4075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70W",
+      "cle": "70/70W",
+      "segment": "70",
+      "nom": "Cheminement honor : formation avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "KIN 6500",
+        "KIN 6510",
+        "KIN 6515",
+        "KIN 6520",
+        "KIN 6525",
+        "KIN 6530",
+        "KIN 6800",
+        "KIN 6825",
+        "KIN 6831",
+        "KIN 6832",
+        "KIN 6842",
+        "KIN 6843"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A20)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante :",
+    "Segment 70 — - en cheminement régulier : 66 crédits obligatoires et 24 crédits à option,",
+    "Segment 70 — - en cheminement Honor : 66 crédits obligatoires (Blocs 70A, 70B et 70D), 9 crédits à option (bloc 70C), 3 crédits à option (bloc 70E) et 12 crédits des blocs à option 70V et 70W.",
+    "Segment 70 — L'étudiant s'inscrit selon le cheminement trimestriel indiqué par l'École en début de scolarité."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-kinesiologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:45.437Z"
+}

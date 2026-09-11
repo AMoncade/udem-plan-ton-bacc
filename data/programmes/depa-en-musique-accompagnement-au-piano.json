@@ -1,0 +1,122 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-musique-accompagnement-au-piano",
+  "nom": "DEPA en musique – Accompagnement au piano",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 23 crédits obligatoires et 7 crédits à option.",
+    "obligatoire": {
+      "min": 23,
+      "max": 23
+    },
+    "option": {
+      "min": 7,
+      "max": 7
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MIN 7042",
+        "MUI 7254A",
+        "MUI 7254B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - 4 crédits.",
+      "cours": [
+        "MIN 6040",
+        "MIN 6041",
+        "MIN 6043",
+        "MUE 7001",
+        "MUE 7103",
+        "MUE 7561",
+        "MUE 7562",
+        "MUE 7621"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MIN 6957",
+        "MUS 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours choisi parmi les séminaires offerts chaque année à la Faculté de musique. Aucun sujet spécial (recherche supervisée remplaçant un séminaire) ne sera accepté en remplacement de ces séminaires."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MIN 7950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H19)\nLe D.E.P.A. comporte un total de 30 crédits.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante : 23 crédits obligatoires et 7 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-musique-accompagnement-au-piano/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:47.470Z"
+}

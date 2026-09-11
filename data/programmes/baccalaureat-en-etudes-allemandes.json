@@ -1,0 +1,284 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-etudes-allemandes",
+  "nom": "Baccalauréat en études allemandes",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 9 crédits obligatoires, 72 crédits à option et 9 crédits au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 72,
+      "max": 72
+    },
+    "choix": {
+      "min": 9,
+      "max": 9
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Introduction aux études allemandes",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ALL 1210",
+        "ALL 1310",
+        "ALL 2200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Apprentissage initial de l'allemand",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "À l'arrivée à l'Université, les étudiants sont classés selon leurs connaissances de la langue après étude de leur parcours préalable par le responsable, ou, au besoin, après test (entretien ou test écrit auprès de la coordinatrice des cours d'allemand au Centre de langues). Selon leur classement, les étudiants devront prendre des cours dans le bloc 71B."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Apprentissage complémentaire de l'allemand",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1913",
+        "ALL 2010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Civilisation et histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "ALL 2333",
+        "ALL 2340",
+        "ALL 2444",
+        "ALL 3281",
+        "ALL 3333"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Littérature et cinéma",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 21 crédits.",
+      "cours": [
+        "ALL 2214",
+        "ALL 2270",
+        "ALL 2321",
+        "ALL 3200",
+        "ALL 3263",
+        "ALL 3273",
+        "ALL 3281"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Traduction et rédaction",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "ALL 1110",
+        "ALL 2110",
+        "ALL 3111",
+        "ALL 3112",
+        "ALL 3131",
+        "ALL 3145"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Lectures dirigées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ALL 2290",
+        "ALL 3290"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "CIN 1107",
+        "CIN 2111",
+        "COM 2200",
+        "ECN 1967",
+        "ETM 1400",
+        "FEM 3300",
+        "FRA 1000",
+        "FRA 1027",
+        "FRA 2180",
+        "FRA 2181",
+        "FRA 2210",
+        "HAR 1167",
+        "HAR 1200",
+        "HNU 1000",
+        "HNU 2000",
+        "HST 1042",
+        "HST 2274",
+        "HST 2276",
+        "HST 3276",
+        "LCO 1000",
+        "LCO 2100",
+        "LLM 1000",
+        "LLM 1310",
+        "LLM 2000",
+        "LNG 1955",
+        "LNG 2340",
+        "MUL 1107",
+        "PHI 2195",
+        "PHI 2650",
+        "PHI 3640",
+        "PHI 3760",
+        "POL 1954",
+        "POL 3355",
+        "POL 3851"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ALL."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A19)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 71 — Les crédits du baccalauréat sont répartis de la façon suivante : 9 crédits obligatoires, 72 crédits à option et 9 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-etudes-allemandes/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:05.469Z"
+}

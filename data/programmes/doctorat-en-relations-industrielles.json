@@ -1,0 +1,146 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-relations-industrielles",
+  "nom": "Doctorat en relations industrielles",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires, dont 72 crédits attribués à la recherche et à la rédaction d'une thèse, de 9 à 12 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 78,
+      "max": 78
+    },
+    "option": {
+      "min": 9,
+      "max": 12
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements théoriques et méthodologies",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "REI 7200",
+        "REI 7510",
+        "REI 7901"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Champs de concentration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "REI 7711",
+        "REI 7722",
+        "REI 7733"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Spécialisations",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "REI 7010",
+        "REI 7030",
+        "REI 7060",
+        "REI 7656",
+        "REI 7999"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisi parmi l'ensemble des cours offerts par l'Université ou dans une autre institution universitaire de 3e cycle sous réserve de l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 72,
+          "max": 72
+        }
+      },
+      "regleBrut": "Obligatoire - 72 crédits.",
+      "cours": [
+        "REI 7900",
+        "REI 7902",
+        "REI 7911",
+        "REI 7918",
+        "REI 7926"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "L'étudiant ne peut être inscrit en vue de l'obtention des crédits de ce bloc avant d'avoir réussi l'examen général de synthèse."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 03 (H17)\nLe doctorat comporte 90 crédits.\nDes cours complémentaires sont ajoutés pour les étudiants admis en accès direct.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 78 crédits obligatoires, dont 72 crédits attribués à la recherche et à la rédaction d'une thèse, de 9 à 12 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-relations-industrielles/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:18.961Z"
+}

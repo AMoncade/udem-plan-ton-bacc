@@ -1,0 +1,160 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-demographie",
+  "nom": "DESS en démographie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante: 6 crédits obligatoires, 18 à 24 crédits à option, dont un maximum de 6 crédits pourraient être attribués à un travail dirigé, et un maximum de 6 crédits au choix.",
+    "obligatoire": {
+      "min": 6,
+      "max": 6
+    },
+    "option": {
+      "min": 18,
+      "max": 24
+    },
+    "choix": {
+      "min": 0,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements méthodologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "DMO 6305",
+        "DMO 6371"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Phénomènes démographiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "DMO 6500",
+        "DMO 6501",
+        "DMO 6502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Méthodes avancées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "DMO 6320",
+        "DMO 6330",
+        "DMO 6405",
+        "DMO 6820"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Connaissances complémentaires 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "DMO 6050",
+        "DMO 6200",
+        "DMO 6311",
+        "DMO 6430",
+        "SOL 6448",
+        "STS 6010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Connaissances complémentaires 2",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Deux cours niveau 3000 en démographie peuvent être choisi ou tout autre cours pertinent de niveau des études supérieures avec l'approbation du responsable du programme."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A16)\nLe D.E.S.S. comporte 30 crédits.\nL'étudiant n'ayant pas de formation en démographie au premier cycle doit suivre une formation préparatoire pouvant comprendre jusqu'à 15 crédits de cours.\nBloc A (obligatoire) 9 crédits\nDMO 2200 Collecte : sources des informations, 3 crédits.\nDMO 6011 Analyse démographique 1, 3 crédits.\nDMO 6012 Analyse démographique 2, 3 crédits.\nBloc B (option) min 3 crédits, max 6 crédits\nDMO 2700 Histoire de la population, 3 crédits.\nDMO 3450 Économie et population, 3 crédits.\nSOL 2020 Statistique sociale avancée, 3 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante: 6 crédits obligatoires, 18 à 24 crédits à option, dont un maximum de 6 crédits pourraient être attribués à un travail dirigé, et un maximum de 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-demographie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:43.149Z"
+}

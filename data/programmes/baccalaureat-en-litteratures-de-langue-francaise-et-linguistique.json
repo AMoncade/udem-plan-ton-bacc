@@ -1,0 +1,345 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-litteratures-de-langue-francaise-et-linguistique",
+  "nom": "Baccalauréat en littératures de langue française et linguistique",
+  "orientation": null,
+  "segments": [
+    "72"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 48 crédits obligatoires, 39 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 48,
+      "max": 48
+    },
+    "option": {
+      "min": 39,
+      "max": 39
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Bases en études françaises et linguistique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 48,
+          "max": 48
+        }
+      },
+      "regleBrut": "Obligatoire - 48 crédits.",
+      "cours": [
+        "FRA 1000",
+        "FRA 1005",
+        "FRA 1027",
+        "FRA 2007",
+        "FRA 2008",
+        "FRA 2031",
+        "FRA 3308",
+        "LNG 1050",
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2050",
+        "LNG 2080",
+        "LNG 2360",
+        "LNG 2400",
+        "LNG 2470"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "LAT 1111",
+        "LAT 1121",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les crédits doivent être choisis dans une seule et même langue."
+      ]
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Histoire des littératures de langue française",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "FRA 1100",
+        "FRA 1102",
+        "FRA 1110",
+        "FRA 1120",
+        "FRA 1130",
+        "FRA 1140",
+        "FRA 1160",
+        "FRA 1161",
+        "FRA 2100",
+        "FRA 2103",
+        "FRA 2110",
+        "FRA 2111",
+        "FRA 2112",
+        "FRA 2124",
+        "FRA 2131",
+        "FRA 2141",
+        "FRA 2142",
+        "FRA 2143",
+        "FRA 2180",
+        "FRA 2181",
+        "FRA 2615",
+        "FRA 2620",
+        "FRA 30301",
+        "FRA 30302"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Langue dans la francophonie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ETM 1200",
+        "LNG 1126",
+        "LNG 2045",
+        "TRA 2115",
+        "TRA 3125",
+        "TRA 3580"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Poétique et parcours de lecture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "FRA 1203",
+        "FRA 1204",
+        "FRA 1205",
+        "FRA 1260",
+        "FRA 2203",
+        "FRA 2204",
+        "FRA 2210",
+        "FRA 2220",
+        "FRA 2221",
+        "FRA 2223",
+        "FRA 2241",
+        "FRA 2261",
+        "FRA 2263",
+        "FRA 2264"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72F",
+      "cle": "72/72F",
+      "segment": "72",
+      "nom": "Langue avant 1800",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "LNG 2122"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72G",
+      "cle": "72/72G",
+      "segment": "72",
+      "nom": "Champs sectoriels en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "LNG 1010",
+        "LNG 1013",
+        "LNG 2052",
+        "LNG 2075",
+        "LNG 2095",
+        "LNG 2100",
+        "LNG 2140",
+        "LNG 2160",
+        "LNG 2240",
+        "LNG 2340",
+        "LNG 2350",
+        "LNG 3045"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72H",
+      "cle": "72/72H",
+      "segment": "72",
+      "nom": "Recherches en littérature française",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ETM 1400",
+        "FRA 1980",
+        "FRA 2012",
+        "FRA 2311",
+        "FRA 2314",
+        "FRA 2318",
+        "FRA 2517",
+        "FRA 3180",
+        "FRA 3302",
+        "FRA 3306",
+        "FRA 3310",
+        "FRA 3314",
+        "FRA 3359",
+        "FRA 3500",
+        "FRA 3503",
+        "FRA 3508"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72I",
+      "cle": "72/72I",
+      "segment": "72",
+      "nom": "Recherches en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "LNG 3040",
+        "LNG 3050",
+        "LNG 3070",
+        "LNG 3400",
+        "LNG 3560"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72Z",
+      "cle": "72/72Z",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A24)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 72 — Les crédits du segment sont répartis de la façon suivante : 48 crédits obligatoires, 39 crédits à option et 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-litteratures-de-langue-francaise-et-linguistique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:57.900Z"
+}

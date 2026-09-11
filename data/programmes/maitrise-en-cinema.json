@@ -1,0 +1,449 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-cinema",
+  "nom": "Maîtrise en cinéma",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72",
+    "73"
+  ],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Études du jeu vidéo",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 36,
+          "max": 36
+        },
+        "option": {
+          "min": 6,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Cheminement international",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 27 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire, et 3 crédits à option et 15 crédits au choix.",
+        "obligatoire": {
+          "min": 27,
+          "max": 27
+        },
+        "option": {
+          "min": 3,
+          "max": 3
+        },
+        "choix": {
+          "min": 15,
+          "max": 15
+        }
+      }
+    },
+    {
+      "nom": "Recherche - création",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits à option.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 12,
+          "max": 12
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CIN 6003",
+        "JEU 6001"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours CIN60031 et CIN60032 sont équivalents au cours CIN6003."
+      ]
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Approfondissement des études vidéoludiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 6050",
+        "CIN 6054",
+        "CIN 6056",
+        "CIN 6057",
+        "CIN 6058",
+        "CIN 6061",
+        "DEJ 6003",
+        "JEU 6002",
+        "JEU 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Ouverture au cinéma et aux médias",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CIN 6004",
+        "CIN 6009",
+        "CIN 6013",
+        "CIN 6015",
+        "CIN 6017",
+        "CIN 6035",
+        "CIN 6048",
+        "CIN 6051",
+        "CIN 6053",
+        "CIN 6055",
+        "CIN 6059",
+        "CIN 6060",
+        "CIN 6070",
+        "CIN 6100",
+        "PLU 6042",
+        "PLU 6350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 2e cycle offert par la Faculté des arts et des sciences ou par d'autres facultés de l'Université de Montréal. L'approbation du directeur de recherche est obligatoire."
+      ]
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits",
+      "cours": [
+        "CIN 6940",
+        "CIN 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "CIN 6003"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours CIN60031 et CIN60032 sont équivalents au cours CIN6003."
+      ]
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Alma Mater",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "CIN 6004",
+        "CIN 6009",
+        "CIN 6013",
+        "CIN 6015",
+        "CIN 6017",
+        "CIN 6035",
+        "CIN 6048",
+        "CIN 6050",
+        "CIN 6051",
+        "CIN 6053",
+        "CIN 6054",
+        "CIN 6055",
+        "CIN 6056",
+        "CIN 6057",
+        "CIN 6058",
+        "CIN 6059",
+        "CIN 6060",
+        "CIN 6061",
+        "CIN 6070",
+        "CIN 6100",
+        "JEU 6001",
+        "JEU 6002",
+        "PLU 6042",
+        "PLU 6350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Universités européennes",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Choix - 15 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de deuxième cycle offerts par les universités européennes participant au Master international. L'étudiant doit obligatoirement choisir des cours dans deux universités différentes. Le choix de cours doit être approuvé par le directeur de recherche et le responsable des études supérieures."
+      ]
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "CIN 6970",
+        "CIN 6985"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "CIN 6053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Recherche et création",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 6050",
+        "CIN 6054",
+        "CIN 6057",
+        "CIN 6058",
+        "CIN 6061",
+        "PLU 6350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Recherche",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CIN 6004",
+        "CIN 6009",
+        "CIN 6013",
+        "CIN 6015",
+        "CIN 6017",
+        "CIN 6035",
+        "CIN 6048",
+        "CIN 6051",
+        "CIN 6055",
+        "CIN 6056",
+        "CIN 6059",
+        "CIN 6060",
+        "CIN 6070",
+        "CIN 6100",
+        "JEU 6001",
+        "JEU 6002",
+        "PLU 6042"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Ouverture aux arts technologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ART 6008",
+        "ART 6009",
+        "ART 6011",
+        "ART 6012",
+        "ART 6013",
+        "ART 6014",
+        "ART 6015",
+        "ART 6016",
+        "ART 6017",
+        "ART 6019",
+        "ART 6020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Recherche et mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "CIN 6980",
+        "CIN 6990"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A17)\nLa maîtrise comporte 45 crédits. Elle est offerte selon 4 options:\n- option Générale avec mémoire (MM) ou travail dirigé (TD) (segment 70),\n- option Études du jeu vidéo avec mémoire (segment 71),\n- option Cheminement international avec mémoire (segment 72),\n- option Recherche - création avec mémoire (segment 73).",
+    "Segment 70 Propre à l'option Générale — Les crédits de l'option, selon la modalité avec mémoire (MM), sont répartis de la façon suivante : 33 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, de 9 à 12 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 70 Propre à l'option Générale — Les crédits de l'option, selon la modalité avec travail dirigé (TD), sont répartis de la façon suivante : 15 crédits obligatoires, dont 12 crédits attribués à un travail dirigé, de 27 à 30 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 71 Propre à l'option Études du jeu vidéo — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 72 Propre à l'option Cheminement international — Les crédits de l'option sont répartis de la façon suivante : 27 crédits obligatoires, dont 24 crédits attribués à la recherche et à la rédaction d'un mémoire, et 3 crédits à option et 15 crédits au choix.",
+    "Segment 73 Propre à l'option Recherche - création — Les crédits de l'option sont répartis de la façon suivante : 33 crédits obligatoires, dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, et 12 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-cinema/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:25.711Z"
+}

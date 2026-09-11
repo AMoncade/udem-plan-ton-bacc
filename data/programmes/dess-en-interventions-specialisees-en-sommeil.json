@@ -1,0 +1,112 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-interventions-specialisees-en-sommeil",
+  "nom": "DESS en interventions spécialisées en sommeil",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante: 24 crédits obligatoires, dont 9 crédits attribués à des stages, et 6 crédits à option.",
+    "obligatoire": {
+      "min": 24,
+      "max": 24
+    },
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements en physiologie du sommeil et des interventions",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "PSY 6143",
+        "PSY 6144",
+        "PSY 6145",
+        "PSY 6936",
+        "PSY 6959"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondissement en sommeil, intervention et santé mentale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "PST 6110",
+        "PST 6200",
+        "PSY 3106",
+        "PSY 6093",
+        "PSY 6106",
+        "PSY 6258",
+        "PSY 6304",
+        "PSY 6415",
+        "PSY 6424",
+        "PSY 6616",
+        "PSY 6679",
+        "PSY 6716",
+        "PSY 6799",
+        "PSY 6855",
+        "REI 6170",
+        "REI 6630"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Formation clinique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 6962",
+        "PSY 6963",
+        "PSY 6964"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A26)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante: 24 crédits obligatoires, dont 9 crédits attribués à des stages, et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-interventions-specialisees-en-sommeil/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:31.903Z"
+}

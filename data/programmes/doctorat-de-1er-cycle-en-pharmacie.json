@@ -1,0 +1,230 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-de-1er-cycle-en-pharmacie",
+  "nom": "Doctorat de 1er cycle en pharmacie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 164,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Première année - cours obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 42,
+          "max": 42
+        }
+      },
+      "regleBrut": "Obligatoire - 42 crédits.",
+      "cours": [
+        "CSS 1900",
+        "PHA 1111",
+        "PHA 1121",
+        "PHA 1131",
+        "PHA 1132",
+        "PHA 1141",
+        "PHA 1142",
+        "PHA 1221",
+        "PHA 1231",
+        "PHA 1232",
+        "PHA 1233",
+        "PHA 1234",
+        "PHA 1251",
+        "PHA 1312",
+        "PHA 1321",
+        "PHA 1511"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Deuxième année - cours obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 46,
+          "max": 46
+        }
+      },
+      "regleBrut": "Obligatoire - 46 crédits.",
+      "cours": [
+        "CSS 2900",
+        "PHA 2111",
+        "PHA 2129",
+        "PHA 2132",
+        "PHA 2133",
+        "PHA 2134",
+        "PHA 2142",
+        "PHA 2231",
+        "PHA 2232",
+        "PHA 2233",
+        "PHA 2234",
+        "PHA 2235",
+        "PHA 2241",
+        "PHA 2311",
+        "PHA 2321",
+        "PHA 2511",
+        "PHA 2521"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Troisième année - cours obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "CSS 3900",
+        "PHA 3131",
+        "PHA 3132",
+        "PHA 3133",
+        "PHA 3134",
+        "PHA 3231",
+        "PHA 3232",
+        "PHA 3233",
+        "PHA 3242",
+        "PHA 3311",
+        "PHA 3324",
+        "PHA 3511"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Troisième année - cours à option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHA 3001",
+        "PHA 3002",
+        "PHA 3003",
+        "PHM 6077"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : maximum 3 crédits Cheminement Honor: suivre les cours PHM 6077 (2 crédits) et PHA 3001 (1 crédit) et le cours du bloc 70V"
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Troisième année - cours à option",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "PHM 6010",
+        "PHM 6300",
+        "PHM 6424W",
+        "PHM 6429W",
+        "PHM 6433W",
+        "PHM 6501",
+        "PHM 6504",
+        "PHM 6505",
+        "PHM 6513",
+        "PHM 6514",
+        "PHM 6515",
+        "PHM 6893",
+        "PHM 6896",
+        "SBP 3100",
+        "SBP 3200",
+        "SBP 3300",
+        "SBP 3401",
+        "SPU 3033G"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement général : maximum 6 crédits Cheminement Honor : 3 crédits L'inscription aux cours du bloc est réservée aux étudiants qui ont complété 88 crédits du programme."
+      ]
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Quatrième année - cours obligatoires",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "PHA 4411",
+        "PHA 4511",
+        "PHA 4521",
+        "PHA 4531",
+        "PHA 4551"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70V",
+      "cle": "70/70V",
+      "segment": "70",
+      "nom": "propre au Cheminement Honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "SBP 4002"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Pour s'inscrire au Cheminement Honor, l'étudiant doit avoir complété 88 crédits du programme d'études, avoir une moyenne cumulative d'au moins 3,3 et démontrer un intérêt pour les études supérieures. De plus, il doit avoir reçu l'approbation du vicedécanat. Pour s'inscrire au Bloc 70V, l'étudiant doit suivre le cours PHM 6077 (2 crédits) et le cours PHA 3001 (1 crédit) du bloc 70D."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 07 (A27)\nLe Doctorat de premier cycle en pharmacie offre deux cheminements :\n– le Cheminement général, qui comporte 164 crédits, dont 158 crédits de cours obligatoires et 6 crédits de cours à option ;\n– le Cheminement Honor, qui comprend les 164 crédits du cheminement général ainsi que 6 crédits supplémentaires de stage en recherche, pour un total de 170 crédits.",
+    "Segment 70 — Les crédits du segment sont répartis de la façon suivante :",
+    "Segment 70 — En Cheminement général : 158 crédits obligatoires et 6 crédits à option.",
+    "Segment 70 — En Cheminement Honor : 158 crédits obligatoires et 12 crédits à option (incluant les 6 crédits à option du bloc 70V)"
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-de-1er-cycle-en-pharmacie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:02.532Z"
+}

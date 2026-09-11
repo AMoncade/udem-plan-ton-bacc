@@ -1,0 +1,185 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-psychoeducation",
+  "nom": "Baccalauréat en psychoéducation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "PSE 1201",
+        "PSE 1202",
+        "PSE 1203",
+        "PSE 1204",
+        "PSE 1207",
+        "PSE 1208",
+        "PSE 1209",
+        "PSE 1210",
+        "PSE 2202",
+        "PSE 22181",
+        "PSE 22182",
+        "SVS 1101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Formation clinique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "CSS 1900",
+        "CSS 2900",
+        "CSS 3900",
+        "PSE 1213",
+        "PSE 2203",
+        "PSE 2204",
+        "PSE 2205",
+        "PSE 2208",
+        "PSE 2209",
+        "PSE 3202",
+        "PSE 32501",
+        "PSE 32502"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Développement et adaptation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PSE 2214",
+        "PSE 2215",
+        "PSE 2217",
+        "PSE 2219",
+        "PSE 2227",
+        "PSE 3192",
+        "PSE 3212"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 3 crédits, maximum 6 crédits. Cheminement honor : 3 crédits."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Évaluation - intervention psychoéducatives",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 15 crédits.",
+      "cours": [
+        "PSE 3207",
+        "PSE 3209",
+        "PSE 3210",
+        "PSE 3211",
+        "PSE 3214",
+        "PSE 3215",
+        "PSE 3217",
+        "PSE 3219",
+        "PSE 3220",
+        "PSE 3221"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : minimum 12 crédits, maximum 15 crédits. Cheminement honor : 6 crédits."
+      ]
+    },
+    {
+      "id": "70V",
+      "cle": "70/70V",
+      "segment": "70",
+      "nom": "Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "PSE 4001",
+        "PSE 4002",
+        "PSE 6001",
+        "PSE 6116"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier: 0 crédit. Cheminement honor: 12 crédits."
+      ]
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cheminement régulier: 3 crédits. Cheminement honor : 0 crédit. Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que les sigles CRI, PSE, PSY et SVS."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 14 (A20)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Le baccalauréat en psychoéducation comporte deux cheminements: le cheminement régulier et le cheminement honor.",
+    "Segment 70 — Cheminement régulier: 69 crédits obligatoires, dont 11 crédits attribués à un stage, 18 crédits à option et 3 crédits au choix.",
+    "Segment 70 — Cheminement honor: 69 crédits obligatoires, dont 11 crédits attribués à un stage, 9 crédits à option dans les bloc 70C et 70D et les 12 crédits du bloc 70V."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-psychoeducation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:54.638Z"
+}

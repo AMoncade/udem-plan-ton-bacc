@@ -1,0 +1,982 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-sociologie",
+  "nom": "Baccalauréat en sociologie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "72",
+    "73",
+    "74",
+    "75",
+    "76"
+  ],
+  "orientations": [
+    {
+      "nom": "Fondamentale",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Études de la population",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Relations ethniques",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Santé et société",
+      "segments": [
+        "01",
+        "75"
+      ],
+      "exigences": {
+        "brut": "- cheminement régulier : 3 crédits obligatoires, de 21 à 48 crédits à option.",
+        "obligatoire": {
+          "min": 3,
+          "max": 3
+        },
+        "option": {
+          "min": 21,
+          "max": 48
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Féminismes",
+      "segments": [
+        "01",
+        "76"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Bases théoriques et méthodologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "SOL 1013",
+        "SOL 1015",
+        "SOL 1017",
+        "SOL 1018",
+        "SOL 1020",
+        "SOL 1090",
+        "SOL 2020",
+        "SOL 2090",
+        "SOL 3035"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Théorie classique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "SOL 2016",
+        "SOL 2017",
+        "SOL 2018",
+        "SOL 3026",
+        "SOL 3063"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Théorie contemporaine",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "SOL 2511",
+        "SOL 3012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Laboratoires et stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "SOL 3031",
+        "SOL 3032",
+        "SOL 3033",
+        "SOL 3034",
+        "SOL 3036"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Langues",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier : option - Maximum 9 crédits."
+      },
+      "regleBrut": "Cheminement régulier : option - Maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cheminement international : option - 3 crédits. Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "01M",
+      "cle": "01/01M",
+      "segment": "01",
+      "nom": "Cheminement international 1",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier : option - Maximum 9 crédits."
+      },
+      "regleBrut": "Cheminement régulier : option - Maximum 9 crédits.",
+      "cours": [
+        "SOL 2104",
+        "SOL 3201",
+        "SOL 3351"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement international : option - Minimum 3 crédits, maximum 9 crédits."
+      ]
+    },
+    {
+      "id": "01N",
+      "cle": "01/01N",
+      "segment": "01",
+      "nom": "Cheminement international 2",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier : option - Maximum 12 crédits."
+      },
+      "regleBrut": "Cheminement régulier : option - Maximum 12 crédits.",
+      "cours": [
+        "SOL 3041",
+        "SOL 3043",
+        "SOL 3710"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement international : option - Minimum 6 crédits, maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier : choix - 6 crédits"
+      },
+      "regleBrut": "Cheminement régulier : choix - 6 crédits",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cheminement international : choix - Maximum 6 crédits Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que le sigle SOL."
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Cours thématiques en sociologie",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier Option : Minimum 12 crédits, maximum 42 crédits."
+      },
+      "regleBrut": "Cheminement régulier Option : Minimum 12 crédits, maximum 42 crédits.",
+      "cours": [
+        "SOL 1012",
+        "SOL 1016",
+        "SOL 1102",
+        "SOL 1150",
+        "SOL 1400",
+        "SOL 1967",
+        "SOL 2015",
+        "SOL 2027",
+        "SOL 2050",
+        "SOL 2103",
+        "SOL 2104",
+        "SOL 2105",
+        "SOL 2107",
+        "SOL 2111",
+        "SOL 2200",
+        "SOL 2201",
+        "SOL 2301",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 2503",
+        "SOL 3017",
+        "SOL 3051",
+        "SOL 3104",
+        "SOL 3107",
+        "SOL 3201",
+        "SOL 3221",
+        "SOL 3351",
+        "SOL 3402",
+        "SOL 3404",
+        "SOL 3406",
+        "SOL 3407",
+        "SOL 3410",
+        "SOL 3505",
+        "SOL 3604"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement international: Option Minimum 12 crédits, maximum 36 crédits"
+      ]
+    },
+    {
+      "id": "72Y",
+      "cle": "72/72Y",
+      "segment": "72",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option- Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1511",
+        "ANT 2088",
+        "ANT 3030",
+        "ANT 3553",
+        "CRI 1950",
+        "DMO 1000",
+        "DMO 1200",
+        "DMO 2200",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "FEM 3300",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 3463",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 1052",
+        "HST 1063",
+        "JOU 1200",
+        "MUL 3334",
+        "PHI 1400",
+        "POL 1954",
+        "PSY 1045",
+        "PSY 1095",
+        "PSY 1983",
+        "REI 1030",
+        "REL 1330",
+        "REL 1340",
+        "SVS 1160",
+        "SVS 2103",
+        "SVS 2378",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Formation spécialisée",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "DMO 1000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Formation en démographie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "DMO 1100",
+        "DMO 1200",
+        "DMO 2200",
+        "DMO 2311",
+        "DMO 2312",
+        "DMO 2700",
+        "DMO 3100",
+        "DMO 3150",
+        "DMO 3250",
+        "DMO 3307",
+        "DMO 3400",
+        "DMO 3450"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Formation spécialisée en sociologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "SOL 1012",
+        "SOL 1967",
+        "SOL 2015",
+        "SOL 2103",
+        "SOL 2104",
+        "SOL 2201",
+        "SOL 2503",
+        "SOL 3017",
+        "SOL 3104",
+        "SOL 3201",
+        "SOL 3221",
+        "SOL 3404",
+        "SOL 3406"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Cours thématiques en sociologie",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier : Option - Maximum 24 crédits."
+      },
+      "regleBrut": "Cheminement régulier : Option - Maximum 24 crédits.",
+      "cours": [
+        "SOL 1016",
+        "SOL 1102",
+        "SOL 1150",
+        "SOL 1400",
+        "SOL 2027",
+        "SOL 2050",
+        "SOL 2105",
+        "SOL 2107",
+        "SOL 2111",
+        "SOL 2200",
+        "SOL 2301",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 3051",
+        "SOL 3107",
+        "SOL 3351",
+        "SOL 3402",
+        "SOL 3407",
+        "SOL 3410",
+        "SOL 3505",
+        "SOL 3604"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement international : Option - Maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "73Y",
+      "cle": "73/73Y",
+      "segment": "73",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1511",
+        "ANT 2088",
+        "ANT 3030",
+        "ANT 3553",
+        "CRI 1950",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "FEM 3300",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 3463",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 1052",
+        "HST 1063",
+        "JOU 1200",
+        "MUL 3334",
+        "PHI 1400",
+        "POL 1954",
+        "PSY 1045",
+        "PSY 1095",
+        "PSY 1983",
+        "REI 1030",
+        "REL 1330",
+        "REL 1340",
+        "SVS 2103",
+        "SVS 2378",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Formation spécialisée",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "SOL 2104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Formation multidisciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "ANT 2042",
+        "ANT 2660",
+        "ANT 3030",
+        "ANT 3141",
+        "DMO 1200",
+        "DMO 3420",
+        "GEO 3463",
+        "LLM 2000",
+        "LNG 2350",
+        "REL 1208",
+        "SOL 3104",
+        "SOL 3604",
+        "SVS 2105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Cours thématiques en sociologie",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits."
+      },
+      "regleBrut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits.",
+      "cours": [
+        "SOL 1012",
+        "SOL 1016",
+        "SOL 1102",
+        "SOL 1150",
+        "SOL 1400",
+        "SOL 1967",
+        "SOL 2015",
+        "SOL 2027",
+        "SOL 2050",
+        "SOL 2103",
+        "SOL 2105",
+        "SOL 2107",
+        "SOL 2111",
+        "SOL 2200",
+        "SOL 2201",
+        "SOL 2301",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 2503",
+        "SOL 3017",
+        "SOL 3051",
+        "SOL 3107",
+        "SOL 3201",
+        "SOL 3221",
+        "SOL 3351",
+        "SOL 3402",
+        "SOL 3404",
+        "SOL 3406",
+        "SOL 3407",
+        "SOL 3410",
+        "SOL 3505"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement international : Option - Minimum 3 crédits, maximum 18 crédits."
+      ]
+    },
+    {
+      "id": "74Y",
+      "cle": "74/74Y",
+      "segment": "74",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1511",
+        "ANT 2088",
+        "ANT 3553",
+        "CRI 1950",
+        "DMO 1000",
+        "DMO 2200",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "FEM 3300",
+        "GEO 1212",
+        "GEO 1222",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 1052",
+        "HST 1063",
+        "JOU 1200",
+        "MUL 3334",
+        "PHI 1400",
+        "POL 1954",
+        "PSY 1045",
+        "PSY 1095",
+        "PSY 1983",
+        "REI 1030",
+        "REL 1330",
+        "REL 1340",
+        "SVS 2103",
+        "SVS 2378",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "Formation spécialisée",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "SOL 2103"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Formation multidisciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "ANT 2055",
+        "ANT 3820",
+        "PEF 2715",
+        "PSY 2048",
+        "SOL 1967",
+        "SOL 2111",
+        "SPU 1000G",
+        "SPU 1004",
+        "SPU 1005",
+        "SVS 2101",
+        "SVS 2104",
+        "SVS 2901",
+        "SXS 1000",
+        "SXS 2001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Cours thématiques en sociologie",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits."
+      },
+      "regleBrut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits.",
+      "cours": [
+        "SOL 1012",
+        "SOL 1016",
+        "SOL 1102",
+        "SOL 1150",
+        "SOL 1400",
+        "SOL 2015",
+        "SOL 2027",
+        "SOL 2050",
+        "SOL 2104",
+        "SOL 2105",
+        "SOL 2107",
+        "SOL 2200",
+        "SOL 2201",
+        "SOL 2301",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 2503",
+        "SOL 3017",
+        "SOL 3051",
+        "SOL 3104",
+        "SOL 3107",
+        "SOL 3201",
+        "SOL 3221",
+        "SOL 3351",
+        "SOL 3402",
+        "SOL 3404",
+        "SOL 3406",
+        "SOL 3407",
+        "SOL 3410",
+        "SOL 3505",
+        "SOL 3604"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement international : Option - Minimum 3 crédits, maximum 18 crédits."
+      ]
+    },
+    {
+      "id": "75Y",
+      "cle": "75/75Y",
+      "segment": "75",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1511",
+        "ANT 2088",
+        "ANT 3030",
+        "ANT 3553",
+        "CRI 1950",
+        "DMO 1000",
+        "DMO 1200",
+        "DMO 2200",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "FEM 3300",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 3463",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 1052",
+        "HST 1063",
+        "JOU 1200",
+        "MUL 3334",
+        "PHI 1400",
+        "POL 1954",
+        "PSY 1045",
+        "PSY 1095",
+        "PSY 1983",
+        "REI 1030",
+        "REL 1330",
+        "REL 1340",
+        "SVS 2103",
+        "SVS 2378",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "Formation spécialisée",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "FEM 2000",
+        "FEM 3200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "Formation multidisciplinaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 15 crédits.",
+      "cours": [
+        "ANT 3553",
+        "CIN 2112",
+        "COM 2570",
+        "FEM 1000",
+        "FRA 2183",
+        "FRA 2517",
+        "FRA 3306",
+        "GEO 3333",
+        "HAR 2780",
+        "HST 2446",
+        "LCO 1030",
+        "PHI 2419",
+        "REL 3920",
+        "REL 3930",
+        "SOL 1012",
+        "SOL 2111",
+        "SOL 3221",
+        "SOL 3404",
+        "SOL 3604",
+        "SVS 1101",
+        "SVS 2110"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Cours thématiques en sociologie",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Cheminement régulier: Option - Minimum 3 crédits, maximum 27 crédits."
+      },
+      "regleBrut": "Cheminement régulier: Option - Minimum 3 crédits, maximum 27 crédits.",
+      "cours": [
+        "SOL 1016",
+        "SOL 1102",
+        "SOL 1150",
+        "SOL 1400",
+        "SOL 1967",
+        "SOL 2015",
+        "SOL 2027",
+        "SOL 2050",
+        "SOL 2103",
+        "SOL 2104",
+        "SOL 2105",
+        "SOL 2107",
+        "SOL 2200",
+        "SOL 2201",
+        "SOL 2301",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 2503",
+        "SOL 3017",
+        "SOL 3051",
+        "SOL 3104",
+        "SOL 3107",
+        "SOL 3201",
+        "SOL 3351",
+        "SOL 3402",
+        "SOL 3406",
+        "SOL 3410",
+        "SOL 3505"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement international : Option - Minimum 3 crédits, maximum 15 crédits"
+      ]
+    },
+    {
+      "id": "76Y",
+      "cle": "76/76Y",
+      "segment": "76",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANT 1010",
+        "ANT 1511",
+        "ANT 2088",
+        "ANT 3030",
+        "CRI 1950",
+        "DMO 1000",
+        "DMO 1200",
+        "DMO 2200",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "FEM 3300",
+        "GEO 1212",
+        "GEO 1222",
+        "GEO 3463",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 1052",
+        "HST 1063",
+        "JOU 1200",
+        "MUL 3334",
+        "PHI 1400",
+        "POL 1954",
+        "PSY 1045",
+        "PSY 1095",
+        "PSY 1983",
+        "REI 1030",
+        "REL 1330",
+        "REL 1340",
+        "SVS 2103",
+        "SVS 2378",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 13 (A20)\nLe baccalauréat comporte 90 crédits. Il est offert avec un tronc commun (segment 01) et 5 orientations :\n- orientation Fondamentale (segment 72)\n- orientation Études de la population (segment 73)\n- orientation Relations ethniques, immigration et racisme (segment 74)\n- orientation Santé et société (segment 75)\n- orientation Féminismes, genres et sexualités (segment 76)\nL'orientation Fondamentale comprend les segments 01 et 72 avec 27 crédits obligatoires, 57 crédits à option et 6 au choix. Les orientations « Études de la population », « Relations ethniques, immigration et racismes » et « Santé et société » comprennent respectivement les segments 01 et 73, 01 et 74 et 01 et 75, avec 30 crédits obligatoires, 54 crédits à option et 6 au choix et l'orientation « Féminismes, genres et sexualités » comprend les segments 01 et 76 avec 36 crédits obligatoires, 48 crédits à option et 6 crédits au choix. Les étudiants suivent des cours SOL 1000 au 1er trimestre, 2000 dès le 2e trimestre et 3000 après 45 crédits du programme. Les cours obligatoires doivent être suivis selon le cheminement prescrit.",
+    "Segment 01 Commun aux cinq orientations — Les crédits du tronc commun sont répartis de la façon suivante :",
+    "Segment 01 Commun aux cinq orientations — - cheminement régulier : 27 crédits obligatoires, de 6 à 36 crédits à option et 6 crédits au choix.",
+    "Segment 01 Commun aux cinq orientations — - cheminement international : 27 crédits obligatoires, de 24 à 36 crédits à option et 6 crédits au choix.",
+    "Segment 72 Propre à l'orientation Fondamentale — Les crédits de l'Orientation sont répartis de la façon suivante :",
+    "Segment 72 Propre à l'orientation Fondamentale — - cheminement régulier : de 21 à 51 crédits à option.",
+    "Segment 72 Propre à l'orientation Fondamentale — - cheminement international : de 21 à 39 crédits à option.",
+    "Segment 73 Propre à l'orientation Études de la population — Les crédits de l'Orientation sont répartis de la façon suivante :",
+    "Segment 73 Propre à l'orientation Études de la population — - cheminement régulier : 3 crédits obligatoires, de 24 à 48 crédits à option.",
+    "Segment 73 Propre à l'orientation Études de la population — - cheminement international : 3 crédits obligatoires, 36 crédits à option.",
+    "Segment 74 Propre à l'orientation Relations ethniques, immigration et racisme — Les crédits de l'Orientation sont répartis de la façon suivante :",
+    "Segment 74 Propre à l'orientation Relations ethniques, immigration et racisme — - cheminement régulier : 3 crédits obligatoires, de 21 à 48 crédits à option.",
+    "Segment 74 Propre à l'orientation Relations ethniques, immigration et racisme — - cheminement international : 3 crédits obligatoires, de 21 à 36 crédits à option.",
+    "Segment 75 Propre à l'orientation Santé et société — Les crédits de l'Orientation sont répartis de la façon suivante :",
+    "Segment 75 Propre à l'orientation Santé et société — - cheminement régulier : 3 crédits obligatoires, de 21 à 48 crédits à option.",
+    "Segment 75 Propre à l'orientation Santé et société — - cheminement international : 3 crédits obligatoires, de 21 à 36 crédits.",
+    "Segment 76 Propre à l'orientation Féminismes, genres et sexualités — Les crédits de l'Orientation sont répartis de la façon suivante :",
+    "Segment 76 Propre à l'orientation Féminismes, genres et sexualités — - cheminement régulier : 6 crédits obligatoires, de 18 à 45 crédits à option.",
+    "Segment 76 Propre à l'orientation Féminismes, genres et sexualités — - cheminement international : 6 crédits obligatoires, de 18 à 36 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-sociologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:40:31.251Z"
+}

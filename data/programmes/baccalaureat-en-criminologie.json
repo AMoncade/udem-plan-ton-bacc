@@ -1,0 +1,419 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-criminologie",
+  "nom": "Baccalauréat en criminologie",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "Intervention",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "- orientation Intervention : le cheminement régulier comprend 54 crédits obligatoires, 33 crédits à option et 3 au choix (bloc 01A, 01B ou 01C, 01Z et segment 70).",
+        "obligatoire": {
+          "min": 54,
+          "max": 54
+        },
+        "option": {
+          "min": 33,
+          "max": 33
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Analyse",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "- orientation Analyse: le cheminement régulier comprend 45 crédits obligatoires, 42 crédits à option et 3 au choix (bloc 01A, 01B ou 01C, 01Z et segment 71).",
+        "obligatoire": {
+          "min": 45,
+          "max": 45
+        },
+        "option": {
+          "min": 42,
+          "max": 42
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 33,
+          "max": 33
+        }
+      },
+      "regleBrut": "Obligatoire - 33 crédits.",
+      "cours": [
+        "CRI 1050",
+        "CRI 1100",
+        "CRI 1151",
+        "CRI 1200",
+        "CRI 1212",
+        "CRI 1511",
+        "CRI 1600",
+        "CRI 1730",
+        "CRI 2410",
+        "CRI 2990",
+        "CRI 3900",
+        "PHI 2990"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Formation pratique-bloc",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "CRI 2250",
+        "CRI 2252",
+        "CRI 3260",
+        "CRI 3360",
+        "CRI 3364"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Formation pratique-année",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "CRI 2251",
+        "CRI 32601",
+        "CRI 32602",
+        "CRI 33601",
+        "CRI 33602"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01V",
+      "cle": "01/01V",
+      "segment": "01",
+      "nom": "Ateliers honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 0 crédit, maximum 6 crédits.",
+      "cours": [
+        "CRI 4001",
+        "CRI 4002",
+        "CRI 4003"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : 0 crédit, Cheminement honor : 6 crédits"
+      ]
+    },
+    {
+      "id": "01W",
+      "cle": "01/01W",
+      "segment": "01",
+      "nom": "Propre au cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Minimum 0 crédit, maximum 3 crédits.",
+      "cours": [
+        "CRI 6001",
+        "CRI 6002",
+        "CRI 6006",
+        "CRI 6007",
+        "CRI 6224"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier : 0 crédit, Cheminement honor : 3 crédits"
+      ]
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Minimum 0 crédit , maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cheminement régulier: 3 crédits, Cheminement honor : 0 crédit. Sauf exception autorisée, les crédits au choix ne sont pas de sigle CRI."
+      ]
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Formation de base en intervention",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "CRI 2000",
+        "CRI 2015",
+        "CRI 2052",
+        "CRI 2301",
+        "CRI 2811",
+        "CRI 3800",
+        "CRI 3820"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Connaissances criminologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 18 crédits.",
+      "cours": [
+        "CRI 2005",
+        "CRI 2427",
+        "CRI 2455",
+        "CRI 2531",
+        "CRI 2545",
+        "CRI 2950",
+        "CRI 2951",
+        "CRI 3001",
+        "CRI 3010",
+        "CRI 3013",
+        "CRI 3015",
+        "CRI 3040",
+        "CRI 3052",
+        "CRI 3201",
+        "CRI 3213",
+        "CRI 3305",
+        "CRI 3318",
+        "CRI 3341",
+        "CRI 3361",
+        "CRI 3415",
+        "CRI 3420",
+        "CRI 3425",
+        "CRI 3465",
+        "CRI 3495",
+        "CRI 3540",
+        "CRI 3721",
+        "CRI 3810",
+        "CRI 3950",
+        "PSE 2227",
+        "SIP 3040"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier: 18 crédits, Cheminement honor: 12 crédits, dont les cours CRI3213 et CRI3318."
+      ]
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Formation de base en analyse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "CRI 2531",
+        "CRI 3013",
+        "CRI 3213",
+        "CRI 3318"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Connaissances criminologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "CRI 2000",
+        "CRI 2005",
+        "CRI 2052",
+        "CRI 2427",
+        "CRI 2950",
+        "CRI 2951",
+        "CRI 3001",
+        "CRI 3201",
+        "CRI 3305",
+        "CRI 3341",
+        "CRI 3415",
+        "CRI 3420",
+        "CRI 3425",
+        "CRI 3540",
+        "CRI 3810",
+        "CRI 3820",
+        "CRI 3950",
+        "PSE 2227",
+        "SIP 1000",
+        "SIP 2030",
+        "SIP 2242",
+        "SIP 3070",
+        "SIP 3085"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier et cheminement honor : Minimum 9 crédits, maximum 15 crédits."
+      ]
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Formation spécialisée en analyse",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "CRI 3040",
+        "CRI 3052",
+        "CRI 3361",
+        "SIP 2050",
+        "SIP 3040",
+        "SIP 3050",
+        "SIP 3060",
+        "SIP 3090"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier et cheminement honor : Minimum 6 crédits, maximum 12 crédits."
+      ]
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Cours complémentaires en intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CRI 2015",
+        "CRI 2301",
+        "CRI 2455",
+        "CRI 2545",
+        "CRI 2811",
+        "CRI 3010",
+        "CRI 3015",
+        "CRI 3465",
+        "CRI 3495",
+        "CRI 3800"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cheminement régulier et cheminement honor : Maximum 3 crédits."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 15 (A20)\nLe baccalauréat comporte 90 crédits. Il est offert en deux cheminements : cheminement régulier et cheminement honor. Il comporte 2 orientations :\n- orientation Intervention : le cheminement régulier comprend 54 crédits obligatoires, 33 crédits à option et 3 au choix (bloc 01A, 01B ou 01C, 01Z et segment 70). Le cheminement honor : comprend 54 crédits obligatoires et 36 crédits à option. (Blocs 01A, 01B ou 01C, 01V, 01W et le segment 70).\n- orientation Analyse: le cheminement régulier comprend 45 crédits obligatoires, 42 crédits à option et 3 au choix (bloc 01A, 01B ou 01C, 01Z et segment 71). Le cheminement honor comprend 45 crédits obligatoire et 45 crédits à option. (Blocs 01A, 01B ou 01C, 01V, 01W et le segment 71).",
+    "Segment 01 Tronc commun — Les crédits du segment sont répartis de la façon suivante :",
+    "Segment 01 Tronc commun — Cheminement régulier: 33 crédits obligatoires, 15 crédits à option et 3 crédits au choix. Les étudiants doivent obligatoirement compléter 15 crédits des blocs 01B ou 01C.",
+    "Segment 01 Tronc commun — Cheminement honor: 33 crédits obligatoires et 24 crédits à option. Les étudiants doivent obligatoirement compléter 15 crédits des blocs 01B ou 01C.",
+    "Segment 70 Propre à l'orientation Intervention — Les crédits de l'Orientation sont répartis de la façon suivante :",
+    "Segment 70 Propre à l'orientation Intervention — Cheminement régulier: 21 crédits obligatoires et 18 crédits à option.",
+    "Segment 70 Propre à l'orientation Intervention — Cheminement honor : 21 crédits obligatoires et 12 crédits à option dont les cours CRI3213 et CRI3318.",
+    "Segment 71 Propre à l'orientation Analyse — Les crédits de l'Orientation sont répartis de la façon suivante :",
+    "Segment 71 Propre à l'orientation Analyse — Cheminement régulier: 12 crédits obligatoires et 27 crédits à option.",
+    "Segment 71 Propre à l'orientation Analyse — Cheminement honor: 12 crédits obligatoires et 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-criminologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:30.236Z"
+}

@@ -1,0 +1,229 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-enseignement-de-leducation-physique-et-a-la-sante",
+  "nom": "Baccalauréat en enseignement de l'éducation physique et à la santé",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 120,
+  "exigences": {
+    "brut": "Les crédits du segment sont répartis de la façon suivante : 60 crédits obligatoires et 3 crédits à option.",
+    "obligatoire": {
+      "min": 60,
+      "max": 60
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Éducation",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "DID 10101",
+        "DID 10102",
+        "DID 2000",
+        "DID 2107",
+        "ETA 1001",
+        "ETA 1002",
+        "ETA 1900",
+        "ETA 2550",
+        "ETA 3880",
+        "PPA 1100",
+        "PPA 2102",
+        "PPA 3102",
+        "PPA 3112",
+        "PPA 3310",
+        "PPA 3400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Stages et séminaire d'intégration",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "EDU 1104",
+        "EDU 2104",
+        "EDU 3104",
+        "EDU 4104",
+        "EDU 4314"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Kinésiologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "KIN 1031",
+        "KIN 1047",
+        "KIN 1051",
+        "KIN 1712",
+        "KIN 2010",
+        "KIN 2101",
+        "KIN 2102",
+        "KIN 3710",
+        "KIN 4101"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Intervention en éducation physique et santé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "KIN 1402",
+        "KIN 1408",
+        "KIN 49111",
+        "KIN 49112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Activités physiques et santé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      "regleBrut": "Obligatoire - 5 crédits.",
+      "cours": [
+        "KIN 4104",
+        "KIN 4105",
+        "KIN 4106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Éducation à la santé",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "KIN 1405",
+        "KIN 3043",
+        "KIN 3107"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Activités pratiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "KIN 1108",
+        "KIN 2107",
+        "KIN 2109",
+        "KIN 2208",
+        "KIN 3105",
+        "KIN 3106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "KIN 3108",
+        "KIN 4107",
+        "KIN 4108",
+        "KIN 4109"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A23)\nLe baccalauréat comporte 120 crédits, dont 57 en sciences de l'éducation (segment 01), 63 en éducation physique et à la santé (segment 70).",
+    "Segment 01 Volet Éducation — Tous les crédits du segment sont obligatoires.",
+    "Segment 70 Volet Éducation physique et santé — Les crédits du segment sont répartis de la façon suivante : 60 crédits obligatoires et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-enseignement-de-leducation-physique-et-a-la-sante/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:44.787Z"
+}

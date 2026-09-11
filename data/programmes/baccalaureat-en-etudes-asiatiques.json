@@ -1,0 +1,669 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-etudes-asiatiques",
+  "nom": "Baccalauréat en études asiatiques",
+  "orientation": null,
+  "segments": [
+    "01",
+    "75",
+    "76",
+    "77"
+  ],
+  "orientations": [
+    {
+      "nom": "Littérature",
+      "segments": [
+        "01",
+        "75"
+      ],
+      "exigences": {
+        "brut": "- l'orientation Littérature, pensée et spiritualité (segments 01 et 75), 21 crédits obligatoires et 69 crédits à option,",
+        "obligatoire": {
+          "min": 21,
+          "max": 21
+        },
+        "option": {
+          "min": 69,
+          "max": 69
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Géographie politique contemporaine",
+      "segments": [
+        "01",
+        "76"
+      ],
+      "exigences": {
+        "brut": "- l'orientation Géographie politique contemporaine (segments 01 et 76), 21 crédits obligatoires et 69 crédits à option,",
+        "obligatoire": {
+          "min": 21,
+          "max": 21
+        },
+        "option": {
+          "min": 69,
+          "max": 69
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Histoire",
+      "segments": [
+        "01",
+        "77"
+      ],
+      "exigences": {
+        "brut": "- l'orientation Histoire, culture et société (segments 01 et 77), 21 crédits obligatoires et 69 crédits à option.",
+        "obligatoire": {
+          "min": 21,
+          "max": 21
+        },
+        "option": {
+          "min": 69,
+          "max": 69
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Formation en études asiatiques de base",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "AES 2014",
+        "AES 2020",
+        "ANT 3864",
+        "GEO 3412",
+        "HST 1062",
+        "PHI 2960",
+        "POL 3401"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Langues",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 45
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 45 crédits.",
+      "cours": [
+        "AES 1001",
+        "AES 1002",
+        "AES 1015",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "AES 1100",
+        "ANT 1065",
+        "CIN 2103",
+        "CIN 3030",
+        "GEO 1512",
+        "HST 1010",
+        "HST 2023",
+        "LCO 1000",
+        "POL 1100",
+        "POL 2120",
+        "SOL 1020",
+        "SOL 1090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Intégration des acquis",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "AES 3500",
+        "AES 4000",
+        "AES 4005"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Y",
+      "cle": "01/01Y",
+      "segment": "01",
+      "nom": "Compléments de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "COM 2001",
+        "DMO 3100",
+        "HOR 3200",
+        "LCO 2090",
+        "MUL 1246",
+        "PPL 3040",
+        "SOL 2050",
+        "SOL 2107",
+        "SOL 3201",
+        "SOL 3221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "Philosophie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits.",
+      "cours": [
+        "AES 2034",
+        "AES 2800",
+        "AES 3010",
+        "AES 3800",
+        "HST 2621",
+        "PHI 1800",
+        "PHI 1860",
+        "PHI 2800",
+        "PHI 2810",
+        "PHI 2965",
+        "PHI 3905",
+        "REL 1250",
+        "REL 1251",
+        "REL 2240",
+        "REL 2250",
+        "REL 2255"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Littérature et cinéma",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits",
+      "cours": [
+        "AES 2011",
+        "AES 2012",
+        "AES 2021",
+        "AES 2040",
+        "AES 2070",
+        "AES 3021",
+        "AES 3022",
+        "CIN 1101",
+        "CIN 1103",
+        "CIN 1105",
+        "CIN 1107",
+        "CIN 2111",
+        "LCO 1001",
+        "LCO 1020",
+        "LCO 2030",
+        "LCO 3010"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Formation complémentaire en Études asiatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits",
+      "cours": [
+        "AES 2015",
+        "AES 2050",
+        "AES 2060",
+        "AES 2710",
+        "AES 3032",
+        "AES 3041",
+        "AES 3610",
+        "AES 3815",
+        "AES 3915",
+        "ANT 3164",
+        "ANT 3172",
+        "ANT 3866",
+        "ANT 3875",
+        "GEO 3442",
+        "HST 1061",
+        "HST 1063",
+        "HST 2618",
+        "HST 2624",
+        "HST 2625",
+        "HST 2628",
+        "HST 3570",
+        "HST 3571",
+        "HST 3574",
+        "POL 3008",
+        "POL 3011",
+        "POL 3402",
+        "POL 3753",
+        "POL 3754"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Formation complémentaire - Autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "CIN 1109",
+        "CIN 2110",
+        "CIN 2112",
+        "CIN 2113",
+        "LCO 2100",
+        "PHI 1005",
+        "PHI 1520",
+        "PHI 1600",
+        "PHI 1710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "Géographie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits.",
+      "cours": [
+        "GEO 1212",
+        "GEO 1312",
+        "GEO 2222",
+        "GEO 2242",
+        "GEO 2252",
+        "GEO 2312",
+        "GEO 3442"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "Science politique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits",
+      "cours": [
+        "POL 2007",
+        "POL 2510",
+        "POL 2602",
+        "POL 2606",
+        "POL 2802",
+        "POL 3008",
+        "POL 3010",
+        "POL 3011",
+        "POL 3402",
+        "POL 3601",
+        "POL 3602",
+        "POL 3753",
+        "POL 3754",
+        "POL 3906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Formation complémentaire en Études asiatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits",
+      "cours": [
+        "AES 2011",
+        "AES 2012",
+        "AES 2015",
+        "AES 2021",
+        "AES 2034",
+        "AES 2040",
+        "AES 2050",
+        "AES 2060",
+        "AES 2070",
+        "AES 2710",
+        "AES 2800",
+        "AES 3010",
+        "AES 3021",
+        "AES 3022",
+        "AES 3032",
+        "AES 3041",
+        "AES 3610",
+        "AES 3800",
+        "AES 3815",
+        "AES 3915",
+        "ANT 3164",
+        "ANT 3172",
+        "ANT 3866",
+        "ANT 3875",
+        "HST 1061",
+        "HST 1063",
+        "HST 2618",
+        "HST 2621",
+        "HST 2624",
+        "HST 2625",
+        "HST 2628",
+        "HST 3570",
+        "HST 3571",
+        "HST 3574",
+        "PHI 2965",
+        "REL 1250",
+        "REL 1251",
+        "REL 2240",
+        "REL 2250",
+        "REL 2255"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76D",
+      "cle": "76/76D",
+      "segment": "76",
+      "nom": "Formation complémentaire - Autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "GEO 1112",
+        "GEO 1122",
+        "GEO 1222",
+        "GEO 2232",
+        "POL 1330",
+        "POL 1954",
+        "POL 3005",
+        "POL 3287"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77A",
+      "cle": "77/77A",
+      "segment": "77",
+      "nom": "Histoire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits.",
+      "cours": [
+        "HST 1042",
+        "HST 1061",
+        "HST 1063",
+        "HST 2618",
+        "HST 2621",
+        "HST 2624",
+        "HST 2625",
+        "HST 2628",
+        "HST 2820",
+        "HST 3570",
+        "HST 3571",
+        "HST 3574"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77B",
+      "cle": "77/77B",
+      "segment": "77",
+      "nom": "Anthropologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 24 crédits",
+      "cours": [
+        "AES 3041",
+        "ANT 1010",
+        "ANT 1013",
+        "ANT 1213",
+        "ANT 1611",
+        "ANT 2023",
+        "ANT 2026",
+        "ANT 3164",
+        "ANT 3866"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77C",
+      "cle": "77/77C",
+      "segment": "77",
+      "nom": "Formation complémentaire en Études asiatiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits",
+      "cours": [
+        "AES 2011",
+        "AES 2012",
+        "AES 2015",
+        "AES 2021",
+        "AES 2034",
+        "AES 2040",
+        "AES 2050",
+        "AES 2060",
+        "AES 2070",
+        "AES 2710",
+        "AES 2800",
+        "AES 3010",
+        "AES 3021",
+        "AES 3022",
+        "AES 3032",
+        "AES 3610",
+        "AES 3800",
+        "AES 3815",
+        "AES 3915",
+        "ANT 3875",
+        "GEO 3442",
+        "PHI 2965",
+        "POL 3008",
+        "POL 3011",
+        "POL 3402",
+        "POL 3753",
+        "POL 3754",
+        "REL 1250",
+        "REL 1251",
+        "REL 2240",
+        "REL 2250",
+        "REL 2255"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "77D",
+      "cle": "77/77D",
+      "segment": "77",
+      "nom": "Formation complémentaire - Autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ANT 1018",
+        "ANT 1210",
+        "ANT 1280",
+        "ANT 1511",
+        "ANT 1513",
+        "HST 1052",
+        "HST 2212",
+        "HST 2267",
+        "HST 2371",
+        "HST 2443"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A16)\nLe baccalauréat comporte 90 crédits. Il est offert avec un tronc commun (segment 01) et trois orientations :\n- l'orientation Littérature, pensée et spiritualité (segments 01 et 75), 21 crédits obligatoires et 69 crédits à option,\n- l'orientation Géographie politique contemporaine (segments 01 et 76), 21 crédits obligatoires et 69 crédits à option,\n- l'orientation Histoire, culture et société (segments 01 et 77), 21 crédits obligatoires et 69 crédits à option.",
+    "Segment 01 Commun aux trois orientations — Le tronc commun comporte 21 crédits obligatoires et de 21 à 48 crédits à option.",
+    "Segment 75 Propre à l'orientation Littérature, pensée et spiritualité — Les crédits du segment 75 sont répartis comme suit: de 21 à 48 crédits à option.",
+    "Segment 76 Propre à l'orientation Géographie politique contemporaine — Les crédits du segment 76 sont répartis comme suit: de 21 à 48 crédits à option.",
+    "Segment 77 Propre à l'orientation Histoire, culture et société — Les crédits du segment 77 sont répartis comme suit: de 21 à 48 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-etudes-asiatiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:12.331Z"
+}

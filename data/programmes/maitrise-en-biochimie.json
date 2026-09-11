@@ -1,0 +1,739 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-biochimie",
+  "nom": "Maîtrise en biochimie",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70",
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 4 à 9 crédits à option et, au maximum, 5 crédits au choix.",
+        "obligatoire": {
+          "min": 36,
+          "max": 36
+        },
+        "option": {
+          "min": 4,
+          "max": 9
+        },
+        "choix": {
+          "min": 5,
+          "max": 5
+        }
+      }
+    },
+    {
+      "nom": "génétique moléculaire",
+      "segments": [
+        "71",
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 34 attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 42,
+          "max": 42
+        },
+        "option": null,
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "biologie structurale",
+      "segments": [
+        "72",
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante: 42 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 42,
+          "max": 42
+        },
+        "option": null,
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "génomique humaine",
+      "segments": [
+        "73",
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 42,
+          "max": 42
+        },
+        "option": null,
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "biochimie in silico",
+      "segments": [
+        "74",
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 42,
+          "max": 42
+        },
+        "option": null,
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "dynamique cellulaire des complexes macromoléculaires",
+      "segments": [
+        "75"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "BCM 60511",
+        "BCM 60512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 6 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6023",
+        "BCM 6026",
+        "BCM 6062",
+        "BCM 6200",
+        "BCM 6210",
+        "BIM 6026",
+        "BIM 6028",
+        "BIN 6002",
+        "MSO 6018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Approfondissement méthodologique et conceptuel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 5
+        }
+      },
+      "regleBrut": "Option - Maximum 5 crédits.",
+      "cours": [
+        "BCM 6012",
+        "BCM 6014",
+        "BCM 6015",
+        "BCM 6016",
+        "BCM 6017",
+        "BCM 6018",
+        "BCM 6019",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6225",
+        "BCM 6230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 5
+        }
+      },
+      "regleBrut": "Choix - Maximum 5 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent pour le projet de recherche de l'étudiant pourra être accepté suite à l'approbation du responsable des études supérieures du Département."
+      ]
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits",
+      "cours": [
+        "BCM 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "BCM 6023",
+        "BCM 6026",
+        "BCM 60511",
+        "BCM 60512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Approfondissement méthodologique et conceptuel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6012",
+        "BCM 6014",
+        "BCM 6015",
+        "BCM 6016",
+        "BCM 6017",
+        "BCM 6018",
+        "BCM 6019",
+        "BCM 6062",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "BCM 6210",
+        "BCM 6225",
+        "BCM 6230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent pour le projet de recherche de l'étudiant pourra être accepté suite à l'approbation du responsable des études supérieures du Département."
+      ]
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "BCM 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "BCM 60511",
+        "BCM 60512",
+        "BCM 6062",
+        "BCM 6200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Approfondissement méthodologique et conceptuel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6012",
+        "BCM 6014",
+        "BCM 6015",
+        "BCM 6016",
+        "BCM 6017",
+        "BCM 6018",
+        "BCM 6019",
+        "BCM 6023",
+        "BCM 6026",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6210",
+        "BCM 6225",
+        "BCM 6230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent pour le projet de recherche de l'étudiant pourra être accepté suite à l'approbation du responsable des études supérieures du Département."
+      ]
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "BCM 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "BCM 60511",
+        "BCM 60512",
+        "BCM 6210",
+        "MSO 6018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Approfondissement méthodologique et conceptuel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6012",
+        "BCM 6014",
+        "BCM 6015",
+        "BCM 6016",
+        "BCM 6017",
+        "BCM 6018",
+        "BCM 6019",
+        "BCM 6023",
+        "BCM 6026",
+        "BCM 6062",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "BCM 6225",
+        "BCM 6230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent pour le projet de recherche de l'étudiant pourra être accepté suite à l'approbation du responsable des études supérieures du Département."
+      ]
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "BCM 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Obligatoire - 8 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 60511",
+        "BCM 60512",
+        "BIN 6002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Approfondissement méthodologique et conceptuel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "BCM 6012",
+        "BCM 6014",
+        "BCM 6015",
+        "BCM 6016",
+        "BCM 6017",
+        "BCM 6018",
+        "BCM 6019",
+        "BCM 6023",
+        "BCM 6026",
+        "BCM 6062",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "BCM 6210",
+        "BCM 6225",
+        "BCM 6230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent pour le projet de recherche de l'étudiant pourra être accepté suite à l'approbation du responsable des études supérieures du Département."
+      ]
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "BCM 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "BCM 60511",
+        "BCM 60512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Approfondissement méthodologique et conceptuel",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BCM 6014",
+        "BCM 6015",
+        "BCM 6016",
+        "BCM 6017",
+        "BCM 6018",
+        "BCM 6019"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6012",
+        "BCM 6023",
+        "BCM 6026",
+        "BCM 6062",
+        "BCM 6071",
+        "BCM 6100",
+        "BCM 6200",
+        "BCM 6210",
+        "BCM 6225",
+        "BCM 6230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Tout autre cours jugé pertinent pour le projet de recherche de l'étudiant pourra être accepté suite à l'approbation du responsable des études supérieures du Département."
+      ]
+    },
+    {
+      "id": "75E",
+      "cle": "75/75E",
+      "segment": "75",
+      "nom": "Mémoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 34,
+          "max": 34
+        }
+      },
+      "regleBrut": "Obligatoire - 34 crédits.",
+      "cours": [
+        "BCM 6906"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 12 (A24)\nLa maîtrise, offerte selon la modalité avec mémoire, comporte 45 crédits répartis de la façon suivante : de 36 à 42 crédits obligatoires, dont 34 crédits attribués à la recherche et à la rédaction d'un mémoire, de 0 à 11 crédits à option et de 0 à 5 crédits au choix.\nElle comprend 6 options :\n- l'option générale (segment 70),\n- l'option génétique moléculaire (segment 71),\n- l'option biologie structurale (segment 72),\n- l'option génomique humaine (segment 73),\n- l'option biochimie in silico (segment 74),\n- l'option dynamique cellulaire des complexes macromoléculaires (segment 75),",
+    "Segment 70 Propre à l'option générale — Les crédits de l'option sont répartis de la façon suivante : 36 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 4 à 9 crédits à option et, au maximum, 5 crédits au choix.",
+    "Segment 71 Propre à l'option génétique moléculaire — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 34 attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+    "Segment 72 Propre à l'option biologie structurale — Les crédits de l'option sont répartis de la façon suivante: 42 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+    "Segment 73 Propre à l'option génomique humaine — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+    "Segment 74 Propre à l'option biochimie in silico — Les crédits de l'option sont répartis de la façon suivante : 42 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 3 crédits à option ou au choix.",
+    "Segment 75 Propre à l'opt. dynamique cellulaire des complexes macromoléculaires — Les crédits de l'option sont répartis de la façon suivante: 36 crédits obligatoires, dont 34 crédits attribués à la rédaction d'un mémoire, et 6 à 9 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-biochimie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:09.027Z"
+}

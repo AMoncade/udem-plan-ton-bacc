@@ -1,0 +1,133 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-de-2e-cycle-en-pratique-pharmaceutique-de-premiere-ligne",
+  "nom": "Certificat de 2e cycle en pratique pharmaceutique de première ligne",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 24,
+  "exigences": {
+    "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 16 crédits obligatoires et 8 crédits à option.",
+    "obligatoire": {
+      "min": 70,
+      "max": 70
+    },
+    "option": {
+      "min": 8,
+      "max": 8
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Conjoint avec l'Université Laval",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire - 13 crédits.",
+      "cours": [
+        "PHM 6400W",
+        "PHM 6404W",
+        "PHM 6405W",
+        "PHM 6406W",
+        "PHM 6407W",
+        "PHM 6408W"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Notez que les numéros de cours se terminant par W sont des cours offerts en ligne."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHM 6420W",
+        "PHM 6421W",
+        "PHM 6602W"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Notez que les numéros de cours se terminant par W sont des cours offerts en ligne."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 4,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Minimum 4 crédits, maximum 8 crédits.",
+      "cours": [
+        "PHM 6423W",
+        "PHM 6424W",
+        "PHM 6426W",
+        "PHM 6429W",
+        "PHM 6431W",
+        "PHM 6433W",
+        "PHM 6508",
+        "PHM 6621",
+        "PHM 6892W",
+        "PHM 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Notez que les numéros de cours se terminant par W sont des cours offerts en ligne."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "PHM 6452",
+        "PHM 6453"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H19)\nLe certificat de 2e cycle comporte 24 crédits.",
+    "Segment 70 — Les crédits du segment 70 sont répartis de la façon suivante : 16 crédits obligatoires et 8 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-de-2e-cycle-en-pratique-pharmaceutique-de-premiere-ligne/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:01.725Z"
+}

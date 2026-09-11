@@ -1,0 +1,257 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-physique-et-informatique",
+  "nom": "Baccalauréat en physique et informatique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 66 crédits obligatoires, 18 à option et 6 au choix.",
+    "obligatoire": {
+      "min": 66,
+      "max": 66
+    },
+    "option": {
+      "min": 18,
+      "max": 18
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Physique fondamentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 31,
+          "max": 31
+        }
+      },
+      "regleBrut": "Obligatoire - 31 crédits.",
+      "cours": [
+        "PHY 1111",
+        "PHY 1441",
+        "PHY 1501",
+        "PHY 1620",
+        "PHY 1651",
+        "PHY 1652",
+        "PHY 2215",
+        "PHY 2345",
+        "PHY 2441",
+        "PHY 2810"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Informatique fondamentale",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "IFT 1015",
+        "IFT 1025",
+        "IFT 1065",
+        "IFT 1575",
+        "IFT 2015",
+        "IFT 2105",
+        "IFT 2125",
+        "IFT 2425"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Outils mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MAT 1400",
+        "MAT 1410",
+        "MAT 1600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Modélisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "IFT 3245",
+        "PHY 3075"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Compléments de physique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "PHY 2100",
+        "PHY 2300",
+        "PHY 2400",
+        "PHY 2476",
+        "PHY 2500",
+        "PHY 2601",
+        "PHY 2701",
+        "PHY 2813",
+        "PHY 2900",
+        "PHY 3030",
+        "PHY 3051",
+        "PHY 3070",
+        "PHY 3080",
+        "PHY 3131",
+        "PHY 3140",
+        "PHY 3214",
+        "PHY 3320",
+        "PHY 3442",
+        "PHY 3510",
+        "PHY 3600",
+        "PHY 3701",
+        "PHY 3711",
+        "PHY 3814"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Compléments d'informatique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "IFT 1215",
+        "IFT 1227",
+        "IFT 2035",
+        "IFT 2245",
+        "IFT 2255",
+        "IFT 2505",
+        "IFT 2905",
+        "IFT 2935",
+        "IFT 3065",
+        "IFT 3150",
+        "IFT 3155",
+        "IFT 3205",
+        "IFT 3225",
+        "IFT 3275",
+        "IFT 3295",
+        "IFT 3325",
+        "IFT 3335",
+        "IFT 3345",
+        "IFT 3355",
+        "IFT 3375",
+        "IFT 3395",
+        "IFT 3515",
+        "IFT 3545",
+        "IFT 3655",
+        "IFT 3911",
+        "IFT 3913"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Outils mathématiques complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 10
+        }
+      },
+      "regleBrut": "Option - Maximum 10 crédits.",
+      "cours": [
+        "MAT 1978",
+        "MAT 2115",
+        "MAT 3450"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les cours choisis peuvent être de tout sigle, y compris IFT et PHY."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 05 (A16)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 66 crédits obligatoires, 18 à option et 6 au choix. Pour être admissible aux études supérieures en physique, l'étudiant doit avoir suivi au moins trois des quatre cours suivants : PHY 2813, 3131, 3214 et 3442."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-physique-et-informatique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:48.348Z"
+}

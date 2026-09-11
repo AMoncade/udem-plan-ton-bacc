@@ -1,0 +1,1592 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-linguistique",
+  "nom": "Baccalauréat en linguistique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "72",
+    "73",
+    "74"
+  ],
+  "orientations": [
+    {
+      "nom": "langue et société",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "- L'orientation langue et société comprend les segments 01 et 71 avec 39 crédits obligatoires, 48 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 48,
+          "max": 48
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "langue et technologie",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "- L'orientation langue et technologie comprend les segments 01 et 72 avec 48 crédits obligatoires, 39 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 72,
+          "max": 72
+        },
+        "option": {
+          "min": 39,
+          "max": 39
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "langue et cognition",
+      "segments": [
+        "01",
+        "73"
+      ],
+      "exigences": {
+        "brut": "- L'orientation langue et cognition comprend les segments 01 et 73 avec 51 crédits obligatoires, 36 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 73,
+          "max": 73
+        },
+        "option": {
+          "min": 36,
+          "max": 36
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "langues et cultures autochtones",
+      "segments": [
+        "01",
+        "74"
+      ],
+      "exigences": {
+        "brut": "- L'orientation langues et cultures autochtones comprend les segments 01 et 74 avec 39 crédits obligatoires, 48 à option et 3 au choix.",
+        "obligatoire": {
+          "min": 74,
+          "max": 74
+        },
+        "option": {
+          "min": 48,
+          "max": 48
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Connaissances de base en linguistique",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "LNG 1080",
+        "LNG 1400",
+        "LNG 1540",
+        "LNG 2050",
+        "LNG 2052",
+        "LNG 2080",
+        "LNG 2360",
+        "LNG 2400",
+        "LNG 2470"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Connaissances approfondies en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 15 crédits.",
+      "cours": [
+        "LNG 3040",
+        "LNG 3050",
+        "LNG 3070",
+        "LNG 3400",
+        "LNG 3560"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Maîtrise du français",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "COM 1150",
+        "FRA 1009",
+        "FRA 1013",
+        "FRA 2953G",
+        "LNG 1013",
+        "TRA 1005",
+        "TRA 1015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Formation pratique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "LNG 3960",
+        "LNG 3970"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Langue et société",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ANT 1611",
+        "LNG 2075",
+        "LNG 2122",
+        "LNG 2350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Approches sociolinguistiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 18 crédits.",
+      "cours": [
+        "LLM 2000",
+        "LNG 1126",
+        "LNG 2100",
+        "LNG 2140",
+        "LNG 2340"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Approches ethnolinguistiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANT 2611",
+        "ANT 2624",
+        "ANT 2625",
+        "ANT 2630",
+        "ANT 2660",
+        "ANT 3625",
+        "DMO 1200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Approches sociologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "SOL 1013",
+        "SOL 1016",
+        "SOL 1018",
+        "SOL 1090",
+        "SOL 1150",
+        "SOL 2104",
+        "SOL 2105",
+        "SOL 2511",
+        "URB 1111",
+        "URB 1113"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Approches culturelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AES 3022",
+        "AES 3032",
+        "ALL 1310",
+        "ANG 1022",
+        "ANG 1023",
+        "ANT 3030",
+        "ANT 3854",
+        "ANT 3875",
+        "ANT 3876",
+        "ARA 1001",
+        "ARA 1002",
+        "AUT 2500",
+        "CTL 1120",
+        "ESP 1215",
+        "ESP 1317",
+        "HST 1061",
+        "HST 2628",
+        "PTG 1100",
+        "REL 2270"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71F",
+      "cle": "71/71F",
+      "segment": "71",
+      "nom": "Formation complémentaire en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ETM 1200",
+        "LNG 1010",
+        "LNG 1050",
+        "LNG 2002",
+        "LNG 2045",
+        "LNG 2095",
+        "LNG 2160",
+        "LNG 2240",
+        "LNG 2355",
+        "LNG 3045",
+        "LNG 3052",
+        "LNG 3090",
+        "LNG 3120",
+        "ORA 1531"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71G",
+      "cle": "71/71G",
+      "segment": "71",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ARV 1050",
+        "ARV 1054",
+        "AUD 1131",
+        "AUD 1132",
+        "COM 2200",
+        "ETM 2102",
+        "FRA 2111",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 2001",
+        "IFT 1016",
+        "IFT 1166",
+        "IFT 1990",
+        "INU 1001",
+        "INU 1020",
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 2150",
+        "PHI 2160",
+        "PHI 2320",
+        "PSY 1006",
+        "PSY 1035",
+        "PSY 1085",
+        "PSY 1095",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 2254",
+        "SCI 2955",
+        "TRA 2450",
+        "TRA 3455"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71H",
+      "cle": "71/71H",
+      "segment": "71",
+      "nom": "Langues anciennes et modernes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 27
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 27 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1110",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2010",
+        "ALL 2110",
+        "ANG 1052",
+        "ANG 1053",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1926",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRL 1901",
+        "CRL 1902",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510",
+        "ESP 2525",
+        "ESP 2535",
+        "ETM 2200",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HEB 1901",
+        "HEB 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "ITL 1070",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "LSL 1901",
+        "LSL 1902",
+        "ORA 1900",
+        "ORA 2900",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904",
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "Langue et technologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "IFT 1016",
+        "LNG 2095",
+        "LNG 3045",
+        "LNG 3120",
+        "PHI 1005",
+        "TRA 2450",
+        "TRA 3455"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Informatique et information numérique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "IFT 1166",
+        "IFT 1170",
+        "IFT 1931",
+        "IFT 2810",
+        "IFT 2821",
+        "INU 1001",
+        "INU 1020",
+        "INU 3011"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "Formation complémentaire en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 18 crédits.",
+      "cours": [
+        "LNG 1010",
+        "LNG 1050",
+        "LNG 1126",
+        "LNG 2002",
+        "LNG 2045",
+        "LNG 2075",
+        "LNG 2100",
+        "LNG 2122",
+        "LNG 2140",
+        "LNG 2160",
+        "LNG 2240",
+        "LNG 2340",
+        "LNG 2350",
+        "LNG 2355",
+        "LNG 3052",
+        "LNG 3090",
+        "ORA 1531"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANT 1611",
+        "ANT 2611",
+        "ANT 2624",
+        "ARV 1050",
+        "ARV 1054",
+        "AUD 1131",
+        "AUD 1132",
+        "COM 2200",
+        "DMO 1200",
+        "ETM 2102",
+        "FRA 2111",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 2001",
+        "IFT 1990",
+        "LLM 2000",
+        "PHI 1130",
+        "PHI 2150",
+        "PHI 2160",
+        "PHI 2320",
+        "PSY 1006",
+        "PSY 1035",
+        "PSY 1085",
+        "PSY 1095",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 2254",
+        "SCI 2955",
+        "SOL 1013",
+        "SOL 1018",
+        "SOL 2104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72E",
+      "cle": "72/72E",
+      "segment": "72",
+      "nom": "Langues anciennes et modernes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1110",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2010",
+        "ALL 2110",
+        "ANG 1052",
+        "ANG 1053",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1926",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRL 1901",
+        "CRL 1902",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510",
+        "ESP 2525",
+        "ESP 2535",
+        "ETM 2200",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HEB 1901",
+        "HEB 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "ITL 1070",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "LSL 1901",
+        "LSL 1902",
+        "ORA 1900",
+        "ORA 2900",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904",
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "Langue et cognition",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "LNG 1010",
+        "LNG 2002",
+        "LNG 2160",
+        "LNG 2355",
+        "LNG 3052",
+        "LNG 3090",
+        "PSY 1006",
+        "PSY 2065"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Formation complémentaire en psychologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "PSY 1035",
+        "PSY 1085",
+        "PSY 1095",
+        "PSY 2055",
+        "PSY 2254",
+        "PSY 3063",
+        "PSY 3083"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "Formation complémentaire en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 21 crédits.",
+      "cours": [
+        "LNG 1050",
+        "LNG 1126",
+        "LNG 2075",
+        "LNG 2095",
+        "LNG 2100",
+        "LNG 2122",
+        "LNG 2140",
+        "LNG 2240",
+        "LNG 2340",
+        "LNG 2350",
+        "LNG 3045",
+        "LNG 3120",
+        "LNG 3160",
+        "ORA 1531"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANT 1611",
+        "ANT 2611",
+        "ANT 2624",
+        "ARV 1050",
+        "ARV 1054",
+        "AUD 1131",
+        "AUD 1132",
+        "COM 2200",
+        "DMO 1200",
+        "ETM 2102",
+        "FRA 2111",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 2001",
+        "IFT 1016",
+        "IFT 1166",
+        "IFT 1990",
+        "INU 1001",
+        "INU 1020",
+        "LLM 2000",
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 2150",
+        "PHI 2160",
+        "PHI 2320",
+        "SCI 2955",
+        "SOL 1013",
+        "SOL 1018",
+        "SOL 2104",
+        "TRA 2450",
+        "TRA 3455"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73E",
+      "cle": "73/73E",
+      "segment": "73",
+      "nom": "Langues anciennes et modernes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1110",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2010",
+        "ALL 2110",
+        "ANG 1052",
+        "ANG 1053",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1926",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRL 1901",
+        "CRL 1902",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510",
+        "ESP 2525",
+        "ESP 2535",
+        "ETM 2200",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HEB 1901",
+        "HEB 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "ITL 1070",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "LSL 1901",
+        "LSL 1902",
+        "ORA 1900",
+        "ORA 2900",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904",
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "Langues et cultures autochtones",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ANT 2630",
+        "AUT 2000",
+        "AUT 2500",
+        "LNG 2350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Langues autochtones",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Minimum 12 crédits, maximum 21 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "INN 3001"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "Développement de ressources lexicales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "LNG 2095",
+        "LNG 3045",
+        "TRA 2450",
+        "TRA 3455"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Langue et cognition",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "LNG 1010",
+        "LNG 2002",
+        "LNG 2140",
+        "LNG 2340",
+        "LNG 2355"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74E",
+      "cle": "74/74E",
+      "segment": "74",
+      "nom": "Formation complémentaire en études autochtones",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 15 crédits.",
+      "cours": [
+        "ANT 2830",
+        "ANT 3000",
+        "ANT 3030",
+        "ANT 3854",
+        "ANT 3855",
+        "ANT 3881",
+        "ANT 3882",
+        "AUT 3001",
+        "AUT 3002",
+        "CRI 3001",
+        "DRT 1011S",
+        "DRT 3015",
+        "FRA 2620",
+        "HAR 1115",
+        "HAR 2717",
+        "HST 1053",
+        "HST 2401",
+        "HST 2444",
+        "HST 3371",
+        "HST 3441",
+        "POL 3159",
+        "PPA 2550",
+        "REL 2270",
+        "SPU 3033G"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74F",
+      "cle": "74/74F",
+      "segment": "74",
+      "nom": "Formation complémentaire en linguistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "LNG 1050",
+        "LNG 1126",
+        "LNG 2045",
+        "LNG 2075",
+        "LNG 2100",
+        "LNG 2122",
+        "LNG 2160",
+        "LNG 2240",
+        "LNG 3052",
+        "LNG 3090",
+        "LNG 3120",
+        "ORA 1531"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74G",
+      "cle": "74/74G",
+      "segment": "74",
+      "nom": "Traduction",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "TRA 1400",
+        "TRA 1500",
+        "TRA 1550",
+        "TRA 2115",
+        "TRA 2505",
+        "TRA 2650"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74H",
+      "cle": "74/74H",
+      "segment": "74",
+      "nom": "Formation complémentaire en anthropologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ANT 1611",
+        "ANT 2611",
+        "ANT 2624",
+        "ANT 2625",
+        "ANT 3625"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74I",
+      "cle": "74/74I",
+      "segment": "74",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ARV 1050",
+        "ARV 1054",
+        "AUD 1131",
+        "AUD 1132",
+        "COM 2200",
+        "DMO 1200",
+        "ETM 2102",
+        "FRA 2111",
+        "HOR 1200",
+        "HOR 3200",
+        "HST 2001",
+        "IFT 1016",
+        "IFT 1166",
+        "IFT 1990",
+        "INU 1001",
+        "INU 1020",
+        "LLM 2000",
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 2150",
+        "PHI 2160",
+        "PHI 2320",
+        "PSY 1006",
+        "PSY 1035",
+        "PSY 1085",
+        "PSY 1095",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 2254"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74J",
+      "cle": "74/74J",
+      "segment": "74",
+      "nom": "Langues anciennes et modernes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "ALL 1012",
+        "ALL 1090",
+        "ALL 1110",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ALL 2010",
+        "ALL 2110",
+        "ANG 1052",
+        "ANG 1053",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRL 1901",
+        "CRL 1902",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ESP 2510",
+        "ESP 2525",
+        "ESP 2535",
+        "ETM 1200",
+        "ETM 2200",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HEB 1901",
+        "HEB 1902",
+        "ITL 1070",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "ITL 2030",
+        "ITL 2040",
+        "ITL 2070",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "LSL 1901",
+        "LSL 1902",
+        "ORA 1900",
+        "ORA 2900",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904",
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A25)\nLe baccalauréat comporte 90 crédits et quatre orientations.\n- L'orientation langue et société comprend les segments 01 et 71 avec 39 crédits obligatoires, 48 à option et 3 au choix.\n- L'orientation langue et technologie comprend les segments 01 et 72 avec 48 crédits obligatoires, 39 à option et 3 au choix.\n- L'orientation langue et cognition comprend les segments 01 et 73 avec 51 crédits obligatoires, 36 à option et 3 au choix.\n- L'orientation langues et cultures autochtones comprend les segments 01 et 74 avec 39 crédits obligatoires, 48 à option et 3 au choix.",
+    "Segment 01 Commun à toutes les orientations — Les crédits du tronc commun sont répartis de la façon suivante: 27 crédits obligatoires, de 9 à 30 crédits à option et 3 crédits au choix.",
+    "Segment 71 Propre à l'orientation langue et société — Les crédits de ce segment sont répartis de la façon suivante: 12 crédits obligatoires et de 21 à 39 crédits de cours à option.",
+    "Segment 72 Propre à l'orientation langue et technologie — Les crédits de ce segment sont répartis de la façon suivante: 21 crédits obligatoires et de 9 à 30 crédits de cours à option.",
+    "Segment 73 Propre à l'orientation langue et cognition — L'étudiant dont la moyenne cumulative est inférieure à 2,7 après avoir complété 24 crédits n'est pas autorisé à poursuivre dans l'orientation langue et cognition.",
+    "Segment 73 Propre à l'orientation langue et cognition — Les crédits de ce segment sont répartis de la façon suivante: 24 crédits obligatoires et de 9 à 27 crédits de cours à option.",
+    "Segment 74 Propre à l'orientation langues et cultures autochtones — Les crédits de ce segment sont répartis de la façon suivante: 12 crédits obligatoires et de 21 à 39 crédits de cours à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-linguistique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:48.562Z"
+}

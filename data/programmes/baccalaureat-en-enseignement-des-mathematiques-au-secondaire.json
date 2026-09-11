@@ -1,0 +1,296 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-enseignement-des-mathematiques-au-secondaire",
+  "nom": "Baccalauréat en enseignement des mathématiques au secondaire",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 120,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Profession enseignante",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "DID 10101",
+        "DID 10102",
+        "DID 2000",
+        "ETA 1002",
+        "ETA 1900",
+        "ETA 3346"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Intervention éducative",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "PPA 1210",
+        "PPA 2000",
+        "PPA 3104",
+        "PPA 3120"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Équité, diversité et inclusion",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ETA 2200",
+        "PPA 2550",
+        "PPA 3300"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Complément de formation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option – minimum 3.0 crédits, maximum 6.0 crédits.",
+      "cours": [
+        "DID 1009",
+        "DID 3254",
+        "EDU 3333",
+        "EDU 4444",
+        "ETA 1001",
+        "PPA 1214",
+        "PPA 1435",
+        "PPA 2220",
+        "PPA 4420A"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Stages",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Obligatoire - 20 crédits.",
+      "cours": [
+        "EDU 1012",
+        "EDU 2212",
+        "EDU 3213",
+        "EDU 4013"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Didactique et enseignement des mathématiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 22,
+          "max": 22
+        }
+      },
+      "regleBrut": "Obligatoire - 22 crédits.",
+      "cours": [
+        "DID 1570",
+        "DID 2571",
+        "DID 2573",
+        "DID 3052",
+        "DID 3102",
+        "DID 4294",
+        "DID 4572",
+        "ETA 3556"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Formation disciplinaire obligatoire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 37,
+          "max": 37
+        }
+      },
+      "regleBrut": "Obligatoire - 37 crédits.",
+      "cours": [
+        "DID 1050",
+        "DID 2051",
+        "DID 2055",
+        "IFT 1410",
+        "MAT 1330",
+        "MAT 1332",
+        "MAT 1340",
+        "MAT 1362",
+        "MAT 1600",
+        "MAT 2450",
+        "MAT 2531",
+        "STT 1700"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Approfondissement des mathématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ACT 1240",
+        "ECN 1260",
+        "EDD 1002",
+        "IFT 1575",
+        "MAT 1000",
+        "MAT 1400",
+        "MAT 1410",
+        "MAT 1500",
+        "MAT 1720",
+        "MAT 2115",
+        "MAT 2460",
+        "MAT 2600",
+        "MAT 3450",
+        "MAT 3632"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Initiation à la programmation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "IFT 1015",
+        "IFT 1119",
+        "IFT 1144",
+        "IFT 1178",
+        "IFT 1969",
+        "IFT 2720",
+        "PHY 1234"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80E",
+      "cle": "80/80E",
+      "segment": "80",
+      "nom": "Mathématiques et autres disciplines",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ACT 2243",
+        "BIO 1203",
+        "BIO 1803",
+        "BIO 3283",
+        "DMO 1000",
+        "ECN 1000",
+        "ECN 1040",
+        "ECN 1050",
+        "ECN 1910",
+        "HOR 1200",
+        "HOR 3200",
+        "IFT 1166",
+        "IFT 1400",
+        "IFT 2505",
+        "IFT 3545",
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 1300",
+        "PHI 2160",
+        "PHY 1441",
+        "PHY 1501",
+        "PHY 1651",
+        "PHY 3012",
+        "POL 1803"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 10 (A25)\nCe programme comporte 120 crédits répartis comme suit : 49 à 52 crédits du segment 01 Éducation, dont 6 à 9 crédits à option et 68 à 71 crédits du segment 80 Enseignement des mathématiques, dont 9 à 12 à option.",
+    "Segment 01 propre au volet Éducation — Les crédits du segment sont répartis de la façon suivante : 43 crédits obligatoires et 6 à 9 crédits à option",
+    "Segment 80 propre à l'enseignement des mathématiques — Les crédits du segment sont répartis de la façon suivante : 59 crédits obligatoires et 9 à 12 crédits à option"
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-enseignement-des-mathematiques-au-secondaire/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:53.191Z"
+}

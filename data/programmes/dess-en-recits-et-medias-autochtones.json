@@ -1,0 +1,181 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-recits-et-medias-autochtones",
+  "nom": "DESS en récits et médias autochtones",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 7 crédits obligatoires et 23 crédits à option, dont 8 crédits attribués à un stage, ou à un travail pratique, ou encore à un projet de création.",
+    "obligatoire": {
+      "min": 7,
+      "max": 7
+    },
+    "option": {
+      "min": 23,
+      "max": 23
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      "regleBrut": "Obligatoire - 7 crédits.",
+      "cours": [
+        "AUT 6010",
+        "AUT 6011",
+        "AUT 6015"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Littératures, arts et médias",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANG 6430",
+        "ANG 6650",
+        "ESP 6135",
+        "LCO 6610",
+        "MSL 6503"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Histoires, géographies et cultures",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 12 crédits.",
+      "cours": [
+        "ANT 6040",
+        "ESP 6170",
+        "ESP 6180",
+        "HST 6290",
+        "REL 6217"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Espace projet",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - 8 crédits.",
+      "cours": [
+        "AUT 6020",
+        "AUT 6040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 6670",
+        "COM 6331",
+        "COM 6341",
+        "COM 6502",
+        "FRA 6343",
+        "HNU 6000",
+        "LCO 6111",
+        "LCO 6312",
+        "LCO 6546"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Cours complémentaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 3000",
+        "ANT 3030",
+        "ANT 3171",
+        "ANT 3854",
+        "ANT 3855",
+        "AUT 2000",
+        "AUT 2500",
+        "CRI 3001",
+        "DRT 1011S",
+        "DRT 3015",
+        "FRA 2620",
+        "HAR 2717",
+        "HST 2444",
+        "LCO 3020",
+        "LCO 3040"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (A19)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 7 crédits obligatoires et 23 crédits à option, dont 8 crédits attribués à un stage, ou à un travail pratique, ou encore à un projet de création."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-recits-et-medias-autochtones/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:08.537Z"
+}

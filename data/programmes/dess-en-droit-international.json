@@ -1,0 +1,108 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-droit-international",
+  "nom": "DESS en droit international",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de droit",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 18 crédits, maximum 30 crédits.",
+      "cours": [
+        "DRI 6130",
+        "DRT 6500",
+        "DRT 6510",
+        "DRT 6515",
+        "DRT 6805B",
+        "DRT 6816A",
+        "DRT 6816B",
+        "DRT 6816C",
+        "DRT 6818A",
+        "DRT 6818B",
+        "DRT 6818C",
+        "DRT 6828",
+        "DRT 6830A",
+        "DRT 6830B",
+        "DRT 6830D",
+        "DRT 6830E",
+        "DRT 6830F",
+        "DRT 6830G",
+        "DRT 6830H",
+        "DRT 6830I",
+        "DRT 6830J",
+        "DRT 6870C",
+        "DRT 6884",
+        "DRT 6903",
+        "DRT 6909",
+        "DRT 6910",
+        "DRT 6912",
+        "DRT 6916W",
+        "DRT 6950"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours de 2e cycle choisi parmi les cours d'un autre domaine du droit ou, avec l'accord du doyen, d'une autre faculté."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Avec l'accord du doyen, cours choisi parmi les cours de 1er cycle en droit."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 01 (H06)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Tous les crédits du D.E.S.S. sont à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-droit-international/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:47:56.696Z"
+}

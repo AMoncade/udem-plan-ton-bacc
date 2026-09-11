@@ -1,0 +1,332 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-sante-publique",
+  "nom": "DEPA en santé publique",
+  "orientation": null,
+  "segments": [
+    "01",
+    "71",
+    "74",
+    "75",
+    "76"
+  ],
+  "orientations": [
+    {
+      "nom": "Épidémiologie",
+      "segments": [
+        "01",
+        "71",
+        "74",
+        "75",
+        "76"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Analyse de risque et toxicologie",
+      "segments": [
+        "01",
+        "71",
+        "74",
+        "75",
+        "76"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Analyse et management des systèmes de santé",
+      "segments": [
+        "01",
+        "71",
+        "74",
+        "75",
+        "76"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Santé mondiale",
+      "segments": [
+        "01",
+        "71",
+        "74",
+        "75",
+        "76"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "SPU 7007",
+        "SPU 7008",
+        "SPU 7009",
+        "SPU 7012",
+        "SPU 76511",
+        "SPU 76512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "SPU 7100",
+        "SPU 7152"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Méthodes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MSO 6008",
+        "MSO 6075",
+        "MSO 6150",
+        "MSO 6611"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Concept et application",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "MSO 6018",
+        "MSO 6019"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de deuxième ou de troisième cycle dans le répertoire des cours de l'École de santé publique avec l'approbation du responsable du programme d'études."
+      ]
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "MSN 6136",
+        "MSO 6011",
+        "MSO 6067"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "SPU 7501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Méthodes quantitatives ET qualitatives",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - Maximum 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de deuxième ou de troisième cycle en méthodes quantitatives ET un cours de deuxième ou de troisième cycle en méthodes qualitatives dans le répertoire des cours de l'École de santé publique avec l'approbation du responsable du programme d'études"
+      ]
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "SPU 7600",
+        "SPU 7605"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "Méthodes avancées de recherche et d'évaluation en éthique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ASA 6704",
+        "BIE 6006",
+        "BIE 6016",
+        "BIE 6104",
+        "BIE 70501",
+        "BIE 70502",
+        "DMO 6011",
+        "INT 6020",
+        "MSO 6008",
+        "MSO 6018",
+        "MSO 6075",
+        "MSO 6116"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Prévention et contrôle des maladies transmissibles/non transmissibles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - maximum 3 crédits.",
+      "cours": [
+        "MSO 6019",
+        "MSO 6023",
+        "MSO 6150",
+        "MSO 6330",
+        "SOI 6216"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76D",
+      "cle": "76/76D",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir un cours de deuxième ou de troisième cycle dans le répertoire des cours de l'École de santé publique avec l'approbation du responsable du programme d'études."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 04 (A18)\nLe diplôme d'études professionnelles approfondies (D.E.P.A) comporte 30 crédits. Il est offert selon les options suivantes:\n- option Épidémiologie (segment 71);\n- option Analyse de risque et toxicologie (segment 74);\n- option Analyse et management des systèmes de santé (segment 75);\n- option Santé mondiale (segment 76).\nCours complémentaires\nSPU6600 - Principes et enjeux de la santé publique (3cr.)",
+    "Segment 01 Tronc commun — Les crédits du tronc commun sont répartis de la façon suivante: 18 crédits obligatoires.",
+    "Segment 71 Spécialisation Épidémiologie — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante: 24 crédits obligatoires, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+    "Segment 74 Spécialisation Analyse du risque et toxicologie — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante: 30 crédits obligatoires",
+    "Segment 75 Spécialisation Analyse et management des systèmes de santé — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante: 24 crédits obligatoires et 6 crédits au choix.",
+    "Segment 76 Spécialisation Santé mondiale — Les crédits de l'option, incluant le segment 01, sont répartis de la façon suivante: 24 crédits obligatoires, 3 à 6 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-sante-publique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:52.993Z"
+}

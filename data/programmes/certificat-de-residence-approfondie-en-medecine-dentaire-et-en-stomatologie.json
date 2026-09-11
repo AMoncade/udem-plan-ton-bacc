@@ -1,0 +1,117 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-de-residence-approfondie-en-medecine-dentaire-et-en-stomatologie",
+  "nom": "Certificat de résidence approfondie en médecine dentaire et en stomatologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine dentaire",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 52,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 32,
+          "max": 48
+        }
+      },
+      "regleBrut": "Option - Minimum 32 crédits, maximum 48 crédits.",
+      "cours": [
+        "SRS 6023",
+        "SRS 6024",
+        "SRS 6025"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 16
+        }
+      },
+      "regleBrut": "Option - Maximum 16 crédits.",
+      "cours": [
+        "SRS 6028"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "DER 6120",
+        "DER 6130",
+        "DER 6222",
+        "PHL 6035",
+        "SAB 6311",
+        "SAB 6337",
+        "SAB 6338",
+        "SAB 6405",
+        "STO 6000",
+        "STO 6041",
+        "STO 6300",
+        "STO 6303",
+        "STO 6304",
+        "STO 6307",
+        "STO 6312",
+        "STO 6907",
+        "STO 6908"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Choix - Maximum 4 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Les étudiants devront choisir un cours de cycle supérieur parmi le répertoire de cours de l'Université de Montréal, ou d'une autre université, avec l'accord du directeur de programme."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (É18)\nLe certificat de deuxième cycle comporte 52 crédits. L'étudiant fait approuver par son directeur de programme le choix des options à l'intérieur des cours proposés. Le directeur est responsable de l'orientation.\nL'étudiant est soumis aux normes du centre hospitalier dans lequel il poursuit ses études, de même qu'à celles pouvant découler du contrat d'affiliation entre l'Université et le centre hospitalier.",
+    "Segment 70 — Tous les crédits du certificat sont à option, dont 48 sont attribués aux stages."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-de-residence-approfondie-en-medecine-dentaire-et-en-stomatologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:06.605Z"
+}

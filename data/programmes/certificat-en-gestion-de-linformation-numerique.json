@@ -1,0 +1,115 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-gestion-de-linformation-numerique",
+  "nom": "Certificat en gestion de l'information numérique",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du certificat sont répartis de la façon suivante : 18 crédits obligatoires, 9 à option et 3 au choix.",
+    "obligatoire": {
+      "min": 18,
+      "max": 18
+    },
+    "option": {
+      "min": 9,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Obligatoire - 18 crédits.",
+      "cours": [
+        "INU 1001",
+        "INU 1010",
+        "INU 1020",
+        "INU 1030",
+        "INU 1040",
+        "INU 1050"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "ARV 1050",
+        "COM 1500",
+        "COM 1560",
+        "COM 1571",
+        "COM 2021",
+        "COM 2220",
+        "COM 2571",
+        "COM 2590",
+        "COM 2710",
+        "IFT 1400",
+        "IFT 1810",
+        "IFT 1912",
+        "IFT 1931",
+        "IFT 1941",
+        "IFT 2720",
+        "IFT 2830",
+        "INU 3011",
+        "INU 3051",
+        "INU 3052"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A26)\nLe certificat comporte 30 crédits.",
+    "Segment 71 — Les crédits du certificat sont répartis de la façon suivante : 18 crédits obligatoires, 9 à option et 3 au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-gestion-de-linformation-numerique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:42.465Z"
+}

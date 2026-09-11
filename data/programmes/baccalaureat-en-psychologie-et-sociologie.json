@@ -1,0 +1,363 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-psychologie-et-sociologie",
+  "nom": "Baccalauréat en psychologie et sociologie",
+  "orientation": null,
+  "segments": [
+    "75"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 42 crédits obligatoires, 45 crédits à option et 3 crédits au choix.",
+    "obligatoire": {
+      "min": 42,
+      "max": 42
+    },
+    "option": {
+      "min": 45,
+      "max": 45
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "Fondements théoriques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 24,
+          "max": 24
+        }
+      },
+      "regleBrut": "Obligatoire - 24 crédits.",
+      "cours": [
+        "PSY 1075",
+        "PSY 1105",
+        "PSY 2115",
+        "PSY 3022",
+        "SOL 1013",
+        "SOL 1015",
+        "SOL 1017",
+        "SOL 2105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Fondements méthodologiques",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSY 1006",
+        "SOL 1020",
+        "SOL 1090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75C",
+      "cle": "75/75C",
+      "segment": "75",
+      "nom": "Intégration bidisciplinaire",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PSO 1000",
+        "PSO 2000",
+        "PSO 3000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75D",
+      "cle": "75/75D",
+      "segment": "75",
+      "nom": "Psychologie, culture et société",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "PSY 2048",
+        "PSY 2071",
+        "PSY 2084",
+        "PSY 2128",
+        "PSY 3073",
+        "PSY 3119"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75E",
+      "cle": "75/75E",
+      "segment": "75",
+      "nom": "Psychologie et développement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "PSY 1095",
+        "PSY 2093",
+        "PSY 2254",
+        "PSY 3090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75F",
+      "cle": "75/75F",
+      "segment": "75",
+      "nom": "Psychologie : bases cognitives, affectives et physiologiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "PSY 1035",
+        "PSY 1045",
+        "PSY 1085",
+        "PSY 2044",
+        "PSY 2055",
+        "PSY 2065",
+        "PSY 3032",
+        "PSY 3083"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75G",
+      "cle": "75/75G",
+      "segment": "75",
+      "nom": "Sociologie : Groupes et rapports sociaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "SOL 1012",
+        "SOL 1016",
+        "SOL 1150",
+        "SOL 1967",
+        "SOL 2050",
+        "SOL 2104",
+        "SOL 2111",
+        "SOL 2201",
+        "SOL 2403",
+        "SOL 2410",
+        "SOL 2503",
+        "SOL 3104",
+        "SOL 3107",
+        "SOL 3221",
+        "SOL 3402",
+        "SOL 3404",
+        "SOL 3406",
+        "SOL 3407",
+        "SOL 3505",
+        "SOL 3604"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75H",
+      "cle": "75/75H",
+      "segment": "75",
+      "nom": "Sociologie : structure et action sociales",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "SOL 1102",
+        "SOL 1400",
+        "SOL 2015",
+        "SOL 2103",
+        "SOL 2107",
+        "SOL 2200",
+        "SOL 2301",
+        "SOL 3201",
+        "SOL 3351",
+        "SOL 3410"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75I",
+      "cle": "75/75I",
+      "segment": "75",
+      "nom": "Sociologie : pensée sociale et sociologie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "SOL 2016",
+        "SOL 2017",
+        "SOL 2018",
+        "SOL 2027",
+        "SOL 2511",
+        "SOL 3012",
+        "SOL 3026"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75J",
+      "cle": "75/75J",
+      "segment": "75",
+      "nom": "Méthodologie avancée",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "PSY 2003",
+        "SOL 2020",
+        "SOL 2090",
+        "SOL 3017",
+        "SOL 3035",
+        "SOL 3036",
+        "SOL 3051",
+        "SOL 3063"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75K",
+      "cle": "75/75K",
+      "segment": "75",
+      "nom": "Stage",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "SOL 3031",
+        "SOL 3033"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75L",
+      "cle": "75/75L",
+      "segment": "75",
+      "nom": "Découverte des milieux de l'intervention",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "CRI 2455",
+        "CRI 2545",
+        "CRI 3465",
+        "CRI 3495",
+        "SVS 1160",
+        "SVS 1443",
+        "SVS 2103",
+        "SVS 2104",
+        "SVS 2105",
+        "SVS 2110",
+        "SVS 2378"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Pour pouvoir s'inscrire à un cours du bloc 75L, les étudiants doivent avoir complété 60 crédits et avoir une moyenne cumulative de 3,4."
+      ]
+    },
+    {
+      "id": "75Z",
+      "cle": "75/75Z",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A16)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 75 — Les crédits du baccalauréat sont répartis de la façon suivante : 42 crédits obligatoires, 45 crédits à option et 3 crédits au choix.",
+    "Segment 75 — Sauf exception autorisée, en sociologie, les étudiants suivent des cours SOL1000 au 1er trimestre, 2000 dès le 2e trimestre et 3000 après 45 crédits du programme. En psychologie, ils suivent les cours PSY1000 en 1re année, 2000 en 2e année et 3000 en 3e année."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-psychologie-et-sociologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:58.500Z"
+}

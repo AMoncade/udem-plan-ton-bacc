@@ -1,0 +1,109 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-nutrition",
+  "nom": "DESS en nutrition",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S sont répartis de la façon suivante: 9 crédits obligatoires et 21 crédits à option.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "MMD 6005R",
+        "MSO 6060",
+        "NUT 6650",
+        "NUT 6675"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "regleBrut": "Option - 1 crédit.",
+      "cours": [
+        "NUT 6613",
+        "NUT 6654"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
+      },
+      "regleBrut": "Option - 20 crédits.",
+      "cours": [
+        "CSS 6100",
+        "MSO 6300",
+        "MSO 6340",
+        "NUT 6000",
+        "NUT 6027",
+        "NUT 6029",
+        "NUT 6033",
+        "NUT 6040",
+        "NUT 6093",
+        "NUT 6606",
+        "NUT 6626",
+        "NUT 6638",
+        "NUT 6659",
+        "NUT 6670",
+        "NUT 6671"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (E14)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S sont répartis de la façon suivante: 9 crédits obligatoires et 21 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-nutrition/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:52.870Z"
+}

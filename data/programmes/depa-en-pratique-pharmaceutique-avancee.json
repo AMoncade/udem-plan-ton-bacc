@@ -1,0 +1,106 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-pratique-pharmaceutique-avancee",
+  "nom": "DEPA en pratique pharmaceutique avancée",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de ce D.E.P.A. sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option, dont 18 attribués à l'activité de spécialisation.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PHA 72011",
+        "PHA 72012",
+        "PHA 7211"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6178",
+        "ASA 6732",
+        "MSO 6011"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Choisir parmi les cours suivants ou tout autre cours jugé pertinent à la suite de l'approbation du responsable du programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 18,
+          "max": 18
+        }
+      },
+      "regleBrut": "Option - 18 crédits.",
+      "cours": [
+        "PHA 71011",
+        "PHA 71012",
+        "PHA 71021",
+        "PHA 71022",
+        "PHA 71031",
+        "PHA 71032",
+        "PHA 71041",
+        "PHA 71042",
+        "PHA 71051",
+        "PHA 71052"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (E23)\nLe diplôme d'études professionnelles approfondies (D.E.P.A.) comporte 30 crédits.",
+    "Segment 70 — Les crédits de ce D.E.P.A. sont répartis de la façon suivante : 9 crédits obligatoires et 21 crédits à option, dont 18 attribués à l'activité de spécialisation."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-pratique-pharmaceutique-avancee/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:51.451Z"
+}

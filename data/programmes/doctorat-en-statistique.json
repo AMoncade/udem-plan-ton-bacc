@@ -1,0 +1,103 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-statistique",
+  "nom": "Doctorat en statistique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : un minimum de 84 crédits obligatoires, dont 73 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option.",
+    "obligatoire": null,
+    "option": {
+      "min": 6,
+      "max": 6
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      "regleBrut": "Obligatoire - 11 crédits.",
+      "cours": [
+        "MAT 6701",
+        "STT 6532",
+        "STT 6533",
+        "STT 6700"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours STT 6532, STT 6533 et STT6700 sont remplacés par d'autres cours s'ils ont été suivis à la maîtrise. Le choix de ces cours sera approuvé par le responsable du programme."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Compléments de statistique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "STT 6215",
+        "STT 6220",
+        "STT 6300",
+        "STT 6410",
+        "STT 6415",
+        "STT 6510",
+        "STT 6515",
+        "STT 6516",
+        "STT 6615",
+        "STT 6705V"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 73,
+          "max": 73
+        }
+      },
+      "regleBrut": "Obligatoire - 73 crédits.",
+      "cours": [
+        "STT 7900",
+        "STT 7904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A21)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : un minimum de 84 crédits obligatoires, dont 73 crédits attribués à la recherche et à la rédaction d'une thèse et 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-statistique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:04.607Z"
+}

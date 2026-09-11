@@ -1,0 +1,203 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-genie-biomedical",
+  "nom": "DESS en génie biomédical",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 2 crédits obligatoires et 28 crédits à option.",
+    "obligatoire": {
+      "min": 2,
+      "max": 2
+    },
+    "option": {
+      "min": 28,
+      "max": 28
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédit.",
+      "cours": [
+        "GBM 6125",
+        "MMD 6005R"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - Maximum 2 crédits.",
+      "cours": [
+        "BIE 6502",
+        "BIM 6065C",
+        "BIM 6065E",
+        "GBM 6119"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ASA 6732",
+        "GBM 3000",
+        "GBM 6112",
+        "GBM 6951",
+        "GBM 6952",
+        "MMD 6020",
+        "MSO 6624"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Thématique biomécanique et musculosquelettique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "KIN 6838",
+        "KIN 6841",
+        "MMD 6049",
+        "MMD 66001",
+        "MMD 66002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Thématique électrophysiologie et neurotechnologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "GBM 6106",
+        "NSC 6084"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Thématique génie tissulaire et biomatériaux",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 21
+        }
+      },
+      "regleBrut": "Option - Maximum 21 crédits.",
+      "cours": [
+        "GBM 6196"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Thématique imagerie biomédicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "GBM 6118",
+        "GBM 6119",
+        "IFT 6150",
+        "IFT 6390"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Thématique biophotonique et nanotechnologie biomédicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 13
+        }
+      },
+      "regleBrut": "Option - Maximum 13 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (A26)\nLe D.E.S.S. comporte 30 crédits de cours.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 2 crédits obligatoires et 28 crédits à option.",
+    "Segment 70 — Les cours choisis sont sujets à l'approbation du responsable de programme."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-genie-biomedical/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:21.470Z"
+}

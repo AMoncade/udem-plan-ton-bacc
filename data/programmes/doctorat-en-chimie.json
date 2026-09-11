@@ -1,0 +1,98 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-chimie",
+  "nom": "Doctorat en chimie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 87 crédits obligatoires, dont 84 attribués à la recherche et à la rédaction d'une thèse et 3 crédits à option.",
+    "obligatoire": {
+      "min": 87,
+      "max": 87
+    },
+    "option": {
+      "min": 3,
+      "max": 3
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "CHM 6601"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir parmi les cours d'études supérieures du Département."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits.",
+      "cours": [
+        "CHM 7000",
+        "CHM 7010",
+        "CHM 7020",
+        "CHM 7030",
+        "CHM 7040",
+        "CHM 7050",
+        "CHM 7060",
+        "CHM 7090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A92)\nLe doctorat comporte 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 87 crédits obligatoires, dont 84 attribués à la recherche et à la rédaction d'une thèse et 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-chimie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:14.160Z"
+}

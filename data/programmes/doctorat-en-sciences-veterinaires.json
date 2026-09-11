@@ -1,0 +1,147 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-veterinaires",
+  "nom": "Doctorat en sciences vétérinaires",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70"
+  ],
+  "orientations": [
+    {
+      "nom": "Microbiologie",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Reproduction",
+      "segments": [
+        "01",
+        "70",
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Pathologie",
+      "segments": [
+        "01",
+        "70",
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Épidémiologie",
+      "segments": [
+        "01",
+        "70",
+        "73"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Pharmacologie",
+      "segments": [
+        "01",
+        "70",
+        "75"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Sciences cliniques",
+      "segments": [
+        "01",
+        "70",
+        "76"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Biomédecine vétérinaire",
+      "segments": [
+        "01",
+        "70",
+        "77"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Relation humain-animal",
+      "segments": [
+        "01",
+        "70",
+        "78"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine vétérinaire",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 86,
+          "max": 86
+        }
+      },
+      "regleBrut": "Obligatoire - 86 crédits.",
+      "cours": [
+        "MMV 7002",
+        "MMV 7025"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "MMV 70001",
+        "MMV 70002",
+        "MMV 70003",
+        "MMV 70004",
+        "MMV 70005",
+        "MMV 70006",
+        "MMV 70011",
+        "MMV 70012",
+        "MMV 70013",
+        "MMV 70014",
+        "MMV 70015",
+        "MMV 70016"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A21)\nLe doctorat comporte 90 crédits répartis de façon identique parmi les options suivantes :\n- option Microbiologie (segment 70) *,\n- option Reproduction (segment 71),\n- option Pathologie (segment 72),\n- option Épidémiologie (segment 73),\n- option Pharmacologie (segment 75)\n- option Sciences cliniques (segment 76)\n- option Biomédecine vétérinaire (segment 77).\n- option Relation humain-animal (segment 78)\n*Seul le Segment 70 – Propre à l'option Microbiologie est publié aux fins d'exemple.\nLes travaux de recherche sont réalisés en résidence à la Faculté de médecine vétérinaire ou dans un laboratoire de recherche agréé par le Comité des études supérieures de la Faculté. Dans ce dernier cas, le candidat doit effectuer un minimum de trois trimestres en résidence à la Faculté de médecine vétérinaire.",
+    "Segment 01 — Tous les crédits de ce segment sont obligatoires.",
+    "Segment 70 * Propre à l'option Microbiologie — Tous les crédits de l'option sont obligatoires, 86 des crédits sont attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-veterinaires/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:58.718Z"
+}

@@ -1,0 +1,333 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-biochimie",
+  "nom": "Doctorat en biochimie",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75"
+  ],
+  "orientations": [
+    {
+      "nom": "Cheminement libre",
+      "segments": [
+        "70",
+        "75"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Génétique moléculaire",
+      "segments": [
+        "71",
+        "75"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Biologie structurale",
+      "segments": [
+        "72",
+        "75"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Génomique humaine",
+      "segments": [
+        "73",
+        "75"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Biochimie in silico",
+      "segments": [
+        "74",
+        "75"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Dynamique cellulaire des complexes macromoléculaires",
+      "segments": [
+        "75"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "BCM 70511",
+        "BCM 70512",
+        "BCM 70521",
+        "BCM 70522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 86,
+          "max": 86
+        }
+      },
+      "regleBrut": "Obligatoire - 86 crédits.",
+      "cours": [
+        "BCM 7000",
+        "BCM 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "BCM 70511",
+        "BCM 70512",
+        "BCM 70521",
+        "BCM 70522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 86,
+          "max": 86
+        }
+      },
+      "regleBrut": "Obligatoire - 86 crédits.",
+      "cours": [
+        "BCM 7000",
+        "BCM 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "BCM 70511",
+        "BCM 70512",
+        "BCM 70521",
+        "BCM 70522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 86,
+          "max": 86
+        }
+      },
+      "regleBrut": "Obligatoire - 86 crédits.",
+      "cours": [
+        "BCM 7000",
+        "BCM 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "BCM 70511",
+        "BCM 70512",
+        "BCM 70521",
+        "BCM 70522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 86,
+          "max": 86
+        }
+      },
+      "regleBrut": "Obligatoire - 86 crédits.",
+      "cours": [
+        "BCM 7000",
+        "BCM 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "BCM 70511",
+        "BCM 70512",
+        "BCM 70521",
+        "BCM 70522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 86,
+          "max": 86
+        }
+      },
+      "regleBrut": "Obligatoire - 86 crédits.",
+      "cours": [
+        "BCM 7000",
+        "BCM 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75A",
+      "cle": "75/75A",
+      "segment": "75",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 4,
+          "max": 4
+        }
+      },
+      "regleBrut": "Obligatoire - 4 crédits.",
+      "cours": [
+        "BCM 70511",
+        "BCM 70512",
+        "BCM 70521",
+        "BCM 70522"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "75B",
+      "cle": "75/75B",
+      "segment": "75",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 86,
+          "max": 86
+        }
+      },
+      "regleBrut": "Obligatoire - 86 crédits.",
+      "cours": [
+        "BCM 7000",
+        "BCM 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 06 (A12)\nLe doctorat comporte 90 crédits. Il est offert selon six options :\n- l'option Cheminement libre (segment 70),\n- l'option Génétique moléculaire (segment 71),\n- l'option Biologie structurale (segment 72),\n- l'option Génomique humaine (segment 73),\n- l'option Biochimie in silico (segment 74),\n- l'option Dynamique cellulaire des complexes macromoléculaires (segment 75).\nLa recherche doit se faire en résidence, soit à l'Université de Montréal, soit dans un laboratoire de recherche d'un hôpital ou d'un institut affilié et agréé par le Conseil de la Faculté de médecine.\nLa participation au cours de séminaire est obligatoire tout au long de la formation de l'étudiant.\nAccès de la M. Sc. au Ph. D. et passage direct de la M. Sc. au Ph. D. sans rédaction de mémoire\nLe programme comporte quatre crédits de cours obligatoires et 86 crédits attribués à la recherche et à la rédaction d'une thèse. Il comporte aussi des cours additionnels selon les besoins du candidat.\nAccès direct du B. Sc. au Ph. D.\nLe programme comporte quatre crédits de cours obligatoires et 86 crédits attribués à la recherche et à la rédaction d'une thèse. L'étudiant devra compléter la scolarité de la maîtrise spécifique à l'option dans laquelle il s'inscrit au doctorat.",
+    "Segment 70 Propre à l'option Cheminement libre — Tous les crédits de l'option sont obligatoires, 86 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 71 Propre à l'option Génétique moléculaire — Tous les crédits de l'option sont obligatoires, 86 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 72 Propre à l'option Biologie structurale — Tous les crédits de l'option sont obligatoires, 86 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 73 Propre à l'option Génomique humaine — Tous les crédits de l'option sont obligatoires, 86 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 74 Propre à l'option Biochimie in silico — Tous les crédits de l'option sont obligatoires, 86 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse.",
+    "Segment 75 Propre à l'opt. Dynamique cellulaire des complexes macromoléculaires — Tous les crédits de l'option sont obligatoires, 86 des 90 crédits sont attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-biochimie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:07.850Z"
+}

@@ -1,0 +1,145 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-neurosciences",
+  "nom": "Doctorat en neurosciences",
+  "orientation": null,
+  "segments": [
+    "69",
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du cheminement Général sont répartis de la façon suivante : 84 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 3 à 6 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 84,
+      "max": 84
+    },
+    "option": {
+      "min": 3,
+      "max": 6
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "69A",
+      "cle": "69/69A",
+      "segment": "69",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "NSC 6081",
+        "NSC 6082",
+        "NSC 6083",
+        "NSC 6084",
+        "NSC 6085",
+        "NSC 6091",
+        "NSC 6092"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69B",
+      "cle": "69/69B",
+      "segment": "69",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "69C",
+      "cle": "69/69C",
+      "segment": "69",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits.",
+      "cours": [
+        "NSC 7000",
+        "NSC 7010",
+        "NSC 7020",
+        "NSC 7904"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "LNG 6030",
+        "NSC 6051",
+        "PSY 6022",
+        "PSY 7425"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 78,
+          "max": 78
+        }
+      },
+      "regleBrut": "Obligatoire - 78 crédits.",
+      "cours": [
+        "NSC 7000",
+        "NSC 7905"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 01 (E20)\nLe doctorat comporte 90 crédits. Il est offert selon un cheminement Général (segment 69) ou avec l'option Neuropsychologie (segment 70).\nLe doctorat peut aussi comporter d'autres cours selon les besoins du candidat.",
+    "Segment 69 Propre au cheminement Général — Les crédits du cheminement Général sont répartis de la façon suivante : 84 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 3 à 6 crédits à option et, au maximum, 3 crédits au choix.",
+    "Segment 70 Propre à l'option Neuropsychologie — Les crédits du cheminement Neuropsychologie sont répartis de la façon suivante : 90 crédits obligatoires, dont 78 crédits attribués à la recherche et à la rédaction d'une thèse."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-neurosciences/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:53.797Z"
+}

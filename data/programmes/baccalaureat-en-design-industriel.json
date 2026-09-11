@@ -1,0 +1,367 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-design-industriel",
+  "nom": "Baccalauréat en design industriel",
+  "orientation": null,
+  "segments": [
+    "01",
+    "70",
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 120,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "Culture du design",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DIN 1210",
+        "DIN 2332",
+        "DIN 3211",
+        "DIN 3212",
+        "DIN 3532"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Théories et pratiques visuelles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "DEI 2140",
+        "DIN 3132",
+        "DIN 3140",
+        "DIN 3325"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Matériaux et procédés de mise en forme",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "DIN 1310",
+        "DIN 1321",
+        "DIN 2322"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Matérialité",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DIN 3333",
+        "DIN 3334"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Infographie et médias mixtes",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DIN 1110",
+        "DIN 1120",
+        "DIN 1121",
+        "DIN 2120",
+        "DIN 2140"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Processus, pratiques et méthodologies",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "DIN 2210",
+        "DIN 2220",
+        "DIN 4420"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01G",
+      "cle": "01/01G",
+      "segment": "01",
+      "nom": "Création, interaction et gestion",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AME 4722K",
+        "DEJ 1101",
+        "DIN 3311"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01H",
+      "cle": "01/01H",
+      "segment": "01",
+      "nom": "Ateliers d'intégration et stage",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
+      },
+      "regleBrut": "Obligatoire - 27 crédits.",
+      "cours": [
+        "DIN 1031",
+        "DIN 1032",
+        "DIN 1041",
+        "DIN 1042",
+        "DIN 1043",
+        "DIN 2011",
+        "DIN 2012",
+        "DIN 2013",
+        "DIN 2021",
+        "DIN 2022",
+        "DIN 3600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01I",
+      "cle": "01/01I",
+      "segment": "01",
+      "nom": "Ateliers thématiques 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "DIN 3010",
+        "DIN 3011",
+        "DIN 3012",
+        "DIN 3013",
+        "DIN 3014",
+        "DIN 3015",
+        "DIN 3016",
+        "DIN 3017",
+        "DIN 3018",
+        "DIN 3019",
+        "DIN 3019A",
+        "DIN 3111",
+        "DIN 3112",
+        "DIN 3113",
+        "DIN 3114",
+        "DIN 3115",
+        "DIN 3116",
+        "DIN 3117",
+        "DIN 3118",
+        "DIN 3119",
+        "DIN 3120",
+        "DIN 3121",
+        "DIN 3122",
+        "DIN 3123"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01J",
+      "cle": "01/01J",
+      "segment": "01",
+      "nom": "Ateliers thématiques 2",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "DIN 3020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01K",
+      "cle": "01/01K",
+      "segment": "01",
+      "nom": "Projet de fin d'étude 1",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "DIN 4017",
+        "DIN 4018"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01L",
+      "cle": "01/01L",
+      "segment": "01",
+      "nom": "Travail dirigé",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "DIN 5012"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01Z",
+      "cle": "01/01Z",
+      "segment": "01",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Projet de fin d'études 2",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "DIN 4020"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71V",
+      "cle": "71/71V",
+      "segment": "71",
+      "nom": "Parcours honor",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      "regleBrut": "Obligatoire -13 crédits.",
+      "cours": [
+        "AME 6502",
+        "AME 6749",
+        "DIN 3140",
+        "DIN 6710"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 13 (A21)\nLe baccalauréat comporte 120 crédits.\nIl est offert selon 2 cheminements : le cheminement régulier ou le cheminement honor.\nCheminement régulier (segment 01 et segment 70) : 84 crédits obligatoires, 33 à 36 crédits à option et 0 à 3 crédits au choix.\nCheminement honor (segment 01 et segment 71) : 88 crédits obligatoires, 29 à 32 crédits à option et 0 à 3 crédits au choix.",
+    "Segment 01 Tronc commun aux deux cheminements — Les crédits du Baccalauréat sont répartis de la façon suivante :",
+    "Segment 01 Tronc commun aux deux cheminements — Cheminement régulier (segment 01 et segment 70) : 84 crédits obligatoires, 33 à 36 crédits à option et 0 à 3 crédits au choix.",
+    "Segment 01 Tronc commun aux deux cheminements — Cheminement honor (segment 01 et segment 71) : 88 crédits obligatoires, 29 à 32 crédits à option et 0 à 3 crédits au choix.",
+    "Segment 70 Cheminement régulier — Les crédits sont répartis de la façon suivante : 9 crédits obligatoires.",
+    "Segment 71 Cheminement honor — Les crédits sont répartis de la façon suivante : 13 crédits obligatoires."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-design-industriel/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:37:38.262Z"
+}

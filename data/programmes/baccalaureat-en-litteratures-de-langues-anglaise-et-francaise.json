@@ -1,0 +1,350 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-litteratures-de-langues-anglaise-et-francaise",
+  "nom": "Baccalauréat en littératures de langues anglaise et française",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du baccalauréat sont répartis de la façon suivante : 36 crédits obligatoires, 51 à option et 3 au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 51,
+      "max": 51
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Intro. discipline (ét. françaises/ét. anglaises)",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "ANG 1001",
+        "ANG 1002",
+        "ANG 1006",
+        "ANG 1053",
+        "ANG 1103",
+        "ANG 2020",
+        "FAS 3000",
+        "FRA 1000",
+        "FRA 1005",
+        "FRA 1009",
+        "FRA 1027"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Littératures des Amériques (ét. françaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "FRA 1130",
+        "FRA 2111",
+        "FRA 2131",
+        "FRA 2143",
+        "FRA 2264",
+        "FRA 2615",
+        "FRA 3230"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Littératures des Amériques (ét. anglaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 1325",
+        "ANG 1381",
+        "ANG 1401",
+        "ANG 1500",
+        "ANG 2183",
+        "ANG 2325"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Littératures du monde (ét. françaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "FRA 1140",
+        "FRA 2141",
+        "FRA 2142",
+        "FRA 2241",
+        "FRA 3241",
+        "FRA 3242",
+        "FRA 3641"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Littératures du monde (ét. anglaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 1655",
+        "ANG 2260",
+        "ANG 2322",
+        "ANG 2362"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "Littératures/cultures populaires (ét. françaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "FRA 2184",
+        "FRA 2284",
+        "FRA 2500",
+        "FRA 3508"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70G",
+      "cle": "70/70G",
+      "segment": "70",
+      "nom": "Littératures/cultures populaires (ét. anglaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "ANG 1005",
+        "ANG 1320",
+        "ANG 1380",
+        "ANG 1600",
+        "ANG 1700",
+        "ANG 1750",
+        "ANG 2115"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70H",
+      "cle": "70/70H",
+      "segment": "70",
+      "nom": "Ident. sexuelles/sexualités (ét. franç./ét. ang.)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANG 2404",
+        "ANG 2461",
+        "FRA 2183",
+        "FRA 2517",
+        "FRA 3306"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70I",
+      "cle": "70/70I",
+      "segment": "70",
+      "nom": "Histoire des littératures (ét. françaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "FRA 2100",
+        "FRA 2103",
+        "FRA 2110",
+        "FRA 2112",
+        "FRA 2124",
+        "FRA 2180",
+        "FRA 2181",
+        "FRA 2261",
+        "FRA 30301",
+        "FRA 30302",
+        "FRA 3220"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70J",
+      "cle": "70/70J",
+      "segment": "70",
+      "nom": "Histoire des littératures (ét. anglaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "ANG 1031",
+        "ANG 1032",
+        "ANG 1282",
+        "ANG 2133",
+        "ANG 2144",
+        "ANG 2153"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70K",
+      "cle": "70/70K",
+      "segment": "70",
+      "nom": "Théorie (ét. françaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "FRA 2008",
+        "FRA 2285",
+        "FRA 2311",
+        "FRA 3310",
+        "FRA 3313",
+        "FRA 3503"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70L",
+      "cle": "70/70L",
+      "segment": "70",
+      "nom": "Théorie (ét. anglaises)",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ANG 1100",
+        "ANG 2001",
+        "ANG 2361",
+        "ANG 2454",
+        "ANG 2480"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A07)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 70 — Les crédits du baccalauréat sont répartis de la façon suivante : 36 crédits obligatoires, 51 à option et 3 au choix.",
+    "Segment 70 — Quels que soient les cours à option choisis, 42 crédits de cours d'études anglaises et 42 crédits de cours des littératures de langue française devront avoir été complétés."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-litteratures-de-langues-anglaise-et-francaise/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:00.925Z"
+}

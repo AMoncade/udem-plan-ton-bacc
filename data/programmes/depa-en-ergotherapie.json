@@ -1,0 +1,144 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-ergotherapie",
+  "nom": "DEPA en ergothérapie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de médecine",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits de ce D.E.P.A. sont répartis de la façon suivante: 15 crédits obligatoires, dont 12 crédits consacrés à un stage mentoré, et 15 crédits à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "ERT 7030"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Intervention auprès des enfants",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ERT 7011",
+        "ERT 7013",
+        "ERT 7014"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Intervention auprès des adultes et des personnes âgées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Maximum 9 crédits.",
+      "cours": [
+        "ERT 7021",
+        "ERT 7022",
+        "ERT 7023",
+        "ERT 7024",
+        "ERT 7025",
+        "ERT 7026",
+        "ERT 7027",
+        "ERT 7028"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Sciences de l'implantation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ASA 6120",
+        "ASA 6619",
+        "ASA 6705",
+        "ASA 6754",
+        "ASA 6764",
+        "ASA 6767",
+        "SPU 7009"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Stage mentoré",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Obligatoire - 12 crédits.",
+      "cours": [
+        "ERT 7060"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (H22)\nLe diplôme d'études professionnelles approfondies (D.E.P.A.) comporte 30 crédits.",
+    "Segment 70 — Les crédits de ce D.E.P.A. sont répartis de la façon suivante: 15 crédits obligatoires, dont 12 crédits consacrés à un stage mentoré, et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-ergotherapie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:41.722Z"
+}

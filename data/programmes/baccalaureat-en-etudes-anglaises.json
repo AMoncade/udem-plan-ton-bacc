@@ -1,0 +1,234 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-etudes-anglaises",
+  "nom": "Baccalauréat en études anglaises",
+  "orientation": null,
+  "segments": [
+    "71"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "- en cheminement régulier : 36 crédits obligatoires, 45 à 48 crédits à option choisis dans les blocs de cours à option à l'exclusion du bloc 71V et 6 à 9 crédits au choix, - en cheminement Honor : 36 crédits obligatoires, 45 à 48 crédits à option dont les 12 crédits du bloc 71V et 6 à 9 crédits au choix.",
+    "obligatoire": {
+      "min": 36,
+      "max": 36
+    },
+    "option": {
+      "min": 45,
+      "max": 48
+    },
+    "choix": {
+      "min": 6,
+      "max": 9
+    }
+  },
+  "blocs": [
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Initiation à la littérature",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Obligatoire - 36 crédits.",
+      "cours": [
+        "ANG 1001",
+        "ANG 1002",
+        "ANG 1005",
+        "ANG 1006",
+        "ANG 1031",
+        "ANG 1032",
+        "ANG 1034",
+        "ANG 1100",
+        "ANG 1103",
+        "ANG 1104",
+        "ANG 2020",
+        "ANG 2461"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Grammaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 1052",
+        "ANG 1053"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Littératures, cultures, genres et perspectives historiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 27,
+          "max": 42
+        }
+      },
+      "regleBrut": "Option - Minimum 27 crédits, maximum 42 crédits.",
+      "cours": [
+        "ANG 1282",
+        "ANG 1320",
+        "ANG 1325",
+        "ANG 1380",
+        "ANG 1381",
+        "ANG 1401",
+        "ANG 1450",
+        "ANG 1500",
+        "ANG 1600",
+        "ANG 1655",
+        "ANG 1700",
+        "ANG 1750",
+        "ANG 2001",
+        "ANG 2006",
+        "ANG 2115",
+        "ANG 2133",
+        "ANG 2144",
+        "ANG 2153",
+        "ANG 2183",
+        "ANG 2260",
+        "ANG 2322",
+        "ANG 2325",
+        "ANG 2361",
+        "ANG 2362",
+        "ANG 2404",
+        "ANG 2454",
+        "ANG 2480"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Stages",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "ANG 3101",
+        "ANG 3102"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71V",
+      "cle": "71/71V",
+      "segment": "71",
+      "nom": "Cheminement honor",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ANG 3001",
+        "ANG 6001",
+        "ANG 6002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Y",
+      "cle": "71/71Y",
+      "segment": "71",
+      "nom": "Disciplines connexes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 9 crédits.",
+      "cours": [
+        "CIN 1101",
+        "CIN 2102",
+        "ETM 1400",
+        "FEM 3300",
+        "FRA 1130",
+        "GRC 1031",
+        "HAR 1167",
+        "HAR 1200",
+        "HNU 1000",
+        "HNU 2000",
+        "HOR 1200",
+        "HST 1043",
+        "HST 1052",
+        "LCO 1000",
+        "LCO 1001",
+        "LLM 1310",
+        "LLM 2000",
+        "PHI 1255",
+        "POL 1954",
+        "REL 2380",
+        "SOL 1150"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71Z",
+      "cle": "71/71Z",
+      "segment": "71",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Choix - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ANG."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A21)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 71 — Les crédits du baccalauréat sont répartis de la façon suivante :",
+    "Segment 71 — - en cheminement régulier : 36 crédits obligatoires, 45 à 48 crédits à option choisis dans les blocs de cours à option à l'exclusion du bloc 71V et 6 à 9 crédits au choix,",
+    "Segment 71 — - en cheminement Honor : 36 crédits obligatoires, 45 à 48 crédits à option dont les 12 crédits du bloc 71V et 6 à 9 crédits au choix.",
+    "Segment 71 — L'étudiant n'aura accès aux cours de niveau 2000 qu'après avoir suivi 15 crédits de niveau 1000."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-etudes-anglaises/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:38:09.887Z"
+}

@@ -1,0 +1,382 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-philosophie",
+  "nom": "Baccalauréat en philosophie",
+  "orientation": null,
+  "segments": [
+    "83"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du Baccalauréat sont répartis de la façon suivante : 30 crédits obligatoires, 54 crédits à option et 6 crédits au choix.",
+    "obligatoire": {
+      "min": 30,
+      "max": 30
+    },
+    "option": {
+      "min": 54,
+      "max": 54
+    },
+    "choix": {
+      "min": 6,
+      "max": 6
+    }
+  },
+  "blocs": [
+    {
+      "id": "83A",
+      "cle": "83/83A",
+      "segment": "83",
+      "nom": "Fondements",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "PHI 1005",
+        "PHI 1130",
+        "PHI 1205",
+        "PHI 1220",
+        "PHI 1400",
+        "PHI 1440",
+        "PHI 1600",
+        "PHI 1710",
+        "PHI 1800",
+        "PHI 1860"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83B",
+      "cle": "83/83B",
+      "segment": "83",
+      "nom": "Histoire de la philosophie",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Minimum 9 crédits, maximum 15 crédits.",
+      "cours": [
+        "PHI 2605",
+        "PHI 2615",
+        "PHI 2650",
+        "PHI 2670",
+        "PHI 2800",
+        "PHI 2810",
+        "PHI 2820",
+        "PHI 2870",
+        "PHI 2960",
+        "PHI 2965",
+        "PHI 2980"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83C",
+      "cle": "83/83C",
+      "segment": "83",
+      "nom": "Philosophie continentale et esthétique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "PHI 1255",
+        "PHI 1520",
+        "PHI 2195",
+        "PHI 2205",
+        "PHI 2210",
+        "PHI 2215",
+        "PHI 2230",
+        "PHI 2235",
+        "PHI 2255",
+        "PHI 2260"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83D",
+      "cle": "83/83D",
+      "segment": "83",
+      "nom": "Éthique et politique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "PHI 2405",
+        "PHI 2406",
+        "PHI 2415",
+        "PHI 2417",
+        "PHI 2418",
+        "PHI 2419",
+        "PHI 2425",
+        "PHI 2430",
+        "PHI 2480",
+        "PHI 2490"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83E",
+      "cle": "83/83E",
+      "segment": "83",
+      "nom": "Philosophie analytique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "PHI 1300",
+        "PHI 1365",
+        "PHI 2005",
+        "PHI 2150",
+        "PHI 2160",
+        "PHI 2220",
+        "PHI 2305",
+        "PHI 2320",
+        "PHI 2330",
+        "PHI 2340",
+        "PHI 2350"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83F",
+      "cle": "83/83F",
+      "segment": "83",
+      "nom": "Cours approfondis",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 24
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 24 crédits.",
+      "cours": [
+        "PHI 2450",
+        "PHI 3015",
+        "PHI 3155",
+        "PHI 3250",
+        "PHI 3320",
+        "PHI 3330",
+        "PHI 3365",
+        "PHI 3422",
+        "PHI 3445",
+        "PHI 3450",
+        "PHI 3480",
+        "PHI 3540",
+        "PHI 3615",
+        "PHI 3625",
+        "PHI 3640",
+        "PHI 3660",
+        "PHI 3710",
+        "PHI 3755",
+        "PHI 3760",
+        "PHI 3775",
+        "PHI 3780",
+        "PHI 3785",
+        "PHI 3840",
+        "PHI 3850",
+        "PHI 3866",
+        "PHI 3870",
+        "PHI 3905"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "83G",
+      "cle": "83/83G",
+      "segment": "83",
+      "nom": "Langues anciennes et modernes",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ABK 1901",
+        "ABK 1902",
+        "ALL 1901",
+        "ALL 1902",
+        "ALL 1903",
+        "ALL 1904",
+        "ALL 1905",
+        "ALL 1906",
+        "ALL 1911",
+        "ALL 1912",
+        "ALL 1913",
+        "ANG 1903",
+        "ANG 1904",
+        "ANG 1905",
+        "ANG 1906",
+        "ANG 1907",
+        "ANG 1911",
+        "ANG 1912",
+        "ANG 1913",
+        "ANG 1921",
+        "ANG 1922",
+        "ANG 1924",
+        "ANG 1925",
+        "ANG 1926",
+        "ANG 1933",
+        "ARA 1901",
+        "ARA 1902",
+        "ARA 1903",
+        "ARA 1904",
+        "ARA 1912",
+        "CHN 1901",
+        "CHN 1902",
+        "CHN 1903",
+        "CHN 1904",
+        "CHN 1905",
+        "CHN 1906",
+        "CHN 1907",
+        "CHN 1908",
+        "CHN 1909",
+        "CHN 1910",
+        "CHN 1911",
+        "CHN 1912",
+        "CHN 1913",
+        "CRL 1901",
+        "CRL 1902",
+        "CRN 1901",
+        "CRN 1902",
+        "CRN 1903",
+        "CRN 1904",
+        "CRN 1905",
+        "CRN 1906",
+        "CRN 1907",
+        "CRN 1908",
+        "CRN 1909",
+        "CRN 1910",
+        "CRN 1911",
+        "CRN 1912",
+        "CTL 1901",
+        "CTL 1902",
+        "CTL 1903",
+        "CTL 1904",
+        "CTL 1905",
+        "ESP 1901",
+        "ESP 1902",
+        "ESP 1903",
+        "ESP 1904",
+        "ESP 1905",
+        "ESP 1906",
+        "ESP 1907",
+        "ETM 1200",
+        "GRC 1111",
+        "GRC 1121",
+        "GRC 2011",
+        "GRC 2021",
+        "GRC 2031",
+        "GRM 1901",
+        "GRM 1902",
+        "GRM 1903",
+        "HEB 1901",
+        "HEB 1902",
+        "INN 1901",
+        "INN 1902",
+        "INN 1903",
+        "INN 1904",
+        "ITL 1901",
+        "ITL 1902",
+        "ITL 1903",
+        "ITL 1904",
+        "JPN 1901",
+        "JPN 1902",
+        "JPN 1903",
+        "JPN 1904",
+        "JPN 1905",
+        "JPN 1906",
+        "JPN 1907",
+        "JPN 1908",
+        "JPN 1909",
+        "JPN 1910",
+        "JPN 1911",
+        "JPN 1912",
+        "JPN 1913",
+        "JPN 1914",
+        "JPN 1915",
+        "LAT 1111",
+        "LAT 1121",
+        "LAT 2011",
+        "LAT 2021",
+        "LAT 2031",
+        "LSL 1901",
+        "LSL 1902",
+        "PTG 1901",
+        "PTG 1902",
+        "PTG 1903",
+        "PTG 1904",
+        "RUS 1901",
+        "RUS 1902",
+        "RUS 1903",
+        "RUS 1904"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
+        "Consultez l'information sur le site du Centre de langues"
+      ]
+    },
+    {
+      "id": "83Z",
+      "cle": "83/83Z",
+      "segment": "83",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Choix - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle PHI."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 13 (A25)\nLe baccalauréat comporte 90 crédits.",
+    "Segment 83 — Les crédits du Baccalauréat sont répartis de la façon suivante : 30 crédits obligatoires, 54 crédits à option et 6 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-philosophie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:40.070Z"
+}

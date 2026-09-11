@@ -1,0 +1,323 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-cinema-jeu-video-television-et-arts-mediatiques",
+  "nom": "Doctorat en cinéma, jeu vidéo, télévision et arts médiatiques",
+  "orientation": null,
+  "segments": [
+    "70",
+    "71"
+  ],
+  "orientations": [
+    {
+      "nom": "recherche",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 81 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, 6 crédits à option et 3 crédits au choix.",
+        "obligatoire": {
+          "min": 70,
+          "max": 70
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "recherche-création",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche, à la réalisation et à la rédaction d'une thèse, et 9 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CIN 70001",
+        "CIN 70002",
+        "CIN 7006"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondissement des approches",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "CIN 6009",
+        "CIN 6013",
+        "CIN 6015",
+        "CIN 6017",
+        "CIN 6035",
+        "CIN 6048",
+        "CIN 6050",
+        "CIN 6051",
+        "CIN 6054",
+        "CIN 6055",
+        "CIN 6056",
+        "CIN 6059",
+        "CIN 6060",
+        "CIN 6061",
+        "CIN 6065",
+        "CIN 6070",
+        "CIN 6100",
+        "HAR 70091",
+        "HAR 70092",
+        "JEU 6001",
+        "JEU 6002",
+        "PLU 6042",
+        "PLU 6133"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Cours au choix",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours choisis parmi les cours de cycles supérieurs de l'université ou des cours de même niveau d'autres universités (mais dans ces derniers cas, l'approbation du responsable des études supérieures est obligatoire)."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits",
+      "cours": [
+        "CIN 7001",
+        "CIN 7002",
+        "CIN 7003",
+        "CIN 7007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71A",
+      "cle": "71/71A",
+      "segment": "71",
+      "nom": "Méthodologie",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Obligatoire - 6 crédits.",
+      "cours": [
+        "CIN 70081",
+        "CIN 70082",
+        "HAR 70091",
+        "HAR 70092"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71B",
+      "cle": "71/71B",
+      "segment": "71",
+      "nom": "Approfondissement des approches",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "CIN 6009",
+        "CIN 6015",
+        "CIN 6017",
+        "CIN 6048",
+        "CIN 6050",
+        "CIN 6051",
+        "CIN 6054",
+        "CIN 6056",
+        "CIN 6057",
+        "CIN 6058",
+        "CIN 6059",
+        "CIN 6060",
+        "CIN 6061",
+        "CIN 6065",
+        "CIN 6100"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71C",
+      "cle": "71/71C",
+      "segment": "71",
+      "nom": "Approfondissement en histoire de l'art",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "HAR 6015",
+        "HAR 6046",
+        "HAR 6073",
+        "HAR 6080",
+        "HAR 6082",
+        "HAR 6083",
+        "HAR 6100",
+        "HAR 6246",
+        "HAR 7002",
+        "HAR 7002A",
+        "HAR 7005",
+        "HAR 7008"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71D",
+      "cle": "71/71D",
+      "segment": "71",
+      "nom": "Pratiques médiatiques et interdisciplinaires",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ART 6008",
+        "ART 6009",
+        "ART 6011",
+        "ART 6012",
+        "ART 6013",
+        "ART 6014",
+        "ART 6015",
+        "ART 6016",
+        "ART 6017",
+        "ART 6022",
+        "COM 6402",
+        "COM 6715",
+        "FRA 6501",
+        "FRA 6505",
+        "HNU 6000",
+        "HNU 6051",
+        "HNU 6052",
+        "HNU 6053",
+        "HNU 6054",
+        "HNU 6055",
+        "HNU 6056",
+        "HNU 6057",
+        "HNU 6058",
+        "HNU 6059",
+        "JEU 6002",
+        "JEU 6003",
+        "PLU 6042",
+        "PLU 6133",
+        "PLU 6350",
+        "PLU 7000"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "71E",
+      "cle": "71/71E",
+      "segment": "71",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "CIN 7001",
+        "CIN 7002",
+        "CIN 7003",
+        "CIN 7007"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 03 (A26)\nLe doctorat comporte 90 crédits et est offert selon deux options :\n- option recherche (segment 70),\n- option recherche-création (segment 71)",
+    "Segment 70 Propre à l'option recherche — Les crédits du segment 70 sont répartis de la façon suivante : 81 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse, 6 crédits à option et 3 crédits au choix.",
+    "Segment 71 Propre à l'option recherche-création — Les crédits du segment 71 sont répartis de la façon suivante : 81 crédits obligatoires, dont 75 crédits attribués à la recherche, à la réalisation et à la rédaction d'une thèse, et 9 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-cinema-jeu-video-television-et-arts-mediatiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:50:14.377Z"
+}

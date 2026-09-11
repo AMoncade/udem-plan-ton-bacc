@@ -1,0 +1,135 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "depa-en-soins-palliatifs-et-de-fin-de-vie",
+  "nom": "DEPA en soins palliatifs et de fin de vie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences infirmières",
+  "typeProgramme": "DEPA",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Le D.E.P.A. comporte 9 crédits obligatoires, 21 crédits à option, dont 15 crédits attribués à l'activité d'intégration.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 21,
+      "max": 21
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "BIE 6004",
+        "PAL 7112"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "ANT 6155",
+        "ANT 6156",
+        "PAL 6110",
+        "PAL 6111",
+        "PLU 6043",
+        "PSY 6106",
+        "REL 6215",
+        "SOI 6238",
+        "SOI 6239",
+        "SVS 6414",
+        "SVS 6765"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Parmi les cours suivants ou tout autre cours de 2e ou 3e cycle approuvé par la direction du programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Activité d'intégration",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "PAL 7001",
+        "PAL 7002",
+        "PAL 7003",
+        "PAL 7004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "ASA 6178",
+        "ASA 6764",
+        "PLU 6048",
+        "SHA 7065",
+        "SOI 6177",
+        "SOI 6920",
+        "SOI 7003",
+        "SVS 6475",
+        "SVS 6512",
+        "SVS 6520"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A18)\nLe diplôme d'études professionnelles approfondies (D.E.P.A.) comporte 30 crédits.",
+    "Segment 70 — Le D.E.P.A. comporte 9 crédits obligatoires, 21 crédits à option, dont 15 crédits attribués à l'activité d'intégration."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/depa-en-soins-palliatifs-et-de-fin-de-vie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:42:54.891Z"
+}

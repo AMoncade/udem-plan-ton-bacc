@@ -1,0 +1,168 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "maitrise-en-architecture",
+  "nom": "Maîtrise en architecture",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de l'aménagement",
+  "typeProgramme": "Maîtrise",
+  "creditsTotal": 45,
+  "exigences": {
+    "brut": "Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires, 3 à 6 crédits à option et un maximum de 3 crédits au choix.",
+    "obligatoire": {
+      "min": 39,
+      "max": 39
+    },
+    "option": {
+      "min": 3,
+      "max": 6
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Design complet",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ARC 6701",
+        "ARC 6711"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Recherche et projet d'architecture",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 21,
+          "max": 21
+        }
+      },
+      "regleBrut": "Obligatoire - 21 crédits.",
+      "cours": [
+        "ARC 6801",
+        "ARC 6802",
+        "ARC 6803",
+        "ARC 6804"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Pratique professionnelle",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "ARC 6830",
+        "ARC 6831",
+        "ARC 6832"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "AME 6043",
+        "AME 6046",
+        "AME 6047",
+        "AME 6210",
+        "AME 6305",
+        "AME 6330",
+        "AME 6850",
+        "ARC 6851",
+        "ARC 6852",
+        "ARC 6853",
+        "ARC 6854",
+        "ARC 6863",
+        "ARC 6883",
+        "ARC 6888"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70E",
+      "cle": "70/70E",
+      "segment": "70",
+      "nom": "Activité individuelle",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70F",
+      "cle": "70/70F",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Avec l'accord du responsable de programme, l'étudiant peut choisir un cours de trois crédits de 1er cycle de niveau 3000 ou 4000, ou tout autre cours de cycles supérieurs parmi ceux du répertoire des cours de l'Université de Montréal ou parmi ceux des autres universités montréalaises."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 02 (A16)\nLa maîtrise comporte 45 crédits.\nPour les candidats titulaires d'un baccalauréat en design de l'environnement, des cours préparatoires seront exigés en fonction des équivalences et des exemptions accordées par rapport au B. Sc. Architecture.",
+    "Segment 70 — Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires, 3 à 6 crédits à option et un maximum de 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/maitrise-en-architecture/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:53:03.256Z"
+}

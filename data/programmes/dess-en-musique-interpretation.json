@@ -1,0 +1,120 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-musique-interpretation",
+  "nom": "DESS en musique - Interprétation",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits sont répartis de la façon suivante : 19 crédits obligatoires et 11 crédits à option.",
+    "obligatoire": {
+      "min": 19,
+      "max": 19
+    },
+    "option": {
+      "min": 11,
+      "max": 11
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "MIN 6948",
+        "MIN 6949",
+        "MIN 6957",
+        "MUS 6107"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours de 3 crédits choisi parmi un ensemble de cours, séminaires, travaux et lectures dirigés ou sujets spéciaux offerts chaque année."
+      ]
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Instrument",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUI6##3A et MUI6##3B dont le numéro est fonction de l'instrument choisi."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Musique d'ensemble",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - 2 crédits.",
+      "cours": [
+        "MIN 6040",
+        "MIN 6041",
+        "MIN 6043"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Cours MUE### La participation aux grands ensembles est obligatoire si demandée par le doyen."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Récitals",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 19,
+          "max": 19
+        }
+      },
+      "regleBrut": "Obligatoire - 19 crédits.",
+      "cours": [
+        "MIN 6799",
+        "MIN 6800"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 02 (H19)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits sont répartis de la façon suivante : 19 crédits obligatoires et 11 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-musique-interpretation/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:48:47.258Z"
+}

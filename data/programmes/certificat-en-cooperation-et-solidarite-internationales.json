@@ -1,0 +1,158 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "certificat-en-cooperation-et-solidarite-internationales",
+  "nom": "Certificat en coopération et solidarité internationales",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de l’apprentissage continu",
+  "typeProgramme": "Certificat",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Ce programme totalise 9 crédits de cours obligatoires, de 18 à 21 crédits de cours à option et de 0 à 3 crédits de cours au choix.",
+    "obligatoire": {
+      "min": 9,
+      "max": 9
+    },
+    "option": {
+      "min": 18,
+      "max": 21
+    },
+    "choix": {
+      "min": 0,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Notions et pratiques fondamentales",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Obligatoire - 9 crédits.",
+      "cours": [
+        "PPL 1060",
+        "PPL 1080",
+        "PPL 3600"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Problématiques et pratiques reliées",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "PPL 2120",
+        "PPL 2130",
+        "PPL 2140",
+        "PPL 2160",
+        "PPL 3025",
+        "PPL 3035",
+        "PPL 3076",
+        "PPL 3078"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Habiletés spécifiques et méthodologies",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "PPL 2210",
+        "PPL 2230",
+        "PPL 3120",
+        "PPL 3140",
+        "PPL 3160",
+        "PPL 3400"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Formation complémentaire",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "ANT 3100",
+        "ASA 2350G",
+        "AUT 2000",
+        "CRE 1001",
+        "GEO 3442",
+        "HST 1044",
+        "POL 2802",
+        "REL 3320",
+        "SOL 2201",
+        "SVS 1101",
+        "URB 1115",
+        "VIO 2016",
+        "VIO 2016D"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70Z",
+      "cle": "70/70Z",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "L'étudiant peut prendre 3 crédits de cours au choix parmi ceux offerts à la Faculté ou ailleurs à l'Université, y compris parmi les cours offerts par le Centre de langues de l'Université de Montréal. Consultez le : http://centre-de-langues.umontreal.ca/cours-et-horaires/cours/. Le cours au choix est sujet à l'approbation du responsable du certificat."
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A20)\nLe certificat comporte 30 crédits.",
+    "Segment 70 — Ce programme totalise 9 crédits de cours obligatoires, de 18 à 21 crédits de cours à option et de 0 à 3 crédits de cours au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/certificat-en-cooperation-et-solidarite-internationales/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:41:23.244Z"
+}

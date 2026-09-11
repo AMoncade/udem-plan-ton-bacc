@@ -1,0 +1,112 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-civil-en-theologie",
+  "nom": "Doctorat civil en théologie",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Doctorat civil",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat en théologie sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix.",
+    "obligatoire": {
+      "min": 81,
+      "max": 81
+    },
+    "option": {
+      "min": 6,
+      "max": 9
+    },
+    "choix": {
+      "min": 3,
+      "max": 3
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Cours thématiques",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 9 crédits.",
+      "cours": [
+        "FAS 60011",
+        "FAS 60012",
+        "REL 6127",
+        "REL 6217",
+        "REL 6314",
+        "REL 6318",
+        "REL 6319",
+        "REL 6320",
+        "REL 6321",
+        "REL 6322",
+        "REL 6400",
+        "REL 6500",
+        "REL 6501"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "À choisir parmi les cours de sigle REL de 2e cycle de l'Institut d'études religieuses ou hors Institut. Dans ce second cas, avec l'approbation du responsable de programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 81,
+          "max": 81
+        }
+      },
+      "regleBrut": "Obligatoire - 81 crédits.",
+      "cours": [
+        "REL 7000",
+        "REL 7140",
+        "REL 7141",
+        "REL 7150",
+        "REL 7151",
+        "REL 7160",
+        "REL 7200"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 05 (A15)\nLe doctorat comporte 90 crédits.\nL'étudiant peut s'inscrire concurremment au doctorat conduisant au grade canonique et, s'il satisfait aux exigences des deux programmes, obtenir les deux grades.\nAux 90 crédits du doctorat en théologie, s'ajoutent 3 crédits pour le cours préparatoire REL6310 Interprétation théologique et biblique imposé à l'étudiant qui n'a pas fait ses études de 2e cycle à l'Institut d'études religieuses.",
+    "Segment 70 — Les crédits du doctorat en théologie sont répartis de la façon suivante : 81 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 6 à 9 crédits à option et, au maximum, 3 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-civil-en-theologie/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:48.843Z"
+}

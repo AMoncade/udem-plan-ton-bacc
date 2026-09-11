@@ -1,0 +1,153 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-professionnel-en-sante-publique",
+  "nom": "Doctorat professionnel en santé publique",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "École de santé publique",
+  "typeProgramme": "Doctorat professionnel",
+  "creditsTotal": 90,
+  "exigences": {
+    "brut": "Les crédits du doctorat sont répartis de la façon suivante : 60 crédits obligatoires, dont 24 crédits attribués à un essai doctoral, 15 à 30 crédits à option et un maximum de 15 crédits au choix.",
+    "obligatoire": {
+      "min": 60,
+      "max": 60
+    },
+    "option": {
+      "min": 15,
+      "max": 30
+    },
+    "choix": {
+      "min": 0,
+      "max": 15
+    }
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "SPU 7007",
+        "SPU 7008",
+        "SPU 7009",
+        "SPU 7012",
+        "SPU 7110",
+        "SPU 7152",
+        "SPU 7501",
+        "SPU 7605",
+        "SPU 76511",
+        "SPU 76512"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 30
+        }
+      },
+      "regleBrut": "Option - Minimum 15 crédits, maximum 30 crédits.",
+      "cours": [
+        "ASA 6132",
+        "ASA 6703",
+        "ASA 6704",
+        "ASA 6766",
+        "BIE 6006",
+        "BIE 6016",
+        "BIE 6104",
+        "BIE 70501",
+        "BIE 70502",
+        "MSN 6136",
+        "MSO 6008",
+        "MSO 6018",
+        "MSO 6019",
+        "MSO 6023",
+        "MSO 6075",
+        "MSO 6116",
+        "MSO 6150",
+        "MSO 6312",
+        "MSO 6330",
+        "MSO 6350",
+        "MSO 6611",
+        "MSO 6619",
+        "PLU 6048",
+        "SPU 7100",
+        "SPU 7200",
+        "SPU 7351",
+        "SPU 7600"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "Choisir 15 à 30 crédits en lien avec le projet doctoral parmi des cours à portée analytique (perspectives d'intervention, méthodologie) dans le répertoire des cours de l'Université de Montréal ou de toute autre université, avec l'approbation de la direction du programme."
+      ]
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Choix - Maximum 15 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Choisir au maximum 15 crédits de cours en lien avec le projet doctoral et le profil de compétences recherché dans le répertoire des cours de l'Université de Montréal ou de toute autre université, avec l'approbation de la direction du programme."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Projet doctoral et essai doctoral",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 30,
+          "max": 30
+        }
+      },
+      "regleBrut": "Obligatoire - 30 crédits.",
+      "cours": [
+        "SPU 7090",
+        "SPU 7120",
+        "SPU 7130",
+        "SPU 7920"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A23)\nCe programme d'études comporte un total de 90 crédits.",
+    "Segment 70 — Les crédits du doctorat sont répartis de la façon suivante : 60 crédits obligatoires, dont 24 crédits attribués à un essai doctoral, 15 à 30 crédits à option et un maximum de 15 crédits au choix."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-professionnel-en-sante-publique/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:52:15.285Z"
+}

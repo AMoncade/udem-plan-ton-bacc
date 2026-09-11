@@ -1,0 +1,93 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "diplome-complementaire-en-etudes-allemandes-dans-le-contexte-europeen",
+  "nom": "Diplôme complémentaire en études allemandes dans le contexte européen",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des arts et des sciences",
+  "typeProgramme": "Diplôme complémentaire",
+  "creditsTotal": 15,
+  "exigences": {
+    "brut": "Les 15 crédits du diplôme complémentaire sont répartis comme suit : 3 crédits obligatoires et 12 crédits de cours à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 12,
+      "max": 12
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "EAE 6041A",
+        "EAE 6041B"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "EAE 6000",
+        "EAE 6004"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      "regleBrut": "Option - 9 crédits.",
+      "cours": [
+        "EAE 6002"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 00 (A00)\nLe Diplôme comporte 15 crédits.",
+    "Segment 70 — Les 15 crédits du diplôme complémentaire sont répartis comme suit : 3 crédits obligatoires et 12 crédits de cours à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/diplome-complementaire-en-etudes-allemandes-dans-le-contexte-europeen/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:42.746Z"
+}

@@ -1,0 +1,114 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "dess-en-pratiques-et-enjeux-educatifs-actuels",
+  "nom": "DESS en pratiques et enjeux éducatifs actuels",
+  "orientation": null,
+  "segments": [
+    "70"
+  ],
+  "orientations": [],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté des sciences de l'éducation",
+  "typeProgramme": "DESS",
+  "creditsTotal": 30,
+  "exigences": {
+    "brut": "Les crédits du D.E.S.S. sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option.",
+    "obligatoire": {
+      "min": 15,
+      "max": 15
+    },
+    "option": {
+      "min": 15,
+      "max": 15
+    },
+    "choix": null
+  },
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "Introduction aux enjeux éducatifs",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      "regleBrut": "Obligatoire - 15 crédits.",
+      "cours": [
+        "DID 6080",
+        "EDU 6585",
+        "ETA 6536",
+        "ETA 6809",
+        "PPA 6224"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "Approfondissement",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [
+        "DID 6205",
+        "DID 6225",
+        "DID 6226",
+        "DID 6484",
+        "DID 6740",
+        "DID 6741",
+        "EDU 6000",
+        "EDU 6001",
+        "ETA 6810",
+        "PPA 6211",
+        "PPA 6226",
+        "PPA 6256",
+        "PPA 6274",
+        "PPA 6276",
+        "PPA 6278",
+        "PPA 6413",
+        "PPA 6428",
+        "PPA 6430",
+        "PPA 6673",
+        "PPA 6674"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "Complément de formation: cheminement d'un microprogramme",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 15
+        }
+      },
+      "regleBrut": "Option - Maximum 15 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Afin de compléter ce bloc, vous devez avoir réussi l'un des microprogrammes suivants ou toute autre formation jugée équivalente. L'approbation du responsable de programme est requise. Microprogramme de deuxième cycle individualisé en éducation (2-812-6-9) Microprogramme de deuxième cycle en évaluation des compétences (2-801-6-2) Microprogramme de deuxième cycle en intégration du numérique (2-823-6-4)"
+      ]
+    }
+  ],
+  "notes": [
+    "Version 00 (A22)\nLe D.E.S.S. comporte 30 crédits.",
+    "Segment 70 — Les crédits du D.E.S.S. sont répartis de la façon suivante : 15 crédits obligatoires et 15 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/dess-en-pratiques-et-enjeux-educatifs-actuels/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:49:04.576Z"
+}

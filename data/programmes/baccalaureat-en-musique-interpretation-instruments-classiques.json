@@ -1,0 +1,625 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "baccalaureat-en-musique-interpretation-instruments-classiques",
+  "nom": "Baccalauréat en musique - Interprétation instruments classiques",
+  "orientation": null,
+  "segments": [
+    "01",
+    "80",
+    "86",
+    "87"
+  ],
+  "orientations": [
+    {
+      "nom": "Instruments d'orchestre",
+      "segments": [
+        "01",
+        "80"
+      ],
+      "exigences": {
+        "brut": "- pour les orientations Instruments d'orchestre (segments 01 et 80) et Autres instruments (segments 01 et 87) : 16 crédits obligatoires et 74 crédits à option;",
+        "obligatoire": {
+          "min": 16,
+          "max": 16
+        },
+        "option": {
+          "min": 74,
+          "max": 74
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Piano",
+      "segments": [
+        "01",
+        "86"
+      ],
+      "exigences": {
+        "brut": "- pour l'orientation Piano (segments 01 et 86) : 30 crédits obligatoires et 60 crédits à option.",
+        "obligatoire": {
+          "min": 30,
+          "max": 30
+        },
+        "option": {
+          "min": 60,
+          "max": 60
+        },
+        "choix": null
+      }
+    },
+    {
+      "nom": "Autres instruments",
+      "segments": [
+        "01",
+        "87"
+      ],
+      "exigences": null
+    }
+  ],
+  "cycle": "1er cycle",
+  "faculte": "Faculté de musique",
+  "typeProgramme": "Baccalauréat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "01A",
+      "cle": "01/01A",
+      "segment": "01",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 16,
+          "max": 16
+        }
+      },
+      "regleBrut": "Obligatoire - 16 crédits.",
+      "cours": [
+        "MIN 1811",
+        "MTE 2210",
+        "MTE 2211",
+        "MUE 1161",
+        "MUE 1162",
+        "MUE 1491",
+        "MUL 1132",
+        "MUS 2134"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01B",
+      "cle": "01/01B",
+      "segment": "01",
+      "nom": "Formation auditive",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - 6 crédits.",
+      "cours": [
+        "MUS 1011",
+        "MUS 1012",
+        "MUS 1013",
+        "MUS 1014",
+        "MUS 1015",
+        "MUS 1016"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MUS 1011 à 1016 - Solfège et dictée 1 à 6 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "01C",
+      "cle": "01/01C",
+      "segment": "01",
+      "nom": "Théorie musicale",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MCT 3011",
+        "MCT 3012",
+        "MTE 1100",
+        "MTE 1110",
+        "MTE 1111",
+        "MTE 1120",
+        "MTE 1205",
+        "MTE 1206",
+        "MTE 1315",
+        "MTE 1316",
+        "MTE 2315",
+        "MTE 2316",
+        "MUL 2109",
+        "MUS 1001",
+        "MUS 1002",
+        "MUS 1217",
+        "MUS 1300",
+        "MUS 1321",
+        "MUS 3321",
+        "MUS 3322X"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'inscription aux cours MTE 1100 & 1120 nécessite une prescription obtenue à la suite du test de classement effectué après l'admission."
+      ]
+    },
+    {
+      "id": "01D",
+      "cle": "01/01D",
+      "segment": "01",
+      "nom": "Histoire et connaissances de la musique",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MUL 1102",
+        "MUL 1105",
+        "MUL 1106",
+        "MUL 1107",
+        "MUL 1115",
+        "MUL 1116",
+        "MUL 1117",
+        "MUL 1134",
+        "MUL 1245",
+        "MUL 1246",
+        "MUL 1749",
+        "MUL 2115",
+        "MUL 2116",
+        "MUL 2117",
+        "MUL 2118",
+        "MUL 2119",
+        "MUL 3208X",
+        "MUL 3314",
+        "MUL 3333X",
+        "MUL 3334",
+        "MUL 3335X",
+        "MUL 3344",
+        "MUS 2135"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01E",
+      "cle": "01/01E",
+      "segment": "01",
+      "nom": "Ateliers et outils professionnels",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 6 crédits.",
+      "cours": [
+        "DRT 3812",
+        "EMU 1310",
+        "EMU 2312",
+        "MIN 1804",
+        "MUI 1162A",
+        "MUI 1162B",
+        "MUS 1127",
+        "MUS 1232",
+        "MUS 1330",
+        "MUS 2325",
+        "MUS 4103",
+        "MUS 4104",
+        "MUS 4105",
+        "MUS 4106",
+        "PLU 2800U"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01F",
+      "cle": "01/01F",
+      "segment": "01",
+      "nom": "Ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 4
+        }
+      },
+      "regleBrut": "Option - Maximum 4 crédits.",
+      "cours": [
+        "MUE 1241",
+        "MUE 1242",
+        "MUE 1243",
+        "MUE 1244",
+        "MUE 1261",
+        "MUE 1262",
+        "MUE 1263",
+        "MUE 1264",
+        "MUE 1361",
+        "MUE 1362",
+        "MUE 1363",
+        "MUE 1364",
+        "MUE 1492",
+        "MUE 1493",
+        "MUE 1494",
+        "MUE 1495",
+        "MUE 1521",
+        "MUE 1522",
+        "MUE 1523",
+        "MUE 1524"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "01G",
+      "cle": "01/01G",
+      "segment": "01",
+      "nom": "Instruments",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 36,
+          "max": 36
+        }
+      },
+      "regleBrut": "Option - 36 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Cours MUI 1##6A, MUI 1##6B, MUI 2##6A, MUI 2##6B, MUI 3##6A et MUI 3##6B, dont le sigle est fonction de l'instrument principal étudié."
+      ]
+    },
+    {
+      "id": "80A",
+      "cle": "80/80A",
+      "segment": "80",
+      "nom": "Analyse et écriture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MTE 1220",
+        "MTE 1221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80B",
+      "cle": "80/80B",
+      "segment": "80",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 3 crédits, maximum 6 crédits.",
+      "cours": [
+        "MUE 3461",
+        "MUE 3462",
+        "MUE 3463",
+        "MUE 3464",
+        "MUE 3465",
+        "MUE 3466"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "80C",
+      "cle": "80/80C",
+      "segment": "80",
+      "nom": "Grands ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - 12 crédits.",
+      "cours": [
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1285",
+        "MUE 1286",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1431",
+        "MUE 1432",
+        "MUE 1433",
+        "MUE 1434",
+        "MUE 1435",
+        "MUE 1436",
+        "MUE 1441",
+        "MUE 1442",
+        "MUE 1443",
+        "MUE 1444",
+        "MUE 1445",
+        "MUE 1446",
+        "MUE 1471",
+        "MUE 1472",
+        "MUE 1561",
+        "MUE 1562",
+        "MUE 1563",
+        "MUE 1564",
+        "MUE 1565",
+        "MUE 1611",
+        "MUE 1612"
+      ],
+      "contenuOuvert": false,
+      "notes": [
+        "NOTE : L'étudiant relevant de l'orientation Instruments d'orchestre doit s'inscrire à l'orchestre et se présenter à l'audition obligatoire à chaque trimestre. En cas de non-sélection, une nouvelle prescription d'ensemble lui est attribuée ; il est alors tenu de se désinscrire de l'orchestre et de s'inscrire au nouvel ensemble."
+      ]
+    },
+    {
+      "id": "80D",
+      "cle": "80/80D",
+      "segment": "80",
+      "nom": "Autres ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "regleBrut": "Option - Maximum 2 crédits.",
+      "cours": [
+        "MUE 1171",
+        "MUE 1172",
+        "MUE 1173",
+        "MUE 1174",
+        "MUE 1211",
+        "MUE 1212",
+        "MUE 1213",
+        "MUE 1214",
+        "MUE 1221",
+        "MUE 1222",
+        "MUE 1223",
+        "MUE 1224",
+        "MUE 1245",
+        "MUE 1246",
+        "MUE 1251",
+        "MUE 1252",
+        "MUE 1253",
+        "MUE 1254",
+        "MUE 1265",
+        "MUE 1266",
+        "MUE 1271",
+        "MUE 1272",
+        "MUE 1273",
+        "MUE 1274",
+        "MUE 1371",
+        "MUE 1372",
+        "MUE 1373",
+        "MUE 1374",
+        "MUE 1381",
+        "MUE 1382",
+        "MUE 1383",
+        "MUE 1384",
+        "MUE 1541",
+        "MUE 1542",
+        "MUE 1543",
+        "MUE 1544",
+        "MUE 1571",
+        "MUE 1572",
+        "MUE 1573",
+        "MUE 1574"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "86A",
+      "cle": "86/86A",
+      "segment": "86",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      "regleBrut": "Obligatoire - 14 crédits.",
+      "cours": [
+        "MTE 12041",
+        "MTE 12042",
+        "MTE 1220",
+        "MTE 1221",
+        "MUE 1101",
+        "MUE 1102"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "86B",
+      "cle": "86/86B",
+      "segment": "86",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Minimum 2 crédits, maximum 6 crédits.",
+      "cours": [
+        "MIN 1801",
+        "MIN 2802",
+        "MIN 2803"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "86C",
+      "cle": "86/86C",
+      "segment": "86",
+      "nom": "Autres ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MIN 2804",
+        "MUE 1103",
+        "MUE 1191",
+        "MUE 1192",
+        "MUE 1245",
+        "MUE 1246",
+        "MUE 1265",
+        "MUE 1266",
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1285",
+        "MUE 1286",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1561",
+        "MUE 1562",
+        "MUE 1563",
+        "MUE 2101",
+        "MUE 2102",
+        "MUE 2103",
+        "MUE 2104"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "87A",
+      "cle": "87/87A",
+      "segment": "87",
+      "nom": "Analyse et écriture",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Minimum 6 crédits, maximum 12 crédits.",
+      "cours": [
+        "MTE 12041",
+        "MTE 12042",
+        "MTE 1220",
+        "MTE 1221"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "87B",
+      "cle": "87/87B",
+      "segment": "87",
+      "nom": "Spécialisation",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 8
+        }
+      },
+      "regleBrut": "Option - Maximum 8 crédits.",
+      "cours": [
+        "MIN 1801",
+        "MIN 2802",
+        "MIN 2803",
+        "MIN 2804"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "87C",
+      "cle": "87/87C",
+      "segment": "87",
+      "nom": "Autres ensembles",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
+      },
+      "regleBrut": "Option - Maximum 6 crédits.",
+      "cours": [
+        "MUE 1231",
+        "MUE 1232",
+        "MUE 1233",
+        "MUE 1234",
+        "MUE 1235",
+        "MUE 1236",
+        "MUE 1245",
+        "MUE 1246",
+        "MUE 1265",
+        "MUE 1266",
+        "MUE 1281",
+        "MUE 1282",
+        "MUE 1283",
+        "MUE 1284",
+        "MUE 1285",
+        "MUE 1286",
+        "MUE 1341",
+        "MUE 1342",
+        "MUE 1343",
+        "MUE 1344",
+        "MUE 1561",
+        "MUE 1562",
+        "MUE 1563"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 07 (A26)\nLe baccalauréat comporte 90 crédits. Il est offert avec un tronc commun (segment 01) et trois (3) orientations :\n- orientation Instruments d'orchestre (segment 80)\n- orientation Piano (segment 86)\n- orientation Autres instruments (segment 87)\nLes crédits du baccalauréat, comprenant le tronc commun et les orientations, sont répartis de la façon suivante :\n- pour les orientations Instruments d'orchestre (segments 01 et 80) et Autres instruments (segments 01 et 87) : 16 crédits obligatoires et 74 crédits à option;\n- pour l'orientation Piano (segments 01 et 86) : 30 crédits obligatoires et 60 crédits à option.",
+    "Segment 01 Commun aux trois (3) orientations — Les crédits du Tronc commun sont répartis de la façon suivante : 16 crédits obligatoires et un minimum de 47 crédits à option.",
+    "Segment 80 Propre à l'orientation Instruments d'orchestre — Les crédits de l'Orientation sont répartis de la façon suivante: un minimum de 18 crédits à option.",
+    "Segment 86 Propre à l'orientation Piano — Les crédits de l'Orientation sont répartis de la façon suivante : 14 crédits obligatoires et un minimum de 2 crédits à option.",
+    "Segment 87 Propre à l'orientation Autres instruments — Les crédits de l'Orientation sont répartis de la façon suivante : un minimum de 6 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/baccalaureat-en-musique-interpretation-instruments-classiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:39:28.968Z"
+}

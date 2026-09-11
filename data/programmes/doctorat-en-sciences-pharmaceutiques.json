@@ -1,0 +1,525 @@
+{
+  "_avertissement": "Fichier GÉNÉRÉ par `npm run scrape`. Ne pas éditer à la main : la prochaine passe l'écrase.",
+  "id": "doctorat-en-sciences-pharmaceutiques",
+  "nom": "Doctorat en sciences pharmaceutiques",
+  "orientation": null,
+  "segments": [
+    "70",
+    "72",
+    "73",
+    "74",
+    "76"
+  ],
+  "orientations": [
+    {
+      "nom": "analyse",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 84 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 87,
+          "max": 87
+        },
+        "option": null,
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "médicament et santé des populations",
+      "segments": [
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 12 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 78,
+          "max": 78
+        },
+        "option": null,
+        "choix": {
+          "min": 0,
+          "max": 12
+        }
+      }
+    },
+    {
+      "nom": "pharmacologie",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 84 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 87,
+          "max": 87
+        },
+        "option": null,
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "technologie pharmaceutique",
+      "segments": [
+        "74"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 84 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option ou au choix.",
+        "obligatoire": {
+          "min": 87,
+          "max": 87
+        },
+        "option": null,
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "pharmacogénomique",
+      "segments": [
+        "76"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 85 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option.",
+        "obligatoire": {
+          "min": 87,
+          "max": 87
+        },
+        "option": {
+          "min": 0,
+          "max": 3
+        },
+        "choix": null
+      }
+    }
+  ],
+  "cycle": "Cycles supérieurs",
+  "faculte": "Faculté de pharmacie",
+  "typeProgramme": "Doctorat",
+  "creditsTotal": 90,
+  "exigences": null,
+  "blocs": [
+    {
+      "id": "70A",
+      "cle": "70/70A",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHM 7090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70B",
+      "cle": "70/70B",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHM 6077",
+        "PHM 7073"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "70C",
+      "cle": "70/70C",
+      "segment": "70",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de ce cours se fait en accord avec le directeur de recherche, pour la préparation de l'examen général de synthèse."
+      ]
+    },
+    {
+      "id": "70D",
+      "cle": "70/70D",
+      "segment": "70",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits.",
+      "cours": [
+        "PHM 7000",
+        "PHM 7104",
+        "PHM 7105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72A",
+      "cle": "72/72A",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHM 7090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72B",
+      "cle": "72/72B",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Option - Maximum 12 crédits.",
+      "cours": [
+        "ASA 6177",
+        "ASA 6703",
+        "ASA 6732",
+        "IFT 6135",
+        "IFT 6390",
+        "MSO 6014",
+        "MSO 6018",
+        "MSO 6067",
+        "MSO 6075",
+        "MSO 6611",
+        "MSO 6619",
+        "PHM 6008",
+        "PHM 6025",
+        "PHM 6032",
+        "PHM 6069",
+        "PHM 6071",
+        "PHM 7073",
+        "PHM 7078",
+        "PHM 7900",
+        "SBP 6004",
+        "SPU 7152",
+        "SPU 7153",
+        "STT 6415"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "72C",
+      "cle": "72/72C",
+      "segment": "72",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
+      },
+      "regleBrut": "Choix - Maximum 12 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de ce cours se fait en accord avec le directeur de recherche, pour la préparation de l'examen général de synthèse."
+      ]
+    },
+    {
+      "id": "72D",
+      "cle": "72/72D",
+      "segment": "72",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 75,
+          "max": 75
+        }
+      },
+      "regleBrut": "Obligatoire - 75 crédits.",
+      "cours": [
+        "PHM 7000",
+        "PHM 7104",
+        "PHM 7110"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73A",
+      "cle": "73/73A",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHM 7090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73B",
+      "cle": "73/73B",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHM 6004",
+        "PHM 6062",
+        "PHM 6077",
+        "PHM 7073"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "73C",
+      "cle": "73/73C",
+      "segment": "73",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de ce cours se fait en accord avec le directeur de recherche, pour la préparation de l'examen général de synthèse."
+      ]
+    },
+    {
+      "id": "73D",
+      "cle": "73/73D",
+      "segment": "73",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "inconnu",
+        "brut": "Obligatoire 84 crédits."
+      },
+      "regleBrut": "Obligatoire 84 crédits.",
+      "cours": [
+        "PHM 7000",
+        "PHM 7104",
+        "PHM 7105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74A",
+      "cle": "74/74A",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Obligatoire - 3 crédits.",
+      "cours": [
+        "PHM 7090"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74B",
+      "cle": "74/74B",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - Maximum 3 crédits.",
+      "cours": [
+        "PHM 6077",
+        "PHM 7073"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "74C",
+      "cle": "74/74C",
+      "segment": "74",
+      "nom": "",
+      "regle": {
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
+      },
+      "regleBrut": "Choix - Maximum 3 crédits.",
+      "cours": [],
+      "contenuOuvert": true,
+      "notes": [
+        "Le choix de ce cours se fait en accord avec le directeur de recherche, pour la préparation de l'examen général de synthèse."
+      ]
+    },
+    {
+      "id": "74D",
+      "cle": "74/74D",
+      "segment": "74",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
+      },
+      "regleBrut": "Obligatoire - 84 crédits.",
+      "cours": [
+        "PHM 7000",
+        "PHM 7104",
+        "PHM 7105"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76A",
+      "cle": "76/76A",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
+      },
+      "regleBrut": "Obligatoire - 2 crédits.",
+      "cours": [
+        "PGM 7054",
+        "PGM 7055"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76B",
+      "cle": "76/76B",
+      "segment": "76",
+      "nom": "",
+      "regle": {
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "regleBrut": "Option - 3 crédits.",
+      "cours": [
+        "BCM 6010",
+        "BCM 6210",
+        "BIN 6002",
+        "MSO 6018",
+        "PGM 6001",
+        "PHL 6011",
+        "PHL 6060",
+        "SMC 6061"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    },
+    {
+      "id": "76C",
+      "cle": "76/76C",
+      "segment": "76",
+      "nom": "Recherche et thèse",
+      "regle": {
+        "type": "obligatoire",
+        "bornes": {
+          "min": 85,
+          "max": 85
+        }
+      },
+      "regleBrut": "Obligatoire - 85 crédits.",
+      "cours": [
+        "PHM 7000",
+        "PHM 7104",
+        "PHM 7106"
+      ],
+      "contenuOuvert": false,
+      "notes": []
+    }
+  ],
+  "notes": [
+    "Version 08 (A25)\nLe Doctorat comporte 90 crédits. Il est offert selon cinq options :\n- option analyse (segment 70),\n- option médicament et santé des populations (segment 72),\n- option pharmacologie (segment 73),\n- option technologie pharmaceutique (segment 74),\n- option pharmacogénomique (segment 76).",
+    "Segment 70 Propre à l'option analyse — Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 84 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option ou au choix.",
+    "Segment 72 Propre à l'option médicament et santé des populations — Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires dont 75 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 12 crédits à option ou au choix.",
+    "Segment 73 Propre à l'option pharmacologie — Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 84 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option ou au choix.",
+    "Segment 74 Propre à l'option technologie pharmaceutique — Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 84 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option ou au choix.",
+    "Segment 76 Propre à l'option pharmacogénomique — Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires dont 85 crédits attribués à la recherche et à la rédaction d'une thèse et un maximum de 3 crédits à option."
+  ],
+  "url": "https://admission.umontreal.ca/programmes/doctorat-en-sciences-pharmaceutiques/structure-du-programme/",
+  "scrapeISO": "2026-09-11T16:51:55.568Z"
+}
