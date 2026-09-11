@@ -45,11 +45,16 @@
  *   **404**. Les deux premiers sont le cas dangereux : aucun statut ne les
  *   signale.
  */
-import type { Bloc, Programme } from "../../lib/types";
+import type { Bloc, ExigencesParType, Orientation, Programme } from "../../lib/types";
 import { cleBloc, normaliserCode } from "../../lib/codes";
-import { contenu, decouperSur, texteBrut, texteLigne, tousContenus } from "./html";
+import { contenu, decouperSur, texteBrut, texteLigne } from "./html";
 import { Journal } from "./journal";
-import { parseExigencesParType, parseRegleBloc, trouverPhrasesExigences } from "./regles";
+import {
+  lireOrientations,
+  parseExigencesParType,
+  parseRegleBloc,
+  trouverPhrasesExigences,
+} from "./regles";
 
 const JETON_SEGMENT = '<div class="programme-segment">';
 const JETON_BLOC = '<section class="bloc">';
@@ -201,6 +206,18 @@ function verifierSommeDesTotaux(
   creditsTotal: number | null,
   exigences: Programme["exigences"],
   journal: Journal,
+  /**
+   * `false` pour une ORIENTATION : sa répartition peut ne couvrir qu'une partie
+   * du programme, et alors sommer moins que le total n'a rien d'anormal. Le
+   * certificat en droit en est l'exemple : chaque orientation énonce
+   * « 9 obligatoires, de 6 à 9 à option, maximum 3 au choix » — 15 à 21 crédits
+   * — alors que le certificat en compte 30, les 12 restants venant du tronc
+   * commun (segment 01) que la phrase de l'orientation ne mentionne pas.
+   * Vérifier strictement y produirait un faux signalement sur une page juste,
+   * ce qui use la confiance qu'on accorde au journal. Seul le dépassement reste
+   * vérifiable : une partie ne peut pas excéder le tout.
+   */
+  strict = true,
 ): void {
   if (creditsTotal === null || exigences === null) return;
   const trois = [exigences.obligatoire, exigences.option, exigences.choix];
@@ -210,9 +227,10 @@ function verifierSommeDesTotaux(
   const sommeMin = trois.reduce((s, t) => s + (t?.min ?? 0), 0);
   const sommeMax = trois.reduce((s, t) => s + (t?.max ?? 0), 0);
 
-  if (manquants > 0) {
-    // Avec un type manquant, seule la borne basse est contrôlable : la somme des
-    // minimums connus ne peut pas dépasser le total du programme.
+  if (manquants > 0 || !strict) {
+    // Seule la borne basse est contrôlable : la somme des minimums connus ne
+    // peut pas dépasser le total du programme, qu'un type manque ou que la
+    // répartition ne couvre qu'une partie du programme.
     if (sommeMin > creditsTotal) {
       journal.inattendu(
         slug,
@@ -305,7 +323,12 @@ export function parseStructure(
 
   const blocs: Bloc[] = [];
   const segments: string[] = [];
-  const orientations: string[] = [];
+  const orientationsDesEntetes: string[] = [];
+  /** Segments dont l'entête nomme une orientation : les autres sont COMMUNS à
+   *  tous les parcours (« Segment 01 Commun aux sept orientations »). */
+  const segmentsDOrientation = new Set<string>();
+  /** Phrases de répartition trouvées dans la prose d'un segment donné. */
+  const phrasesParSegment = new Map<string, string[]>();
   const phrasesExigences: string[] = [];
   // La recherche des phrases de répartition se fait sur la prose RECOLLÉE, pas
   // paragraphe par paragraphe. Raison vérifiée sur le bacc. en psychologie, qui
@@ -329,20 +352,26 @@ export function parseStructure(
       continue;
     }
     if (!segments.includes(entete.numero)) segments.push(entete.numero);
-    if (entete.orientation && !orientations.includes(entete.orientation)) {
-      orientations.push(entete.orientation);
+    if (entete.orientation) {
+      segmentsDOrientation.add(entete.numero);
+      if (!orientationsDesEntetes.includes(entete.orientation)) {
+        orientationsDesEntetes.push(entete.orientation);
+      }
     }
 
     // Prose du segment : tout ce qui est dans `section.description-segment`
     // hormis le `<h3>`. C'est là que vivent les totaux par type de la maîtrise
     // et les exigences par domaine. Sans ce champ, ça disparaît au scrape.
     const descSegment = contenu(avantBlocs, "section", "description-segment") ?? avantBlocs;
-    const proseSegment = tousContenus(descSegment, "p").map(texteBrut).filter((t) => t !== "");
+    const proseSegment = texteBrut(descSegment.replace(/<h3\b[\s\S]*?<\/h3\s*>/gi, ""))
+      .split("\n")
+      .map((t) => t.trim())
+      .filter((t) => t !== "");
     const libelleSegment = `Segment ${entete.numero}${entete.libelle ? ` ${entete.libelle}` : ""}`;
     for (const p of proseSegment) notesProgramme.push(`${libelleSegment} — ${p}`);
-    for (const phrase of trouverPhrasesExigences(recoller(proseSegment.join(" ")))) {
-      phrasesExigences.push(phrase);
-    }
+    const phrasesDuSegment = trouverPhrasesExigences(recoller(proseSegment.join(" ")));
+    phrasesParSegment.set(entete.numero, phrasesDuSegment);
+    for (const phrase of phrasesDuSegment) phrasesExigences.push(phrase);
 
     for (const morceauBloc of decouperSur(morceauSegment, JETON_BLOC)) {
       const titreHtml = contenu(morceauBloc, "div", "bloc-titre");
@@ -380,29 +409,49 @@ export function parseStructure(
       if (lue.note) journal.inattendu(sujet, lue.note);
       if (titre.nom === "") journal.manque(sujet, 'la page ne donne aucun nom à ce bloc (nom = "")');
 
-      const notesBloc = tousContenus(contenu(morceauBloc, "div", "bloc-notes") ?? "", "p")
-        .map(texteBrut)
-        .filter((t) => t !== "");
+      // Tout le texte de `div.bloc-notes`, une entrée par bloc de texte.
+      // NE PAS passer par `tousContenus(..., "p")` : le bloc 02E du bacc. en
+      // musique écrit sa prose EN TEXTE NU puis ajoute un `<p>` avec le lien.
+      // Ne garder que les `<p>` réduisait cette note aux cinq mots du lien
+      // (« Consultez l'information sur le site du Centre de langues ») et
+      // perdait la liste des langues — c'est-à-dire tout le contenu du bloc.
       const notesBrutes = contenu(morceauBloc, "div", "bloc-notes");
-      if (notesBloc.length === 0 && notesBrutes) {
-        // `div.bloc-notes` sans `<p>` : le texte est nu dans le div.
-        const nu = texteBrut(notesBrutes);
-        if (nu !== "") notesBloc.push(nu);
-      }
+      const notesBloc = notesBrutes
+        ? texteBrut(notesBrutes)
+            .split("\n")
+            .map((t) => t.trim())
+            .filter((t) => t !== "")
+        : [];
 
       const cours = parseCodesBloc(morceauBloc, sujet, journal);
-      if (cours.length === 0 && (lue.regle.type === "option" || lue.regle.type === "obligatoire")) {
+      // `contenuOuvert` : le bloc n'énumère aucun cours ET décrit son contenu en
+      // prose. La définition est littérale, pas une devinette sur le type du
+      // bloc : c'est exactement ce qui distingue un bloc « catégorie » (renvoi
+      // au Centre de langues) d'une page mal lue, qui n'a ni cours ni prose.
+      const contenuOuvert = cours.length === 0 && notesBloc.length > 0;
+      if (
+        cours.length === 0 &&
+        !contenuOuvert &&
+        (lue.regle.type === "option" || lue.regle.type === "obligatoire")
+      ) {
         // Un bloc obligatoire ou à option sans aucun code est une exigence
         // impossible à satisfaire : soit un bloc « catégorie » dont le contenu
         // n'est décrit qu'en prose (bacc. musique, bloc 02E « Cours de langue » /
         // « Option - Maximum 6 crédits. » : zéro code, seulement le renvoi au
         // Centre de langues), soit une lecture ratée. Les deux se ressemblent
         // exactement, d'où le signalement : c'est à la main qu'on tranche.
+        // Ni cours ni prose : il ne reste rien à quoi rattacher l'exigence, et
+        // ce n'est donc pas un contenu ouvert mais une lecture à vérifier.
         journal.inattendu(
           sujet,
-          `bloc ${lue.regle.type} sans aucun code de cours (règle « ${regleBrut} ») — ` +
-            "soit un bloc dont le contenu est une catégorie décrite en prose, soit une lecture ratée" +
-            (notesBloc.length > 0 ? ` ; prose du bloc : « ${notesBloc.join(" ").slice(0, 160)} »` : ""),
+          `bloc ${lue.regle.type} sans aucun code de cours NI prose (règle « ${regleBrut} ») — ` +
+            "exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page",
+        );
+      } else if (contenuOuvert && lue.regle.type !== "choix") {
+        journal.info(
+          sujet,
+          `contenu ouvert (règle « ${regleBrut} ») : aucun code, le contenu est décrit en prose — ` +
+            `« ${notesBloc.join(" ").slice(0, 180)} »`,
         );
       }
 
@@ -414,30 +463,85 @@ export function parseStructure(
         regle: lue.regle,
         regleBrut,
         cours,
+        contenuOuvert,
         notes: notesBloc,
       });
     }
   }
 
-  // Une seule orientation nommée sur la page => c'est celle du programme. Sept
-  // (bacc. maths) ou trois (maîtrise) => `orientation: null`, et les libellés
-  // restent dans `notes`, chacun avec son segment.
-  const orientation = orientations.length === 1 ? orientations[0] : null;
-  if (orientations.length > 1) {
+  // --- Orientations : les PARCOURS que la page déclare ---------------------
+  //
+  // Un `Programme` est une PAGE ; ce qu'un étudiant choisit est un PARCOURS. Le
+  // bacc. en mathématiques énonce sept répartitions de crédits, une par
+  // orientation : avec le seul champ `exigences`, désigner celle de l'actuariat
+  // aurait été un choix arbitraire déguisé en donnée. Chaque orientation porte
+  // donc la sienne, et `exigences` ne sert plus qu'aux pages à parcours unique.
+  //
+  // Les segments COMMUNS (ceux dont l'entête ne nomme aucune orientation, comme
+  // « Segment 01 Commun aux sept orientations ») appartiennent à TOUS les
+  // parcours : ils sont ajoutés à chacun, sans quoi le tronc commun
+  // disparaîtrait de l'audit.
+  const segmentsCommuns = segments.filter((s) => !segmentsDOrientation.has(s));
+  // La description est passée LIGNE PAR LIGNE, pas recollée : `lireOrientations`
+  // s'appuie sur les puces, et recoller collerait la phrase d'introduction à la
+  // première d'entre elles.
+  const orientations: Orientation[] = lireOrientations(description).map((o) => {
+    // Les segments sont ceux que la page NOMME, sans les filtrer sur ceux
+    // trouvés : un segment annoncé mais absent des blocs est une information en
+    // soi, et le taire ferait disparaître un parcours au lieu de le signaler.
+    const segmentsDuParcours = [...new Set([...o.segments, ...segmentsCommuns])].sort();
+    const absents = o.segments.filter((s) => !segments.includes(s));
+    if (absents.length > 0) {
+      journal.inattendu(
+        slug,
+        `orientation « ${o.nom} » annonce le(s) segment(s) ${absents.join(", ")}, ` +
+          `absent(s) de la page (segments trouvés : ${segments.join(", ") || "aucun"})`,
+      );
+    }
+    // La répartition vient d'abord de la phrase de l'orientation elle-même
+    // (bacc. en maths). Quand la phrase ne fait que nommer les segments (la
+    // maîtrise écrit « - l'option Mathématiques pures, … (segment 70), »), on
+    // se rabat sur la prose du segment PROPRE à ce parcours, mais SEULEMENT si
+    // elle n'énonce qu'une seule répartition : le segment 73 de la maîtrise en
+    // énonce deux (cheminement mémoire et cheminement stage) et choisir serait
+    // inventer.
+    let phrase: string | null = trouverPhrasesExigences(o.phrase)[0] ?? null;
+    if (phrase === null) {
+      const propres = o.segments.filter((s) => !segmentsCommuns.includes(s));
+      const candidates = [...new Set(propres.flatMap((s) => phrasesParSegment.get(s) ?? []))];
+      if (candidates.length === 1) phrase = candidates[0];
+      else if (candidates.length > 1) {
+        journal.inattendu(
+          slug,
+          `orientation « ${o.nom} » : ses segments (${propres.join(", ")}) énoncent ` +
+            `${candidates.length} répartitions différentes, aucune n'est « celle de l'orientation » — ` +
+            `exigences = null, les phrases restent dans \`notes\``,
+        );
+      }
+    }
+    let exigencesOrientation: ExigencesParType | null = null;
+    if (phrase !== null) {
+      const lu = parseExigencesParType(phrase);
+      exigencesOrientation = lu.exigences;
+      for (const note of lu.notes) journal.inattendu(`${slug} / ${o.nom}`, note);
+    }
+    return { nom: o.nom, segments: segmentsDuParcours, exigences: exigencesOrientation };
+  });
+
+  // `exigences` au niveau du programme : uniquement quand la page ne déclare
+  // AUCUN parcours multiple et n'énonce qu'une répartition. Le contrat l'exige
+  // (« quand `orientations` n'est pas vide, `exigences` vaut null ») et c'est la
+  // même règle que pour `orientation`.
+  let exigences: ExigencesParType | null = null;
+  const phrasesUniques = [...new Set(phrasesExigences)];
+  if (orientations.length > 0) {
     journal.info(
       slug,
-      `${orientations.length} orientations sur la page (${orientations.join(" | ")}) : ` +
-        "`Programme.orientation` reste null, les blocs se regroupent par `segment`",
+      `${orientations.length} parcours déclarés (${orientations.map((o) => o.nom).join(" | ")}) ; ` +
+        `${orientations.filter((o) => o.exigences !== null).length} avec leur propre répartition. ` +
+        "`Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées.",
     );
-  }
-
-  // `Programme.exigences` est un champ unique, mais la page peut énoncer une
-  // répartition PAR ORIENTATION (sept au bacc. en maths) ou PAR SEGMENT (trois
-  // à la maîtrise). On ne choisit pas à sa place : une seule phrase remplit le
-  // champ, plusieurs le laissent null et vivent dans `notes`, verbatim.
-  let exigences: Programme["exigences"] = null;
-  const phrasesUniques = [...new Set(phrasesExigences)];
-  if (phrasesUniques.length === 1) {
+  } else if (phrasesUniques.length === 1) {
     const lu = parseExigencesParType(phrasesUniques[0]);
     exigences = lu.exigences;
     for (const note of lu.notes) journal.inattendu(slug, note);
@@ -450,8 +554,8 @@ export function parseStructure(
   } else if (phrasesUniques.length > 1) {
     journal.inattendu(
       slug,
-      `${phrasesUniques.length} phrases de répartition par type sur la page (une par orientation ou ` +
-        "par segment) ; `Programme.exigences` n'a qu'un emplacement, il reste null et les " +
+      `${phrasesUniques.length} phrases de répartition par type sur la page, mais aucun parcours ` +
+        "nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les " +
         `${phrasesUniques.length} phrases sont dans \`notes\` verbatim : ` +
         phrasesUniques.map((p) => `« ${p} »`).join(" "),
     );
@@ -462,7 +566,15 @@ export function parseStructure(
     );
   }
 
+  // `Programme.orientation` n'est renseigné que sur un programme PROJETÉ sur une
+  // orientation (voir `projeterOrientation`). Sur un programme lu du disque, il
+  // vaut null : c'est `orientations` qui porte l'information.
+  const orientation = null;
+
   verifierSommeDesTotaux(slug, creditsTotal, exigences, journal);
+  for (const o of orientations) {
+    verifierSommeDesTotaux(`${slug} / ${o.nom}`, creditsTotal, o.exigences, journal, false);
+  }
 
   const structureLue = blocs.length > 0;
   if (!structureLue) {
@@ -480,6 +592,7 @@ export function parseStructure(
       nom: nom ?? "",
       orientation,
       segments,
+      orientations,
       cycle,
       faculte,
       typeProgramme,

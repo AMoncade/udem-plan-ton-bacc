@@ -8,6 +8,57 @@
     "71",
     "73"
   ],
+  "orientations": [
+    {
+      "nom": "Mathématiques pures",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante: 29 crédits obligatoires attribués à la recherche, de 12 à 16 crédits à option et un maximum de 4 crédits au choix.",
+        "obligatoire": {
+          "min": 29,
+          "max": 29
+        },
+        "option": {
+          "min": 12,
+          "max": 16
+        },
+        "choix": {
+          "min": 0,
+          "max": 4
+        }
+      }
+    },
+    {
+      "nom": "Mathématiques appliquées",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante: 29 crédits obligatoires attribués à la recherche, de 10 à 16 crédits à option et un maximum de 6 crédits au choix.",
+        "obligatoire": {
+          "min": 29,
+          "max": 29
+        },
+        "option": {
+          "min": 10,
+          "max": 16
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "Actuariat",
+      "segments": [
+        "73"
+      ],
+      "exigences": null
+    }
+  ],
   "cycle": "Cycles supérieurs",
   "faculte": "Faculté des arts et des sciences",
   "typeProgramme": "Maîtrise",
@@ -62,6 +113,7 @@
         "MAT 6703",
         "MAT 6709A"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -78,6 +130,7 @@
       },
       "regleBrut": "Choix - Maximum 4 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours de cycle supérieurs d'autres disciplines ou d'autres universités ou cours de 1er cycle de sigle MAT de 2e ou 3e année avec l'approbation du responsable de programme."
       ]
@@ -98,6 +151,7 @@
       "cours": [
         "MAT 6916"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -160,6 +214,7 @@
         "STT 6700",
         "STT 6705V"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -176,6 +231,7 @@
       },
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours de cycles supérieurs d'autres disciplines ou d'autres universités et/ou cours de 1er cycle de sigle MAT de 2e ou 3e année avec l'approbation du responsable de programme."
       ]
@@ -196,6 +252,7 @@
       "cours": [
         "MAT 6916"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -243,6 +300,7 @@
         "STT 6700",
         "STT 6705V"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -259,6 +317,7 @@
       },
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours de cycle supérieurs d'autres disciplines ou d'autres universités et/ou cours de 1er cycle de sigle ACT, MAT ou STT et de 2e ou 3e année avec l'approbation du responsable de programme."
       ]
@@ -279,6 +338,7 @@
       "cours": [
         "MAT 6916"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -324,6 +384,7 @@
         "STT 6615",
         "STT 6705V"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -340,6 +401,7 @@
       },
       "regleBrut": "Choix - Maximum 9 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours de cycles supérieurs d'autres disciplines ou d'autres universités et/ou un maximum de 6 crédits de cours de 1er cycle de sigle ACT, MAT ou STT et de 2e ou 3e année avec l'approbation du responsable de programme."
       ]
@@ -360,6 +422,7 @@
       "cours": [
         "MAT 6908"
       ],
+      "contenuOuvert": false,
       "notes": []
     }
   ],

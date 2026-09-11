@@ -52,7 +52,7 @@ import {
   ecrireIndex,
   ecrireJournal,
   ecrireProgramme,
-  ficheDeProgramme,
+  fichesDeProgramme,
 } from "./disposition";
 import { contenu, texteLigne } from "./html";
 import { Journal } from "./journal";
@@ -367,6 +367,7 @@ function programmeVide(
     nom: entete.nom,
     orientation: null,
     segments: [],
+    orientations: [],
     cycle: entete.cycle,
     faculte: entete.faculte,
     typeProgramme,
@@ -413,6 +414,13 @@ async function principal(): Promise<void> {
     `\nProgrammes à traiter : ${slugs.length}` +
       (ignores.length > 0 ? ` (${ignores.length} déjà sur disque, sautés par --reprendre)` : ""),
   );
+  if (options.sansCours) {
+    // La passe programmes mesure gratuitement ce que la passe cours coûtera.
+    console.log(
+      "Les codes cités seront accumulés et l'union imprimée en fin de passe : " +
+        "c'est elle qui décide du budget de `--cours-cites`, au lieu de le supposer.",
+    );
+  }
 
   const fiches: FicheIndex[] = [];
   const programmes: Programme[] = [];
@@ -471,12 +479,15 @@ async function principal(): Promise<void> {
     if (!structureLue) sansStructure += 1;
     await ecrireProgramme(programme);
     programmes.push(programme);
-    fiches.push(ficheDeProgramme(programme, structureLue));
+    const fichesDuProgramme = fichesDeProgramme(programme, structureLue);
+    fiches.push(...fichesDuProgramme);
 
     const c = compteurs();
+    const parcours =
+      fichesDuProgramme.length > 1 ? `, ${fichesDuProgramme.length} parcours` : "";
     console.log(
       `[${i + 1}/${slugs.length}] ${slug} — ${structureLue ? `${programme.blocs.length} blocs, segments ${programme.segments.join("+") || "—"}` : "AUCUNE structure"}` +
-        `, ${programme.creditsTotal ?? "?"} cr.  (réseau ${c.reseau}, cache ${c.cache})`,
+        `, ${programme.creditsTotal ?? "?"} cr.${parcours}  (réseau ${c.reseau}, cache ${c.cache})`,
     );
   }
 
@@ -607,6 +618,29 @@ async function principal(): Promise<void> {
         `(rien n'a été affirmé sur eux) :\n  ${echecsReseau.join(", ")}`,
     );
   }
+
+  // L'UNION EXACTE des codes cités, mesurée et non extrapolée.
+  //
+  // Elle sort gratuitement de la passe programmes — les 1 088 pages de structure
+  // sont téléchargées de toute façon — et c'est elle qui décide si la passe
+  // cours coûte les 11 888 fiches ou une fraction. Extrapoler depuis un
+  // échantillon choisi à la main la sous-estimerait : les gros programmes de 1er
+  // cycle partagent d'énormes troncs communs et saturent vite, alors que la
+  // queue (microprogrammes, DESS, maîtrises spécialisées) apporte des codes de
+  // niveau 6000-7000 qui n'apparaissent nulle part ailleurs.
+  //
+  // Les codes sont déjà normalisés par `parseCodesBloc` : sans ça l'union serait
+  // gonflée par des doublons de forme (« ACT 1240 » contre « ACT1240 »).
+  const partDuCatalogue =
+    inventaire.cours.length > 0
+      ? ` = ${((codesCites.size / inventaire.cours.length) * 100).toFixed(1)} % des ${inventaire.cours.length} du sitemap`
+      : "";
+  console.log(
+    `\nUnion des codes cités par les ${fiches.length} parcours de cette passe : ` +
+      `${codesCites.size} codes${partDuCatalogue}.\n` +
+      `  Coût d'une passe \`--cours-cites\` sur cette union, à 1,45 s par fiche : ` +
+      `${(((codesCites.size * 1.45) / 3600) * 1).toFixed(1)} h de réseau, hors délai.`,
+  );
 
   if (formesVues.size > 0) {
     console.log("\nFormes de règle de bloc rencontrées :");

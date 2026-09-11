@@ -211,32 +211,70 @@ describe("bacc. en mathématiques — sept orientations sur une page", () => {
     }
   });
 
-  it("conserve les SEPT phrases de répartition, COOP comprises, dans `notes`", () => {
-    // `Programme.exigences` n'a qu'un emplacement : sept phrases, il reste null
-    // et rien n'est perdu. Les deux COOP sont le cas qu'un `\b` devant « à »
-    // faisait disparaître (« 60 crédits obligatoires et 30 crédits à option »,
-    // sans « au choix ») — elles doivent être là.
+  it("déclare les SEPT orientations, chacune avec SA répartition", () => {
+    // Le champ `exigences` n'a qu'un emplacement, mais la page énonce sept
+    // répartitions : en désigner une serait un choix arbitraire déguisé en
+    // donnée. Chaque orientation porte donc la sienne, et `exigences` reste null.
     expect(programme.exigences).toBeNull();
+    expect(programme.orientations.map((o) => o.nom)).toEqual([
+      "Actuariat",
+      "Actuariat COOP",
+      "Mathématiques pures et appliquées",
+      "Statistique",
+      "Statistique COOP",
+      "Mathématiques financières",
+      "Sciences mathématiques",
+    ]);
+  });
+
+  it("l'actuariat porte enfin son 54 / 33 / 3, typé et non plus en prose", () => {
+    const actuariat = programme.orientations.find((o) => o.nom === "Actuariat");
+    expect(actuariat?.segments).toEqual(["01", "75"]);
+    expect(actuariat?.exigences?.obligatoire).toEqual({ min: 54, max: 54 });
+    expect(actuariat?.exigences?.option).toEqual({ min: 33, max: 33 });
+    expect(actuariat?.exigences?.choix).toEqual({ min: 3, max: 3 });
+    expect(actuariat?.exigences?.brut).toContain("54 crédits obligatoires, 33 crédits à option");
+  });
+
+  it("les deux COOP, qui n'énoncent AUCUN crédit au choix, sont bien lues", () => {
+    // C'est le cas qu'un `\b` devant « à » faisait disparaître : « 60 crédits
+    // obligatoires et 30 crédits à option », sans « au choix ». `choix: null`
+    // dit « la page n'en parle pas » ; {min:0,max:0} affirmerait « aucun ».
+    const coop = programme.orientations.find((o) => o.nom === "Actuariat COOP");
+    expect(coop?.segments).toEqual(["01", "76"]);
+    expect(coop?.exigences?.obligatoire).toEqual({ min: 60, max: 60 });
+    expect(coop?.exigences?.option).toEqual({ min: 30, max: 30 });
+    expect(coop?.exigences?.choix).toBeNull();
+    const statCoop = programme.orientations.find((o) => o.nom === "Statistique COOP");
+    expect(statCoop?.exigences?.option).toEqual({ min: 24, max: 24 });
+  });
+
+  it("lit « 27 à option » et « 61 à option », écrits sans le mot « crédits »", () => {
+    expect(
+      programme.orientations.find((o) => o.nom === "Statistique")?.exigences?.option,
+    ).toEqual({ min: 27, max: 27 });
+    expect(
+      programme.orientations.find((o) => o.nom === "Sciences mathématiques")?.exigences?.option,
+    ).toEqual({ min: 61, max: 61 });
+  });
+
+  it("`orientation` reste null sur un programme non projeté", () => {
+    // Il n'est renseigné que par `projeterOrientation()`. Le renseigner ici
+    // laisserait croire qu'un des sept parcours est « celui du programme ».
+    expect(programme.orientation).toBeNull();
+  });
+
+  it("garde aussi les totaux PAR SEGMENT dans `notes`, verbatim", () => {
+    // Six phrases de plus que les sept puces : elles portent les totaux du
+    // segment et non de l'orientation (28 obligatoires au segment 75, contre
+    // 54 pour l'orientation, qui inclut le tronc commun).
     const notes = programme.notes.join("\n");
-    expect(notes).toContain("54 crédits obligatoires, 33 crédits à option et 3 crédits au choix");
-    expect(notes).toContain(
-      "orientation Actuariat COOP (segments 01 et 76) avec 60 crédits obligatoires et 30 crédits à option",
-    );
-    expect(notes).toContain(
-      "orientation Statistique COOP (segments 01 et 80) avec 66 crédits obligatoires, 24 crédits à option",
-    );
-    // Les sept puces d'orientation y sont, chacune sans préambule collé.
-    const puces = programme.notes
-      .join("\n")
-      .split("\n")
-      .flatMap((l) => l.split(/(?=- orientation )/))
-      .filter((p) => p.startsWith("- orientation "));
-    expect(puces).toHaveLength(7);
-    const avis = journal.entrees.find((e) => e.message.includes("phrases de répartition"));
-    expect(avis?.genre).toBe("inattendu");
-    // Sept puces plus les totaux PAR SEGMENT que portent 75 et 76.
-    expect(avis?.message).toMatch(/^9 phrases de répartition/);
-    expect(avis?.message).toContain("« - orientation Actuariat (segments 01 et 75) avec 54 crédits");
+    expect(notes).toContain("Les crédits de l'Orientation sont répartis");
+    expect(notes).toContain("L'étudiant inscrit dans une orientation COOP");
+    // Et le journal dit combien de parcours ont été déclarés.
+    const avis = journal.entrees.find((e) => e.message.includes("parcours déclarés"));
+    expect(avis?.genre).toBe("info");
+    expect(avis?.message).toMatch(/^7 parcours déclarés/);
   });
 
   it("n'a aucune règle de bloc `inconnu` : les orientations sont toutes lisibles", () => {

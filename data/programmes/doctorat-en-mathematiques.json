@@ -9,6 +9,89 @@
     "73",
     "75"
   ],
+  "orientations": [
+    {
+      "nom": "Mathématiques pures",
+      "segments": [
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 8 à 12 crédits à option et un maximum de 6 crédits au choix.",
+        "obligatoire": {
+          "min": 78,
+          "max": 78
+        },
+        "option": {
+          "min": 8,
+          "max": 12
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "Mathématiques appliquées",
+      "segments": [
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 8 à 12 crédits à option et un maximum de 6 crédits au choix.",
+        "obligatoire": {
+          "min": 78,
+          "max": 78
+        },
+        "option": {
+          "min": 8,
+          "max": 12
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    },
+    {
+      "nom": "Mathématiques de l'ingénieur",
+      "segments": [
+        "73"
+      ],
+      "exigences": {
+        "brut": "Les crédits du doctorat sont répartis de la façon suivante : 75 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse et 15 crédits au choix.",
+        "obligatoire": {
+          "min": 75,
+          "max": 75
+        },
+        "option": null,
+        "choix": {
+          "min": 15,
+          "max": 15
+        }
+      }
+    },
+    {
+      "nom": "Actuariat et mathématiques financières",
+      "segments": [
+        "75"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 78 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, de 8 à 12 crédits à option et un maximum de 6 crédits au choix.",
+        "obligatoire": {
+          "min": 78,
+          "max": 78
+        },
+        "option": {
+          "min": 8,
+          "max": 12
+        },
+        "choix": {
+          "min": 0,
+          "max": 6
+        }
+      }
+    }
+  ],
   "cycle": "Cycles supérieurs",
   "faculte": "Faculté des arts et des sciences",
   "typeProgramme": "Doctorat",
@@ -63,6 +146,7 @@
         "MAT 6703",
         "MAT 6709A"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -79,6 +163,7 @@
       },
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours de cycles supérieurs d'autres disciplines ou d'autres universités avec l'approbation du responsable de programme."
       ]
@@ -100,6 +185,7 @@
         "MAT 7900",
         "MAT 7910"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -162,6 +248,7 @@
         "STT 6700",
         "STT 6705V"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -178,6 +265,7 @@
       },
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours de cycles supérieurs d'autres disciplines ou d'autres universités avec l'approbation du responsable de programme."
       ]
@@ -199,6 +287,7 @@
         "MAT 7900",
         "MAT 7910"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -215,6 +304,7 @@
       },
       "regleBrut": "Choix - 15 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours choisi dans le répertoire des cours des études supérieures du Département de mathématiques et génie industriel de l'École Polytechnique et dans celui d'études supérieures de l'Université de Montréal, en particulier les cours du Département de mathématiques et de statistique et du Département d'informatique et de recherche opérationnelle."
       ]
@@ -236,6 +326,7 @@
         "MAT 7900",
         "MAT 7902"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -270,6 +361,7 @@
         "STT 6700",
         "STT 6705V"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -315,6 +407,7 @@
         "MAT 6654",
         "MAT 6659A"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -331,6 +424,7 @@
       },
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "Cours de cycles supérieurs d'autres disciplines ou d'autres universités avec l'approbation du responsable de programme."
       ]
@@ -352,6 +446,7 @@
         "MAT 7900",
         "MAT 7910"
       ],
+      "contenuOuvert": false,
       "notes": []
     }
   ],

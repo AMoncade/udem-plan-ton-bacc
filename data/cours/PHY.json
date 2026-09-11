@@ -219,5 +219,73 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2215/",
     "scrapeISO": "2026-09-11T11:19:23.331Z"
+  },
+  "PHY 1901": {
+    "code": "PHY 1901",
+    "titre": "Mécanique et physique moderne",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts fondamentaux de la mécanique. Équations du mouvement. Principes de conservation. Oscillations et ondes. Éléments de relativité et de physique quantique. Remarque : Ce cours est exclusif aux étudiants des programmes 195011, 195541, 199010. Toutefois, il pourrait être reconnu comme cours hors programme dans d’autres programmes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-1901/",
+    "scrapeISO": "2026-09-11T12:02:18.757Z"
+  },
+  "PHY 1902": {
+    "code": "PHY 1902",
+    "titre": "Électricité et optique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Électrostatique. Circuits en courant continu. Magnétisme. Optique géométrique et optique physique. Remarque : Ce cours est exclusif aux étudiants des programmes 119510, 195011, 195541, 199010. Toutefois, il pourrait être reconnu comme cours hors programme dans d’autres programmes.",
+    "prealablesBrut": "PHY1901 ou MAT1903",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHY 1901"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1903"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-1902/",
+    "scrapeISO": "2026-09-11T12:02:20.841Z"
   }
 }

@@ -9,25 +9,79 @@
     "71",
     "72"
   ],
+  "orientations": [
+    {
+      "nom": "Droit général",
+      "segments": [
+        "01",
+        "70"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 9,
+          "max": 9
+        },
+        "option": {
+          "min": 6,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Droit des affaires",
+      "segments": [
+        "01",
+        "71"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 9,
+          "max": 9
+        },
+        "option": {
+          "min": 6,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "nom": "Droit public",
+      "segments": [
+        "01",
+        "72"
+      ],
+      "exigences": {
+        "brut": "Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
+        "obligatoire": {
+          "min": 9,
+          "max": 9
+        },
+        "option": {
+          "min": 6,
+          "max": 9
+        },
+        "choix": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    }
+  ],
   "cycle": "1er cycle",
   "faculte": "Faculté de l’apprentissage continu",
   "typeProgramme": "Certificat",
   "creditsTotal": 30,
-  "exigences": {
-    "brut": "Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires, de 6 à 9 crédits à option et un maximum de 3 crédits au choix.",
-    "obligatoire": {
-      "min": 9,
-      "max": 9
-    },
-    "option": {
-      "min": 6,
-      "max": 9
-    },
-    "choix": {
-      "min": 0,
-      "max": 3
-    }
-  },
+  "exigences": null,
   "blocs": [
     {
       "id": "01A",
@@ -48,6 +102,7 @@
         "DRT 1223G",
         "DRT 1901G"
       ],
+      "contenuOuvert": false,
       "notes": [
         "Les cours DRT 1151G Introduction à l'étude du droit, et DRT 1901G Développement des habiletés du juriste, doivent être suivis en début de programme, avant tout autre cours, ou de façon concomitante si l'étudiant est à temps plein."
       ]
@@ -70,6 +125,7 @@
         "DRT 1501G",
         "DRT 1502G"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -115,6 +171,7 @@
         "DRT 3801G",
         "DRT 3807G"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -131,6 +188,7 @@
       },
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "À choisir parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
       ]
@@ -153,6 +211,7 @@
         "DRT 2400G",
         "DRT 3205G"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -188,6 +247,7 @@
         "DRT 3801G",
         "DRT 3807G"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -204,6 +264,7 @@
       },
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "À choisir parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
       ]
@@ -226,6 +287,7 @@
         "DRT 1502G",
         "DRT 2501G"
       ],
+      "contenuOuvert": false,
       "notes": []
     },
     {
@@ -253,6 +315,7 @@
         "DRT 3602G",
         "DRT 3603G"
       ],
+      "contenuOuvert": false,
       "notes": [
         "Il est préférable de suivre le cours DRT 2501G Droit administratif général avant de suivre les cours DRT 3810G et 3804G."
       ]
@@ -271,6 +334,7 @@
       },
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
+      "contenuOuvert": true,
       "notes": [
         "À choisir parmi les cours offerts à la Faculté ou ailleurs à l'Université. Ce choix est sujet à l'approbation du responsable du Certificat."
       ]

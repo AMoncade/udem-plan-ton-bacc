@@ -101,10 +101,12 @@ export function parseExigences(htmlExigence: string | null): Exigences {
       } else if (/^Concomitants?$/i.test(etiquette) && out.concomitantsBrut === null) {
         out.concomitantsBrut = valeur;
       } else if (
-        // « Restrictions d'inscription », au singulier comme au pluriel, avec ou
-        // sans espace avant le deux-points. Jamais un préalable : c'est la liste
-        // des cours qu'on ne peut PAS cumuler avec celui-ci.
-        /^Restrictions?\s+d['’]inscription$/i.test(etiquette) &&
+        // « Restrictions d'inscription », mais aussi « Restriction: » tout court
+        // — SOL 6211A/B/C écrivent « Restriction: Les étudiants ayant complété
+        // le cours SOL6211 ne sont pas autorisés à s'inscrire… ». Singulier,
+        // pluriel, avec ou sans le complément. Jamais un préalable : c'est ce
+        // qu'on ne peut PAS cumuler avec ce cours.
+        /^Restrictions?(?:\s+d['’]inscription)?$/i.test(etiquette) &&
         out.restrictionsBrut === null
       ) {
         out.restrictionsBrut = valeur;

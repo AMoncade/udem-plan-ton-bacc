@@ -9,7 +9,8 @@
  */
 import { describe, it, expect } from "vitest";
 import type { Cours, Programme } from "../../lib/types";
-import { ficheDeProgramme, grouperParSujet } from "./disposition";
+import { cleParcours } from "../../lib/parcours";
+import { fichesDeProgramme, grouperParSujet } from "./disposition";
 
 function cours(code: string): Cours {
   return {
@@ -29,56 +30,92 @@ function cours(code: string): Cours {
   };
 }
 
+function bloc(cle: string, segment: string, id: string, cours: string[]) {
+  return {
+    id,
+    cle,
+    segment,
+    nom: `Bloc ${id}`,
+    regle: { type: "option" as const, bornes: { min: 10, max: 16 } },
+    regleBrut: "Option - Minimum 10 crédits, maximum 16 crédits.",
+    cours,
+    contenuOuvert: false,
+    notes: [],
+  };
+}
+
 const PROGRAMME: Programme = {
   id: "maitrise-en-mathematiques",
   nom: "Maîtrise en mathématiques",
   orientation: null,
-  segments: ["70", "71", "73"],
+  segments: ["70", "73"],
+  orientations: [],
   cycle: "Cycles supérieurs",
   faculte: "Faculté des arts et des sciences",
   typeProgramme: "Maîtrise",
   creditsTotal: 45,
   exigences: null,
-  blocs: [
-    {
-      id: "MM-73A",
-      cle: "73/MM-73A",
-      segment: "73",
-      nom: "Cheminement avec mémoire",
-      regle: { type: "option", bornes: { min: 10, max: 16 } },
-      regleBrut: "Option - Minimum 10 crédits, maximum 16 crédits.",
-      cours: ["ACT 6230"],
-      notes: [],
-    },
-  ],
+  blocs: [bloc("73/MM-73A", "73", "MM-73A", ["ACT 6230"])],
   notes: ["Segment 73 — …"],
   url: "https://admission.umontreal.ca/programmes/maitrise-en-mathematiques/structure-du-programme/",
   scrapeISO: "2026-09-11T11:05:32.006Z",
 };
 
-describe("ficheDeProgramme", () => {
+describe("fichesDeProgramme", () => {
   it("ne garde que ce dont le sélecteur a besoin, sans les blocs", () => {
-    // `data/index-programmes.json` porte 1 088 fiches et doit rester petit :
-    // l'app embarque tout le catalogue, donc on ne charge jamais 12 Mo pour
-    // afficher une liste.
-    const fiche = ficheDeProgramme(PROGRAMME, true);
-    expect(fiche).toEqual({
-      id: "maitrise-en-mathematiques",
-      nom: "Maîtrise en mathématiques",
-      orientation: null,
-      cycle: "Cycles supérieurs",
-      faculte: "Faculté des arts et des sciences",
-      typeProgramme: "Maîtrise",
-      creditsTotal: 45,
-      nbBlocs: 1,
-      structureLue: true,
-    });
-    expect(Object.keys(fiche)).not.toContain("blocs");
-    expect(Object.keys(fiche)).not.toContain("notes");
+    // `data/index-programmes.json` porte une fiche par PARCOURS et doit rester
+    // petit : l'app embarque tout le catalogue, donc on ne charge jamais 12 Mo
+    // pour afficher une liste.
+    const fiches = fichesDeProgramme(PROGRAMME, true);
+    expect(fiches).toEqual([
+      {
+        cle: "maitrise-en-mathematiques",
+        id: "maitrise-en-mathematiques",
+        nom: "Maîtrise en mathématiques",
+        orientation: null,
+        cycle: "Cycles supérieurs",
+        faculte: "Faculté des arts et des sciences",
+        typeProgramme: "Maîtrise",
+        creditsTotal: 45,
+        nbBlocs: 1,
+        structureLue: true,
+      },
+    ]);
+    expect(Object.keys(fiches[0])).not.toContain("blocs");
+    expect(Object.keys(fiches[0])).not.toContain("notes");
+  });
+
+  it("rend UNE fiche PAR PARCOURS quand la page en déclare plusieurs", () => {
+    // Ce que le sélecteur propose n'est pas une page mais un parcours suivable :
+    // « ouvrir le bacc. en mathématiques » n'a pas de sens, ses sept orientations
+    // sont des alternatives dont les blocs ne s'additionnent pas.
+    const aOrientations: Programme = {
+      ...PROGRAMME,
+      orientations: [
+        { nom: "Mathématiques pures", segments: ["70"], exigences: null },
+        { nom: "Actuariat", segments: ["73"], exigences: null },
+      ],
+      blocs: [
+        bloc("70/70A", "70", "70A", ["MAT 6001"]),
+        bloc("70/70B", "70", "70B", ["MAT 6002"]),
+        bloc("73/MM-73A", "73", "MM-73A", ["ACT 6230"]),
+      ],
+    };
+    const fiches = fichesDeProgramme(aOrientations, true);
+    expect(fiches.map((f) => f.cle)).toEqual([
+      cleParcours("maitrise-en-mathematiques", "Mathématiques pures"),
+      cleParcours("maitrise-en-mathematiques", "Actuariat"),
+    ]);
+    // Toutes gardent le même `id` : c'est le nom du fichier de programme.
+    expect(new Set(fiches.map((f) => f.id)).size).toBe(1);
+    // `nbBlocs` est celui DU PARCOURS, pas de la page : c'est ce que le
+    // sélecteur annonce et ce que l'étudiant ouvrira.
+    expect(fiches.map((f) => f.nbBlocs)).toEqual([2, 1]);
+    expect(fiches.map((f) => f.orientation)).toEqual(["Mathématiques pures", "Actuariat"]);
   });
 
   it("reporte `structureLue: false` tel qu'on le lui passe", () => {
-    expect(ficheDeProgramme({ ...PROGRAMME, blocs: [] }, false)).toMatchObject({
+    expect(fichesDeProgramme({ ...PROGRAMME, blocs: [] }, false)[0]).toMatchObject({
       nbBlocs: 0,
       structureLue: false,
     });

@@ -631,5 +631,2424 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1990/",
     "scrapeISO": "2026-09-11T11:35:27.494Z"
+  },
+  "IFT 1005": {
+    "code": "IFT 1005",
+    "titre": "Design et développement Web",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l'internet et au Web. Langage de balisage et validation. Standards, accessibilité. Feuilles de styles pour texte et graphique. Design web. Optimisation des sites. Formulaires et interactivité. Introduction aux gestionnaires de contenu.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1005/",
+    "scrapeISO": "2026-09-11T11:51:29.144Z"
+  },
+  "IFT 2035": {
+    "code": "IFT 2035",
+    "titre": "Concepts des langages de programmation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Historique. Concepts et implantation des entités de base. Mécanismes d'exécution : pile, tas, passage de paramètres. Langage de bas niveau (C). Programmation structurée, fonctionnelle et logique. Langages spécialisés.",
+    "prealablesBrut": "IFT1025",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1025"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2035/",
+    "scrapeISO": "2026-09-11T11:51:32.423Z"
+  },
+  "IFT 1215": {
+    "code": "IFT 1215",
+    "titre": "Introduction aux systèmes informatiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Historique. Composantes d'un ordinateur. Codage des données et des instructions. Langages machine et de haut niveau. Concepts et utilisation d'un système d'exploitation. Introduction à l'Internet. Conséquences sociales de l'informatique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1215/",
+    "scrapeISO": "2026-09-11T11:51:34.236Z"
+  },
+  "IFT 1227": {
+    "code": "IFT 1227",
+    "titre": "Architecture des ordinateurs 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Jeu d'instructions : RISC vs CISC. Modes d'adressage. Exceptions. Dispositifs d'entrée/sortie, bus, interruptions. Contrôle câblé et microprogrammé. Accélération du traitement : pipelines et parallélisme. Évolution des technologies.",
+    "prealablesBrut": "IFT1065 et IFT1215",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 1065"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1215"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1227/",
+    "scrapeISO": "2026-09-11T11:51:36.531Z"
+  },
+  "IFT 2245": {
+    "code": "IFT 2245",
+    "titre": "Systèmes d'exploitation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fonctions principales. Gestion du parallélisme. Synchronisation. Interblocage. Ordonnancement. Gestion de la mémoire et des entrées/sorties. Fichiers. Protection et systèmes distribués.",
+    "prealablesBrut": "IFT1227 et IFT2035",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 1227"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 2035"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2245/",
+    "scrapeISO": "2026-09-11T11:51:38.096Z"
+  },
+  "IFT 2255": {
+    "code": "IFT 2255",
+    "titre": "Génie logiciel",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction au génie logiciel. Cycles de développement. Analyse, modélisation et spécification. Conception. Développement orienté objet. Mise au point. Outils et environnements de développement.",
+    "prealablesBrut": "IFT1025",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1025"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2255/",
+    "scrapeISO": "2026-09-11T11:51:39.942Z"
+  },
+  "IFT 1065": {
+    "code": "IFT 1065",
+    "titre": "Structures discrètes en informatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Éléments de logique propositionnelle. Ensembles. Suites et fonctions. Algorithmes. Matrices booléennes. Raisonnement mathématique. Induction. Combinatoire. Relations de récurrence. Graphes, Arbres.",
+    "prealablesBrut": "Collège 201-103-77 et 201-105-77.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Collège 201-103-77 et 201-105-77."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1065/",
+    "scrapeISO": "2026-09-11T11:51:42.176Z"
+  },
+  "IFT 2905": {
+    "code": "IFT 2905",
+    "titre": "Interfaces personne-machine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concept et langages des interfaces. Programmation par événements. Modèle de l'usager. Design et programmation d'interfaces graphiques. Impact sur les multimédia, la collaboration et la communication.",
+    "prealablesBrut": "IFT1025",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1025"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2905/",
+    "scrapeISO": "2026-09-11T11:52:01.659Z"
+  },
+  "IFT 2935": {
+    "code": "IFT 2935",
+    "titre": "Bases de données",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Architecture. Modèles d'organisation. Définition, création, mise à jour et consultation. Exploitation.",
+    "prealablesBrut": "IFT2015",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 2015"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2935/",
+    "scrapeISO": "2026-09-11T11:52:03.863Z"
+  },
+  "IFT 3911": {
+    "code": "IFT 3911",
+    "titre": "Analyse et conception des logiciels",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ingénierie des besoins. Méthodes de spécification formelle. Principes, méthodes et notations de conception. Description et styles d'architectures logicielles. Composantes logicielles, patrons de conception et cadres d'application.",
+    "prealablesBrut": "IFT2255",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 2255"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3911/",
+    "scrapeISO": "2026-09-11T11:52:04.023Z"
+  },
+  "IFT 3913": {
+    "code": "IFT 3913",
+    "titre": "Qualité du logiciel et métriques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Définition et promotion de la qualité. Assurance qualité. Plan de qualité. Amélioration et contrôle de qualité (tests, revue, inspections). Normes et cadres de qualité. Théorie de la mesure. Métriques de produit et de processus. Métriques de qualité.",
+    "prealablesBrut": "IFT2255",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 2255"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3913/",
+    "scrapeISO": "2026-09-11T11:52:06.369Z"
+  },
+  "IFT 3065": {
+    "code": "IFT 3065",
+    "titre": "Langages de programmation et compilation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes de compilation et interprétation des langages de programmation. Génération de code, optimisation, transformations de programme. Gestion de la mémoire. Implantation des langages spécialisés.",
+    "prealablesBrut": "IFT2035",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 2035"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3065/",
+    "scrapeISO": "2026-09-11T11:52:06.875Z"
+  },
+  "IFT 3225": {
+    "code": "IFT 3225",
+    "titre": "Technologie de l'Internet",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux applications web et organisation des sites web. XML, schémas XML et transformations XSLT. Programmation client (JavaScript) et serveur (CGI, PHP, Ajax). Moteurs de recherche. Design web. Introduction au web sémantique.",
+    "prealablesBrut": "IFT1005 et IFT2015",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 1005"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 2015"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3225/",
+    "scrapeISO": "2026-09-11T11:52:09.870Z"
+  },
+  "IFT 3275": {
+    "code": "IFT 3275",
+    "titre": "Sécurité informatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Confidentialité et intégrité des données à clé privée et publique. Protection des couches de protocoles TCP/IP; protection contre les parasites informatiques. Méthodes d'authentification d'usagers. Évaluation et gestion des risques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3275/",
+    "scrapeISO": "2026-09-11T11:52:09.983Z"
+  },
+  "IFT 3295": {
+    "code": "IFT 3295",
+    "titre": "Bio-informatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Biologie moléculaire pour l'informaticien, biomolécules, transcription, traduction. Algorithmes de programmation dynamique, alignements de séquences, prédiction de structures d'ARN. Réseaux de régulation génétique. Phylogénie, génomique comparative.",
+    "prealablesBrut": "IFT2015",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 2015"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3295/",
+    "scrapeISO": "2026-09-11T11:52:11.189Z"
+  },
+  "IFT 3325": {
+    "code": "IFT 3325",
+    "titre": "Téléinformatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Architecture des systèmes répartis. Modèle de référence OSI. Introduction aux moyens physiques de transmission de données. Protocoles de lien, de routage et de contrôle de flux. Introduction aux réseaux d'ordinateurs et à leurs protocoles.",
+    "prealablesBrut": "IFT2245",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 2245"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3325/",
+    "scrapeISO": "2026-09-11T11:52:13.607Z"
+  },
+  "IFT 3335": {
+    "code": "IFT 3335",
+    "titre": "Intelligence artificielle : introduction",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Résolution heuristique de problèmes. Représentation des connaissances. Techniques d'inférence et de planification. Étude d'un langage approprié. Traitement de langue naturelle. Apprentissage. Systèmes experts.",
+    "prealablesBrut": "30 crédits de sigle IFT",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "30 crédits de sigle IFT"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3335/",
+    "scrapeISO": "2026-09-11T11:52:13.755Z"
+  },
+  "IFT 3345": {
+    "code": "IFT 3345",
+    "titre": "Introduction aux robots mobiles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours explore le pipeline de la robotique mobile : capteurs, perception, SLAM, planification, contrôle, avec une introduction aux approches modernes comme l'apprentissage par renforcement et par imitation.",
+    "prealablesBrut": "IFT2015 et MAT1600 et MAT1978",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 2015"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1978"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3345/",
+    "scrapeISO": "2026-09-11T11:52:14.966Z"
+  },
+  "IFT 3375": {
+    "code": "IFT 3375",
+    "titre": "Informatique théorique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modèles du calcul. Calculabilité et décidabilité. Complexité. Hiérarchies. Complétudes. Sujets choisis.",
+    "prealablesBrut": "IFT2105 et 27 crédits de sigle IFT",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "IFT2105 et 27 crédits de sigle IFT"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3375/",
+    "scrapeISO": "2026-09-11T11:52:17.372Z"
+  },
+  "IFT 3655": {
+    "code": "IFT 3655",
+    "titre": "Modèles stochastiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Processus stochastiques. Chaînes de Markov. Horizons finis et infinis. Actualisation. Files d'attente. Processus de décision markoviens. Résolution d'équations de récurrence. Modèles d'inventaire. Fiabilité.",
+    "prealablesBrut": "IFT2015 ET (MAT1978 OU MAT1720)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 2015"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1720"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3655/",
+    "scrapeISO": "2026-09-11T11:52:17.491Z"
+  },
+  "IFT 3150": {
+    "code": "IFT 3150",
+    "titre": "Projet d'informatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Projet défini et encadré par un professeur associé à un laboratoire de recherche universitaire. Remarques: Préalables explicites selon la nature du projet.",
+    "prealablesBrut": "avoir suivi 30 crédits de cours de sigle IFT",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir suivi 30 crédits de cours de sigle IFT"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3150/",
+    "scrapeISO": "2026-09-11T11:52:18.730Z"
+  },
+  "IFT 3151": {
+    "code": "IFT 3151",
+    "titre": "Stage d'informatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage en milieu de travail, donnant lieu à un rapport, évalué conjointement par l'employeur et un jury du DIRO.",
+    "prealablesBrut": "avoir suivi 36 crédits dans le programme",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir suivi 36 crédits dans le programme"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3151/",
+    "scrapeISO": "2026-09-11T11:52:22.036Z"
+  },
+  "IFT 3710": {
+    "code": "IFT 3710",
+    "titre": "Projets en apprentissage automatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Préparation aux applications pratiques de l'apprentissage automatique à travers des projets concrets sur les données réelles. Utilisation de logiciels spécialisés d'apprentissage automatique pour l'intelligence artificielle.",
+    "prealablesBrut": "IFT3700 OU IFT3395",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 3700"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 3395"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3710/",
+    "scrapeISO": "2026-09-11T11:52:23.944Z"
+  },
+  "IFT 2550": {
+    "code": "IFT 2550",
+    "titre": "Stage d'informatique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Premier stage du programme COOP, en milieu de travail, donnant lieu à un rapport, évalué conjointement par l'employeur et un jury du DIRO.",
+    "prealablesBrut": "30 crédits IFT.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "30 crédits IFT."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2550/",
+    "scrapeISO": "2026-09-11T11:52:25.894Z"
+  },
+  "IFT 3550": {
+    "code": "IFT 3550",
+    "titre": "Stage d'informatique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Deuxième stage du programme COOP, en milieu de travail, donnant lieu à un rapport, évalué conjointement par l'employeur et un jury du DIRO.",
+    "prealablesBrut": "IFT2550",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 2550"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3550/",
+    "scrapeISO": "2026-09-11T11:52:27.684Z"
+  },
+  "IFT 3551": {
+    "code": "IFT 3551",
+    "titre": "Stage d'informatique 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Troisième stage du programme COOP, en milieu de travail, donnant lieu à un rapport, évalué conjointement par l'employeur et un jury du DIRO.",
+    "prealablesBrut": "IFT3550",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 3550"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3551/",
+    "scrapeISO": "2026-09-11T11:52:28.946Z"
+  },
+  "IFT 4055": {
+    "code": "IFT 4055",
+    "titre": "Projet informatique honor",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation à la recherche par le biais d'un projet défini et encadré par un professeur au sein d'un laboratoire du DIRO, évalué conjointement par le professeur et un jury du DIRO.",
+    "prealablesBrut": "30 crédits IFT.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "30 crédits IFT."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-4055/",
+    "scrapeISO": "2026-09-11T11:52:30.393Z"
+  },
+  "IFT 6010": {
+    "code": "IFT 6010",
+    "titre": "Intelligence artificielle",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Représentation des connaissances. Logique classique et techniques de résolution automatique de problèmes. Raisonnement non monotone, induction, connaissances et croyances. Planification.",
+    "prealablesBrut": "IFT3330 OU IFT6330",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 3330"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 6330"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6010/",
+    "scrapeISO": "2026-09-11T11:52:36.585Z"
+  },
+  "IFT 6042": {
+    "code": "IFT 6042",
+    "titre": "Synthèse d'images",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modélisation géométrique. Courbes et surfaces. Visibilité. Lumière et ombrage. Modèles de transparence, réflexion, réfraction. Textures. Fractales et modèles stochastiques. Antialiasing. Lancer de rayons. Phénomènes naturels.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6042/",
+    "scrapeISO": "2026-09-11T11:52:38.252Z"
+  },
+  "IFT 6080": {
+    "code": "IFT 6080",
+    "titre": "Sujets en exploitation des ordinateurs",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6080/",
+    "scrapeISO": "2026-09-11T11:52:40.027Z"
+  },
+  "IFT 6145": {
+    "code": "IFT 6145",
+    "titre": "Vision tridimensionnelle",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts de vision par ordinateur. Calibrage de caméra, stéréoscopie, flux optique, mosaïques et panoramas. Méthodes de reconstruction volumétrique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6145/",
+    "scrapeISO": "2026-09-11T11:52:41.920Z"
+  },
+  "IFT 6150": {
+    "code": "IFT 6150",
+    "titre": "Traitements d'images",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Échantillonnage. Opérations sur les images. Amélioration. Restauration. Compression. Réalisation d'un projet appliqué.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6150/",
+    "scrapeISO": "2026-09-11T11:52:43.468Z"
+  },
+  "IFT 6155": {
+    "code": "IFT 6155",
+    "titre": "Informatique quantique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Calcul réversible; information quantique; non-localité; cryptographie quantique; circuits, parallélisme et interférence quantiques; algorithmes de Simon, Shor et Grover; téléportation; correction d'erreurs; implantation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6155/",
+    "scrapeISO": "2026-09-11T11:52:45.273Z"
+  },
+  "IFT 6172": {
+    "code": "IFT 6172",
+    "titre": "Sémantique des langages de programmation",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Historique. Définitions de style opératoire (Vienne), dénotationnel (Scott) et déductif (Hoare, Dijkstra). Notions d'algèbre universelle, théorie des domaines, lambda-calcul typé. Illustrations pratiques. Développements récents.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6172/",
+    "scrapeISO": "2026-09-11T11:52:47.099Z"
+  },
+  "IFT 6180": {
+    "code": "IFT 6180",
+    "titre": "Cryptologie : théorie et applications",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Historique et définitions. Cryptographie et cryptanalyse. Théorie de l'information. Cryptographie conventionnelle, à clefs publiques, probabiliste et quantique. Génération pseudo et quasi aléatoire. Applications diverses.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6180/",
+    "scrapeISO": "2026-09-11T11:52:48.440Z"
+  },
+  "IFT 6232": {
+    "code": "IFT 6232",
+    "titre": "Compilation",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Aspects de l'organisation d'un compilateur; génération et optimisation de code, récupération d'erreurs, analyse de flot de contrôle. Interprètes, performance, test et diffusion. Écriture d'un compilateur générant du code pour une machine réelle.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6232/",
+    "scrapeISO": "2026-09-11T11:52:50.047Z"
+  },
+  "IFT 6255": {
+    "code": "IFT 6255",
+    "titre": "Recherche d'information",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principe de la recherche d'information. Sélection des documents pertinents. Modèles booléen, vectoriel, probabiliste, logique. Réalisation. Évaluation des performances. Analyses linguistiques, syntaxiques et sémantiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6255/",
+    "scrapeISO": "2026-09-11T11:52:51.785Z"
+  },
+  "IFT 6261": {
+    "code": "IFT 6261",
+    "titre": "Traitement des connaissances",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Intelligence artificielle, sécurité de l'information, économie des données personnelles, éthique de l'intelligence artificielle, médias sociaux, apprentissage à distance, commerce électronique, agents intelligents, systèmes de recommandation.",
+    "prealablesBrut": "IFT3335",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 3335"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6261/",
+    "scrapeISO": "2026-09-11T11:52:51.893Z"
+  },
+  "IFT 6271": {
+    "code": "IFT 6271",
+    "titre": "Sécurité informatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Confidentialité et intégrité des données. Protection des réseaux et du commerce électronique. Clefs publiques et les tiers de confiance. Méthodes d'authentification. Coupe-feu. Gestion des mots de passe. Évaluation et gestion des risques et sécurité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6271/",
+    "scrapeISO": "2026-09-11T11:52:54.892Z"
+  },
+  "IFT 6291": {
+    "code": "IFT 6291",
+    "titre": "Bio-informatique génomique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Comparaison et alignement des séquences biologiques. Structures secondaires des acides ribonucléiques. Recherche de motifs. Assemblage de fragments d'ADN, cartographie physique. Ordre des gènes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6291/",
+    "scrapeISO": "2026-09-11T11:52:56.240Z"
+  },
+  "IFT 6292": {
+    "code": "IFT 6292",
+    "titre": "Bio-informatique moléculaire",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Structure 3D des protéines et ARN. Modèles et optimisation de l'énergie potentielle, moléculaire. Espace et recherche de conformations, modélisation comparative et de novo.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6292/",
+    "scrapeISO": "2026-09-11T11:52:58.099Z"
+  },
+  "IFT 6521": {
+    "code": "IFT 6521",
+    "titre": "Programmation dynamique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Processus de décision séquentiels déterministes et stochastiques. Horizons finis et infinis. Équations de récurrence. Algorithmes : itération des valeurs, itération des politiques, programmation linéaire, méthodes hybrides.",
+    "prealablesBrut": "IFT2505 ET (MAT1720 OU MAT1978)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 2505"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MAT 1720"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6521/",
+    "scrapeISO": "2026-09-11T11:53:00.106Z"
+  },
+  "IFT 6551": {
+    "code": "IFT 6551",
+    "titre": "Programmation en nombres entiers",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes de troncature, génération de facettes. Méthodes d'énumération. Méthodes de décomposition. Applications : recouvrement et partition d'ensembles, localisation de dépôts, voyageur de commerce, problèmes d'horaire.",
+    "prealablesBrut": "IFT3515",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 3515"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6551/",
+    "scrapeISO": "2026-09-11T11:53:01.449Z"
+  },
+  "IFT 6561": {
+    "code": "IFT 6561",
+    "titre": "Simulation : aspects stochastiques",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modèles stochastiques à événements discrets. Modélisation des aléas. Analyse des résultats et intervalles de confiance. Réduction de la variance. Analyse de sensibilité et optimisation. Génération de valeurs aléatoires.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6561/",
+    "scrapeISO": "2026-09-11T11:53:03.242Z"
+  },
+  "IFT 6370": {
+    "code": "IFT 6370",
+    "titre": "Informatique théorique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modèles du calcul. Calculabilité et décidabilité. Complexité. Hiérarchies. Complétudes. Sujets choisis.",
+    "prealablesBrut": "IFT2102 OU IFT2105",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 2102"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 2105"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6370/",
+    "scrapeISO": "2026-09-11T11:57:06.826Z"
+  },
+  "IFT 6390": {
+    "code": "IFT 6390",
+    "titre": "Fondements de l'apprentissage machine",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Éléments de base des algorithmes d'apprentissage statistique et symbolique. Exemples d'applications en forage de données, reconnaissance des formes, régression non linéaire, et données temporelles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6390/",
+    "scrapeISO": "2026-09-11T11:57:10.263Z"
+  },
+  "IFT 6056": {
+    "code": "IFT 6056",
+    "titre": "Chaîne de blocs et ses applications",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours couvrant la technologie de la chaîne de blocs (blockchain), incluant : primitives cryptographiques, algorithmes de consensus, opération de \"blockchain\", contrats intelligents, différentes plateformes de la \"blockchain\", études de cas et défis.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6056/",
+    "scrapeISO": "2026-09-11T11:57:12.467Z"
+  },
+  "IFT 6057A": {
+    "code": "IFT 6057A",
+    "titre": "Sujets en réseaux de communication",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6057a/",
+    "scrapeISO": "2026-09-11T11:57:13.776Z"
+  },
+  "IFT 6057B": {
+    "code": "IFT 6057B",
+    "titre": "Sujets en réseaux de communication",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6057b/",
+    "scrapeISO": "2026-09-11T11:57:15.808Z"
+  },
+  "IFT 6075": {
+    "code": "IFT 6075",
+    "titre": "Méthodes empiriques en interaction humain-machine",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes de recherche quantitatives et qualitatives en IHM : codage qualitatif, conception d’enquêtes et d’entretiens, analyses statistiques (ANOVA, test t), conception d'expériences, collecte et intégrité des données, préoccupations éthiques. Remarque : interaction humain-machine (IHM), analyse de variance (ANOVA).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6075/",
+    "scrapeISO": "2026-09-11T11:57:17.127Z"
+  },
+  "IFT 6076": {
+    "code": "IFT 6076",
+    "titre": "Construction de systèmes intégrés à l'IA",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principes de conception en interaction humain-machine (IHM) dans le contexte des systèmes d'IA. Ingénierie des invites, tests de robustesse, enchaînement, décomposition, garde-fous, équité, biais, comparaison entre modèles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6076/",
+    "scrapeISO": "2026-09-11T11:57:18.938Z"
+  },
+  "IFT 6077": {
+    "code": "IFT 6077",
+    "titre": "Conception de l’interaction humain-IA",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théories classiques de l'interaction humain-machine (IHM) et leur utilisation dans la conception de méthodes efficaces d'interaction avec des IA. Avantages et inconvénients des interfaces conversationnelles. Exploration d'autres modes d'interaction.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6077/",
+    "scrapeISO": "2026-09-11T11:57:20.803Z"
+  },
+  "IFT 6078A": {
+    "code": "IFT 6078A",
+    "titre": "Sujets en interaction humain-machine",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6078a/",
+    "scrapeISO": "2026-09-11T11:57:22.519Z"
+  },
+  "IFT 6078B": {
+    "code": "IFT 6078B",
+    "titre": "Sujets en interaction humain-machine",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6078b/",
+    "scrapeISO": "2026-09-11T11:57:23.810Z"
+  },
+  "IFT 6085": {
+    "code": "IFT 6085",
+    "titre": "Sujets en intelligence artificielle",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Sujets en intelligence artificielle",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6085/",
+    "scrapeISO": "2026-09-11T11:57:25.057Z"
+  },
+  "IFT 6095A": {
+    "code": "IFT 6095A",
+    "titre": "Sujets en infographie",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6095a/",
+    "scrapeISO": "2026-09-11T11:57:26.382Z"
+  },
+  "IFT 6095B": {
+    "code": "IFT 6095B",
+    "titre": "Sujets en infographie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6095b/",
+    "scrapeISO": "2026-09-11T11:57:28.337Z"
+  },
+  "IFT 6113": {
+    "code": "IFT 6113",
+    "titre": "Modélisation géométrique et analyse de formes",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Traitement numérique de la géométrie, modélisation géométrique et analyse de formes. Traitement de maillages; Laplacien; champs discrets de vecteurs; applications à la reconstruction de surfaces et à l’animation de personnages. Remarque: il est fortement recommandé de suivre le cours IFT3355 avant de s'inscrire à ce cours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6113/",
+    "scrapeISO": "2026-09-11T11:57:28.471Z"
+  },
+  "IFT 6114": {
+    "code": "IFT 6114",
+    "titre": "Conception computationnelle/fabrication numérique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours couvre les aspects matériels et algorithmiques de l’impression 3D, et d’autres technologies de la fabrication numérique. Au cœur de ce cours se trouvent des approches de simulation physique et d’optimisation sous contraintes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6114/",
+    "scrapeISO": "2026-09-11T11:57:30.833Z"
+  },
+  "IFT 6115": {
+    "code": "IFT 6115",
+    "titre": "Traitement neuronal de la géométrie",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Traitement neuronal de la géométrie, apprentissage profond appliqué aux problèmes 3D, applications de la géométrie différentielle et de l'algèbre en géométrie, géométrie computationnelle, vision par ordinateur.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6115/",
+    "scrapeISO": "2026-09-11T11:57:31.026Z"
+  },
+  "IFT 6132": {
+    "code": "IFT 6132",
+    "titre": "Prédiction structurée avancée et optimisation",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Sujets avancées pour la prédiction d'objets structurés (tels: graphes, couplages, réseau de flot). Apprentissage génératif vs discriminatif et modèles à énergie; CRF, SVM structurée, optimisation à grande échelle; algorithmes combinatoires; RNN.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6132/",
+    "scrapeISO": "2026-09-11T11:57:34.039Z"
+  },
+  "IFT 6135": {
+    "code": "IFT 6135",
+    "titre": "Apprentissage de représentations",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Algorithmes d'apprentissage de représentations des données et réseaux de neurones artificiels profonds. Avantages de l'apprentissage profond pour l'intelligence artificielle. Modélisation de la distribution de probabilité des données.",
+    "prealablesBrut": "IFT3395 ou IFT6390",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 3395"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 6390"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6135/",
+    "scrapeISO": "2026-09-11T11:57:36.170Z"
+  },
+  "IFT 6151A": {
+    "code": "IFT 6151A",
+    "titre": "Sujets en traitements d’images et vision",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6151a/",
+    "scrapeISO": "2026-09-11T11:57:37.939Z"
+  },
+  "IFT 6151B": {
+    "code": "IFT 6151B",
+    "titre": "Sujets en traitements d’images et vision",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6151b/",
+    "scrapeISO": "2026-09-11T11:57:39.285Z"
+  },
+  "IFT 6161": {
+    "code": "IFT 6161",
+    "titre": "Théorie de l’information",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours traite de la théorie de l'information, qui définit mathématiquement le concept d'information et étudie les limites ultimes des tâches de traitement de données comme la compression et la transmission sur un canal bruité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6161/",
+    "scrapeISO": "2026-09-11T11:57:41.188Z"
+  },
+  "IFT 6162": {
+    "code": "IFT 6162",
+    "titre": "Apprentissage par renforcement, commande optimale",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des fondements théoriques des algorithmes d’apprentissage par renforcement en établissant des liens avec des disciplines connexes: recherche opérationnelle, simulations et optimisation stochastiques, commande optimale.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6162/",
+    "scrapeISO": "2026-09-11T11:57:42.464Z"
+  },
+  "IFT 6163": {
+    "code": "IFT 6163",
+    "titre": "Apprentissage automatique pour les robots",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de concepts fondamentaux d’apprentissage automatique pour les applications robotiques et des méthodes permettant à des agents capables de s'entraîner de manière autonome, de devenir des systèmes d'apprentissage nécessitant peu de supervision.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6163/",
+    "scrapeISO": "2026-09-11T11:57:43.808Z"
+  },
+  "IFT 6164": {
+    "code": "IFT 6164",
+    "titre": "Apprentissage automatique antagoniste",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "À l'interface entre la théorie des jeux, l'optimisation et l'apprentissage automatique. Vise à comprendre comment plusieurs entités apprennent simultanément à résoudre une tâche commune, en contexte antagoniste.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6164/",
+    "scrapeISO": "2026-09-11T11:57:45.684Z"
+  },
+  "IFT 6166": {
+    "code": "IFT 6166",
+    "titre": "Méthodes tensorielles en apprentissage automatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours vise l’étude de diverses méthodes d’apprentissage automatique utilisant les techniques de décomposition matricielle et tensorielle et donne une introduction aux réseaux de tenseurs et à leurs applications en informatique et en apprentissage.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6166/",
+    "scrapeISO": "2026-09-11T11:57:47.038Z"
+  },
+  "IFT 6167": {
+    "code": "IFT 6167",
+    "titre": "Apprentissage automatique en continu",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours étudie l’apprentissage continu qui vise à pousser l’intelligence artificielle moderne de \"étroite\" à \"large\", i.e. à développer des algorithmes capables d’un apprentissage continu sur un ensemble potentiellement infini de tâches différentes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6167/",
+    "scrapeISO": "2026-09-11T11:57:49.009Z"
+  },
+  "IFT 6168": {
+    "code": "IFT 6168",
+    "titre": "Inférence causale et apprentissage automatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours explore les opportunités et les défis d’utiliser la causalité pour aider l’apprentissage automatique ou, inversement, d’utiliser l’apprentissage automatique pour aider la causalité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6168/",
+    "scrapeISO": "2026-09-11T11:57:50.264Z"
+  },
+  "IFT 6169": {
+    "code": "IFT 6169",
+    "titre": "Principes théoriques de l'apprentissage profond",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fondement et principes théoriques de l’apprentissage profond. L'objectif est de couvrir les travaux anciens et récents qui constituent les fondements mathématiques du domaine.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6169/",
+    "scrapeISO": "2026-09-11T11:57:52.247Z"
+  },
+  "IFT 6195A": {
+    "code": "IFT 6195A",
+    "titre": "Sujets en informatique théorique ou quantique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6195a/",
+    "scrapeISO": "2026-09-11T11:57:52.351Z"
+  },
+  "IFT 6195B": {
+    "code": "IFT 6195B",
+    "titre": "Sujets en informatique théorique ou quantique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6195b/",
+    "scrapeISO": "2026-09-11T11:57:55.218Z"
+  },
+  "IFT 6233A": {
+    "code": "IFT 6233A",
+    "titre": "Sujets en langages et compilation",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6233a/",
+    "scrapeISO": "2026-09-11T11:57:57.205Z"
+  },
+  "IFT 6233B": {
+    "code": "IFT 6233B",
+    "titre": "Sujets en langages et compilation",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6233b/",
+    "scrapeISO": "2026-09-11T11:57:58.414Z"
+  },
+  "IFT 6251A": {
+    "code": "IFT 6251A",
+    "titre": "Sujets en génie logiciel",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6251a/",
+    "scrapeISO": "2026-09-11T11:57:59.671Z"
+  },
+  "IFT 6251B": {
+    "code": "IFT 6251B",
+    "titre": "Sujets en génie logiciel",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6251b/",
+    "scrapeISO": "2026-09-11T11:58:00.860Z"
+  },
+  "IFT 6253": {
+    "code": "IFT 6253",
+    "titre": "Conception dirigée par modèles",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ingénierie dirigée par les modèles, conception des logiciels dirigée par simulation. Langages de modélisation, langages spécifiques au domaine, transformation de modèles, techniques d'analyse des modèles, introduction à la modélisation et simulation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6253/",
+    "scrapeISO": "2026-09-11T11:58:03.041Z"
+  },
+  "IFT 6256": {
+    "code": "IFT 6256",
+    "titre": "Art algorithmique et logiciel libre",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Art algorithmique et art génératif, aléa et hasard, données ouvertes, physicalisation, mise en forme pour l'exposition d'art, écosystèmes de logiciels libres.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6256/",
+    "scrapeISO": "2026-09-11T11:58:04.373Z"
+  },
+  "IFT 6269": {
+    "code": "IFT 6269",
+    "titre": "Modèles graphiques probabilistes et apprentissage",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Représentation des systèmes comme des modèles graphiques probabilistes, inférence dans les modèles graphiques, apprentissage des paramètres à partir de données.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6269/",
+    "scrapeISO": "2026-09-11T11:58:06.414Z"
+  },
+  "IFT 6272A": {
+    "code": "IFT 6272A",
+    "titre": "Sujets en cybersécurité",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6272a/",
+    "scrapeISO": "2026-09-11T11:58:08.265Z"
+  },
+  "IFT 6272B": {
+    "code": "IFT 6272B",
+    "titre": "Sujets en cybersécurité",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6272b/",
+    "scrapeISO": "2026-09-11T11:58:10.145Z"
+  },
+  "IFT 6285": {
+    "code": "IFT 6285",
+    "titre": "Traitement automatique des langues naturelles",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux problématiques de base du traitement des langues naturelles (modélisation de la langue, étiquetage de séquences de mots, analyse grammaticale) et à ses applications (traduction automatique, extraction d'information, etc.).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6285/",
+    "scrapeISO": "2026-09-11T11:58:11.481Z"
+  },
+  "IFT 6289": {
+    "code": "IFT 6289",
+    "titre": "TALN avec apprentissage profond",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts fondamentaux, tâches et techniques du traitement automatique du langage naturel (TALN); recherches de pointe en apprentissage profond pour le TALN; utilisation et applications au quotidien; modélisation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6289/",
+    "scrapeISO": "2026-09-11T11:58:13.372Z"
+  },
+  "IFT 6293A": {
+    "code": "IFT 6293A",
+    "titre": "Sujets en linguistique informatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6293a/",
+    "scrapeISO": "2026-09-11T11:58:15.121Z"
+  },
+  "IFT 6293B": {
+    "code": "IFT 6293B",
+    "titre": "Sujets en linguistique informatique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6293b/",
+    "scrapeISO": "2026-09-11T11:58:16.458Z"
+  },
+  "IFT 6299A": {
+    "code": "IFT 6299A",
+    "titre": "Sujets en bio-informatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6299a/",
+    "scrapeISO": "2026-09-11T11:58:18.300Z"
+  },
+  "IFT 6299B": {
+    "code": "IFT 6299B",
+    "titre": "Sujets en bio-informatique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6299b/",
+    "scrapeISO": "2026-09-11T11:58:20.077Z"
+  },
+  "IFT 6504": {
+    "code": "IFT 6504",
+    "titre": "Programmation mathématique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Sujets avancés en programmation linéaire; théorie des jeux; programmation non linéaire; théorie de la dualité; relaxation et décompositions lagrangiennes; décomposition de Benders; décomposition de Dantzig-Wolfe; méthode de points intérieurs.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6504/",
+    "scrapeISO": "2026-09-11T11:58:21.285Z"
+  },
+  "IFT 6512": {
+    "code": "IFT 6512",
+    "titre": "Programmation stochastique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Optimisation stochastique avec recours. Programmes stochastiques linéaires à deux étapes. Formulations compactes et explicites. Méthode L-Shaped. Problèmes à plusieurs étapes et en nombres entiers. Méthodes échantillonnales.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6512/",
+    "scrapeISO": "2026-09-11T11:58:22.707Z"
+  },
+  "IFT 6575": {
+    "code": "IFT 6575",
+    "titre": "Méthodes de recherche opérationnelle",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Programmation linéaire. Programmation en nombres entiers. Programmation non linéaire. Programmation dynamique. Modèles stochastiques. Simulation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6575/",
+    "scrapeISO": "2026-09-11T11:58:23.912Z"
+  },
+  "IFT 6580": {
+    "code": "IFT 6580",
+    "titre": "Sujets en optimisation",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6580/",
+    "scrapeISO": "2026-09-11T11:58:25.675Z"
+  },
+  "IFT 6581A": {
+    "code": "IFT 6581A",
+    "titre": "Sujets en recherche opérationnelle",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6581a/",
+    "scrapeISO": "2026-09-11T11:58:26.951Z"
+  },
+  "IFT 6581B": {
+    "code": "IFT 6581B",
+    "titre": "Sujets en recherche opérationnelle",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6581b/",
+    "scrapeISO": "2026-09-11T11:58:28.957Z"
+  },
+  "IFT 6755": {
+    "code": "IFT 6755",
+    "titre": "Analyse du logiciel",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Spécification et modélisation du logiciel. Méthodes formelles pour l'analyse du logiciel. Analyse empirique du contexte et du processus du développement. Mise en oeuvre de méthodes d'analyse en utilisant des compromis spécifiques au contexte.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6755/",
+    "scrapeISO": "2026-09-11T11:58:30.173Z"
+  },
+  "IFT 6756": {
+    "code": "IFT 6756",
+    "titre": "Théorie de l'apprentissage automatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Outils théoriques de l'apprentissage automatique; analyse de la généralisation, de l'expressivité et de la complexité; chaînes de Markov, Monte-Carlo pour l'échantillonnage de modèles et systèmes d'apprentissage distribué.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6756/",
+    "scrapeISO": "2026-09-11T11:58:32.035Z"
+  },
+  "IFT 6757": {
+    "code": "IFT 6757",
+    "titre": "Véhicules autonomes",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Contrôle de véhicules autonomes avec vision par ordinateur et apprentissage automatique; construction d'un véhicule autonome à petite échelle; senseurs, vision, estimation d'état, navigation, planification, contrôle et actionnement.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6757/",
+    "scrapeISO": "2026-09-11T11:58:33.575Z"
+  },
+  "IFT 6758": {
+    "code": "IFT 6758",
+    "titre": "Science des données",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Applications des probabilités, statistiques et optimisation pour la science des données; nettoyage et visualisation de données; enjeux statistiques de l'apprentissage automatique sur données structurées; généralisation et surapprentissage.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6758/",
+    "scrapeISO": "2026-09-11T11:58:33.608Z"
+  },
+  "IFT 6759": {
+    "code": "IFT 6759",
+    "titre": "Projets avancés en apprentissage automatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Préparation aux applications pratiques de l'apprentissage automatique à travers des projets concrets sur des données réelles. Utilisation de logiciels spécialisés d'apprentissage automatique pour l'intelligence artificielle. Remarque : Il est recommandé de prendre IFT6135 Apprentissage de représentations auparavant ou concomitant.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6759/",
+    "scrapeISO": "2026-09-11T11:58:36.236Z"
+  },
+  "IFT 6760A": {
+    "code": "IFT 6760A",
+    "titre": "Séminaire en apprentissage automatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation et discussion par l'étudiant d'articles scientifiques en apprentissage automatique à la fine pointe de la recherche dans ce domaine, qui change d'une année à l'autre. On vise la compréhension des articles et la capacité à les expliquer. Remarque : Il est recommandé de prendre IFT6135 Apprentissage de représentations auparavant.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6760a/",
+    "scrapeISO": "2026-09-11T11:58:36.347Z"
+  },
+  "IFT 6760B": {
+    "code": "IFT 6760B",
+    "titre": "Séminaire en apprentissage automatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation et discussion par l'étudiant d'articles scientifiques en apprentissage automatique à la fine pointe de la recherche dans ce domaine, qui change d'une année à l'autre. On vise la compréhension des articles et la capacité à les expliquer. Remarque : Il est recommandé de prendre IFT6135 Apprentissage de représentations auparavant.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6760b/",
+    "scrapeISO": "2026-09-11T11:58:39.234Z"
+  },
+  "IFT 6760C": {
+    "code": "IFT 6760C",
+    "titre": "Séminaire en apprentissage automatique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation et discussion par l'étudiant d'articles scientifiques en apprentissage automatique à la fine pointe de la recherche dans ce domaine, qui change d'une année à l'autre. On vise la compréhension des articles et la capacité à les expliquer. Remarque : Il est recommandé de prendre IFT6135 Apprentissage de représentations auparavant.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6760c/",
+    "scrapeISO": "2026-09-11T11:58:39.332Z"
+  },
+  "IFT 6765": {
+    "code": "IFT 6765",
+    "titre": "Liens entre la vision par ordinateur et la langue",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Progrès récents de la recherche sur la vision et le langage, un sous-domaine de l’intelligence artificielle qui permet d’étudier les tâches multimodales à l’intersection de la vision par ordinateur et du traitement du langage naturel.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6765/",
+    "scrapeISO": "2026-09-11T11:58:42.544Z"
+  },
+  "IFT 6766": {
+    "code": "IFT 6766",
+    "titre": "Sujets en apprentissage automatique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6766/",
+    "scrapeISO": "2026-09-11T11:58:43.750Z"
+  },
+  "IFT 6767A": {
+    "code": "IFT 6767A",
+    "titre": "Sujets en robotique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6767a/",
+    "scrapeISO": "2026-09-11T11:58:45.742Z"
+  },
+  "IFT 6767B": {
+    "code": "IFT 6767B",
+    "titre": "Sujets en robotique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6767b/",
+    "scrapeISO": "2026-09-11T11:58:47.523Z"
+  },
+  "IFT 6900": {
+    "code": "IFT 6900",
+    "titre": "Mémoire",
+    "credits": 30,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6900/",
+    "scrapeISO": "2026-09-11T11:58:49.443Z"
+  },
+  "IFT 6916": {
+    "code": "IFT 6916",
+    "titre": "Stage",
+    "credits": 22,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce stage a pour objectif de permettre à l'étudiant d'appliquer dans une organisation publique ou privée les connaissances théoriques et pratiques acquises au cours de sa formation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6916/",
+    "scrapeISO": "2026-09-11T11:58:50.611Z"
+  },
+  "IFT 6901": {
+    "code": "IFT 6901",
+    "titre": "Travail dirigé 1",
+    "credits": 11,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6901/",
+    "scrapeISO": "2026-09-11T11:58:52.403Z"
+  },
+  "IFT 6902": {
+    "code": "IFT 6902",
+    "titre": "Travail dirigé 2",
+    "credits": 11,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6902/",
+    "scrapeISO": "2026-09-11T11:58:53.708Z"
+  },
+  "IFT 6917": {
+    "code": "IFT 6917",
+    "titre": "Stage en apprentissage automatique",
+    "credits": 22,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage de 6 mois dans une organisation publique ou privée permettant à l'étudiant d'appliquer les connaissances théoriques et pratiques en apprentissage automatique acquises au cours de sa formation.",
+    "prealablesBrut": "IFT6135, IFT6390, IFT6758, et IFT6759",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "IFT6135, IFT6390, IFT6758, et IFT6759"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6917/",
+    "scrapeISO": "2026-09-11T11:58:54.900Z"
+  },
+  "IFT 6761": {
+    "code": "IFT 6761",
+    "titre": "Colloque 1",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Série de présentations sur des sujets variés sur les thèmes fondamentaux et des applications en apprentissage automatique. Remarque : cours réservé aux étudiants inscrits au DESS en apprentissage automatique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6761/",
+    "scrapeISO": "2026-09-11T11:58:56.754Z"
+  },
+  "IFT 6762": {
+    "code": "IFT 6762",
+    "titre": "Colloque 2",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Série de présentations sur des sujets variés sur les thèmes fondamentaux et des applications en apprentissage automatique. Remarque : cours réservé aux étudiants inscrits au DESS en apprentissage automatique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6762/",
+    "scrapeISO": "2026-09-11T11:58:58.538Z"
+  },
+  "IFT 6919": {
+    "code": "IFT 6919",
+    "titre": "Stage court en apprentissage automatique",
+    "credits": 12,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage de 4 mois dans une organisation publique ou privée permettant à l'étudiant d'appliquer les connaissances théoriques et pratiques en apprentissage automatique acquises au cours de sa formation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-6919/",
+    "scrapeISO": "2026-09-11T11:58:59.813Z"
+  },
+  "IFT 1901": {
+    "code": "IFT 1901",
+    "titre": "Initiation aux outils informatiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Familiarisation avec les outils informatiques d'usage courant : logiciels de traitement de texte et de traitement d'image, tableur et logiciel de présentation. Terminologie informatique de base et briève initiation à la programmation. Remarque : Ce cours est exclusif aux étudiants des programmes 195541, 199010, 199011. Toutefois, il pourrait être reconnu comme cours hors programme dans d’autres programmes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1901/",
+    "scrapeISO": "2026-09-11T12:02:08.908Z"
   }
 }
