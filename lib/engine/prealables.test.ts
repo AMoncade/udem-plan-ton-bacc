@@ -46,3 +46,96 @@ describe("parsePrealables — ce qu'il refuse de deviner", () => {
     expect(r.noeud).toEqual({ genre: "opaque", texte: brut });
   });
 });
+
+// ---------------------------------------------------------------------------
+// Extension « moteur ». Deux ajouts seulement, et rien pour des formes
+// imaginaires : le relevé des formes réellement présentes sur le site (session
+// scraper) n'est pas encore arrivé.
+// ---------------------------------------------------------------------------
+
+describe("parsePrealables — blancs exotiques des pages UdeM", () => {
+  it("lit la ligne d'ACT-2250 écrite avec des espaces insécables", () => {
+    const r = parsePrealables("ACT1240 ET MAT1720");
+    expect(r.complet).toBe(true);
+    expect(r.noeud).toEqual({ genre: "et", enfants: [
+      { genre: "cours", code: "ACT 1240" },
+      { genre: "cours", code: "MAT 1720" },
+    ] });
+  });
+
+  it("tolère espaces multiples, retours de ligne et minuscules", () => {
+    const r = parsePrealables("  act 1240   et \n mat-1720  ");
+    expect(r.complet).toBe(true);
+    expect(r.noeud).toEqual({ genre: "et", enfants: [
+      { genre: "cours", code: "ACT 1240" },
+      { genre: "cours", code: "MAT 1720" },
+    ] });
+  });
+});
+
+describe("parsePrealables — disjonction homogène « A OU B »", () => {
+  // Seule forme ajoutée au socle, parce qu'elle est le miroir exact de « A ET B » :
+  // une suite homogène n'a AUCUNE précédence à deviner. Et l'erreur éventuelle
+  // va dans le sens sûr : un noeud `ou` peut verrouiller un cours, là où un
+  // `opaque` ne verrouille jamais — cette extension ne peut donc pas
+  // déverrouiller un cours auquel l'étudiant n'a pas droit.
+  it("réduit « A OU B » à un noeud ou", () => {
+    expect(parsePrealables("STT1700 OU MAT2717")).toEqual({
+      complet: true,
+      noeud: { genre: "ou", enfants: [
+        { genre: "cours", code: "STT 1700" },
+        { genre: "cours", code: "MAT 2717" },
+      ] },
+    });
+  });
+
+  it("réduit une disjonction de trois codes", () => {
+    const r = parsePrealables("STT1700 OU MAT2717 OU ACT1240");
+    expect(r.complet).toBe(true);
+    expect(r.noeud).toEqual({ genre: "ou", enfants: [
+      { genre: "cours", code: "STT 1700" },
+      { genre: "cours", code: "MAT 2717" },
+      { genre: "cours", code: "ACT 1240" },
+    ] });
+  });
+
+  it("ne confond pas le « ou » de la prose avec une disjonction de codes", () => {
+    const r = parsePrealables("autorisation du département ou du responsable");
+    expect(r.complet).toBe(false);
+    expect(r.noeud.genre).toBe("opaque");
+  });
+
+  it("ne découpe pas un mot contenant ET ou OU", () => {
+    // « ETH 1000 » ne doit pas être coupé sur « ET ».
+    expect(parsePrealables("ETH1000")).toEqual({
+      complet: true, noeud: { genre: "cours", code: "ETH 1000" },
+    });
+  });
+});
+
+describe("parsePrealables — ce qui reste opaque en attendant le relevé du scraper", () => {
+  const aRefuser: [string, string][] = [
+    ["ACT1240, MAT1720", "une virgule ne dit pas si c'est ET ou OU"],
+    ["ACT1240 MAT1720", "deux codes sans connecteur"],
+    ["(ACT1240 OU MAT1720) ET STT1700", "parenthèses : forme jamais observée"],
+    ["ACT1240 ET (MAT1720 OU STT1700)", "parenthèses : forme jamais observée"],
+    ["ACT1240 ET MAT1720 OU STT1700", "mélange ET/OU sans parenthèses"],
+    ["Avoir réussi 30 crédits", "condition de crédits, en prose"],
+    ["ACT1240 concomitant MAT1720", "concomitant : pas encore mécanisé"],
+    ["ACT1240.", "ponctuation collée : on ne nettoie pas à l'aveugle"],
+  ];
+  for (const [brut, pourquoi] of aRefuser) {
+    it(`reste opaque et signalé : « ${brut} » (${pourquoi})`, () => {
+      const r = parsePrealables(brut);
+      expect(r.complet).toBe(false);
+      expect(r.noeud.genre).toBe("opaque");
+      if (r.noeud.genre === "opaque") expect(r.noeud.texte).toBe(brut.trim());
+    });
+  }
+
+  it("une ligne vide est signalée, jamais lue comme « aucun préalable »", () => {
+    const r = parsePrealables("   ");
+    expect(r.complet).toBe(false);
+    expect(r.noeud.genre).toBe("opaque");
+  });
+});
