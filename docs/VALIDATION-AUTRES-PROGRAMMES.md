@@ -719,14 +719,74 @@ computationnelle, et trois autres programmes) est une exclusivité tout autant :
 on fait un stage ou un travail dirigé, pas les deux. Le nom leur a donné une
 identité distincte, pas une alternative. L'audit les exige donc toutes les deux.
 
-**Ce qu'il faut**, et c'est ce que la version reportable promettait déjà : le
-cheminement en **champ typé** — `Bloc.cheminement?: string` alimenté par le
-`<small>` ou par le nom, plus `Programme.cheminements` par segment — et un
-filtre au moment de l'audit, l'étudiant déclarant le cheminement qu'il suit.
-Sans le filtre, le champ ne sert à rien ; sans le champ, le filtre n'a rien à
-lire.
+**IMPLÉMENTÉ côté contrat (`e7940d7`)** : `Bloc.cheminement?: string` — absent
+veut dire COMMUN à tous les cheminements, jamais orphelin — et
+`Programme.cheminements?: string[]`, dérivé de l'union des libellés émis.
+`blocsDuCheminement()` et `exigeUnCheminement()` dans `lib/parcours.ts` sont le
+seul endroit qui filtre, pour le moteur comme pour l'UI ; sans choix, la
+fonction lève plutôt que d'additionner des exclusifs, comme le fait déjà
+`projeterOrientation()`.
 
-**Portée mesurée** (catalogue régénéré, pas extrapolée) : 32 blocs portent un
-qualificatif de cheminement, sur 2 programmes ; 4 programmes de plus portent
-l'exclusivité par le nom. C'est peu — et c'est le genre de « peu » qui produit
-un diplôme refusé sans que rien ne s'affiche.
+### La règle d'émission n'est PAS « il y a un libellé »
+
+La version précédente de cette section disait « `Bloc.cheminement` alimenté par
+le `<small>` ou par le nom ». **C'est faux, et l'appliquer produit l'erreur
+inverse de celle qu'on corrige.** Deux contre-exemples mesurés.
+
+**Le `<small>` n'est pas un cheminement.** `dess-en-intervention-en-deficience-visuelle-readaptation`
+porte le même gabarit HTML que le doctorat — un `<small>` par bloc :
+
+    70A « Formation générale »     obligatoire 10 cr
+    70B « Formation spécialisée »  option      20 cr    10 + 20 = 30 = creditsTotal
+
+Ce sont des **compléments, tous deux exigés**. Les prendre pour des cheminements
+montrerait 10 ou 20 crédits à un étudiant qui en doit 30.
+
+**Le libellé n'est pas le `nom`, c'est le marqueur extrait du nom.**
+`maitrise-en-administration-des-services-de-sante-option-administration-sociale`,
+45 crédits : `70A « - ST Méthodologie »` 3 et `« - TD Méthodologie »` 3,
+`70E « - ST Stage »` 12 et `« - TD Travail dirigé »` 12 — mais aussi
+`70B « Gestion (ESPUM) »` 12, `70C « Spécialisation »` 15 et
+`70D « Complément de formation »` 3, qui portent un nom **descriptif** et aucun
+cheminement. Avec le marqueur `ST`/`TD` : 45 et 45, le total de la page. Sans
+filtre : 60. **Avec le nom entier comme libellé : 3** — choisir
+« - ST Méthodologie » élimine les deux variantes de 70E, qui ne correspondent ni
+à l'une ni à l'autre, et ampute le programme de 42 crédits.
+
+**Le discriminant qui sépare proprement les six programmes est mécanique et ne
+demande pas de lire la prose : un libellé ne compte comme cheminement que si,
+dans ce segment, un id de bloc est RÉUTILISÉ sous deux libellés différents.**
+Réutiliser un numéro est la façon dont la page dit « même créneau, rempli
+autrement ». Le DESS a des ids distincts : ses libellés sont des intertitres.
+
+### L'erreur va dans les DEUX sens
+
+C'est ce qui empêche de croire qu'un filtre « prudent » est sans risque. Ne pas
+filtrer **gonfle** — 180 crédits exigés pour un doctorat de 90. Filtrer à tort
+**ampute** — 10 crédits affichés pour un DESS de 30, ou 3 pour une maîtrise de
+45. Un correctif du premier défaut qui s'applique trop largement produit le
+second, dans la même journée, en croyant faire le contraire.
+
+D'où la règle de dernier recours : **un segment dont les libellés ne forment pas
+un axe ne s'émet pas du tout et se journalise.**
+`maitrise-en-evaluation-des-technologies-de-la-sante` porte six libellés
+distincts pour quatre groupes — « MM », « ST‐TD », « MM Méthodes »,
+« ST‐TD Méthodes », « Gestion », « ST‐TD Gestion » — dont un groupe, `70/70C`,
+où un seul côté est marqué. Émettre à moitié ferait exiger les deux blocs d'un
+même créneau : le défaut corrigé, reproduit à l'intérieur de son propre
+correctif. Un champ absent dit « on n'a pas su lire », ce qui est vrai ; un
+champ à moitié rempli dit une fausseté qui a l'air d'une réponse.
+
+### Le contrôle qui tranche, et la portée
+
+Pour tout programme où un cheminement est émis : **la somme des minimums de
+chaque cheminement doit égaler le `creditsTotal` de la page**, et le total sans
+filtre doit lui être strictement supérieur. 90/90 contre 180 pour le doctorat,
+45/45 contre 60 pour les deux maîtrises.
+
+**Portée, mesurée sur `da2181f` et non extrapolée** — à re-mesurer contre le SHA
+courant, plusieurs sessions commitant à quelques minutes d'écart : 32 blocs à
+qualificatif sur 2 programmes, dont un seul (le doctorat) est un vrai axe ;
+4 programmes de plus portent l'exclusivité par le nom, dont 3 se réduisent.
+Six programmes sur 1 089 — et c'est le genre de « peu » qui produit un diplôme
+refusé sans que rien ne s'affiche.
