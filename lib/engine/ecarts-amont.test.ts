@@ -113,6 +113,18 @@ describe("écart amont : un bloc dont le minimum dépasse ses propres cours", ()
     expect(audit.blocs[0].creditsManquants).toBe(6);
   });
 
+  it("relevé VIDE : la dette vaut la capacité réelle, pas le minimum annoncé", () => {
+    // L'état que l'UI affiche par défaut, et celui que j'avais mal décrit à la
+    // session d'affichage : je lui avais annoncé « 0 manquants » en prenant le
+    // cas où l'étudiant a tout fait pour le cas général. Sur un relevé vide, un
+    // bloc annoncé à 15 qui n'offre que 12 en réclame 12 — jamais 15.
+    const p = programmeIncoherent(15);
+    const audit = auditProgramme(p, catalogueTest([p], FICHES), new Set<CodeCours>());
+    expect(audit.blocs[0].creditsManquants).toBe(12);
+    // Et il reste marqué : la cause est dite, même quand la dette est non nulle.
+    expect(clesBlocsIncoherents(p, catalogueTest([p], FICHES))).toEqual([p.blocs[0].cle]);
+  });
+
   it("n'accuse PAS la page quand c'est une fiche qui manque chez nous", () => {
     // Le garde-fou décisif. 70 % des cours cités par le catalogue n'ont pas
     // encore de fiche : une somme partielle est un PLANCHER. Conclure
