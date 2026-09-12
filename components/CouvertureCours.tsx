@@ -5,11 +5,11 @@
  * de l'écran.
  *
  * Les blocs d'un programme citent des codes ; les fiches de ces cours arrivent
- * par une autre passe du scrape. Sur les 1 027 PARCOURS à structure
- * exploitable, 371 n'ont aucune fiche et 227 en ont moins du quart — après une
- * passe qui a déjà fait tomber ces nombres de 499 et 274 en cinq heures
- * (mesure, unité et péremption : `app/_lib/couverture.ts`). Un certificat de 2e
- * cycle en pratique pharmaceutique s'ouvre donc sur vingt et une lignes « titre
+ * par une autre passe du scrape. Sur les 1 054 PARCOURS à structure
+ * exploitable, 268 n'ont encore aucune fiche — après trois passes qui ont fait
+ * tomber ce nombre de 499 à 371 puis à 268 en une journée (mesure, unité et
+ * péremption : `app/_lib/couverture.ts`). Le besoin tient tant que ce nombre
+ * n'est pas zéro : un parcours sans aucune fiche s'ouvre sur des lignes « titre
  * inconnu » et un audit à zéro crédit.
  *
  * Rien n'était faux dans cet écran — c'est exactement ce que les données

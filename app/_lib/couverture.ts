@@ -10,23 +10,30 @@
  *
  * Mesuré en PARCOURS — l'unité du sélecteur : une page à sept orientations vaut
  * sept parcours, et `data/index-programmes.json` porte 1 480 fiches pour 1 089
- * fichiers de programme. Sur les 1 027 parcours à structure exploitable, DEUX
- * mesures à quelques heures d'écart, et c'est l'écart qui est instructif :
+ * fichiers de programme. TROIS mesures dans la même journée, et c'est le
+ * mouvement qui instruit, pas les nombres :
  *
- *                            82 fichiers de sujets   117 fichiers
- *                              (2026-09-11, 17 h)     (2026-09-11, 22 h)
- *   aucune fiche de cours              499                   371
- *   moins du quart                     274                   227
- *   complets                            55                    90
- *   sigles cités sans fichier      108 / 190             73 / 190
+ *                             82 sujets    117 sujets    126 sujets
+ *                               (17 h)       (22 h)      (lendemain)
+ *   parcours à structure         1 027        1 027         1 054
+ *   aucune fiche de cours          499          371           268
+ *   complets                        55           90           187
+ *   sigles cités sans fichier  108 / 190     73 / 190      64 / 190
  *
- * CES NOMBRES SONT DONC PÉRIMABLES, et ils périment en heures : la passe
- * « cours » du scrape a livré ARC, AME, APA et URB entre les deux colonnes —
- * les sigles mêmes de l'exemple ci-dessous. Ils disent l'ORDRE DE GRANDEUR qui
- * a motivé ce module, pas l'état d'aujourd'hui ; aucune ligne de code ne les
- * lit. Pour les refaire : assembler chaque parcours à structure et compter, la
- * mesure tient en une trentaine de lignes. Ce que l'écart ne change pas, c'est
- * le besoin : à 117 fichiers, 371 parcours s'ouvrent encore sur zéro titre.
+ * Les complets ont plus que triplé, la base elle-même a bougé, et la passe
+ * « cours » a livré entre deux colonnes les sigles exacts de l'exemple
+ * ci-dessous. CES NOMBRES SE PÉRIMENT EN HEURES : ils disent l'ordre de grandeur
+ * qui a motivé ce module, pas l'état d'aujourd'hui, et aucune ligne de code ne
+ * les lit.
+ *
+ * N'AJOUTEZ PAS UNE QUATRIÈME COLONNE. Si le tableau semble encore utile, c'est
+ * qu'il faut REFAIRE la mesure, pas l'archiver — un commentaire qui grossit à
+ * chaque passe devient un journal, et un journal dans un commentaire ne se
+ * périme jamais bruyamment. Pour la refaire : assembler chaque parcours à
+ * structure et compter, la mesure tient en une trentaine de lignes.
+ *
+ * Ce que le mouvement ne change pas, c'est le besoin : à 126 fichiers de sujets,
+ * 268 parcours s'ouvrent encore sur zéro titre.
  *
  * La session scraper mesure le même trou en PROGRAMMES et trouve 222 sans
  * aucune fiche sur 581 : le rapport ~1,8 entre les deux séries est le facteur
