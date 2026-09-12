@@ -170,7 +170,9 @@ Deux choses que la v2 a découvertes en plus, sur de vraies pages :
 - **`Programme.orientations`.** Le contrat confondait une PAGE et un PARCOURS.
   La page du bacc en mathématiques énonce treize répartitions de crédits — sept
   par orientation, six par segment — et `exigences` n'avait qu'un emplacement.
-  ~545 pages exploitables portent ~964 parcours.
+  MESURÉ depuis : les 1 089 pages du catalogue portent 1 480 fiches d'index,
+  soit 1,36 parcours par page. L'estimation « ~545 pages / ~964 parcours » qui
+  figurait ici était une extrapolation d'échantillon, remplacée par un décompte.
 - **`Bloc.contenuOuvert`.** Il existe des blocs « catégorie » qui n'énumèrent
   aucun cours et renvoient en prose à un ensemble extérieur (économie et
   politique 71/71G, musique 02/02E : cours du Centre de langues). Invérifiables
@@ -194,7 +196,11 @@ Mesuré, pas supposé (`docs/INVENTAIRE-PROGRAMMES.md`) :
   les paramètres dès que ce jeton ne correspond plus, donc **ne jamais fabriquer
   ces URL** — suivre celles de l'index. Et `/sitemap.xml` lui-même n'est pas
   stable : il sert parfois un `urlset` de programmes au lieu du `sitemapindex`.
-- **~545 pages exploitables** (IC95 458–630) portant **~964 parcours**.
+- **1 089 pages** portant **1 480 fiches d'index**, et 117 sujets de cours —
+  décompté sur `data/`, non extrapolé. L'ancienne estimation (« ~545 pages,
+  IC95 458–630, ~964 parcours ») visait les pages EXPLOITABLES ; le décompte
+  d'orientation le plus proche donne 581 programmes à ≥ 10 cours, dans
+  l'intervalle annoncé. Citer le décompte, pas l'extrapolation.
 - **Le tri se fait sur le CONTENU, jamais sur le statut** : 110/110 répondent
   200, et 31 % sont vides. Un test par HEAD conclurait « 100 % ont une
   structure ».

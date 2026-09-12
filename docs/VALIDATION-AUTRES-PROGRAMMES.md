@@ -614,10 +614,10 @@ pas le contrat.
 
 ### Reportables — à faire quand un deuxième programme sera réellement chargé
 
-- **R1. Cheminements exclusifs** (`MM`/`S`, honor/régulier). Il faudra un
-  `Programme.cheminements` et un filtre de blocs. Reportable parce que notre
-  orientation actuariat n'en a pas et que le champ `Bloc.cheminement` de N2 suffit à
-  ne pas perdre l'information d'ici là.
+- **R1. Cheminements exclusifs** — n'est plus reportable, et n'est plus entier.
+  L'identité est réglée, l'exclusivité non. Voir la section dédiée en fin de
+  document : un audit qui ne filtre pas par cheminement exige 180 crédits pour
+  un doctorat qui en annonce 90.
 - **R2. Contraintes de quota par sigle** (« 33 crédits POL et 33 crédits ECN »,
   « un sigle autre que ECN ou POL »). Reportable : `notes` les conserve, l'UI les
   affiche comme avertissements, le moteur ne les vérifie pas encore.
@@ -673,3 +673,60 @@ pas le contrat.
 - **Les champs `cycle` et `faculte`** de `Cours` : les fiches affichent bien
   « 1er cycle » et « Faculté des arts et des sciences, Science politique », mais je
   n'ai pas cherché de contre-exemple (programme conjoint, cours de cycle mixte).
+
+---
+
+### R1. Cheminements exclusifs — RÉGLÉ À MOITIÉ, et la moitié qui reste est la dangereuse
+
+**L'identité est réglée ; l'exclusivité ne l'est pas.** Depuis `db23504`,
+`cleBloc(segment, id, nom)` porte le nom du bloc et le catalogue entier est à
+**zéro clé en double sur 5 028 blocs**. Le lecteur qui voit la suite verte
+risque d'en conclure que R1 est clos. Il ne l'est pas.
+
+**La preuve, chiffrée.** Doctorat en pathologie et biologie cellulaire,
+segment 70, sur le catalogue régénéré :
+
+| cheminement | blocs | somme des minimums |
+|---|---|---|
+| Accès direct du B. Sc. au Ph. D. | 4 | **90 cr** |
+| Accès de la M. Sc. au Ph. D. | 2 | **90 cr** |
+| *tous les blocs du segment* | 6 | **180 cr** |
+
+La page annonce `creditsTotal: 90` et « 84 crédits obligatoires et 6 crédits à
+option ». Un audit qui ne filtre pas par cheminement exige donc **180 crédits
+pour un doctorat qui en annonce 90**. C'est la famille du piège « 18 contre 33 »
+du bacc en mathématiques, en pire : là c'était un écart, ici c'est un facteur
+deux.
+
+**Trois raisons pour lesquelles la clé avec nom n'y suffit pas.**
+
+1. **Identité n'est pas exclusivité.** Des clés uniques disent au moteur que
+   deux blocs sont *deux*. Elles ne disent pas qu'ils sont deux *alternatives*,
+   dont l'étudiant suit l'une OU l'autre. Rien dans le contrat ne porte ce
+   « ou ».
+2. **Le nom ne les distingue pas toujours.** Dans ce même doctorat, **5 paires**
+   de blocs partagent segment, numéro ET nom — les deux noms étant vides — et ne
+   se séparent que par le `<small>` de qualification. Le nom seul les
+   fusionnerait.
+3. **Le cheminement n'est récupérable qu'en découpant `Bloc.id` sur « — ».** Le
+   scraper y replie le qualificatif pour rendre l'id unique. Reconstruire une
+   information structurée en découpant une chaîne est exactement ce que ce
+   contrat condamne ailleurs : coupler deux choses sans le dire.
+
+**Et ça ne touche pas que les qualificatifs.** « Bloc 70D Stage » contre
+« Bloc 70D Travail dirigé » (maîtrise en finance mathématique et
+computationnelle, et trois autres programmes) est une exclusivité tout autant :
+on fait un stage ou un travail dirigé, pas les deux. Le nom leur a donné une
+identité distincte, pas une alternative. L'audit les exige donc toutes les deux.
+
+**Ce qu'il faut**, et c'est ce que la version reportable promettait déjà : le
+cheminement en **champ typé** — `Bloc.cheminement?: string` alimenté par le
+`<small>` ou par le nom, plus `Programme.cheminements` par segment — et un
+filtre au moment de l'audit, l'étudiant déclarant le cheminement qu'il suit.
+Sans le filtre, le champ ne sert à rien ; sans le champ, le filtre n'a rien à
+lire.
+
+**Portée mesurée** (catalogue régénéré, pas extrapolée) : 32 blocs portent un
+qualificatif de cheminement, sur 2 programmes ; 4 programmes de plus portent
+l'exclusivité par le nom. C'est peu — et c'est le genre de « peu » qui produit
+un diplôme refusé sans que rien ne s'affiche.

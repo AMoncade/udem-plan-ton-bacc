@@ -9,7 +9,11 @@ de population finie.
 
 ## Réponse courte
 
-**~545 pages de programme exploitables** (IC95 : 458–630) sur les 1 088 de la population.
+**1 089 pages scrapées**, portant **1 480 fiches d'index** (décompté sur `data/`).
+L'estimation ci-dessous — ~545 pages exploitables, IC95 458–630 — était une
+extrapolation d'échantillon et VISAIT AUTRE CHOSE : les pages à structure
+exploitable. Le décompte le plus proche est 581 programmes à ≥ 10 cours, dans
+l'intervalle. Conserver la méthode, ne plus citer le chiffre comme un état.
 Elles portent **~964 chemins de programme distincts** grâce aux orientations, soit **1,77 fois**
 plus de programmes que de pages.
 

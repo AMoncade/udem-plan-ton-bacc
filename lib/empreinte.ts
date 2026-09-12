@@ -27,6 +27,18 @@
  * commentaire dans un de ces fichiers déplace l'empreinte et réclame une passe.
  * Le faux positif coûte un scrape ; le faux négatif a coûté une matinée.
  *
+ * QUAND CETTE EMPREINTE NE PEUT PAS ÊTRE VÉRIFIÉE. Elle hache le contenu des
+ * fichiers PRÉSENTS sur le disque. Dans un checkout partagé par plusieurs
+ * sessions, quelqu'un est presque toujours en train d'éditer l'un d'eux : trois
+ * mesures à une minute d'intervalle ont donné trois valeurs, et un fichier NON
+ * SUIVI par git (, en cours d'écriture) suffit à
+ * la déplacer alors qu'aucune ligne importée n'a changé.
+ *
+ * La fonction n'est pas en cause — deux appels au même instant concordent. Mais
+ * la comparaison « empreinte des données contre empreinte du code » n'a de sens
+ * que sur un arbre au repos : juste après une passe, personne n'éditant les
+ * sources. Un rouge mesuré pendant que le dossier bouge ne dit rien.
+ *
  * Ce module lit le disque : il est réservé aux outils Node (scraper, tests) et
  * ne doit pas être importé par `app/` ni `components/`.
  */
