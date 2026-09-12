@@ -3,6 +3,7 @@ import type {
   Bloc,
   Catalogue,
   CodeCours,
+  ContrainteContenu,
   Cours,
   DiagnosticCours,
   EtatBloc,
@@ -467,8 +468,103 @@ export function clesBlocsIncoherents(programme: Programme, catalogue: Catalogue)
   return out;
 }
 
+/**
+ * Exclusion de sigle EXPLOITABLE par le moteur, ou null.
+ *
+ * Deux conditions, et la seconde est le cœur de la décision :
+ *
+ *   1. la contrainte lue est bien du genre « sigle » ;
+ *   2. la règle du bloc est « Choix » — donc elle signifie DÉJÀ « n'importe
+ *      quel cours », et la prose ne fait qu'en retrancher.
+ *
+ * C'est ce qui distingue ce cas de tous les autres blocs ouverts. Un bloc
+ * « Option » à contenu ouvert renvoie à un ENSEMBLE qu'on ne connaît pas (les
+ * cours du Centre de langues, la banque de 2e cycle d'une faculté) : y verser
+ * des cours inventerait une appartenance. Un bloc « Choix » ne renvoie à aucun
+ * ensemble — il les accepte tous — donc lui appliquer une soustraction
+ * n'invente rien, elle restreint.
+ *
+ * MESURÉ sur `data/` au 2026-09-12 (HEAD `7bdbc6a`), et la portée compte autant
+ * que les chiffres : 58 blocs ouverts portent une exclusion de sigle et TOUS ont
+ * déjà la règle « Choix ». 48 d'entre eux avaient un minimum > 0 — ceux-là seuls
+ * rendaient un verdict non affirmable, et **47 programmes** cessent d'en porter
+ * un (un 48e en garde un d'une autre nature). Les 10 restants avaient un minimum
+ * de 0 : ils ne bloquaient rien, mais leurs cours sont désormais comptés.
+ *
+ * Ce 47 ne vaut que pour CETTE règle. Une première version de ce commentaire
+ * annonçait 63, chiffre d'une mesure qui comptait aussi les blocs `cycle` — que
+ * le moteur n'exploite pas. La mesure était juste, la phrase parlait d'autre
+ * chose.
+ *
+ * Conséquence à dire plutôt qu'à taire : la condition « la règle est Choix »
+ * n'écarte AUCUN bloc des données actuelles. C'est une garde de principe, pas
+ * un filtre actif — le test qui l'éprouve est synthétique parce que le
+ * catalogue n'en produit pas le cas. Couverture de test et couverture de
+ * données sont deux choses.
+ *
+ * Le genre « cycle » n'est délibérément PAS exploité, et le critère n'est pas
+ * « la prose en dit plus que l'étiquette » — c'est **une prose qui RÉTRÉCIT
+ * l'ensemble que l'étiquette décrit**. Une sous-unité nommée le rétrécit (« la
+ * banque de cours de 2e cycle de la Faculté des sciences de l'éducation », « le
+ * répertoire des cours de la Faculté de l'aménagement ») : filtrer sur
+ * `Cours.cycle` y admettrait un cours d'une autre faculté, donc déclarerait
+ * l'exigence satisfaite par un cours interdit. Une prose qui ÉLARGIT (« ou des
+ * cours de même niveau d'autres universités ») est au contraire sans danger :
+ * elle vise des cours absents du catalogue, donc n'y admet rien d'interdit.
+ * C'est le même axe que la distinction Choix/Option ci-dessus — soustraire d'un
+ * ensemble connu est sûr, l'élargir vers l'inconnu ne l'est pas.
+ */
+/**
+ * Un genre de contrainte est-il EXPLOITÉ par le moteur ?
+ *
+ * Écrit en `switch` exhaustif avec une garde `never` — pas en `if` — pour une
+ * raison précise : `ContrainteContenu` est une union que le scraper étendra.
+ * Un `if (genre !== "sigle")` traiterait un genre nouveau comme non exploitable,
+ * ce qui est le repli SÛR mais MUET : personne ne verrait qu'une contrainte
+ * vérifiable dort. Ici, ajouter un membre à l'union casse la compilation et
+ * force quelqu'un à trancher.
+ */
+function genreExploite(genre: ContrainteContenu["genre"]): boolean {
+  switch (genre) {
+    case "sigle":
+      return true;
+    // Délibérément non exploités — voir le commentaire d'`exclusionSigle`.
+    case "cycle":
+    case "autorisation":
+    case "renvoiExterne":
+    case "renvoiBlocs":
+      return false;
+    default: {
+      const jamais: never = genre;
+      throw new Error(`genre de contrainte de contenu non traité : ${String(jamais)}`);
+    }
+  }
+}
+
+function exclusionSigle(bloc: Bloc, bornes: Bornes): ReadonlySet<string> | null {
+  const contrainte = bloc.contrainteContenu;
+  if (!contrainte || !genreExploite(contrainte.genre)) return null;
+  if (contrainte.genre !== "sigle") return null;
+  if (bornes.type !== "choix") return null;
+  const exclus = (contrainte.exclus ?? []).filter((s) => typeof s === "string" && s !== "");
+  return exclus.length > 0 ? new Set(exclus) : null;
+}
+
+/**
+ * Bloc ouvert que le moteur ne peut TOUJOURS pas vérifier.
+ *
+ * `estOuvert` reste le drapeau brut de la page ; c'est celui-ci qui commande
+ * les décisions d'audit, parce qu'une partie des blocs ouverts est désormais
+ * auditable. Les confondre rendrait un bloc à la fois vérifié et déclaré
+ * invérifiable.
+ */
+function estOuvertNonAuditable(bloc: Bloc, bornes: Bornes): boolean {
+  return estOuvert(bloc) && exclusionSigle(bloc, bornes) === null;
+}
+
 function estJoker(bloc: Bloc, bornes: Bornes): boolean {
-  return bornes.type === "choix" && (bloc.cours ?? []).length === 0 && !estOuvert(bloc);
+  if (bornes.type !== "choix" || (bloc.cours ?? []).length > 0) return false;
+  return !estOuvert(bloc) || exclusionSigle(bloc, bornes) !== null;
 }
 
 /**
@@ -571,6 +667,7 @@ export function auditProgramme(
     bornes: c.bornes,
     cours: new Set((c.bloc.cours ?? []).map((brut) => normaliserCode(brut) ?? brut)),
     joker: estJoker(c.bloc, c.bornes),
+    sigleExclus: exclusionSigle(c.bloc, c.bornes) ?? undefined,
   }));
   const affectation = resoudreAffectation(
     affectables,
@@ -607,7 +704,9 @@ export function auditProgramme(
     // bas comme une incohérence de la page.
     const atteignable =
       c.capaciteListee !== null ? Math.min(c.bornes.min, c.capaciteListee) : c.bornes.min;
-    c.manquants = estOuvert(c.bloc) ? 0 : arrondi(Math.max(0, atteignable - c.comptes));
+    c.manquants = estOuvertNonAuditable(c.bloc, c.bornes)
+      ? 0
+      : arrondi(Math.max(0, atteignable - c.comptes));
   }
 
   // --- totaux par type ----------------------------------------------------
@@ -882,7 +981,7 @@ export function auditProgramme(
     conforme:
       c.manquants === 0 &&
       c.bornes.illisible === null &&
-      !(estOuvert(c.bloc) && c.bornes.min > 0) &&
+      !(estOuvertNonAuditable(c.bloc, c.bornes) && c.bornes.min > 0) &&
       !estInfaisable(c),
     coursAttribues: [...c.attribues],
   }));
@@ -927,7 +1026,10 @@ export function auditProgramme(
 function traiterContenuOuvert(calculs: Calcul[], problemes: string[]): number {
   let nonAffirmables = 0;
   for (const c of calculs) {
-    if (!estOuvert(c.bloc)) continue;
+    // Un bloc devenu auditable (exclusion de sigle sur un bloc « Choix ») a
+    // été rempli comme n'importe quel autre : le déclarer invérifiable ici le
+    // rendrait à la fois vérifié et non affirmable.
+    if (!estOuvertNonAuditable(c.bloc, c.bornes)) continue;
     const prose = (c.bloc.notes ?? []).map((n) => n.trim()).filter((n) => n !== "");
     const renvoi =
       prose.length > 0

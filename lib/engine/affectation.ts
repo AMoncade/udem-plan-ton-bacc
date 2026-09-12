@@ -1,4 +1,5 @@
 import type { CodeCours, Intervalle } from "../types";
+import { sujetDeCode } from "../codes";
 import { arrondi, type Bornes, type TypeBloc } from "./bornes";
 
 /**
@@ -99,6 +100,15 @@ export interface BlocAffectable {
   cours: ReadonlySet<CodeCours>;
   /** Bloc « Choix » à liste vide : accepte n'importe quel cours. */
   joker: boolean;
+  /**
+   * Sigles que ce joker REFUSE (« les cours au choix doivent porter un sigle
+   * autre que ECN ou POL »).
+   *
+   * Une contrainte SOUSTRACTIVE sur un ensemble déjà universel : le bloc dit
+   * « n'importe quel cours », la prose en retranche. Rien n'est inventé, à la
+   * différence d'un bloc dont le contenu serait décrit ailleurs.
+   */
+  sigleExclus?: ReadonlySet<string>;
 }
 
 export interface ExigencesTotaux {
@@ -205,7 +215,17 @@ export function resoudreAffectation(
   for (const code of [...coursFaits].sort()) {
     const cites: number[] = [];
     for (let i = 0; i < n; i++) if (blocs[i].cours.has(code)) cites.push(i);
-    const candidats = cites.length > 0 ? cites : jokers;
+    // Un joker qui exclut le sigle de ce cours n'est pas un candidat pour LUI,
+    // tout en restant joker pour les autres — d'où un filtre par cours et non
+    // une exclusion du bloc.
+    const sujet = sujetDeCode(code);
+    const candidats =
+      cites.length > 0
+        ? cites
+        : jokers.filter((i) => {
+            const exclus = blocs[i].sigleExclus;
+            return exclus === undefined || sujet === null || !exclus.has(sujet);
+          });
     if (candidats.length === 0) {
       horsBloc.push(code);
       continue;
