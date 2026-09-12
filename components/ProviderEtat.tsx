@@ -176,6 +176,14 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
       // seconde entrée.
       blocsIncoherents: new Set(clesBlocsIncoherents(programme, catalogue)),
     };
+    /* `cheminement` n'est pas décoratif dans cette liste : sans lui, l'audit ne
+       se recalcule pas quand l'étudiant change de cheminement, et l'écran
+       montre le verdict de l'ancien choix.
+       Vérifié en le retirant : `react-hooks/exhaustive-deps` le nomme
+       explicitement. Mais c'est un AVERTISSEMENT, et `npm run lint` sort en 0
+       sur les avertissements — donc il apparaît dans la sortie sans faire
+       échouer quoi que ce soit. Un contrôle qui parle sans bloquer ne protège
+       que celui qui lit sa sortie en entier. */
   }, [chargement, faits, cheminement]);
 
   const basculerFait = useCallback((code: CodeCours) => {
