@@ -48,6 +48,7 @@
  */
 import type { Bloc, ExigencesParType, Orientation, Programme } from "../../lib/types";
 import { cleBloc, normaliserCode } from "../../lib/codes";
+import { lireContrainte } from "./contraintes";
 import { contenu, decouperSur, texteBrut, texteLigne } from "./html";
 import { Journal } from "./journal";
 import {
@@ -529,7 +530,25 @@ export function parseStructure(
           `bloc ${lue.regle.type} sans aucun code de cours NI prose (règle « ${regleBrut} ») — ` +
             "exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page",
         );
-      } else if (contenuOuvert && lue.regle.type !== "choix") {
+      }
+
+      // Ce que la prose contraint, quand elle contraint quelque chose de
+      // mécanisable. 157 des 401 blocs à contenu ouvert portent une contrainte
+      // que le moteur pourrait vérifier (sigle, cycle) et qu'il ne recevait
+      // pas ; le reste est constaté ou tu. On ne fabrique jamais de contrainte
+      // à moitié lue : une liste de sigles fausse ferait rejeter un cours
+      // valide, alors qu'un champ absent laisse le moteur faire ce qu'il fait
+      // déjà — ne rien vérifier.
+      const contrainte = contenuOuvert ? lireContrainte(notesBloc) : null;
+      if (contenuOuvert && contrainte === null) {
+        journal.info(
+          sujet,
+          "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — " +
+            `rien n'est émis plutôt qu'une contrainte approximative : « ${notesBloc.join(" ").slice(0, 180)} »`,
+        );
+      }
+
+      if (contenuOuvert && lue.regle.type !== "choix") {
         journal.info(
           sujet,
           `contenu ouvert (règle « ${regleBrut} ») : aucun code, le contenu est décrit en prose — ` +
@@ -556,6 +575,7 @@ export function parseStructure(
         // les 5 028 blocs serait du volume sans information, et ne dirait
         // toujours pas si le bloc a été lu.
         ...(cours.length === 0 && !contenuOuvert ? { videConstate: true } : {}),
+        ...(contrainte !== null ? { contrainteContenu: contrainte } : {}),
         notes: notesBloc,
       });
     }
