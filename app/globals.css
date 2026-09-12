@@ -147,22 +147,32 @@
  * ligne selon la longueur du nom du programme : l'œil devait rechercher sa
  * colonne à chaque fois. Un registre a des colonnes, c'est tout son intérêt.
  *
- * Nommé ici plutôt qu'en valeur arbitraire dans le JSX : `grid-cols-[…]` avec
- * des `minmax()` imbriqués ne générait aucune règle, et l'échec était SILENCIEUX
- * — la classe figurait bien dans le HTML, le navigateur rendait une colonne
- * unique, et les lignes se sont empilées sur trois niveaux sans qu'aucune erreur
- * n'apparaisse. Une utilité nommée échoue bruyamment ou pas du tout.
+ * Nommé ici plutôt qu'en valeur arbitraire dans le JSX, et la raison exacte a
+ * été MESURÉE plutôt que supposée — ma première explication était à moitié
+ * fausse, alors je note les deux moitiés.
+ *
+ * CE QUI ÉCHOUE VRAIMENT : `md:grid-cols-[minmax(0,1fr)_minmax(0,13rem)_13rem]`
+ * ne génère AUCUNE règle. Vérifié en la remettant et en laissant dix-huit
+ * secondes de reconstruction puis un rechargement forcé :
+ * `getComputedStyle().gridTemplateColumns` rend « 1152px », donc une seule
+ * colonne. La classe figure pourtant dans le HTML, `tsc` et `eslint` restent
+ * verts, et les lignes s'empilent sur trois niveaux sans qu'aucune erreur
+ * n'apparaisse. C'est l'échec silencieux qui a motivé ce déplacement.
+ *
+ * CE QUI N'ÉCHOUE PAS, contrairement à ce que j'avais écrit : `@utility` avec un
+ * `@media` imbriqué fonctionne très bien — `ecran` juste au-dessus en est la
+ * preuve, et la conversion de cette règle-ci a été refaite pour le vérifier. Mon
+ * premier essai avait conclu trop vite, quatre secondes après l'édition, avant
+ * que Tailwind ait reconstruit. J'avais donc attribué à la FORME un échec qui
+ * n'était qu'un délai.
  */
-.ligne-registre {
+@utility ligne-registre {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   column-gap: 1rem;
   row-gap: 0.125rem;
   align-items: baseline;
-}
-
-@media (width >= 768px) {
-  .ligne-registre {
+  @media (width >= 768px) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 13rem) 13rem;
   }
 }
