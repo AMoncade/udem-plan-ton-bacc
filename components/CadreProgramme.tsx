@@ -265,9 +265,26 @@ export function CadreProgramme({ children }: { children: ReactNode }) {
         );
 
       case "present":
-        /* Incohérent par construction : on n'arrive ici que parce que l'index
-           n'a pas rendu de fiche pour cette clé. Le dire plutôt que de rendre
-           un écran rassurant sur un état qu'on ne comprend pas. */
+        /* INATTEIGNABLE AUJOURD'HUI, et il faut le dire ainsi plutôt que de la
+           présenter comme un détecteur.
+
+           Les deux recherches lisent le même tableau avec le même prédicat :
+           `ficheParCle` fait `prepare.entrees.find(e => e.fiche.cle === cle)`,
+           `destinCleParcours` fait `fiches.some(f => f.cle === cle)` sur
+           `prepare.entrees.map(e => e.fiche)`, et `preparerIndex` est un `map`
+           un-pour-un qui ne filtre rien. On n'atteint cet écran que si `find` a
+           rendu `undefined` ; `some` ne peut donc pas répondre oui.
+
+           La branche existe parce que l'union est exhaustive — c'est ce que le
+           `never` garantit — et PAS parce qu'elle surveille quelque chose. Un
+           garde qui ne peut pas se déclencher donne une assurance fausse, et
+           c'est le même défaut que le contrôle dont la réponse est connue
+           d'avance.
+
+           Elle deviendrait un vrai détecteur le jour où quelqu'un passerait à
+           `destinCleParcours` une liste AUTRE que `prepare.entrees` — un index
+           filtré, un sous-ensemble chargé à la demande. L'invariant à surveiller
+           est celui-là, pas l'écran. */
         return (
           <Encadre titre="Le parcours retenu est introuvable" ton="perdu">
             <p>
