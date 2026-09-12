@@ -22,7 +22,10 @@
  *                         celles citées par les programmes retenus
  *   --cours-cites         ne scraper que l'union des codes cités par les
  *                         programmes DÉJÀ sur disque (passe à faire après une
- *                         passe --sans-cours ; elle imprime la taille de l'union)
+ *                         passe --sans-cours ; elle imprime la taille de l'union).
+ *                         Combiné à --programmes, l'union est restreinte à ces
+ *                         slugs : « les cours qui manquent À CE LOT ». C'est ce
+ *                         qui permet de CIBLER et de REPRENDRE en même temps.
  *   --limite-cours N      plafonner le nombre de fiches de cours de cette passe
  *   --delai MS            délai entre deux requêtes réseau (défaut 1200)
  *   --tentatives N        essais par URL sur panne de transport (défaut 4)
@@ -301,11 +304,27 @@ async function entetteDepuisAccueil(
 async function codesDesProgrammesSurDisque(
   deCettePasse: Set<string>,
   journal: Journal,
+  restreindreA: string[] | null,
 ): Promise<Set<string>> {
   const union = new Set(deCettePasse);
   let fichiers: string[] = [];
   try {
     fichiers = (await readdir(DOSSIER_PROGRAMMES)).filter((f) => f.endsWith(".json"));
+    // `--cours-cites --programmes a,b,c` = « les cours qui manquent À CES
+    // programmes-là ». Sans cette restriction, cibler un lot exigeait de se
+    // passer de `--reprendre` (qui vide la sélection de programmes puisqu'ils
+    // sont déjà sur disque), et la passe redemandait alors tout ce que le lot
+    // cite — mesuré sur un lot réel : 648 fiches déjà acquises re-téléchargées
+    // pour rien, 37 minutes et autant de requêtes inutiles vers un serveur
+    // tiers. Cibler et reprendre doivent pouvoir se combiner.
+    if (restreindreA !== null) {
+      const voulus = new Set(restreindreA.map((s) => `${s}.json`));
+      const absents = restreindreA.filter((s) => !fichiers.includes(`${s}.json`));
+      for (const s of absents) {
+        journal.manque(s, "slug demandé par --programmes mais aucun fichier sur disque — ses cours ne sont pas dans l'union");
+      }
+      fichiers = fichiers.filter((f) => voulus.has(f));
+    }
   } catch {
     journal.manque(
       "data/programmes",
@@ -527,7 +546,7 @@ async function principal(): Promise<void> {
     //  - passe complète : l'inventaire entier du sitemap.
     let codes: string[];
     if (options.coursCites) {
-      codes = [...(await codesDesProgrammesSurDisque(codesCites, journal))];
+      codes = [...(await codesDesProgrammesSurDisque(codesCites, journal, options.programmes))];
     } else if (options.tousLesCours || !partiel) {
       codes = inventaire.cours
         .map((s) => normaliserCode(s))
