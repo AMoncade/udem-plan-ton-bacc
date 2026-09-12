@@ -40,6 +40,7 @@ import {
 } from "@/app/_lib/recherche";
 import type { FicheIndex } from "@/lib/types";
 import { useEtat } from "./ProviderEtat";
+import { TeteEcran } from "./TeteEcran";
 
 function ListeFiltre({
   etiquette,
@@ -124,7 +125,7 @@ export function SelecteurProgramme() {
 
   if (index.phase === "erreur") {
     return (
-      <div className="px-5 py-6 sm:px-8">
+      <div className="ecran py-6">
         <div className="max-w-prose border border-perdu/50 bg-perdu/5 px-4 py-4">
           <h1 className="text-[17px] font-semibold">
             L&apos;index des programmes n&apos;a pas pu être lu
@@ -137,7 +138,7 @@ export function SelecteurProgramme() {
 
   if (prepare === null) {
     return (
-      <div className="px-5 py-6 sm:px-8">
+      <div className="ecran py-6">
         <p className="text-doux">Lecture de l&apos;index des programmes…</p>
       </div>
     );
@@ -183,19 +184,29 @@ export function SelecteurProgramme() {
   const nbActifs = filtresActifs(filtres);
 
   return (
-    <div className="px-5 py-6 sm:px-8">
-      <header className="max-w-prose">
-        <h1 className="text-[26px] font-semibold leading-tight tracking-[-0.02em]">
-          Programmes
-        </h1>
-        <p className="mt-2 text-doux">
-          {prepare.entrees.length.toLocaleString("fr-CA")} fiches. Cherchez par nom —
-          les accents et l&apos;ordre des mots n&apos;ont pas d&apos;importance — ou
-          réduisez par cycle, faculté et type.
-        </p>
-      </header>
+    <div className="ecran py-6">
+      <TeteEcran
+        titre="Programmes"
+        fait={
+          <>
+            <span className="chiffres">
+              {prepare.entrees.length.toLocaleString("fr-CA")}
+            </span>{" "}
+            parcours au catalogue.
+          </>
+        }
+        aide={
+          <p>
+            Cherchez par nom — les accents et l&apos;ordre des mots n&apos;ont pas
+            d&apos;importance — ou réduisez par cycle, faculté et type. Un même
+            programme peut porter plusieurs parcours : une page à sept orientations
+            en vaut sept, et ils n&apos;ont ni les mêmes blocs ni la même répartition
+            de crédits.
+          </p>
+        }
+      />
 
-      <section className="mt-6 border border-trait bg-relief/30 p-3 sm:p-4">
+      <section className="mt-5 border border-trait bg-relief/30 p-3 sm:p-4">
         <label className="block">
           <span className="text-[11.5px] text-faible">Nom du programme</span>
           <input
@@ -321,11 +332,16 @@ export function SelecteurProgramme() {
                     type="button"
                     onClick={() => ouvrir(fiche)}
                     onMouseEnter={() => setSurvol(Math.max(0, rangSelectionnable))}
-                    className={`flex w-full flex-wrap items-baseline gap-x-3 gap-y-1 px-3 py-2 text-left hover:bg-relief ${
+                    /* Une grille, pas un `flex-wrap` : dans un registre, les
+                       colonnes s'alignent d'une ligne à l'autre. En flex, la
+                       faculté commençait à une abscisse différente à chaque
+                       ligne selon la longueur du nom, et l'œil devait rechercher
+                       sa colonne à chaque fois. */
+                    className={`ligne-registre w-full px-3 py-2 text-left hover:bg-relief ${
                       courant ? "border-l-2 border-papier pl-2.5" : ""
                     }`}
                   >
-                    <span className="min-w-0 flex-1 text-[13.5px] text-papier">
+                    <span className="min-w-0 truncate text-[13.5px] text-papier">
                       {libelleFiche(fiche)}
                       {courant ? (
                         <span className="ml-2 border border-trait px-1.5 py-px text-[11px] text-doux">
@@ -333,12 +349,12 @@ export function SelecteurProgramme() {
                         </span>
                       ) : null}
                     </span>
-                    <span className="text-[12px] text-doux">
+                    <span className="min-w-0 truncate text-[12px] text-doux">
                       {[fiche.typeProgramme, fiche.cycle, fiche.faculte]
                         .filter((part): part is string => part !== null)
                         .join(" · ")}
                     </span>
-                    <span className="chiffres shrink-0 text-[12px] text-doux">
+                    <span className="chiffres shrink-0 whitespace-nowrap text-[12px] text-doux md:text-right">
                       <CreditsProgramme fiche={fiche} />
                       <span className="text-faible">
                         {" · "}

@@ -40,7 +40,7 @@ export function EnteteApp() {
 
   return (
     <header className="sticky top-0 z-30 border-b border-trait bg-encre/95 backdrop-blur">
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-3 px-5 py-3 sm:px-8">
+      <div className="ecran flex flex-wrap items-center gap-x-6 gap-y-3 py-3">
         <Link href="/programmes" className="flex items-center gap-2.5">
           <Marque />
           <span className="text-[15px] font-semibold tracking-[-0.01em]">
@@ -130,19 +130,23 @@ export function EnteteApp() {
       {/* LA BANNIÈRE DU FAUX. Pilotée par le dépôt lui-même, pas par un drapeau
           séparé : la bascule de `app/_donnees/source.ts` l'éteint toute seule. */}
       {depot.estFactice ? (
-        <p className="border-t border-avert/25 bg-avert/8 px-5 py-1.5 text-[12px] text-avert sm:px-8">
-          <strong className="font-semibold">Données fabriquées.</strong> Les noms de
-          programmes, les codes de cours, les crédits, les préalables et les horaires
-          affichés sont INVENTÉS (<code>app/_demo/</code>) : aucun n&apos;a été lu sur un
-          site. Rien ici ne doit servir à s&apos;inscrire à quoi que ce soit.
-        </p>
+        <div className="border-t border-avert/25 bg-avert/8">
+          <p className="ecran py-1.5 text-[12px] text-avert">
+            <strong className="font-semibold">Données fabriquées.</strong> Les noms de
+            programmes, les codes de cours, les crédits, les préalables et les horaires
+            affichés sont INVENTÉS (<code>app/_demo/</code>) : aucun n&apos;a été lu sur
+            un site. Rien ici ne doit servir à s&apos;inscrire à quoi que ce soit.
+          </p>
+        </div>
       ) : null}
 
       {MOTEUR_EST_FACTICE ? (
-        <p className="border-t border-avert/25 bg-avert/8 px-5 py-1.5 text-[12px] text-avert sm:px-8">
-          Moteur de démonstration : les états et les crédits viennent d&apos;un faux
-          moteur, pas de <code>lib/engine</code>.
-        </p>
+        <div className="border-t border-avert/25 bg-avert/8">
+          <p className="ecran py-1.5 text-[12px] text-avert">
+            Moteur de démonstration : les états et les crédits viennent d&apos;un faux
+            moteur, pas de <code>lib/engine</code>.
+          </p>
+        </div>
       ) : null}
     </header>
   );

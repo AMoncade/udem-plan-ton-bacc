@@ -17,7 +17,8 @@ export function PiedApp() {
   const { donnees, index } = useEtat();
 
   return (
-    <footer className="border-t border-trait px-5 py-4 text-[12px] leading-relaxed text-faible sm:px-8">
+    <footer className="border-t border-trait">
+      <div className="ecran py-4 text-[12px] leading-relaxed text-faible">
       <p>
         Projet personnel sans affiliation avec aucun établissement. Les données sont
         reprises de pages publiques d&apos;admission et peuvent être périmées ou
@@ -63,6 +64,7 @@ export function PiedApp() {
           concerné.
         </p>
       ) : null}
+      </div>
     </footer>
   );
 }

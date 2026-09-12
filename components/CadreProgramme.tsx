@@ -34,7 +34,7 @@ function Encadre({
         ? "border-perdu/50 bg-perdu/5"
         : "border-trait bg-relief/40";
   return (
-    <div className="px-5 py-6 sm:px-8">
+    <div className="ecran py-6">
       <div className={`max-w-prose border ${bord} px-4 py-4`}>
         <h1 className="text-[17px] font-semibold">{titre}</h1>
         <div className="mt-2 space-y-2 text-[13.5px] leading-relaxed text-doux">

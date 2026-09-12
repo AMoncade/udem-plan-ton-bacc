@@ -31,6 +31,7 @@ import {
 import type { Catalogue, CodeCours, Trimestre } from "@/lib/types";
 import { Credits, MarqueEtat, TitreCours } from "./Etats";
 import { useDonnees, useEtat } from "./ProviderEtat";
+import { TeteEcran } from "./TeteEcran";
 
 interface Refus {
   code: CodeCours;
@@ -112,17 +113,18 @@ export function VuePlan() {
   }
 
   return (
-    <div className="px-5 py-6 sm:px-8">
-      <header className="max-w-prose">
-        <h1 className="text-[26px] font-semibold leading-tight tracking-[-0.02em]">
-          Trimestres
-        </h1>
-        <p className="mt-2 text-doux">
-          Prenez un cours dans la réserve, puis choisissez un trimestre. Un cours qui
-          n&apos;est pas offert à cette saison est refusé, avec son horaire publié — c&apos;est
-          la contrainte qui décide vraiment de l&apos;ordre d&apos;un parcours.
-        </p>
-      </header>
+    <div className="ecran py-6">
+      <TeteEcran
+        titre="Trimestres"
+        aide={
+          <p>
+            Prenez un cours dans la réserve, puis choisissez un trimestre. Un cours qui
+            n&apos;est pas offert à cette saison est refusé, avec son horaire publié —
+            c&apos;est la contrainte qui décide vraiment de l&apos;ordre d&apos;un
+            parcours.
+          </p>
+        }
+      />
 
       <div
         role="status"

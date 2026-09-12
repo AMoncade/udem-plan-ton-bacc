@@ -36,6 +36,7 @@ import {
 } from "@/app/_lib/cours";
 import type { Bloc, Catalogue, EtatBloc, Intervalle, Programme } from "@/lib/types";
 import { Credits, TitreCours } from "./Etats";
+import { TeteEcran } from "./TeteEcran";
 import { useDonnees } from "./ProviderEtat";
 
 function pourcent(part: number, tout: number): number {
@@ -372,27 +373,40 @@ export function VueAudit() {
   ];
 
   return (
-    <div className="px-5 py-6 sm:px-8">
-      <header className="max-w-prose">
-        <h1 className="text-[26px] font-semibold leading-tight tracking-[-0.02em]">
-          Audit des blocs
-        </h1>
-        <p className="mt-1.5 text-[13px] text-doux">
-          {programme.nom}
-          {programme.orientation === null
-            ? ""
-            : `, orientation ${programme.orientation.toLowerCase()}`}{" "}
-          — <span className="chiffres">{programme.blocs.length}</span> bloc
-          {programme.blocs.length === 1 ? "" : "s"} sur{" "}
-          <span className="chiffres">{programme.segments.length}</span> segment
-          {programme.segments.length === 1 ? "" : "s"} (
-          {programme.segments.join(", ") || "non annoncés"}).
-        </p>
-        <p className="mt-2 text-doux">
-          Ce que chaque bloc a reçu, ce qui lui manque, et ce qui dépasse son maximum —
-          les crédits perdus, que les relevés ne comptent pas vers le diplôme.
-        </p>
-      </header>
+    <div className="ecran py-6">
+      <TeteEcran
+        titre="Audit des blocs"
+        fait={
+          <>
+            {programme.nom}
+            {programme.orientation === null
+              ? ""
+              : `, orientation ${programme.orientation.toLowerCase()}`}{" "}
+            — <span className="chiffres">{programme.blocs.length}</span> bloc
+            {programme.blocs.length === 1 ? "" : "s"} sur{" "}
+            <span className="chiffres">{programme.segments.length}</span> segment
+            {programme.segments.length === 1 ? "" : "s"} (
+            {programme.segments.join(", ") || "non annoncés"}).
+          </>
+        }
+        aide={
+          <>
+            <p>
+              Ce que chaque bloc a reçu, ce qui lui manque, et ce qui dépasse son
+              maximum — les crédits perdus, que les relevés ne comptent pas vers le
+              diplôme.
+            </p>
+            <p>
+              La colonne Conformité porte quatre verdicts, et trois ne sont ni un
+              succès ni un échec : « invérifiable » pour un bloc décrit en prose,
+              « non concluant » quand la règle n&apos;a pas été lue, « page
+              incohérente » quand la page exige plus que ses propres cours ne
+              totalisent. Aucun des trois ne se corrige en s&apos;inscrivant à
+              quelque chose.
+            </p>
+          </>
+        }
+      />
 
       {programme.exigences !== null ? (
         <p className="mt-4 max-w-prose border-l-2 border-traitfort pl-2.5 text-[12.5px] text-doux">

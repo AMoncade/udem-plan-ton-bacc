@@ -89,7 +89,7 @@ export function CouvertureCours() {
 
   if (couverture.niveau === "aucune") {
     return (
-      <div className="px-5 pt-6 sm:px-8">
+      <div className="ecran pt-5">
         <div className="max-w-prose border border-avert/50 bg-avert/5 px-4 py-3">
           <p className="text-[13.5px] font-semibold text-papier">
             Les titres des cours de ce parcours n&apos;ont pas encore été récupérés
@@ -131,7 +131,7 @@ export function CouvertureCours() {
   // donc comme un écran qu'on relit moins.
   const un = couverture.sansFiche === 1;
   return (
-    <div className="px-5 pt-6 sm:px-8">
+    <div className="ecran pt-5">
       <p className="max-w-prose border-l-2 border-avert/60 pl-3 text-[12.5px] leading-relaxed text-doux">
         <span className="chiffres text-papier">{couverture.sansFiche}</span> des{" "}
         <span className="chiffres text-papier">{couverture.cites}</span> cours cités par

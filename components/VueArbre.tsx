@@ -31,6 +31,7 @@ import { horairePublie } from "@/app/_lib/offre";
 import type { Catalogue, CodeCours, EtatCours, NoeudPrealable } from "@/lib/types";
 import { Credits, HABITS, LegendeEtats, MarqueEtat, TitreCours } from "./Etats";
 import { useDonnees, useEtat } from "./ProviderEtat";
+import { TeteEcran } from "./TeteEcran";
 
 const L = 132;
 const H = 40;
@@ -143,19 +144,26 @@ export function VueArbre() {
   const sansFiche = codes.filter((code) => ficheDe(catalogue, code) === undefined);
 
   return (
-    <div className="grid lg:grid-cols-[minmax(0,1fr)_352px]">
+    <div className="mx-auto grid w-full max-w-[1240px] lg:grid-cols-[minmax(0,1fr)_352px]">
       <div className="px-5 py-6 sm:px-8">
-        <header className="max-w-prose">
-          <h1 className="text-[26px] font-semibold leading-tight tracking-[-0.02em]">
-            Préalables
-          </h1>
-          <p className="mt-2 text-doux">
-            Marquez les cours réussis : les cours qu&apos;ils débloquent changent
-            d&apos;état. Un cours dont la fiche n&apos;a pas encore été récupérée
-            n&apos;est jamais verrouillé — ses préalables sont simplement inconnus, et
-            c&apos;est affiché comme tel.
-          </p>
-        </header>
+        <TeteEcran
+          titre="Préalables"
+          fait={
+            <>
+              <span className="chiffres">{codes.length}</span> cours référencés,{" "}
+              <span className="chiffres">{codes.length - sansFiche.length}</span> avec
+              fiche.
+            </>
+          }
+          aide={
+            <p>
+              Marquez les cours réussis : les cours qu&apos;ils débloquent changent
+              d&apos;état. Un cours dont la fiche n&apos;a pas encore été récupérée
+              n&apos;est jamais verrouillé — ses préalables sont simplement inconnus,
+              et c&apos;est affiché comme tel.
+            </p>
+          }
+        />
 
         <LegendeEtats className="mt-5" />
 
