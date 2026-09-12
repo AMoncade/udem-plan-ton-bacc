@@ -202,6 +202,52 @@ export interface Bloc {
    * du programme, dont la passe programmes est le seul écrivain.
    */
   videConstate?: boolean;
+  /**
+   * Cheminement EXCLUSIF auquel ce bloc appartient, quand la page en déclare un.
+   *
+   * **Absent = le bloc est COMMUN à tous les cheminements**, jamais orphelin.
+   * Vérifié sur `maitrise-en-finance-mathematique-et-computationnelle` : 70A
+   * (30 cr) + 70B (3) + 70C (3) sans libellé, plus 70D « Stage » (9) = 45, le
+   * `creditsTotal` de la page. Un cœur commun plus un seul créneau alternatif.
+   *
+   * Le filtre, unique, partagé par le moteur et l'UI (voir `blocsDuCheminement`
+   * dans `lib/parcours.ts`) :
+   *
+   *     b.cheminement === undefined || b.cheminement === choix
+   *
+   * POURQUOI CE CHAMP. `cleBloc(segment, id, nom)` a réglé l'IDENTITÉ — plus
+   * aucune clé en double sur 5 028 blocs. Il n'a rien réglé de l'EXCLUSIVITÉ :
+   * des clés uniques disent que deux blocs sont deux, pas qu'ils sont deux
+   * ALTERNATIVES. Au segment 70 du doctorat en pathologie, « Accès direct du
+   * B. Sc. au Ph. D. » totalise 90 crédits de minimums et « Accès de la M. Sc.
+   * au Ph. D. » 90 aussi : un audit qui ne filtre pas en exige **180 pour un
+   * doctorat qui en annonce 90**.
+   *
+   * QUAND L'ÉMETTRE — et le piège est qu'un libellé ne suffit pas. Le DESS en
+   * intervention en déficience visuelle porte le même gabarit HTML, un `<small>`
+   * par bloc : « Formation générale » 10 cr et « Formation spécialisée » 20 cr.
+   * Mais 10 + 20 = 30 = son `creditsTotal` : ce sont des COMPLÉMENTS, tous deux
+   * exigés. Les prendre pour des cheminements montrerait 10 ou 20 crédits à un
+   * étudiant qui en doit 30 — le 180-contre-90 dans l'autre sens, amputer au
+   * lieu de gonfler.
+   *
+   * Le discriminant est mécanique et sépare proprement les six programmes
+   * concernés : **un libellé ne compte comme cheminement que si, dans ce
+   * segment, un id de bloc est réutilisé sous deux libellés différents.**
+   * Réutiliser un numéro est la façon dont la page dit « même créneau, rempli
+   * autrement ». Le DESS a des ids distincts (70A, 70B) : intertitres, pas axe.
+   *
+   * ET SI LES LIBELLÉS NE FORMENT PAS UN AXE, ne rien émettre pour le segment
+   * et le journaliser. `maitrise-en-evaluation-des-technologies-de-la-sante`
+   * porte six libellés distincts pour quatre groupes (« MM », « ST‐TD »,
+   * « MM Méthodes », « ST‐TD Méthodes », « Gestion », « ST‐TD Gestion ») — dont
+   * un groupe, `70/70C`, où un seul côté est marqué. Émettre à moitié ferait
+   * exiger les deux blocs d'un même créneau : le défaut que ce champ corrige,
+   * reproduit en miniature à l'intérieur de son propre correctif. Un champ
+   * absent dit « on n'a pas su lire », ce qui est vrai ; un champ à moitié
+   * rempli dit une fausseté qui a l'air d'une réponse.
+   */
+  cheminement?: string;
   /** Ce que la prose EXIGE du contenu, quand c'est reductible. Voir
    *  ContrainteContenu. Absent = la prose ne donne rien de mecanisable. */
   contrainteContenu?: ContrainteContenu;
@@ -271,6 +317,36 @@ export interface Programme {
    * plusieurs répartitions et aucune n'est « celle du programme ».
    */
   orientations: Orientation[];
+  /**
+   * Les cheminements exclusifs déclarés par ce programme, pour le menu de choix.
+   *
+   * **DÉRIVÉ, jamais saisi en parallèle** : c'est exactement l'union des
+   * `Bloc.cheminement` émis pour ce programme, après la même normalisation que
+   * `cleBloc` (tirets Unicode ramenés à l'ASCII, espaces réduits). L'invariant
+   * qui compte pour le moteur : **tout `Bloc.cheminement` figure mot pour mot
+   * ici**. Sans lui, une divergence d'un caractère — « Travaux dirigés » contre
+   * « Travail dirigé », un U+2010 contre un trait d'union — fait qu'un filtre ne
+   * garde AUCUN bloc pour ce cheminement, et l'étudiant voit un programme amputé
+   * sans qu'aucune erreur ne soit levée.
+   *
+   * Une seule source de vérité, donc : le champ sur le bloc. La liste des blocs
+   * d'un cheminement se dérive (`blocsDuCheminement` dans `lib/parcours.ts`) et
+   * ne se stocke pas — une seconde liste pourrait se désaccorder de la première
+   * sans que rien ne le signale.
+   *
+   * `string[]` et non `{ segment, libellés }` : mesuré sur les six programmes
+   * concernés, aucun ne porte deux segments à axes INDÉPENDANTS. Le doctorat en
+   * pathologie répète les deux mêmes libellés de 70 à 74 — un axe unique — et
+   * les cinq autres n'ont qu'un segment touché. Si un scrape futur en
+   * introduisait un, une liste plate fusionnerait deux choix distincts en un
+   * menu et l'étudiant ne pourrait plus exprimer « Stage » ET « Passerelle » :
+   * c'est la forme qu'il faudrait alors changer, pas le filtre.
+   *
+   * ABSENT ne veut PAS dire « ce programme n'a pas de choix ». Il peut vouloir
+   * dire « ses libellés ne se réduisent pas à un axe » — voir `Bloc.cheminement`.
+   * Une UI ne doit donc rien affirmer sur ces programmes.
+   */
+  cheminements?: string[];
   cycle: string | null;
   faculte: string | null;
   /** « Baccalauréat », « Certificat », « Maîtrise »… tel qu'écrit. */

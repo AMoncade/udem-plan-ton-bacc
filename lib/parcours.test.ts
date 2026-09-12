@@ -1,5 +1,12 @@
 import { describe, it, expect } from "vitest";
-import { cleParcours, lireCleParcours, parcoursDe, projeterOrientation } from "./parcours";
+import {
+  blocsDuCheminement,
+  cleParcours,
+  exigeUnCheminement,
+  lireCleParcours,
+  parcoursDe,
+  projeterOrientation,
+} from "./parcours";
 import type { Bloc, Orientation, Programme } from "./types";
 
 const bloc = (segment: string, id: string): Bloc => ({
@@ -141,5 +148,100 @@ describe("parcoursDe", () => {
     expect(parcoursDe(CERTIFICAT)).toEqual([
       { cle: "certificat-en-droit", orientation: null },
     ]);
+  });
+});
+
+const blocC = (segment: string, id: string, min: number, cheminement?: string): Bloc => ({
+  ...bloc(segment, id),
+  regle: { type: "obligatoire", bornes: { min, max: min } },
+  regleBrut: `Obligatoire - ${min} crédits.`,
+  ...(cheminement === undefined ? {} : { cheminement }),
+});
+
+describe("cheminements exclusifs", () => {
+  /** Doctorat en pathologie, segment 70, réduit : deux cheminements complets. */
+  const doctorat = (): Programme =>
+    ({
+      ...CERTIFICAT,
+      id: "doctorat-en-pathologie-et-biologie-cellulaire",
+      creditsTotal: 90,
+      cheminements: ["Accès direct du B. Sc. au Ph. D.", "Accès de la M. Sc. au Ph. D."],
+      blocs: [
+        blocC("70", "70A", 2, "Accès direct du B. Sc. au Ph. D."),
+        blocC("70", "70A", 3, "Accès de la M. Sc. au Ph. D."),
+        blocC("70", "70B", 3, "Accès direct du B. Sc. au Ph. D."),
+        blocC("70", "70B", 87, "Accès de la M. Sc. au Ph. D."),
+        blocC("70", "70C", 6, "Accès direct du B. Sc. au Ph. D."),
+        blocC("70", "70D", 79, "Accès direct du B. Sc. au Ph. D."),
+      ],
+    }) as Programme;
+
+  /** Maîtrise en finance : un cœur COMMUN plus un seul créneau alternatif. */
+  const finance = (): Programme =>
+    ({
+      ...CERTIFICAT,
+      id: "maitrise-en-finance-mathematique-et-computationnelle",
+      creditsTotal: 45,
+      cheminements: ["Stage", "Travail dirigé"],
+      blocs: [
+        blocC("70", "70A", 30),
+        blocC("70", "70B", 3),
+        blocC("70", "70C", 3),
+        blocC("70", "70D", 9, "Stage"),
+        blocC("70", "70D", 9, "Travail dirigé"),
+      ],
+    }) as Programme;
+
+  const somme = (bs: Bloc[]): number =>
+    bs.reduce((s, b) => s + (b.regle.type === "inconnu" ? 0 : b.regle.bornes.min), 0);
+
+  it("chaque cheminement totalise le programme, leur somme le double", () => {
+    // LE CHIFFRE QUI FONDE CE CHAMP, mesuré sur data/ et reproduit ici : sans
+    // filtre, un audit exige 180 crédits pour un doctorat qui en annonce 90.
+    const p = doctorat();
+    expect(somme(blocsDuCheminement(p, "Accès direct du B. Sc. au Ph. D."))).toBe(90);
+    expect(somme(blocsDuCheminement(p, "Accès de la M. Sc. au Ph. D."))).toBe(90);
+    expect(somme(p.blocs)).toBe(180);
+    expect(p.creditsTotal).toBe(90);
+  });
+
+  it("un bloc sans cheminement est COMMUN, pas orphelin", () => {
+    // Le repli inverse — traiter un bloc non marqué comme n'appartenant à
+    // personne — amputerait la maîtrise en finance de son cœur commun : 9
+    // crédits affichés au lieu de 45.
+    const p = finance();
+    expect(somme(blocsDuCheminement(p, "Stage"))).toBe(45);
+    expect(somme(blocsDuCheminement(p, "Travail dirigé"))).toBe(45);
+    expect(blocsDuCheminement(p, "Stage").map((b) => b.id)).toEqual(["70A", "70B", "70C", "70D"]);
+  });
+
+  it("refuse d'auditer sans choix, au lieu d'additionner des exclusifs", () => {
+    expect(exigeUnCheminement(doctorat())).toBe(true);
+    expect(() => blocsDuCheminement(doctorat(), null)).toThrow(/il faut en nommer un/);
+  });
+
+  it("un programme sans cheminement rend tous ses blocs", () => {
+    // Le DESS en déficience visuelle est ici : ses deux blocs à `<small>`
+    // (« Formation générale » 10 cr, « Formation spécialisée » 20 cr) sont des
+    // COMPLÉMENTS et totalisent ses 30 crédits. Aucun cheminement n'est émis,
+    // donc rien n'est filtré — les prendre pour des alternatives montrerait 10
+    // ou 20 crédits à un étudiant qui en doit 30.
+    const dess = {
+      ...CERTIFICAT,
+      id: "dess-en-intervention-en-deficience-visuelle-readaptation",
+      creditsTotal: 30,
+      blocs: [blocC("70", "70A", 10), blocC("70", "70B", 20)],
+    } as Programme;
+    expect(exigeUnCheminement(dess)).toBe(false);
+    expect(somme(blocsDuCheminement(dess, null))).toBe(30);
+  });
+
+  it("un libellé absent de la liste lève, au lieu de vider le programme", () => {
+    // Intégrité référentielle. Une divergence d'un caractère — « Travaux
+    // dirigés » contre « Travail dirigé », un U+2010 contre un trait d'union —
+    // ne garderait aucun bloc spécifique et amputerait le programme sans qu'une
+    // seule erreur ne se lève. C'est le mode d'échec que ce champ doit rendre
+    // impossible, pas produire.
+    expect(() => blocsDuCheminement(finance(), "Travaux dirigés")).toThrow(/ne déclare pas/);
   });
 });

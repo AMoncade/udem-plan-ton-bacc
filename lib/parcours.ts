@@ -1,4 +1,4 @@
-import type { Orientation, Programme } from "./types";
+import type { Bloc, Orientation, Programme } from "./types";
 
 /**
  * Projection d'une page de programme sur un PARCOURS suivable.
@@ -88,4 +88,55 @@ export function parcoursDe(
     cle: cleParcours(programme.id, o.nom),
     orientation: o.nom,
   }));
+}
+
+/**
+ * Ce programme impose-t-il un choix de cheminement avant tout audit ?
+ *
+ * Pendant de la garde de `projeterOrientation` : là aussi, les blocs « ne
+ * s'additionnent pas » tant qu'on n'a pas choisi. Le moteur s'en sert pour
+ * rendre un verdict NON AFFIRMABLE plutôt que « non conforme » — sans filtre,
+ * les minimums de tous les cheminements s'additionnent, donc le manque affiché
+ * est un artefact du non-choix et se lit comme une accusation. Au doctorat en
+ * pathologie, ce serait 180 crédits exigés pour un doctorat qui en annonce 90.
+ */
+export function exigeUnCheminement(programme: Programme): boolean {
+  return (programme.cheminements?.length ?? 0) > 0;
+}
+
+/**
+ * Les blocs d'un programme qui s'appliquent à un cheminement donné.
+ *
+ * LE SEUL ENDROIT QUI FILTRE. Le moteur et l'UI en ont tous deux besoin ; la
+ * même condition écrite deux fois de part et d'autre d'une couture finit par se
+ * désaccorder, et ici un désaccord vide un programme sans lever d'erreur.
+ *
+ * Un bloc sans `cheminement` est COMMUN, pas orphelin — vérifié sur
+ * `maitrise-en-finance-mathematique-et-computationnelle` : 70A (30 cr) + 70B (3)
+ * + 70C (3) sans libellé, plus 70D « Stage » (9) = 45, le `creditsTotal` de la
+ * page.
+ */
+export function blocsDuCheminement(programme: Programme, choix: string | null): Bloc[] {
+  if (choix === null) {
+    if (exigeUnCheminement(programme)) {
+      throw new Error(
+        `${programme.id} porte ${programme.cheminements?.length} cheminements ` +
+          `(${programme.cheminements?.join(", ")}) : il faut en nommer un, ses ` +
+          `blocs ne s'additionnent pas. Voir exigeUnCheminement().`,
+      );
+    }
+    return programme.blocs;
+  }
+  // Intégrité référentielle, éprouvée ICI plutôt qu'en silence plus loin : un
+  // libellé absent de la liste ne garderait aucun bloc, et l'étudiant verrait
+  // un programme amputé sans qu'aucune erreur ne se lève.
+  if (!programme.cheminements?.includes(choix)) {
+    throw new Error(
+      `${programme.id} ne déclare pas le cheminement « ${choix} » ` +
+        `(il porte ${programme.cheminements?.join(", ") ?? "aucun cheminement"}). ` +
+        `Filtrer là-dessus ne garderait aucun bloc spécifique et amputerait le ` +
+        `programme sans rien signaler.`,
+    );
+  }
+  return programme.blocs.filter((b) => b.cheminement === undefined || b.cheminement === choix);
 }
