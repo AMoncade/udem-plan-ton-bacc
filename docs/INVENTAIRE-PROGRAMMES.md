@@ -347,3 +347,75 @@ produire — ou ont effectivement produit — un chiffre confiant et faux :
 mesure. Les temps de réponse relevés (0,28 s) intègrent donc cette charge concurrente — ils sont
 si loin de toute saturation que la conclusion ne change pas, mais un scrape de production devrait
 s'assurer qu'une seule session tourne à la fois.
+
+---
+
+## 10. Décompte qui remplace l'extrapolation (2026-09-11, après catalogue complet)
+
+Les §1 à §9 extrapolaient depuis un échantillon de 110 pages, faute de catalogue. Le catalogue
+existe maintenant (1 089 fichiers dans `data/programmes/`), donc ces chiffres sont **comptés**.
+Ils ne remplacent pas la méthode du §2 — ils la vérifient.
+
+| Grandeur | §2, extrapolé | Compté sur 1 089 fichiers |
+|---|---|---|
+| Programmes à ≥ 10 cours (« exploitables ») | **545** (IC 458–630) | **581** |
+| Programmes à 1–9 cours | ~145 | 132 |
+| Programmes à 0 cours | ~309 (397 sur 1 088) | 376 |
+
+L'extrapolation tenait : 581 est dans son intervalle. Mais on n'en a plus besoin.
+
+**Union exacte des codes cités : 9 979**, soit 83,9 % des 11 888 du sitemap. Elle sort
+gratuitement de la passe programmes. C'est elle, et non le sitemap, qui dimensionne la passe
+cours : scraper le catalogue entier achèterait 1 909 fiches qu'aucun bloc ne cite.
+
+### Ce que « 82 fichiers dans data/cours/ » ne disait pas
+
+Un décompte de fichiers n'est pas une mesure de couverture. Mesuré quand `data/cours/` portait
+82 fichiers et 1 314 fiches :
+
+- **23** programmes exploitables entièrement couverts, 336 partiellement, 222 pas du tout ;
+- **106 des 188 sujets** cités n'avaient aucun fichier ;
+- et surtout : **4 192 des codes manquants appartenaient à un sujet dont le fichier existait
+  déjà**. `DRT` portait 160 fiches et il en manquait encore.
+
+**Un fichier présent n'est pas un sujet fini.** Un écran — ou un budget — qui déduit « sujet
+couvert » de « fichier existe » se trompe sur la majorité du trou.
+
+### Budget réseau réel de la passe cours
+
+Le §7 budgétait 11,4 h pour les 11 888 pages du sitemap. Sur l'union citée, et après avoir
+compté ce que le cache disque contenait déjà :
+
+| | pages | à 3,45 s/page (1,45 réponse + 2 délai) |
+|---|---|---|
+| Union citée | 9 979 | — |
+| Déjà en fiche | 1 324 | — |
+| **Déjà en cache, 0 requête** | **1 140** | **récoltées en 9 s** |
+| **À prendre au réseau** | **7 515** | **~7,2 h** |
+
+Les 1 140 fiches en cache et absentes de `data/` ont été écrites hors-ligne : **+1 129 fiches,
+zéro requête réseau, 9 secondes**. Le cache disque valait donc une heure de réseau que personne
+n'avait comptée — le vérifier coûte un `--hors-ligne`, et c'est à faire avant toute passe longue.
+
+### La reprise manquait là où le §7 disait d'investir
+
+Le §7 conclut : « la passe cours doit être reprenable, avec un cache sur disque et une reprise
+après interruption. C'est là qu'il faut investir. » Le cache existait ; **la reprise au niveau des
+données, non**. `--limite-cours N` prenait les N premiers codes de l'union sans regarder le
+disque : découper la passe en tranches refaisait indéfiniment la première — servie par le cache,
+donc sans requête et sans erreur, mais sans avancer d'un cours. Un échec entièrement silencieux.
+
+`--reprendre` saute désormais aussi les cours déjà en fiche (`codesSurDisque()`). Vérifié sur deux
+tranches réelles : 1 314 → 1 319 → 1 324 fiches, cours différents à chaque tranche.
+
+Le prix à connaître : sauter un code **gèle le parse qui l'a produit**. Si `parsePrealables` est
+étendu plus tard, les fiches sur disque gardent l'ancienne lecture. Le rattrapage est une passe
+SANS `--reprendre` et avec `--hors-ligne` — tout est relu du cache et reparsé, zéro requête.
+
+### Pourquoi le HTML brut est en cache, et ce que ça change
+
+`reseau.ts` garde `<clé>.html` en plus du sidecar. Conséquence mesurée : régénérer `data/` après
+un correctif d'extracteur est un **re-parse disque**, pas un re-scrape. La passe programmes
+complète du 2026-09-11 a coûté **52 s et 24 requêtes réseau** pour 1 089 programmes (1 079
+lectures de cache). Une couture « le parseur change, les données périment » qu'on croyait coûter
+des heures coûte donc une minute.
