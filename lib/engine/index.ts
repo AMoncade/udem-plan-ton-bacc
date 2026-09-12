@@ -437,8 +437,34 @@ function capaciteDeBloc(bloc: Bloc, fiches: Map<CodeCours, Cours>): number | nul
  * dans ces données. Le projet refuse les deux réponses faciles : bloquer sur
  * l'amont (on ne le maîtrise pas) et tolérer en silence.
  */
+function pageIncoherente(bloc: Bloc, bornes: Bornes, capacite: number | null): boolean {
+  return capacite !== null && capacite < bornes.min && !estOuvert(bloc);
+}
+
 function estInfaisable(c: Calcul): boolean {
-  return c.capaciteListee !== null && c.capaciteListee < c.bornes.min && !estOuvert(c.bloc);
+  return pageIncoherente(c.bloc, c.bornes, c.capaciteListee);
+}
+
+/**
+ * Clés des blocs dont la PAGE est incohérente — publié pour l'UI.
+ *
+ * Existe pour que l'affichage n'ait pas à DEVINER le cas par la conjonction
+ * `creditsManquants === 0 && !conforme && !contenuOuvert` : cette conjonction
+ * avalerait en silence le prochain genre de bloc non conforme ajouté ici, et
+ * afficherait alors une cause fausse. Un marqueur explicite se périme
+ * bruyamment ; une déduction se périme sans rien dire.
+ *
+ * Même source de vérité que `auditProgramme` — `capaciteDeBloc` et
+ * `pageIncoherente`, jamais une seconde implémentation qui pourrait diverger.
+ */
+export function clesBlocsIncoherents(programme: Programme, catalogue: Catalogue): string[] {
+  const { fiches } = indexerFiches(catalogue);
+  const out: string[] = [];
+  for (const bloc of programme.blocs ?? []) {
+    const bornes = bornesDeRegle(bloc.regle);
+    if (pageIncoherente(bloc, bornes, capaciteDeBloc(bloc, fiches))) out.push(cleDe(bloc));
+  }
+  return out;
 }
 
 function estJoker(bloc: Bloc, bornes: Bornes): boolean {

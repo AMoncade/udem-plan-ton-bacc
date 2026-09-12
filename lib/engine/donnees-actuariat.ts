@@ -248,7 +248,7 @@ export function programmeActuariat(): Programme {
     },
     blocs: BLOCS_ACTUARIAT.map((b) => ({
       ...b,
-      cle: cleBloc(b.segment, b.id),
+      cle: cleBloc(b.segment, b.id, b.nom),
       cours: [...b.cours],
       // Aucun de ces huit blocs ne décrit son contenu en prose : 75Z est un
       // bloc au choix (liste vide ET type « choix »), les sept autres énumèrent.

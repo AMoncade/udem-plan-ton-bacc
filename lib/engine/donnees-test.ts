@@ -124,7 +124,7 @@ export function adapterCatalogue(brut: unknown): Catalogue {
       if (segment === "") throw new Error(`bloc ${b.id} : segment absent, il est LU sur la page en v2`);
       return {
         id: b.id,
-        cle: cleBloc(segment, b.id),
+        cle: cleBloc(segment, b.id, b.nom ?? ""),
         segment,
         nom: b.nom ?? "",
         regle: traduireRegle(b.regle as unknown as RegleV1, `bloc ${b.id}`),
@@ -300,7 +300,7 @@ export function programmeChevauchement(): Programme {
     contenuOuvert = false,
   ): Bloc => ({
     id,
-    cle: cleBloc("70", id),
+    cle: cleBloc("70", id, nom),
     segment: "70",
     nom,
     regle,
@@ -406,7 +406,7 @@ export function programmeContenuOuvert(minimumLangues = 0): Programme {
     notes: string[] = [],
   ): Bloc => ({
     id,
-    cle: cleBloc("71", id),
+    cle: cleBloc("71", id, nom),
     segment: "71",
     nom,
     regle,

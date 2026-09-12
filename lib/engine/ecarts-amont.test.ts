@@ -20,14 +20,14 @@
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { auditProgramme } from "./index";
+import { auditProgramme, clesBlocsIncoherents } from "./index";
 import { catalogueTest, ficheTest } from "./donnees-test";
 import { cleBloc } from "../codes";
 import type { Bloc, CodeCours, Cours, Programme, RegleBloc } from "../types";
 
 const bloc = (id: string, regle: RegleBloc, regleBrut: string, cours: CodeCours[]): Bloc => ({
   id,
-  cle: cleBloc("01", id),
+  cle: cleBloc("01", id, ""),
   segment: "01",
   nom: "",
   regle,
@@ -122,6 +122,39 @@ describe("écart amont : un bloc dont le minimum dépasse ses propres cours", ()
     const amputees = FICHES.filter((f) => f.code !== "MUL 1132");
     const audit = auditProgramme(p, catalogueTest([p], amputees), TOUT_FAIT);
     expect(audit.problemes.some((m) => m.includes("incohérente"))).toBe(false);
+  });
+});
+
+describe("le marqueur publié pour l'UI", () => {
+  it("nomme le bloc incohérent, et rien d'autre", () => {
+    const p = programmeIncoherent(15);
+    expect(clesBlocsIncoherents(p, catalogueTest([p], FICHES))).toEqual([p.blocs[0].cle]);
+  });
+
+  it("ne nomme rien quand la page se tient", () => {
+    const p = programmeIncoherent(12);
+    expect(clesBlocsIncoherents(p, catalogueTest([p], FICHES))).toEqual([]);
+  });
+
+  it("ne nomme rien quand c'est une fiche qui manque chez nous", () => {
+    const p = programmeIncoherent(15);
+    const amputees = FICHES.filter((f) => f.code !== "MUL 1132");
+    expect(clesBlocsIncoherents(p, catalogueTest([p], amputees))).toEqual([]);
+  });
+
+  it("dit la MÊME chose que l'audit — un marqueur qui diverge est pire que pas de marqueur", () => {
+    // Deux implémentations du même critère finiraient par se contredire sans
+    // que rien ne le signale : l'UI peindrait « page incohérente » sur un bloc
+    // que l'audit tient pour normal, ou l'inverse.
+    const p = programmeIncoherent(15);
+    const cat = catalogueTest([p], FICHES);
+    const marques = new Set(clesBlocsIncoherents(p, cat));
+    const audit = auditProgramme(p, cat, TOUT_FAIT);
+    for (const etat of audit.blocs) {
+      if (!marques.has(etat.cleBloc)) continue;
+      expect(etat.conforme, `${etat.cleBloc} marqué incohérent mais déclaré conforme`).toBe(false);
+      expect(etat.creditsManquants, `${etat.cleBloc} : dette réclamée sur un bloc incohérent`).toBe(0);
+    }
   });
 });
 

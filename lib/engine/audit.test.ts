@@ -185,8 +185,8 @@ describe("arithmétique de la fixture — vérification des affirmations du brie
     // `S-Bloc 73A` coexistent) : l'audit identifie par `cle`.
     const cles = programme.blocs.map((b) => b.cle);
     expect(new Set(cles).size).toBe(cles.length);
-    expect(cles).toContain(cleBloc("01", "01A"));
-    expect(cles).toContain(cleBloc("75", "75C"));
+    expect(cles).toContain(cleBloc("01", "01A", ""));
+    expect(cles).toContain(cleBloc("75", "75C", "Compléments d'actuariat"));
     const a = auditer([]);
     expect(a.blocs.map((b) => b.cleBloc)).toEqual(cles);
     expect(a.blocs.map((b) => b.idBloc)).toEqual(programme.blocs.map((b) => b.id));
@@ -589,7 +589,11 @@ describe("auditProgramme — ce que le moteur n'a pas pu interpréter ressort", 
     };
     const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, doublon);
     expect(a.conforme).toBe(false);
-    expect(joint(a)).toMatch(/deux blocs de ce programme portent la même clé « 75\/75C »/);
+    // La clé est FABRIQUÉE par la même source que le doublon ci-dessus, jamais
+    // écrite en dur : `cleBloc` a gagné le nom du bloc, et une chaîne littérale
+    // ici ferait de ce test un instrument à recalibrer à chaque évolution de
+    // l'identité d'un bloc — alors que ce qu'il vérifie, c'est la DÉTECTION.
+    expect(joint(a)).toContain(`portent la même clé « ${bloc("75C").cle} »`);
   });
 
   it("les notes normatives de la page sont annoncées comme NON évaluées", () => {

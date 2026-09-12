@@ -35,7 +35,7 @@ const bloc = (
   notes: string[] = [],
 ): Bloc => ({
   id,
-  cle: cleBloc("71", id),
+  cle: cleBloc("71", id, ""),
   segment: "71",
   nom: "",
   regle,
