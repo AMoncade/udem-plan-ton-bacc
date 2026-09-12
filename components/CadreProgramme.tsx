@@ -15,6 +15,8 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
+import type { FicheIndex } from "@/lib/types";
+import { destinCleParcours, lireCleParcours } from "@/lib/parcours";
 import { CouvertureCours } from "./CouvertureCours";
 import { useEtat } from "./ProviderEtat";
 
@@ -56,8 +58,60 @@ function LienChoisir({ libelle }: { libelle: string }) {
   );
 }
 
+/**
+ * Les orientations que la page porte AUJOURD'HUI, en boutons.
+ *
+ * Renvoyer l'étudiant au catalogue de 1 480 parcours pour qu'il retrouve le
+ * programme qu'il suivait hier serait lui faire payer un changement qui n'est
+ * pas le sien. Ici les choix sont nommés et cliquables ; le catalogue reste
+ * accessible pour les cas où la page a vraiment disparu.
+ */
+function ChoixOrientation({
+  orientations,
+  fiches,
+  id,
+  choisir,
+}: {
+  orientations: string[];
+  fiches: FicheIndex[];
+  id: string | undefined;
+  choisir: (cle: string) => void;
+}) {
+  if (orientations.length === 0) return null;
+  return (
+    <div className="mt-3 flex flex-wrap gap-2">
+      {orientations.map((o) => {
+        // La clé n'est pas reconstruite à la main : on prend celle de la fiche,
+        // qui est la seule forme que l'index reconnaîtra.
+        const cible = fiches.find((f) => f.id === id && f.orientation === o);
+        if (cible === undefined) return null;
+        return (
+          <button
+            key={o}
+            type="button"
+            onClick={() => choisir(cible.cle)}
+            className="border border-traitfort px-3 py-1.5 text-[13px] text-papier hover:bg-relief"
+          >
+            {o}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+/** Ce que l'étudiant se demande en premier, et la réponse est rassurante. */
+function RienDePerdu() {
+  return (
+    <p className="text-faible">
+      Vos cours marqués comme faits ne sont pas touchés : ils sont retenus par code de
+      cours, indépendamment du programme affiché.
+    </p>
+  );
+}
+
 export function CadreProgramme({ children }: { children: ReactNode }) {
-  const { index, chargement, selection, donnees } = useEtat();
+  const { index, chargement, selection, donnees, choisir } = useEtat();
 
   // L'index avant tout : sans lui on ne sait même pas quels programmes existent.
   if (index.phase === "erreur") {
@@ -126,28 +180,110 @@ export function CadreProgramme({ children }: { children: ReactNode }) {
      clé nue est remplacée par autant de clés `id#Orientation`. L'étudiant n'a
      rien fait de mal, et rien n'a échoué. */
   if (chargement.phase === "disparu") {
-    return (
-      <Encadre titre="Ce parcours n'est plus au catalogue tel quel" ton="avert">
-        <p>
-          Le parcours retenu de votre dernière visite —{" "}
-          <span className="chiffres text-papier">{chargement.cle}</span> — ne figure
-          plus dans l&apos;index. Deux causes possibles, et rien ne permet de les
-          distinguer d&apos;ici : la page a été retirée du catalogue, ou bien elle
-          porte désormais des orientations et se décline en plusieurs parcours
-          distincts.
-        </p>
-        <p>
-          Dans le second cas, votre programme est toujours là — il faut seulement
-          choisir laquelle de ses orientations vous suivez, parce qu&apos;elles
-          n&apos;ont ni les mêmes blocs ni la même répartition de crédits.
-        </p>
-        <p className="text-faible">
-          Vos cours marqués comme faits ne sont pas touchés : ils sont retenus par
-          code de cours, indépendamment du programme affiché.
-        </p>
-        <LienChoisir libelle="Choisir un parcours" />
-      </Encadre>
+    /* Les causes SE DISTINGUENT, et la première version de cet écran affirmait
+       le contraire — « rien ne permet de les distinguer d'ici » était vrai le
+       temps d'un commit, puis faux. `FicheIndex` porte la clé ET l'identifiant
+       de page : si une fiche partage l'`id` de la clé retenue, la page existe
+       toujours et on peut NOMMER ses orientations, au lieu de renvoyer
+       l'étudiant au catalogue entier pour qu'il retrouve son programme.
+
+       `switch` exhaustif avec garde `never` : c'est pour ça que le destin est
+       une union discriminée et non des booléens. Un cinquième cas ajouté plus
+       tard casse la compilation au lieu de tomber dans un écran muet. */
+    const fiches = index.prepare.entrees.map((e) => e.fiche);
+    const destin = destinCleParcours(fiches, chargement.cle);
+    const lu = lireCleParcours(chargement.cle);
+
+    const choix = (orientations: string[]) => (
+      <ChoixOrientation
+        orientations={orientations}
+        fiches={fiches}
+        id={lu?.id}
+        choisir={choisir}
+      />
     );
+
+    switch (destin.genre) {
+      case "scinde":
+        return (
+          <Encadre titre="Ce programme se décline maintenant en orientations" ton="avert">
+            <p>
+              La page que vous suiviez —{" "}
+              <span className="chiffres text-papier">{lu?.id}</span> — porte désormais{" "}
+              <span className="chiffres text-papier">{destin.orientations.length}</span>{" "}
+              orientations. Elles n&apos;ont ni les mêmes blocs ni la même répartition
+              de crédits, donc il faut dire laquelle vous suivez : les auditer ensemble
+              donnerait un total que personne ne peut atteindre.
+            </p>
+            {choix(destin.orientations)}
+            <RienDePerdu />
+          </Encadre>
+        );
+
+      case "orientationInconnue":
+        return (
+          <Encadre titre="Cette orientation n'existe plus sous ce nom" ton="avert">
+            <p>
+              Le programme est toujours au catalogue, mais l&apos;orientation retenue —{" "}
+              <span className="chiffres text-papier">{lu?.orientation}</span> — n&apos;y
+              figure plus : elle a été renommée, ou retirée.
+              {destin.orientations.length > 0
+                ? " Voici celles qu'il porte aujourd'hui."
+                : ""}
+            </p>
+            {choix(destin.orientations)}
+            <RienDePerdu />
+          </Encadre>
+        );
+
+      case "retire":
+        return (
+          <Encadre titre="Cette page a été retirée du catalogue" ton="avert">
+            <p>
+              Aucune page ne porte plus l&apos;identifiant{" "}
+              <span className="chiffres text-papier">{lu?.id}</span>. Le programme a été
+              retiré de l&apos;offre, ou son adresse a changé — rien ici ne permet de
+              dire lequel des deux.
+            </p>
+            <RienDePerdu />
+            <LienChoisir libelle="Choisir un autre parcours" />
+          </Encadre>
+        );
+
+      case "illisible":
+        return (
+          <Encadre titre="Le parcours retenu est illisible" ton="avert">
+            <p>
+              La valeur conservée —{" "}
+              <span className="chiffres text-papier">{chargement.cle}</span> — n&apos;a
+              pas la forme d&apos;une clé de parcours. Elle vient probablement d&apos;une
+              version antérieure de l&apos;application.
+            </p>
+            <RienDePerdu />
+            <LienChoisir libelle="Choisir un parcours" />
+          </Encadre>
+        );
+
+      case "present":
+        /* Incohérent par construction : on n'arrive ici que parce que l'index
+           n'a pas rendu de fiche pour cette clé. Le dire plutôt que de rendre
+           un écran rassurant sur un état qu'on ne comprend pas. */
+        return (
+          <Encadre titre="Le parcours retenu est introuvable" ton="perdu">
+            <p>
+              <span className="chiffres text-papier">{chargement.cle}</span> figure dans
+              l&apos;index mais n&apos;a pas pu en être extrait. C&apos;est une
+              incohérence de l&apos;application, pas une donnée manquante.
+            </p>
+            <LienChoisir libelle="Choisir un autre parcours" />
+          </Encadre>
+        );
+
+      default: {
+        const jamais: never = destin;
+        throw new Error(`destin de clé inconnu : ${JSON.stringify(jamais)}`);
+      }
+    }
   }
 
   if (chargement.phase === "erreur") {
