@@ -1982,5 +1982,183 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-1955/",
     "scrapeISO": "2026-09-11T18:59:58.835Z"
+  },
+  "CHM 6700": {
+    "code": "CHM 6700",
+    "titre": "Chimie en laboratoire",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Notions avancées sur le travail en laboratoire, incluant les bonnes pratiques de laboratoire, les recherches bibliographiques, la propriété intellectuelle; incidences sur la pratique en chimie. Remarque: au premier cycle, vous devez suivre le cours CHM 3700.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-6700/",
+    "scrapeISO": "2026-09-12T21:31:09.609Z"
+  },
+  "CHM 6715": {
+    "code": "CHM 6715",
+    "titre": "Laboratoire de méthodes d’analyses instrumentales",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Laboratoire sur le développement de méthodes d’analyses instrumentales de composés chimiques se retrouvant dans l’environnement et divers secteurs industriels (agroalimentaire, pharmaceutique, produits de consommation, matériaux, parmi d’autres). Remarque: au premier cycle, vous devez suivre le cours CHM 3715.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-6715/",
+    "scrapeISO": "2026-09-12T21:31:11.633Z"
+  },
+  "CHM 3102": {
+    "code": "CHM 3102",
+    "titre": "Chimie bioanalytique avancée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Spectrométrie de masse, la spectrophotométrie moléculaire, l'électrophorèse, la cinétique enzymatique, les immuno-essais, les biocapteurs, la spectroscopie de résonance de plasmon de surface (SPR), la microscopie à force atomique (AFM).",
+    "prealablesBrut": "CHM2102 ET CHM2501",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "CHM 2102"
+        },
+        {
+          "genre": "cours",
+          "code": "CHM 2501"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-3102/",
+    "scrapeISO": "2026-09-12T21:31:13.638Z"
+  },
+  "CHM 6720": {
+    "code": "CHM 6720",
+    "titre": "Stage en laboratoire",
+    "credits": 12,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage de 4 mois dans un laboratoire de chimie, dans un environnement professionnel public ou privé.",
+    "prealablesBrut": "CHM6710 ou CHM6715",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "CHM 6710"
+        },
+        {
+          "genre": "cours",
+          "code": "CHM 6715"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-6720/",
+    "scrapeISO": "2026-09-12T21:31:15.633Z"
+  },
+  "CHM 6710": {
+    "code": "CHM 6710",
+    "titre": "Labo. en synthèse et architectures moléculaires",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Laboratoire de chimie portant sur la synthèse de molécules organiques ou inorganiques utilisant les techniques de synthèse chimique avancées.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-6710/",
+    "scrapeISO": "2026-09-12T21:37:32.555Z"
+  },
+  "CHM 6767": {
+    "code": "CHM 6767",
+    "titre": "Chimie verte",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse critique des impacts de la chimie verte. Présentation de techniques, alternatives, processus écoresponsables : catalyse, photochimie, automatisation en synthèse. Cours équivalents: MCG6767",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-6767/",
+    "scrapeISO": "2026-09-12T21:37:32.765Z"
+  },
+  "CHM 3381": {
+    "code": "CHM 3381",
+    "titre": "Chimie des produits naturels",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Importance industrielle et médicinale des produits naturels : biosynthèse, synthèse totale, preuve de structure, études stéréochimiques, méthodologie synthétique, analyse rétrosynthétique et nouveaux concepts.",
+    "prealablesBrut": "CHM2302",
+    "prealables": {
+      "genre": "cours",
+      "code": "CHM 2302"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chm-3381/",
+    "scrapeISO": "2026-09-12T21:37:34.706Z"
   }
 }

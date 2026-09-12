@@ -469,5 +469,774 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3012/",
     "scrapeISO": "2026-09-11T18:59:19.976Z"
+  },
+  "PHY 1111": {
+    "code": "PHY 1111",
+    "titre": "Introduction aux disciplines de la physique",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation des activités de recherche poursuivies dans les différentes disciplines de la physique. Méthodologie, bases de données et rédaction scientifique. Considérations éthiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-1111/",
+    "scrapeISO": "2026-09-12T21:25:27.888Z"
+  },
+  "PHY 2441": {
+    "code": "PHY 2441",
+    "titre": "Optique et ondes électromagnétiques",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Équations de Maxwell, de Fresnel. Ondes dans les milieux infinis. Dispositifs photoniques classiques. Polarisation. Interférences et diffraction. Couches optiques.",
+    "prealablesBrut": "PHY1441 et PHY1620",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHY 1441"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 1620"
+        }
+      ]
+    },
+    "concomitantsBrut": "PHY2441 et (PHY2345 ou MAT2466)",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2441/",
+    "scrapeISO": "2026-09-12T21:25:30.593Z"
+  },
+  "PHY 2810": {
+    "code": "PHY 2810",
+    "titre": "Mécanique quantique 1",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Dualité onde-particule. Postulats de la mécanique quantique. Oscillateur harmonique. Particules identiques. Moment angulaire. Atome d'hydrogène. Spin.",
+    "prealablesBrut": "PHY1620",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 1620"
+    },
+    "concomitantsBrut": "PHY2810 et PHY2345 ou MAT2466",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2810/",
+    "scrapeISO": "2026-09-12T21:25:32.594Z"
+  },
+  "PHY 2813": {
+    "code": "PHY 2813",
+    "titre": "Mécanique quantique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fondements de la mécanique quantique. Addition de moments cinétiques. Théorie des perturbations stationnaires et dépendantes du temps. Atome d'hydrogène : effets relativistes, structure fine et hyperfine, effet Zeeman. Règle d'or de Fermi.",
+    "prealablesBrut": "PHY2810",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2810"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2813/",
+    "scrapeISO": "2026-09-12T21:25:32.763Z"
+  },
+  "PHY 2100": {
+    "code": "PHY 2100",
+    "titre": "Physique environnementale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Environnement et processus physique (matière et radiation). Activité biosphérique. Activités humaines. Climat et changements climatiques.",
+    "prealablesBrut": "PHY2215 et PHY2441",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHY 2215"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 2441"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2100/",
+    "scrapeISO": "2026-09-12T21:25:34.785Z"
+  },
+  "PHY 2400": {
+    "code": "PHY 2400",
+    "titre": "Physique des plasmas",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Milieu plasma: définition, grandeurs caractéristiques, exemples d'applications. Mouvement d'une particule chargée dans des champs électriques et magnétiques. Description hydrodynamique : équations de transport, diffusion, mobilité.",
+    "prealablesBrut": "PHY2215 ET PHY2441",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHY 2215"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 2441"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2400/",
+    "scrapeISO": "2026-09-12T21:25:36.734Z"
+  },
+  "PHY 2476": {
+    "code": "PHY 2476",
+    "titre": "Physique expérimentale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Travaux pratiques : mesures de divers phénomènes physiques (effet photoélectrique, émission thermo-électrique, radioactivité, semi-conducteurs, rayonnement du corps noir, etc.); utilisation de micro-ordinateurs en laboratoire.",
+    "prealablesBrut": "PHY1501",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 1501"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2476/",
+    "scrapeISO": "2026-09-12T21:25:38.753Z"
+  },
+  "PHY 2601": {
+    "code": "PHY 2601",
+    "titre": "Physique subatomique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Composition de la matière. Techniques expérimentales : accélérateurs, détecteurs. Interactions fondamentales. Éléments de physique nucléaire. Symétries et lois de conservation. Modèle de Glashow-Weinberg-Salam.",
+    "prealablesBrut": "PHY2810",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2810"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2601/",
+    "scrapeISO": "2026-09-12T21:25:42.704Z"
+  },
+  "PHY 2701": {
+    "code": "PHY 2701",
+    "titre": "Astronomie et astrophysique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les étoiles : propriétés physiques et évolution. Étoiles binaires. Amas d'étoiles. La galaxie : cinématique, structure, formation, évolution. Nature des galaxies. Galaxies spirales, elliptiques. Galaxies et Univers. Éléments de cosmologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2701/",
+    "scrapeISO": "2026-09-12T21:25:44.503Z"
+  },
+  "PHY 3051": {
+    "code": "PHY 3051",
+    "titre": "Analyse moderne des données physiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse des données physiques via l'apprentissage automatique et les techniques modernes de statistique et de données massives. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours PHY6051X.",
+    "prealablesBrut": "PHY 2215",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2215"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3051/",
+    "scrapeISO": "2026-09-12T21:25:44.862Z"
+  },
+  "PHY 3070": {
+    "code": "PHY 3070",
+    "titre": "Relativité 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Relativité restreinte. Champs gravitationnels faibles. Étoiles sphériques. Pulsars. Quasars. Cosmologie. Collapsus gravitationnel et trous noirs. Ondes gravitationnelles. Vérifications expérimentales de la théorie.",
+    "prealablesBrut": "PHY1652",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 1652"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3070/",
+    "scrapeISO": "2026-09-12T21:25:46.890Z"
+  },
+  "PHY 3075": {
+    "code": "PHY 3075",
+    "titre": "Modélisation numérique en physique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Approximations et erreurs. Techniques numériques. Applications en mécanique classique et quantique, transferts de chaleur et de masse, électromagnétisme, physique statistique. Assimilation des données.",
+    "prealablesBrut": "(IFT1015 OU PHY1234) ET PHY2215",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "IFT 1015"
+            },
+            {
+              "genre": "cours",
+              "code": "PHY 1234"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 2215"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3075/",
+    "scrapeISO": "2026-09-12T21:25:48.879Z"
+  },
+  "PHY 3080": {
+    "code": "PHY 3080",
+    "titre": "Applications des groupes en physique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Symétries, invariances et groupes. Théorie des groupes abstraits. Représentations des groupes et mécanique quantique. Applications à la physique des solides, à la physique nucléaire et aux particules élémentaires.",
+    "prealablesBrut": "PHY2813",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2813"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3080/",
+    "scrapeISO": "2026-09-12T21:25:50.853Z"
+  },
+  "PHY 3214": {
+    "code": "PHY 3214",
+    "titre": "Compléments de mécanique statistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Gaz parfait monoatomique à la limite classique. Thermodynamique du gaz parfait de Bose-Einstein et applications. Thermodynamique du gaz parfait de Fermi-Dirac et applications. Traitement du gaz imparfait.",
+    "prealablesBrut": "PHY2215",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2215"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3214/",
+    "scrapeISO": "2026-09-12T21:25:52.864Z"
+  },
+  "PHY 3320": {
+    "code": "PHY 3320",
+    "titre": "Optique quantique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Quantification du champ électromagnétique. Interaction rayonnement-matière. Équations de Bloch optiques. Le laser: principes, propriétés, applications. Éléments d'optique non-linéaire.",
+    "prealablesBrut": "PHY2441 et PHY2813",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHY 2441"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 2813"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3320/",
+    "scrapeISO": "2026-09-12T21:25:54.859Z"
+  },
+  "PHY 3442": {
+    "code": "PHY 3442",
+    "titre": "Électromagnétisme avancé",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Milieux dissipatifs, fonction diélectrique complexe. Guides d'onde conducteurs et optiques. Rayonnement. Formulation covariante de l'électromagnétisme.",
+    "prealablesBrut": "PHY2441",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2441"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3442/",
+    "scrapeISO": "2026-09-12T21:25:58.910Z"
+  },
+  "PHY 3510": {
+    "code": "PHY 3510",
+    "titre": "Magnétisme et supraconductivité",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Moments magnétiques libres et règle de Hund. Interactions et structures magnétiques. Symétries brisées. Supraconductivité: effet Meisner, équations de London et modèle de Ginzburg-Landau. Introduction à la supraconductivité non conventionnelle.",
+    "prealablesBrut": "PHY2441 et PHY2813",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHY 2441"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 2813"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3510/",
+    "scrapeISO": "2026-09-12T21:25:59.060Z"
+  },
+  "PHY 3600": {
+    "code": "PHY 3600",
+    "titre": "Physique nucléaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Caractéristiques du noyau. Force à deux corps. Interaction de la radiation avec la matière. Désintégrations et réactions nucléaires. Masses et énergies de liaison. Forces et modèles nucléaires.",
+    "prealablesBrut": "PHY2810",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2810"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3600/",
+    "scrapeISO": "2026-09-12T21:26:03.053Z"
+  },
+  "PHY 3701": {
+    "code": "PHY 3701",
+    "titre": "Éléments de physique stellaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Propriétés des plasmas stellaires. Transfert radiatif. Équations fondamentales des atmosphères et intérieurs stellaires. Réactions thermonucléaires. Transport d’énergie. Éléments d’évolution stellaire.",
+    "prealablesBrut": "PHY2215",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2215"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3701/",
+    "scrapeISO": "2026-09-12T21:26:03.183Z"
+  },
+  "PHY 3711": {
+    "code": "PHY 3711",
+    "titre": "Cosmologie et astrophysique extragalactique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Modèle standard de la cosmologie. Histoire thermale de l’univers. Nucléosynthèse primordiale. Fond diffus cosmologique. Formation des structures de l’univers. Formation et évolution des galaxies. Amas de galaxies. Noyaux actifs et trous noirs.",
+    "prealablesBrut": "PHY2215",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2215"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3711/",
+    "scrapeISO": "2026-09-12T21:26:05.199Z"
+  },
+  "PHY 3814": {
+    "code": "PHY 3814",
+    "titre": "Compléments de mécanique quantique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Diffusion. Matrice densité. Intrication. Intégrales de chemin. Phases de Berry. Introduction à la théorie quantique relativiste et à la théorie des champs.",
+    "prealablesBrut": "PHY2813",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 2813"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3814/",
+    "scrapeISO": "2026-09-12T21:26:08.946Z"
+  },
+  "PHY 2345": {
+    "code": "PHY 2345",
+    "titre": "Outils théoriques de la physique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Variables complexes en physique. Phénomènes périodiques. Équations différentielles ordinaires et partielles en mécanique quantique et électromagnétisme. Fonctions de Green. Applications à divers problèmes de physique.",
+    "prealablesBrut": "MAT1410 et MAT1600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MAT 1410"
+        },
+        {
+          "genre": "cours",
+          "code": "MAT 1600"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2345/",
+    "scrapeISO": "2026-09-12T21:26:11.221Z"
+  },
+  "PHY 3030": {
+    "code": "PHY 3030",
+    "titre": "Projet de fin d'études",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Projet trimestriel de recherche dans un des domaines d'activités du Département.",
+    "prealablesBrut": "IFT1015 OU PHY1234",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 1015"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 1234"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3030/",
+    "scrapeISO": "2026-09-12T21:26:13.263Z"
+  },
+  "PHY 6639": {
+    "code": "PHY 6639",
+    "titre": "Physique : rayonnement en milieu médical",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Production et détection du rayonnement. Sources de rayonnement et détecteurs. Interaction avec la matière : électrons et positrons, photons, neutrons. Techniques de simulation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6639/",
+    "scrapeISO": "2026-09-12T22:15:54.383Z"
+  },
+  "PHY 6912": {
+    "code": "PHY 6912",
+    "titre": "Dosimétrie en radio-oncologie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Dosimétrie fondamentale et clinique. Générateurs de radiations. Chambres d'ionisation et applications cliniques. Modélisation et plans de traitement. Radiobiologie. Curiethérapie. Techniques avancées.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6912/",
+    "scrapeISO": "2026-09-12T22:15:56.404Z"
+  },
+  "PHY 6915": {
+    "code": "PHY 6915",
+    "titre": "Radiobiologie et radioprotection",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Interactions entre rayons ionisants et vivants. Réponse des tissus et des tumeurs. Instruments et mesures de radioprotection. Dosimétrie. Aspects pratiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6915/",
+    "scrapeISO": "2026-09-12T22:15:58.428Z"
+  },
+  "PHY 69802": {
+    "code": "PHY 69802",
+    "titre": "Sujets spéciaux: physique médicale 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Enjeux contemporains de la physique médicale. Éthique. Statistiques pour le domaine médical. Anatomie. Informatique médicale. Assurance-qualité. Techniques avancées de traitement. Cours équivalent(s) : PHY6981.",
+    "prealablesBrut": "PHY69801",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 69801"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-69802/",
+    "scrapeISO": "2026-09-12T22:16:04.846Z"
+  },
+  "PHY 6985": {
+    "code": "PHY 6985",
+    "titre": "Imagerie en physique médicale 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les principes physiques et la technologie liés à l'imagerie médicale. Rayonnement X : radiographie, angiographie et fluoroscopie, tomodensitométrie. Les bases théoriques de l'échographie. L'informatique médicale (PACS, DICOM).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6985/",
+    "scrapeISO": "2026-09-12T22:16:05.109Z"
+  },
+  "PHY 6990": {
+    "code": "PHY 6990",
+    "titre": "Imagerie en physique médicale 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Notions en imagerie par résonance magnétique, de la source du signal IRM aux techniques avancées d'acquisition. Notions en médecine nucléaire, les détecteurs, TEP et SPECT. Techniques quantitatives et pharmacocinétique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6990/",
+    "scrapeISO": "2026-09-12T22:16:08.844Z"
+  },
+  "PHY 69962": {
+    "code": "PHY 69962",
+    "titre": "Laboratoire : physique médicale 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes expérimentales en physique médicale. Dosimétrie. Contrôles de qualité. Qualité d'image en radiologie. Techniques de laboratoires en médecine nucléaire. Radioprotection. Introduction à l'IRM. Ultrasons. Cours équivalent(s) : PHY6997.",
+    "prealablesBrut": "PHY69961",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHY 69961"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-69962/",
+    "scrapeISO": "2026-09-12T22:16:12.943Z"
   }
 }

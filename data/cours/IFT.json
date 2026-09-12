@@ -3344,5 +3344,562 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1400/",
     "scrapeISO": "2026-09-11T18:59:09.397Z"
+  },
+  "IFT 1170": {
+    "code": "IFT 1170",
+    "titre": "Programmation Java et applications",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Langage Java. Programmation orientée objet avec Java. Récursivité. Fichiers. Vecteurs. Piles. Listes chaînées. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1016 ou IFT1810 ou PHY1234",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 1016"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1810"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 1234"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1170/",
+    "scrapeISO": "2026-09-12T21:30:23.444Z"
+  },
+  "IFT 1175": {
+    "code": "IFT 1175",
+    "titre": "Programmation en Visual Basic",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Programmation par événements et orientée objet avec Visual Basic. Classes d'objets, composants ActiveX et .NET, connexions aux bases de données, contrôle d'applications Windows (VBA). Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1175/",
+    "scrapeISO": "2026-09-12T21:30:25.471Z"
+  },
+  "IFT 1179": {
+    "code": "IFT 1179",
+    "titre": "Programmation en C#",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude du langage et de la programmation orientée objet en C#. Applications aux structures de données et aux interfaces graphiques de base. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1810",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1810"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1179/",
+    "scrapeISO": "2026-09-12T21:30:27.459Z"
+  },
+  "IFT 1169": {
+    "code": "IFT 1169",
+    "titre": "Programmation avancée en C++",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Structures de données avancées. Concepts avancés en programmation orientée objet. Librairie de modèles standard STL. Algorithmes génériques. Applications. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1166",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1166"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1169/",
+    "scrapeISO": "2026-09-12T21:30:29.435Z"
+  },
+  "IFT 1176": {
+    "code": "IFT 1176",
+    "titre": "Aspects avancés de Java",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Traitement des exceptions en Java. Interfaces usager. Type générique. Collections. JDBC. Programmation concurrente et web, côté serveur. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1170",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1170"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1176/",
+    "scrapeISO": "2026-09-12T21:30:31.357Z"
+  },
+  "IFT 2810": {
+    "code": "IFT 2810",
+    "titre": "Structures de données",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Structures d'information : chaînes, tableaux, piles, listes, arbres et graphes. Implantation et manipulation. Algorithmes de tri. Organisation de dictionnaires. Allocation dynamique de mémoire. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1166 OU IFT1170 OU IFT1175 OU IFT1179",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 1166"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1170"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1175"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1179"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2810/",
+    "scrapeISO": "2026-09-12T21:30:33.443Z"
+  },
+  "IFT 2830": {
+    "code": "IFT 2830",
+    "titre": "Sécurité des systèmes informatiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à la sécurité informatique. La sécurité d'un ordinateur personnel. Protocoles et cryptographie. Applications internet. Protection réseau. Programmation sécurisée. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1810",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1810"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2830/",
+    "scrapeISO": "2026-09-12T21:30:35.464Z"
+  },
+  "IFT 3820": {
+    "code": "IFT 3820",
+    "titre": "Gestion de réseaux et protocoles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Protocole TCP/IP : installation, configuration, mécanismes d'adressage, évaluation de performances, serveurs d'application et dépannage. Les travaux pratiques seront basés sur les systèmes récents UNIX ou Windows. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1166 OU IFT1170 OU IFT1175 OU IFT1179",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "IFT 1166"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1170"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1175"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1179"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3820/",
+    "scrapeISO": "2026-09-12T21:30:37.485Z"
+  },
+  "IFT 3830": {
+    "code": "IFT 3830",
+    "titre": "Administration des systèmes d'exploitation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Gestion d'un centre informatique : installation, configuration, partage de ressources et de données, systèmes hétérogènes, sécurité et tolérance aux pannes. Exemples basés sur les systèmes récents tels UNIX ou Windows. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1810",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1810"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-3830/",
+    "scrapeISO": "2026-09-12T21:30:39.498Z"
+  },
+  "IFT 1941": {
+    "code": "IFT 1941",
+    "titre": "Traitement et montage vidéo",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction au traitement informatique et au montage vidéo non linéaire. Réalisation technique de projets vidéo. Notions théoriques portant sur le format des médias et sur les concepts clés de la production vidéo. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 117572, 117573, 117574, 119110.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1941/",
+    "scrapeISO": "2026-09-12T21:30:41.510Z"
+  },
+  "IFT 2200": {
+    "code": "IFT 2200",
+    "titre": "Programmation de jeux vidéo",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Programmation avancée appliquée au développement de jeux vidéo. Structures de données complexes, imbrication d'instructions conditionnelles et itératives, programmation événementielle et orientée objet. Langage C#. Environnement de jeu 3D dans Unity. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540 et 119110.",
+    "prealablesBrut": "IFT1119",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1119"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2200/",
+    "scrapeISO": "2026-09-12T21:30:43.500Z"
+  },
+  "IFT 2740": {
+    "code": "IFT 2740",
+    "titre": "Outils de l'infographie 3D",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Infographie 3D. Modélisation géométrique et primitives. Techniques de rendu, textures, éclairage. Animation et paramétrisation. Application au logiciel libre Blender.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-2740/",
+    "scrapeISO": "2026-09-12T21:30:45.517Z"
+  },
+  "IFT 1142": {
+    "code": "IFT 1142",
+    "titre": "Programmation côté client",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Programmation Javascript avancée, modèle objet de document (DOM), XHTML, notions de programmation Internet (Ajax, JSON, jQuery, etc.). Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1144",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1144"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1142/",
+    "scrapeISO": "2026-09-12T21:30:47.511Z"
+  },
+  "IFT 1147": {
+    "code": "IFT 1147",
+    "titre": "Programmation serveur avec PHP",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Programmation Web du coté serveur avec le langage PHP. Création de documents dynamiques. Accès aux bases de données. Notions avancées de programmation PHP (MVC, Ajax, librairie graphique, cookies, sessions, Smarty, etc.) Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1144",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1144"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1147/",
+    "scrapeISO": "2026-09-12T21:30:49.560Z"
+  },
+  "IFT 1148": {
+    "code": "IFT 1148",
+    "titre": "Programmation serveur avec ASP",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Programmation Web du côté serveur avec le langage ASP.NET. Création de documents dynamiques. Création de contrôles serveur personnalisés. Accès aux bases de données. Notions avancées de programmation ASP.NET (MVC, Ajax, cookies, sessions, etc.) Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 119110.",
+    "prealablesBrut": "IFT1144",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1144"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1148/",
+    "scrapeISO": "2026-09-12T21:30:51.560Z"
+  },
+  "IFT 1152": {
+    "code": "IFT 1152",
+    "titre": "Introduction aux technologies XML",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Utilisation des technologies XML pour gestion, stockage, distribution des documents d'affaires sur le Web. Introduction aux schémas (DTD, XSD et RelaxNG), aux transformations XSL (XSLT et XSLT-FO), langage XPath et programmation avec API SAX et DOM. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 105351, 117572, 117573, 117574.",
+    "prealablesBrut": "IFT1144",
+    "prealables": {
+      "genre": "cours",
+      "code": "IFT 1144"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1152/",
+    "scrapeISO": "2026-09-12T21:30:53.540Z"
+  },
+  "IFT 1177": {
+    "code": "IFT 1177",
+    "titre": "Chiffrier et bases de données : compléments",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts relatifs aux ensembles de données. Modélisation, validation de données et de bases de données. Partage des données. Requêtes, calculs et présentation de résultats. Sujets seront vus en Excel et en Access. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 117550, 117573, 117574, 119110.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1177/",
+    "scrapeISO": "2026-09-12T22:08:28.102Z"
+  },
+  "IFT 1800": {
+    "code": "IFT 1800",
+    "titre": "Initiation à l'informatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Information et informatique. Concepts et vocabulaire de base. Matériel et logiciels. Ordinateur : structure et fonctionnement. Logiciels système et d'application. Remarques: Travaux pratiques sur les progiciels les plus répandus. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 102510, 105351, 117510, 117520, 117540, 117550, 117572, 117573, 117574, 119010, 119020, 119110, 215511.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1800/",
+    "scrapeISO": "2026-09-12T22:08:30.133Z"
+  },
+  "IFT 1912": {
+    "code": "IFT 1912",
+    "titre": "Initiation aux chiffriers électroniques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Environnement de travail. Notions de base. Les commandes. Les formules. Les fonctions. Les graphiques. La gestion des données. Les tableaux croisés dynamiques. Les macrocommandes. Applications clé en main. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 102510, 117510, 117520, 117540, 117550, 117572, 117573, 117574, 119110.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1912/",
+    "scrapeISO": "2026-09-12T22:08:32.163Z"
+  },
+  "IFT 1935": {
+    "code": "IFT 1935",
+    "titre": "Initiation au graphisme par ordinateur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Correction et retouche d'images. Utilisation de calques, textes, filtres, styles de calques, effets artistiques et objets vectoriels. Systèmes de couleurs. Formats d'images. Adaptation d'images pour le Web. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 117510, 117520, 117540, 117550, 117572, 117573, 117574, 119110.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1935/",
+    "scrapeISO": "2026-09-12T22:08:34.121Z"
+  },
+  "IFT 1986": {
+    "code": "IFT 1986",
+    "titre": "Traitement informatique des textes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Maîtrise d'un logiciel de traitement de texte : édition, formatage, pagination, en-tête, pied de page, sections, colonnes, tableau, graphiques, références (index, table des matières, bibliographie, légende), fusion de documents, travail collaboratif. Remarque : Ce cours ne peut pas être reconnu comme cours au choix dans les programmes suivants : 102510, 105351, 117510, 117520, 117540, 117550, 117572, 117573, 117574, 119110.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ift-1986/",
+    "scrapeISO": "2026-09-12T22:08:36.050Z"
   }
 }

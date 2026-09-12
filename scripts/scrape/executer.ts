@@ -50,6 +50,7 @@ import type { Cours, FicheIndex, Programme } from "../../lib/types";
 import { slugUrl, normaliserCode } from "../../lib/codes";
 import { parsePrealables } from "../../lib/engine/prealables";
 import { empreinteExtracteur } from "../../lib/empreinte";
+import { parcoursDe, projeterOrientation } from "../../lib/parcours";
 import { parseFicheCours } from "./cours";
 import {
   CHEMIN_INDEX,
@@ -358,6 +359,65 @@ async function codesDesProgrammesSurDisque(
  * correction : corriger voudrait dire inventer un cinquième cours ou réécrire la
  * règle, et les deux seraient faux.
  */
+/**
+ * Le plancher de crédits d'un PARCOURS contre le total que la page annonce.
+ *
+ * Défaut qu'il rend visible, mesuré sur le catalogue : **65 parcours exigent
+ * plus de crédits que leur programme n'en compte**, et aucun n'avait la moindre
+ * entrée au journal. `maitrise-en-evaluation-des-technologies-de-la-sante`
+ * demande 57 crédits obligatoires pour un total annoncé de 45 — silencieusement,
+ * depuis toujours.
+ *
+ * Pourquoi le contrôle existant ne les voyait pas : `recouperCreditsObligatoires`
+ * part de la PHRASE d'exigences de la page (« N crédits obligatoires, M à
+ * option »), et ces programmes ont `exigences: null` — la phrase n'existe pas,
+ * donc le contrôle ne tourne jamais. Celui-ci part des BLOCS, qui existent
+ * toujours.
+ *
+ * PROJETER AVANT DE SOMMER, sinon l'instrument fabrique le défaut qu'il
+ * cherche. Une première version sommait les blocs de toutes les orientations et
+ * accusait 146 programmes ; 92 l'étaient à tort, parce que les blocs de deux
+ * orientations ne s'additionnent pas — ce sont des alternatives. Le chiffre
+ * juste est 65, et on le mesure sur le parcours le MOINS exigeant : si même
+ * celui-là dépasse, aucune lecture de la page ne sauve le programme.
+ *
+ * Ce contrôle ne corrige rien et n'invente rien. Un écart peut venir d'une page
+ * incohérente (ça arrive, c'est documenté) ou d'un axe de cheminement que le
+ * scrape n'a pas encore su lire — les deux se ressemblent exactement, et c'est
+ * au journal de le dire plutôt qu'à l'extracteur de trancher.
+ */
+function recouperPlancherEtTotal(programmes: Programme[], journal: Journal): void {
+  const plancher = (blocs: Programme["blocs"]): number => {
+    let somme = 0;
+    for (const b of blocs) {
+      // Narrower par le TYPE avant de toucher `bornes` : `RegleBloc` est une
+      // union dont le membre `inconnu` n'en porte pas. Un bloc « inconnu » ne
+      // contribue donc rien — c'est délibéré : sa règle n'a pas été lue, et lui
+      // prêter un minimum de 0 est la seule hypothèse qui n'invente rien.
+      if (b.regle.type !== "obligatoire" && b.regle.type !== "option") continue;
+      somme += b.regle.bornes.min;
+    }
+    return somme;
+  };
+
+  for (const p of programmes) {
+    if (!p.creditsTotal || p.blocs.length === 0) continue;
+    const parcours = parcoursDe(p);
+    const planchers = parcours.map(({ orientation }) =>
+      plancher(orientation === null ? p.blocs : projeterOrientation(p, orientation).blocs),
+    );
+    const moindre = Math.min(...planchers);
+    if (moindre <= p.creditsTotal) continue;
+    journal.inattendu(
+      p.id,
+      `plancher de crédits incohérent : le parcours le MOINS exigeant demande ${moindre} crédits ` +
+        `(obligatoires + minimums d'option) alors que la page annonce ${p.creditsTotal} au total. ` +
+        `Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas ` +
+        `l'audit de ce programme exige trop.`,
+    );
+  }
+}
+
 function recouperCreditsObligatoires(
   programmes: Programme[],
   cours: Cours[],
@@ -532,6 +592,8 @@ async function principal(): Promise<void> {
   // --- Fiches de cours -----------------------------------------------------
   const cours: Cours[] = [];
   const prealablesNonParses: { code: string; brut: string }[] = [];
+  /** Codes demandés par cette passe, pour détecter une tranche stérile. */
+  let codesTraites = 0;
 
   if (!options.sansCours) {
     const partiel = options.limite !== null || options.programmes !== null;
@@ -605,6 +667,18 @@ async function principal(): Promise<void> {
         (dejaEnFiche > 0 ? ` (${dejaEnFiche} déjà en fiche, sautées par --reprendre)` : "") +
         (retenus.length < candidats.length ? ` — ${candidats.length - retenus.length} restantes après cette tranche` : ""),
     );
+    // PIÈGE DE BOUCLE, rencontré pour de vrai : « restantes » ne tombe jamais à
+    // zéro. `--reprendre` saute ce qui est EN FICHE, et une page dont les
+    // crédits sont illisibles ne produit aucune fiche — elle reste donc
+    // éternellement candidate. Mesuré sur un lot de 115 programmes : 102 codes
+    // dans ce cas, presque tous à cinq chiffres (`PSY 40001`, `MTE 12041`), dont
+    // la page de l'UdeM ne porte AUCUNE étiquette « Crédits » — vérifié dans le
+    // HTML : les seules occurrences y sont les « 90 crédits » des programmes qui
+    // citent le cours, et les lire donnerait au cours les crédits du programme.
+    // Le rejet est donc juste ; c'est le compte qui mentait. Sans cet
+    // avertissement, une boucle « tant qu'il reste des fiches » tourne sans fin
+    // sur des pages que rien ne rendra lisibles.
+    codesTraites = retenus.length;
     for (const [i, code] of retenus.entries()) {
       const url = `${RACINE}/cours-et-horaires/cours/${slugUrl(code)}/`;
       const page = await recuperer(url);
@@ -651,6 +725,7 @@ async function principal(): Promise<void> {
   // est mal lue — ou que la page de l'UdeM est incohérente, ce qui arrive.
   // Aucun test de module ne peut voir ça ; seul ce recoupement le peut.
   recouperCreditsObligatoires(programmes, cours, journal);
+  recouperPlancherEtTotal(programmes, journal);
 
   // --- Écriture ------------------------------------------------------------
   const scrapeISO = new Date().toISOString();
@@ -681,6 +756,14 @@ async function principal(): Promise<void> {
       `  préalables non réduits  : ${prealablesNonParses.length}\n` +
       `  ${rel(CHEMIN_JOURNAL)}           : ${journal.entrees.length} entrées ${JSON.stringify(journal.comptes())}`,
   );
+
+  if (codesTraites > 0 && cours.length === 0) {
+    console.log(
+      `\n${codesTraites} code(s) traité(s) et AUCUNE fiche écrite. Ces pages ne portent pas de ` +
+        "crédits lisibles ; les redemander ne changera rien, et « restantes » ne tombera jamais à " +
+        "zéro. C'est ICI qu'une boucle de tranches doit s'arrêter, pas sur un compteur.",
+    );
+  }
 
   if (echecsReseau.length > 0) {
     // Rien n'a été mis en cache pour ceux-là : une relance les reprend.

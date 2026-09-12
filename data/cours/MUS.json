@@ -721,5 +721,38 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-2328/",
     "scrapeISO": "2026-09-11T17:46:29.657Z"
+  },
+  "MUS 1100I": {
+    "code": "MUS 1100I",
+    "titre": "Apprentissage auditif tonal 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Apprentissage destiné à l'acquisition de premiers automatismes de lecture et d'audition tonales. Perspective analytique où il s'agit d'entraîner l'oreille et l'oeil à percevoir des ensembles et des constantes. Remarque : Ce cours est exclusif aux programmes de 1er cycle de la Faculté de Musique. Toutefois, il pourrait être reconnu comme cours hors-programme dans d'autres programmes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-1100i/",
+    "scrapeISO": "2026-09-12T22:13:30.838Z"
+  },
+  "MUS 1100J": {
+    "code": "MUS 1100J",
+    "titre": "Apprentissage auditif tonal 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Apprentissage destiné à l'acquisition de premiers automatismes de lecture et d'audition tonales. Perspective analytique où il s'agit d'entraîner l'oreille et l'oeil à percevoir des ensembles et des constantes. Remarque : Ce cours est exclusif aux programmes de 1er cycle de la Faculté de Musique. Toutefois, il pourrait être reconnu comme cours hors-programme dans d'autres programmes.",
+    "prealablesBrut": "MUS1100I",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUS 1100I"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-1100j/",
+    "scrapeISO": "2026-09-12T22:13:32.885Z"
   }
 }

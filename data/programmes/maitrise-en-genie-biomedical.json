@@ -7,23 +7,27 @@
     "70",
     "71"
   ],
-  "orientations": [],
+  "orientations": [
+    {
+      "nom": "générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "génie clinique",
+      "segments": [
+        "71"
+      ],
+      "exigences": null
+    }
+  ],
   "cycle": "Cycles supérieurs",
   "faculte": "Faculté de médecine",
   "typeProgramme": "Maîtrise",
   "creditsTotal": 45,
-  "exigences": {
-    "brut": "Les crédits de l'option sont répartis de la façon suivante : 18 crédits obligatoires, 27 crédits à option, dont 24 crédits attribués à un travail dirigé et à un stage.",
-    "obligatoire": {
-      "min": 18,
-      "max": 18
-    },
-    "option": {
-      "min": 27,
-      "max": 27
-    },
-    "choix": null
-  },
+  "exigences": null,
   "blocs": [
     {
       "id": "71A",

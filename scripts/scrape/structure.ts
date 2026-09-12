@@ -49,6 +49,7 @@
 import type { Bloc, ExigencesParType, Orientation, Programme } from "../../lib/types";
 import { cleBloc, normaliserCode } from "../../lib/codes";
 import { lireContrainte } from "./contraintes";
+import { lireCheminements } from "./cheminements";
 import { contenu, decouperSur, texteBrut, texteLigne } from "./html";
 import { Journal } from "./journal";
 import {
@@ -63,7 +64,21 @@ const JETON_SEGMENT = '<div class="programme-segment">';
 const JETON_BLOC = '<section class="bloc">';
 
 /** « Propre à l'orientation X » (1er cycle) et « Propre à l'option X » (2e, 3e). */
-const MARQUEURS_ORIENTATION = ["Propre à l'orientation ", "Propre à l'option "];
+/**
+ * Formes sous lesquelles un entête de segment NOMME une orientation.
+ *
+ * `Orientation - ` a été ajoutée sur mesure : `baccalaureat-en-enseignement-du-
+ * francais-langue-seconde` écrit « Segment 71 Orientation - Enseignement au
+ * primaire » et « Segment 01 Commun aux deux orientations », pendant que sa
+ * description dit « 12 crédits obligatoires des segments 71 OU 72 ». Sans cette
+ * forme, les deux orientations étaient extraites puis perdues.
+ *
+ * `Option - ` n'y est PAS, et c'est délibéré : aucun segment du catalogue ne
+ * l'emploie (compté : 2 occurrences de `Orientation - `, 0 de `Option - `),
+ * alors qu'une règle de bloc s'écrit « Option - 6 crédits ». Ajouter une forme
+ * qu'aucune page n'utilise ouvrirait une confusion pour rien.
+ */
+const MARQUEURS_ORIENTATION = ["Propre à l'orientation ", "Propre à l'option ", "Orientation - "];
 
 /**
  * Titre de bloc. QUATRE orthographes, toutes relevées sur de vraies pages :
@@ -336,6 +351,8 @@ export function parseStructure(
   const blocs: Bloc[] = [];
   const segments: string[] = [];
   const orientationsDesEntetes: string[] = [];
+  /** Nom d'orientation lu dans un entête -> les segments qui le portent. */
+  const segmentsParOrientation = new Map<string, string[]>();
   /** Segments dont l'entête nomme une orientation : les autres sont COMMUNS à
    *  tous les parcours (« Segment 01 Commun aux sept orientations »). */
   const segmentsDOrientation = new Set<string>();
@@ -369,6 +386,9 @@ export function parseStructure(
       if (!orientationsDesEntetes.includes(entete.orientation)) {
         orientationsDesEntetes.push(entete.orientation);
       }
+      const dejaVus = segmentsParOrientation.get(entete.orientation) ?? [];
+      if (!dejaVus.includes(entete.numero)) dejaVus.push(entete.numero);
+      segmentsParOrientation.set(entete.orientation, dejaVus);
     }
 
     // Prose du segment : tout ce qui est dans `section.description-segment`
@@ -597,7 +617,7 @@ export function parseStructure(
   // La description est passée LIGNE PAR LIGNE, pas recollée : `lireOrientations`
   // s'appuie sur les puces, et recoller collerait la phrase d'introduction à la
   // première d'entre elles.
-  const orientations: Orientation[] = lireOrientations(description).flatMap((o): Orientation[] => {
+  let orientations: Orientation[] = lireOrientations(description).flatMap((o): Orientation[] => {
     // Les segments sont ceux que la page NOMME, sans les filtrer sur ceux
     // trouvés : un segment annoncé mais absent des blocs est une information en
     // soi, et le taire ferait disparaître un parcours au lieu de le signaler.
@@ -667,6 +687,67 @@ export function parseStructure(
     return [{ nom: o.nom, segments: segmentsDuParcours, exigences: null }];
   });
 
+  // REPLI SUR LES ENTÊTES DE SEGMENT — une donnée qui était extraite puis jetée.
+  //
+  // `lireOrientations` lit les PUCES de la description. Quand la page déclare
+  // ses parcours dans les entêtes de segment et pas en puces
+  // (« Segment 81 Propre à l'orientation chimie de la santé »), `orientations`
+  // restait vide alors que `orientationsDesEntetes` les avait captés — variable
+  // remplie et jamais lue. Mesuré : 36 programmes dans ce cas, dont 14 dont
+  // l'audit exigeait plus de crédits que la page n'en annonce.
+  // `des-en-sciences-cliniques-veterinaires` demandait 1 020 crédits pour un
+  // programme de 108, et personne ne le voyait.
+  //
+  // DEUX ORIENTATIONS AU MINIMUM, et c'est ce seuil qui fait tout le travail.
+  // 27 des 36 n'en nomment qu'UNE — leur slug la porte déjà
+  // (`maitrise-en-amenagement-option-theories-en-design`) : l'entête nomme
+  // l'orientation dont la page ENTIÈRE parle, pas une branche interne. Émettre
+  // là serait offrir un « choix » à une seule issue, et surtout remplacer la clé
+  // de parcours NUE par `id#Nom` — `parcoursDe` ne rend la clé nue que si
+  // `orientations` est vide, donc un parcours déjà enregistré chez l'étudiant
+  // cesserait de résoudre. Le seuil ramène cette migration de 36 clés à 10.
+  //
+  // Le critère d'émission est ARITHMÉTIQUE, pas structurel : chaque parcours
+  // projeté doit tenir sous le total annoncé. Un programme qui reste incohérent
+  // après le repli signifie que le repli n'était pas sa lecture — il n'est pas
+  // émis, il est journalisé. Aucune devinette ne passe ce filtre.
+  if (orientations.length === 0 && segmentsParOrientation.size >= 2) {
+    const plancherDes = (segs: string[]): number => {
+      const retenus = new Set(segs);
+      let somme = 0;
+      for (const b of blocs) {
+        if (!retenus.has(b.segment)) continue;
+        if (b.regle.type !== "obligatoire" && b.regle.type !== "option") continue;
+        somme += b.regle.bornes.min;
+      }
+      return somme;
+    };
+    const candidates: Orientation[] = [...segmentsParOrientation].map(([nom, propres]) => ({
+      nom,
+      segments: [...new Set([...propres, ...segmentsCommuns])].sort(),
+      exigences: null,
+    }));
+    const trop = candidates.filter(
+      (o) => creditsTotal !== null && plancherDes(o.segments) > creditsTotal,
+    );
+    if (trop.length > 0) {
+      journal.inattendu(
+        slug,
+        `${candidates.length} orientations nommées dans les entêtes de segment, mais ` +
+          `${trop.length} d'entre elles exigeraient plus que les ${creditsTotal} crédits annoncés ` +
+          `(${trop.map((o) => `${o.nom} = ${plancherDes(o.segments)}`).join(", ")}) — aucune n'est ` +
+          "émise : les entêtes ne sont pas la bonne lecture de cette page",
+      );
+    } else {
+      orientations = candidates;
+      journal.info(
+        slug,
+        `${candidates.length} orientations lues dans les ENTÊTES de segment (la description n'en ` +
+          `déclare aucune) : ${candidates.map((o) => o.nom).join(" | ")}`,
+      );
+    }
+  }
+
   // `exigences` au niveau du programme : uniquement quand la page ne déclare
   // AUCUN parcours multiple et n'énonce qu'une répartition. Le contrat l'exige
   // (« quand `orientations` n'est pas vide, `exigences` vaut null ») et c'est la
@@ -725,6 +806,26 @@ export function parseStructure(
     );
   }
 
+  // CHEMINEMENTS : deux façons de remplir le même créneau DANS un segment.
+  //
+  // Orthogonal aux orientations, qui sont des alternatives ENTRE segments. Un
+  // programme peut avoir les deux, aucun, ou l'un sans l'autre. `lireCheminements`
+  // n'émet que si le plancher de chaque cheminement tombe exactement sur le
+  // total annoncé — donc une lecture douteuse rend un silence, jamais une
+  // donnée fausse (voir `cheminements.ts`).
+  const marquage = lireCheminements(blocs, creditsTotal);
+  for (const b of blocs) {
+    const m = marquage.parCle.get(b.cle);
+    if (m !== undefined) b.cheminement = m;
+  }
+  for (const { segment, raison } of marquage.ecartes) {
+    journal.inattendu(
+      `${slug} segment ${segment}`,
+      `cheminements non émis : ${raison}. Les blocs de ce créneau restent cumulés, donc l'audit ` +
+        "peut exiger plus que le programme ne compte — c'est constaté, pas corrigé.",
+    );
+  }
+
   return {
     programme: {
       id: slug,
@@ -738,6 +839,10 @@ export function parseStructure(
       creditsTotal,
       exigences,
       blocs,
+      // Absent plutôt que `[]` quand rien n'est émis : le contrat lit l'absence
+      // comme « ce programme n'a pas de cheminement exclusif », et un tableau
+      // vide dirait la même chose en occupant de la place dans 1 083 fichiers.
+      ...(marquage.cheminements.length > 0 ? { cheminements: marquage.cheminements } : {}),
       notes: notesProgramme,
       url,
       scrapeISO: recupereISO,

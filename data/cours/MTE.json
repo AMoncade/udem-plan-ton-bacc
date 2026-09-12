@@ -495,5 +495,66 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-1504/",
     "scrapeISO": "2026-09-11T11:39:33.143Z"
+  },
+  "MTE 2114": {
+    "code": "MTE 2114",
+    "titre": "Orchestration 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Caractéristiques techniques, sonores et musicales des instruments de l'orchestre symphonique : ambitus, registres, possibilités dynamiques et timbrales, modes de jeu, articulations, techniques contemporaines, utilisations à l'orchestre.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-2114/",
+    "scrapeISO": "2026-09-12T22:12:00.710Z"
+  },
+  "MTE 2115": {
+    "code": "MTE 2115",
+    "titre": "Orchestration 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Écriture à l'intérieur de chaque section de l'orchestre symphonique (cordes, cuivres /bois) : réalisation verticale (homophonie, accords, unissons); réalisation horizontale (mélodie, accompagnement, basses, polyphonie); doublures et mélanges.",
+    "prealablesBrut": "MTE2114",
+    "prealables": {
+      "genre": "cours",
+      "code": "MTE 2114"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-2115/",
+    "scrapeISO": "2026-09-12T22:12:00.999Z"
+  },
+  "MTE 3114": {
+    "code": "MTE 3114",
+    "titre": "Orchestration 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Principes de base de l'orchestration symphonique. L'orchestration comme éclairage du discours musical. Problématiques de la transcription et de la réduction. Préparation du matériel d'orchestre.",
+    "prealablesBrut": "MTE2115",
+    "prealables": {
+      "genre": "cours",
+      "code": "MTE 2115"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-3114/",
+    "scrapeISO": "2026-09-12T22:12:02.919Z"
   }
 }

@@ -11,23 +11,55 @@
     "74",
     "75"
   ],
-  "orientations": [],
+  "orientations": [
+    {
+      "nom": "Cheminement libre",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Neuropharmacologie",
+      "segments": [
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Pharmacogénomique",
+      "segments": [
+        "72"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Pharmacologie clinique",
+      "segments": [
+        "73"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Pharmacologie intégrative cardiovasculaire",
+      "segments": [
+        "74"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Pharmacologie moléculaire",
+      "segments": [
+        "75"
+      ],
+      "exigences": null
+    }
+  ],
   "cycle": "Cycles supérieurs",
   "faculte": "Faculté de médecine",
   "typeProgramme": "Doctorat",
   "creditsTotal": 90,
-  "exigences": {
-    "brut": "Les crédits de l'option sont répartis de la façon suivante : 87 crédits obligatoires, dont 85 crédits attribués à la recherche et à la thèse, et 3 crédits à option.",
-    "obligatoire": {
-      "min": 87,
-      "max": 87
-    },
-    "option": {
-      "min": 3,
-      "max": 3
-    },
-    "choix": null
-  },
+  "exigences": null,
   "blocs": [
     {
       "id": "70A",

@@ -59,6 +59,62 @@ describe("lireContrainte — contrainte de cycle", () => {
     ).toEqual({ genre: "cycle", cycle: "Cycles supérieurs" });
   });
 
+  it("n'émet RIEN quand la prose nomme aussi un RÉPERTOIRE ou une faculté", () => {
+    // Défaut relevé par la session moteur sur les données émises, avec ces
+    // proses verbatim. Filtrer sur `Cours.cycle` seul ADMETTRAIT un cours de
+    // 2e cycle de n'importe quelle faculté, alors que la page n'autorise qu'un
+    // répertoire précis. C'est l'erreur symétrique du cas « deux cycles », et
+    // elle est pire : celle-là rejetait un cours permis, celle-ci déclare
+    // l'exigence satisfaite par un cours interdit — elle fait diplômer sur du
+    // vide. 58 des 126 contraintes `cycle` émises étaient de cette forme.
+    for (const prose of [
+      "Cours de 2e cycle à choisir dans le répertoire des cours de la Faculté de l'aménagement.",
+      "À choisir dans la banque de cours de 2e cycle de la Faculté des sciences de l'éducation.",
+    ]) {
+      expect(lireContrainte([prose]), prose).not.toMatchObject({ genre: "cycle" });
+    }
+  });
+
+  it("le mot « répertoire » ne suffit PAS à écarter : celui de l'UdeM est universel", () => {
+    // Première version de la garde : elle écartait toute prose contenant
+    // « répertoire », ce qui jetait 27 contraintes justes. « le répertoire des
+    // cours de l'Université de Montréal » désigne le catalogue ENTIER — il ne
+    // restreint rien au-delà du niveau, donc filtrer sur `Cours.cycle` n'admet
+    // aucun cours interdit. Ce qui restreint est une SOUS-UNITÉ nommée.
+    expect(
+      lireContrainte([
+        "Les étudiants devront choisir un cours de cycle supérieur parmi le répertoire de " +
+          "cours de l'Université de Montréal.",
+      ]),
+    ).toEqual({ genre: "cycle", cycle: "Cycles supérieurs" });
+  });
+
+  it("« ou d'autres universités » ÉLARGIT, donc n'écarte pas", () => {
+    // Cette prose a été signalée comme dangereuse ; la mesure dit l'inverse.
+    // Les cours hors UdeM ne sont pas dans le catalogue, donc une contrainte de
+    // niveau n'y admet rien d'interdit — elle est seulement incomplète, ce qui
+    // est le cas normal et sans danger.
+    expect(
+      lireContrainte([
+        "Cours choisis parmi les cours de cycles supérieurs de l'université ou des cours " +
+          "de même niveau d'autres universités.",
+      ]),
+    ).toEqual({ genre: "cycle", cycle: "Cycles supérieurs" });
+  });
+
+  it("émet quand la prose ne contraint QUE le niveau", () => {
+    // Le contre-exemple qui garde la règle utile : rien d'autre que le niveau,
+    // donc rien à trahir en filtrant sur `Cours.cycle`.
+    expect(lireContrainte(["Un cours du niveau des études supérieures."])).toEqual({
+      genre: "cycle",
+      cycle: "Cycles supérieurs",
+    });
+    expect(lireContrainte(["Tout cours du niveau des études supérieures."])).toEqual({
+      genre: "cycle",
+      cycle: "Cycles supérieurs",
+    });
+  });
+
   it("lit « niveau des études supérieures »", () => {
     expect(lireContrainte(["Un cours du niveau des études supérieures."])).toEqual({
       genre: "cycle",

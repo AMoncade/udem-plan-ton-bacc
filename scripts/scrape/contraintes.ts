@@ -89,6 +89,39 @@ const RENVOI_EXTERNE = /Centre de langues/i;
 const CYCLE_SUP = /niveau des [ée]tudes sup[ée]rieures|\b[23]e\s+cycle\b|cycles?\s+sup[ée]rieurs?/i;
 const CYCLE_1ER = /\b(?:1er|premier)\s+cycle\b/i;
 
+/**
+ * La prose nomme-t-elle aussi l'ORIGINE des cours, et pas seulement leur niveau ?
+ *
+ * Mesuré : 58 des 126 contraintes `cycle` que ce module émettait nommaient AUSSI
+ * une SOUS-UNITÉ — « Cours de 2e cycle à choisir dans le répertoire des cours de
+ * la Faculté de l'aménagement », « À choisir dans la banque de cours de 2e cycle
+ * de la Faculté des sciences de l'éducation ».
+ *
+ * LE MOT « RÉPERTOIRE » NE SUFFIT PAS À DÉCIDER, et une première version de
+ * cette garde s'y est trompée : « dans le répertoire des cours de l'Université
+ * de Montréal » désigne le catalogue ENTIER et ne restreint donc rien au-delà du
+ * niveau — 27 proses de cette forme étaient écartées à tort. De même, « ou des
+ * cours de même niveau d'autres universités » ÉLARGIT : les cours hors UdeM ne
+ * sont pas dans le catalogue, donc filtrer sur le niveau n'admet rien
+ * d'interdit. Ce qui restreint sous « n'importe quel cours de ce niveau à
+ * l'UdeM », et donc seul ce qui compte ici, est une sous-unité nommée :
+ * faculté, département, école, institut, centre.
+ *
+ * Émettre `cycle` là-dessus produit l'erreur SYMÉTRIQUE de celle qu'on a
+ * corrigée sur les deux cycles, et elle est PIRE. Filtrer sur `Cours.cycle`
+ * seul ADMETTRAIT un cours de cycles supérieurs de n'importe quelle faculté,
+ * alors que la page n'autorise qu'un répertoire précis : un audit qui déclare
+ * l'exigence satisfaite par un cours interdit fait diplômer sur du vide, là où
+ * une contrainte trop étroite se contentait d'accuser à tort. Entre les deux
+ * fautes, celle qui laisse passer est la plus coûteuse.
+ *
+ * Rien n'est émis dans ce cas — le journal le dit, et `Bloc.notes` garde la
+ * prose intacte pour qui voudra la lire. Le champ ne porte pas de bit
+ * « contraint aussi l'origine », donc la seule affirmation honnête est le
+ * silence.
+ */
+const REPERTOIRE = /Facult[eé]|D[eé]partement|[EÉ]cole |Institut|Centre /i;
+
 const AUTORISATION =
   /approuv[ée]|approbation|avec\s+l['’]\s*(?:accord|autorisation)|autoris[ée]\s+par|permission d[eu]/i;
 
@@ -125,12 +158,18 @@ export function lireContrainte(notes: string[]): ContrainteContenu | null {
   // règle de prudence de ce module existe pour interdire, et il a fallu
   // regarder les 149 émissions pour le voir : le code lisait juste, il
   // concluait faux.
+  // Un seul cycle nommé (XOR), et aucune origine imposée : les deux conditions
+  // sont nécessaires. `sup !== premier` écarte la prose qui autorise les deux
+  // cycles, `!REPERTOIRE` écarte celle qui restreint aussi la provenance.
   const sup = CYCLE_SUP.test(texte);
   const premier = CYCLE_1ER.test(texte);
-  if (sup && premier) return null;
-  if (premier) return { genre: "cycle", cycle: CYCLE_PREMIER };
-  if (sup) return { genre: "cycle", cycle: CYCLE_SUPERIEUR };
+  if (sup !== premier && !REPERTOIRE.test(texte)) {
+    return { genre: "cycle", cycle: premier ? CYCLE_PREMIER : CYCLE_SUPERIEUR };
+  }
 
+  // On retombe ici pour les proses écartées ci-dessus : si elles mentionnent une
+  // approbation, la dire vaut mieux que se taire — c'est une modalité réelle,
+  // même quand le contenu n'est pas mécanisable.
   if (AUTORISATION.test(texte)) return { genre: "autorisation" };
 
   return null;

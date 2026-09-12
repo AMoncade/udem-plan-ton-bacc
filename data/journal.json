@@ -395,9 +395,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-chimie",
-    "message": "9 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 9 phrases sont dans `notes` verbatim : « Version 18 (A25) Le baccalauréat comporte 90 crédits, répartis de la façon suivante : de 66 à 69 crédits obligatoires, de 18 à 21 crédits à options et de 3 crédits au choix. » « - en cheminement régulier : 51 crédits obligatoires, 0 à 6 crédits optionnels et 3 crédits au choix. » « - en cheminement honor : 51 crédits obligatoires et 9 à 12 crédits à option (dont 6 crédits dans le bloc 01V et 3 crédits dans le bloc 01W) et 3 crédits au choix. » « - en cheminement régulier : 15 crédits obligatoires et 15 à 21 crédits à option. » « - en cheminement honor : 15 crédits obligatoires et 9 à 12 crédits à option. » « - en cheminement régulier : 15 crédits obligatoires et 15 à 21 crédits à option.. » « - en cheminement honor : 15 crédits obligatoires et 6 à 12 crédits à option. » « - en cheminement régulier : 18 crédits obligatoires et 12 à 18 crédits à option. » « - en cheminement honor : 18 crédits obligatoires et 6 à 9 crédits à option. »"
+    "message": "3 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : chimie de la santé | chimie environnementale | chimie de l'énergie et des matériaux"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-chimie",
+    "message": "3 parcours déclarés (chimie de la santé | chimie environnementale | chimie de l'énergie et des matériaux) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -620,9 +625,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-enseignement-du-francais-langue-seconde",
-    "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Version 08 (A23) Ce programme comporte 120 crédits dont 108 du segment 01 (102 crédits obligatoires et 6 crédits à option), et 12 crédits obligatoires des segments 71 ou 72. » « Les crédits du segment sont répartis de la façon suivante : 102 crédits obligatoires et 6 crédits à option. »"
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : Enseignement au primaire | Enseignement au secondaire"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-enseignement-du-francais-langue-seconde",
+    "message": "2 parcours déclarés (Enseignement au primaire | Enseignement au secondaire) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -1140,9 +1150,14 @@
     "message": "titre de bloc illisible : « Minimum de crédits de niveau 3000 de sigles IFT ou MAT ou STT » — bloc ignoré"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-mathematiques-et-informatique",
-    "message": "4 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 4 phrases sont dans `notes` verbatim : « Il est offert selon 2 cheminements: Cheminement Propre à l'orientation mathématiques et informatique (segment 01 et segment 70) : 49 crédits obligatoires, 39 crédits à option et de 3 crédits au choix. » « Cheminement Propre à l'orientation science des données (segment 01 et segment 71) : 58 crédits obligatoires, 30 crédits à option et 3 crédits au choix. » « Les crédits sont répartis de la façon suivante : 6 crédits obligatoires et 39 crédits à option. » « Les crédits sont répartis de la façon suivante : 15 crédits obligatoires et 30 crédits à option. »"
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : mathématiques et informatique | science des données"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-mathematiques-et-informatique",
+    "message": "2 parcours déclarés (mathématiques et informatique | science des données) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "inattendu",
@@ -1783,6 +1798,11 @@
     "genre": "manque",
     "sujet": "baccalaureat-en-science-politique-et-philosophie bloc 70/70Z",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-sciences-biologiques",
+    "message": "2 orientations nommées dans les entêtes de segment, mais 2 d'entre elles exigeraient plus que les 90 crédits annoncés (biologie moléculaire, cellulaire et génétique = 131, biodiversité, écologie et évolution = 126) — aucune n'est émise : les entêtes ne sont pas la bonne lecture de cette page"
   },
   {
     "genre": "inattendu",
@@ -5635,9 +5655,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "des-en-sciences-cliniques-veterinaires",
-    "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Les crédits de l'Option sont répartis de la façon suivante : 18 crédits obligatoires, 84 crédits à option et 6 crédits au choix. » « Les crédits de l'option sont répartis de la façon suivante : 18 crédits obligatoires, 84 crédits à option et 6 crédits au choix. »"
+    "message": "10 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : Chirurgie | Médecine interne | Thériogénologie | Médecine de population animale - bovins laitiers | Anesthésiologie | Neurologie | Dermatologie | Imagerie médicale | Médecine zoologique | Urgentologie et soins intensifs"
+  },
+  {
+    "genre": "info",
+    "sujet": "des-en-sciences-cliniques-veterinaires",
+    "message": "10 parcours déclarés (Chirurgie | Médecine interne | Thériogénologie | Médecine de population animale - bovins laitiers | Anesthésiologie | Neurologie | Dermatologie | Imagerie médicale | Médecine zoologique | Urgentologie et soins intensifs) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -5900,11 +5925,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "dess-en-droit-canadien bloc 70/70B",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « L'étudiant doit suivre 3 crédits de cours choisis avec l'accord du doyen ou de son représentant. Ce cours est choisi parmi les cours des programmes de 2e cycle ou du 1er cycle en d »"
-  },
-  {
     "genre": "inattendu",
     "sujet": "dess-en-droit-canadien",
     "message": "somme impossible : les minimums par type connus font 73 crédits, plus que les 30 crédits annoncés du programme. Phrase lue : « Les crédits du segment 70 sont répartis de la façon suivante : 27 crédits obligatoires et 3 crédits au choix. »"
@@ -5935,11 +5955,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "dess-en-droit-des-affaires bloc 71/71B",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant devra faire les crédits de cours au choix, choisi parmi les cours 2e cycle en droit, ou d'un autre programme de 2e cycle a »"
-  },
-  {
     "genre": "manque",
     "sujet": "dess-en-droit-des-affaires bloc 72/72C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -5948,11 +5963,6 @@
     "genre": "manque",
     "sujet": "dess-en-droit-des-affaires bloc 72/72D",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "dess-en-droit-des-affaires bloc 72/72D",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 6 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou d'un autre programm »"
   },
   {
     "genre": "manque",
@@ -5965,11 +5975,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "dess-en-droit-des-affaires bloc 73/73D",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 6 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou d'un autre programm »"
-  },
-  {
     "genre": "manque",
     "sujet": "dess-en-droit-des-affaires bloc 74/74C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -5978,11 +5983,6 @@
     "genre": "manque",
     "sujet": "dess-en-droit-des-affaires bloc 74/74D",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "dess-en-droit-des-affaires bloc 74/74D",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 6 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou d'un autre programm »"
   },
   {
     "genre": "inattendu",
@@ -6108,6 +6108,11 @@
     "genre": "manque",
     "sujet": "dess-en-education-option-generale bloc 70/70B",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "dess-en-education-option-generale bloc 70/70B",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « À choisir dans la banque de cours de 2e cycle de la Faculté des sciences de l'éducation en respectant un maximum de 12 crédits par domaine. »"
   },
   {
     "genre": "info",
@@ -7830,6 +7835,11 @@
     "message": "5 parcours déclarés (Biologie cellulaire | Biologie du cancer | Biopathologie cardiovasculaire | Cytogénétique | Système nerveux) ; 5 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
+    "genre": "inattendu",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire segment —",
+    "message": "cheminements non émis : les cheminements lus ne tombent pas sur le total annoncé (90) : Accès direct du B. Sc. au Ph. D. = 540, Accès de la M. Sc. au Ph. D. = 965 — rien n'est émis, la lecture est à revoir. Les blocs de ce créneau restent cumulés, donc l'audit peut exiger plus que le programme ne compte — c'est constaté, pas corrigé."
+  },
+  {
     "genre": "manque",
     "sujet": "doctorat-en-pharmacologie bloc 72/72A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -7838,6 +7848,16 @@
     "genre": "manque",
     "sujet": "doctorat-en-pharmacologie bloc 72/72B",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-pharmacologie",
+    "message": "6 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : Cheminement libre | Neuropharmacologie | Pharmacogénomique | Pharmacologie clinique | Pharmacologie intégrative cardiovasculaire | Pharmacologie moléculaire"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-pharmacologie",
+    "message": "6 parcours déclarés (Cheminement libre | Neuropharmacologie | Pharmacogénomique | Pharmacologie clinique | Pharmacologie intégrative cardiovasculaire | Pharmacologie moléculaire) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -8048,6 +8068,11 @@
     "genre": "manque",
     "sujet": "doctorat-en-psychologie-recherche-et-intervention-option-psychologie-du-travail-et-des-organisations bloc 70/70G",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-psychologie-recherche-et-intervention-option-psychologie-du-travail-et-des-organisations bloc 70/70G",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours à choisir dans la banque de cours de cycles supérieurs du département ou de l'Université de Montréal, à déterminer avec le Comité de programme. »"
   },
   {
     "genre": "manque",
@@ -8465,9 +8490,14 @@
     "message": "la page écrit « comporte un minimum de 90 crédits » : `creditsTotal` ne porte qu'un nombre, la nuance reste verbatim dans `notes`"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "doctorat-en-sciences-de-la-vision",
-    "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Les crédits du tronc commun sont répartis de la façon suivante: 80 crédits obligatoires, 4 crédits à option et un maximum de 4 crédits au choix. » « Les crédits de l'option sont répartis de la façon suivante : 82 crédits obligatoires dont 80 crédits attribués à la rédaction d'une thèse, 4 crédits à option et 4 crédits au choix. » « Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix. »"
+    "message": "7 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : Générale | Basse vision et réadaptation visuelle | Biologie cellulaire et moléculaire | Biologie des maladies de la vision | Neurosciences de la vision et psychophysique | Optique, instrument et imagerie | Sciences cliniques et épidémiologie"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-sciences-de-la-vision",
+    "message": "7 parcours déclarés (Générale | Basse vision et réadaptation visuelle | Biologie cellulaire et moléculaire | Biologie des maladies de la vision | Neurosciences de la vision et psychophysique | Optique, instrument et imagerie | Sciences cliniques et épidémiologie) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -8737,12 +8767,22 @@
   {
     "genre": "info",
     "sujet": "doctorat-en-sociologie bloc 70/70C",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Choisis parmi les séminaires théoriques et thématiques de cycles supérieurs offerts par le Département de sociologie. »"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-sociologie bloc 70/70C",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Choisis parmi les séminaires théoriques et thématiques de cycles supérieurs offerts par le Département de sociologie. »"
   },
   {
     "genre": "manque",
     "sujet": "doctorat-en-sociologie bloc 70/70D",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-sociologie bloc 70/70D",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Choisis parmi les séminaires de cycles supérieurs de la banque de cours de l'Université de Montréal ou, le cas échéant, d'une autre institution universitaire. »"
   },
   {
     "genre": "manque",
@@ -9165,6 +9205,11 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
+    "genre": "info",
+    "sujet": "maitrise-en-amenagement-option-design-creation-et-innovation bloc 70/70E",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « À choisir dans le répertoire de la Maîtrise en aménagement, dans les autres répertoires de 2e cycle de la Faculté de l'aménagement, de l'Université de Montréal ou des autres univer »"
+  },
+  {
     "genre": "manque",
     "sujet": "maitrise-en-amenagement-option-montage-et-gestion-de-projets-damenagement-m-sc-a bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -9250,6 +9295,11 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
+    "genre": "info",
+    "sujet": "maitrise-en-anthropologie bloc 70/TD-70D",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « L'étudiant peut choisir un maximum de 6 crédits hors département dans la banque de cours de l'Université de Montréal ou d'une autre université. Un maximum de 6 crédits de cours de  »"
+  },
+  {
     "genre": "inattendu",
     "sujet": "maitrise-en-anthropologie",
     "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Les crédits de la modalité avec mémoire (MM) sont répartis de la façon suivante : 30 crédits obligatoires dont 29 attribués à la recherche et à la rédaction d'un mémoire, 9 à 15 crédits à option et un maximum de 6 crédits au choix. » « Les crédits de la modalité avec stage (ST), sont répartis de la façon suivante : 30 crédits obligatoires, dont 9 crédits attribués à un stage et 17 crédits attribués à un essai de stage, 9 à 15 crédits à option et un maximum de 6 crédits au choix. » « Les crédits de la modalité avec travail dirigé (TD), sont répartis de la façon suivante : 15 crédits obligatoires, dont 14 crédits attribués au travail dirigé, 18 à 30 crédits à option et un maximum de 12 crédits au choix. »"
@@ -9268,11 +9318,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-architecture bloc 70/70F",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-architecture bloc 70/70F",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du responsable de programme, l'étudiant peut choisir un cours de trois crédits de 1er cycle de niveau 3000 ou 4000, ou tout autre cours de cycles supérieurs parmi ceu »"
   },
   {
     "genre": "inattendu",
@@ -9915,11 +9960,6 @@
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
-    "genre": "info",
-    "sujet": "maitrise-en-droit-option-common-law-comparee bloc 70/70D — Cours au choix",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « 3 crédits de cours au choix choisis avec l'accord du vice-doyen responsable du programme ou de son représentant parmi les cours des programmes de 2e cycle en droit. Un cours de 3 c »"
-  },
-  {
     "genre": "inattendu",
     "sujet": "maitrise-en-droit-option-common-law-comparee",
     "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Version 02 (A24) La maîtrise comporte 45 crédits, répartis de la façon suivante : 9 crédits obligatoires attribués à un travail dirigé, de 30 à 36 crédits à option et de 0 à 6 crédits au choix. » « La maîtrise comporte 45 crédits, répartis de la façon suivante : 9 crédits obligatoires attribués à un travail dirigé, de 30 à 36 crédits à option et de 0 à 6 crédits au choix. »"
@@ -9950,11 +9990,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C1C",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 9 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou un maximum de 3 cré »"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C2C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -9963,11 +9998,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C2D",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C2D",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 6 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou un maximum de 3 cré »"
   },
   {
     "genre": "manque",
@@ -9980,11 +10010,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C3D",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 6 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou un maximum de 3 cré »"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C4C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -9993,11 +10018,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C4D",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C4D",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 6 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou un maximum de 3 cré »"
   },
   {
     "genre": "manque",
@@ -10053,11 +10073,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-droit-option-droit-international bloc 73/73E",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-droit-option-droit-prive-compare bloc 71/71E — Cours au choix",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du Doyen ou de son représentant, l'étudiant peut suivre un maximum de 3 crédits au choix dans le cadre de la Maîtrise en droit, choisi parmi les cours de 2e cycle en  »"
   },
   {
     "genre": "inattendu",
@@ -10133,6 +10148,11 @@
     "genre": "manque",
     "sujet": "maitrise-en-education-option-generale bloc 70/70B",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-education-option-generale bloc 70/70B",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « À choisir dans la banque de cours de 2e cycle de la Faculté des sciences de l'éducation. »"
   },
   {
     "genre": "info",
@@ -10305,11 +10325,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "maitrise-en-epidemiologie bloc 70/70B",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Choisir parmi les cours de 2e cycle dans les répertoires des programmes de Médecine sociale et préventive ou tout autre cours sujet à l'approbation du directeur du programme. Excep »"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-ergotherapie bloc 01/01A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -10450,6 +10465,11 @@
     "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Les crédits de la modalité mémoire (MM) sont répartis de la façon suivante : 39 crédits obligatoires dont 18 crédits attribués à la recherche et à la rédaction d'un mémoire et 6 crédits à option. » « Les crédits de la modalité stage ou travail dirigé (ST‐TD) sont répartis de la façon suivante : 33 crédits obligatoires, dont 12 crédits attribués à la rédaction d'un rapport de stage ou d'un travail dirigé, et 12 crédits à option. »"
   },
   {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-evaluation-des-technologies-de-la-sante segment 70",
+    "message": "cheminements non émis : les créneaux réutilisés ne s'accordent pas sur un axe commun (MM+ST contre MM+ST contre Gestion+ST contre MM+ST). Les blocs de ce créneau restent cumulés, donc l'audit peut exiger plus que le programme ne compte — c'est constaté, pas corrigé."
+  },
+  {
     "genre": "manque",
     "sujet": "maitrise-en-finance-mathematique-et-computationnelle bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -10565,6 +10585,16 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
+    "genre": "info",
+    "sujet": "maitrise-en-genie-biomedical",
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : générale | génie clinique"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-genie-biomedical",
+    "message": "2 parcours déclarés (générale | génie clinique) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
     "genre": "inattendu",
     "sujet": "maitrise-en-geographie segment 70",
     "message": "titre de bloc illisible : « MM - Bloc 70A » — bloc ignoré"
@@ -10643,11 +10673,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-histoire bloc 72/72C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-histoire bloc 72/72C",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours de 1er ou 2e cycle choisi dans le répertoire de cours de l'Université ou dans celui d'une autre université avec l'approbation du responsable des cycles supérieurs. Remarque : »"
   },
   {
     "genre": "info",
@@ -10778,26 +10803,6 @@
     "genre": "info",
     "sujet": "maitrise-en-litteratures-de-langue-francaise",
     "message": "2 parcours déclarés (Recherche | Recherche-création) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-mathematiques bloc 70/70B — Complément de formation et cours d'autres disciplines ou hors UdeM",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours de cycle supérieurs d'autres disciplines ou d'autres universités ou cours de 1er cycle de sigle MAT de 2e ou 3e année avec l'approbation du responsable de programme. »"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-mathematiques bloc 71/71B — Complément de formation et cours d'autres disciplines ou hors UdeM",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours de cycles supérieurs d'autres disciplines ou d'autres universités et/ou cours de 1er cycle de sigle MAT de 2e ou 3e année avec l'approbation du responsable de programme. »"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-mathematiques bloc 73/MM-73B — Complément de formation et cours d'autres disciplines ou hors UdeM",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours de cycle supérieurs d'autres disciplines ou d'autres universités et/ou cours de 1er cycle de sigle ACT, MAT ou STT et de 2e ou 3e année avec l'approbation du responsable de p »"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-mathematiques bloc 73/S-73B — Complément de formation et cours d'autres disciplines ou hors UdeM",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours de cycles supérieurs d'autres disciplines ou d'autres universités et/ou un maximum de 6 crédits de cours de 1er cycle de sigle ACT, MAT ou STT et de 2e ou 3e année avec l'app »"
   },
   {
     "genre": "info",
@@ -11280,9 +11285,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "maitrise-en-physiologie-moleculaire-cellulaire-et-integrative",
-    "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Les crédits de l'Option sont répartis de la façon suivante : 41 crédits obligatoires dont 36 crédits attribués à la recherche et à la rédaction d'un mémoire, 1 crédit à option et 3 crédits au choix. » « Les crédits de l'Option sont répartis de la façon suivante : 38 crédits obligatoires dont 36 crédits attribués à la recherche et à la rédaction d'un mémoire et 7 crédits à option. » « Les crédits de l'Option sont répartis de la façon suivante : 44 crédits obligatoires dont 36 crédits attribués à la recherche et à la rédaction d'un mémoire et 1 crédit à option. »"
+    "message": "3 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : Générale | Physiologie et biophysique moléculaires | Physiologie cardiovasculaire"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-physiologie-moleculaire-cellulaire-et-integrative",
+    "message": "3 parcours déclarés (Générale | Physiologie et biophysique moléculaires | Physiologie cardiovasculaire) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -11363,6 +11373,11 @@
     "genre": "manque",
     "sujet": "maitrise-en-physique bloc 71/71B",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-physique bloc 71/71B",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours choisis dans la banque de cours du Département de physique et des autres départements de sciences fondamentales. Un des cours peut être un cours de 1er cycle. »"
   },
   {
     "genre": "info",
@@ -12565,6 +12580,11 @@
     "message": "2 parcours déclarés (Pathologie et microbiologie | Santé publique vétérinaire qui) ; 1 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sciences-veterinaires-option-sante-publique-veterinaire-sans-memoire segment —",
+    "message": "cheminements non émis : les cheminements lus ne tombent pas sur le total annoncé (45) : Stage = 88, Travaux dirigés = 88 — rien n'est émis, la lecture est à revoir. Les blocs de ce créneau restent cumulés, donc l'audit peut exiger plus que le programme ne compte — c'est constaté, pas corrigé."
+  },
+  {
     "genre": "manque",
     "sujet": "maitrise-en-service-social",
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
@@ -12580,6 +12600,11 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
+    "genre": "info",
+    "sujet": "maitrise-en-sociologie bloc 70/70E",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Choisis parmi les séminaires de cycles supérieurs de la banque de cours de l'Université de Montréal ou, le cas échéant, d'une autre institution universitaire. »"
+  },
+  {
     "genre": "inattendu",
     "sujet": "maitrise-en-sociologie",
     "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Version 05 (A20) La maîtrise comporte 45 crédits répartis de la façon suivante : 30 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, de 12 à 15 crédits à option et de 0 à 3 crédits au choix. » « Le segment comporte 30 crédits obligatoires, de 12 à 15 crédits à option et de 0 à 3 crédits au choix. »"
@@ -12590,11 +12615,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "maitrise-en-statistique bloc 70/MM-70C — Complément de formation",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours de cycles supérieurs d'autres disciplines ou d'autres universités ou des cours de 1er cycle de sigle STT choisi dans la banque de cours de l'UdeM. Choix à approuver par le re »"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-statistique bloc 70/ST-70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -12603,6 +12623,11 @@
     "genre": "manque",
     "sujet": "maitrise-en-statistique bloc 71/71A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-statistique",
+    "message": "2 orientations nommées dans les entêtes de segment, mais 1 d'entre elles exigeraient plus que les 45 crédits annoncés (Générale = 78) — aucune n'est émise : les entêtes ne sont pas la bonne lecture de cette page"
   },
   {
     "genre": "inattendu",
@@ -13880,11 +13905,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-droit-des-affaires bloc 70/70D",
-    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Avec l'accord du doyen ou de son représentant, l'étudiant peut suivre un maximum de 3 crédits de cours au choix, choisi parmi les cours de 2e cycle en droit, ou d'un autre programm »"
-  },
-  {
     "genre": "manque",
     "sujet": "microprogramme-de-2e-cycle-en-droit-des-technologies-de-linformation bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -13913,6 +13933,11 @@
     "genre": "manque",
     "sujet": "microprogramme-de-2e-cycle-en-droit-et-travail bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "microprogramme-de-2e-cycle-en-droit-et-travail bloc 70/70B — Cours connexes",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « Cours choisis parmi les cours de 2e cycle offerts par la Faculté de droit ou l'École de relations industrielles. »"
   },
   {
     "genre": "info",
@@ -14038,6 +14063,11 @@
     "genre": "inattendu",
     "sujet": "microprogramme-de-2e-cycle-en-enseignement-instrumental bloc 70/70B — - Ateliers de didactique",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - 2 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
+  },
+  {
+    "genre": "info",
+    "sujet": "microprogramme-de-2e-cycle-en-enseignement-instrumental bloc 70/70C — - Complément de formation",
+    "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « À l'exclusion des cours d'introduction, choisir parmi les cours de premier cycle ou les séminaires offerts par la Faculté de musique. »"
   },
   {
     "genre": "info",
@@ -17573,5 +17603,295 @@
     "genre": "manque",
     "sujet": "stagiaire-de-formation-ou-de-recherche-3e-cycle",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-4-ans-en-arts-et-lettres",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 42 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-4-ans-en-sciences-humaines-et-sociales",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 39 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-4-ans-en-sciences-naturelles-et-formelles",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 66 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-neuroscience-cognitive",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 129 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-sante-environnementale-et-sante-au-travail",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 100 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-sciences-biologiques",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 158 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "certificat-detudes-individualisees-es-arts",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 84 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "certificat-detudes-individualisees-es-sciences",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 363 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "depa-en-sante-publique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 54 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "des-en-medecine-veterinaire-2",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 210 crédits (obligatoires + minimums d'option) alors que la page annonce 108 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 216 crédits (obligatoires + minimums d'option) alors que la page annonce 108 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "dess-en-droit-des-affaires",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 90 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "dess-en-enseignement-des-langues",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 48 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "dess-en-enseignement-superieur",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 39 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "diplome-complementaire-en-pharmacotherapie-avancee",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 21 crédits (obligatoires + minimums d'option) alors que la page annonce 15 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "doctorat-en-musique-option-accompagnement-au-piano",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 98 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "doctorat-en-neurosciences",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 177 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 270 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "doctorat-en-psychologie-recherche-et-intervention-option-psychologie-clinique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 162 crédits (obligatoires + minimums d'option) alors que la page annonce 156 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "doctorat-en-psychologie-option-psychologie-clinique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 132 crédits (obligatoires + minimums d'option) alors que la page annonce 123 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "doctorat-en-sciences-de-leducation-ph-d",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 246 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-administration-des-services-de-sante-option-administration-sociale",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 60 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-amenagement-option-montage-et-gestion-de-projets-damenagement-m-sc-a",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 51 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-anthropologie",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 102 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-bio-informatique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 56 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-bioethique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 69 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-droit-des-technologies-de-linformation",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 117 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-droit-international",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 51 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-memoire",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 156 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 195 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-dans-un-contexte-de-globalisation",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 90 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-droit-option-droit-international",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 156 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-education-option-administration-de-leducation",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 51 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-education-option-enseignement-au-secondaire",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 123 crédits (obligatoires + minimums d'option) alors que la page annonce 60 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-education-option-enseignement-au-secondaire-m-ed",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 90 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-education-option-enseignement-des-langues",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 63 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 54 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-ergotherapie",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 50 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-etudes-anglaises",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 81 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-etudes-internationales",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 81 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-evaluation-des-technologies-de-la-sante",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 57 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-finance-mathematique-et-computationnelle",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 54 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-musique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 84 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-musique-option-composition-pour-lecran",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 78 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-nutrition-avec-stage-ou-travail-dirige",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 81 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-physiotherapie",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 87 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-psychoeducation-campus-laval",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 123 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-psychoeducation-campus-montreal",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 123 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sante-publique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 52 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sciences-de-leducation-ma",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 99 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sciences-de-la-vision-option-intervention-en-deficience-visuelle-anglais",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 91 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sciences-economiques",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 72 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sciences-infirmieres",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 252 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-developpement-du-medicament",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 48 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 175 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-statistique",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 120 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-travail-social",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 69 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "microprogramme-de-2e-cycle-en-enseignement-du-francais-par-la-litterature-jeunesse",
+    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 30 crédits (obligatoires + minimums d'option) alors que la page annonce 15 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
   }
 ]

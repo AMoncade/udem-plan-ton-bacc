@@ -8,7 +8,29 @@
     "71",
     "72"
   ],
-  "orientations": [],
+  "orientations": [
+    {
+      "nom": "Générale",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Physiologie et biophysique moléculaires",
+      "segments": [
+        "71"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Physiologie cardiovasculaire",
+      "segments": [
+        "72"
+      ],
+      "exigences": null
+    }
+  ],
   "cycle": "Cycles supérieurs",
   "faculte": "Faculté de médecine",
   "typeProgramme": "Maîtrise",
@@ -177,8 +199,7 @@
       "cours": [],
       "contenuOuvert": true,
       "contrainteContenu": {
-        "genre": "cycle",
-        "cycle": "Cycles supérieurs"
+        "genre": "autorisation"
       },
       "notes": [
         "Choisir parmi la liste des cours de cycles supérieurs disponibles en physiologie (LE COURS PSL6090 EST FORTEMENT RECOMMANDÉ) ou provenant d'autres départements de sciences fondamentales de la Faculté de médecine, selon la pertinence par rapport au projet de recherche et avec l'accord du responsable du programme."
