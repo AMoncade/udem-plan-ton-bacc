@@ -11,6 +11,7 @@ import type {
   Programme,
 } from "../types";
 import { cleBloc, normaliserCode } from "../codes";
+import { blocsDuCheminement, exigeUnCheminement } from "../parcours";
 import {
   arrondi,
   bornesDeRegle,
@@ -568,6 +569,54 @@ function estJoker(bloc: Bloc, bornes: Bornes): boolean {
 }
 
 /**
+ * Les blocs à auditer, et la raison pour laquelle le cheminement n'a pas été
+ * résolu s'il ne l'a pas été.
+ *
+ * Trois cas, et seul le premier filtre :
+ *   - un cheminement est exigé ET nommé : on filtre ;
+ *   - un cheminement est exigé et AUCUN n'est nommé : on ne filtre pas, et
+ *     l'audit ne pourra pas être affirmé. Choisir le premier par défaut
+ *     produirait un audit plausible et faux ;
+ *   - aucun cheminement n'est exigé : le choix éventuel est ignoré, pas une
+ *     erreur — l'UI peut garder une sélection en passant d'un programme à
+ *     l'autre.
+ */
+function choisirBlocs(
+  programme: Programme,
+  cheminement: string | null,
+): { blocs: Bloc[]; cheminementNonResolu: string | null } {
+  const tous = programme.blocs ?? [];
+  if (!exigeUnCheminement(programme)) return { blocs: tous, cheminementNonResolu: null };
+
+  const offerts = programme.cheminements ?? [];
+  if (cheminement === null) {
+    return {
+      blocs: tous,
+      cheminementNonResolu:
+        `ce programme offre ${offerts.length} cheminements exclusifs (${offerts.join(", ")}) et aucun n'est choisi. ` +
+        `Les blocs de tous sont donc comptés ensemble, alors qu'ils ne s'additionnent pas : le total exigé dépasse ` +
+        `ce que la page annonce, et ce dépassement est un artefact du non-choix — PAS des crédits qui vous manquent. ` +
+        `Choisissez un cheminement pour obtenir un verdict.`,
+    };
+  }
+  try {
+    return { blocs: blocsDuCheminement(programme, cheminement), cheminementNonResolu: null };
+  } catch (erreur) {
+    // Libellé que le programme ne déclare pas. Filtrer dessus ne garderait aucun
+    // bloc spécifique et amputerait le programme ; ne pas filtrer le gonfle. On
+    // choisit de gonfler ET de le dire, parce qu'un programme amputé se lit comme
+    // un parcours plus court, alors qu'un programme gonflé se voit.
+    return {
+      blocs: tous,
+      cheminementNonResolu:
+        `le cheminement « ${cheminement} » n'est pas déclaré par ce programme (il porte ${offerts.join(", ") || "aucun cheminement"}). ` +
+        `L'audit n'a donc filtré aucun bloc et le total exigé additionne tous les cheminements. ` +
+        `Détail : ${erreur instanceof Error ? erreur.message : String(erreur)}`,
+    };
+  }
+}
+
+/**
  * Audit d'un programme : bornes de chaque bloc, ET totaux par type de bloc, ET
  * affectation des cours résolue sous ces bornes.
  *
@@ -609,11 +658,27 @@ export function auditProgramme(
   programme: Programme,
   catalogue: Catalogue,
   faits: Set<CodeCours>,
+  cheminement: string | null = null,
 ): Audit {
   const { fiches } = indexerFiches(catalogue);
   const { faits: acquis, invalides } = normaliserEnsemble(faits);
-  const blocs = programme.blocs ?? [];
   const problemes: string[] = [];
+
+  // --- cheminements exclusifs (R1) -----------------------------------------
+  // Les blocs de deux cheminements ne s'additionnent PAS : on en suit un. Sans
+  // filtre, la maîtrise en finance mathématique exige 54 crédits là où sa page
+  // en annonce 45, et l'administration sociale 60 pour 45 annoncés — le
+  // 180-contre-90 en miniature, et il vit dans l'app tant que personne ne
+  // branche le filtre.
+  //
+  // blocsDuCheminement() est LE seul filtre, partagé avec l'UI. Il LÈVE sur un
+  // choix absent et sur un choix nul quand le programme en exige un : c'est la
+  // garde qui empêche d'amputer un programme en silence, et elle est juste.
+  // Mais auditProgramme est appelé pendant un rendu — une exception y
+  // remplacerait un écran par une page blanche. On la convertit donc en
+  // verdict NON AFFIRMABLE, ce que le moteur sait déjà dire.
+  const { blocs, cheminementNonResolu } = choisirBlocs(programme, cheminement);
+  if (cheminementNonResolu !== null) problemes.push(cheminementNonResolu);
 
   // --- préparation des calculs par bloc ------------------------------------
   const calculs: Calcul[] = blocs.map((bloc) => ({
@@ -956,6 +1021,10 @@ export function auditProgramme(
     // « pas établi » plutôt que « il vous manque des crédits ».
     ouvertsNonAffirmables === 0 &&
     siglesNonAffirmables === 0 &&
+    // Sans cheminement choisi, les minimums de TOUS les cheminements se
+    // cumulent : le manque affiché est un artefact du non-choix, pas une dette.
+    // On refuse donc d'affirmer, plutôt que de déclarer non conforme.
+    cheminementNonResolu === null &&
     manques.obligatoire === 0 &&
     manques.option === 0 &&
     manques.choix === 0 &&
