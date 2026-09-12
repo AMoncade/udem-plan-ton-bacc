@@ -34,10 +34,11 @@ import {
   natureListe,
   type ArithmetiqueProgramme,
 } from "@/app/_lib/cours";
+import { exigeUnCheminement } from "@/lib/parcours";
 import type { Bloc, Catalogue, EtatBloc, Intervalle, Programme } from "@/lib/types";
 import { Credits, TitreCours } from "./Etats";
 import { TeteEcran } from "./TeteEcran";
-import { useDonnees } from "./ProviderEtat";
+import { useDonnees, useEtat } from "./ProviderEtat";
 
 function pourcent(part: number, tout: number): number {
   if (!Number.isFinite(tout) || tout <= 0) return 0;
@@ -64,6 +65,47 @@ function Notes({ notes, titre }: { notes: string[]; titre: string }) {
         ))}
       </ul>
     </section>
+  );
+}
+
+/**
+ * LE TROISIÈME AXE DU CHOIX — cheminement, après le parcours et les cours faits.
+ *
+ * Il n'apparaît que sur les programmes qui en déclarent, soit DEUX du catalogue.
+ * `exigeUnCheminement()` le dit ; ailleurs ce composant ne rend rien, et
+ * n'encombre pas 1 087 écrans pour deux cas.
+ *
+ * Pourquoi c'est un choix explicite et non un défaut raisonnable : les blocs
+ * d'un cheminement sont EXCLUSIFS. Sans filtre, leurs minimums s'additionnent et
+ * le programme réclame davantage que ce que sa page annonce — la maîtrise en
+ * finance mathématique exige 54 crédits pour 45 annoncés. Choisir au hasard
+ * serait pire : ça rendrait un audit faux d'allure juste. Le non-choix est donc
+ * un quatrième état non binaire, et le moteur le rend comme tel.
+ */
+function MenuCheminement({ programme }: { programme: Programme }) {
+  const { cheminement, choisirCheminement } = useEtat();
+  if (!exigeUnCheminement(programme)) return null;
+  const options = programme.cheminements ?? [];
+  return (
+    <label className="flex items-center gap-2 text-[12px] text-doux">
+      <span className={cheminement === null ? "text-avert" : undefined}>Cheminement</span>
+      <select
+        value={cheminement ?? ""}
+        onChange={(e) => choisirCheminement(e.target.value === "" ? null : e.target.value)}
+        className={`border bg-creux px-2 py-1 text-[12.5px] focus:outline-none ${
+          cheminement === null
+            ? "border-avert/60 text-avert"
+            : "border-trait text-papier focus:border-traitfort"
+        }`}
+      >
+        <option value="">à choisir</option>
+        {options.map((o) => (
+          <option key={o} value={o}>
+            {o}
+          </option>
+        ))}
+      </select>
+    </label>
   );
 }
 
@@ -376,6 +418,7 @@ export function VueAudit() {
     <div className="ecran py-6">
       <TeteEcran
         titre="Audit des blocs"
+        actions={<MenuCheminement programme={programme} />}
         fait={
           <>
             {programme.nom}

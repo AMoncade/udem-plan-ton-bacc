@@ -55,6 +55,12 @@ import {
   lireSelection,
   lireSelectionServeur,
 } from "@/app/_lib/selection";
+import {
+  abonnerCheminements,
+  choisirCheminement as poserCheminement,
+  lireCheminements,
+  lireCheminementsServeur,
+} from "@/app/_lib/cheminement";
 import { abonner, ecrire, lireEtat, lireEtatServeur } from "@/app/_lib/stockage";
 import type {
   Audit,
@@ -94,6 +100,11 @@ interface ValeurEtat {
   chargement: EtatProgramme;
   selection: string | null;
   choisir: (id: string | null) => void;
+  /** Cheminement retenu POUR le parcours affiché, ou `null` si rien n'a été
+   *  choisi. Deux programmes du catalogue en exigent un ; ailleurs il vaut
+   *  toujours `null` et ne change rien. */
+  cheminement: string | null;
+  choisirCheminement: (choix: string | null) => void;
   /** `null` tant qu'aucun programme n'est prêt. Les vues passent par
    *  `<CadreProgramme>` et reçoivent la version non nulle. */
   donnees: DonneesProgramme | null;
@@ -133,6 +144,17 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
     );
   }, [index, selection]);
 
+  const cheminements = useSyncExternalStore(
+    abonnerCheminements,
+    lireCheminements,
+    lireCheminementsServeur,
+  );
+  // Dérivé de l'INSTANTANÉ abonné, pas d'une lecture directe du module : c'est
+  // `cheminements` qui déclenche le rendu, donc c'est lui qui doit porter la
+  // valeur. Lire le module à côté marcherait par coïncidence et cesserait de
+  // marcher le jour où le rendu vient d'ailleurs.
+  const cheminement = selection === null ? null : (cheminements[selection] ?? null);
+
   const faits = useMemo(() => new Set(stocke.faits), [stocke.faits]);
 
   const donnees = useMemo<DonneesProgramme | null>(() => {
@@ -141,14 +163,20 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
     return {
       ...chargement.assemble,
       diagnostics: diagnostiquerCours(catalogue, faits),
-      audit: auditProgramme(programme, catalogue, faits),
+      /* Le cheminement passe par `auditProgramme` et JAMAIS par
+         `blocsDuCheminement()` directement : le filtre LÈVE sur un non-choix ou
+         un libellé inconnu — c'est sa garde contre l'amputation silencieuse —
+         et une exception levée pendant un rendu remplacerait l'écran par une
+         page blanche. L'audit, lui, convertit la garde en verdict non
+         affirmable, ce qui est exactement ce qu'on veut montrer. */
+      audit: auditProgramme(programme, catalogue, faits, cheminement),
       // Calculé ICI comme l'audit, pour la même raison : les vues doivent lire
       // le même verdict. Ne dépend pas de `faits` — c'est une propriété de la
       // page, pas du relevé — mais suit le même cycle, le catalogue étant sa
       // seconde entrée.
       blocsIncoherents: new Set(clesBlocsIncoherents(programme, catalogue)),
     };
-  }, [chargement, faits]);
+  }, [chargement, faits, cheminement]);
 
   const basculerFait = useCallback((code: CodeCours) => {
     const courant = lireEtat();
@@ -184,6 +212,14 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
     choisirParcours(cle);
   }, []);
 
+  const choisirCheminement = useCallback(
+    (choix: string | null) => {
+      if (selection === null) return;
+      poserCheminement(selection, choix);
+    },
+    [selection],
+  );
+
   const valeur = useMemo<ValeurEtat>(
     () => ({
       faits,
@@ -197,6 +233,8 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
       chargement,
       selection,
       choisir,
+      cheminement,
+      choisirCheminement,
       donnees,
     }),
     [
@@ -211,6 +249,8 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
       chargement,
       selection,
       choisir,
+      cheminement,
+      choisirCheminement,
       donnees,
     ],
   );

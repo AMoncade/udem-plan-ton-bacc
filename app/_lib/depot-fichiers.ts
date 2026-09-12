@@ -60,7 +60,32 @@ async function lireJson(chemin: string): Promise<unknown> {
   const url = `${base}/${chemin}`;
   let reponse: Response;
   try {
-    reponse = await fetch(url, { cache: "force-cache" });
+    /*
+     * `no-cache` et NON `force-cache`, et la différence n'est pas un réglage de
+     * performance — c'est la différence entre une donnée qui se met à jour et
+     * une qui ne se met jamais à jour.
+     *
+     * `force-cache` signifie littéralement « sers l'entrée en cache même
+     * périmée, ne va au réseau que si elle est absente ». Conséquence mesurée :
+     * après une passe de scrape, la page servait toujours la version de la
+     * première visite. Vérifié depuis la page, sur la même URL au même
+     * instant — `force-cache` rendait un programme SANS son champ
+     * `cheminements`, `no-store` le rendait AVEC. Ni un rechargement forcé ni
+     * un redémarrage du serveur n'y changeaient rien, parce que rien
+     * n'invalidait l'entrée.
+     *
+     * Pour un étudiant, ça veut dire garder le catalogue de sa première visite
+     * indéfiniment : un programme corrigé, une orientation ajoutée, une fiche
+     * enfin récupérée ne l'atteignent jamais. Un audit faux qui ne peut pas
+     * être réparé est pire qu'un audit lent.
+     *
+     * `no-cache` revalide à chaque lecture et accepte l'entrée locale sur un
+     * 304 : le coût est un aller-retour sans corps, et il tombe à zéro dans
+     * Electron où le schéma applicatif sert le disque. L'intention d'origine —
+     * marcher sans serveur — est préservée : elle tient au choix de `fetch` sur
+     * des fichiers statiques, pas au mode de cache.
+     */
+    reponse = await fetch(url, { cache: "no-cache" });
   } catch (cause) {
     // Un échec réseau sur un fichier local veut presque toujours dire que la
     // fenêtre est ouverte en `file://` : le dire, plutôt que « failed to fetch ».
