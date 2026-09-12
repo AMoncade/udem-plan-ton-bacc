@@ -88,7 +88,7 @@ export function ImportEcran() {
   }, [selection]);
 
   return (
-    <div className="px-5 py-6 sm:px-8">
+    <div className="ecran py-6">
       <header className="max-w-prose">
         <h1 className="text-[26px] font-semibold leading-tight tracking-[-0.02em]">
           Renseigner les cours réussis
