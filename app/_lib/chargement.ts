@@ -30,6 +30,21 @@ export type EtatProgramme =
   /** La fiche existe mais sa page n'a pas de structure exploitable. Ce n'est
    *  pas une erreur de chargement : c'est un fait sur le programme. */
   | { phase: "sans-structure"; cle: string; fiche: FicheIndex }
+  /**
+   * La clé retenue d'une visite précédente ne figure plus dans l'index.
+   *
+   * Distinguée de `erreur` parce que ce n'est PAS une panne : le catalogue a
+   * bougé sous un choix valide. Le cas arrive pour de vrai — un programme qu'on
+   * lisait sans orientation se révèle en porter dix, et sa clé nue
+   * `« baccalaureat-en-chimie »` est remplacée par dix clés `id#Orientation`.
+   * 36 programmes sont dans ce cas à la prochaine passe du scraper.
+   *
+   * L'étudiant n'a rien fait de mal, rien n'a échoué, et le rendre en rouge
+   * sous le titre « n'a pas pu être chargé » lui ferait croire à une panne dont
+   * il chercherait la cause. C'est le même motif que les blocs invérifiables :
+   * un état qui n'est ni un succès ni un échec.
+   */
+  | { phase: "disparu"; cle: string }
   | { phase: "erreur"; cle: string; message: string };
 
 /** Instantanés stables : `useSyncExternalStore` compare par identité, donc une
@@ -127,11 +142,7 @@ export function demanderProgramme(
   demandeCourante = cle;
 
   if (fiche === undefined) {
-    poserProgramme({
-      phase: "erreur",
-      cle,
-      message: `« ${cle} » ne figure pas dans l'index des parcours. Le choix retenu d'une visite précédente pointe peut-être sur un parcours qui n'existe plus.`,
-    });
+    poserProgramme({ phase: "disparu", cle });
     return;
   }
 

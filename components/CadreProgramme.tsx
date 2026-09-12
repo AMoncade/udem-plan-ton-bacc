@@ -120,6 +120,36 @@ export function CadreProgramme({ children }: { children: ReactNode }) {
     );
   }
 
+  /* Le parcours retenu n'est plus dans l'index. Ce n'est pas une panne : le
+     catalogue a bougé sous un choix qui était valide — typiquement un programme
+     qu'on lisait sans orientation et qui se révèle en porter plusieurs, donc sa
+     clé nue est remplacée par autant de clés `id#Orientation`. L'étudiant n'a
+     rien fait de mal, et rien n'a échoué. */
+  if (chargement.phase === "disparu") {
+    return (
+      <Encadre titre="Ce parcours n'est plus au catalogue tel quel" ton="avert">
+        <p>
+          Le parcours retenu de votre dernière visite —{" "}
+          <span className="chiffres text-papier">{chargement.cle}</span> — ne figure
+          plus dans l&apos;index. Deux causes possibles, et rien ne permet de les
+          distinguer d&apos;ici : la page a été retirée du catalogue, ou bien elle
+          porte désormais des orientations et se décline en plusieurs parcours
+          distincts.
+        </p>
+        <p>
+          Dans le second cas, votre programme est toujours là — il faut seulement
+          choisir laquelle de ses orientations vous suivez, parce qu&apos;elles
+          n&apos;ont ni les mêmes blocs ni la même répartition de crédits.
+        </p>
+        <p className="text-faible">
+          Vos cours marqués comme faits ne sont pas touchés : ils sont retenus par
+          code de cours, indépendamment du programme affiché.
+        </p>
+        <LienChoisir libelle="Choisir un parcours" />
+      </Encadre>
+    );
+  }
+
   if (chargement.phase === "erreur") {
     return (
       <Encadre titre="Ce programme n'a pas pu être chargé" ton="perdu">
