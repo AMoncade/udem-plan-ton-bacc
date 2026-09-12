@@ -46,6 +46,7 @@
 import type { Cours, FicheIndex, Programme } from "../../lib/types";
 import { slugUrl, normaliserCode } from "../../lib/codes";
 import { parsePrealables } from "../../lib/engine/prealables";
+import { empreinteExtracteur } from "../../lib/empreinte";
 import { parseFicheCours } from "./cours";
 import {
   CHEMIN_INDEX,
@@ -54,7 +55,6 @@ import {
   RACINE_DEPOT,
   codesSurDisque,
   ecrireCours,
-  empreinteExtracteur,
   ecrireIndex,
   ecrireJournal,
   ecrireProgramme,
@@ -642,7 +642,7 @@ async function principal(): Promise<void> {
   const index = await ecrireIndex(
     fiches,
     scrapeISO,
-    regenereToutesLesStructures ? await empreinteExtracteur() : null,
+    regenereToutesLesStructures ? empreinteExtracteur() : null,
   );
   for (const p of prealablesNonParses) {
     journal.info(p.code, `ligne de préalables non réduite par parsePrealables : ${JSON.stringify(p.brut)}`);

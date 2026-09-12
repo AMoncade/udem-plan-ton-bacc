@@ -9,14 +9,12 @@
  */
 import { describe, it, expect } from "vitest";
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
-import { readdirSync, readFileSync } from "node:fs";
-import { createHash } from "node:crypto";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import type { Cours, Programme } from "../../lib/types";
 import { cleParcours } from "../../lib/parcours";
 import { normaliserCode } from "../../lib/codes";
-import { codesSurDisque, empreinteExtracteur, fichesDeProgramme, grouperParSujet } from "./disposition";
+import { codesSurDisque, fichesDeProgramme, grouperParSujet } from "./disposition";
 
 function cours(code: string): Cours {
   return {
@@ -251,38 +249,5 @@ describe("codesSurDisque", () => {
     } finally {
       await rm(d, { recursive: true, force: true });
     }
-  });
-});
-
-describe("empreinteExtracteur", () => {
-  // Ce test existe pour UNE raison : la formule est écrite DEUX FOIS, ici par
-  // le scraper et dans tests/coutures.test.ts par la suite de coutures. Deux
-  // implémentations d'une même formule qui divergent produiraient un désaccord
-  // permanent — l'index dirait une empreinte, le test en recalculerait une
-  // autre, et comme le message parle de « données en retard » on relancerait le
-  // scrape indéfiniment sans jamais rattraper. La référence ci-dessous est
-  // réécrite exprès à partir de la spec, sans appeler le code testé.
-  function reference(dossier: string): string {
-    const h = createHash("sha256");
-    for (const f of readdirSync(dossier).filter((x) => x.endsWith(".ts") && !x.endsWith(".test.ts")).sort()) {
-      h.update(f);
-      h.update(readFileSync(path.join(dossier, f), "utf8").replace(/\r\n/g, "\n"));
-    }
-    return h.digest("hex");
-  }
-
-  it("donne le même résultat que la formule de référence", async () => {
-    const dossier = path.join(import.meta.dirname);
-    expect(await empreinteExtracteur()).toBe(reference(dossier));
-  });
-
-  it("est stable d'un appel à l'autre", async () => {
-    // Une empreinte qui bouge sans que le code bouge condamnerait toutes les
-    // données à passer pour périmées en permanence.
-    expect(await empreinteExtracteur()).toBe(await empreinteExtracteur());
-  });
-
-  it("a la forme d'un SHA-256", async () => {
-    expect(await empreinteExtracteur()).toMatch(/^[0-9a-f]{64}$/);
   });
 });

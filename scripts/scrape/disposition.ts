@@ -23,7 +23,6 @@
  * on relit donc l'existant et on fusionne. L'index et le journal, eux, sont
  * cumulatifs par construction de l'appelant.
  */
-import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type {
@@ -157,42 +156,6 @@ export async function sujetsSurDisque(): Promise<string[]> {
   } catch {
     return [];
   }
-}
-
-/**
- * Empreinte du CODE D'EXTRACTION qui a produit les données.
- *
- * Le défaut qu'elle ferme, constaté pour de vrai : `parseStructure` a été
- * corrigé à 17 h 28 Z, `data/programmes/` datait de 12 h 30, et la suite a
- * accusé les pages de l'UdeM d'être malformées pendant qu'il fallait seulement
- * relancer le scrape. Une date de fichier ne suffit pas à trancher ça — un
- * `git stash` ou une copie remettent l'horloge d'aplomb sans rien changer au
- * code. L'empreinte, si.
- *
- * La formule est celle de `empreinteExtracteur()` dans tests/coutures.test.ts,
- * à l'identique, et c'est LE point qui compte : deux formules qui divergent
- * donneraient un désaccord permanent, donc un test qu'on finirait par
- * désactiver. On hache le nom de fichier PUIS son contenu (sans ça, déplacer
- * une ligne d'un fichier à l'autre passerait inaperçu), dans l'ordre
- * alphabétique, en normalisant les `\r\n` — sur Windows le même commit se
- * matérialise avec deux fins de ligne selon `core.autocrlf`, et sans cette
- * normalisation l'empreinte accuserait le système de fichiers.
- *
- * `*.test.ts` est exclu : un test ajouté ne change pas ce que produit la passe,
- * et le faire compter rendrait toutes les données « périmées » à chaque test
- * écrit — une alarme qui crie tout le temps ne se lit plus.
- */
-export async function empreinteExtracteur(): Promise<string> {
-  const dossier = import.meta.dirname;
-  const h = createHash("sha256");
-  const fichiers = (await readdir(dossier))
-    .filter((f) => f.endsWith(".ts") && !f.endsWith(".test.ts"))
-    .sort();
-  for (const f of fichiers) {
-    h.update(f);
-    h.update((await readFile(path.join(dossier, f), "utf8")).replace(/\r\n/g, "\n"));
-  }
-  return h.digest("hex");
 }
 
 /**
