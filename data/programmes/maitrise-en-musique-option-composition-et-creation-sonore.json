@@ -42,6 +42,9 @@
       "regleBrut": "Option ‐ Minimum 6 crédits, maximum 12 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "autorisation"
+      },
       "notes": [
         "Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal ( https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l'accord de la direction de recherche."
       ]
@@ -91,6 +94,10 @@
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "cycle",
+        "cycle": "Cycles supérieurs"
+      },
       "notes": [
         "L'étudiant·e choisit tout autre cours de cycles supérieurs jugé pertinent, avec l'accord de la direction de recherche."
       ]

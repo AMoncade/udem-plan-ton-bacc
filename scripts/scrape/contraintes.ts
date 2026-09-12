@@ -114,11 +114,22 @@ export function lireContrainte(notes: string[]): ContrainteContenu | null {
 
   if (RENVOI_EXTERNE.test(texte)) return { genre: "renvoiExterne" };
 
-  // Le 1er cycle est testé d'abord : « cours de 1er cycle de sigle ACT, MAT ou
-  // STT » parle bien du 1er cycle, alors que `CYCLE_SUP` happerait un « 2e
-  // cycle » mentionné plus loin dans la même prose de bloc.
-  if (CYCLE_1ER.test(texte)) return { genre: "cycle", cycle: CYCLE_PREMIER };
-  if (CYCLE_SUP.test(texte)) return { genre: "cycle", cycle: CYCLE_SUPERIEUR };
+  // UNE PROSE QUI MENTIONNE LES DEUX CYCLES N'EN CONTRAINT AUCUN.
+  //
+  // Défaut attrapé en relisant ce que ce module venait d'émettre, et pas en
+  // relisant le code : « Cours de cycle supérieurs d'autres disciplines ou
+  // d'autres universités ou cours de 1er cycle de sigle MAT » autorise les
+  // DEUX. Émettre `1er cycle` — ce que faisait un simple « tester le 1er
+  // cycle d'abord » — produit une contrainte qui REJETTE les cours de cycle
+  // supérieur que le bloc permet explicitement. C'est le cas précis que la
+  // règle de prudence de ce module existe pour interdire, et il a fallu
+  // regarder les 149 émissions pour le voir : le code lisait juste, il
+  // concluait faux.
+  const sup = CYCLE_SUP.test(texte);
+  const premier = CYCLE_1ER.test(texte);
+  if (sup && premier) return null;
+  if (premier) return { genre: "cycle", cycle: CYCLE_PREMIER };
+  if (sup) return { genre: "cycle", cycle: CYCLE_SUPERIEUR };
 
   if (AUTORISATION.test(texte)) return { genre: "autorisation" };
 

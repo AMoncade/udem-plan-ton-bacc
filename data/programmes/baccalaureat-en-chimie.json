@@ -155,6 +155,12 @@
       "regleBrut": "Choix - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "CHM"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, les crédits au choix ne sont pas de sigle CHM."
       ]

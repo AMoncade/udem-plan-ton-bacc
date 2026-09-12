@@ -178,6 +178,9 @@
       "regleBrut": "Cheminement régulier : option - Maximum 9 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "renvoiExterne"
+      },
       "notes": [
         "Cheminement régulier",
         "Cheminement international : option - 3 crédits. Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
@@ -247,6 +250,12 @@
       "regleBrut": "Cheminement régulier : choix - 6 crédits",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "SOL"
+        ]
+      },
       "notes": [
         "Cheminement régulier",
         "Cheminement international : choix - Maximum 6 crédits Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que le sigle SOL."

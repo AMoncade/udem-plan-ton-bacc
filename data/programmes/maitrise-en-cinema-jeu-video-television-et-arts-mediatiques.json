@@ -175,6 +175,10 @@
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "cycle",
+        "cycle": "Cycles supérieurs"
+      },
       "notes": [
         "Cours de 2e cycle offert par l'Université de Montréal. L'approbation du directeur de recherche est obligatoire."
       ]
@@ -314,6 +318,10 @@
       "regleBrut": "Choix - 3 crédits",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "cycle",
+        "cycle": "Cycles supérieurs"
+      },
       "notes": [
         "Cours de 2e cycle offert par l'Université de Montréal. L'approbation du directeur de recherche est obligatoire."
       ]
@@ -415,6 +423,9 @@
       "regleBrut": "Choix - 15 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "autorisation"
+      },
       "notes": [
         "Cours de deuxième cycle offerts par les universités européennes participant au Master international. L'étudiant doit obligatoirement choisir des cours dans deux universités différentes. Le choix de cours doit être approuvé par le directeur de recherche et le responsable des études supérieures."
       ]

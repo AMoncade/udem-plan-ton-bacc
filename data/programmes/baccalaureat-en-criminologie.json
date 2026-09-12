@@ -199,6 +199,12 @@
       "regleBrut": "Choix - Minimum 0 crédit , maximum 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "CRI"
+        ]
+      },
       "notes": [
         "Cheminement régulier: 3 crédits, Cheminement honor : 0 crédit. Sauf exception autorisée, les crédits au choix ne sont pas de sigle CRI."
       ]

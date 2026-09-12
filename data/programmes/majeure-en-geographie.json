@@ -228,6 +228,12 @@
       "regleBrut": "Choix - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "GEO"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, le cours au choix doit être parmi les cours identifiés par un sigle autre que le sigle GEO."
       ]

@@ -180,6 +180,9 @@
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "autorisation"
+      },
       "notes": [
         "Cours à choisir dans la banque de cours de l'Université de Montréal ou d'une autre université avec l'accord du responsable de programme."
       ]
@@ -278,6 +281,10 @@
       "regleBrut": "Option - 6 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "cycle",
+        "cycle": "1er cycle"
+      },
       "notes": [
         "Cours choisis dans la banque de cours du Département de physique et des autres départements de sciences fondamentales. Un des cours peut être un cours de 1er cycle."
       ]

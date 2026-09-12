@@ -349,6 +349,13 @@
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "renvoiBlocs",
+        "blocs": [
+          "71I",
+          "71Z"
+        ]
+      },
       "notes": [
         "Un cours de 3 crédits doit être pris dans les blocs 71I ou 71Z."
       ]

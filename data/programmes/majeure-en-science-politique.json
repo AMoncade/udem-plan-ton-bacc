@@ -228,6 +228,9 @@
       "regleBrut": "Option - 6 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "renvoiExterne"
+      },
       "notes": [
         "Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
         "Consultez l'information sur le site du Centre de langues"
@@ -270,6 +273,12 @@
       "regleBrut": "Choix - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "POL"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle POL."
       ]

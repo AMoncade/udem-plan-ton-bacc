@@ -281,6 +281,12 @@
       "regleBrut": "Choix - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "HST"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle HST."
       ]

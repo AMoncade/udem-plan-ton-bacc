@@ -154,6 +154,12 @@
       "regleBrut": "Choix - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "BIO"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, les 3 crédits au choix sont obligatoires et ne sont pas de sigle BIO."
       ]

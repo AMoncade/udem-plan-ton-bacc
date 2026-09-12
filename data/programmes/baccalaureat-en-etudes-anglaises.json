@@ -217,6 +217,12 @@
       "regleBrut": "Choix - Minimum 6 crédits, maximum 9 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "ANG"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, les cours au choix doivent être choisis parmi les cours identifiés par un sigle autre que le sigle ANG."
       ]

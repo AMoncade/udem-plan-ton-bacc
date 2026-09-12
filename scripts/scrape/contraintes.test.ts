@@ -66,7 +66,21 @@ describe("lireContrainte — contrainte de cycle", () => {
     });
   });
 
-  it("lit le 1er cycle sans se laisser happer par un « 2e cycle » plus loin", () => {
+  it("n'émet RIEN quand la prose autorise les DEUX cycles", () => {
+    // Défaut réel, attrapé en relisant les 149 contraintes émises par une
+    // première version : cette prose autorise le cycle supérieur ET le 1er
+    // cycle. Émettre « 1er cycle » rejetterait les cours de cycle supérieur
+    // que le bloc permet explicitement — une contrainte fausse est pire que
+    // pas de contrainte, c'est toute la règle de ce module.
+    expect(
+      lireContrainte([
+        "Cours de cycle supérieurs d'autres disciplines ou d'autres universités ou cours " +
+          "de 1er cycle de sigle MAT.",
+      ]),
+    ).toBeNull();
+  });
+
+  it("lit le 1er cycle quand la prose ne parle que de lui", () => {
     expect(
       lireContrainte([
         "et/ou un maximum de 6 crédits de cours de 1er cycle de sigle ACT, MAT ou STT, " +

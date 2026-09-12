@@ -167,6 +167,12 @@
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "TRA"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que TRA."
       ]

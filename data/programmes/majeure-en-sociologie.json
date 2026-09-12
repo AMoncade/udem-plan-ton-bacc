@@ -175,6 +175,12 @@
       "regleBrut": "Choix - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "sigle",
+        "exclus": [
+          "SOL"
+        ]
+      },
       "notes": [
         "Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que le sigle SOL."
       ]

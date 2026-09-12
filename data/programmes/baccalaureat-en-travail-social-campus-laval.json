@@ -266,6 +266,13 @@
       "regleBrut": "Choix - Maximum 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "renvoiBlocs",
+        "blocs": [
+          "77Z",
+          "77Y"
+        ]
+      },
       "notes": [
         "Cours au choix du bloc 77Z possible si les 3 crédits du bloc 77Y ne sont pas complétés."
       ]

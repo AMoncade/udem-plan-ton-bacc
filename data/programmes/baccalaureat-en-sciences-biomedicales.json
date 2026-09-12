@@ -240,6 +240,9 @@
       "regleBrut": "Choix - Maximum 6 crédits.",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "autorisation"
+      },
       "notes": [
         "- orientation générale : de 0 à 6 crédits; - orientation pharmacologie et physiologie : de 0 à 3 crédits; - orientation neurosciences : de 0 à 3 crédits; - orientation sciences de l'audition et du langage : de 0 à 3 crédits. Durant les deux premières années d'études dans le programme, l'inscription à des cours au choix doit être approuvée."
       ]
@@ -544,6 +547,12 @@
       "regleBrut": "Option- Maximum 15 crédits",
       "cours": [],
       "contenuOuvert": true,
+      "contrainteContenu": {
+        "genre": "renvoiBlocs",
+        "blocs": [
+          "74W"
+        ]
+      },
       "notes": [
         "- cheminement régulier : 0 crédit; - cheminement honor : 15 crédits (ou avoir suivi 12 crédits dans le bloc 74W)."
       ]
