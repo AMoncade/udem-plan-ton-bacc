@@ -16,7 +16,7 @@
   "blocs": [
     {
       "id": "01A",
-      "cle": "01/01A",
+      "cle": "01/01A — Préparation à la pièce maitresse",
       "segment": "01",
       "nom": "Préparation à la pièce maitresse",
       "regle": {
@@ -35,7 +35,7 @@
     },
     {
       "id": "01B",
-      "cle": "01/01B",
+      "cle": "01/01B — Pièce maitresse",
       "segment": "01",
       "nom": "Pièce maitresse",
       "regle": {
@@ -58,10 +58,10 @@
       ]
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C1A",
+      "cle": "70/70C1A",
       "segment": "70",
-      "nom": "1A",
+      "nom": "",
       "regle": {
         "type": "obligatoire",
         "bornes": {
@@ -84,10 +84,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C1B",
+      "cle": "70/70C1B",
       "segment": "70",
-      "nom": "1B",
+      "nom": "",
       "regle": {
         "type": "option",
         "bornes": {
@@ -122,10 +122,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C2A",
+      "cle": "70/70C2A — Enjeux institutionnels et politiques",
       "segment": "70",
-      "nom": "2A Enjeux institutionnels et politiques",
+      "nom": "Enjeux institutionnels et politiques",
       "regle": {
         "type": "option",
         "bornes": {
@@ -146,10 +146,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C2B",
+      "cle": "70/70C2B — Gestion des établissements",
       "segment": "70",
-      "nom": "2B Gestion des établissements",
+      "nom": "Gestion des établissements",
       "regle": {
         "type": "option",
         "bornes": {
@@ -170,10 +170,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C2C",
+      "cle": "70/70C2C — Approfondissement",
       "segment": "70",
-      "nom": "2C Approfondissement",
+      "nom": "Approfondissement",
       "regle": {
         "type": "option",
         "bornes": {

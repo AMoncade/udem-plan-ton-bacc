@@ -26,7 +26,7 @@
   "blocs": [
     {
       "id": "70A",
-      "cle": "70/70A",
+      "cle": "70/70A — Formation en linguistique fondamentale",
       "segment": "70",
       "nom": "Formation en linguistique fondamentale",
       "regle": {
@@ -48,7 +48,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Formation complémentaire en linguistique",
       "segment": "70",
       "nom": "Formation complémentaire en linguistique",
       "regle": {
@@ -75,7 +75,7 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Compléments de formation en linguistique informatique et appliquée",
       "segment": "70",
       "nom": "Compléments de formation en linguistique informatique et appliquée",
       "regle": {
@@ -99,12 +99,15 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Compléments de formation en sociolinguistique",
       "segment": "70",
       "nom": "Compléments de formation en sociolinguistique",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 3 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
       },
       "regleBrut": "Option ‐ Maximum 3 crédits.",
       "cours": [
@@ -117,12 +120,15 @@
     },
     {
       "id": "70E",
-      "cle": "70/70E",
+      "cle": "70/70E — Compléments de formation en psycho-neurolinguistique",
       "segment": "70",
       "nom": "Compléments de formation en psycho‐neurolinguistique",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 3 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
       },
       "regleBrut": "Option ‐ Maximum 3 crédits.",
       "cours": [
@@ -138,12 +144,15 @@
     },
     {
       "id": "70F",
-      "cle": "70/70F",
+      "cle": "70/70F — Cours complémentaires en linguistique",
       "segment": "70",
       "nom": "Cours complémentaires en linguistique",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 6 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
       },
       "regleBrut": "Option ‐ Maximum 6 crédits.",
       "cours": [
@@ -169,12 +178,15 @@
     },
     {
       "id": "70G",
-      "cle": "70/70G",
+      "cle": "70/70G — Recherche et mémoire",
       "segment": "70",
       "nom": "Recherche et mémoire",
       "regle": {
-        "type": "inconnu",
-        "brut": "Obligatoire ‐ 27 crédits."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 27,
+          "max": 27
+        }
       },
       "regleBrut": "Obligatoire ‐ 27 crédits.",
       "cours": [

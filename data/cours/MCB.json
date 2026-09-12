@@ -18,5 +18,89 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mcb-1979/",
     "scrapeISO": "2026-09-11T11:51:59.375Z"
+  },
+  "MCB 6031": {
+    "code": "MCB 6031",
+    "titre": "Immunologie fondamentale",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Génétique et analyse moléculaire de la réponse immunitaire. Analyse moléculaire de la diversité des immunoglobulines. Immunophysiologie et mécanismes de régulation des cellules immunocompétentes. Tolérance et auto-immunité. Immunité naturelle.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mcb-6031/",
+    "scrapeISO": "2026-09-11T17:37:33.805Z"
+  },
+  "MCB 6210": {
+    "code": "MCB 6210",
+    "titre": "Microorganismes-pathogénicité, immunité",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Facteurs favorisant l'initiation de l'infection et l'envahissement par les microorganismes. Mécanismes de défense de l'hôte. Relations hôtes-parasite (bactéries, champignons et protozoaires).",
+    "prealablesBrut": "MCB2986 OU MMD1129",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCB 2986"
+        },
+        {
+          "genre": "cours",
+          "code": "MMD 1129"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mcb-6210/",
+    "scrapeISO": "2026-09-11T17:37:35.797Z"
+  },
+  "MCB 2987": {
+    "code": "MCB 2987",
+    "titre": "Immunologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Éléments du système immunitaire. Immunité innée et adaptative. Récepteurs à l'antigène. Sélection clonale. Immunologie de la défense antimicrobienne. Immunopathologies. Le système immunitaire dans la transplantation d'organes et le cancer. Vaccins.",
+    "prealablesBrut": "MCB1979 ou MCB1980",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCB 1979"
+        },
+        {
+          "genre": "cours",
+          "code": "MCB 1980"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mcb-2987/",
+    "scrapeISO": "2026-09-11T17:37:52.701Z"
   }
 }

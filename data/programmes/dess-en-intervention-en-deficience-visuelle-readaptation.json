@@ -25,38 +25,44 @@
   },
   "blocs": [
     {
-      "id": "70A",
-      "cle": "70/70A",
+      "id": "70A — Formation générale",
+      "cle": "70/70A - Formation générale — Interv. en déficience visuelle",
       "segment": "70",
       "nom": "Interv. en déficience visuelle",
       "regle": {
-        "type": "inconnu",
-        "brut": "Formation générale"
+        "type": "obligatoire",
+        "bornes": {
+          "min": 10,
+          "max": 10
+        }
       },
-      "regleBrut": "Formation générale",
+      "regleBrut": "Obligatoire - 10 crédits.",
       "cours": [
         "IDV 6017",
         "IDV 6020"
       ],
       "contenuOuvert": false,
       "notes": [
-        "Obligatoire - 10 crédits."
+        "Formation générale"
       ]
     },
     {
-      "id": "70B",
-      "cle": "70/70B",
+      "id": "70B — Formation spécialisée",
+      "cle": "70/70B - Formation spécialisée — Réadaptation en déficience visuelle",
       "segment": "70",
       "nom": "Réadaptation en déficience visuelle",
       "regle": {
-        "type": "inconnu",
-        "brut": "Formation spécialisée"
+        "type": "option",
+        "bornes": {
+          "min": 20,
+          "max": 20
+        }
       },
-      "regleBrut": "Formation spécialisée",
+      "regleBrut": "Option - 20 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Option - 20 crédits."
+        "Formation spécialisée"
       ]
     }
   ],

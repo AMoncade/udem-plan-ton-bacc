@@ -14,6 +14,10 @@
  *   --limite N            ne traiter que les N premiers programmes de l'inventaire
  *   --programmes a,b,c    ne traiter que ces slugs (tout le reste est ignoré)
  *   --reprendre           sauter les programmes déjà écrits dans data/programmes/
+ *                         ET les cours déjà en fiche dans data/cours/. C'est ce
+ *                         qui rend la passe cours DÉCOUPABLE : sans ça,
+ *                         `--limite-cours N` reprend indéfiniment les N premiers
+ *                         codes de l'union (voir plus bas).
  *   --tous-les-cours      scraper les 11 888 fiches du sitemap, et pas seulement
  *                         celles citées par les programmes retenus
  *   --cours-cites         ne scraper que l'union des codes cités par les
@@ -48,7 +52,9 @@ import {
   CHEMIN_JOURNAL,
   DOSSIER_PROGRAMMES,
   RACINE_DEPOT,
+  codesSurDisque,
   ecrireCours,
+  empreinteExtracteur,
   ecrireIndex,
   ecrireJournal,
   ecrireProgramme,
@@ -92,6 +98,9 @@ interface Options {
   coursCites: boolean;
   limiteCours: number | null;
   sansCours: boolean;
+  /** Recopié depuis les options réseau : `--rafraichir` veut dire « tout
+   *  redemander », ce qui interdit à `--reprendre` de sauter quoi que ce soit. */
+  rafraichir: boolean;
 }
 
 function lireArguments(argv: string[]): Options {
@@ -140,6 +149,7 @@ function lireArguments(argv: string[]): Options {
     coursCites: fanions.has("cours-cites"),
     limiteCours: entier("limite-cours"),
     sansCours: fanions.has("sans-cours"),
+    rafraichir: fanions.has("rafraichir"),
   };
 }
 
@@ -410,6 +420,15 @@ async function principal(): Promise<void> {
     slugs = restants;
   }
 
+  // Seule une passe qui traite TOUS les programmes de l'inventaire a le droit
+  // d'estampiller l'empreinte du code sur l'index. Une passe partielle — 30
+  // programmes, ou une passe cours qui n'en traite aucun — laisserait
+  // l'empreinte affirmer que les 1 089 fichiers sortent du code courant, alors
+  // qu'elle n'en aurait régénéré qu'une poignée. Le test de fraîcheur se
+  // tairait précisément dans le cas qu'il existe pour attraper.
+  const regenereToutesLesStructures =
+    inventaire.programmes.length > 0 && slugs.length === inventaire.programmes.length;
+
   console.log(
     `\nProgrammes à traiter : ${slugs.length}` +
       (ignores.length > 0 ? ` (${ignores.length} déjà sur disque, sautés par --reprendre)` : ""),
@@ -534,10 +553,39 @@ async function principal(): Promise<void> {
         );
       }
     }
-    const total = options.limiteCours === null ? aDemander.length : Math.min(options.limiteCours, aDemander.length);
-    const retenus = aDemander.slice(0, total);
+    // REPRISE AU NIVEAU DES DONNÉES, et pas seulement du cache.
+    //
+    // `--limite-cours N` prend les N PREMIERS de `aDemander`. Sans ce filtre,
+    // découper les ~8 600 fiches en tranches ne progresse jamais : la deuxième
+    // tranche redemande exactement la première (servie par le cache, donc vite
+    // et sans requête — mais on n'avance pas d'un cours). Le cache rend la
+    // reprise gratuite en REQUÊTES ; seule cette lecture du disque la rend
+    // gratuite en TRAVAIL.
+    //
+    // Le prix à connaître : sauter un code, c'est GELER le parse qui l'a
+    // produit. Si `parsePrealables` est étendu plus tard, les fiches déjà sur
+    // disque gardent l'ancienne lecture et `--reprendre` ne la corrigera
+    // jamais. Le rattrapage est une passe SANS `--reprendre` et avec
+    // `--hors-ligne` : tout est relu depuis le cache et reparsé, zéro requête.
+    // (Vérifié le 2026-09-11 : parseur figé à c8d1bb1, 2026-09-11T03:35Z ; la
+    // plus ancienne fiche sur disque date de 11:16Z — donc aucune fiche
+    // actuelle ne traîne un parse périmé.)
+    let dejaEnFiche = 0;
+    let candidats = aDemander;
+    if (options.reprendre && !options.rafraichir) {
+      const surDisque = await codesSurDisque();
+      candidats = aDemander.filter((c) => !surDisque.has(c));
+      dejaEnFiche = aDemander.length - candidats.length;
+    }
 
-    console.log(`\nFiches de cours à traiter : ${retenus.length}`);
+    const total = options.limiteCours === null ? candidats.length : Math.min(options.limiteCours, candidats.length);
+    const retenus = candidats.slice(0, total);
+
+    console.log(
+      `\nFiches de cours à traiter : ${retenus.length}` +
+        (dejaEnFiche > 0 ? ` (${dejaEnFiche} déjà en fiche, sautées par --reprendre)` : "") +
+        (retenus.length < candidats.length ? ` — ${candidats.length - retenus.length} restantes après cette tranche` : ""),
+    );
     for (const [i, code] of retenus.entries()) {
       const url = `${RACINE}/cours-et-horaires/cours/${slugUrl(code)}/`;
       const page = await recuperer(url);
@@ -591,7 +639,11 @@ async function principal(): Promise<void> {
   for (const code of ecrits.sansSujet) {
     journal.erreur(code, "code non canonique : sujetDeCode() n'en tire aucun sujet, fiche non écrite");
   }
-  const index = await ecrireIndex(fiches, scrapeISO);
+  const index = await ecrireIndex(
+    fiches,
+    scrapeISO,
+    regenereToutesLesStructures ? await empreinteExtracteur() : null,
+  );
   for (const p of prealablesNonParses) {
     journal.info(p.code, `ligne de préalables non réduite par parsePrealables : ${JSON.stringify(p.brut)}`);
   }

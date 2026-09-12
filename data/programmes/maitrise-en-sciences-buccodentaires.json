@@ -33,8 +33,11 @@
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option – minimum 3 crédits et maximum 5 crédits"
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 5
+        }
       },
       "regleBrut": "Option – minimum 3 crédits et maximum 5 crédits",
       "cours": [
@@ -48,7 +51,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Développement professionnel",
       "segment": "70",
       "nom": "Développement professionnel",
       "regle": {
@@ -80,6 +83,7 @@
       "regleBrut": "Choix – Maximum 5 crédits",
       "cours": [],
       "contenuOuvert": false,
+      "videConstate": true,
       "notes": []
     },
     {

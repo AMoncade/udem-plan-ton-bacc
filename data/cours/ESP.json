@@ -180,5 +180,137 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-1907/",
     "scrapeISO": "2026-09-11T11:35:03.871Z"
+  },
+  "ESP 1215": {
+    "code": "ESP 1215",
+    "titre": "Civilisation espagnole",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des principaux faits de la civilisation espagnole de la préhistoire à nos jours. Remarques: En français.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-1215/",
+    "scrapeISO": "2026-09-11T17:36:37.695Z"
+  },
+  "ESP 1317": {
+    "code": "ESP 1317",
+    "titre": "Civilisation hispano-américaine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des grands traits des civilisations des pays de l'Amérique espagnole. Les mouvements idéologiques et culturels qui ont eu une influence capitale sur ces pays. Remarques: En français.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-1317/",
+    "scrapeISO": "2026-09-11T17:36:37.998Z"
+  },
+  "ESP 1327": {
+    "code": "ESP 1327",
+    "titre": "Cultures latino-américaines",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude approfondie des aspects culturels spécifiques aux aires géographiques latino-américaines.",
+    "prealablesBrut": "ESP1906 OU ESP2510 OU ESP2525 OU ESP2536",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1906"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-1327/",
+    "scrapeISO": "2026-09-11T17:36:41.061Z"
+  },
+  "ESP 2400": {
+    "code": "ESP 2400",
+    "titre": "Cinéma et littératures hispaniques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les rapports entre cinéma et littérature dans la production culturelle espagnole et hispano-américaine. Remarques: En français.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2400/",
+    "scrapeISO": "2026-09-11T17:44:09.140Z"
+  },
+  "ESP 3335": {
+    "code": "ESP 3335",
+    "titre": "Cinéma latino-américain",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Études des courants majeurs du cinéma latino-américain, de 1960 à aujourd'hui. Analyse des écoles et mouvements, des récits et du langage cinématographiques, et mise en dialogue avec l'évolution sociohistorique de la région. Cours donné en espagnol.",
+    "prealablesBrut": "ESP1327 et ESP2400",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1327"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2400"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3335/",
+    "scrapeISO": "2026-09-11T17:44:11.214Z"
   }
 }

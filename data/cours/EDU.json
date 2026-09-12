@@ -1,0 +1,575 @@
+{
+  "EDU 1002": {
+    "code": "EDU 1002",
+    "titre": "Stage d'initiation professionnelle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Sensibilisation au rôle de l'enseignant. Exploration des composantes de la classe hétérogène et de l'environnement scolaire. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "EDU1002 et ETA1002 et PPA1363",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-1002/",
+    "scrapeISO": "2026-09-11T18:51:49.063Z"
+  },
+  "EDU 2002": {
+    "code": "EDU 2002",
+    "titre": "Stage en éducation au préscolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement d'habiletés d'intervention et d'organisation d'un environnement éducatif auprès d'un groupe d'élèves au préscolaire. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU1002 et ETA1002 et PPA1300",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 1002"
+        },
+        {
+          "genre": "cours",
+          "code": "ETA 1002"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 1300"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU2002 et PPA2101",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-2002/",
+    "scrapeISO": "2026-09-11T18:51:50.188Z"
+  },
+  "EDU 3002": {
+    "code": "EDU 3002",
+    "titre": "Stage d'enseignement au primaire",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement d'habiletés d'enseignement et de gestion de classe dans une perspective différenciée. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU2002",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 2002"
+    },
+    "concomitantsBrut": "EDU3002 et PPA31052",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3002/",
+    "scrapeISO": "2026-09-11T18:51:54.941Z"
+  },
+  "EDU 4002": {
+    "code": "EDU 4002",
+    "titre": "Stage d'intégration à la profession",
+    "credits": 9,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Intégration dans une équipe-école et prise en charge d'une classe. Prise en compte des différences. Développement de l'autonomie professionnelle. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU3002 et avoir réussi 106 crédits du programme 1-820-1-0 ou 1-820-1-9",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU3002 et avoir réussi 106 crédits du programme 1-820-1-0 ou 1-820-1-9"
+    },
+    "concomitantsBrut": "EDU4002 et EDU4211P et PPA4365",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4002/",
+    "scrapeISO": "2026-09-11T18:51:59.288Z"
+  },
+  "EDU 4211P": {
+    "code": "EDU 4211P",
+    "titre": "Réalisation d’un projet pédagogique en EPEP",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Réalisation d’un projet pédagogique en EPEP s’apparentant à une démarche de recherche-expérimentation visant à résoudre une problématique vécue dans son enseignement auprès d’élèves. Participation au colloque des finissants. Remarque : éducation préscolaire et enseignement primaire (EPEP)",
+    "prealablesBrut": "avoir réussi 106 crédits du 1-820-1-0 ou 1-820-1-9",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir réussi 106 crédits du 1-820-1-0 ou 1-820-1-9"
+    },
+    "concomitantsBrut": "EDU 4211P et EDU4002 et PPA4365",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4211p/",
+    "scrapeISO": "2026-09-11T18:52:00.245Z"
+  },
+  "EDU 1012": {
+    "code": "EDU 1012",
+    "titre": "Stage de familiarisation à l'école secondaire",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Familiarisation à l'école secondaire et introduction à la fonction enseignante. Observation des adolescents à l'école. Entrevue avec des intervenants. Étude du projet éducatif. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "EDU 1012 et ETA 1002",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-1012/",
+    "scrapeISO": "2026-09-11T18:53:57.155Z"
+  },
+  "EDU 2212": {
+    "code": "EDU 2212",
+    "titre": "Stage d'initiation à l'enseignement au secondaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Observation et analyse des différentes facettes de la tâche enseignante. Prise en charge progressive de périodes d'enseignement. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU1012 et ETA 1002",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 1012"
+        },
+        {
+          "genre": "cours",
+          "code": "ETA 1002"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU2212 et PPA2000",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-2212/",
+    "scrapeISO": "2026-09-11T18:54:02.017Z"
+  },
+  "EDU 3212": {
+    "code": "EDU 3212",
+    "titre": "Stage d’enseignement au secondaire",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement d'habiletés d'enseignement. Intervention en classe et réflexion sur les pratiques. Accent mis sur la problématique de la gestion de la classe en vue de favoriser les apprentissages des élèves. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU2212 et PPA3120",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 2212"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 3120"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU3212 et ETA 3346",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3212/",
+    "scrapeISO": "2026-09-11T18:54:02.283Z"
+  },
+  "EDU 4019": {
+    "code": "EDU 4019",
+    "titre": "Stage d'enseignement en CCQ au secondaire",
+    "credits": 10,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Intégration dans une équipe-école et prise en charge d’une tâche pleine en enseignement de la culture et citoyenneté québécoise au secondaire. Développement de l'autonomie professionnelle par la pratique réflexive. Remarque : culture et citoyenneté québécoises (CCQ) Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU3212 et 111 crédits du programme",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU3212 et 111 crédits du programme"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4019/",
+    "scrapeISO": "2026-09-11T18:54:05.665Z"
+  },
+  "EDU 1104": {
+    "code": "EDU 1104",
+    "titre": "Stage 1: familiarisation en EPS au primaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Familiarisation et assistanat en enseignement de l’éducation physique et à la santé (EPS) au primaire. Introduction à la fonction enseignante au primaire. Observation. Intégration progressive et prise en charge graduelle. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "KIN1712 et PPA1100",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "KIN 1712"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 1100"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU1104 et ETA1002 et KIN1408 et PPA2102",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-1104/",
+    "scrapeISO": "2026-09-11T18:55:10.891Z"
+  },
+  "EDU 2104": {
+    "code": "EDU 2104",
+    "titre": "Stage 2: initiation en EPS au secondaire",
+    "credits": 5,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Initiation à l’enseignement de l'éducation physique et à la santé (EPS) au secondaire. Appropriation de la gestion de classe, de l’intervention en éducation physique et à la santé au secondaire. Réflexion sur ses pratiques. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU1104 et ETA1002 et DID2000 et DID2107",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 1104"
+        },
+        {
+          "genre": "cours",
+          "code": "ETA 1002"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 2000"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 2107"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU2104 et KIN1402 et PPA3310",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-2104/",
+    "scrapeISO": "2026-09-11T18:55:13.816Z"
+  },
+  "EDU 3104": {
+    "code": "EDU 3104",
+    "titre": "Stage 3: enseignement en EPS",
+    "credits": 5,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Enseignement de l'éducation physique et à la santé (EPS) au primaire ou au secondaire. Gestion de classe, interventions et réflexion sur les pratiques enseignantes en éducation physique et à la santé au primaire ou au secondaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3104/",
+    "scrapeISO": "2026-09-11T18:55:16.427Z"
+  },
+  "EDU 4104": {
+    "code": "EDU 4104",
+    "titre": "Stage 4: intégration professionnelle en EPS",
+    "credits": 7,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Ce stage permet à l'étudiant d'expérimenter l'enseignement de l'éducation physique et à la santé (EPS) et ses diverses fonctions, de développer des compétences professionnelles et vise à l'intégration à la profession de même que de l'autonomie professionnelle. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU3104 et avoir réussi 107 crédits de 1-822-1-0",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU3104 et avoir réussi 107 crédits de 1-822-1-0"
+    },
+    "concomitantsBrut": "EDU4104 et EDU4314 et KIN4101 et KIN49111",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4104/",
+    "scrapeISO": "2026-09-11T18:55:19.091Z"
+  },
+  "EDU 4314": {
+    "code": "EDU 4314",
+    "titre": "Séminaire d'intégration en EPS",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Préparation à l'insertion professionnelle. Partage d'événements marquants, identifiés dans les cours et les stages et rédaction d'un bilan réflexif sur l'enseignement de l'éducation physique et à la santé (EPS). Perspectives de développement professionnel.",
+    "prealablesBrut": "KIN3043",
+    "prealables": {
+      "genre": "cours",
+      "code": "KIN 3043"
+    },
+    "concomitantsBrut": "EDU4314 et EDU4104 et KIN49111",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4314/",
+    "scrapeISO": "2026-09-11T18:55:19.379Z"
+  },
+  "EDU 4016": {
+    "code": "EDU 4016",
+    "titre": "Stage d'enseignement univers social au secondaire",
+    "credits": 10,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Intégration dans une équipe-école et prise en charge d'une tâche pleine d'enseignement de l'univers social du secondaire. Développement de l'autonomie professionnelle par la pratique réflexive. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "(EDU3012 ou EDU3212 ou EDU3212e) et 111 crédurs du programme 1-841-1-0",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "(EDU3012 ou EDU3212 ou EDU3212e) et 111 crédurs du programme 1-841-1-0"
+    },
+    "concomitantsBrut": "EDU4016 et DID4297",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4016/",
+    "scrapeISO": "2026-09-11T18:56:31.753Z"
+  },
+  "EDU 3333": {
+    "code": "EDU 3333",
+    "titre": "Questions spécifiques en sciences de l'éducation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Étude ponctuelle et approfondie des enjeux actuels en sciences de l'éducation. Analyse des préoccupations sociétales et éducatives contemporaines. Exploration de nouveaux thèmes ou enjeux émergents dans le champ de l'éducation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3333/",
+    "scrapeISO": "2026-09-11T18:57:47.059Z"
+  },
+  "EDU 4444": {
+    "code": "EDU 4444",
+    "titre": "Enjeux actuels en sciences de l'éducation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Étude de thèmes spécialisés ou de questions spécifiques en sciences de l'éducation. Analyse de questions ou de thèmes d'ordre conceptuel, théorique ou méthodologique. Exploration de nouveaux thèmes liés aux avancées et aux besoins du milieu scolaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4444/",
+    "scrapeISO": "2026-09-11T18:57:47.343Z"
+  },
+  "EDU 3213": {
+    "code": "EDU 3213",
+    "titre": "Stage d’enseignement des maths au secondaire 1",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement d’habiletés d’enseignement en mathématiques au secondaire. Intervention en classe et réflexion sur les pratiques. Accent mis sur la problématique de la gestion de la classe en vue de favoriser les apprentissages des élèves en maths. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU2212",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 2212"
+    },
+    "concomitantsBrut": "EDU3213 et DID3102",
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3213/",
+    "scrapeISO": "2026-09-11T18:57:55.124Z"
+  },
+  "EDU 4013": {
+    "code": "EDU 4013",
+    "titre": "Stage d'enseignement des maths au secondaire 2",
+    "credits": 10,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Intégration dans une équipe-école et prise en charge d'une tâche pleine d'enseignement des mathématiques du secondaire. Développement de l'autonomie professionnelle par la pratique réflexive.",
+    "prealablesBrut": "EDU3213",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 3213"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4013/",
+    "scrapeISO": "2026-09-11T18:57:57.543Z"
+  },
+  "EDU 3218": {
+    "code": "EDU 3218",
+    "titre": "Stage d’enseignement des ST au secondaire 1",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement d'habiletés d'enseignement en sciences et technologie au secondaire. Intervention en classe et réflexion sur les pratiques. Accent mis sur la problématique de la gestion de classe en vue de favoriser les apprentissages des élèves en ST. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU2212",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 2212"
+    },
+    "concomitantsBrut": "DID3416",
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3218/",
+    "scrapeISO": "2026-09-11T18:59:21.931Z"
+  },
+  "EDU 4014": {
+    "code": "EDU 4014",
+    "titre": "Stage d'enseignement des ST au secondaire",
+    "credits": 10,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Intégration dans une équipe-école et prise en charge d'une tâche pleine d'enseignement des sciences et technologies (ST) du secondaire. Développement de l'autonomie professionnelle par la pratique réflexive. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU3212 et 111 crédits du programme 1-828-1-0",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU3212 et 111 crédits du programme 1-828-1-0"
+    },
+    "concomitantsBrut": "EDU4014 et DID4295",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4014/",
+    "scrapeISO": "2026-09-11T18:59:23.398Z"
+  },
+  "EDU 4015": {
+    "code": "EDU 4015",
+    "titre": "Stage d'enseignement du français au secondaire",
+    "credits": 10,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Intégration dans une équipe-école et prise en charge d'une tâche pleine d'enseignement du français du secondaire. Développement de l'autonomie professionnelle par la pratique réflexive. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "(EDU3012 ou EDU3212 ou EDU3212E) et 111 crédits du programme 1-835-1-5",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "(EDU3012 ou EDU3212 ou EDU3212E) et 111 crédits du programme 1-835-1-5"
+    },
+    "concomitantsBrut": "EDU4015 et DID4212",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4015/",
+    "scrapeISO": "2026-09-11T19:00:26.649Z"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "LAT 1111": {
+    "code": "LAT 1111",
+    "titre": "Initiation à la langue latine 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours intensif de latin classique. Principales structures morphologiques et syntaxiques de la langue. Thèmes, versions et lecture de textes simplifiés. Remarques: Travaux pratiques en ateliers. Sans aucun préalable.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-1111/",
+    "scrapeISO": "2026-09-11T17:31:07.723Z"
+  },
+  "LAT 1121": {
+    "code": "LAT 1121",
+    "titre": "Initiation à la langue latine 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Achèvement de l'apprentissage grammatical et syntaxique permettant l'accès à des textes simples et à se servir à bon escient d'éditions bilingues. Thèmes et versions. Lecture de textes simples. Remarques: Travaux pratiques en ateliers.",
+    "prealablesBrut": "LAT1111",
+    "prealables": {
+      "genre": "cours",
+      "code": "LAT 1111"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-1121/",
+    "scrapeISO": "2026-09-11T17:31:10.513Z"
+  }
+}

@@ -22,7 +22,7 @@
   "blocs": [
     {
       "id": "01A",
-      "cle": "01/01A",
+      "cle": "01/01A — Tronc commun",
       "segment": "01",
       "nom": "Tronc commun",
       "regle": {
@@ -44,7 +44,7 @@
     },
     {
       "id": "01B",
-      "cle": "01/01B",
+      "cle": "01/01B — Tronc commun",
       "segment": "01",
       "nom": "Tronc commun",
       "regle": {
@@ -65,7 +65,7 @@
     },
     {
       "id": "01C",
-      "cle": "01/01C",
+      "cle": "01/01C — Tronc commun",
       "segment": "01",
       "nom": "Tronc commun",
       "regle": {
@@ -84,7 +84,7 @@
     },
     {
       "id": "01D",
-      "cle": "01/01D",
+      "cle": "01/01D — Tronc commun - Recherche et thèse",
       "segment": "01",
       "nom": "Tronc commun - Recherche et thèse",
       "regle": {
@@ -104,7 +104,7 @@
     },
     {
       "id": "70A",
-      "cle": "70/70A",
+      "cle": "70/70A — Obligatoire",
       "segment": "70",
       "nom": "Obligatoire",
       "regle": {
@@ -123,12 +123,15 @@
     },
     {
       "id": "71A",
-      "cle": "71/71A",
+      "cle": "71/71A — - Option",
       "segment": "71",
       "nom": "- Option",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
       },
       "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits.",
       "cours": [
@@ -141,12 +144,15 @@
     },
     {
       "id": "72A",
-      "cle": "72/72A",
+      "cle": "72/72A — - Option",
       "segment": "72",
       "nom": "- Option",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
       },
       "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
       "cours": [
@@ -158,12 +164,15 @@
     },
     {
       "id": "73A",
-      "cle": "73/73A",
+      "cle": "73/73A — - Option",
       "segment": "73",
       "nom": "- Option",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
       },
       "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
       "cours": [
@@ -175,12 +184,15 @@
     },
     {
       "id": "74A",
-      "cle": "74/74A",
+      "cle": "74/74A — - Option",
       "segment": "74",
       "nom": "- Option",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
       },
       "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
       "cours": [
@@ -193,12 +205,15 @@
     },
     {
       "id": "75A",
-      "cle": "75/75A",
+      "cle": "75/75A — - Option",
       "segment": "75",
       "nom": "- Option",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
       },
       "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
       "cours": [
@@ -209,12 +224,15 @@
     },
     {
       "id": "76A",
-      "cle": "76/76A",
+      "cle": "76/76A — - Option",
       "segment": "76",
       "nom": "- Option",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - Minimum de 2 crédits, maximum de 6 crédits"
+        "type": "option",
+        "bornes": {
+          "min": 2,
+          "max": 6
+        }
       },
       "regleBrut": "Option - Minimum de 2 crédits, maximum de 6 crédits",
       "cours": [

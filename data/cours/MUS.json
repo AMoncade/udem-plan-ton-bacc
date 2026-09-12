@@ -678,5 +678,48 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-2134/",
     "scrapeISO": "2026-09-11T11:39:53.417Z"
+  },
+  "MUS 2327": {
+    "code": "MUS 2327",
+    "titre": "Création sonore jeux vidéo 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Études théoriques de la création sonore et de la composition musicale pour le jeu vidéo. Histoire, mécanismes de l'industrie, modes de production, outils employés, analyse de jeux et démonstrations de situations pratiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-2327/",
+    "scrapeISO": "2026-09-11T17:46:27.589Z"
+  },
+  "MUS 2328": {
+    "code": "MUS 2328",
+    "titre": "Création sonore jeux vidéo 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Conception et réalisation d'un environnement sonore et musical dynamique pour un projet de jeu vidéo à l'aide de l'intergiciel Wwise. Sonorisation d'une cinématique de jeu vidéo. Préparation d'un portfolio s'adressant aux entreprises du jeu vidéo.",
+    "prealablesBrut": "MUS2327",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUS 2327"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-2328/",
+    "scrapeISO": "2026-09-11T17:46:29.657Z"
   }
 }

@@ -16,7 +16,7 @@
   "blocs": [
     {
       "id": "01A",
-      "cle": "01/01A",
+      "cle": "01/01A — Initiation à la profession enseignante",
       "segment": "01",
       "nom": "Initiation à la profession enseignante",
       "regle": {
@@ -40,7 +40,7 @@
     },
     {
       "id": "01B",
-      "cle": "01/01B",
+      "cle": "01/01B — Intervention éducative",
       "segment": "01",
       "nom": "Intervention éducative",
       "regle": {
@@ -62,7 +62,7 @@
     },
     {
       "id": "01C",
-      "cle": "01/01C",
+      "cle": "01/01C — Équité, diversité, inclusion",
       "segment": "01",
       "nom": "Équité, diversité, inclusion",
       "regle": {
@@ -83,12 +83,15 @@
     },
     {
       "id": "01D",
-      "cle": "01/01D",
+      "cle": "01/01D — Complément de formation",
       "segment": "01",
       "nom": "Complément de formation",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option – min. 3.0 crédits, max. 9.0 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
       },
       "regleBrut": "Option – min. 3.0 crédits, max. 9.0 crédits.",
       "cours": [
@@ -107,7 +110,7 @@
     },
     {
       "id": "01E",
-      "cle": "01/01E",
+      "cle": "01/01E — Stages",
       "segment": "01",
       "nom": "Stages",
       "regle": {
@@ -129,7 +132,7 @@
     },
     {
       "id": "70A",
-      "cle": "70/70A",
+      "cle": "70/70A — Didactique et enseignement des sciences et technologies",
       "segment": "70",
       "nom": "Didactique et enseignement des sciences et technologies",
       "regle": {
@@ -155,7 +158,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Formation disciplinaire obligatoire",
       "segment": "70",
       "nom": "Formation disciplinaire obligatoire",
       "regle": {
@@ -184,12 +187,15 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Complément de formation disciplinaire",
       "segment": "70",
       "nom": "Complément de formation disciplinaire",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option – min. 3 max. 9 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 9
+        }
       },
       "regleBrut": "Option – min. 3 max. 9 crédits.",
       "cours": [

@@ -33,5 +33,131 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6003/",
     "scrapeISO": "2026-09-11T11:52:34.647Z"
+  },
+  "BIN 1002": {
+    "code": "BIN 1002",
+    "titre": "Intégration biosciences et informatique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux problèmes et méthodes de recherche en bio-informatique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-1002/",
+    "scrapeISO": "2026-09-11T17:33:59.628Z"
+  },
+  "BIN 3002": {
+    "code": "BIN 3002",
+    "titre": "Intégration biosciences et informatique 2",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Partie 1: Bases de données biologiques: conception et création; unification de la terminologie biologique. Partie 2 : Survol des modèles d'apprentissage machine utilisés en bio-informatique.",
+    "prealablesBrut": "BCM2502 ET IFT2015 et (BIO2041 ou MAT1978 ou STT1700)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 2502"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 2015"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "BIO 2041"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            },
+            {
+              "genre": "cours",
+              "code": "STT 1700"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-3002/",
+    "scrapeISO": "2026-09-11T17:34:01.663Z"
+  },
+  "BIN 3005": {
+    "code": "BIN 3005",
+    "titre": "Stage en laboratoire de recherche",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche dans un laboratoire dans les domaines de la biochimie ou de l'informatique portant sur l'application de l'informatique en biosciences. Inclut la rédaction d'un rapport de recherche et une présentation orale lors d'un mini ymposium.",
+    "prealablesBrut": "BCM2003 ET IFT2015 et (BIO2041 ou MAT1978 ou STT1700)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 2003"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 2015"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "BIO 2041"
+            },
+            {
+              "genre": "cours",
+              "code": "MAT 1978"
+            },
+            {
+              "genre": "cours",
+              "code": "STT 1700"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-3005/",
+    "scrapeISO": "2026-09-11T17:34:03.641Z"
   }
 }

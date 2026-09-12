@@ -1,0 +1,747 @@
+{
+  "DEI 1000": {
+    "code": "DEI 1000",
+    "titre": "Introduction au design d'intérieur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Définition; antécédents historiques ; rapports avec les disciplines connexes; introduction aux principaux concepts de la discipline, aux procédés et méthodes de sa pratique et aux champs de recherche.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1000/",
+    "scrapeISO": "2026-09-11T17:54:01.510Z"
+  },
+  "DEI 1005": {
+    "code": "DEI 1005",
+    "titre": "Méthodologies et processus",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Cueillette de données, relations entre les variables, traitement de l'information. Matrice d'interprétation. Notion de besoin en relation avec les activités dans l'espace, les particularités d'un contexte et sa métamorphose formelle.",
+    "prealablesBrut": "DEI1000 ET DEI1018",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 1018"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1005/",
+    "scrapeISO": "2026-09-11T17:54:03.515Z"
+  },
+  "DEI 1511": {
+    "code": "DEI 1511",
+    "titre": "Histoire du design d'intérieur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Examen critique des idées et réalisations significatives de l'histoire du design d'intérieur, discipline complexe au croisement de l'architecture, des arts décoratifs et du design des objets.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1511/",
+    "scrapeISO": "2026-09-11T17:54:05.885Z"
+  },
+  "DEI 2001": {
+    "code": "DEI 2001",
+    "titre": "Espace et individu",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Notions de base en psychologie de l'environnement : analyse et interprétation des besoins chez certaines catégories d'utilisateurs; discours et réflexions théoriques quant aux effets psychiques de l'environnement sur les comportements humains.",
+    "prealablesBrut": "DEI1005 ET DEI1019",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 1005"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 1019"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2001/",
+    "scrapeISO": "2026-09-11T17:54:07.956Z"
+  },
+  "DEI 2002": {
+    "code": "DEI 2002",
+    "titre": "Fondements conceptuels",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Épistémologie du design; cohérence méthodologique et fluidité du passage de la théorie à la pratique; modes de conception : de l'esprit pragmatique à l'esprit intuitif; complexité et modélisation; études de programmation sur des segments spécialisés.",
+    "prealablesBrut": "DEI3555 et DEI2100",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 3555"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 2100"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2002/",
+    "scrapeISO": "2026-09-11T17:54:09.882Z"
+  },
+  "DEI 3555": {
+    "code": "DEI 3555",
+    "titre": "Intention et éthique en design",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Origines des disciplines du design sur le plan théorique : archéologie, langage, architecture, philosophie. Contextes sociaux et intellectuels de la pratique du design d'intérieur, enracinés dans un sens d'éthique basé sur une intention signifiante.",
+    "prealablesBrut": "DEI2001 et DEI2010",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 2001"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 2010"
+        }
+      ]
+    },
+    "concomitantsBrut": "DEI2100 et DEI3555",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-3555/",
+    "scrapeISO": "2026-09-11T17:54:12.015Z"
+  },
+  "DEI 1012": {
+    "code": "DEI 1012",
+    "titre": "Forme et couleur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Perception et manipulation des formes, textures et couleurs. Développement, au moyen d'exercices centrés sur la forme et la couleur, des capacités d'observation, d'imagination et d'application de l'esthétique. Remarques: Ce cours comporte une part importante d'enseignements individuels et pratiques qui le rapproche de la pédagogie en atelier. Les étudiants travaillent en laboratoire sur des exercices qui valident les divers apprentissages et sur un projet final qui confirme leur maîtrise de la forme et de la couleur.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1012/",
+    "scrapeISO": "2026-09-11T17:54:17.800Z"
+  },
+  "DEI 1018": {
+    "code": "DEI 1018",
+    "titre": "Atelier 1 en design d'intérieur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Principes fondamentaux du processus de design d'intérieur. Éléments structurants de l'espace intérieur et leur représentation. Conduite du projet comme processus de transcription et d'évolution de l'idée dans un langage formel propre au design. Remarques: Travail en atelier nécessitant des espaces individuels et des ressources techniques (laboratoires et équipements spécialisés) pour la conception le prototypage et l'évaluation des projets. L'enseignement est individualisé et implique un grand usage de matériaux divers : papier, carton, bois, plâtre, plasticine, plastique, photographie et infographie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1018/",
+    "scrapeISO": "2026-09-11T17:54:19.945Z"
+  },
+  "DEI 1019": {
+    "code": "DEI 1019",
+    "titre": "Atelier 2 en design d'intérieur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Processus de conception des aménagements intérieurs domestiques; expérience de vie et les activités humaines. Facteurs humains, composition spatiale et vocabulaire formel, réponse à des besoins des usagers. Remarques: Travail en atelier nécessitant des espaces individuels et des ressources techniques (laboratoires et équipements spécialisés) pour la conception, le prototypage et l'évaluation des projets. L'enseignement est individualisé et implique un grand usage de matériaux divers : papier, carton, bois , plâtre, plasticine, plastique photographie et infographie.",
+    "prealablesBrut": "DEI1000 ET DEI1018",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 1018"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1019/",
+    "scrapeISO": "2026-09-11T17:54:21.387Z"
+  },
+  "DEI 2010": {
+    "code": "DEI 2010",
+    "titre": "Atelier-séminaire 3 en design d'intérieur",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Cet atelier-séminaire porte sur l'apprentissage du projet de design d'intérieur touchant des thématiques variables et pertinentes aux pratiques contemporaines. Application des connaissances relatives aux théories de l'usager et de ses comportements.",
+    "prealablesBrut": "DEI1005 et DEI1019",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 1005"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 1019"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2010/",
+    "scrapeISO": "2026-09-11T17:54:39.836Z"
+  },
+  "DEI 2100": {
+    "code": "DEI 2100",
+    "titre": "Atelier 4 en design d'intérieur",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Aménagement intérieur des espaces de travail : évaluation contextuelle, détermination de critères de performance, organisation fonctionnelle et mise en scène formelle des éléments de l'analyse et de la conjoncture. Nouvelles technologies. Remarques: Travail en atelier nécessitant des espaces individuels et des ressources techniques (laboratoires et équipements spécialisés) pour la conception, le prototypage et l'évaluation des projets. L'enseignement est individualisé et implique un grand usage de matériaux divers : papier, carton, bois, plâtre, plasticine, plastique, photographie et infographie.",
+    "prealablesBrut": "DEI2001 et DEI2010",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 2001"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 2010"
+        }
+      ]
+    },
+    "concomitantsBrut": "DEI3555 et DEI2100",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2100/",
+    "scrapeISO": "2026-09-11T17:54:41.371Z"
+  },
+  "DEI 3040": {
+    "code": "DEI 3040",
+    "titre": "Atelier thématique avancé",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Apprentissage approfondi d'une approche réflexive, créative et pragmatique de la conception d'environnements intérieurs complexes sur des thématiques variables, déterminées en fonction des besoins de l'évolution des pratiques. Remarques: Travail en atelier nécessitant des espaces individuels et des ressources techniques (laboratoires et équipements spécialisés) pour la conception, le prototypage et l'évaluation des projets. L'enseignement est individualisé et implique un grand usage de matériaux divers : papier, carton, bois, plâtre, plasticine, plastique, photographie et infographie.",
+    "prealablesBrut": "(DEI2002 et DEI3000) ou AME3030",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "DEI 2002"
+            },
+            {
+              "genre": "cours",
+              "code": "DEI 3000"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "AME 3030"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-3040/",
+    "scrapeISO": "2026-09-11T17:54:42.870Z"
+  },
+  "DEI 3000": {
+    "code": "DEI 3000",
+    "titre": "Atelier thématique",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Cet atelier est centré sur l'apprentissage d'une approche réflexive, créative et pragmatique de la conception d'environnements intérieurs complexes sur des thématiques variables, déterminées en fonction des besoins de l'évolution des pratiques.",
+    "prealablesBrut": "DEI2100 et DEI3555",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 2100"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 3555"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-3000/",
+    "scrapeISO": "2026-09-11T17:54:44.876Z"
+  },
+  "DEI 1031": {
+    "code": "DEI 1031",
+    "titre": "Systèmes de construction",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Apprentissage des notions de base des systèmes constructifs et approches intégrées en développement durable des environnements intérieurs. Compréhension des principes de construction et des systèmes de mécanique, électrique, plomberie et ventilation.",
+    "prealablesBrut": "DEI1211",
+    "prealables": {
+      "genre": "cours",
+      "code": "DEI 1211"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1031/",
+    "scrapeISO": "2026-09-11T17:54:47.170Z"
+  },
+  "DEI 2031": {
+    "code": "DEI 2031",
+    "titre": "Matériaux et assemblages",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Principes physiques, techniques, esthétiques et écologiques des matériaux de finition, leurs assemblages et leur mise en oeuvre sur le chantier : processus de sélection, évaluation des performances et prescription en vue de la réalisation d'un projet.",
+    "prealablesBrut": "DEI1031",
+    "prealables": {
+      "genre": "cours",
+      "code": "DEI 1031"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "DEI2031/DEI2030",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2031/",
+    "scrapeISO": "2026-09-11T17:54:48.868Z"
+  },
+  "DEI 2325": {
+    "code": "DEI 2325",
+    "titre": "Couleur et lumière des espaces intérieurs",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Compréhension des interrelations entre la lumière et la couleur, leur impact sur le design de produits d'éclairage et les environnements intérieurs.",
+    "prealablesBrut": "DEI1012 et DEI2010",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 1012"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 2010"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2325/",
+    "scrapeISO": "2026-09-11T17:54:50.707Z"
+  },
+  "DEI 3003": {
+    "code": "DEI 3003",
+    "titre": "Pratiques du design d'intérieur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Encadrement de la pratique professionnelle au Québec. Lois et règlements régissant la mise en oeuvre du bâtiment. Documents contractuels. Rédactions de devis. Contrôles administratifs et financiers. Éthique professionnelle.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-3003/",
+    "scrapeISO": "2026-09-11T17:54:52.160Z"
+  },
+  "DEI 3020": {
+    "code": "DEI 3020",
+    "titre": "Éléments intérieurs et mobilier",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Création, compréhension et développement des éléments de mobiliers en tant que composantes indissociables du projet d'aménagement intérieur. Remarques: Ce cours comporte une part importante d'enseignements pratiques et individualisés qui le rapproche de la pédagogie en atelier. Les étudiants travaillent en laboratoire sur des exercices qui valident les divers apprentissages et sur un projet final.",
+    "prealablesBrut": "DEI2031",
+    "prealables": {
+      "genre": "cours",
+      "code": "DEI 2031"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-3020/",
+    "scrapeISO": "2026-09-11T17:54:53.616Z"
+  },
+  "DEI 3031": {
+    "code": "DEI 3031",
+    "titre": "Systèmes environnementaux et durables",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Approfondissement des systèmes environnementaux des espaces intérieurs. Application des concepts de développement durable et des connaissances de l'éclairagisme, de l'acoustique et des systèmes du bâtiment dans des projets complexes.",
+    "prealablesBrut": "DEI1031 et DEI2031 et DEI2325",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 1031"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 2031"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 2325"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "DEI3031/DEI3010",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-3031/",
+    "scrapeISO": "2026-09-11T17:54:55.614Z"
+  },
+  "DEI 3330": {
+    "code": "DEI 3330",
+    "titre": "Simulation des ambiances physiques en design d'intérieur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Ce cours porte sur les connaissances nouvelles en matière de simulation numérique des phénomènes physiques, climatiques, lumineux, thermiques et acoustiques, ainsi qu'en matière d'intégration des systèmes de contrôle dans la conception des environnements intérieurs.",
+    "prealablesBrut": "DEI2013 ou ARC2214",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEI 2013"
+        },
+        {
+          "genre": "cours",
+          "code": "ARC 2214"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-3330/",
+    "scrapeISO": "2026-09-11T17:54:57.039Z"
+  },
+  "DEI 1120": {
+    "code": "DEI 1120",
+    "titre": "Modélisation 3D avancée en DI",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Approfondissement des techniques de représentation. Applications de la CAO et de la DAQ. La production d'images de synthèse et d'animations.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1120/",
+    "scrapeISO": "2026-09-11T17:55:07.702Z"
+  },
+  "DEI 1211": {
+    "code": "DEI 1211",
+    "titre": "Dessin et communication",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Introduction à la représentation graphique du projet; le dessin comme outil d'exploration et de représentation des idées; acquisition des bases théoriques et pratiques des techniques de représentation graphique utilisées en design d'intérieur. Remarques: Ce cours comporte une part importante d'enseignements pratiques et individualisés qui le rapproche de la pédagogie en atelier. Les étudiants travaillent en laboratoire sur des exercices qui valident les divers apprentissages et confirment leur maîtrise des diverses techniques utilisées en design d'intérieur pour développer les concepts et les communiquer.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-1211/",
+    "scrapeISO": "2026-09-11T17:55:09.303Z"
+  },
+  "DEI 2013": {
+    "code": "DEI 2013",
+    "titre": "Conception assistée par ordinateur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Initiation aux caractéristiques des logiciels de CAO. Compréhension des règles associées aux logiciels 3D en design d'intérieur. Réalisation d'un projet en utilisant la CAO comme outil de conception et de visualisation. Remarques: Ce cours comporte une part importante d'enseignements pratiques qui le rapproche de la pédagogie en atelier. Les étudiants travaillent en laboratoire sur des exercices qui valident les divers apprentissages et sur un projet final qui confirme leur maîtrise du processus de modélisation informatique et 3D.",
+    "prealablesBrut": "DEI1031",
+    "prealables": {
+      "genre": "cours",
+      "code": "DEI 1031"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2013/",
+    "scrapeISO": "2026-09-11T17:55:11.710Z"
+  },
+  "DEI 2130": {
+    "code": "DEI 2130",
+    "titre": "Techniques de présentation graphique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Initiation à divers médias et techniques de présentation graphique. Exercices de croquis et de rendu en vue de représenter, manipuler et communiquer graphiquement les idées. Remarques: Ce cours comporte une part importante d'enseignements pratiques qui le rapproche de la pédagogie en atelier. Les étudiants travaillent en laboratoire sur des exercices qui valident les divers apprentissages et confirment leur maîtrise des diverses techniques utilisées en design industriel pour développer les concepts et les communiquer.",
+    "prealablesBrut": "AME1212 et DEI1211",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "AME 1212"
+        },
+        {
+          "genre": "cours",
+          "code": "DEI 1211"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2130/",
+    "scrapeISO": "2026-09-11T17:55:13.680Z"
+  },
+  "DEI 2140": {
+    "code": "DEI 2140",
+    "titre": "Photographie en design",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Acquisition de compétences techniques en art photographique : appareils, accessoires, méthodes d’éclairage, équilibre, cadrage, prises de vue et rendues. Traitement d’image et maîtrise des procédés numériques de retouche des photographies.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2140/",
+    "scrapeISO": "2026-09-11T17:55:15.203Z"
+  },
+  "DEI 2119": {
+    "code": "DEI 2119",
+    "titre": "Travail dirigé en design d'intérieur 1",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Sous la direction d'un membre du corps professoral, réalisation d'un projet ou d'un concours visant à approfondir certaines connaissances ou certaines habiletés inhérentes au design d'intérieur.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2119/",
+    "scrapeISO": "2026-09-11T17:55:20.326Z"
+  },
+  "DEI 2120": {
+    "code": "DEI 2120",
+    "titre": "Travail dirigé en design d'intérieur 2",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Travail dirigé selon l'intérêt de l'étudiant encadré par un professeur. Remarques: Ce travail peut être en continuité au travail dirigé 1 (DEI 2119) ou être un projet indépendant.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2120/",
+    "scrapeISO": "2026-09-11T17:55:21.710Z"
+  },
+  "DEI 2121": {
+    "code": "DEI 2121",
+    "titre": "Travail dirigé en design d’intérieur 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Travail dirigé, selon l'intérêt de l’étudiant et encadré par un professeur, qui peut prendre plusieurs formes : projet de design spécifique, projet d’une exposition, une recherche approfondie sur un thème choisi avec un compte-rendu, etc",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-2121/",
+    "scrapeISO": "2026-09-11T17:55:23.609Z"
+  },
+  "DEI 4200": {
+    "code": "DEI 4200",
+    "titre": "Stage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l'aménagement",
+    "description": "Six semaines de travail en design d'intérieur dans un milieu professionnel. Rapport de stage.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dei-4200/",
+    "scrapeISO": "2026-09-11T17:55:25.672Z"
+  }
+}

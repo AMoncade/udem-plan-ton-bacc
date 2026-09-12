@@ -33,7 +33,8 @@
  *   La maîtrise porte `MM-Bloc 73A` et `S-Bloc 73A` dans le segment 73 : un id
  *   tronqué à deux caractères donne « MM », et un extracteur ancré sur « Bloc »
  *   a fusionné 58 cours dans le mauvais bloc pendant la validation, sans erreur.
- *   L'identité unique est `cleBloc(segment, id)`.
+ *   L'identité unique est `cleBloc(segment, id, nom)` — les trois, parce que
+ *   trois familles d'homonymes ont été mesurées sur les pages de l'UdeM.
  * - **Un bloc à la règle illisible n'est plus ignoré.** Il entre avec
  *   `{type:"inconnu", brut}`. Un bloc absent ne laisse aucune trace à l'écran ;
  *   un bloc non auditable, si.
@@ -457,7 +458,7 @@ export function parseStructure(
 
       if (!small) {
         journal.manque(
-          `${slug} bloc ${cleBloc(entete.numero, titre.id)}`,
+          `${slug} bloc ${cleBloc(entete.numero, titre.id, titre.nom)}`,
           "règle de crédits (<small>) absente — regle = inconnu, bloc conservé",
         );
       }
@@ -468,13 +469,25 @@ export function parseStructure(
       // la M. Sc. au Ph. D. », dans le même segment. Sans lui, deux blocs
       // différents partagent une clé, et l'audit les mélange.
       const id = qualificatif === null ? titre.id : `${titre.id} — ${qualificatif}`;
-      const cle = cleBloc(entete.numero, id);
+      // Le NOM entre aussi dans l'identité, via `cleBloc`. Troisième famille
+      // d'homonymes, mesurée sur quatre programmes : « Bloc 70D Stage » et
+      // « Bloc 70D Travail dirigé » partagent segment, id ET règle
+      // (« Obligatoire - 9 crédits ») — ni le préfixe de cheminement ni le
+      // qualificatif ne les séparent, seul le nom le fait.
+      const cle = cleBloc(entete.numero, id, titre.nom);
       const sujet = `${slug} bloc ${cle}`;
       if (blocs.some((b) => b.cle === cle)) {
+        // On ne fabrique PAS d'indice (`-2`) pour rendre la clé unique. Deux
+        // blocs que ni le segment, ni l'id, ni le qualificatif, ni le nom ne
+        // distinguent sont indiscernables DANS LES DONNÉES : inventer un indice
+        // donnerait deux entités là où on ne sait pas s'il y en a deux, et
+        // rendrait la suite verte sur une page qu'on n'a pas comprise. On
+        // conserve le bloc et on laisse la collision visible.
         journal.inattendu(
           sujet,
-          "deux blocs portent la même clé segment/id — le second est conservé à part, " +
-            "mais l'audit ne saura pas les distinguer",
+          "deux blocs restent indiscernables même avec le nom dans la clé (segment, id, " +
+            "qualificatif et nom identiques) — le second est conservé à part, mais l'audit " +
+            "ne saura pas les distinguer : c'est la page amont qu'il faut aller lire",
         );
       }
       if (lue.note) journal.inattendu(sujet, lue.note);
@@ -533,6 +546,16 @@ export function parseStructure(
         regleBrut,
         cours,
         contenuOuvert,
+        // ATTESTATION, pas défaut : « la passe a lu ce bloc et n'y a trouvé ni
+        // cours ni prose ». Elle vit ici, dans le fichier du programme, et non
+        // dans data/journal.json qui est réécrit à chaque passe — un invariant
+        // adossé au journal devenait faux dès qu'une passe cours tournait, sans
+        // qu'une ligne de code ait changé.
+        //
+        // Absent plutôt que `false` quand le bloc a du contenu : un `false` sur
+        // les 5 028 blocs serait du volume sans information, et ne dirait
+        // toujours pas si le bloc a été lu.
+        ...(cours.length === 0 && !contenuOuvert ? { videConstate: true } : {}),
         notes: notesBloc,
       });
     }

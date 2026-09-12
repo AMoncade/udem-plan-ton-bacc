@@ -29,7 +29,7 @@
   "blocs": [
     {
       "id": "70A",
-      "cle": "70/70A",
+      "cle": "70/70A — Fondements",
       "segment": "70",
       "nom": "Fondements",
       "regle": {
@@ -51,7 +51,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Disciplinaire",
       "segment": "70",
       "nom": "Disciplinaire",
       "regle": {
@@ -81,7 +81,7 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Cours et activités de transfert",
       "segment": "70",
       "nom": "Cours et activités de transfert",
       "regle": {
@@ -108,12 +108,15 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Interdisciplinaire",
       "segment": "70",
       "nom": "Interdisciplinaire",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 6 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
       },
       "regleBrut": "Option ‐ Maximum 6 crédits.",
       "cours": [
@@ -161,7 +164,7 @@
     },
     {
       "id": "70F",
-      "cle": "70/70F",
+      "cle": "70/70F — Ateliers de design avancé",
       "segment": "70",
       "nom": "Ateliers de design avancé",
       "regle": {

@@ -160,34 +160,42 @@
       "regleBrut": "Obligatoire - 87 crédits.",
       "cours": [],
       "contenuOuvert": false,
+      "videConstate": true,
       "notes": []
     },
     {
-      "id": "70A",
-      "cle": "70/70A",
+      "id": "70A — Accès direct du B. Sc. au Ph. D.",
+      "cle": "70/70A - Accès direct du B. Sc. au Ph. D.",
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 2 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
       ]
     },
     {
-      "id": "70A",
-      "cle": "70/70A",
+      "id": "70A — Accès de la M. Sc. au Ph. D.",
+      "cle": "70/70A - Accès de la M. Sc. au Ph. D.",
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Option - 3 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -202,51 +210,60 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 3 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "70B",
-      "cle": "70/70B",
+      "id": "70B — Accès direct du B. Sc. au Ph. D.",
+      "cle": "70/70B - Accès direct du B. Sc. au Ph. D.",
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 3 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "70B",
-      "cle": "70/70B",
+      "id": "70B — Accès de la M. Sc. au Ph. D.",
+      "cle": "70/70B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
       "segment": "70",
       "nom": "Recherche et thèse",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 87,
+          "max": 87
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 87 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 87 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C — Accès direct du B. Sc. au Ph. D.",
+      "cle": "70/70C - Accès direct du B. Sc. au Ph. D.",
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Option - 6 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -261,51 +278,62 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
       ]
     },
     {
-      "id": "70D",
-      "cle": "70/70D",
+      "id": "70D — Accès direct du B. Sc. au Ph. D.",
+      "cle": "70/70D - Accès direct du B. Sc. au Ph. D.",
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 79 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 79 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "71A",
-      "cle": "71/71A",
+      "id": "71A — Accès direct du B. Sc. au Ph. D.",
+      "cle": "71/71A - Accès direct du B. Sc. au Ph. D.",
       "segment": "71",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 2 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
       ]
     },
     {
-      "id": "71A",
-      "cle": "71/71A",
+      "id": "71A — Accès de la M. Sc. au Ph. D.",
+      "cle": "71/71A - Accès de la M. Sc. au Ph. D.",
       "segment": "71",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Option - 3 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -320,51 +348,61 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 3 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "71B",
-      "cle": "71/71B",
+      "id": "71B — Accès direct du B. Sc. au Ph. D.",
+      "cle": "71/71B - Accès direct du B. Sc. au Ph. D.",
       "segment": "71",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 3 crédits. Les cours PBC 60851 et PBC 60852 sont équivalents au cours PBC 6085."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours PBC 60851 et PBC 60852 sont équivalents au cours PBC 6085."
       ]
     },
     {
-      "id": "71B",
-      "cle": "71/71B",
+      "id": "71B — Accès de la M. Sc. au Ph. D.",
+      "cle": "71/71B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
       "segment": "71",
       "nom": "Recherche et thèse",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 87,
+          "max": 87
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 87 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 87 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "71C",
-      "cle": "71/71C",
+      "id": "71C — Accès direct du B. Sc. au Ph. D.",
+      "cle": "71/71C - Accès direct du B. Sc. au Ph. D.",
       "segment": "71",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Option - 6 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -379,51 +417,62 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
       ]
     },
     {
-      "id": "71D",
-      "cle": "71/71D",
+      "id": "71D — Accès direct du B. Sc. au Ph. D.",
+      "cle": "71/71D - Accès direct du B. Sc. au Ph. D.",
       "segment": "71",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 79 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 79 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "72A",
-      "cle": "72/72A",
+      "id": "72A — Accès direct du B. Sc. au Ph. D.",
+      "cle": "72/72A - Accès direct du B. Sc. au Ph. D.",
       "segment": "72",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 2 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
       ]
     },
     {
-      "id": "72A",
-      "cle": "72/72A",
+      "id": "72A — Accès de la M. Sc. au Ph. D.",
+      "cle": "72/72A - Accès de la M. Sc. au Ph. D.",
       "segment": "72",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Option - 3 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -438,51 +487,60 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 3 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "72B",
-      "cle": "72/72B",
+      "id": "72B — Accès direct du B. Sc. au Ph. D.",
+      "cle": "72/72B - Accès direct du B. Sc. au Ph. D.",
       "segment": "72",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 3 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "72B",
-      "cle": "72/72B",
+      "id": "72B — Accès de la M. Sc. au Ph. D.",
+      "cle": "72/72B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
       "segment": "72",
       "nom": "Recherche et thèse",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 87,
+          "max": 87
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 87 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 87 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "72C",
-      "cle": "72/72C",
+      "id": "72C — Accès direct du B. Sc. au Ph. D.",
+      "cle": "72/72C - Accès direct du B. Sc. au Ph. D.",
       "segment": "72",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Option - 6 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -497,51 +555,62 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
       ]
     },
     {
-      "id": "72D",
-      "cle": "72/72D",
+      "id": "72D — Accès direct du B. Sc. au Ph. D.",
+      "cle": "72/72D - Accès direct du B. Sc. au Ph. D.",
       "segment": "72",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 79 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 79 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "73A",
-      "cle": "73/73A",
+      "id": "73A — Accès direct du B. Sc. au Ph. D.",
+      "cle": "73/73A - Accès direct du B. Sc. au Ph. D.",
       "segment": "73",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 2 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
       ]
     },
     {
-      "id": "73A",
-      "cle": "73/73A",
+      "id": "73A — Accès de la M. Sc. au Ph. D.",
+      "cle": "73/73A - Accès de la M. Sc. au Ph. D.",
       "segment": "73",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Option - 3 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -556,51 +625,60 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 3 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "73B",
-      "cle": "73/73B",
+      "id": "73B — Accès direct du B. Sc. au Ph. D.",
+      "cle": "73/73B - Accès direct du B. Sc. au Ph. D.",
       "segment": "73",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 3 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "73B",
-      "cle": "73/73B",
+      "id": "73B — Accès de la M. Sc. au Ph. D.",
+      "cle": "73/73B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
       "segment": "73",
       "nom": "Recherche et thèse",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 87,
+          "max": 87
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 87 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 87 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "73C",
-      "cle": "73/73C",
+      "id": "73C — Accès direct du B. Sc. au Ph. D.",
+      "cle": "73/73C - Accès direct du B. Sc. au Ph. D.",
       "segment": "73",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Option - 6 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -615,51 +693,62 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
       ]
     },
     {
-      "id": "73D",
-      "cle": "73/73D",
+      "id": "73D — Accès direct du B. Sc. au Ph. D.",
+      "cle": "73/73D - Accès direct du B. Sc. au Ph. D.",
       "segment": "73",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 79 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 79 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "74A",
-      "cle": "74/74A",
+      "id": "74A — Accès direct du B. Sc. au Ph. D.",
+      "cle": "74/74A - Accès direct du B. Sc. au Ph. D.",
       "segment": "74",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 2,
+          "max": 2
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 2 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051."
       ]
     },
     {
-      "id": "74A",
-      "cle": "74/74A",
+      "id": "74A — Accès de la M. Sc. au Ph. D.",
+      "cle": "74/74A - Accès de la M. Sc. au Ph. D.",
       "segment": "74",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Option - 3 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -674,51 +763,60 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 3 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "74B",
-      "cle": "74/74B",
+      "id": "74B — Accès direct du B. Sc. au Ph. D.",
+      "cle": "74/74B - Accès direct du B. Sc. au Ph. D.",
       "segment": "74",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 3 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 3 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     },
     {
-      "id": "74B",
-      "cle": "74/74B",
+      "id": "74B — Accès de la M. Sc. au Ph. D.",
+      "cle": "74/74B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
       "segment": "74",
       "nom": "Recherche et thèse",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès de la M. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 87,
+          "max": 87
+        }
       },
-      "regleBrut": "Accès de la M. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 87 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 87 crédits."
+        "Accès de la M. Sc. au Ph. D."
       ]
     },
     {
-      "id": "74C",
-      "cle": "74/74C",
+      "id": "74C — Accès direct du B. Sc. au Ph. D.",
+      "cle": "74/74C - Accès direct du B. Sc. au Ph. D.",
       "segment": "74",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "option",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Option - 6 crédits.",
       "cours": [
         "BCM 6023",
         "BCM 6071",
@@ -733,23 +831,27 @@
       ],
       "contenuOuvert": false,
       "notes": [
-        "Option - 6 crédits. Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
+        "Accès direct du B. Sc. au Ph. D.",
+        "Les cours SMC 6051 et SMC 6052 sont équivalents au cours SMC 6041."
       ]
     },
     {
-      "id": "74D",
-      "cle": "74/74D",
+      "id": "74D — Accès direct du B. Sc. au Ph. D.",
+      "cle": "74/74D - Accès direct du B. Sc. au Ph. D.",
       "segment": "74",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Accès direct du B. Sc. au Ph. D."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 79,
+          "max": 79
+        }
       },
-      "regleBrut": "Accès direct du B. Sc. au Ph. D.",
+      "regleBrut": "Obligatoire - 79 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
-        "Obligatoire - 79 crédits."
+        "Accès direct du B. Sc. au Ph. D."
       ]
     }
   ],

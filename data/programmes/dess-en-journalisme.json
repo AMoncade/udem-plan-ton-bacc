@@ -33,8 +33,11 @@
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cours obligatoire - 3 crédits."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 3,
+          "max": 3
+        }
       },
       "regleBrut": "Cours obligatoire - 3 crédits.",
       "cours": [
@@ -45,7 +48,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Fondements",
       "segment": "70",
       "nom": "Fondements",
       "regle": {
@@ -66,7 +69,7 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Ateliers professionnels",
       "segment": "70",
       "nom": "Ateliers professionnels",
       "regle": {
@@ -94,7 +97,7 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Disciplinaires",
       "segment": "70",
       "nom": "Disciplinaires",
       "regle": {
@@ -113,7 +116,7 @@
     },
     {
       "id": "70E",
-      "cle": "70/70E",
+      "cle": "70/70E — Application et activité d'intégration",
       "segment": "70",
       "nom": "Application et activité d'intégration",
       "regle": {

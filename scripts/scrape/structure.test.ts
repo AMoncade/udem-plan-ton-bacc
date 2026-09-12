@@ -175,7 +175,7 @@ describe("bacc. en mathématiques — sept orientations sur une page", () => {
   it("`segment` est LU sur l'entête, pas déduit de l'id du bloc", () => {
     for (const bloc of programme.blocs) {
       expect(programme.segments).toContain(bloc.segment);
-      expect(bloc.cle).toBe(cleBloc(bloc.segment, bloc.id));
+      expect(bloc.cle).toBe(cleBloc(bloc.segment, bloc.id, bloc.nom));
     }
   });
 
@@ -198,7 +198,7 @@ describe("bacc. en mathématiques — sept orientations sur une page", () => {
     expect(b75c?.regleBrut).toBe("Option - Minimum 12 crédits, maximum 27 crédits.");
     expect(b75c?.regle).toEqual({ type: "option", bornes: { min: 12, max: 27 } });
     expect(b75c?.segment).toBe("75");
-    expect(b75c?.cle).toBe("75/75C");
+    expect(b75c?.cle).toBe(cleBloc("75", "75C", b75c?.nom ?? ""));
   });
 
   it("« Option - Maximum 13 crédits. » devient {min:0, max:13}", () => {
@@ -305,8 +305,8 @@ describe("maîtrise en mathématiques — deux blocs « 73A » dans le même seg
   const { programme } = lire("maitrise-en-mathematiques");
 
   it("distingue MM-73A de S-73A par leur clé, et les garde tous les deux", () => {
-    const mm = programme.blocs.find((b) => b.cle === "73/MM-73A");
-    const s = programme.blocs.find((b) => b.cle === "73/S-73A");
+    const mm = programme.blocs.find((b) => b.id === "MM-73A");
+    const s = programme.blocs.find((b) => b.id === "S-73A");
     expect(mm?.id).toBe("MM-73A");
     expect(s?.id).toBe("S-73A");
     expect(mm?.segment).toBe("73");
@@ -323,7 +323,7 @@ describe("maîtrise en mathématiques — deux blocs « 73A » dans le même seg
   });
 
   it("lit « Option - minimum 15 crédits, maximum 24 crédits. » en minuscules", () => {
-    expect(programme.blocs.find((b) => b.cle === "73/S-73A")?.regleBrut).toBe(
+    expect(programme.blocs.find((b) => b.id === "S-73A")?.regleBrut).toBe(
       "Option - minimum 15 crédits, maximum 24 crédits.",
     );
   });
@@ -332,7 +332,7 @@ describe("maîtrise en mathématiques — deux blocs « 73A » dans le même seg
     // « … et/ou un maximum de 6 crédits de cours de 1er cycle de sigle ACT, MAT
     // ou STT … avec l'approbation du responsable de programme. » : un plafond
     // imbriqué que `RegleBloc` ne peut pas porter. Sans `notes`, il disparaît.
-    const b = programme.blocs.find((x) => x.cle === "73/S-73B");
+    const b = programme.blocs.find((x) => x.id === "S-73B");
     expect(b?.notes.join(" ")).toContain("approbation du responsable de programme");
   });
 
@@ -365,8 +365,8 @@ describe("maîtrise en mathématiques — deux blocs « 73A » dans le même seg
   });
 
   it("mémoire et stage sont des cours ordinaires, dans des blocs à 29 et 21 crédits", () => {
-    expect(programme.blocs.find((b) => b.cle === "73/MM-73C")?.cours).toEqual(["MAT 6916"]);
-    expect(programme.blocs.find((b) => b.cle === "73/S-73C")?.cours).toEqual(["MAT 6908"]);
+    expect(programme.blocs.find((b) => b.id === "MM-73C")?.cours).toEqual(["MAT 6916"]);
+    expect(programme.blocs.find((b) => b.id === "S-73C")?.cours).toEqual(["MAT 6908"]);
   });
 });
 
@@ -428,11 +428,18 @@ describe("doctorat en pathologie — la règle n'est PAS dans le <small>", () =>
     // l'audit les mélange — le même défaut que `MM-Bloc 73A` / `S-Bloc 73A`.
     const cles = programme.blocs.map((b) => b.cle);
     expect(new Set(cles).size).toBe(cles.length);
-    expect(cles).toContain("70/70A — Accès direct du B. Sc. au Ph. D.");
-    expect(cles).toContain("70/70A — Accès de la M. Sc. au Ph. D.");
+    // On cherche par ID, pas par clé littérale : la clé porte aussi le NOM du
+    // bloc depuis `cleBloc(segment, id, nom)`, et épingler sa chaîne exacte
+    // ferait retomber ce test à chaque évolution de la FORME de la clé — alors
+    // que ce qu'il doit prouver est une PROPRIÉTÉ : ces deux blocs restent
+    // discernables. L'id, lui, porte le qualificatif et ne dépend pas du nom.
+    const direct = programme.blocs.find((b) => b.id.startsWith("70A — Accès direct"));
+    const msc = programme.blocs.find((b) => b.id.startsWith("70A — Accès de la M. Sc."));
+    expect(direct, "le bloc « Accès direct » doit exister").toBeDefined();
+    expect(msc, "le bloc « Accès de la M. Sc. » doit exister").toBeDefined();
+    expect(direct?.cle).not.toBe(msc?.cle);
+    expect(direct?.segment).toBe(msc?.segment);
     // Deux blocs DIFFÉRENTS : leurs règles ne sont pas les mêmes.
-    const direct = programme.blocs.find((b) => b.cle === "70/70A — Accès direct du B. Sc. au Ph. D.");
-    const msc = programme.blocs.find((b) => b.cle === "70/70A — Accès de la M. Sc. au Ph. D.");
     expect(direct?.regle).toEqual({ type: "obligatoire", bornes: { min: 2, max: 2 } });
     expect(msc?.regle).toEqual({ type: "option", bornes: { min: 3, max: 3 } });
     // Et le libellé reste lisible en note, pas seulement enfoui dans la clé.

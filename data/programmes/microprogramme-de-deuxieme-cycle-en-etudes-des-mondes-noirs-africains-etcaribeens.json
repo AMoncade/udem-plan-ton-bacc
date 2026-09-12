@@ -26,7 +26,7 @@
   "blocs": [
     {
       "id": "70A",
-      "cle": "70/70A",
+      "cle": "70/70A — Fondements",
       "segment": "70",
       "nom": "Fondements",
       "regle": {
@@ -47,7 +47,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Courants de pensées noirs et dynamiques sociales",
       "segment": "70",
       "nom": "Courants de pensées noirs et dynamiques sociales",
       "regle": {
@@ -72,12 +72,15 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Perspectives globales et historiques",
       "segment": "70",
       "nom": "Perspectives globales et historiques",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 6 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
       },
       "regleBrut": "Option ‐ Maximum 6 crédits.",
       "cours": [
@@ -100,12 +103,15 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Décolonialité et perspectives postcoloniales",
       "segment": "70",
       "nom": "Décolonialité et perspectives postcoloniales",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 6 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
       },
       "regleBrut": "Option ‐ Maximum 6 crédits.",
       "cours": [
@@ -120,12 +126,15 @@
     },
     {
       "id": "70E",
-      "cle": "70/70E",
+      "cle": "70/70E — Expressions culturelles, linguistiques, intellectuelles et artistiques",
       "segment": "70",
       "nom": "Expressions culturelles, linguistiques, intellectuelles et artistiques",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 6 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
       },
       "regleBrut": "Option ‐ Maximum 6 crédits.",
       "cours": [
@@ -144,12 +153,15 @@
     },
     {
       "id": "70F",
-      "cle": "70/70F",
+      "cle": "70/70F — Migration, diversité et citoyenneté",
       "segment": "70",
       "nom": "Migration, diversité et citoyenneté",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option ‐ Maximum 6 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 6
+        }
       },
       "regleBrut": "Option ‐ Maximum 6 crédits.",
       "cours": [

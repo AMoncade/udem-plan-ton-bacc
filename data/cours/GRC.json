@@ -1,0 +1,45 @@
+{
+  "GRC 1111": {
+    "code": "GRC 1111",
+    "titre": "Initiation à la langue grecque 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours intensif de grec classique. Principales structures morphologiques et syntaxiques de la langue. Thèmes, versions et lecture de textes simplifiés. Remarques: Travaux pratiques en ateliers. Sans aucun préalable.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-1111/",
+    "scrapeISO": "2026-09-11T17:30:03.208Z"
+  },
+  "GRC 1121": {
+    "code": "GRC 1121",
+    "titre": "Initiation à la langue grecque 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Achèvement de l'apprentissage grammatical et syntaxique, permettant l'accès à des textes simples et à se servir à bon escient d'éditions bilingues. Thèmes et versions. Lecture de textes simples. Remarques: Travaux pratiques en ateliers.",
+    "prealablesBrut": "GRC1111",
+    "prealables": {
+      "genre": "cours",
+      "code": "GRC 1111"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-1121/",
+    "scrapeISO": "2026-09-11T17:30:06.013Z"
+  }
+}

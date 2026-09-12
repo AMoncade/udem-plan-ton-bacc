@@ -23,6 +23,7 @@
  * on relit donc l'existant et on fusionne. L'index et le journal, eux, sont
  * cumulatifs par construction de l'appelant.
  */
+import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type {
@@ -159,20 +160,97 @@ export async function sujetsSurDisque(): Promise<string[]> {
 }
 
 /**
+ * Empreinte du CODE D'EXTRACTION qui a produit les données.
+ *
+ * Le défaut qu'elle ferme, constaté pour de vrai : `parseStructure` a été
+ * corrigé à 17 h 28 Z, `data/programmes/` datait de 12 h 30, et la suite a
+ * accusé les pages de l'UdeM d'être malformées pendant qu'il fallait seulement
+ * relancer le scrape. Une date de fichier ne suffit pas à trancher ça — un
+ * `git stash` ou une copie remettent l'horloge d'aplomb sans rien changer au
+ * code. L'empreinte, si.
+ *
+ * La formule est celle de `empreinteExtracteur()` dans tests/coutures.test.ts,
+ * à l'identique, et c'est LE point qui compte : deux formules qui divergent
+ * donneraient un désaccord permanent, donc un test qu'on finirait par
+ * désactiver. On hache le nom de fichier PUIS son contenu (sans ça, déplacer
+ * une ligne d'un fichier à l'autre passerait inaperçu), dans l'ordre
+ * alphabétique, en normalisant les `\r\n` — sur Windows le même commit se
+ * matérialise avec deux fins de ligne selon `core.autocrlf`, et sans cette
+ * normalisation l'empreinte accuserait le système de fichiers.
+ *
+ * `*.test.ts` est exclu : un test ajouté ne change pas ce que produit la passe,
+ * et le faire compter rendrait toutes les données « périmées » à chaque test
+ * écrit — une alarme qui crie tout le temps ne se lit plus.
+ */
+export async function empreinteExtracteur(): Promise<string> {
+  const dossier = import.meta.dirname;
+  const h = createHash("sha256");
+  const fichiers = (await readdir(dossier))
+    .filter((f) => f.endsWith(".ts") && !f.endsWith(".test.ts"))
+    .sort();
+  for (const f of fichiers) {
+    h.update(f);
+    h.update((await readFile(path.join(dossier, f), "utf8")).replace(/\r\n/g, "\n"));
+  }
+  return h.digest("hex");
+}
+
+/**
+ * Tous les codes de cours DÉJÀ en fiche sur le disque.
+ *
+ * Sert la reprise de la passe « cours » (`--reprendre`). Le cache réseau rend
+ * une reprise gratuite en requêtes, mais PAS en temps : relire 8 600 fiches
+ * depuis le cache coûte quand même des minutes, et surtout `--limite-cours N`
+ * reprend les N PREMIERS codes de l'union — sans cette lecture, découper la
+ * passe en tranches refait éternellement la même tranche.
+ *
+ * On lit les clés, pas les valeurs : la question est « ai-je une fiche pour ce
+ * code », et désérialiser 1 314 fiches pour y répondre serait du gaspillage.
+ * Les clés de commentaire (`_avertissement`) sont écartées comme partout
+ * ailleurs, pour absorber un fichier écrit par une version antérieure.
+ */
+export async function codesSurDisque(dossier: string = DOSSIER_COURS): Promise<Set<string>> {
+  const codes = new Set<string>();
+  let fichiers: string[];
+  try {
+    fichiers = (await readdir(dossier)).filter((f) => f.endsWith(".json"));
+  } catch {
+    return codes;
+  }
+  for (const f of fichiers) {
+    try {
+      const brut = JSON.parse(await readFile(path.join(dossier, f), "utf8")) as Record<
+        string,
+        unknown
+      >;
+      for (const code of Object.keys(brut)) if (!code.startsWith("_")) codes.add(code);
+    } catch {
+      // Un fichier de sujet illisible ne doit pas faire sauter la passe : ses
+      // codes sont simplement considérés absents, donc redemandés. Le pire cas
+      // est de refaire du travail, jamais d'en escamoter.
+    }
+  }
+  return codes;
+}
+
+/**
  * Écrit l'index en FUSIONNANT par `id` avec l'index déjà sur disque, pour qu'une
  * passe partielle (`--limite 30`) n'efface pas les 1 058 autres fiches.
  */
 export async function ecrireIndex(
   fiches: FicheIndex[],
   scrapeISO: string,
+  empreinte: string | null,
 ): Promise<{ chemin: string; total: number }> {
   // Fusion par CLÉ DE PARCOURS, pas par id : plusieurs fiches partagent le même
   // id (une par orientation de la même page). Fusionner par id n'en garderait
   // qu'une, et le sélecteur perdrait six des sept orientations du bacc en maths.
   let parCle = new Map<string, FicheIndex>();
+  let empreinteHeritee: string | undefined;
   try {
     const ancien = JSON.parse(await readFile(CHEMIN_INDEX, "utf8")) as IndexProgrammes;
     for (const f of ancien.programmes ?? []) parCle.set(f.cle, f);
+    empreinteHeritee = ancien.empreinteExtracteur;
   } catch {
     parCle = new Map();
   }
@@ -183,10 +261,29 @@ export async function ecrireIndex(
   for (const [cle, f] of [...parCle]) if (idsReecrits.has(f.id)) parCle.delete(cle);
   for (const f of fiches) parCle.set(f.cle, f);
   const programmes = [...parCle.values()].sort((a, b) => a.cle.localeCompare(b.cle, "fr"));
+  // L'EMPREINTE NE SE RECALCULE PAS À CHAQUE PASSE — elle se TRANSMET.
+  //
+  // Premier réflexe, et c'était une erreur : la calculer ici, pour qu'aucune
+  // passe ne puisse l'omettre. Mais l'empreinte affirme « les données de data/
+  // ont été produites par ce code-là ». Une passe cours ne reproduit pas
+  // data/programmes/ ; y estampiller le code courant attesterait une fraîcheur
+  // qu'on n'a pas produite, et le test de fraîcheur se TAIRAIT justement dans
+  // le cas qu'il existe pour attraper. Le champ serait passé d'absent (« je ne
+  // sais pas ») à faux (« tout va bien »), ce qui est pire.
+  //
+  // D'où : `empreinte` non nulle seulement quand l'appelant a régénéré TOUTES
+  // les structures ; nulle sinon, et on reporte alors ce que l'index portait
+  // déjà. Ça satisfait les deux exigences — jamais effacée par une passe
+  // partielle, jamais affirmée par une passe qui ne l'a pas méritée.
   const index: IndexProgrammes = {
     programmes,
     sujets: await sujetsSurDisque(),
     scrapeISO,
+    ...(empreinte !== null
+      ? { empreinteExtracteur: empreinte }
+      : empreinteHeritee !== undefined
+        ? { empreinteExtracteur: empreinteHeritee }
+        : {}),
   };
   await ecrireJson(CHEMIN_INDEX, { _avertissement: AVERTISSEMENT, ...index });
   return { chemin: CHEMIN_INDEX, total: programmes.length };

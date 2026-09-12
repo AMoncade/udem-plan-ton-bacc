@@ -26,12 +26,15 @@
   "blocs": [
     {
       "id": "70A",
-      "cle": "70/70A",
+      "cle": "70/70A — Fondements",
       "segment": "70",
       "nom": "Fondements",
       "regle": {
-        "type": "inconnu",
-        "brut": "Obligatoire 12 crédits."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 12,
+          "max": 12
+        }
       },
       "regleBrut": "Obligatoire 12 crédits.",
       "cours": [
@@ -45,7 +48,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Notions biopsychosociales",
       "segment": "70",
       "nom": "Notions biopsychosociales",
       "regle": {
@@ -69,7 +72,7 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Intervention et vieillissement",
       "segment": "70",
       "nom": "Intervention et vieillissement",
       "regle": {
@@ -92,7 +95,7 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Thématiques complémentaires",
       "segment": "70",
       "nom": "Thématiques complémentaires",
       "regle": {

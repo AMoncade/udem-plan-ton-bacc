@@ -168,7 +168,7 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Recherche et thèse",
       "segment": "70",
       "nom": "Recherche et thèse",
       "regle": {
@@ -268,7 +268,7 @@
     },
     {
       "id": "72D",
-      "cle": "72/72D",
+      "cle": "72/72D — Recherche et thèse",
       "segment": "72",
       "nom": "Recherche et thèse",
       "regle": {
@@ -349,12 +349,15 @@
     },
     {
       "id": "73D",
-      "cle": "73/73D",
+      "cle": "73/73D — Recherche et thèse",
       "segment": "73",
       "nom": "Recherche et thèse",
       "regle": {
-        "type": "inconnu",
-        "brut": "Obligatoire 84 crédits."
+        "type": "obligatoire",
+        "bornes": {
+          "min": 84,
+          "max": 84
+        }
       },
       "regleBrut": "Obligatoire 84 crédits.",
       "cours": [
@@ -425,7 +428,7 @@
     },
     {
       "id": "74D",
-      "cle": "74/74D",
+      "cle": "74/74D — Recherche et thèse",
       "segment": "74",
       "nom": "Recherche et thèse",
       "regle": {
@@ -492,7 +495,7 @@
     },
     {
       "id": "76C",
-      "cle": "76/76C",
+      "cle": "76/76C — Recherche et thèse",
       "segment": "76",
       "nom": "Recherche et thèse",
       "regle": {

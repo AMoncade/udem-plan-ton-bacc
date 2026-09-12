@@ -52,7 +52,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Cours complémentaires",
       "segment": "70",
       "nom": "Cours complémentaires",
       "regle": {
@@ -85,7 +85,7 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Stages",
       "segment": "70",
       "nom": "Stages",
       "regle": {
@@ -124,12 +124,15 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Stages complémentaires",
       "segment": "70",
       "nom": "Stages complémentaires",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option – Minimum 10 et maximum 21 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 10,
+          "max": 21
+        }
       },
       "regleBrut": "Option – Minimum 10 et maximum 21 crédits.",
       "cours": [
@@ -164,7 +167,7 @@
     },
     {
       "id": "70E",
-      "cle": "70/70E",
+      "cle": "70/70E — Recherche",
       "segment": "70",
       "nom": "Recherche",
       "regle": {

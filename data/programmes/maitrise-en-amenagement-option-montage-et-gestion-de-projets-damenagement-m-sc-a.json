@@ -78,8 +78,11 @@
       "segment": "70",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Au choix - Maximum 3 crédits."
+        "type": "choix",
+        "bornes": {
+          "min": 0,
+          "max": 3
+        }
       },
       "regleBrut": "Au choix - Maximum 3 crédits.",
       "cours": [],
@@ -90,7 +93,7 @@
     },
     {
       "id": "ST-70D",
-      "cle": "70/ST-70D",
+      "cle": "70/ST-70D — Stage",
       "segment": "70",
       "nom": "Stage",
       "regle": {
@@ -113,7 +116,7 @@
     },
     {
       "id": "TD-70D",
-      "cle": "70/TD-70D",
+      "cle": "70/TD-70D — Travail dirigé",
       "segment": "70",
       "nom": "Travail dirigé",
       "regle": {

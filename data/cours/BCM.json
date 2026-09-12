@@ -41,5 +41,985 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-1503/",
     "scrapeISO": "2026-09-11T11:51:46.867Z"
+  },
+  "BCM 2003": {
+    "code": "BCM 2003",
+    "titre": "Application d'outils bio-informatiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Alignement multiple de séquences, assemblage de séquences aléatoires; prédiction de structures secondaires d'ARN et de protéines, recherche dans des bases de données, recherche de patrons et annotation de séquences génomiques, phylogénie.",
+    "prealablesBrut": "BCM2502 ou BIO1101",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 2502"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1101"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2003/",
+    "scrapeISO": "2026-09-11T17:33:57.494Z"
+  },
+  "BCM 2002": {
+    "code": "BCM 2002",
+    "titre": "T.P. de biologie moléculaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Techniques de manipulations des micro-organismes, purification de protéines et d'ADN, cinétique enzymatique, méthodes d'analyse de l'ADN recombinant. Remarques: Cours réservé aux étudiants de biochimie et médecine moléculaire et de bio-informatique",
+    "prealablesBrut": "BCM1503 et BCM1521",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 1503"
+        },
+        {
+          "genre": "cours",
+          "code": "BCM 1521"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2002/",
+    "scrapeISO": "2026-09-11T17:34:10.736Z"
+  },
+  "BCM 2004": {
+    "code": "BCM 2004",
+    "titre": "Évolution moléculaire",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Concepts évolutifs dans l'analyse des données moléculaires. Génétique des populations. L'arbre du vivant et endosymbioses. Évolution structure/fonction des ARN, protéines et génomes. Évolution de l'homme. Neutralisme versus sélectionnisme.",
+    "prealablesBrut": "BCM1501 ET BCM1503",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 1501"
+        },
+        {
+          "genre": "cours",
+          "code": "BCM 1503"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2004/",
+    "scrapeISO": "2026-09-11T17:34:12.117Z"
+  },
+  "BCM 2502": {
+    "code": "BCM 2502",
+    "titre": "Acides nucléiques et génétique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Techniques du génie génétique. Organisation des génomes. Transcription. Interactions protéines-acides nucléiques. Épissage et maturation des ARN. Introduction à la biosynthèse des protéines.",
+    "prealablesBrut": "BCM1503 OU BIO1204",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 1503"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1204"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2502/",
+    "scrapeISO": "2026-09-11T17:34:12.498Z"
+  },
+  "BCM 1502": {
+    "code": "BCM 1502",
+    "titre": "Fondements du métabolisme",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Enzymologie, thermodynamique, voies métaboliques principales de l'anabolisme et du catabolisme, photosynthèse, interrelations métaboliques.",
+    "prealablesBrut": "BCM1501",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 1501"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-1502/",
+    "scrapeISO": "2026-09-11T17:34:37.969Z"
+  },
+  "BCM 1521": {
+    "code": "BCM 1521",
+    "titre": "Travaux pratiques de biochimie 1",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction aux méthodes biochimiques au moyen de travaux pratiques impliquant l'isolement et la caractérisation du glycogène et de l'ADN. Étude spectrophotométrique de la chaîne respiratoire de la mitochondrie, analyse de cinétique enzymatique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-1521/",
+    "scrapeISO": "2026-09-11T17:34:39.178Z"
+  },
+  "BCM 2501": {
+    "code": "BCM 2501",
+    "titre": "Macromolécules biologiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Structure des macromolécules. Principes de purification et caractérisation. Interactions des macromolécules. Intégration des connaissances en chimie organique, thermodynamique et physico-chimie à l'étude des macromolécules.",
+    "prealablesBrut": "BCM2502 OU BIO1101",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 2502"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1101"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2501/",
+    "scrapeISO": "2026-09-11T17:34:41.686Z"
+  },
+  "BCM 2550": {
+    "code": "BCM 2550",
+    "titre": "Programmation appliquée à la génomique",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Apprentissage des bases de la programmation en Python. Application à l'analyse des séquences génétiques: manipulation de séquences, recherche de motifs, automatisation de requêtes dans les banques de données, interfaçage avec d'autres programmes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2550/",
+    "scrapeISO": "2026-09-11T17:34:41.846Z"
+  },
+  "BCM 3515": {
+    "code": "BCM 3515",
+    "titre": "Éthique en biochimie",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Connaissance des principaux raisonnements menant à des décisions en éthique. Exemples de problèmes éthiques liés à la biologie/biochimie. Analyse de débats actuels. Principes de bonne pratique en laboratoire et standards éthiques de la profession.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "BCM3515/PHI1968",
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3515/",
+    "scrapeISO": "2026-09-11T17:34:44.141Z"
+  },
+  "BCM 3526": {
+    "code": "BCM 3526",
+    "titre": "Génétique et génomique humaine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Application des concepts et des techniques de génétique moléculaire à l'étude du génome humain : cartographie des gènes, variabilité génétique, génétique des traits complexes. Introduction aux concepts de génomique et de génétique des populations.",
+    "prealablesBrut": "BCM2502",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 2502"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3526/",
+    "scrapeISO": "2026-09-11T17:34:47.485Z"
+  },
+  "BCM 3525": {
+    "code": "BCM 3525",
+    "titre": "Génétique des organismes modèles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction aux organismes modèles et à leur importance en recherche biomédicale. Étude des caractéristiques physiologiques et métaboliques de la levure, du ver nématode, de la mouche drosophile, du poisson-zèbre, et de la souris.",
+    "prealablesBrut": "BCM2502",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 2502"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3525/",
+    "scrapeISO": "2026-09-11T17:35:34.567Z"
+  },
+  "BCM 2503": {
+    "code": "BCM 2503",
+    "titre": "Métabolisme moléculaire",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Biochimie de l'interférence avec les voies métaboliques, études des cas de médicaments, organisation et modulation du métabolisme, application des approches de la métabolomique.",
+    "prealablesBrut": "BCM1502",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 1502"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2503/",
+    "scrapeISO": "2026-09-11T17:35:40.897Z"
+  },
+  "BCM 2505": {
+    "code": "BCM 2505",
+    "titre": "Enzymologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Cinétique enzymatique. Mécanisme d'action des enzymes. Anticorps comme agents catalyseurs. ARN catalytiques. Remarque : pour les étudiants du programme de bio-informatique, il est suggéré de suivre aussi préalablement le cours BCM1502.",
+    "prealablesBrut": "BCM1501 OU BCM1531",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 1501"
+        },
+        {
+          "genre": "cours",
+          "code": "BCM 1531"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "BCM2505/BCM2504",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2505/",
+    "scrapeISO": "2026-09-11T17:35:42.502Z"
+  },
+  "BCM 2532": {
+    "code": "BCM 2532",
+    "titre": "Pratique de la communication en sciences",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Lecture et analyse critique d'un article scientifique. Rédaction d'un article et présentation orale de données expérimentales.",
+    "prealablesBrut": "BCM2502",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 2502"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2532/",
+    "scrapeISO": "2026-09-11T17:35:44.519Z"
+  },
+  "BCM 2562": {
+    "code": "BCM 2562",
+    "titre": "Biochimie clinique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Ce cours décrit l'utilisation du laboratoire pour le diagnostic et le suivi de diverses pathologies selon les organes ou selon diverses fonctions métaboliques. Valeur diagnostique des analyses, pharmacologie, toxicologie, diagnostic moléculaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "BCM2562/BCM3562",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2562/",
+    "scrapeISO": "2026-09-11T17:35:46.507Z"
+  },
+  "BCM 3512": {
+    "code": "BCM 3512",
+    "titre": "Biochimie de la cellule",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Signalisation cellulaire : récepteurs et canaux, transduction du signal. Adhésion moléculaire. Cytosquelette. Ciblage : sécrétion, ségrégation, importation dans les mitochondries et les chloroplastes.",
+    "prealablesBrut": "(BCM1501 et BCM2502) ou ((BCM1531 ou BCM1531A) et (BIO1203 ou BIO1204))",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "BCM 1501"
+            },
+            {
+              "genre": "cours",
+              "code": "BCM 2502"
+            }
+          ]
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "ou",
+              "enfants": [
+                {
+                  "genre": "cours",
+                  "code": "BCM 1531"
+                },
+                {
+                  "genre": "cours",
+                  "code": "BCM 1531A"
+                }
+              ]
+            },
+            {
+              "genre": "ou",
+              "enfants": [
+                {
+                  "genre": "cours",
+                  "code": "BIO 1203"
+                },
+                {
+                  "genre": "cours",
+                  "code": "BIO 1204"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3512/",
+    "scrapeISO": "2026-09-11T17:35:47.987Z"
+  },
+  "BCM 3514": {
+    "code": "BCM 3514",
+    "titre": "Régulation de l'expression génique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Régulation de l'expression génique lors de processus physiologiques et lors du développement. Oncogènes et antioncogènes. Mécanismes transcriptionnels et posttranscriptionnels.",
+    "prealablesBrut": "BCM3512",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 3512"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "BCM3514/BCM3571",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3514/",
+    "scrapeISO": "2026-09-11T17:35:49.965Z"
+  },
+  "BCM 3513": {
+    "code": "BCM 3513",
+    "titre": "Pathophysiologie moléculaire",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Concepts fondamentaux de biologie cellulaire et moléculaire intégrés à la pathophysiologie des systèmes cardiovasculaire, neuro-endocrinien et immunitaire, ainsi qu'au cancer et au vieillissement. Apprentissage par problèmes. Remarques: Cours réservé aux étudiants inscrits aux baccalauréats en biochimie et en bio-informatique.",
+    "prealablesBrut": "BCM3512",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 3512"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3513/",
+    "scrapeISO": "2026-09-11T17:36:15.343Z"
+  },
+  "BCM 3553": {
+    "code": "BCM 3553",
+    "titre": "Bioinformatique pour biochimistes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Concepts fondamentaux de la bioinformatique. Biologie structurale computationnelle. Bases de données biologiques. Analyse de séquençage de nouvelle génération. Analyses génomiques. Introduction à l'analyse transcriptomique et protéomique",
+    "prealablesBrut": "BCM2502",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 2502"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3553/",
+    "scrapeISO": "2026-09-11T17:36:17.480Z"
+  },
+  "BCM 2531": {
+    "code": "BCM 2531",
+    "titre": "Travaux pratiques 2",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction à la biologie moléculaire. Sous-clonage de gène dans un vecteur d'expression. Analyse de production de protéine. Amplification de gène par PCR, méthodes d'analyses radio-isotopiques, analyses de l'ADN, manipulations de microorganismes.",
+    "prealablesBrut": "BCM1521",
+    "prealables": {
+      "genre": "cours",
+      "code": "BCM 1521"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2531/",
+    "scrapeISO": "2026-09-11T17:36:57.057Z"
+  },
+  "BCM 3531": {
+    "code": "BCM 3531",
+    "titre": "Travaux pratiques 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Mutagenèse dirigée. Hybridation moléculaire. Séquençage. Chromatographie sur tamis moléculaire et sur colonne échangeuse d'ions. Électrophorèse de protéines sur gel. Western blot. Culture cellulaire. Transfection. Cinétique enzymatique.",
+    "prealablesBrut": "BCM2502 ET (BCM2531 OU BCM2002)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 2502"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "BCM 2531"
+            },
+            {
+              "genre": "cours",
+              "code": "BCM 2002"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3531/",
+    "scrapeISO": "2026-09-11T17:37:03.546Z"
+  },
+  "BCM 3532": {
+    "code": "BCM 3532",
+    "titre": "Stage en laboratoire de recherche",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche dans un laboratoire dans le domaine de la biochimie ou de la médecine moléculaire. Inclut la rédaction d'un plan de recherche, d'un rapport de recherche ainsi qu'une présentation orale lors d'un minisymposium.",
+    "prealablesBrut": "BCM2501 ET BCM2502",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 2501"
+        },
+        {
+          "genre": "cours",
+          "code": "BCM 2502"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3532/",
+    "scrapeISO": "2026-09-11T17:37:05.432Z"
+  },
+  "BCM 3536": {
+    "code": "BCM 3536",
+    "titre": "Proposition de recherche en biochimie",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Développement d'une revue de littérature et proposition de recherche en biochimie, en médecine moléculaire, en génétique moléculaire ou en génomique. Le travail porte sur les activités proposées en milieu universitaire, hospitalier ou en centre de recherche. Remarques: Cours réservé aux étudiants du baccalauréat en biochimie et médecine moléculaire. Pour être autorisé à suivre ce cours, l'étudiant doit avoir complété 60 crédits de cours (obligatoires, à options et au choix) du programme et être dans l'impossibilité de s'inscrire à tout autre stage obligatoire. L'inscription à ce cours se fera obligatoirement suite à l'approbation du responsable de programme de 1er cycle en biochimie et médecine moléculaire.",
+    "prealablesBrut": "avoir complété 60 crédits de cours dans le programme 1-465-1-1.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir complété 60 crédits de cours dans le programme 1-465-1-1."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3536/",
+    "scrapeISO": "2026-09-11T17:37:06.700Z"
+  },
+  "BCM 2533": {
+    "code": "BCM 2533",
+    "titre": "Stage d'initiation à la recherche",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche dans un laboratoire dans le domaine de la biochimie, de la médecine moléculaire, de la génétique ou de la génomique. Inclut la rédaction d'un rapport de recherche à remettre à la fin du stage.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-2533/",
+    "scrapeISO": "2026-09-11T17:37:08.414Z"
+  },
+  "BCM 4001": {
+    "code": "BCM 4001",
+    "titre": "Stage honor en biochimie 1",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche en biochimie ou médecine moléculaire. Formation sur la pratique de la recherche, communication orale et écrite, analyse, conception et évaluation critique de projets. Remarques: Cours réservé aux étudiants du cheminement honor du baccalauréat en biochimie et médecine moléculaire.",
+    "prealablesBrut": "Avoir complété 60 crédits obligatoires du programme 1-465-1-1.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété 60 crédits obligatoires du programme 1-465-1-1."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-4001/",
+    "scrapeISO": "2026-09-11T17:37:12.131Z"
+  },
+  "BCM 4002A": {
+    "code": "BCM 4002A",
+    "titre": "Stage honor en biochimie 2",
+    "credits": 5,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche en biochimie ou médecine moléculaire. Formation sur la pratique de la recherche, communication orale et écrite, analyse, conception et évaluation critique de projets. Remarque: Cours réservé aux étudiants du cheminement honor du baccalauréat en biochimie et médecine moléculaire.",
+    "prealablesBrut": "avoir complété 60 crédits obligatoires du programme 146511",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir complété 60 crédits obligatoires du programme 146511"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-4002a/",
+    "scrapeISO": "2026-09-11T17:37:13.949Z"
+  },
+  "BCM 6026": {
+    "code": "BCM 6026",
+    "titre": "L'ARN dans la biochimie fonctionnelle",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Contrôle de la synthèse protéique chez les procaryotes et les eucaryotes; rôle des interactions ARN-protéines; relation entre la signalisation intracellulaire et la synthèse protéique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-6026/",
+    "scrapeISO": "2026-09-11T17:37:15.457Z"
+  },
+  "BCM 6062": {
+    "code": "BCM 6062",
+    "titre": "Protéines et acides nucléiques 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Conformation macromoléculaire. Interactions non covalentes et stabilité en solution. Repliement. Prédiction de structures tridimensionnelles. Interactions protéine-protéine, protéine-ligand et protéine-acide nucléique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-6062/",
+    "scrapeISO": "2026-09-11T17:37:17.483Z"
+  },
+  "BCM 6071": {
+    "code": "BCM 6071",
+    "titre": "Signalisation et cycle cellulaire",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Cycle cellulaire chez la levure et les eucaryotes supérieurs. Apoptose et mort cellulaire. Signalisation et cycle cellulaire. Intégration des voies de signalisation. Interactions protéines-protéines dans la signalisation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-6071/",
+    "scrapeISO": "2026-09-11T17:37:19.504Z"
+  },
+  "BCM 6100": {
+    "code": "BCM 6100",
+    "titre": "Biologie du développement",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Mécanismes moléculaires gouvernant le développement des eucaryotes supérieurs : détermination, établissement des axes embryonnaires, différenciation, contrôle de l'expression des gènes. Aspects moléculaires du développement du système nerveux.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-6100/",
+    "scrapeISO": "2026-09-11T17:37:21.697Z"
+  },
+  "BCM 6200": {
+    "code": "BCM 6200",
+    "titre": "Structure des macromolécules biologiques",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Détermination de structures macromoléculaires par diffraction des rayons-X et par résonance magnétique nucléaire. Modélisation moléculaire. Remarques: Cours conjoint avec l'Université McGill (Biochem 507-604A). Cours offert aux deux ans.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-6200/",
+    "scrapeISO": "2026-09-11T17:37:23.389Z"
+  },
+  "BCM 6210": {
+    "code": "BCM 6210",
+    "titre": "Génomique humaine fonctionnelle",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Étude du fonctionnement du génome humain. Structure du génome et méthodes d'analyse fonctionnelle, grandes bases de données et outils bioinformatiques. Génomique comparative avec d'autres organismes séquencés. Protéomique et métabolomique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-6210/",
+    "scrapeISO": "2026-09-11T17:37:23.706Z"
+  },
+  "BCM 6225": {
+    "code": "BCM 6225",
+    "titre": "Enzymologie moléculaire et mécanistique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Formation approfondie en enzymologie moléculaire, cellulaire, pharmaceutique. Compréhension de l'enzymoogie mécanistique faisant intervenir plusieurs disciplines. Compréhension de maladies au niveau moléculaire et conception rationnelle de drogues.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-6225/",
+    "scrapeISO": "2026-09-11T17:37:26.579Z"
+  },
+  "BCM 3533": {
+    "code": "BCM 3533",
+    "titre": "Stage en génétique et génomique",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche en génétique moléculaire ou en génomique. Inclut de la recherche en laboratoire ou avec l'ordinateur. Comprend la rédaction d'un plan et d'un rapport de recherche et une présentation orale lors d'un minisymposium.",
+    "prealablesBrut": "BCM2002 ET BCM2501 ET BCM2502",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BCM 2002"
+        },
+        {
+          "genre": "cours",
+          "code": "BCM 2501"
+        },
+        {
+          "genre": "cours",
+          "code": "BCM 2502"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-3533/",
+    "scrapeISO": "2026-09-11T17:38:00.926Z"
+  },
+  "BCM 4003": {
+    "code": "BCM 4003",
+    "titre": "Stage honor en génétique et génomique 1",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche en génétique moléculaire ou en génomique. Inclut de la recherche en laboratoire ou avec l'ordinateur. Formation sur la pratique de la recherche, communication orale et écrite, analyse, conception et évaluation critique de projets.",
+    "prealablesBrut": "Avoir complété 60 crédits obligatoires du programme 1-465-1-1.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété 60 crédits obligatoires du programme 1-465-1-1."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-4003/",
+    "scrapeISO": "2026-09-11T17:38:04.629Z"
+  },
+  "BCM 4004A": {
+    "code": "BCM 4004A",
+    "titre": "Stage honor en génétique et génomique 2",
+    "credits": 5,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche en génétique moléculaire ou en génomique. Inclut de la recherche en laboratoire ou avec l'ordinateur. Formation sur la pratique de la recherche, communication orale et écrite, analyse, conception et évaluation critique de projets. Remarque: Cours réservé aux étudiants du cheminement honor du baccalauréat en biochimie et médecine moléculaire",
+    "prealablesBrut": "avoir complété 60 crédits obligatoires du programme 146511",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir complété 60 crédits obligatoires du programme 146511"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-4004a/",
+    "scrapeISO": "2026-09-11T17:38:07.003Z"
+  },
+  "BCM 1531": {
+    "code": "BCM 1531",
+    "titre": "Introduction à la biochimie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Biochimie descriptive et métabolisme intermédiaire des glucides, lipides, protides et acides nucléiques. Enzymes et coenzymes. Bioénergétique, photosynthèse. Régulation du métabolisme intermédiaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "BCM1525/BCM1530/BCM1531/BCM1531A/BCM1957/BCM1973",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bcm-1531/",
+    "scrapeISO": "2026-09-11T17:40:10.435Z"
   }
 }

@@ -17,7 +17,7 @@
   "blocs": [
     {
       "id": "01A",
-      "cle": "01/01A",
+      "cle": "01/01A — Démarche intellectuelle",
       "segment": "01",
       "nom": "Démarche intellectuelle",
       "regle": {
@@ -37,7 +37,7 @@
     },
     {
       "id": "01B",
-      "cle": "01/01B",
+      "cle": "01/01B — Perfectionnement en français",
       "segment": "01",
       "nom": "Perfectionnement en français",
       "regle": {
@@ -59,12 +59,15 @@
     },
     {
       "id": "70A",
-      "cle": "70/70A",
+      "cle": "70/70A — Formation en sciences humaines et sociales",
       "segment": "70",
       "nom": "Formation en sciences humaines et sociales",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - 9 à 18 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 9,
+          "max": 18
+        }
       },
       "regleBrut": "Option - 9 à 18 crédits.",
       "cours": [
@@ -81,7 +84,7 @@
     },
     {
       "id": "70B",
-      "cle": "70/70B",
+      "cle": "70/70B — Formation en arts et lettres",
       "segment": "70",
       "nom": "Formation en arts et lettres",
       "regle": {
@@ -102,7 +105,7 @@
     },
     {
       "id": "70C",
-      "cle": "70/70C",
+      "cle": "70/70C — Formation en langue anglaise",
       "segment": "70",
       "nom": "Formation en langue anglaise",
       "regle": {
@@ -124,7 +127,7 @@
     },
     {
       "id": "70D",
-      "cle": "70/70D",
+      "cle": "70/70D — Formation en informatique",
       "segment": "70",
       "nom": "Formation en informatique",
       "regle": {
@@ -143,7 +146,7 @@
     },
     {
       "id": "70E",
-      "cle": "70/70E",
+      "cle": "70/70E — Formation en statistique",
       "segment": "70",
       "nom": "Formation en statistique",
       "regle": {
@@ -163,7 +166,7 @@
     },
     {
       "id": "71A",
-      "cle": "71/71A",
+      "cle": "71/71A — Formation en mathématiques",
       "segment": "71",
       "nom": "Formation en mathématiques",
       "regle": {
@@ -184,7 +187,7 @@
     },
     {
       "id": "71B",
-      "cle": "71/71B",
+      "cle": "71/71B — Formation en sciences humaines et sociales",
       "segment": "71",
       "nom": "Formation en sciences humaines et sociales",
       "regle": {

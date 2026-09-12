@@ -1,0 +1,1399 @@
+{
+  "CIN 1101": {
+    "code": "CIN 1101",
+    "titre": "Histoire du cinéma 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de différents mouvements et écoles cinématographiques à travers le monde, des débuts du cinéma à 1960. Accent mis aussi bien sur l'évolution sociohistorique que sur les changements intervenus au plan du langage cinématographique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1101/",
+    "scrapeISO": "2026-09-11T17:41:15.477Z"
+  },
+  "CIN 1102": {
+    "code": "CIN 1102",
+    "titre": "Gestes, matériaux et figures du cinéma",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux gestes (cadrer, sonoriser, etc.), matériaux (lumière, couleur, son, voix, etc.) et figures (plastiques, rhétoriques) qui participent à l'instauration d'un univers filmique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1102/",
+    "scrapeISO": "2026-09-11T17:41:17.435Z"
+  },
+  "CIN 1103": {
+    "code": "CIN 1103",
+    "titre": "Histoire du cinéma 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de quelques-uns des courants majeurs du cinéma, de 1960 à aujourd'hui. Accent mis aussi bien sur l'évolution sociohistorique que sur les changements intervenus au plan du récit et du langage cinématographique.",
+    "prealablesBrut": "CIN1101",
+    "prealables": {
+      "genre": "cours",
+      "code": "CIN 1101"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1103/",
+    "scrapeISO": "2026-09-11T17:41:17.579Z"
+  },
+  "CIN 1104": {
+    "code": "CIN 1104",
+    "titre": "Culture et documentation du cinéma",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux études cinématographiques, à leurs principes et à leurs méthodes. Initiation aux pratiques de rédaction, de documentation et de recherche en cinéma.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1104/",
+    "scrapeISO": "2026-09-11T17:41:20.910Z"
+  },
+  "CIN 2102": {
+    "code": "CIN 2102",
+    "titre": "Cinéma québécois",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude historique et esthétique du cinéma québécois depuis ses débuts jusqu'à aujourd’hui. Étude comparative des styles, des auteurs et des discours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2102/",
+    "scrapeISO": "2026-09-11T17:41:23.576Z"
+  },
+  "CIN 2103": {
+    "code": "CIN 2103",
+    "titre": "Analyse filmique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux différentes démarches analytiques élaborées par la pensée critique. Pluralité des lectures et résistance de l'œuvre à l'analyse.",
+    "prealablesBrut": "CIN1102 et CIN1104",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "CIN 1102"
+        },
+        {
+          "genre": "cours",
+          "code": "CIN 1104"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2103/",
+    "scrapeISO": "2026-09-11T17:41:25.136Z"
+  },
+  "CIN 2104": {
+    "code": "CIN 2104",
+    "titre": "Cinéma documentaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude du cinéma documentaire international. Introduction aux différentes conceptions qui ont jalonné l'histoire politique et esthétique du documentaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2104/",
+    "scrapeISO": "2026-09-11T17:41:27.239Z"
+  },
+  "CIN 2128": {
+    "code": "CIN 2128",
+    "titre": "Études culturelles et critiques en cinéma",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perspective critique interdisciplinaire sur les rapports de pouvoir entre cinémas, savoirs et théories dominants et marginalisés. Cadres d'analyse et concepts issus des études féministes, décoloniales, postcoloniales et des études culturelles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2128/",
+    "scrapeISO": "2026-09-11T17:41:29.421Z"
+  },
+  "CIN 3030": {
+    "code": "CIN 3030",
+    "titre": "Théories du cinéma",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Essor et développement des théories et des discours sur le cinéma. Analyse approfondie des approches théoriques les plus importantes.",
+    "prealablesBrut": "CIN2103",
+    "prealables": {
+      "genre": "cours",
+      "code": "CIN 2103"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3030/",
+    "scrapeISO": "2026-09-11T17:41:30.977Z"
+  },
+  "CIN 3102": {
+    "code": "CIN 3102",
+    "titre": "Pratiques et théories des cinéastes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse des théories du cinéma proposées par les cinéastes, que celles-ci s'expriment à travers des processus de création ou sous les formes diverses du traité d'esthétique, du manifeste, de la réflexion théorique, du témoignage, etc.",
+    "prealablesBrut": "CIN2103",
+    "prealables": {
+      "genre": "cours",
+      "code": "CIN 2103"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3102/",
+    "scrapeISO": "2026-09-11T17:41:33.008Z"
+  },
+  "CIN 1002": {
+    "code": "CIN 1002",
+    "titre": "Montage audiovisuel",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation théorique et pratique aux techniques et aux enjeux du traitement des images et des sons—monter, mixer, moduler, transcoder, coller, composer, modéliser, etc. Étude des principales théories du montage. Réalisation d'exercices filmiques.",
+    "prealablesBrut": "CIN1003",
+    "prealables": {
+      "genre": "cours",
+      "code": "CIN 1003"
+    },
+    "concomitantsBrut": "CIN1002 et CIN1004 et CIN1803",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1002/",
+    "scrapeISO": "2026-09-11T17:41:36.786Z"
+  },
+  "CIN 1003": {
+    "code": "CIN 1003",
+    "titre": "Captation audiovisuelle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation théorique et pratique aux outils, aux techniques, aux objets et aux enjeux de la captation—photographier, filmer, enregistrer, numériser, capturer, localiser, suivre, etc. Réalisation d'exercices et de brefs essais filmiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN1003 et CIN1801 et CIN1802",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1003/",
+    "scrapeISO": "2026-09-11T17:41:38.328Z"
+  },
+  "CIN 1004": {
+    "code": "CIN 1004",
+    "titre": "Scénarisation audiovisuelle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation théorique et pratique aux différentes manières de développer un projet audiovisuel – concevoir, prévoir, planifier, organiser, écrire, visualiser, etc. Travaux d'écriture scénaristique avec divers outils, techniques et formes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN1004 et CIN1002",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1004/",
+    "scrapeISO": "2026-09-11T17:41:40.477Z"
+  },
+  "CIN 1801": {
+    "code": "CIN 1801",
+    "titre": "Atelier cinématographique : image",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier de développement du savoir-faire technique concernant l’image au cinéma. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, en accord avec les cours concomitants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN1003, CIN1801 et CIN1802",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1801/",
+    "scrapeISO": "2026-09-11T17:41:42.033Z"
+  },
+  "CIN 1802": {
+    "code": "CIN 1802",
+    "titre": "Atelier cinématographique : son",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier de développement du savoir-faire technique concernant le son au cinéma. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, en accord avec les cours concomitants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN1003, CIN1801 et CIN1802",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1802/",
+    "scrapeISO": "2026-09-11T17:41:43.649Z"
+  },
+  "CIN 1803": {
+    "code": "CIN 1803",
+    "titre": "Atelier cinématographique : montage",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier de développement du savoir-faire technique concernant le montage au cinéma. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, en accord avec les cours concomitants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN1002 et CIN1803",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1803/",
+    "scrapeISO": "2026-09-11T17:41:43.788Z"
+  },
+  "CIN 2000": {
+    "code": "CIN 2000",
+    "titre": "Pratique et esthétique du son",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Apprentissage des techniques de prise de son et de montage sonore. Analyse et mise en pratique des gestes de composition (plastique, musicale, narrative) du son. Réalisation d’un montage sonore pour un film (fiction, documentaire ou expérimental).",
+    "prealablesBrut": "(CIN1002, CIN1003 et CIN1004) ou ( MUS2314 ou MUS3314X)",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "(CIN1002, CIN1003 et CIN1004) ou ( MUS2314 ou MUS3314X)"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2000/",
+    "scrapeISO": "2026-09-11T17:41:47.158Z"
+  },
+  "CIN 1105": {
+    "code": "CIN 1105",
+    "titre": "Cinéma d'animation et images composites",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude historique et théorique des techniques et des recherches du cinéma dit d'animation, de l'animation au cinéma et plus généralement de l'image construite. Les formes et les pratiques, de l'avant-garde au cinéma hollywoodien.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1105/",
+    "scrapeISO": "2026-09-11T17:41:49.414Z"
+  },
+  "CIN 1106": {
+    "code": "CIN 1106",
+    "titre": "Cinéma et politique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Parcours critique des différentes figures et fonctions politiques que le cinéma a revêtues tout au long de son histoire. Examen de courants ou collectifs, cinéastes ou films-phares essentiels à la compréhension du rapport entre cinéma et politique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1106/",
+    "scrapeISO": "2026-09-11T17:41:51.484Z"
+  },
+  "CIN 1107": {
+    "code": "CIN 1107",
+    "titre": "Cinémas nationaux et transnationaux",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours consacré soit aux notions de «?cinéma national?» et «?cinéma transnational?» en général, soit à des cinématographies qui se démarquent des traditions eurocentriques et nord-américaines à l'ère de la mondialisation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1107/",
+    "scrapeISO": "2026-09-11T17:41:53.804Z"
+  },
+  "CIN 1109": {
+    "code": "CIN 1109",
+    "titre": "Les genres cinématographiques 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des genres selon des découpages historiques et géographiques, de la grande forme hollywoodienne aux nouvelles formations génériques. Cours consacré soit à la question théorique de la distinction générique, soit à l’étude d’un genre.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1109/",
+    "scrapeISO": "2026-09-11T17:41:56.401Z"
+  },
+  "CIN 1110": {
+    "code": "CIN 1110",
+    "titre": "Les genres cinématographiques 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des genres selon des découpages historiques et géographiques, de la grande forme hollywoodienne aux nouvelles formations génériques. Cours consacré soit à la question théorique de la distinction générique, soit à l’étude d’un genre.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1110/",
+    "scrapeISO": "2026-09-11T17:41:58.773Z"
+  },
+  "CIN 1121": {
+    "code": "CIN 1121",
+    "titre": "Histoire de la télévision",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des transformations des formes et des plateformes de la télévision depuis la transmission des premières images à distance jusqu’à la production et distribution de séries télé sur Internet. Genres, formats, récits, publics.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1121/",
+    "scrapeISO": "2026-09-11T17:42:00.271Z"
+  },
+  "CIN 2105": {
+    "code": "CIN 2105",
+    "titre": "Invention du cinéma: culture et technologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux problèmes fondamentaux de théorie et d'histoire du cinéma posés par l'avènement du cinéma à la fin du 19e siècle. Étude de l'impact de l'arrivée du nouveau média sur ses contemporains.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2105/",
+    "scrapeISO": "2026-09-11T17:42:02.142Z"
+  },
+  "CIN 2106": {
+    "code": "CIN 2106",
+    "titre": "Thème choisi",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude approfondie d'une approche, d'un auteur ou d'un corpus spécifique de films.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2106/",
+    "scrapeISO": "2026-09-11T17:42:02.437Z"
+  },
+  "CIN 2109": {
+    "code": "CIN 2109",
+    "titre": "Critique cinématographique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude et production de textes critiques. Histoire de la critique de film. Analyse approfondie des critères de jugement esthétique ainsi que des pratiques analytiques et interprétatives. Remarques: Cours contingenté.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2109/",
+    "scrapeISO": "2026-09-11T17:42:05.061Z"
+  },
+  "CIN 2122": {
+    "code": "CIN 2122",
+    "titre": "Analyse de séries télévisées",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse esthétique et culturelle des narrations sérielles télévisuelles de type fictionnel. L'évolution de cette forme narrative dans l'histoire de la télévision. Les genres. Les enjeux de réception. Les mutations à l'ère du web.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2122/",
+    "scrapeISO": "2026-09-11T17:42:06.740Z"
+  },
+  "CIN 2125": {
+    "code": "CIN 2125",
+    "titre": "La télévision transnationale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des contextes de production et de réception des programmes télévisuels dans une perspective globale et transnationale. Coproduction, adaptation, distribution et circulation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2125/",
+    "scrapeISO": "2026-09-11T17:42:08.893Z"
+  },
+  "CIN 2126": {
+    "code": "CIN 2126",
+    "titre": "Cinémas autochtones",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Examen des cinémas autochtones en Amérique du Nord et/ou ailleurs dans le monde. Introduction à leurs divers modes d’expression, de production et de réception, ainsi qu’aux approches critiques développées dans le champ des études autochtones.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2126/",
+    "scrapeISO": "2026-09-11T17:42:10.325Z"
+  },
+  "CIN 2200": {
+    "code": "CIN 2200",
+    "titre": "Le queer et les séries télé",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse des séries télé selon la perspective queer, abordant les représentations (personnages, situations, milieux), les formes et technologies (multiplicité, répétition, variation) et la réception.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2200/",
+    "scrapeISO": "2026-09-11T17:42:11.888Z"
+  },
+  "CIN 3103": {
+    "code": "CIN 3103",
+    "titre": "Mythologies du cinéma",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Études des relations entre mythe et cinéma selon diverses perspectives, allant des mythes recyclés par le cinéma aux mythes que le cinéma a fondés, et plus généralement, du cinéma en tant que nouvelle mythologie du XXe siècle.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3103/",
+    "scrapeISO": "2026-09-11T17:42:13.311Z"
+  },
+  "CIN 3104": {
+    "code": "CIN 3104",
+    "titre": "Histoire et théorie du scénario",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude historique des développements de la pratique d'écriture de scénarios et analyse des discours théoriques portant sur le texte du scénario depuis les débuts du cinéma jusqu'à aujourd'hui.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3104/",
+    "scrapeISO": "2026-09-11T17:42:13.512Z"
+  },
+  "CIN 3106": {
+    "code": "CIN 3106",
+    "titre": "L'acteur de cinéma",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des théories du jeu, des fonctions sociales et éthiques des stars, du rôle de l'acteur dans l'invention des formes et des styles cinématographiques, du rapport entre acteur, rôle et personnage dans les différentes logiques de la représentation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3106/",
+    "scrapeISO": "2026-09-11T17:42:16.020Z"
+  },
+  "CIN 3160": {
+    "code": "CIN 3160",
+    "titre": "Économie du cinéma",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours propose une approche interdisciplinaire des théories et de la pratique entrepreneuriale du cinéma.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3160/",
+    "scrapeISO": "2026-09-11T17:42:17.525Z"
+  },
+  "CIN 20222": {
+    "code": "CIN 20222",
+    "titre": "Pratiques de fiction 2",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Conception et réalisation d’un projet audiovisuel court. Introduction aux enjeux esthétiques, éthiques et politiques du cinéma de fiction. Approches et méthodes de la scénarisation, de la mise en scène, du découpage et du montage.",
+    "prealablesBrut": "CIN20221",
+    "prealables": {
+      "genre": "cours",
+      "code": "CIN 20221"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-20222/",
+    "scrapeISO": "2026-09-11T17:42:21.184Z"
+  },
+  "CIN 2032": {
+    "code": "CIN 2032",
+    "titre": "Pratiques documentaires",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Conception, tournage et montage d’un projet audiovisuel court intégrant les enjeux esthétiques, éthiques et politiques du cinéma documentaire. Approches et méthodes, formes et plateformes du documentaire.",
+    "prealablesBrut": "CIN1002, CIN1003 et CIN1004",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "CIN1002, CIN1003 et CIN1004"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2032/",
+    "scrapeISO": "2026-09-11T17:42:23.085Z"
+  },
+  "CIN 2033": {
+    "code": "CIN 2033",
+    "titre": "Pratiques expérimentales",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Conception, tournage et montage de divers essais audiovisuels courts intégrant la méthode expérimentale au cinéma et dans les arts médiatiques. Protocoles, formes et dispositifs de l’expérimentation (analogique et numérique). Méthode expérimentale.",
+    "prealablesBrut": "CIN1002, CIN1003 et CIN1004",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "CIN1002, CIN1003 et CIN1004"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2033/",
+    "scrapeISO": "2026-09-11T17:42:25.188Z"
+  },
+  "CIN 2003": {
+    "code": "CIN 2003",
+    "titre": "Pratiques scénaristiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Approfondissement des connaissances pratiques et esthétiques de la scénarisation par la conception et le développement de scénarios de divers genres, de fiction ou documentaires.",
+    "prealablesBrut": "CIN1004",
+    "prealables": {
+      "genre": "cours",
+      "code": "CIN 1004"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2003/",
+    "scrapeISO": "2026-09-11T17:42:27.425Z"
+  },
+  "CIN 2006": {
+    "code": "CIN 2006",
+    "titre": "Techniques et poétiques sonores",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Apprentissage pratique du mixage sonore pour le cinéma et les arts médiatiques. Approfondissement et diversification critique des techniques de prise de son et de montage sonore. Réalisation d'exercices d'écoute et d'expérimentations sonores.",
+    "prealablesBrut": "CIN2000",
+    "prealables": {
+      "genre": "cours",
+      "code": "CIN 2000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2006/",
+    "scrapeISO": "2026-09-11T17:42:28.829Z"
+  },
+  "CIN 3003": {
+    "code": "CIN 3003",
+    "titre": "Scénarisation médiale et transmédiale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Conception et développement d'un scénario ou document en vue de la réalisation d'un projet audiovisuel. Enjeux pratiques de la scénarisation élargie et du design d'expérience adaptés selon les médias, plateformes, appareils et technologies.",
+    "prealablesBrut": "50 cr. du programme 117112 ou 117310",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "50 cr. du programme 117112 ou 117310"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3003/",
+    "scrapeISO": "2026-09-11T17:42:30.252Z"
+  },
+  "CIN 3006": {
+    "code": "CIN 3006",
+    "titre": "Conception et réalisation sonores",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Conception et réalisation d'une bande sonore pour une œuvre narrative ou spatialisée. Expérimentation des rapports entre création sonore fixée et performance audiovisuelle. Idéation poétique et développement d'un style d'écriture sonore.",
+    "prealablesBrut": "CIN2006 ou 30 crédits au programme 161512",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "CIN2006 ou 30 crédits au programme 161512"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3006/",
+    "scrapeISO": "2026-09-11T17:42:32.437Z"
+  },
+  "CIN 2804": {
+    "code": "CIN 2804",
+    "titre": "Atelier cinématographique avancé 1",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier d'approfondissement du savoir-faire technique en cinéma. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, en accord avec les cours concomitants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN20221 ou CIN2032 ou CIN2033 ou CIN30011 ou CIN30021",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2804/",
+    "scrapeISO": "2026-09-11T17:42:34.660Z"
+  },
+  "CIN 2805": {
+    "code": "CIN 2805",
+    "titre": "Atelier cinématographique avancé 2",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier d’approfondissement du savoir-faire technique en cinéma. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, en accord avec les cours concomitants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN2032 ou CIN2033 ou CIN2103 ou CIN2128 ou CIN30011 ou CIN30012 ou CIN30021 ou CIN30022",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2805/",
+    "scrapeISO": "2026-09-11T17:42:36.287Z"
+  },
+  "CIN 2806": {
+    "code": "CIN 2806",
+    "titre": "Atelier cinématographique avancé 3",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier d’approfondissement du savoir-faire technique en cinéma. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, en accord avec les cours concomitants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN2032 ou CIN2033 ou CIN2103 ou CIN2128 ou CIN30011 ou CIN30012 ou CIN30021 ou CIN30022",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2806/",
+    "scrapeISO": "2026-09-11T17:42:37.684Z"
+  },
+  "CIN 3002": {
+    "code": "CIN 3002",
+    "titre": "Stage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage supervisé dans le milieu de la recherche, de la critique et/ou de la production cinématographique. Le stage vise à réaliser l'articulation avec un milieu de travail concret dans le domaine du cinéma. Stage d'une durée de 135 heures. Remarques: Ce cours est contingenté.",
+    "prealablesBrut": "36 crédits CIN.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "36 crédits CIN."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3002/",
+    "scrapeISO": "2026-09-11T17:42:39.019Z"
+  },
+  "CIN 3807": {
+    "code": "CIN 3807",
+    "titre": "Atelier cinématographique spécialisé 1",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier d’approfondissement d’un savoir-faire pratique en cinéma : production, régie, image, son, décor, réalisation, etc. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3807/",
+    "scrapeISO": "2026-09-11T17:42:41.168Z"
+  },
+  "CIN 3808": {
+    "code": "CIN 3808",
+    "titre": "Atelier cinématographique spécialisé 2",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier d’approfondissement d’un savoir-faire pratique en cinéma : production, régie, image, son, décor, réalisation, etc. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3808/",
+    "scrapeISO": "2026-09-11T17:42:43.333Z"
+  },
+  "CIN 3809": {
+    "code": "CIN 3809",
+    "titre": "Atelier cinématographique spécialisé 3",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier d’approfondissement d’un savoir-faire pratique en cinéma : production, régie, image, son, décor, réalisation, etc. Remarques : Guides techniques à consulter, séances de travail pratique et exercices individuels à réaliser, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3809/",
+    "scrapeISO": "2026-09-11T17:42:45.552Z"
+  },
+  "CIN 30012": {
+    "code": "CIN 30012",
+    "titre": "Projets audiovisuels narratifs 2",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Conception et réalisation d’un projet audiovisuel (fictionnel, documentaire, expérimental, etc.) sur des enjeux de narrativisation des images et des sons.",
+    "prealablesBrut": "CIN30011 et 50 crédits du programme 117112 et [(CIN20221 et CIN20222) ou CIN2032 ou CIN2033]",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "CIN30011 et 50 crédits du programme 117112 et [(CIN20221 et CIN20222) ou CIN2032 ou CIN2033]"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-30012/",
+    "scrapeISO": "2026-09-11T17:42:49.491Z"
+  },
+  "CIN 30022": {
+    "code": "CIN 30022",
+    "titre": "Projets audiovisuels spatialisés 2",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Conception et réalisation d’un projet audiovisuel (fictionnel, documentaire, expérimental, etc.) à partir d’une problématique choisie et autour des enjeux de spatialisation, localisation, circulation, navigation et mobilité des images et des sons.",
+    "prealablesBrut": "CIN30021 et 50 crédits du programme 117112 et [(CIN20221 et CIN20222) ou CIN2032 ou CIN2033]",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "CIN30021 et 50 crédits du programme 117112 et [(CIN20221 et CIN20222) ou CIN2032 ou CIN2033]"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-30022/",
+    "scrapeISO": "2026-09-11T17:42:53.610Z"
+  },
+  "CIN 1108": {
+    "code": "CIN 1108",
+    "titre": "Cinéma et télévision",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude esthétique et culturelle des liens entre le cinéma et la télévision. Les formes, les récits, les figures professionnelles et les publics à cheval entre les deux médias. Rapports d'antagonisme et de complémentarité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1108/",
+    "scrapeISO": "2026-09-11T17:42:55.060Z"
+  },
+  "CIN 2107": {
+    "code": "CIN 2107",
+    "titre": "Adaptation cinématographique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude historique et théorique de la transposition du texte à l'image, ainsi que de la littérature et des autres arts au cinéma, à travers l'analyse d'une thématique ou d'un corpus choisi. Les enjeux esthétiques et sociaux de l'adaptation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2107/",
+    "scrapeISO": "2026-09-11T17:42:56.625Z"
+  },
+  "CIN 2108": {
+    "code": "CIN 2108",
+    "titre": "Cinéma expérimental",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours portant sur l’histoire du cinéma expérimental d’un point de vue esthétique, technique et sociohistorique : avant-gardes des années 1920, cinéma expérimental nordaméricain et européen, art vidéo et numérique, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2108/",
+    "scrapeISO": "2026-09-11T17:42:58.145Z"
+  },
+  "CIN 2110": {
+    "code": "CIN 2110",
+    "titre": "Le cinéma et les autres arts",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Le cinéma dans ses rapports aux autres arts : peinture, théâtre, musique, architecture, etc. Points de convergence et de divergence. Rapports traditionnels et problématiques soulevées dans les pratiques récentes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2110/",
+    "scrapeISO": "2026-09-11T17:43:00.646Z"
+  },
+  "CIN 2111": {
+    "code": "CIN 2111",
+    "titre": "Cinéma et histoire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Le cours vise à présenter, dans une approche qui se veut à la fois théorique, analytique et thématique, les principaux points de rencontre entre le médium cinématographique et l’histoire comme discipline des sciences humaines.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2111/",
+    "scrapeISO": "2026-09-11T17:43:02.227Z"
+  },
+  "CIN 2112": {
+    "code": "CIN 2112",
+    "titre": "Cinéma, genre et sexualité",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude historique et théorique des fonctions de l'image dans la construction des rôles sexuels : théories féministes, stéréotypes sexuels, récit oedipien, voyeurisme et identification, censure et pornographie, les oeuvres critiques, la parodie, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2112/",
+    "scrapeISO": "2026-09-11T17:43:03.837Z"
+  },
+  "CIN 2113": {
+    "code": "CIN 2113",
+    "titre": "Cinéma et technologies numériques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des usages contemporains des technologies numériques dans le domaine élargi des images en mouvement. Analyse d'une thématique ou d'un corpus choisi : interactivité, immersion, réalité virtuelle, cinéma web, jeu vidéo, arts médiatiques, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2113/",
+    "scrapeISO": "2026-09-11T17:43:06.012Z"
+  },
+  "CIN 2116": {
+    "code": "CIN 2116",
+    "titre": "Cinéma et sciences humaines",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Approche historique, théorique et thématique des principaux courants de l'analyse sociologique et anthropologique du cinéma à travers des textes de référence et des exercices d'analyse.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2116/",
+    "scrapeISO": "2026-09-11T17:43:08.100Z"
+  },
+  "CIN 2120": {
+    "code": "CIN 2120",
+    "titre": "Cinéma et bande dessinée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Histoire comparée de la bande dessinée et du cinéma. Ce panorama couvre une période s'étalant sur deux siècles et touche aux notions de dispositif, de représentation et de lecture.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2120/",
+    "scrapeISO": "2026-09-11T17:43:10.088Z"
+  },
+  "CIN 2123": {
+    "code": "CIN 2123",
+    "titre": "La télévision dans tous ses écrans",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Impact de l'arrivée de la télévision sur l'institution du cinéma. Convergence et divergence des technologies, contenus et usages des deux médias, depuis les premiers temps jusqu'à l'ère numérique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2123/",
+    "scrapeISO": "2026-09-11T17:43:12.137Z"
+  },
+  "CIN 2124": {
+    "code": "CIN 2124",
+    "titre": "Archéologie de l'audiovisuel",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse épistémologique des appareils et dispositifs qu'engage toute production cinématographique. Étude des discours, pratiques et usages médiatiques au sein d'une histoire technique du cinéma.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2124/",
+    "scrapeISO": "2026-09-11T17:43:14.164Z"
+  },
+  "CIN 3107": {
+    "code": "CIN 3107",
+    "titre": "Archives et patrimoine cinématographique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l'histoire de la conservation et de la valorisation du patrimoine cinématographique. Réflexions sur les dimensions institutionnelles, technologiques, matérielles et esthétiques liées à la création et l'évolution des archives filmiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3107/",
+    "scrapeISO": "2026-09-11T17:43:15.535Z"
+  },
+  "CIN 2127": {
+    "code": "CIN 2127",
+    "titre": "Scénarisation des séries télé",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours pratique portant sur les étapes d’écriture d’une série télé, incluant structure, note d’intention, projet, bible, règles pour la construction des personnages et pour l’écriture des épisodes.",
+    "prealablesBrut": "12 crédits universitaires et (CIN1121 ou CIN2121) et CIN2122",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "12 crédits universitaires et (CIN1121 ou CIN2121) et CIN2122"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2127/",
+    "scrapeISO": "2026-09-11T17:46:02.959Z"
+  },
+  "CIN 1014": {
+    "code": "CIN 1014",
+    "titre": "Laboratoire de scénarisation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation aux diverses manières de concevoir et d'écrire une oeuvre audiovisuelle. Variété d'outils créatifs, de techniques, de genres, de formes et de contenus pouvant mener à des réalisations. Travaux d'écriture scénaristique. Remarques: Réservé aux étudiants du bidisciplinaire en écriture de scénario et création littéraire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "CIN1014 et FRA1710",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-1014/",
+    "scrapeISO": "2026-09-11T18:44:19.472Z"
+  },
+  "CIN 2013": {
+    "code": "CIN 2013",
+    "titre": "Pratique scénaristique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Approfondissement des connaissances pratiques et esthétiques de la scénarisation par la conception et l'écriture de projets et de scénarios de films de divers genres, à partir de problématiques choisies. Remarques: Réservé aux étudiants du bidisciplinaire en écriture de scénario et création littéraire.",
+    "prealablesBrut": "CIN1014 ET FRA1710",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "CIN 1014"
+        },
+        {
+          "genre": "cours",
+          "code": "FRA 1710"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-2013/",
+    "scrapeISO": "2026-09-11T18:44:22.771Z"
+  },
+  "CIN 3105": {
+    "code": "CIN 3105",
+    "titre": "Écritures scénaristiques: genre et média",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours de scénarisation avancée vise à familiariser l'étudiant avec les contraintes propres à certains genres (dont le documentaire), à certains formats et à certains média (télévision, cinéma, nouvelles et technologies). Remarques: Réservé aux étudiants du bidisciplinaire en écriture de scénario et création littéraire.",
+    "prealablesBrut": "CIN2013 ET FRA2710",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "CIN 2013"
+        },
+        {
+          "genre": "cours",
+          "code": "FRA 2710"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cin-3105/",
+    "scrapeISO": "2026-09-11T18:44:25.327Z"
+  }
+}

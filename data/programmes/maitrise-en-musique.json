@@ -34,7 +34,7 @@
     },
     {
       "id": "MM-80B",
-      "cle": "80/MM-80B",
+      "cle": "80/MM-80B — Séminaires",
       "segment": "80",
       "nom": "Séminaires",
       "regle": {
@@ -53,7 +53,7 @@
     },
     {
       "id": "MM-80C",
-      "cle": "80/MM-80C",
+      "cle": "80/MM-80C — Cours et ateliers",
       "segment": "80",
       "nom": "Cours et ateliers",
       "regle": {
@@ -78,7 +78,7 @@
     },
     {
       "id": "MM-80D",
-      "cle": "80/MM-80D",
+      "cle": "80/MM-80D — Recherche et mémoire",
       "segment": "80",
       "nom": "Recherche et mémoire",
       "regle": {
@@ -91,6 +91,7 @@
       "regleBrut": "Obligatoire - 30 crédits.",
       "cours": [],
       "contenuOuvert": false,
+      "videConstate": true,
       "notes": []
     },
     {
@@ -114,12 +115,15 @@
     },
     {
       "id": "TD-80B",
-      "cle": "80/TD-80B",
+      "cle": "80/TD-80B — Séminaires",
       "segment": "80",
       "nom": "Séminaires",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option Minimum 15 crédits, maximum 18 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 15,
+          "max": 18
+        }
       },
       "regleBrut": "Option Minimum 15 crédits, maximum 18 crédits.",
       "cours": [],
@@ -130,7 +134,7 @@
     },
     {
       "id": "TD-80C",
-      "cle": "80/TD-80C",
+      "cle": "80/TD-80C — Cours et ateliers",
       "segment": "80",
       "nom": "Cours et ateliers",
       "regle": {
@@ -155,7 +159,7 @@
     },
     {
       "id": "TD-80D",
-      "cle": "80/TD-80D",
+      "cle": "80/TD-80D — Travaux et lectures dirigés",
       "segment": "80",
       "nom": "Travaux et lectures dirigés",
       "regle": {

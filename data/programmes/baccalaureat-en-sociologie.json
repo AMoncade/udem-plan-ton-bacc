@@ -72,7 +72,7 @@
   "blocs": [
     {
       "id": "01A",
-      "cle": "01/01A",
+      "cle": "01/01A — Bases théoriques et méthodologiques",
       "segment": "01",
       "nom": "Bases théoriques et méthodologiques",
       "regle": {
@@ -99,7 +99,7 @@
     },
     {
       "id": "01B",
-      "cle": "01/01B",
+      "cle": "01/01B — Théorie classique",
       "segment": "01",
       "nom": "Théorie classique",
       "regle": {
@@ -122,7 +122,7 @@
     },
     {
       "id": "01C",
-      "cle": "01/01C",
+      "cle": "01/01C — Théorie contemporaine",
       "segment": "01",
       "nom": "Théorie contemporaine",
       "regle": {
@@ -142,7 +142,7 @@
     },
     {
       "id": "01D",
-      "cle": "01/01D",
+      "cle": "01/01D — Laboratoires et stages",
       "segment": "01",
       "nom": "Laboratoires et stages",
       "regle": {
@@ -165,29 +165,36 @@
     },
     {
       "id": "01E",
-      "cle": "01/01E",
+      "cle": "01/01E — Langues",
       "segment": "01",
       "nom": "Langues",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier : option - Maximum 9 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
       },
       "regleBrut": "Cheminement régulier : option - Maximum 9 crédits.",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : option - 3 crédits. Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, innu, italien, japonais, portugais, russe et autres. Plusieurs niveaux sont offerts.",
         "Consultez l'information sur le site du Centre de langues"
       ]
     },
     {
       "id": "01M",
-      "cle": "01/01M",
+      "cle": "01/01M — Cheminement international 1",
       "segment": "01",
       "nom": "Cheminement international 1",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier : option - Maximum 9 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 9
+        }
       },
       "regleBrut": "Cheminement régulier : option - Maximum 9 crédits.",
       "cours": [
@@ -197,17 +204,21 @@
       ],
       "contenuOuvert": false,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : option - Minimum 3 crédits, maximum 9 crédits."
       ]
     },
     {
       "id": "01N",
-      "cle": "01/01N",
+      "cle": "01/01N — Cheminement international 2",
       "segment": "01",
       "nom": "Cheminement international 2",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier : option - Maximum 12 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 12
+        }
       },
       "regleBrut": "Cheminement régulier : option - Maximum 12 crédits.",
       "cours": [
@@ -217,6 +228,7 @@
       ],
       "contenuOuvert": false,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : option - Minimum 6 crédits, maximum 12 crédits."
       ]
     },
@@ -226,24 +238,31 @@
       "segment": "01",
       "nom": "",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier : choix - 6 crédits"
+        "type": "choix",
+        "bornes": {
+          "min": 6,
+          "max": 6
+        }
       },
       "regleBrut": "Cheminement régulier : choix - 6 crédits",
       "cours": [],
       "contenuOuvert": true,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : choix - Maximum 6 crédits Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que le sigle SOL."
       ]
     },
     {
       "id": "72A",
-      "cle": "72/72A",
+      "cle": "72/72A — Cours thématiques en sociologie",
       "segment": "72",
       "nom": "Cours thématiques en sociologie",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier Option : Minimum 12 crédits, maximum 42 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 12,
+          "max": 42
+        }
       },
       "regleBrut": "Cheminement régulier Option : Minimum 12 crédits, maximum 42 crédits.",
       "cours": [
@@ -284,12 +303,13 @@
       ],
       "contenuOuvert": false,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international: Option Minimum 12 crédits, maximum 36 crédits"
       ]
     },
     {
       "id": "72Y",
-      "cle": "72/72Y",
+      "cle": "72/72Y — Disciplines connexes",
       "segment": "72",
       "nom": "Disciplines connexes",
       "regle": {
@@ -341,7 +361,7 @@
     },
     {
       "id": "73A",
-      "cle": "73/73A",
+      "cle": "73/73A — Formation spécialisée",
       "segment": "73",
       "nom": "Formation spécialisée",
       "regle": {
@@ -360,7 +380,7 @@
     },
     {
       "id": "73B",
-      "cle": "73/73B",
+      "cle": "73/73B — Formation en démographie",
       "segment": "73",
       "nom": "Formation en démographie",
       "regle": {
@@ -390,7 +410,7 @@
     },
     {
       "id": "73C",
-      "cle": "73/73C",
+      "cle": "73/73C — Formation spécialisée en sociologie",
       "segment": "73",
       "nom": "Formation spécialisée en sociologie",
       "regle": {
@@ -421,12 +441,15 @@
     },
     {
       "id": "73D",
-      "cle": "73/73D",
+      "cle": "73/73D — Cours thématiques en sociologie",
       "segment": "73",
       "nom": "Cours thématiques en sociologie",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier : Option - Maximum 24 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 0,
+          "max": 24
+        }
       },
       "regleBrut": "Cheminement régulier : Option - Maximum 24 crédits.",
       "cours": [
@@ -454,12 +477,13 @@
       ],
       "contenuOuvert": false,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : Option - Maximum 12 crédits."
       ]
     },
     {
       "id": "73Y",
-      "cle": "73/73Y",
+      "cle": "73/73Y — Disciplines connexes",
       "segment": "73",
       "nom": "Disciplines connexes",
       "regle": {
@@ -507,7 +531,7 @@
     },
     {
       "id": "74A",
-      "cle": "74/74A",
+      "cle": "74/74A — Formation spécialisée",
       "segment": "74",
       "nom": "Formation spécialisée",
       "regle": {
@@ -526,7 +550,7 @@
     },
     {
       "id": "74B",
-      "cle": "74/74B",
+      "cle": "74/74B — Formation multidisciplinaire",
       "segment": "74",
       "nom": "Formation multidisciplinaire",
       "regle": {
@@ -557,12 +581,15 @@
     },
     {
       "id": "74C",
-      "cle": "74/74C",
+      "cle": "74/74C — Cours thématiques en sociologie",
       "segment": "74",
       "nom": "Cours thématiques en sociologie",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 30
+        }
       },
       "regleBrut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits.",
       "cours": [
@@ -600,12 +627,13 @@
       ],
       "contenuOuvert": false,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : Option - Minimum 3 crédits, maximum 18 crédits."
       ]
     },
     {
       "id": "74Y",
-      "cle": "74/74Y",
+      "cle": "74/74Y — Disciplines connexes",
       "segment": "74",
       "nom": "Disciplines connexes",
       "regle": {
@@ -653,7 +681,7 @@
     },
     {
       "id": "75A",
-      "cle": "75/75A",
+      "cle": "75/75A — Formation spécialisée",
       "segment": "75",
       "nom": "Formation spécialisée",
       "regle": {
@@ -672,7 +700,7 @@
     },
     {
       "id": "75B",
-      "cle": "75/75B",
+      "cle": "75/75B — Formation multidisciplinaire",
       "segment": "75",
       "nom": "Formation multidisciplinaire",
       "regle": {
@@ -704,12 +732,15 @@
     },
     {
       "id": "75C",
-      "cle": "75/75C",
+      "cle": "75/75C — Cours thématiques en sociologie",
       "segment": "75",
       "nom": "Cours thématiques en sociologie",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 30
+        }
       },
       "regleBrut": "Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits.",
       "cours": [
@@ -747,12 +778,13 @@
       ],
       "contenuOuvert": false,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : Option - Minimum 3 crédits, maximum 18 crédits."
       ]
     },
     {
       "id": "75Y",
-      "cle": "75/75Y",
+      "cle": "75/75Y — Disciplines connexes",
       "segment": "75",
       "nom": "Disciplines connexes",
       "regle": {
@@ -803,7 +835,7 @@
     },
     {
       "id": "76A",
-      "cle": "76/76A",
+      "cle": "76/76A — Formation spécialisée",
       "segment": "76",
       "nom": "Formation spécialisée",
       "regle": {
@@ -823,7 +855,7 @@
     },
     {
       "id": "76B",
-      "cle": "76/76B",
+      "cle": "76/76B — Formation multidisciplinaire",
       "segment": "76",
       "nom": "Formation multidisciplinaire",
       "regle": {
@@ -862,12 +894,15 @@
     },
     {
       "id": "76C",
-      "cle": "76/76C",
+      "cle": "76/76C — Cours thématiques en sociologie",
       "segment": "76",
       "nom": "Cours thématiques en sociologie",
       "regle": {
-        "type": "inconnu",
-        "brut": "Cheminement régulier: Option - Minimum 3 crédits, maximum 27 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 3,
+          "max": 27
+        }
       },
       "regleBrut": "Cheminement régulier: Option - Minimum 3 crédits, maximum 27 crédits.",
       "cours": [
@@ -902,12 +937,13 @@
       ],
       "contenuOuvert": false,
       "notes": [
+        "Cheminement régulier",
         "Cheminement international : Option - Minimum 3 crédits, maximum 15 crédits"
       ]
     },
     {
       "id": "76Y",
-      "cle": "76/76Y",
+      "cle": "76/76Y — Disciplines connexes",
       "segment": "76",
       "nom": "Disciplines connexes",
       "regle": {

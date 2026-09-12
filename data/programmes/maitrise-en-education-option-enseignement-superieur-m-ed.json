@@ -16,7 +16,7 @@
   "blocs": [
     {
       "id": "01A",
-      "cle": "01/01A",
+      "cle": "01/01A — Préparation à la pièce maitresse",
       "segment": "01",
       "nom": "Préparation à la pièce maitresse",
       "regle": {
@@ -36,7 +36,7 @@
     },
     {
       "id": "01B",
-      "cle": "01/01B",
+      "cle": "01/01B — Pièce maitresse",
       "segment": "01",
       "nom": "Pièce maitresse",
       "regle": {
@@ -60,7 +60,7 @@
     },
     {
       "id": "01C",
-      "cle": "01/01C",
+      "cle": "01/01C — Fondements et interprofessionnalité",
       "segment": "01",
       "nom": "Fondements et interprofessionnalité",
       "regle": {
@@ -80,7 +80,7 @@
     },
     {
       "id": "01D",
-      "cle": "01/01D",
+      "cle": "01/01D — Secteurs collégial et universitaire",
       "segment": "01",
       "nom": "Secteurs collégial et universitaire",
       "regle": {
@@ -100,7 +100,7 @@
     },
     {
       "id": "01E",
-      "cle": "01/01E",
+      "cle": "01/01E — Spécialisation",
       "segment": "01",
       "nom": "Spécialisation",
       "regle": {
@@ -127,7 +127,7 @@
     },
     {
       "id": "01F",
-      "cle": "01/01F",
+      "cle": "01/01F — Cours au choix",
       "segment": "01",
       "nom": "Cours au choix",
       "regle": {
@@ -140,13 +140,14 @@
       "regleBrut": "Choix - Maximum 3 crédits",
       "cours": [],
       "contenuOuvert": false,
+      "videConstate": true,
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C1A",
+      "cle": "70/70C1A — Pédagogie de l'enseignement supérieur",
       "segment": "70",
-      "nom": "1A Pédagogie de l'enseignement supérieur",
+      "nom": "Pédagogie de l'enseignement supérieur",
       "regle": {
         "type": "obligatoire",
         "bornes": {
@@ -162,10 +163,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C1B",
+      "cle": "70/70C1B — Didactique en enseignement supérieur",
       "segment": "70",
-      "nom": "1B Didactique en enseignement supérieur",
+      "nom": "Didactique en enseignement supérieur",
       "regle": {
         "type": "option",
         "bornes": {
@@ -182,10 +183,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C1C",
+      "cle": "70/70C1C — Dimensions de l'enseignement",
       "segment": "70",
-      "nom": "1C Dimensions de l'enseignement",
+      "nom": "Dimensions de l'enseignement",
       "regle": {
         "type": "option",
         "bornes": {
@@ -215,10 +216,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C1D",
+      "cle": "70/70C1D — Stage",
       "segment": "70",
-      "nom": "1D Stage",
+      "nom": "Stage",
       "regle": {
         "type": "option",
         "bornes": {
@@ -236,10 +237,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C2A",
+      "cle": "70/70C2A — Administration de l'enseignement supérieur",
       "segment": "70",
-      "nom": "2A Administration de l'enseignement supérieur",
+      "nom": "Administration de l'enseignement supérieur",
       "regle": {
         "type": "obligatoire",
         "bornes": {
@@ -255,10 +256,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C2B",
+      "cle": "70/70C2B — Dimensions institutionnelles et politiques",
       "segment": "70",
-      "nom": "2B Dimensions institutionnelles et politiques",
+      "nom": "Dimensions institutionnelles et politiques",
       "regle": {
         "type": "option",
         "bornes": {
@@ -280,10 +281,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C2C",
+      "cle": "70/70C2C — Stage",
       "segment": "70",
-      "nom": "2C Stage",
+      "nom": "Stage",
       "regle": {
         "type": "obligatoire",
         "bornes": {

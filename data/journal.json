@@ -1,5 +1,15 @@
 [
   {
+    "genre": "info",
+    "sujet": "acces-fac",
+    "message": "la page écrit « comporte un maximum de 24 crédits » : `creditsTotal` ne porte qu'un nombre, la nuance reste verbatim dans `notes`"
+  },
+  {
+    "genre": "manque",
+    "sujet": "acces-fac",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
     "genre": "manque",
     "sujet": "actualisation-de-formation-en-enseignement bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -125,6 +135,21 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
+    "genre": "info",
+    "sujet": "annee-preparatoire",
+    "message": "3 parcours déclarés (sciences humaines et sociales | arts et lettres | sciences) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "annee-preparatoire-au-doctorat-en-medecine bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "annee-preparatoire-au-doctorat-en-medecine",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
     "genre": "inattendu",
     "sujet": "archeologie-classique",
     "message": "orientation « Archéologie classique » annonce le(s) segment(s) 70, absent(s) de la page (segments trouvés : aucun)"
@@ -148,16 +173,6 @@
     "genre": "manque",
     "sujet": "archeologie-classique",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-4-ans-en-arts-et-lettres bloc 71/71A",
-    "message": "bornes de crédits non reconnues dans « Option - 6 à 12 crédits. » (partie « 6 à 12 crédits »)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-4-ans-en-sciences-humaines-et-sociales bloc 70/70A",
-    "message": "bornes de crédits non reconnues dans « Option - 9 à 18 crédits. » (partie « 9 à 18 crédits »)"
   },
   {
     "genre": "inattendu",
@@ -281,7 +296,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-biochimie-et-medecine-moleculaire bloc 01/01J",
+    "sujet": "baccalaureat-en-biochimie-et-medecine-moleculaire bloc 01/01J — Stage et travaux pratiques à l'étranger",
     "message": "contenu ouvert (règle « Option - Maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Cheminement général : 0 crédit; cheminement honor : 0 crédit; cheminement international : minimum 3 crédits, maximum 9 crédits. »"
   },
   {
@@ -385,13 +400,8 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-en-communication-et-politique bloc 99/99F",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum 21 crédits; maximum 30 crédits. » (partie « Minimum 21 crédits; maximum 30 crédits »)"
-  },
-  {
     "genre": "info",
-    "sujet": "baccalaureat-en-communication-et-politique bloc 99/99Y",
+    "sujet": "baccalaureat-en-communication-et-politique bloc 99/99Y — Langues",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
@@ -536,6 +546,26 @@
   },
   {
     "genre": "manque",
+    "sujet": "baccalaureat-en-droit bloc 70/70Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-economie-et-politique bloc 71/71G — Langues",
+    "message": "contenu ouvert (règle « Option - maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-economie-et-politique bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-economie-et-politique",
+    "message": "« un minimum de 60 crédits à option » : total option présent mais sans bornes nommables (un minimum sans maximum, ou aucun nombre) — laissé à null"
+  },
+  {
+    "genre": "manque",
     "sujet": "baccalaureat-en-ecriture-de-scenario-et-creation-litteraire bloc 71/71Z",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
@@ -563,16 +593,6 @@
     "genre": "inattendu",
     "sujet": "baccalaureat-en-enseignement-des-mathematiques-au-secondaire",
     "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Les crédits du segment sont répartis de la façon suivante : 43 crédits obligatoires et 6 à 9 crédits à option » « Les crédits du segment sont répartis de la façon suivante : 59 crédits obligatoires et 9 à 12 crédits à option »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-en-enseignement-des-sciences-et-des-technologies-au-secondaire bloc 01/01D",
-    "message": "bornes de crédits non reconnues dans « Option – min. 3.0 crédits, max. 9.0 crédits. » (partie « min. 3.0 crédits, max. 9.0 crédits »)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-en-enseignement-des-sciences-et-des-technologies-au-secondaire bloc 70/70C",
-    "message": "bornes de crédits non reconnues dans « Option – min. 3 max. 9 crédits. » (partie « min. 3 max. 9 crédits »)"
   },
   {
     "genre": "inattendu",
@@ -641,7 +661,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-etudes-allemandes bloc 71/71H",
+    "sujet": "baccalaureat-en-etudes-allemandes bloc 71/71H — Stage",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -731,7 +751,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-etudes-religieuses bloc 80/80V",
+    "sujet": "baccalaureat-en-etudes-religieuses bloc 80/80V — Propre au Cheminement honor",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cheminement régulier: 0 crédit; cheminement honor : 6 crédits. (Pour compléter le cheminement honor, les étudiants doivent réussir les cours REL 4000 et REL 4001). »"
   },
   {
@@ -771,7 +791,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-geographie-environnementale bloc 01/01D",
+    "sujet": "baccalaureat-en-geographie-environnementale bloc 01/01D — Langues",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
@@ -910,6 +930,16 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-informatique bloc 01/01Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-informatique",
+    "message": "3 parcours déclarés (générale | Coop | honor) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
     "genre": "inattendu",
     "sujet": "baccalaureat-en-kinesiologie",
     "message": "« - en cheminement régulier : 66 crédits obligatoires et 24 crédits à option, - en cheminement Honor : 66 crédits obligatoires (Blocs 70A, 70B et 70D), 9 crédits à option (bloc 70C), 3 crédits à option (bloc 70E) et 12 crédits des blocs à option 70V et 70W. » énonce deux fois le total obligatoire — le premier est retenu"
@@ -1036,6 +1066,41 @@
   },
   {
     "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 75/75Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 77/77Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 79/79Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 81/81Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-mathematiques bloc 82/82Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-mathematiques",
+    "message": "7 parcours déclarés (Actuariat | Actuariat COOP | Mathématiques pures et appliquées | Statistique | Statistique COOP | Mathématiques financières | Sciences mathématiques) ; 7 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
     "sujet": "baccalaureat-en-mathematiques-et-economie bloc 70/70Z",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
@@ -1151,12 +1216,32 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-musicologie bloc 01/01J",
+    "sujet": "baccalaureat-en-musicologie bloc 01/01J — Cours de langues",
     "message": "contenu ouvert (règle « Option - Minimum 6 crédits, maximum 12 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
     "genre": "info",
     "sujet": "baccalaureat-en-musicologie",
+    "message": "2 parcours déclarés (Instrument | Connaissance du clavier) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-musique bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-musique bloc 02/02E — Cours de langue",
+    "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-musique bloc 02/02Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-musique",
     "message": "2 parcours déclarés (Instrument | Connaissance du clavier) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
@@ -1326,7 +1411,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-musique-interpretation-instruments-classiques bloc 01/01G",
+    "sujet": "baccalaureat-en-musique-interpretation-instruments-classiques bloc 01/01G — Instruments",
     "message": "contenu ouvert (règle « Option - 36 crédits. ») : aucun code, le contenu est décrit en prose — « Cours MUI 1##6A, MUI 1##6B, MUI 2##6A, MUI 2##6B, MUI 3##6A et MUI 3##6B, dont le sigle est fonction de l'instrument principal étudié. »"
   },
   {
@@ -1371,7 +1456,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-musiques-numeriques bloc 70/70H",
+    "sujet": "baccalaureat-en-musiques-numeriques bloc 70/70H — Langues",
     "message": "contenu ouvert (règle « Option - Minimum 3 crédits, maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours doivent être choisis parmi la liste des cours offerts par le Centre de langues de l'UdeM: allemand, anglais, arabe, chinois, coréen, catalan, espagnol, grec moderne, ital »"
   },
   {
@@ -1456,7 +1541,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-philosophie-et-etudes-classiques bloc 70/70K",
+    "sujet": "baccalaureat-en-philosophie-et-etudes-classiques bloc 70/70K — Langues modernes (philosophie/ét. classiques)",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
@@ -1546,6 +1631,11 @@
   },
   {
     "genre": "manque",
+    "sujet": "baccalaureat-en-psychologie-campus-montreal bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
     "sujet": "baccalaureat-en-psychologie-et-sociologie bloc 75/75Z",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
@@ -1587,7 +1677,7 @@
   {
     "genre": "inattendu",
     "sujet": "baccalaureat-en-sante-environnementale-et-sante-au-travail bloc 01/01C",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option »"
+    "message": "règle « Option » : un type sans aucune borne de crédits"
   },
   {
     "genre": "manque",
@@ -1626,7 +1716,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-science-politique bloc 71/71E",
+    "sujet": "baccalaureat-en-science-politique bloc 71/71E — Langues",
     "message": "contenu ouvert (règle « Option - Minimum 6 crédits, maximum 12 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
@@ -1666,7 +1756,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-sciences-biomedicales bloc 74/74V",
+    "sujet": "baccalaureat-en-sciences-biomedicales bloc 74/74V — Cheminement honor (stage)",
     "message": "contenu ouvert (règle « Option- Maximum 15 crédits ») : aucun code, le contenu est décrit en prose — « - cheminement régulier : 0 crédit; - cheminement honor : 15 crédits (ou avoir suivi 12 crédits dans le bloc 74W). »"
   },
   {
@@ -1676,7 +1766,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-sciences-de-la-communication bloc 01/01D",
+    "sujet": "baccalaureat-en-sciences-de-la-communication bloc 01/01D — Langues",
     "message": "contenu ouvert (règle « Option - Maximum 12 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
@@ -1746,6 +1836,26 @@
   },
   {
     "genre": "manque",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal",
+    "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal bloc 80/80A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal bloc 81/81A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-sciences-infirmieres-formation-initiale-campus-montreal",
+    "message": "2 parcours déclarés (clinique | cheminement international) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
     "sujet": "baccalaureat-en-sciences-infirmieres-formation-integree-dec-bac-campus-laval",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
@@ -1791,28 +1901,28 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 01/01E",
-    "message": "type de bloc inconnu (« Cheminement régulier : option ») dans la règle « Cheminement régulier : option - Maximum 9 crédits. » — attendu obligatoire, option ou choix"
+    "sujet": "baccalaureat-en-sociologie bloc 01/01E — Langues",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier : option - Maximum 9 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-sociologie bloc 01/01E",
-    "message": "contenu ouvert (règle « Cheminement régulier : option - Maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Cheminement international : option - 3 crédits. Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : al »"
+    "sujet": "baccalaureat-en-sociologie bloc 01/01E — Langues",
+    "message": "contenu ouvert (règle « Cheminement régulier : option - Maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Cheminement régulier Cheminement international : option - 3 crédits. Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Univer »"
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 01/01M",
-    "message": "type de bloc inconnu (« Cheminement régulier : option ») dans la règle « Cheminement régulier : option - Maximum 9 crédits. » — attendu obligatoire, option ou choix"
+    "sujet": "baccalaureat-en-sociologie bloc 01/01M — Cheminement international 1",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier : option - Maximum 9 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 01/01N",
-    "message": "type de bloc inconnu (« Cheminement régulier : option ») dans la règle « Cheminement régulier : option - Maximum 12 crédits. » — attendu obligatoire, option ou choix"
+    "sujet": "baccalaureat-en-sociologie bloc 01/01N — Cheminement international 2",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier : option - Maximum 12 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "inattendu",
     "sujet": "baccalaureat-en-sociologie bloc 01/01Z",
-    "message": "type de bloc inconnu (« Cheminement régulier : choix ») dans la règle « Cheminement régulier : choix - 6 crédits » — attendu obligatoire, option ou choix"
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier : choix - 6 crédits ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "manque",
@@ -1820,34 +1930,29 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "info",
-    "sujet": "baccalaureat-en-sociologie bloc 01/01Z",
-    "message": "contenu ouvert (règle « Cheminement régulier : choix - 6 crédits ») : aucun code, le contenu est décrit en prose — « Cheminement international : choix - Maximum 6 crédits Sauf exception autorisée, le cours au choix doit être choisi parmi les cours identifiés par un sigle autre que le sigle SOL. »"
+    "genre": "inattendu",
+    "sujet": "baccalaureat-en-sociologie bloc 72/72A — Cours thématiques en sociologie",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier Option : Minimum 12 crédits, maximum 42 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 72/72A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Cheminement régulier Option : Minimum 12 crédits, maximum 42 crédits. »"
+    "sujet": "baccalaureat-en-sociologie bloc 73/73D — Cours thématiques en sociologie",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier : Option - Maximum 24 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 73/73D",
-    "message": "type de bloc inconnu (« Cheminement régulier : Option ») dans la règle « Cheminement régulier : Option - Maximum 24 crédits. » — attendu obligatoire, option ou choix"
+    "sujet": "baccalaureat-en-sociologie bloc 74/74C — Cours thématiques en sociologie",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 74/74C",
-    "message": "type de bloc inconnu (« Cheminement régulier : Option ») dans la règle « Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits. » — attendu obligatoire, option ou choix"
+    "sujet": "baccalaureat-en-sociologie bloc 75/75C — Cours thématiques en sociologie",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 75/75C",
-    "message": "type de bloc inconnu (« Cheminement régulier : Option ») dans la règle « Cheminement régulier : Option - Minimum 3 crédits, maximum 30 crédits. » — attendu obligatoire, option ou choix"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-en-sociologie bloc 76/76C",
-    "message": "type de bloc inconnu (« Cheminement régulier: Option ») dans la règle « Cheminement régulier: Option - Minimum 3 crédits, maximum 27 crédits. » — attendu obligatoire, option ou choix"
+    "sujet": "baccalaureat-en-sociologie bloc 76/76C — Cours thématiques en sociologie",
+    "message": "la règle ne vaut que pour « Cheminement régulier » (« Cheminement régulier: Option - Minimum 3 crédits, maximum 27 crédits. ») ; `Bloc.regle` n'a qu'un emplacement, les autres cheminements restent dans `notes`"
   },
   {
     "genre": "inattendu",
@@ -1876,7 +1981,7 @@
   },
   {
     "genre": "info",
-    "sujet": "baccalaureat-en-traduction bloc 81/81I",
+    "sujet": "baccalaureat-en-traduction bloc 81/81I — Propre au cheminement international - Ét. à l'étranger - transfert ling",
     "message": "contenu ouvert (règle « Option - 12 crédits. ») : aucun code, le contenu est décrit en prose — « Seuls des cours équivalents aux cours des blocs à option du Baccalauréat en traduction peuvent être reconnus dans ce bloc. »"
   },
   {
@@ -2505,11 +2610,6 @@
     "message": "somme impossible : les minimums par type connus font 78 crédits, plus que les 24 crédits annoncés du programme. Phrase lue : « Les crédits du segment 70 sont répartis de la façon suivante : 16 crédits obligatoires et 8 crédits à option. »"
   },
   {
-    "genre": "inattendu",
-    "sujet": "certificat-de-gerontologie bloc 70/70A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Obligatoire 12 crédits. »"
-  },
-  {
     "genre": "manque",
     "sujet": "certificat-de-relations-industrielles bloc 70/70Z",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -2651,6 +2751,61 @@
   },
   {
     "genre": "manque",
+    "sujet": "certificat-en-droit bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 70/70B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 70/70Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 71/71A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 71/71B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 72/72A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 72/72B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "certificat-en-droit bloc 72/72Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "certificat-en-droit",
+    "message": "3 parcours déclarés (Droit général | Droit des affaires | Droit public) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
     "sujet": "certificat-en-enquete-et-renseignement bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
@@ -2671,7 +2826,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "certificat-en-francais-langue-seconde-culture-etudes-et-travail bloc 70/70B",
+    "sujet": "certificat-en-francais-langue-seconde-culture-etudes-et-travail bloc 70/70B — Français général, formule intensive",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 12 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -3001,17 +3156,17 @@
   },
   {
     "genre": "info",
-    "sujet": "depa-en-musique-composition-pour-lecran-et-la-scene bloc 70/70C",
+    "sujet": "depa-en-musique-composition-pour-lecran-et-la-scene bloc 70/70C — Travail dirigé",
     "message": "contenu ouvert (règle « Obligatoire - 18 crédits. ») : aucun code, le contenu est décrit en prose — « Ces projets de composition pourraient être terminés dans le courant de la 3e session (session d'été). »"
   },
   {
     "genre": "info",
-    "sujet": "depa-en-musique-interpretation bloc 70/70A",
+    "sujet": "depa-en-musique-interpretation bloc 70/70A — Cours d'instrument",
     "message": "contenu ouvert (règle « Obligatoire - 10 crédits. ») : aucun code, le contenu est décrit en prose — « Cours MUI 7##4A, MUI7##4B, MUE7##1 et 7##2 dont le numéro est fonction de l'instrument ou de l'ensemble. »"
   },
   {
     "genre": "info",
-    "sujet": "depa-en-musique-interpretation bloc 70/70B",
+    "sujet": "depa-en-musique-interpretation bloc 70/70B — Séminaire théorique",
     "message": "contenu ouvert (règle « Option - 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis parmi les séminaires offerts chaque année à la Faculté de musique. Aucun sujet spécial (recherche supervisée remplaçant un séminaire) ne sera accepté en remplacement  »"
   },
   {
@@ -3041,7 +3196,7 @@
   },
   {
     "genre": "info",
-    "sujet": "depa-en-musique-repertoire-dorchestre bloc 70/70B",
+    "sujet": "depa-en-musique-repertoire-dorchestre bloc 70/70B — Tutorat",
     "message": "contenu ouvert (règle « Option - 8 crédits. ») : aucun code, le contenu est décrit en prose — « Cours MUI 7###, dont le sigle est fonction de l'instrument étudié. »"
   },
   {
@@ -3212,6 +3367,21 @@
   {
     "genre": "manque",
     "sujet": "des-de-competence-additionnelle-en-soins-palliatifs",
+    "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "des-en-anesthesiologie",
+    "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
+  },
+  {
+    "genre": "manque",
+    "sujet": "des-en-anesthesiologie",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "des-en-anesthesiologie",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
@@ -4450,54 +4620,34 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C1B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
+    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C1D — Travaux dirigés",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 15 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C2A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C2B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-2 bloc 70/70C2C",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
@@ -4515,59 +4665,34 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C1B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C1C",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C2A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "des-en-medecine-veterinaire-option-diagnostic-en-laboratoire bloc 70/70C2B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "manque",
     "sujet": "des-en-medecine-veterinaire-option-pathologie-anatomique-veterinaire bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "des-en-medecine-veterinaire-option-pathologie-anatomique-veterinaire bloc 70/70D",
-    "message": "bornes de crédits non reconnues dans « Option – Minimum 10 et maximum 21 crédits. » (partie « Minimum 10 et maximum 21 crédits »)"
   },
   {
     "genre": "manque",
@@ -5426,27 +5551,27 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 76/76A",
+    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 76/76A — Cours",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 77/77A",
+    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 77/77A — Cours",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 86/86A",
+    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 86/86A — Cours",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 87/87A",
+    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 87/87A — Cours",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 90/90A",
+    "sujet": "des-en-sciences-cliniques-veterinaires-1 bloc 90/90A — Cours",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -5611,6 +5736,16 @@
   },
   {
     "genre": "manque",
+    "sujet": "dess-en-bioethique bloc 74/74A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "dess-en-bioethique bloc 74/74G",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
     "sujet": "dess-en-communication-organisationnelle bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
@@ -5621,12 +5756,12 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-communication-organisationnelle bloc 70/70E",
+    "sujet": "dess-en-communication-organisationnelle bloc 70/70E — Stage",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 3 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-demographie bloc 70/70F",
+    "sujet": "dess-en-demographie bloc 70/70F — Travail dirigé",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -5811,7 +5946,7 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-ecodesign-strategique bloc 70/70G",
+    "sujet": "dess-en-ecodesign-strategique bloc 70/70G — Mission professionnelle",
     "message": "contenu ouvert (règle « Obligatoire - 6 crédits. ») : aucun code, le contenu est décrit en prose — « N.B.: Les étudiants INSCRITS À POLYTECHNIQUE dans ce programme d'études devront s'inscrire au sigle IND6926 qui leur est destiné. »"
   },
   {
@@ -5866,12 +6001,12 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-education-option-intervention-educative bloc 70/70B",
+    "sujet": "dess-en-education-option-intervention-educative bloc 70/70B — Formation fondamentale",
     "message": "contenu ouvert (règle « Option - Minimum 15 crédits, maximum 24 crédits. ») : aucun code, le contenu est décrit en prose — « Cours à choisir parmi les trois champs d'études du département: Psychopédagogie (PPA 62##), Orthopédagogie (PPA 64##), et Andragogie (PPA 66##). »"
   },
   {
     "genre": "info",
-    "sujet": "dess-en-education-option-intervention-educative bloc 70/70C",
+    "sujet": "dess-en-education-option-intervention-educative bloc 70/70C — Formation complémentaire en éducation",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis dans la banque de cours des études supérieures de la Faculté des sciences de l'éducation (sigle DID, ETA, PLU ou PPA). »"
   },
   {
@@ -5880,9 +6015,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "dess-en-enseignement-des-langues bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "dess-en-enseignement-des-langues bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "dess-en-enseignement-des-langues bloc 70/70C2A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "manque",
@@ -5893,36 +6033,6 @@
     "genre": "manque",
     "sujet": "dess-en-enseignement-superieur bloc 01/01D",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-enseignement-superieur bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-enseignement-superieur bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-enseignement-superieur bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-enseignement-superieur bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-enseignement-superieur bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-enseignement-superieur bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "inattendu",
@@ -6006,7 +6116,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-genie-biomedical bloc 70/70H",
+    "sujet": "dess-en-genie-biomedical bloc 70/70H — Thématique biophotonique et nanotechnologie biomédicale",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 13 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -6031,7 +6141,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-gestion-urbaine-pour-les-pays-en-developpement bloc 70/70F",
+    "sujet": "dess-en-gestion-urbaine-pour-les-pays-en-developpement bloc 70/70F — Travail dirigé",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -6056,7 +6166,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-gestion-urbaine-pour-les-pays-en-developpement bloc 71/71F",
+    "sujet": "dess-en-gestion-urbaine-pour-les-pays-en-developpement bloc 71/71F — Travail dirigé",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -6075,24 +6185,9 @@
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
-    "genre": "inattendu",
-    "sujet": "dess-en-intervention-en-deficience-visuelle-readaptation bloc 70/70A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Formation générale »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-intervention-en-deficience-visuelle-readaptation bloc 70/70B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Formation spécialisée »"
-  },
-  {
     "genre": "info",
-    "sujet": "dess-en-intervention-en-deficience-visuelle-readaptation bloc 70/70B",
-    "message": "contenu ouvert (règle « Formation spécialisée ») : aucun code, le contenu est décrit en prose — « Option - 20 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "dess-en-journalisme bloc 70/70A",
-    "message": "type de bloc inconnu (« Cours obligatoire ») dans la règle « Cours obligatoire - 3 crédits. » — attendu obligatoire, option ou choix"
+    "sujet": "dess-en-intervention-en-deficience-visuelle-readaptation bloc 70/70B - Formation spécialisée — Réadaptation en déficience visuelle",
+    "message": "contenu ouvert (règle « Option - 20 crédits. ») : aucun code, le contenu est décrit en prose — « Formation spécialisée »"
   },
   {
     "genre": "manque",
@@ -6141,7 +6236,7 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-mediation-de-la-musique bloc 70/70B",
+    "sujet": "dess-en-mediation-de-la-musique bloc 70/70B — Séminaires",
     "message": "contenu ouvert (règle « Option - Minimum 6 crédits, maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
@@ -6186,7 +6281,7 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-musique-accompagnement-au-piano bloc 70/70C",
+    "sujet": "dess-en-musique-accompagnement-au-piano bloc 70/70C — Séminaires",
     "message": "contenu ouvert (règle « Option - Maximum 3 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
@@ -6201,7 +6296,7 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-musique-interpretation bloc 70/70B",
+    "sujet": "dess-en-musique-interpretation bloc 70/70B — Instrument",
     "message": "contenu ouvert (règle « Option - 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours MUI6##3A et MUI6##3B dont le numéro est fonction de l'instrument choisi. »"
   },
   {
@@ -6211,7 +6306,7 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-musique-repertoire-dorchestre bloc 70/70B",
+    "sujet": "dess-en-musique-repertoire-dorchestre bloc 70/70B — Tutorat",
     "message": "contenu ouvert (règle « Option - 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours MUI6##3A et MUI6##3B dont le numéro est fonction de l'instrument choisi. »"
   },
   {
@@ -6221,7 +6316,7 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-musiques-numeriques bloc 70/70C",
+    "sujet": "dess-en-musiques-numeriques bloc 70/70C — Séminaires",
     "message": "contenu ouvert (règle « Option - Minimum 3 crédits, maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
@@ -6276,7 +6371,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-petite-enfance-approche-interprofessionnelle bloc 70/70C",
+    "sujet": "dess-en-petite-enfance-approche-interprofessionnelle bloc 70/70C — Travail dirigé",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -6301,12 +6396,12 @@
   },
   {
     "genre": "info",
-    "sujet": "dess-en-pratiques-et-enjeux-educatifs-actuels bloc 70/70C",
+    "sujet": "dess-en-pratiques-et-enjeux-educatifs-actuels bloc 70/70C — Complément de formation: cheminement d'un microprogramme",
     "message": "contenu ouvert (règle « Option - Maximum 15 crédits. ») : aucun code, le contenu est décrit en prose — « Afin de compléter ce bloc, vous devez avoir réussi l'un des microprogrammes suivants ou toute autre formation jugée équivalente. L'approbation du responsable de programme est requi »"
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-prevention-et-controle-des-infections bloc 70/70C",
+    "sujet": "dess-en-prevention-et-controle-des-infections bloc 70/70C — Cours intervention dans le milieu",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -6350,29 +6445,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "dess-en-sante-environnementale-mondiale bloc 70/70B",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum 6 crédits et maximum 9 crédits » (partie « Minimum 6 crédits et maximum 9 crédits »)"
-  },
-  {
     "genre": "manque",
     "sujet": "dess-en-sante-environnementale-mondiale bloc 70/70B",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "dess-en-sante-environnementale-mondiale bloc 70/70C",
-    "message": "type de bloc inconnu (« Au choix ») dans la règle « Au choix - Maximum 3 crédits » — attendu obligatoire, option ou choix"
-  },
-  {
     "genre": "manque",
     "sujet": "dess-en-sante-environnementale-mondiale bloc 70/70C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "dess-en-sante-environnementale-mondiale bloc 70/70C",
-    "message": "contenu ouvert (règle « Au choix - Maximum 3 crédits ») : aucun code, le contenu est décrit en prose — « Parmi les répertoires des cours des départements de médecine sociale et préventive, de gestion, d'évaluation et de politique de santé, de santé environnementale et santé au travail »"
   },
   {
     "genre": "manque",
@@ -6561,21 +6641,6 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "diplome-complementaire-en-pharmacotherapie-avancee bloc 72/72C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "diplome-complementaire-en-pharmacotherapie-avancee bloc 72/72C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "diplome-complementaire-en-pharmacotherapie-avancee bloc 72/72C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
     "sujet": "diplome-complementaire-en-pharmacotherapie-avancee",
     "message": "« Les crédits du segment sont répartis de la façon suivante : 11 crédits obligatoires et 4 crédits à option propre à la concentration pratique en établissement de santé (72C1), et 15 crédits obligatoires propre à la concentration pratique ambulatoire (72C2). » énonce deux fois le total obligatoire — le premier est retenu"
   },
@@ -6587,6 +6652,16 @@
   {
     "genre": "manque",
     "sujet": "diplome-detudes-postdoctorales-en-biochimie-clinique",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "diplome-de-droit-notarial bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "diplome-de-droit-notarial",
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
@@ -6736,7 +6811,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "doctorat-en-amenagement bloc 70/70A",
+    "sujet": "doctorat-en-amenagement bloc 70/70A — Séminaires",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -6900,6 +6975,16 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
+    "genre": "manque",
+    "sujet": "doctorat-en-droit bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-droit",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
     "genre": "inattendu",
     "sujet": "doctorat-en-etudes-allemandes",
     "message": "orientation « études allemandes » annonce le(s) segment(s) 70, absent(s) de la page (segments trouvés : aucun)"
@@ -6943,11 +7028,6 @@
     "genre": "manque",
     "sujet": "doctorat-en-etudes-anglaises bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-etudes-anglaises bloc 70/70E",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Obligatoire ‐ 75 crédits. »"
   },
   {
     "genre": "inattendu",
@@ -7096,6 +7176,16 @@
   },
   {
     "genre": "manque",
+    "sujet": "doctorat-en-mathematiques bloc 73/73A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-mathematiques",
+    "message": "4 parcours déclarés (Mathématiques pures | Mathématiques appliquées | Mathématiques de l'ingénieur | Actuariat et mathématiques financières) ; 4 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
     "sujet": "doctorat-en-microbiologie-et-immunologie bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
@@ -7106,7 +7196,7 @@
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-musique bloc 80/80A",
+    "sujet": "doctorat-en-musique bloc 80/80A — Séminaires",
     "message": "contenu ouvert (règle « Option – Minimum 9 crédits, maximum 12 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
@@ -7131,7 +7221,7 @@
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-musique-option-composition-et-creation-sonore bloc 72/72B",
+    "sujet": "doctorat-en-musique-option-composition-et-creation-sonore bloc 72/72B — Séminaires",
     "message": "contenu ouvert (règle « Option – Minimum 6 crédits, maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
@@ -7151,17 +7241,17 @@
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-musique-option-interpretation bloc 73/73B",
+    "sujet": "doctorat-en-musique-option-interpretation bloc 73/73B — Séminaires",
     "message": "contenu ouvert (règle « Option - Minimum 3 crédits, maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-musique-option-interpretation bloc 73/73D",
+    "sujet": "doctorat-en-musique-option-interpretation bloc 73/73D — Ensembles",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours MUE 6### et MUE 7###, dont le sigle est en fonction du grand ensemble. L'étudiant·e suivant le programme avec un instrument d'orchestre (cordes, vents, percussions) doit se p »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-musique-option-interpretation bloc 73/73E",
+    "sujet": "doctorat-en-musique-option-interpretation bloc 73/73E — Tutorat",
     "message": "contenu ouvert (règle « Option - 18 crédits. ») : aucun code, le contenu est décrit en prose — « Cours MUI 7###, dont le sigle est en fonction de l'instrument étudié. »"
   },
   {
@@ -7215,429 +7305,229 @@
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 87 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 2 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70A - Accès de la M. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 3 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 3 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B",
-    "message": "contenu ouvert (règle « Accès de la M. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 87 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70C",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
+    "message": "contenu ouvert (règle « Obligatoire - 87 crédits. ») : aucun code, le contenu est décrit en prose — « Accès de la M. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70C",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70C - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70D",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70D - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70D",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 79 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 70/70D - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 79 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 2 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71A - Accès de la M. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 3 crédits. Les cours PBC 60851 et PBC 60852 sont équivalents au cours PBC 6085. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 3 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. Les cours PBC 60851 et PBC 60852 sont équivalents au cours PBC 6085. »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B",
-    "message": "contenu ouvert (règle « Accès de la M. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 87 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71C",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
+    "message": "contenu ouvert (règle « Obligatoire - 87 crédits. ») : aucun code, le contenu est décrit en prose — « Accès de la M. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71C",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71C - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71D",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71D - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71D",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 79 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 71/71D - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 79 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 2 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72A - Accès de la M. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 3 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 3 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B",
-    "message": "contenu ouvert (règle « Accès de la M. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 87 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72C",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
+    "message": "contenu ouvert (règle « Obligatoire - 87 crédits. ») : aucun code, le contenu est décrit en prose — « Accès de la M. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72C",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72C - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72D",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72D - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72D",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 79 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 72/72D - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 79 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 2 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73A - Accès de la M. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 3 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 3 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B",
-    "message": "contenu ouvert (règle « Accès de la M. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 87 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73C",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
+    "message": "contenu ouvert (règle « Obligatoire - 87 crédits. ») : aucun code, le contenu est décrit en prose — « Accès de la M. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73C",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73C - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73D",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73D - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73D",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 79 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 73/73D - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 79 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 2 crédits. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 2 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. Les cours PBC 60511 et PBC 60512 sont équivalents au cours PBC 6051. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74A - Accès de la M. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 3 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès de la M. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 3 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B",
-    "message": "contenu ouvert (règle « Accès de la M. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 87 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74C",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74B - Accès de la M. Sc. au Ph. D. — Recherche et thèse",
+    "message": "contenu ouvert (règle « Obligatoire - 87 crédits. ») : aucun code, le contenu est décrit en prose — « Accès de la M. Sc. au Ph. D. »"
   },
   {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74C",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74C - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Accès direct du B. Sc. au Ph. D. »"
-  },
-  {
     "genre": "manque",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74D",
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74D - Accès direct du B. Sc. au Ph. D.",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74D",
-    "message": "contenu ouvert (règle « Accès direct du B. Sc. au Ph. D. ») : aucun code, le contenu est décrit en prose — « Obligatoire - 79 crédits. »"
+    "sujet": "doctorat-en-pathologie-et-biologie-cellulaire bloc 74/74D - Accès direct du B. Sc. au Ph. D.",
+    "message": "contenu ouvert (règle « Obligatoire - 79 crédits. ») : aucun code, le contenu est décrit en prose — « Accès direct du B. Sc. au Ph. D. »"
   },
   {
     "genre": "info",
@@ -7771,7 +7661,52 @@
   },
   {
     "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 71/71A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 71/71B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 73/73A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 73/73B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 78/78A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie bloc 78/78B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-psychologie",
+    "message": "3 parcours déclarés (générale | psychologie sociale | neuroscience cognitive et computationnelle) ; 3 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
+    "genre": "manque",
     "sujet": "doctorat-en-psychologie-recherche-et-intervention-option-neuropsychologie-clinique bloc 01/01A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "doctorat-en-psychologie-recherche-et-intervention-option-neuropsychologie-clinique bloc 70/70P1A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
@@ -7788,11 +7723,6 @@
     "genre": "manque",
     "sujet": "doctorat-en-psychologie-recherche-et-intervention-option-psychologie-clinique bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-psychologie-recherche-et-intervention-option-psychologie-clinique bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "manque",
@@ -7828,11 +7758,6 @@
     "genre": "manque",
     "sujet": "doctorat-en-psychologie-option-psychologie-clinique bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-psychologie-option-psychologie-clinique bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "manque",
@@ -8196,36 +8121,6 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "doctorat-en-sciences-de-la-vision bloc 71/71A",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum de 2 crédits, maximum de 6 crédits. » (partie « Minimum de 2 crédits, maximum de 6 crédits »)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-sciences-de-la-vision bloc 72/72A",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum de 2 crédits, maximum de 6 crédits » (partie « Minimum de 2 crédits, maximum de 6 crédits »)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-sciences-de-la-vision bloc 73/73A",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum de 2 crédits, maximum de 6 crédits » (partie « Minimum de 2 crédits, maximum de 6 crédits »)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-sciences-de-la-vision bloc 74/74A",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum de 2 crédits, maximum de 6 crédits » (partie « Minimum de 2 crédits, maximum de 6 crédits »)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-sciences-de-la-vision bloc 75/75A",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum de 2 crédits, maximum de 6 crédits » (partie « Minimum de 2 crédits, maximum de 6 crédits »)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-sciences-de-la-vision bloc 76/76A",
-    "message": "bornes de crédits non reconnues dans « Option - Minimum de 2 crédits, maximum de 6 crédits » (partie « Minimum de 2 crédits, maximum de 6 crédits »)"
-  },
-  {
-    "genre": "inattendu",
     "sujet": "doctorat-en-sciences-de-la-vision",
     "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Les crédits du tronc commun sont répartis de la façon suivante: 80 crédits obligatoires, 4 crédits à option et un maximum de 4 crédits au choix. » « Les crédits de l'option sont répartis de la façon suivante : 82 crédits obligatoires dont 80 crédits attribués à la rédaction d'une thèse, 4 crédits à option et 4 crédits au choix. » « Les crédits de l'option sont répartis de la façon suivante : 80 crédits obligatoires attribués à la rédaction de la thèse, 6 et 10 crédits à option et un maximum de 4 crédits au choix. »"
   },
@@ -8353,11 +8248,6 @@
     "genre": "manque",
     "sujet": "doctorat-en-sciences-pharmaceutiques bloc 73/73C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-sciences-pharmaceutiques bloc 73/73D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Obligatoire 84 crédits. »"
   },
   {
     "genre": "manque",
@@ -8506,12 +8396,12 @@
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-traduction bloc 70/70B",
+    "sujet": "doctorat-en-traduction bloc 70/70B — Séminaires à option",
     "message": "contenu ouvert (règle « Option - 6 crédits. ») : aucun code, le contenu est décrit en prose — « À déterminer en fonction des intérêts de recherche de l'étudiant et de ses besoins de formation. Le choix des séminaires devra être approuvé par le directeur de recherche de l'étud »"
   },
   {
     "genre": "info",
-    "sujet": "doctorat-en-traduction bloc 71/71B",
+    "sujet": "doctorat-en-traduction bloc 71/71B — Séminaires à option",
     "message": "contenu ouvert (règle « Option - 6 crédits. ») : aucun code, le contenu est décrit en prose — « À déterminer en fonction des intérêts de recherche de l'étudiant et de ses besoins de formation. Le choix des séminaires devra être approuvé par le directeur de recherche de l'étud »"
   },
   {
@@ -8647,7 +8537,7 @@
   {
     "genre": "inattendu",
     "sujet": "etudes-libres-de-1er-cycle-hors-quebec bloc 01/01Z",
-    "message": "type de bloc inconnu (« Cours en ligne ») dans la règle « Cours en ligne - maximum 18 crédits. » — attendu obligatoire, option ou choix"
+    "message": "« Cours en ligne - maximum 18 crédits. » ne commence pas par un type de bloc (obligatoire, option ou choix)"
   },
   {
     "genre": "manque",
@@ -8886,16 +8776,6 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-administration-des-services-de-sante-option-administration-sociale bloc 70/70A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-administration-des-services-de-sante-option-administration-sociale bloc 70/70E",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
     "sujet": "maitrise-en-affaires-publiques-et-internationales",
     "message": "somme impossible : les minimums par type connus font 83 crédits, plus que les 45 crédits annoncés du programme. Phrase lue : « Les crédits du segment 71 sont répartis de la façon suivante : 33 crédits obligatoires dont 27 crédits attribués à un stage et 12 crédits à option. »"
   },
@@ -8915,11 +8795,6 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-amenagement-option-design-creation-et-innovation bloc 70/70D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 6 crédits. »"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-amenagement-option-design-creation-et-innovation bloc 70/70E",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -8935,19 +8810,9 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-amenagement-option-montage-et-gestion-de-projets-damenagement-m-sc-a bloc 70/70C",
-    "message": "type de bloc inconnu (« Au choix ») dans la règle « Au choix - Maximum 3 crédits. » — attendu obligatoire, option ou choix"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-amenagement-option-montage-et-gestion-de-projets-damenagement-m-sc-a bloc 70/70C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "info",
-    "sujet": "maitrise-en-amenagement-option-montage-et-gestion-de-projets-damenagement-m-sc-a bloc 70/70C",
-    "message": "contenu ouvert (règle « Au choix - Maximum 3 crédits. ») : aucun code, le contenu est décrit en prose — « Le choix des cours doit être approuvé par le responsable du programme. »"
   },
   {
     "genre": "inattendu",
@@ -9026,7 +8891,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-architecture bloc 70/70E",
+    "sujet": "maitrise-en-architecture bloc 70/70E — Activité individuelle",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 3 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9036,7 +8901,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-architecture-de-paysage bloc 70/70E",
+    "sujet": "maitrise-en-architecture-de-paysage bloc 70/70E — Technologies, matériaux, systèmes, réalisation",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 3 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9207,7 +9072,7 @@
   {
     "genre": "inattendu",
     "sujet": "maitrise-en-biologie-moleculaire bloc 74/74B",
-    "message": "règle « Option- Minimum 1 crédit. » : un minimum sans maximum. Forme jamais relevée, et aucun maximum ne peut être nommé sans l'inventer — bloc laissé non auditable."
+    "message": "règle « Option- Minimum 1 crédit. » : un minimum sans maximum. Aucun maximum ne peut être nommé sans l'inventer — bloc laissé non auditable."
   },
   {
     "genre": "manque",
@@ -9516,7 +9381,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 70/70D",
+    "sujet": "maitrise-en-droit bloc 70/70D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9531,7 +9396,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 71/71D",
+    "sujet": "maitrise-en-droit bloc 71/71D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9541,7 +9406,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 72/72D",
+    "sujet": "maitrise-en-droit bloc 72/72D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9551,7 +9416,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 73/73D",
+    "sujet": "maitrise-en-droit bloc 73/73D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9561,7 +9426,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 74/74D",
+    "sujet": "maitrise-en-droit bloc 74/74D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9571,7 +9436,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 75/75D",
+    "sujet": "maitrise-en-droit bloc 75/75D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9581,7 +9446,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 76/76D",
+    "sujet": "maitrise-en-droit bloc 76/76D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9591,7 +9456,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 77/77D",
+    "sujet": "maitrise-en-droit bloc 77/77D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9601,7 +9466,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 78/78D",
+    "sujet": "maitrise-en-droit bloc 78/78D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9611,7 +9476,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit bloc 79/79D",
+    "sujet": "maitrise-en-droit bloc 79/79D — Théories du droit",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -9700,114 +9565,59 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C1C",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C2C",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C2D",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C3C",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C3D",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C4C",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C4D",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C5A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C5B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C5C",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-avec-travail-dirige bloc 70/70C5D",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
@@ -9815,24 +9625,9 @@
     "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Les crédits de la concentration sont répartis de la façon suivante: 36 crédits obligatoires, dont 15 crédits attribués à un travail dirigé, et 9 crédits au choix. » « Les crédits de la concentration sont répartis de la façon suivante: 21 crédits obligatoires, dont 15 crédits attribués à un travail dirigé, 18 à 24 crédits à option et un maximum de 6 crédits au choix. » « Les crédits de la concentration sont répartis de la façon suivante : 18 crédits de cours obligatoires, 15 crédits de cours à option et 12 crédits attribués soit à un travail dirigé, soit à un stage. »"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-dans-un-contexte-de-globalisation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-dans-un-contexte-de-globalisation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-dans-un-contexte-de-globalisation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-des-affaires-dans-un-contexte-de-globalisation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-droit-option-droit-des-affaires-dans-un-contexte-de-globalisation bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "manque",
@@ -9861,28 +9656,18 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-droit-option-droit-prive-compare bloc 71/71F",
+    "sujet": "maitrise-en-droit-option-droit-prive-compare bloc 71/71F — Travail dirigé",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 7 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-administration-de-leducation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-education-option-administration-de-leducation bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-administration-de-leducation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-administration-de-leducation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-administration-de-leducation bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-education-option-administration-de-leducation bloc 70/70C1B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
@@ -9916,93 +9701,18 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
     "sujet": "maitrise-en-education-option-enseignement-au-secondaire",
     "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Les crédits de la concentration sont répartis de la façon suivante: 12 crédits obligatoires et 9 crédits à option. » « Les crédits de la concentration sont répartis de la façon suivante: 15 crédits obligatoires et 6 crédits à option. »"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire-m-ed bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-education-option-enseignement-des-langues bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire-m-ed bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-au-secondaire-m-ed bloc 80/80C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-des-langues bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-education-option-enseignement-des-langues bloc 70/70C2A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
@@ -10056,7 +9766,7 @@
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-education-option-pratiques-et-enjeux-educatifs-actuels bloc 70/70E",
+    "sujet": "maitrise-en-education-option-pratiques-et-enjeux-educatifs-actuels bloc 70/70E — Complément de formation: cheminement d'un microprogramme",
     "message": "contenu ouvert (règle « Option - Maximum 15 crédits. ») : aucun code, le contenu est décrit en prose — « Afin de compléter ce bloc, vous devez avoir réussi l'un des microprogrammes suivants ou toute autre formation jugée équivalente. L'approbation du responsable de programme est requi »"
   },
   {
@@ -10226,23 +9936,8 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-etudes-anglaises bloc 70/70D",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-etudes-anglaises bloc 70/70D",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
     "sujet": "maitrise-en-etudes-anglaises",
     "message": "4 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 4 phrases sont dans `notes` verbatim : « Version 06 (A24) La maîtrise comporte 45 crédits répartis de la façon suivante : de 24 à 33 crédits obligatoires (dont 21 à 30 crédits attribués à la recherche et à la rédaction d'un mémoire ou d'un travail dirigé, ou à un stage) et de 12 à 21 crédits à option. » « - modalité avec mémoire (MM) : 33 crédits obligatoires, dont 24 crédits sont attribués à la rédaction d'un mémoire, et 12 crédits à option. » « - modalité avec stage (ST) : 24 crédits obligatoires, dont 21 crédits sont attribués à un stage et à la rédaction d'un rapport de stage, et 21 crédits à option. » « - modalité avec travail dirigé (TD) : 24 crédits obligatoires, dont 15 crédits sont attribués à la rédaction d'un travail dirigé, et 21 crédits à option. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-etudes-classiques bloc 72/72A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "info",
@@ -10330,26 +10025,6 @@
     "message": "2 segment(s) lus mais aucun bloc retenu (structureLue = false)"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-etudes-internationales bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-etudes-internationales bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-etudes-internationales bloc 70/70F",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-etudes-internationales bloc 70/70F",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
     "genre": "info",
     "sujet": "maitrise-en-etudes-internationales",
     "message": "1 parcours déclarés (générale) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
@@ -10358,26 +10033,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-evaluation-des-technologies-de-la-sante bloc 01/01A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-evaluation-des-technologies-de-la-sante bloc 70/70A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-evaluation-des-technologies-de-la-sante bloc 70/70B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-evaluation-des-technologies-de-la-sante bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-evaluation-des-technologies-de-la-sante bloc 70/70F",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "inattendu",
@@ -10398,11 +10053,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-finance-mathematique-et-computationnelle bloc 70/70C",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-finance-mathematique-et-computationnelle bloc 70/70D",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "inattendu",
@@ -10620,6 +10270,16 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
+    "genre": "info",
+    "sujet": "maitrise-en-informatique",
+    "message": "la page écrit « comporte un minimum de 45 crédits » : `creditsTotal` ne porte qu'un nombre, la nuance reste verbatim dans `notes`"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-informatique",
+    "message": "10 parcours déclarés (Générale — cheminement avec mémoire (MM) | Générale — cheminement avec stage (ST) | Générale — cheminement avec travaux dirigés (TD) | Apprentissage automatique | Imagerie | Intelligence artificielle | Biologie computationnelle | Informatique théorique et quantique | Programmation et génie logiciel | Recherche opérationnelle) ; 10 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
     "genre": "manque",
     "sujet": "maitrise-en-kinesiologie bloc 01/01A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -10670,33 +10330,13 @@
     "message": "somme impossible : les minimums par type connus font 73 crédits, plus que les 45 crédits annoncés du programme. Phrase lue : « Les crédits du segment 73 sont répartis de la façon suivante : 21 crédits obligatoires et de 0 à 18 crédits à option. »"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-linguistique bloc 70/70D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 3 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-linguistique bloc 70/70E",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 3 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-linguistique bloc 70/70F",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 6 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-linguistique bloc 70/70G",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Obligatoire ‐ 27 crédits. »"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-litterature-comparee bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-litterature-comparee bloc 70/70G",
+    "sujet": "maitrise-en-litterature-comparee bloc 70/70G — Culture",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 9 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -10720,6 +10360,11 @@
     "message": "2 parcours déclarés (Recherche | Recherche-création) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
+    "genre": "info",
+    "sujet": "maitrise-en-mathematiques",
+    "message": "4 parcours déclarés (Mathématiques pures | Mathématiques appliquées | Actuariat — cheminement avec mémoire (MM) | Actuariat — cheminement avec stage (S)) ; 4 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+  },
+  {
     "genre": "manque",
     "sujet": "maitrise-en-medecine-dentaire bloc 01/01A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
@@ -10736,7 +10381,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-medecine-dentaire bloc 71/71B",
+    "sujet": "maitrise-en-medecine-dentaire bloc 71/71B — Recherche et mémoire",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 30 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -10776,12 +10421,12 @@
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-musique bloc 80/MM-80B",
+    "sujet": "maitrise-en-musique bloc 80/MM-80B — Séminaires",
     "message": "contenu ouvert (règle « Option – Minimum 9 crédits, maximum 12 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-musique bloc 80/MM-80D",
+    "sujet": "maitrise-en-musique bloc 80/MM-80D — Recherche et mémoire",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 30 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -10790,13 +10435,8 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-musique bloc 80/TD-80B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option Minimum 15 crédits, maximum 18 crédits. »"
-  },
-  {
     "genre": "info",
-    "sujet": "maitrise-en-musique bloc 80/TD-80B",
+    "sujet": "maitrise-en-musique bloc 80/TD-80B — Séminaires",
     "message": "contenu ouvert (règle « Option Minimum 15 crédits, maximum 18 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
@@ -10820,29 +10460,19 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-musique-option-composition-et-creation-sonore bloc 72/72A",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Minimum 6 crédits, maximum 12 crédits. »"
-  },
-  {
     "genre": "info",
-    "sujet": "maitrise-en-musique-option-composition-et-creation-sonore bloc 72/72A",
+    "sujet": "maitrise-en-musique-option-composition-et-creation-sonore bloc 72/72A — Séminaires",
     "message": "contenu ouvert (règle « Option ‐ Minimum 6 crédits, maximum 12 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal ( https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l »"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-musique-option-composition-pour-lecran bloc 73/73X",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-musique-option-composition-pour-lecran bloc 73/73X1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-musique-option-composition-pour-lecran bloc 73/73X",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-musique-option-composition-pour-lecran bloc 73/73X",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-musique-option-composition-pour-lecran bloc 73/73X2A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
@@ -10861,7 +10491,7 @@
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-musique-option-interpretation bloc 70/70C",
+    "sujet": "maitrise-en-musique-option-interpretation bloc 70/70C — Séminaires",
     "message": "contenu ouvert (règle « Option - Minimum 6 crédits, maximum 9 crédits. ») : aucun code, le contenu est décrit en prose — « Séminaires à choisir dans la banque de cours de la Faculté de musique de l'Université de Montréal (https://musique.umontreal.ca/etudier/nos-programmes-detudes/seminaires/), avec l' »"
   },
   {
@@ -10957,7 +10587,7 @@
   {
     "genre": "inattendu",
     "sujet": "maitrise-en-nutrition-avec-stage-ou-travail-dirige bloc 70/TD-70D",
-    "message": "règle « Choix - Minimum 6 crédits. » : un minimum sans maximum. Forme jamais relevée, et aucun maximum ne peut être nommé sans l'inventer — bloc laissé non auditable."
+    "message": "règle « Choix - Minimum 6 crédits. » : un minimum sans maximum. Aucun maximum ne peut être nommé sans l'inventer — bloc laissé non auditable."
   },
   {
     "genre": "manque",
@@ -11206,7 +10836,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-physiotherapie bloc 71/71E",
+    "sujet": "maitrise-en-physiotherapie bloc 71/71E — Projet d'intégration clinique",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 15 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -11215,28 +10845,43 @@
     "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Les crédits de la maîtrise sont répartis de la façon suivante : 39 crédits obligatoires, dont 17 crédits attribués à des stages et un travail dirigé, et 6 crédits à option. » « Les crédits de la maîtrise sont répartis de la façon suivante : 36 crédits obligatoires, dont 15 crédits attribués à un projet d'intégration, 6 crédits à option et 3 crédits au choix. »"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-physique bloc 70/70A",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-physique bloc 70/70A-MM",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-physique bloc 70/70B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-physique bloc 70/70A-ST",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "maitrise-en-physique bloc 70/70B-MM",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "maitrise-en-physique bloc 70/70B-ST",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-physique bloc 70/70B",
+    "sujet": "maitrise-en-physique bloc 70/70B-ST",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Parmi les cours de 1er cycle et des cycles supérieurs offerts par des départements de sciences fondamentales. »"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-physique bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-physique bloc 70/70C-MM",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "maitrise-en-physique bloc 70/70C-ST",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-physique bloc 70/70C",
+    "sujet": "maitrise-en-physique bloc 70/70C-ST",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 24 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -11590,18 +11235,13 @@
     "message": "2 parcours déclarés (Sciences cardiovasculaires | Médecine expérimentale) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-buccodentaires bloc 70/70A",
-    "message": "bornes de crédits non reconnues dans « Option – minimum 3 crédits et maximum 5 crédits » (partie « minimum 3 crédits et maximum 5 crédits »)"
-  },
-  {
     "genre": "manque",
     "sujet": "maitrise-en-sciences-buccodentaires bloc 70/70A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-sciences-buccodentaires bloc 70/70B",
+    "sujet": "maitrise-en-sciences-buccodentaires bloc 70/70B — Développement professionnel",
     "message": "contenu ouvert (règle « Option – Maximum 5 crédits ») : aucun code, le contenu est décrit en prose — « Veuillez consulter le site des Saisons des ESP pour voir l'offre des cours disponibles. »"
   },
   {
@@ -11906,7 +11546,7 @@
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-sciences-de-la-communication bloc 74/TD-74C",
+    "sujet": "maitrise-en-sciences-de-la-communication bloc 74/TD-74C — Séminaires - Université libre de Bruxelles",
     "message": "contenu ouvert (règle « Obligatoire - 9 crédits. ») : aucun code, le contenu est décrit en prose — « Ceux-ci s'inscrivent dans la finalité Communication politique du Master en information et communication du Département des sciences de l'information et de la communication de l'Uni »"
   },
   {
@@ -11943,16 +11583,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-sciences-de-la-vision-m-sc bloc 72/72A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-de-la-vision-m-sc bloc 72/72B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-de-la-vision-m-sc bloc 72/72B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "manque",
@@ -11993,16 +11623,6 @@
     "genre": "manque",
     "sujet": "maitrise-en-sciences-de-la-vision-option-intervention-en-deficience-visuelle-anglais bloc 72/72A",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-de-la-vision-option-intervention-en-deficience-visuelle-anglais bloc 72/72B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-de-la-vision-option-intervention-en-deficience-visuelle-anglais bloc 72/72B",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
   },
   {
     "genre": "manque",
@@ -12311,21 +11931,6 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-developpement-du-medicament bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-developpement-du-medicament bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-developpement-du-medicament bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
     "sujet": "maitrise-en-sciences-pharmaceutiques-option-developpement-du-medicament",
     "message": "« des cours transversaux au choix   ou d'une combinaison des deux. » : total choix présent mais sans bornes nommables (un minimum sans maximum, ou aucun nombre) — laissé à null"
   },
@@ -12340,69 +11945,49 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C1B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C2A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C2B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C3A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C4A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C4B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C5A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "maitrise-en-sciences-pharmaceutiques-option-medicament-et-sante-des-populations bloc 70/70C5B",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "inattendu",
@@ -12481,12 +12066,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-veterinaires-option-sante-publique-veterinaire-sans-memoire bloc 81/81D",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-sciences-veterinaires-option-sante-publique-veterinaire-sans-memoire bloc 81/81D",
+    "sujet": "maitrise-en-sciences-veterinaires-option-sante-publique-veterinaire-sans-memoire bloc 81/81D — Travaux dirigés",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 15 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -12571,12 +12151,12 @@
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-traduction bloc 70/70C",
+    "sujet": "maitrise-en-traduction bloc 70/70C — Complément de formation à la recherche",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Sous réserve de l'approbation du conseiller pédagogique ou du directeur du département, l'étudiant peut choisir des cours des différentes options de la Maîtrise en traduction, de l »"
   },
   {
     "genre": "info",
-    "sujet": "maitrise-en-traduction-option-traduction-professionnelle-anglais-francais bloc 71/71E",
+    "sujet": "maitrise-en-traduction-option-traduction-professionnelle-anglais-francais bloc 71/71E — Cours généraux",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Sous réserve de l'approbation du conseiller pédagogique ou de la direction du département, l'étudiant peut choisir des cours de la Maîtrise en traduction, option recherche, de la M »"
   },
   {
@@ -12921,7 +12501,7 @@
   },
   {
     "genre": "info",
-    "sujet": "majeure-en-musiques-histoire-et-societes bloc 70/70I",
+    "sujet": "majeure-en-musiques-histoire-et-societes bloc 70/70I — Cours de langue",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
@@ -12936,6 +12516,11 @@
   },
   {
     "genre": "manque",
+    "sujet": "majeure-en-psychologie bloc 71/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
     "sujet": "majeure-en-relations-industrielles",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
@@ -12946,7 +12531,7 @@
   },
   {
     "genre": "info",
-    "sujet": "majeure-en-science-politique bloc 71/71F",
+    "sujet": "majeure-en-science-politique bloc 71/71F — Langues",
     "message": "contenu ouvert (règle « Option - 6 crédits. ») : aucun code, le contenu est décrit en prose — « Les cours de langues peuvent être choisis parmi la liste des cours offerts par le Centre de langues de l'Université de Montréal : allemand, anglais, arabe, chinois, coréen, catalan »"
   },
   {
@@ -13716,6 +13301,16 @@
   },
   {
     "genre": "manque",
+    "sujet": "microprogramme-de-2e-cycle-en-bioethique bloc 70/70A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "microprogramme-de-2e-cycle-en-bioethique bloc 70/70E",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
     "sujet": "microprogramme-de-2e-cycle-en-common-law-nord-americaine",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
@@ -13738,11 +13333,6 @@
     "genre": "manque",
     "sujet": "microprogramme-de-2e-cycle-en-communication-dans-les-organisations-en-changement bloc 70/70B",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "microprogramme-de-deuxieme-cycle-en-communication-de-la-science bloc 70/70B",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ 9 crédits. »"
   },
   {
     "genre": "manque",
@@ -13806,7 +13396,7 @@
   },
   {
     "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-droit-et-travail bloc 70/70B",
+    "sujet": "microprogramme-de-2e-cycle-en-droit-et-travail bloc 70/70B — Cours connexes",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis parmi les cours de 2e cycle offerts par la Faculté de droit ou l'École de relations industrielles. »"
   },
   {
@@ -13841,7 +13431,7 @@
   },
   {
     "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-dynamique-des-relations-du-travail bloc 70/70B",
+    "sujet": "microprogramme-de-2e-cycle-en-dynamique-des-relations-du-travail bloc 70/70B — Cours connexes",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis parmi les cours de 2e cycle offerts par l'École de relations industrielles avec l'approbation du responsable du programme. »"
   },
   {
@@ -13905,9 +13495,14 @@
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
-    "genre": "inattendu",
-    "sujet": "microprogramme-de-2e-cycle-en-enseignement-du-francais-par-la-litterature-jeunesse bloc 70/70C",
-    "message": "deux blocs portent la même clé segment/id — le second est conservé à part"
+    "genre": "manque",
+    "sujet": "microprogramme-de-2e-cycle-en-enseignement-du-francais-par-la-litterature-jeunesse bloc 70/70C1A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "microprogramme-de-2e-cycle-en-enseignement-du-francais-par-la-litterature-jeunesse bloc 70/70C2A",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
     "genre": "manque",
@@ -13921,12 +13516,12 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "microprogramme-de-2e-cycle-en-enseignement-instrumental bloc 70/70B",
+    "sujet": "microprogramme-de-2e-cycle-en-enseignement-instrumental bloc 70/70B — - Ateliers de didactique",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - 2 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-enseignement-instrumental bloc 70/70C",
+    "sujet": "microprogramme-de-2e-cycle-en-enseignement-instrumental bloc 70/70C — - Complément de formation",
     "message": "contenu ouvert (règle « Option- 3 crédits. ») : aucun code, le contenu est décrit en prose — « À l'exclusion des cours d'introduction, choisir parmi les cours de premier cycle ou les séminaires offerts par la Faculté de musique. »"
   },
   {
@@ -13991,27 +13586,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "microprogramme-de-deuxieme-cycle-en-etudes-des-mondes-noirs-africains-etcaribeens bloc 70/70C",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 6 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "microprogramme-de-deuxieme-cycle-en-etudes-des-mondes-noirs-africains-etcaribeens bloc 70/70D",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 6 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "microprogramme-de-deuxieme-cycle-en-etudes-des-mondes-noirs-africains-etcaribeens bloc 70/70E",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 6 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "microprogramme-de-deuxieme-cycle-en-etudes-des-mondes-noirs-africains-etcaribeens bloc 70/70F",
-    "message": "règle de bloc sans séparateur « type - bornes » : « Option ‐ Maximum 6 crédits. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "microprogramme-de-2e-cycle-en-etudes-juives bloc 70/70A",
+    "sujet": "microprogramme-de-2e-cycle-en-etudes-juives bloc 70/70A — Littératures, arts, culture et histoire",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 15 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -14071,7 +13646,7 @@
   },
   {
     "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-gestion-de-la-diversite-dans-les-organisations bloc 70/70B",
+    "sujet": "microprogramme-de-2e-cycle-en-gestion-de-la-diversite-dans-les-organisations bloc 70/70B — Cours connexes",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis parmi les cours de 2e cycle offerts par l'École de relations industrielles avec l'approbation du responsable du programme. »"
   },
   {
@@ -14116,7 +13691,7 @@
   },
   {
     "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-gestion-strategique-des-ressources-humaines bloc 70/70B",
+    "sujet": "microprogramme-de-2e-cycle-en-gestion-strategique-des-ressources-humaines bloc 70/70B — Cours connexes",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis parmi les cours de 2e cycle offerts par l'École de relations industrielles avec l'approbation du responsable du programme. »"
   },
   {
@@ -14281,7 +13856,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "microprogramme-de-2e-cycle-en-mobilite-transport-et-urbanisme bloc 70/70A",
+    "sujet": "microprogramme-de-2e-cycle-en-mobilite-transport-et-urbanisme bloc 70/70A — Ingénierie",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - 6 crédits ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -14351,7 +13926,7 @@
   },
   {
     "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-perspectives-internationales-en-relations-industrielles bloc 70/70B",
+    "sujet": "microprogramme-de-2e-cycle-en-perspectives-internationales-en-relations-industrielles bloc 70/70B — Cours connexes",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis parmi les cours de 2e cycle offerts par l'École de relations industrielles avec l'approbation du responsable du programme. »"
   },
   {
@@ -14491,7 +14066,7 @@
   },
   {
     "genre": "info",
-    "sujet": "microprogramme-de-2e-cycle-en-sante-et-mieux-etre-au-travail bloc 70/70B",
+    "sujet": "microprogramme-de-2e-cycle-en-sante-et-mieux-etre-au-travail bloc 70/70B — Cours connexes",
     "message": "contenu ouvert (règle « Option - Maximum 6 crédits. ») : aucun code, le contenu est décrit en prose — « Cours choisis parmi les cours de 2e cycle offerts par l'École de relations industrielles avec l'approbation du responsable du programme. »"
   },
   {
@@ -14652,6 +14227,16 @@
   {
     "genre": "manque",
     "sujet": "microprogramme-en-droit",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "mineure-arts-et-sciences bloc Z/71Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "mineure-arts-et-sciences",
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
@@ -14851,7 +14436,7 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "mineure-en-etudes-lusophones bloc 70/70C",
+    "sujet": "mineure-en-etudes-lusophones bloc 70/70C — Lettres et société",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -14917,6 +14502,11 @@
   {
     "genre": "manque",
     "sujet": "mineure-en-litterature-comparee bloc 70/70Z",
+    "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "manque",
+    "sujet": "mineure-en-mathematiques bloc 71/71Z",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
@@ -15001,22 +14591,22 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-1 bloc 71/71A",
+    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-1 bloc 71/71A — Expériences de santé",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 10 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-1 bloc 71/71B",
+    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-1 bloc 71/71B — Soins d'urgence",
     "message": "bloc option sans aucun code de cours NI prose (règle « Option - Maximum 13 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-2 bloc 72/72A",
+    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-2 bloc 72/72A — Santé dans la communauté",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 12 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
     "genre": "inattendu",
-    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-2 bloc 72/72B",
+    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-2 bloc 72/72B — Leadership",
     "message": "bloc obligatoire sans aucun code de cours NI prose (règle « Obligatoire - 6 crédits. ») — exigence impossible à satisfaire : page mal lue, ou bloc vide sur la page"
   },
   {
@@ -16147,6 +15737,21 @@
   {
     "genre": "manque",
     "sujet": "stage-postdoctoral-en-hygiene-1",
+    "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-postdoctoral-en-informatique",
+    "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-postdoctoral-en-informatique",
+    "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-postdoctoral-en-informatique",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {

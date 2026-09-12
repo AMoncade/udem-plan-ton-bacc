@@ -101,10 +101,10 @@
   "exigences": null,
   "blocs": [
     {
-      "id": "70A",
-      "cle": "70/70A",
+      "id": "70A-MM",
+      "cle": "70/70A-MM",
       "segment": "70",
-      "nom": "-MM",
+      "nom": "",
       "regle": {
         "type": "option",
         "bornes": {
@@ -134,10 +134,10 @@
       ]
     },
     {
-      "id": "70A",
-      "cle": "70/70A",
+      "id": "70A-ST",
+      "cle": "70/70A-ST",
       "segment": "70",
-      "nom": "-ST",
+      "nom": "",
       "regle": {
         "type": "option",
         "bornes": {
@@ -166,10 +166,10 @@
       ]
     },
     {
-      "id": "70B",
-      "cle": "70/70B",
+      "id": "70B-MM",
+      "cle": "70/70B-MM",
       "segment": "70",
-      "nom": "-MM",
+      "nom": "",
       "regle": {
         "type": "choix",
         "bornes": {
@@ -185,10 +185,10 @@
       ]
     },
     {
-      "id": "70B",
-      "cle": "70/70B",
+      "id": "70B-ST",
+      "cle": "70/70B-ST",
       "segment": "70",
-      "nom": "-ST",
+      "nom": "",
       "regle": {
         "type": "option",
         "bornes": {
@@ -204,10 +204,10 @@
       ]
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C-MM",
+      "cle": "70/70C-MM",
       "segment": "70",
-      "nom": "-MM",
+      "nom": "",
       "regle": {
         "type": "obligatoire",
         "bornes": {
@@ -223,10 +223,10 @@
       "notes": []
     },
     {
-      "id": "70C",
-      "cle": "70/70C",
+      "id": "70C-ST",
+      "cle": "70/70C-ST",
       "segment": "70",
-      "nom": "-ST",
+      "nom": "",
       "regle": {
         "type": "obligatoire",
         "bornes": {
@@ -237,6 +237,7 @@
       "regleBrut": "Obligatoire - 24 crédits.",
       "cours": [],
       "contenuOuvert": false,
+      "videConstate": true,
       "notes": []
     },
     {
@@ -283,7 +284,7 @@
     },
     {
       "id": "71C",
-      "cle": "71/71C",
+      "cle": "71/71C — Recherche et mémoire",
       "segment": "71",
       "nom": "Recherche et mémoire",
       "regle": {
@@ -350,7 +351,7 @@
     },
     {
       "id": "73A",
-      "cle": "73/73A",
+      "cle": "73/73A — Formation internationale",
       "segment": "73",
       "nom": "Formation internationale",
       "regle": {
@@ -400,7 +401,7 @@
     },
     {
       "id": "73C",
-      "cle": "73/73C",
+      "cle": "73/73C — Recherche et mémoire",
       "segment": "73",
       "nom": "Recherche et mémoire",
       "regle": {
@@ -419,7 +420,7 @@
     },
     {
       "id": "74A",
-      "cle": "74/74A",
+      "cle": "74/74A — Formation internationale",
       "segment": "74",
       "nom": "Formation internationale",
       "regle": {
@@ -472,7 +473,7 @@
     },
     {
       "id": "74C",
-      "cle": "74/74C",
+      "cle": "74/74C — Recherche et mémoire",
       "segment": "74",
       "nom": "Recherche et mémoire",
       "regle": {

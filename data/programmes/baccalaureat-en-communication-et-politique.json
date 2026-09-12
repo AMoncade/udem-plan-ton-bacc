@@ -26,7 +26,7 @@
   "blocs": [
     {
       "id": "99A",
-      "cle": "99/99A",
+      "cle": "99/99A — Connaissances théoriques et méthod. fondamentales",
       "segment": "99",
       "nom": "Connaissances théoriques et méthod. fondamentales",
       "regle": {
@@ -52,7 +52,7 @@
     },
     {
       "id": "99B",
-      "cle": "99/99B",
+      "cle": "99/99B — Fondements théoriques en communication politique",
       "segment": "99",
       "nom": "Fondements théoriques en communication politique",
       "regle": {
@@ -74,7 +74,7 @@
     },
     {
       "id": "99C",
-      "cle": "99/99C",
+      "cle": "99/99C — Méthodologie spécialisée en sciences de la communication",
       "segment": "99",
       "nom": "Méthodologie spécialisée en sciences de la communication",
       "regle": {
@@ -94,7 +94,7 @@
     },
     {
       "id": "99D",
-      "cle": "99/99D",
+      "cle": "99/99D — Méthodologie spécialisée en science politique",
       "segment": "99",
       "nom": "Méthodologie spécialisée en science politique",
       "regle": {
@@ -117,7 +117,7 @@
     },
     {
       "id": "99E",
-      "cle": "99/99E",
+      "cle": "99/99E — Communication",
       "segment": "99",
       "nom": "Communication",
       "regle": {
@@ -183,12 +183,15 @@
     },
     {
       "id": "99F",
-      "cle": "99/99F",
+      "cle": "99/99F — Politique",
       "segment": "99",
       "nom": "Politique",
       "regle": {
-        "type": "inconnu",
-        "brut": "Option - Minimum 21 crédits; maximum 30 crédits."
+        "type": "option",
+        "bornes": {
+          "min": 21,
+          "max": 30
+        }
       },
       "regleBrut": "Option - Minimum 21 crédits; maximum 30 crédits.",
       "cours": [
@@ -283,7 +286,7 @@
     },
     {
       "id": "99G",
-      "cle": "99/99G",
+      "cle": "99/99G — Stages",
       "segment": "99",
       "nom": "Stages",
       "regle": {
@@ -306,7 +309,7 @@
     },
     {
       "id": "99Y",
-      "cle": "99/99Y",
+      "cle": "99/99Y — Langues",
       "segment": "99",
       "nom": "Langues",
       "regle": {
