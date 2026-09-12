@@ -109,6 +109,38 @@ export type RegleBloc =
   | { type: "obligatoire" | "option" | "choix"; bornes: Intervalle }
   | { type: "inconnu"; brut: string };
 
+/**
+ * Ce qui CONTRAINT le contenu d'un bloc dont les cours ne sont pas énumérés.
+ *
+ * `Bloc.contenuOuvert` dit un fait littéral — aucun cours listé, mais de la
+ * prose — et garde exactement ce sens. Il ne dit pas ce que la prose EXIGE, et
+ * le moteur ne peut donc rien vérifier. Mesuré par le chantier scraper sur les
+ * 401 blocs à contenu ouvert du catalogue : **157 portent une contrainte qu'un
+ * programme pourrait vérifier** et qu'il ignore faute de la recevoir — 85 une
+ * contrainte de sigle (« les crédits au choix ne sont pas de sigle CHM »), 72
+ * une contrainte de cycle (« un cours de 2e cycle du répertoire de l'UdeM »).
+ * Les 244 autres se répartissent en autorisation humaine (68), renvoi à une
+ * liste hors catalogue (45), répartition de crédits qui ne décrit aucun contenu
+ * (12) et renvoi à d'autres blocs (9).
+ *
+ * Le champ est OPTIONNEL et son absence est le cas normal : elle dit « la prose
+ * ne donne rien de mécanisable ». Un genre ne doit être émis que sur une
+ * formulation réellement réduite — une liste de sigles devinée ferait échouer
+ * un audit sur un cours parfaitement valide, et un champ faux est pire
+ * qu'absent. C'est la même règle que pour l'empreinte.
+ *
+ * ATTENTION À QUI LA CONSOMME : tout `switch` sur `genre` doit porter un
+ * `default` avec une garde `never`. Une union qu'on étend est une union dont
+ * les `switch` avalent en silence les cas ajoutés plus tard — ce motif a déjà
+ * coûté une passe sur ce projet.
+ */
+export type ContrainteContenu =
+  | { genre: "sigle"; exclus: string[] }
+  | { genre: "cycle"; cycle: string }
+  | { genre: "autorisation" }
+  | { genre: "renvoiExterne" }
+  | { genre: "renvoiBlocs"; blocs: string[] };
+
 export interface Bloc {
   /**
    * Identifiant VERBATIM de la page : « 75C », mais aussi « MM-Bloc 73A ».
@@ -170,6 +202,9 @@ export interface Bloc {
    * du programme, dont la passe programmes est le seul écrivain.
    */
   videConstate?: boolean;
+  /** Ce que la prose EXIGE du contenu, quand c'est reductible. Voir
+   *  ContrainteContenu. Absent = la prose ne donne rien de mecanisable. */
+  contrainteContenu?: ContrainteContenu;
   /** Prose normative attachée au bloc, conservée telle quelle. Sans ce champ
    *  elle disparaît au scrape (autorisations, conditions, remarques). */
   notes: string[];
