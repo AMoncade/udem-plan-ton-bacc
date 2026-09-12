@@ -729,23 +729,30 @@ function LigneBloc({
               retiendrait.
 
               MÊME RAISON POUR « page incohérente », le troisième état non
-              binaire de cette colonne, mais le motif exact n'est pas celui
-              qu'on m'avait annoncé et il vaut d'être écrit. On me l'avait
-              décrit comme « conforme: false avec creditsManquants: 0 ». Mesuré
-              sur les 14 blocs marqués du catalogue, relevé vide : AUCUN ne
-              réclame 0. Le moteur plafonne la dette à ce que le bloc peut
-              réellement donner — bacc en cinéma 70/70A annonce 30 crédits, cite
-              8 cours, en réclame 24 ; musique 01/01A annonce 15, cite 4 cours,
-              en réclame 12.
+              binaire de cette colonne. Le motif dépend du relevé, et c'est ce
+              qui rend cet état nécessaire dans LES DEUX cas.
 
-              C'est un bien meilleur comportement, et c'est précisément ce qui
-              rend la ligne ILLISIBLE sans cet état : la colonne « Règle
-              publiée » affiche « Obligatoire - 15 crédits » et la colonne
-              voisine en réclame 12, sans que rien n'explique l'écart. Un
-              étudiant y lit une dette qu'il pourrait combler. La faute est à la
-              page — elle exige plus que ses propres cours ne totalisent — et la
-              ligne doit le dire là où on la lit, pas seulement dans la liste
-              globale vingt lignes plus haut. */}
+              Le moteur plafonne la dette à ce que le bloc peut réellement
+              donner : `min(annoncé, capacité) − acquis`. Musique 01/01A annonce
+              15 crédits et n'en offre que 12, donc il réclame 12 sur un relevé
+              vide et 0 sur un relevé complet. Mesuré sur les 14 blocs marqués
+              du catalogue, relevé vide : aucun ne réclame 0 — c'est l'état par
+              défaut de cet écran.
+
+              Les deux bouts sont illisibles pour la même raison de fond, et
+              aucun ne se répare en s'inscrivant à quoi que ce soit :
+
+                relevé vide     « Obligatoire - 15 crédits » dans la colonne
+                                voisine, 12 réclamés ici, et rien n'explique
+                                l'écart — l'étudiant lit une dette qu'il croit
+                                pouvoir combler, alors que le bloc n'offre rien
+                                de plus ;
+                relevé complet  0 réclamé à côté d'une croix rouge — « rien ne
+                                manque, et pourtant c'est raté ».
+
+              La faute est à la page, qui exige plus que ses propres cours ne
+              totalisent, et la ligne doit le dire là où on la lit — pas
+              seulement dans la liste globale, vingt lignes plus haut. */}
           <span
             className={`border px-2 py-0.5 text-[11.5px] ${
               bornes === null || nature === "ouvert" || incoherent
