@@ -14,7 +14,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { empreinteExtracteur } from "../lib/empreinte";
+import { empreinteExtracteur, sourcesModifiees } from "../lib/empreinte";
 import { join } from "node:path";
 import { diagnostiquerCours, auditProgramme } from "../lib/engine";
 import { normaliserCode, cleBloc, sujetDeCode } from "../lib/codes";
@@ -173,16 +173,31 @@ describe("disposition des données sur disque", () => {
     // message de collision — désigner un coupable qu'on n'a pas mesuré.
     const index = lire<IndexProgrammes>(INDEX);
     if (index.empreinteExtracteur === undefined) return;
+    // TROIS causes, et le message doit dire LAQUELLE. La première version n'en
+    // nommait qu'une — « le scrape n'a pas été relancé » — et s'est trompée du
+    // premier coup : une autre session écrivait `scripts/scrape/contraintes.ts`,
+    // neuf et non suivi par git, ce qui déplaçait l'empreinte sans qu'aucune
+    // ligne importée n'ait changé. Un garde-fou qui accuse la mauvaise cause
+    // coûte plus de temps qu'il n'en fait gagner.
+    const sales = sourcesModifiees();
+    const causes =
+      sales.length > 0
+        ? `CAUSE LA PLUS PROBABLE ICI : ${sales.length} source(s) hachée(s) ne sont ` +
+          `pas propres au sens de git — ${sales.join(", ")}. Une session est ` +
+          `probablement en train d'y travailler. Les données ne sont PAS en retard ` +
+          `sur le code de référence : elles sont comparées à un arbre de travail. ` +
+          `Ne pas relancer de passe pour ça ; mesurer sur un arbre au repos.`
+        : "Les fichiers hachés sont propres au sens de git, donc c'est bien le " +
+          "code de référence qui a changé depuis la passe : soit le scrape n'a pas " +
+          "été relancé après un correctif de l'extracteur — `npm run scrape`, " +
+          "quelques secondes sur cache — soit la formule a changé d'ensemble haché " +
+          "(voir lib/empreinte.ts), ce qui rend fausses les empreintes déjà " +
+          "écrites jusqu'à la passe suivante.";
     expect(
       index.empreinteExtracteur,
       "Les données de data/ n'ont PAS été produites par le code d'extraction " +
-        "présent sur le disque. Presque toujours : le scrape n'a pas été " +
-        "relancé après un correctif de l'extracteur — lancer `npm run scrape`. " +
-        "Tant que ce n'est pas fait, tout échec des tests de contenu ci-dessous " +
-        "mesure un artefact périmé et n'accuse personne à juste titre. " +
-        "(Autre cause possible : la formule a changé d'ensemble haché — voir lib/empreinte.ts, " +
-        "l'unique implémentation, que le scraper importe ; une passe remet les " +
-        "empreintes déjà écrites d'accord.)",
+        `présent sur le disque. ${causes} Tant que ce n'est pas tranché, un échec ` +
+        "des tests de contenu ci-dessous peut ne mesurer qu'un artefact périmé.",
     ).toBe(empreinteExtracteur());
   });
 });

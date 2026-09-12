@@ -43,6 +43,7 @@
  * ne doit pas être importé par `app/` ni `components/`.
  */
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -57,15 +58,21 @@ const DEPENDANCES = [
   "lib/engine/prealables.ts",
 ];
 
-export function empreinteExtracteur(): string {
+/** Les fichiers hachés, chemins relatifs au dépôt, dans l'ordre du hachage. */
+function sourcesHachees(): string[] {
   const dirScrape = join(RACINE, "scripts", "scrape");
-  const sources = readdirSync(dirScrape)
+  const scrape = readdirSync(dirScrape)
     .filter((f) => f.endsWith(".ts") && !f.endsWith(".test.ts"))
     .sort()
-    .map((f) => ({ nom: `scripts/scrape/${f}`, chemin: join(dirScrape, f) }));
-  for (const rel of DEPENDANCES) {
-    sources.push({ nom: rel, chemin: join(RACINE, ...rel.split("/")) });
-  }
+    .map((f) => `scripts/scrape/${f}`);
+  return [...scrape, ...DEPENDANCES];
+}
+
+export function empreinteExtracteur(): string {
+  const sources = sourcesHachees().map((rel) => ({
+    nom: rel,
+    chemin: join(RACINE, ...rel.split("/")),
+  }));
 
   const h = createHash("sha256");
   for (const { nom, chemin } of sources) {
@@ -86,4 +93,37 @@ export function empreinteExtracteur(): string {
     h.update(contenu.replace(/\r\n/g, "\n"));
   }
   return h.digest("hex");
+}
+
+/**
+ * Les sources hachées qui ne sont PAS propres au sens de git — modifiées, ou
+ * neuves et non suivies.
+ *
+ * Sert à nommer la TROISIÈME cause d'une empreinte qui diverge, celle que le
+ * message d'erreur accusait à tort : ni un scrape en retard, ni un changement
+ * de formule, mais **une source modifiée depuis la dernière passe, souvent par
+ * une autre session en train de travailler**. Dans un checkout partagé par
+ * quatre sessions ce n'est pas un cas rare, c'est l'état normal la moitié du
+ * temps : c'est `scripts/scrape/contraintes.ts`, neuf et non suivi, qui a
+ * déplacé l'empreinte alors qu'aucune ligne importée n'avait changé.
+ *
+ * Rend une liste VIDE quand git est absent ou muet — on ne peut alors rien
+ * affirmer, et le message reste sur ses deux premières causes plutôt que
+ * d'inventer la troisième.
+ */
+export function sourcesModifiees(): string[] {
+  try {
+    const sortie = execFileSync(
+      "git",
+      ["status", "--porcelain", "--", ...sourcesHachees()],
+      { cwd: RACINE, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] },
+    );
+    return sortie
+      .split("\n")
+      .map((l) => l.trim())
+      .filter((l) => l !== "")
+      .map((l) => l.replace(/^\S+\s+/, ""));
+  } catch {
+    return [];
+  }
 }
