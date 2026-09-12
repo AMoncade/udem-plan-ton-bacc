@@ -8,22 +8,25 @@
  * scrape est indépendante de la passe « programmes ». Les deux n'avancent pas
  * au même rythme, et rien dans le contrat ne les oblige à être d'accord.
  *
- * Mesuré le 2026-09-11 sur `data/` à 82 fichiers de sujets, en PARCOURS
- * (l'unité du sélecteur : une page à sept orientations vaut sept parcours, et
- * `data/index-programmes.json` porte 1 480 fiches pour 1 089 fichiers de
- * programme) :
+ * Mesuré en PARCOURS — l'unité du sélecteur : une page à sept orientations vaut
+ * sept parcours, et `data/index-programmes.json` porte 1 480 fiches pour 1 089
+ * fichiers de programme. Sur les 1 027 parcours à structure exploitable, DEUX
+ * mesures à quelques heures d'écart, et c'est l'écart qui est instructif :
  *
- *   1 027 parcours ont une structure exploitable ;
- *     499 d'entre eux n'ont AUCUNE fiche de cours — pas une seule ;
- *     274 en ont moins du quart ;
- *      55 sont complets.
+ *                            82 fichiers de sujets   117 fichiers
+ *                              (2026-09-11, 17 h)     (2026-09-11, 22 h)
+ *   aucune fiche de cours              499                   371
+ *   moins du quart                     274                   227
+ *   complets                            55                    90
+ *   sigles cités sans fichier      108 / 190             73 / 190
  *
- * CES QUATRE NOMBRES SONT PÉRIMABLES, et ils périment vite : la passe « cours »
- * du scrape tournait pendant qu'ils étaient pris, et elle a livré ARC, AME, APA
- * et URB dans l'heure — les sigles mêmes de l'exemple ci-dessous. Ils disent
- * l'ORDRE DE GRANDEUR qui a motivé ce module, pas l'état d'aujourd'hui ; rien
- * dans le code ne les lit. Pour les refaire : assembler chaque parcours à
- * structure et compter, la mesure tient en une trentaine de lignes.
+ * CES NOMBRES SONT DONC PÉRIMABLES, et ils périment en heures : la passe
+ * « cours » du scrape a livré ARC, AME, APA et URB entre les deux colonnes —
+ * les sigles mêmes de l'exemple ci-dessous. Ils disent l'ORDRE DE GRANDEUR qui
+ * a motivé ce module, pas l'état d'aujourd'hui ; aucune ligne de code ne les
+ * lit. Pour les refaire : assembler chaque parcours à structure et compter, la
+ * mesure tient en une trentaine de lignes. Ce que l'écart ne change pas, c'est
+ * le besoin : à 117 fichiers, 371 parcours s'ouvrent encore sur zéro titre.
  *
  * La session scraper mesure le même trou en PROGRAMMES et trouve 222 sans
  * aucune fiche sur 581 : le rapport ~1,8 entre les deux séries est le facteur

@@ -18,7 +18,7 @@ import {
 function bloc(segment: string, id: string, regle: RegleBloc, cours: string[] = []): Bloc {
   return {
     id,
-    cle: cleBloc(segment, id),
+    cle: cleBloc(segment, id, ""),
     segment,
     nom: "",
     regle,

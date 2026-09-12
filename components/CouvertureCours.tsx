@@ -5,12 +5,12 @@
  * de l'écran.
  *
  * Les blocs d'un programme citent des codes ; les fiches de ces cours arrivent
- * par une autre passe du scrape. Sur le catalogue complet, 499 des 1 027
- * PARCOURS à structure exploitable n'ont aucune fiche, et 274 en ont moins du
- * quart au 2026-09-11 (mesure, unité et péremption : `app/_lib/couverture.ts`).
- * Le baccalauréat en architecture s'ouvrait donc sur trente-neuf lignes « titre
- * inconnu » et un audit à zéro crédit — un exemple pris le jour où ses sigles
- * n'étaient pas encore collectés, et que la passe « cours » a comblé depuis.
+ * par une autre passe du scrape. Sur les 1 027 PARCOURS à structure
+ * exploitable, 371 n'ont aucune fiche et 227 en ont moins du quart — après une
+ * passe qui a déjà fait tomber ces nombres de 499 et 274 en cinq heures
+ * (mesure, unité et péremption : `app/_lib/couverture.ts`). Un certificat de 2e
+ * cycle en pratique pharmaceutique s'ouvre donc sur vingt et une lignes « titre
+ * inconnu » et un audit à zéro crédit.
  *
  * Rien n'était faux dans cet écran — c'est exactement ce que les données
  * disent. Il était ILLISIBLE : un écran vide ne se distingue pas d'une panne,
@@ -32,9 +32,10 @@
  *
  * ## Le mot « parcours » est dans la phrase exprès
  *
- * Le même trou se compte 499 en parcours et 222 en programmes — une page à sept
- * orientations vaut sept parcours. Un nombre affiché sans son unité sera lu
- * dans l'autre, et quelqu'un finira par « corriger » un chiffre juste.
+ * Le même trou se comptait, au 2026-09-11, 499 en parcours et 222 en programmes
+ * — une page à sept orientations vaut sept parcours, et les deux comptes sont
+ * justes chacun dans son unité. Un nombre affiché sans la sienne sera lu dans
+ * l'autre, et quelqu'un finira par « corriger » un chiffre juste.
  */
 
 import { couvertureFiches, type Couverture } from "@/app/_lib/couverture";
@@ -108,10 +109,15 @@ export function CouvertureCours() {
               est vide. Un verdict de non-conformité est ici sans valeur : il est au pire
               trop sévère, jamais trop clément.
             </p>
+            {/* Volontairement muette sur la CAUSE, que `Causes` vient de donner
+                juste au-dessus : dire ici « ces sigles n'ont pas encore été
+                visités » était faux dès que le fichier existait et qu'il lui
+                manquait des fiches — le cas devenu majoritaire à mesure que la
+                collecte avance. */}
             <p className="text-faible">
               Ce n&apos;est pas une panne et il n&apos;y a rien à corriger de votre
-              côté : la collecte des cours se fait sigle par sigle, et ceux-ci
-              n&apos;ont pas encore été visités.
+              côté : les fiches de cours sont récupérées par lots, et celles-ci
+              n&apos;ont pas encore été publiées dans les données.
             </p>
           </div>
         </div>

@@ -462,7 +462,11 @@ function bloc(
 ): Bloc {
   return {
     id,
-    cle: cleBloc(segment, id),
+    // `nom` est passé même s'il est encore optionnel dans la signature : sans
+    // lui le jeu de démonstration fabrique `70/70A` là où les vraies données
+    // portent `70/70A — Stage`. Deux formes de clé coexistantes, aucune erreur
+    // levée, et un `find()` qui ne trouve rien le jour où elles se croisent.
+    cle: cleBloc(segment, id, nom),
     segment,
     nom,
     regle,
