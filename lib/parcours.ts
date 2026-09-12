@@ -140,3 +140,44 @@ export function blocsDuCheminement(programme: Programme, choix: string | null): 
   }
   return programme.blocs.filter((b) => b.cheminement === undefined || b.cheminement === choix);
 }
+
+/**
+ * Ce qu'est devenue une clé de parcours retenue d'une visite précédente.
+ *
+ * POURQUOI CE N'EST PAS « introuvable, deux causes possibles ». Une clé absente
+ * de l'index a trois destins distincts, et `FicheIndex` porte de quoi les
+ * séparer : `cle` identifie le PARCOURS, `id` le programme, et plusieurs fiches
+ * partagent le même `id`. Comparer sur `id` dit donc si la page existe encore.
+ *
+ * Le cas qui a motivé ceci : dix programmes dont la page déclare des
+ * orientations que l'extraction jetait. En les émettant, leur clé NUE disparaît
+ * au profit de `id#Orientation` — la page n'a pas été retirée, elle s'est
+ * scindée, et on peut proposer les branches au lieu de renvoyer l'étudiant au
+ * catalogue entier.
+ */
+export type DestinCleParcours =
+  | { genre: "present" }
+  | { genre: "scinde"; orientations: string[] }
+  | { genre: "orientationInconnue"; orientations: string[] }
+  | { genre: "retire" }
+  | { genre: "illisible" };
+
+export function destinCleParcours(
+  fiches: { cle: string; id: string; orientation: string | null }[],
+  cle: string,
+): DestinCleParcours {
+  if (fiches.some((f) => f.cle === cle)) return { genre: "present" };
+  const lu = lireCleParcours(cle);
+  if (lu === null) return { genre: "illisible" };
+  const memeProgramme = fiches.filter((f) => f.id === lu.id);
+  if (memeProgramme.length === 0) return { genre: "retire" };
+  const orientations = memeProgramme
+    .map((f) => f.orientation)
+    .filter((o): o is string => o !== null);
+  // La clé ne portait pas d'orientation et le programme en a maintenant : la
+  // page s'est scindée. Elle en portait une qui n'existe plus : elle a été
+  // renommée ou retirée. Deux messages différents, deux réponses différentes.
+  return lu.orientation === null
+    ? { genre: "scinde", orientations }
+    : { genre: "orientationInconnue", orientations };
+}

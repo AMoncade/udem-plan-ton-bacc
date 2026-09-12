@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   blocsDuCheminement,
+  destinCleParcours,
   cleParcours,
   exigeUnCheminement,
   lireCleParcours,
@@ -243,5 +244,41 @@ describe("cheminements exclusifs", () => {
     // seule erreur ne se lève. C'est le mode d'échec que ce champ doit rendre
     // impossible, pas produire.
     expect(() => blocsDuCheminement(finance(), "Travaux dirigés")).toThrow(/ne déclare pas/);
+  });
+});
+
+describe("destinCleParcours", () => {
+  const fiches = [
+    { cle: "chimie#Santé", id: "chimie", orientation: "Santé" },
+    { cle: "chimie#Matériaux", id: "chimie", orientation: "Matériaux" },
+    { cle: "droit", id: "droit", orientation: null },
+  ];
+
+  it("reconnaît une clé encore au catalogue", () => {
+    expect(destinCleParcours(fiches, "chimie#Santé")).toEqual({ genre: "present" });
+    expect(destinCleParcours(fiches, "droit")).toEqual({ genre: "present" });
+  });
+
+  it("distingue une page SCINDÉE d'une page retirée", () => {
+    // Le cas des dix programmes dont les orientations étaient extraites puis
+    // jetées : la clé nue disparaît, mais la page est là. Dire « ce parcours
+    // n'existe plus » serait vrai et inutile — on peut nommer les branches.
+    expect(destinCleParcours(fiches, "chimie")).toEqual({
+      genre: "scinde",
+      orientations: ["Santé", "Matériaux"],
+    });
+    expect(destinCleParcours(fiches, "anthropologie")).toEqual({ genre: "retire" });
+  });
+
+  it("distingue une orientation disparue d'une page disparue", () => {
+    expect(destinCleParcours(fiches, "chimie#Polymères")).toEqual({
+      genre: "orientationInconnue",
+      orientations: ["Santé", "Matériaux"],
+    });
+  });
+
+  it("ne confond pas une clé mal formée avec une page retirée", () => {
+    expect(destinCleParcours(fiches, "chimie#")).toEqual({ genre: "illisible" });
+    expect(destinCleParcours(fiches, "")).toEqual({ genre: "illisible" });
   });
 });
