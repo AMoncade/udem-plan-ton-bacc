@@ -42,7 +42,11 @@ import {
   type EtatProgramme,
 } from "@/app/_lib/chargement";
 import type { CatalogueAssemble } from "@/app/_lib/depot";
-import { auditProgramme, diagnostiquerCours } from "@/app/_lib/moteur";
+import {
+  auditProgramme,
+  clesBlocsIncoherents,
+  diagnostiquerCours,
+} from "@/app/_lib/moteur";
 import type { Plan } from "@/app/_lib/plan";
 import { ficheParCle } from "@/app/_lib/recherche";
 import {
@@ -69,6 +73,10 @@ export interface DonneesProgramme extends CatalogueAssemble {
   programme: Programme;
   diagnostics: Map<CodeCours, DiagnosticCours>;
   audit: Audit;
+  /** Clés des blocs que leur PROPRE page rend infaisables — le minimum qu'elle
+   *  annonce dépasse ce que ses cours totalisent. Marqueur explicite du moteur,
+   *  jamais déduit dans une vue : voir l'en-tête de `_lib/moteur.ts`. */
+  blocsIncoherents: Set<string>;
 }
 
 interface ValeurEtat {
@@ -134,6 +142,11 @@ export function ProviderEtat({ children }: { children: ReactNode }) {
       ...chargement.assemble,
       diagnostics: diagnostiquerCours(catalogue, faits),
       audit: auditProgramme(programme, catalogue, faits),
+      // Calculé ICI comme l'audit, pour la même raison : les vues doivent lire
+      // le même verdict. Ne dépend pas de `faits` — c'est une propriété de la
+      // page, pas du relevé — mais suit le même cycle, le catalogue étant sa
+      // seconde entrée.
+      blocsIncoherents: new Set(clesBlocsIncoherents(programme, catalogue)),
     };
   }, [chargement, faits]);
 

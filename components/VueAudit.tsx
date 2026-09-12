@@ -344,7 +344,7 @@ function ExplicationEcart({
 }
 
 export function VueAudit() {
-  const { catalogue, programme, audit } = useDonnees();
+  const { catalogue, programme, audit, blocsIncoherents } = useDonnees();
   const exige = useMemo(() => arithmetiqueProgramme(programme), [programme]);
 
   const totalPerdus = audit.blocs.reduce((somme, bloc) => somme + bloc.creditsPerdus, 0);
@@ -601,6 +601,7 @@ export function VueAudit() {
                   bloc={bloc}
                   etat={etat}
                   catalogue={catalogue}
+                  incoherent={blocsIncoherents.has(etat.cleBloc)}
                 />
               );
             })}
@@ -623,10 +624,18 @@ function LigneBloc({
   bloc,
   etat,
   catalogue,
+  incoherent,
 }: {
   bloc: Bloc;
   etat: EtatBloc;
   catalogue: Catalogue;
+  /** La PAGE de ce bloc annonce un minimum que ses propres cours ne peuvent pas
+   *  atteindre. Vient du marqueur `clesBlocsIncoherents()` du moteur, jamais
+   *  d'une déduction locale : toute conjonction sur `conforme` et
+   *  `creditsManquants` qui « se trouve » discriminante aujourd'hui avalerait en
+   *  silence le prochain cas. Le marqueur s'abstient quand c'est une FICHE qui
+   *  nous manque — on n'accuse pas la page d'un trou de notre scrape. */
+  incoherent: boolean;
 }) {
   const [ouvert, setOuvert] = useState(false);
   const bornes = bornesBloc(bloc.regle);
@@ -717,23 +726,49 @@ function LigneBloc({
               cours ; quand son minimum est 0 il le déclare « dans ses bornes »,
               en vert. Afficher ce vert à côté de « invérifiable » serait se
               contredire sur la même ligne, et c'est le vert que l'étudiant
-              retiendrait. */}
+              retiendrait.
+
+              MÊME RAISON POUR « page incohérente », le troisième état non
+              binaire de cette colonne, mais le motif exact n'est pas celui
+              qu'on m'avait annoncé et il vaut d'être écrit. On me l'avait
+              décrit comme « conforme: false avec creditsManquants: 0 ». Mesuré
+              sur les 14 blocs marqués du catalogue, relevé vide : AUCUN ne
+              réclame 0. Le moteur plafonne la dette à ce que le bloc peut
+              réellement donner — bacc en cinéma 70/70A annonce 30 crédits, cite
+              8 cours, en réclame 24 ; musique 01/01A annonce 15, cite 4 cours,
+              en réclame 12.
+
+              C'est un bien meilleur comportement, et c'est précisément ce qui
+              rend la ligne ILLISIBLE sans cet état : la colonne « Règle
+              publiée » affiche « Obligatoire - 15 crédits » et la colonne
+              voisine en réclame 12, sans que rien n'explique l'écart. Un
+              étudiant y lit une dette qu'il pourrait combler. La faute est à la
+              page — elle exige plus que ses propres cours ne totalisent — et la
+              ligne doit le dire là où on la lit, pas seulement dans la liste
+              globale vingt lignes plus haut. */}
           <span
             className={`border px-2 py-0.5 text-[11.5px] ${
-              bornes === null || nature === "ouvert"
+              bornes === null || nature === "ouvert" || incoherent
                 ? "tirete border text-avert"
                 : etat.conforme
                   ? "border-fait/50 bg-fait/10 text-fait"
                   : "border-perdu/50 bg-perdu/10 text-perdu"
             }`}
+            title={
+              incoherent
+                ? "Le minimum annoncé par la page dépasse ce que les cours du bloc totalisent : c'est la page qui est incohérente, pas votre parcours."
+                : undefined
+            }
           >
             {bornes === null
               ? "non concluant"
               : nature === "ouvert"
                 ? "invérifiable"
-                : etat.conforme
-                  ? "dans ses bornes"
-                  : "hors bornes"}
+                : incoherent
+                  ? "page incohérente"
+                  : etat.conforme
+                    ? "dans ses bornes"
+                    : "hors bornes"}
           </span>
         </td>
       </tr>

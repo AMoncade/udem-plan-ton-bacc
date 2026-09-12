@@ -24,7 +24,22 @@
  * faux moteur qui alimente des écrans sans le dire est précisément le genre de
  * chose qui finit par être pris pour la réalité.
  */
-export { diagnostiquerCours, auditProgramme } from "../../lib/engine";
+/**
+ * `clesBlocsIncoherents` passe par ici comme les deux autres, et pour la même
+ * raison : c'est un MARQUEUR EXPLICITE demandé au moteur plutôt qu'une
+ * déduction faite dans la vue.
+ *
+ * La vue aurait pu reconnaître ces blocs par
+ * `creditsManquants === 0 && !conforme && !contenuOuvert`. Cette conjonction
+ * est exacte aujourd'hui — et elle avalerait en silence le prochain genre de
+ * bloc que le moteur rendra non conforme sans dette. Un marqueur se périme
+ * bruyamment, une déduction se périme sans rien dire.
+ */
+export {
+  diagnostiquerCours,
+  auditProgramme,
+  clesBlocsIncoherents,
+} from "../../lib/engine";
 
 /** Pilote la bannière qui prévient que les nombres viennent d'un faux moteur. */
 export const MOTEUR_EST_FACTICE = false;
