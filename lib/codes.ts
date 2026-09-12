@@ -83,10 +83,10 @@ export function extraireCodes(texte: string): CodeCours[] {
  * U+2010, qui se lit comme un trait d'union et n'en est pas un. Sans ça, deux
  * scrapes de la même page peuvent donner deux clés pour un seul bloc.
  */
-export function cleBloc(segment: string, id: string, nom?: string): string {
+export function cleBloc(segment: string, id: string, nom: string): string {
   const propre = (t: string): string =>
     t.replace(/[\u2010-\u2015\u2212]/g, "-").replace(/\s+/g, " ").trim();
-  const suffixe = nom !== undefined && propre(nom) !== "" ? ` — ${propre(nom)}` : "";
+  const suffixe = propre(nom) !== "" ? ` — ${propre(nom)}` : "";
   return `${segment}/${propre(id)}${suffixe}`;
 }
 

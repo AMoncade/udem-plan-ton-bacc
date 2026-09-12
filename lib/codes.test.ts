@@ -123,8 +123,8 @@ describe("cleBloc", () => {
   it("distingue deux blocs de même id dans un même segment", () => {
     // La maîtrise en mathématiques porte MM-Bloc 73A ET S-Bloc 73A : un
     // identifiant de bloc seul ne suffit pas à les séparer.
-    expect(cleBloc("73", "MM-Bloc 73A")).not.toBe(cleBloc("73", "S-Bloc 73A"));
-    expect(cleBloc("75", "75C")).toBe("75/75C");
+    expect(cleBloc("73", "MM-Bloc 73A", "")).not.toBe(cleBloc("73", "S-Bloc 73A", ""));
+    expect(cleBloc("75", "75C", "")).toBe("75/75C");
   });
 
   it("sépare deux blocs que seul le NOM distingue", () => {
@@ -150,8 +150,6 @@ describe("cleBloc", () => {
     // 1 400 blocs sur 5 028 n'ont pas de nom : leur clé ne doit pas gagner un
     // séparateur vide, sinon la forme diffère pour rien.
     expect(cleBloc("75", "75C", "")).toBe("75/75C");
-    expect(cleBloc("75", "75C", undefined)).toBe("75/75C");
-    expect(cleBloc("75", "75C")).toBe("75/75C");
   });
 });
 

@@ -14,7 +14,7 @@
  */
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { createHash } from "node:crypto";
+import { empreinteExtracteur } from "../lib/empreinte";
 import { join } from "node:path";
 import { diagnostiquerCours, auditProgramme } from "../lib/engine";
 import { normaliserCode, cleBloc, sujetDeCode } from "../lib/codes";
@@ -63,29 +63,6 @@ function champsManquants(): string[] {
     if (b0 && b0.contenuOuvert === undefined) manques.push("Bloc.contenuOuvert");
   }
   return manques;
-}
-
-/**
- * Empreinte du code d'extraction PRÉSENT sur le disque.
- *
- * SHA-256 du contenu de `scripts/scrape/*.ts`, hors fichiers de test (ils ne
- * changent pas ce que le scraper écrit), pris dans l'ordre alphabétique. Les
- * fins de ligne sont normalisées : sans ça l'empreinte dépendrait du réglage
- * `core.autocrlf` de la machine et non du code.
- *
- * Le scraper doit calculer la SIENNE de la même façon et la déposer dans
- * `IndexProgrammes.empreinteExtracteur`. Si les deux formules divergent, le
- * test de fraîcheur le dit dans son message plutôt que de laisser croire à un
- * scrape en retard.
- */
-function empreinteExtracteur(): string {
-  const dir = join(import.meta.dirname, "..", "scripts", "scrape");
-  const h = createHash("sha256");
-  for (const f of readdirSync(dir).filter((x) => x.endsWith(".ts") && !x.endsWith(".test.ts")).sort()) {
-    h.update(f);
-    h.update(readFileSync(join(dir, f), "utf8").replace(/\r\n/g, "\n"));
-  }
-  return h.digest("hex");
 }
 
 const MANQUES = champsManquants();
@@ -203,9 +180,9 @@ describe("disposition des données sur disque", () => {
         "relancé après un correctif de l'extracteur — lancer `npm run scrape`. " +
         "Tant que ce n'est pas fait, tout échec des tests de contenu ci-dessous " +
         "mesure un artefact périmé et n'accuse personne à juste titre. " +
-        "(Autre cause possible : la formule d'empreinte du scraper a divergé de " +
-        "`empreinteExtracteur()` dans ce fichier — les deux doivent hacher les " +
-        "mêmes fichiers dans le même ordre.)",
+        "(Autre cause possible : la formule a changé d'ensemble haché — voir lib/empreinte.ts, " +
+        "l'unique implémentation, que le scraper importe ; une passe remet les " +
+        "empreintes déjà écrites d'accord.)",
     ).toBe(empreinteExtracteur());
   });
 });
@@ -392,7 +369,6 @@ describe.skipIf(!PRET)("couture blocs : identité, bornes et contenu", () => {
     // non pas que l'amont soit régulier, mais que TOUT BLOC VIDE SOIT VU. Un
     // bloc vide journalisé est une donnée constatée ; un bloc vide muet reste
     // une page mal lue.
-    const texteJournal = texteJournalDeProgrammes();
     const videsNonVus: string[] = [];
     for (const p of programmes()) {
       for (const b of p.blocs) {
@@ -407,8 +383,21 @@ describe.skipIf(!PRET)("couture blocs : identité, bornes et contenu", () => {
           ).toBeGreaterThan(0);
           continue;
         }
-        if (!texteJournal.includes(b.cle) && !texteJournal.includes(p.id)) {
-          videsNonVus.push(`${p.id} / ${b.cle} (${b.regleBrut}) : bloc vide et muet`);
+        // L'attestation vient du BLOC, plus du journal. Elle vivait dans
+        // data/journal.json, qui est écrasé à chaque passe : une passe cours l'a
+        // fait tomber de 3 488 entrées à 0, ce qui rendait cet invariant faux sans
+        // qu'une ligne de code ait changé. Elle voyage maintenant avec ce qu'elle
+        // atteste, dans le fichier du programme, dont la passe programmes est le
+        // seul écrivain.
+        //
+        // Aucun COMPTE n'est attendu ici : 190 blocs le portent aujourd'hui, 50
+        // avant la régénération. Figer le nombre transformerait une attestation en
+        // prophétie, et le catalogue amont n'a pas à s'y conformer.
+        if (b.videConstate !== true) {
+          videsNonVus.push(
+            `${p.id} / ${b.cle} (${b.regleBrut}) : bloc vide et muet — ni cours, ni ` +
+              `prose, ni videConstate. La passe ne dit pas l'avoir lu.`,
+          );
         }
       }
     }
