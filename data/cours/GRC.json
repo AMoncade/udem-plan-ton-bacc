@@ -188,5 +188,91 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-1031/",
     "scrapeISO": "2026-09-13T03:14:59.551Z"
+  },
+  "GRC 3100": {
+    "code": "GRC 3100",
+    "titre": "Poésie hellénistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Alexandrie au IIIe s. av. J.-C., nouveau centre culturel du monde ancien. Les débuts de la poésie \"silencieuse\", à lire plutôt qu'à écouter. Les premières collections de poèmes. Les poètes savants (Callimaque, Apollonios, Lycophron) et leur oeuvre.",
+    "prealablesBrut": "GRC2021 OU GRC2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "GRC 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "GRC 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-3100/",
+    "scrapeISO": "2026-09-13T04:04:55.926Z"
+  },
+  "GRC 3165": {
+    "code": "GRC 3165",
+    "titre": "Les poètes lyriques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des poètes lyriques archaïques et des contextes de leurs compositions (banquet, guerre, rituel). Rapports avec la tradition poétique antérieure. Questions d'individualité et d'originalité poétiques.",
+    "prealablesBrut": "GRC2021 OU GRC2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "GRC 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "GRC 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-3165/",
+    "scrapeISO": "2026-09-13T04:04:58.047Z"
+  },
+  "GRC 3170": {
+    "code": "GRC 3170",
+    "titre": "Xénophon, Platon et Aristote",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude d'un ou de plusieurs écrits représentatifs de Xénophon, Platon ou Aristote.",
+    "prealablesBrut": "GRC2021 OU GRC2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "GRC 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "GRC 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-3170/",
+    "scrapeISO": "2026-09-13T04:05:00.031Z"
   }
 }

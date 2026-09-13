@@ -6672,5 +6672,64 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/drt-6929o/",
     "scrapeISO": "2026-09-13T03:51:19.636Z"
+  },
+  "DRT 3150": {
+    "code": "DRT 3150",
+    "titre": "Droit et gouvernance",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de droit",
+    "description": "Étude du droit international, de ses institutions et des grands acteurs internationaux (États, organisations internationales et intergouvernementales, ONG, institutions financières, etc.)",
+    "prealablesBrut": "42 crédits du programme 1-960-1-3",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "42 crédits du programme 1-960-1-3"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/drt-3150/",
+    "scrapeISO": "2026-09-13T04:05:36.419Z"
+  },
+  "DRT 3230G": {
+    "code": "DRT 3230G",
+    "titre": "Preuve et procédure en SST",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Analyse de cas en droit de la réparation. Composantes théoriques et pratique de la représentation devant les tribunaux spécialisés en SST.",
+    "prealablesBrut": "SST2025 ou (SST1042 et SST1045)",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "SST 2025"
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "SST 1042"
+            },
+            {
+              "genre": "cours",
+              "code": "SST 1045"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/drt-3230g/",
+    "scrapeISO": "2026-09-13T04:13:48.813Z"
   }
 }

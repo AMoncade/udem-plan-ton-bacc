@@ -1112,5 +1112,311 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6078/",
     "scrapeISO": "2026-09-13T03:56:08.559Z"
+  },
+  "PHM 6010": {
+    "code": "PHM 6010",
+    "titre": "Développement du médicament",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Les partenaires du développement. Les sources d'un nouveau médicament. Sa formulation galénique. Son développement préclinique et clinique. Sa commercialisation. La réglementation qui régit son développement et sa mise en marché. Remarques: Obligatoire au D.É.S.S. (développement du médicament).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6010/",
+    "scrapeISO": "2026-09-13T04:17:35.219Z"
+  },
+  "PHM 6011": {
+    "code": "PHM 6011",
+    "titre": "Médicament : aspects cliniques",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Conception de l'essai clinique : objectifs, éthique, population-cible, paramètres d'efficacité et d'innocuité du médicament. Élaboration du protocole : méthodologie et réglementation. Conduite de l'étude et normes de bonne pratique clinique. Remarques: Obligatoire au D.É.S.S. (développement du médicament).",
+    "prealablesBrut": "PHM6010 ET PHM6019",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHM 6010"
+        },
+        {
+          "genre": "cours",
+          "code": "PHM 6019"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6011/",
+    "scrapeISO": "2026-09-13T04:17:39.157Z"
+  },
+  "PHM 6015": {
+    "code": "PHM 6015",
+    "titre": "Médicament : réglementation canadienne",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Système de réglementation canadien. Partenaires du développement du médicament et interactions entre eux. Type de dossiers et leur évaluation. Corollaires à l'évaluation des dossiers. Perspectives d'avenir. Remarques: Non offert aux étudiants du baccalauréat. Obligatoire au D.É.S.S. (développement du médicament).",
+    "prealablesBrut": "PHM6010",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHM 6010"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6015/",
+    "scrapeISO": "2026-09-13T04:17:41.106Z"
+  },
+  "PHM 6019": {
+    "code": "PHM 6019",
+    "titre": "Devis expérimental et biostatistique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Plans d'expérience et méthodes d'analyse statistique pour l'étude de l'efficacité et de l'innocuité de médicaments dans le cadre d'essais cliniques. Remarques: Obligatoire au D.E.S.S. (développement du médicament).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6019/",
+    "scrapeISO": "2026-09-13T04:17:42.940Z"
+  },
+  "PHM 6153": {
+    "code": "PHM 6153",
+    "titre": "Intra-Entrepreneuriat en DEVMED-Innover en équipe",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Intra et entrepreneuriat dans le DEVMED : innover en équipe. Fonctionnement, compétences, efficacité et évolution d'une équipe multidisciplinaire. Concepts généraux de l'intra et entrepreneuriat dans le secteur pharma. Leadership. Communication.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6153/",
+    "scrapeISO": "2026-09-13T04:17:43.302Z"
+  },
+  "PHM 6155": {
+    "code": "PHM 6155",
+    "titre": "Projet de fin d'études",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Synthèse et intégration. Travail d'équipe encadré. Élaboration d'un plan de développement d'une nouvelle entité thérapeutique. Remarques: Obligatoire au D.É.S.S. (développement du médicament).",
+    "prealablesBrut": "PHM6010 et PHM6019 et PHM6153 et SBP6004 et SBP6046",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHM 6010"
+        },
+        {
+          "genre": "cours",
+          "code": "PHM 6019"
+        },
+        {
+          "genre": "cours",
+          "code": "PHM 6153"
+        },
+        {
+          "genre": "cours",
+          "code": "SBP 6004"
+        },
+        {
+          "genre": "cours",
+          "code": "SBP 6046"
+        }
+      ]
+    },
+    "concomitantsBrut": "PHM6155 et PHM6011 et PHM6015 et SBP6009",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6155/",
+    "scrapeISO": "2026-09-13T04:17:47.341Z"
+  },
+  "PHM 6014": {
+    "code": "PHM 6014",
+    "titre": "Évaluation critique de l'essai clinique",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Travaux dirigés portant sur l'évaluation de protocoles, de rapports ou de publications d'études précliniques et (ou) cliniques.",
+    "prealablesBrut": "PHM6010 et PHM6019",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHM 6010"
+        },
+        {
+          "genre": "cours",
+          "code": "PHM 6019"
+        }
+      ]
+    },
+    "concomitantsBrut": "PHM6014 et PHM6011",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6014/",
+    "scrapeISO": "2026-09-13T04:17:55.694Z"
+  },
+  "PHM 6029": {
+    "code": "PHM 6029",
+    "titre": "Médicament : chimie et fabrication",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Intégration des notions de chimie, de physicochimie, d'analyse et de technologie pharmaceutique pour la constitution d'un dossier de chimie et de fabrication pour toute nouvelle entité thérapeutique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "PHM6029 et SBP6046",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6029/",
+    "scrapeISO": "2026-09-13T04:18:03.648Z"
+  },
+  "PHM 6157": {
+    "code": "PHM 6157",
+    "titre": "Introduction à la réglementation internationale",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Principaux systèmes internationaux de réglementation visant l'homologation. Développement préclinique, expérimentation chez l'humain, mise sur le marché et post-commercialisation. Politiques, exigences, structures, procédures.",
+    "prealablesBrut": "PHM6010 ET PHM6015",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHM 6010"
+        },
+        {
+          "genre": "cours",
+          "code": "PHM 6015"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6157/",
+    "scrapeISO": "2026-09-13T04:18:05.085Z"
+  },
+  "PHM 6008": {
+    "code": "PHM 6008",
+    "titre": "Applications pharmacoépidémiologiques",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Applications thématiques de concepts en épidémiologie du médicament.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6008/",
+    "scrapeISO": "2026-09-13T04:18:19.482Z"
+  },
+  "PHM 6154": {
+    "code": "PHM 6154",
+    "titre": "Planification en développement du médicament",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Développement d'un médicament : notions et concepts. Prise de décision et gestion du risque. Équipe et stratégie globale de développement.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "PHM6154 et PHM6010",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6154/",
+    "scrapeISO": "2026-09-13T04:18:23.394Z"
+  },
+  "PHM 6156A": {
+    "code": "PHM 6156A",
+    "titre": "Atelier thématique",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de pharmacie",
+    "description": "Activité destinée à l'étude ou à l'approfondissement d'une thématique, à l'examen d'une nouvelle problématique ou encore à l'acquisition de compétences particulières.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "SBP6116/PHM6156A",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6156a/",
+    "scrapeISO": "2026-09-13T04:37:40.623Z"
   }
 }

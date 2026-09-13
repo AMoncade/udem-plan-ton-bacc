@@ -1,0 +1,189 @@
+{
+  "EDN 6001": {
+    "code": "EDN 6001",
+    "titre": "Théories de l’édition numérique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Processus de production et lecture / écriture / édition de contenus dans les environnements numériques: textes, images, vidéos. Formes de circulation et de légitimation des contenus: auteurs, communautés, éditorialisation. Remarque : au premier cycle, vous devez vous inscrire au cours FRA3826.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6001/",
+    "scrapeISO": "2026-09-13T04:18:28.722Z"
+  },
+  "EDN 6002": {
+    "code": "EDN 6002",
+    "titre": "Technologies pour l'édition numérique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Protocoles et standards du Web, formats de publication, métadonnées, plates-formes de publication numérique, diffusion de contenu textuel et multimédia, Web et réseaux sociaux, mesures d'audience.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6002/",
+    "scrapeISO": "2026-09-13T04:18:31.129Z"
+  },
+  "EDN 6003": {
+    "code": "EDN 6003",
+    "titre": "Gestion d'un projet d'édition numérique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Gestion de projet (étapes et outils). Impact des choix de supports et modes de diffusion. Politiques éditoriales et commerciales. Marchés. Droit et éthique : droit d'auteur, gestion des droits numériques, réglementation.",
+    "prealablesBrut": "EDN6001 et EDN6002",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDN 6001"
+        },
+        {
+          "genre": "cours",
+          "code": "EDN 6002"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6003/",
+    "scrapeISO": "2026-09-13T04:18:33.250Z"
+  },
+  "EDN 6015": {
+    "code": "EDN 6015",
+    "titre": "Éditique pour l'édition numérique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principes et techniques de design infographique pour la création de publications numériques. Processus de conception et réalisation. Exportation en différents formats. réflexion sur les impacts des choix technologiques sur le produit fini.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6015/",
+    "scrapeISO": "2026-09-13T04:18:59.258Z"
+  },
+  "EDN 6101": {
+    "code": "EDN 6101",
+    "titre": "Édition critique avec la TEI",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Édition structurée et édition critique. Bases de la Text Encoding Initiative (TEI). Organisation du guide d'utilisation. Introduction à la personnalisation de la TEI. Aperçu des solutions de publication. Initiation aux langages XPath et XSTL.",
+    "prealablesBrut": "EDN6002",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDN 6002"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6101/",
+    "scrapeISO": "2026-09-13T04:19:23.710Z"
+  },
+  "EDN 6103": {
+    "code": "EDN 6103",
+    "titre": "Web sémantique pour l'édition numérique",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Architecture du Web (protocoles, ressources, représentation). Format RDF et syntaxes de sérialisation. Ontologie et vocabulaires. Langage d'interrogation SPARQL. Applications du Web sémantique et du Web de données.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6103/",
+    "scrapeISO": "2026-09-13T04:19:25.045Z"
+  },
+  "EDN 6501": {
+    "code": "EDN 6501",
+    "titre": "Projet de création en édition numérique",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Intégration des compétences dans un projet d'édition numérique (ex. : création d'une publication, d'un site web d'édition numérique, d'une oeuvre de fiction interactive, etc.). Remarque : Travail en groupe possible avec l'approbation du comité des études.",
+    "prealablesBrut": "EDN6001 et EDN6002 et EDN6003, plus 9 crédits du programme 218712",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDN6001 et EDN6002 et EDN6003, plus 9 crédits du programme 218712"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6501/",
+    "scrapeISO": "2026-09-13T04:19:27.630Z"
+  },
+  "EDN 6502": {
+    "code": "EDN 6502",
+    "titre": "Stage de formation en édition numérique",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": "EDN6001 et EDN6002 et EDN6003, plus 9 crédits du programme 218712",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDN6001 et EDN6002 et EDN6003, plus 9 crédits du programme 218712"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edn-6502/",
+    "scrapeISO": "2026-09-13T04:19:29.052Z"
+  }
+}

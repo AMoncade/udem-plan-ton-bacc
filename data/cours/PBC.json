@@ -38,5 +38,121 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-3060/",
     "scrapeISO": "2026-09-11T17:35:51.363Z"
+  },
+  "PBC 1011": {
+    "code": "PBC 1011",
+    "titre": "Éléments de morphologie fonctionnelle humaine",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Description des principaux tissus humains aux plans histologique et fonctionnel assorti d'un apprentissage pratique de la morphologie pour la reconnaissance des tissus nécessaires à l'étude ultérieure des maladies humaines.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-1011/",
+    "scrapeISO": "2026-09-13T04:09:01.925Z"
+  },
+  "PBC 2060": {
+    "code": "PBC 2060",
+    "titre": "Pathologie générale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Étude des processus pathologiques (inflammation, immunopathologie, transformation néoplasique, anomalies génétiques etc.) incluant les contenus d'histologie fonctionnelle nécessaires à leur compréhension.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-2060/",
+    "scrapeISO": "2026-09-13T04:09:50.173Z"
+  },
+  "PBC 1013": {
+    "code": "PBC 1013",
+    "titre": "Anatomie et histologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Enseignement des notions essentielles théoriques d’anatomie et d’histologie. Travaux pratiques en histologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-1013/",
+    "scrapeISO": "2026-09-13T04:35:39.564Z"
+  },
+  "PBC 2000": {
+    "code": "PBC 2000",
+    "titre": "Biopathologie générale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Description des lésions cellulaires et tissulaires et de leur pathogénèse. Sujets : lésion et mort cellulaire; croissance et différenciation; inflammation; troubles hémodynamiques; maladies de l'immunité; effets des agents chimiques et physiques. Remarques: Cours théoriques et séances de T.P.",
+    "prealablesBrut": "PBC1011 ou PBC1013 ou SBM1001",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PBC 1011"
+        },
+        {
+          "genre": "cours",
+          "code": "PBC 1013"
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 1001"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-2000/",
+    "scrapeISO": "2026-09-13T04:35:41.810Z"
+  },
+  "PBC 3050": {
+    "code": "PBC 3050",
+    "titre": "Embryologie et biologie du développement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Embryogénèse humaine; organogénèse normale et malformations. Embryogénèse moléculaire : du zygote unicellulaire à l'organisme vivant normalement constitué; liens entre l'embryogénèse et l'oncogénèse.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PBC3050/PBC2050",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-3050/",
+    "scrapeISO": "2026-09-13T04:36:03.757Z"
   }
 }

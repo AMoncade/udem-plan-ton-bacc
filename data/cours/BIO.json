@@ -877,5 +877,1670 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-6245/",
     "scrapeISO": "2026-09-13T03:49:05.860Z"
+  },
+  "BIO 1157": {
+    "code": "BIO 1157",
+    "titre": "Biologie cellulaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Composition chimique de la cellule, membrane plasmique, organites cytoplasmiques, tri intracellulaire, cytosquelette, noyau et division cellulaire. Organisation des cellules en tissus. Remarques: Travaux pratiques. Cours réservé aux étudiants des baccalauréats en sciences biomédicales et en neurosciences.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-1157/",
+    "scrapeISO": "2026-09-13T04:08:30.434Z"
+  },
+  "BIO 2110": {
+    "code": "BIO 2110",
+    "titre": "TP de biologie moléculaire",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Transformation bactérienne, extraction d'ADN plasmidien et génomique, amplification par PCR, électrophorèse d'ADN sur gel, extraction et électrophorèse de protéines sur gel, transfert de protéines et détection par western blot. Remarque : travaux pratiques (TP).",
+    "prealablesBrut": "BIO1101 ou BIO2102",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1101"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 2102"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2110/",
+    "scrapeISO": "2026-09-13T04:08:34.281Z"
+  },
+  "BIO 2471": {
+    "code": "BIO 2471",
+    "titre": "Neuroanatomie comparée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude théorique et pratique de l'anatomie et de la cytoarchitecture du système nerveux central et périphérique des Vertébrés, avec emphase sur celui des Mammifères. Organisation des principaux systèmes (sensoriels, moteurs, autonome).",
+    "prealablesBrut": "6 crédits de sigle BIO ou NSC",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "6 crédits de sigle BIO ou NSC"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2471/",
+    "scrapeISO": "2026-09-13T04:08:34.445Z"
+  },
+  "BIO 2350": {
+    "code": "BIO 2350",
+    "titre": "Diversité fongique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Diversité génétique et fonctionnelle des champignons et de leurs alliés, oomycètes et myxogastrides. Importance dans l'environnement. Interactions avec les autres organismes. Enjeux économiques et sociaux. Identification morphologique et moléculaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2350/",
+    "scrapeISO": "2026-09-13T04:11:23.264Z"
+  },
+  "BIO 1804": {
+    "code": "BIO 1804",
+    "titre": "Introduction à la microbiologie environnementale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux principes de la microbiologie environnementale. Diversité, fonctions et interactions microbiennes au sein des sols, des milieux aquatiques et des organismes vivants; concepts de bioremédiation, biocontrôle et symbioses microbiennes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-1804/",
+    "scrapeISO": "2026-09-13T04:24:25.049Z"
+  },
+  "BIO 2162": {
+    "code": "BIO 2162",
+    "titre": "Compléments de biologie cellulaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Signaux chimiques entre cellules, cellules excitables, cycle de division cellulaire, adhérence cellulaire et matrice extracellulaire, mécanismes cellulaires du développement, cellules différenciées, rythmes biologiques.",
+    "prealablesBrut": "BIO1153 OU BIO1155 OU BIO1157",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1153"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1155"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1157"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2162/",
+    "scrapeISO": "2026-09-13T04:24:27.224Z"
+  },
+  "BIO 4000": {
+    "code": "BIO 4000",
+    "titre": "Communication scientifique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Acquisition des outils permettant le recensement informatique d'écrits scientifiques. Analyse critique et apprentissage de la rédaction d'articles. Apprentissage de la préparation de présentation orale courte, séminaire, journal club et affiche. Remarques: Accès limité et sur entrevue. Cours contingenté.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "BIO4000 et BIO4050 et MCB4050",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-4000/",
+    "scrapeISO": "2026-09-13T04:24:55.685Z"
+  },
+  "BIO 2150": {
+    "code": "BIO 2150",
+    "titre": "Protistologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Structure, organisation cellulaire, taxonomie, écologie et physiologie des protistes libres et parasites.",
+    "prealablesBrut": "BIO1153 ou BIO1155 ou BIO1157 ou BCM3512 ou l'équivalent",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "BIO1153 ou BIO1155 ou BIO1157 ou BCM3512 ou l'équivalent"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2150/",
+    "scrapeISO": "2026-09-13T04:25:07.992Z"
+  },
+  "BIO 2044": {
+    "code": "BIO 2044",
+    "titre": "Modéliser le vivant",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Exploration des notions de base en modélisation pour formuler et tester des hypothèses dans divers domaines de la biologie. Chaque notion de modélisation est abordée par des exemples concrets, s'étendant de la biologie moléculaire à l’écologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2044/",
+    "scrapeISO": "2026-09-13T04:25:26.111Z"
+  },
+  "BIO 2045": {
+    "code": "BIO 2045",
+    "titre": "Simuler le vivant",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction théorique et pratique à l'utilisation de simulations simples pour étudier les comportements émergents dans les systèmes biologiques complexes, à travers des exemples tirés de plusieurs domaines en sciences biologiques.",
+    "prealablesBrut": "avoir complété 6 crédits du programme 1-235-1-0 ou 1-235-2-0.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir complété 6 crédits du programme 1-235-1-0 ou 1-235-2-0."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2045/",
+    "scrapeISO": "2026-09-13T04:25:28.128Z"
+  },
+  "BIO 3150": {
+    "code": "BIO 3150",
+    "titre": "Signalisation cellulaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Voies de signalisation cellulaire et transduction des signaux. Molécules de signalisation et leurs récepteurs chez les végétaux, levures et animaux. Rôles des protéines kinases et protéines phosphatases. Protéines G. Seconds messagers.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3150/",
+    "scrapeISO": "2026-09-13T04:25:31.811Z"
+  },
+  "BIO 3721": {
+    "code": "BIO 3721",
+    "titre": "Écologie microbienne",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des micro-organismes et leurs activités métaboliques dans les écosystèmes. Emphase sur le rôle clé des bactéries dans les différents cycles biogéochimiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3721/",
+    "scrapeISO": "2026-09-13T04:25:32.178Z"
+  },
+  "BIO 3781": {
+    "code": "BIO 3781",
+    "titre": "Microorganismes phytopathogènes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Microbiologie et immunologie relatives aux plantes. Virus, procaryotes et eucaryotes pathogènes des plantes. Défense immunitaire des plantes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3781/",
+    "scrapeISO": "2026-09-13T04:25:36.037Z"
+  },
+  "BIO 3801": {
+    "code": "BIO 3801",
+    "titre": "Conservation et aménagement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "La biodiversité et son importance, les menaces à la biodiversité, aménagement des écosystèmes, introduction aux technologies écologiques, évaluation des contraintes et priorités en conservation.",
+    "prealablesBrut": "BIO1803",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 1803"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3801/",
+    "scrapeISO": "2026-09-13T04:25:38.185Z"
+  },
+  "BIO 3843": {
+    "code": "BIO 3843",
+    "titre": "Étude de terrain en limnologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage sur le terrain de limnologie appliquée aux écosystèmes d'eau douce : morphométrie, physico-chimie des eaux naturelles. Communautés planctoniques et benthiques. Remarques: Cours contingenté à 24 étudiants. Offert aux étudiants de biodiversité, écologie et évolution.",
+    "prealablesBrut": "BIO1803",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 1803"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3843/",
+    "scrapeISO": "2026-09-13T04:25:41.935Z"
+  },
+  "BIO 3080": {
+    "code": "BIO 3080",
+    "titre": "Stage d'animation en biologie",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Participation à des activités de vulgarisation en tant qu'animateur dans un domaine de la biologie relevant de sa compétence. Remarques: Le projet doit au préalable être approuvé par le Département. Présentation d'un rapport écrit.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3080/",
+    "scrapeISO": "2026-09-13T04:25:44.263Z"
+  },
+  "BIO 1001": {
+    "code": "BIO 1001",
+    "titre": "Méthodes de recherche en biologie (TP)",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation des principes de base du travail de recherche, incluant les pratiques en laboratoire, l'utilisation des bibliothèques et des bases de données bibliographiques, l'acquisition, le traitement et la présentation des données scientifiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-1001/",
+    "scrapeISO": "2026-09-13T04:33:36.127Z"
+  },
+  "BIO 2102": {
+    "code": "BIO 2102",
+    "titre": "Biologie moléculaire : fondements et pratique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Structure et fonction des acides nucléiques et des protéines. Réplication et transcription de l’ADN, traduction des protéines, Régulation génique chez les procaryotes et les eucaryotes. Éléments de contrôle transcriptionnel et post-transcriptionnel.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2102/",
+    "scrapeISO": "2026-09-13T04:33:36.288Z"
+  },
+  "BIO 3002": {
+    "code": "BIO 3002",
+    "titre": "Bioéthique",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fondements de l'éthique. La vie, la nature et l'humain. Portée morale de la science et de la technologie. Implications éthiques des activités des biologistes. Expérimentation, biotechnologie, génie génétique, aménagement et conservation. Cours équivalent(s) : MCB1040 et MCB3040.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3002/",
+    "scrapeISO": "2026-09-13T04:33:40.072Z"
+  },
+  "BIO 2050": {
+    "code": "BIO 2050",
+    "titre": "Stage de recherche 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Réalisation d'un premier projet de recherche en laboratoire ou sur le terrain, sous la direction d'un professeur après son acceptation. Présentation d'un rapport écrit.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2050/",
+    "scrapeISO": "2026-09-13T04:33:42.190Z"
+  },
+  "BIO 3020": {
+    "code": "BIO 3020",
+    "titre": "Stage en milieu de travail",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage en vue d'acquérir une expérience professionnelle dans un milieu de travail (gouvernemental, hospitalier, industriel, universitaire, etc.). Sous la coordination d'un superviseur. Présentation d'un rapport écrit.",
+    "prealablesBrut": "12 crédits de sigle BIO ou (6 crédits de sigle BIO et 6 crédits de sigle SBM)",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "12 crédits de sigle BIO ou (6 crédits de sigle BIO et 6 crédits de sigle SBM)"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3020/",
+    "scrapeISO": "2026-09-13T04:33:43.995Z"
+  },
+  "BIO 3050": {
+    "code": "BIO 3050",
+    "titre": "Stage de recherche 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Réalisation d'un deuxième projet de recherche en laboratoire ou sur le terrain, sous la direction d'un professeur après son acceptation. Présentation d'un rapport écrit.",
+    "prealablesBrut": "BI02050",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "BI02050"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3050/",
+    "scrapeISO": "2026-09-13T04:33:46.207Z"
+  },
+  "BIO 4050": {
+    "code": "BIO 4050",
+    "titre": "Stage de recherche honor 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage de recherche dans un laboratoire, sur le campus ou hors campus, après approbation par un superviseur de stage et le coordonnateur départemental. Remarques: Accès limité et sur entrevue. Cours contingenté.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-4050/",
+    "scrapeISO": "2026-09-13T04:33:48.019Z"
+  },
+  "BIO 4060": {
+    "code": "BIO 4060",
+    "titre": "Stage de recherche honor 2",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage de recherche dans un laboratoire, sur le campus ou hors campus, après approbation par un superviseur de stage et le coordonnateur départemental. Rédaction d'un texte scientifique et présentation orale. Remarques: Accès limité et sur entrevue. Cours contingenté.",
+    "prealablesBrut": "BI04050",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "BI04050"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-4060/",
+    "scrapeISO": "2026-09-13T04:33:50.059Z"
+  },
+  "BIO 2240": {
+    "code": "BIO 2240",
+    "titre": "Génétique et développement moléculaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux concepts du développement et de la reproduction des organismes multicellulaires. Présentation des approches de biologie moléculaire, de génétique et de microscopie utilisées pour étudier ces processus.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2240/",
+    "scrapeISO": "2026-09-13T04:33:52.417Z"
+  },
+  "BIO 2155": {
+    "code": "BIO 2155",
+    "titre": "T.P. de biologie cellulaire",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Microscopie: contraste de phase, champ sombre, colorations. Fractionnement cellulaire, extraction protéique. Séparation sur SDS-PAGE. Immunobuvardage de type Western. Tests enzymatiques. Cultures cellulaires, immunomarquage des cellules cultivées.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "BIO2155 et BIO1153 ou BIO1155 ou BIO1157",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2155/",
+    "scrapeISO": "2026-09-13T04:33:54.638Z"
+  },
+  "BIO 2255": {
+    "code": "BIO 2255",
+    "titre": "T.P. de génétique",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Expression génique (opéron lactose), Mutation. Extraction d'ADN. PCR: électrophorèse, spectrophotomètre. RFLP (restriction fragment-length polymorphism). Cytogénétique; Giemsa, sondes fluorescentes. Microscopie inversée à fluorescence.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "BIO2255 et BIO1203",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2255/",
+    "scrapeISO": "2026-09-13T04:33:56.073Z"
+  },
+  "BIO 3102": {
+    "code": "BIO 3102",
+    "titre": "TP en biologie moléculaire : ADN et ARN",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Familiarisation avec la préparation de l'ADN, l'utilisation d'enzymes de restriction, l'électrophorèse, le séquençage, l'amplification par PCR, l'extraction de l'ARN, le transfert de l'ADN et de l'ARN et la détection à l'aide d'une sonde radioactive. Remarque: Cours contingenté à 30 étudiants. Remarque : travaux pratiques (TP), acide désoxyribonucléique (ADN), acide ribonucléique (ARN)",
+    "prealablesBrut": "BIO1101 ou BIO2102",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1101"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 2102"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3102/",
+    "scrapeISO": "2026-09-13T04:33:57.207Z"
+  },
+  "BIO 3103": {
+    "code": "BIO 3103",
+    "titre": "TP en biologie moléculaire: Protéines",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Localisation cellulaire (fusion GFP et transformation transitoire); interaction protéine-protéine (méthode des double hybride chez la levure et complémentation bimoléculaire en fluorescence; expression et purification; essais enzymatiques. Remarque : travaux pratiques (TP).",
+    "prealablesBrut": "BIO3102",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 3102"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3103/",
+    "scrapeISO": "2026-09-13T04:34:00.717Z"
+  },
+  "BIO 2372": {
+    "code": "BIO 2372",
+    "titre": "Anatomie et morphogénèse végétales",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fondements et concepts d'anatomie et morphogénèse des plantes, interrelations entre structure et fonction dans la biologie de la plante, en particulier des angiospermes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2372/",
+    "scrapeISO": "2026-09-13T04:34:02.621Z"
+  },
+  "BIO 3106": {
+    "code": "BIO 3106",
+    "titre": "Biologie cellulaire avancée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Progrès récents et concepts courants en biologie: biochimie des mitochondries, vieillissement, trafic vésiculaire rétro et antérograde, cartographie nucléaire, contrôle de l'expression génique, polarité cellulaire et division asymétrique.",
+    "prealablesBrut": "12 crédits de sigle BIO, dont (BIO1101 ou BIO2102) et (BIO1153 ou BIO1155 ou BIO1157)",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "12 crédits de sigle BIO, dont (BIO1101 ou BIO2102) et (BIO1153 ou BIO1155 ou BIO1157)"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3106/",
+    "scrapeISO": "2026-09-13T04:34:04.961Z"
+  },
+  "BIO 3160": {
+    "code": "BIO 3160",
+    "titre": "Biologie redox chez les plantes et les animaux",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des processus redox en biologie végétale et animale. Présentation des mécanismes de contrôle de l’homéostasie redox, du stress oxydant et de ses conséquences à l’aide d’exemples pris dans différents systèmes vivants.",
+    "prealablesBrut": "BIO1153 et BIO1534 et BIO1634",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1153"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1534"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1634"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3160/",
+    "scrapeISO": "2026-09-13T04:34:06.866Z"
+  },
+  "BIO 3205": {
+    "code": "BIO 3205",
+    "titre": "Spéciation et évolution des plantes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les modes de spéciation et les mécanismes évolutifs et adaptatifs propres aux plantes. L’importance de la polyploïdie et de l’hybridation dans l’évolution des végétaux. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours BIO6205.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3205/",
+    "scrapeISO": "2026-09-13T04:34:08.901Z"
+  },
+  "BIO 3293": {
+    "code": "BIO 3293",
+    "titre": "Évolution et développement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours examine l'influence des mécanismes du développement sur l'évolution des plantes et des animaux. Il portera sur des sujets tels que la modularité, la dissociation, la cooption, l'hétérochronie et la canalisation.",
+    "prealablesBrut": "12 crédits de sigle BIO",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "12 crédits de sigle BIO"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3293/",
+    "scrapeISO": "2026-09-13T04:34:10.886Z"
+  },
+  "BIO 3701": {
+    "code": "BIO 3701",
+    "titre": "Vitroculture des végétaux",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Généralités sur la culture in vitro : culture d'embryons de pollen, de protoplastes, de méristèmes; fusion de protoplastes et hybridation cytoplasmique; aspects génétiques; perspectives. Remarques: Cours contingenté à 7 étudiants.",
+    "prealablesBrut": "BIO2372 ET BIO2541",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 2372"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 2541"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3701/",
+    "scrapeISO": "2026-09-13T04:34:12.347Z"
+  },
+  "BIO 3033": {
+    "code": "BIO 3033",
+    "titre": "Science des données en biodiversité",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux concepts de science des données appliquée à la biodiversité; gestion et nettoyage des données d'occurrence et de télédétection, classification et régression, modèles de distribution d'espèces, changements climatiques et projection. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours BIO6033.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3033/",
+    "scrapeISO": "2026-09-13T04:34:15.176Z"
+  },
+  "BIO 3044": {
+    "code": "BIO 3044",
+    "titre": "Analyse quantitative d’images pour la biologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l’analyse d’images biologiques en 2D et 3D, en utilisant des exemples concrets issus de différents domaines de la biologie : des images de microscopie en biologie cellulaire aux images aériennes en écologie. Remarque : Aux cycles supérieurs, vous devez vous inscrire au cours BIO6044.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3044/",
+    "scrapeISO": "2026-09-13T04:34:18.938Z"
+  },
+  "BIO 3207": {
+    "code": "BIO 3207",
+    "titre": "Génétique quantitative : prédire l’évolution",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude génétique des caractères à variation mesurable. Description statistique des traits, héritabilité, sélection, maintien de la variabilité génétique. Approches classiques et génomiques. Applications récentes en génétique quantitative. Préalable : BIO1203 et BIO3204",
+    "prealablesBrut": "BIO1203 et BIO3204",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1203"
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 3204"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3207/",
+    "scrapeISO": "2026-09-13T04:34:20.891Z"
+  },
+  "BIO 3866": {
+    "code": "BIO 3866",
+    "titre": "Théorie des jeux en biologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation des méthodes et applications de la théorie des jeux évolutifs. En particulier, il abordera les applications de cette approche à l'étude de la coopération, de la compétition et du parasitisme. Remarque : Aux cycles supérieurs, vous devez vous inscrire au cours BIO6866.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3866/",
+    "scrapeISO": "2026-09-13T04:34:23.131Z"
+  },
+  "BIO 2260": {
+    "code": "BIO 2260",
+    "titre": "Domestication animale : évolution et génétique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse de l'évolution des animaux par la domestication : changements génétiques, comportementaux et morphologiques induits par la sélection humaine. Survol des méthodes d'étude. Implications pour l'évolution, l'histoire humaine et la biodiversité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2260/",
+    "scrapeISO": "2026-09-13T04:34:25.234Z"
+  },
+  "BIO 2541": {
+    "code": "BIO 2541",
+    "titre": "Physiologie végétale avancée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Organisation spatiale et intégration des voies métaboliques par rapport aux fonctions. Métabolisme et développement. Interactions plante-environnement du point de vue métabolique. Modifications fonctionnelles par génie métabolique. Remarques: Actif au trimestre d'hiver des années paires. Cours cyclique offert en 2015-2016.",
+    "prealablesBrut": "BI01534",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "BI01534"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2541/",
+    "scrapeISO": "2026-09-13T04:34:25.404Z"
+  },
+  "BIO 2621": {
+    "code": "BIO 2621",
+    "titre": "Physiologie animale comparée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse comparative des processus physiologiques assurant les fonctions vitales chez les invertébrés et les vertébrés : homéostasie, métabolisme énergétique, perception, communication, motricité, reproduction, croissance, sommeil et mort. Remarque : Expérimentation avec des animaux.",
+    "prealablesBrut": "BIO1634",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 1634"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "(BIO2620 et BIO2625)",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2621/",
+    "scrapeISO": "2026-09-13T04:34:29.313Z"
+  },
+  "BIO 2720": {
+    "code": "BIO 2720",
+    "titre": "Flore des milieux humides et aquatiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Diversité, écologie et biogéographie des communautés végétales des milieux humides, aquatiques et riverains. Lois et règlements sur les milieux humides. Remarques : il est recommandé d’avoir suivi le BIO2306 ou l’équivalent. Comporte des stages sur le terrain, des travaux pratiques et des exposés magistraux.",
+    "prealablesBrut": "12 crédits de sigle BIO",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "12 crédits de sigle BIO"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2720/",
+    "scrapeISO": "2026-09-13T04:34:29.474Z"
+  },
+  "BIO 2821": {
+    "code": "BIO 2821",
+    "titre": "Écologie des sols",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux processus de pédogenèse, à la notion de fertilité, et aux méthodes d'études des sols. Étude de la microflore et de la faune du sol, du cycle des nutriments, de la dynamique du permafrost et des sols agricoles et forestiers.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2821/",
+    "scrapeISO": "2026-09-13T04:34:33.489Z"
+  },
+  "BIO 3008": {
+    "code": "BIO 3008",
+    "titre": "Sujets spéciaux en biologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours confié à des professeurs ou des chercheurs invités pour dispenser une série d'exposés dans un secteur de la biologie qui présente un intérêt particulier pour les étudiants et les professeurs du Département.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3008/",
+    "scrapeISO": "2026-09-13T04:34:35.352Z"
+  },
+  "BIO 3441": {
+    "code": "BIO 3441",
+    "titre": "Systématique des insectes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les insectes constituent le groupe d'organismes eucaryotes le plus diversifié au monde. Ce cours présente leur évolution, leur classification, et des méthodes systématiques pour les étudier. Remarques : Travaux à la Station de biologie des Laurentides au début de l’été ; remise d'une collection d'insectes et examen final au mois d’août. Aux cycles supérieurs, vous devez vous inscrire au cours BIO6441.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3441/",
+    "scrapeISO": "2026-09-13T04:34:37.224Z"
+  },
+  "BIO 3659": {
+    "code": "BIO 3659",
+    "titre": "Les fonctions du système nerveux",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Fonction de relation : la physiologie au niveau de la cellule nerveuse et du système nerveux central. Intégrations sensorielle et motrice.",
+    "prealablesBrut": "BI01634",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "BI01634"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3659/",
+    "scrapeISO": "2026-09-13T04:34:39.290Z"
+  },
+  "BIO 3665": {
+    "code": "BIO 3665",
+    "titre": "Respiration, circulation, excrétion",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Respiration, excrétion, équilibre acide-base. Physiologie du coeur. Circulation sanguine.",
+    "prealablesBrut": "BI01634",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "BI01634"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3665/",
+    "scrapeISO": "2026-09-13T04:34:40.955Z"
+  },
+  "BIO 3682": {
+    "code": "BIO 3682",
+    "titre": "Endocrinologie animale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Caractéristiques du système endocrinien. Rôle des hormones dans la différenciation sexuelle, la reproduction, le stress, la morphologie, l'alimentation, les rythmes biologiques. Hormones synthétiques utilisées par l'humain. Agents endocrinotoxiques.",
+    "prealablesBrut": "BI01634",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "BI01634"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3682/",
+    "scrapeISO": "2026-09-13T04:34:43.383Z"
+  },
+  "BIO 3851": {
+    "code": "BIO 3851",
+    "titre": "Écologie des communautés",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours explore les multiples mécanismes qui influencent la biodiversité avec un accent sur la métacommunauté comme cadre unificateur.",
+    "prealablesBrut": "BIO1803",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 1803"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3851/",
+    "scrapeISO": "2026-09-13T04:34:45.310Z"
+  },
+  "BIO 3900": {
+    "code": "BIO 3900",
+    "titre": "Chronobiologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Aspects physiologiques des horloges circadiennes; photopériodisme; mécanismes moléculaires des horloges chez les cyanobactéries, les champignons, les plantes et les mammifères; l'impact de l'horloge sur la santé et le sommeil.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3900/",
+    "scrapeISO": "2026-09-13T04:34:46.915Z"
+  },
+  "BIO 2862": {
+    "code": "BIO 2862",
+    "titre": "Comportement animal",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l'étude biologique du comportement animal; causes proximales et ultimes; apprentissage; vie en groupe; comportements reproducteurs; coopération.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2862/",
+    "scrapeISO": "2026-09-13T04:34:49.759Z"
+  },
+  "BIO 3651": {
+    "code": "BIO 3651",
+    "titre": "Adaptations métaboliques aux milieux extrêmes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Adaptations métaboliques aux niveaux biochimique, physiologique, anatomique et comportemental qui facilitent la survie des animaux spécialisés dans des environnements « extrêmes ». Des cours magistraux, des travaux de groupe et des présentations.",
+    "prealablesBrut": "BIO1634 et (BIO2620 ou BIO2621 ou BIO2625)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1634"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "BIO 2620"
+            },
+            {
+              "genre": "cours",
+              "code": "BIO 2621"
+            },
+            {
+              "genre": "cours",
+              "code": "BIO 2625"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3651/",
+    "scrapeISO": "2026-09-13T04:34:51.210Z"
+  },
+  "BIO 3206": {
+    "code": "BIO 3206",
+    "titre": "Écologie évolutive",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Intégration des concepts d’écologie et d’évolution pour comprendre les fondements de la diversité, du fonctionnement et de la répartition du vivant. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours BIO6206.",
+    "prealablesBrut": "24 crédits de cours BIO ou l'équivalent",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "24 crédits de cours BIO ou l'équivalent"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3206/",
+    "scrapeISO": "2026-09-13T04:34:53.689Z"
+  },
+  "BIO 2431": {
+    "code": "BIO 2431",
+    "titre": "Zoologie des invertébrés",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principes d'organisation des invertébrés examinés à la lumière de l'augmentation de l'efficacité et de la complexité. Structures et fonctions homologues et analogues: caractères généraux, bases morphologiques de la classification.",
+    "prealablesBrut": "(BIO1435 ET BIO1445) OU BIO1434",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "BIO 1435"
+            },
+            {
+              "genre": "cours",
+              "code": "BIO 1445"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "BIO 1434"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2431/",
+    "scrapeISO": "2026-09-13T04:34:55.266Z"
+  },
+  "BIO 2440": {
+    "code": "BIO 2440",
+    "titre": "Entomologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction large et générale aux insectes et à leur importance pour l'homme. Génétique, physiologie, écologie, évolution et classification des insectes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2440/",
+    "scrapeISO": "2026-09-13T04:34:55.940Z"
+  },
+  "BIO 2476": {
+    "code": "BIO 2476",
+    "titre": "Ichtyologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Diversité (anatomie, génétique, classification), éco-physiologie (métabolisme, croissance, mortalité, reproduction), comportement (prédation, compétition, migration, nidification) et écologie (exploitation, impacts) des poissons.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2476/",
+    "scrapeISO": "2026-09-13T04:34:59.796Z"
+  },
+  "BIO 2478": {
+    "code": "BIO 2478",
+    "titre": "Herpétologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Biologie comparée des amphibiens et des reptiles: classification, phylogénie, biogéographie, morphologie, physiologie, écologie et éthologie des différents ordres. Problèmes actuels en herpétologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2478/",
+    "scrapeISO": "2026-09-13T04:35:02.154Z"
+  },
+  "BIO 2480": {
+    "code": "BIO 2480",
+    "titre": "Ornithologie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Origine et évolution, morphologie, plumage et mues, classification, distribution, physiologie, migration, chant, écologie et comportement des oiseaux. Initiation aux techniques propres à l'étude des oiseaux.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2480/",
+    "scrapeISO": "2026-09-13T04:35:04.339Z"
+  },
+  "BIO 3872": {
+    "code": "BIO 3872",
+    "titre": "Entomologie appliquée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "La gestion intégrée des populations d’insectes et d’autres arthropodes nuisibles aux plantes, animaux, humains, denrées, et structures. Travaux pratiques en milieu de travail ou de recherche mettant en valeur les connaissances acquises. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours BIO6872.",
+    "prealablesBrut": "BIO2440",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 2440"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3872/",
+    "scrapeISO": "2026-09-13T04:35:06.383Z"
+  },
+  "BIO 2432": {
+    "code": "BIO 2432",
+    "titre": "Invertébrés marins",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours introduit l'étudiant à 1) la diversité animale des écosystèmes marins; 2) leur organisation morphologique; 3) l'innovation évolutive attribuée aux invertébrés marins; et 4) la réalisation de projets de recherche sur les invertébrés marins. Remarque: Stage intensif de 12 jours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2432/",
+    "scrapeISO": "2026-09-13T04:35:08.170Z"
+  },
+  "BIO 2854": {
+    "code": "BIO 2854",
+    "titre": "Étude de terrain en écologie des animaux terrestres",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Travaux à la Station de biologie des Laurentides en mai. Élaboration d'un projet de recherche, récolte et analyse des données, rédaction de rapport. Connaissances en biostatistique (BIO 2041) recommandées. Remarques: Réunion d'information en mars. Cours contingenté à 24 étudiants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2854/",
+    "scrapeISO": "2026-09-13T04:35:10.203Z"
+  },
+  "BIO 3661": {
+    "code": "BIO 3661",
+    "titre": "TP Physiologie nerveuse et musculaire",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude pratique du système nerveux. Sur ordinateur, à partir de modèles mimant l'activité neuronale, analyse des propriétés membranaires et synaptiques. Expérience sur le système sensoriel et psychophysique. Remarque: Expérimentation avec des animaux. Remarque : travaux pratiques (TP).",
+    "prealablesBrut": "BIO1634 OU SBM2007",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1634"
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3661/",
+    "scrapeISO": "2026-09-13T04:35:11.932Z"
+  },
+  "BIO 3674": {
+    "code": "BIO 3674",
+    "titre": "TP en respiration, circulation et excrétion",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Travaux pratiques en relation avec le cours théorique : Respiration, circulation, excrétion. Remarque: Expérimentation avec des animaux. Remarque : travaux pratiques (TP).",
+    "prealablesBrut": "BIO1634 OU SBM2002",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIO 1634"
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2002"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3674/",
+    "scrapeISO": "2026-09-13T04:35:15.547Z"
+  },
+  "BIO 3865": {
+    "code": "BIO 3865",
+    "titre": "TP en comportement animal",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation aux méthodes permettant de décrire les comportements ainsi que de formuler et de tester des hypothèses concernant leur valeur adaptative. Séances de labo. et un projet en équipe avec observation et/ou expérimentation sur un sujet au choix. Remarque : travaux pratiques (TP).",
+    "prealablesBrut": "BIO2041",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 2041"
+    },
+    "concomitantsBrut": "BIO3865 et BIO2862",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3865/",
+    "scrapeISO": "2026-09-13T04:35:17.583Z"
+  },
+  "BIO 2315": {
+    "code": "BIO 2315",
+    "titre": "Évolution et domestication des plantes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Évolution, culture et utilisation des principales plantes alimentaires dans le monde. Aspects sociaux-anthropologiques et culturels du processus de domestication et culture.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2315/",
+    "scrapeISO": "2026-09-13T04:35:19.013Z"
+  },
+  "BIO 2386": {
+    "code": "BIO 2386",
+    "titre": "Taxonomie des plantes vasculaires",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à la systématique contemporaine. Phylogénie et taxonomie des groupes de plantes terrestres vasculaires, incluant les fossiles. Origine, évolution et mécanismes évolutifs. Remarques: Actif au trimestre d'hiver des années impaires. Cours cyclique non offert en 2015-2016.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2386/",
+    "scrapeISO": "2026-09-13T04:35:20.984Z"
+  },
+  "BIO 3790": {
+    "code": "BIO 3790",
+    "titre": "Parasitisme",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Évolution et diversité, cycles de vie et développement, adaptations à la vie parasitaire, dynamique des relations hôte-parasite, conséquences sur la santé humaine et animale, la biodiversité et la biologie de la conservation, stratégies de contrôle.",
+    "prealablesBrut": "12 crédits de sigle BIO.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "12 crédits de sigle BIO."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3790/",
+    "scrapeISO": "2026-09-13T04:35:21.784Z"
+  },
+  "BIO 3390": {
+    "code": "BIO 3390",
+    "titre": "Architecture et mode de développement de l'arbre",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Approche globale et dynamique de l'architecture des arbres (séquence de développement, niveaux d'organisation, réponse à l'environnement). Outil de diagnostic et de prise de décision pour inventaires, études d'impact, aménagements, recherches, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3390/",
+    "scrapeISO": "2026-09-13T04:35:23.819Z"
+  },
+  "BIO 1306": {
+    "code": "BIO 1306",
+    "titre": "Écologie forestière du Québec - printemps",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Excursions organisées dans différentes régions forestières du Québec méridional durant le printemps.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-1306/",
+    "scrapeISO": "2026-09-13T04:35:26.944Z"
+  },
+  "BIO 2703": {
+    "code": "BIO 2703",
+    "titre": "Écologie forestière du Québec - automne",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Excursions organisées dans différentes régions forestières du Québec méridional. Identification et écologie des espèces d'arbres et des principales communautés forestières du Québec. Remarques: Cours contingenté à 42 étudiants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-2703/",
+    "scrapeISO": "2026-09-13T04:35:29.707Z"
+  },
+  "BIO 3753": {
+    "code": "BIO 3753",
+    "titre": "Étude de terrain en écologie végétale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Écologie végétale, analyse de la végétation et aménagement de territoire à la Station de biologie des Laurentides de l'Université de Montréal, à l'automne. Remarques: Cours contingenté à 35 étudiants (minimum 15). Offert aux étudiants de biodiversité, écologie et évolution.",
+    "prealablesBrut": "BIO2041",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 2041"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3753/",
+    "scrapeISO": "2026-09-13T04:35:31.505Z"
+  },
+  "BIO 3754": {
+    "code": "BIO 3754",
+    "titre": "Écologie végétale",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Facteurs biotiques et abiotiques qui déterminent l'abondance et la distribution des végétaux. Applications des principes fondamentaux de l'écologie végétale en biologie de la conservation, aménagement du territoire, foresterie, etc.",
+    "prealablesBrut": "BIO1803",
+    "prealables": {
+      "genre": "cours",
+      "code": "BIO 1803"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3754/",
+    "scrapeISO": "2026-09-13T04:35:31.894Z"
+  },
+  "BIO 3756": {
+    "code": "BIO 3756",
+    "titre": "Télédétection de la végétation par drone",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours terrain de télédétection de la végétation par drone. Manipulation de drones. Planification de mission de vol. Photogrammétrie. Modèles de hauteur de canopée. Analyse d’images pour la cartographie d’espèces végétales. Remarque: Aux cycles supérieurs, vous devez suivre le cours BIO6756.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3756/",
+    "scrapeISO": "2026-09-13T04:35:35.178Z"
+  },
+  "BIO 3043": {
+    "code": "BIO 3043",
+    "titre": "Réseaux écologiques et interactions",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Description des communautés écologiques et des interactions entre espèces par la théorie des réseaux. Thèmes abordés: propriétés émergentes des écosystèmes; dynamique spatiale et évolutive de communautés; services écosystémiques; maladies émergentes. Remarque : il est fortement suggéré d'avoir fait le cours BIO2811 avant de s'inscrire à ce cours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bio-3043/",
+    "scrapeISO": "2026-09-13T04:35:37.588Z"
   }
 }

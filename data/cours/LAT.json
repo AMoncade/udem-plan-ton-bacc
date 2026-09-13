@@ -220,5 +220,32 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-3160/",
     "scrapeISO": "2026-09-13T03:15:28.398Z"
+  },
+  "LAT 3140": {
+    "code": "LAT 3140",
+    "titre": "Historiens romains",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes et idéologies de Salluste, Tite-Live, Velleius et Tacite.",
+    "prealablesBrut": "LAT2021 OU LAT2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "LAT 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "LAT 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-3140/",
+    "scrapeISO": "2026-09-13T04:05:02.466Z"
   }
 }

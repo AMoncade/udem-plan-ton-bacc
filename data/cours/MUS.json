@@ -1009,5 +1009,131 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-6316/",
     "scrapeISO": "2026-09-13T03:52:44.072Z"
+  },
+  "MUS 2001": {
+    "code": "MUS 2001",
+    "titre": "Technique de lecture en musique vocale 1",
+    "credits": 1.5,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Pratique et outils pour la préparation et la lecture de musique en petit ensemble vocal (homophonique et accompagné / polyphonique et non accompagné).",
+    "prealablesBrut": "MUS1014 et MIN1962 et MIN1942 et MIN2136B",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MUS 1014"
+        },
+        {
+          "genre": "cours",
+          "code": "MIN 1962"
+        },
+        {
+          "genre": "cours",
+          "code": "MIN 1942"
+        },
+        {
+          "genre": "cours",
+          "code": "MIN 2136B"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-2001/",
+    "scrapeISO": "2026-09-13T04:26:35.118Z"
+  },
+  "MUS 2002": {
+    "code": "MUS 2002",
+    "titre": "Technique de lecture en musique vocale 2",
+    "credits": 1.5,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Pratique et outils pour la préparation et la lecture de musique en petit ensemble vocal (homophonique et accompagné / polyphonique et non accompagné).",
+    "prealablesBrut": "MUS2001",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUS 2001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-2002/",
+    "scrapeISO": "2026-09-13T04:26:35.260Z"
+  },
+  "MUS 1215": {
+    "code": "MUS 1215",
+    "titre": "Éléments de jazz",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Ce cours vise à faire la synthèse des apprentissages de nature théorique en jazz tout en permettant aux étudiants d’approfondir leur connaissance de la stylistique jazz et de développer une pensée critique par rapport au genre.",
+    "prealablesBrut": "MUS1214 et MIN1099 et MTE1316",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MUS 1214"
+        },
+        {
+          "genre": "cours",
+          "code": "MIN 1099"
+        },
+        {
+          "genre": "cours",
+          "code": "MTE 1316"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-1215/",
+    "scrapeISO": "2026-09-13T04:27:15.117Z"
+  },
+  "MUS 3101X": {
+    "code": "MUS 3101X",
+    "titre": "Composition spectrale et algorithmique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Apprentissage d'outils de composition assistée par ordinateur et application à la réalisation de travaux pratiques inspirés de démarches compositionnelles instrumentales et mixtes propres aux musiques spectrale, générative et interactive.",
+    "prealablesBrut": "MUS1300 ou MUS1321",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MUS 1300"
+        },
+        {
+          "genre": "cours",
+          "code": "MUS 1321"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-3101x/",
+    "scrapeISO": "2026-09-13T04:31:13.988Z"
   }
 }

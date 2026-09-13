@@ -654,5 +654,95 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6008/",
     "scrapeISO": "2026-09-13T03:58:44.454Z"
+  },
+  "MSO 3001": {
+    "code": "MSO 3001",
+    "titre": "Introduction à l'épidémiologie",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "École de santé publique",
+    "description": "Techniques et méthodes de base de l'analyse épidémiologique. Introduction aux recherches sur l'étiologie des maladies et à la recherche évaluative.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-3001/",
+    "scrapeISO": "2026-09-13T04:11:10.811Z"
+  },
+  "MSO 6150": {
+    "code": "MSO 6150",
+    "titre": "Investigation d'éclosions",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Développer des compétences en investigation d'éclosions dans la communauté / les milieux de soins : étapes d'investigation et principes de gestion d'une éclosion, mesures de contrôle, stratégies de communication des résultats.",
+    "prealablesBrut": "MSO6011 et MSO6061 ou équivalent.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "MSO6011 et MSO6061 ou équivalent."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6150/",
+    "scrapeISO": "2026-09-13T04:17:05.976Z"
+  },
+  "MSO 6019": {
+    "code": "MSO 6019",
+    "titre": "VIH: de l'épidémiologie à l'intervention",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Examen critique de l'épidémiologie du VIH, des interventions de prévention et de traitement, et des impacts psychosociaux et biopolitiques de ces interventions à travers les controverses scientifiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6019/",
+    "scrapeISO": "2026-09-13T04:17:07.906Z"
+  },
+  "MSO 6635": {
+    "code": "MSO 6635",
+    "titre": "Synthèse des connaissances : méta-analyse",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Réalisation d’une méta-analyse en santé des populations et santé clinique. Études observationnelles, interventionnelles, de diagnostic, d’incidence et de prévalence. Utilisation de méthodes variées, incluant les méta-analyses bayésiennes et en réseau.",
+    "prealablesBrut": "MSO6634 ou MSO6008",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MSO 6634"
+        },
+        {
+          "genre": "cours",
+          "code": "MSO 6008"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6635/",
+    "scrapeISO": "2026-09-13T04:20:34.682Z"
   }
 }

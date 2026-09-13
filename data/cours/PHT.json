@@ -406,5 +406,542 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-6201/",
     "scrapeISO": "2026-09-13T03:42:03.733Z"
+  },
+  "PHT 1201": {
+    "code": "PHT 1201",
+    "titre": "Introduction à la pratique physiothérapique",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction au système de santé québécois et organismes régissant la pratique physiothérapique, rôles et compétences. Principes et pratique de massage musculaire, bandage, positionnement et déplacements de clients et aides techniques à la mobilité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-1201/",
+    "scrapeISO": "2026-09-13T04:09:36.128Z"
+  },
+  "PHT 1202": {
+    "code": "PHT 1202",
+    "titre": "Mobilité articulaire en physiothérapie",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Théorie en lien avec la mobilité articulaire normale et pathologique. Évaluation de la mobilité articulaire et rééducation en vue de l'améliorer. Introduction à l'approche rééducative et de l'importance des exercices thérapeutiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "PHT1202 et PHT1203",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-1202/",
+    "scrapeISO": "2026-09-13T04:09:38.133Z"
+  },
+  "PHT 1203": {
+    "code": "PHT 1203",
+    "titre": "Fonction musculaire en physiothérapie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Notions de base d'histologie et de physiologie musculaire. Évaluation de la force musculaire. Principes d'augmentation de la force et autres qualités musculaires (puissance, endurance). Notions de base sur les réponses cardio-respiratoires à l'effort.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "PHT1203 et PHT1202",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-1203/",
+    "scrapeISO": "2026-09-13T04:09:41.957Z"
+  },
+  "PHT 1303": {
+    "code": "PHT 1303",
+    "titre": "Biomécanique et rééducation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Mécanique applicable à l'étude du mouvement. Analyse statistique des forces externes/internes dans les exercices thérapeutiques. Analyse dynamique de l'équilibre et des mouvements fonctionnels normaux et pathologiques. Biomécanique des tissus.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-1303/",
+    "scrapeISO": "2026-09-13T04:09:44.088Z"
+  },
+  "PHT 1309": {
+    "code": "PHT 1309",
+    "titre": "Pathokinésiologie articulaire et fonctionnelle",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Pathokinésiologie articulaire du cou, du tronc et des membres. Anatomie comparée et fonctionnelle, posture, stabilité, cinématique et cinétique des segments du corps. Étude des activités fonctionnelles : posture,marche et modes de préhension.",
+    "prealablesBrut": "(CHI1045 ET PHT1303) OU (PBC1045 ET PHT1303)",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "CHI 1045"
+            },
+            {
+              "genre": "cours",
+              "code": "PHT 1303"
+            }
+          ]
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "PBC 1045"
+            },
+            {
+              "genre": "cours",
+              "code": "PHT 1303"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-1309/",
+    "scrapeISO": "2026-09-13T04:09:46.089Z"
+  },
+  "PHT 1310": {
+    "code": "PHT 1310",
+    "titre": "Physiothérapie musculosquelettique 1, extrémités",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Généralités des affections musculosquelettiques traumatiques, inflammatoires, dégénératives et tumorales. Évaluation et traitement en physiothérapies des extrémités. Bases de l'évaluation SOAPIE.",
+    "prealablesBrut": "CHI1045 et PHT1202 et PHT1203",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "CHI 1045"
+        },
+        {
+          "genre": "cours",
+          "code": "PHT 1202"
+        },
+        {
+          "genre": "cours",
+          "code": "PHT 1203"
+        }
+      ]
+    },
+    "concomitantsBrut": "PHT1310 et PHT1309",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-1310/",
+    "scrapeISO": "2026-09-13T04:09:46.245Z"
+  },
+  "PHT 1302": {
+    "code": "PHT 1302",
+    "titre": "Éthique et déontologie en physiothérapie",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Étude des règles d'éthique pour professionnels de la santé. Obligations légales, éthiques et l'importance de la déontologie. Étude du code de déontologie des physiothérapeutes du Québec.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-1302/",
+    "scrapeISO": "2026-09-13T04:09:52.164Z"
+  },
+  "PHT 2311": {
+    "code": "PHT 2311",
+    "titre": "Physiothérapie musc.squel. 2, quadrant inférieur",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Évaluation et traitement physiothérapiques des affections inflammatoires, dégénératives, traumatiques des régions lombaire, lombo-sacrée et sacro-iliaque. Mobilisations analytiques (thér.man.1) du quadrant inférieur. Troubles posturaux.",
+    "prealablesBrut": "PHT1309 et PHT1310",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHT 1309"
+        },
+        {
+          "genre": "cours",
+          "code": "PHT 1310"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2311/",
+    "scrapeISO": "2026-09-13T04:09:52.302Z"
+  },
+  "PHT 2312": {
+    "code": "PHT 2312",
+    "titre": "Physiothérapie musc.squel. 3, quadrant supérieur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Évaluation et traitement des affections inflammatoires, dégénératives et traumatiques des régions cervicale et dorsale. Mobilisations analytiques (thér.man.1) du quadrant supérieur. Troubles posturaux, ergonomie et prise de décision.",
+    "prealablesBrut": "PHT2311",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHT 2311"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2312/",
+    "scrapeISO": "2026-09-13T04:09:54.336Z"
+  },
+  "PHT 2314": {
+    "code": "PHT 2314",
+    "titre": "Physiothérapie des affections neurologiques 1",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Facilitation et inhibition neuromusculaire. Approches neurofacilitatrices. Réapprentissage et contrôle moteur. Acquisition motrice de l'enfant. Évaluation et traitements des déficiences et limitations d'activités suite à un accident vasculaire cérébral.",
+    "prealablesBrut": "PSL1984",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSL 1984"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2314/",
+    "scrapeISO": "2026-09-13T04:09:56.346Z"
+  },
+  "PHT 2316": {
+    "code": "PHT 2316",
+    "titre": "Physiothérapie des affections neurologiques 2",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Évaluation, raisonnement clinique et traitement des traumatismes crâniens, lésions de la moelle, maladies dégénératives, lésions nerveuses périphériques, maladies neuromusculaires et neuropédiatrie.",
+    "prealablesBrut": "PHT2314",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHT 2314"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2316/",
+    "scrapeISO": "2026-09-13T04:09:58.353Z"
+  },
+  "PHT 2319": {
+    "code": "PHT 2319",
+    "titre": "Modalités électrothérapeutiques 1",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction à l'électrothérapie : courants stimulomoteurs de basse fréquence, TENS, ultrasons et courants de moyenne fréquence. Modalités thermiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2319/",
+    "scrapeISO": "2026-09-13T04:10:01.846Z"
+  },
+  "PHT 2320": {
+    "code": "PHT 2320",
+    "titre": "Modalités électrothérapeutiques 2",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Apprentissage des modalités électrothérapeutiques: électrodiagnostic, stimulation du muscle dénervé, LASER, courant continu constant, courants diadynamiques, iontophorèse et rétroaction biologique. Raisonnement clinique. Sélection des modalités.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2320/",
+    "scrapeISO": "2026-09-13T04:10:02.336Z"
+  },
+  "PHT 2351": {
+    "code": "PHT 2351",
+    "titre": "Stage clinique 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Développement des compétences en regard des connaissances théoriques et pratiques acquises dans le domaine musculosquelettique. Ce stage sera évalué par la mention Succès ou Échec.",
+    "prealablesBrut": "Tous les cours du bloc 70A.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Tous les cours du bloc 70A."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2351/",
+    "scrapeISO": "2026-09-13T04:10:04.390Z"
+  },
+  "PHT 2453": {
+    "code": "PHT 2453",
+    "titre": "Stage clinique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Développement des compétences en regard des connaissances théoriques et pratiques acquises dans le domaine musculo-squelettique et neurologique. Remarques: Ce stage sera évalué par la mention Succès ou Échec.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-2453/",
+    "scrapeISO": "2026-09-13T04:10:06.388Z"
+  },
+  "PHT 3313": {
+    "code": "PHT 3313",
+    "titre": "Physiothérapie musculosquelettique 4",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Évaluation et traitement par mobilisation des diverses articulations des extrémités, du rachis et du bassin, seconde partie. Pathologies musculosquelettiques.Traitement par exercices. Imagerie médicale. Raisonnement clinique.",
+    "prealablesBrut": "PHT2312",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHT 2312"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-3313/",
+    "scrapeISO": "2026-09-13T04:10:09.956Z"
+  },
+  "PHT 3318": {
+    "code": "PHT 3318",
+    "titre": "Physiothérapie et géronto-gériatrie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Physiopathologie des problématiques géronto-gériatriques. Évaluation et interventions en physiothérapie gériatrique en partenariat de soins. Approche interdisciplinaire dans un continuum de services de réadaptation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-3318/",
+    "scrapeISO": "2026-09-13T04:10:10.376Z"
+  },
+  "PHT 3320": {
+    "code": "PHT 3320",
+    "titre": "Physiothérapie des affections cardiovasculaires",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Physiologie des systèmes énergétiques et cardiorespiratoires. Prescription et effets d'entraînement. Physiopathologie, évaluation, traitement, prévention des affections cardiovasculaires. Rééducation de l'amputé.",
+    "prealablesBrut": "PBC2060",
+    "prealables": {
+      "genre": "cours",
+      "code": "PBC 2060"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-3320/",
+    "scrapeISO": "2026-09-13T04:10:13.634Z"
+  },
+  "PHT 3321": {
+    "code": "PHT 3321",
+    "titre": "Physiothérapie des affections respiratoires",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Physiologie du système cardiorespiratoire au repos et à l'exercice. Affections respiratoires. Physiopathologie. Évaluation et auscultation. Exercices respiratoires. Drainage postural. Traitement. Prescription et effets d'entraînement.",
+    "prealablesBrut": "PBC2060",
+    "prealables": {
+      "genre": "cours",
+      "code": "PBC 2060"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-3321/",
+    "scrapeISO": "2026-09-13T04:10:14.421Z"
+  },
+  "PHT 3323": {
+    "code": "PHT 3323",
+    "titre": "Outils pratiques d'érudition",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Préparation au travail d'intégration en physiothérapie afin d'acquérir les habiletés théoriques et pratiques de base pour la recension des écrits, le transfert des connaissances, ainsi que la rédaction scientifique.",
+    "prealablesBrut": "PHT2418",
+    "prealables": {
+      "genre": "cours",
+      "code": "PHT 2418"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-3323/",
+    "scrapeISO": "2026-09-13T04:10:16.435Z"
+  },
+  "PHT 3331": {
+    "code": "PHT 3331",
+    "titre": "Physiothérapie de la douleur",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Bases pathophysiologiques et facteurs de risque de la douleur aigüe et chronique à travers les âges. Évaluation et traitement. Approche interdisciplinaire. Syndromes douloureux et interventions en physiothérapie.",
+    "prealablesBrut": "PSL1984",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSL 1984"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-3331/",
+    "scrapeISO": "2026-09-13T04:10:18.428Z"
+  },
+  "PHT 3358": {
+    "code": "PHT 3358",
+    "titre": "Stage clinique 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Développement des compétences en regard des connaissances théoriques et pratiques acquises dans différents domaines en physiothérapie. Remarques: Ce stage sera évalué par la mention Succès ou Échec.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pht-3358/",
+    "scrapeISO": "2026-09-13T04:10:20.528Z"
   }
 }

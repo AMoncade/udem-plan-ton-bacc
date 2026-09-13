@@ -661,5 +661,589 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3326/",
     "scrapeISO": "2026-09-13T03:56:59.442Z"
+  },
+  "ESP 3355": {
+    "code": "ESP 3355",
+    "titre": "Littérature hispano-américaine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des littératures d'une aire hispano-américaine spécifique.",
+    "prealablesBrut": "ESP1325",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1325"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3355/",
+    "scrapeISO": "2026-09-13T04:00:35.254Z"
+  },
+  "ESP 3550": {
+    "code": "ESP 3550",
+    "titre": "L'espagnol d'Amérique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des caractéristiques générales de l'espagnol d'Amérique, pour aider l'étudiant à mieux saisir les réalités linguistico-littéraires de l'Amérique latine.",
+    "prealablesBrut": "ESP2536",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 2536"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3550/",
+    "scrapeISO": "2026-09-13T04:00:35.480Z"
+  },
+  "ESP 2700": {
+    "code": "ESP 2700",
+    "titre": "Introduction à la traduction hispanique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation aux principes de base, aux instruments et aux méthodes de la traduction dans le domaine hispanique. Travaux pratiques de traduction de l'espagnol vers le français et du français vers l'espagnol dans des domaines non spécialisés.",
+    "prealablesBrut": "ESP2510 OU ESP2525 OU ESP2531 OU ESP2536",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2531"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2700/",
+    "scrapeISO": "2026-09-13T04:12:17.091Z"
+  },
+  "ESP 2710": {
+    "code": "ESP 2710",
+    "titre": "Traduction espagnol-français 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation à la traduction de l'espagnol vers le français. Notions théoriques et méthodologiques et travaux pratiques de traduction de textes hispaniques non spécialisés.",
+    "prealablesBrut": "ESP2510 OU ESP2525 OU ESP2531",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2531"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2710/",
+    "scrapeISO": "2026-09-13T04:12:19.142Z"
+  },
+  "ESP 2720": {
+    "code": "ESP 2720",
+    "titre": "Traduction espagnol-français 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Traductions. Perfectionnement des techniques de traduction de textes hispaniques vers le français. Discussions sur les difficultés (grammaticales, stylistiques ou lexicales) de textes hispaniques issus de domaines spécialisés.",
+    "prealablesBrut": "ESP2700 OU ESP2710",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2700"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2710"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2720/",
+    "scrapeISO": "2026-09-13T04:12:21.209Z"
+  },
+  "ESP 2730": {
+    "code": "ESP 2730",
+    "titre": "Traduction français-espagnol",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Traductions et critique de traductions de textes variés, du français vers l'espagnol.",
+    "prealablesBrut": "ESP2536 ET ESP2700",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2730/",
+    "scrapeISO": "2026-09-13T04:12:22.683Z"
+  },
+  "ESP 3900": {
+    "code": "ESP 3900",
+    "titre": "Travail dirigé en traduction",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Travail personnel de traduction vers le français ou l'espagnol d'un texte choisi en accord avec un professeur.",
+    "prealablesBrut": "ESP2531 ET ESP2710 ET (ESP2700 OU ESP2730)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2531"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2710"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ESP 2700"
+            },
+            {
+              "genre": "cours",
+              "code": "ESP 2730"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3900/",
+    "scrapeISO": "2026-09-13T04:14:03.308Z"
+  },
+  "ESP 2651": {
+    "code": "ESP 2651",
+    "titre": "Poésie et discours hispaniques : méthode",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction méthodologique au commentaire de textes poétiques et oratoires hispaniques. Concepts fondamentaux de la Rhétorique traditionnelle et de la Poétique. Métrique hispanique. Stylistiques. Travaux pratiques de commentaires.",
+    "prealablesBrut": "ESP1906 OU ESP2510 OU ESP2525 OU ESP2536",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1906"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2651/",
+    "scrapeISO": "2026-09-13T04:14:06.682Z"
+  },
+  "ESP 2652": {
+    "code": "ESP 2652",
+    "titre": "Récit et théâtre hispaniques : méthode",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction méthodologique au commentaire de textes narratifs et dramatiques hispaniques. Introduction à l'analyse du discours, la narratologie et la sémiologie du théâtre. Travaux pratiques de commentaires.",
+    "prealablesBrut": "ESP1906 OU ESP2510 OU ESP2525 OU ESP2536",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1906"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2652/",
+    "scrapeISO": "2026-09-13T04:14:07.334Z"
+  },
+  "ESP 3537": {
+    "code": "ESP 3537",
+    "titre": "Espagnol actuel",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Familiarisation de l'étudiant avec les nouvelles tendances de la linguistique hispanique. Vision synchronique de l'espagnol moderne et de sa situation dans le monde. Remarque : cours offert en espagnol.",
+    "prealablesBrut": "ESP2536",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 2536"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3537/",
+    "scrapeISO": "2026-09-13T04:14:10.586Z"
+  },
+  "ESP 3517": {
+    "code": "ESP 3517",
+    "titre": "Histoire de la langue espagnole",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Évolution historique de la langue espagnole. Étude des principaux changements phonétiques, grammaticaux et lexicaux. Analyse de textes médiévaux et classiques. Remarque : cours offert en espagnol.",
+    "prealablesBrut": "ESP2536 OU ESP3511",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 3511"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "ESP3517/ESP3518",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3517/",
+    "scrapeISO": "2026-09-13T04:21:32.808Z"
+  },
+  "ESP 3511": {
+    "code": "ESP 3511",
+    "titre": "Phonétique et phonologie de l'espagnol",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l'étude de la phonologie et de la phonétique de l'espagnol avec une révision de notions linguistiques liées à cette étude. Exercices de transcription. Remarque : cours offert en espagnol",
+    "prealablesBrut": "ESP2536",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 2536"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3511/",
+    "scrapeISO": "2026-09-13T04:21:34.249Z"
+  },
+  "ESP 3710": {
+    "code": "ESP 3710",
+    "titre": "L'espagnol : langue étrangère",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux défis que pose actuellement l'enseignement de l'espagnol comme langue étrangère. Méthodologies, stratégies d'approche. Théorie et pratique. Remarque : cours offert en espagnol.",
+    "prealablesBrut": "ESP2535 OU ESP2536 OU ESP2700",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2535"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3710/",
+    "scrapeISO": "2026-09-13T04:21:34.996Z"
+  },
+  "ESP 3730": {
+    "code": "ESP 3730",
+    "titre": "Bilinguisme et multilinguisme espagnols",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de différents contextes d’acquisition et usage de la langue espagnole à travers le monde. Analyse du bilinguisme et du multilinguisme dans le monde hispanique, ainsi que chez les populations d’origine hispanophone en contexte minoritaire. Remarque : cours offert en espagnol.",
+    "prealablesBrut": "ESP1907 ou ESP2510 ou ESP2525 ou ESP2536 ou ESP2700",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1907"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2700"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3730/",
+    "scrapeISO": "2026-09-13T04:21:38.821Z"
+  },
+  "ESP 3222": {
+    "code": "ESP 3222",
+    "titre": "Cervantes et le roman du Siècle d'or",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des traits fondamentaux qui caractérisent les romans des XVIe et XVIIe siècles en Espagne. Analyse et commentaires du « Lazarillo de Tormes », des oeuvres de Mateo Aleman, Cervantes, Quevedo, etc.",
+    "prealablesBrut": "ESP1225",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1225"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3222/",
+    "scrapeISO": "2026-09-13T04:21:40.252Z"
+  },
+  "ESP 3451": {
+    "code": "ESP 3451",
+    "titre": "Essai et écriture hispanique XVIIIe - XXIe siècles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de l'essai espagnol et hispanoaméricain du XVIIIe au XXIe siècle. Remarque : cours offert en espagnol.",
+    "prealablesBrut": "ESP1225 ET ESP1325",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1225"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 1325"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3451/",
+    "scrapeISO": "2026-09-13T04:21:42.693Z"
+  },
+  "ESP 3810": {
+    "code": "ESP 3810",
+    "titre": "Travail de recherche",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Travail personnel dirigé par les professeurs (minimum de 25 pages). Remarques: Ce cours est réservé aux étudiants du B.A. spécialisé ou de la majeure en études hispaniques.",
+    "prealablesBrut": "ESP1215 ET ESP1225 ET ESP1317 ET ESP1325",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1215"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 1225"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 1317"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 1325"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3810/",
+    "scrapeISO": "2026-09-13T04:21:44.848Z"
+  },
+  "ESP 3820": {
+    "code": "ESP 3820",
+    "titre": "Programme de lectures",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Liste de lecture de 26 oeuvres littéraires espagnoles et hispano-américaines. Remarques: L'étudiant pourra se procurer la liste des oeuvres au secrétariat du Département de littératures et de langues modernes.",
+    "prealablesBrut": "ESP1215 ET ESP1225 ET ESP1317 ET ESP1325 ET ESP2651 ET ESP2652",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1215"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 1225"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 1317"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 1325"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2651"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2652"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3820/",
+    "scrapeISO": "2026-09-13T04:21:46.989Z"
   }
 }

@@ -534,5 +534,553 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-6013/",
     "scrapeISO": "2026-09-13T03:58:26.432Z"
+  },
+  "NSC 1001": {
+    "code": "NSC 1001",
+    "titre": "Neurosciences cellulaire et moléculaire 1",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction aux concepts de base concernant la structure et la fonction des cellules du système nerveux à l'échelon cellulaire et moléculaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-1001/",
+    "scrapeISO": "2026-09-13T04:08:40.432Z"
+  },
+  "NSC 1002": {
+    "code": "NSC 1002",
+    "titre": "Neurosciences intégratives 1",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Aspects fondamentaux de la structure et de la physiologie des systèmes sensoriels et moteurs. Symptômes principaux des pathologies du système nerveux et les dysfonctions de la motricité (ex.: hémiplégie)",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-1002/",
+    "scrapeISO": "2026-09-13T04:08:42.468Z"
+  },
+  "NSC 1003": {
+    "code": "NSC 1003",
+    "titre": "Communication scientifique en neurosciences",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Habiletés de base en recherche, analyse et présentation de la littérature scientifique en neurosciences (incluant l'utilisation de ressources électroniques). Présentations orales et par affiche d'un article de recherche.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-1003/",
+    "scrapeISO": "2026-09-13T04:08:44.639Z"
+  },
+  "NSC 1004": {
+    "code": "NSC 1004",
+    "titre": "Éthique en milieu universitaire et en recherche",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Aspects fondamentaux de l'éthique en milieu universitaire et en recherche: grands principes et textes régulateurs; évaluation éthique d'un projet; intégrité scientifique.",
+    "prealablesBrut": "Cours réservé aux étudiants du Baccalauréat en neurosciences (1-530-1-0)",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Cours réservé aux étudiants du Baccalauréat en neurosciences (1-530-1-0)"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-1004/",
+    "scrapeISO": "2026-09-13T04:08:46.201Z"
+  },
+  "NSC 1006": {
+    "code": "NSC 1006",
+    "titre": "Éléments d'immunologie pour neurosciences",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Les composantes et les fonctions du système immunitaire inné et spécifique. Les infections du système nerveux central. Introduction à l'immunologie expérimentale.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-1006/",
+    "scrapeISO": "2026-09-13T04:08:46.837Z"
+  },
+  "NSC 2001": {
+    "code": "NSC 2001",
+    "titre": "Neurosciences cellulaire et moléculaire 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Étude des mécanismes de la fonction des cellules du système nerveux à l'échelon cellulaire et moléculaire et de leurs implications fonctionnelles et pathologiques.",
+    "prealablesBrut": "NSC1001",
+    "prealables": {
+      "genre": "cours",
+      "code": "NSC 1001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-2001/",
+    "scrapeISO": "2026-09-13T04:08:50.537Z"
+  },
+  "NSC 2002": {
+    "code": "NSC 2002",
+    "titre": "Neurosciences intégratives 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Mécanismes centraux impliqués dans la perception des stimuli sensoriels, la planification et l'exécution du mouvement, et les fonctions complexes du système nerveux central. Pathologies du système nerveux et des maladies mentales.",
+    "prealablesBrut": "NSC1002",
+    "prealables": {
+      "genre": "cours",
+      "code": "NSC 1002"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-2002/",
+    "scrapeISO": "2026-09-13T04:08:52.454Z"
+  },
+  "NSC 2003": {
+    "code": "NSC 2003",
+    "titre": "Méthodes expérimentales en neurosciences",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Introduction aux méthodes expérimentales en neurosciences, de la visualisation moléculaire à l'évaluation clinique.",
+    "prealablesBrut": "NSC1001et NSC1002",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "NSC1001et NSC1002"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-2003/",
+    "scrapeISO": "2026-09-13T04:08:54.096Z"
+  },
+  "NSC 2004": {
+    "code": "NSC 2004",
+    "titre": "Neurosciences : travaux pratiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Cours de laboratoire avec analyse de données. Analyse de résultats d'expériences simples allant des canaux ioniques et neurones jusqu'au niveau des circuits et comportements.",
+    "prealablesBrut": "NSC1001 et NSC1002",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "NSC 1001"
+        },
+        {
+          "genre": "cours",
+          "code": "NSC 1002"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-2004/",
+    "scrapeISO": "2026-09-13T04:08:57.232Z"
+  },
+  "NSC 2005": {
+    "code": "NSC 2005",
+    "titre": "Neurogénétique et neurogénomique",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Concepts de base en génétique, classification des maladies neurogénétiques, études de découverte de gènes dans le système nerveux, modèles génétiques, épigénétique, génomique et analyses bioinformatiques dans le contexte des maladies neurologiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-2005/",
+    "scrapeISO": "2026-09-13T04:08:59.696Z"
+  },
+  "NSC 2006": {
+    "code": "NSC 2006",
+    "titre": "Méthodes quantitatives",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Méthodes quantitatives utilisées pour l'étude du fonctionnement du cerveau aux niveaux moléculaire, cellulaire, comportemental et clinique, ainsi qu'au niveau des systèmes.",
+    "prealablesBrut": "NSC1001 et NSC1002",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "NSC 1001"
+        },
+        {
+          "genre": "cours",
+          "code": "NSC 1002"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-2006/",
+    "scrapeISO": "2026-09-13T04:09:01.778Z"
+  },
+  "NSC 3001": {
+    "code": "NSC 3001",
+    "titre": "Neurobiologie de la mémoire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Concepts de base de la théorie psychologique de l'apprentissage et de la mémoire; mécanismes neurobiologiques détaillés impliqués, aux niveaux moléculaire et cellulaire.",
+    "prealablesBrut": "NSC2001 ou SBM2007",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "NSC 2001"
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-3001/",
+    "scrapeISO": "2026-09-13T04:09:07.726Z"
+  },
+  "NSC 3005": {
+    "code": "NSC 3005",
+    "titre": "Neurobiologie des maladies mentales",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Neurobiologie des maladies mentales du cerveau avec une perspective physiopathologique/mécanistique : présentation clinique, approches méthodologiques disponibles pour étudier leur physiopathologie, et mécanismes cellulaires/moléculaires.",
+    "prealablesBrut": "(NSC1002 et NSC2001) ou SBM2007",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "NSC 1002"
+            },
+            {
+              "genre": "cours",
+              "code": "NSC 2001"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-3005/",
+    "scrapeISO": "2026-09-13T04:09:07.920Z"
+  },
+  "NSC 3009": {
+    "code": "NSC 3009",
+    "titre": "Neurobiologie des maladies neurologiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Présentation clinique et mécanismes sous-tendant les maladies neurologiques communes touchant le système nerveux central (cortex, noyaux gris centraux, cervelet, thalamus, moelle épinière) et périphérique chez l'adulte et chez l'enfant.",
+    "prealablesBrut": "(NSC2001 et NSC2002) ou SBM2007",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "NSC 2001"
+            },
+            {
+              "genre": "cours",
+              "code": "NSC 2002"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2007"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-3009/",
+    "scrapeISO": "2026-09-13T04:09:11.792Z"
+  },
+  "NSC 3013": {
+    "code": "NSC 3013",
+    "titre": "Neurobiologie du vieillissement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Neurobiologie du vieillissement et modèles pour l'étudier. Mécanismes moléculaire et cellulaire du vieillissement. Processus du vieillissement normal et durant les pathologies liées à l'âge. Stratégies pour ralentir le vieillissement.",
+    "prealablesBrut": "(NSC2001 et NSC2002) ou SBM2001",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "NSC 2001"
+            },
+            {
+              "genre": "cours",
+              "code": "NSC 2002"
+            }
+          ]
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2001"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-3013/",
+    "scrapeISO": "2026-09-13T04:09:13.215Z"
+  },
+  "NSC 3003": {
+    "code": "NSC 3003",
+    "titre": "Perception, action et neurocomputation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Différentes théories du comportement volontaire : systèmes sensorimoteurs et cognitifs. Approches computationnelles pour étudier la fonction du cerveau.",
+    "prealablesBrut": "NSC2002 ou SBM2001",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "NSC 2002"
+        },
+        {
+          "genre": "cours",
+          "code": "SBM 2001"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-3003/",
+    "scrapeISO": "2026-09-13T04:09:15.693Z"
+  },
+  "NSC 3084": {
+    "code": "NSC 3084",
+    "titre": "Neurosciences computationnelles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Ce cours vise à introduire les étudiants à l'étude du cerveau par des approches computationnelles. Principalement, il traitera des modèles biophysiques des neurones individuels et des modèles des circuits neuraux. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours NSC6084.",
+    "prealablesBrut": "(IFT1016 et MAT1919 et PSY1004 et PSY1048) ou (NSC2002 et NSC2006) ou",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "(IFT1016 et MAT1919 et PSY1004 et PSY1048) ou (NSC2002 et NSC2006) ou"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-3084/",
+    "scrapeISO": "2026-09-13T04:09:17.850Z"
+  },
+  "NSC 3010": {
+    "code": "NSC 3010",
+    "titre": "Stage en neurosciences",
+    "credits": 15,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche dans un laboratoire universitaire (incluant les hôpitaux affiliés) après approbation par un superviseur de stage et le coordonnateur départemental. Rédaction d'un texte scientifique et présentation orale.",
+    "prealablesBrut": "Avoir complété la majorité des cours obligatoires (54 crédits) du programme.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété la majorité des cours obligatoires (54 crédits) du programme."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-3010/",
+    "scrapeISO": "2026-09-13T04:09:29.258Z"
+  },
+  "NSC 4010": {
+    "code": "NSC 4010",
+    "titre": "Stage honor en neurosciences",
+    "credits": 15,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de recherche dans un laboratoire universitaire (incluant les hôpitaux affiliés) après approbation par un superviseur de stage et le coordonnateur départemental. Rédaction d'un texte scientifique et présentation orale.",
+    "prealablesBrut": "Avoir complété la majorité des cours obligatoires (54 crédits) du programme.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété la majorité des cours obligatoires (54 crédits) du programme."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-4010/",
+    "scrapeISO": "2026-09-13T04:09:31.753Z"
+  },
+  "NSC 4041": {
+    "code": "NSC 4041",
+    "titre": "Séminaire honor en neurosciences",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Mise en perspective et présentation de travaux de recherche en neurosciences par des conférenciers invités",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/nsc-4041/",
+    "scrapeISO": "2026-09-13T04:09:33.823Z"
   }
 }
