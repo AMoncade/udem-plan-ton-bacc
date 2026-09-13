@@ -549,5 +549,48 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7962/",
     "scrapeISO": "2026-09-13T04:49:18.968Z"
+  },
+  "MCT 6301": {
+    "code": "MCT 6301",
+    "titre": "Composition jazz 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Exploration de diverses techniques compositionnelles du jazz par l'analyse d'oeuvres tirées du répertoire représentant les principaux courants esthétiques du jazz en vue de leur application à la composition.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6301/",
+    "scrapeISO": "2026-09-13T05:08:07.351Z"
+  },
+  "MCT 6302": {
+    "code": "MCT 6302",
+    "titre": "Composition jazz 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Approfondissement de diverses techniques compositionnelles du jazz par l'analyse d'oeuvres tirées du répertoire représentant les principaux courants esthétiques du jazz en vue de leur application à la composition.",
+    "prealablesBrut": "MCT6301",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 6301"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6302/",
+    "scrapeISO": "2026-09-13T05:09:15.715Z"
   }
 }

@@ -883,5 +883,517 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6585/",
     "scrapeISO": "2026-09-13T04:43:52.130Z"
+  },
+  "EDU 6081": {
+    "code": "EDU 6081",
+    "titre": "Fondements et pratiques de l’école inclusive",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Portrait des inégalités scolaires et sociales selon une diversité de marqueurs, rôle de l’effet-enseignant, fondements et pratiques de l’école inclusive afin d’atteindre l’équité, la justice sociale et l’inclusion.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6081/",
+    "scrapeISO": "2026-09-13T04:59:32.666Z"
+  },
+  "EDU 6084": {
+    "code": "EDU 6084",
+    "titre": "Recherches sur les pratiques enseignantes au préscolaire et au primaire",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Recherches en contexte scolaire. Analyse des interactions et des effets sur l’apprentissage des élèves du préscolaire ou primaire. Outils méthodologiques d’analyse de pratiques. Explicitation et formalisation des savoirs d’enseignants d’expérience.",
+    "prealablesBrut": "EDU6092",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 6092"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6084/",
+    "scrapeISO": "2026-09-13T04:59:32.825Z"
+  },
+  "EDU 6082": {
+    "code": "EDU 6082",
+    "titre": "Laboratoire d'intégration interdisciplinaire 1",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Usage et critique d'outils et de ressources, dont le numérique pour l'enseignement des mathématiques, des sciences et technologies et des arts. Planification et mise en œuvre de SAÉ interdisciplinaires. Étude de cas. Travail en coopération.",
+    "prealablesBrut": "DID6304 et DID6307 et DID6308 et ETA6021 et PPA6033",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DID 6304"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 6307"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 6308"
+        },
+        {
+          "genre": "cours",
+          "code": "ETA 6021"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 6033"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU6092",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6082/",
+    "scrapeISO": "2026-09-13T04:59:46.368Z"
+  },
+  "EDU 6083": {
+    "code": "EDU 6083",
+    "titre": "Laboratoire d’intégration interdisciplinaire 2",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Usage et critique d’outils et de ressources, dont le numérique pour l’enseignement du français, de l’univers social, de l’ECR et des arts. Planification et mise en œuvre de SAÉ interdisciplinaires. Étude de cas. Travail en coopération.",
+    "prealablesBrut": "53 crédits du programme d'études 282019",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "53 crédits du programme d'études 282019"
+    },
+    "concomitantsBrut": "EDU6093",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6083/",
+    "scrapeISO": "2026-09-13T04:59:48.996Z"
+  },
+  "EDU 6091": {
+    "code": "EDU 6091",
+    "titre": "Stage 1 Initiation professionnelle",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Caractéristiques du milieu scolaire et du travail enseignant. Exploration des composantes de la classe hétérogène et de l’école inclusive. Ressources pédagogiques en fonction des cycles d’apprentissage. Initiation aux tâches de l’enseignant. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "ETA6901 et EDU6081",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ETA 6901"
+        },
+        {
+          "genre": "cours",
+          "code": "EDU 6081"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU6091 et PPA6032",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6091/",
+    "scrapeISO": "2026-09-13T04:59:51.522Z"
+  },
+  "EDU 6092": {
+    "code": "EDU 6092",
+    "titre": "Stage 2 Intervention pédagogique",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Expérimentation de l’acte d’enseigner au préscolaire ou au primaire. Familiarisation à la planification et au pilotage d’activités d’apprentissage, incluant la gestion de classe et les ressources numériques. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU6091 et DID6304 et DID6307 et DID6308 et ETA6021 et PPA6033",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 6091"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 6304"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 6307"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 6308"
+        },
+        {
+          "genre": "cours",
+          "code": "ETA 6021"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 6033"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU6082",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6092/",
+    "scrapeISO": "2026-09-13T04:59:51.709Z"
+  },
+  "EDU 6093": {
+    "code": "EDU 6093",
+    "titre": "Stage 3 Intégration professionnelle",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Appropriation de l’ensemble des compétences professionnelles au préscolaire ou au primaire. Prise en compte des conditions favorisant l’apprentissage et la réussite de tous les élèves. Collaboration avec l’équipe-école. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU6092 et 53 crédits du programme",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU6092 et 53 crédits du programme"
+    },
+    "concomitantsBrut": "EDU6083",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6093/",
+    "scrapeISO": "2026-09-13T04:59:56.038Z"
+  },
+  "EDU 6500": {
+    "code": "EDU 6500",
+    "titre": "Analyse des pratiques enseignantes",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Étude des problèmes suscités par les pratiques enseignantes. Recherches et théories à partir desquelles les problématiques en gestion de classe et en didactique sont construites et les résultats interprétés. Élaboration d'une démarche d'analyse.",
+    "prealablesBrut": "EDU6401 ou EDU6292",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 6401"
+        },
+        {
+          "genre": "cours",
+          "code": "EDU 6292"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6500/",
+    "scrapeISO": "2026-09-13T05:00:07.876Z"
+  },
+  "EDU 6295": {
+    "code": "EDU 6295",
+    "titre": "Stage 1 Initiation à l'enseignement au secondaire",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Caractéristiques du milieu scolaire. Initiation aux tâches de l'enseignant dans la classe et dans l'école. Expérimentation de l'acte d’enseigner au secondaire. Familiarisation à la planification et au pilotage d'activités d'apprentissage. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "Avoir complété 12 crédits dans le programme 2-811-1-6",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété 12 crédits dans le programme 2-811-1-6"
+    },
+    "concomitantsBrut": "EDU6295 et PPA6698",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6295/",
+    "scrapeISO": "2026-09-13T05:00:19.245Z"
+  },
+  "EDU 6296": {
+    "code": "EDU 6296",
+    "titre": "Stage 2 Intervention professionnelle au secondaire",
+    "credits": 5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Appropriation de l'ensemble des compétences professionnelles au secondaire. Prise en compte des conditions favorisant l'apprentissage et la réussite de tous les élèves. Collaboration avec l'équipe-école. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU6295 et avoir complété 25 crédits dans le programme 2-811-1-6",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU6295 et avoir complété 25 crédits dans le programme 2-811-1-6"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6296/",
+    "scrapeISO": "2026-09-13T05:00:21.418Z"
+  },
+  "EDU 6291": {
+    "code": "EDU 6291",
+    "titre": "Stage 1 Initiation professionnelle au secondaire",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Caractéristiques du milieu scolaire et du travail enseignant. Classe hétérogène et école inclusive. Ressources pédagogiques en fonction des cycles d’apprentissage. Initiation aux tâches de l’enseignant dans la classe et dans l’école. Cours équivalents: EDU6011",
+    "prealablesBrut": "ETA6901",
+    "prealables": {
+      "genre": "cours",
+      "code": "ETA 6901"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6291/",
+    "scrapeISO": "2026-09-13T05:00:49.813Z"
+  },
+  "EDU 6292": {
+    "code": "EDU 6292",
+    "titre": "Stage 2 Intervention pédagogique au secondaire",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Expérimentation de l’acte d’enseigner au secondaire. Familiarisation à la planification et au pilotage d’activités d’apprentissage, incluant la gestion de classe et les ressources numériques.",
+    "prealablesBrut": "(EDU6011 OU EDU6291) et PPA6201 et (PPA6236 OU PPA6245) et 19 crédits complétés dans le programme 281113.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "(EDU6011 OU EDU6291) et PPA6201 et (PPA6236 OU PPA6245) et 19 crédits complétés dans le programme 281113."
+    },
+    "concomitantsBrut": "PPA6698 et (PPA6237 ou PPA6265)",
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6292/",
+    "scrapeISO": "2026-09-13T05:00:51.791Z"
+  },
+  "EDU 6293": {
+    "code": "EDU 6293",
+    "titre": "Stage 3 Intégration professionnelle au secondaire",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Appropriation de l’ensemble des compétences professionnelles au secondaire. Prise en compte des conditions favorisant l’apprentissage et la réussite de tous les élèves. Collaboration avec l’équipe-école. Cours équivalents: EDU6402",
+    "prealablesBrut": "52 crédits du programme d'études 2-811-1-3",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "52 crédits du programme d'études 2-811-1-3"
+    },
+    "concomitantsBrut": "EDU6505",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6293/",
+    "scrapeISO": "2026-09-13T05:00:54.015Z"
+  },
+  "EDU 6505": {
+    "code": "EDU 6505",
+    "titre": "Essai et analyse de la pratique enseignante",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Rédaction d'un essai d'analyse des pratiques prof. de l'enseignant pour créer des liens entre la recherche et l'enseignement de sa discipline au sec. Retour sur le portfolio pour dégager une problématique susceptible d'orienter le développement prof.",
+    "prealablesBrut": "52 crédits du programme d'études 2-811-1-3",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "52 crédits du programme d'études 2-811-1-3"
+    },
+    "concomitantsBrut": "EDU6505 et (EDU6402 ou EDU6293)",
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6505/",
+    "scrapeISO": "2026-09-13T05:00:55.889Z"
+  },
+  "EDU 6709": {
+    "code": "EDU 6709",
+    "titre": "Essai de maîtrise",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Analyse critique et synthèse de textes en vue de leur application à la compréhension et à la résolution de situations problèmes. Rédaction d’un rapport. Cours équivalents : EDU67091",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6709/",
+    "scrapeISO": "2026-09-13T05:01:00.245Z"
+  },
+  "EDU 67093": {
+    "code": "EDU 67093",
+    "titre": "Essai de maîtrise 3",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Analyse critique et synthèse de textes en vue de leur application à la compréhension et à la résolution de situations problèmes. Rédaction d’un rapport.",
+    "prealablesBrut": "EDU67092",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 67092"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-67093/",
+    "scrapeISO": "2026-09-13T05:01:06.217Z"
+  },
+  "EDU 6014A": {
+    "code": "EDU 6014A",
+    "titre": "Développement professionnel de l’orthopédagogue 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Bilan sur les compétences professionnelles développées ou consolidées depuis le début de la formation. Mobilisation des savoirs scientifiques et pratiques pour soutenir l’élaboration d’un plan de développement professionnel. Cours équivalents : EDU6013",
+    "prealablesBrut": "Avoir complété avec succès 18 crédits dans le programme 2-855-1-3 M. Éd., option orthopédagogie",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété avec succès 18 crédits dans le programme 2-855-1-3 M. Éd., option orthopédagogie"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6014a/",
+    "scrapeISO": "2026-09-13T05:01:10.188Z"
+  },
+  "EDU 6014B": {
+    "code": "EDU 6014B",
+    "titre": "Développement professionnel de l’orthopédagogue 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Évaluation orthopédagogique élargie. Analyse approfondie de la situation d’un élève qui rencontre des difficultés persistantes. Réflexion critique sur le développement des compétences et habiletés professionnelles. Cours équivalents : EDU6012",
+    "prealablesBrut": "EDU6014A et avoir complété avec succès 27 crédits dans le programme 2-855-1-3 M. Éd., option orthopédagogie",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU6014A et avoir complété avec succès 27 crédits dans le programme 2-855-1-3 M. Éd., option orthopédagogie"
+    },
+    "concomitantsBrut": "EDU6014C",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6014b/",
+    "scrapeISO": "2026-09-13T05:01:12.144Z"
+  },
+  "EDU 6014C": {
+    "code": "EDU 6014C",
+    "titre": "Développement professionnel de l’orthopédagogue 3",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Expérimentation de la pratique orthopédagogique et analyses de pratiques supervisées auprès d’un élève ou d’un sous-groupe d’élèves en difficulté. Cours équivalents : EDU6504",
+    "prealablesBrut": "EDU6014A et avoir complété avec succès 27 crédits dans le programme 2-855-1-3",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU6014A et avoir complété avec succès 27 crédits dans le programme 2-855-1-3"
+    },
+    "concomitantsBrut": "EDU6014B",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6014c/",
+    "scrapeISO": "2026-09-13T05:01:14.156Z"
   }
 }

@@ -91,5 +91,107 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/som-6431/",
     "scrapeISO": "2026-09-13T03:44:04.041Z"
+  },
+  "SOM 6418": {
+    "code": "SOM 6418",
+    "titre": "Stage IPS niveau débutant",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences infirmières",
+    "description": "Stage en milieu clinique visant à soutenir le déploiement des compétences que les étudiantes développent au plan académique, à consolider leur jugement infirmier, à intégrer à leur raisonnement clinique des assises médicales plus approfondies. Remarque : ce cours est réservé aux infirmières et infirmiers praticiens spécialisés (IPS).",
+    "prealablesBrut": "(MMD 6410C et SOI 62713) ou (MMD 6412 et SOI 62723) ou (SOI 61662 et SOI 62732)",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MMD 6410C"
+            },
+            {
+              "genre": "cours",
+              "code": "SOI 62713"
+            }
+          ]
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MMD 6412"
+            },
+            {
+              "genre": "cours",
+              "code": "SOI 62723"
+            }
+          ]
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "SOI 61662"
+            },
+            {
+              "genre": "cours",
+              "code": "SOI 62732"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/som-6418/",
+    "scrapeISO": "2026-09-13T05:12:55.321Z"
+  },
+  "SOM 6419": {
+    "code": "SOM 6419",
+    "titre": "Stage IPS niveau compétent",
+    "credits": 15,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences infirmières",
+    "description": "Stage visant l'appropriation et la consolidation des compétences de l'IPS par la mobilisation/combinaison de ressources (situations variées et complexes intégrant les activités médicales prévues par la règlementation) Remarque : ce cours est réservé aux infirmières et infirmiers praticiens spécialisés (IPS)",
+    "prealablesBrut": "SOM6418",
+    "prealables": {
+      "genre": "cours",
+      "code": "SOM 6418"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/som-6419/",
+    "scrapeISO": "2026-09-13T05:12:57.352Z"
   }
 }

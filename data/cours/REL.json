@@ -2186,5 +2186,159 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6170/",
     "scrapeISO": "2026-09-13T04:52:13.769Z"
+  },
+  "REL 6502": {
+    "code": "REL 6502",
+    "titre": "Stage 1 : conception d'un projet spécialisé",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Observation des particularités d'un secteur d'activité pertinent au domaine d'étude. Identification et documentation d'une problématique. Conception d'un projet original pour y répondre de manière spécifique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6502/",
+    "scrapeISO": "2026-09-13T05:12:22.888Z"
+  },
+  "REL 6503": {
+    "code": "REL 6503",
+    "titre": "Stage 2 : réalisation d'un projet spécialisé",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Mise en oeuvre du projet élaboré lors du stage de conception. Précision du champ de spécialisation professionnelle et développement des compétences qui y sont reliées. Analyse réflexive et évaluation.",
+    "prealablesBrut": "REL6502",
+    "prealables": {
+      "genre": "cours",
+      "code": "REL 6502"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6503/",
+    "scrapeISO": "2026-09-13T05:12:23.046Z"
+  },
+  "REL 6815": {
+    "code": "REL 6815",
+    "titre": "Recherche 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REL6815/SRL6815/THB6815/THP6815",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6815/",
+    "scrapeISO": "2026-09-13T05:12:26.374Z"
+  },
+  "REL 6820": {
+    "code": "REL 6820",
+    "titre": "Recherche 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REL6820/SRL6820/THB6820/THP6820",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6820/",
+    "scrapeISO": "2026-09-13T05:12:27.106Z"
+  },
+  "REL 6825": {
+    "code": "REL 6825",
+    "titre": "Projet de mémoire",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REL6825/SRL6825/THB6825/THP6825",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6825/",
+    "scrapeISO": "2026-09-13T05:12:29.087Z"
+  },
+  "REL 6840": {
+    "code": "REL 6840",
+    "titre": "Mémoire",
+    "credits": 20,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REL6840/SRL6840/THB6840/THP6840",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6840/",
+    "scrapeISO": "2026-09-13T05:12:31.159Z"
+  },
+  "REL 6310": {
+    "code": "REL 6310",
+    "titre": "Interprétation théologique et biblique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Révélation et texte. Herméneutique et théologie. Conceptions, enjeux, présupposés et critères de l'interprétation. Acte de lecture. Problèmes particuliers posés par la lecture de textes bibliques et théologiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REL6310/THL6100",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6310/",
+    "scrapeISO": "2026-09-13T05:14:10.873Z"
   }
 }

@@ -196,5 +196,591 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6817/",
     "scrapeISO": "2026-09-13T03:47:32.842Z"
+  },
+  "AUD 6111": {
+    "code": "AUD 6111",
+    "titre": "Évaluation audiologique 1",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer principalement les compétences d'expertise et de communications reliées à la cueillette de données de l'histoire de cas et de l'expérience de la surdité en tenant compte des balises prescrites par la déontologie. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6111/",
+    "scrapeISO": "2026-09-13T05:14:13.097Z"
+  },
+  "AUD 6112": {
+    "code": "AUD 6112",
+    "titre": "Évaluation audiologique 2",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l'évaluation audiologique auprès d'adultes ayant des troubles auditifs associés à des pathologies de l'oreille externe. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6111",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6111"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6112/",
+    "scrapeISO": "2026-09-13T05:14:15.060Z"
+  },
+  "AUD 6113": {
+    "code": "AUD 6113",
+    "titre": "Évaluation audiologique 3",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l'évaluation audiologique auprès d'adultes ayant des troubles auditifs associées à des pathologies de l'oreille moyenne et interne.",
+    "prealablesBrut": "AUD6112",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6112"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6113/",
+    "scrapeISO": "2026-09-13T05:14:15.262Z"
+  },
+  "AUD 6114": {
+    "code": "AUD 6114",
+    "titre": "Évaluation audiologique 4",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l'évaluation audiologique auprès d'adultes ayant des troubles auditifs associés à des pathologies neurales. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6114/",
+    "scrapeISO": "2026-09-13T05:14:19.044Z"
+  },
+  "AUD 6115B": {
+    "code": "AUD 6115B",
+    "titre": "Évaluation audiologique 5",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l’évaluation audiologique auprès d’enfants d’âge préscolaire ayant des troubles auditifs. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6131",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6131"
+    },
+    "concomitantsBrut": "AUD6115B et AUD6133 et AUD6132B",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6115b/",
+    "scrapeISO": "2026-09-13T05:14:20.554Z"
+  },
+  "AUD 6121": {
+    "code": "AUD 6121",
+    "titre": "Réadaptation audiologique 1",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Développement des compétences en réadaptation auprès d'adultes ayant des troubles auditifs, impliquant notamment des moyens d'intervention comme l'amplification auditive et les aides de suppléances à l'audition, incluant les aides de connectivité. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6113",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6113"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6121/",
+    "scrapeISO": "2026-09-13T05:14:22.958Z"
+  },
+  "AUD 6122": {
+    "code": "AUD 6122",
+    "titre": "Réadaptation audiologique 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à la réadaptation auprès d'adultes ayant des troubles auditifs, impliquant, entre autres, des moyens d'intervention comme l'implant cochléaire et l'entraînement auditif. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6121",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6121"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6122/",
+    "scrapeISO": "2026-09-13T05:14:24.975Z"
+  },
+  "AUD 6131": {
+    "code": "AUD 6131",
+    "titre": "Activités d'intégration en audiologie 1",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Perfectionnement des apprentissages relatifs aux capacités et manifestations des compétences couvertes durant le trimestre, consolidation des savoirs qui leur sont reliés et l'approfondissement de sa propre capacité d'apprendre. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6114",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6114"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6131/",
+    "scrapeISO": "2026-09-13T05:14:27.280Z"
+  },
+  "AUD 6132B": {
+    "code": "AUD 6132B",
+    "titre": "Activité d’intégration en audiologie 2",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Perfectionnement des apprentissages relatifs aux capacités et manifestations des compétences couvertes durant le trimestre, consolidation des savoirs qui leur sont reliés et approfondissement de sa propre capacité d'apprendre. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6131",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6131"
+    },
+    "concomitantsBrut": "AUD6132B et AUD6115B et AUD6121",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6132b/",
+    "scrapeISO": "2026-09-13T05:14:28.646Z"
+  },
+  "AUD 6133": {
+    "code": "AUD 6133",
+    "titre": "Activités d'intégration en audiologie 3",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Perfectionnement des apprentissages relatifs aux capacités et manifestations des compétences couvertes durant le trimestre, consolidation des savoirs qui leur sont reliés et l'approfondissement de sa propre capacité d'apprendre. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6133/",
+    "scrapeISO": "2026-09-13T05:14:31.606Z"
+  },
+  "AUD 6141": {
+    "code": "AUD 6141",
+    "titre": "Intervention audiologique 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l'intervention audiologique auprès d'adultes ayant des acouphènes et d'autres problèmes d'intolérance aux sons. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6122",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6122"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6141/",
+    "scrapeISO": "2026-09-13T05:14:33.390Z"
+  },
+  "AUD 6216": {
+    "code": "AUD 6216",
+    "titre": "Évaluation audiologique 6",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l'évaluation audiologique auprès d'enfants d'âge scolaire ayant des troubles auditifs.",
+    "prealablesBrut": "AUD6114",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6114"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6216/",
+    "scrapeISO": "2026-09-13T05:14:35.958Z"
+  },
+  "AUD 6223": {
+    "code": "AUD 6223",
+    "titre": "Réadaptation audiologique 3",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à la réadaptation auprès d'enfants d'âge scolaire ayant des troubles auditifs. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6122 et AUD6216",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "AUD 6122"
+        },
+        {
+          "genre": "cours",
+          "code": "AUD 6216"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6223/",
+    "scrapeISO": "2026-09-13T05:14:36.113Z"
+  },
+  "AUD 6224": {
+    "code": "AUD 6224",
+    "titre": "Réadaptation audiologique 4",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à la réadaptation auprès d'enfants d'âge préscolaire ayant des troubles auditifs. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6122",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6122"
+    },
+    "concomitantsBrut": "AUD6223",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6224/",
+    "scrapeISO": "2026-09-13T05:14:40.086Z"
+  },
+  "AUD 6234B": {
+    "code": "AUD 6234B",
+    "titre": "Activités d’intégration en audiologie 4",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Perfectionnement des apprentissages relatifs aux capacités et manifestations des compétences couvertes durant le trimestre, consolidation des savoirs qui leur sont reliés et approfondissement de la propre capacité d'apprendre des étudiants. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6131 et AUD6132B et AUD6133",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "AUD 6131"
+        },
+        {
+          "genre": "cours",
+          "code": "AUD 6132B"
+        },
+        {
+          "genre": "cours",
+          "code": "AUD 6133"
+        }
+      ]
+    },
+    "concomitantsBrut": "AUD6234B et AUD6216 et AUD6242 et AUD6223 et AUD6224",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6234b/",
+    "scrapeISO": "2026-09-13T05:14:41.926Z"
+  },
+  "AUD 6235": {
+    "code": "AUD 6235",
+    "titre": "Activités d'intégration en audiologie 5",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Perfectionnement des apprentissages relatifs aux capacités et manifestations des compétences couvertes durant le trimestre, consolidation des savoirs qui leur sont reliés et approfondissement de la propre capacité d'apprendre des étudiants. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6252",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6252"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6235/",
+    "scrapeISO": "2026-09-13T05:14:44.120Z"
+  },
+  "AUD 6236": {
+    "code": "AUD 6236",
+    "titre": "Activités d'intégration en audiologie 6",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Perfectionnement des apprentissages relatifs aux capacités et manifestations des compétences couvertes durant le trimestre, consolidation des savoirs qui leur sont reliés et approfondissement de la propre capacité d'apprendre des étudiants.",
+    "prealablesBrut": "AUD6235",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6235"
+    },
+    "concomitantsBrut": "AUD6236 et AUD6262",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6236/",
+    "scrapeISO": "2026-09-13T05:14:45.770Z"
+  },
+  "AUD 6242": {
+    "code": "AUD 6242",
+    "titre": "Intervention audiologique 2",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l'intervention audiologique auprès de personnes ayant des troubles vestibulaires.",
+    "prealablesBrut": "AUD6224",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6224"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6242/",
+    "scrapeISO": "2026-09-13T05:14:46.313Z"
+  },
+  "AUD 6243": {
+    "code": "AUD 6243",
+    "titre": "Intervention audiologique 3",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées aux interventions audiologiques auprès de personnes âgées ayant des troubles cognitifs ou neurologiques.",
+    "prealablesBrut": "AUD6121",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6121"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6243/",
+    "scrapeISO": "2026-09-13T05:14:50.022Z"
+  },
+  "AUD 6251": {
+    "code": "AUD 6251",
+    "titre": "Promotion et prévention en audiologie 1",
+    "credits": 5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Intervention audiologique visant l'identification des personnes à risque de surdité congénitale ou acquise. Analyse de l'environnement sonore, dépistage, mesures de bruit, etc. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6234",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6234"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6251/",
+    "scrapeISO": "2026-09-13T05:14:50.510Z"
+  },
+  "AUD 6252": {
+    "code": "AUD 6252",
+    "titre": "Promotion et prévention en audiologie 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Intervention audiologique visant la prévention de la surdité congénitale ou acquise dans des milieux à risque ainsi que la promotion de la santé auditive. Remarques : L'étudiant réussit un cours lorsqu'il obtient au moins la note C ou la mention succès (S) à chacune des composantes du cours, qu'elles soient théoriques, pratiques ou cliniques. Un résultat inférieur à C ou la mention échec (E) à une des composantes entraîne un échec à ce cours.",
+    "prealablesBrut": "AUD6251",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6251"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6252/",
+    "scrapeISO": "2026-09-13T05:14:52.283Z"
+  },
+  "AUD 6262": {
+    "code": "AUD 6262",
+    "titre": "Externat en audiologie",
+    "credits": 8,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Approfondissement de la formation clinique par la prise en charge des interventions et la participation aux activités professionnelles. Acquisition de compétences relatives à une clientèle donnée ou à un domaine particulier.",
+    "prealablesBrut": "AUD6235",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6235"
+    },
+    "concomitantsBrut": "AUD6236",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6262/",
+    "scrapeISO": "2026-09-13T05:14:56.029Z"
+  },
+  "AUD 60914": {
+    "code": "AUD 60914",
+    "titre": "Stage de recherche en audiologie 4",
+    "credits": 4,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le stage vise à développer principalement la compétence d'érudition reliée à la démarche scientifique associée à des projets de recherche menés par un professeur de l'École d'audiologie et d'orthophonie.",
+    "prealablesBrut": "AUD60913",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 60913"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-60914/",
+    "scrapeISO": "2026-09-13T05:15:03.018Z"
   }
 }
