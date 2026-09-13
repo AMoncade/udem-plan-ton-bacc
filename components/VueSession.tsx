@@ -434,23 +434,60 @@ function Ligne({
  *   champ ABSENT          la fiche est antérieure à la collecte des horaires
  *   `[]`                  lu, et la page ne publie aucun horaire — 43 % des cas
  *
- * Aucune grille n'est dessinée ici, et ce n'est pas un provisoire paresseux :
- * `adrie-71` a mesuré sur l'automne 2026 qu'une charge de cinq cours se découpe
- * en SEIZE périodes d'horaire distinctes en médiane. Une grille hebdomadaire
- * unique affirmerait « toutes les semaines », ce qui est faux pour la majorité
- * des charges ; seize grilles ne se lisent pas.
+ * ## La forme de la grille, et pourquoi le problème qu'on redoutait n'existe pas
  *
- * La cause de ces seize, et c'est elle qui donne la forme à construire : près de
- * la moitié des séances tiennent en une semaine ou moins — 22 % en UN jour.
- * Ce sont des examens et des séances uniques, pas des rendez-vous hebdomadaires,
- * et chacun découpe le trimestre deux fois pour une seule journée. La règle de
- * partage est exacte plutôt qu'arbitraire : une séance dont la fenêtre couvre
- * moins de sept jours ne peut contenir son jour de semaine qu'une seule fois —
- * c'est un ÉVÉNEMENT DATÉ, pas une routine. Restent environ cinq formes de
- * semaine, qui elles se lisent.
+ * MESURÉ sur `data/cours/` le 2026-09-13, automne 2026, 2 441 fiches à horaire,
+ * 400 tirages de charges de cinq cours, UNE section par cours. La passe de
+ * collecte tournait pendant la mesure : les comptes de couverture bougeaient
+ * donc, mais les rapports ci-dessous portent sur la structure interne de chaque
+ * horaire et n'en dépendent pas.
  *
- * Rien de tout ça n'est construit tant que la donnée n'existe pas : une grille
- * éprouvée sur zéro horaire réel ne prouverait rien.
+ * PORTÉE DE CE QUI SUIT, parce qu'elle explique un écart avec les chiffres qui
+ * circulent : les cinq cours sont tirés dans TOUT le catalogue et non dans un
+ * même programme. `adrie-71`, sur une charge réaliste — cinq cours d'un même
+ * programme — trouve sept périodes brutes et quatre d'au moins une semaine. Son
+ * premier chiffre, seize, empilait les séances de toutes les sections d'un
+ * cours ; elle l'a corrigé elle-même. Les ordres de grandeur concordent une fois
+ * les deux populations nommées, et c'est la SIENNE qui décrit un étudiant.
+ *
+ * On craignait de devoir dessiner une grille par période — de quoi rendre
+ * l'écran illisible. Deux raisons pour lesquelles ce n'est pas nécessaire :
+ *
+ *  1. **40 % des séances ont une fenêtre de moins de sept jours.** Une fenêtre
+ *     plus courte qu'une semaine ne peut pas contenir son jour deux fois : ce
+ *     n'est pas une routine, c'est un ÉVÉNEMENT DATÉ — un examen, une séance
+ *     unique. Le critère est exact et non un seuil choisi. Ces séances-là
+ *     n'appartiennent pas à une grille hebdomadaire ; elles appartiennent à une
+ *     liste de dates. À elles seules elles découpaient le trimestre deux fois
+ *     par journée d'examen.
+ *  2. **Près de la moitié des créneaux de routine sont des RÉPÉTITIONS du même
+ *     cours, le même jour, à la même heure** — 4,8 sur 10,1 — seules leurs
+ *     fenêtres diffèrent, parce que la page publie l'horaire par blocs de
+ *     semaines autour des congés. `MAT 1400` tient mardi ET jeudi jusqu'au
+ *     16/10 puis jeudi seul : deux formes de semaine, mais UN seul créneau du
+ *     mardi. Compter les fenêtres revient à compter des périodes là où
+ *     l'étudiant ne voit qu'une case.
+ *
+ * Une fois ces répétitions fusionnées, une charge de cinq cours occupe environ
+ * **cinq cellules** (jour + heure distincts) et l'empilement maximal tombe à
+ * **1,4** — une cellule tient un cours, exceptionnellement deux. C'est une
+ * grille de sept jours parfaitement lisible, et c'est exactement ce qui a été
+ * demandé.
+ *
+ * Aucun de ces nombres n'est lu par une ligne de code, et aucun ne doit être
+ * écrit à l'écran : la forme robuste de l'énoncé est « environ quatre formes de
+ * semaine, plus autant d'événements datés ». Elle survit aux corrections de
+ * mesure, dont il y a déjà eu deux.
+ *
+ * LA GRILLE PORTE DONC SES DATES DANS SES CELLULES. 0,1 routine sur 10 couvre
+ * cent jours ou plus : presque aucune séance ne court tout le trimestre, donc
+ * une grille muette sur les dates affirmerait « toutes les semaines » et serait
+ * fausse à peu près partout. Chaque bloc dit quand il a lieu, et la grille ne
+ * promet jamais une semaine type — elle montre l'enveloppe, datée.
+ *
+ * Rien de tout ça n'est encore dessiné : la collecte était en cours au moment
+ * où ces lignes sont écrites, et une grille éprouvée sur un horaire à moitié
+ * écrit ne prouverait rien.
  */
 function PanneauHoraire({ codes, cible }: { codes: CodeCours[]; cible: Trimestre }) {
   const { catalogue } = useDonnees();
@@ -503,7 +540,7 @@ function PanneauHoraire({ codes, cible }: { codes: CodeCours[]; cible: Trimestre
             <p className="text-faible">
               {etat.publie === 0
                 ? "Aucun horaire n'est disponible : la grille de la semaine ne peut pas être dessinée, et un quadrillage vide ressemblerait à une panne."
-                : "La grille hebdomadaire n'est pas encore construite. Elle ne le sera pas en une seule semaine : une charge de cinq cours se découpe en seize périodes d'horaire distinctes en médiane, parce que près de la moitié des séances sont des examens ou des séances uniques plutôt que des rendez-vous hebdomadaires."}
+                : "La grille hebdomadaire n'est pas encore dessinée. Elle le sera sur sept jours, chaque cours portant les dates où il a lieu : presque aucune séance ne court tout le trimestre, et une grille muette sur les dates promettrait une semaine type qui n'existe pas. Les examens et les séances uniques — près de la moitié des séances publiées — iront dans une liste de dates, pas dans la grille."}
             </p>
             <p className="text-faible">
               Quoi qu&apos;il arrive, la source titre « Aperçu des horaires » et renvoie
