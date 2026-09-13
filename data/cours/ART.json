@@ -397,5 +397,297 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6022/",
     "scrapeISO": "2026-09-13T04:47:23.515Z"
+  },
+  "ART 6001": {
+    "code": "ART 6001",
+    "titre": "Recherche et création : approches",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation des différents courants et des méthodologies de la recherche et de la création en arts technologiques. Réflexion portant sur le cadre théorique du projet des étudiants.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6001/",
+    "scrapeISO": "2026-09-13T05:49:33.659Z"
+  },
+  "ART 6021": {
+    "code": "ART 6021",
+    "titre": "Fondements de la programmation",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principes fondamentaux de la programmation, des logiciels et langages. Représentation de l’information, types de base, variables et arithmétique. Conditions, boucles et fonctions. Structures de données simples : tableaux, classes et objets.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6021/",
+    "scrapeISO": "2026-09-13T05:49:37.309Z"
+  },
+  "ART 6100": {
+    "code": "ART 6100",
+    "titre": "Prototypage en arts technologiques",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours dédié à l’expérimentation et à la mise en pratique des outils technologiques dans la démarche itérative de création de l’étudiant.",
+    "prealablesBrut": "ART6001",
+    "prealables": {
+      "genre": "cours",
+      "code": "ART 6001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6100/",
+    "scrapeISO": "2026-09-13T05:49:39.421Z"
+  },
+  "ART 6023": {
+    "code": "ART 6023",
+    "titre": "Diffusion des arts technologiques",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Initiation à l’exposition et au commissariat d’œuvres technologiques dans un espace physique et virtuel. Participation à l’exposition annuelle du programme : développement de la thématique, montage selon le concept et le calendrier des livrables. Remarque : les étudiants ne peuvent pas s’inscrire à ce cours et au ART 6500.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ART6023 et ART6051",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6023/",
+    "scrapeISO": "2026-09-13T05:49:41.273Z"
+  },
+  "ART 6300": {
+    "code": "ART 6300",
+    "titre": "Pratiques audiovisuelles numériques",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours visant à guider l’étudiant.e dans une démarche de création audiovisuelle en arts numériques. Rapports entre image, son, projection, écrans, et installations.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6300/",
+    "scrapeISO": "2026-09-13T05:49:43.365Z"
+  },
+  "ART 6400": {
+    "code": "ART 6400",
+    "titre": "Moteurs de jeux pour la création artistique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Programmation d’applications dans une approche d’arts numériques en intégrant des éléments audiovisuels et des interactions en temps-réel dans un environnement de jeu vidéo.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6400/",
+    "scrapeISO": "2026-09-13T05:49:44.974Z"
+  },
+  "ART 6500": {
+    "code": "ART 6500",
+    "titre": "Mise en espace des œuvres",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Acquisition de connaissances pratiques et théoriques relatives à l’exposition d’œuvres technologiques dans un espace physique et virtuel. Réalisation de l’exposition annuelle du programme (concept d’exposition, montage des œuvres, catalogue). Remarque : les étudiants ne peuvent pas s’inscrire à ce cours et au ART 6023.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "ART6023 et ART6500",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6500/",
+    "scrapeISO": "2026-09-13T05:49:47.491Z"
+  },
+  "ART 6051": {
+    "code": "ART 6051",
+    "titre": "Projet de création",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours publié sans descriptif.",
+    "prealablesBrut": "Avoir complété 12 crédits de cours du programmes d'études 2-960-1-2, incluant le ART6100.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété 12 crédits de cours du programmes d'études 2-960-1-2, incluant le ART6100."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6051/",
+    "scrapeISO": "2026-09-13T05:49:49.602Z"
+  },
+  "ART 6052": {
+    "code": "ART 6052",
+    "titre": "Stage",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours publié sans descriptif.",
+    "prealablesBrut": "Avoir complété 12 crédits de cours du programme d'études 2-960-1-2.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété 12 crédits de cours du programme d'études 2-960-1-2."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6052/",
+    "scrapeISO": "2026-09-13T05:49:51.493Z"
+  },
+  "ART 6053": {
+    "code": "ART 6053",
+    "titre": "Travail dirigé",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours publié sans descriptif.",
+    "prealablesBrut": "Avoir complété 12 crédits de cours du programme d'études 2-960-1-2, incluant le ART6100.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Avoir complété 12 crédits de cours du programme d'études 2-960-1-2, incluant le ART6100."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6053/",
+    "scrapeISO": "2026-09-13T05:49:53.502Z"
+  },
+  "ART 6054": {
+    "code": "ART 6054",
+    "titre": "Stage",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6054/",
+    "scrapeISO": "2026-09-13T05:49:55.432Z"
+  },
+  "ART 6055": {
+    "code": "ART 6055",
+    "titre": "Stage",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/art-6055/",
+    "scrapeISO": "2026-09-13T05:49:57.343Z"
   }
 }

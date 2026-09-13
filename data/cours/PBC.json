@@ -505,5 +505,91 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-6047/",
     "scrapeISO": "2026-09-13T05:10:00.429Z"
+  },
+  "PBC 1050": {
+    "code": "PBC 1050",
+    "titre": "Anatomie macroscopique humaine",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Notions générales d'anatomie macroscopique humaine. On décrit successivement les appareils digestif, respiratoire, urinaire, cardiovasculaire, nerveux, endocrinien et de reproduction.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "PBC1040/PBC1050",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-1050/",
+    "scrapeISO": "2026-09-13T05:51:41.371Z"
+  },
+  "PBC 1060": {
+    "code": "PBC 1060",
+    "titre": "Embryologie et histologie humaine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Biologie cellulaire. Développement de l'embryon humain. Histologie des principaux organes. Corrélations histophysiologiques. Attention spéciale donnée au tissu osseux, au système digestif et à l'embryologie de la tête et du cou.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-1060/",
+    "scrapeISO": "2026-09-13T05:51:43.491Z"
+  },
+  "PBC 1020": {
+    "code": "PBC 1020",
+    "titre": "Pathologie générale en dentisterie",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Étude des lésions cellulaires élémentaires et des lésions parenchymateuses au cours des désordres hémodynamiques, de l'inflammation, des lésions physiques, chimiques et immunologiques, des désordres de la génétique, néoplasie, vieillissement.",
+    "prealablesBrut": "PBC1060",
+    "prealables": {
+      "genre": "cours",
+      "code": "PBC 1060"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-1020/",
+    "scrapeISO": "2026-09-13T05:52:30.102Z"
+  },
+  "PBC 2030": {
+    "code": "PBC 2030",
+    "titre": "Pathologie spéciale en dentisterie",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de médecine",
+    "description": "Leçons théoriques concernant les aspects pathologiques fondamentaux des maladies des différents systèmes (cardiaque, respiratoire, etc.) en relation avec la médecine dentaire.",
+    "prealablesBrut": "PBC1020",
+    "prealables": {
+      "genre": "cours",
+      "code": "PBC 1020"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbc-2030/",
+    "scrapeISO": "2026-09-13T05:52:32.261Z"
   }
 }

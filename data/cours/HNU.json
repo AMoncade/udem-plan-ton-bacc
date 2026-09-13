@@ -307,5 +307,145 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3056/",
     "scrapeISO": "2026-09-13T03:32:11.545Z"
+  },
+  "HNU 3000": {
+    "code": "HNU 3000",
+    "titre": "Humanités numériques : laboratoire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Expérience pratique de travail sur des projets en humanités numériques. Il sert d’espace de formation intensive basée sur les compétences acquises dans le programme. Remarque : Réservé aux étudiant.e.s de la mineure.",
+    "prealablesBrut": "HNU1000 et HNU2000",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "HNU 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "HNU 2000"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3000/",
+    "scrapeISO": "2026-09-13T05:44:02.828Z"
+  },
+  "HNU 3051": {
+    "code": "HNU 3051",
+    "titre": "Humanités numériques : formats d’écriture",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier sur les formats d’écriture et les différentes chaînes éditoriales de production de contenu. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours HNU6051.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3051/",
+    "scrapeISO": "2026-09-13T05:44:04.646Z"
+  },
+  "HNU 3052": {
+    "code": "HNU 3052",
+    "titre": "Humanités numériques : introduction à la TEI",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier sur l’encodage de documents structurés et aux méthodes d’édition critique avec la TEI (Text Encoding Initiative). Remarque : aux cycles supérieurs, vous devez vous inscrire au cours HNU6052.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3052/",
+    "scrapeISO": "2026-09-13T05:44:07.042Z"
+  },
+  "HNU 3053": {
+    "code": "HNU 3053",
+    "titre": "Humanités numériques : approfondissement TEI-ODD",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier sur les bases du langage TEI-ODD (Text Encoding Initiative -One Document Does it all) un langage destiné à modéliser un système d’encodage et sa documentation. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours HNU6053.",
+    "prealablesBrut": "HNU3052",
+    "prealables": {
+      "genre": "cours",
+      "code": "HNU 3052"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3053/",
+    "scrapeISO": "2026-09-13T05:44:07.199Z"
+  },
+  "HNU 3057": {
+    "code": "HNU 3057",
+    "titre": "Humanités numériques : analyse de texte",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier sur les principales techniques d’analyse de texte à travers la présentation de méthodes computationnelles. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours HNU6057.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3057/",
+    "scrapeISO": "2026-09-13T05:44:10.963Z"
+  },
+  "HNU 3058": {
+    "code": "HNU 3058",
+    "titre": "Humanités numériques : technologies du Web",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier sur les rudiments du développement web et la production de contenus avec des technologies du web. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours HNU6058.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3058/",
+    "scrapeISO": "2026-09-13T05:44:12.959Z"
+  },
+  "HNU 3059": {
+    "code": "HNU 3059",
+    "titre": "Humanités numériques : langages de programmation",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Atelier sur les concepts fondamentaux d’un langage de programmation en explorant son application aux sciences humaines. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours HNU6059.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hnu-3059/",
+    "scrapeISO": "2026-09-13T05:44:15.104Z"
   }
 }

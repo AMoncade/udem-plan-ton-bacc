@@ -90,5 +90,768 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6873/",
     "scrapeISO": "2026-09-13T03:47:41.158Z"
+  },
+  "ORT 6040": {
+    "code": "ORT 6040",
+    "titre": "Évaluation audiologique pour l'orthophonie",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Bases de l'évaluation audiologique indispensables pour la pratique de la profession et la collaboration interprofessionnelle",
+    "prealablesBrut": "ORT6100",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6100"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6040/",
+    "scrapeISO": "2026-09-13T05:42:20.833Z"
+  },
+  "ORT 6041": {
+    "code": "ORT 6041",
+    "titre": "Pratique et communication en orthophonie",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Concepts centraux et rôles de l'orthophoniste. Description des milieux de pratique. Relations avec les autres professionnels. Professionnalisme et déontologie. Annonce de résultats et recommandations suite à une évaluation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6041/",
+    "scrapeISO": "2026-09-13T05:42:23.444Z"
+  },
+  "ORT 6051": {
+    "code": "ORT 6051",
+    "titre": "Stage 1 en orthophonie",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage dans un milieu clinique permet à l’étudiant de mobiliser les compétences qu’il a développées et qui sont requises pour réaliser les situations professionnelles.",
+    "prealablesBrut": "ORT6200 et (ORT6111 ou ORT6121 ou ORT6131)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ORT 6200"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ORT 6111"
+            },
+            {
+              "genre": "cours",
+              "code": "ORT 6121"
+            },
+            {
+              "genre": "cours",
+              "code": "ORT 6131"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": "ORT6051 et ORT6141 et ORT6151",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6051/",
+    "scrapeISO": "2026-09-13T05:42:25.779Z"
+  },
+  "ORT 6052": {
+    "code": "ORT 6052",
+    "titre": "Stage 2 en orthophonie",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage dans un milieu clinique permet à l’étudiant de mobiliser les compétences qu’il a développées et qui sont requises pour réaliser les situations professionnelles.",
+    "prealablesBrut": "ORT6051 et (ORT6511 ou ORT6521 ou ORT6531)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ORT 6051"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ORT 6511"
+            },
+            {
+              "genre": "cours",
+              "code": "ORT 6521"
+            },
+            {
+              "genre": "cours",
+              "code": "ORT 6531"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6052/",
+    "scrapeISO": "2026-09-13T05:42:27.785Z"
+  },
+  "ORT 6053": {
+    "code": "ORT 6053",
+    "titre": "Stage 3 en orthophonie",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage dans un milieu clinique permet à l’étudiant de mobiliser les compétences qu’il a développées et qui sont requises pour réaliser les situations professionnelles.",
+    "prealablesBrut": "ORT6052 et (ORT6512 ou ORT6522 ou ORT6532)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ORT 6052"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "ORT 6512"
+            },
+            {
+              "genre": "cours",
+              "code": "ORT 6522"
+            },
+            {
+              "genre": "cours",
+              "code": "ORT 6532"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6053/",
+    "scrapeISO": "2026-09-13T05:42:29.233Z"
+  },
+  "ORT 6054": {
+    "code": "ORT 6054",
+    "titre": "Stage 4 en orthophonie",
+    "credits": 8,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Consolidation des compétences reliées à des interventions orthophoniques menées auprès d’une clientèle donnée ou dans un domaine particulier ainsi qu’à la participation aux activités professionnelles.",
+    "prealablesBrut": "ORT6053",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6053"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6054/",
+    "scrapeISO": "2026-09-13T05:42:31.738Z"
+  },
+  "ORT 6100": {
+    "code": "ORT 6100",
+    "titre": "Principes d'évaluation orthophonique",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Processus d'évaluation orthophonique à travers les populations. Entrevue. Anamnèse. Introduction aux tests standardisés. Analyses de données et interprétation des résultats. Principes de rédaction de rapports d'évaluation.",
+    "prealablesBrut": "ORT6000",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6100/",
+    "scrapeISO": "2026-09-13T05:42:33.786Z"
+  },
+  "ORT 6111": {
+    "code": "ORT 6111",
+    "titre": "Évaluation orthophonique au préscolaire 1",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Notions de développement typique et atypique. Identification de problèmes chez l'enfant d'âge préscolaire. Facteurs de risque et de protection. Dépistage en orthophonie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ORT6100",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6111/",
+    "scrapeISO": "2026-09-13T05:42:35.291Z"
+  },
+  "ORT 6112": {
+    "code": "ORT 6112",
+    "titre": "Évaluation orthophonique préscolaire 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Outils d'évaluation pour la clientèle préscolaire. Tableaux cliniques. Hypothèse et conclusion orthophonique. Variables modulant l'évaluation du jeune enfant. Comportement, troubles associés. Collaboration avec parents et milieux de garde.",
+    "prealablesBrut": "ORT6111",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6111"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6112/",
+    "scrapeISO": "2026-09-13T05:42:37.673Z"
+  },
+  "ORT 6121": {
+    "code": "ORT 6121",
+    "titre": "Évaluation orthophonique au scolaire 1",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Notions de développement typique et atypique. Identification de problèmes chez l’enfant d’âge scolaire. Facteurs de risque et de protection. Dépistage en orthophonie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ORT6121 et ORT6100",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6121/",
+    "scrapeISO": "2026-09-13T05:42:39.916Z"
+  },
+  "ORT 6122": {
+    "code": "ORT 6122",
+    "titre": "Évaluation orthophonique au scolaire 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Outils d’évaluations pour la clientèle scolaire. Tableaux cliniques. Hypothèses et conclusion orthophonique. Variables modulant l’évaluation de l’enfant d’âge scolaire. Comportement et troubles associés. Collaboration avec intervenants et parents.",
+    "prealablesBrut": "ORT6121",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6121"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6122/",
+    "scrapeISO": "2026-09-13T05:42:42.232Z"
+  },
+  "ORT 6131": {
+    "code": "ORT 6131",
+    "titre": "Évaluation orthophonique de l’adulte et l’aîné 1",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Notions de vieillissement typique et atypique. Identification de problèmes chez adulte et l’aîné. Facteurs de risque et de protection. Dépistage en orthophonie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ORT6131 et ORT6100",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6131/",
+    "scrapeISO": "2026-09-13T05:42:44.236Z"
+  },
+  "ORT 6132": {
+    "code": "ORT 6132",
+    "titre": "Évaluation orthophonique adulte et aîné 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Outils d’évaluation pour adultes et aînés. Tableaux cliniques. Hypothèses et conclusion orthophonique. Variables modulant l’évaluation chez la population adulte et aînée. Comportement et troubles associés. Collaboration avec intervenants et famille.",
+    "prealablesBrut": "ORT6131",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6131"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6132/",
+    "scrapeISO": "2026-09-13T05:42:46.397Z"
+  },
+  "ORT 6141": {
+    "code": "ORT 6141",
+    "titre": "Évaluation des troubles de la parole et de la voix",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Anatomie et physiologie. Outils spécifiques à l’évaluation de la parole. Tableaux cliniques (troubles de la parole, de la fluidité et de la voix et de la résonance). Hypothèses diagnostiques et conclusion orthophonique. Troubles associés.",
+    "prealablesBrut": "ORT6100",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6100"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6141/",
+    "scrapeISO": "2026-09-13T05:42:48.215Z"
+  },
+  "ORT 6151": {
+    "code": "ORT 6151",
+    "titre": "Évaluation orthophonique de la déglutition",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Dépistage et évaluation des problématiques d’alimentation et de déglutition chez la population pédiatrique et adulte. Analyse et interprétation de l’examen vidéofluoroscopique.",
+    "prealablesBrut": "ORT6001 et ORT6100",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ORT 6001"
+        },
+        {
+          "genre": "cours",
+          "code": "ORT 6100"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6151/",
+    "scrapeISO": "2026-09-13T05:42:48.579Z"
+  },
+  "ORT 6305": {
+    "code": "ORT 6305",
+    "titre": "Mobilisation des connaissances",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Développement de compétences nécessaires à la promotion de la profession ou à la défense des intérêts des clientèles ainsi qu'à la vulgarisation scientifique et à la sensibilisation.",
+    "prealablesBrut": "ORT6051",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6051"
+    },
+    "concomitantsBrut": "ORT6305 et ORT6052",
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6305/",
+    "scrapeISO": "2026-09-13T05:42:52.246Z"
+  },
+  "ORT 6310": {
+    "code": "ORT 6310",
+    "titre": "Recherche et psychométrie en orthophonie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Devis de recherche, méthodes statistiques paramétriques et non paramétriques. Interprétation et communication des résultats. Éthique de la recherche. Psychométrie pour évaluation et dépistage. Validité, fidélité, échantillonnage, normes et scores.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6310/",
+    "scrapeISO": "2026-09-13T05:42:54.297Z"
+  },
+  "ORT 6401": {
+    "code": "ORT 6401",
+    "titre": "Activité d’intégration 1",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce cours vise l'intégration des connaissances et des compétences développées jusqu'ici dans le cadre d'activités pratiques en orthophonie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ORT6401 et ORT6511 et ORT6521 et ORT6531",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6401/",
+    "scrapeISO": "2026-09-13T05:42:56.425Z"
+  },
+  "ORT 6402": {
+    "code": "ORT 6402",
+    "titre": "Activité d'intégration 2",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce cours vise l'intégration des connaissances et des compétences développées jusqu'ici dans le cadre d'activités pratiques en orthophonie.",
+    "prealablesBrut": "ORT6401",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6401"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6402/",
+    "scrapeISO": "2026-09-13T05:42:58.581Z"
+  },
+  "ORT 6503": {
+    "code": "ORT 6503",
+    "titre": "Fondements de l'intervention orthophonique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Notions transversales pour le processus d'intervention orthophonique : modèles d'interventions; contextes d'intervention, plan d'intervention orthophonique; mesure du progrès; tenue de dossier; éthique clinique et déontologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6503/",
+    "scrapeISO": "2026-09-13T05:43:00.046Z"
+  },
+  "ORT 6512": {
+    "code": "ORT 6512",
+    "titre": "Intervention orthophonique au préscolaire 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences avancées pour l’intervention orthophonique chez les enfants d’âge préscolaire. Guidance et formation d’intervenants. Planification du suivi et documentation du progrès.",
+    "prealablesBrut": "ORT6511, ORT6112",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "ORT6511, ORT6112"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6512/",
+    "scrapeISO": "2026-09-13T05:43:02.831Z"
+  },
+  "ORT 6513": {
+    "code": "ORT 6513",
+    "titre": "Pratiques en troubles neurodéveloppementaux",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l’intervention auprès des clientèles plus complexes qui présentent des troubles neuro développementaux (TSA, DI, TDAH). Outils de suppléance à la communication orale et écrite.",
+    "prealablesBrut": "ORT6512, ORT6122",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "ORT6512, ORT6122"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6513/",
+    "scrapeISO": "2026-09-13T05:43:04.610Z"
+  },
+  "ORT 6522": {
+    "code": "ORT 6522",
+    "titre": "Intervention orthophonique au scolaire 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours cible des compétences avancées pour l’intervention orthophonique chez les enfants d’âge scolaire : Réponse à l’intervention; intervention en classe; Actions auprès des collaborateurs; Planification du suivi; documentation du progrès.",
+    "prealablesBrut": "ORT6521",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6521"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6522/",
+    "scrapeISO": "2026-09-13T05:43:06.833Z"
+  },
+  "ORT 6523": {
+    "code": "ORT 6523",
+    "titre": "Pratiques en troubles d’apprentissage",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l’intervention auprès des clientèles plus complexes qui présentent des troubles d'apprentissages du langage oral et écrit (ex. : trouble primaire du langage, dyslexie, dysorthographie).",
+    "prealablesBrut": "ORT6512, ORT6122",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "ORT6512, ORT6122"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6523/",
+    "scrapeISO": "2026-09-13T05:43:08.333Z"
+  },
+  "ORT 6532": {
+    "code": "ORT 6532",
+    "titre": "Intervention orthophonique adulte et aîné 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences avancées pour l’intervention orthophonique chez la population adulte et aînée : Approches et techniques en dysphagie, aphasie, dysarthrie; Soutien aux proches; Réinsertion sociale.",
+    "prealablesBrut": "ORT6531",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6531"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6532/",
+    "scrapeISO": "2026-09-13T05:43:10.932Z"
+  },
+  "ORT 6533": {
+    "code": "ORT 6533",
+    "titre": "Pratiques en troubles acquis",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l’intervention auprès des clientèles plus complexes qui présentent des troubles acquis (aphasie, dysarthrie, dysphagie, troubles pragmatiques, etc.). Outils de suppléance à la communication orale.",
+    "prealablesBrut": "ORT6532, ORT6132",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "ORT6532, ORT6132"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6533/",
+    "scrapeISO": "2026-09-13T05:43:13.030Z"
+  },
+  "ORT 6543": {
+    "code": "ORT 6543",
+    "titre": "Pratiques en troubles de la parole",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à l’intervention auprès des clientèles plus complexes présentant un trouble de la parole (cancer tête et cou, malformations craniofaciales, troubles concomitants, déglutition et alimentation).",
+    "prealablesBrut": "ORT6141",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6141"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6543/",
+    "scrapeISO": "2026-09-13T05:43:14.989Z"
+  },
+  "ORT 6553": {
+    "code": "ORT 6553",
+    "titre": "Pratique en dysphagie pédiatrique et adulte",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Intervention auprès des clientèles pédiatriques et adultes plus complexes qui présentent des troubles d’alimentation/déglutition.",
+    "prealablesBrut": "ORT6151",
+    "prealables": {
+      "genre": "cours",
+      "code": "ORT 6151"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6553/",
+    "scrapeISO": "2026-09-13T05:43:16.930Z"
+  },
+  "ORT 6300": {
+    "code": "ORT 6300",
+    "titre": "Rapport de stage en orthophonie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à intégrer une démarche de raisonnement clinique dans la pratique orthophonique. Analyse et intégration des caractéristiques de la clientèle, du milieu, de l’expertise du clinicien et de l’évidence de la littérature (données probantes).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "ORT6300 et ORT6800",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6300/",
+    "scrapeISO": "2026-09-13T05:43:18.814Z"
+  },
+  "ORT 6818": {
+    "code": "ORT 6818",
+    "titre": "Stage de recherche en orthophonie 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Sous la supervision d'un membre du corps professoral affecté aux études supérieures, ce stage permet d'acquérir une expérience pratique des principes élémentaires de la démarche scientifique en orthophonie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6818/",
+    "scrapeISO": "2026-09-13T05:43:20.588Z"
   }
 }
