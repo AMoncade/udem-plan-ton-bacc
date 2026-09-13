@@ -39,6 +39,16 @@ jobs:
       #
       # Ce contrôle ne voit que les fichiers SUIVIS par git : un brouillon non
       # commité peut casser le lint en local sans que la CI s'en aperçoive.
+      #
+      # QUAND CETTE PORTE ROUGIT ET QUE CE N'EST PAS TOI. Une porte bloquante est
+      # une ressource partagée : la session arrêtée n'est pas celle qui a causé
+      # le rouge, c'est la SUIVANTE qui pousse. Avant de chercher la cause dans
+      # ton propre travail, lance `npx eslint --format json` et regarde le
+      # CHEMIN des fichiers fautifs. S'il est hors de ton lot, ne corrige pas :
+      # dis-le à son propriétaire. Et si le fichier est non suivi par git — cas
+      # déjà vu, un brouillon d'analyse déposé dans `app/_lib/` — il casse le
+      # lint de toutes les sessions en local sans jamais toucher la CI : c'est
+      # à son auteur de le déplacer hors des répertoires de source.
       - name: Lint
         run: npm run lint
 
