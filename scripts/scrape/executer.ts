@@ -58,7 +58,7 @@
 import type { Cours, FicheIndex, Programme } from "../../lib/types";
 import { slugUrl, normaliserCode } from "../../lib/codes";
 import { parsePrealables } from "../../lib/engine/prealables";
-import { empreinteExtracteur } from "../../lib/empreinte";
+import { empreinteExtracteur, empreintesParSource } from "../../lib/empreinte";
 import { parcoursDe, projeterOrientation } from "../../lib/parcours";
 import { parseFicheCours } from "./cours";
 import { parseApercuHoraires } from "./horaires";
@@ -817,6 +817,12 @@ async function principal(): Promise<void> {
     scrapeISO,
     regenereToutesLesStructures ? empreinteExtracteur() : null,
     sansCredits,
+    // Le détail par fichier suit le verdict global : même passe, même régime
+    // d'héritage. Il ne dit pas si les données sont périmées — l'empreinte le
+    // dit — il dit QUEL fichier a bougé, et la catégorie se lit dans le chemin.
+    // « scripts/scrape/… a changé » veut dire relancer ; « lib/types.ts a
+    // changé » veut dire peut-être, selon que le champ a changé de sens.
+    regenereToutesLesStructures ? empreintesParSource() : null,
   );
   for (const p of prealablesNonParses) {
     journal.info(p.code, `ligne de préalables non réduite par parsePrealables : ${JSON.stringify(p.brut)}`);

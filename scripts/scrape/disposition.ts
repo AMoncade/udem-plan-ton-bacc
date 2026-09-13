@@ -249,6 +249,10 @@ export async function ecrireIndex(
   scrapeISO: string,
   empreinte: string | null,
   sansCredits: Record<string, string> = {},
+  /** Empreinte par fichier source, pour NOMMER ce qui a bougé. Même régime que
+   *  `empreinte` : nulle quand la passe n'a pas régénéré toutes les structures,
+   *  et on reporte alors ce que l'index portait déjà. */
+  parSource: Record<string, string> | null = null,
 ): Promise<{ chemin: string; total: number }> {
   // Fusion par CLÉ DE PARCOURS, pas par id : plusieurs fiches partagent le même
   // id (une par orientation de la même page). Fusionner par id n'en garderait
@@ -262,10 +266,12 @@ export async function ecrireIndex(
   // l'emporte, et rien ne présente une observation de trois semaines comme
   // fraîche sous le `scrapeISO` de l'index.
   let sansCreditsCumules: Record<string, string> = {};
+  let parSourceHeritee: Record<string, string> | undefined;
   try {
     const ancien = JSON.parse(await readFile(CHEMIN_INDEX, "utf8")) as IndexProgrammes;
     for (const f of ancien.programmes ?? []) parCle.set(f.cle, f);
     empreinteHeritee = ancien.empreinteExtracteur;
+    parSourceHeritee = ancien.empreintesParSource;
     sansCreditsCumules = { ...(ancien.codesSansCredits ?? {}) };
   } catch {
     parCle = new Map();
@@ -307,6 +313,14 @@ export async function ecrireIndex(
     ...(Object.keys(sansCreditsCumules).length > 0
       ? { codesSansCredits: sansCreditsCumules }
       : {}),
+    // Le détail suit le verdict : il est écrit par la même passe et hérité par
+    // les mêmes, sinon il désignerait un fichier au nom d'une empreinte globale
+    // qui ne vient pas de lui.
+    ...(parSource !== null
+      ? { empreintesParSource: parSource }
+      : parSourceHeritee !== undefined
+        ? { empreintesParSource: parSourceHeritee }
+        : {}),
   };
   await ecrireJson(CHEMIN_INDEX, { _avertissement: AVERTISSEMENT, ...index });
   return { chemin: CHEMIN_INDEX, total: programmes.length };
