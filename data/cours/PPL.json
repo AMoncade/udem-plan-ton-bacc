@@ -25,7 +25,108 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3040/",
-    "scrapeISO": "2026-09-11T12:01:23.742Z"
+    "scrapeISO": "2026-09-11T17:22:48.129Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 3025": {
     "code": "PPL 3025",
@@ -45,7 +146,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3025/",
-    "scrapeISO": "2026-09-11T19:00:07.101Z"
+    "scrapeISO": "2026-09-11T19:00:07.101Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 2140": {
     "code": "PPL 2140",
@@ -60,7 +196,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-2140/",
-    "scrapeISO": "2026-09-13T03:17:45.715Z"
+    "scrapeISO": "2026-09-13T03:17:45.715Z",
+    "apercuHoraires": []
   },
   "PPL 1060": {
     "code": "PPL 1060",
@@ -84,7 +221,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-1060/",
-    "scrapeISO": "2026-09-13T03:29:10.251Z"
+    "scrapeISO": "2026-09-13T03:29:10.251Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 3035": {
     "code": "PPL 3035",
@@ -104,7 +309,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3035/",
-    "scrapeISO": "2026-09-13T03:29:12.287Z"
+    "scrapeISO": "2026-09-13T03:29:12.287Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 1080": {
     "code": "PPL 1080",
@@ -128,7 +368,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-1080/",
-    "scrapeISO": "2026-09-13T03:30:04.920Z"
+    "scrapeISO": "2026-09-13T03:30:04.920Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 3600": {
     "code": "PPL 3600",
@@ -151,7 +459,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3600/",
-    "scrapeISO": "2026-09-13T03:30:06.945Z"
+    "scrapeISO": "2026-09-13T03:30:06.945Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 2120": {
     "code": "PPL 2120",
@@ -171,7 +514,172 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-2120/",
-    "scrapeISO": "2026-09-13T03:30:08.968Z"
+    "scrapeISO": "2026-09-13T03:30:08.968Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-02-27",
+                "au": "2027-02-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-02-27",
+                "au": "2027-02-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-13",
+                "au": "2027-03-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-13",
+                "au": "2027-03-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-27",
+                "au": "2027-03-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-27",
+                "au": "2027-03-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-04-10",
+                "au": "2027-04-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-04-10",
+                "au": "2027-04-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-04-24",
+                "au": "2027-04-24"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 2130": {
     "code": "PPL 2130",
@@ -186,7 +694,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-2130/",
-    "scrapeISO": "2026-09-13T03:30:10.965Z"
+    "scrapeISO": "2026-09-13T03:30:10.965Z",
+    "apercuHoraires": []
   },
   "PPL 2160": {
     "code": "PPL 2160",
@@ -201,7 +710,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-2160/",
-    "scrapeISO": "2026-09-13T03:30:12.950Z"
+    "scrapeISO": "2026-09-13T03:30:12.950Z",
+    "apercuHoraires": []
   },
   "PPL 3076": {
     "code": "PPL 3076",
@@ -221,7 +731,172 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3076/",
-    "scrapeISO": "2026-09-13T03:30:14.963Z"
+    "scrapeISO": "2026-09-13T03:30:14.963Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-05",
+                "au": "2026-09-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-09-05",
+                "au": "2026-09-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-19",
+                "au": "2026-09-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-09-19",
+                "au": "2026-09-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-03",
+                "au": "2026-10-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-10-03",
+                "au": "2026-10-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-17",
+                "au": "2026-10-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-10-17",
+                "au": "2026-10-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-31",
+                "au": "2026-10-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-10-31",
+                "au": "2026-10-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-11-14",
+                "au": "2026-11-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-11-14",
+                "au": "2026-11-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-11-28",
+                "au": "2026-11-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-11-28",
+                "au": "2026-11-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-12-12",
+                "au": "2026-12-12"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 3078": {
     "code": "PPL 3078",
@@ -236,7 +911,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3078/",
-    "scrapeISO": "2026-09-13T03:30:16.938Z"
+    "scrapeISO": "2026-09-13T03:30:16.938Z",
+    "apercuHoraires": []
   },
   "PPL 2210": {
     "code": "PPL 2210",
@@ -256,7 +932,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-2210/",
-    "scrapeISO": "2026-09-13T03:30:20.429Z"
+    "scrapeISO": "2026-09-13T03:30:20.429Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 2230": {
     "code": "PPL 2230",
@@ -271,7 +982,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-2230/",
-    "scrapeISO": "2026-09-13T03:30:22.798Z"
+    "scrapeISO": "2026-09-13T03:30:22.798Z",
+    "apercuHoraires": []
   },
   "PPL 3120": {
     "code": "PPL 3120",
@@ -291,7 +1003,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3120/",
-    "scrapeISO": "2026-09-13T03:30:22.988Z"
+    "scrapeISO": "2026-09-13T03:30:22.988Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 3140": {
     "code": "PPL 3140",
@@ -311,7 +1058,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3140/",
-    "scrapeISO": "2026-09-13T03:30:24.986Z"
+    "scrapeISO": "2026-09-13T03:30:24.986Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 3160": {
     "code": "PPL 3160",
@@ -335,7 +1117,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3160/",
-    "scrapeISO": "2026-09-13T03:30:26.762Z"
+    "scrapeISO": "2026-09-13T03:30:26.762Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PPL 3400": {
     "code": "PPL 3400",
@@ -366,6 +1216,68 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3400/",
-    "scrapeISO": "2026-09-13T03:30:30.611Z"
+    "scrapeISO": "2026-09-13T03:30:30.611Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-08-14"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -21,7 +21,100 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1300/",
-    "scrapeISO": "2026-09-11T11:34:03.947Z"
+    "scrapeISO": "2026-09-11T17:43:39.297Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          },
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1500": {
     "code": "COM 1500",
@@ -45,7 +138,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1500/",
-    "scrapeISO": "2026-09-11T11:34:05.949Z"
+    "scrapeISO": "2026-09-11T17:46:55.863Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          },
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          },
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1600": {
     "code": "COM 1600",
@@ -69,7 +280,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1600/",
-    "scrapeISO": "2026-09-11T11:34:06.070Z"
+    "scrapeISO": "2026-09-11T17:43:40.983Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2001": {
     "code": "COM 2001",
@@ -93,7 +372,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2001/",
-    "scrapeISO": "2026-09-11T11:51:48.382Z"
+    "scrapeISO": "2026-09-11T17:47:33.755Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1350": {
     "code": "COM 1350",
@@ -113,7 +460,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1350/",
-    "scrapeISO": "2026-09-11T17:43:40.798Z"
+    "scrapeISO": "2026-09-11T17:43:40.798Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2215": {
     "code": "COM 2215",
@@ -133,7 +515,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2215/",
-    "scrapeISO": "2026-09-11T17:43:43.684Z"
+    "scrapeISO": "2026-09-11T17:43:43.684Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2450": {
     "code": "COM 2450",
@@ -153,7 +570,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2450/",
-    "scrapeISO": "2026-09-11T17:43:45.883Z"
+    "scrapeISO": "2026-09-11T17:43:45.883Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2570": {
     "code": "COM 2570",
@@ -173,7 +625,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2570/",
-    "scrapeISO": "2026-09-11T17:43:47.409Z"
+    "scrapeISO": "2026-09-11T17:43:47.409Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2571": {
     "code": "COM 2571",
@@ -193,7 +680,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2571/",
-    "scrapeISO": "2026-09-11T17:43:49.589Z"
+    "scrapeISO": "2026-09-11T17:43:49.589Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2590": {
     "code": "COM 2590",
@@ -213,7 +735,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2590/",
-    "scrapeISO": "2026-09-11T17:43:51.262Z"
+    "scrapeISO": "2026-09-11T17:43:51.262Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2660": {
     "code": "COM 2660",
@@ -233,7 +790,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2660/",
-    "scrapeISO": "2026-09-11T17:43:51.472Z"
+    "scrapeISO": "2026-09-11T17:43:51.472Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2720": {
     "code": "COM 2720",
@@ -253,7 +845,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2720/",
-    "scrapeISO": "2026-09-11T17:43:54.609Z"
+    "scrapeISO": "2026-09-11T17:43:54.609Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2920": {
     "code": "COM 2920",
@@ -273,7 +900,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2920/",
-    "scrapeISO": "2026-09-11T17:43:56.683Z"
+    "scrapeISO": "2026-09-11T17:43:56.683Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2925": {
     "code": "COM 2925",
@@ -293,7 +955,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2925/",
-    "scrapeISO": "2026-09-11T17:43:58.833Z"
+    "scrapeISO": "2026-09-11T17:43:58.833Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2945": {
     "code": "COM 2945",
@@ -308,7 +1005,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2945/",
-    "scrapeISO": "2026-09-11T17:44:00.816Z"
+    "scrapeISO": "2026-09-11T17:44:00.816Z",
+    "apercuHoraires": []
   },
   "COM 3035": {
     "code": "COM 3035",
@@ -340,7 +1038,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3035/",
-    "scrapeISO": "2026-09-11T17:44:02.410Z"
+    "scrapeISO": "2026-09-11T17:44:02.410Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3060": {
     "code": "COM 3060",
@@ -358,7 +1091,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3060/",
-    "scrapeISO": "2026-09-11T17:44:04.251Z"
+    "scrapeISO": "2026-09-11T17:44:04.251Z",
+    "apercuHoraires": []
   },
   "COM 3562": {
     "code": "COM 3562",
@@ -378,7 +1112,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3562/",
-    "scrapeISO": "2026-09-11T17:44:06.432Z"
+    "scrapeISO": "2026-09-11T17:44:06.432Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3570": {
     "code": "COM 3570",
@@ -398,7 +1167,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3570/",
-    "scrapeISO": "2026-09-11T17:44:06.631Z"
+    "scrapeISO": "2026-09-11T17:44:06.631Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1571": {
     "code": "COM 1571",
@@ -413,7 +1217,8 @@
     "restrictionsBrut": "AME2340/ARC2340/COM2540/COM2540G/COM1571",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1571/",
-    "scrapeISO": "2026-09-11T17:46:31.634Z"
+    "scrapeISO": "2026-09-11T17:46:31.634Z",
+    "apercuHoraires": []
   },
   "COM 2540": {
     "code": "COM 2540",
@@ -431,7 +1236,8 @@
     "restrictionsBrut": "AME2340/ARC2340/COM2540/COM2540G/COM1571/EDP1400",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2540/",
-    "scrapeISO": "2026-09-11T17:46:33.616Z"
+    "scrapeISO": "2026-09-11T17:46:33.616Z",
+    "apercuHoraires": []
   },
   "COM 2710": {
     "code": "COM 2710",
@@ -451,7 +1257,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2710/",
-    "scrapeISO": "2026-09-11T17:46:35.870Z"
+    "scrapeISO": "2026-09-11T17:46:35.870Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1100": {
     "code": "COM 1100",
@@ -475,7 +1316,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1100/",
-    "scrapeISO": "2026-09-11T17:46:55.666Z"
+    "scrapeISO": "2026-09-11T17:46:55.666Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          },
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2008": {
     "code": "COM 2008",
@@ -498,7 +1457,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2008/",
-    "scrapeISO": "2026-09-11T17:47:11.987Z"
+    "scrapeISO": "2026-09-11T17:47:11.987Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2009": {
     "code": "COM 2009",
@@ -521,7 +1540,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2009/",
-    "scrapeISO": "2026-09-11T17:47:15.039Z"
+    "scrapeISO": "2026-09-11T17:47:15.039Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1150": {
     "code": "COM 1150",
@@ -545,7 +1624,100 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1150/",
-    "scrapeISO": "2026-09-11T17:47:26.591Z"
+    "scrapeISO": "2026-09-11T17:47:26.591Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1560": {
     "code": "COM 1560",
@@ -569,7 +1741,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1560/",
-    "scrapeISO": "2026-09-11T17:47:28.738Z"
+    "scrapeISO": "2026-09-11T17:47:28.738Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1570": {
     "code": "COM 1570",
@@ -593,7 +1833,100 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1570/",
-    "scrapeISO": "2026-09-11T17:47:28.938Z"
+    "scrapeISO": "2026-09-11T17:47:28.938Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1750": {
     "code": "COM 1750",
@@ -617,7 +1950,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1750/",
-    "scrapeISO": "2026-09-11T17:47:31.418Z"
+    "scrapeISO": "2026-09-11T17:47:31.418Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2018": {
     "code": "COM 2018",
@@ -644,7 +2045,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2018/",
-    "scrapeISO": "2026-09-11T17:47:36.220Z"
+    "scrapeISO": "2026-09-11T17:47:36.220Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2019": {
     "code": "COM 2019",
@@ -680,7 +2149,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2019/",
-    "scrapeISO": "2026-09-11T17:47:37.756Z"
+    "scrapeISO": "2026-09-11T17:47:37.756Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2020": {
     "code": "COM 2020",
@@ -700,7 +2237,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2020/",
-    "scrapeISO": "2026-09-11T17:47:40.276Z"
+    "scrapeISO": "2026-09-11T17:47:40.276Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2021": {
     "code": "COM 2021",
@@ -720,7 +2292,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2021/",
-    "scrapeISO": "2026-09-11T17:47:42.446Z"
+    "scrapeISO": "2026-09-11T17:47:42.446Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-12-14",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2104": {
     "code": "COM 2104",
@@ -740,7 +2357,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2104/",
-    "scrapeISO": "2026-09-11T17:47:43.975Z"
+    "scrapeISO": "2026-09-11T17:47:43.975Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2130": {
     "code": "COM 2130",
@@ -763,7 +2415,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2130/",
-    "scrapeISO": "2026-09-11T17:47:45.806Z"
+    "scrapeISO": "2026-09-11T17:47:45.806Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2150": {
     "code": "COM 2150",
@@ -781,7 +2468,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2150/",
-    "scrapeISO": "2026-09-11T17:47:47.145Z"
+    "scrapeISO": "2026-09-11T17:47:47.145Z",
+    "apercuHoraires": []
   },
   "COM 2200": {
     "code": "COM 2200",
@@ -804,7 +2492,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2200/",
-    "scrapeISO": "2026-09-11T17:47:48.840Z"
+    "scrapeISO": "2026-09-11T17:47:48.840Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2220": {
     "code": "COM 2220",
@@ -824,7 +2547,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2220/",
-    "scrapeISO": "2026-09-11T17:47:51.076Z"
+    "scrapeISO": "2026-09-11T17:47:51.076Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2320": {
     "code": "COM 2320",
@@ -844,7 +2602,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2320/",
-    "scrapeISO": "2026-09-11T17:47:52.725Z"
+    "scrapeISO": "2026-09-11T17:47:52.725Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2440": {
     "code": "COM 2440",
@@ -867,7 +2660,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2440/",
-    "scrapeISO": "2026-09-11T17:47:54.807Z"
+    "scrapeISO": "2026-09-11T17:47:54.807Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2460": {
     "code": "COM 2460",
@@ -890,7 +2718,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2460/",
-    "scrapeISO": "2026-09-11T17:47:56.837Z"
+    "scrapeISO": "2026-09-11T17:47:56.837Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2505": {
     "code": "COM 2505",
@@ -914,7 +2777,85 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2505/",
-    "scrapeISO": "2026-09-11T17:47:59.040Z"
+    "scrapeISO": "2026-09-11T17:47:59.040Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-12",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2550": {
     "code": "COM 2550",
@@ -938,7 +2879,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2550/",
-    "scrapeISO": "2026-09-11T17:48:00.792Z"
+    "scrapeISO": "2026-09-11T17:48:00.792Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2565": {
     "code": "COM 2565",
@@ -956,7 +2965,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2565/",
-    "scrapeISO": "2026-09-11T17:48:02.942Z"
+    "scrapeISO": "2026-09-11T17:48:02.942Z",
+    "apercuHoraires": []
   },
   "COM 2580": {
     "code": "COM 2580",
@@ -976,7 +2986,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2580/",
-    "scrapeISO": "2026-09-11T17:48:04.481Z"
+    "scrapeISO": "2026-09-11T17:48:04.481Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3011": {
     "code": "COM 3011",
@@ -991,7 +3036,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3011/",
-    "scrapeISO": "2026-09-11T17:48:06.525Z"
+    "scrapeISO": "2026-09-11T17:48:06.525Z",
+    "apercuHoraires": []
   },
   "COM 3065": {
     "code": "COM 3065",
@@ -1014,7 +3060,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3065/",
-    "scrapeISO": "2026-09-11T17:48:08.805Z"
+    "scrapeISO": "2026-09-11T17:48:08.805Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3118": {
     "code": "COM 3118",
@@ -1037,7 +3118,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3118/",
-    "scrapeISO": "2026-09-11T17:48:10.843Z"
+    "scrapeISO": "2026-09-11T17:48:10.843Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3155": {
     "code": "COM 3155",
@@ -1069,7 +3185,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3155/",
-    "scrapeISO": "2026-09-11T17:48:12.980Z"
+    "scrapeISO": "2026-09-11T17:48:12.980Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3220": {
     "code": "COM 3220",
@@ -1089,7 +3240,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3220/",
-    "scrapeISO": "2026-09-11T17:48:15.218Z"
+    "scrapeISO": "2026-09-11T17:48:15.218Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3305": {
     "code": "COM 3305",
@@ -1112,7 +3298,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3305/",
-    "scrapeISO": "2026-09-11T17:48:17.304Z"
+    "scrapeISO": "2026-09-11T17:48:17.304Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3320": {
     "code": "COM 3320",
@@ -1132,7 +3353,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3320/",
-    "scrapeISO": "2026-09-11T17:48:19.502Z"
+    "scrapeISO": "2026-09-11T17:48:19.502Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3400": {
     "code": "COM 3400",
@@ -1152,7 +3408,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3400/",
-    "scrapeISO": "2026-09-11T17:48:21.706Z"
+    "scrapeISO": "2026-09-11T17:48:21.706Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3410": {
     "code": "COM 3410",
@@ -1172,7 +3463,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3410/",
-    "scrapeISO": "2026-09-11T17:48:23.717Z"
+    "scrapeISO": "2026-09-11T17:48:23.717Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3420": {
     "code": "COM 3420",
@@ -1192,7 +3518,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3420/",
-    "scrapeISO": "2026-09-11T17:48:25.711Z"
+    "scrapeISO": "2026-09-11T17:48:25.711Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3000": {
     "code": "COM 3000",
@@ -1220,7 +3581,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3000/",
-    "scrapeISO": "2026-09-11T17:50:51.089Z"
+    "scrapeISO": "2026-09-11T17:50:51.089Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3030": {
     "code": "COM 3030",
@@ -1251,7 +3654,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3030/",
-    "scrapeISO": "2026-09-11T17:50:53.241Z"
+    "scrapeISO": "2026-09-11T17:50:53.241Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 3032": {
     "code": "COM 3032",
@@ -1282,7 +3727,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3032/",
-    "scrapeISO": "2026-09-11T17:50:53.407Z"
+    "scrapeISO": "2026-09-11T17:50:53.407Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 2230": {
     "code": "COM 2230",
@@ -1302,7 +3789,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2230/",
-    "scrapeISO": "2026-09-11T18:54:48.942Z"
+    "scrapeISO": "2026-09-11T18:54:48.942Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6964": {
     "code": "COM 6964",
@@ -1317,7 +3839,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6964/",
-    "scrapeISO": "2026-09-12T21:32:38.775Z"
+    "scrapeISO": "2026-09-12T21:32:38.775Z",
+    "apercuHoraires": []
   },
   "COM 6201": {
     "code": "COM 6201",
@@ -1332,7 +3855,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6201/",
-    "scrapeISO": "2026-09-12T21:32:40.796Z"
+    "scrapeISO": "2026-09-12T21:32:40.796Z",
+    "apercuHoraires": []
   },
   "COM 6355": {
     "code": "COM 6355",
@@ -1347,7 +3871,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6355/",
-    "scrapeISO": "2026-09-12T21:32:42.784Z"
+    "scrapeISO": "2026-09-12T21:32:42.784Z",
+    "apercuHoraires": []
   },
   "COM 6421": {
     "code": "COM 6421",
@@ -1362,7 +3887,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6421/",
-    "scrapeISO": "2026-09-12T21:32:45.148Z"
+    "scrapeISO": "2026-09-12T21:32:45.148Z",
+    "apercuHoraires": []
   },
   "COM 6500": {
     "code": "COM 6500",
@@ -1377,7 +3903,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6500/",
-    "scrapeISO": "2026-09-12T21:32:46.811Z"
+    "scrapeISO": "2026-09-12T21:32:46.811Z",
+    "apercuHoraires": []
   },
   "COM 6505": {
     "code": "COM 6505",
@@ -1397,7 +3924,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6505/",
-    "scrapeISO": "2026-09-12T21:32:48.802Z"
+    "scrapeISO": "2026-09-12T21:32:48.802Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6915": {
     "code": "COM 6915",
@@ -1412,7 +3974,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6915/",
-    "scrapeISO": "2026-09-12T21:32:52.738Z"
+    "scrapeISO": "2026-09-12T21:32:52.738Z",
+    "apercuHoraires": []
   },
   "COM 6960": {
     "code": "COM 6960",
@@ -1427,7 +3990,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6960/",
-    "scrapeISO": "2026-09-12T21:32:52.873Z"
+    "scrapeISO": "2026-09-12T21:32:52.873Z",
+    "apercuHoraires": []
   },
   "COM 6020": {
     "code": "COM 6020",
@@ -1451,7 +4015,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6020/",
-    "scrapeISO": "2026-09-12T21:32:56.473Z"
+    "scrapeISO": "2026-09-12T21:32:56.473Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6115": {
     "code": "COM 6115",
@@ -1471,7 +4103,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6115/",
-    "scrapeISO": "2026-09-12T21:32:56.909Z"
+    "scrapeISO": "2026-09-12T21:32:56.909Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6122": {
     "code": "COM 6122",
@@ -1491,7 +4158,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6122/",
-    "scrapeISO": "2026-09-12T21:32:58.885Z"
+    "scrapeISO": "2026-09-12T21:32:58.885Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-08-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-09-14",
+                "au": "2026-10-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-21"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6148": {
     "code": "COM 6148",
@@ -1511,7 +4223,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6148/",
-    "scrapeISO": "2026-09-12T21:33:00.895Z"
+    "scrapeISO": "2026-09-12T21:33:00.895Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6174": {
     "code": "COM 6174",
@@ -1526,7 +4273,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6174/",
-    "scrapeISO": "2026-09-12T21:33:02.905Z"
+    "scrapeISO": "2026-09-12T21:33:02.905Z",
+    "apercuHoraires": []
   },
   "COM 6175": {
     "code": "COM 6175",
@@ -1541,7 +4289,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6175/",
-    "scrapeISO": "2026-09-12T21:33:04.911Z"
+    "scrapeISO": "2026-09-12T21:33:04.911Z",
+    "apercuHoraires": []
   },
   "COM 6192": {
     "code": "COM 6192",
@@ -1561,7 +4310,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6192/",
-    "scrapeISO": "2026-09-12T21:33:06.912Z"
+    "scrapeISO": "2026-09-12T21:33:06.912Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6205": {
     "code": "COM 6205",
@@ -1581,7 +4365,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6205/",
-    "scrapeISO": "2026-09-12T21:33:08.955Z"
+    "scrapeISO": "2026-09-12T21:33:08.955Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6285": {
     "code": "COM 6285",
@@ -1601,7 +4420,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6285/",
-    "scrapeISO": "2026-09-12T21:33:10.956Z"
+    "scrapeISO": "2026-09-12T21:33:10.956Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6331": {
     "code": "COM 6331",
@@ -1616,7 +4470,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6331/",
-    "scrapeISO": "2026-09-12T21:33:12.987Z"
+    "scrapeISO": "2026-09-12T21:33:12.987Z",
+    "apercuHoraires": []
   },
   "COM 6335": {
     "code": "COM 6335",
@@ -1631,7 +4486,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6335/",
-    "scrapeISO": "2026-09-12T21:33:14.994Z"
+    "scrapeISO": "2026-09-12T21:33:14.994Z",
+    "apercuHoraires": []
   },
   "COM 6374": {
     "code": "COM 6374",
@@ -1651,7 +4507,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6374/",
-    "scrapeISO": "2026-09-12T21:33:17.001Z"
+    "scrapeISO": "2026-09-12T21:33:17.001Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-19"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6394": {
     "code": "COM 6394",
@@ -1666,7 +4567,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6394/",
-    "scrapeISO": "2026-09-12T21:33:18.993Z"
+    "scrapeISO": "2026-09-12T21:33:18.993Z",
+    "apercuHoraires": []
   },
   "COM 6501": {
     "code": "COM 6501",
@@ -1686,7 +4588,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6501/",
-    "scrapeISO": "2026-09-12T21:33:21.000Z"
+    "scrapeISO": "2026-09-12T21:33:21.000Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6502": {
     "code": "COM 6502",
@@ -1701,7 +4638,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6502/",
-    "scrapeISO": "2026-09-12T21:33:22.999Z"
+    "scrapeISO": "2026-09-12T21:33:22.999Z",
+    "apercuHoraires": []
   },
   "COM 6531": {
     "code": "COM 6531",
@@ -1721,7 +4659,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6531/",
-    "scrapeISO": "2026-09-12T21:33:25.031Z"
+    "scrapeISO": "2026-09-12T21:33:25.031Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6710": {
     "code": "COM 6710",
@@ -1741,7 +4714,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6710/",
-    "scrapeISO": "2026-09-12T21:33:27.304Z"
+    "scrapeISO": "2026-09-12T21:33:27.304Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6715": {
     "code": "COM 6715",
@@ -1761,7 +4769,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6715/",
-    "scrapeISO": "2026-09-12T21:33:29.014Z"
+    "scrapeISO": "2026-09-12T21:33:29.014Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6840": {
     "code": "COM 6840",
@@ -1781,7 +4824,72 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6840/",
-    "scrapeISO": "2026-09-12T21:33:31.041Z"
+    "scrapeISO": "2026-09-12T21:33:31.041Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 540,
+                  "finMin": 1139
+                },
+                "du": "2026-05-25",
+                "au": "2026-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 1139
+                },
+                "du": "2026-05-26",
+                "au": "2026-05-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 540,
+                  "finMin": 1139
+                },
+                "du": "2026-05-27",
+                "au": "2026-05-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 420,
+                  "finMin": 1319
+                },
+                "du": "2026-05-28",
+                "au": "2026-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 1139
+                },
+                "du": "2026-05-29",
+                "au": "2026-05-29"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6841": {
     "code": "COM 6841",
@@ -1805,7 +4913,185 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6841/",
-    "scrapeISO": "2026-09-12T21:33:33.137Z"
+    "scrapeISO": "2026-09-12T21:33:33.137Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-05-25",
+                "au": "2026-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1020,
+                  "finMin": 1229
+                },
+                "du": "2026-05-25",
+                "au": "2026-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 810,
+                  "finMin": 1019
+                },
+                "du": "2026-05-25",
+                "au": "2026-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-05-26",
+                "au": "2026-05-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1020,
+                  "finMin": 1229
+                },
+                "du": "2026-05-26",
+                "au": "2026-05-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 1019
+                },
+                "du": "2026-05-26",
+                "au": "2026-05-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-05-27",
+                "au": "2026-05-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 1019
+                },
+                "du": "2026-05-27",
+                "au": "2026-05-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-05-28",
+                "au": "2026-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1020,
+                  "finMin": 1229
+                },
+                "du": "2026-05-28",
+                "au": "2026-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 1019
+                },
+                "du": "2026-05-28",
+                "au": "2026-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-05-29",
+                "au": "2026-05-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 1019
+                },
+                "du": "2026-05-29",
+                "au": "2026-05-29"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6550": {
     "code": "COM 6550",
@@ -1820,7 +5106,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6550/",
-    "scrapeISO": "2026-09-12T21:35:43.639Z"
+    "scrapeISO": "2026-09-12T21:35:43.639Z",
+    "apercuHoraires": []
   },
   "COM 6135": {
     "code": "COM 6135",
@@ -1840,7 +5127,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6135/",
-    "scrapeISO": "2026-09-12T21:35:45.673Z"
+    "scrapeISO": "2026-09-12T21:35:45.673Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 6341": {
     "code": "COM 6341",
@@ -1855,7 +5177,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6341/",
-    "scrapeISO": "2026-09-12T21:35:47.636Z"
+    "scrapeISO": "2026-09-12T21:35:47.636Z",
+    "apercuHoraires": []
   },
   "COM 6402": {
     "code": "COM 6402",
@@ -1870,7 +5193,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6402/",
-    "scrapeISO": "2026-09-12T21:35:51.659Z"
+    "scrapeISO": "2026-09-12T21:35:51.659Z",
+    "apercuHoraires": []
   },
   "COM 6912": {
     "code": "COM 6912",
@@ -1885,7 +5209,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6912/",
-    "scrapeISO": "2026-09-12T21:35:51.864Z"
+    "scrapeISO": "2026-09-12T21:35:51.864Z",
+    "apercuHoraires": []
   },
   "COM 6975": {
     "code": "COM 6975",
@@ -1900,7 +5225,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6975/",
-    "scrapeISO": "2026-09-12T21:35:53.843Z"
+    "scrapeISO": "2026-09-12T21:35:53.843Z",
+    "apercuHoraires": []
   },
   "COM 7151": {
     "code": "COM 7151",
@@ -1920,7 +5246,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-7151/",
-    "scrapeISO": "2026-09-12T21:49:18.137Z"
+    "scrapeISO": "2026-09-12T21:49:18.137Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 7169": {
     "code": "COM 7169",
@@ -1940,7 +5301,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-7169/",
-    "scrapeISO": "2026-09-12T21:49:20.177Z"
+    "scrapeISO": "2026-09-12T21:49:20.177Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 7199": {
     "code": "COM 7199",
@@ -1964,7 +5360,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-7199/",
-    "scrapeISO": "2026-09-12T21:49:22.159Z"
+    "scrapeISO": "2026-09-12T21:49:22.159Z",
+    "apercuHoraires": []
   },
   "COM 7200": {
     "code": "COM 7200",
@@ -1991,7 +5388,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-7200/",
-    "scrapeISO": "2026-09-12T21:49:24.124Z"
+    "scrapeISO": "2026-09-12T21:49:24.124Z",
+    "apercuHoraires": []
   },
   "COM 72502": {
     "code": "COM 72502",
@@ -2014,7 +5412,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-72502/",
-    "scrapeISO": "2026-09-12T21:49:28.182Z"
+    "scrapeISO": "2026-09-12T21:49:28.182Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 7275": {
     "code": "COM 7275",
@@ -2034,7 +5467,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-7275/",
-    "scrapeISO": "2026-09-12T21:49:32.204Z"
+    "scrapeISO": "2026-09-12T21:49:32.204Z",
+    "apercuHoraires": []
   },
   "COM 7502": {
     "code": "COM 7502",
@@ -2054,7 +5488,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-7502/",
-    "scrapeISO": "2026-09-12T21:49:34.174Z"
+    "scrapeISO": "2026-09-12T21:49:34.174Z",
+    "apercuHoraires": []
   },
   "COM 3600": {
     "code": "COM 3600",
@@ -2081,7 +5516,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-3600/",
-    "scrapeISO": "2026-09-12T22:06:32.663Z"
+    "scrapeISO": "2026-09-12T22:06:32.663Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "COM 1500G": {
     "code": "COM 1500G",
@@ -2096,7 +5599,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1500g/",
-    "scrapeISO": "2026-09-13T03:08:09.792Z"
+    "scrapeISO": "2026-09-13T03:08:09.792Z",
+    "apercuHoraires": []
   },
   "COM 2540G": {
     "code": "COM 2540G",
@@ -2111,7 +5615,8 @@
     "restrictionsBrut": "AME2340/ARC2340/COM2540/COM2540G",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-2540g/",
-    "scrapeISO": "2026-09-13T03:08:11.771Z"
+    "scrapeISO": "2026-09-13T03:08:11.771Z",
+    "apercuHoraires": []
   },
   "COM 6815": {
     "code": "COM 6815",
@@ -2131,7 +5636,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6815/",
-    "scrapeISO": "2026-09-13T03:12:25.167Z"
+    "scrapeISO": "2026-09-13T03:12:25.167Z",
+    "apercuHoraires": []
   },
   "COM 6351": {
     "code": "COM 6351",
@@ -2146,7 +5652,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6351/",
-    "scrapeISO": "2026-09-13T03:12:29.025Z"
+    "scrapeISO": "2026-09-13T03:12:29.167Z",
+    "apercuHoraires": []
   },
   "COM 6006": {
     "code": "COM 6006",
@@ -2166,7 +5673,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6006/",
-    "scrapeISO": "2026-09-13T03:12:29.541Z"
+    "scrapeISO": "2026-09-13T03:12:29.541Z",
+    "apercuHoraires": []
   },
   "COM 6007": {
     "code": "COM 6007",
@@ -2186,7 +5694,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-6007/",
-    "scrapeISO": "2026-09-13T03:12:31.282Z"
+    "scrapeISO": "2026-09-13T03:12:31.324Z",
+    "apercuHoraires": []
   },
   "COM 1200": {
     "code": "COM 1200",
@@ -2201,6 +5710,7 @@
     "restrictionsBrut": "COM1200/COM1200G",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/com-1200/",
-    "scrapeISO": "2026-09-13T04:21:47.219Z"
+    "scrapeISO": "2026-09-13T04:21:47.219Z",
+    "apercuHoraires": []
   }
 }

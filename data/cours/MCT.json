@@ -63,7 +63,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6407/",
-    "scrapeISO": "2026-09-13T03:52:48.034Z"
+    "scrapeISO": "2026-09-13T03:52:48.034Z",
+    "apercuHoraires": []
   },
   "MCT 6408": {
     "code": "MCT 6408",
@@ -90,7 +91,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6408/",
-    "scrapeISO": "2026-09-13T03:52:48.181Z"
+    "scrapeISO": "2026-09-13T03:52:48.181Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 6409": {
     "code": "MCT 6409",
@@ -121,7 +144,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6409/",
-    "scrapeISO": "2026-09-13T03:52:51.524Z"
+    "scrapeISO": "2026-09-13T03:52:51.524Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-01",
+                "au": "2026-08-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 6945": {
     "code": "MCT 6945",
@@ -136,7 +201,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6945/",
-    "scrapeISO": "2026-09-13T03:52:54.000Z"
+    "scrapeISO": "2026-09-13T03:52:54.000Z",
+    "apercuHoraires": []
   },
   "MCT 1301": {
     "code": "MCT 1301",
@@ -168,7 +234,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1301/",
-    "scrapeISO": "2026-09-13T03:58:50.643Z"
+    "scrapeISO": "2026-09-13T03:58:50.643Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1302": {
     "code": "MCT 1302",
@@ -191,7 +292,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1302/",
-    "scrapeISO": "2026-09-13T03:58:54.601Z"
+    "scrapeISO": "2026-09-13T03:58:54.601Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 990,
+                  "finMin": 1169
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 990,
+                  "finMin": 1169
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1200": {
     "code": "MCT 1200",
@@ -209,7 +345,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1200/",
-    "scrapeISO": "2026-09-13T04:27:16.932Z"
+    "scrapeISO": "2026-09-13T04:27:16.932Z",
+    "apercuHoraires": []
   },
   "MCT 2511": {
     "code": "MCT 2511",
@@ -245,7 +382,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-2511/",
-    "scrapeISO": "2026-09-13T04:31:03.317Z"
+    "scrapeISO": "2026-09-13T04:31:03.317Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 2512": {
     "code": "MCT 2512",
@@ -272,7 +431,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-2512/",
-    "scrapeISO": "2026-09-13T04:31:05.296Z"
+    "scrapeISO": "2026-09-13T04:31:05.296Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 2513": {
     "code": "MCT 2513",
@@ -299,7 +480,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-2513/",
-    "scrapeISO": "2026-09-13T04:31:07.952Z"
+    "scrapeISO": "2026-09-13T04:31:07.952Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 2514": {
     "code": "MCT 2514",
@@ -326,7 +529,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-2514/",
-    "scrapeISO": "2026-09-13T04:31:09.988Z"
+    "scrapeISO": "2026-09-13T04:31:09.988Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 3530": {
     "code": "MCT 3530",
@@ -354,7 +579,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-3530/",
-    "scrapeISO": "2026-09-13T04:31:12.050Z"
+    "scrapeISO": "2026-09-13T04:31:12.050Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 3511X": {
     "code": "MCT 3511X",
@@ -377,7 +644,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-3511x/",
-    "scrapeISO": "2026-09-13T04:31:16.342Z"
+    "scrapeISO": "2026-09-13T04:31:16.342Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 3512X": {
     "code": "MCT 3512X",
@@ -400,7 +702,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-3512x/",
-    "scrapeISO": "2026-09-13T04:31:18.275Z"
+    "scrapeISO": "2026-09-13T04:31:18.275Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 7130A": {
     "code": "MCT 7130A",
@@ -424,7 +761,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130a/",
-    "scrapeISO": "2026-09-13T04:48:53.887Z"
+    "scrapeISO": "2026-09-13T04:48:53.887Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 7130B": {
     "code": "MCT 7130B",
@@ -451,7 +810,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130b/",
-    "scrapeISO": "2026-09-13T04:48:56.006Z"
+    "scrapeISO": "2026-09-13T04:48:56.006Z",
+    "apercuHoraires": []
   },
   "MCT 7130C": {
     "code": "MCT 7130C",
@@ -478,7 +838,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130c/",
-    "scrapeISO": "2026-09-13T04:48:58.301Z"
+    "scrapeISO": "2026-09-13T04:48:58.301Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 7130D": {
     "code": "MCT 7130D",
@@ -505,7 +887,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130d/",
-    "scrapeISO": "2026-09-13T04:49:00.020Z"
+    "scrapeISO": "2026-09-13T04:49:00.020Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 7930": {
     "code": "MCT 7930",
@@ -533,7 +937,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7930/",
-    "scrapeISO": "2026-09-13T04:49:14.690Z"
+    "scrapeISO": "2026-09-13T04:49:14.690Z",
+    "apercuHoraires": []
   },
   "MCT 7962": {
     "code": "MCT 7962",
@@ -548,7 +953,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7962/",
-    "scrapeISO": "2026-09-13T04:49:18.968Z"
+    "scrapeISO": "2026-09-13T04:49:18.968Z",
+    "apercuHoraires": []
   },
   "MCT 6301": {
     "code": "MCT 6301",
@@ -568,7 +974,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6301/",
-    "scrapeISO": "2026-09-13T05:08:07.351Z"
+    "scrapeISO": "2026-09-13T05:08:07.351Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 6302": {
     "code": "MCT 6302",
@@ -591,7 +1032,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6302/",
-    "scrapeISO": "2026-09-13T05:09:15.715Z"
+    "scrapeISO": "2026-09-13T05:09:15.715Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 6211X": {
     "code": "MCT 6211X",
@@ -611,7 +1087,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6211x/",
-    "scrapeISO": "2026-09-13T06:21:06.251Z"
+    "scrapeISO": "2026-09-13T06:21:06.251Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-01",
+                "au": "2026-08-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 6513": {
     "code": "MCT 6513",
@@ -631,7 +1129,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6513/",
-    "scrapeISO": "2026-09-13T06:21:06.427Z"
+    "scrapeISO": "2026-09-13T06:21:06.427Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1020,
+                  "finMin": 1199
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1020,
+                  "finMin": 1199
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 6514": {
     "code": "MCT 6514",
@@ -654,7 +1187,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6514/",
-    "scrapeISO": "2026-09-13T06:21:10.101Z"
+    "scrapeISO": "2026-09-13T06:21:10.101Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1020,
+                  "finMin": 1199
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1020,
+                  "finMin": 1199
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 6512": {
     "code": "MCT 6512",
@@ -681,7 +1249,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6512/",
-    "scrapeISO": "2026-09-13T06:21:22.292Z"
+    "scrapeISO": "2026-09-13T06:21:22.292Z",
+    "apercuHoraires": []
   },
   "MCT 6531": {
     "code": "MCT 6531",
@@ -696,7 +1265,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6531/",
-    "scrapeISO": "2026-09-13T06:21:30.123Z"
+    "scrapeISO": "2026-09-13T06:21:30.123Z",
+    "apercuHoraires": []
   },
   "MCT 6532": {
     "code": "MCT 6532",
@@ -723,7 +1293,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6532/",
-    "scrapeISO": "2026-09-13T06:21:32.387Z"
+    "scrapeISO": "2026-09-13T06:21:32.387Z",
+    "apercuHoraires": []
   },
   "MCT 6533E": {
     "code": "MCT 6533E",
@@ -750,7 +1321,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6533e/",
-    "scrapeISO": "2026-09-13T06:21:34.281Z"
+    "scrapeISO": "2026-09-13T06:21:34.281Z",
+    "apercuHoraires": []
   },
   "MCT 6534E": {
     "code": "MCT 6534E",
@@ -777,7 +1349,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6534e/",
-    "scrapeISO": "2026-09-13T06:21:36.715Z"
+    "scrapeISO": "2026-09-13T06:21:36.715Z",
+    "apercuHoraires": []
   },
   "MCT 6920": {
     "code": "MCT 6920",
@@ -792,7 +1365,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6920/",
-    "scrapeISO": "2026-09-13T06:21:36.861Z"
+    "scrapeISO": "2026-09-13T06:21:36.861Z",
+    "apercuHoraires": []
   },
   "MCT 6950E": {
     "code": "MCT 6950E",
@@ -807,7 +1381,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6950e/",
-    "scrapeISO": "2026-09-13T06:21:38.883Z"
+    "scrapeISO": "2026-09-13T06:21:38.883Z",
+    "apercuHoraires": []
   },
   "MCT 6512E": {
     "code": "MCT 6512E",
@@ -834,7 +1409,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6512e/",
-    "scrapeISO": "2026-09-13T06:21:42.780Z"
+    "scrapeISO": "2026-09-13T06:21:42.780Z",
+    "apercuHoraires": []
   },
   "MCT 6531E": {
     "code": "MCT 6531E",
@@ -849,7 +1425,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6531e/",
-    "scrapeISO": "2026-09-13T06:21:50.278Z"
+    "scrapeISO": "2026-09-13T06:21:50.278Z",
+    "apercuHoraires": []
   },
   "MCT 6532E": {
     "code": "MCT 6532E",
@@ -876,7 +1453,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6532e/",
-    "scrapeISO": "2026-09-13T06:21:52.818Z"
+    "scrapeISO": "2026-09-13T06:21:52.818Z",
+    "apercuHoraires": []
   },
   "MCT 6533": {
     "code": "MCT 6533",
@@ -903,7 +1481,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6533/",
-    "scrapeISO": "2026-09-13T06:21:54.672Z"
+    "scrapeISO": "2026-09-13T06:21:54.672Z",
+    "apercuHoraires": []
   },
   "MCT 6534": {
     "code": "MCT 6534",
@@ -930,7 +1509,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6534/",
-    "scrapeISO": "2026-09-13T06:21:56.658Z"
+    "scrapeISO": "2026-09-13T06:21:56.658Z",
+    "apercuHoraires": []
   },
   "MCT 6920E": {
     "code": "MCT 6920E",
@@ -945,7 +1525,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6920e/",
-    "scrapeISO": "2026-09-13T06:21:58.413Z"
+    "scrapeISO": "2026-09-13T06:21:58.413Z",
+    "apercuHoraires": []
   },
   "MCT 6950": {
     "code": "MCT 6950",
@@ -969,7 +1550,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6950/",
-    "scrapeISO": "2026-09-13T06:22:00.565Z"
+    "scrapeISO": "2026-09-13T06:22:00.565Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1601": {
     "code": "MCT 1601",
@@ -996,7 +1599,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1601/",
-    "scrapeISO": "2026-09-13T06:30:17.721Z"
+    "scrapeISO": "2026-09-13T06:30:17.721Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1602": {
     "code": "MCT 1602",
@@ -1023,7 +1648,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1602/",
-    "scrapeISO": "2026-09-13T06:30:21.012Z"
+    "scrapeISO": "2026-09-13T06:30:21.012Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1603": {
     "code": "MCT 1603",
@@ -1046,7 +1693,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1603/",
-    "scrapeISO": "2026-09-13T06:30:27.422Z"
+    "scrapeISO": "2026-09-13T06:30:27.422Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1604": {
     "code": "MCT 1604",
@@ -1069,7 +1738,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1604/",
-    "scrapeISO": "2026-09-13T06:30:29.438Z"
+    "scrapeISO": "2026-09-13T06:30:29.438Z",
+    "apercuHoraires": []
   },
   "MCT 1701": {
     "code": "MCT 1701",
@@ -1096,7 +1766,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1701/",
-    "scrapeISO": "2026-09-13T06:30:31.552Z"
+    "scrapeISO": "2026-09-13T06:30:31.552Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1702": {
     "code": "MCT 1702",
@@ -1123,7 +1815,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1702/",
-    "scrapeISO": "2026-09-13T06:30:33.461Z"
+    "scrapeISO": "2026-09-13T06:30:33.461Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1801": {
     "code": "MCT 1801",
@@ -1150,7 +1864,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1801/",
-    "scrapeISO": "2026-09-13T06:30:38.202Z"
+    "scrapeISO": "2026-09-13T06:30:38.202Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MCT 1802": {
     "code": "MCT 1802",
@@ -1177,6 +1913,28 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1802/",
-    "scrapeISO": "2026-09-13T06:30:39.605Z"
+    "scrapeISO": "2026-09-13T06:30:39.605Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

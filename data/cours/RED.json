@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-2301/",
-    "scrapeISO": "2026-09-13T03:07:45.926Z"
+    "scrapeISO": "2026-09-13T03:07:45.926Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "RED 2041": {
     "code": "RED 2041",
@@ -41,7 +76,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-2041/",
-    "scrapeISO": "2026-09-13T03:08:18.148Z"
+    "scrapeISO": "2026-09-13T03:08:18.148Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "RED 2040": {
     "code": "RED 2040",
@@ -56,7 +159,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-2040/",
-    "scrapeISO": "2026-09-13T03:23:52.768Z"
+    "scrapeISO": "2026-09-13T03:23:52.768Z",
+    "apercuHoraires": []
   },
   "RED 2500": {
     "code": "RED 2500",
@@ -80,7 +184,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-2500/",
-    "scrapeISO": "2026-09-13T03:23:54.760Z"
+    "scrapeISO": "2026-09-13T03:23:54.760Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "RED 3000": {
     "code": "RED 3000",
@@ -103,7 +275,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-3000/",
-    "scrapeISO": "2026-09-13T03:23:56.768Z"
+    "scrapeISO": "2026-09-13T03:23:56.768Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "RED 2101": {
     "code": "RED 2101",
@@ -118,7 +325,8 @@
     "restrictionsBrut": "RED2101/CRE2640",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-2101/",
-    "scrapeISO": "2026-09-13T03:24:03.288Z"
+    "scrapeISO": "2026-09-13T03:24:03.288Z",
+    "apercuHoraires": []
   },
   "RED 3001": {
     "code": "RED 3001",
@@ -149,6 +357,68 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-3001/",
-    "scrapeISO": "2026-09-13T03:24:05.306Z"
+    "scrapeISO": "2026-09-13T03:24:05.306Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-08-14"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

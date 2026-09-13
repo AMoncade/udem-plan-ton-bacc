@@ -52,7 +52,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-1002/",
-    "scrapeISO": "2026-09-11T17:33:59.628Z"
+    "scrapeISO": "2026-09-11T17:33:59.628Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          },
+          {
+            "nom": "A1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 3002": {
     "code": "BIN 3002",
@@ -101,7 +161,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-3002/",
-    "scrapeISO": "2026-09-11T17:34:01.663Z"
+    "scrapeISO": "2026-09-11T17:34:01.663Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 629
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 629
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          },
+          {
+            "nom": "A1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 3005": {
     "code": "BIN 3005",
@@ -158,7 +278,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-3005/",
-    "scrapeISO": "2026-09-11T17:34:03.641Z"
+    "scrapeISO": "2026-09-11T17:34:03.641Z",
+    "apercuHoraires": []
   },
   "BIN 6010": {
     "code": "BIN 6010",
@@ -178,7 +299,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6010/",
-    "scrapeISO": "2026-09-13T03:15:42.583Z"
+    "scrapeISO": "2026-09-13T03:15:42.584Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 6011": {
     "code": "BIN 6011",
@@ -198,7 +354,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6011/",
-    "scrapeISO": "2026-09-13T03:15:44.282Z"
+    "scrapeISO": "2026-09-13T03:15:44.280Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 60052": {
     "code": "BIN 60052",
@@ -221,7 +422,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-60052/",
-    "scrapeISO": "2026-09-13T03:49:00.545Z"
+    "scrapeISO": "2026-09-13T03:49:00.545Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2027-01-13",
+                "au": "2027-01-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-10",
+                "au": "2027-03-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2027-03-24",
+                "au": "2027-04-28"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 6000": {
     "code": "BIN 6000",
@@ -241,7 +487,87 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6000/",
-    "scrapeISO": "2026-09-13T03:49:02.565Z"
+    "scrapeISO": "2026-09-13T03:49:02.565Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 809
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 809
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-04"
+              }
+            ]
+          },
+          {
+            "nom": "A1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-11-02",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 6012": {
     "code": "BIN 6012",
@@ -261,7 +587,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6012/",
-    "scrapeISO": "2026-09-13T03:49:06.538Z"
+    "scrapeISO": "2026-09-13T03:49:06.538Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 6001": {
     "code": "BIN 6001",
@@ -281,7 +642,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6001/",
-    "scrapeISO": "2026-09-13T03:49:08.588Z"
+    "scrapeISO": "2026-09-13T03:49:08.588Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 630,
+                  "finMin": 749
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 630,
+                  "finMin": 749
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 6008": {
     "code": "BIN 6008",
@@ -309,7 +725,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6008/",
-    "scrapeISO": "2026-09-13T03:49:20.018Z"
+    "scrapeISO": "2026-09-13T03:49:20.018Z",
+    "apercuHoraires": []
   },
   "BIN 6007": {
     "code": "BIN 6007",
@@ -337,7 +754,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-6007/",
-    "scrapeISO": "2026-09-13T03:49:22.337Z"
+    "scrapeISO": "2026-09-13T03:49:22.337Z",
+    "apercuHoraires": []
   },
   "BIN 70052": {
     "code": "BIN 70052",
@@ -360,7 +778,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-70052/",
-    "scrapeISO": "2026-09-13T06:33:09.338Z"
+    "scrapeISO": "2026-09-13T06:33:09.338Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2027-01-13",
+                "au": "2027-02-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIN 70062": {
     "code": "BIN 70062",
@@ -383,7 +826,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-70062/",
-    "scrapeISO": "2026-09-13T06:33:13.358Z"
+    "scrapeISO": "2026-09-13T06:33:13.358Z",
+    "apercuHoraires": []
   },
   "BIN 7000": {
     "code": "BIN 7000",
@@ -411,6 +855,7 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bin-7000/",
-    "scrapeISO": "2026-09-13T06:33:15.489Z"
+    "scrapeISO": "2026-09-13T06:33:15.489Z",
+    "apercuHoraires": []
   }
 }

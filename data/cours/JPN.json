@@ -25,7 +25,233 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jpn-1901/",
-    "scrapeISO": "2026-09-11T11:35:46.373Z"
+    "scrapeISO": "2026-09-11T17:31:02.619Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-05-05",
+                "au": "2026-06-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-05-05",
+                "au": "2026-06-16"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              }
+            ]
+          },
+          {
+            "nom": "C",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              }
+            ]
+          },
+          {
+            "nom": "C",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JPN 1902": {
     "code": "JPN 1902",
@@ -49,7 +275,145 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jpn-1902/",
-    "scrapeISO": "2026-09-11T11:35:49.479Z"
+    "scrapeISO": "2026-09-11T17:31:05.736Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-27",
+                "au": "2026-12-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-30",
+                "au": "2026-12-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-08"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-27",
+                "au": "2026-12-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-27",
+                "au": "2026-12-08"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-02-26",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JPN 1903": {
     "code": "JPN 1903",

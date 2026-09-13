@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/eae-6004/",
-    "scrapeISO": "2026-09-13T05:03:16.718Z"
+    "scrapeISO": "2026-09-13T05:03:16.718Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-21"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "EAE 6041A": {
     "code": "EAE 6041A",
@@ -37,7 +72,30 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/eae-6041a/",
-    "scrapeISO": "2026-09-13T05:03:18.835Z"
+    "scrapeISO": "2026-09-13T05:03:18.835Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Lun Lundi , Mar Mardi , Mer Mercredi , Jeu Jeudi , Ven Vendredi , Sam Samedi , Dim Dimanche Du 27/06/2026 au 05/07/2026"
+                },
+                "du": "2026-06-27",
+                "au": "2026-07-05"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "EAE 6041B": {
     "code": "EAE 6041B",
@@ -52,7 +110,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/eae-6041b/",
-    "scrapeISO": "2026-09-13T05:03:22.150Z"
+    "scrapeISO": "2026-09-13T05:03:22.150Z",
+    "apercuHoraires": []
   },
   "EAE 6002": {
     "code": "EAE 6002",
@@ -80,6 +139,7 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/eae-6002/",
-    "scrapeISO": "2026-09-13T06:32:52.994Z"
+    "scrapeISO": "2026-09-13T06:32:52.994Z",
+    "apercuHoraires": []
   }
 }

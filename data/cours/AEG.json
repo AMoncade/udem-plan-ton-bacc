@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aeg-2110/",
-    "scrapeISO": "2026-09-11T12:01:15.764Z"
+    "scrapeISO": "2026-09-11T17:22:38.439Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "AEG 3137": {
     "code": "AEG 3137",
@@ -41,6 +76,74 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aeg-3137/",
-    "scrapeISO": "2026-09-11T12:01:17.275Z"
+    "scrapeISO": "2026-09-11T17:22:41.672Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

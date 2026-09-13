@@ -17,7 +17,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txl-6014/",
-    "scrapeISO": "2026-09-13T03:39:48.633Z"
+    "scrapeISO": "2026-09-13T03:39:48.633Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXL 6010": {
     "code": "TXL 6010",
@@ -37,7 +62,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txl-6010/",
-    "scrapeISO": "2026-09-13T03:43:00.124Z"
+    "scrapeISO": "2026-09-13T03:43:00.124Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-09-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-14",
+                "au": "2026-09-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-21",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXL 6002": {
     "code": "TXL 6002",
@@ -57,7 +127,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txl-6002/",
-    "scrapeISO": "2026-09-13T03:43:20.210Z"
+    "scrapeISO": "2026-09-13T03:43:20.210Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1020,
+                  "finMin": 1199
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1020,
+                  "finMin": 1199
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXL 6016": {
     "code": "TXL 6016",
@@ -77,7 +182,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txl-6016/",
-    "scrapeISO": "2026-09-13T03:43:24.170Z"
+    "scrapeISO": "2026-09-13T03:43:24.170Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXL 6012": {
     "code": "TXL 6012",
@@ -97,6 +227,41 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txl-6012/",
-    "scrapeISO": "2026-09-13T03:43:26.210Z"
+    "scrapeISO": "2026-09-13T03:43:26.210Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

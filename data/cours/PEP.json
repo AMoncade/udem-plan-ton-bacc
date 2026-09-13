@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pep-1000/",
-    "scrapeISO": "2026-09-13T03:22:08.648Z"
+    "scrapeISO": "2026-09-13T03:22:08.648Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-08"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PEP 2000": {
     "code": "PEP 2000",
@@ -37,7 +72,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pep-2000/",
-    "scrapeISO": "2026-09-13T03:22:10.644Z"
+    "scrapeISO": "2026-09-13T03:22:10.644Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-08"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PEP 3000": {
     "code": "PEP 3000",
@@ -57,6 +127,41 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pep-3000/",
-    "scrapeISO": "2026-09-13T03:22:14.042Z"
+    "scrapeISO": "2026-09-13T03:22:14.042Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

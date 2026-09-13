@@ -21,7 +21,100 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-1000/",
-    "scrapeISO": "2026-09-13T03:27:54.140Z"
+    "scrapeISO": "2026-09-13T03:27:54.140Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Y",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 1001": {
     "code": "JES 1001",
@@ -45,7 +138,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-1001/",
-    "scrapeISO": "2026-09-13T03:27:56.266Z"
+    "scrapeISO": "2026-09-13T03:27:56.266Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 1010": {
     "code": "JES 1010",
@@ -69,7 +204,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-1010/",
-    "scrapeISO": "2026-09-13T03:27:58.169Z"
+    "scrapeISO": "2026-09-13T03:27:58.169Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 3010": {
     "code": "JES 3010",
@@ -93,7 +296,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-3010/",
-    "scrapeISO": "2026-09-13T03:27:59.792Z"
+    "scrapeISO": "2026-09-13T03:27:59.792Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 3020": {
     "code": "JES 3020",
@@ -121,7 +392,69 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-3020/",
-    "scrapeISO": "2026-09-13T03:28:02.450Z"
+    "scrapeISO": "2026-09-13T03:28:02.450Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-08-14"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2005": {
     "code": "JES 2005",
@@ -141,7 +474,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2005/",
-    "scrapeISO": "2026-09-13T03:28:04.257Z"
+    "scrapeISO": "2026-09-13T03:28:04.257Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2006D": {
     "code": "JES 2006D",
@@ -161,7 +529,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2006d/",
-    "scrapeISO": "2026-09-13T03:28:06.239Z"
+    "scrapeISO": "2026-09-13T03:28:06.239Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2008": {
     "code": "JES 2008",
@@ -185,7 +575,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2008/",
-    "scrapeISO": "2026-09-13T03:28:08.155Z"
+    "scrapeISO": "2026-09-13T03:28:08.155Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2009": {
     "code": "JES 2009",
@@ -205,7 +663,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2009/",
-    "scrapeISO": "2026-09-13T03:28:08.661Z"
+    "scrapeISO": "2026-09-13T03:28:08.661Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2014Z": {
     "code": "JES 2014Z",
@@ -225,7 +743,142 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2014z/",
-    "scrapeISO": "2026-09-13T03:28:12.529Z"
+    "scrapeISO": "2026-09-13T03:28:12.529Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-10-17",
+                "au": "2026-10-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-10-17",
+                "au": "2026-10-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-10-18",
+                "au": "2026-10-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-10-18",
+                "au": "2026-10-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-10-31",
+                "au": "2026-10-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-10-31",
+                "au": "2026-10-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-11-01",
+                "au": "2026-11-01"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-11-01",
+                "au": "2026-11-01"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-11-14",
+                "au": "2026-11-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-11-14",
+                "au": "2026-11-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-11-15",
+                "au": "2026-11-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-11-15",
+                "au": "2026-11-15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2015D": {
     "code": "JES 2015D",
@@ -240,7 +893,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2015d/",
-    "scrapeISO": "2026-09-13T03:28:14.433Z"
+    "scrapeISO": "2026-09-13T03:28:14.433Z",
+    "apercuHoraires": []
   },
   "JES 2015Y": {
     "code": "JES 2015Y",
@@ -260,7 +914,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2015y/",
-    "scrapeISO": "2026-09-13T03:28:16.491Z"
+    "scrapeISO": "2026-09-13T03:28:16.491Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2015Z": {
     "code": "JES 2015Z",
@@ -288,7 +964,408 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2015z/",
-    "scrapeISO": "2026-09-13T03:28:18.524Z"
+    "scrapeISO": "2026-09-13T03:28:18.524Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-12",
+                "au": "2026-09-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-12",
+                "au": "2026-09-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-13",
+                "au": "2026-09-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-13",
+                "au": "2026-09-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-26",
+                "au": "2026-09-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-26",
+                "au": "2026-09-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-27",
+                "au": "2026-09-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-27",
+                "au": "2026-09-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-10-10",
+                "au": "2026-10-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-10-10",
+                "au": "2026-10-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-10-11",
+                "au": "2026-10-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-10-11",
+                "au": "2026-10-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-17",
+                "au": "2027-01-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-17",
+                "au": "2027-01-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-31",
+                "au": "2027-01-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-31",
+                "au": "2027-01-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-02-14",
+                "au": "2027-02-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-02-14",
+                "au": "2027-02-14"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 2016Z": {
     "code": "JES 2016Z",
@@ -308,7 +1385,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-2016z/",
-    "scrapeISO": "2026-09-13T03:28:18.726Z"
+    "scrapeISO": "2026-09-13T03:28:18.726Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 6000": {
     "code": "JES 6000",
@@ -328,7 +1440,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6000/",
-    "scrapeISO": "2026-09-13T03:42:09.611Z"
+    "scrapeISO": "2026-09-13T03:42:09.611Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 6001": {
     "code": "JES 6001",
@@ -348,7 +1495,142 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6001/",
-    "scrapeISO": "2026-09-13T03:42:11.503Z"
+    "scrapeISO": "2026-09-13T03:42:11.503Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-04",
+                "au": "2026-09-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-09-04",
+                "au": "2026-09-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-05",
+                "au": "2026-09-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-18",
+                "au": "2026-09-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-09-18",
+                "au": "2026-09-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-19",
+                "au": "2026-09-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-02",
+                "au": "2026-10-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-02",
+                "au": "2026-10-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-03",
+                "au": "2026-10-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-16",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-16",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-17",
+                "au": "2026-10-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 6002": {
     "code": "JES 6002",
@@ -371,7 +1653,142 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6002/",
-    "scrapeISO": "2026-09-13T03:42:15.264Z"
+    "scrapeISO": "2026-09-13T03:42:15.264Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-22",
+                "au": "2027-01-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-22",
+                "au": "2027-01-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-23",
+                "au": "2027-01-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-19",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-02-19",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-20",
+                "au": "2027-02-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-19",
+                "au": "2027-03-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-19",
+                "au": "2027-03-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-20",
+                "au": "2027-03-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-23",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-23",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-24",
+                "au": "2027-04-24"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 6003": {
     "code": "JES 6003",
@@ -391,7 +1808,142 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6003/",
-    "scrapeISO": "2026-09-13T03:42:15.663Z"
+    "scrapeISO": "2026-09-13T03:42:15.663Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-30",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-30",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-31",
+                "au": "2026-10-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-13",
+                "au": "2026-11-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-13",
+                "au": "2026-11-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-14",
+                "au": "2026-11-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-27",
+                "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-27",
+                "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-28",
+                "au": "2026-11-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-12-11",
+                "au": "2026-12-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-12-11",
+                "au": "2026-12-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-12-12",
+                "au": "2026-12-12"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 6004": {
     "code": "JES 6004",
@@ -414,7 +1966,142 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6004/",
-    "scrapeISO": "2026-09-13T03:42:19.482Z"
+    "scrapeISO": "2026-09-13T03:42:19.482Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-08",
+                "au": "2027-01-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-08",
+                "au": "2027-01-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-09",
+                "au": "2027-01-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-05",
+                "au": "2027-02-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-02-05",
+                "au": "2027-02-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-06",
+                "au": "2027-02-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-12",
+                "au": "2027-03-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-12",
+                "au": "2027-03-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-13",
+                "au": "2027-03-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-09",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-09",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-10",
+                "au": "2027-04-10"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 6005": {
     "code": "JES 6005",
@@ -434,7 +2121,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6005/",
-    "scrapeISO": "2026-09-13T03:42:19.662Z"
+    "scrapeISO": "2026-09-13T03:42:19.662Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "JES 6020": {
     "code": "JES 6020",
@@ -449,7 +2171,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6020/",
-    "scrapeISO": "2026-09-13T03:42:23.364Z"
+    "scrapeISO": "2026-09-13T03:42:23.364Z",
+    "apercuHoraires": []
   },
   "JES 6101": {
     "code": "JES 6101",
@@ -464,7 +2187,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6101/",
-    "scrapeISO": "2026-09-13T03:42:27.166Z"
+    "scrapeISO": "2026-09-13T03:42:27.166Z",
+    "apercuHoraires": []
   },
   "JES 6102": {
     "code": "JES 6102",
@@ -479,7 +2203,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6102/",
-    "scrapeISO": "2026-09-13T03:42:29.423Z"
+    "scrapeISO": "2026-09-13T03:42:29.423Z",
+    "apercuHoraires": []
   },
   "JES 6103": {
     "code": "JES 6103",
@@ -494,7 +2219,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6103/",
-    "scrapeISO": "2026-09-13T03:42:30.967Z"
+    "scrapeISO": "2026-09-13T03:42:30.967Z",
+    "apercuHoraires": []
   },
   "JES 6104": {
     "code": "JES 6104",
@@ -509,6 +2235,7 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jes-6104/",
-    "scrapeISO": "2026-09-13T03:42:33.471Z"
+    "scrapeISO": "2026-09-13T03:42:33.471Z",
+    "apercuHoraires": []
   }
 }

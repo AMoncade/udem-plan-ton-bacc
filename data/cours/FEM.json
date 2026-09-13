@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/fem-2000/",
-    "scrapeISO": "2026-09-11T11:35:10.935Z"
+    "scrapeISO": "2026-09-11T17:44:14.168Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "FEM 3300": {
     "code": "FEM 3300",
@@ -32,7 +67,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/fem-3300/",
-    "scrapeISO": "2026-09-11T17:29:48.544Z"
+    "scrapeISO": "2026-09-11T17:29:48.544Z",
+    "apercuHoraires": []
   },
   "FEM 1000": {
     "code": "FEM 1000",
@@ -52,7 +88,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/fem-1000/",
-    "scrapeISO": "2026-09-11T17:44:11.393Z"
+    "scrapeISO": "2026-09-11T17:44:11.393Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-08"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "FEM 3200": {
     "code": "FEM 3200",
@@ -72,7 +143,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/fem-3200/",
-    "scrapeISO": "2026-09-13T03:17:45.359Z"
+    "scrapeISO": "2026-09-13T03:17:45.359Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "FEM 6000": {
     "code": "FEM 6000",
@@ -92,6 +198,41 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/fem-6000/",
-    "scrapeISO": "2026-09-13T04:19:58.106Z"
+    "scrapeISO": "2026-09-13T04:19:58.106Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -17,7 +17,106 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/etm-1200/",
-    "scrapeISO": "2026-09-13T03:07:26.472Z"
+    "scrapeISO": "2026-09-13T03:07:26.472Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-09-04",
+                "au": "2026-10-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-09",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-16",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-30",
+                "au": "2026-11-06"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Ven Vendredi Du 13/11/2026 au 13/11/2026"
+                },
+                "du": "2026-11-13",
+                "au": "2026-11-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-20",
+                "au": "2026-11-20"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Ven Vendredi Du 27/11/2026 au 27/11/2026"
+                },
+                "du": "2026-11-27",
+                "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-12-04",
+                "au": "2026-12-04"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Ven Vendredi Du 11/12/2026 au 11/12/2026"
+                },
+                "du": "2026-12-11",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "ETM 1400": {
     "code": "ETM 1400",
@@ -37,7 +136,36 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/etm-1400/",
-    "scrapeISO": "2026-09-13T03:13:25.952Z"
+    "scrapeISO": "2026-09-13T03:13:26.002Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "ETM 2200": {
     "code": "ETM 2200",
@@ -60,7 +188,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/etm-2200/",
-    "scrapeISO": "2026-09-13T04:05:12.239Z"
+    "scrapeISO": "2026-09-13T04:05:12.239Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "ETM 3202": {
     "code": "ETM 3202",
@@ -75,7 +238,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/etm-3202/",
-    "scrapeISO": "2026-09-13T04:06:59.655Z"
+    "scrapeISO": "2026-09-13T04:06:59.655Z",
+    "apercuHoraires": []
   },
   "ETM 2008": {
     "code": "ETM 2008",
@@ -95,7 +259,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/etm-2008/",
-    "scrapeISO": "2026-09-13T04:23:07.451Z"
+    "scrapeISO": "2026-09-13T04:23:07.451Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "ETM 2102": {
     "code": "ETM 2102",
@@ -115,6 +314,41 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/etm-2102/",
-    "scrapeISO": "2026-09-13T04:23:09.994Z"
+    "scrapeISO": "2026-09-13T04:23:09.994Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

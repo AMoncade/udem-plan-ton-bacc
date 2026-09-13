@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cep-1000/",
-    "scrapeISO": "2026-09-11T17:47:05.463Z"
+    "scrapeISO": "2026-09-11T17:47:05.463Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CEP 1500": {
     "code": "CEP 1500",
@@ -37,7 +72,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cep-1500/",
-    "scrapeISO": "2026-09-11T17:47:08.457Z"
+    "scrapeISO": "2026-09-11T17:47:08.457Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CEP 2000": {
     "code": "CEP 2000",
@@ -60,7 +130,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cep-2000/",
-    "scrapeISO": "2026-09-11T17:47:10.439Z"
+    "scrapeISO": "2026-09-11T17:47:10.439Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CEP 3000": {
     "code": "CEP 3000",
@@ -83,6 +188,41 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cep-3000/",
-    "scrapeISO": "2026-09-11T17:47:11.813Z"
+    "scrapeISO": "2026-09-11T17:47:11.813Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -20,7 +20,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grm-1901/",
-    "scrapeISO": "2026-09-11T11:35:13.218Z"
+    "scrapeISO": "2026-09-11T17:30:06.457Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-08"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "GRM 1902": {
     "code": "GRM 1902",
@@ -40,7 +75,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grm-1902/",
-    "scrapeISO": "2026-09-11T11:35:15.301Z"
+    "scrapeISO": "2026-09-11T17:30:09.541Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "GRM 1903": {
     "code": "GRM 1903",
@@ -78,7 +148,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grm-3000/",
-    "scrapeISO": "2026-09-13T03:08:21.933Z"
+    "scrapeISO": "2026-09-13T03:08:21.933Z",
+    "apercuHoraires": []
   },
   "GRM 3006": {
     "code": "GRM 3006",
@@ -93,7 +164,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grm-3006/",
-    "scrapeISO": "2026-09-13T03:08:23.933Z"
+    "scrapeISO": "2026-09-13T03:08:23.933Z",
+    "apercuHoraires": []
   },
   "GRM 3100": {
     "code": "GRM 3100",
@@ -108,6 +180,7 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grm-3100/",
-    "scrapeISO": "2026-09-13T03:08:24.135Z"
+    "scrapeISO": "2026-09-13T03:08:24.135Z",
+    "apercuHoraires": []
   }
 }

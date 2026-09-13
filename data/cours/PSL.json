@@ -21,7 +21,135 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-1993/",
-    "scrapeISO": "2026-09-11T17:31:43.615Z"
+    "scrapeISO": "2026-09-11T17:31:43.615Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-09",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          },
+          {
+            "nom": "O",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          },
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 1982": {
     "code": "PSL 1982",
@@ -41,7 +169,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-1982/",
-    "scrapeISO": "2026-09-11T17:35:25.443Z"
+    "scrapeISO": "2026-09-11T17:35:25.443Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          },
+          {
+            "nom": "O",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 3062": {
     "code": "PSL 3062",
@@ -77,7 +265,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-3062/",
-    "scrapeISO": "2026-09-11T17:35:27.477Z"
+    "scrapeISO": "2026-09-11T17:35:27.477Z",
+    "apercuHoraires": []
   },
   "PSL 6021B": {
     "code": "PSL 6021B",
@@ -97,7 +286,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6021b/",
-    "scrapeISO": "2026-09-11T17:37:46.592Z"
+    "scrapeISO": "2026-09-11T17:37:46.592Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-02-22",
+                "au": "2027-03-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-02-22",
+                "au": "2027-03-12"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 6021C": {
     "code": "PSL 6021C",
@@ -117,7 +341,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6021c/",
-    "scrapeISO": "2026-09-11T17:37:48.654Z"
+    "scrapeISO": "2026-09-11T17:37:48.654Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-01-29"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 6021D": {
     "code": "PSL 6021D",
@@ -137,7 +396,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6021d/",
-    "scrapeISO": "2026-09-11T17:37:50.128Z"
+    "scrapeISO": "2026-09-11T17:37:50.128Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-29",
+                "au": "2027-04-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-05",
+                "au": "2027-04-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 6021E": {
     "code": "PSL 6021E",
@@ -157,7 +451,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6021e/",
-    "scrapeISO": "2026-09-11T17:37:52.499Z"
+    "scrapeISO": "2026-09-11T17:37:52.499Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-15",
+                "au": "2027-03-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 1001": {
     "code": "PSL 1001",
@@ -177,7 +506,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-1001/",
-    "scrapeISO": "2026-09-11T18:59:52.011Z"
+    "scrapeISO": "2026-09-11T18:59:52.011Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 6170": {
     "code": "PSL 6170",
@@ -197,7 +561,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6170/",
-    "scrapeISO": "2026-09-13T03:09:59.336Z"
+    "scrapeISO": "2026-09-13T03:09:59.336Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-02-22",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 60612": {
     "code": "PSL 60612",
@@ -224,7 +623,55 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-60612/",
-    "scrapeISO": "2026-09-13T03:10:20.066Z"
+    "scrapeISO": "2026-09-13T03:10:20.066Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-24",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 60622": {
     "code": "PSL 60622",
@@ -251,7 +698,55 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-60622/",
-    "scrapeISO": "2026-09-13T03:10:24.131Z"
+    "scrapeISO": "2026-09-13T03:10:24.131Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-24",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 7902": {
     "code": "PSL 7902",
@@ -279,7 +774,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-7902/",
-    "scrapeISO": "2026-09-13T03:10:27.711Z"
+    "scrapeISO": "2026-09-13T03:10:27.711Z",
+    "apercuHoraires": []
   },
   "PSL 6020": {
     "code": "PSL 6020",
@@ -294,7 +790,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6020/",
-    "scrapeISO": "2026-09-13T03:10:31.118Z"
+    "scrapeISO": "2026-09-13T03:10:31.118Z",
+    "apercuHoraires": []
   },
   "PSL 7903": {
     "code": "PSL 7903",
@@ -314,7 +811,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-7903/",
-    "scrapeISO": "2026-09-13T03:10:31.716Z"
+    "scrapeISO": "2026-09-13T03:10:31.716Z",
+    "apercuHoraires": []
   },
   "PSL 6090": {
     "code": "PSL 6090",
@@ -334,7 +832,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6090/",
-    "scrapeISO": "2026-09-13T03:12:21.174Z"
+    "scrapeISO": "2026-09-13T03:12:21.174Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-18",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 6902": {
     "code": "PSL 6902",
@@ -362,7 +895,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6902/",
-    "scrapeISO": "2026-09-13T03:12:23.159Z"
+    "scrapeISO": "2026-09-13T03:12:23.261Z",
+    "apercuHoraires": []
   },
   "PSL 1984": {
     "code": "PSL 1984",
@@ -382,7 +916,147 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-1984/",
-    "scrapeISO": "2026-09-13T04:01:57.581Z"
+    "scrapeISO": "2026-09-13T04:01:57.581Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "E",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-01-07",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 629
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 629
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-03-15",
+                "au": "2027-04-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-04-12",
+                "au": "2027-04-23"
+              }
+            ]
+          },
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-01-07",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 629
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 629
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-03-15",
+                "au": "2027-04-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-04-12",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 3063": {
     "code": "PSL 3063",
@@ -402,7 +1076,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-3063/",
-    "scrapeISO": "2026-09-13T04:09:18.020Z"
+    "scrapeISO": "2026-09-13T04:09:18.020Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PSL 6001": {
     "code": "PSL 6001",
@@ -426,6 +1135,7 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/psl-6001/",
-    "scrapeISO": "2026-09-13T06:40:41.521Z"
+    "scrapeISO": "2026-09-13T06:40:41.521Z",
+    "apercuHoraires": []
   }
 }

@@ -21,7 +21,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pgm-6001/",
-    "scrapeISO": "2026-09-11T17:38:09.508Z"
+    "scrapeISO": "2026-09-11T17:38:09.508Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-01",
+                "au": "2027-04-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PGM 7054": {
     "code": "PGM 7054",
@@ -45,7 +80,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pgm-7054/",
-    "scrapeISO": "2026-09-13T03:10:11.371Z"
+    "scrapeISO": "2026-09-13T03:10:11.371Z",
+    "apercuHoraires": []
   },
   "PGM 7055": {
     "code": "PGM 7055",
@@ -69,7 +105,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pgm-7055/",
-    "scrapeISO": "2026-09-13T03:10:13.361Z"
+    "scrapeISO": "2026-09-13T03:10:13.361Z",
+    "apercuHoraires": []
   },
   "PGM 6078": {
     "code": "PGM 6078",
@@ -89,7 +126,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pgm-6078/",
-    "scrapeISO": "2026-09-13T03:41:37.243Z"
+    "scrapeISO": "2026-09-13T03:41:37.243Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-11-27"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "PGM 6054": {
     "code": "PGM 6054",
@@ -113,6 +185,7 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pgm-6054/",
-    "scrapeISO": "2026-09-13T03:55:28.230Z"
+    "scrapeISO": "2026-09-13T03:55:28.230Z",
+    "apercuHoraires": []
   }
 }

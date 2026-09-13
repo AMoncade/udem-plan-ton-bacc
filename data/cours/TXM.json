@@ -25,7 +25,69 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-1150d/",
-    "scrapeISO": "2026-09-13T03:29:17.728Z"
+    "scrapeISO": "2026-09-13T03:29:17.728Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 1000D": {
     "code": "TXM 1000D",
@@ -53,7 +115,69 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-1000d/",
-    "scrapeISO": "2026-09-13T03:33:08.458Z"
+    "scrapeISO": "2026-09-13T03:33:08.458Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 1111": {
     "code": "TXM 1111",
@@ -77,7 +201,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-1111/",
-    "scrapeISO": "2026-09-13T04:11:05.049Z"
+    "scrapeISO": "2026-09-13T04:11:05.049Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 1221": {
     "code": "TXM 1221",
@@ -92,7 +284,8 @@
     "restrictionsBrut": "PSY3035/TXM1221/TXM1221D",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-1221/",
-    "scrapeISO": "2026-09-13T04:12:59.435Z"
+    "scrapeISO": "2026-09-13T04:12:59.435Z",
+    "apercuHoraires": []
   },
   "TXM 1200D": {
     "code": "TXM 1200D",
@@ -116,7 +309,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-1200d/",
-    "scrapeISO": "2026-09-13T04:14:11.351Z"
+    "scrapeISO": "2026-09-13T04:14:11.351Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 2000D": {
     "code": "TXM 2000D",
@@ -140,7 +375,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-2000d/",
-    "scrapeISO": "2026-09-13T04:14:13.401Z"
+    "scrapeISO": "2026-09-13T04:14:13.401Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 3400": {
     "code": "TXM 3400",
@@ -184,7 +461,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-3400/",
-    "scrapeISO": "2026-09-13T04:14:15.356Z"
+    "scrapeISO": "2026-09-13T04:14:15.356Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 3500": {
     "code": "TXM 3500",
@@ -228,7 +573,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-3500/",
-    "scrapeISO": "2026-09-13T04:14:17.388Z"
+    "scrapeISO": "2026-09-13T04:14:17.388Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 3510": {
     "code": "TXM 3510",
@@ -276,7 +689,408 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-3510/",
-    "scrapeISO": "2026-09-13T04:14:19.426Z"
+    "scrapeISO": "2026-09-13T04:14:19.426Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-09",
+                "au": "2026-05-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-05-23",
+                "au": "2026-05-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-06-06",
+                "au": "2026-06-07"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-12",
+                "au": "2026-09-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-12",
+                "au": "2026-09-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-13",
+                "au": "2026-09-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-13",
+                "au": "2026-09-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-26",
+                "au": "2026-09-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-26",
+                "au": "2026-09-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-09-27",
+                "au": "2026-09-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-09-27",
+                "au": "2026-09-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-10-10",
+                "au": "2026-10-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-10-10",
+                "au": "2026-10-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2026-10-11",
+                "au": "2026-10-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2026-10-11",
+                "au": "2026-10-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-09",
+                "au": "2027-01-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-09",
+                "au": "2027-01-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-10",
+                "au": "2027-01-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-10",
+                "au": "2027-01-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-23",
+                "au": "2027-01-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-23",
+                "au": "2027-01-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-24",
+                "au": "2027-01-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-24",
+                "au": "2027-01-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-02-06",
+                "au": "2027-02-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-02-06",
+                "au": "2027-02-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-02-07",
+                "au": "2027-02-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-02-07",
+                "au": "2027-02-07"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 3520": {
     "code": "TXM 3520",
@@ -316,7 +1130,142 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-3520/",
-    "scrapeISO": "2026-09-13T04:14:23.152Z"
+    "scrapeISO": "2026-09-13T04:14:23.152Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-17",
+                "au": "2027-01-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-17",
+                "au": "2027-01-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-01-31",
+                "au": "2027-01-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-01-31",
+                "au": "2027-01-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-02-14",
+                "au": "2027-02-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-02-14",
+                "au": "2027-02-14"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 3530": {
     "code": "TXM 3530",
@@ -339,7 +1288,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-3530/",
-    "scrapeISO": "2026-09-13T04:14:23.471Z"
+    "scrapeISO": "2026-09-13T04:14:23.471Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 3600": {
     "code": "TXM 3600",
@@ -449,7 +1433,69 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-3600/",
-    "scrapeISO": "2026-09-13T04:14:25.448Z"
+    "scrapeISO": "2026-09-13T04:14:25.448Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-08-14"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 2100D": {
     "code": "TXM 2100D",
@@ -473,7 +1519,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-2100d/",
-    "scrapeISO": "2026-09-13T04:14:27.424Z"
+    "scrapeISO": "2026-09-13T04:14:27.424Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 3540": {
     "code": "TXM 3540",
@@ -491,7 +1579,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-3540/",
-    "scrapeISO": "2026-09-13T04:14:29.437Z"
+    "scrapeISO": "2026-09-13T04:14:29.437Z",
+    "apercuHoraires": []
   },
   "TXM 1111D": {
     "code": "TXM 1111D",
@@ -511,7 +1600,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-1111d/",
-    "scrapeISO": "2026-09-13T04:39:04.477Z"
+    "scrapeISO": "2026-09-13T04:39:04.477Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "S",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-14"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "TXM 1221D": {
     "code": "TXM 1221D",
@@ -535,6 +1646,48 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/txm-1221d/",
-    "scrapeISO": "2026-09-13T04:52:38.198Z"
+    "scrapeISO": "2026-09-13T04:52:38.198Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "S",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "S",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

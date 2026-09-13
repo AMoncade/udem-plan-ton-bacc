@@ -70,7 +70,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6491/",
-    "scrapeISO": "2026-09-13T03:12:12.910Z"
+    "scrapeISO": "2026-09-13T03:12:12.910Z",
+    "apercuHoraires": []
   },
   "MIN 7042": {
     "code": "MIN 7042",
@@ -90,7 +91,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7042/",
-    "scrapeISO": "2026-09-13T03:36:55.497Z"
+    "scrapeISO": "2026-09-13T03:36:55.497Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6040": {
     "code": "MIN 6040",
@@ -114,7 +150,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6040/",
-    "scrapeISO": "2026-09-13T03:37:01.187Z"
+    "scrapeISO": "2026-09-13T03:37:01.187Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6041": {
     "code": "MIN 6041",
@@ -137,7 +208,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6041/",
-    "scrapeISO": "2026-09-13T03:37:03.854Z"
+    "scrapeISO": "2026-09-13T03:37:03.854Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6043": {
     "code": "MIN 6043",
@@ -164,7 +270,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6043/",
-    "scrapeISO": "2026-09-13T03:37:05.871Z"
+    "scrapeISO": "2026-09-13T03:37:05.871Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6957": {
     "code": "MIN 6957",
@@ -179,7 +320,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6957/",
-    "scrapeISO": "2026-09-13T03:37:19.153Z"
+    "scrapeISO": "2026-09-13T03:37:19.153Z",
+    "apercuHoraires": []
   },
   "MIN 7950": {
     "code": "MIN 7950",
@@ -207,7 +349,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7950/",
-    "scrapeISO": "2026-09-13T03:37:23.377Z"
+    "scrapeISO": "2026-09-13T03:37:23.377Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6445": {
     "code": "MIN 6445",
@@ -227,7 +391,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6445/",
-    "scrapeISO": "2026-09-13T03:37:25.264Z"
+    "scrapeISO": "2026-09-13T03:37:25.264Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6446": {
     "code": "MIN 6446",
@@ -250,7 +436,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6446/",
-    "scrapeISO": "2026-09-13T03:37:27.226Z"
+    "scrapeISO": "2026-09-13T03:37:27.226Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7541": {
     "code": "MIN 7541",
@@ -265,7 +473,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7541/",
-    "scrapeISO": "2026-09-13T03:37:42.162Z"
+    "scrapeISO": "2026-09-13T03:37:42.162Z",
+    "apercuHoraires": []
   },
   "MIN 7542": {
     "code": "MIN 7542",
@@ -283,7 +492,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7542/",
-    "scrapeISO": "2026-09-13T03:37:44.094Z"
+    "scrapeISO": "2026-09-13T03:37:44.094Z",
+    "apercuHoraires": []
   },
   "MIN 7543": {
     "code": "MIN 7543",
@@ -301,7 +511,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7543/",
-    "scrapeISO": "2026-09-13T03:37:46.093Z"
+    "scrapeISO": "2026-09-13T03:37:46.093Z",
+    "apercuHoraires": []
   },
   "MIN 7544": {
     "code": "MIN 7544",
@@ -319,7 +530,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7544/",
-    "scrapeISO": "2026-09-13T03:37:47.701Z"
+    "scrapeISO": "2026-09-13T03:37:47.701Z",
+    "apercuHoraires": []
   },
   "MIN 7383": {
     "code": "MIN 7383",
@@ -339,7 +551,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7383/",
-    "scrapeISO": "2026-09-13T03:45:12.594Z"
+    "scrapeISO": "2026-09-13T03:45:12.594Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 749
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 749
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6948": {
     "code": "MIN 6948",
@@ -354,7 +601,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6948/",
-    "scrapeISO": "2026-09-13T03:45:35.002Z"
+    "scrapeISO": "2026-09-13T03:45:35.002Z",
+    "apercuHoraires": []
   },
   "MIN 6949": {
     "code": "MIN 6949",
@@ -369,7 +617,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6949/",
-    "scrapeISO": "2026-09-13T03:45:35.313Z"
+    "scrapeISO": "2026-09-13T03:45:35.313Z",
+    "apercuHoraires": []
   },
   "MIN 7968": {
     "code": "MIN 7968",
@@ -393,7 +642,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7968/",
-    "scrapeISO": "2026-09-13T03:45:39.289Z"
+    "scrapeISO": "2026-09-13T03:45:39.289Z",
+    "apercuHoraires": []
   },
   "MIN 7969": {
     "code": "MIN 7969",
@@ -417,7 +667,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7969/",
-    "scrapeISO": "2026-09-13T03:45:42.985Z"
+    "scrapeISO": "2026-09-13T03:45:42.985Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7970": {
     "code": "MIN 7970",
@@ -445,7 +717,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7970/",
-    "scrapeISO": "2026-09-13T03:45:44.928Z"
+    "scrapeISO": "2026-09-13T03:45:44.928Z",
+    "apercuHoraires": []
   },
   "MIN 7491": {
     "code": "MIN 7491",
@@ -460,7 +733,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7491/",
-    "scrapeISO": "2026-09-13T03:45:49.354Z"
+    "scrapeISO": "2026-09-13T03:45:49.354Z",
+    "apercuHoraires": []
   },
   "MIN 6831": {
     "code": "MIN 6831",
@@ -480,7 +754,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6831/",
-    "scrapeISO": "2026-09-13T03:45:51.438Z"
+    "scrapeISO": "2026-09-13T03:45:51.438Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 720,
+                  "finMin": 809
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 720,
+                  "finMin": 809
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6832": {
     "code": "MIN 6832",
@@ -503,7 +812,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6832/",
-    "scrapeISO": "2026-09-13T03:45:55.502Z"
+    "scrapeISO": "2026-09-13T03:45:55.502Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 720,
+                  "finMin": 809
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 720,
+                  "finMin": 809
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7961": {
     "code": "MIN 7961",
@@ -527,7 +871,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7961/",
-    "scrapeISO": "2026-09-13T03:45:57.341Z"
+    "scrapeISO": "2026-09-13T03:45:57.341Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7962": {
     "code": "MIN 7962",
@@ -558,7 +924,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7962/",
-    "scrapeISO": "2026-09-13T03:45:58.141Z"
+    "scrapeISO": "2026-09-13T03:45:58.141Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7963": {
     "code": "MIN 7963",
@@ -582,7 +970,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7963/",
-    "scrapeISO": "2026-09-13T03:46:01.304Z"
+    "scrapeISO": "2026-09-13T03:46:01.304Z",
+    "apercuHoraires": []
   },
   "MIN 7964": {
     "code": "MIN 7964",
@@ -622,7 +1011,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7964/",
-    "scrapeISO": "2026-09-13T03:46:03.218Z"
+    "scrapeISO": "2026-09-13T03:46:03.218Z",
+    "apercuHoraires": []
   },
   "MIN 6959": {
     "code": "MIN 6959",
@@ -650,7 +1040,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6959/",
-    "scrapeISO": "2026-09-13T03:52:55.986Z"
+    "scrapeISO": "2026-09-13T03:52:55.986Z",
+    "apercuHoraires": []
   },
   "MIN 6960": {
     "code": "MIN 6960",
@@ -678,7 +1069,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6960/",
-    "scrapeISO": "2026-09-13T03:52:57.903Z"
+    "scrapeISO": "2026-09-13T03:52:57.903Z",
+    "apercuHoraires": []
   },
   "MIN 1791": {
     "code": "MIN 1791",
@@ -698,7 +1090,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1791/",
-    "scrapeISO": "2026-09-13T03:58:56.641Z"
+    "scrapeISO": "2026-09-13T03:58:56.641Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1020,
+                  "finMin": 1139
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1020,
+                  "finMin": 1139
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1792": {
     "code": "MIN 1792",
@@ -721,7 +1148,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1792/",
-    "scrapeISO": "2026-09-13T03:58:56.816Z"
+    "scrapeISO": "2026-09-13T03:58:56.816Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1020,
+                  "finMin": 1139
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1020,
+                  "finMin": 1139
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6954": {
     "code": "MIN 6954",
@@ -741,7 +1203,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6954/",
-    "scrapeISO": "2026-09-13T04:21:05.320Z"
+    "scrapeISO": "2026-09-13T04:21:05.320Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1096": {
     "code": "MIN 1096",
@@ -761,7 +1258,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1096/",
-    "scrapeISO": "2026-09-13T04:25:46.202Z"
+    "scrapeISO": "2026-09-13T04:25:46.202Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1097": {
     "code": "MIN 1097",
@@ -784,7 +1316,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1097/",
-    "scrapeISO": "2026-09-13T04:25:48.236Z"
+    "scrapeISO": "2026-09-13T04:25:48.236Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1493": {
     "code": "MIN 1493",
@@ -807,7 +1374,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1493/",
-    "scrapeISO": "2026-09-13T04:25:50.226Z"
+    "scrapeISO": "2026-09-13T04:25:50.226Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1494": {
     "code": "MIN 1494",
@@ -830,7 +1432,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1494/",
-    "scrapeISO": "2026-09-13T04:25:52.322Z"
+    "scrapeISO": "2026-09-13T04:25:52.322Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1931": {
     "code": "MIN 1931",
@@ -850,7 +1487,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1931/",
-    "scrapeISO": "2026-09-13T04:25:54.383Z"
+    "scrapeISO": "2026-09-13T04:25:54.383Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 840,
+                  "finMin": 899
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 840,
+                  "finMin": 899
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1941": {
     "code": "MIN 1941",
@@ -870,7 +1542,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1941/",
-    "scrapeISO": "2026-09-13T04:25:56.277Z"
+    "scrapeISO": "2026-09-13T04:25:56.277Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1942": {
     "code": "MIN 1942",
@@ -893,7 +1600,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1942/",
-    "scrapeISO": "2026-09-13T04:25:58.077Z"
+    "scrapeISO": "2026-09-13T04:25:58.077Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1943": {
     "code": "MIN 1943",
@@ -916,7 +1658,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1943/",
-    "scrapeISO": "2026-09-13T04:26:00.686Z"
+    "scrapeISO": "2026-09-13T04:26:00.686Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1944": {
     "code": "MIN 1944",
@@ -939,7 +1716,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1944/",
-    "scrapeISO": "2026-09-13T04:26:02.282Z"
+    "scrapeISO": "2026-09-13T04:26:02.282Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1945": {
     "code": "MIN 1945",
@@ -957,7 +1769,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1945/",
-    "scrapeISO": "2026-09-13T04:26:03.998Z"
+    "scrapeISO": "2026-09-13T04:26:03.998Z",
+    "apercuHoraires": []
   },
   "MIN 1946": {
     "code": "MIN 1946",
@@ -980,7 +1793,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1946/",
-    "scrapeISO": "2026-09-13T04:26:06.723Z"
+    "scrapeISO": "2026-09-13T04:26:06.723Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 690,
+                  "finMin": 749
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 690,
+                  "finMin": 749
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1951": {
     "code": "MIN 1951",
@@ -995,7 +1843,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1951/",
-    "scrapeISO": "2026-09-13T04:26:08.047Z"
+    "scrapeISO": "2026-09-13T04:26:08.047Z",
+    "apercuHoraires": []
   },
   "MIN 1961": {
     "code": "MIN 1961",
@@ -1015,7 +1864,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1961/",
-    "scrapeISO": "2026-09-13T04:26:10.667Z"
+    "scrapeISO": "2026-09-13T04:26:10.667Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1962": {
     "code": "MIN 1962",
@@ -1038,7 +1922,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1962/",
-    "scrapeISO": "2026-09-13T04:26:12.629Z"
+    "scrapeISO": "2026-09-13T04:26:12.629Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 629
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1963": {
     "code": "MIN 1963",
@@ -1061,7 +1980,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1963/",
-    "scrapeISO": "2026-09-13T04:26:14.868Z"
+    "scrapeISO": "2026-09-13T04:26:14.868Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1964": {
     "code": "MIN 1964",
@@ -1084,7 +2038,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1964/",
-    "scrapeISO": "2026-09-13T04:26:16.857Z"
+    "scrapeISO": "2026-09-13T04:26:16.857Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 630,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1965": {
     "code": "MIN 1965",
@@ -1107,7 +2096,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1965/",
-    "scrapeISO": "2026-09-13T04:26:18.292Z"
+    "scrapeISO": "2026-09-13T04:26:18.292Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 690,
+                  "finMin": 749
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 690,
+                  "finMin": 749
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1966": {
     "code": "MIN 1966",
@@ -1130,7 +2154,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1966/",
-    "scrapeISO": "2026-09-13T04:26:20.343Z"
+    "scrapeISO": "2026-09-13T04:26:20.343Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 690,
+                  "finMin": 749
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 690,
+                  "finMin": 749
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1811": {
     "code": "MIN 1811",
@@ -1150,7 +2209,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1811/",
-    "scrapeISO": "2026-09-13T04:26:38.733Z"
+    "scrapeISO": "2026-09-13T04:26:38.733Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1932": {
     "code": "MIN 1932",
@@ -1173,7 +2267,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1932/",
-    "scrapeISO": "2026-09-13T04:26:47.529Z"
+    "scrapeISO": "2026-09-13T04:26:47.529Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 840,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 840,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1952": {
     "code": "MIN 1952",
@@ -1191,7 +2320,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1952/",
-    "scrapeISO": "2026-09-13T04:26:49.391Z"
+    "scrapeISO": "2026-09-13T04:26:49.391Z",
+    "apercuHoraires": []
   },
   "MIN 1921": {
     "code": "MIN 1921",
@@ -1211,7 +2341,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1921/",
-    "scrapeISO": "2026-09-13T04:27:18.867Z"
+    "scrapeISO": "2026-09-13T04:27:18.867Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1922": {
     "code": "MIN 1922",
@@ -1234,7 +2399,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1922/",
-    "scrapeISO": "2026-09-13T04:27:21.243Z"
+    "scrapeISO": "2026-09-13T04:27:21.243Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 720,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 720,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1971": {
     "code": "MIN 1971",
@@ -1249,7 +2449,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1971/",
-    "scrapeISO": "2026-09-13T04:27:23.028Z"
+    "scrapeISO": "2026-09-13T04:27:23.028Z",
+    "apercuHoraires": []
   },
   "MIN 1972": {
     "code": "MIN 1972",
@@ -1267,7 +2468,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1972/",
-    "scrapeISO": "2026-09-13T04:27:25.008Z"
+    "scrapeISO": "2026-09-13T04:27:25.008Z",
+    "apercuHoraires": []
   },
   "MIN 1098": {
     "code": "MIN 1098",
@@ -1299,7 +2501,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1098/",
-    "scrapeISO": "2026-09-13T04:27:43.716Z"
+    "scrapeISO": "2026-09-13T04:27:43.716Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 1099": {
     "code": "MIN 1099",
@@ -1322,7 +2584,67 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1099/",
-    "scrapeISO": "2026-09-13T04:27:45.290Z"
+    "scrapeISO": "2026-09-13T04:27:45.290Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 3098X": {
     "code": "MIN 3098X",
@@ -1349,7 +2671,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-3098x/",
-    "scrapeISO": "2026-09-13T04:27:47.105Z"
+    "scrapeISO": "2026-09-13T04:27:47.105Z",
+    "apercuHoraires": []
   },
   "MIN 3099X": {
     "code": "MIN 3099X",
@@ -1376,7 +2699,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-3099x/",
-    "scrapeISO": "2026-09-13T04:27:49.356Z"
+    "scrapeISO": "2026-09-13T04:27:49.356Z",
+    "apercuHoraires": []
   },
   "MIN 6800": {
     "code": "MIN 6800",
@@ -1400,7 +2724,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6800/",
-    "scrapeISO": "2026-09-13T04:42:36.120Z"
+    "scrapeISO": "2026-09-13T04:42:36.120Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7958": {
     "code": "MIN 7958",
@@ -1420,7 +2766,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7958/",
-    "scrapeISO": "2026-09-13T04:48:19.011Z"
+    "scrapeISO": "2026-09-13T04:48:19.011Z",
+    "apercuHoraires": []
   },
   "MIN 7959": {
     "code": "MIN 7959",
@@ -1448,7 +2795,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7959/",
-    "scrapeISO": "2026-09-13T04:48:21.076Z"
+    "scrapeISO": "2026-09-13T04:48:21.076Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7960": {
     "code": "MIN 7960",
@@ -1476,7 +2865,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7960/",
-    "scrapeISO": "2026-09-13T04:48:21.274Z"
+    "scrapeISO": "2026-09-13T04:48:21.274Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6955": {
     "code": "MIN 6955",
@@ -1496,7 +2907,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6955/",
-    "scrapeISO": "2026-09-13T05:07:55.457Z"
+    "scrapeISO": "2026-09-13T05:07:55.457Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6980": {
     "code": "MIN 6980",
@@ -1524,7 +2970,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6980/",
-    "scrapeISO": "2026-09-13T05:09:17.382Z"
+    "scrapeISO": "2026-09-13T05:09:17.382Z",
+    "apercuHoraires": []
   },
   "MIN 1801": {
     "code": "MIN 1801",
@@ -1544,7 +2991,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-1801/",
-    "scrapeISO": "2026-09-13T06:31:26.884Z"
+    "scrapeISO": "2026-09-13T06:31:26.884Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 2802": {
     "code": "MIN 2802",
@@ -1567,7 +3049,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-2802/",
-    "scrapeISO": "2026-09-13T06:31:29.214Z"
+    "scrapeISO": "2026-09-13T06:31:29.214Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 2803": {
     "code": "MIN 2803",
@@ -1590,7 +3107,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-2803/",
-    "scrapeISO": "2026-09-13T06:31:29.366Z"
+    "scrapeISO": "2026-09-13T06:31:29.366Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 2804": {
     "code": "MIN 2804",
@@ -1613,7 +3165,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-2804/",
-    "scrapeISO": "2026-09-13T06:31:33.208Z"
+    "scrapeISO": "2026-09-13T06:31:33.208Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 7500": {
     "code": "MIN 7500",
@@ -1637,7 +3224,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-7500/",
-    "scrapeISO": "2026-09-13T06:31:47.688Z"
+    "scrapeISO": "2026-09-13T06:31:47.688Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6799": {
     "code": "MIN 6799",
@@ -1661,7 +3270,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6799/",
-    "scrapeISO": "2026-09-13T06:32:17.923Z"
+    "scrapeISO": "2026-09-13T06:32:17.923Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6541": {
     "code": "MIN 6541",
@@ -1685,7 +3316,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6541/",
-    "scrapeISO": "2026-09-13T06:32:20.528Z"
+    "scrapeISO": "2026-09-13T06:32:20.528Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6542": {
     "code": "MIN 6542",
@@ -1709,7 +3362,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6542/",
-    "scrapeISO": "2026-09-13T06:32:22.389Z"
+    "scrapeISO": "2026-09-13T06:32:22.389Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MIN 6543": {
     "code": "MIN 6543",
@@ -1733,7 +3408,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6543/",
-    "scrapeISO": "2026-09-13T06:32:22.740Z"
+    "scrapeISO": "2026-09-13T06:32:22.740Z",
+    "apercuHoraires": []
   },
   "MIN 6544": {
     "code": "MIN 6544",
@@ -1757,6 +3433,7 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/min-6544/",
-    "scrapeISO": "2026-09-13T06:32:26.329Z"
+    "scrapeISO": "2026-09-13T06:32:26.329Z",
+    "apercuHoraires": []
   }
 }

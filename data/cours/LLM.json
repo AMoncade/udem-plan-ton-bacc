@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/llm-2000/",
-    "scrapeISO": "2026-09-11T17:31:14.801Z"
+    "scrapeISO": "2026-09-11T17:31:14.801Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "LLM 1000": {
     "code": "LLM 1000",
@@ -37,7 +72,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/llm-1000/",
-    "scrapeISO": "2026-09-13T03:08:33.556Z"
+    "scrapeISO": "2026-09-13T03:08:33.556Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-27",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "LLM 1310": {
     "code": "LLM 1310",
@@ -52,7 +122,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/llm-1310/",
-    "scrapeISO": "2026-09-13T03:08:37.560Z"
+    "scrapeISO": "2026-09-13T03:08:37.560Z",
+    "apercuHoraires": []
   },
   "LLM 6000": {
     "code": "LLM 6000",
@@ -72,6 +143,41 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/llm-6000/",
-    "scrapeISO": "2026-09-13T04:46:07.935Z"
+    "scrapeISO": "2026-09-13T04:46:07.935Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-09",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

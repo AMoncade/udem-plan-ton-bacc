@@ -17,7 +17,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6006/",
-    "scrapeISO": "2026-09-13T03:44:50.244Z"
+    "scrapeISO": "2026-09-13T03:44:50.244Z",
+    "apercuHoraires": []
   },
   "IPR 6008": {
     "code": "IPR 6008",
@@ -41,7 +42,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6008/",
-    "scrapeISO": "2026-09-13T03:44:52.516Z"
+    "scrapeISO": "2026-09-13T03:44:52.516Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 599
+                },
+                "du": "2026-09-14",
+                "au": "2026-12-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 599
+                },
+                "du": "2026-09-21",
+                "au": "2026-09-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2026-09-21",
+                "au": "2026-09-25"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "IPR 6011": {
     "code": "IPR 6011",
@@ -61,7 +107,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6011/",
-    "scrapeISO": "2026-09-13T03:44:54.070Z"
+    "scrapeISO": "2026-09-13T03:44:54.070Z",
+    "apercuHoraires": []
   },
   "IPR 6012": {
     "code": "IPR 6012",
@@ -89,7 +136,160 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6012/",
-    "scrapeISO": "2026-09-13T03:44:56.526Z"
+    "scrapeISO": "2026-09-13T03:44:56.526Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 659
+                },
+                "du": "2026-05-25",
+                "au": "2026-05-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2026-05-25",
+                "au": "2026-05-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-06-01",
+                "au": "2026-06-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-06-01",
+                "au": "2026-06-05"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 659
+                },
+                "du": "2026-09-14",
+                "au": "2026-09-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2026-09-14",
+                "au": "2026-09-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-21",
+                "au": "2026-09-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-09-21",
+                "au": "2026-09-25"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 659
+                },
+                "du": "2026-11-09",
+                "au": "2026-11-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2026-11-09",
+                "au": "2026-11-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-11-16",
+                "au": "2026-11-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-11-16",
+                "au": "2026-11-20"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "IPR 6014": {
     "code": "IPR 6014",
@@ -109,7 +309,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6014/",
-    "scrapeISO": "2026-09-13T03:44:58.650Z"
+    "scrapeISO": "2026-09-13T03:44:58.650Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-11-27"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "IPR 6001": {
     "code": "IPR 6001",
@@ -124,7 +349,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6001/",
-    "scrapeISO": "2026-09-13T04:49:52.859Z"
+    "scrapeISO": "2026-09-13T04:49:52.859Z",
+    "apercuHoraires": []
   },
   "IPR 6002": {
     "code": "IPR 6002",
@@ -139,7 +365,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6002/",
-    "scrapeISO": "2026-09-13T04:49:55.231Z"
+    "scrapeISO": "2026-09-13T04:49:55.231Z",
+    "apercuHoraires": []
   },
   "IPR 6007": {
     "code": "IPR 6007",
@@ -159,7 +386,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6007/",
-    "scrapeISO": "2026-09-13T04:49:56.816Z"
+    "scrapeISO": "2026-09-13T04:49:56.816Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-05"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "IPR 6009": {
     "code": "IPR 6009",
@@ -174,7 +426,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6009/",
-    "scrapeISO": "2026-09-13T04:49:59.238Z"
+    "scrapeISO": "2026-09-13T04:49:59.238Z",
+    "apercuHoraires": []
   },
   "IPR 6013": {
     "code": "IPR 6013",
@@ -189,6 +442,7 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6013/",
-    "scrapeISO": "2026-09-13T04:50:01.111Z"
+    "scrapeISO": "2026-09-13T04:50:01.111Z",
+    "apercuHoraires": []
   }
 }

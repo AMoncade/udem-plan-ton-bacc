@@ -17,7 +17,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1901/",
-    "scrapeISO": "2026-09-11T12:01:48.902Z"
+    "scrapeISO": "2026-09-11T17:24:20.723Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-27"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1930": {
     "code": "REL 1930",
@@ -32,7 +67,8 @@
     "restrictionsBrut": "REL1930/SRL1025",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1930/",
-    "scrapeISO": "2026-09-11T17:45:56.710Z"
+    "scrapeISO": "2026-09-11T17:45:56.710Z",
+    "apercuHoraires": []
   },
   "REL 1111": {
     "code": "REL 1111",
@@ -52,7 +88,36 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1111/",
-    "scrapeISO": "2026-09-11T17:46:50.891Z"
+    "scrapeISO": "2026-09-11T17:46:50.891Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 3221": {
     "code": "REL 3221",
@@ -67,7 +132,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3221/",
-    "scrapeISO": "2026-09-11T18:50:26.717Z"
+    "scrapeISO": "2026-09-11T18:50:26.717Z",
+    "apercuHoraires": []
   },
   "REL 1330": {
     "code": "REL 1330",
@@ -87,7 +153,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1330/",
-    "scrapeISO": "2026-09-11T18:54:11.964Z"
+    "scrapeISO": "2026-09-11T18:54:11.964Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1208": {
     "code": "REL 1208",
@@ -111,7 +212,63 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1208/",
-    "scrapeISO": "2026-09-11T18:54:22.860Z"
+    "scrapeISO": "2026-09-11T18:54:22.860Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2270": {
     "code": "REL 2270",
@@ -131,7 +288,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2270/",
-    "scrapeISO": "2026-09-11T18:54:23.000Z"
+    "scrapeISO": "2026-09-11T18:54:23.000Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2330": {
     "code": "REL 2330",
@@ -146,7 +338,8 @@
     "restrictionsBrut": "REL2330/SRL2515",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2330/",
-    "scrapeISO": "2026-09-11T18:54:25.701Z"
+    "scrapeISO": "2026-09-11T18:54:25.701Z",
+    "apercuHoraires": []
   },
   "REL 1340": {
     "code": "REL 1340",
@@ -166,7 +359,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1340/",
-    "scrapeISO": "2026-09-11T18:54:37.293Z"
+    "scrapeISO": "2026-09-11T18:54:37.293Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-21"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 3920": {
     "code": "REL 3920",
@@ -186,7 +414,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3920/",
-    "scrapeISO": "2026-09-11T18:54:46.764Z"
+    "scrapeISO": "2026-09-11T18:54:46.764Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-22"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2710": {
     "code": "REL 2710",
@@ -210,7 +473,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2710/",
-    "scrapeISO": "2026-09-13T03:13:21.847Z"
+    "scrapeISO": "2026-09-13T03:13:21.906Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1240": {
     "code": "REL 1240",
@@ -230,7 +515,36 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1240/",
-    "scrapeISO": "2026-09-13T03:13:26.135Z"
+    "scrapeISO": "2026-09-13T03:13:26.315Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1510": {
     "code": "REL 1510",
@@ -245,7 +559,8 @@
     "restrictionsBrut": "REL1510/THL1035",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1510/",
-    "scrapeISO": "2026-09-13T03:13:28.187Z"
+    "scrapeISO": "2026-09-13T03:13:28.164Z",
+    "apercuHoraires": []
   },
   "REL 1520": {
     "code": "REL 1520",
@@ -265,7 +580,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1520/",
-    "scrapeISO": "2026-09-13T03:13:32.104Z"
+    "scrapeISO": "2026-09-13T03:13:32.104Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2320": {
     "code": "REL 2320",
@@ -280,7 +617,8 @@
     "restrictionsBrut": "REL2320/SRL2524",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2320/",
-    "scrapeISO": "2026-09-13T03:13:32.270Z"
+    "scrapeISO": "2026-09-13T03:13:32.270Z",
+    "apercuHoraires": []
   },
   "REL 3940": {
     "code": "REL 3940",
@@ -295,7 +633,8 @@
     "restrictionsBrut": "REL3940/SRL2520",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3940/",
-    "scrapeISO": "2026-09-13T03:13:34.348Z"
+    "scrapeISO": "2026-09-13T03:13:34.348Z",
+    "apercuHoraires": []
   },
   "REL 3960": {
     "code": "REL 3960",
@@ -315,7 +654,36 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3960/",
-    "scrapeISO": "2026-09-13T03:13:36.252Z"
+    "scrapeISO": "2026-09-13T03:13:36.252Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1230": {
     "code": "REL 1230",
@@ -339,7 +707,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1230/",
-    "scrapeISO": "2026-09-13T03:14:27.073Z"
+    "scrapeISO": "2026-09-13T03:14:27.073Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-28"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2250": {
     "code": "REL 2250",
@@ -359,7 +762,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2250/",
-    "scrapeISO": "2026-09-13T03:14:49.551Z"
+    "scrapeISO": "2026-09-13T03:14:49.551Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-27"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2255": {
     "code": "REL 2255",
@@ -379,7 +817,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2255/",
-    "scrapeISO": "2026-09-13T03:15:20.709Z"
+    "scrapeISO": "2026-09-13T03:15:20.709Z",
+    "apercuHoraires": []
   },
   "REL 6215": {
     "code": "REL 6215",
@@ -399,7 +838,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6215/",
-    "scrapeISO": "2026-09-13T03:17:15.599Z"
+    "scrapeISO": "2026-09-13T03:17:15.599Z",
+    "apercuHoraires": []
   },
   "REL 3930": {
     "code": "REL 3930",
@@ -414,7 +854,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3930/",
-    "scrapeISO": "2026-09-13T03:17:51.783Z"
+    "scrapeISO": "2026-09-13T03:17:51.783Z",
+    "apercuHoraires": []
   },
   "REL 3320": {
     "code": "REL 3320",
@@ -429,7 +870,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3320/",
-    "scrapeISO": "2026-09-13T03:30:30.776Z"
+    "scrapeISO": "2026-09-13T03:30:30.776Z",
+    "apercuHoraires": []
   },
   "REL 6127": {
     "code": "REL 6127",
@@ -449,7 +891,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6127/",
-    "scrapeISO": "2026-09-13T03:44:10.323Z"
+    "scrapeISO": "2026-09-13T03:44:10.323Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6217": {
     "code": "REL 6217",
@@ -469,7 +946,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6217/",
-    "scrapeISO": "2026-09-13T03:44:12.339Z"
+    "scrapeISO": "2026-09-13T03:44:12.339Z",
+    "apercuHoraires": []
   },
   "REL 6314": {
     "code": "REL 6314",
@@ -484,7 +962,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6314/",
-    "scrapeISO": "2026-09-13T03:44:14.397Z"
+    "scrapeISO": "2026-09-13T03:44:14.397Z",
+    "apercuHoraires": []
   },
   "REL 6318": {
     "code": "REL 6318",
@@ -504,7 +983,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6318/",
-    "scrapeISO": "2026-09-13T03:44:16.337Z"
+    "scrapeISO": "2026-09-13T03:44:16.337Z",
+    "apercuHoraires": []
   },
   "REL 6319": {
     "code": "REL 6319",
@@ -519,7 +999,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6319/",
-    "scrapeISO": "2026-09-13T03:44:18.413Z"
+    "scrapeISO": "2026-09-13T03:44:18.413Z",
+    "apercuHoraires": []
   },
   "REL 6320": {
     "code": "REL 6320",
@@ -534,7 +1015,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6320/",
-    "scrapeISO": "2026-09-13T03:44:20.505Z"
+    "scrapeISO": "2026-09-13T03:44:20.505Z",
+    "apercuHoraires": []
   },
   "REL 6321": {
     "code": "REL 6321",
@@ -554,7 +1036,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6321/",
-    "scrapeISO": "2026-09-13T03:44:22.404Z"
+    "scrapeISO": "2026-09-13T03:44:22.404Z",
+    "apercuHoraires": []
   },
   "REL 6322": {
     "code": "REL 6322",
@@ -574,7 +1057,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6322/",
-    "scrapeISO": "2026-09-13T03:44:24.455Z"
+    "scrapeISO": "2026-09-13T03:44:24.455Z",
+    "apercuHoraires": []
   },
   "REL 6400": {
     "code": "REL 6400",
@@ -589,7 +1073,8 @@
     "restrictionsBrut": "REL6400/THB6130",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6400/",
-    "scrapeISO": "2026-09-13T03:44:26.445Z"
+    "scrapeISO": "2026-09-13T03:44:26.445Z",
+    "apercuHoraires": []
   },
   "REL 6500": {
     "code": "REL 6500",
@@ -617,7 +1102,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6500/",
-    "scrapeISO": "2026-09-13T03:44:28.422Z"
+    "scrapeISO": "2026-09-13T03:44:28.422Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6501": {
     "code": "REL 6501",
@@ -637,7 +1144,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6501/",
-    "scrapeISO": "2026-09-13T03:44:31.994Z"
+    "scrapeISO": "2026-09-13T03:44:31.994Z",
+    "apercuHoraires": []
   },
   "REL 7140": {
     "code": "REL 7140",
@@ -657,7 +1165,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-7140/",
-    "scrapeISO": "2026-09-13T03:44:34.466Z"
+    "scrapeISO": "2026-09-13T03:44:34.466Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 7141": {
     "code": "REL 7141",
@@ -681,7 +1224,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-7141/",
-    "scrapeISO": "2026-09-13T03:44:36.484Z"
+    "scrapeISO": "2026-09-13T03:44:36.484Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 7150": {
     "code": "REL 7150",
@@ -701,7 +1299,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-7150/",
-    "scrapeISO": "2026-09-13T03:44:38.493Z"
+    "scrapeISO": "2026-09-13T03:44:38.493Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 7151": {
     "code": "REL 7151",
@@ -725,7 +1358,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-7151/",
-    "scrapeISO": "2026-09-13T03:44:40.468Z"
+    "scrapeISO": "2026-09-13T03:44:40.468Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 7160": {
     "code": "REL 7160",
@@ -749,7 +1417,55 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-7160/",
-    "scrapeISO": "2026-09-13T03:44:42.458Z"
+    "scrapeISO": "2026-09-13T03:44:42.458Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 7200": {
     "code": "REL 7200",
@@ -777,7 +1493,55 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-7200/",
-    "scrapeISO": "2026-09-13T03:44:44.516Z"
+    "scrapeISO": "2026-09-13T03:44:44.516Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2430": {
     "code": "REL 2430",
@@ -792,7 +1556,8 @@
     "restrictionsBrut": "REL2430/SRL2040",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2430/",
-    "scrapeISO": "2026-09-13T03:58:48.628Z"
+    "scrapeISO": "2026-09-13T03:58:48.628Z",
+    "apercuHoraires": []
   },
   "REL 2310": {
     "code": "REL 2310",
@@ -816,7 +1581,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2310/",
-    "scrapeISO": "2026-09-13T04:00:14.405Z"
+    "scrapeISO": "2026-09-13T04:00:14.405Z",
+    "apercuHoraires": []
   },
   "REL 3310": {
     "code": "REL 3310",
@@ -836,7 +1602,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3310/",
-    "scrapeISO": "2026-09-13T04:00:20.360Z"
+    "scrapeISO": "2026-09-13T04:00:20.360Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-28"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2380": {
     "code": "REL 2380",
@@ -851,7 +1652,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2380/",
-    "scrapeISO": "2026-09-13T04:04:01.902Z"
+    "scrapeISO": "2026-09-13T04:04:01.902Z",
+    "apercuHoraires": []
   },
   "REL 1250": {
     "code": "REL 1250",
@@ -871,7 +1673,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1250/",
-    "scrapeISO": "2026-09-13T04:04:22.064Z"
+    "scrapeISO": "2026-09-13T04:04:22.064Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-27"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1251": {
     "code": "REL 1251",
@@ -891,7 +1728,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1251/",
-    "scrapeISO": "2026-09-13T04:04:24.081Z"
+    "scrapeISO": "2026-09-13T04:04:24.081Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-21"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2240": {
     "code": "REL 2240",
@@ -911,7 +1783,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2240/",
-    "scrapeISO": "2026-09-13T04:04:26.111Z"
+    "scrapeISO": "2026-09-13T04:04:26.111Z",
+    "apercuHoraires": []
   },
   "REL 2140": {
     "code": "REL 2140",
@@ -931,7 +1804,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2140/",
-    "scrapeISO": "2026-09-13T04:05:08.389Z"
+    "scrapeISO": "2026-09-13T04:05:08.389Z",
+    "apercuHoraires": []
   },
   "REL 2420": {
     "code": "REL 2420",
@@ -951,7 +1825,162 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2420/",
-    "scrapeISO": "2026-09-13T04:05:18.460Z"
+    "scrapeISO": "2026-09-13T04:05:18.460Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-17",
+                "au": "2026-08-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-24",
+                "au": "2026-08-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-24",
+                "au": "2026-08-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-24",
+                "au": "2026-08-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-24",
+                "au": "2026-08-25"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2980": {
     "code": "REL 2980",
@@ -971,7 +2000,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2980/",
-    "scrapeISO": "2026-09-13T04:05:22.350Z"
+    "scrapeISO": "2026-09-13T04:05:22.350Z",
+    "apercuHoraires": []
   },
   "REL 1112": {
     "code": "REL 1112",
@@ -991,7 +2021,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1112/",
-    "scrapeISO": "2026-09-13T04:21:50.788Z"
+    "scrapeISO": "2026-09-13T04:21:50.788Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1500": {
     "code": "REL 1500",
@@ -1011,7 +2076,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1500/",
-    "scrapeISO": "2026-09-13T04:21:51.161Z"
+    "scrapeISO": "2026-09-13T04:21:51.161Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1220": {
     "code": "REL 1220",
@@ -1031,7 +2131,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1220/",
-    "scrapeISO": "2026-09-13T04:21:53.148Z"
+    "scrapeISO": "2026-09-13T04:21:53.148Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 1130": {
     "code": "REL 1130",
@@ -1051,7 +2186,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1130/",
-    "scrapeISO": "2026-09-13T04:21:56.382Z"
+    "scrapeISO": "2026-09-13T04:21:56.382Z",
+    "apercuHoraires": []
   },
   "REL 2233": {
     "code": "REL 2233",
@@ -1071,7 +2207,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2233/",
-    "scrapeISO": "2026-09-13T04:21:57.188Z"
+    "scrapeISO": "2026-09-13T04:21:57.188Z",
+    "apercuHoraires": []
   },
   "REL 2360": {
     "code": "REL 2360",
@@ -1095,7 +2232,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2360/",
-    "scrapeISO": "2026-09-13T04:21:59.186Z"
+    "scrapeISO": "2026-09-13T04:21:59.186Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2520": {
     "code": "REL 2520",
@@ -1110,7 +2282,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2520/",
-    "scrapeISO": "2026-09-13T04:22:01.210Z"
+    "scrapeISO": "2026-09-13T04:22:01.210Z",
+    "apercuHoraires": []
   },
   "REL 2610": {
     "code": "REL 2610",
@@ -1130,7 +2303,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2610/",
-    "scrapeISO": "2026-09-13T04:22:03.185Z"
+    "scrapeISO": "2026-09-13T04:22:03.185Z",
+    "apercuHoraires": []
   },
   "REL 2700": {
     "code": "REL 2700",
@@ -1145,7 +2319,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2700/",
-    "scrapeISO": "2026-09-13T04:22:05.209Z"
+    "scrapeISO": "2026-09-13T04:22:05.209Z",
+    "apercuHoraires": []
   },
   "REL 2720": {
     "code": "REL 2720",
@@ -1165,7 +2340,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2720/",
-    "scrapeISO": "2026-09-13T04:22:07.209Z"
+    "scrapeISO": "2026-09-13T04:22:07.209Z",
+    "apercuHoraires": []
   },
   "REL 2732": {
     "code": "REL 2732",
@@ -1185,7 +2361,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2732/",
-    "scrapeISO": "2026-09-13T04:22:09.216Z"
+    "scrapeISO": "2026-09-13T04:22:09.216Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-29"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2733": {
     "code": "REL 2733",
@@ -1200,7 +2411,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2733/",
-    "scrapeISO": "2026-09-13T04:22:11.207Z"
+    "scrapeISO": "2026-09-13T04:22:11.207Z",
+    "apercuHoraires": []
   },
   "REL 3234": {
     "code": "REL 3234",
@@ -1220,7 +2432,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3234/",
-    "scrapeISO": "2026-09-13T04:22:13.280Z"
+    "scrapeISO": "2026-09-13T04:22:13.280Z",
+    "apercuHoraires": []
   },
   "REL 3600": {
     "code": "REL 3600",
@@ -1240,7 +2453,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3600/",
-    "scrapeISO": "2026-09-13T04:22:15.263Z"
+    "scrapeISO": "2026-09-13T04:22:15.263Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 3970": {
     "code": "REL 3970",
@@ -1260,7 +2508,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3970/",
-    "scrapeISO": "2026-09-13T04:22:17.285Z"
+    "scrapeISO": "2026-09-13T04:22:17.285Z",
+    "apercuHoraires": []
   },
   "REL 1320": {
     "code": "REL 1320",
@@ -1280,7 +2529,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1320/",
-    "scrapeISO": "2026-09-13T04:22:19.266Z"
+    "scrapeISO": "2026-09-13T04:22:19.266Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-27"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2311": {
     "code": "REL 2311",
@@ -1295,7 +2579,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2311/",
-    "scrapeISO": "2026-09-13T04:22:21.267Z"
+    "scrapeISO": "2026-09-13T04:22:21.267Z",
+    "apercuHoraires": []
   },
   "REL 2340": {
     "code": "REL 2340",
@@ -1310,7 +2595,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2340/",
-    "scrapeISO": "2026-09-13T04:22:24.965Z"
+    "scrapeISO": "2026-09-13T04:22:24.965Z",
+    "apercuHoraires": []
   },
   "REL 2350": {
     "code": "REL 2350",
@@ -1325,7 +2611,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2350/",
-    "scrapeISO": "2026-09-13T04:22:25.307Z"
+    "scrapeISO": "2026-09-13T04:22:25.307Z",
+    "apercuHoraires": []
   },
   "REL 2410": {
     "code": "REL 2410",
@@ -1340,7 +2627,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2410/",
-    "scrapeISO": "2026-09-13T04:22:27.344Z"
+    "scrapeISO": "2026-09-13T04:22:27.344Z",
+    "apercuHoraires": []
   },
   "REL 2440": {
     "code": "REL 2440",
@@ -1360,7 +2648,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2440/",
-    "scrapeISO": "2026-09-13T04:22:29.309Z"
+    "scrapeISO": "2026-09-13T04:22:29.309Z",
+    "apercuHoraires": []
   },
   "REL 3340": {
     "code": "REL 3340",
@@ -1380,7 +2669,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3340/",
-    "scrapeISO": "2026-09-13T04:22:31.365Z"
+    "scrapeISO": "2026-09-13T04:22:31.365Z",
+    "apercuHoraires": []
   },
   "REL 3350": {
     "code": "REL 3350",
@@ -1395,7 +2685,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3350/",
-    "scrapeISO": "2026-09-13T04:22:33.606Z"
+    "scrapeISO": "2026-09-13T04:22:33.606Z",
+    "apercuHoraires": []
   },
   "REL 3980": {
     "code": "REL 3980",
@@ -1410,7 +2701,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3980/",
-    "scrapeISO": "2026-09-13T04:22:35.373Z"
+    "scrapeISO": "2026-09-13T04:22:35.373Z",
+    "apercuHoraires": []
   },
   "REL 2402": {
     "code": "REL 2402",
@@ -1430,7 +2722,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2402/",
-    "scrapeISO": "2026-09-13T04:22:37.339Z"
+    "scrapeISO": "2026-09-13T04:22:37.339Z",
+    "apercuHoraires": []
   },
   "REL 2670": {
     "code": "REL 2670",
@@ -1450,7 +2743,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2670/",
-    "scrapeISO": "2026-09-13T04:22:39.336Z"
+    "scrapeISO": "2026-09-13T04:22:39.336Z",
+    "apercuHoraires": []
   },
   "REL 3402": {
     "code": "REL 3402",
@@ -1482,7 +2776,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3402/",
-    "scrapeISO": "2026-09-13T04:22:41.436Z"
+    "scrapeISO": "2026-09-13T04:22:41.436Z",
+    "apercuHoraires": []
   },
   "REL 3800": {
     "code": "REL 3800",
@@ -1497,7 +2792,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3800/",
-    "scrapeISO": "2026-09-13T04:22:43.372Z"
+    "scrapeISO": "2026-09-13T04:22:43.372Z",
+    "apercuHoraires": []
   },
   "REL 1720": {
     "code": "REL 1720",
@@ -1512,7 +2808,8 @@
     "restrictionsBrut": "REL1720/THL2186",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1720/",
-    "scrapeISO": "2026-09-13T04:22:47.269Z"
+    "scrapeISO": "2026-09-13T04:22:47.269Z",
+    "apercuHoraires": []
   },
   "REL 1721": {
     "code": "REL 1721",
@@ -1535,7 +2832,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-1721/",
-    "scrapeISO": "2026-09-13T04:22:47.439Z"
+    "scrapeISO": "2026-09-13T04:22:47.439Z",
+    "apercuHoraires": []
   },
   "REL 6120": {
     "code": "REL 6120",
@@ -1555,7 +2853,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6120/",
-    "scrapeISO": "2026-09-13T04:22:51.835Z"
+    "scrapeISO": "2026-09-13T04:22:51.835Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6210": {
     "code": "REL 6210",
@@ -1575,7 +2908,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6210/",
-    "scrapeISO": "2026-09-13T04:22:53.816Z"
+    "scrapeISO": "2026-09-13T04:22:53.816Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6311": {
     "code": "REL 6311",
@@ -1590,7 +2958,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6311/",
-    "scrapeISO": "2026-09-13T04:22:55.831Z"
+    "scrapeISO": "2026-09-13T04:22:55.831Z",
+    "apercuHoraires": []
   },
   "REL 6113": {
     "code": "REL 6113",
@@ -1605,7 +2974,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6113/",
-    "scrapeISO": "2026-09-13T04:22:57.835Z"
+    "scrapeISO": "2026-09-13T04:22:57.835Z",
+    "apercuHoraires": []
   },
   "REL 6124": {
     "code": "REL 6124",
@@ -1625,7 +2995,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6124/",
-    "scrapeISO": "2026-09-13T04:23:02.010Z"
+    "scrapeISO": "2026-09-13T04:23:02.010Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6220": {
     "code": "REL 6220",
@@ -1640,7 +3045,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6220/",
-    "scrapeISO": "2026-09-13T04:23:02.175Z"
+    "scrapeISO": "2026-09-13T04:23:02.175Z",
+    "apercuHoraires": []
   },
   "REL 6211": {
     "code": "REL 6211",
@@ -1660,7 +3066,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6211/",
-    "scrapeISO": "2026-09-13T04:44:37.036Z"
+    "scrapeISO": "2026-09-13T04:44:37.036Z",
+    "apercuHoraires": []
   },
   "REL 6221": {
     "code": "REL 6221",
@@ -1684,7 +3091,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6221/",
-    "scrapeISO": "2026-09-13T04:44:40.811Z"
+    "scrapeISO": "2026-09-13T04:44:40.811Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6122": {
     "code": "REL 6122",
@@ -1704,7 +3146,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6122/",
-    "scrapeISO": "2026-09-13T04:44:43.493Z"
+    "scrapeISO": "2026-09-13T04:44:43.493Z",
+    "apercuHoraires": []
   },
   "REL 6138": {
     "code": "REL 6138",
@@ -1719,7 +3162,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6138/",
-    "scrapeISO": "2026-09-13T04:44:45.482Z"
+    "scrapeISO": "2026-09-13T04:44:45.482Z",
+    "apercuHoraires": []
   },
   "REL 6171": {
     "code": "REL 6171",
@@ -1734,7 +3178,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6171/",
-    "scrapeISO": "2026-09-13T04:44:47.523Z"
+    "scrapeISO": "2026-09-13T04:44:47.523Z",
+    "apercuHoraires": []
   },
   "REL 6212": {
     "code": "REL 6212",
@@ -1749,7 +3194,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6212/",
-    "scrapeISO": "2026-09-13T04:44:49.487Z"
+    "scrapeISO": "2026-09-13T04:44:49.487Z",
+    "apercuHoraires": []
   },
   "REL 6214": {
     "code": "REL 6214",
@@ -1764,7 +3210,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6214/",
-    "scrapeISO": "2026-09-13T04:44:51.483Z"
+    "scrapeISO": "2026-09-13T04:44:51.483Z",
+    "apercuHoraires": []
   },
   "REL 6218": {
     "code": "REL 6218",
@@ -1779,7 +3226,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6218/",
-    "scrapeISO": "2026-09-13T04:44:53.767Z"
+    "scrapeISO": "2026-09-13T04:44:53.767Z",
+    "apercuHoraires": []
   },
   "REL 6219": {
     "code": "REL 6219",
@@ -1799,7 +3247,36 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6219/",
-    "scrapeISO": "2026-09-13T04:44:55.502Z"
+    "scrapeISO": "2026-09-13T04:44:55.502Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 66102": {
     "code": "REL 66102",
@@ -1826,7 +3303,95 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-66102/",
-    "scrapeISO": "2026-09-13T04:44:59.620Z"
+    "scrapeISO": "2026-09-13T04:44:59.620Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-05-01",
+                "au": "2026-08-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-05-01",
+                "au": "2026-08-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 66202": {
     "code": "REL 66202",
@@ -1844,7 +3409,8 @@
     "restrictionsBrut": "REL66202/THP66202",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-66202/",
-    "scrapeISO": "2026-09-13T04:45:03.715Z"
+    "scrapeISO": "2026-09-13T04:45:03.715Z",
+    "apercuHoraires": []
   },
   "REL 6650": {
     "code": "REL 6650",
@@ -1872,7 +3438,225 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6650/",
-    "scrapeISO": "2026-09-13T04:45:05.692Z"
+    "scrapeISO": "2026-09-13T04:45:05.692Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-07-01",
+                "au": "2026-07-31"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 1019
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 1019
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 749
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 1019
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 1019
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6651": {
     "code": "REL 6651",
@@ -1912,7 +3696,237 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6651/",
-    "scrapeISO": "2026-09-13T04:45:07.650Z"
+    "scrapeISO": "2026-09-13T04:45:07.650Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-01",
+                "au": "2026-08-31"
+              }
+            ]
+          },
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-01",
+                "au": "2026-08-31"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-11"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6653": {
     "code": "REL 6653",
@@ -1952,7 +3966,160 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6653/",
-    "scrapeISO": "2026-09-13T04:45:09.679Z"
+    "scrapeISO": "2026-09-13T04:45:09.679Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6654": {
     "code": "REL 6654",
@@ -1970,7 +4137,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6654/",
-    "scrapeISO": "2026-09-13T04:45:13.282Z"
+    "scrapeISO": "2026-09-13T04:45:13.282Z",
+    "apercuHoraires": []
   },
   "REL 6103": {
     "code": "REL 6103",
@@ -1990,7 +4158,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6103/",
-    "scrapeISO": "2026-09-13T04:51:51.648Z"
+    "scrapeISO": "2026-09-13T04:51:51.648Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6112": {
     "code": "REL 6112",
@@ -2010,7 +4213,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6112/",
-    "scrapeISO": "2026-09-13T04:51:53.629Z"
+    "scrapeISO": "2026-09-13T04:51:53.629Z",
+    "apercuHoraires": []
   },
   "REL 6115": {
     "code": "REL 6115",
@@ -2030,7 +4234,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6115/",
-    "scrapeISO": "2026-09-13T04:51:55.923Z"
+    "scrapeISO": "2026-09-13T04:51:55.923Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6123": {
     "code": "REL 6123",
@@ -2045,7 +4284,8 @@
     "restrictionsBrut": "REL6123//SRL6202",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6123/",
-    "scrapeISO": "2026-09-13T04:51:57.674Z"
+    "scrapeISO": "2026-09-13T04:51:57.674Z",
+    "apercuHoraires": []
   },
   "REL 6126": {
     "code": "REL 6126",
@@ -2060,7 +4300,8 @@
     "restrictionsBrut": "REL6126/SRL6205",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6126/",
-    "scrapeISO": "2026-09-13T04:51:59.699Z"
+    "scrapeISO": "2026-09-13T04:51:59.699Z",
+    "apercuHoraires": []
   },
   "REL 6131": {
     "code": "REL 6131",
@@ -2075,7 +4316,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6131/",
-    "scrapeISO": "2026-09-13T04:52:01.680Z"
+    "scrapeISO": "2026-09-13T04:52:01.680Z",
+    "apercuHoraires": []
   },
   "REL 6132": {
     "code": "REL 6132",
@@ -2090,7 +4332,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6132/",
-    "scrapeISO": "2026-09-13T04:52:03.698Z"
+    "scrapeISO": "2026-09-13T04:52:03.698Z",
+    "apercuHoraires": []
   },
   "REL 6136": {
     "code": "REL 6136",
@@ -2110,7 +4353,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6136/",
-    "scrapeISO": "2026-09-13T04:52:05.723Z"
+    "scrapeISO": "2026-09-13T04:52:05.723Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6137": {
     "code": "REL 6137",
@@ -2130,7 +4408,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6137/",
-    "scrapeISO": "2026-09-13T04:52:07.754Z"
+    "scrapeISO": "2026-09-13T04:52:07.754Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6151": {
     "code": "REL 6151",
@@ -2150,7 +4463,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6151/",
-    "scrapeISO": "2026-09-13T04:52:09.743Z"
+    "scrapeISO": "2026-09-13T04:52:09.743Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6160": {
     "code": "REL 6160",
@@ -2165,7 +4513,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6160/",
-    "scrapeISO": "2026-09-13T04:52:13.556Z"
+    "scrapeISO": "2026-09-13T04:52:13.556Z",
+    "apercuHoraires": []
   },
   "REL 6170": {
     "code": "REL 6170",
@@ -2185,7 +4534,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6170/",
-    "scrapeISO": "2026-09-13T04:52:13.769Z"
+    "scrapeISO": "2026-09-13T04:52:13.769Z",
+    "apercuHoraires": []
   },
   "REL 6502": {
     "code": "REL 6502",
@@ -2200,7 +4550,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6502/",
-    "scrapeISO": "2026-09-13T05:12:22.888Z"
+    "scrapeISO": "2026-09-13T05:12:22.888Z",
+    "apercuHoraires": []
   },
   "REL 6503": {
     "code": "REL 6503",
@@ -2223,7 +4574,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6503/",
-    "scrapeISO": "2026-09-13T05:12:23.046Z"
+    "scrapeISO": "2026-09-13T05:12:23.046Z",
+    "apercuHoraires": []
   },
   "REL 6815": {
     "code": "REL 6815",
@@ -2243,7 +4595,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6815/",
-    "scrapeISO": "2026-09-13T05:12:26.374Z"
+    "scrapeISO": "2026-09-13T05:12:26.374Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6820": {
     "code": "REL 6820",
@@ -2263,7 +4650,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6820/",
-    "scrapeISO": "2026-09-13T05:12:27.106Z"
+    "scrapeISO": "2026-09-13T05:12:27.106Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6825": {
     "code": "REL 6825",
@@ -2287,7 +4709,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6825/",
-    "scrapeISO": "2026-09-13T05:12:29.087Z"
+    "scrapeISO": "2026-09-13T05:12:29.087Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6840": {
     "code": "REL 6840",
@@ -2315,7 +4792,55 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6840/",
-    "scrapeISO": "2026-09-13T05:12:31.159Z"
+    "scrapeISO": "2026-09-13T05:12:31.159Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6310": {
     "code": "REL 6310",
@@ -2339,7 +4864,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6310/",
-    "scrapeISO": "2026-09-13T05:14:10.873Z"
+    "scrapeISO": "2026-09-13T05:14:10.873Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 62312": {
     "code": "REL 62312",
@@ -2362,7 +4922,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-62312/",
-    "scrapeISO": "2026-09-13T06:26:55.293Z"
+    "scrapeISO": "2026-09-13T06:26:55.293Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 6831": {
     "code": "REL 6831",
@@ -2390,7 +4985,55 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6831/",
-    "scrapeISO": "2026-09-13T06:26:57.512Z"
+    "scrapeISO": "2026-09-13T06:26:57.512Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 3900": {
     "code": "REL 3900",
@@ -2417,7 +5060,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3900/",
-    "scrapeISO": "2026-09-13T06:26:57.684Z"
+    "scrapeISO": "2026-09-13T06:26:57.684Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-04",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "REL 2620": {
     "code": "REL 2620",
@@ -2432,6 +5117,7 @@
     "restrictionsBrut": "REL2620/THL2535",
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2620/",
-    "scrapeISO": "2026-09-13T06:27:01.499Z"
+    "scrapeISO": "2026-09-13T06:27:01.499Z",
+    "apercuHoraires": []
   }
 }

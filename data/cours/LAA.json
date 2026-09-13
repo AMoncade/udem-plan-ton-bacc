@@ -17,6 +17,41 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/laa-1101/",
-    "scrapeISO": "2026-09-13T03:57:02.909Z"
+    "scrapeISO": "2026-09-13T03:57:02.909Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

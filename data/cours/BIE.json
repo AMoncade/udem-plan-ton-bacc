@@ -320,7 +320,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-7500/",
-    "scrapeISO": "2026-09-13T03:11:03.626Z"
+    "scrapeISO": "2026-09-13T03:11:03.626Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIE 7700": {
     "code": "BIE 7700",
@@ -340,7 +365,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-7700/",
-    "scrapeISO": "2026-09-13T03:11:05.808Z"
+    "scrapeISO": "2026-09-13T03:11:05.808Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIE 6046": {
     "code": "BIE 6046",
@@ -364,7 +414,64 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6046/",
-    "scrapeISO": "2026-09-13T03:11:30.424Z"
+    "scrapeISO": "2026-09-13T03:11:30.424Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-11-13"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-11",
+                "au": "2027-03-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIE 1000": {
     "code": "BIE 1000",
@@ -379,7 +486,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-1000/",
-    "scrapeISO": "2026-09-13T03:13:54.483Z"
+    "scrapeISO": "2026-09-13T03:13:54.483Z",
+    "apercuHoraires": []
   },
   "BIE 2001": {
     "code": "BIE 2001",
@@ -394,7 +502,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-2001/",
-    "scrapeISO": "2026-09-13T03:13:54.660Z"
+    "scrapeISO": "2026-09-13T03:13:54.660Z",
+    "apercuHoraires": []
   },
   "BIE 2002": {
     "code": "BIE 2002",
@@ -421,7 +530,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-2002/",
-    "scrapeISO": "2026-09-13T03:13:58.216Z"
+    "scrapeISO": "2026-09-13T03:13:58.237Z",
+    "apercuHoraires": []
   },
   "BIE 2003": {
     "code": "BIE 2003",
@@ -436,7 +546,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-2003/",
-    "scrapeISO": "2026-09-13T03:14:00.471Z"
+    "scrapeISO": "2026-09-13T03:14:00.471Z",
+    "apercuHoraires": []
   },
   "BIE 6501": {
     "code": "BIE 6501",
@@ -451,7 +562,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6501/",
-    "scrapeISO": "2026-09-13T03:15:36.298Z"
+    "scrapeISO": "2026-09-13T03:15:36.429Z",
+    "apercuHoraires": []
   },
   "BIE 6502": {
     "code": "BIE 6502",
@@ -466,7 +578,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6502/",
-    "scrapeISO": "2026-09-13T03:15:36.683Z"
+    "scrapeISO": "2026-09-13T03:15:36.683Z",
+    "apercuHoraires": []
   },
   "BIE 70502": {
     "code": "BIE 70502",
@@ -489,7 +602,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-70502/",
-    "scrapeISO": "2026-09-13T04:17:14.714Z"
+    "scrapeISO": "2026-09-13T04:17:14.714Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIE 6018": {
     "code": "BIE 6018",
@@ -513,7 +661,65 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6018/",
-    "scrapeISO": "2026-09-13T05:01:51.142Z"
+    "scrapeISO": "2026-09-13T05:01:51.142Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "BIE 7011": {
     "code": "BIE 7011",
@@ -537,7 +743,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-7011/",
-    "scrapeISO": "2026-09-13T06:33:33.396Z"
+    "scrapeISO": "2026-09-13T06:33:33.396Z",
+    "apercuHoraires": []
   },
   "BIE 6131": {
     "code": "BIE 6131",
@@ -565,7 +772,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6131/",
-    "scrapeISO": "2026-09-13T06:38:41.316Z"
+    "scrapeISO": "2026-09-13T06:38:41.316Z",
+    "apercuHoraires": []
   },
   "BIE 6135": {
     "code": "BIE 6135",
@@ -593,6 +801,7 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6135/",
-    "scrapeISO": "2026-09-13T06:38:43.038Z"
+    "scrapeISO": "2026-09-13T06:38:43.038Z",
+    "apercuHoraires": []
   }
 }

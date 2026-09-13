@@ -21,7 +21,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/inn-1901/",
-    "scrapeISO": "2026-09-11T11:35:28.679Z"
+    "scrapeISO": "2026-09-11T17:30:53.445Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-07"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "INN 1902": {
     "code": "INN 1902",
@@ -44,7 +112,50 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/inn-1902/",
-    "scrapeISO": "2026-09-11T11:35:31.273Z"
+    "scrapeISO": "2026-09-11T17:30:56.139Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-08-31",
+                "au": "2026-08-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-09-14",
+                "au": "2026-10-05"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Lun Lundi Du 26/10/2026 au 07/12/2026"
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-07"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "INN 1903": {
     "code": "INN 1903",
@@ -108,6 +219,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/inn-3001/",
-    "scrapeISO": "2026-09-13T03:15:08.061Z"
+    "scrapeISO": "2026-09-13T03:15:08.063Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Lun Lundi , Mar Mardi , Mer Mercredi , Jeu Jeudi , Ven Vendredi , Sam Samedi , Dim Dimanche Du 07/06/2026 au 13/06/2026"
+                },
+                "du": "2026-06-07",
+                "au": "2026-06-13"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

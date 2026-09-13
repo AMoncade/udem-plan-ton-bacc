@@ -41,7 +41,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2310/",
-    "scrapeISO": "2026-09-13T03:14:05.358Z"
+    "scrapeISO": "2026-09-13T03:14:05.358Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 2310D": {
     "code": "SST 2310D",
@@ -72,7 +114,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2310d/",
-    "scrapeISO": "2026-09-13T03:14:15.405Z"
+    "scrapeISO": "2026-09-13T03:14:15.405Z",
+    "apercuHoraires": []
   },
   "SST 3340": {
     "code": "SST 3340",
@@ -108,7 +151,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-3340/",
-    "scrapeISO": "2026-09-13T03:14:18.459Z"
+    "scrapeISO": "2026-09-13T03:14:18.459Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 1010": {
     "code": "SST 1010",
@@ -136,7 +214,108 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-1010/",
-    "scrapeISO": "2026-09-13T03:24:39.691Z"
+    "scrapeISO": "2026-09-13T03:24:39.691Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 2220": {
     "code": "SST 2220",
@@ -163,7 +342,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2220/",
-    "scrapeISO": "2026-09-13T03:35:30.544Z"
+    "scrapeISO": "2026-09-13T03:35:30.544Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 2025": {
     "code": "SST 2025",
@@ -187,7 +434,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2025/",
-    "scrapeISO": "2026-09-13T03:35:32.524Z"
+    "scrapeISO": "2026-09-13T03:35:32.524Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 6100": {
     "code": "SST 6100",
@@ -211,7 +526,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-6100/",
-    "scrapeISO": "2026-09-13T03:42:43.897Z"
+    "scrapeISO": "2026-09-13T03:42:43.897Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 6200": {
     "code": "SST 6200",
@@ -235,7 +618,85 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-6200/",
-    "scrapeISO": "2026-09-13T03:42:47.869Z"
+    "scrapeISO": "2026-09-13T03:42:47.869Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-05-04",
+                "au": "2026-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-06-05",
+                "au": "2026-06-12"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 6300": {
     "code": "SST 6300",
@@ -255,7 +716,92 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-6300/",
-    "scrapeISO": "2026-09-13T03:42:48.014Z"
+    "scrapeISO": "2026-09-13T03:42:48.014Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 959
+                },
+                "du": "2027-01-09",
+                "au": "2027-01-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 959
+                },
+                "du": "2027-01-23",
+                "au": "2027-01-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 959
+                },
+                "du": "2027-02-06",
+                "au": "2027-02-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 959
+                },
+                "du": "2027-02-20",
+                "au": "2027-02-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 959
+                },
+                "du": "2027-03-13",
+                "au": "2027-03-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 959
+                },
+                "du": "2027-04-03",
+                "au": "2027-04-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 959
+                },
+                "du": "2027-04-17",
+                "au": "2027-04-17"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 6400": {
     "code": "SST 6400",
@@ -275,7 +821,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-6400/",
-    "scrapeISO": "2026-09-13T03:42:50.021Z"
+    "scrapeISO": "2026-09-13T03:42:50.021Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 6450": {
     "code": "SST 6450",
@@ -295,7 +876,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-6450/",
-    "scrapeISO": "2026-09-13T03:42:52.763Z"
+    "scrapeISO": "2026-09-13T03:42:52.763Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 6525": {
     "code": "SST 6525",
@@ -315,7 +931,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-6525/",
-    "scrapeISO": "2026-09-13T03:42:54.069Z"
+    "scrapeISO": "2026-09-13T03:42:54.069Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 6550": {
     "code": "SST 6550",
@@ -338,7 +989,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-6550/",
-    "scrapeISO": "2026-09-13T03:42:56.125Z"
+    "scrapeISO": "2026-09-13T03:42:56.125Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 2120": {
     "code": "SST 2120",
@@ -362,7 +1048,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2120/",
-    "scrapeISO": "2026-09-13T04:11:37.144Z"
+    "scrapeISO": "2026-09-13T04:11:37.144Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 1110": {
     "code": "SST 1110",
@@ -386,7 +1140,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-1110/",
-    "scrapeISO": "2026-09-13T04:13:43.080Z"
+    "scrapeISO": "2026-09-13T04:13:43.080Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 2300": {
     "code": "SST 2300",
@@ -409,7 +1231,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2300/",
-    "scrapeISO": "2026-09-13T04:13:45.116Z"
+    "scrapeISO": "2026-09-13T04:13:45.116Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 2130": {
     "code": "SST 2130",
@@ -429,7 +1286,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2130/",
-    "scrapeISO": "2026-09-13T04:13:49.138Z"
+    "scrapeISO": "2026-09-13T04:13:49.138Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 2305": {
     "code": "SST 2305",
@@ -452,7 +1344,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-2305/",
-    "scrapeISO": "2026-09-13T04:13:51.180Z"
+    "scrapeISO": "2026-09-13T04:13:51.180Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 3300": {
     "code": "SST 3300",
@@ -479,7 +1406,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-3300/",
-    "scrapeISO": "2026-09-13T04:13:53.137Z"
+    "scrapeISO": "2026-09-13T04:13:53.137Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-08-14"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 3320": {
     "code": "SST 3320",
@@ -511,7 +1480,172 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-3320/",
-    "scrapeISO": "2026-09-13T04:13:55.187Z"
+    "scrapeISO": "2026-09-13T04:13:55.187Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-16",
+                "au": "2027-01-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-30",
+                "au": "2027-01-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-02-13",
+                "au": "2027-02-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-02-27",
+                "au": "2027-02-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-02-27",
+                "au": "2027-02-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-13",
+                "au": "2027-03-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-13",
+                "au": "2027-03-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-27",
+                "au": "2027-03-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-27",
+                "au": "2027-03-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-04-10",
+                "au": "2027-04-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-04-10",
+                "au": "2027-04-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-04-24",
+                "au": "2027-04-24"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SST 3330": {
     "code": "SST 3330",
@@ -543,6 +1677,171 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sst-3330/",
-    "scrapeISO": "2026-09-13T04:13:59.141Z"
+    "scrapeISO": "2026-09-13T04:13:59.141Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-05",
+                "au": "2026-09-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-09-05",
+                "au": "2026-09-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-19",
+                "au": "2026-09-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-09-19",
+                "au": "2026-09-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-03",
+                "au": "2026-10-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-10-03",
+                "au": "2026-10-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-17",
+                "au": "2026-10-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-10-17",
+                "au": "2026-10-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-31",
+                "au": "2026-10-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-10-31",
+                "au": "2026-10-31"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-11-14",
+                "au": "2026-11-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-11-14",
+                "au": "2026-11-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-11-28",
+                "au": "2026-11-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-11-28",
+                "au": "2026-11-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-12-12",
+                "au": "2026-12-12"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

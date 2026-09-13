@@ -28,7 +28,76 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-1901/",
-    "scrapeISO": "2026-09-11T11:34:40.271Z"
+    "scrapeISO": "2026-09-11T17:29:29.050Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-04",
+                "au": "2026-06-22"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-10-26",
+                "au": "2026-10-30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 1902": {
     "code": "CTL 1902",
@@ -52,7 +121,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-1902/",
-    "scrapeISO": "2026-09-11T11:34:43.652Z"
+    "scrapeISO": "2026-09-11T17:29:31.601Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 1903": {
     "code": "CTL 1903",
@@ -115,7 +239,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-1905/",
-    "scrapeISO": "2026-09-11T11:34:49.735Z"
+    "scrapeISO": "2026-09-11T17:29:33.335Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 2260": {
     "code": "CTL 2260",
@@ -135,7 +294,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-2260/",
-    "scrapeISO": "2026-09-13T03:14:28.912Z"
+    "scrapeISO": "2026-09-13T03:14:28.912Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-05-01",
+                "au": "2026-06-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-05-01",
+                "au": "2026-06-19"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 2420": {
     "code": "CTL 2420",
@@ -163,7 +357,69 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-2420/",
-    "scrapeISO": "2026-09-13T03:14:31.013Z"
+    "scrapeISO": "2026-09-13T03:14:31.013Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-05-01",
+                "au": "2026-08-21"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 1120": {
     "code": "CTL 1120",
@@ -183,7 +439,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-1120/",
-    "scrapeISO": "2026-09-13T03:14:32.753Z"
+    "scrapeISO": "2026-09-13T03:14:32.753Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 1140": {
     "code": "CTL 1140",
@@ -203,7 +504,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-1140/",
-    "scrapeISO": "2026-09-13T03:14:34.576Z"
+    "scrapeISO": "2026-09-13T03:14:34.576Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 2030": {
     "code": "CTL 2030",
@@ -231,7 +577,56 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-2030/",
-    "scrapeISO": "2026-09-13T04:00:22.409Z"
+    "scrapeISO": "2026-09-13T04:00:22.409Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "CTL 2410": {
     "code": "CTL 2410",
@@ -259,6 +654,48 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-2410/",
-    "scrapeISO": "2026-09-13T04:00:25.764Z"
+    "scrapeISO": "2026-09-13T04:00:25.764Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-31",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

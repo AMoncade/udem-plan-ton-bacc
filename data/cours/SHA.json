@@ -37,7 +37,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sha-7040/",
-    "scrapeISO": "2026-09-13T03:10:47.772Z"
+    "scrapeISO": "2026-09-13T03:10:47.772Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SHA 7055": {
     "code": "SHA 7055",
@@ -57,7 +92,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sha-7055/",
-    "scrapeISO": "2026-09-13T03:10:49.805Z"
+    "scrapeISO": "2026-09-13T03:10:49.805Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SHA 7065": {
     "code": "SHA 7065",
@@ -77,7 +147,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sha-7065/",
-    "scrapeISO": "2026-09-13T03:10:51.855Z"
+    "scrapeISO": "2026-09-13T03:10:51.855Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SHA 7060": {
     "code": "SHA 7060",
@@ -105,7 +210,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sha-7060/",
-    "scrapeISO": "2026-09-13T03:10:57.418Z"
+    "scrapeISO": "2026-09-13T03:10:57.418Z",
+    "apercuHoraires": []
   },
   "SHA 71002": {
     "code": "SHA 71002",
@@ -128,6 +234,31 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sha-71002/",
-    "scrapeISO": "2026-09-13T03:10:59.869Z"
+    "scrapeISO": "2026-09-13T03:10:59.869Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

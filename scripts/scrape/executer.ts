@@ -52,6 +52,7 @@ import { parsePrealables } from "../../lib/engine/prealables";
 import { empreinteExtracteur } from "../../lib/empreinte";
 import { parcoursDe, projeterOrientation } from "../../lib/parcours";
 import { parseFicheCours } from "./cours";
+import { parseApercuHoraires } from "./horaires";
 import {
   CHEMIN_INDEX,
   CHEMIN_JOURNAL,
@@ -737,6 +738,15 @@ async function principal(): Promise<void> {
       // récupération RÉELLE de la page, pas de sa relecture au cache.
       if (fiche.sansCredits) sansCredits[code] = page.recupereISO;
       if (!fiche.cours) continue;
+      // L'aperçu des horaires est assemblé ICI et non dans `parseFicheCours`,
+      // pour une raison d'imports : `horaires.ts` réutilise `parseTrimestres` de
+      // `cours.ts` — un seul parseur de trimestre, pas deux représentations qui
+      // divergeraient — et l'appeler depuis `cours.ts` fermerait le cycle.
+      //
+      // `[]` est une valeur SIGNIFIANTE : la page publie sa section d'horaires
+      // sans aucun trimestre, ce qui est le cas de 43 % du catalogue. Le champ
+      // absent voudrait dire « fiche antérieure au champ », ce qui est autre chose.
+      fiche.cours.apercuHoraires = parseApercuHoraires(page.html, code, journal);
       if (fiche.cours.code !== code) {
         journal.inattendu(
           code,

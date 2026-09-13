@@ -28,7 +28,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-70012/",
-    "scrapeISO": "2026-09-13T03:46:44.435Z"
+    "scrapeISO": "2026-09-13T03:46:44.435Z",
+    "apercuHoraires": []
   },
   "SCV 70022": {
     "code": "SCV 70022",
@@ -55,7 +56,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-70022/",
-    "scrapeISO": "2026-09-13T03:46:50.219Z"
+    "scrapeISO": "2026-09-13T03:46:50.219Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 809
+                },
+                "du": "2026-09-14",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 869
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 809
+                },
+                "du": "2027-01-11",
+                "au": "2027-03-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 869
+                },
+                "du": "2027-03-26",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 7005": {
     "code": "SCV 7005",
@@ -83,7 +152,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-7005/",
-    "scrapeISO": "2026-09-13T03:46:54.538Z"
+    "scrapeISO": "2026-09-13T03:46:54.538Z",
+    "apercuHoraires": []
   },
   "SCV 6014": {
     "code": "SCV 6014",
@@ -111,7 +181,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6014/",
-    "scrapeISO": "2026-09-13T03:46:56.397Z"
+    "scrapeISO": "2026-09-13T03:46:56.397Z",
+    "apercuHoraires": []
   },
   "SCV 6013": {
     "code": "SCV 6013",
@@ -135,7 +206,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6013/",
-    "scrapeISO": "2026-09-13T03:47:02.904Z"
+    "scrapeISO": "2026-09-13T03:47:02.904Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1080,
+                  "finMin": 1199
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1080,
+                  "finMin": 1199
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 6007": {
     "code": "SCV 6007",
@@ -155,7 +261,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6007/",
-    "scrapeISO": "2026-09-13T03:47:06.769Z"
+    "scrapeISO": "2026-09-13T03:47:06.769Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 749
+                },
+                "du": "2026-09-01",
+                "au": "2026-09-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 749
+                },
+                "du": "2026-10-05",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 6010": {
     "code": "SCV 6010",
@@ -175,7 +316,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6010/",
-    "scrapeISO": "2026-09-13T03:47:10.651Z"
+    "scrapeISO": "2026-09-13T03:47:10.651Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-05",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 6011": {
     "code": "SCV 6011",
@@ -195,7 +381,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6011/",
-    "scrapeISO": "2026-09-13T03:47:12.760Z"
+    "scrapeISO": "2026-09-13T03:47:12.760Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-14",
+                "au": "2026-10-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 840,
+                  "finMin": 1019
+                },
+                "du": "2026-09-21",
+                "au": "2026-09-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 840,
+                  "finMin": 1019
+                },
+                "du": "2026-10-05",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 60012": {
     "code": "SCV 60012",
@@ -222,7 +463,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-60012/",
-    "scrapeISO": "2026-09-13T03:54:25.447Z"
+    "scrapeISO": "2026-09-13T03:54:25.447Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 809
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 809
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 60022": {
     "code": "SCV 60022",
@@ -249,7 +525,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-60022/",
-    "scrapeISO": "2026-09-13T03:54:29.700Z"
+    "scrapeISO": "2026-09-13T03:54:29.700Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 809
+                },
+                "du": "2026-09-14",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 809
+                },
+                "du": "2026-10-19",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 809
+                },
+                "du": "2027-01-11",
+                "au": "2027-03-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 690,
+                  "finMin": 809
+                },
+                "du": "2027-04-05",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 6003": {
     "code": "SCV 6003",
@@ -269,7 +613,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6003/",
-    "scrapeISO": "2026-09-13T03:54:31.752Z"
+    "scrapeISO": "2026-09-13T03:54:31.752Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-05",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 6902": {
     "code": "SCV 6902",
@@ -297,7 +686,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6902/",
-    "scrapeISO": "2026-09-13T03:54:33.748Z"
+    "scrapeISO": "2026-09-13T03:54:33.748Z",
+    "apercuHoraires": []
   },
   "SCV 6903": {
     "code": "SCV 6903",
@@ -325,7 +715,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6903/",
-    "scrapeISO": "2026-09-13T03:54:35.723Z"
+    "scrapeISO": "2026-09-13T03:54:35.723Z",
+    "apercuHoraires": []
   },
   "SCV 6904": {
     "code": "SCV 6904",
@@ -353,7 +744,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6904/",
-    "scrapeISO": "2026-09-13T03:54:37.742Z"
+    "scrapeISO": "2026-09-13T03:54:37.742Z",
+    "apercuHoraires": []
   },
   "SCV 2153": {
     "code": "SCV 2153",
@@ -373,7 +765,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-2153/",
-    "scrapeISO": "2026-09-13T04:36:12.103Z"
+    "scrapeISO": "2026-09-13T04:36:12.103Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-19"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 2452": {
     "code": "SCV 2452",
@@ -393,7 +840,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-2452/",
-    "scrapeISO": "2026-09-13T04:36:14.118Z"
+    "scrapeISO": "2026-09-13T04:36:14.118Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2026-10-26",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2026-11-09",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 68003": {
     "code": "SCV 68003",
@@ -420,7 +912,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-68003/",
-    "scrapeISO": "2026-09-13T05:12:18.784Z"
+    "scrapeISO": "2026-09-13T05:12:18.784Z",
+    "apercuHoraires": []
   },
   "SCV 1151": {
     "code": "SCV 1151",
@@ -440,7 +933,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-1151/",
-    "scrapeISO": "2026-09-13T06:05:44.001Z"
+    "scrapeISO": "2026-09-13T06:05:44.001Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 1152": {
     "code": "SCV 1152",
@@ -460,7 +988,32 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-1152/",
-    "scrapeISO": "2026-09-13T06:05:46.882Z"
+    "scrapeISO": "2026-09-13T06:05:46.882Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-09"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 2151": {
     "code": "SCV 2151",
@@ -480,7 +1033,52 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-2151/",
-    "scrapeISO": "2026-09-13T06:06:23.619Z"
+    "scrapeISO": "2026-09-13T06:06:23.619Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-11-09",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 2152": {
     "code": "SCV 2152",
@@ -500,7 +1098,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-2152/",
-    "scrapeISO": "2026-09-13T06:06:25.764Z"
+    "scrapeISO": "2026-09-13T06:06:25.764Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 2451": {
     "code": "SCV 2451",
@@ -520,7 +1153,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-2451/",
-    "scrapeISO": "2026-09-13T06:06:28.775Z"
+    "scrapeISO": "2026-09-13T06:06:28.775Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 570,
+                  "finMin": 689
+                },
+                "du": "2027-03-15",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "SCV 6006A": {
     "code": "SCV 6006A",
@@ -540,7 +1208,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6006a/",
-    "scrapeISO": "2026-09-13T06:24:09.379Z"
+    "scrapeISO": "2026-09-13T06:24:09.379Z",
+    "apercuHoraires": []
   },
   "SCV 6015": {
     "code": "SCV 6015",
@@ -560,7 +1229,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-6015/",
-    "scrapeISO": "2026-09-13T06:24:11.023Z"
+    "scrapeISO": "2026-09-13T06:24:11.023Z",
+    "apercuHoraires": []
   },
   "SCV 68093": {
     "code": "SCV 68093",
@@ -583,6 +1253,7 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/scv-68093/",
-    "scrapeISO": "2026-09-13T06:24:17.238Z"
+    "scrapeISO": "2026-09-13T06:24:17.238Z",
+    "apercuHoraires": []
   }
 }
