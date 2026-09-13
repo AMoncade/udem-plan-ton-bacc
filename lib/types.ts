@@ -415,6 +415,39 @@ export interface IndexProgrammes {
    * laisse le test se taire plutôt que de fabriquer un échec.
    */
   empreinteExtracteur?: string;
+  /**
+   * Cours dont la PAGE A ÉTÉ LUE et ne porte aucune étiquette « Crédits », avec
+   * la date de cette observation.
+   *
+   * Un code n'entre ici QUE sur une page obtenue et analysée. Un code jamais
+   * atteint, ou atteint en erreur — 404, 503, tranche interrompue — n'y figure
+   * pas : il reste dans le cas « pas encore », qui est vrai. C'est toute la
+   * valeur du champ, et la raison pour laquelle il ne doit pas être déduit par
+   * soustraction : « cité, sans fiche, présent au cache » est un MAJORANT qui
+   * inclut les échecs d'analyse pour d'autres motifs.
+   *
+   * POURQUOI IL EXISTE. `PSY 40001` a une page à l'UdeM où les seules
+   * occurrences de « crédits » sont les « 90 crédits » des programmes qui citent
+   * le cours ; les lire donnerait au cours les crédits de son programme. Le
+   * scraper refuse donc d'écrire la fiche, à raison — et les programmes qui
+   * citent ce cours ne seront jamais complets. Sans ce champ, l'UI ne peut pas
+   * distinguer « aucune collecte n'ajoutera ce cours » de « la prochaine passe
+   * le récupérera », et doit énoncer les deux sans trancher.
+   *
+   * POURQUOI UNE DATE PAR CODE, et non une simple liste. Le champ est CUMULATIF
+   * — une passe ne voit que sa tranche, donc le réécrire en bloc ne garderait
+   * que la dernière, ce qui est la panne de `data/journal.json`. Mais un cumul
+   * sous le seul `scrapeISO` de l'index mentirait sur son âge : les entrées
+   * anciennes prétendraient dater de la passe courante. Chaque code porte donc
+   * sa propre date d'observation ; la fusion est alors triviale et honnête, la
+   * plus récente l'emporte, et un consommateur peut décider ce qui est trop
+   * vieux. UdeM peut corriger une page : « vu sans crédits le 11 septembre »
+   * reste vrai, « n'a pas de crédits » vieillirait mal.
+   *
+   * NE FIGER AUCUN COMPTE dans un test : le nombre monte à chaque page
+   * récupérée. Ce n'est pas une erreur qu'on corrige, c'est un plancher.
+   */
+  codesSansCredits?: Record<CodeCours, string>;
 }
 
 export type GenreEntreeJournal = "info" | "manque" | "inattendu" | "erreur";
