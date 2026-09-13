@@ -627,6 +627,52 @@ export interface EtatBloc {
   coursAttribues: CodeCours[];
 }
 
+/**
+ * Ce qu'un signal d'audit DEMANDE au lecteur — l'axe qui manque à une liste de
+ * phrases.
+ *
+ * `Audit.problemes` mélangeait des choses qui n'appellent pas la même réaction :
+ * « il vous manque 6 crédits » et « la page se contredit » et « choisissez un
+ * cheminement » s'affichaient pareil. L'étudiant ne peut rien pour la deuxième
+ * et tout pour la première.
+ *
+ * Les six genres ne sont pas une taxinomie inventée : ils couvrent les 25 sites
+ * d'émission du moteur, énumérés un par un. Un même site en émet deux selon le
+ * cas — un quota de sigle violé est `bloque`, indéterminé est `nonVerifiable` —
+ * donc le genre se calcule PAR SIGNAL, jamais par site.
+ *
+ * Tout `switch` là-dessus doit porter un `default` avec garde `never` : une
+ * union qu'on étend avale en silence les cas ajoutés plus tard.
+ */
+export type GenreSignal =
+  /** Empêche le diplôme, et l'étudiant peut y remédier. */
+  | "bloque"
+  /** L'audit est suspendu à un choix DE L'ÉTUDIANT — cheminement, orientation.
+   *  Ni un succès ni un échec : le quatrième état. */
+  | "choixAttendu"
+  /** Des crédits réussis ne comptent pas : un bloc plafonné, un surplus. */
+  | "perteOuSurplus"
+  /** Le moteur ne peut pas établir, et personne n'y peut rien. */
+  | "nonVerifiable"
+  /** La page ou le catalogue est en défaut — PAS l'étudiant. Le distinguer
+   *  évite de lui faire chercher une faute qu'il n'a pas commise. */
+  | "donneesAmont"
+  /** Explication d'un calcul, sans action attendue. */
+  | "informatif";
+
+export interface Signal {
+  genre: GenreSignal;
+  message: string;
+  /**
+   * Le bloc visé, quand il y en a un.
+   *
+   * ABSENT quand le signal n'en vise aucun : un total d'option n'appartient à
+   * aucun bloc, et lui en inventer un serait pire que de le laisser au niveau
+   * du programme — l'étudiant irait corriger le mauvais endroit.
+   */
+  cleBloc?: string;
+}
+
 export interface Audit {
   idProgramme: string;
   blocs: EtatBloc[];
@@ -646,6 +692,29 @@ export interface Audit {
    */
   conforme: boolean;
   problemes: string[];
+  /**
+   * Les mêmes constats que `problemes`, mais CLASSÉS — voir `GenreSignal`.
+   *
+   * OBLIGATOIRE ET NON OPTIONNEL, et c'est mesuré plutôt que choisi. Un `Audit`
+   * est toujours frais : `auditProgramme()` en est le seul producteur, appelé à
+   * un seul endroit (`ProviderEtat.tsx`), et aucun `Audit` n'est jamais
+   * persisté — `localStorage` ne garde que `faits` et `plan`. Un `signaux?`
+   * aurait donc une branche `undefined` que personne n'atteindrait jamais.
+   *
+   * Une garde sans population est pire qu'inutile : elle inviterait à lire
+   * « absent » comme « aucun signal », précisément parce que le vrai cas
+   * d'absence ne se présenterait jamais pour corriger l'intuition. On a déjà
+   * payé ça ailleurs — une branche inatteignable décrite comme un détecteur.
+   * Obligatoire, TypeScript signale à la compilation tout producteur futur qui
+   * l'oublierait : un garde-fou mécanique plutôt que documentaire.
+   *
+   * `problemes` reste IDENTIQUE et n'en est pas dérivé. Dériver rendrait la
+   * divergence impossible mais déplacerait le risque : reformuler un
+   * `Signal.message` changerait le texte de trois écrans sans qu'aucun test ne
+   * le dise. L'accord entre les deux listes est éprouvé par un test dédié, qui
+   * échoue bruyamment le jour où un site d'émission n'est ajouté que d'un côté.
+   */
+  signaux: Signal[];
 }
 
 // ---------------------------------------------------------------------------
