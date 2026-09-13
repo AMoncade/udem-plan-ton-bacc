@@ -20,7 +20,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Faculté des sciences de l'éducation",
-      "typeProgramme": "Actualisation",
+      "typeProgramme": "Actualisation de formation",
       "creditsTotal": 30,
       "nbBlocs": 1,
       "structureLue": true
@@ -32,7 +32,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Actualisation",
+      "typeProgramme": "Actualisation de formation",
       "creditsTotal": null,
       "nbBlocs": 2,
       "structureLue": true
@@ -44,7 +44,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Actualisation",
+      "typeProgramme": "Actualisation de formation",
       "creditsTotal": null,
       "nbBlocs": 2,
       "structureLue": true
@@ -56,7 +56,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Actualisation",
+      "typeProgramme": "Actualisation de formation",
       "creditsTotal": null,
       "nbBlocs": 1,
       "structureLue": true
@@ -68,7 +68,7 @@
       "orientation": "Actuariat",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Actuariat",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -80,7 +80,7 @@
       "orientation": "Mathématiques appliquées",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Actuariat",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -92,7 +92,7 @@
       "orientation": "Mathématiques pures",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Actuariat",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -104,7 +104,7 @@
       "orientation": "criminalistique et information",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Analyse criminologique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -116,7 +116,7 @@
       "orientation": "générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Analyse criminologique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -128,7 +128,7 @@
       "orientation": "intervention",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Analyse criminologique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -140,7 +140,7 @@
       "orientation": "justice et victimes",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Analyse criminologique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -152,7 +152,7 @@
       "orientation": "sécurité intérieure",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Analyse criminologique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -164,7 +164,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Année",
+      "typeProgramme": "Année préparatoire",
       "creditsTotal": 40,
       "nbBlocs": 1,
       "structureLue": true
@@ -212,7 +212,7 @@
       "orientation": "Archéologie classique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Archéologie classique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -224,7 +224,7 @@
       "orientation": "Histoire ancienne",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Archéologie classique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -236,7 +236,7 @@
       "orientation": "Langues et littératures",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Archéologie classique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -626,15 +626,27 @@
       "structureLue": true
     },
     {
-      "cle": "baccalaureat-en-design-industriel",
+      "cle": "baccalaureat-en-design-industriel#honor",
       "id": "baccalaureat-en-design-industriel",
       "nom": "Baccalauréat en design industriel",
-      "orientation": null,
+      "orientation": "honor",
       "cycle": "1er cycle",
       "faculte": "Faculté de l'aménagement",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 120,
-      "nbBlocs": 15,
+      "nbBlocs": 14,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-design-industriel#régulier",
+      "id": "baccalaureat-en-design-industriel",
+      "nom": "Baccalauréat en design industriel",
+      "orientation": "régulier",
+      "cycle": "1er cycle",
+      "faculte": "Faculté de l'aménagement",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 120,
+      "nbBlocs": 14,
       "structureLue": true
     },
     {
@@ -1154,18 +1166,6 @@
       "structureLue": false
     },
     {
-      "cle": "baccalaureat-en-histoire",
-      "id": "baccalaureat-en-histoire",
-      "nom": "Baccalauréat en histoire",
-      "orientation": null,
-      "cycle": "1er cycle",
-      "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Baccalauréat",
-      "creditsTotal": 90,
-      "nbBlocs": 13,
-      "structureLue": true
-    },
-    {
       "cle": "baccalaureat-en-histoire-de-lart",
       "id": "baccalaureat-en-histoire-de-lart",
       "nom": "Baccalauréat en histoire de l’art",
@@ -1190,6 +1190,30 @@
       "structureLue": true
     },
     {
+      "cle": "baccalaureat-en-histoire#honor",
+      "id": "baccalaureat-en-histoire",
+      "nom": "Baccalauréat en histoire",
+      "orientation": "honor",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-histoire#régulier",
+      "id": "baccalaureat-en-histoire",
+      "nom": "Baccalauréat en histoire",
+      "orientation": "régulier",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 10,
+      "structureLue": true
+    },
+    {
       "cle": "baccalaureat-en-informatique#Coop",
       "id": "baccalaureat-en-informatique",
       "nom": "Baccalauréat en informatique",
@@ -1198,7 +1222,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 14,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -1210,7 +1234,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 14,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -2050,7 +2074,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 15,
       "structureLue": true
     },
     {
@@ -2062,7 +2086,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 16,
       "structureLue": true
     },
     {
@@ -2074,7 +2098,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 17,
       "structureLue": true
     },
     {
@@ -2086,7 +2110,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 16,
       "structureLue": true
     },
     {
@@ -2098,7 +2122,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 12,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -2110,7 +2134,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 12,
+      "nbBlocs": 7,
       "structureLue": true
     },
     {
@@ -2342,15 +2366,51 @@
       "structureLue": true
     },
     {
-      "cle": "baccalaureat-en-sciences-biologiques",
+      "cle": "baccalaureat-en-sciences-biologiques#biodiversité, écologie et évolution",
       "id": "baccalaureat-en-sciences-biologiques",
       "nom": "Baccalauréat en sciences biologiques",
-      "orientation": null,
+      "orientation": "biodiversité, écologie et évolution",
       "cycle": "1er cycle",
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 31,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-sciences-biologiques#biologie intégrative animale",
+      "id": "baccalaureat-en-sciences-biologiques",
+      "nom": "Baccalauréat en sciences biologiques",
+      "orientation": "biologie intégrative animale",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-sciences-biologiques#biologie intégrative végétale",
+      "id": "baccalaureat-en-sciences-biologiques",
+      "nom": "Baccalauréat en sciences biologiques",
+      "orientation": "biologie intégrative végétale",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-sciences-biologiques#biologie moléculaire, cellulaire et génétique",
+      "id": "baccalaureat-en-sciences-biologiques",
+      "nom": "Baccalauréat en sciences biologiques",
+      "orientation": "biologie moléculaire, cellulaire et génétique",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -2482,7 +2542,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 10,
+      "nbBlocs": 7,
       "structureLue": true
     },
     {
@@ -2666,15 +2726,27 @@
       "structureLue": true
     },
     {
-      "cle": "baccalaureat-en-traduction",
+      "cle": "baccalaureat-en-traduction#international",
       "id": "baccalaureat-en-traduction",
       "nom": "Baccalauréat en traduction",
-      "orientation": null,
+      "orientation": "international",
       "cycle": "1er cycle",
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 27,
+      "nbBlocs": 19,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-traduction#régulier et COOP",
+      "id": "baccalaureat-en-traduction",
+      "nom": "Baccalauréat en traduction",
+      "orientation": "régulier et COOP",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 18,
       "structureLue": true
     },
     {
@@ -2732,7 +2804,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Baccalauréats",
+      "typeProgramme": "Baccalauréat",
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -2756,7 +2828,7 @@
       "orientation": "biophysique et physiologie moléculaires",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Biophysique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -2768,7 +2840,7 @@
       "orientation": "générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Biophysique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -2780,7 +2852,7 @@
       "orientation": "physique des matériaux",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Biophysique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -2792,7 +2864,7 @@
       "orientation": "physique médicale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Biophysique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -2804,7 +2876,7 @@
       "orientation": "plasma - cheminement international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Biophysique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3032,7 +3104,7 @@
       "orientation": "Médecine de population des bovins laitiers",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3044,7 +3116,7 @@
       "orientation": "Thériogénologie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3056,7 +3128,7 @@
       "orientation": "urgentologie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3068,7 +3140,7 @@
       "orientation": "chirurgie des animaux de compagnie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3080,7 +3152,7 @@
       "orientation": "chirurgie équine",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3092,7 +3164,7 @@
       "orientation": "imagerie médicale des animaux de compagnie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3104,7 +3176,7 @@
       "orientation": "médecine de population des bovins laitiers",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3116,7 +3188,7 @@
       "orientation": "médecine interne équine",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3128,7 +3200,7 @@
       "orientation": "ophtalmologie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3140,7 +3212,7 @@
       "orientation": "thériogénologie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3152,7 +3224,7 @@
       "orientation": "urgentologie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3164,7 +3236,7 @@
       "orientation": "urgentologie et soins intensifs des animaux de compagnie",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine vétérinaire",
-      "typeProgramme": "Certificat d'internat",
+      "typeProgramme": "Certificat",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -3188,7 +3260,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Faculté de l’apprentissage continu",
-      "typeProgramme": "Certificat d'intervention",
+      "typeProgramme": "Certificat",
       "creditsTotal": 30,
       "nbBlocs": 5,
       "structureLue": true
@@ -3200,7 +3272,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Faculté de l’apprentissage continu",
-      "typeProgramme": "Certificat d'intervention",
+      "typeProgramme": "Certificat",
       "creditsTotal": 30,
       "nbBlocs": 3,
       "structureLue": true
@@ -3704,7 +3776,7 @@
       "orientation": "Communication médiatique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication médiatique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3716,7 +3788,7 @@
       "orientation": "Communication organisationnelle",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication médiatique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3728,7 +3800,7 @@
       "orientation": "Communication politique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication médiatique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3740,7 +3812,7 @@
       "orientation": "Communication politique - volet international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication médiatique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3752,7 +3824,7 @@
       "orientation": "Études de journalisme",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication médiatique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3764,7 +3836,7 @@
       "orientation": "Générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication médiatique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3776,7 +3848,7 @@
       "orientation": "Recherche-création",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication médiatique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3788,7 +3860,7 @@
       "orientation": "Communication médiatique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication organisationelle",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3800,7 +3872,7 @@
       "orientation": "Communication organisationnelle",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication organisationelle",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3812,7 +3884,7 @@
       "orientation": "Communication politique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication organisationelle",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3824,7 +3896,7 @@
       "orientation": "Communication politique - volet international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication organisationelle",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3836,7 +3908,7 @@
       "orientation": "Études de journalisme",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication organisationelle",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3848,7 +3920,7 @@
       "orientation": "Générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication organisationelle",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3860,7 +3932,7 @@
       "orientation": "Recherche-création",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication organisationelle",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3872,7 +3944,7 @@
       "orientation": "Communication médiatique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication politique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3884,7 +3956,7 @@
       "orientation": "Communication organisationnelle",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication politique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3896,7 +3968,7 @@
       "orientation": "Communication politique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication politique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3908,7 +3980,7 @@
       "orientation": "Communication politique - volet international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication politique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3920,7 +3992,7 @@
       "orientation": "Études de journalisme",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication politique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3932,7 +4004,7 @@
       "orientation": "Générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication politique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3944,7 +4016,7 @@
       "orientation": "Recherche-création",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Communication politique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -3956,7 +4028,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Compléments",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 8,
       "structureLue": true
@@ -4412,7 +4484,7 @@
       "orientation": null,
       "cycle": "Études médicales postdoctorales",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "D.E.S.",
+      "typeProgramme": "DES",
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -6410,15 +6482,51 @@
       "structureLue": true
     },
     {
-      "cle": "dess-en-droit-des-affaires",
+      "cle": "dess-en-droit-des-affaires#Droit des aff. et des relations écon. internationales",
       "id": "dess-en-droit-des-affaires",
       "nom": "DESS en droit des affaires",
-      "orientation": null,
+      "orientation": "Droit des aff. et des relations écon. internationales",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de droit",
       "typeProgramme": "DESS",
       "creditsTotal": 30,
-      "nbBlocs": 14,
+      "nbBlocs": 4,
+      "structureLue": true
+    },
+    {
+      "cle": "dess-en-droit-des-affaires#Droit des produits et marchés financiers",
+      "id": "dess-en-droit-des-affaires",
+      "nom": "DESS en droit des affaires",
+      "orientation": "Droit des produits et marchés financiers",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de droit",
+      "typeProgramme": "DESS",
+      "creditsTotal": 30,
+      "nbBlocs": 4,
+      "structureLue": true
+    },
+    {
+      "cle": "dess-en-droit-des-affaires#Droit et pratiques contractuelles en affaires",
+      "id": "dess-en-droit-des-affaires",
+      "nom": "DESS en droit des affaires",
+      "orientation": "Droit et pratiques contractuelles en affaires",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de droit",
+      "typeProgramme": "DESS",
+      "creditsTotal": 30,
+      "nbBlocs": 4,
+      "structureLue": true
+    },
+    {
+      "cle": "dess-en-droit-des-affaires#Droit nord-américain des affaires",
+      "id": "dess-en-droit-des-affaires",
+      "nom": "DESS en droit des affaires",
+      "orientation": "Droit nord-américain des affaires",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de droit",
+      "typeProgramme": "DESS",
+      "creditsTotal": 30,
+      "nbBlocs": 2,
       "structureLue": true
     },
     {
@@ -6682,7 +6790,7 @@
       "faculte": "Faculté de l'aménagement",
       "typeProgramme": "DESS",
       "creditsTotal": 30,
-      "nbBlocs": 12,
+      "nbBlocs": 6,
       "structureLue": true
     },
     {
@@ -6968,7 +7076,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "D.E.S.S.",
+      "typeProgramme": "DESS",
       "creditsTotal": 30,
       "nbBlocs": 3,
       "structureLue": true
@@ -7328,7 +7436,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Doctorat civil",
+      "typeProgramme": "Doctorat",
       "creditsTotal": 90,
       "nbBlocs": 3,
       "structureLue": true
@@ -8150,15 +8258,27 @@
       "structureLue": true
     },
     {
-      "cle": "doctorat-en-neurosciences",
+      "cle": "doctorat-en-neurosciences#Général",
       "id": "doctorat-en-neurosciences",
       "nom": "Doctorat en neurosciences",
-      "orientation": null,
+      "orientation": "Général",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
       "typeProgramme": "Doctorat",
       "creditsTotal": 90,
-      "nbBlocs": 5,
+      "nbBlocs": 3,
+      "structureLue": true
+    },
+    {
+      "cle": "doctorat-en-neurosciences#Neuropsychologie",
+      "id": "doctorat-en-neurosciences",
+      "nom": "Doctorat en neurosciences",
+      "orientation": "Neuropsychologie",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de médecine",
+      "typeProgramme": "Doctorat",
+      "creditsTotal": 90,
+      "nbBlocs": 2,
       "structureLue": true
     },
     {
@@ -9296,7 +9416,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de l'aménagement",
-      "typeProgramme": "Doctorat interdisciplinaire",
+      "typeProgramme": "Doctorat",
       "creditsTotal": 90,
       "nbBlocs": 4,
       "structureLue": true
@@ -9308,7 +9428,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences de l'éducation",
-      "typeProgramme": "Doctorat professionnel",
+      "typeProgramme": "Doctorat",
       "creditsTotal": 90,
       "nbBlocs": 3,
       "structureLue": true
@@ -9320,7 +9440,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "École de santé publique",
-      "typeProgramme": "Doctorat professionnel",
+      "typeProgramme": "Doctorat",
       "creditsTotal": 90,
       "nbBlocs": 4,
       "structureLue": true
@@ -9332,7 +9452,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "École de santé publique",
-      "typeProgramme": "Doctorat professionnel",
+      "typeProgramme": "Doctorat",
       "creditsTotal": 90,
       "nbBlocs": 3,
       "structureLue": true
@@ -9344,7 +9464,7 @@
       "orientation": null,
       "cycle": "Études médicales postdoctorales",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Échographie ciblée",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -9356,7 +9476,7 @@
       "orientation": "espagnol langue seconde",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Enseignement",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9368,7 +9488,7 @@
       "orientation": "langue et littérature",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Enseignement",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9440,7 +9560,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Université de Montréal",
-      "typeProgramme": "Études",
+      "typeProgramme": "Études libres",
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -9452,7 +9572,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Formation préparatoire",
+      "typeProgramme": null,
       "creditsTotal": 16,
       "nbBlocs": 1,
       "structureLue": true
@@ -9464,7 +9584,7 @@
       "orientation": "biochimie in silico",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génétique moléculaire",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9476,7 +9596,7 @@
       "orientation": "biologie structurale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génétique moléculaire",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9488,7 +9608,7 @@
       "orientation": "dynamique cellulaire des complexes macromoléculaires",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génétique moléculaire",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9500,7 +9620,7 @@
       "orientation": "générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génétique moléculaire",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9512,7 +9632,7 @@
       "orientation": "génétique moléculaire",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génétique moléculaire",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9524,7 +9644,7 @@
       "orientation": "génomique humaine",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génétique moléculaire",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9536,7 +9656,7 @@
       "orientation": "biochimie in silico",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génomique humaine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9548,7 +9668,7 @@
       "orientation": "biologie structurale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génomique humaine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9560,7 +9680,7 @@
       "orientation": "dynamique cellulaire des complexes macromoléculaires",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génomique humaine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9572,7 +9692,7 @@
       "orientation": "générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génomique humaine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9584,7 +9704,7 @@
       "orientation": "génétique moléculaire",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génomique humaine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9596,7 +9716,7 @@
       "orientation": "génomique humaine",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Génomique humaine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9608,7 +9728,7 @@
       "orientation": "Archéologie classique",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Histoire ancienne",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9620,7 +9740,7 @@
       "orientation": "Histoire ancienne",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Histoire ancienne",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9632,7 +9752,7 @@
       "orientation": "Langues et littératures",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Histoire ancienne",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -9922,7 +10042,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 18,
+      "nbBlocs": 9,
       "structureLue": true
     },
     {
@@ -9934,7 +10054,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 18,
+      "nbBlocs": 9,
       "structureLue": true
     },
     {
@@ -10102,7 +10222,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 6,
+      "nbBlocs": 3,
       "structureLue": true
     },
     {
@@ -11006,15 +11126,27 @@
       "structureLue": true
     },
     {
-      "cle": "maitrise-en-ergotherapie",
+      "cle": "maitrise-en-ergotherapie#international",
       "id": "maitrise-en-ergotherapie",
       "nom": "Maîtrise en ergothérapie",
-      "orientation": null,
+      "orientation": "international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 7,
+      "nbBlocs": 5,
+      "structureLue": true
+    },
+    {
+      "cle": "maitrise-en-ergotherapie#régulier",
+      "id": "maitrise-en-ergotherapie",
+      "nom": "Maîtrise en ergothérapie",
+      "orientation": "régulier",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de médecine",
+      "typeProgramme": "Maîtrise",
+      "creditsTotal": 45,
+      "nbBlocs": 5,
       "structureLue": true
     },
     {
@@ -12872,7 +13004,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "Maîtrise individualisée",
+      "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -12884,7 +13016,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Maîtrise individualisée",
+      "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
       "nbBlocs": 2,
       "structureLue": true
@@ -12896,7 +13028,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Maîtrise professionnelle",
+      "typeProgramme": "Maîtrise",
       "creditsTotal": 80,
       "nbBlocs": 2,
       "structureLue": true
@@ -12908,7 +13040,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Maîtrise professionnelle",
+      "typeProgramme": "Maîtrise",
       "creditsTotal": 80,
       "nbBlocs": 2,
       "structureLue": true
@@ -12920,7 +13052,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences de l'éducation",
-      "typeProgramme": "Maîtrise sciences",
+      "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
       "nbBlocs": 4,
       "structureLue": true
@@ -13448,7 +13580,7 @@
       "orientation": "biologie des systèmes -",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Médecine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -13460,7 +13592,7 @@
       "orientation": "biologie du cancer – cheminement international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Médecine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -13472,7 +13604,7 @@
       "orientation": "générale -",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Médecine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -13484,7 +13616,7 @@
       "orientation": "médecine cellulaire et moléculaire -",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Médecine",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -13496,7 +13628,7 @@
       "orientation": "Microbiologie environnementale",
       "cycle": "1er cycle",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Microbiologie environnementale",
+      "typeProgramme": null,
       "creditsTotal": 90,
       "nbBlocs": 0,
       "structureLue": false
@@ -13508,7 +13640,7 @@
       "orientation": "Microbiologie et immunologie moléculaires",
       "cycle": "1er cycle",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "Microbiologie environnementale",
+      "typeProgramme": null,
       "creditsTotal": 90,
       "nbBlocs": 0,
       "structureLue": false
@@ -16112,7 +16244,7 @@
       "orientation": null,
       "cycle": "Études médicales postdoctorales",
       "faculte": "Faculté de médecine",
-      "typeProgramme": "D.E.S.",
+      "typeProgramme": "DES",
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -16124,7 +16256,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Études supérieures et postdoctorales, Faculté de l'aménagement",
-      "typeProgramme": "Ph.",
+      "typeProgramme": null,
       "creditsTotal": 90,
       "nbBlocs": 2,
       "structureLue": true
@@ -16136,7 +16268,7 @@
       "orientation": "biophysique et physiologie moléculaires",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Physique médicale",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16148,7 +16280,7 @@
       "orientation": "générale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Physique médicale",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16160,7 +16292,7 @@
       "orientation": "physique des matériaux",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Physique médicale",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16172,7 +16304,7 @@
       "orientation": "physique médicale",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Physique médicale",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16184,7 +16316,7 @@
       "orientation": "plasma - cheminement international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Physique médicale",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16196,7 +16328,7 @@
       "orientation": "pratique avancée",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences infirmières",
-      "typeProgramme": "Pratique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16208,7 +16340,7 @@
       "orientation": "pratique avancée",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences infirmières",
-      "typeProgramme": "Pratique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16220,7 +16352,7 @@
       "orientation": "pratique avancée",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences infirmières",
-      "typeProgramme": "Pratique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16232,7 +16364,7 @@
       "orientation": "pratique avancée",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences infirmières",
-      "typeProgramme": "Pratique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16244,7 +16376,7 @@
       "orientation": "pratique avancée",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences infirmières",
-      "typeProgramme": "Pratique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16256,7 +16388,7 @@
       "orientation": "pratique avancée",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté des sciences infirmières",
-      "typeProgramme": "Pratique",
+      "typeProgramme": null,
       "creditsTotal": 45,
       "nbBlocs": 0,
       "structureLue": false
@@ -16280,7 +16412,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Faculté de pharmacie",
-      "typeProgramme": "Programme d'actualisation",
+      "typeProgramme": "Programme",
       "creditsTotal": 90,
       "nbBlocs": 1,
       "structureLue": true
@@ -16306,7 +16438,7 @@
       "faculte": "Faculté de l’apprentissage continu",
       "typeProgramme": "Programme",
       "creditsTotal": null,
-      "nbBlocs": 12,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -16318,7 +16450,7 @@
       "faculte": "Faculté de l’apprentissage continu",
       "typeProgramme": "Programme",
       "creditsTotal": null,
-      "nbBlocs": 12,
+      "nbBlocs": 3,
       "structureLue": true
     },
     {
@@ -16330,7 +16462,7 @@
       "faculte": "Faculté de l’apprentissage continu",
       "typeProgramme": "Programme",
       "creditsTotal": null,
-      "nbBlocs": 12,
+      "nbBlocs": 1,
       "structureLue": true
     },
     {
@@ -16460,7 +16592,7 @@
       "orientation": null,
       "cycle": null,
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "Stage",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -16472,7 +16604,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "Stage",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -16496,7 +16628,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "Formation postdoctorale",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -16640,7 +16772,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "stage postdoctoral",
+      "typeProgramme": "Stage postdoctoral",
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -18056,7 +18188,7 @@
       "orientation": null,
       "cycle": "1er cycle",
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "Stagiaire",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -18068,7 +18200,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "Stagiaire",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -18080,7 +18212,7 @@
       "orientation": null,
       "cycle": "Cycles supérieurs",
       "faculte": "Études supérieures et postdoctorales",
-      "typeProgramme": "Stagiaire",
+      "typeProgramme": null,
       "creditsTotal": null,
       "nbBlocs": 0,
       "structureLue": false
@@ -18278,8 +18410,8 @@
     "VIO",
     "VIR"
   ],
-  "scrapeISO": "2026-09-13T16:07:37.571Z",
-  "empreinteExtracteur": "725d229503ca993417d33f501affedba9fca0b0243c1e9cef93e13ad824ab124",
+  "scrapeISO": "2026-09-13T19:05:53.400Z",
+  "empreinteExtracteur": "dd6d6b6a185d46bb7ef7fd03c5bdd0f58aacb9bfc0c7dabcf1623591cfc400dd",
   "codesSansCredits": {
     "PHA 72011": "2026-09-13T03:37:48.480Z",
     "PHA 71011": "2026-09-13T03:37:54.513Z",

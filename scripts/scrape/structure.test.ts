@@ -723,3 +723,48 @@ describe("page qui n'est pas celle attendue", () => {
     expect(journal.entrees.some((e) => e.message.includes("sans aucun code de cours"))).toBe(false);
   });
 });
+
+describe("typeDuNom — vocabulaire fermé", () => {
+  it("essaie le PLUS LONG d'abord : DESS n'est pas un DES", () => {
+    // Dans l'autre ordre, « DESS en droit » devient un DES et 78 fiches
+    // changent de catégorie sans qu'aucun test ne s'en plaigne.
+    expect(typeDuNom("DESS en droit des affaires")).toBe("DESS");
+    expect(typeDuNom("DES en anesthésiologie")).toBe("DES");
+    expect(typeDuNom("Diplôme complémentaire en pharmacothérapie")).toBe("Diplôme complémentaire");
+    expect(typeDuNom("Diplôme d'études supérieures")).toBe("Diplôme");
+  });
+
+  it("replie les orthographes : points, casse, accents, pluriel", () => {
+    // Les doublons mesurés dans l'index : D.E.S. 2 contre DES 179,
+    // stage postdoctoral 1 contre Stage postdoctoral 129, Baccalauréats 1
+    // contre Baccalauréat 208. Une facette bâtie là-dessus séparait des
+    // fiches identiques.
+    expect(typeDuNom("D.E.S. en chirurgie générale")).toBe("DES");
+    expect(typeDuNom("D.E.S.S. en administration")).toBe("DESS");
+    expect(typeDuNom("stage postdoctoral en informatique")).toBe("Stage postdoctoral");
+    expect(typeDuNom("Baccalauréats en gestion des ressources humaines")).toBe("Baccalauréat");
+    expect(typeDuNom("Maitrise en mathématiques")).toBe("Maîtrise");
+  });
+
+  it("rend null — jamais « autre » — quand le nom n'énonce aucun grade", () => {
+    // 80 fiches sur 1 507 sont dans ce cas, et ce n'est pas un échec de
+    // lecture : leur nom ne porte pas de grade. Plusieurs ressemblent à des
+    // orientations publiées seules. Une catégorie fourre-tout affirmerait un
+    // type que l'UdeM ne donne pas.
+    for (const nom of [
+      "Actuariat",
+      "Archéologie classique",
+      "Physique médicale",
+      "Ph. D. individualisé",
+      "Communication médiatique",
+      "",
+    ]) {
+      expect(typeDuNom(nom), nom).toBeNull();
+    }
+  });
+
+  it("exige une frontière de mot après le grade", () => {
+    // Sans elle, « Doctorate » d'un nom anglais se lirait « Doctorat ».
+    expect(typeDuNom("Doctorate of Philosophy")).toBeNull();
+  });
+});

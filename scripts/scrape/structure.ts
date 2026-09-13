@@ -47,6 +47,7 @@
  *   signale.
  */
 import type { Bloc, ExigencesParType, Orientation, Programme } from "../../lib/types";
+import { TYPES_PROGRAMME } from "../../lib/types";
 import { cleBloc, normaliserCode } from "../../lib/codes";
 import { lireContrainte } from "./contraintes";
 import { lireCheminements, marqueursDeCheminement } from "./cheminements";
@@ -248,14 +249,68 @@ export function parseCodesBloc(htmlBloc: string, sujet: string, journal: Journal
  * sélecteur aurait un « type » à une seule occurrence. Deux mots gardent « Stage
  * postdoctoral » et « Année préparatoire », qui en ont besoin.
  */
+/**
+ * Le GRADE d'un programme, pris dans le vocabulaire fermé `TYPES_PROGRAMME`.
+ *
+ * ## Ce que faisait la version précédente, et ce que ça coûtait
+ *
+ * Elle rendait le premier mot du nom, ou le nom entier selon sa longueur.
+ * Résultat mesuré sur l'index : **59 valeurs distinctes pour 1 507 fiches**,
+ * dont des pseudo-catégories (`Actuariat`, `Archéologie classique`, `Année`,
+ * `Ph.`) et des doublons non repliés — `DES` 179 contre `D.E.S.` 2, `DESS` 77
+ * contre `D.E.S.S.` 1, `Baccalauréat` 208 contre `Baccalauréats` 1,
+ * `Stage postdoctoral` 129 contre `stage postdoctoral` 1. Une facette de
+ * filtrage bâtie là-dessus propose donc des catégories qui n'en sont pas, et
+ * sépare des fiches identiques.
+ *
+ * ## Le champ reste `string | null`, donc c'est au PRODUCTEUR de refuser
+ *
+ * Le contrat expose `TYPES_PROGRAMME` comme vocabulaire et non comme union
+ * littérale, pour une raison juste : la donnée arrive par `JSON.parse`, où une
+ * union documente sans jamais valider. La validation n'a donc lieu qu'ici. Un
+ * nom hors vocabulaire rend `null` et se journalise — **pas de catégorie
+ * « autre »** : 80 fiches sur 1 507 n'énoncent aucun grade (`Actuariat`,
+ * `Physique médicale`, `Ph. D. individualisé`, plusieurs ressemblant à des
+ * pages d'orientation publiées seules), et les ranger sous une étiquette
+ * fourre-tout affirmerait un type que l'UdeM ne donne pas.
+ *
+ * ## LE PLUS LONG D'ABORD, et ce n'est pas un détail
+ *
+ * `DESS` doit être essayé avant `DES`, et `Diplôme complémentaire` avant
+ * `Diplôme` : dans l'autre ordre, « DESS en droit » devient un `DES` et
+ * 78 fiches changent de catégorie sans qu'aucun test ne s'en plaigne.
+ *
+ * La comparaison ignore la casse, les points et les accents — `D.E.S.S.`,
+ * `stage postdoctoral` et `Maitrise` sont de la typographie, pas de la donnée.
+ * La valeur RENDUE est toujours la forme canonique du vocabulaire, donc deux
+ * orthographes d'un même grade cessent de se séparer dans une facette.
+ */
+function aplatir(s: string): string {
+  return s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/\./g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** Essayés du plus long au plus court : voir l'en-tête, `DESS` avant `DES`. */
+const TYPES_PAR_LONGUEUR = [...TYPES_PROGRAMME].sort((a, b) => aplatir(b).length - aplatir(a).length);
+
 export function typeDuNom(nom: string): string | null {
-  const t = nom.trim();
-  if (t === "") return null;
-  const m = /^(.*?)(?:\s+(?:en|de|d'|du|des|dans|pour)\s|\s+[-–—]\s)/i.exec(t);
-  const tete = (m ? m[1] : t).trim();
-  if (tete === "") return null;
-  const mots = tete.split(/\s+/);
-  return mots.length > 2 ? mots[0] : tete;
+  const cible = aplatir(nom);
+  if (cible === "") return null;
+  for (const type of TYPES_PAR_LONGUEUR) {
+    const t = aplatir(type);
+    // En TÊTE du nom, et suivi d'une frontière : sans elle, « Doctorat » se
+    // reconnaîtrait dans « Doctorate » d'un nom anglais. Le pluriel est accepté
+    // (« Baccalauréats en gestion » est une page de FAMILLE, un seul cas).
+    if (cible === t || cible === `${t}s` || cible.startsWith(`${t} `) || cible.startsWith(`${t}s `)) {
+      return type;
+    }
+  }
+  return null;
 }
 
 /** Recolle en une seule ligne un texte que `texteBrut` a coupé par bloc HTML. */
@@ -356,7 +411,15 @@ export function parseStructure(
 
   const typeProgramme = nom ? typeDuNom(nom) : null;
   if (nom !== null && typeProgramme === null) {
-    journal.manque(slug, `aucun type lisible en tête du nom « ${nom} » (typeProgramme = null)`);
+    // `null` et non une catégorie fourre-tout : le nom de ces pages n'énonce
+    // aucun grade (« Actuariat », « Physique médicale », « Ph. D.
+    // individualisé »), et plusieurs ressemblent à des orientations publiées
+    // seules. Leur inventer un type affirmerait ce que l'UdeM ne dit pas.
+    journal.manque(
+      slug,
+      `nom « ${nom} » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, ` +
+        "jamais une catégorie « autre » : la page n'énonce pas de grade",
+    );
   }
 
   const descriptionBrute = contenu(html, "div", "structure-description");

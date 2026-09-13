@@ -75,6 +75,11 @@
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
+    "genre": "manque",
+    "sujet": "actuariat",
+    "message": "nom « Actuariat » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "actuariat",
     "message": "orientation « Mathématiques pures » annonce le(s) segment(s) 70, absent(s) de la page (segments trouvés : aucun)"
@@ -98,6 +103,11 @@
     "genre": "manque",
     "sujet": "actuariat",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "analyse-criminologique",
+    "message": "nom « Analyse criminologique » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -148,6 +158,11 @@
     "genre": "manque",
     "sujet": "annee-preparatoire-au-doctorat-en-medecine",
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "archeologie-classique",
+    "message": "nom « Archéologie classique » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -535,9 +550,14 @@
     "message": "4 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 4 phrases sont dans `notes` verbatim : « Ils sont répartis comme suit: 78 crédits obligatoires et 12 crédits à option. » « Les crédits du segment sont répartis de la façon suivante : 18 crédits obligatoires et, au maximum, 6 crédits à option. » « Les crédits du segment sont répartis de la façon suivante : 27 crédits obligatoires et 6 crédits à option. » « Les crédits du segment sont répartis de la façon suivante : 15 crédits obligatoires et, au maximum, 6 crédits à option. »"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-design-industriel",
-    "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Cheminement régulier (segment 01 et segment 70) : 84 crédits obligatoires, 33 à 36 crédits à option et 0 à 3 crédits au choix. » « Cheminement honor (segment 01 et segment 71) : 88 crédits obligatoires, 29 à 32 crédits à option et 0 à 3 crédits au choix. » « Les crédits du Baccalauréat sont répartis de la façon suivante : Cheminement régulier (segment 01 et segment 70) : 84 crédits obligatoires, 33 à 36 crédits à option et 0 à 3 crédits au choix. »"
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : régulier | honor"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-design-industriel",
+    "message": "2 parcours déclarés (régulier | honor) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -925,9 +945,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-histoire",
-    "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Cheminement régulier (segment 01 et segment 70) : 6 crédits obligatoires, de 78 à 81 crédits à option et 3 à 6 crédits aux choix. » « Cheminement honor (segment 01 et segment 71) : 15 crédits obligatoires (dont les 9 crédits du bloc 71V), de 69 à 72 crédits à option (donc 3 crédits minimum du bloc 71A et 3 crédits minimum du bloc 71W) et 3 à 6 crédits aux choix. » « Les crédits du cheminement honor sont répartis de la façon suivante : 9 crédits obligatoires et de 6 à 21 crédits à option. »"
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : régulier | honor"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-histoire",
+    "message": "2 parcours déclarés (régulier | honor) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -1800,14 +1825,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-sciences-biologiques",
-    "message": "2 orientations nommées dans les entêtes de segment, mais 2 d'entre elles exigeraient plus que les 90 crédits annoncés (biologie moléculaire, cellulaire et génétique = 131, biodiversité, écologie et évolution = 126) — aucune n'est émise : les entêtes ne sont pas la bonne lecture de cette page"
+    "message": "4 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : biologie moléculaire, cellulaire et génétique | biologie intégrative animale | biologie intégrative végétale | biodiversité, écologie et évolution"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-sciences-biologiques",
-    "message": "6 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 6 phrases sont dans `notes` verbatim : « Version 21 (A25) Le baccalauréat comporte 90 crédits, répartis de la façon suivante : de 35 à 52 crédits obligatoires, de 35 à 52 crédits à options et de 3 crédits au choix. » « - en cheminement régulier : 35 crédits obligatoires, 0 à 16 crédits optionnels et 3 crédits au choix. » « - en cheminement honor : 35 crédits obligatoires, 12 à 28 crédits à option (dont 12 crédits dans le bloc 01V) et 3 crédits au choix. » « - en cheminement régulier : 17 crédits obligatoires et de 19 à 35 crédits à option. » « - en cheminement honor : 17 crédits obligatoires et de 7 à 23 crédits à option. » « - en cheminement régulier : 3 crédits obligatoires et de 33 à 49 crédits à option - en cheminement honor : 3 crédits obligatoires et de 24 à 37 crédits à option. »"
+    "message": "4 parcours déclarés (biologie moléculaire, cellulaire et génétique | biologie intégrative animale | biologie intégrative végétale | biodiversité, écologie et évolution) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -1887,7 +1912,7 @@
   {
     "genre": "info",
     "sujet": "baccalaureat-en-sciences-economiques",
-    "message": "2 parcours déclarés (générale | Honor) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+    "message": "2 parcours déclarés (générale | Honor) ; 1 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -2070,9 +2095,14 @@
     "message": "contenu ouvert (règle « Option - 12 crédits. ») : aucun code, le contenu est décrit en prose — « Seuls des cours équivalents aux cours des blocs à option du Baccalauréat en traduction peuvent être reconnus dans ce bloc. »"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "baccalaureat-en-traduction",
-    "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Version 15 (A22) Le baccalauréat comporte 90 crédits - Les cheminement réguliers et COOP comprennent 54 crédits obligatoires, 33 à 36 crédits à option et un maximum de 3 crédits au choix. » « - Le cheminement international comprend 54 crédits obligatoires et 36 à option. »"
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : régulier et COOP | international"
+  },
+  {
+    "genre": "info",
+    "sujet": "baccalaureat-en-traduction",
+    "message": "2 parcours déclarés (régulier et COOP | international) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -2173,6 +2203,11 @@
     "genre": "manque",
     "sujet": "baccalaureats-4-ans-udem",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "biophysique-et-physiologie-moleculaire",
+    "message": "nom « Biophysique et physiologie moléculaire » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -3055,6 +3090,11 @@
     "message": "contenu ouvert dont la prose ne se réduit à aucune contrainte mécanisable — rien n'est émis plutôt qu'une contrainte approximative : « L'étudiant peut prendre 3 crédits de cours au choix parmi les cours offerts par la Faculté de l'apprentissage continu, les autres facultés, les écoles et les départements de l'Univ »"
   },
   {
+    "genre": "manque",
+    "sujet": "communication-mediatique",
+    "message": "nom « Communication médiatique » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "communication-mediatique",
     "message": "orientation « Générale » annonce le(s) segment(s) 01, absent(s) de la page (segments trouvés : aucun)"
@@ -3100,6 +3140,11 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
+    "genre": "manque",
+    "sujet": "communication-organisationelle",
+    "message": "nom « Communication organisationelle » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "communication-organisationelle",
     "message": "orientation « Générale » annonce le(s) segment(s) 01, absent(s) de la page (segments trouvés : aucun)"
@@ -3145,6 +3190,11 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
+    "genre": "manque",
+    "sujet": "communication-politique",
+    "message": "nom « Communication politique » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "communication-politique",
     "message": "orientation « Générale » annonce le(s) segment(s) 01, absent(s) de la page (segments trouvés : aucun)"
@@ -3188,6 +3238,11 @@
     "genre": "manque",
     "sujet": "communication-politique",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "complements-de-formation",
+    "message": "nom « Compléments de formation » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "manque",
@@ -5985,9 +6040,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "dess-en-droit-des-affaires",
-    "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Les crédits du D.E.S.S. sont répartis de la façon suivante : 18 crédits obligatoires et 12 crédits au choix. » « Les crédits du D.E.S.S. sont répartis de la façon suivante : 6 crédits obligatoires, 18 à 24 crédits à option et un maximum de 6 crédits au choix »"
+    "message": "4 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : Droit nord-américain des affaires | Droit des aff. et des relations écon. internationales | Droit des produits et marchés financiers | Droit et pratiques contractuelles en affaires"
+  },
+  {
+    "genre": "info",
+    "sujet": "dess-en-droit-des-affaires",
+    "message": "4 parcours déclarés (Droit nord-américain des affaires | Droit des aff. et des relations écon. internationales | Droit des produits et marchés financiers | Droit et pratiques contractuelles en affaires) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -6322,7 +6382,7 @@
   {
     "genre": "info",
     "sujet": "dess-en-gestion-urbaine-pour-les-pays-en-developpement",
-    "message": "2 parcours déclarés (Habitat urbain | Environnement urbain) ; 1 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+    "message": "2 parcours déclarés (Habitat urbain | Environnement urbain) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -7478,6 +7538,16 @@
     "genre": "manque",
     "sujet": "doctorat-en-neurosciences bloc 70/70B",
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-neurosciences",
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : Général | Neuropsychologie"
+  },
+  {
+    "genre": "info",
+    "sujet": "doctorat-en-neurosciences",
+    "message": "2 parcours déclarés (Général | Neuropsychologie) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -8887,6 +8957,11 @@
   {
     "genre": "manque",
     "sujet": "echographie-ciblee-en-soins-aigus",
+    "message": "nom « Échographie ciblée en soins aigus » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "echographie-ciblee-en-soins-aigus",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
   {
@@ -8898,6 +8973,11 @@
     "genre": "manque",
     "sujet": "echographie-ciblee-en-soins-aigus",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "enseignement-de-lespagnol-langue-seconde",
+    "message": "nom « Enseignement de l'espagnol, langue seconde » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -9017,6 +9097,11 @@
   {
     "genre": "manque",
     "sujet": "stage-postdoctoral",
+    "message": "nom « Formation postdoctorale » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-postdoctoral",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
   {
@@ -9028,6 +9113,11 @@
     "genre": "manque",
     "sujet": "stage-postdoctoral",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "formation-preparatoire-en-relations-industrielles",
+    "message": "nom « Formation préparatoire en relations industrielles » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "info",
@@ -9045,6 +9135,11 @@
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
   },
   {
+    "genre": "manque",
+    "sujet": "genetique-moleculaire",
+    "message": "nom « Génétique moléculaire » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "genetique-moleculaire",
     "message": "orientation « générale » annonce le(s) segment(s) 70, absent(s) de la page (segments trouvés : aucun)"
@@ -9085,6 +9180,11 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
+    "genre": "manque",
+    "sujet": "genomique-humaine",
+    "message": "nom « Génomique humaine » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "genomique-humaine",
     "message": "orientation « générale » annonce le(s) segment(s) 70, absent(s) de la page (segments trouvés : aucun)"
@@ -9123,6 +9223,11 @@
     "genre": "manque",
     "sujet": "genomique-humaine",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "histoire-ancienne",
+    "message": "nom « Histoire ancienne » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -9347,7 +9452,7 @@
   {
     "genre": "info",
     "sujet": "maitrise-en-bio-informatique",
-    "message": "2 parcours déclarés (avec mémoire | avec stage) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+    "message": "2 parcours déclarés (avec mémoire | avec stage) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -9527,12 +9632,17 @@
   {
     "genre": "info",
     "sujet": "maitrise-en-chimie",
-    "message": "2 parcours déclarés (générale | chimie des matériaux) ; 1 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
+    "message": "2 parcours déclarés (générale | chimie des matériaux) ; 2 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "inattendu",
     "sujet": "maitrise-en-chimie / générale",
     "message": "somme impossible : les minimums par type connus font 79 crédits, plus que les 45 crédits annoncés du programme. Phrase lue : « Les crédits du segment 70 sont répartis de la façon suivante : 36 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, et 9 crédits à option. »"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-chimie / chimie des matériaux",
+    "message": "somme impossible : les minimums par type connus font 77 crédits, plus que les 45 crédits annoncés du programme. Phrase lue : « Les crédits du segment 71 sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option. »"
   },
   {
     "genre": "inattendu",
@@ -10335,9 +10445,14 @@
     "message": "la page ne donne aucun nom à ce bloc (nom = \"\")"
   },
   {
-    "genre": "inattendu",
+    "genre": "info",
     "sujet": "maitrise-en-ergotherapie",
-    "message": "3 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 3 phrases sont dans `notes` verbatim : « Les crédits du tronc commun sont répartis de la façon suivante : 19 crédits obligatoires et de 12 à 18 crédits à option. » « Les crédits du segment sont répartis de la façon suivante : 8 crédits obligatoires attribués à un stage et un maximum de 6 crédits au choix. » « Les crédits du segment sont répartis de la façon suivante : 8 crédits obligatoires attribués à un stage et entre 3 et 6 crédits à option. »"
+    "message": "2 orientations lues dans les ENTÊTES de segment (la description n'en déclare aucune) : régulier | international"
+  },
+  {
+    "genre": "info",
+    "sujet": "maitrise-en-ergotherapie",
+    "message": "2 parcours déclarés (régulier | international) ; 0 avec leur propre répartition. `Programme.exigences` reste null : les orientations sont des alternatives, pas des exigences cumulées."
   },
   {
     "genre": "manque",
@@ -10448,6 +10563,11 @@
     "genre": "manque",
     "sujet": "maitrise-en-etudes-hispaniques",
     "message": "2 segment(s) lus mais aucun bloc retenu (structureLue = false)"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-etudes-internationales",
+    "message": "orientation « générale » : ses segments (70) énoncent 3 répartitions, dont 3 sans cheminement nommé — aucune n'est « celle de l'orientation », exigences = null"
   },
   {
     "genre": "info",
@@ -11548,6 +11668,16 @@
     "genre": "inattendu",
     "sujet": "maitrise-en-relations-industrielles segment 71",
     "message": "titre de bloc illisible : « TD - Bloc 71F Ergonomie » — bloc ignoré"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-relations-industrielles",
+    "message": "orientation « Multidisciplinaire » : ses segments (70) énoncent 3 répartitions, dont 3 sans cheminement nommé — aucune n'est « celle de l'orientation », exigences = null"
+  },
+  {
+    "genre": "inattendu",
+    "sujet": "maitrise-en-relations-industrielles",
+    "message": "orientation « Santé et sécurité au travail » : ses segments (71) énoncent 3 répartitions, dont 3 sans cheminement nommé — aucune n'est « celle de l'orientation », exigences = null"
   },
   {
     "genre": "info",
@@ -13145,6 +13275,11 @@
     "message": "2 phrases de répartition par type sur la page, mais aucun parcours nommé avec ses segments : impossible de les attribuer. `exigences` reste null et les 2 phrases sont dans `notes` verbatim : « Les crédits sont répartis de la façon suivante: les 42 crédits obligatoires du tronc commun (segment 01) et 18 crédits à option (de 6 à 12 crédits dans le segment 01 et de 6 à 12 crédits dans le segment 73). » « Les crédits du segment 01 sont répartis de la façon suivante : 42 crédits obligatoires et 6 à 12 crédits à option. »"
   },
   {
+    "genre": "manque",
+    "sujet": "medecine-cellulaire-et-moleculaire",
+    "message": "nom « Médecine cellulaire et moléculaire » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "medecine-cellulaire-et-moleculaire",
     "message": "orientation « générale - » annonce le(s) segment(s) 70, absent(s) de la page (segments trouvés : aucun)"
@@ -13173,6 +13308,11 @@
     "genre": "manque",
     "sujet": "medecine-cellulaire-et-moleculaire",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "microbiologie-environnementale",
+    "message": "nom « Microbiologie environnementale » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -15252,7 +15392,17 @@
   {
     "genre": "manque",
     "sujet": "ph-d-individualise",
+    "message": "nom « Ph. D. individualisé » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "ph-d-individualise",
     "message": "aucune phrase de répartition par type (« N crédits obligatoires, … à option, … au choix ») — exigences = null"
+  },
+  {
+    "genre": "manque",
+    "sujet": "physique-medicale",
+    "message": "nom « Physique médicale » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -15290,6 +15440,11 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
+    "genre": "manque",
+    "sujet": "pratique-avancee-expertise-clinique-intervention",
+    "message": "nom « Pratique avancée : expertise clinique intervention » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "pratique-avancee-expertise-clinique-intervention",
     "message": "orientation « pratique avancée » annonce le(s) segment(s) 80, 81, 82, 83, 84, 85, absent(s) de la page (segments trouvés : aucun)"
@@ -15303,6 +15458,11 @@
     "genre": "manque",
     "sujet": "pratique-avancee-expertise-clinique-intervention",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "pratique-avancee-formation-infirmiere",
+    "message": "nom « Pratique avancée : formation infirmière » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -15320,6 +15480,11 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
+    "genre": "manque",
+    "sujet": "pratique-avancee-formation-infirmiere-intervention",
+    "message": "nom « Pratique avancée : formation infirmière intervention » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "pratique-avancee-formation-infirmiere-intervention",
     "message": "orientation « pratique avancée » annonce le(s) segment(s) 80, 81, 82, 83, 84, 85, absent(s) de la page (segments trouvés : aucun)"
@@ -15333,6 +15498,11 @@
     "genre": "manque",
     "sujet": "pratique-avancee-formation-infirmiere-intervention",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "pratique-avancee-gestion-de-proximite",
+    "message": "nom « Pratique avancée : gestion de proximité » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -15350,6 +15520,11 @@
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
   },
   {
+    "genre": "manque",
+    "sujet": "pratique-avancee-gestion-proximite-et-intervention",
+    "message": "nom « Pratique avancée : gestion proximité et intervention » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
     "genre": "inattendu",
     "sujet": "pratique-avancee-gestion-proximite-et-intervention",
     "message": "orientation « pratique avancée » annonce le(s) segment(s) 80, 81, 82, 83, 84, 85, absent(s) de la page (segments trouvés : aucun)"
@@ -15363,6 +15538,11 @@
     "genre": "manque",
     "sujet": "pratique-avancee-gestion-proximite-et-intervention",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
+  },
+  {
+    "genre": "manque",
+    "sujet": "pratique-avancee-expertise-clinique",
+    "message": "nom « Pratique avancée: expertise clinique » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
   },
   {
     "genre": "inattendu",
@@ -15577,6 +15757,11 @@
   {
     "genre": "manque",
     "sujet": "stage-de-formation-ou-de-recherche",
+    "message": "nom « Stage de formation ou de recherche » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-de-formation-ou-de-recherche",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
   {
@@ -15592,6 +15777,11 @@
   {
     "genre": "manque",
     "sujet": "stage-en-optometrie",
+    "message": "nom « Stage en optométrie » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stage-en-optometrie",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
   {
@@ -17557,6 +17747,11 @@
   {
     "genre": "manque",
     "sujet": "stagiaire-de-formation-ou-de-recherche-1er-cycle",
+    "message": "nom « Stagiaire de formation ou de recherche (1er cycle) » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stagiaire-de-formation-ou-de-recherche-1er-cycle",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
   {
@@ -17572,6 +17767,11 @@
   {
     "genre": "manque",
     "sujet": "stagiaire-de-formation-ou-de-recherche-2e-cycle",
+    "message": "nom « Stagiaire de formation ou de recherche (2e cycle) » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stagiaire-de-formation-ou-de-recherche-2e-cycle",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
   {
@@ -17587,6 +17787,11 @@
   {
     "genre": "manque",
     "sujet": "stagiaire-de-formation-ou-de-recherche-3e-cycle",
+    "message": "nom « Stagiaire de formation ou de recherche (3e cycle) » hors du vocabulaire TYPES_PROGRAMME — typeProgramme = null, jamais une catégorie « autre » : la page n'énonce pas de grade"
+  },
+  {
+    "genre": "manque",
+    "sujet": "stagiaire-de-formation-ou-de-recherche-3e-cycle",
     "message": "nombre total de crédits : la description ne dit pas « comporte N crédits » — creditsTotal = null, surtout pas 90"
   },
   {
@@ -17598,1026 +17803,6 @@
     "genre": "manque",
     "sujet": "stagiaire-de-formation-ou-de-recherche-3e-cycle",
     "message": "la page répond mais ne contient aucun div.programme-segment : ce programme n'a pas de structure en blocs (structureLue = false)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "ACT 6275",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "BIE 6503",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "BIE 6104",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "BIN 6003",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "CHN 1913",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "CRL 1902",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "CRN 1911",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "CRN 1912",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "DRT 3404G",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "DRT 3807G",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "DRT 7012",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "EMU 1310",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "EMU 2101",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "EMU 2312",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "ESP 1907",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "HEB 1901",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "HEB 1902",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6010",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6042",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6080",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6080",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6172",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6180",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6255",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6561",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6370",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6056",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6057A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6057B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6076",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6078A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6078B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6085",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6095B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6114",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6151A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6151B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6161",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6164",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6168",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6195B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6233A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6233B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6251A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6251B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6272A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6272B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6289",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6293A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6293B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6299A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6299B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6504",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6580",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6580",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6581B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6755",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6756",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6757",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6766",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6767A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6767B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "IFT 6900",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "INN 1904",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "JPN 1913",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "JPN 1914",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "JPN 1915",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "LSL 1901",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "LSL 1902",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "MAT 1460",
-    "message": "exigence d'inscription non rangée (ni préalable, ni concomitant, ni restriction) : « (sans étiquette): 9 crédits de cours réussis de sigle ACT, IFT, MAT ou STT »"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6125",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6129A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6139A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6220",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6335",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6339A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6350",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6359A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6461",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6467",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6475",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6476",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6493",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6623",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6654",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6709A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 6908",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MAT 7902",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MIN 1804",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MTE 2116",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MTE 2117",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MTE 3116",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1151",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1152",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1153",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1154",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1155",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1156",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1231",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1232",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1233",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1234",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1235",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1236",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1381",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1382",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1383",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1384",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1385",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1386",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1531",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1532",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1541",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1542",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1543",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1544",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1545",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1546",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1361",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1362",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1363",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1364",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1365",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUE 1366",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 1493A",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 1493B",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 1703A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 1703B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 1713A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 1713B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 1723B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2162A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2162B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2703A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2703B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2713A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2713B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2723A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2723B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2734A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 2734B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3703A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3703B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3713A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3713B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3723A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3723B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3734A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUI 3734B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 1107",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 1115",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 1116",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 2115",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 2116",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 2118",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 1749",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 2450",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUL 3344",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUS 1015",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUS 1016",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "MUS 3322X",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PHI 2005",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PHI 6575",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 3083",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 3088",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 2253",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 3247",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 3260",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 3037",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6018",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 7967",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6106",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6257",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6715",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6793",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6799",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6423",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "PSY 6989",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2723 Automne 2026 section H",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 22/12/2026 au 22/12/2026 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2723 Automne 2026 section M",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 22/09/2026 au 22/09/2026 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2904 Hiver 2027 section H101",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 09/03/2027 au 09/03/2027 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2904 Hiver 2027 section H102",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 09/03/2027 au 09/03/2027 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2904 Hiver 2027 section H103",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 09/03/2027 au 09/03/2027 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2904 Hiver 2027 section H104",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 09/03/2027 au 09/03/2027 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2713 Automne 2026 section A",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 22/12/2026 au 22/12/2026 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2713 Automne 2026 section X",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 27/10/2026 au 27/10/2026 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2753 Automne 2026 section A",
-    "message": "créneau illisible, conservé verbatim : « Jeu Jeudi Du 19/11/2026 au 19/11/2026 »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SOI 2753 Automne 2026 section A",
-    "message": "créneau illisible, conservé verbatim : « Mar Mardi Du 22/12/2026 au 22/12/2026 »"
-  },
-  {
-    "genre": "manque",
-    "sujet": "SOL 6211A",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "SOL 6211B",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "SOL 6211C",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "STT 6300",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "STT 6410",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "STT 6615",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "manque",
-    "sujet": "STT 6705V",
-    "message": "section.cours-description absente"
-  },
-  {
-    "genre": "manque",
-    "sujet": "STT 6705V",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SVS 2104",
-    "message": "exigence d'inscription non rangée (ni préalable, ni concomitant, ni restriction) : « (sans étiquette): Préalables pour les étudiants du programme 1-257-1-0 Baccalauréat en psychologie et sociologie : 60 crédits complétés dans ce programme et avoir une moyenne cumulative de 3,4. »"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "SVS 2110",
-    "message": "exigence d'inscription non rangée (ni préalable, ni concomitant, ni restriction) : « (sans étiquette): Préalables pour les étudiants du programme 1-257-1-0 Baccalauréat en psychologie et sociologie : 60 crédits complétés dans ce programme et avoir une moyenne cumulative de 3,4. »"
-  },
-  {
-    "genre": "manque",
-    "sujet": "VIO 2012D",
-    "message": "aucune étiquette « Trimestre(s) » dans le sommaire : trimestres = [] (cours sans offre publiée)"
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-en-musique bloc 01/01A",
-    "message": "la règle « Obligatoire - 15 crédits. » annonce 15 crédits, mais les 4 fiches du bloc en somment 12 (MTE 2210 3, MTE 2211 3, MUL 1102 3, MUL 1132 3). Deux lectures indépendantes qui divergent : page de structure mal lue, fiches mal lues, ou page de l'UdeM incohérente — rien n'est corrigé ici."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-en-neuroscience-cognitive bloc 74/74A",
-    "message": "la règle « Obligatoire - 15 crédits. » annonce 15 crédits, mais les 4 fiches du bloc en somment 12 (MUS 1300 3, MUS 1315 3, NCM 2100 3, NCM 2200 3). Deux lectures indépendantes qui divergent : page de structure mal lue, fiches mal lues, ou page de l'UdeM incohérente — rien n'est corrigé ici."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "diplome-de-droit-notarial bloc 70/70A",
-    "message": "la règle « Obligatoire - 36 crédits. » annonce 36 crédits, mais les 1 fiches du bloc en somment 3 (DRT 6355 3). Deux lectures indépendantes qui divergent : page de structure mal lue, fiches mal lues, ou page de l'UdeM incohérente — rien n'est corrigé ici."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-1 bloc 71/71D — Pratique infirmière",
-    "message": "la règle « Obligatoire - 7 crédits. » annonce 7 crédits, mais les 1 fiches du bloc en somment 2 (SOI 3802 2). Deux lectures indépendantes qui divergent : page de structure mal lue, fiches mal lues, ou page de l'UdeM incohérente — rien n'est corrigé ici."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "mineure-en-sciences-infirmieres-pratique-infirmiere-2 bloc 72/72C — Soins critiques",
-    "message": "la règle « Obligatoire - 12 crédits. » annonce 12 crédits, mais les 1 fiches du bloc en somment 6 (SOI 3716 6). Deux lectures indépendantes qui divergent : page de structure mal lue, fiches mal lues, ou page de l'UdeM incohérente — rien n'est corrigé ici."
   },
   {
     "genre": "inattendu",
@@ -18636,18 +17821,8 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "baccalaureat-en-neuroscience-cognitive",
-    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 129 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
-  },
-  {
-    "genre": "inattendu",
     "sujet": "baccalaureat-en-sante-environnementale-et-sante-au-travail",
     "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 100 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "baccalaureat-en-sciences-biologiques",
-    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 158 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
   },
   {
     "genre": "inattendu",
@@ -18676,11 +17851,6 @@
   },
   {
     "genre": "inattendu",
-    "sujet": "dess-en-droit-des-affaires",
-    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 90 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
-  },
-  {
-    "genre": "inattendu",
     "sujet": "dess-en-enseignement-des-langues",
     "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 48 crédits (obligatoires + minimums d'option) alors que la page annonce 30 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
   },
@@ -18698,11 +17868,6 @@
     "genre": "inattendu",
     "sujet": "doctorat-en-musique-option-accompagnement-au-piano",
     "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 98 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "doctorat-en-neurosciences",
-    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 177 crédits (obligatoires + minimums d'option) alors que la page annonce 90 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
   },
   {
     "genre": "inattendu",
@@ -18728,11 +17893,6 @@
     "genre": "inattendu",
     "sujet": "maitrise-en-anthropologie",
     "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 102 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-bio-informatique",
-    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 56 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
   },
   {
     "genre": "inattendu",
@@ -18793,11 +17953,6 @@
     "genre": "inattendu",
     "sujet": "maitrise-en-education-option-enseignement-superieur-m-ed",
     "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 54 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
-  },
-  {
-    "genre": "inattendu",
-    "sujet": "maitrise-en-ergotherapie",
-    "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 50 crédits (obligatoires + minimums d'option) alors que la page annonce 45 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
   },
   {
     "genre": "inattendu",
@@ -18893,215 +18048,5 @@
     "genre": "inattendu",
     "sujet": "microprogramme-de-2e-cycle-en-enseignement-du-francais-par-la-litterature-jeunesse",
     "message": "plancher de crédits incohérent : le parcours le MOINS exigeant demande 30 crédits (obligatoires + minimums d'option) alors que la page annonce 15 au total. Soit la page est incohérente, soit un axe de cheminement n'est pas lu — dans les deux cas l'audit de ce programme exige trop."
-  },
-  {
-    "genre": "info",
-    "sujet": "ABK 1902",
-    "message": "ligne de préalables non réduite par parsePrealables : \"EXI-ABK1901\""
-  },
-  {
-    "genre": "info",
-    "sujet": "ALL 1911",
-    "message": "ligne de préalables non réduite par parsePrealables : \"Aucune connaissance de la langue allemande.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1903",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1050 ou CHN1050H ou CHN1902 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1904",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1901 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1906",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1905 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1908",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1907 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1909",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1908 ou CHN2085 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1911",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1910 ou CHN3060 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1912",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1911 ou CHN3070 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CHN 1913",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CHN1912 ou CHN3080 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CRN 1903",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1902 ou compétence équivalente\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CRN 1905",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1904 ou compétence équivalente\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CRN 1907",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1906 ou compétence équivalente\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CRN 1909",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1908 ou compétence équivalente\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CRN 1910",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CRN1909 ou compétence équivalente\""
-  },
-  {
-    "genre": "info",
-    "sujet": "CSS 2900",
-    "message": "ligne de préalables non réduite par parsePrealables : \"CSS1900 ou doit être étudiant des programmes 163012 ou 163019 - Baccalauréat en sciences infirmières - Formation intégrée DEC-bac.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "DRT 2402G",
-    "message": "ligne de préalables non réduite par parsePrealables : \"DRT2400G ou 12 crédits de sigle DRT\""
-  },
-  {
-    "genre": "info",
-    "sujet": "DRT 2923G",
-    "message": "ligne de préalables non réduite par parsePrealables : \"DRT1901G ou 18 crédits de sigle DRT\""
-  },
-  {
-    "genre": "info",
-    "sujet": "IFT 3155",
-    "message": "ligne de préalables non réduite par parsePrealables : \"30 crédits IFT, MAT ou PHY.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "IFT 3150",
-    "message": "ligne de préalables non réduite par parsePrealables : \"avoir suivi 30 crédits de cours de sigle IFT\""
-  },
-  {
-    "genre": "info",
-    "sujet": "IFT 3151",
-    "message": "ligne de préalables non réduite par parsePrealables : \"avoir suivi 36 crédits dans le programme\""
-  },
-  {
-    "genre": "info",
-    "sujet": "IFT 2550",
-    "message": "ligne de préalables non réduite par parsePrealables : \"30 crédits IFT.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "IFT 4055",
-    "message": "ligne de préalables non réduite par parsePrealables : \"30 crédits IFT.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "IFT 6917",
-    "message": "ligne de préalables non réduite par parsePrealables : \"IFT6135, IFT6390, IFT6758, et IFT6759\""
-  },
-  {
-    "genre": "info",
-    "sujet": "INN 1903",
-    "message": "ligne de préalables non réduite par parsePrealables : \"INN1902 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "INN 1904",
-    "message": "ligne de préalables non réduite par parsePrealables : \"INN1903 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1903",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1050 ou JPN1050H ou JPN1902 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1905",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1060 ou JPN1060H ou JPN1904 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1907",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1906 ou JPN2075 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1909",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1908 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1910",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1908 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1911",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1909 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1912",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1910 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1913",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1911 et JPN1912 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1914",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1911 et JPN1912 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "JPN 1915",
-    "message": "ligne de préalables non réduite par parsePrealables : \"JPN1913 et JPN1914 ou compétence équivalente.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "NCM 2100",
-    "message": "ligne de préalables non réduite par parsePrealables : \"[PSY1006 et (PSY1035 ou PSY1048)] ou (MUS1300 et être étudiant dans l'un de ces programmes 1-600-1-1, 1-610-1-0, 1-615-1-1, 1-615-1-2, 1-615-2-1) ou être étudiant du programme 1-180-1-0 ou être étudiant du programme 1-530-1-0.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "NCM 2200",
-    "message": "ligne de préalables non réduite par parsePrealables : \"PSY1004 et 1006 et (PSY1035 ou PSY1048)\""
-  },
-  {
-    "genre": "info",
-    "sujet": "PSY 3022",
-    "message": "ligne de préalables non réduite par parsePrealables : \"Avoir complété un minimum de 30 crédits dans les programmes :1-183-1-0 ou 1-195-1-0 ou 1-195-2-0 ou 1-220-1-0 ou 1-220-1-2 ou 1-220-1-9 ou 1-220-2-0 ou 1-615-1-2 ou 1-615-2-1 OU avoir complété un minimum de 60 crédits dans 1-257-1-0.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "PSY 3106",
-    "message": "ligne de préalables non réduite par parsePrealables : \"(PSY1035 et PSY1105) ou être inscrit au programme 2-220-2-1\""
-  },
-  {
-    "genre": "info",
-    "sujet": "SOL 1090",
-    "message": "ligne de préalables non réduite par parsePrealables : \"SOL1018 ou PSY1006 ne sont exigés que pour le baccalauréat (1-255-1-0), la majeure (1-255-2-0) et la mineure (1-255-4-0) en sociologie.\""
-  },
-  {
-    "genre": "info",
-    "sujet": "SOL 2090",
-    "message": "ligne de préalables non réduite par parsePrealables : \"SOL1090 et avoir complété 45 crédits de cours\""
   }
 ]
