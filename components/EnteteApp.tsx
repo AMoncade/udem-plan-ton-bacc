@@ -15,6 +15,7 @@ const ONGLETS = [
   { href: "/importer", libelle: "Relevé" },
   { href: "/", libelle: "Préalables" },
   { href: "/audit", libelle: "Audit" },
+  { href: "/session", libelle: "Prochaine session" },
   { href: "/trimestres", libelle: "Trimestres" },
 ] as const;
 
