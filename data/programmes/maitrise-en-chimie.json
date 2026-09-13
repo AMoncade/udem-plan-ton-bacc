@@ -11,8 +11,7 @@
     {
       "nom": "générale",
       "segments": [
-        "70",
-        "71"
+        "70"
       ],
       "exigences": {
         "brut": "Les crédits du segment 70 sont répartis de la façon suivante : 36 crédits obligatoires attribués à la recherche et à la rédaction d'un mémoire, et 9 crédits à option.",
@@ -32,7 +31,18 @@
       "segments": [
         "71"
       ],
-      "exigences": null
+      "exigences": {
+        "brut": "Les crédits du segment 71 sont répartis de la façon suivante : 39 crédits obligatoires, dont 27 crédits attribués à la recherche et à la rédaction d'un mémoire, et 6 crédits à option.",
+        "obligatoire": {
+          "min": 71,
+          "max": 71
+        },
+        "option": {
+          "min": 6,
+          "max": 6
+        },
+        "choix": null
+      }
     }
   ],
   "cycle": "Cycles supérieurs",

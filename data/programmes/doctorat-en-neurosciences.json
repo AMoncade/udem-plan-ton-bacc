@@ -7,26 +7,27 @@
     "69",
     "70"
   ],
-  "orientations": [],
+  "orientations": [
+    {
+      "nom": "Général",
+      "segments": [
+        "69"
+      ],
+      "exigences": null
+    },
+    {
+      "nom": "Neuropsychologie",
+      "segments": [
+        "70"
+      ],
+      "exigences": null
+    }
+  ],
   "cycle": "Cycles supérieurs",
   "faculte": "Faculté de médecine",
   "typeProgramme": "Doctorat",
   "creditsTotal": 90,
-  "exigences": {
-    "brut": "Les crédits du cheminement Général sont répartis de la façon suivante : 84 crédits obligatoires attribués à la recherche et à la rédaction d'une thèse, 3 à 6 crédits à option et, au maximum, 3 crédits au choix.",
-    "obligatoire": {
-      "min": 84,
-      "max": 84
-    },
-    "option": {
-      "min": 3,
-      "max": 6
-    },
-    "choix": {
-      "min": 3,
-      "max": 3
-    }
-  },
+  "exigences": null,
   "blocs": [
     {
       "id": "69A",

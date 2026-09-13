@@ -11,18 +11,44 @@
     {
       "nom": "avec mémoire",
       "segments": [
-        "70",
-        "71"
+        "70"
       ],
-      "exigences": null
+      "exigences": {
+        "brut": "Les crédits du cheminement sont répartis de la façon suivante : 33 crédits obligatoires dont 30 crédits attribués à la recherche et à la rédaction d'un mémoire, de 8 à 12 crédits à option, dont au minimum deux cours de sigle BIN, et de 0 à 4 crédits de cours au choix.",
+        "obligatoire": {
+          "min": 33,
+          "max": 33
+        },
+        "option": {
+          "min": 8,
+          "max": 12
+        },
+        "choix": {
+          "min": 0,
+          "max": 4
+        }
+      }
     },
     {
       "nom": "avec stage",
       "segments": [
-        "70",
         "71"
       ],
-      "exigences": null
+      "exigences": {
+        "brut": "Les crédits du cheminement sont répartis de la façon suivante : 23 crédits de cours obligatoires dont 22 crédits attribués à des stages, de 18 à 22 crédits à option, dont au moins deux cours BIN, et un maximum de 4 crédits de cours au choix.",
+        "obligatoire": {
+          "min": 23,
+          "max": 23
+        },
+        "option": {
+          "min": 18,
+          "max": 22
+        },
+        "choix": {
+          "min": 0,
+          "max": 4
+        }
+      }
     }
   ],
   "cycle": "Cycles supérieurs",

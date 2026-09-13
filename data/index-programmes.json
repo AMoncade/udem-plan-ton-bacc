@@ -626,15 +626,27 @@
       "structureLue": true
     },
     {
-      "cle": "baccalaureat-en-design-industriel",
+      "cle": "baccalaureat-en-design-industriel#honor",
       "id": "baccalaureat-en-design-industriel",
       "nom": "Baccalauréat en design industriel",
-      "orientation": null,
+      "orientation": "honor",
       "cycle": "1er cycle",
       "faculte": "Faculté de l'aménagement",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 120,
-      "nbBlocs": 15,
+      "nbBlocs": 14,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-design-industriel#régulier",
+      "id": "baccalaureat-en-design-industriel",
+      "nom": "Baccalauréat en design industriel",
+      "orientation": "régulier",
+      "cycle": "1er cycle",
+      "faculte": "Faculté de l'aménagement",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 120,
+      "nbBlocs": 14,
       "structureLue": true
     },
     {
@@ -1154,18 +1166,6 @@
       "structureLue": false
     },
     {
-      "cle": "baccalaureat-en-histoire",
-      "id": "baccalaureat-en-histoire",
-      "nom": "Baccalauréat en histoire",
-      "orientation": null,
-      "cycle": "1er cycle",
-      "faculte": "Faculté des arts et des sciences",
-      "typeProgramme": "Baccalauréat",
-      "creditsTotal": 90,
-      "nbBlocs": 13,
-      "structureLue": true
-    },
-    {
       "cle": "baccalaureat-en-histoire-de-lart",
       "id": "baccalaureat-en-histoire-de-lart",
       "nom": "Baccalauréat en histoire de l’art",
@@ -1190,6 +1190,30 @@
       "structureLue": true
     },
     {
+      "cle": "baccalaureat-en-histoire#honor",
+      "id": "baccalaureat-en-histoire",
+      "nom": "Baccalauréat en histoire",
+      "orientation": "honor",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-histoire#régulier",
+      "id": "baccalaureat-en-histoire",
+      "nom": "Baccalauréat en histoire",
+      "orientation": "régulier",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 10,
+      "structureLue": true
+    },
+    {
       "cle": "baccalaureat-en-informatique#Coop",
       "id": "baccalaureat-en-informatique",
       "nom": "Baccalauréat en informatique",
@@ -1198,7 +1222,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 14,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -1210,7 +1234,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 14,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -2050,7 +2074,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 15,
       "structureLue": true
     },
     {
@@ -2062,7 +2086,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 16,
       "structureLue": true
     },
     {
@@ -2074,7 +2098,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 17,
       "structureLue": true
     },
     {
@@ -2086,7 +2110,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 34,
+      "nbBlocs": 16,
       "structureLue": true
     },
     {
@@ -2098,7 +2122,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 12,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -2110,7 +2134,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 12,
+      "nbBlocs": 7,
       "structureLue": true
     },
     {
@@ -2342,15 +2366,51 @@
       "structureLue": true
     },
     {
-      "cle": "baccalaureat-en-sciences-biologiques",
+      "cle": "baccalaureat-en-sciences-biologiques#biodiversité, écologie et évolution",
       "id": "baccalaureat-en-sciences-biologiques",
       "nom": "Baccalauréat en sciences biologiques",
-      "orientation": null,
+      "orientation": "biodiversité, écologie et évolution",
       "cycle": "1er cycle",
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 31,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-sciences-biologiques#biologie intégrative animale",
+      "id": "baccalaureat-en-sciences-biologiques",
+      "nom": "Baccalauréat en sciences biologiques",
+      "orientation": "biologie intégrative animale",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-sciences-biologiques#biologie intégrative végétale",
+      "id": "baccalaureat-en-sciences-biologiques",
+      "nom": "Baccalauréat en sciences biologiques",
+      "orientation": "biologie intégrative végétale",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 12,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-sciences-biologiques#biologie moléculaire, cellulaire et génétique",
+      "id": "baccalaureat-en-sciences-biologiques",
+      "nom": "Baccalauréat en sciences biologiques",
+      "orientation": "biologie moléculaire, cellulaire et génétique",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -2482,7 +2542,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 10,
+      "nbBlocs": 7,
       "structureLue": true
     },
     {
@@ -2666,15 +2726,27 @@
       "structureLue": true
     },
     {
-      "cle": "baccalaureat-en-traduction",
+      "cle": "baccalaureat-en-traduction#international",
       "id": "baccalaureat-en-traduction",
       "nom": "Baccalauréat en traduction",
-      "orientation": null,
+      "orientation": "international",
       "cycle": "1er cycle",
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Baccalauréat",
       "creditsTotal": 90,
-      "nbBlocs": 27,
+      "nbBlocs": 19,
+      "structureLue": true
+    },
+    {
+      "cle": "baccalaureat-en-traduction#régulier et COOP",
+      "id": "baccalaureat-en-traduction",
+      "nom": "Baccalauréat en traduction",
+      "orientation": "régulier et COOP",
+      "cycle": "1er cycle",
+      "faculte": "Faculté des arts et des sciences",
+      "typeProgramme": "Baccalauréat",
+      "creditsTotal": 90,
+      "nbBlocs": 18,
       "structureLue": true
     },
     {
@@ -6410,15 +6482,51 @@
       "structureLue": true
     },
     {
-      "cle": "dess-en-droit-des-affaires",
+      "cle": "dess-en-droit-des-affaires#Droit des aff. et des relations écon. internationales",
       "id": "dess-en-droit-des-affaires",
       "nom": "DESS en droit des affaires",
-      "orientation": null,
+      "orientation": "Droit des aff. et des relations écon. internationales",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de droit",
       "typeProgramme": "DESS",
       "creditsTotal": 30,
-      "nbBlocs": 14,
+      "nbBlocs": 4,
+      "structureLue": true
+    },
+    {
+      "cle": "dess-en-droit-des-affaires#Droit des produits et marchés financiers",
+      "id": "dess-en-droit-des-affaires",
+      "nom": "DESS en droit des affaires",
+      "orientation": "Droit des produits et marchés financiers",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de droit",
+      "typeProgramme": "DESS",
+      "creditsTotal": 30,
+      "nbBlocs": 4,
+      "structureLue": true
+    },
+    {
+      "cle": "dess-en-droit-des-affaires#Droit et pratiques contractuelles en affaires",
+      "id": "dess-en-droit-des-affaires",
+      "nom": "DESS en droit des affaires",
+      "orientation": "Droit et pratiques contractuelles en affaires",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de droit",
+      "typeProgramme": "DESS",
+      "creditsTotal": 30,
+      "nbBlocs": 4,
+      "structureLue": true
+    },
+    {
+      "cle": "dess-en-droit-des-affaires#Droit nord-américain des affaires",
+      "id": "dess-en-droit-des-affaires",
+      "nom": "DESS en droit des affaires",
+      "orientation": "Droit nord-américain des affaires",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de droit",
+      "typeProgramme": "DESS",
+      "creditsTotal": 30,
+      "nbBlocs": 2,
       "structureLue": true
     },
     {
@@ -6682,7 +6790,7 @@
       "faculte": "Faculté de l'aménagement",
       "typeProgramme": "DESS",
       "creditsTotal": 30,
-      "nbBlocs": 12,
+      "nbBlocs": 6,
       "structureLue": true
     },
     {
@@ -8150,15 +8258,27 @@
       "structureLue": true
     },
     {
-      "cle": "doctorat-en-neurosciences",
+      "cle": "doctorat-en-neurosciences#Général",
       "id": "doctorat-en-neurosciences",
       "nom": "Doctorat en neurosciences",
-      "orientation": null,
+      "orientation": "Général",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
       "typeProgramme": "Doctorat",
       "creditsTotal": 90,
-      "nbBlocs": 5,
+      "nbBlocs": 3,
+      "structureLue": true
+    },
+    {
+      "cle": "doctorat-en-neurosciences#Neuropsychologie",
+      "id": "doctorat-en-neurosciences",
+      "nom": "Doctorat en neurosciences",
+      "orientation": "Neuropsychologie",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de médecine",
+      "typeProgramme": "Doctorat",
+      "creditsTotal": 90,
+      "nbBlocs": 2,
       "structureLue": true
     },
     {
@@ -9922,7 +10042,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 18,
+      "nbBlocs": 9,
       "structureLue": true
     },
     {
@@ -9934,7 +10054,7 @@
       "faculte": "Faculté de médecine",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 18,
+      "nbBlocs": 9,
       "structureLue": true
     },
     {
@@ -10102,7 +10222,7 @@
       "faculte": "Faculté des arts et des sciences",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 6,
+      "nbBlocs": 3,
       "structureLue": true
     },
     {
@@ -11006,15 +11126,27 @@
       "structureLue": true
     },
     {
-      "cle": "maitrise-en-ergotherapie",
+      "cle": "maitrise-en-ergotherapie#international",
       "id": "maitrise-en-ergotherapie",
       "nom": "Maîtrise en ergothérapie",
-      "orientation": null,
+      "orientation": "international",
       "cycle": "Cycles supérieurs",
       "faculte": "Faculté de médecine",
       "typeProgramme": "Maîtrise",
       "creditsTotal": 45,
-      "nbBlocs": 7,
+      "nbBlocs": 5,
+      "structureLue": true
+    },
+    {
+      "cle": "maitrise-en-ergotherapie#régulier",
+      "id": "maitrise-en-ergotherapie",
+      "nom": "Maîtrise en ergothérapie",
+      "orientation": "régulier",
+      "cycle": "Cycles supérieurs",
+      "faculte": "Faculté de médecine",
+      "typeProgramme": "Maîtrise",
+      "creditsTotal": 45,
+      "nbBlocs": 5,
       "structureLue": true
     },
     {
@@ -16306,7 +16438,7 @@
       "faculte": "Faculté de l’apprentissage continu",
       "typeProgramme": "Programme",
       "creditsTotal": null,
-      "nbBlocs": 12,
+      "nbBlocs": 10,
       "structureLue": true
     },
     {
@@ -16318,7 +16450,7 @@
       "faculte": "Faculté de l’apprentissage continu",
       "typeProgramme": "Programme",
       "creditsTotal": null,
-      "nbBlocs": 12,
+      "nbBlocs": 3,
       "structureLue": true
     },
     {
@@ -16330,7 +16462,7 @@
       "faculte": "Faculté de l’apprentissage continu",
       "typeProgramme": "Programme",
       "creditsTotal": null,
-      "nbBlocs": 12,
+      "nbBlocs": 1,
       "structureLue": true
     },
     {
@@ -18278,8 +18410,8 @@
     "VIO",
     "VIR"
   ],
-  "scrapeISO": "2026-09-13T15:30:43.767Z",
-  "empreinteExtracteur": "05064270d10462b5d27cbaf46e2213a011e16990ac637fd401a659e237673503",
+  "scrapeISO": "2026-09-13T15:59:01.580Z",
+  "empreinteExtracteur": "725d229503ca993417d33f501affedba9fca0b0243c1e9cef93e13ad824ab124",
   "codesSansCredits": {
     "PHA 72011": "2026-09-13T03:37:48.480Z",
     "PHA 71011": "2026-09-13T03:37:54.513Z",

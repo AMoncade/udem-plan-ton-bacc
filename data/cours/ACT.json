@@ -1367,7 +1367,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-6230/",
-    "scrapeISO": "2026-09-11T11:56:47.273Z"
+    "scrapeISO": "2026-09-13T15:38:29.952Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "ACT 6245": {
     "code": "ACT 6245",
@@ -1387,7 +1442,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-6245/",
-    "scrapeISO": "2026-09-11T11:56:48.864Z"
+    "scrapeISO": "2026-09-13T15:38:32.604Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 870,
+                  "finMin": 989
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 869
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 870,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 810,
+                  "finMin": 869
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "ACT 6275": {
     "code": "ACT 6275",
@@ -1402,6 +1512,7 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/act-6275/",
-    "scrapeISO": "2026-09-11T11:56:50.075Z"
+    "scrapeISO": "2026-09-13T15:38:34.789Z",
+    "apercuHoraires": []
   }
 }

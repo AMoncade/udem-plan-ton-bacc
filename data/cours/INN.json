@@ -178,7 +178,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/inn-1903/",
-    "scrapeISO": "2026-09-11T11:35:32.765Z"
+    "scrapeISO": "2026-09-13T15:46:03.894Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-08-31",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-04"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "INN 1904": {
     "code": "INN 1904",
@@ -196,7 +231,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/inn-1904/",
-    "scrapeISO": "2026-09-11T11:35:34.600Z"
+    "scrapeISO": "2026-09-13T15:46:06.166Z",
+    "apercuHoraires": []
   },
   "INN 3001": {
     "code": "INN 3001",

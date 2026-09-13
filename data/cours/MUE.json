@@ -12,7 +12,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1151/",
-    "scrapeISO": "2026-09-11T11:39:55.304Z"
+    "scrapeISO": "2026-09-13T15:49:33.495Z",
+    "apercuHoraires": []
   },
   "MUE 1152": {
     "code": "MUE 1152",
@@ -30,7 +31,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1152/",
-    "scrapeISO": "2026-09-11T11:39:56.502Z"
+    "scrapeISO": "2026-09-13T15:49:35.376Z",
+    "apercuHoraires": []
   },
   "MUE 1153": {
     "code": "MUE 1153",
@@ -48,7 +50,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1153/",
-    "scrapeISO": "2026-09-11T11:39:58.389Z"
+    "scrapeISO": "2026-09-13T15:49:39.096Z",
+    "apercuHoraires": []
   },
   "MUE 1154": {
     "code": "MUE 1154",
@@ -66,7 +69,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1154/",
-    "scrapeISO": "2026-09-11T11:39:59.513Z"
+    "scrapeISO": "2026-09-13T15:49:39.383Z",
+    "apercuHoraires": []
   },
   "MUE 1155": {
     "code": "MUE 1155",
@@ -84,7 +88,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1155/",
-    "scrapeISO": "2026-09-11T11:40:01.434Z"
+    "scrapeISO": "2026-09-13T15:49:43.406Z",
+    "apercuHoraires": []
   },
   "MUE 1156": {
     "code": "MUE 1156",
@@ -102,7 +107,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1156/",
-    "scrapeISO": "2026-09-11T11:40:03.388Z"
+    "scrapeISO": "2026-09-13T15:49:45.564Z",
+    "apercuHoraires": []
   },
   "MUE 1161": {
     "code": "MUE 1161",
@@ -122,7 +128,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1161/",
-    "scrapeISO": "2026-09-11T11:40:04.734Z"
+    "scrapeISO": "2026-09-13T15:49:45.700Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 840,
+                  "finMin": 959
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 840,
+                  "finMin": 959
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1162": {
     "code": "MUE 1162",
@@ -145,7 +186,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1162/",
-    "scrapeISO": "2026-09-11T11:40:06.664Z"
+    "scrapeISO": "2026-09-13T15:49:49.693Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 840,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 840,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1171": {
     "code": "MUE 1171",
@@ -169,7 +245,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1171/",
-    "scrapeISO": "2026-09-11T11:40:07.936Z"
+    "scrapeISO": "2026-09-13T15:49:51.693Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1172": {
     "code": "MUE 1172",
@@ -196,7 +294,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1172/",
-    "scrapeISO": "2026-09-11T11:40:09.252Z"
+    "scrapeISO": "2026-09-13T15:49:51.927Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1173": {
     "code": "MUE 1173",
@@ -223,7 +343,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1173/",
-    "scrapeISO": "2026-09-11T11:40:11.035Z"
+    "scrapeISO": "2026-09-13T15:49:54.050Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1174": {
     "code": "MUE 1174",
@@ -250,7 +392,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1174/",
-    "scrapeISO": "2026-09-11T11:40:12.498Z"
+    "scrapeISO": "2026-09-13T15:49:55.967Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1175": {
     "code": "MUE 1175",
@@ -277,7 +441,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1175/",
-    "scrapeISO": "2026-09-11T11:40:14.534Z"
+    "scrapeISO": "2026-09-13T15:49:57.963Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1176": {
     "code": "MUE 1176",
@@ -304,7 +490,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1176/",
-    "scrapeISO": "2026-09-11T11:40:16.407Z"
+    "scrapeISO": "2026-09-13T15:49:59.955Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1191": {
     "code": "MUE 1191",
@@ -328,7 +536,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1191/",
-    "scrapeISO": "2026-09-11T11:40:18.330Z"
+    "scrapeISO": "2026-09-13T15:50:02.144Z",
+    "apercuHoraires": []
   },
   "MUE 1192": {
     "code": "MUE 1192",
@@ -355,7 +564,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1192/",
-    "scrapeISO": "2026-09-11T11:40:20.153Z"
+    "scrapeISO": "2026-09-13T15:50:06.373Z",
+    "apercuHoraires": []
   },
   "MUE 1193": {
     "code": "MUE 1193",
@@ -382,7 +592,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1193/",
-    "scrapeISO": "2026-09-11T11:40:21.994Z"
+    "scrapeISO": "2026-09-13T15:50:08.544Z",
+    "apercuHoraires": []
   },
   "MUE 1194": {
     "code": "MUE 1194",
@@ -409,7 +620,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1194/",
-    "scrapeISO": "2026-09-11T11:40:23.749Z"
+    "scrapeISO": "2026-09-13T15:50:10.625Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1195": {
     "code": "MUE 1195",
@@ -436,7 +669,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1195/",
-    "scrapeISO": "2026-09-11T11:40:25.771Z"
+    "scrapeISO": "2026-09-13T15:50:10.717Z",
+    "apercuHoraires": []
   },
   "MUE 1196": {
     "code": "MUE 1196",
@@ -463,7 +697,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1196/",
-    "scrapeISO": "2026-09-11T11:40:27.558Z"
+    "scrapeISO": "2026-09-13T15:50:14.595Z",
+    "apercuHoraires": []
   },
   "MUE 1211": {
     "code": "MUE 1211",
@@ -487,7 +722,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1211/",
-    "scrapeISO": "2026-09-11T11:40:28.875Z"
+    "scrapeISO": "2026-09-13T15:50:17.164Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1212": {
     "code": "MUE 1212",
@@ -514,7 +791,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1212/",
-    "scrapeISO": "2026-09-11T11:40:30.785Z"
+    "scrapeISO": "2026-09-13T15:50:19.194Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1213": {
     "code": "MUE 1213",
@@ -541,7 +860,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1213/",
-    "scrapeISO": "2026-09-11T11:40:32.091Z"
+    "scrapeISO": "2026-09-13T15:50:21.838Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1214": {
     "code": "MUE 1214",
@@ -568,7 +929,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1214/",
-    "scrapeISO": "2026-09-11T11:40:34.128Z"
+    "scrapeISO": "2026-09-13T15:50:24.524Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1215": {
     "code": "MUE 1215",
@@ -595,7 +998,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1215/",
-    "scrapeISO": "2026-09-11T11:40:36.008Z"
+    "scrapeISO": "2026-09-13T15:50:27.345Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1216": {
     "code": "MUE 1216",
@@ -622,7 +1067,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1216/",
-    "scrapeISO": "2026-09-11T11:40:37.854Z"
+    "scrapeISO": "2026-09-13T15:50:29.667Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-09-01",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1231": {
     "code": "MUE 1231",
@@ -637,7 +1124,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1231/",
-    "scrapeISO": "2026-09-11T11:40:39.192Z"
+    "scrapeISO": "2026-09-13T15:50:31.443Z",
+    "apercuHoraires": []
   },
   "MUE 1232": {
     "code": "MUE 1232",
@@ -655,7 +1143,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1232/",
-    "scrapeISO": "2026-09-11T11:40:41.249Z"
+    "scrapeISO": "2026-09-13T15:50:34.902Z",
+    "apercuHoraires": []
   },
   "MUE 1233": {
     "code": "MUE 1233",
@@ -673,7 +1162,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1233/",
-    "scrapeISO": "2026-09-11T11:40:43.071Z"
+    "scrapeISO": "2026-09-13T15:50:36.421Z",
+    "apercuHoraires": []
   },
   "MUE 1234": {
     "code": "MUE 1234",
@@ -691,7 +1181,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1234/",
-    "scrapeISO": "2026-09-11T11:40:44.876Z"
+    "scrapeISO": "2026-09-13T15:50:39.065Z",
+    "apercuHoraires": []
   },
   "MUE 1235": {
     "code": "MUE 1235",
@@ -709,7 +1200,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1235/",
-    "scrapeISO": "2026-09-11T11:40:46.013Z"
+    "scrapeISO": "2026-09-13T15:50:41.366Z",
+    "apercuHoraires": []
   },
   "MUE 1236": {
     "code": "MUE 1236",
@@ -727,7 +1219,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1236/",
-    "scrapeISO": "2026-09-11T11:40:47.918Z"
+    "scrapeISO": "2026-09-13T15:50:43.659Z",
+    "apercuHoraires": []
   },
   "MUE 1241": {
     "code": "MUE 1241",
@@ -751,7 +1244,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1241/",
-    "scrapeISO": "2026-09-11T11:40:49.751Z"
+    "scrapeISO": "2026-09-13T15:50:45.333Z",
+    "apercuHoraires": []
   },
   "MUE 1242": {
     "code": "MUE 1242",
@@ -778,7 +1272,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1242/",
-    "scrapeISO": "2026-09-11T11:40:51.500Z"
+    "scrapeISO": "2026-09-13T15:50:48.038Z",
+    "apercuHoraires": []
   },
   "MUE 1243": {
     "code": "MUE 1243",
@@ -805,7 +1300,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1243/",
-    "scrapeISO": "2026-09-11T11:40:52.648Z"
+    "scrapeISO": "2026-09-13T15:50:50.211Z",
+    "apercuHoraires": []
   },
   "MUE 1244": {
     "code": "MUE 1244",
@@ -832,7 +1328,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1244/",
-    "scrapeISO": "2026-09-11T11:40:54.451Z"
+    "scrapeISO": "2026-09-13T15:50:51.818Z",
+    "apercuHoraires": []
   },
   "MUE 1245": {
     "code": "MUE 1245",
@@ -859,7 +1356,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1245/",
-    "scrapeISO": "2026-09-11T11:40:56.155Z"
+    "scrapeISO": "2026-09-13T15:50:52.396Z",
+    "apercuHoraires": []
   },
   "MUE 1246": {
     "code": "MUE 1246",
@@ -886,7 +1384,8 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1246/",
-    "scrapeISO": "2026-09-11T11:40:57.750Z"
+    "scrapeISO": "2026-09-13T15:50:56.130Z",
+    "apercuHoraires": []
   },
   "MUE 1261": {
     "code": "MUE 1261",
@@ -906,7 +1405,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1261/",
-    "scrapeISO": "2026-09-11T11:40:59.994Z"
+    "scrapeISO": "2026-09-13T15:50:57.942Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1262": {
     "code": "MUE 1262",
@@ -929,7 +1450,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1262/",
-    "scrapeISO": "2026-09-11T11:41:01.440Z"
+    "scrapeISO": "2026-09-13T15:51:00.446Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1263": {
     "code": "MUE 1263",
@@ -952,7 +1495,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1263/",
-    "scrapeISO": "2026-09-11T11:41:03.367Z"
+    "scrapeISO": "2026-09-13T15:51:03.117Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1264": {
     "code": "MUE 1264",
@@ -975,7 +1540,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1264/",
-    "scrapeISO": "2026-09-11T11:41:05.269Z"
+    "scrapeISO": "2026-09-13T15:51:05.700Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1265": {
     "code": "MUE 1265",
@@ -998,7 +1585,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1265/",
-    "scrapeISO": "2026-09-11T11:41:05.382Z"
+    "scrapeISO": "2026-09-13T15:51:07.539Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1266": {
     "code": "MUE 1266",
@@ -1021,7 +1630,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1266/",
-    "scrapeISO": "2026-09-11T11:41:08.341Z"
+    "scrapeISO": "2026-09-13T15:51:10.279Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1381": {
     "code": "MUE 1381",
@@ -1036,7 +1667,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1381/",
-    "scrapeISO": "2026-09-11T11:41:10.170Z"
+    "scrapeISO": "2026-09-13T15:51:11.867Z",
+    "apercuHoraires": []
   },
   "MUE 1382": {
     "code": "MUE 1382",
@@ -1054,7 +1686,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1382/",
-    "scrapeISO": "2026-09-11T11:41:11.997Z"
+    "scrapeISO": "2026-09-13T15:51:13.823Z",
+    "apercuHoraires": []
   },
   "MUE 1383": {
     "code": "MUE 1383",
@@ -1072,7 +1705,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1383/",
-    "scrapeISO": "2026-09-11T11:41:13.284Z"
+    "scrapeISO": "2026-09-13T15:51:16.485Z",
+    "apercuHoraires": []
   },
   "MUE 1384": {
     "code": "MUE 1384",
@@ -1090,7 +1724,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1384/",
-    "scrapeISO": "2026-09-11T11:41:14.990Z"
+    "scrapeISO": "2026-09-13T15:51:19.125Z",
+    "apercuHoraires": []
   },
   "MUE 1385": {
     "code": "MUE 1385",
@@ -1108,7 +1743,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1385/",
-    "scrapeISO": "2026-09-11T11:41:16.678Z"
+    "scrapeISO": "2026-09-13T15:51:21.328Z",
+    "apercuHoraires": []
   },
   "MUE 1386": {
     "code": "MUE 1386",
@@ -1126,7 +1762,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1386/",
-    "scrapeISO": "2026-09-11T11:41:18.702Z"
+    "scrapeISO": "2026-09-13T15:51:23.362Z",
+    "apercuHoraires": []
   },
   "MUE 1391": {
     "code": "MUE 1391",
@@ -1150,7 +1787,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1391/",
-    "scrapeISO": "2026-09-11T11:41:20.744Z"
+    "scrapeISO": "2026-09-13T15:51:25.036Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1392": {
     "code": "MUE 1392",
@@ -1177,7 +1882,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1392/",
-    "scrapeISO": "2026-09-11T11:41:22.777Z"
+    "scrapeISO": "2026-09-13T15:51:27.899Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1393": {
     "code": "MUE 1393",
@@ -1204,7 +1977,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1393/",
-    "scrapeISO": "2026-09-11T11:41:24.714Z"
+    "scrapeISO": "2026-09-13T15:51:29.746Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1394": {
     "code": "MUE 1394",
@@ -1231,7 +2072,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1394/",
-    "scrapeISO": "2026-09-11T11:41:26.530Z"
+    "scrapeISO": "2026-09-13T15:51:30.060Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1395": {
     "code": "MUE 1395",
@@ -1258,7 +2167,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1395/",
-    "scrapeISO": "2026-09-11T11:41:28.549Z"
+    "scrapeISO": "2026-09-13T15:51:33.934Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1396": {
     "code": "MUE 1396",
@@ -1285,7 +2262,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1396/",
-    "scrapeISO": "2026-09-11T11:41:29.962Z"
+    "scrapeISO": "2026-09-13T15:51:36.201Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 839
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1491": {
     "code": "MUE 1491",
@@ -1309,7 +2354,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1491/",
-    "scrapeISO": "2026-09-11T11:41:32.100Z"
+    "scrapeISO": "2026-09-13T15:51:38.907Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1492": {
     "code": "MUE 1492",
@@ -1336,7 +2499,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1492/",
-    "scrapeISO": "2026-09-11T11:41:34.436Z"
+    "scrapeISO": "2026-09-13T15:51:38.851Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1493": {
     "code": "MUE 1493",
@@ -1363,7 +2644,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1493/",
-    "scrapeISO": "2026-09-11T11:41:35.939Z"
+    "scrapeISO": "2026-09-13T15:51:41.511Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1494": {
     "code": "MUE 1494",
@@ -1390,7 +2789,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1494/",
-    "scrapeISO": "2026-09-11T11:41:37.477Z"
+    "scrapeISO": "2026-09-13T15:51:41.675Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1495": {
     "code": "MUE 1495",
@@ -1417,7 +2934,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1495/",
-    "scrapeISO": "2026-09-11T11:41:39.682Z"
+    "scrapeISO": "2026-09-13T15:51:45.999Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1496": {
     "code": "MUE 1496",
@@ -1444,7 +3079,125 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1496/",
-    "scrapeISO": "2026-09-11T11:41:39.811Z"
+    "scrapeISO": "2026-09-13T15:51:48.435Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 899
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1501": {
     "code": "MUE 1501",
@@ -1464,7 +3217,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1501/",
-    "scrapeISO": "2026-09-11T11:41:42.341Z"
+    "scrapeISO": "2026-09-13T15:51:51.091Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1502": {
     "code": "MUE 1502",
@@ -1487,7 +3275,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1502/",
-    "scrapeISO": "2026-09-11T11:41:43.584Z"
+    "scrapeISO": "2026-09-13T15:51:53.514Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1503": {
     "code": "MUE 1503",
@@ -1510,7 +3333,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1503/",
-    "scrapeISO": "2026-09-11T11:41:45.530Z"
+    "scrapeISO": "2026-09-13T15:51:55.132Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1504": {
     "code": "MUE 1504",
@@ -1533,7 +3391,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1504/",
-    "scrapeISO": "2026-09-11T11:41:47.427Z"
+    "scrapeISO": "2026-09-13T15:51:57.888Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1505": {
     "code": "MUE 1505",
@@ -1556,7 +3449,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1505/",
-    "scrapeISO": "2026-09-11T11:41:49.527Z"
+    "scrapeISO": "2026-09-13T15:52:01.174Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1506": {
     "code": "MUE 1506",
@@ -1579,7 +3507,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1506/",
-    "scrapeISO": "2026-09-11T11:41:50.759Z"
+    "scrapeISO": "2026-09-13T15:52:02.770Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1521": {
     "code": "MUE 1521",
@@ -1603,7 +3566,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1521/",
-    "scrapeISO": "2026-09-11T11:41:50.908Z"
+    "scrapeISO": "2026-09-13T15:52:05.176Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1522": {
     "code": "MUE 1522",
@@ -1630,7 +3661,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1522/",
-    "scrapeISO": "2026-09-11T11:41:53.902Z"
+    "scrapeISO": "2026-09-13T15:52:07.227Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1523": {
     "code": "MUE 1523",
@@ -1657,7 +3756,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1523/",
-    "scrapeISO": "2026-09-11T11:41:55.793Z"
+    "scrapeISO": "2026-09-13T15:52:09.184Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1524": {
     "code": "MUE 1524",
@@ -1684,7 +3851,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1524/",
-    "scrapeISO": "2026-09-11T11:41:57.073Z"
+    "scrapeISO": "2026-09-13T15:52:11.721Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1525": {
     "code": "MUE 1525",
@@ -1711,7 +3946,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1525/",
-    "scrapeISO": "2026-09-11T11:41:58.967Z"
+    "scrapeISO": "2026-09-13T15:52:14.003Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1526": {
     "code": "MUE 1526",
@@ -1738,7 +4041,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1526/",
-    "scrapeISO": "2026-09-11T11:42:00.370Z"
+    "scrapeISO": "2026-09-13T15:52:16.270Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1531": {
     "code": "MUE 1531",
@@ -1753,7 +4124,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1531/",
-    "scrapeISO": "2026-09-11T11:42:02.243Z"
+    "scrapeISO": "2026-09-13T15:52:18.414Z",
+    "apercuHoraires": []
   },
   "MUE 1532": {
     "code": "MUE 1532",
@@ -1771,7 +4143,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1532/",
-    "scrapeISO": "2026-09-11T11:42:04.445Z"
+    "scrapeISO": "2026-09-13T15:52:20.606Z",
+    "apercuHoraires": []
   },
   "MUE 1541": {
     "code": "MUE 1541",
@@ -1786,7 +4159,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1541/",
-    "scrapeISO": "2026-09-11T11:42:06.203Z"
+    "scrapeISO": "2026-09-13T15:52:22.888Z",
+    "apercuHoraires": []
   },
   "MUE 1542": {
     "code": "MUE 1542",
@@ -1804,7 +4178,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1542/",
-    "scrapeISO": "2026-09-11T11:42:07.431Z"
+    "scrapeISO": "2026-09-13T15:52:25.230Z",
+    "apercuHoraires": []
   },
   "MUE 1543": {
     "code": "MUE 1543",
@@ -1822,7 +4197,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1543/",
-    "scrapeISO": "2026-09-11T11:42:08.630Z"
+    "scrapeISO": "2026-09-13T15:52:26.810Z",
+    "apercuHoraires": []
   },
   "MUE 1544": {
     "code": "MUE 1544",
@@ -1840,7 +4216,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1544/",
-    "scrapeISO": "2026-09-11T11:42:10.464Z"
+    "scrapeISO": "2026-09-13T15:52:30.010Z",
+    "apercuHoraires": []
   },
   "MUE 1545": {
     "code": "MUE 1545",
@@ -1858,7 +4235,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1545/",
-    "scrapeISO": "2026-09-11T11:42:12.302Z"
+    "scrapeISO": "2026-09-13T15:52:32.321Z",
+    "apercuHoraires": []
   },
   "MUE 1546": {
     "code": "MUE 1546",
@@ -1876,7 +4254,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1546/",
-    "scrapeISO": "2026-09-11T11:42:14.040Z"
+    "scrapeISO": "2026-09-13T15:52:34.361Z",
+    "apercuHoraires": []
   },
   "MUE 1571": {
     "code": "MUE 1571",
@@ -1900,7 +4279,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1571/",
-    "scrapeISO": "2026-09-11T11:42:15.319Z"
+    "scrapeISO": "2026-09-13T15:52:36.361Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1572": {
     "code": "MUE 1572",
@@ -1927,7 +4328,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1572/",
-    "scrapeISO": "2026-09-11T11:42:17.253Z"
+    "scrapeISO": "2026-09-13T15:52:38.079Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1573": {
     "code": "MUE 1573",
@@ -1954,7 +4377,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1573/",
-    "scrapeISO": "2026-09-11T11:42:19.088Z"
+    "scrapeISO": "2026-09-13T15:52:40.043Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1574": {
     "code": "MUE 1574",
@@ -1981,7 +4426,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1574/",
-    "scrapeISO": "2026-09-11T11:42:20.463Z"
+    "scrapeISO": "2026-09-13T15:52:42.416Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1575": {
     "code": "MUE 1575",
@@ -2008,7 +4475,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1575/",
-    "scrapeISO": "2026-09-11T11:42:21.967Z"
+    "scrapeISO": "2026-09-13T15:52:44.535Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1576": {
     "code": "MUE 1576",
@@ -2035,7 +4524,29 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1576/",
-    "scrapeISO": "2026-09-11T11:42:23.855Z"
+    "scrapeISO": "2026-09-13T15:52:47.148Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1621": {
     "code": "MUE 1621",
@@ -2055,7 +4566,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1621/",
-    "scrapeISO": "2026-09-11T11:42:25.199Z"
+    "scrapeISO": "2026-09-13T15:52:47.339Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1622": {
     "code": "MUE 1622",
@@ -2078,7 +4624,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1622/",
-    "scrapeISO": "2026-09-11T11:42:27.122Z"
+    "scrapeISO": "2026-09-13T15:52:51.082Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1623": {
     "code": "MUE 1623",
@@ -2101,7 +4682,42 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1623/",
-    "scrapeISO": "2026-09-11T11:42:28.964Z"
+    "scrapeISO": "2026-09-13T15:52:52.759Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1281": {
     "code": "MUE 1281",
@@ -2125,7 +4741,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1281/",
-    "scrapeISO": "2026-09-11T11:42:31.069Z"
+    "scrapeISO": "2026-09-13T15:52:55.734Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1282": {
     "code": "MUE 1282",
@@ -2152,7 +4836,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1282/",
-    "scrapeISO": "2026-09-11T11:42:33.243Z"
+    "scrapeISO": "2026-09-13T15:52:57.819Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1283": {
     "code": "MUE 1283",
@@ -2179,7 +4931,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1283/",
-    "scrapeISO": "2026-09-11T11:42:35.378Z"
+    "scrapeISO": "2026-09-13T15:53:00.475Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1284": {
     "code": "MUE 1284",
@@ -2206,7 +5026,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1284/",
-    "scrapeISO": "2026-09-11T11:42:37.436Z"
+    "scrapeISO": "2026-09-13T15:53:00.665Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1285": {
     "code": "MUE 1285",
@@ -2233,7 +5121,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1285/",
-    "scrapeISO": "2026-09-11T11:42:38.837Z"
+    "scrapeISO": "2026-09-13T15:53:02.663Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1286": {
     "code": "MUE 1286",
@@ -2260,7 +5216,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1286/",
-    "scrapeISO": "2026-09-11T11:42:40.280Z"
+    "scrapeISO": "2026-09-13T15:53:05.029Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1341": {
     "code": "MUE 1341",
@@ -2284,7 +5308,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1341/",
-    "scrapeISO": "2026-09-11T11:42:42.328Z"
+    "scrapeISO": "2026-09-13T15:53:09.207Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1342": {
     "code": "MUE 1342",
@@ -2311,7 +5403,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1342/",
-    "scrapeISO": "2026-09-11T11:42:44.632Z"
+    "scrapeISO": "2026-09-13T15:53:12.058Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1343": {
     "code": "MUE 1343",
@@ -2338,7 +5498,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1343/",
-    "scrapeISO": "2026-09-11T11:42:46.650Z"
+    "scrapeISO": "2026-09-13T15:53:14.647Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1344": {
     "code": "MUE 1344",
@@ -2365,7 +5593,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1344/",
-    "scrapeISO": "2026-09-11T11:42:47.985Z"
+    "scrapeISO": "2026-09-13T15:53:17.098Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1345": {
     "code": "MUE 1345",
@@ -2392,7 +5688,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1345/",
-    "scrapeISO": "2026-09-11T11:42:50.065Z"
+    "scrapeISO": "2026-09-13T15:53:17.275Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1346": {
     "code": "MUE 1346",
@@ -2419,7 +5783,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1346/",
-    "scrapeISO": "2026-09-11T11:42:51.505Z"
+    "scrapeISO": "2026-09-13T15:53:21.550Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1361": {
     "code": "MUE 1361",
@@ -2434,7 +5866,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1361/",
-    "scrapeISO": "2026-09-11T11:42:53.484Z"
+    "scrapeISO": "2026-09-13T15:53:23.931Z",
+    "apercuHoraires": []
   },
   "MUE 1362": {
     "code": "MUE 1362",
@@ -2452,7 +5885,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1362/",
-    "scrapeISO": "2026-09-11T11:42:53.593Z"
+    "scrapeISO": "2026-09-13T15:53:26.193Z",
+    "apercuHoraires": []
   },
   "MUE 1363": {
     "code": "MUE 1363",
@@ -2470,7 +5904,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1363/",
-    "scrapeISO": "2026-09-11T11:42:55.981Z"
+    "scrapeISO": "2026-09-13T15:53:27.967Z",
+    "apercuHoraires": []
   },
   "MUE 1364": {
     "code": "MUE 1364",
@@ -2488,7 +5923,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1364/",
-    "scrapeISO": "2026-09-11T11:42:57.756Z"
+    "scrapeISO": "2026-09-13T15:53:28.398Z",
+    "apercuHoraires": []
   },
   "MUE 1365": {
     "code": "MUE 1365",
@@ -2506,7 +5942,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1365/",
-    "scrapeISO": "2026-09-11T11:42:59.584Z"
+    "scrapeISO": "2026-09-13T15:53:30.355Z",
+    "apercuHoraires": []
   },
   "MUE 1366": {
     "code": "MUE 1366",
@@ -2524,7 +5961,8 @@
     "restrictionsBrut": null,
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1366/",
-    "scrapeISO": "2026-09-11T11:43:00.803Z"
+    "scrapeISO": "2026-09-13T15:53:33.885Z",
+    "apercuHoraires": []
   },
   "MUE 1441": {
     "code": "MUE 1441",
@@ -2548,7 +5986,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1441/",
-    "scrapeISO": "2026-09-11T11:43:02.827Z"
+    "scrapeISO": "2026-09-13T15:53:34.369Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1442": {
     "code": "MUE 1442",
@@ -2575,7 +6055,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1442/",
-    "scrapeISO": "2026-09-11T11:43:04.224Z"
+    "scrapeISO": "2026-09-13T15:53:38.827Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1443": {
     "code": "MUE 1443",
@@ -2602,7 +6124,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1443/",
-    "scrapeISO": "2026-09-11T11:43:06.262Z"
+    "scrapeISO": "2026-09-13T15:53:41.169Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1444": {
     "code": "MUE 1444",
@@ -2629,7 +6193,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1444/",
-    "scrapeISO": "2026-09-11T11:43:07.891Z"
+    "scrapeISO": "2026-09-13T15:53:42.966Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1445": {
     "code": "MUE 1445",
@@ -2656,7 +6262,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1445/",
-    "scrapeISO": "2026-09-11T11:43:09.732Z"
+    "scrapeISO": "2026-09-13T15:53:45.312Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1446": {
     "code": "MUE 1446",
@@ -2683,7 +6331,49 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1446/",
-    "scrapeISO": "2026-09-11T11:43:10.981Z"
+    "scrapeISO": "2026-09-13T15:53:47.698Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1471": {
     "code": "MUE 1471",
@@ -2707,7 +6397,115 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1471/",
-    "scrapeISO": "2026-09-11T11:43:13.128Z"
+    "scrapeISO": "2026-09-13T15:53:49.898Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1472": {
     "code": "MUE 1472",
@@ -2734,7 +6532,115 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1472/",
-    "scrapeISO": "2026-09-11T11:43:15.207Z"
+    "scrapeISO": "2026-09-13T15:53:51.632Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1473": {
     "code": "MUE 1473",
@@ -2761,7 +6667,115 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1473/",
-    "scrapeISO": "2026-09-11T11:43:17.181Z"
+    "scrapeISO": "2026-09-13T15:53:54.723Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1474": {
     "code": "MUE 1474",
@@ -2788,7 +6802,115 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1474/",
-    "scrapeISO": "2026-09-11T11:43:19.157Z"
+    "scrapeISO": "2026-09-13T15:53:56.509Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1475": {
     "code": "MUE 1475",
@@ -2815,7 +6937,115 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1475/",
-    "scrapeISO": "2026-09-11T11:43:20.497Z"
+    "scrapeISO": "2026-09-13T15:53:56.890Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1476": {
     "code": "MUE 1476",
@@ -2842,7 +7072,115 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1476/",
-    "scrapeISO": "2026-09-11T11:43:22.503Z"
+    "scrapeISO": "2026-09-13T15:54:01.034Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 660,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 600,
+                  "finMin": 779
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1551": {
     "code": "MUE 1551",
@@ -2866,7 +7204,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1551/",
-    "scrapeISO": "2026-09-11T11:43:24.460Z"
+    "scrapeISO": "2026-09-13T15:54:03.444Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1552": {
     "code": "MUE 1552",
@@ -2890,7 +7296,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1552/",
-    "scrapeISO": "2026-09-11T11:43:26.283Z"
+    "scrapeISO": "2026-09-13T15:54:06.094Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 600,
+                  "finMin": 719
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1611": {
     "code": "MUE 1611",
@@ -2914,7 +7388,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1611/",
-    "scrapeISO": "2026-09-11T11:43:27.751Z"
+    "scrapeISO": "2026-09-13T15:54:08.665Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1612": {
     "code": "MUE 1612",
@@ -2941,7 +7483,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1612/",
-    "scrapeISO": "2026-09-11T11:43:29.760Z"
+    "scrapeISO": "2026-09-13T15:54:10.375Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1613": {
     "code": "MUE 1613",
@@ -2968,7 +7578,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1613/",
-    "scrapeISO": "2026-09-11T11:43:31.174Z"
+    "scrapeISO": "2026-09-13T15:54:13.100Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1614": {
     "code": "MUE 1614",
@@ -2995,7 +7673,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1614/",
-    "scrapeISO": "2026-09-11T11:43:32.529Z"
+    "scrapeISO": "2026-09-13T15:54:13.306Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1615": {
     "code": "MUE 1615",
@@ -3022,7 +7768,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1615/",
-    "scrapeISO": "2026-09-11T11:43:33.900Z"
+    "scrapeISO": "2026-09-13T15:54:16.865Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1616": {
     "code": "MUE 1616",
@@ -3049,7 +7863,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1616/",
-    "scrapeISO": "2026-09-11T11:43:35.789Z"
+    "scrapeISO": "2026-09-13T15:54:19.395Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 989
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1631": {
     "code": "MUE 1631",
@@ -3073,7 +7955,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1631/",
-    "scrapeISO": "2026-09-11T11:43:37.132Z"
+    "scrapeISO": "2026-09-13T15:54:21.655Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1632": {
     "code": "MUE 1632",
@@ -3100,7 +8037,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1632/",
-    "scrapeISO": "2026-09-11T11:43:38.975Z"
+    "scrapeISO": "2026-09-13T15:54:24.067Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1633": {
     "code": "MUE 1633",
@@ -3127,7 +8119,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1633/",
-    "scrapeISO": "2026-09-11T11:43:40.781Z"
+    "scrapeISO": "2026-09-13T15:54:24.068Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1634": {
     "code": "MUE 1634",
@@ -3154,7 +8201,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1634/",
-    "scrapeISO": "2026-09-11T11:43:42.584Z"
+    "scrapeISO": "2026-09-13T15:54:26.833Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1635": {
     "code": "MUE 1635",
@@ -3181,7 +8283,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1635/",
-    "scrapeISO": "2026-09-11T11:43:43.861Z"
+    "scrapeISO": "2026-09-13T15:54:28.812Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 1636": {
     "code": "MUE 1636",
@@ -3208,7 +8365,62 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1636/",
-    "scrapeISO": "2026-09-11T11:43:45.576Z"
+    "scrapeISO": "2026-09-13T15:54:30.453Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 990,
+                  "finMin": 1109
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "MUE 2351": {
     "code": "MUE 2351",

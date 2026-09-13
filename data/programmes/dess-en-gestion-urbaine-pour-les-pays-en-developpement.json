@@ -11,8 +11,7 @@
     {
       "nom": "Habitat urbain",
       "segments": [
-        "70",
-        "71"
+        "70"
       ],
       "exigences": {
         "brut": "Les crédits de l'option sont répartis de la façon suivante : 18 crédits obligatoires, 9 crédits à option et 3 crédits au choix.",
@@ -35,7 +34,21 @@
       "segments": [
         "71"
       ],
-      "exigences": null
+      "exigences": {
+        "brut": "Les crédits de l'option sont répartis de la façon suivante : 18 crédits obligatoires, 9 crédits à option et 3 crédits au choix.",
+        "obligatoire": {
+          "min": 18,
+          "max": 18
+        },
+        "option": {
+          "min": 9,
+          "max": 9
+        },
+        "choix": {
+          "min": 3,
+          "max": 3
+        }
+      }
     }
   ],
   "cycle": "Cycles supérieurs",

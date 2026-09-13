@@ -13,8 +13,7 @@
       "nom": "générale",
       "segments": [
         "01",
-        "91",
-        "92"
+        "91"
       ],
       "exigences": null
     },
@@ -24,7 +23,18 @@
         "01",
         "92"
       ],
-      "exigences": null
+      "exigences": {
+        "brut": "Les crédits de l'Orientation sont répartis de la façon suivante : 9 crédits obligatoires et de 12 à 15 crédits à option.",
+        "obligatoire": {
+          "min": 9,
+          "max": 9
+        },
+        "option": {
+          "min": 12,
+          "max": 15
+        },
+        "choix": null
+      }
     }
   ],
   "cycle": "1er cycle",

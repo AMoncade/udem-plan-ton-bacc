@@ -78,7 +78,50 @@ const JETON_BLOC = '<section class="bloc">';
  * alors qu'une règle de bloc s'écrit « Option - 6 crédits ». Ajouter une forme
  * qu'aucune page n'utilise ouvrirait une confusion pour rien.
  */
-const MARQUEURS_ORIENTATION = ["Propre à l'orientation ", "Propre à l'option ", "Orientation - "];
+const MARQUEURS_ORIENTATION = [
+  "Propre à l'orientation ",
+  "Propre à l'option ",
+  "Orientation - ",
+  // Formes ajoutées après un bogue d'audit, et MESURÉES avant de l'être. Le
+  // bacc. en informatique affichait « 14 blocs sur 3 segments (01, 76, 78) »
+  // en citant deux lignes plus bas sa propre règle « segment 01 et 76 » : le
+  // segment 78, dont l'entête dit « Propre au cheminement honor », n'était
+  // reconnu par aucun marqueur, tombait dans le tronc commun et s'ajoutait
+  // donc aux TROIS parcours. 22 crédits fantômes et un « Non conforme »
+  // définitif.
+  //
+  // Compté sur le catalogue : **9 segments** polluaient ainsi tous les parcours
+  // de leur programme, sous trois formes distinctes — « Propre au cheminement »
+  // (informatique, neurosciences ×2, bio-informatique ×2), « Option »
+  // (chimie, études internationales) et « Cheminement » (qualification en
+  // droit ×2). Une seule forme ajoutée n'en aurait corrigé que cinq.
+  "Propre au cheminement ",
+  "Propre aux cheminements ",
+  "Cheminement ",
+  "Orientation ",
+  "Option ",
+];
+
+// « VOLET » N'EST PAS UN PARCOURS, et c'est l'arithmétique qui l'a tranché.
+//
+// Un premier jet incluait « Propre au volet » et « Propre aux volets ». L'écart
+// mesuré dépassait alors les 9 segments attendus, ce qui était le seuil que je
+// m'étais fixé pour resserrer au lieu de commiter. En regardant les nouveaux
+// venus, trois bacs en enseignement gagnaient deux « orientations » chacun :
+//
+//     enseignement de la culture   Éducation[01] = 69   disciplinaires[70] = 48   total 120
+//     enseignement univers social  Éducation[01] = 69   Histoire, géo[80]   = 54   total 123
+//     enseignement du français     Éducation[01] = 72   Français, ling[80]  = 45   total 123
+//
+// Leurs deux volets **s'ADDITIONNENT** au total : l'étudiant suit les deux, le
+// volet Éducation ET le volet disciplinaire. Les émettre comme parcours
+// couperait un programme de 120 crédits en deux de 69 et 48 — le défaut
+// d'amputation, exactement celui qu'on a évité sur le DESS en déficience
+// visuelle. Les autres formes, elles, donnent des parcours dont chacun vaut
+// 70 à 100 % du total : ce sont bien des alternatives.
+//
+// Le mot « volet » désigne donc une PARTIE du programme là où « cheminement »,
+// « orientation » et « option » désignent une VERSION du programme.
 
 /**
  * Titre de bloc. QUATRE orthographes, toutes relevées sur de vraies pages :
@@ -143,8 +186,13 @@ export function parseTitreSegment(
   if (!m) return null;
   const libelle = m[2].replace(/\s+/g, " ").trim();
   let orientation: string | null = null;
+  // Comparaison INSENSIBLE À LA CASSE : six segments du catalogue écrivent
+  // « propre au volet » en minuscule là où les autres capitalisent. Ajouter les
+  // variantes de casse à la liste aurait doublé sa longueur pour une différence
+  // qui n'est pas de la donnée mais de la typographie.
+  const bas = libelle.toLowerCase();
   for (const marqueur of MARQUEURS_ORIENTATION) {
-    if (libelle.startsWith(marqueur)) {
+    if (bas.startsWith(marqueur.toLowerCase())) {
       orientation = libelle.slice(marqueur.length).trim();
       break;
     }
