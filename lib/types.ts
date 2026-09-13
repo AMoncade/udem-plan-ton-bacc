@@ -486,6 +486,49 @@ export interface Programme {
  * Sert `data/index-programmes.json`, qui doit rester petit : l'app embarque
  * tout le catalogue, donc on ne charge jamais 12 Mo pour afficher une liste.
  */
+/**
+ * Le vocabulaire des types de programme, mesuré et non inventé.
+ *
+ * `typeProgramme` valait un FRAGMENT DE NOM : le premier mot pour 1 277 des
+ * 1 506 fiches, le nom entier pour le reste — d'où 59 valeurs distinctes et une
+ * facette « Type » qui offrait `Actuariat (3)`, `Archéologie classique (3)`,
+ * `Année (1)`, `Ph. (1)` comme s'il s'agissait de grades. Et des doublons de
+ * casse et de ponctuation : `DES` contre `D.E.S.`, `DESS` contre `D.E.S.S.`,
+ * `Baccalauréat` contre `Baccalauréats`, `Stage postdoctoral` contre
+ * `stage postdoctoral`.
+ *
+ * POURQUOI VINGT ET UN ET NON DIX. Une liste des dix grades évidents
+ * (baccalauréat, certificat, majeure, mineure, microprogramme, DESS, maîtrise,
+ * doctorat, DES, stage postdoctoral) laisse dehors une soixantaine de fiches
+ * dont le type est RÉEL : `DEPA` est un diplôme d'études professionnelles
+ * approfondies, `Internat` et `Qualification` sont des programmes de médecine
+ * et de droit. Les verser dans un `autre` perdrait ce que la page dit.
+ *
+ * POURQUOI PAS DE `"autre"`. Environ 80 pages n'énoncent aucun grade, ni dans
+ * leur nom ni dans leur slug — `actuariat`, `archeologie-classique`,
+ * `genetique-moleculaire`. Ce n'est pas un échec de lecture : leur nom n'en
+ * porte pas, et plusieurs ressemblent à des pages d'ORIENTATION publiées
+ * séparément. `null` le dit ; un fourre-tout de 80 entrées serait un aveu
+ * déguisé en type.
+ *
+ * CE QUE TYPESCRIPT NE PEUT PAS FAIRE ICI, et c'est la limite à connaître : ce
+ * vocabulaire arrive par `JSON.parse`, donc le compilateur ne le vérifie
+ * jamais. Il documente, il ne valide pas. **C'est au scraper de refuser :
+ * toute valeur hors de cette liste devient `null` et se journalise**, comme un
+ * jour de la semaine hors des sept devient un créneau `illisible`. Le champ
+ * reste déclaré `string | null` pour qu'aucun consommateur n'ait à se
+ * restreindre ; qui veut l'exhaustivité prend `TypeProgramme`.
+ */
+export const TYPES_PROGRAMME = [
+  "Baccalauréat", "Certificat", "Majeure", "Mineure", "Microprogramme",
+  "DESS", "Maîtrise", "Doctorat", "DES", "Stage postdoctoral",
+  "DEPA", "Diplôme complémentaire", "Diplôme", "Programme", "Internat",
+  "Qualification", "Études libres", "Actualisation de formation",
+  "Année préparatoire", "Accès", "Juris Doctor",
+] as const;
+
+export type TypeProgramme = (typeof TYPES_PROGRAMME)[number];
+
 export interface FicheIndex {
   /**
    * Clé unique du PARCOURS : le slug, ou `slug + "#" + orientation` quand la
