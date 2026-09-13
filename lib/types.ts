@@ -576,6 +576,23 @@ export interface IndexProgrammes {
    */
   empreinteExtracteur?: string;
   /**
+   * La même empreinte, mais PAR FICHIER — pour que le test dise QUOI a bougé et
+   * non seulement QUE quelque chose a bougé.
+   *
+   * `empreinteExtracteur` rend un verdict ; celui-ci rend une explication. Les
+   * deux moitiés de l'ensemble haché n'appellent pas la même réaction : un
+   * fichier de `scripts/scrape/` qui change périme les données, un fichier de
+   * contrat qui change les périme PEUT-ÊTRE — ajouter un champ sans toucher à
+   * l'émission ne périme rien, et c'est arrivé dès le lendemain de la pose.
+   *
+   * Sans cette distinction, chaque atterrissage de contrat rougit le garde-fou,
+   * et on apprend à lire sa sortie comme du bruit. C'est la panne qu'on a payée
+   * trois fois : un instrument juste qu'on cesse d'écouter.
+   *
+   * Optionnel comme son aîné : absent, le test se rabat sur le verdict global.
+   */
+  empreintesParSource?: Record<string, string>;
+  /**
    * Cours dont la PAGE A ÉTÉ LUE et ne porte aucune étiquette « Crédits », avec
    * la date de cette observation.
    *

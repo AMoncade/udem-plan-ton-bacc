@@ -96,6 +96,41 @@ export function empreinteExtracteur(): string {
 }
 
 /**
+ * L'empreinte de CHAQUE source, au lieu d'une somme unique.
+ *
+ * Pourquoi. `empreinteExtracteur()` dit QUE quelque chose a bougé, jamais QUOI.
+ * Or les deux moitiés de l'ensemble haché n'appellent pas la même réaction :
+ *
+ *  - un fichier de `scripts/scrape/` a changé → les données SONT périmées,
+ *    il faut relancer une passe ;
+ *  - un fichier de contrat (`lib/`) a changé → elles le sont PEUT-ÊTRE. Un
+ *    champ ajouté sans toucher à l'émission ne périme rien. Le commit qui a
+ *    posé `TYPES_PROGRAMME` n'a pas changé une seule valeur écrite, et
+ *    l'empreinte a quand même rougi.
+ *
+ * Avec un seul nombre, les deux rendent le même rouge et le même message, donc
+ * on apprend à le lire comme du bruit — la panne qu'on a payée trois fois
+ * ailleurs, un instrument juste qu'on cesse d'écouter.
+ *
+ * PAR FICHIER plutôt qu'en deux sommes séparées, pour deux raisons. La
+ * partition « extracteur / contrat » devrait être maintenue à chaque fichier
+ * qui rejoint l'ensemble, et quelqu'un finirait par en classer un du mauvais
+ * côté ; ici la catégorie se lit dans le chemin. Et la symétrie oubliée : une
+ * retouche de COMMENTAIRE dans `scripts/scrape/` périme aussi, exactement comme
+ * dans `lib/` — deux sommes n'auraient donc pas séparé « vrai » de « faux
+ * positif », seulement deux pools qui en contiennent chacun.
+ */
+export function empreintesParSource(): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const rel of sourcesHachees()) {
+    const h = createHash("sha256");
+    h.update(readFileSync(join(RACINE, ...rel.split("/")), "utf8").replace(/\r\n/g, "\n"));
+    out[rel] = h.digest("hex");
+  }
+  return out;
+}
+
+/**
  * Les sources hachées qui ne sont PAS propres au sens de git — modifiées, ou
  * neuves et non suivies.
  *

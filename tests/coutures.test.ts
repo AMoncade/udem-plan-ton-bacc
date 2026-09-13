@@ -14,7 +14,11 @@
  */
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { empreinteExtracteur, sourcesModifiees } from "../lib/empreinte";
+import {
+  empreinteExtracteur,
+  empreintesParSource,
+  sourcesModifiees,
+} from "../lib/empreinte";
 import { join } from "node:path";
 import { diagnostiquerCours, auditProgramme } from "../lib/engine";
 import { normaliserCode, cleBloc, sujetDeCode } from "../lib/codes";
@@ -179,6 +183,56 @@ describe("disposition des données sur disque", () => {
     // neuf et non suivi par git, ce qui déplaçait l'empreinte sans qu'aucune
     // ligne importée n'ait changé. Un garde-fou qui accuse la mauvaise cause
     // coûte plus de temps qu'il n'en fait gagner.
+    /**
+     * QUOI a bougé, et non seulement QUE quelque chose a bougé.
+     *
+     * Les deux moitiés de l'ensemble haché n'appellent pas la même réaction :
+     * un fichier de `scripts/scrape/` périme les données, un fichier de contrat
+     * les périme PEUT-ÊTRE. Sans la distinction, chaque atterrissage de contrat
+     * rougit ce test et on apprend à le lire comme du bruit.
+     *
+     * Se rabat sur le message global quand les données ne portent pas encore
+     * `empreintesParSource` : dire « je ne sais pas lequel » vaut mieux que de
+     * désigner au hasard.
+     */
+    const causeParFichier = (): string => {
+      const ecrites = index.empreintesParSource;
+      if (ecrites === undefined) {
+        return (
+          "Les données ne portent pas encore `empreintesParSource`, donc ce test " +
+          "ne peut pas dire QUEL fichier a bougé — seulement qu'au moins un l'a " +
+          "fait. Relancer une passe le fera écrire, et le prochain écart sera " +
+          "nommé."
+        );
+      }
+      const courantes = empreintesParSource();
+      const bouges = [
+        ...Object.keys(courantes).filter((f) => courantes[f] !== ecrites[f]),
+        ...Object.keys(ecrites).filter((f) => courantes[f] === undefined),
+      ];
+      const extracteur = bouges.filter((f) => f.startsWith("scripts/scrape/"));
+      const contrat = bouges.filter((f) => !f.startsWith("scripts/scrape/"));
+      const lignes: string[] = [];
+      if (extracteur.length > 0) {
+        lignes.push(
+          `L'EXTRACTEUR a changé (${extracteur.join(", ")}) : les données SONT ` +
+            "périmées, relancer `npm run scrape` — quelques secondes sur cache.",
+        );
+      }
+      if (contrat.length > 0) {
+        lignes.push(
+          `Le CONTRAT a changé (${contrat.join(", ")}) : les données le sont ` +
+            "PEUT-ÊTRE. Un champ ajouté sans toucher à l'émission ne périme rien ; " +
+            "un champ dont le SENS change, si. Relancer une passe si le champ " +
+            "concerné est émis, sinon c'est un avertissement et non un échec.",
+        );
+      }
+      return lignes.length > 0
+        ? lignes.join(" ")
+        : "Aucun fichier haché ne diffère un à un, mais la somme globale diverge : " +
+            "la FORMULE a changé d'ensemble haché (voir lib/empreinte.ts). Une passe " +
+            "remet les empreintes déjà écrites d'accord.";
+    };
     const sales = sourcesModifiees();
     const causes =
       sales.length > 0
@@ -187,12 +241,7 @@ describe("disposition des données sur disque", () => {
           `probablement en train d'y travailler. Les données ne sont PAS en retard ` +
           `sur le code de référence : elles sont comparées à un arbre de travail. ` +
           `Ne pas relancer de passe pour ça ; mesurer sur un arbre au repos.`
-        : "Les fichiers hachés sont propres au sens de git, donc c'est bien le " +
-          "code de référence qui a changé depuis la passe : soit le scrape n'a pas " +
-          "été relancé après un correctif de l'extracteur — `npm run scrape`, " +
-          "quelques secondes sur cache — soit la formule a changé d'ensemble haché " +
-          "(voir lib/empreinte.ts), ce qui rend fausses les empreintes déjà " +
-          "écrites jusqu'à la passe suivante.";
+        : causeParFichier();
     expect(
       index.empreinteExtracteur,
       "Les données de data/ n'ont PAS été produites par le code d'extraction " +
