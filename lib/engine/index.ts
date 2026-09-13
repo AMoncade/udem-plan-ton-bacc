@@ -825,6 +825,20 @@ export function auditProgramme(
     signaler("donneesAmont", message);
   };
 
+  // Un programme SANS AUCUN BLOC n'a aucune contrainte à violer : tout calcul
+  // bloc-par-bloc le trouve donc parfait. Sans ce garde-fou, un parcours vide
+  // ressort conforme dès que la page n'annonce pas non plus de total — c'est
+  // diplômer sur du vide, le mode de défaillance que ce moteur existe pour
+  // empêcher. Mesuré en balayant les entrées dégénérées : le cas se produit
+  // pour `blocs: []` avec `creditsTotal: null`, que le catalogue produit pour
+  // les pages sans structure exploitable (année préparatoire, accès-fac).
+  if (blocs.length === 0) {
+    incoherence(
+      "ce programme ne porte AUCUN bloc : sa page n'a pas de structure exploitable, " +
+        "donc l'audit n'a rien à vérifier. Ne pas lire ce verdict comme un parcours conforme.",
+    );
+  }
+
   for (const cle of clesDupliquees) {
     incoherence(
       `deux blocs de ce programme portent la même clé « ${cle} » : ils sont indiscernables, l'affectation des cours entre eux n'est pas fiable.`,
@@ -931,6 +945,20 @@ export function auditProgramme(
     const obtenu = obtenus[type];
     const manque = arrondi(Math.max(0, borne.min - obtenu));
     manques[type] = manque;
+
+    // Les crédits perdus dans un bloc PLAFONNÉ ne dépendent pas d'un manque
+    // ailleurs. Ce signalement vivait DANS la branche « il manque des
+    // crédits » — il se taisait donc exactement là où l'étudiant a fini et où
+    // personne ne lui apprendra plus que six de ses crédits n'ont rien compté.
+    //
+    // Mais le CONSEIL dépend, lui, du manque : « déplacez ces cours » ne vaut
+    // que s'il y a un trou à combler. Sans manque, déplacer ne gagne rien, et
+    // le message doit dire la perte sans promettre un remède. D'où les deux
+    // formulations, plutôt qu'une phrase unique fausse dans un cas sur deux.
+    for (const m of messagesPerdus(calculs, type, manque > 0)) {
+      signaler("perteOuSurplus", m.message, m.cleBloc);
+    }
+
     if (manque <= 0) continue;
 
     const exige =
@@ -982,7 +1010,6 @@ export function auditProgramme(
         ` N'importe quel cours qui n'est cité par aucun bloc du programme y compte ; un cours d'option en surplus, non.`;
     }
     signaler("bloque", message);
-    for (const m of messagesPerdus(calculs, type)) signaler("perteOuSurplus", m);
   }
 
   // --- niveau 2 bis : un total de type qui DÉPASSE son intervalle ---------
@@ -1225,12 +1252,19 @@ function messageChevauchement(
 
 /** Crédits au-delà du maximum d'un bloc : ils expliquent souvent à eux seuls
  *  pourquoi un total reste court alors que l'étudiant a « assez de cours ». */
-function messagesPerdus(calculs: Calcul[], type: TypeBloc): string[] {
+function messagesPerdus(
+  calculs: Calcul[],
+  type: TypeBloc,
+  expliqueUnManque: boolean,
+): { message: string; cleBloc: string }[] {
   return calculs
     .filter((c) => c.bornes.type === type && c.perdus > 0)
-    .map(
-      (c) =>
-        `${cr(c.perdus)} dépassent le maximum du bloc ${c.bloc.id} (${cr(c.bornes.max)}) et ne comptent pas vers le diplôme : ` +
-        `déplacez ces cours vers un autre bloc du même type encore sous son maximum.`,
-    );
+    .map((c) => ({
+      cleBloc: c.cle,
+      message:
+        `${cr(c.perdus)} dépassent le maximum du bloc ${c.bloc.id} (${cr(c.bornes.max)}) et ne comptent pas vers le diplôme` +
+        (expliqueUnManque
+          ? ` : déplacez ces cours vers un autre bloc du même type encore sous son maximum.`
+          : `. Le total de ce type est déjà atteint, donc les déplacer ne changerait rien — ces crédits sont réussis et perdus.`),
+    }));
 }

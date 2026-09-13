@@ -343,7 +343,20 @@ describe("auditProgramme — crédits au-delà du maximum d'un bloc", () => {
     expect(etat(a, "75C").creditsPerdus).toBe(6);
     expect(a.creditsOption).toBe(33);
     expect(a.conforme).toBe(true);
-    expect(problemesHorsRepli(a)).toEqual([]);
+
+    // La perte EST dite, mais sans conseil. La v1 se taisait complètement ici,
+    // au motif que « déplacez ces cours » n'a de sens que si un manque existe.
+    // Le raisonnement valait pour le CONSEIL, pas pour le fait : six crédits
+    // réussis qui ne comptent pas restent une information, et c'est justement
+    // quand le parcours est par ailleurs conforme que personne ne l'apprendra
+    // plus jamais à l'étudiant.
+    const perte = a.signaux.filter((s) => s.genre === "perteOuSurplus");
+    expect(perte).toHaveLength(1);
+    expect(perte[0].message).toMatch(/ne changerait rien/);
+    expect(perte[0].message).not.toMatch(/déplacez/);
+    expect(perte[0].cleBloc).toBe(bloc("75C").cle);
+    // Et rien d'autre : le parcours tient.
+    expect(problemesHorsRepli(a).filter((m) => !/dépassent le maximum/.test(m))).toEqual([]);
   });
 });
 

@@ -229,11 +229,17 @@ describe("affectation — les cas voisins, pour que le test du dessus ne passe p
       const perte = 33 - 3 - Math.min(3 * (11 - dansK), 9);
       expect(perte).toBeGreaterThanOrEqual(21);
     }
-    // Le détail par bloc reste visible dans `EtatBloc.creditsPerdus` ; comme en
-    // v1, `problemes` ne parle du dépassement que lorsqu'il explique un manque,
-    // et ici il n'en explique aucun.
     expect(etat(a, "70K").creditsPerdus + etat(a, "70L").creditsPerdus).toBe(21);
-    expect(joint(a)).not.toMatch(/dépassent le maximum du bloc/);
+
+    // La perte est DITE — 21 crédits réussis qui ne comptent pas ne peuvent pas
+    // disparaître d'un audit — mais sans le conseil « déplacez ces cours » :
+    // le commentaire ci-dessus démontre que 21 est le minimum atteignable, donc
+    // aucun déplacement ne gagnerait quoi que ce soit. Conseiller un remède qui
+    // n'existe pas serait pire que se taire ; dire la perte sans remède est ce
+    // qu'il faut.
+    expect(joint(a)).toMatch(/dépassent le maximum du bloc/);
+    expect(joint(a)).toMatch(/ne changerait rien/);
+    expect(joint(a)).not.toMatch(/déplacez/);
   });
 });
 
