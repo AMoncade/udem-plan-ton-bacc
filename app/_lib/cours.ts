@@ -110,10 +110,80 @@ export function evaluerNoeud(
 }
 
 /**
+ * LES COURS DU PARCOURS — ceux que ses blocs citent, et rien d'autre.
+ *
+ * C'est le cadrage par défaut des écrans, et l'absence de ce cadrage était le
+ * plus gros défaut d'usage de l'app. Mesuré le 2026-09-13 :
+ *
+ *   parcours                              cités   + préalables   codesReferences
+ *   bacc. informatique — générale            73             81            3 466
+ *   bacc. mathématiques — Statistique        82             88            2 553
+ *   bacc. criminologie — Analyse             75             87            1 992
+ *   bacc. droit                             120            120              455
+ *
+ * Un étudiant en informatique ouvrait un planificateur de baccalauréat et
+ * tombait sur 3 466 lignes triées alphabétiquement à partir d'`AME 1212` — des
+ * séminaires d'aménagement. Ses 73 cours étaient quelque part dedans.
+ *
+ * D'où vient l'écart : le dépôt charge des FICHIERS DE SUJET entiers, pas des
+ * fiches à la pièce — citer `MAT 1000` amène les 85 cours de `MAT` — puis
+ * étend de proche en proche par les préalables. `codesReferences` réunit tout
+ * ça, ce qui est juste pour « ce que l'app connaît » et faux pour « ce que
+ * l'étudiant a à regarder ».
+ *
+ * Le cadrage rend aussi la virtualisation inutile : une centaine de lignes au
+ * lieu de trois mille se rend sans bibliothèque.
+ */
+export function codesDuParcours(programme: Programme): CodeCours[] {
+  const vus = new Set<CodeCours>();
+  for (const bloc of programme.blocs) for (const code of bloc.cours) vus.add(code);
+  return [...vus].sort((a, b) => a.localeCompare(b, "fr"));
+}
+
+/**
+ * Les cours du parcours ET leurs préalables, de proche en proche.
+ *
+ * Le bon cadrage pour l'ARBRE : un préalable qu'aucun bloc ne cite reste ce qui
+ * débloque un cours du programme, et l'écarter couperait l'arbre juste là où il
+ * explique quelque chose. Mesuré, ça n'ajoute que six à douze cours — la
+ * fermeture est courte parce que les chaînes de préalables le sont.
+ *
+ * La file d'attente plutôt qu'un `while (change)` : un cycle de préalables
+ * existe dans les vraies données — `STT 2000` se déclare concomitante
+ * d'elle-même — et un ensemble déjà visité est la seule garde qui tienne.
+ */
+export function codesAvecPrealables(
+  catalogue: Catalogue,
+  programme: Programme,
+): CodeCours[] {
+  const vus = new Set<CodeCours>(codesDuParcours(programme));
+  let file = [...vus];
+  while (file.length > 0) {
+    const suivant: CodeCours[] = [];
+    for (const code of file) {
+      const fiche = catalogue.cours[code];
+      if (fiche === undefined) continue;
+      for (const prealable of codesDuNoeud(fiche.prealables)) {
+        if (vus.has(prealable)) continue;
+        vus.add(prealable);
+        suivant.push(prealable);
+      }
+    }
+    file = suivant;
+  }
+  return [...vus].sort((a, b) => a.localeCompare(b, "fr"));
+}
+
+/**
  * Tous les codes que l'app connaît : ceux listés par les blocs, ceux qui ont
  * une fiche, et ceux cités en préalable. Les trois ensembles ne coïncident
  * pas — un bloc cite des cours sans fiche, et une fiche cite des préalables
  * qu'aucun bloc ne liste.
+ *
+ * CE N'EST PAS LE CADRAGE D'UN ÉCRAN. Il rend tout le contenu des fichiers de
+ * sujet chargés — des milliers de cours dont l'étudiant ne verra jamais la
+ * plupart. Voir `codesDuParcours` et `codesAvecPrealables` ci-dessus ; celui-ci
+ * reste pour les écrans qui veulent délibérément tout, et pour les mesures.
  */
 export function codesReferences(catalogue: Catalogue): CodeCours[] {
   const vus = new Set<CodeCours>();

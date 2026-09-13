@@ -16,7 +16,7 @@
  */
 
 import { useMemo, useState } from "react";
-import { codesReferences, creditsDe, ficheDe } from "@/app/_lib/cours";
+import { codesDuParcours, codesReferences, creditsDe, ficheDe } from "@/app/_lib/cours";
 import { saisonsOffertes, verifierOffre } from "@/app/_lib/offre";
 import { chargeTrimestre, coursDuTrimestre, verifierPlan } from "@/app/_lib/plan";
 import {
@@ -55,7 +55,7 @@ export function VuePlan() {
   const [refus, setRefus] = useState<Refus | null>(null);
   const [sousReserve, setSousReserve] = useState<Reserve | null>(null);
   const [recherche, setRecherche] = useState("");
-  const [blocFiltre, setBlocFiltre] = useState("tous");
+  const [blocFiltre, setBlocFiltre] = useState("parcours");
   const [montrerFaits, setMontrerFaits] = useState(false);
 
   const anomalies = useMemo(
@@ -79,10 +79,26 @@ export function VuePlan() {
     return horizon(premier, 9);
   }, [catalogue]);
 
+  /* LE CADRAGE PAR DÉFAUT EST LE PARCOURS, ET C'ÉTAIT « TOUT ».
+     La Réserve valait « Tous les blocs » sur `codesReferences`, c'est-à-dire le
+     contenu entier des fichiers de sujet chargés : mesuré, 3 466 cours pour un
+     baccalauréat en informatique qui en cite 73. Triés alphabétiquement, donc
+     la liste s'ouvrait sur « AME 1212 » et proposait « AME 7500 — Thèse » à un
+     étudiant en informatique.
+
+     « Tout le catalogue chargé » n'est pas retiré, il devient explicite : un
+     étudiant peut vouloir placer un cours hors programme, et le lui interdire
+     serait décider à sa place. Mais ce n'est plus ce qu'il découvre en
+     arrivant. */
+  const codesDuLot = useMemo(() => codesDuParcours(programme), [programme]);
+  const dansLeParcours = useMemo(() => new Set(codesDuLot), [codesDuLot]);
+
   const disponiblesDansReserve = tousLesCodes.filter((code) => {
     if (plan[code] !== undefined) return false;
     if (!montrerFaits && faits.has(code)) return false;
-    if (blocFiltre !== "tous") {
+    if (blocFiltre === "parcours") {
+      if (!dansLeParcours.has(code)) return false;
+    } else if (blocFiltre !== "tout") {
       // Recherche par `cle` : `id` n'est pas unique, et filtrer par `id`
       // montrerait les cours du premier bloc homonyme pour les deux.
       const bloc = programme.blocs.find((b) => b.cle === blocFiltre);
@@ -220,12 +236,22 @@ export function VuePlan() {
                 aria-label="Filtrer par bloc"
                 className="min-w-0 flex-1 border border-trait bg-creux px-2 py-1.5 text-[12.5px] focus:border-traitfort focus:outline-none"
               >
-                <option value="tous">Tous les blocs ({programme.blocs.length})</option>
+                <option value="parcours">
+                  Ce parcours ({codesDuLot.length} cours)
+                </option>
                 {programme.blocs.map((bloc) => (
                   <option key={bloc.cle} value={bloc.cle}>
                     {bloc.nom === "" ? bloc.id : `${bloc.id} — ${bloc.nom}`}
                   </option>
                 ))}
+                {/* EN DERNIER, et son compte est affiché. Le catalogue chargé
+                    contient des cours que ce parcours ne cite pas — ils sont là
+                    parce que le dépôt charge des fichiers de sujet entiers, pas
+                    parce qu'ils vous concernent. Les placer reste possible ; les
+                    proposer par défaut ne l'était pas. */}
+                <option value="tout">
+                  Tout le catalogue chargé ({tousLesCodes.length} cours)
+                </option>
               </select>
             </div>
             <label className="flex items-center gap-2 text-[12px] text-doux">

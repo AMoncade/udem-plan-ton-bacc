@@ -6,12 +6,23 @@
  * `creditsTotal: null`, et les blocs dont la règle n'a pas été lue.
  */
 import { describe, expect, it } from "vitest";
-import type { Bloc, ExigencesParType, Programme, RegleBloc } from "../../lib/types";
+import type {
+  Bloc,
+  Catalogue,
+  Cours,
+  ExigencesParType,
+  NoeudPrealable,
+  Programme,
+  RegleBloc,
+} from "../../lib/types";
 import { cleBloc } from "../../lib/codes";
 import {
   arithmetiqueProgramme,
   blocParCle,
   bornesBloc,
+  codesAvecPrealables,
+  codesDuParcours,
+  codesReferences,
   libelleIntervalle,
 } from "./cours";
 
@@ -274,5 +285,109 @@ describe("libelleIntervalle", () => {
   it("écrit un nombre exact sans « de … à »", () => {
     expect(libelleIntervalle({ min: 33, max: 33 })).toBe("33");
     expect(libelleIntervalle({ min: 30, max: 33 })).toBe("de 30 à 33");
+  });
+});
+
+/**
+ * LE CADRAGE — ce que l'étudiant a à regarder, et pas ce que l'app connaît.
+ *
+ * `codesReferences` rend tout le contenu des fichiers de sujet chargés : mesuré
+ * le 2026-09-13, 3 466 cours pour un baccalauréat en informatique qui en cite
+ * 73. Les deux fonctions ci-dessous existent pour que les écrans cadrent sur le
+ * parcours ; ce qu'elles ne doivent PAS faire est plus important que ce
+ * qu'elles font.
+ */
+describe("le cadrage sur le parcours", () => {
+  function ficheAvec(code: string, prealables: NoeudPrealable | null): Cours {
+    return {
+      code,
+      titre: `titre de ${code}`,
+      credits: 3,
+      cycle: "1er cycle",
+      faculte: null,
+      description: "",
+      prealablesBrut: null,
+      prealables,
+      concomitantsBrut: null,
+      restrictionsBrut: null,
+      trimestres: [],
+      url: "",
+      scrapeISO: "2026-01-01T00:00:00.000Z",
+    };
+  }
+
+  function cat(programme: Programme, fiches: Cours[]): Catalogue {
+    return {
+      programmes: [programme],
+      cours: Object.fromEntries(fiches.map((f) => [f.code, f])),
+      prealablesNonParses: [],
+      journal: [],
+      scrapeISO: "2026-01-01T00:00:00.000Z",
+    };
+  }
+
+  const unCours = (code: string): NoeudPrealable => ({ genre: "cours", code });
+
+  it("ne rend QUE les codes cités par les blocs, triés", () => {
+    const p = programme(
+      [
+        bloc("01", "A", { type: "obligatoire", bornes: { min: 6, max: 6 } }, ["STT 1700", "ACT 1000"]),
+        bloc("01", "B", { type: "option", bornes: { min: 3, max: 6 } }, ["ACT 1000", "MAT 1000"]),
+      ],
+      90,
+    );
+    expect(codesDuParcours(p)).toEqual(["ACT 1000", "MAT 1000", "STT 1700"]);
+  });
+
+  it("ignore les fiches chargées que les blocs ne citent pas", () => {
+    // Le défaut mesuré : citer `MAT 1000` amène les 85 cours du fichier `MAT`,
+    // et `codesReferences` les rendait tous. C'est juste pour « ce que l'app
+    // connaît » et faux pour « ce que l'étudiant a à regarder ».
+    const p = programme([bloc("01", "A", { type: "obligatoire", bornes: { min: 3, max: 3 } }, ["MAT 1000"])], 90);
+    const c = cat(p, [ficheAvec("MAT 1000", null), ficheAvec("MAT 9999", null)]);
+    expect(codesDuParcours(p)).toEqual(["MAT 1000"]);
+    expect(codesAvecPrealables(c, p)).toEqual(["MAT 1000"]);
+    // Le large, lui, les prend : c'est son rôle, et c'est pour ça qu'il ne cadre
+    // aucun écran.
+    expect(codesReferences(c)).toContain("MAT 9999");
+  });
+
+  it("suit les préalables DE PROCHE EN PROCHE, pas sur un seul cran", () => {
+    // Une chaîne de trois : couper au premier cran amputerait l'arbre juste là
+    // où il explique pourquoi un cours est verrouillé.
+    const p = programme([bloc("01", "A", { type: "obligatoire", bornes: { min: 3, max: 3 } }, ["C 3000"])], 90);
+    const c = cat(p, [
+      ficheAvec("C 3000", unCours("B 2000")),
+      ficheAvec("B 2000", unCours("A 1000")),
+      ficheAvec("A 1000", null),
+    ]);
+    expect(codesAvecPrealables(c, p)).toEqual(["A 1000", "B 2000", "C 3000"]);
+  });
+
+  it("ne boucle pas sur un cycle de préalables", () => {
+    // Un cycle EXISTE dans les vraies données — `STT 2000` se déclare
+    // concomitante d'elle-même — et une fermeture sans ensemble visité
+    // tournerait indéfiniment, écran blanc à la clé.
+    const p = programme([bloc("01", "A", { type: "obligatoire", bornes: { min: 3, max: 3 } }, ["A 1000"])], 90);
+    const c = cat(p, [
+      ficheAvec("A 1000", unCours("B 2000")),
+      ficheAvec("B 2000", unCours("A 1000")),
+    ]);
+    expect(codesAvecPrealables(c, p)).toEqual(["A 1000", "B 2000"]);
+  });
+
+  it("garde un préalable SANS fiche : il est cité, donc il compte", () => {
+    // Un cours sans fiche n'est pas un cours qui n'existe pas. Le retirer de
+    // l'arbre ferait disparaître la raison pour laquelle son successeur est
+    // verrouillé.
+    const p = programme([bloc("01", "A", { type: "obligatoire", bornes: { min: 3, max: 3 } }, ["B 2000"])], 90);
+    const c = cat(p, [ficheAvec("B 2000", unCours("A 1000"))]);
+    expect(codesAvecPrealables(c, p)).toEqual(["A 1000", "B 2000"]);
+  });
+
+  it("un parcours sans cours cité ne cadre sur rien", () => {
+    const p = programme([bloc("01", "A", { type: "choix", bornes: { min: 0, max: 6 } })], 90);
+    expect(codesDuParcours(p)).toEqual([]);
+    expect(codesAvecPrealables(cat(p, []), p)).toEqual([]);
   });
 });

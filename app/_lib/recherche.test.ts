@@ -285,3 +285,35 @@ describe("preparerIndex : la table des cours sans crédits", () => {
     expect(preparerIndex(sans).codesSansCredits.size).toBe(0);
   });
 });
+
+describe("le classement met en avant ce qui s'ouvre", () => {
+  it("à rang égal, une fiche à structure exploitable passe devant", () => {
+    // 453 fiches du catalogue ne mènent à aucun audit ni à aucun arbre.
+    // Entrelacées alphabétiquement, elles obligeaient à cliquer pour découvrir
+    // lesquelles fonctionnent.
+    const resultats = chercher(prepare, FILTRES_VIDES, 40).fiches;
+    const premierSans = resultats.findIndex((f) => !f.structureLue);
+    const dernierAvec = resultats.map((f) => f.structureLue).lastIndexOf(true);
+    if (premierSans === -1) return; // jeu de démonstration sans fiche muette
+    expect(premierSans).toBeGreaterThan(dernierAvec);
+  });
+
+  it("mais une fiche sans structure CHERCHÉE NOMMÉMENT reste en tête", () => {
+    // La condition qui rend ce tri acceptable : il ne départage qu'à rang égal.
+    // Une fiche qu'on cherche par son nom a un meilleur rang, donc elle sort
+    // première même sans structure. La ranger n'est pas la cacher.
+    const muette = prepare.entrees.map((e) => e.fiche).find((f) => !f.structureLue);
+    if (muette === undefined) return;
+    const trouve = chercher(prepare, avec({ texte: muette.nom }), 10).fiches;
+    expect(trouve[0]?.cle).toBe(muette.cle);
+  });
+});
+
+it("GARDE : le jeu de démonstration contient bien des fiches sans structure", () => {
+  // Les deux tests ci-dessus se replient en silence si le jeu n'en contient
+  // aucune — ils passeraient alors sans rien mesurer, ce qui est la pire
+  // espèce de test vert. Cette garde échoue bruyamment le jour où la fixture
+  // change de nature.
+  const muettes = prepare.entrees.filter((e) => !e.fiche.structureLue);
+  expect(muettes.length).toBeGreaterThan(0);
+});

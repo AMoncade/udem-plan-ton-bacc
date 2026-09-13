@@ -22,6 +22,7 @@
 import { useMemo, useState } from "react";
 import {
   blocsDuCours,
+  codesAvecPrealables,
   codesReferences,
   creditsDe,
   ficheDe,
@@ -64,9 +65,14 @@ function aretesDuNoeud(
   }
 }
 
-function construireGraphe(catalogue: Catalogue) {
+/** Le graphe RESTREINT à une portée. Sans elle, il parcourait toutes les fiches
+ *  des fichiers de sujet chargés — des milliers de cours pour un parcours qui en
+ *  cite quatre-vingts. La portée est un ensemble de CODES et jamais un filtre
+ *  par sigle : deux programmes citent le même sigle sans citer les mêmes cours. */
+function construireGraphe(catalogue: Catalogue, portee: ReadonlySet<CodeCours>) {
   const aretes: Arete[] = [];
   for (const fiche of Object.values(catalogue.cours)) {
+    if (!portee.has(fiche.code)) continue;
     if (fiche.prealables === null) continue;
     const racine = fiche.prealables;
     const lien = racine.genre === "cours" ? "seul" : racine.genre === "ou" ? "ou" : "et";
@@ -92,6 +98,7 @@ function construireGraphe(catalogue: Catalogue) {
     for (const enfant of aretesDuNoeud(racine, lien)) {
       if (vues.has(enfant.code)) continue;
       vues.add(enfant.code);
+      if (!portee.has(enfant.code)) continue;
       aretes.push({ source: enfant.code, cible: fiche.code, lien: enfant.lien });
     }
   }
@@ -145,8 +152,25 @@ function construireGraphe(catalogue: Catalogue) {
 export function VueArbre() {
   const { faits, basculerFait } = useEtat();
   const { catalogue, programme, diagnostics } = useDonnees();
-  const graphe = useMemo(() => construireGraphe(catalogue), [catalogue]);
-  const codes = useMemo(() => codesReferences(catalogue), [catalogue]);
+  /* LE CADRAGE, et c'était le défaut d'usage le plus coûteux de cet écran.
+     Par défaut, les cours du parcours et leurs préalables — mesuré, 81 à 120
+     selon le programme. Avant, `codesReferences` rendait tout le contenu des
+     fichiers de sujet chargés : 3 466 cours pour un baccalauréat en
+     informatique qui en cite 73, triés alphabétiquement à partir d'« AME 1212 »,
+     donc un étudiant en informatique ouvrait l'écran sur des séminaires
+     d'aménagement.
+
+     « Tout le catalogue chargé » reste atteignable et son compte est affiché :
+     ce doit être un choix, pas une découverte. */
+  const [cadrage, setCadrage] = useState<"parcours" | "tout">("parcours");
+  const codesDuLot = useMemo(
+    () => codesAvecPrealables(catalogue, programme),
+    [catalogue, programme],
+  );
+  const codesTous = useMemo(() => codesReferences(catalogue), [catalogue]);
+  const codes = cadrage === "parcours" ? codesDuLot : codesTous;
+  const portee = useMemo(() => new Set(codes), [codes]);
+  const graphe = useMemo(() => construireGraphe(catalogue, portee), [catalogue, portee]);
 
   // Sélection d'ouverture : le premier cours qui a une fiche, pour que le
   // panneau montre d'emblée un cas complet plutôt qu'une absence.
@@ -171,10 +195,27 @@ export function VueArbre() {
           titre="Préalables"
           fait={
             <>
-              <span className="chiffres">{codes.length}</span> cours référencés,{" "}
+              <span className="chiffres">{codes.length}</span> cours{" "}
+              {cadrage === "parcours" ? "de ce parcours" : "chargés"},{" "}
               <span className="chiffres">{codes.length - sansFiche.length}</span> avec
               fiche.
             </>
+          }
+          actions={
+            <label className="flex items-center gap-2 text-[12.5px] text-doux">
+              Montrer
+              <select
+                value={cadrage}
+                onChange={(e) => setCadrage(e.target.value === "tout" ? "tout" : "parcours")}
+                aria-label="Quels cours afficher"
+                className="border border-trait bg-creux py-1 pl-2 pr-6 text-[12.5px] focus:border-traitfort focus:outline-none"
+              >
+                <option value="parcours">
+                  ce parcours et ses préalables ({codesDuLot.length})
+                </option>
+                <option value="tout">tout le catalogue chargé ({codesTous.length})</option>
+              </select>
+            </label>
           }
           aide={
             <p>

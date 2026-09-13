@@ -231,8 +231,26 @@ export function chercher(
 
   retenus.sort((a, b) => {
     if (a.rang !== b.rang) return a.rang - b.rang;
-    // À rang égal, l'ordre alphabétique français : stable et prévisible, donc
-    // la liste ne sautille pas quand on ajoute une lettre.
+    /* À RANG ÉGAL, CE QUI S'OUVRE PASSE AVANT CE QUI NE S'OUVRE PAS.
+       453 fiches du catalogue n'ont pas de structure exploitable — choisir
+       l'une d'elles ne mène à aucun audit et à aucun arbre. Entrelacées
+       alphabétiquement, elles obligeaient à essayer pour découvrir lesquelles
+       mènent quelque part.
+
+       Départage SEULEMENT à rang égal, et c'est la condition qui rend ce tri
+       acceptable : une fiche sans structure que l'étudiant cherche NOMMÉMENT
+       reste en tête de sa recherche, parce que son rang est meilleur. On ne
+       l'écarte pas, on cesse de la proposer à égalité avec une fiche qui
+       fonctionne.
+
+       Le filtre « masquer » reste décoché par défaut et le reste : ces fiches
+       doivent se VOIR et s'expliquer, pas disparaître. Les ranger n'est pas les
+       cacher. */
+    if (a.entree.fiche.structureLue !== b.entree.fiche.structureLue) {
+      return a.entree.fiche.structureLue ? -1 : 1;
+    }
+    // Puis l'ordre alphabétique français : stable et prévisible, donc la liste
+    // ne sautille pas quand on ajoute une lettre.
     const parNom = a.entree.fiche.nom.localeCompare(b.entree.fiche.nom, "fr");
     if (parNom !== 0) return parNom;
     return (a.entree.fiche.orientation ?? "").localeCompare(
