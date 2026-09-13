@@ -124,6 +124,13 @@ function auditDe(manques: Record<string, number>): Audit {
     creditsOption: 0,
     creditsChoix: 0,
     conforme: false,
+    // `signaux` est requis depuis que le moteur classe ses constats par genre.
+    // Vide plutôt qu'omis, et c'est TypeScript qui l'a exigé — le champ étant
+    // requis, il nomme chaque producteur d'`Audit` qui l'oublierait. Une
+    // fixture qui aurait survécu à l'ajout aurait cessé de décrire la vraie
+    // forme sans que rien ne le signale, ce qui est exactement pourquoi cette
+    // fonction n'utilise pas de `as`.
+    signaux: [],
     problemes: [],
   };
 }

@@ -43,7 +43,7 @@ export function EnteteApp() {
 
   return (
     <header className="sticky top-0 z-30 border-b border-trait bg-encre/95 backdrop-blur">
-      <div className="ecran flex flex-wrap items-center gap-x-6 gap-y-3 py-3">
+      <div className="ecran flex flex-wrap items-center gap-x-6 gap-y-2 py-2 sm:gap-y-3 sm:py-3">
         <Link href="/programmes" className="flex items-center gap-2.5">
           <Marque />
           <span className="text-[15px] font-semibold tracking-[-0.01em]">
@@ -65,7 +65,20 @@ export function EnteteApp() {
           )}
         </p>
 
-        <nav className="order-last flex w-full gap-1 sm:order-none sm:ml-auto sm:w-auto">
+        {/* BANDE DÉFILANTE SOUS `sm`, ET NON UN RETOUR À LA LIGNE.
+
+            Mesuré dans un iframe de 375 px : sans `overflow-x-auto`, les six
+            onglets débordaient à 524 px et c'était la cause de débordement
+            COMMUNE à toutes les pages — `/programmes` n'en avait aucune autre.
+            Un `flex-wrap` aurait réglé le débordement en aggravant l'autre
+            défaut : l'entête est `sticky` et mesurait déjà 176 px, soit 22 %
+            d'un écran de 812, en permanence et sur chaque page. Une deuxième
+            ligne d'onglets l'aurait épaissi encore.
+
+            `shrink-0` sur les liens : sans lui, flex les comprime au lieu de
+            les faire défiler, et « Prochaine session » devient « Prochaine
+            ses… ». */}
+        <nav className="order-last -mx-4 flex w-[calc(100%+2rem)] gap-1 overflow-x-auto px-4 sm:order-none sm:ml-auto sm:w-auto sm:overflow-visible sm:px-0" style={{ scrollbarWidth: "none" }}>
           {ONGLETS.map((onglet) => {
             const actif = chemin === onglet.href;
             return (
@@ -73,7 +86,7 @@ export function EnteteApp() {
                 key={onglet.href}
                 href={onglet.href}
                 aria-current={actif ? "page" : undefined}
-                className={`border-b-2 px-3 py-1.5 text-[13.5px] transition-colors ${
+                className={`shrink-0 whitespace-nowrap border-b-2 px-3 py-1.5 text-[13.5px] transition-colors ${
                   actif
                     ? "border-papier font-medium text-papier"
                     : "border-transparent text-doux hover:border-trait hover:text-papier"

@@ -166,7 +166,7 @@ export function VueArbre() {
 
   return (
     <div className="mx-auto grid w-full max-w-[1240px] lg:grid-cols-[minmax(0,1fr)_352px]">
-      <div className="px-5 py-6 sm:px-8">
+      <div className="min-w-0 px-5 py-6 sm:px-8">
         <TeteEcran
           titre="Préalables"
           fait={
@@ -307,7 +307,12 @@ export function VueArbre() {
                 porter le même `id` (`MM-Bloc 73A` et `S-Bloc 73A`), et React
                 fusionnerait leurs listes de cours sans rien signaler. */}
             {programme.blocs.map((bloc) => (
-              <article key={bloc.cle} className="border border-trait">
+              /* `min-w-0` : enfant de grille, donc `min-width: auto` par défaut,
+                 donc il refuse de descendre sous la largeur minimale de son
+                 contenu — mesuré à 415 px dans un écran de 365. Les troncatures
+                 internes (`truncate` sur le titre du cours) ne peuvent rien tant
+                 que la carte elle-même ne rétrécit pas. */
+              <article key={bloc.cle} className="min-w-0 border border-trait">
                 <header className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 border-b border-trait bg-relief px-3 py-2">
                   <span className="chiffres text-[13px] text-papier">{bloc.id}</span>
                   <h3 className="text-[13px] text-papier">
@@ -411,7 +416,7 @@ function PanneauCours({ code }: { code: CodeCours }) {
   const blocs = blocsDuCours(programme, code);
 
   return (
-    <aside className="border-t border-trait px-5 py-6 sm:px-6 lg:sticky lg:top-[108px] lg:self-start lg:border-t-0 lg:border-l">
+    <aside className="min-w-0 border-t border-trait px-5 py-6 sm:px-6 lg:sticky lg:top-[108px] lg:self-start lg:border-t-0 lg:border-l">
       <div className="flex items-center gap-2">
         <MarqueEtat etat={etat} sansFiche={fiche === undefined} taille={14} />
         <h2 className="chiffres text-[17px] text-papier">{code}</h2>

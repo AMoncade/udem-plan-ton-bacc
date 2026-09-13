@@ -30,6 +30,7 @@ import {
 } from "@/app/_lib/trimestres";
 import type { Catalogue, CodeCours, Trimestre } from "@/lib/types";
 import { Credits, MarqueEtat, TitreCours } from "./Etats";
+import { Defilable } from "./Defilable";
 import { useDonnees, useEtat } from "./ProviderEtat";
 import { TeteEcran } from "./TeteEcran";
 
@@ -181,8 +182,21 @@ export function VuePlan() {
         </p>
       ) : null}
 
+      {/* `min-w-0` SUR LES DEUX ENFANTS, et ce n'est pas décoratif. Un enfant de
+          grille a `min-width: auto` par défaut : il refuse de descendre sous la
+          largeur minimale de son contenu. La bande des neuf trimestres fait
+          1 828 px de contenu, donc sous `lg` — où la grille n'a plus qu'une
+          colonne — la piste prenait 1 828 px, et les DEUX sections avec elle
+          puisqu'elles la partagent. C'est pour ça que la Réserve débordait
+          autant que la bande, alors qu'elle ne contient qu'un champ de
+          recherche.
+
+          Mesuré dans un iframe de 375 px : `/trimestres` rendait un
+          `scrollWidth` de 1 848, soit cinq fois l'écran. L'`overflow-x-auto`
+          déjà posé sur la bande ne servait à rien — il ne peut rien faire
+          défiler tant que son conteneur refuse de rétrécir. */}
       <div className="mt-6 grid gap-6 lg:grid-cols-[304px_minmax(0,1fr)]">
-        <section className="border border-trait">
+        <section className="min-w-0 border border-trait">
           <header className="border-b border-trait bg-relief px-3 py-2">
             <h2 className="text-[13.5px] font-semibold">Réserve</h2>
             <p className="chiffres mt-0.5 text-[11.5px] text-faible">
@@ -265,8 +279,9 @@ export function VuePlan() {
           </ul>
         </section>
 
-        <section>
-          <div className="flex gap-2 overflow-x-auto pb-3">
+        <section className="min-w-0">
+          <Defilable quoi="trimestres">
+            <div className="flex gap-2 pb-3">
             {horizonAffiche.map((trimestre) => (
               <ColonneTrimestre
                 key={cleTrimestre(trimestre)}
@@ -281,7 +296,8 @@ export function VuePlan() {
                 }}
               />
             ))}
-          </div>
+            </div>
+          </Defilable>
 
           <div className="mt-4 border-t border-trait pt-3">
             <h2 className="text-[14px] font-semibold">

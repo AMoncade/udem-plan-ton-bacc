@@ -38,6 +38,7 @@ import { exigeUnCheminement } from "@/lib/parcours";
 import type { Bloc, Catalogue, EtatBloc, Intervalle, Programme } from "@/lib/types";
 import { Credits, TitreCours } from "./Etats";
 import { TeteEcran } from "./TeteEcran";
+import { Defilable } from "./Defilable";
 import { useDonnees, useEtat } from "./ProviderEtat";
 
 function pourcent(part: number, tout: number): number {
@@ -631,7 +632,7 @@ export function VueAudit() {
         <h2 className="border-b border-trait pb-2 text-[15px] font-semibold">
           Bloc par bloc
         </h2>
-        <div className="mt-3 overflow-x-auto">
+        <Defilable quoi="colonnes" className="mt-3">
           <table className="w-full min-w-[800px] max-w-[1120px] border-collapse text-[13px]">
             <thead>
               <tr className="border-b border-trait text-left text-[11.5px] text-faible">
@@ -663,7 +664,7 @@ export function VueAudit() {
               );
             })}
           </table>
-        </div>
+        </Defilable>
         <p className="mt-2 max-w-prose text-[12px] text-faible">
           Un cours ne compte que dans un seul bloc. « Placés » est le total des cours
           rangés dans le bloc ; « retenus » est ce que le bloc donne vraiment au diplôme,
