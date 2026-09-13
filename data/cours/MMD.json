@@ -4589,5 +4589,211 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-3629/",
     "scrapeISO": "2026-09-12T21:48:31.007Z"
+  },
+  "MMD 6005R": {
+    "code": "MMD 6005R",
+    "titre": "Éthique et recherche en santé",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Les développements biomédicaux et l'éthique de la recherche; les grands textes régulateurs; le rapport éthique et technoscience; l'évaluation éthique d'un projet; l'intégrité scientifique du chercheur.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6005r/",
+    "scrapeISO": "2026-09-13T03:12:17.155Z"
+  },
+  "MMD 6121": {
+    "code": "MMD 6121",
+    "titre": "Fondement de l'éthique clinique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Acquisition des notions de base de la bioéthique et des outils de réflexion en éthique clinique via divers thèmes: normalité et normativité, réadaptation, soins à domicile, soins palliatifs et de fin de vie, trans-identité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6121/",
+    "scrapeISO": "2026-09-13T03:16:09.622Z"
+  },
+  "MMD 6122": {
+    "code": "MMD 6122",
+    "titre": "Éthique clinique et trajectoires de vie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Questions éthiques soulevées par les trajectoires de la naissance à l’âge avancé: Qualité de vie, rôle de la famille, processus décisionnels, grossesse, pédiatrie, transitions, vieillissement. Séminaires pratiques de consultation en éthique clinique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6122/",
+    "scrapeISO": "2026-09-13T03:16:11.440Z"
+  },
+  "MMD 6123": {
+    "code": "MMD 6123",
+    "titre": "Éthique clinique et situations humaines complexes",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Questions éthiques soulevées par les situations complexes: Acharnement thérapeutique, neuroéthique, greffe, gestion des conflits, relation de soin, autonomie, détresse morale, douleur, pluralisme des valeurs, médias sociaux, amélioration humaine.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6123/",
+    "scrapeISO": "2026-09-13T03:16:11.822Z"
+  },
+  "MMD 6124": {
+    "code": "MMD 6124",
+    "titre": "Éthique clinique et enjeux sociaux contemporains",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Questions éthiques soulevées par les enjeux de société: Organisation du système de santé, coût-efficacité, santé et justice sociale, sécurité, vulnérabilité et protection, santé mentale. Séminaires pratiques de consultation en éthique clinique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6124/",
+    "scrapeISO": "2026-09-13T03:16:15.146Z"
+  },
+  "MMD 6106": {
+    "code": "MMD 6106",
+    "titre": "Stage de consultation en éthique clinique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Stage d'initiation à la pratique de la consultation en éthique clinique: types de consultation, approches, compétences et habiletés propres à l'éthique clinique. Participation à des consultations (équipes, usagers et familles), jeux de rôles, etc.",
+    "prealablesBrut": "PDT6101 ou MMD6121",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PDT 6101"
+        },
+        {
+          "genre": "cours",
+          "code": "MMD 6121"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6106/",
+    "scrapeISO": "2026-09-13T03:16:17.777Z"
+  },
+  "MMD 6111": {
+    "code": "MMD 6111",
+    "titre": "Lecture dirigée en éthique clinique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Rencontres individuelles ou de groupe portant sur des problématiques de recherche avancée en éthique clinique ou des approches théoriques d'éthique clinique. Préparation de bibliographies commentées. Exposés et présentations dans le cadre des rencontres.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6111/",
+    "scrapeISO": "2026-09-13T03:16:19.196Z"
+  },
+  "MMD 6380": {
+    "code": "MMD 6380",
+    "titre": "Fondements du partenariat patient",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Fondements du partenariat patient (Modèle de Montréal); un nouveau modèle de soins basé sur la reconnaissance de la complémentarité entre les savoirs scientifiques des professionnels de la santé et l'expérience du patient avec sa maladie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-6380/",
+    "scrapeISO": "2026-09-13T03:16:21.767Z"
+  },
+  "MMD 63142": {
+    "code": "MMD 63142",
+    "titre": "Innovation et recherche en pédagogie de la santé 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "L'état des connaissances scientifiques et professionnelles en pédagogie des sciences de la santé. Mise en application de celles-ci. Analyse des méthodes pédagogiques innovantes et appropriées aux sciences de la santé.",
+    "prealablesBrut": "MMD63141",
+    "prealables": {
+      "genre": "cours",
+      "code": "MMD 63141"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmd-63142/",
+    "scrapeISO": "2026-09-13T03:16:46.702Z"
   }
 }

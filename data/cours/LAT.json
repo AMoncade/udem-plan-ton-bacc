@@ -41,5 +41,184 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-1121/",
     "scrapeISO": "2026-09-11T17:31:10.513Z"
+  },
+  "LAT 2011": {
+    "code": "LAT 2011",
+    "titre": "Latin intermédiaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Par l'étude d'une ou plusieurs oeuvres classiques, on révisera le mécanisme de la langue et on se familiarisera avec les aspects encore non abordés de la syntaxe. Thèmes et travaux pratiques.",
+    "prealablesBrut": "LAT1111 ET LAT1121",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "LAT 1111"
+        },
+        {
+          "genre": "cours",
+          "code": "LAT 1121"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-2011/",
+    "scrapeISO": "2026-09-13T03:07:33.409Z"
+  },
+  "LAT 2021": {
+    "code": "LAT 2021",
+    "titre": "Latin avancé (A)",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perfectionnement : par l'étude d'une ou plusieurs oeuvres classiques, apprentissage de la lecture courante. Remarques: N.B. : cours de même niveau que LAT 2031.",
+    "prealablesBrut": "LAT2011",
+    "prealables": {
+      "genre": "cours",
+      "code": "LAT 2011"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-2021/",
+    "scrapeISO": "2026-09-13T03:07:37.405Z"
+  },
+  "LAT 2031": {
+    "code": "LAT 2031",
+    "titre": "Latin avancé (B)",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perfectionnement : par l'étude d'une ou plusieurs oeuvres classiques, apprentissage de la lecture courante. Remarques: N.B. : cours de même niveau que LAT 2021.",
+    "prealablesBrut": "LAT2011",
+    "prealables": {
+      "genre": "cours",
+      "code": "LAT 2011"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-2031/",
+    "scrapeISO": "2026-09-13T03:07:39.669Z"
+  },
+  "LAT 1031": {
+    "code": "LAT 1031",
+    "titre": "Histoire de la littérature latine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Naissance et évolution de la littérature latine. Les genres littéraires. Influence de la littérature latine sur la littérature française. Lecture dirigée d'oeuvres latines en traduction française. Remarques: Sans préalable de langue grecque ou latine.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-1031/",
+    "scrapeISO": "2026-09-13T03:15:01.871Z"
+  },
+  "LAT 3120": {
+    "code": "LAT 3120",
+    "titre": "Poésie épique latine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "L'épopée et l'épyllion à Rome; insistance sur Virgile et sur l'omniprésence du modèle homérique.",
+    "prealablesBrut": "LAT2021 OU LAT2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "LAT 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "LAT 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-3120/",
+    "scrapeISO": "2026-09-13T03:15:24.486Z"
+  },
+  "LAT 3130": {
+    "code": "LAT 3130",
+    "titre": "Poésie lyrique et élégiaque latine",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "La poésie épigrammatique, lyrique, bucolique et élégiaque de Catulle à l'époque de Domitien; la satire de Lucilius à Juvénal.",
+    "prealablesBrut": "LAT2021 OU LAT2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "LAT 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "LAT 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-3130/",
+    "scrapeISO": "2026-09-13T03:15:24.692Z"
+  },
+  "LAT 3160": {
+    "code": "LAT 3160",
+    "titre": "Le théâtre romain",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les origines des principaux genres dramatiques et leur évolution; les conditions physiques de la représentation; étude approfondie d'une ou deux comédies.",
+    "prealablesBrut": "LAT2021 OU LAT2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "LAT 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "LAT 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lat-3160/",
+    "scrapeISO": "2026-09-13T03:15:28.398Z"
   }
 }

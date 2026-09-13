@@ -301,5 +301,171 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-60213/",
     "scrapeISO": "2026-09-11T11:59:34.487Z"
+  },
+  "BIE 7500": {
+    "code": "BIE 7500",
+    "titre": "Théories contemporaines de la bioéthique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Analyse des forces et faiblesses des théories principales employées dans la recherche et la pratique contemporaine en bioéthique (éthique clinique, éthique de la recherche, éthique et technologie biomédicales, politique de santé et l'éthique et santé publique).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-7500/",
+    "scrapeISO": "2026-09-13T03:11:03.626Z"
+  },
+  "BIE 7700": {
+    "code": "BIE 7700",
+    "titre": "Séminaire de thèse",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Exposés des participants sur leur projet de thèse : rapport sur l'avancement de leur travail, difficultés rencontrées, etc.; confrontation de leur projet de thèse aux vues des autres participants; réflexions épistémologiques et méthodologiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-7700/",
+    "scrapeISO": "2026-09-13T03:11:05.808Z"
+  },
+  "BIE 6046": {
+    "code": "BIE 6046",
+    "titre": "Introduction : éthique de la recherche",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Les développements biomédicaux et l'éthique de la recherche; les grands textes régulateurs; l'analyse d'une problématique éthique; l'évaluation éthique d'un protocole de recherche. Remarque : La section A est ouverte aux étudiants en santé; la section B est exclusivement réservée aux étudiants en anthropologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6046/",
+    "scrapeISO": "2026-09-13T03:11:30.424Z"
+  },
+  "BIE 1000": {
+    "code": "BIE 1000",
+    "titre": "Fondements de la bioéthique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "École de santé publique",
+    "description": "Introduction générale à la bioéthique, origines nord-américaines dans milieu clinique et de recherche. Fondements disciplinaires, nature interdisciplinaire, pratique. Spécialisations : médicale, recherche, professionnelle, santé publique, génétique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-1000/",
+    "scrapeISO": "2026-09-13T03:13:54.483Z"
+  },
+  "BIE 2001": {
+    "code": "BIE 2001",
+    "titre": "Intégrité scientifique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "École de santé publique",
+    "description": "Principes relatifs à l’intégrité scientifique (honnêteté, objectivité, humilité, rigueur, fiabilité, bien commun, conflits d’intérêts). Double usage de la recherche, gestion des risques, responsabilité. Cadres normatifs et pratiques exemplaires.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-2001/",
+    "scrapeISO": "2026-09-13T03:13:54.660Z"
+  },
+  "BIE 2002": {
+    "code": "BIE 2002",
+    "titre": "Bioéthique appliquée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "École de santé publique",
+    "description": "Expérience pratique de la bioéthique : débats, études de cas, Parlement étudiant/ONU, comité d’éthique fictif, présentations de diplômés et marché du travail.",
+    "prealablesBrut": "BIE1000 et BIE2001",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "BIE 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "BIE 2001"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-2002/",
+    "scrapeISO": "2026-09-13T03:13:58.216Z"
+  },
+  "BIE 2003": {
+    "code": "BIE 2003",
+    "titre": "Éthique professionnelle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "École de santé publique",
+    "description": "Principes d’éthique professionnelle, codes de déontologie et de conduite, normes de pratique dans divers milieux. Défis éthiques et professionnels du travail au sein des communautés, dans des contextes multidisciplinaires intégrant diverses professions.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-2003/",
+    "scrapeISO": "2026-09-13T03:14:00.471Z"
+  },
+  "BIE 6501": {
+    "code": "BIE 6501",
+    "titre": "Éthique, santé publique et mégadonnées",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Implications sociales, éthiques, juridiques des mégadonnées en santé publique et de l’intelligence artificielle. Approche interdisciplinaire et pratique. Regard critique et stratégies d’actions face aux défis émergeants en santé publique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6501/",
+    "scrapeISO": "2026-09-13T03:15:36.298Z"
+  },
+  "BIE 6502": {
+    "code": "BIE 6502",
+    "titre": "Éthique, sciences biomédicales et mégadonnées",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Implications sociales, éthiques, juridiques des mégadonnées biomédicales et de l’intelligence artificielle. Approche interdisciplinaire et pratique. Regard critique et stratégies d’actions face aux défis émergeants des mégadonnées biomédicales.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/bie-6502/",
+    "scrapeISO": "2026-09-13T03:15:36.683Z"
   }
 }

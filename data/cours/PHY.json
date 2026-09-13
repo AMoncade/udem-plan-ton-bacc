@@ -1238,5 +1238,77 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-69962/",
     "scrapeISO": "2026-09-12T22:16:12.943Z"
+  },
+  "PHY 3040": {
+    "code": "PHY 3040",
+    "titre": "Laboratoire d'optique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Travaux pratiques d'optique géométrique et d'optique physique.",
+    "prealablesBrut": "PHY2441 ET PHY2476",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PHY 2441"
+        },
+        {
+          "genre": "cours",
+          "code": "PHY 2476"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-3040/",
+    "scrapeISO": "2026-09-13T03:07:39.916Z"
+  },
+  "PHY 2031": {
+    "code": "PHY 2031",
+    "titre": "Stage 1 en industrie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage en milieu de travail en vue d'acquérir une expérience professionnelle dans un laboratoire public ou privé.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-2031/",
+    "scrapeISO": "2026-09-13T03:07:41.922Z"
+  },
+  "PHY 6918": {
+    "code": "PHY 6918",
+    "titre": "Concepts de radioprotection pour le génie clinique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Interaction des radiations avec le vivant. Réponse des tissus. Instruments et mesures de radioprotection. Notions de dosimétrie en imagerie médicale. Cadre règlementaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6918/",
+    "scrapeISO": "2026-09-13T03:11:55.029Z"
   }
 }

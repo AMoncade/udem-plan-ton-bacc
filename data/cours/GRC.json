@@ -41,5 +41,152 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-1121/",
     "scrapeISO": "2026-09-11T17:30:06.013Z"
+  },
+  "GRC 2011": {
+    "code": "GRC 2011",
+    "titre": "Grec intermédiaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Par l'étude d'une ou de plusieurs oeuvres classiques, on révisera le mécanisme de la langue et on se familiarisera avec les aspects encore inabordés de la syntaxe. Thèmes et travaux pratiques.",
+    "prealablesBrut": "GRC1111 ET GRC1121",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "GRC 1111"
+        },
+        {
+          "genre": "cours",
+          "code": "GRC 1121"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-2011/",
+    "scrapeISO": "2026-09-13T03:07:28.868Z"
+  },
+  "GRC 2021": {
+    "code": "GRC 2021",
+    "titre": "Grec avancé (A)",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perfectionnement : par l'étude d'une ou plusieurs oeuvres classiques, apprentissage de la lecture courante. Remarques: N.B. : cours de même niveau que GRC 2031.",
+    "prealablesBrut": "GRC2011",
+    "prealables": {
+      "genre": "cours",
+      "code": "GRC 2011"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-2021/",
+    "scrapeISO": "2026-09-13T03:07:29.019Z"
+  },
+  "GRC 2031": {
+    "code": "GRC 2031",
+    "titre": "Grec avancé (B)",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perfectionnement : par l'étude d'une ou plusieurs oeuvres classiques, apprentissage de la lecture courante. Remarques: N.B. : cours de même niveau que GRC 2021.",
+    "prealablesBrut": "GRC2011",
+    "prealables": {
+      "genre": "cours",
+      "code": "GRC 2011"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-2031/",
+    "scrapeISO": "2026-09-13T03:07:33.188Z"
+  },
+  "GRC 3120": {
+    "code": "GRC 3120",
+    "titre": "Homère et les poètes épiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude et commentaire de textes épiques (d'Homère à Quintus de Smyrne et Nonnos de Panopolis en passant par Apollonios de Rhodes) permettant de définir les caractéristiques de toute épopée, ancienne ou moderne.",
+    "prealablesBrut": "GRC2021 OU GRC2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "GRC 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "GRC 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-3120/",
+    "scrapeISO": "2026-09-13T03:14:54.896Z"
+  },
+  "GRC 3140": {
+    "code": "GRC 3140",
+    "titre": "La tragédie et la comédie",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Évolution des genres dramatiques de leurs origines dans des cérémonies religieuses jusqu'à la comédie nouvelle du 3e siècle av. J.-C. Étude de textes représentatifs des grands tragiques, d'Aristophane et (éventuellement) d'autres auteurs.",
+    "prealablesBrut": "GRC2021 OU GRC2031",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "GRC 2021"
+        },
+        {
+          "genre": "cours",
+          "code": "GRC 2031"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-3140/",
+    "scrapeISO": "2026-09-13T03:14:57.289Z"
+  },
+  "GRC 1031": {
+    "code": "GRC 1031",
+    "titre": "Introduction à la littérature grecque",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Naissance et évolution de la littérature grecque. Étude des genres littéraires, influences sur les littératures latine et française. Lecture d'oeuvres en traduction française. Sans préalable de langue grecque.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/grc-1031/",
+    "scrapeISO": "2026-09-13T03:14:59.551Z"
   }
 }

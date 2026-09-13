@@ -141,5 +141,120 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jeu-1005/",
     "scrapeISO": "2026-09-12T22:12:13.055Z"
+  },
+  "JEU 1011": {
+    "code": "JEU 1011",
+    "titre": "Histoire du jeu vidéo 2 (de 1990 à aujourd’hui)",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Histoire du jeu vidéo depuis 1990 à travers l’étude et l’interaction de trois circuits : innovation technologique, développement de l’industrie et évolution culturelle du jeu vidéo. Approfondissement des outils conceptuels historiographiques.",
+    "prealablesBrut": "JEU1001.",
+    "prealables": {
+      "genre": "cours",
+      "code": "JEU 1001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jeu-1011/",
+    "scrapeISO": "2026-09-13T03:12:45.196Z"
+  },
+  "JEU 2001": {
+    "code": "JEU 2001",
+    "titre": "Questions théoriques en études du jeu vidéo",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Avènement du discours théorique sur le jeu vidéo. Présentation des concepts et notions utilisés dans les études du jeu vidéo. Essor et développement des théories du jeu vidéo. Analyse approfondie des approches théoriques les plus importantes.",
+    "prealablesBrut": "JEU1002.",
+    "prealables": {
+      "genre": "cours",
+      "code": "JEU 1002"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jeu-2001/",
+    "scrapeISO": "2026-09-13T03:12:47.434Z"
+  },
+  "JEU 1103": {
+    "code": "JEU 1103",
+    "titre": "Scénarisation de jeu vidéo",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction aux méthodes et problématiques spécifiques à la scénarisation interactive et non linéaire ainsi qu'aux structures, à la conception et à l'écriture de navigation pour le jeu vidéo.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jeu-1103/",
+    "scrapeISO": "2026-09-13T03:12:51.344Z"
+  },
+  "JEU 2101": {
+    "code": "JEU 2101",
+    "titre": "Projet de création",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Création d’un court jeu vidéo, de la conception initiale à la réalisation finale. Établissement d’un concept, d’un scénario et d’un cahier des charges. Répartition du travail et suivi de la création avec des méthodes de développement agiles.",
+    "prealablesBrut": "DEJ1101 et IFT1119 et JEU1103 et (MUS1327 ou MUS2327)",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DEJ 1101"
+        },
+        {
+          "genre": "cours",
+          "code": "IFT 1119"
+        },
+        {
+          "genre": "cours",
+          "code": "JEU 1103"
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MUS 1327"
+            },
+            {
+              "genre": "cours",
+              "code": "MUS 2327"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jeu-2101/",
+    "scrapeISO": "2026-09-13T03:12:53.334Z"
   }
 }

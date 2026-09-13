@@ -4782,5 +4782,73 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mui-3734b/",
     "scrapeISO": "2026-09-11T11:47:28.254Z"
+  },
+  "MUI 1323A": {
+    "code": "MUI 1323A",
+    "titre": "Instrument 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Contenu à préciser au moment de l'inscription.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mui-1323a/",
+    "scrapeISO": "2026-09-13T03:19:07.132Z"
+  },
+  "MUI 1323B": {
+    "code": "MUI 1323B",
+    "titre": "Instrument 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Contenu à préciser au moment de l'inscription.",
+    "prealablesBrut": "MUI1323A OU MUI1324A OU MUI1324V OU MUI1325A OU MUI1326A",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MUI 1323A"
+        },
+        {
+          "genre": "cours",
+          "code": "MUI 1324A"
+        },
+        {
+          "genre": "cours",
+          "code": "MUI 1324V"
+        },
+        {
+          "genre": "cours",
+          "code": "MUI 1325A"
+        },
+        {
+          "genre": "cours",
+          "code": "MUI 1326A"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mui-1323b/",
+    "scrapeISO": "2026-09-13T03:19:10.942Z"
   }
 }

@@ -1063,5 +1063,74 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-3604/",
     "scrapeISO": "2026-09-12T22:15:50.379Z"
+  },
+  "SOL 3012": {
+    "code": "SOL 3012",
+    "titre": "Sociologie critique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Les auteurs appelés sociologues critiques : École de Frankfurt. Théorie d'une sociologie critique orientée vers des études empiriques plutôt que philosophiques. Comparaison avec la sociologie positive et l'herméneutique.",
+    "prealablesBrut": "SOL1017 et avoir complété 45 crédits de cours universitaires.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "SOL1017 et avoir complété 45 crédits de cours universitaires."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-3012/",
+    "scrapeISO": "2026-09-13T03:13:11.828Z"
+  },
+  "SOL 3035": {
+    "code": "SOL 3035",
+    "titre": "Épistémologies sociologiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principales traditions épistémologiques en sociologie, leurs origines et leurs réactualisations. Liens entre postures épistémologiques et approches méthodologiques en sociologie.",
+    "prealablesBrut": "SOL1015 ET SOL1020 ET SOL1090",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "SOL 1015"
+        },
+        {
+          "genre": "cours",
+          "code": "SOL 1020"
+        },
+        {
+          "genre": "cours",
+          "code": "SOL 1090"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-3035/",
+    "scrapeISO": "2026-09-13T03:13:13.847Z"
+  },
+  "SOL 6018": {
+    "code": "SOL 6018",
+    "titre": "Déviance, normes, individualité",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Rapports de pouvoir et rapports sociaux (âge, classe, genre, race, sexualité, etc.) (re)produits par les institutions de traitement des déviances (police et justice, psychiatrie, services sociaux, etc.). Étude des normes sociales de l'individualité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-6018/",
+    "scrapeISO": "2026-09-13T03:17:37.678Z"
   }
 }

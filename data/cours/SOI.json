@@ -1193,5 +1193,63 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/soi-6189/",
     "scrapeISO": "2026-09-12T21:55:28.133Z"
+  },
+  "SOI 6202": {
+    "code": "SOI 6202",
+    "titre": "Éthique de la santé et pratique infirmière",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences infirmières",
+    "description": "Repères éthiques et méthodologiques pour identifier, analyser et résoudre les problèmes éthiques en pratique avancée en collaboration avec les personnes, les familles et les intervenants des autres disciplines.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/soi-6202/",
+    "scrapeISO": "2026-09-13T03:16:23.981Z"
+  },
+  "SOI 6238": {
+    "code": "SOI 6238",
+    "titre": "Analyse critique de modèles systémiques",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences infirmières",
+    "description": "Étude de modèles théoriques systémiques pertinents au développement d'une pratique infirmière avancée, au moyen de situations de soins complexes. Évaluation de la pertinence des modèles selon la situation exposée.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/soi-6238/",
+    "scrapeISO": "2026-09-13T03:17:17.618Z"
+  },
+  "SOI 6239": {
+    "code": "SOI 6239",
+    "titre": "Pratique avancée en intervention systémique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences infirmières",
+    "description": "Approfondissement de l’intervention infirmière auprès de la personne/famille, dans une perspective théorique systémique favorisant la réflexivité et le changement.",
+    "prealablesBrut": "SOI6238",
+    "prealables": {
+      "genre": "cours",
+      "code": "SOI 6238"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/soi-6239/",
+    "scrapeISO": "2026-09-13T03:17:19.645Z"
   }
 }

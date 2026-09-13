@@ -21,5 +21,234 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6018/",
     "scrapeISO": "2026-09-11T17:37:37.335Z"
+  },
+  "MSO 6061": {
+    "code": "MSO 6061",
+    "titre": "Introduction à la biostatistique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Statistiques descriptives. Distributions. Échantillonnage. Estimations ponctuelle et par intervalle. Test de t et analyse de variance. Régression et corrélation. Analyse de données catégorielles. Approche opérationnelle à l'aide de problèmes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6061/",
+    "scrapeISO": "2026-09-13T03:09:55.073Z"
+  },
+  "MSO 6011": {
+    "code": "MSO 6011",
+    "titre": "Concepts et méthodes en épidémiologie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Fournir à l'étudiant une compréhension conceptuelle de l'épidémiologie et introduire l'étudiant aux concepts et principes fondamentaux de la recherche épidémiologique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6011/",
+    "scrapeISO": "2026-09-13T03:11:34.063Z"
+  },
+  "MSO 6014": {
+    "code": "MSO 6014",
+    "titre": "Épidémiologie intermédiaire",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Introduction à des sujets et concepts moins connus en épidémiologie: aspects pratiques de la conduite d'études épidémiologiques.",
+    "prealablesBrut": "MSO6011 et MSO6061",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MSO 6011"
+        },
+        {
+          "genre": "cours",
+          "code": "MSO 6061"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6014/",
+    "scrapeISO": "2026-09-13T03:11:34.452Z"
+  },
+  "MSO 6067": {
+    "code": "MSO 6067",
+    "titre": "Régressions linéaire et logistique, et ANOVA",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "ANOVA à deux facteurs et interaction. Modèles linaires généralisés simples et multiples, incluant la régression linéaire, la régression logistique et la régression de Poisson. Modélisation et applications avec le logiciel R. Remarque : Préalable MSO6061 ou (permission de l'enseignant, incluant les étudiants ayant complété MSO6060)",
+    "prealablesBrut": "MSO6061",
+    "prealables": {
+      "genre": "cours",
+      "code": "MSO 6061"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6067/",
+    "scrapeISO": "2026-09-13T03:11:38.600Z"
+  },
+  "MSO 6616": {
+    "code": "MSO 6616",
+    "titre": "Gestion et analyse de données de recherche",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Introduction aux pratiques de collecte, de gestion et d'analyse de données récoltées dans le cadre d'études épidémiologiques et cliniques dans le domaine de la santé. Le cours s'adresse à tous les chercheurs désirant connaître les différentes plateformes et modes de collecte, de gestion et d'analyse des données ainsi que les standards de qualité à atteindre en respect avec les principes d'éthique de la recherche scientifique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6616/",
+    "scrapeISO": "2026-09-13T03:11:40.653Z"
+  },
+  "MSO 6619": {
+    "code": "MSO 6619",
+    "titre": "Introduction à l'analyse de survie",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Cours d'introduction à l'analyse de survie. Notions théoriques et pratiques dans le domaine de la santé : fonction de survie, de risque instantané, censure, estimateur de Kaplan-Meier et test du log-rank, modèle de risques proportionnels de Cox.",
+    "prealablesBrut": "MSO6061 et MSO6067 et connaissance d'un des langages de programmation statistique suivants: R, SAS, SPSS, Stata.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "MSO6061 et MSO6067 et connaissance d'un des langages de programmation statistique suivants: R, SAS, SPSS, Stata."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6619/",
+    "scrapeISO": "2026-09-13T03:11:42.724Z"
+  },
+  "MSO 6634": {
+    "code": "MSO 6634",
+    "titre": "Synthèse des connaissances : revue systématique",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Réalisation d'une revue systématique en santé des populations et santé clinique. Élaboration d'une stratégie et d'un protocole. Recherche et recensement des écrits, extraction des données et évaluation du risque de biais des études primaires.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6634/",
+    "scrapeISO": "2026-09-13T03:11:44.755Z"
+  },
+  "MSO 6622": {
+    "code": "MSO 6622",
+    "titre": "Recherche et mémoire",
+    "credits": 21,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6622/",
+    "scrapeISO": "2026-09-13T03:11:46.444Z"
+  },
+  "MSO 6624": {
+    "code": "MSO 6624",
+    "titre": "Science des données de santé publique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Mégadonnées et santé publique : aspects scientifiques et techniques. Modélisation et exploration de données. Bases de données. Apprentissage automatique. Intro. à l’intelligence artificielle. Approche pratique, expérientielle et par cas.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6624/",
+    "scrapeISO": "2026-09-13T03:15:40.539Z"
+  },
+  "MSO 6060": {
+    "code": "MSO 6060",
+    "titre": "Concepts de base en biostatistique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "École de santé publique",
+    "description": "Statistique descriptive. Distribution normale. Échantillonnage. Estimations ponctuelle et par intervalle. Test de t et analyse de variance. Régression et corrélation. Analyse de données catégorielles. Approche interprétative à l'aide d'articles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mso-6060/",
+    "scrapeISO": "2026-09-13T03:16:42.637Z"
   }
 }

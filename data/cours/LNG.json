@@ -301,5 +301,164 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-2045/",
     "scrapeISO": "2026-09-11T19:00:31.839Z"
+  },
+  "LNG 2095": {
+    "code": "LNG 2095",
+    "titre": "Linguistique de corpus",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "La linguistique de corpus en tant que discipline appliquée de la linguistique. Analyse de corpus selon différentes perspectives. Méthodes, outils informatiques et exploitation de corpus personnels.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-2095/",
+    "scrapeISO": "2026-09-13T03:13:50.442Z"
+  },
+  "LNG 3120": {
+    "code": "LNG 3120",
+    "titre": "Traitement automatique du langage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Implémentation des grammaires et des automates. Applications à l'analyse et à la synthèse du langage naturel sur ordinateur.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-3120/",
+    "scrapeISO": "2026-09-13T03:13:52.441Z"
+  },
+  "LNG 2100": {
+    "code": "LNG 2100",
+    "titre": "Français québécois",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Aspects synchroniques du français québécois : phonétique/phonologie, lexique, syntaxe, morphologie.",
+    "prealablesBrut": "LNG1955 OU (LNG1400 ET LNG1540)",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "LNG 1955"
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "LNG 1400"
+            },
+            {
+              "genre": "cours",
+              "code": "LNG 1540"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-2100/",
+    "scrapeISO": "2026-09-13T03:18:12.047Z"
+  },
+  "LNG 2050": {
+    "code": "LNG 2050",
+    "titre": "Syntaxe",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Concepts fondamentaux en grammaire générative moderne. Applications au français : étude de problèmes concrets en syntaxe française.",
+    "prealablesBrut": "LNG1540",
+    "prealables": {
+      "genre": "cours",
+      "code": "LNG 1540"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-2050/",
+    "scrapeISO": "2026-09-13T03:18:46.215Z"
+  },
+  "LNG 2355": {
+    "code": "LNG 2355",
+    "titre": "Troubles du langage et linguistique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l'étude des troubles du langage. Corrélats neuroanatomiques et neurophysiologiques. Modèles de traitement du langage et pathologie. Approches méthodologiques.",
+    "prealablesBrut": "LNG1400 ET LNG1540",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "LNG 1400"
+        },
+        {
+          "genre": "cours",
+          "code": "LNG 1540"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-2355/",
+    "scrapeISO": "2026-09-13T03:18:46.450Z"
+  },
+  "LNG 3090": {
+    "code": "LNG 3090",
+    "titre": "Neurosciences du langage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Introduction à l'étude des neurosciences du langage. Fondements de neuroanatomie fonctionnelle et des systèmes nerveux. Techniques de neuro-imagerie. Fonctionnement cognitif du langage du point de vue des neurosciences. Équivalent : ORA1536",
+    "prealablesBrut": "LNG2160",
+    "prealables": {
+      "genre": "cours",
+      "code": "LNG 2160"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-3090/",
+    "scrapeISO": "2026-09-13T03:18:50.497Z"
   }
 }

@@ -3209,5 +3209,227 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1636/",
     "scrapeISO": "2026-09-11T11:43:45.576Z"
+  },
+  "MUE 2351": {
+    "code": "MUE 2351",
+    "titre": "Atelier - arts performatifs 1",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Atelier s'inspirant de la philosophie des jeux sonores visant à développer une expérience pratique de la musique par l'interprétation de pièces musicales conçues de façon à pouvoir être interprétées sans connaissance préalable de la théorie musicale.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-2351/",
+    "scrapeISO": "2026-09-13T03:13:07.670Z"
+  },
+  "MUE 2352": {
+    "code": "MUE 2352",
+    "titre": "Atelier - arts performatifs 2",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Ateliers s'inspirant des \"jeux sonores\" de Robert Léonard et visant à développer une expérience pratique de la musique par la création et la performance de pièces musicales technologiques collectives.",
+    "prealablesBrut": "MUE2351",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUE 2351"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-2352/",
+    "scrapeISO": "2026-09-13T03:13:07.824Z"
+  },
+  "MUE 1411": {
+    "code": "MUE 1411",
+    "titre": "Atelier d'opéra",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Mise en application du comportement et jeu scénique du chanteur à travers le répertoire d'opéras de chambre traditionnels et actuels. Remarques: Ces ateliers sont réservés aux étudiants en interprétation Chant.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1411/",
+    "scrapeISO": "2026-09-13T03:18:52.390Z"
+  },
+  "MUE 1412": {
+    "code": "MUE 1412",
+    "titre": "Atelier d'opéra",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Mise en application du comportement et jeu scénique du chanteur à travers le répertoire d'opéras de chambre traditionnels et actuels. Remarques: Ces ateliers sont réservés aux étudiants en interprétation Chant.",
+    "prealablesBrut": "MUE1411",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUE 1411"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1412/",
+    "scrapeISO": "2026-09-13T03:18:54.533Z"
+  },
+  "MUE 1431": {
+    "code": "MUE 1431",
+    "titre": "Harmonie de concert",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Participation à diverses formations instrumentales ou vocales de la Faculté de musique. Ces formations sont précisées chaque année selon les besoins et les possibilités. Remarques: Premier cycle, premier trimestre d'inscription.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1431/",
+    "scrapeISO": "2026-09-13T03:18:56.454Z"
+  },
+  "MUE 1432": {
+    "code": "MUE 1432",
+    "titre": "Harmonie de concert",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Participation à diverses formations instrumentales ou vocales de la Faculté de musique. Ces formations sont précisées chaque année selon les besoins et les possibilités. Remarques: Premier cycle, deuxième trimestre d'inscription.",
+    "prealablesBrut": "MUE1431",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUE 1431"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1432/",
+    "scrapeISO": "2026-09-13T03:18:58.460Z"
+  },
+  "MUE 1451": {
+    "code": "MUE 1451",
+    "titre": "Choeur d'opéra",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Participation à diverses formations instrumentales ou vocales de la Faculté de musique. Ces formations sont précisées chaque année selon les besoins et les possibilités. Remarque : Ce cours est offert à l’ensemble des étudiant.e.s de l’UdeM. Les étudiant.e.s inscrit.e.s dans le programme de Baccalauréat en musique – interprétation instruments classiques (1-605-1-8) y seront cependant admis.e.s en priorité. La participation à ce cours nécessite une audition instrumentale préalable. Lien : musique.umontreal.ca/etudier/espace-etudiant/auditions-et-rencontres-prealables-a-la-participation-aux-ensembles/",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1451/",
+    "scrapeISO": "2026-09-13T03:18:58.724Z"
+  },
+  "MUE 1452": {
+    "code": "MUE 1452",
+    "titre": "Choeur d'opéra",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Participation à diverses formations instrumentales ou vocales de la Faculté de musique. Ces formations sont précisées chaque année selon les besoins et les possibilités. Remarque : Ce cours est offert à l’ensemble des étudiant.e.s de l’UdeM. Les étudiant.e.s inscrit.e.s dans le programme de Baccalauréat en musique – interprétation instruments classiques (1-605-1-8) y seront cependant admis.e.s en priorité. La participation à ce cours nécessite une audition instrumentale préalable. Lien : musique.umontreal.ca/etudier/espace-etudiant/auditions-et-rencontres-prealables-a-la-participation-aux-ensembles/",
+    "prealablesBrut": "MUE1451",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUE 1451"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1452/",
+    "scrapeISO": "2026-09-13T03:19:02.680Z"
+  },
+  "MUE 1453": {
+    "code": "MUE 1453",
+    "titre": "Choeur d'opéra",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Participation à diverses formations instrumentales ou vocales de la Faculté de musique. Ces formations sont précisées chaque année selon les besoins et les possibilités. Remarque : Ce cours est offert à l’ensemble des étudiant.e.s de l’UdeM. Les étudiant.e.s inscrit.e.s dans le programme de Baccalauréat en musique – interprétation instruments classiques (1-605-1-8) y seront cependant admis.e.s en priorité. La participation à ce cours nécessite une audition instrumentale préalable. Lien : musique.umontreal.ca/etudier/espace-etudiant/auditions-et-rencontres-prealables-a-la-participation-aux-ensembles/",
+    "prealablesBrut": "MUE1452",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUE 1452"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1453/",
+    "scrapeISO": "2026-09-13T03:19:04.967Z"
+  },
+  "MUE 1454": {
+    "code": "MUE 1454",
+    "titre": "Choeur d'opéra",
+    "credits": 1,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Participation à diverses formations instrumentales ou vocales de la Faculté de musique. Ces formations sont précisées chaque année selon les besoins et les possibilités. Remarque : Ce cours est offert à l’ensemble des étudiant.e.s de l’UdeM. Les étudiant.e.s inscrit.e.s dans le programme de Baccalauréat en musique – interprétation instruments classiques (1-605-1-8) y seront cependant admis.e.s en priorité. La participation à ce cours nécessite une audition instrumentale préalable. Lien : musique.umontreal.ca/etudier/espace-etudiant/auditions-et-rencontres-prealables-a-la-participation-aux-ensembles/",
+    "prealablesBrut": "MUE1453",
+    "prealables": {
+      "genre": "cours",
+      "code": "MUE 1453"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mue-1454/",
+    "scrapeISO": "2026-09-13T03:19:06.941Z"
   }
 }
