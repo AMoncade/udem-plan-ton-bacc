@@ -1,35 +1,17 @@
 /**
- * L'ACCORD EN NOMBRE, à un seul endroit.
+ * Ré-export de `lib/francais.ts`, où l'accord en nombre vit désormais.
  *
- * Ce module existe parce que l'app écrivait « 8 note(s) normative(s) », « 27
- * cours figure(nt) », « 3 ligne(s) de préalables non réduite(s) en codes,
- * affichée(s) telle(s) quelle(s) ». Cette dernière phrase porte CINQ
- * parenthèses. Ce n'est pas une faute de français, c'est un aveu : l'écran
- * refuse de choisir et laisse le lecteur faire l'accord.
+ * Déplacé là-bas parce que `lib/engine` en a besoin et que `lib/` n'importe
+ * jamais `app/` : le moteur ne doit pas dépendre de la couche d'écran. Ce
+ * fichier reste pour que les appelants existants — `depot.ts`, `PiedApp.tsx`,
+ * `VueSession.tsx` et leur test — continuent de fonctionner sans être modifiés
+ * pendant que d'autres sessions les éditent.
  *
- * Le reste de l'application ne s'y résout nulle part ailleurs — elle écrit « 1
- * cours cité », « 2 cours cités ». La forme entre parenthèses ne survivait que
- * dans les messages venus du moteur, qui les compose sans savoir où ils
- * s'afficheront. C'est une raison de les composer ici, pas de les laisser tels
- * quels.
- *
- * ## Zéro prend le SINGULIER
- *
- * « 0 cours cité », pas « 0 cours cités ». C'est la règle du français, et c'est
- * aussi le cas le plus fréquent des écrans d'état vide — celui qu'on voit avant
- * d'avoir rien saisi. D'où `n > 1` et jamais `n !== 1` : la seconde forme met
- * zéro au pluriel, ce qui est faux précisément là où on le lit le plus.
+ * Un ré-export n'est pas une seconde implémentation : c'est la même liaison
+ * sous deux noms, donc elle ne peut pas diverger. À supprimer quand personne
+ * ne sera chaud sur ces quatre fichiers.
  */
-
-/** L'accord d'un mot qui ne prend qu'un `s`. « cours » et « fois » sont
- *  invariables : leur passer `s()` ne casse rien, mais `pluriel()` est plus
- *  clair quand la forme change vraiment. */
-export function s(n: number): string {
-  return n > 1 ? "s" : "";
-}
-
-/** L'accord d'un mot dont les deux formes s'écrivent différemment — « a » et
- *  « ont », « celle » et « celles ». */
-export function pluriel(n: number, singulier: string, plurielMot: string): string {
-  return n > 1 ? plurielMot : singulier;
-}
+// Chemin RELATIF et non `@/lib/francais` : `vitest.config.mts` ne déclare
+// aucun alias, donc `@/` ne résout pas sous les tests. `tsc` et `lint` passaient
+// tous les deux — ni l'un ni l'autre ne vérifie la résolution à l'exécution.
+export { pluriel, s } from "../../lib/francais";
