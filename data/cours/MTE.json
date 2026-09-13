@@ -738,5 +738,120 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-6611x/",
     "scrapeISO": "2026-09-13T05:08:17.420Z"
+  },
+  "MTE 6117X": {
+    "code": "MTE 6117X",
+    "titre": "Orchestration symphonique 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Étude historique et pratique de l'orchestration stylistique. Types d'orchestres symphoniques, particularités et l'instrumentarium selon l'époque, conventions de notation, approche de l'orchestration selon les compositeurs, de Mozart à Ravel.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-6117x/",
+    "scrapeISO": "2026-09-13T06:21:16.290Z"
+  },
+  "MTE 2110": {
+    "code": "MTE 2110",
+    "titre": "Contrepoint 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Contrepoint vocal à quatre voix avec et sans « cantus firmus ». Usage des accords de septième. Motif, emploi du silence, imitation. Analyse d'exemples du répertoire.",
+    "prealablesBrut": "MTE1111",
+    "prealables": {
+      "genre": "cours",
+      "code": "MTE 1111"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-2110/",
+    "scrapeISO": "2026-09-13T06:30:42.011Z"
+  },
+  "MTE 2111": {
+    "code": "MTE 2111",
+    "titre": "Contrepoint 4",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Contrepoint instrumental. Composition de petites formes contrapuntiques. Canons. Contrepoint renversable. Exposition de fugue vocale. Analyse d'exemples du répertoire.",
+    "prealablesBrut": "MTE2110",
+    "prealables": {
+      "genre": "cours",
+      "code": "MTE 2110"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-2111/",
+    "scrapeISO": "2026-09-13T06:30:44.319Z"
+  },
+  "MTE 3115": {
+    "code": "MTE 3115",
+    "titre": "Orchestration 4",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Étude historique et pratique de l'orchestration stylistique. Types d'orchestres symphoniques, particularités et l'instrumentarium selon l'époque, conventions de notation, approche de l'orchestration selon les compositeurs, de Mozart à Ravel.",
+    "prealablesBrut": "MTE3114 ou MTE3116",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MTE 3114"
+        },
+        {
+          "genre": "cours",
+          "code": "MTE 3116"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-3115/",
+    "scrapeISO": "2026-09-13T06:30:44.581Z"
+  },
+  "MTE 3115X": {
+    "code": "MTE 3115X",
+    "titre": "Orchestration 4",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Pratique de l'orchestration stylistique. Types d'orchestres symphoniques, particularités et instrumentation selon l'époque, conventions de notation, approche de l'orchestration selon les compositeurs étudiés. Remarque: Aux cycles supérieurs, vous devez vous inscrire au cours MTE6115X",
+    "prealablesBrut": "MTE 3114 ou MTE 3116",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MTE 3114"
+        },
+        {
+          "genre": "cours",
+          "code": "MTE 3116"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-3115x/",
+    "scrapeISO": "2026-09-13T06:30:47.935Z"
   }
 }

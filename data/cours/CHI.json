@@ -373,5 +373,56 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chi-61002/",
     "scrapeISO": "2026-09-13T05:11:22.769Z"
+  },
+  "CHI 6900": {
+    "code": "CHI 6900",
+    "titre": "Techniques de CEC pédiatrique",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de 3 mois dans un centre de stage pédiatrique de chirurgie cardiaque. Pathologies cardiaques congénitales cyanogènes et non cyanogènes. Circulation extracorporelle, ECMO et pacemaker chez le nouveau-né et l'enfant.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chi-6900/",
+    "scrapeISO": "2026-09-13T06:32:28.631Z"
+  },
+  "CHI 69913": {
+    "code": "CHI 69913",
+    "titre": "Maîtrise de pratique de CEC adulte 3",
+    "credits": 15,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Stage de 11 mois en rotation dans 3 centres de chirurgie cardiaque adulte permettant d'acquérir les compétences nécessaires pour la pratique de la perfusion extracorporelle clinique et exposition aux situations plus complexes et urgentes.",
+    "prealablesBrut": "CHI69912",
+    "prealables": {
+      "genre": "cours",
+      "code": "CHI 69912"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/chi-69913/",
+    "scrapeISO": "2026-09-13T06:32:34.901Z"
   }
 }

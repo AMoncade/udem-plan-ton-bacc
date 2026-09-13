@@ -1489,5 +1489,683 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-7495/",
     "scrapeISO": "2026-09-13T06:15:33.097Z"
+  },
+  "PPA 6010": {
+    "code": "PPA 6010",
+    "titre": "Programme de lecture",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Cours équivalent(s) : MMD6315.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6010/",
+    "scrapeISO": "2026-09-13T06:24:27.668Z"
+  },
+  "PPA 6491": {
+    "code": "PPA 6491",
+    "titre": "Devis de recherche",
+    "credits": 12,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Cours publié sans descriptif.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6491/",
+    "scrapeISO": "2026-09-13T06:24:37.758Z"
+  },
+  "PPA 6495": {
+    "code": "PPA 6495",
+    "titre": "Mémoire",
+    "credits": 15,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Cours publié sans descriptif.",
+    "prealablesBrut": "PPA6491",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 6491"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6495/",
+    "scrapeISO": "2026-09-13T06:24:40.240Z"
+  },
+  "PPA 2025": {
+    "code": "PPA 2025",
+    "titre": "Microenseignement en FLS",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Pratiques pédagogiques favorisant l’analyse du processus d’apprentissage et la régulation de l’enseignement en français langue seconde. Transposition des savoirs dans des gestes pédagogiques, documentation sur vidéo et analyse des pratiques. Remarque : français langue seconde (FLS)",
+    "prealablesBrut": "DID2000 et DID2102 et DID2209 et DID2600",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DID 2000"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 2102"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 2209"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 2600"
+        }
+      ]
+    },
+    "concomitantsBrut": "PPA2025 et DID2109 et ETA2550 et PPA2100T",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2025/",
+    "scrapeISO": "2026-09-13T06:27:40.577Z"
+  },
+  "PPA 2100T": {
+    "code": "PPA 2100T",
+    "titre": "Intégration des TIC",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement, mise à l'essai et analyse de situations pédagogiques intégrant stratégiquement les TIC. Réflexion critique et participation à une communauté apprenante dans une perspective de développement professionnel. Remarque : technologies de l’information et de la communication (TIC)",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "PPA2100T et PPA2025",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2100t/",
+    "scrapeISO": "2026-09-13T06:27:43.056Z"
+  },
+  "PPA 3002": {
+    "code": "PPA 3002",
+    "titre": "Diversité ethnoculturelle et enjeux pédagogiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Compréhension de la diversité sociale, ethnique et culturelle des élèves allophones. Enjeux relatifs à la relation pédagogique, à l'interprétation du curriculum, à la relation avec les familles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-3002/",
+    "scrapeISO": "2026-09-13T06:27:45.005Z"
+  },
+  "PPA 30032": {
+    "code": "PPA 30032",
+    "titre": "Pratiques inclusives en FLS 2",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Contexte scolaire québécois : Inclusion, intégration, CUA, différenciation pédagogique et PI. Interaction entre le contexte et l’élève. Pratiques pédagogiques, collaboratives et coenseignement visant la réussite de tous. Tâche intégratrice. Remarques : français langue seconde (FLS); conception universelle de l’apprentissage (CUA); plan d’intervention (PI)",
+    "prealablesBrut": "PPA30031",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 30031"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-30032/",
+    "scrapeISO": "2026-09-13T06:27:49.028Z"
+  },
+  "PPA 3222": {
+    "code": "PPA 3222",
+    "titre": "Gestion de classe en FLS",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Gestion de l'espace-temps en classe du primaire/secondaire. Modèles de gestion des environnements pédagogiques. Exploitation des ressources communautaires. Prévention et intervention. Prise en compte de l'hétérogénéité. Remarque : français langue seconde (FLS)",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-3222/",
+    "scrapeISO": "2026-09-13T06:27:50.549Z"
+  },
+  "PPA 4460": {
+    "code": "PPA 4460",
+    "titre": "Francisation et éducation des adultes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Contexte de l’enseignement de la francisation et du français langue seconde auprès d’adultes. Enjeux entourant le processus migratoire et l’acquisition d’une nouvelle langue. Interventions psychopédagogiques, didactiques et andragogiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-4460/",
+    "scrapeISO": "2026-09-13T06:28:38.334Z"
+  },
+  "PPA 1111": {
+    "code": "PPA 1111",
+    "titre": "Élèves HDAA et modèles de service",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Caractéristiques des élèves handicapés (incapacités intellectuelles, visuelles, auditives ou motrices) ou en difficulté d'adaptation ou d'apprentissage. Conséquences pédagogiques et modèles de service en adaptation scolaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-1111/",
+    "scrapeISO": "2026-09-13T06:28:42.202Z"
+  },
+  "PPA 1114": {
+    "code": "PPA 1114",
+    "titre": "TIC et adaptation scolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement, mise à l'essai et analyse de situations en adaptation scolaire où sont intégrées les technologies de l'information et de la communication. Réflexion critique. Approches en adaptation scolaire faisant appel aux TIC.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-1114/",
+    "scrapeISO": "2026-09-13T06:28:43.879Z"
+  },
+  "PPA 1384": {
+    "code": "PPA 1384",
+    "titre": "Apprentissage et adaptation scolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Théories de l'apprentissage scolaire. Applications en adaptation scolaire. Caractéristiques du contexte scolaire de l'apprenant. Remarque : aux cycles supérieurs, vous devez vous inscrire au cours PPA6384.",
+    "prealablesBrut": "PPA2208",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 2208"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-1384/",
+    "scrapeISO": "2026-09-13T06:28:44.521Z"
+  },
+  "PPA 2024": {
+    "code": "PPA 2024",
+    "titre": "Microenseignement en adaptation scolaire",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Pratiques pédagogiques favorisant l’analyse du processus d’apprentissage et la régulation de l’enseignement en adaptation scolaire. Transposition des savoirs dans des gestes pédagogiques, documentation sur vidéo et analyse de pratiques.",
+    "prealablesBrut": "DID2000 et DID2031 et DID2240 et PPA1114",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DID 2000"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 2031"
+        },
+        {
+          "genre": "cours",
+          "code": "DID 2240"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 1114"
+        }
+      ]
+    },
+    "concomitantsBrut": "PPA2024 et EDU2410",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2024/",
+    "scrapeISO": "2026-09-13T06:28:47.845Z"
+  },
+  "PPA 2110": {
+    "code": "PPA 2110",
+    "titre": "Gestion de classe et adaptation scolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Organisation et gestion de groupes incluant des élèves handicapés ou en difficulté. Animation, communication, planification, organisation spatio-temporelle. Impact des pratiques sur la réussite des élèves.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2110/",
+    "scrapeISO": "2026-09-13T06:28:49.797Z"
+  },
+  "PPA 2208": {
+    "code": "PPA 2208",
+    "titre": "Développement de l'enfant et adaptation sociale et scolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement psychomoteur, cognitif, affectif, linguistique de la naissance à la puberté. Problèmes d'adaptation psychosociale et scolaire. Pistes de prévention et d'intervention.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2208/",
+    "scrapeISO": "2026-09-13T06:28:52.429Z"
+  },
+  "PPA 2380": {
+    "code": "PPA 2380",
+    "titre": "Incapacités intellectuelles et TSA",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Définitions. Caractéristiques et besoins éducatifs des élèves ayant des incapacités intellectuelles ou un trouble du spectre de l’autisme. Identification des obstacles à l’apprentissage. Approches pédagogiques et stratégies d’enseignement. Remarque : trouble du spectre de l’autisme (TSA)",
+    "prealablesBrut": "PPA1111",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 1111"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2380/",
+    "scrapeISO": "2026-09-13T06:28:54.292Z"
+  },
+  "PPA 2403": {
+    "code": "PPA 2403",
+    "titre": "Élèves en difficulté du comportement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Difficultés comportementales au cours de l'enfance et de l'adolescence. Manifestations, évaluation, évolution. Analyse des principales stratégies d'intervention favorisant l'adaptation scolaire et sociale de l'élève.",
+    "prealablesBrut": "PPA2110",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 2110"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2403/",
+    "scrapeISO": "2026-09-13T06:28:56.113Z"
+  },
+  "PPA 34142": {
+    "code": "PPA 34142",
+    "titre": "Pratiques collaboratives 2",
+    "credits": 4,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Travail collaboratif en vue de soutenir l’apprentissage de tous les élèves. Collaborations école-famille, les collaborations interprofessionnelles et la démarche de plan d’intervention. Simulation et analyse de pratiques. Tâche intégratrice.",
+    "prealablesBrut": "PPA34141",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 34141"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-34142/",
+    "scrapeISO": "2026-09-13T06:29:00.147Z"
+  },
+  "PPA 2401": {
+    "code": "PPA 2401",
+    "titre": "Difficultés à apprendre au primaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Problématique de l'intervention auprès des élèves en difficulté d'apprentissage. Contexte scolaire et caractéristiques de ces élèves au primaire. Évaluation descriptive et diagnostique. Méthodes et stratégies d'intervention.",
+    "prealablesBrut": "PPA1384",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 1384"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2401/",
+    "scrapeISO": "2026-09-13T06:29:25.914Z"
+  },
+  "PPA 4300": {
+    "code": "PPA 4300",
+    "titre": "Pré-projet des finissants en adaptation scolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Initiation à l'analyse de la valeur (démarche de conception issue de l'ingénierie). Choix d'un problème à résoudre en adaptation scolaire. Élaboration d'un cahier des charges en vue de la conception en adaptation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-4300/",
+    "scrapeISO": "2026-09-13T06:29:32.671Z"
+  },
+  "PPA 4406": {
+    "code": "PPA 4406",
+    "titre": "Incapacités et pratiques d'intégration",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Élèves qui ont des incapacités (auditives, intellectuelles, motrices et visuelles) importantes. Curriculum scolaire. Produits, procédés pédagogiques de soutien à l'intégration. Ressources disponibles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-4406/",
+    "scrapeISO": "2026-09-13T06:29:34.657Z"
+  },
+  "PPA 4407": {
+    "code": "PPA 4407",
+    "titre": "Élèves en difficulté grave de comportement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Élaboration d'interventions, individuelles ou de groupe, en classe ordinaire ou spéciale et implantation d'actions rééducatives auprès d'élèves en difficulté grave. Techniques de modification du comportement.",
+    "prealablesBrut": "PPA2403",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 2403"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-4407/",
+    "scrapeISO": "2026-09-13T06:29:36.697Z"
+  },
+  "PPA 2402": {
+    "code": "PPA 2402",
+    "titre": "Difficultés à apprendre au secondaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Problématique de l'intervention auprès des élèves en difficulté d'apprentissage. Contexte scolaire et caractéristiques de ces élèves au secondaire. Évaluation descriptive et diagnostique. Méthodes et stratégies d'intervention.",
+    "prealablesBrut": "PPA1384",
+    "prealables": {
+      "genre": "cours",
+      "code": "PPA 1384"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2402/",
+    "scrapeISO": "2026-09-13T06:29:47.291Z"
+  },
+  "PPA 4415": {
+    "code": "PPA 4415",
+    "titre": "École et adolescents en difficulté",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement psychologique, physique, cognitif, social et de la sexualité à l'adolescence. Rôle de la famille, des pairs et de l'école. Problématiques d'adaptation à l'adolescence.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-4415/",
+    "scrapeISO": "2026-09-13T06:29:51.087Z"
+  },
+  "PPA 4675": {
+    "code": "PPA 4675",
+    "titre": "L'adulte en difficulté d'apprentissage",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Caractéristiques de l'apprenant adulte en difficulté d'apprentissage. Stratégies d'intervention dans un contexte d'alphabétisation.",
+    "prealablesBrut": "PPA2402 et PPA4415",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PPA 2402"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 4415"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-4675/",
+    "scrapeISO": "2026-09-13T06:29:52.970Z"
+  },
+  "PPA 6001": {
+    "code": "PPA 6001",
+    "titre": "Séminaire développement professionnel 1",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Introduction au programme et ressources. Développement d'un plan de formation articulant dimensions académique et professionnelle. Compétences méthodologiques et technologiques.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6001/",
+    "scrapeISO": "2026-09-13T06:32:13.950Z"
+  },
+  "PPA 6006": {
+    "code": "PPA 6006",
+    "titre": "Séminaire développement professionnel 2",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Bilan du parcours de formation. Synthèse et réflexion portant sur l'intégration des apprentissages réalisés.",
+    "prealablesBrut": "PPA6001 et avoir réussi 21 crédits de cours dans le 2-823-1-1 ou le 2-823-1-2.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "PPA6001 et avoir réussi 21 crédits de cours dans le 2-823-1-1 ou le 2-823-1-2."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6006/",
+    "scrapeISO": "2026-09-13T06:32:14.676Z"
+  },
+  "PPA 7290": {
+    "code": "PPA 7290",
+    "titre": "Recherche",
+    "credits": 39,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-7290/",
+    "scrapeISO": "2026-09-13T06:37:17.977Z"
+  },
+  "PPA 7295": {
+    "code": "PPA 7295",
+    "titre": "Thèse",
+    "credits": 45,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-7295/",
+    "scrapeISO": "2026-09-13T06:37:20.163Z"
+  },
+  "PPA 1212": {
+    "code": "PPA 1212",
+    "titre": "Intervention éducative et développement",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Influence des environnements sociaux sur le développement socio-affectif des élèves; impact des valeurs et attitudes sur l'expérience scolaire et la gestion de classe au Québec; intervention de groupe et individualisée.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-1212/",
+    "scrapeISO": "2026-09-13T06:40:11.304Z"
   }
 }

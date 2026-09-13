@@ -785,5 +785,55 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1979/",
     "scrapeISO": "2026-09-13T06:05:47.079Z"
+  },
+  "STT 3910": {
+    "code": "STT 3910",
+    "titre": "Introduction au modèle général linéaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Notions de base du modèle linéaire général (MGL) et analyse statistique de données comportementales (ex.: IRMf, MEG, EEG).",
+    "prealablesBrut": "(MAT1600 et PSY1004) ou (MAT1919 et PSY3204)",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MAT 1600"
+            },
+            {
+              "genre": "cours",
+              "code": "PSY 1004"
+            }
+          ]
+        },
+        {
+          "genre": "et",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "MAT 1919"
+            },
+            {
+              "genre": "cours",
+              "code": "PSY 3204"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3910/",
+    "scrapeISO": "2026-09-13T06:31:45.244Z"
   }
 }

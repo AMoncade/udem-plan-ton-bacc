@@ -592,5 +592,591 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6302/",
     "scrapeISO": "2026-09-13T05:09:15.715Z"
+  },
+  "MCT 6211X": {
+    "code": "MCT 6211X",
+    "titre": "Composer et interpréter la musique pour la danse",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Conception et réalisation d'oeuvres musicales ayant pour fonction d'accompagner la danse, sur la base d'ateliers collaboratifs auxquels participent des étudiants en composition et en interprétation, ainsi que des chorégraphes et danseurs émergents.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6211x/",
+    "scrapeISO": "2026-09-13T06:21:06.251Z"
+  },
+  "MCT 6513": {
+    "code": "MCT 6513",
+    "titre": "Création sonore et musicale pour le jeu vidéo 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Théorie et pratique de la création sonore et musicale pour le jeu vidéo : histoire, mécanismes de l'industrie, modes de production, outils, analyse de jeux, démonstrations de situations pratique. Projets de création dans le cadre de jumelages.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6513/",
+    "scrapeISO": "2026-09-13T06:21:06.427Z"
+  },
+  "MCT 6514": {
+    "code": "MCT 6514",
+    "titre": "Création sonore et musicale pour le jeu vidéo 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Conception et réalisation d'environnements sonores et musicaux dynamiques pour un ou plusieurs projets de jeu vidéo. Intégration audio à l'aide des logiciels Wwise et Unreal Engine. Préparation d'un portfolio s'adressant aux entreprises du jeu vidéo.",
+    "prealablesBrut": "MCT6513",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 6513"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6514/",
+    "scrapeISO": "2026-09-13T06:21:10.101Z"
+  },
+  "MCT 6512": {
+    "code": "MCT 6512",
+    "titre": "Projets collaboratifs en composition pour l'écran",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Réalisation de projets de composition pour l'écran dans le cadre de jumelages avec des étudiants en cinéma et arts visuels. Expérimentation du processus complet de production d'une musique à l'image, depuis la commande jusqu'au mixage final. Cours équivalent(s) : MCT6512E",
+    "prealablesBrut": "MCT6511 ou MCT6511E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6511"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6511E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6512/",
+    "scrapeISO": "2026-09-13T06:21:22.292Z"
+  },
+  "MCT 6531": {
+    "code": "MCT 6531",
+    "titre": "Composition et création sonore pour l'écran 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6531E",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6531/",
+    "scrapeISO": "2026-09-13T06:21:30.123Z"
+  },
+  "MCT 6532": {
+    "code": "MCT 6532",
+    "titre": "Composition et création sonore pour l'écran 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6532E",
+    "prealablesBrut": "MCT6531 ou MCT6531E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6531"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6531E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6532/",
+    "scrapeISO": "2026-09-13T06:21:32.387Z"
+  },
+  "MCT 6533E": {
+    "code": "MCT 6533E",
+    "titre": "Composition et création sonore pour l'écran 3",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6533",
+    "prealablesBrut": "MCT6532 ou MCT6532E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6532"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6532E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6533e/",
+    "scrapeISO": "2026-09-13T06:21:34.281Z"
+  },
+  "MCT 6534E": {
+    "code": "MCT 6534E",
+    "titre": "Composition et création sonore pour l'écran 4",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6534",
+    "prealablesBrut": "MCT6533 ou MCT6533E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6533"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6533E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6534e/",
+    "scrapeISO": "2026-09-13T06:21:36.715Z"
+  },
+  "MCT 6920": {
+    "code": "MCT 6920",
+    "titre": "Stage",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Stage au sein d'un organisme non universitaire (compagnie de production musicale ou audiovisuelle) ou auprès d'un professionnel pouvant agir comme mentor dans le domaine de la musique et de la conception sonore pour l'écran (cinéma, jeu vidéo, etc.). Cours équivalent(s) : MCT6920E",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6920/",
+    "scrapeISO": "2026-09-13T06:21:36.861Z"
+  },
+  "MCT 6950E": {
+    "code": "MCT 6950E",
+    "titre": "Projet final et mémoire",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Projet de recherche-création en composition pour l'écran : oeuvres originales accompagnées d'un mémoire présentant la démarche artistique, une recherche théorique reliée à cette démarche, l'analyse des oeuvres et la présentation du contexte de création. Cours équivalent(s) : MCT6950",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6950e/",
+    "scrapeISO": "2026-09-13T06:21:38.883Z"
+  },
+  "MCT 6512E": {
+    "code": "MCT 6512E",
+    "titre": "Projets collaboratifs en composition pour l'écran",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Réalisation de projets de composition pour l'écran dans le cadre de jumelages avec des étudiants en cinéma et arts visuels. Expérimentation du processus complet de production d'une musique à l'image, depuis la commande jusqu'au mixage final. Cours équivalent(s) : MCT6512",
+    "prealablesBrut": "MCT6511 ou MCT6511E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6511"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6511E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6512e/",
+    "scrapeISO": "2026-09-13T06:21:42.780Z"
+  },
+  "MCT 6531E": {
+    "code": "MCT 6531E",
+    "titre": "Composition et création sonore pour l'écran 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6531",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6531e/",
+    "scrapeISO": "2026-09-13T06:21:50.278Z"
+  },
+  "MCT 6532E": {
+    "code": "MCT 6532E",
+    "titre": "Composition et création sonore pour l'écran 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6532",
+    "prealablesBrut": "MCT6531 ou MCT6531E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6531"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6531E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6532e/",
+    "scrapeISO": "2026-09-13T06:21:52.818Z"
+  },
+  "MCT 6533": {
+    "code": "MCT 6533",
+    "titre": "Composition et création sonore pour l'écran 3",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6533E",
+    "prealablesBrut": "MCT6532 ou MCT6532E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6532"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6532E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6533/",
+    "scrapeISO": "2026-09-13T06:21:54.672Z"
+  },
+  "MCT 6534": {
+    "code": "MCT 6534",
+    "titre": "Composition et création sonore pour l'écran 4",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création sonore et musicale pour l'écran au niveau supérieur. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins de l'étudiant. Cours équivalent(s) : MCT6534E",
+    "prealablesBrut": "MCT6533 ou MCT6533E",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 6533"
+        },
+        {
+          "genre": "cours",
+          "code": "MCT 6533E"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6534/",
+    "scrapeISO": "2026-09-13T06:21:56.658Z"
+  },
+  "MCT 6920E": {
+    "code": "MCT 6920E",
+    "titre": "Stage",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Stage au sein d'un organisme non universitaire (compagnie de production musicale ou audiovisuelle) ou auprès d'un professionnel pouvant agir comme mentor dans le domaine de la musique et de la conception sonore pour l'écran (cinéma, jeu vidéo, etc.). Cours équivalent(s) : MCT6920",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6920e/",
+    "scrapeISO": "2026-09-13T06:21:58.413Z"
+  },
+  "MCT 6950": {
+    "code": "MCT 6950",
+    "titre": "Projet final et mémoire",
+    "credits": 9,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Projet de recherche-création en composition pour l'écran : oeuvres originales accompagnées d'un mémoire présentant la démarche artistique, une recherche théorique reliée à cette démarche, l'analyse des oeuvres et la présentation du contexte de création. Cours équivalent(s) : MCT6950E",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6950/",
+    "scrapeISO": "2026-09-13T06:22:00.565Z"
+  },
+  "MCT 1601": {
+    "code": "MCT 1601",
+    "titre": "Composition instrumentale 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création musicale. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins des étudiants.",
+    "prealablesBrut": "MTE1404",
+    "prealables": {
+      "genre": "cours",
+      "code": "MTE 1404"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1601/",
+    "scrapeISO": "2026-09-13T06:30:17.721Z"
+  },
+  "MCT 1602": {
+    "code": "MCT 1602",
+    "titre": "Composition instrumentale 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création musicale. Séminaires, cours de groupe et direction individuelle sont dosés selon les méthodes propres aux professeurs et les besoins des étudiants.",
+    "prealablesBrut": "MCT1601",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1601"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1602/",
+    "scrapeISO": "2026-09-13T06:30:21.012Z"
+  },
+  "MCT 1603": {
+    "code": "MCT 1603",
+    "titre": "Composition instrumentale 3",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail individuel de composition instrumentale suivi en petit groupe.",
+    "prealablesBrut": "MCT 1602",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1602"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1603/",
+    "scrapeISO": "2026-09-13T06:30:27.422Z"
+  },
+  "MCT 1604": {
+    "code": "MCT 1604",
+    "titre": "Composition instrumentale 4",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail individuel de composition instrumentale suivi en petit groupe.",
+    "prealablesBrut": "MCT1603",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1603"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1604/",
+    "scrapeISO": "2026-09-13T06:30:29.438Z"
+  },
+  "MCT 1701": {
+    "code": "MCT 1701",
+    "titre": "Composition mixte 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création musicale en composition mixte. Apprentissage de stratégies compositionnelles propres à la musique mixte. Cours de groupe et direction individuelle selon les méthodes propres aux professeurs et les besoins des étudiants.",
+    "prealablesBrut": "MCT1602",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1602"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "MCT1701/MCT1501",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1701/",
+    "scrapeISO": "2026-09-13T06:30:31.552Z"
+  },
+  "MCT 1702": {
+    "code": "MCT 1702",
+    "titre": "Composition mixte 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail de création musicale en composition mixte. Apprentissage de stratégies compositionnelles propres à la musique mixte. Cours de groupe et direction individuelle selon les méthodes propres aux professeurs et les besoins des étudiants.",
+    "prealablesBrut": "MCT1701",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1701"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1702/",
+    "scrapeISO": "2026-09-13T06:30:33.461Z"
+  },
+  "MCT 1801": {
+    "code": "MCT 1801",
+    "titre": "Composition pour l'image 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail individuel de composition musicale pour l'image suivi en petit groupe.",
+    "prealablesBrut": "MCT1602",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1602"
+    },
+    "concomitantsBrut": "MCT1801 et MCT3511X",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1801/",
+    "scrapeISO": "2026-09-13T06:30:38.202Z"
+  },
+  "MCT 1802": {
+    "code": "MCT 1802",
+    "titre": "Composition pour l'image 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Travail individuel de composition musicale pour l'image suivi en petit groupe.",
+    "prealablesBrut": "MCT1801",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1801"
+    },
+    "concomitantsBrut": "MCT1802 et MCT3512X",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1802/",
+    "scrapeISO": "2026-09-13T06:30:39.605Z"
   }
 }

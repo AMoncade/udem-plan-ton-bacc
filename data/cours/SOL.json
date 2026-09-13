@@ -1993,5 +1993,171 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-6906/",
     "scrapeISO": "2026-09-13T05:14:07.118Z"
+  },
+  "SOL 7011A": {
+    "code": "SOL 7011A",
+    "titre": "Séminaire général",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Regards diversifiés sur les préoccupations fondamentales de la discipline et du raisonnement sociologique. Le séminaire cible notamment les enjeux contemporains en sociologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-7011a/",
+    "scrapeISO": "2026-09-13T06:37:44.334Z"
+  },
+  "SOL 7011B": {
+    "code": "SOL 7011B",
+    "titre": "Séminaire général",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Regards diversifiés sur les préoccupations fondamentales de la discipline et du raisonnement sociologique. Le séminaire cible notamment les enjeux contemporains en sociologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-7011b/",
+    "scrapeISO": "2026-09-13T06:37:46.010Z"
+  },
+  "SOL 7021": {
+    "code": "SOL 7021",
+    "titre": "Séminaire de thèse 1",
+    "credits": 1.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Accompagnement du développement du projet de thèse en vue de familiariser les doctorants avec différents aspects de la carrière de chercheur (préparation et évaluation de protocoles de recherche, critique des travaux de collègues, etc.).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-7021/",
+    "scrapeISO": "2026-09-13T06:37:50.069Z"
+  },
+  "SOL 7022": {
+    "code": "SOL 7022",
+    "titre": "Séminaire de thèse 2",
+    "credits": 1.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Accompagnement du développement du projet de thèse en familiarisant les doctorants avec différents aspects de la carrière de chercheur (préparation et évaluation de protocoles de recherche, critique des travaux de collègues, etc.).",
+    "prealablesBrut": "SOL7021",
+    "prealables": {
+      "genre": "cours",
+      "code": "SOL 7021"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-7022/",
+    "scrapeISO": "2026-09-13T06:37:52.073Z"
+  },
+  "SOL 7040": {
+    "code": "SOL 7040",
+    "titre": "Travaux dirigés",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cette activité permet au professeur et aux étudiants de tracer un programme de travail en vue de la réalisation d'une démarche de recherche reliée à la thèse.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-7040/",
+    "scrapeISO": "2026-09-13T06:37:54.524Z"
+  },
+  "SOL 7050": {
+    "code": "SOL 7050",
+    "titre": "Recherche",
+    "credits": 10,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "",
+    "prealablesBrut": "SOL7022",
+    "prealables": {
+      "genre": "cours",
+      "code": "SOL 7022"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-7050/",
+    "scrapeISO": "2026-09-13T06:37:56.439Z"
+  },
+  "SOL 7070": {
+    "code": "SOL 7070",
+    "titre": "Thèse",
+    "credits": 65,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-7070/",
+    "scrapeISO": "2026-09-13T06:37:58.403Z"
   }
 }

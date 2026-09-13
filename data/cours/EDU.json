@@ -1547,5 +1547,410 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-7752/",
     "scrapeISO": "2026-09-13T06:15:12.480Z"
+  },
+  "EDU 6006": {
+    "code": "EDU 6006",
+    "titre": "Épistémologie et recherche",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Réflexion critique sur le développement, la diffusion et l’appropriation des savoirs scientifiques. Courants épistémologiques et types de savoirs. Enjeux éthiques. Recherche quantitative/qualitative/mixte. Articulation d’une recherche.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6006/",
+    "scrapeISO": "2026-09-13T06:24:19.897Z"
+  },
+  "EDU 6751": {
+    "code": "EDU 6751",
+    "titre": "Stage de recherche 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Ce cours est publié sans description. Remarque : Intégration à un centre, laboratoire, groupe ou à une équipe de recherche dans une université québécoise, canadienne.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6751/",
+    "scrapeISO": "2026-09-13T06:24:22.089Z"
+  },
+  "EDU 1008": {
+    "code": "EDU 1008",
+    "titre": "Stage 1 de familiarisation en FLS au secondaire",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Familiarisation à l'école secondaire et introduction à la fonction enseignante. Observation des adolescents à l'école en situation d'apprentissage de la langue d'accueil Étude des services. Entrevue avec des intervenants. Étude du projet éducatif. Remarque : français langue seconde (FLS) Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "EDU1008 et ETA1002",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-1008/",
+    "scrapeISO": "2026-09-13T06:28:16.046Z"
+  },
+  "EDU 2108": {
+    "code": "EDU 2108",
+    "titre": "Stage 2 en enseignement du FLS au primaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Observation et analyse des différentes facettes de la tâche enseignante au primaire. Prise en charge progressive de périodes d'enseignement auprès d'élèves en situation d’apprentissage de la langue française. Assistanat auprès d'un enseignant associé. Remarque : français langue seconde (FLS) Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU1008 et ETA1002 et PPA3222",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 1008"
+        },
+        {
+          "genre": "cours",
+          "code": "ETA 1002"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 3222"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU2108 et PPA2025",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-2108/",
+    "scrapeISO": "2026-09-13T06:28:16.179Z"
+  },
+  "EDU 3107": {
+    "code": "EDU 3107",
+    "titre": "Stage 3 en enseignement du FLS",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Développement d'habiletés d'enseignement en français langue seconde (FLS). Gestion de classe. Intervention et réflexion sur les pratiques Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU2108",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 2108"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3107/",
+    "scrapeISO": "2026-09-13T06:28:20.104Z"
+  },
+  "EDU 4107": {
+    "code": "EDU 4107",
+    "titre": "Stage 4 en enseignement du FLS",
+    "credits": 9,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Stage d'enseignement en français langue seconde (FLS) au primaire, au secondaire ou à l'éducation des adultes. Gestion de classe. Intervention, prise en charge et réflexion sur les pratiques. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU3107 et avoir réussi 75 cr. du 1-821-1-0",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU3107 et avoir réussi 75 cr. du 1-821-1-0"
+    },
+    "concomitantsBrut": "EDU4107 et DID4441 et EDU4211L",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4107/",
+    "scrapeISO": "2026-09-13T06:28:22.191Z"
+  },
+  "EDU 4211L": {
+    "code": "EDU 4211L",
+    "titre": "Réalisation d'un projet pédagogique en FLS",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Réalisation d'un projet pédagogique en français langue seconde s'apparentant à une démarche de recherche-expérimentation visant à résoudre une problématique vécue dans son enseignement auprès d'élèves. Participation au colloque des finissants. Remarque : français langue seconde (FLS)",
+    "prealablesBrut": "avoir réussi 75 crédits du programme d'études 1-821-1-0",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir réussi 75 crédits du programme d'études 1-821-1-0"
+    },
+    "concomitantsBrut": "EDU4211L et DID4441 et EDU4107",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4211l/",
+    "scrapeISO": "2026-09-13T06:28:22.601Z"
+  },
+  "EDU 1410": {
+    "code": "EDU 1410",
+    "titre": "Stage 1 en adaptation scolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Enseignement adapté aux élèves à risque au primaire ou aux élèves HDAA au secondaire. Prise en charge de quelques périodes d'enseignement. Adaptation des activités aux besoins et aux caractéristiques des élèves. Remarque : élèves en situation de handicap ou en difficulté d’adaptation ou d’apprentissage (HDAA) Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "EDU1410 et ETA1002",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-1410/",
+    "scrapeISO": "2026-09-13T06:29:10.509Z"
+  },
+  "EDU 2410": {
+    "code": "EDU 2410",
+    "titre": "Stage 2 en adaptation scolaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Enseignement adapté aux élèves à risque au primaire ou au secondaire. Prise en charge progressive de périodes d'enseignement. Adaptation des activités et du matériel aux besoins et caractéristiques des élèves. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU1410 et ETA1002 et PPA2110 et PPA1384",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "EDU 1410"
+        },
+        {
+          "genre": "cours",
+          "code": "ETA 1002"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 2110"
+        },
+        {
+          "genre": "cours",
+          "code": "PPA 1384"
+        }
+      ]
+    },
+    "concomitantsBrut": "EDU2410 et PPA2024",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-2410/",
+    "scrapeISO": "2026-09-13T06:29:13.588Z"
+  },
+  "EDU 4215A": {
+    "code": "EDU 4215A",
+    "titre": "Réalisation d’un projet pédagogique en AS",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Réalisation d’un projet pédagogique en adaptation scolaire s’apparentant à une démarche de recherche-expérimentation visant à résoudre une problématique vécue dans son enseignement auprès d’élèves. Participation au colloque des finissants. Remarque : adaptation scolaire (AS)",
+    "prealablesBrut": "108 crédits des programmes 1-857-1-0 ou 1-857-1-9",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "108 crédits des programmes 1-857-1-0 ou 1-857-1-9"
+    },
+    "concomitantsBrut": "EDU4215A et (EDU4103 ou EDU4310)",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4215a/",
+    "scrapeISO": "2026-09-13T06:29:15.389Z"
+  },
+  "EDU 3003": {
+    "code": "EDU 3003",
+    "titre": "Stage 3 en adaptation scolaire au primaire",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Enseignement aux élèves HDAA du primaire dans différents milieux. Remarque : élèves en situation de handicap ou en difficulté d’adaptation ou d’apprentissage (HDAA) Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU2410",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 2410"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3003/",
+    "scrapeISO": "2026-09-13T06:29:28.278Z"
+  },
+  "EDU 4103": {
+    "code": "EDU 4103",
+    "titre": "Stage 4 en adaptation scolaire au primaire",
+    "credits": 9,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Enseignement et exercice autonome des fonctions dans un milieu scolaire au primaire. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU3003 et 108 crédits des programmes 1-857-1-0 OU 1-857-1-9",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU3003 et 108 crédits des programmes 1-857-1-0 OU 1-857-1-9"
+    },
+    "concomitantsBrut": "EDU4103 et EDU4215A",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4103/",
+    "scrapeISO": "2026-09-13T06:29:30.536Z"
+  },
+  "EDU 3110": {
+    "code": "EDU 3110",
+    "titre": "Stage 3 en adaptation scolaire au secondaire",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Enseignement aux élèves HDAA du secondaire dans différents milieux. Remarque : élèves en situation de handicap ou en difficulté d’adaptation ou d’apprentissage (HDAA)",
+    "prealablesBrut": "EDU2410",
+    "prealables": {
+      "genre": "cours",
+      "code": "EDU 2410"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-3110/",
+    "scrapeISO": "2026-09-13T06:29:55.125Z"
+  },
+  "EDU 4310": {
+    "code": "EDU 4310",
+    "titre": "Stage 4 en adaptation scolaire au secondaire",
+    "credits": 9,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Enseignement et exercice autonome des fonctions dans un milieu scolaire au secondaire. Remarque : Les personnes étudiantes doivent respecter les exigences des milieux de stage, notamment en matière de laïcité et d'interdiction du port de signes religieux.",
+    "prealablesBrut": "EDU3110 et 108 crédits des programmes 1-857-1-0 ou 1-857-1-9",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU3110 et 108 crédits des programmes 1-857-1-0 ou 1-857-1-9"
+    },
+    "concomitantsBrut": "EDU4310 et EDU4215A",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-4310/",
+    "scrapeISO": "2026-09-13T06:29:57.283Z"
+  },
+  "EDU 6010": {
+    "code": "EDU 6010",
+    "titre": "Intégration des apprentissages 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Faire le point sur l'état des connaissances acquises. Comparaison entre les objectifs au départ et les objectifs anticipés en fin de formation. Analyse des moyens d'apprentissage développés tout au long du programme. Cours équivalent(s) : MMD6314 et MMD63141",
+    "prealablesBrut": "avoir réussi 24 crédits de cours dans le 2-812-1-2 ou le 2-812-1-3",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "avoir réussi 24 crédits de cours dans le 2-812-1-2 ou le 2-812-1-3"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6010/",
+    "scrapeISO": "2026-09-13T06:32:12.548Z"
+  },
+  "EDU 6015": {
+    "code": "EDU 6015",
+    "titre": "Intégration des apprentissages 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des sciences de l'éducation",
+    "description": "Faire le point sur les apprentissages réalisés tout au long du programme en lien avec une réflexion sur ses propres pratiques d'enseignement, de formation ou de gestion. Analyse critique de ses pratiques professionnelles.",
+    "prealablesBrut": "EDU6010 et avoir réussi 36 crédits de cours dans le 2-812-1-3.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "EDU6010 et avoir réussi 36 crédits de cours dans le 2-812-1-3."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6015/",
+    "scrapeISO": "2026-09-13T06:38:59.966Z"
   }
 }
