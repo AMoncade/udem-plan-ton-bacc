@@ -5,6 +5,8 @@ import type {
   CodeCours,
   ContrainteContenu,
   Cours,
+  GenreSignal,
+  Signal,
   DiagnosticCours,
   EtatBloc,
   NoeudPrealable,
@@ -83,6 +85,10 @@ export type {
 // ---------------------------------------------------------------------------
 // Utilitaires
 // ---------------------------------------------------------------------------
+
+/** Émettre un constat classé. Passé aux fonctions qui en produisent hors de
+ *  `auditProgramme`, pour qu'un seul endroit alimente les deux listes. */
+type Emetteur = (genre: GenreSignal, message: string, cleBloc?: string) => void;
 
 /** Crédits exploitables d'une fiche, ou null si la fiche est absente ou porte
  *  une valeur inutilisable. null veut dire « inconnu », jamais « zéro ». */
@@ -663,6 +669,23 @@ export function auditProgramme(
   const { fiches } = indexerFiches(catalogue);
   const { faits: acquis, invalides } = normaliserEnsemble(faits);
   const problemes: string[] = [];
+  const signaux: Signal[] = [];
+
+  /**
+   * ÉMETTRE UN CONSTAT, dans les deux listes à la fois.
+   *
+   * `problemes` n'est PAS dérivé de `signaux`, et ce n'est pas un oubli :
+   * dériver rendrait la divergence impossible mais déplacerait le risque —
+   * reformuler un message changerait alors le texte de trois écrans sans
+   * qu'aucun test ne le dise, et les tests qui épinglent ces phrases vivent
+   * ailleurs. Les deux listes sont donc remplies ICI, au même endroit, et un
+   * test d'accord vérifie qu'elles portent le même ensemble de messages. Il
+   * échoue bruyamment le jour où quelqu'un n'alimente qu'un seul côté.
+   */
+  const signaler: Emetteur = (genre, message, cleBloc) => {
+    problemes.push(message);
+    signaux.push(cleBloc === undefined ? { genre, message } : { genre, message, cleBloc });
+  };
 
   // --- cheminements exclusifs (R1) -----------------------------------------
   // Les blocs de deux cheminements ne s'additionnent PAS : on en suit un. Sans
@@ -678,7 +701,7 @@ export function auditProgramme(
   // remplacerait un écran par une page blanche. On la convertit donc en
   // verdict NON AFFIRMABLE, ce que le moteur sait déjà dire.
   const { blocs, cheminementNonResolu } = choisirBlocs(programme, cheminement);
-  if (cheminementNonResolu !== null) problemes.push(cheminementNonResolu);
+  if (cheminementNonResolu !== null) signaler("choixAttendu", cheminementNonResolu);
 
   // --- préparation des calculs par bloc ------------------------------------
   const calculs: Calcul[] = blocs.map((bloc) => ({
@@ -799,7 +822,7 @@ export function auditProgramme(
   let donneesIncoherentes = false;
   const incoherence = (message: string) => {
     donneesIncoherentes = true;
-    problemes.push(message);
+    signaler("donneesAmont", message);
   };
 
   for (const cle of clesDupliquees) {
@@ -839,7 +862,7 @@ export function auditProgramme(
   }
 
   // --- blocs à contenu ouvert : invérifiables, jamais avalés ---------------
-  const ouvertsNonAffirmables = traiterContenuOuvert(calculs, problemes);
+  const ouvertsNonAffirmables = traiterContenuOuvert(calculs, signaler);
 
   // --- quotas par sigle (R2) : vérifiés, plus seulement conservés ----------
   // Ces règles ne se voient PAS bloc par bloc — c'est le piège de l'actuariat
@@ -864,10 +887,11 @@ export function auditProgramme(
   for (const r of resultatsSigles) {
     if (r.etat === "satisfaite") continue;
     if (r.contrainte.genre === "minimum") siglesNonAffirmables++;
-    problemes.push(r.message);
+    signaler(r.etat === "violee" ? "bloque" : "nonVerifiable", r.message);
   }
   for (const p of prosesNonLues) {
-    problemes.push(
+    signaler(
+      "nonVerifiable",
       `prose de quota NON évaluée (${p.raison}) : « ${p.phrase} ». Le moteur ne l'applique pas — à lire soi-même.`,
     );
   }
@@ -888,8 +912,10 @@ export function auditProgramme(
   // --- niveau 1 : bornes de chaque bloc -----------------------------------
   for (const c of calculs) {
     if (c.manquants > 0) {
-      problemes.push(
+      signaler(
+        "bloque",
         `il manque ${cr(c.manquants)} dans le bloc ${nomBloc(c.bloc)} : ${cr(c.comptes)} sur un minimum de ${cr(c.bornes.min)}.`,
+        c.cle,
       );
     }
   }
@@ -955,8 +981,8 @@ export function auditProgramme(
       message +=
         ` N'importe quel cours qui n'est cité par aucun bloc du programme y compte ; un cours d'option en surplus, non.`;
     }
-    problemes.push(message);
-    problemes.push(...messagesPerdus(calculs, type));
+    signaler("bloque", message);
+    for (const m of messagesPerdus(calculs, type)) signaler("perteOuSurplus", m);
   }
 
   // --- niveau 2 bis : un total de type qui DÉPASSE son intervalle ---------
@@ -971,7 +997,8 @@ export function auditProgramme(
     retenuApresPlafondType = arrondi(retenuApresPlafondType + retenu);
     const surplus = arrondi(obtenu - retenu);
     if (surplus > 0) {
-      problemes.push(
+      signaler(
+        "perteOuSurplus",
         `${cr(surplus)} ${libelle[type]} dépassent le maximum de ${cr(borne.max)} que le programme autorise pour ce type : ils sont réussis mais ne comptent pas vers le diplôme.`,
       );
     }
@@ -986,7 +1013,8 @@ export function auditProgramme(
       ? 0
       : arrondi(Math.max(0, contraintes.creditsTotal - retenuApresPlafondType));
   if (manqueTotal > 0 && manques.obligatoire === 0 && manques.option === 0 && manques.choix === 0) {
-    problemes.push(
+    signaler(
+      "bloque",
       `chaque type de crédits est dans son intervalle, mais il manque ${cr(manqueTotal)} au total du programme : ` +
         `${cr(retenuApresPlafondType)} comptent sur les ${cr(contraintes.creditsTotal ?? 0)} exigés. ` +
         `Les intervalles par type sont couplés par la somme : en être dans chacun ne suffit pas.`,
@@ -996,26 +1024,30 @@ export function auditProgramme(
   // --- limites de l'audit lui-même : jamais avalées -----------------------
   const inconnus = dedup(calculs.flatMap((c) => c.creditsInconnus));
   if (inconnus.length > 0) {
-    problemes.push(
+    signaler(
+      "donneesAmont",
       `${inconnus.length === 1 ? "1 cours marqué fait n'a" : `${inconnus.length} cours marqués faits n'ont`} aucune fiche dans le catalogue (${listerCodes(inconnus)}) : ` +
         `crédits inconnus, comptés comme 0. Le verdict ci-dessus est donc au pire trop sévère, jamais trop clément.`,
     );
   }
   if (invalides.length > 0) {
-    problemes.push(
+    signaler(
+      "donneesAmont",
       `${invalides.length} code(s) de cours fait(s) non reconnu(s) et ignoré(s) (${listerCodes(invalides)}) : forme attendue « ABC 1234 ».`,
     );
   }
   if (affectation.horsBloc.length > 0) {
-    problemes.push(
+    signaler(
+      "perteOuSurplus",
       `${affectation.horsBloc.length} cours fait(s) n'entre(nt) dans aucun bloc de ce programme (${listerCodes(affectation.horsBloc)}) : leurs crédits ne comptent pas vers le diplôme.`,
     );
   }
   if (chevauchements.length > 0) {
-    problemes.push(messageChevauchement(chevauchements, affectation, calculs));
+    signaler("informatif", messageChevauchement(chevauchements, affectation, calculs));
   }
   if (affectation.tronquee) {
-    problemes.push(
+    signaler(
+      "nonVerifiable",
       `la recherche d'affectation a été TRONQUÉE au plafond de ${PLAFOND_AFFECTATIONS} affectations ` +
         `(${affectation.combinaisons === Infinity ? "plus de 2^53" : affectation.combinaisons} possibles) : ` +
         `une affectation conforme existe peut-être et n'a pas été trouvée. Ce verdict de non-conformité n'est PAS démontré.`,
@@ -1026,12 +1058,13 @@ export function auditProgramme(
   const nbNotes =
     (programme.notes ?? []).length + calculs.reduce((s, c) => s + (c.bloc.notes ?? []).length, 0);
   if (nbNotes > 0) {
-    problemes.push(
+    signaler(
+      "nonVerifiable",
       `${nbNotes} note(s) normative(s) de la page ne sont PAS évaluées par le moteur (prose des blocs et du programme : séquences, autorisations, quotas par sigle, « trois cours dans la même discipline »). ` +
         `À lire avant de se fier au verdict ci-dessus.`,
     );
   }
-  problemes.push(...exigences.notes);
+  for (const n of exigences.notes) signaler("informatif", n);
 
   // --- verdict -------------------------------------------------------------
   const blocsConformes = calculs.every((c) => c.manquants === 0 && c.bornes.illisible === null);
@@ -1087,6 +1120,7 @@ export function auditProgramme(
     creditsChoix,
     conforme,
     problemes,
+    signaux,
   };
 }
 
@@ -1115,7 +1149,7 @@ export function auditProgramme(
  *
  * @returns le nombre de blocs ouverts qui empêchent d'affirmer la conformité.
  */
-function traiterContenuOuvert(calculs: Calcul[], problemes: string[]): number {
+function traiterContenuOuvert(calculs: Calcul[], signaler: Emetteur): number {
   let nonAffirmables = 0;
   for (const c of calculs) {
     // Un bloc devenu auditable (exclusion de sigle sur un bloc « Choix ») a
@@ -1129,16 +1163,20 @@ function traiterContenuOuvert(calculs: Calcul[], problemes: string[]): number {
         : ` La page ne dit pas non plus où les trouver.`;
     if (c.bornes.min > 0) {
       nonAffirmables++;
-      problemes.push(
+      signaler(
+        "nonVerifiable",
         `le bloc ${nomBloc(c.bloc)} (« ${c.bloc.regleBrut} ») n'énumère aucun cours : son contenu est décrit en prose et renvoie à un ensemble extérieur à ces données. ` +
           `Comme il exige un minimum de ${cr(c.bornes.min)}, l'audit NE PEUT PAS établir la conformité de ce programme — ce n'est pas « il vous manque des crédits », c'est « je ne sais pas vérifier ».` +
           renvoi,
+        c.cle,
       );
     } else {
-      problemes.push(
+      signaler(
+        "nonVerifiable",
         `le bloc ${nomBloc(c.bloc)} (« ${c.bloc.regleBrut} ») n'énumère aucun cours : son contenu est décrit en prose et renvoie à un ensemble extérieur à ces données. ` +
           `Il n'impose aucun minimum, donc il n'empêche pas de diplômer, mais l'audit ne peut ni compter ni vérifier ce que vous y avez fait.` +
           renvoi,
+        c.cle,
       );
     }
   }

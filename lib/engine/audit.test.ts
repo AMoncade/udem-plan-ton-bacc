@@ -904,3 +904,75 @@ describe("le total d'option : minimums STRICTEMENT supérieurs", () => {
     expect(joint(a)).not.toMatch(/suffit à atteindre le total/);
   });
 });
+
+/**
+ * `signaux` et `problemes` : deux listes remplies au même endroit, et un test
+ * qui vérifie qu'elles ne se séparent pas.
+ *
+ * `problemes` n'est PAS dérivé de `signaux`, délibérément : dériver rendrait la
+ * divergence impossible mais déplacerait le risque — reformuler un message
+ * changerait le texte de trois écrans sans qu'aucun test ne le dise, et les
+ * tests qui épinglent ces phrases vivent dans `tests/coutures.test.ts`. Le prix
+ * de ce choix est qu'une divergence devient possible ; ce test est ce qui la
+ * rend bruyante.
+ *
+ * Comparaison TRIÉE et non en ensembles : insensible à l'ordre — réordonner les
+ * émissions ne casse rien et ne doit pas faire tomber un test, sinon il finit
+ * désactivé — mais sensible au NOMBRE, qu'un `Set` effacerait en silence si un
+ * message était émis deux fois d'un seul côté.
+ */
+describe("accord entre signaux et problemes", () => {
+  const auditsVaries = (): Audit[] => [
+    auditer([]),
+    auditer([...OBLIGATOIRES]),
+    auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX]),
+    auditProgramme(programmeContenuOuvert(6), catalogueContenuOuvert(6), new Set<string>()),
+  ];
+
+  it("portent exactement les mêmes messages, dans n'importe quel ordre", () => {
+    for (const a of auditsVaries()) {
+      expect([...a.signaux.map((s) => s.message)].sort()).toEqual([...a.problemes].sort());
+    }
+  });
+
+  it("chaque signal porte un genre de l'union, jamais une chaîne libre", () => {
+    const connus = new Set([
+      "bloque",
+      "choixAttendu",
+      "perteOuSurplus",
+      "nonVerifiable",
+      "donneesAmont",
+      "informatif",
+    ]);
+    for (const a of auditsVaries()) {
+      for (const s of a.signaux) {
+        expect(connus.has(s.genre), `genre inattendu : ${s.genre} — « ${s.message} »`).toBe(true);
+      }
+    }
+  });
+
+  it("un signal qui parle d'un bloc nomme ce bloc", () => {
+    // C'est ce qui permet à l'écran de l'ancrer SOUS la ligne du bloc plutôt
+    // que dans une liste globale, à vingt lignes de ce qu'il explique.
+    const a = auditer([]);
+    const surBloc = a.signaux.filter((s) => /dans le bloc /.test(s.message));
+    expect(surBloc.length).toBeGreaterThan(0);
+    for (const s of surBloc) expect(s.cleBloc, `sans cleBloc : « ${s.message} »`).toBeDefined();
+  });
+
+  it("un signal qui ne vise aucun bloc n'invente pas de clé", () => {
+    // Contrôle symétrique : un total d'option n'appartient à aucun bloc, et lui
+    // en attribuer un serait pire que de le laisser dans la liste globale.
+    const a = auditer([...OBLIGATOIRES]);
+    const surTotal = a.signaux.filter((s) => /crédits de cours d'option/.test(s.message));
+    expect(surTotal.length).toBeGreaterThan(0);
+    for (const s of surTotal) expect(s.cleBloc).toBeUndefined();
+  });
+
+  it("les genres attendus apparaissent sur un parcours vide", () => {
+    // Sans ce contrôle, les tests ci-dessus passeraient sur une liste vide.
+    const genres = new Set(auditer([]).signaux.map((s) => s.genre));
+    expect(genres.has("bloque")).toBe(true);
+    expect(genres.has("informatif")).toBe(true);
+  });
+});
