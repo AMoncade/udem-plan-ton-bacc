@@ -929,10 +929,24 @@ export function auditProgramme(
       // phrase était dite sans garde, accrochée à « il manque des crédits »
       // plutôt qu'à la comparaison qu'elle énonce ; l'écran affichait donc deux
       // conclusions opposées sur les deux mêmes nombres.
-      message +=
-        minsOption < borne.min
-          ? ` Les minimums des blocs d'option ne totalisent que ${cr(minsOption)} : atteindre chaque minimum NE SUFFIT PAS.`
-          : ` Les minimums des blocs d'option totalisent ${cr(minsOption)}, soit au moins les ${cr(borne.min)} exigés : satisfaire chaque bloc suffit à atteindre le total.`;
+      // TROIS cas, et le troisième se tait exprès.
+      //
+      //   minimums <  exigé : le piège de l'actuariat (18 pour 33). Remplir
+      //                       chaque bloc laisse l'étudiant en dessous.
+      //   minimums == exigé : remplir chaque bloc suffit exactement. On le dit,
+      //                       parce que l'aperçu le dit aussi et que se taire
+      //                       laisserait croire au piège.
+      //   minimums >  exigé : les blocs FORCENT plus que le total annoncé —
+      //                       c'est déjà signalé comme une incohérence de
+      //                       données plus haut. Ajouter « satisfaire chaque
+      //                       bloc suffit » y serait une phrase rassurante à
+      //                       côté d'une contradiction, et recréerait les deux
+      //                       conclusions opposées que ce correctif ferme.
+      if (minsOption < borne.min) {
+        message += ` Les minimums des blocs d'option ne totalisent que ${cr(minsOption)} : atteindre chaque minimum NE SUFFIT PAS.`;
+      } else if (minsOption === borne.min) {
+        message += ` Les minimums des blocs d'option totalisent exactement les ${cr(borne.min)} exigés : satisfaire chaque bloc suffit à atteindre le total.`;
+      }
       message +=
         ` Ajoutez ${cr(manque)} dans n'importe quel bloc d'option encore sous son maximum` +
         (restantes.length > 0 ? ` (place restante : ${restantes.join(", ")}).` : ".");

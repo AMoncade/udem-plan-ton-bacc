@@ -837,3 +837,70 @@ describe("le total d'option : la phrase n'est dite que quand elle est vraie", ()
     expect(joint(a)).not.toMatch(/NE SUFFIT PAS/);
   });
 });
+
+/**
+ * Le cas STRICTEMENT SUPÉRIEUR se tait, et ce n'est pas un oubli.
+ *
+ * Quand les minimums des blocs dépassent le total d'option annoncé, les blocs
+ * FORCENT plus que le programme n'exige : c'est déjà rapporté comme une
+ * incohérence de données. Y ajouter « satisfaire chaque bloc suffit » mettrait
+ * une phrase rassurante à côté d'une contradiction — les deux conclusions
+ * opposées que le correctif venait de fermer, reconstituées autrement.
+ */
+describe("le total d'option : minimums STRICTEMENT supérieurs", () => {
+  const blocOption = (id: string, min: number, max: number, cours: string[]): Bloc => ({
+    id,
+    cle: cleBloc("70", id, ""),
+    segment: "70",
+    nom: "",
+    regle: { type: "option", bornes: { min, max } },
+    regleBrut: `Option - Minimum ${min} crédits, maximum ${max} crédits.`,
+    cours,
+    contenuOuvert: false,
+    notes: [],
+  });
+  const FICHES2 = ["IFT 1000", "IFT 1010", "IFT 2000", "IFT 2010"].map((c) => ficheTest(c, 3));
+
+  it("l'incohérence parle, la phrase rassurante se tait", () => {
+    const p: Programme = {
+      id: "test-option-superieur",
+      nom: "Programme SYNTHÉTIQUE : les blocs forcent plus que le total annoncé",
+      orientation: null,
+      segments: ["70"],
+      orientations: [],
+      cycle: "1er cycle",
+      faculte: "Arts et sciences",
+      typeProgramme: "Baccalauréat",
+      creditsTotal: 12,
+      exigences: {
+        brut: "12 crédits à option (SYNTHÉTIQUE)",
+        obligatoire: { min: 0, max: 0 },
+        option: { min: 12, max: 12 },
+        choix: { min: 0, max: 0 },
+      },
+      blocs: [
+        blocOption("70A", 9, 30, ["IFT 1000", "IFT 1010"]),
+        blocOption("70B", 9, 30, ["IFT 2000", "IFT 2010"]),
+      ],
+      notes: [],
+      url: "https://exemple.invalide/test-option-superieur",
+      scrapeISO: "2026-09-13T00:00:00.000Z",
+    };
+    const a = auditProgramme(
+      p,
+      {
+        programmes: [p],
+        cours: Object.fromEntries(FICHES2.map((f) => [f.code, f])),
+        prealablesNonParses: [],
+        journal: [],
+        scrapeISO: "",
+      } as Catalogue,
+      new Set(["IFT 1000"]),
+    );
+    // 9 + 9 = 18 forcés pour 12 exigés : la page se contredit, et on le dit.
+    expect(joint(a)).toMatch(/incohérence des données : les minimums des blocs d'option totalisent 18 crédits/);
+    // Et on n'ajoute AUCUNE des deux phrases sur la suffisance.
+    expect(joint(a)).not.toMatch(/NE SUFFIT PAS/);
+    expect(joint(a)).not.toMatch(/suffit à atteindre le total/);
+  });
+});
