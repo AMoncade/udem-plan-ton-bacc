@@ -423,3 +423,74 @@ un correctif d'extracteur est un **re-parse disque**, pas un re-scrape. La passe
 complète du 2026-09-11 a coûté **52 s et 24 requêtes réseau** pour 1 089 programmes (1 079
 lectures de cache). Une couture « le parseur change, les données périment » qu'on croyait coûter
 des heures coûte donc une minute.
+
+---
+
+## 11. Scrape terminé — comptabilité de fin de course (2026-09-13)
+
+**L'union est close, et ça se prouve par une addition :**
+
+    9 979 codes cités par les 1 089 programmes
+    = 9 619 fiches écrites  +  360 pages sans étiquette « Crédits »
+
+Zéro code récupérable restant. Ce n'est pas « on s'est arrêtés là » : il n'y a
+plus rien à prendre.
+
+| | |
+|---|---|
+| fiches de cours | **9 619** (190 sujets) |
+| parcours dans l'index | 1 507 |
+| **programmes exploitables ENTIÈREMENT couverts** | **416 sur 581** |
+
+**416 est le PLAFOND, pas une étape.** Les 165 programmes qui ne se ferment pas
+citent tous au moins un des 360 cours dont la page de l'UdeM ne publie pas les
+crédits. Le scraper refuse d'inventer : sur `PSY 40001`, les seules occurrences
+de « crédits » sont les « 90 crédits » des programmes qui citent le cours, et
+les lire donnerait au cours les crédits de son programme.
+
+Ces 360 codes sont attestés dans `IndexProgrammes.codesSansCredits`, **datés un
+par un**. L'entrée est une observation POSITIVE — le parseur constate l'absence
+de l'étiquette sur une page effectivement lue — et non une déduction par
+soustraction, qui aurait confondu « page sans crédits » avec « page pas encore
+obtenue » et fait écrire « jamais » sur un 503.
+
+### Débit réel, mesuré de bout en bout
+
+**2,12 s par page**, sur 2 552 pages en 90 minutes — kills et redémarrages
+compris. Le débit pur d'une tranche est 2,02 s. Le coût est donc **entièrement
+le délai de politesse de 2 s** : le serveur répond en 0,02 s au-delà. Le §7
+budgétait 1,45 s de réponse serveur sur n=12 ; à n>2 500, c'est 0,02 s.
+
+### Ce qui a rendu ces heures récupérables
+
+Cinq interruptions du système faute de mémoire pendant la course. **Aucune n'a
+coûté de réseau** : les pages récupérées restent au cache, et la tranche
+suivante les relit en secondes. Un kill coûte le PARSING d'une tranche, jamais
+sa collecte.
+
+Deux causes traitées en cours de route, toutes deux invisibles sans mesure :
+
+1. **Le seul poste de mémoire qui grossissait.** La reprise désérialisait les
+   183 fichiers de sujet pour n'en lire que les clés — 6 876 fiches complètes
+   construites à chaque tranche, et le coût montait à chaque récolte. Remplacé
+   par un scan des clés de premier niveau, vérifié contre `JSON.parse` sur les
+   données réelles : zéro désaccord. Trente tranches sans kill ensuite.
+
+2. **Les codes stériles rebroutés à chaque tranche.** Une page sans crédits ne
+   produit pas de fiche, donc son code n'entrait jamais dans `data/cours/` et
+   restait candidat indéfiniment. Mesuré : **100 codes traités, 21 fiches
+   écrites, 94 lectures de cache** — 79 % du budget perdu. `--reprendre` les
+   écarte désormais sur la foi de l'attestation. Effet : **91 fiches par tranche
+   au lieu de 21.**
+
+> Le piège n° 2 avait été SIGNALÉ trois heures plus tôt, dans un avertissement
+> imprimé par la passe (« une boucle sur « restantes » ne convergera pas »).
+> Documenter un piège n'est pas le traiter : il a continué de coûter 79 % de
+> chaque tranche jusqu'à ce qu'on le ferme.
+
+### Réversibilité
+
+`--rafraichir` ignore toute la reprise et redemande tout, y compris les codes
+attestés sans crédits. C'est ce qu'il faut lancer si l'UdeM corrige ses pages :
+une observation vieillit, et c'est précisément pourquoi chaque entrée de
+`codesSansCredits` porte sa date.
