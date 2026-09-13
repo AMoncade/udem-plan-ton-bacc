@@ -176,7 +176,75 @@
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-2900/",
-    "scrapeISO": "2026-09-11T11:36:32.811Z"
+    "scrapeISO": "2026-09-13T16:01:30.622Z",
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-09-01",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2026-10-26",
+                "au": "2026-12-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "ORA 70102": {
     "code": "ORA 70102",
