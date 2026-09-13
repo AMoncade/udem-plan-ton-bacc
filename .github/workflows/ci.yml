@@ -30,6 +30,18 @@ jobs:
       - name: Types
         run: npx tsc --noEmit
 
+      # `npm run lint` porte `--max-warnings 0` depuis 32a7085 : un avertissement
+      # d'ESLint sort en 0 et se lit comme un succès, donc le drapeau le rend
+      # bloquant. Mais il ne bloquait RIEN tant que la CI ne le lançait pas — le
+      # cliquet existait sans être branché, et seule une session qui pensait à
+      # taper la commande le voyait. Placé après les types parce qu'il coûte plus
+      # cher qu'eux et moins que les tests.
+      #
+      # Ce contrôle ne voit que les fichiers SUIVIS par git : un brouillon non
+      # commité peut casser le lint en local sans que la CI s'en aperçoive.
+      - name: Lint
+        run: npm run lint
+
       - name: Tests
         run: npm test
 
