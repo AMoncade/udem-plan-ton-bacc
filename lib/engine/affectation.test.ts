@@ -139,7 +139,7 @@ describe("UN PARCOURS CONFORME AVEC CHEVAUCHEMENT EST DÉCLARÉ CONFORME", () =>
     // Onze cours sont cités par deux blocs : l'information remonte toujours.
     expect(joint(a)).toMatch(/11 cours figure\(nt\) dans plusieurs blocs/);
     expect(joint(a)).toMatch(/DRT 3910 : 70K \+ 70L/);
-    expect(joint(a)).toMatch(/RÉSOLUE sous bornes, pas attribuée au premier bloc déclaré/);
+    expect(joint(a)).toMatch(/résolue sous bornes, et non attribuée au premier bloc déclaré/);
     expect(joint(a)).toMatch(/L'affectation retenue est la PREUVE que le parcours tient/);
     expect(joint(a)).toMatch(/70K ← DRT 39\d\d ; 70L ← DRT 39\d\d, DRT 39\d\d, DRT 39\d\d/);
     // Le chevauchement ne rend PAS le parcours non conforme.
@@ -169,7 +169,7 @@ describe("affectation — les cas voisins, pour que le test du dessus ne passe p
     expect(a.creditsOption).toBe(6);
     expect(a.conforme).toBe(false);
     expect(joint(a)).toMatch(/il manque 6 crédits de cours d'option : 6 crédits sur les 12 crédits exigés/);
-    expect(joint(a)).toMatch(/AUCUNE des \d+ affectations possibles ne satisfait toutes les bornes/);
+    expect(joint(a)).toMatch(/Aucune des \d+ affectations possibles ne satisfait toutes les bornes/);
     // Pas de troncature : le « non conforme » est une preuve.
     expect(joint(a)).not.toMatch(/TRONQUÉE/);
   });
@@ -382,9 +382,9 @@ describe("affectation — garanties et limites annoncées", () => {
     const a = auditProgramme(gros, cat, new Set(codes));
     expect(a.conforme).toBe(false);
     expect(joint(a)).toMatch(/la recherche d'affectation a été TRONQUÉE au plafond de 200000 affectations/);
-    expect(joint(a)).toMatch(/Ce verdict de non-conformité n'est PAS démontré/);
+    expect(joint(a)).toMatch(/ce verdict de non-conformité n'est pas démontré/);
     // Et le message de chevauchement ne prétend PAS avoir tout examiné.
-    expect(joint(a)).not.toMatch(/AUCUNE des .* affectations possibles/);
+    expect(joint(a)).not.toMatch(/Aucune des .* affectations possibles/);
   });
 
   it("un cours sans fiche ne fait pas exploser la combinatoire et ne plante pas", () => {

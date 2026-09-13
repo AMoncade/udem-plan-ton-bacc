@@ -199,7 +199,10 @@ describe("projection : les gardes du helper partagé deviennent des verdicts", (
     expect(r[0].etat).toBe("indetermine");
     expect(r[0].a.code).toBe("ACT 1240");
     // Le message doit dire que l'absence de conflit ne vaut rien pour ce cours.
-    expect(r[0].raison).toContain("AUCUNE comparaison");
+    // Le code du cours ne doit PAS être dans la phrase : il vit dans `a.code`,
+    // sinon chaque message devient unique et l'écran ne peut plus les grouper.
+    expect(r[0].raison).toContain("n'est comparé à aucun autre");
+    expect(r[0].raison).not.toContain("ACT 1240");
   });
 
   it("une fiche sans apercuHoraires est signalée, pas silencieusement ignorée", () => {

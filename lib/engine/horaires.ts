@@ -267,13 +267,17 @@ export function chevauchementsDeSelection(choix: ChoixCours[]): Chevauchement[] 
     } catch (erreur) {
       const vide: Seance = { creneau: { genre: "nonAttribue" }, du: "", au: "" };
       const ref: RefSeance = { code: c.code, section: c.nomSection, seance: vide };
+      // LE SUJET NE SE MET PAS DANS LE TEXTE. Préfixer le code rendait chaque
+      // phrase unique : cinq cours sans horaire donnaient cinq fois la même
+      // phrase de trois lignes, et la déduplication de l'écran — qui groupe sur
+      // le message exact — ne pouvait rien y faire. Le code vit dans `a.code`,
+      // que l'écran lit pour rendre « 5 cours sans horaire publié : ACT 2250, … ».
       refus.push({
         etat: "indetermine",
         a: ref,
         b: ref,
         raison:
-          `${c.code} : horaire non projetable, ce cours n'entre donc dans AUCUNE comparaison ci-dessus — ` +
-          `son absence de conflit ne veut rien dire. ` +
+          `Horaire non projetable : ce cours n'est comparé à aucun autre, donc son absence de conflit ne veut rien dire. ` +
           `${erreur instanceof Error ? erreur.message : String(erreur)}`,
       });
     }

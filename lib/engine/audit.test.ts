@@ -248,8 +248,7 @@ describe("auditProgramme — LE PIÈGE 18-CONTRE-33", () => {
     expect(a.conforme).toBe(false);
     expect(joint(a)).toMatch(/il manque 15 crédits de cours d'option/);
     expect(joint(a)).toMatch(/sur les 33 crédits exigés/);
-    expect(joint(a)).toMatch(/ne totalisent que 18 crédits/);
-    expect(joint(a)).toMatch(/NE SUFFIT PAS/);
+    expect(joint(a)).toMatch(/Remplir chaque bloc d.option à son minimum donne 18 crédits, et le programme en exige 33 crédits/);
     // Le message dit quoi faire, et où il reste de la place.
     expect(joint(a)).toMatch(/place restante : 75C 15 crédits, 75D 12 crédits, 75E 13 crédits, 75Y 9 crédits/);
     // Et il dit que le 33 est déduit, pas lu (contrat v2, point 3 du brief).
@@ -621,7 +620,7 @@ describe("auditProgramme — ce que le moteur n'a pas pu interpréter ressort", 
       ),
     };
     const a = auditer([...OBLIGATOIRES, ...OPTION_COMPLETE, ...CHOIX], catalogueComplet, avecNotes);
-    expect(joint(a)).toMatch(/2 note\(s\) normative\(s\) de la page ne sont PAS évaluées par le moteur/);
+    expect(joint(a)).toMatch(/2 note\(s\) normative\(s\) de la page échappent au moteur/);
     // Elles ne rendent pas le parcours non conforme : le moteur n'a pas de quoi
     // l'affirmer. Elles rendent le verdict CONDITIONNEL, et le disent.
     expect(a.conforme).toBe(true);
@@ -830,7 +829,7 @@ describe("le total d'option : la phrase n'est dite que quand elle est vraie", ()
     const a = auditerOption(p, ["IFT 1000"]);
     expect(a.conforme).toBe(false);
     expect(joint(a)).toMatch(/il manque 9 crédits de cours d'option/);
-    expect(joint(a)).not.toMatch(/NE SUFFIT PAS/);
+    expect(joint(a)).not.toMatch(/Remplir chaque bloc d.option à son minimum donne/);
   });
 
   it("minimums INFÉRIEURS à l'exigé : la phrase doit être dite", () => {
@@ -838,8 +837,8 @@ describe("le total d'option : la phrase n'est dite que quand elle est vraie", ()
     // remplir chaque bloc laisse l'étudiant à 6 crédits du compte.
     const p = programmeOption(12, 3);
     const a = auditerOption(p, ["IFT 1000"]);
-    expect(joint(a)).toMatch(/ne totalisent que 6 crédits/);
-    expect(joint(a)).toMatch(/NE SUFFIT PAS/);
+    expect(joint(a)).toMatch(/Remplir chaque bloc d.option à son minimum donne 6 crédits, et le programme en exige 12 crédits/);
+    expect(joint(a)).toMatch(/donne 6 crédits, et le programme en exige 12 crédits/);
   });
 
   it("minimums ÉGAUX à l'exigé : la phrase ne doit pas être dite", () => {
@@ -847,7 +846,7 @@ describe("le total d'option : la phrase n'est dite que quand elle est vraie", ()
     // exactement, donc « ne suffit pas » serait faux.
     const p = programmeOption(12, 6);
     const a = auditerOption(p, ["IFT 1000"]);
-    expect(joint(a)).not.toMatch(/NE SUFFIT PAS/);
+    expect(joint(a)).toMatch(/donne exactement les 12 crédits exigés/);
   });
 });
 
@@ -913,8 +912,8 @@ describe("le total d'option : minimums STRICTEMENT supérieurs", () => {
     // 9 + 9 = 18 forcés pour 12 exigés : la page se contredit, et on le dit.
     expect(joint(a)).toMatch(/incohérence des données : les minimums des blocs d'option totalisent 18 crédits/);
     // Et on n'ajoute AUCUNE des deux phrases sur la suffisance.
-    expect(joint(a)).not.toMatch(/NE SUFFIT PAS/);
-    expect(joint(a)).not.toMatch(/suffit à atteindre le total/);
+    expect(joint(a)).not.toMatch(/Remplir chaque bloc d.option à son minimum donne/);
+    expect(joint(a)).not.toMatch(/donne exactement les/);
   });
 });
 

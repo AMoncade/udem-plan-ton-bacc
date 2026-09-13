@@ -997,9 +997,9 @@ export function auditProgramme(
       //                       côté d'une contradiction, et recréerait les deux
       //                       conclusions opposées que ce correctif ferme.
       if (minsOption < borne.min) {
-        message += ` Les minimums des blocs d'option ne totalisent que ${cr(minsOption)} : atteindre chaque minimum NE SUFFIT PAS.`;
+        message += ` Remplir chaque bloc d'option à son minimum donne ${cr(minsOption)}, et le programme en exige ${cr(borne.min)}.`;
       } else if (minsOption === borne.min) {
-        message += ` Les minimums des blocs d'option totalisent exactement les ${cr(borne.min)} exigés : satisfaire chaque bloc suffit à atteindre le total.`;
+        message += ` Remplir chaque bloc d'option à son minimum donne exactement les ${cr(borne.min)} exigés.`;
       }
       message +=
         ` Ajoutez ${cr(manque)} dans n'importe quel bloc d'option encore sous son maximum` +
@@ -1077,7 +1077,7 @@ export function auditProgramme(
       "nonVerifiable",
       `la recherche d'affectation a été TRONQUÉE au plafond de ${PLAFOND_AFFECTATIONS} affectations ` +
         `(${affectation.combinaisons === Infinity ? "plus de 2^53" : affectation.combinaisons} possibles) : ` +
-        `une affectation conforme existe peut-être et n'a pas été trouvée. Ce verdict de non-conformité n'est PAS démontré.`,
+        `une affectation conforme existe peut-être sans avoir été trouvée, donc ce verdict de non-conformité n'est pas démontré.`,
     );
   }
 
@@ -1087,7 +1087,7 @@ export function auditProgramme(
   if (nbNotes > 0) {
     signaler(
       "nonVerifiable",
-      `${nbNotes} note(s) normative(s) de la page ne sont PAS évaluées par le moteur (prose des blocs et du programme : séquences, autorisations, quotas par sigle, « trois cours dans la même discipline »). ` +
+      `${nbNotes} note(s) normative(s) de la page échappent au moteur : séquences, autorisations, quotas par sigle, « trois cours dans la même discipline ». ` +
         `À lire avant de se fier au verdict ci-dessus.`,
     );
   }
@@ -1227,7 +1227,7 @@ function messageChevauchement(
   const reste = chevauchements.length - 6;
   const tete =
     `${chevauchements.length} cours figure(nt) dans plusieurs blocs (${liste}${reste > 0 ? `, … (+${reste})` : ""}) : ` +
-    `l'affectation a donc été RÉSOLUE sous bornes, pas attribuée au premier bloc déclaré`;
+    `l'affectation a donc été résolue sous bornes, et non attribuée au premier bloc déclaré`;
 
   const nul = affectation.cout.blocs === 0 && affectation.cout.types === 0 && affectation.cout.total === 0;
   const repartition = calculs
@@ -1238,14 +1238,14 @@ function messageChevauchement(
   if (nul) {
     return (
       `${tete}. L'affectation retenue est la PREUVE que le parcours tient : ${repartition}. ` +
-      `(${affectation.explorees} affectation(s) examinée(s).)`
+      `(${affectation.explorees} affectations examinées.)`
     );
   }
   if (affectation.tronquee) {
     return `${tete}, mais la recherche a été tronquée : voir l'avertissement ci-dessous.`;
   }
   return (
-    `${tete}. AUCUNE des ${affectation.combinaisons === Infinity ? "très nombreuses" : affectation.combinaisons} affectations possibles ne satisfait toutes les bornes ; ` +
+    `${tete}. Aucune des ${affectation.combinaisons === Infinity ? "très nombreuses" : affectation.combinaisons} affectations possibles ne satisfait toutes les bornes ; ` +
     `la moins mauvaise est retenue ci-dessus pour expliquer ce qui manque (${repartition || "aucun cours de chevauchement n'est fait"}).`
   );
 }
