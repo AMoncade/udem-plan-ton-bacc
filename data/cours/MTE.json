@@ -666,5 +666,37 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-3611x/",
     "scrapeISO": "2026-09-13T04:27:51.944Z"
+  },
+  "MTE 6300": {
+    "code": "MTE 6300",
+    "titre": "Analyse de la musique électroacoustique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Bases de grammaire et de syntaxe en analyse perceptive. Comparaison des différentes méthodes mises au point pour l'analyse électroacoustique. Analyses détaillées d'oeuvres du répertoire électroacoustique.",
+    "prealablesBrut": "MUS1217 OU MUS1218",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MUS 1217"
+        },
+        {
+          "genre": "cours",
+          "code": "MUS 1218"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-6300/",
+    "scrapeISO": "2026-09-13T04:42:41.918Z"
   }
 }

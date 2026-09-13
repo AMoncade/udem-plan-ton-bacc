@@ -153,6 +153,16 @@ function valeurSommaire(htmlSommaire: string, etiquette: RegExp): string | null 
 export interface ResultatFiche {
   /** null = la fiche est REJETÉE (voir le journal) et n'entre pas au catalogue. */
   cours: Cours | null;
+  /**
+   * Vrai quand la page a été LUE et ne porte aucune étiquette de crédits.
+   *
+   * Observation POSITIVE, et c'est tout son intérêt : déduire l'absence de
+   * crédits par soustraction (« cité, pas de fiche, page en cache ») donne un
+   * majorant qui englobe les autres échecs d'analyse. Un consommateur qui lit
+   * ce drapeau peut dire « aucune collecte n'ajoutera ce cours » ; avec la
+   * soustraction il l'aurait dit aussi sur un 503.
+   */
+  sansCredits?: true;
   /** Retour de `parsePrealables` : false => la ligne va dans `prealablesNonParses`.
    *  null quand il n'y a pas de ligne de préalables à parser. */
   prealablesComplet: boolean | null;
@@ -198,7 +208,16 @@ export function parseFicheCours(
       code,
       `crédits illisibles (${creditsBrut === null ? "étiquette « Crédits » absente" : `« ${creditsBrut} »`}) — fiche rejetée plutôt que mise à 0`,
     );
-    return { cours: null, prealablesComplet: null, journal };
+    // `sansCredits` SEULEMENT quand l'étiquette est absente, pas quand elle est
+    // présente et illisible (« trois crédits », un tiret) : dans ce second cas
+    // la page PARLE de crédits, donc une correction en amont peut la rendre
+    // lisible, et affirmer « aucune collecte n'ajoutera ce cours » serait faux.
+    return {
+      cours: null,
+      prealablesComplet: null,
+      journal,
+      ...(creditsBrut === null ? { sansCredits: true as const } : {}),
+    };
   }
 
   const titreHtml = /<h1\b[^>]*class="[^"]*\bcours-titre\b[^"]*"[^>]*>([\s\S]*?)<\/h1\s*>/i.exec(html);

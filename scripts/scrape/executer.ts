@@ -594,6 +594,8 @@ async function principal(): Promise<void> {
   const prealablesNonParses: { code: string; brut: string }[] = [];
   /** Codes demandés par cette passe, pour détecter une tranche stérile. */
   let codesTraites = 0;
+  /** Code -> date de l'observation, pour `IndexProgrammes.codesSansCredits`. */
+  const sansCredits: Record<string, string> = {};
 
   if (!options.sansCours) {
     const partiel = options.limite !== null || options.programmes !== null;
@@ -699,6 +701,10 @@ async function principal(): Promise<void> {
       }
       const fiche = parseFicheCours(page.html, url, page.recupereISO, parsePrealables);
       journal.absorber(fiche.journal);
+      // Observation datée : « vu sans crédits le … » reste vrai indéfiniment,
+      // « n'a pas de crédits » vieillit mal. La date est celle de la
+      // récupération RÉELLE de la page, pas de sa relecture au cache.
+      if (fiche.sansCredits) sansCredits[code] = page.recupereISO;
       if (!fiche.cours) continue;
       if (fiche.cours.code !== code) {
         journal.inattendu(
@@ -737,6 +743,7 @@ async function principal(): Promise<void> {
     fiches,
     scrapeISO,
     regenereToutesLesStructures ? empreinteExtracteur() : null,
+    sansCredits,
   );
   for (const p of prealablesNonParses) {
     journal.info(p.code, `ligne de préalables non réduite par parsePrealables : ${JSON.stringify(p.brut)}`);

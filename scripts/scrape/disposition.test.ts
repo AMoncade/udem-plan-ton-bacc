@@ -251,3 +251,54 @@ describe("codesSurDisque", () => {
     }
   });
 });
+
+describe("codesSurDisque — lecture sans désérialisation", () => {
+  // `codesSurDisque` scanne les clés au lieu de faire `JSON.parse`, parce que
+  // construire 6 800 fiches complètes pour n'en lire que les clés est le seul
+  // poste de mémoire qui GROSSIT à chaque tranche — et le système a tué le
+  // scraper quatre fois pendant la passe. Le risque du scan n'est pas de rater
+  // une clé (au pire on refait du travail) mais d'en INVENTER une : un code
+  // fantôme serait vu comme « déjà en fiche » et jamais récupéré. D'où ces cas.
+  async function ecrire(contenu: string): Promise<string> {
+    const d = await mkdtemp(path.join(tmpdir(), "scan-cles-"));
+    await writeFile(path.join(d, "ACT.json"), contenu, "utf8");
+    return d;
+  }
+
+  it("n'invente aucune clé à partir d'une valeur de chaîne qui y ressemble", async () => {
+    // Le cas qui tue : une description dont le texte contient des guillemets et
+    // ce qui ressemble à une entrée. JSON échappe le saut de ligne en `\n`
+    // littéral, donc le motif « vraie fin de ligne + deux espaces + guillemet »
+    // ne peut pas apparaître dans une valeur — ce test le fige.
+    const d = await ecrire(
+      '{\n  "ACT 1240": {\n    "titre": "Piège :\n  \\"ACT 9999\\": {",\n    "credits": 3\n  }\n}\n',
+    );
+    try {
+      expect([...(await codesSurDisque(d))]).toEqual(["ACT 1240"]);
+    } finally {
+      await rm(d, { recursive: true, force: true });
+    }
+  });
+
+  it("ne prend pas les clés IMBRIQUÉES, qui sont plus indentées", async () => {
+    const d = await ecrire(
+      '{\n  "ACT 1240": {\n    "code": "ACT 1240",\n    "trimestres": [\n      { "saison": "Automne" }\n    ]\n  }\n}\n',
+    );
+    try {
+      expect([...(await codesSurDisque(d))]).toEqual(["ACT 1240"]);
+    } finally {
+      await rm(d, { recursive: true, force: true });
+    }
+  });
+
+  it("se replie sur JSON.parse quand le fichier n'a pas la forme attendue", async () => {
+    // Un fichier réindenté ou écrit par une autre version ne doit pas rendre
+    // ses codes « absents » : ça ferait re-télécharger tout le sujet.
+    const d = await ecrire('{"ACT 1240":{"credits":3},"ACT 2250":{"credits":3}}');
+    try {
+      expect([...(await codesSurDisque(d))].sort()).toEqual(["ACT 1240", "ACT 2250"]);
+    } finally {
+      await rm(d, { recursive: true, force: true });
+    }
+  });
+});

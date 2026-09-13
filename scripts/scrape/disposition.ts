@@ -182,11 +182,34 @@ export async function codesSurDisque(dossier: string = DOSSIER_COURS): Promise<S
   }
   for (const f of fichiers) {
     try {
-      const brut = JSON.parse(await readFile(path.join(dossier, f), "utf8")) as Record<
-        string,
-        unknown
-      >;
-      for (const code of Object.keys(brut)) if (!code.startsWith("_")) codes.add(code);
+      const texte = await readFile(path.join(dossier, f), "utf8");
+      // ON NE DÉSÉRIALISE PAS — et ce n'est pas une micro-optimisation.
+      //
+      // `JSON.parse` construit tout le graphe d'objets : 6 800 fiches avec leurs
+      // descriptions, leurs trimestres et leurs arbres de préalables, pour n'en
+      // lire que les CLÉS. Ce coût CROÎT à chaque tranche, et le système a tué
+      // le scraper quatre fois de suite pendant cette passe. C'est le seul poste
+      // dont la taille augmente à mesure qu'on avance : plus on récolte, plus la
+      // tranche suivante paie cher pour savoir ce qu'elle a déjà.
+      //
+      // Les fichiers de sujet sont écrits par `ecrireJson`, donc indentés de deux
+      // espaces : une clé de premier niveau est le seul endroit où une VRAIE
+      // fin de ligne est suivie de deux espaces et d'un guillemet. Dans une
+      // valeur de chaîne, JSON échappe le saut de ligne en `\n` littéral, donc
+      // le motif ne peut pas s'y présenter.
+      let trouve = false;
+      for (const m of texte.matchAll(/^ {2}"((?:[^"\\]|\\.)*)":/gm)) {
+        trouve = true;
+        const code = m[1];
+        if (!code.startsWith("_")) codes.add(code);
+      }
+      // Repli si le fichier n'a pas cette forme (écrit par une autre version, ou
+      // réindenté) : mieux vaut payer le parse que rendre des codes absents et
+      // refaire tout le travail.
+      if (!trouve && texte.trim() !== "" && texte.trim() !== "{}") {
+        const brut = JSON.parse(texte) as Record<string, unknown>;
+        for (const code of Object.keys(brut)) if (!code.startsWith("_")) codes.add(code);
+      }
     } catch {
       // Un fichier de sujet illisible ne doit pas faire sauter la passe : ses
       // codes sont simplement considérés absents, donc redemandés. Le pire cas
@@ -204,18 +227,31 @@ export async function ecrireIndex(
   fiches: FicheIndex[],
   scrapeISO: string,
   empreinte: string | null,
+  sansCredits: Record<string, string> = {},
 ): Promise<{ chemin: string; total: number }> {
   // Fusion par CLÉ DE PARCOURS, pas par id : plusieurs fiches partagent le même
   // id (une par orientation de la même page). Fusionner par id n'en garderait
   // qu'une, et le sélecteur perdrait six des sept orientations du bacc en maths.
   let parCle = new Map<string, FicheIndex>();
   let empreinteHeritee: string | undefined;
+  // CUMULATIF, et daté par code. Une passe cours ne voit que sa tranche : si
+  // `codesSansCredits` était réécrit à chaque passe, il ne porterait que les
+  // codes de la dernière — le défaut de `data/journal.json`, reproduit. La
+  // fusion est triviale parce que chaque entrée porte SA date : la plus récente
+  // l'emporte, et rien ne présente une observation de trois semaines comme
+  // fraîche sous le `scrapeISO` de l'index.
+  let sansCreditsCumules: Record<string, string> = {};
   try {
     const ancien = JSON.parse(await readFile(CHEMIN_INDEX, "utf8")) as IndexProgrammes;
     for (const f of ancien.programmes ?? []) parCle.set(f.cle, f);
     empreinteHeritee = ancien.empreinteExtracteur;
+    sansCreditsCumules = { ...(ancien.codesSansCredits ?? {}) };
   } catch {
     parCle = new Map();
+  }
+  for (const [code, iso] of Object.entries(sansCredits)) {
+    const connu = sansCreditsCumules[code];
+    if (connu === undefined || connu < iso) sansCreditsCumules[code] = iso;
   }
   // Une page rescrapée peut avoir PERDU une orientation : ses anciennes fiches
   // doivent disparaître, sinon l'index garderait un parcours que plus aucun
@@ -247,6 +283,9 @@ export async function ecrireIndex(
       : empreinteHeritee !== undefined
         ? { empreinteExtracteur: empreinteHeritee }
         : {}),
+    ...(Object.keys(sansCreditsCumules).length > 0
+      ? { codesSansCredits: sansCreditsCumules }
+      : {}),
   };
   await ecrireJson(CHEMIN_INDEX, { _avertissement: AVERTISSEMENT, ...index });
   return { chemin: CHEMIN_INDEX, total: programmes.length };

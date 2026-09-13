@@ -401,5 +401,153 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-3512x/",
     "scrapeISO": "2026-09-13T04:31:18.275Z"
+  },
+  "MCT 7130A": {
+    "code": "MCT 7130A",
+    "titre": "Composition et création sonore 1",
+    "credits": 4.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130a/",
+    "scrapeISO": "2026-09-13T04:48:53.887Z"
+  },
+  "MCT 7130B": {
+    "code": "MCT 7130B",
+    "titre": "Composition et création sonore 2",
+    "credits": 4.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "",
+    "prealablesBrut": "MCT7130A",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 7130A"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130b/",
+    "scrapeISO": "2026-09-13T04:48:56.006Z"
+  },
+  "MCT 7130C": {
+    "code": "MCT 7130C",
+    "titre": "Composition et création sonore 3",
+    "credits": 4.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "",
+    "prealablesBrut": "MCT7130B",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 7130B"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130c/",
+    "scrapeISO": "2026-09-13T04:48:58.301Z"
+  },
+  "MCT 7130D": {
+    "code": "MCT 7130D",
+    "titre": "Composition et création sonore 4",
+    "credits": 4.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "",
+    "prealablesBrut": "MCT7130C",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 7130C"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7130d/",
+    "scrapeISO": "2026-09-13T04:49:00.020Z"
+  },
+  "MCT 7930": {
+    "code": "MCT 7930",
+    "titre": "Projet de thèse",
+    "credits": 6,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Ce cours est publié sans description. Remarque: Rédaction d'un document présentant, en 5 à 10 pages, le sujet de recherche doctorale en composition et l'état de la recherche autour de ce sujet. Bibliographie (pas de limite de nombre de pages). Ce document sera élaboré en collaboration avec le directeur de recherche.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7930/",
+    "scrapeISO": "2026-09-13T04:49:14.690Z"
+  },
+  "MCT 7962": {
+    "code": "MCT 7962",
+    "titre": "Thèse et portfolio de recherche-création",
+    "credits": 51,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Réalisation d'une œuvre ou d'un corpus accompagné d'une thèse (100-120 p.) analysant contexte, enjeux et démarche de recherche-création. Évalué par un jury, l'ensemble doit constituer une contribution originale à la discipline.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7962/",
+    "scrapeISO": "2026-09-13T04:49:18.968Z"
   }
 }

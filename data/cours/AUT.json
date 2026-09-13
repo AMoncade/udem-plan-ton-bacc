@@ -86,5 +86,149 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-3002/",
     "scrapeISO": "2026-09-13T03:56:36.806Z"
+  },
+  "AUT 6010": {
+    "code": "AUT 6010",
+    "titre": "Récits et médias autochtones",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Notion de récit en études autochtones. Oralité et écriture. Questions de représentation et d'interprétation. Rôle des médias et de la culture populaire dans les rapports entre les peuples. Tradition et modernité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-6010/",
+    "scrapeISO": "2026-09-13T04:44:02.632Z"
+  },
+  "AUT 6011": {
+    "code": "AUT 6011",
+    "titre": "Espaces et territoires autochtones",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Récits et territoires. Territoires autochtones et projet colonial. Territoires imaginaires et virtuels. Enclavement, enfermement, extraction. Exil et reterritorialisation. Mobilité, circulation, transformation.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-6011/",
+    "scrapeISO": "2026-09-13T04:44:04.695Z"
+  },
+  "AUT 6015": {
+    "code": "AUT 6015",
+    "titre": "Éthique de la collaboration",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Éthique de la collaboration dans la littérature, le cinéma et les nouveaux médias. Correspondances, cocréation, réalisations collectives. Liens intergénérationnels et interculturels. Responsabilité et réciprocité.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-6015/",
+    "scrapeISO": "2026-09-13T04:44:06.585Z"
+  },
+  "AUT 6020": {
+    "code": "AUT 6020",
+    "titre": "Stage en milieu artistique autochtone",
+    "credits": 8,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": "AUT6010 et AUT6011 et AUT6015",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "AUT 6010"
+        },
+        {
+          "genre": "cours",
+          "code": "AUT 6011"
+        },
+        {
+          "genre": "cours",
+          "code": "AUT 6015"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-6020/",
+    "scrapeISO": "2026-09-13T04:44:20.752Z"
+  },
+  "AUT 6040": {
+    "code": "AUT 6040",
+    "titre": "Projet de création",
+    "credits": 8,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours est publié sans description.",
+    "prealablesBrut": "AUT6010 et AUT6011 et AUT6015",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "AUT 6010"
+        },
+        {
+          "genre": "cours",
+          "code": "AUT 6011"
+        },
+        {
+          "genre": "cours",
+          "code": "AUT 6015"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-6040/",
+    "scrapeISO": "2026-09-13T04:44:22.487Z"
   }
 }
