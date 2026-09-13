@@ -147,3 +147,44 @@ describe("lireCheminements — quand il faut émettre", () => {
     for (const m of r.parCle.values()) expect(r.cheminements).toContain(m);
   });
 });
+
+describe("lireCheminements — la somme se fait PAR ORIENTATION", () => {
+  it("émet quand l'orientation qui porte l'axe tombe juste, même si le programme entier ne tombe pas", () => {
+    // `maitrise-en-sciences-veterinaires-…-sans-memoire`, chiffres réels,
+    // total 45. Le plancher programme-entier donne 88 pour chaque cheminement
+    // et refusait tout ; projeté sur l'orientation 81 qui porte l'axe, il donne
+    // 45 et 45. Les blocs de deux orientations ne s'additionnent pas.
+    //
+    // L'orientation 80 ne porte AUCUN marqueur : elle doit être ignorée, pas
+    // exigée. Sans ça, un axe parfaitement lu ailleurs serait refusé.
+    const blocs = [
+      bloc("80", "80A", "", 28),
+      bloc("80", "80B", "", 15),
+      bloc("81", "81A", "", 11),
+      bloc("81", "81B", "", 11),
+      bloc("81", "81C", "", 8),
+      bloc("81", "81D", "Stage", 15),
+      bloc("81", "81D", "Travaux dirigés", 15),
+    ];
+    const orientations = [
+      { nom: "Pathologie et microbiologie", segments: ["80"] },
+      { nom: "Santé publique vétérinaire", segments: ["81"] },
+    ];
+    const r = lireCheminements(blocs, 45, orientations);
+    expect(r.cheminements.sort()).toEqual(["Stage", "Travaux dirigés"]);
+    expect(r.ecartes).toEqual([]);
+  });
+
+  it("refuse quand une orientation porteuse ne tombe pas juste", () => {
+    // Même forme, mais l'orientation porteuse totalise 60 au lieu de 45 : on
+    // n'émet rien plutôt que d'amputer un quart de ses crédits.
+    const blocs = [
+      bloc("81", "81A", "", 45),
+      bloc("81", "81D", "Stage", 15),
+      bloc("81", "81D", "Travaux dirigés", 15),
+    ];
+    const r = lireCheminements(blocs, 45, [{ nom: "X", segments: ["81"] }]);
+    expect(r.cheminements).toEqual([]);
+    expect(r.ecartes.map((e) => e.raison).join(" ")).toContain("X /");
+  });
+});

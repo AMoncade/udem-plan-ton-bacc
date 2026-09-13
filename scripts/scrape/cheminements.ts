@@ -107,7 +107,11 @@ function plancher(blocs: Bloc[]): number {
   return somme;
 }
 
-export function lireCheminements(blocs: Bloc[], creditsTotal: number | null): Marquage {
+export function lireCheminements(
+  blocs: Bloc[],
+  creditsTotal: number | null,
+  orientations: { nom: string; segments: string[] }[] = [],
+): Marquage {
   const parCle = new Map<string, string>();
   const ecartes: { segment: string; raison: string }[] = [];
   const ordre: string[] = [];
@@ -163,12 +167,40 @@ export function lireCheminements(blocs: Bloc[], creditsTotal: number | null): Ma
 
   if (ordre.length === 0) return { parCle, cheminements: [], ecartes };
 
-  // GARDE-FOU FINAL : chaque cheminement doit tomber juste sur le total annoncé.
-  // Les blocs sans marqueur sont communs, donc comptés dans tous.
+  // GARDE-FOU FINAL : chaque cheminement doit tomber juste sur le total annoncé,
+  // ET LA SOMME SE FAIT PAR ORIENTATION, pas sur le programme entier.
+  //
+  // Troisième fois que sommer sans projeter fabrique un chiffre faux — les deux
+  // premières étaient dans mes propres mesures, celle-ci était dans le
+  // garde-fou écrit pour les attraper. Mesuré sur
+  // `maitrise-en-sciences-veterinaires-…-sans-memoire` (total 45) : le plancher
+  // programme-entier donnait 88 pour chaque cheminement et refusait tout, alors
+  // que projeté sur l'orientation qui les porte il donne 45 et 45, pile juste.
+  // Les blocs de deux orientations ne s'additionnent pas : ce sont des
+  // alternatives, et l'axe de cheminement ne vit souvent que dans l'une d'elles.
+  //
+  // Une orientation dont AUCUN bloc ne porte de marqueur est ignorée : il n'y a
+  // pas de cheminement à y valider, et l'exiger ferait refuser un axe
+  // parfaitement lu ailleurs (segment 80 des vétérinaires, sans marqueur).
   if (creditsTotal !== null) {
-    const mauvais = ordre
-      .map((m) => ({ m, p: plancher(blocs.filter((b) => (parCle.get(b.cle) ?? m) === m)) }))
-      .filter(({ p }) => p !== creditsTotal);
+    const portees: { nom: string; blocs: Bloc[] }[] =
+      orientations.length > 0
+        ? orientations.map((o) => ({
+            nom: o.nom,
+            blocs: blocs.filter((b) => o.segments.includes(b.segment)),
+          }))
+        : [{ nom: "—", blocs }];
+
+    const mauvais: string[] = [];
+    for (const portee of portees) {
+      const marqueursIci = ordre.filter((m) => portee.blocs.some((b) => parCle.get(b.cle) === m));
+      if (marqueursIci.length === 0) continue;
+      for (const m of marqueursIci) {
+        const p = plancher(portee.blocs.filter((b) => (parCle.get(b.cle) ?? m) === m));
+        if (p !== creditsTotal) mauvais.push(`${portee.nom} / ${m} = ${p}`);
+      }
+    }
+
     if (mauvais.length > 0) {
       return {
         parCle: new Map(),
@@ -179,7 +211,7 @@ export function lireCheminements(blocs: Bloc[], creditsTotal: number | null): Ma
             segment: "—",
             raison:
               `les cheminements lus ne tombent pas sur le total annoncé (${creditsTotal}) : ` +
-              mauvais.map(({ m, p }) => `${m} = ${p}`).join(", ") +
+              mauvais.join(", ") +
               " — rien n'est émis, la lecture est à revoir",
           },
         ],

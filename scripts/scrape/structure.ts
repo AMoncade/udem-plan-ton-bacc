@@ -813,7 +813,7 @@ export function parseStructure(
   // n'émet que si le plancher de chaque cheminement tombe exactement sur le
   // total annoncé — donc une lecture douteuse rend un silence, jamais une
   // donnée fausse (voir `cheminements.ts`).
-  const marquage = lireCheminements(blocs, creditsTotal);
+  const marquage = lireCheminements(blocs, creditsTotal, orientations);
   for (const b of blocs) {
     const m = marquage.parCle.get(b.cle);
     if (m !== undefined) b.cheminement = m;
