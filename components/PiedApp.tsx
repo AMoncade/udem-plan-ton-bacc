@@ -11,6 +11,7 @@
  */
 
 import { depot } from "@/app/_donnees/source";
+import { pluriel, s } from "@/app/_lib/francais";
 import { useEtat } from "./ProviderEtat";
 
 export function PiedApp() {
@@ -59,9 +60,19 @@ export function PiedApp() {
 
       {donnees !== null && donnees.catalogue.prealablesNonParses.length > 0 ? (
         <p className="mt-1 text-avert">
-          {donnees.catalogue.prealablesNonParses.length} ligne(s) de préalables non
-          réduite(s) en codes, affichée(s) telle(s) quelle(s) sur la fiche du cours
-          concerné.
+          {/* CINQ parenthèses dans une phrase, c'était l'aveu qu'on refusait de
+              choisir. Le reste de l'app accorde partout ailleurs ; il n'y avait
+              pas de raison que le pied de page s'en dispense. */}
+          {donnees.catalogue.prealablesNonParses.length} ligne
+          {s(donnees.catalogue.prealablesNonParses.length)} de préalables non réduite
+          {s(donnees.catalogue.prealablesNonParses.length)} en codes, affichée
+          {s(donnees.catalogue.prealablesNonParses.length)}{" "}
+          {pluriel(
+            donnees.catalogue.prealablesNonParses.length,
+            "telle quelle",
+            "telles quelles",
+          )}{" "}
+          sur la fiche du cours concerné.
         </p>
       ) : null}
       </div>

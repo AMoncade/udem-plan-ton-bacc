@@ -454,3 +454,33 @@ export function jourLisible(iso: string, avecAnnee = false): string {
   const debut = `${jour}${jour === 1 ? "er" : ""} ${mois}`;
   return avecAnnee ? `${debut} ${m[1]}` : debut;
 }
+
+/**
+ * REGROUPE DES MESSAGES IDENTIQUES, avec leur nombre.
+ *
+ * Le moteur de conflits compare les séances DEUX À DEUX. Un cours dont une
+ * séance n'a ni jour ni heure — « Non attribué », déclaré par la page — rend
+ * donc la comparaison indéterminable avec chacune des autres séances de la
+ * sélection, et produit autant de constats au mot près identiques. Constaté à
+ * l'écran : QUATORZE fois la même phrase sur `MAT 1600` section A, sous un
+ * titre annonçant « 14 points ».
+ *
+ * Ce n'était pas faux, et c'était illisible : quatorze occurrences identiques
+ * sont UNE information avec un compte, pas quatorze lignes. Le mur poussait la
+ * grille sous la ligne de flottaison — l'écran était là et personne ne le
+ * voyait. C'est exactement la règle qu'on applique partout ailleurs : un
+ * avertissement qu'on ne peut pas lire cesse d'être lu, et il emporte les
+ * autres avec lui.
+ *
+ * Regroupé sur le MESSAGE et non sur le cours : deux cours peuvent produire des
+ * réserves différentes, et les fondre sur le seul code effacerait la différence.
+ * L'ordre de première apparition est conservé — un tri par nombre ferait sauter
+ * les lignes d'un rendu à l'autre.
+ */
+export function regrouperMessages(messages: string[]): { message: string; n: number }[] {
+  const comptes = new Map<string, number>();
+  for (const message of messages) {
+    comptes.set(message, (comptes.get(message) ?? 0) + 1);
+  }
+  return [...comptes].map(([message, n]) => ({ message, n }));
+}

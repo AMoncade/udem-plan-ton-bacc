@@ -38,6 +38,7 @@ import {
   finArrondie,
   heure,
   jourLisible,
+  regrouperMessages,
   type CaseGrille,
   type Fenetre,
   type Inscription,
@@ -140,6 +141,10 @@ export function GrilleSemaine({
   const conflits = useMemo(() => conflitsEntreCours(tous), [tous]);
   const incoherences = useMemo(() => incoherencesDeCours(tous), [tous]);
   const indetermines = useMemo(() => tous.filter((c) => c.etat === "indetermine"), [tous]);
+  const groupes = useMemo(
+    () => regrouperMessages(indetermines.map((c) => c.raison ?? "raison non fournie")),
+    [indetermines],
+  );
 
   /** Les codes impliqués dans un conflit, pour peindre leurs cases. Un `Set` de
    *  `code|section|jour|debut` plutôt que du code seul : un cours en conflit le
@@ -174,7 +179,7 @@ export function GrilleSemaine({
       <Verdict
         conflits={conflits}
         incoherences={incoherences}
-        indetermines={indetermines}
+        groupes={groupes}
         aDesCases={grille.cases.length > 0}
       />
 
@@ -273,12 +278,12 @@ export function GrilleSemaine({
 function Verdict({
   conflits,
   incoherences,
-  indetermines,
+  groupes,
   aDesCases,
 }: {
   conflits: Chevauchement[];
   incoherences: Chevauchement[];
-  indetermines: Chevauchement[];
+  groupes: { message: string; n: number }[];
   aDesCases: boolean;
 }) {
   const durs = conflits.filter((c) => c.etat === "chevauche");
@@ -313,7 +318,7 @@ function Verdict({
             ))}
           </ul>
         </div>
-      ) : aDesCases && indetermines.length === 0 ? (
+      ) : aDesCases && groupes.length === 0 ? (
         <p className="border-l-2 border-fait/60 px-3 py-1.5 text-[12.5px] text-doux">
           Aucun chevauchement entre ces cours dans l&apos;aperçu publié.
         </p>
@@ -341,16 +346,29 @@ function Verdict({
         </div>
       ) : null}
 
-      {indetermines.length > 0 ? (
+      {/* REGROUPÉ, parce que le moteur compare les séances DEUX À DEUX : une
+          séance sans jour ni heure rend la comparaison indéterminable avec
+          chacune des autres et produit autant de constats identiques. Constaté
+          à l'écran, QUATORZE fois la même phrase sur MAT 1600 section A — un mur
+          qui poussait la grille hors de l'écran. Adrien a cherché cette page
+          sans la trouver ; elle était là, un écran plus bas, derrière ce mur. */}
+      {groupes.length > 0 ? (
         <div className="border-l-2 border-verrou px-3 py-1.5">
           <p className="text-[12.5px] text-doux">
-            <span className="chiffres text-papier">{indetermines.length}</span> point
-            {indetermines.length === 1 ? "" : "s"} que la comparaison ne tranche pas.
+            <span className="chiffres text-papier">{groupes.length}</span> point
+            {groupes.length === 1 ? "" : "s"} que la comparaison ne tranche pas.
           </p>
           <ul className="mt-1 space-y-0.5">
-            {indetermines.map((c, i) => (
+            {groupes.map((g, i) => (
               <li key={i} className="text-[11.5px] leading-snug text-faible">
-                {c.raison}
+                {g.message}
+                {g.n > 1 ? (
+                  <span className="text-verrou">
+                    {" "}
+                    (concerne{" "}
+                    <span className="chiffres">{g.n}</span> comparaisons)
+                  </span>
+                ) : null}
               </li>
             ))}
           </ul>

@@ -19,6 +19,7 @@ import {
   finArrondie,
   heure,
   jourLisible,
+  regrouperMessages,
   type Inscription,
 } from "./grille-semaine";
 
@@ -329,5 +330,38 @@ describe("les fenêtres communes se disent une fois, pas neuf", () => {
 
   it("aucune case : rien de commun à annoncer", () => {
     expect(construireGrille([]).fenetresDominantes).toBeNull();
+  });
+});
+
+describe("regrouperMessages : quatorze fois la même phrase est UNE information", () => {
+  it("compte les identiques au lieu de les répéter", () => {
+    // Le cas vu à l'écran : le moteur compare les séances deux à deux, donc une
+    // séance sans jour ni heure rend la comparaison indéterminable avec chacune
+    // des autres et produit quatorze constats au mot près identiques. Le mur
+    // poussait la grille hors de l'écran.
+    const meme = "MAT 1600 section A : la page publie cette séance sans jour ni heure.";
+    expect(regrouperMessages([meme, meme, meme])).toEqual([{ message: meme, n: 3 }]);
+  });
+
+  it("ne fond pas deux messages différents", () => {
+    // Deux cours produisent des réserves différentes ; regrouper sur le seul
+    // code effacerait la différence.
+    const a = "MAT 1600 : sans jour ni heure.";
+    const b = "STT 1700 : section inconnue.";
+    expect(regrouperMessages([a, b, a])).toEqual([
+      { message: a, n: 2 },
+      { message: b, n: 1 },
+    ]);
+  });
+
+  it("garde l'ordre de première apparition", () => {
+    // Un tri par nombre ferait sauter les lignes d'un rendu à l'autre, sur une
+    // liste que l'étudiant relit après chaque changement de section.
+    const [x, y] = ["premier", "second"];
+    expect(regrouperMessages([x, y, y, y]).map((g) => g.message)).toEqual([x, y]);
+  });
+
+  it("aucun message : aucun groupe", () => {
+    expect(regrouperMessages([])).toEqual([]);
   });
 });

@@ -46,6 +46,7 @@
 
 import { useMemo, useState } from "react";
 import { ficheDe } from "@/app/_lib/cours";
+import { pluriel } from "@/app/_lib/francais";
 import {
   composer,
   prochainTrimestre,
@@ -70,13 +71,6 @@ const CHARGES = [6, 9, 12, 15, 18] as const;
  *  élident, et `aLaSaison` porte déjà cette règle. */
 function auTrimestre(t: Trimestre): string {
   return `${aLaSaison(t.saison)} ${t.annee}`;
-}
-
-/** Accord en nombre. ZÉRO PREND LE SINGULIER en français — « 0 publie », pas
- *  « 0 publient » — et c'est le cas le plus fréquent de cet écran tant que la
- *  collecte des horaires n'a pas eu lieu. Un `n > 1` plutôt qu'un `n !== 1`. */
-function pluriel(n: number, singulier: string, plurielMot: string): string {
-  return n > 1 ? plurielMot : singulier;
 }
 
 export function VueSession() {
@@ -553,7 +547,7 @@ function PanneauHoraire({ codes, cible }: { codes: CodeCours[]; cible: Trimestre
   if (codes.length === 0) {
     return (
       <p className="mt-6 border-t border-trait pt-3 text-[12.5px] text-doux">
-        Retenez des cours pour voir ce qu&apos;ils donnent ${auTrimestre(cible)}.
+        Retenez des cours pour voir ce qu&apos;ils donnent {auTrimestre(cible)}.
       </p>
     );
   }

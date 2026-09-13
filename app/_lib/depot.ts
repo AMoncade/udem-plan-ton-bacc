@@ -15,6 +15,7 @@
  * Le moteur n'a pas à le savoir : il reçoit un `Catalogue` ordinaire. Ses deux
  * signatures ne changent pas.
  */
+import { s } from "./francais";
 import { normaliserCode, sujetDeCode } from "../../lib/codes";
 import { lireCleParcours, parcoursDe, projeterOrientation } from "../../lib/parcours";
 import type {
@@ -264,7 +265,10 @@ export async function assembler(
     journal.push({
       genre: "inattendu",
       sujet: cle,
-      message: `${illisibles.length} code(s) de cours non normalisable(s), conservé(s) tels quels : ${illisibles.join(", ")}.`,
+      message:
+        `${illisibles.length} code${s(illisibles.length)} de cours non ` +
+        `normalisable${s(illisibles.length)}, conservé${s(illisibles.length)} tel${s(illisibles.length)} ` +
+        `quel${s(illisibles.length)} : ${illisibles.join(", ")}.`,
     });
   }
 
