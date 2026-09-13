@@ -70,7 +70,28 @@ function construireGraphe(catalogue: Catalogue) {
     if (fiche.prealables === null) continue;
     const racine = fiche.prealables;
     const lien = racine.genre === "cours" ? "seul" : racine.genre === "ou" ? "ou" : "et";
+    // UNE arête par paire (source, cible), même quand le cours apparaît dans
+    // plusieurs branches de l'arbre.
+    //
+    // `TXM 3600` exige « deux cours parmi quatre », que la page écrit en six
+    // branches OU de paires ET : `TXM 3400` s'y trouve donc trois fois. Ce n'est
+    // ni une duplication de la source ni deux relations distinctes — c'est LA
+    // MÊME relation atteinte par plusieurs chemins, et un graphe n'en dessine
+    // qu'une flèche.
+    //
+    // Sans ça, React voyait deux enfants de même clé `source->cible` et pouvait
+    // laisser tomber une arête sans rien dire — sur un graphe de préalables, une
+    // arête perdue est une mauvaise réponse. Le réflexe est de rendre la clé plus
+    // unique (`source->cible:lien:branche`) : ça ferait taire l'avertissement en
+    // AGGRAVANT ce qu'il signale, trois flèches là où l'étudiant a une exigence.
+    //
+    // Mesuré sur les 2 452 cours à préalables : 3 cours concernés (`TXM 3600`,
+    // `PSY 3033`, `PHT 1309`), 10 arêtes en trop sur 3 187 paires — et ZÉRO paire
+    // répétée dont les `lien` diffèrent. Garder la première ne perd donc rien.
+    const vues = new Set<CodeCours>();
     for (const enfant of aretesDuNoeud(racine, lien)) {
+      if (vues.has(enfant.code)) continue;
+      vues.add(enfant.code);
       aretes.push({ source: enfant.code, cible: fiche.code, lien: enfant.lien });
     }
   }

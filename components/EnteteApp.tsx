@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { depot } from "@/app/_donnees/source";
 import { MOTEUR_EST_FACTICE } from "@/app/_lib/moteur";
@@ -35,6 +36,7 @@ export function EnteteApp() {
   const chemin = usePathname();
   const { donnees, toutEffacer, faits, plan } = useEtat();
   const vide = faits.size === 0 && Object.keys(plan).length === 0;
+  const [arme, setArme] = useState(false);
 
   const programme = donnees?.programme ?? null;
   const audit = donnees?.audit ?? null;
@@ -117,14 +119,53 @@ export function EnteteApp() {
               </span>
             </>
           ) : null}
-          <button
-            type="button"
-            onClick={toutEffacer}
-            disabled={vide}
-            className="border border-trait px-2.5 py-1 text-[12.5px] text-doux transition-colors hover:border-traitfort hover:text-papier disabled:opacity-40 disabled:hover:border-trait disabled:hover:text-doux"
-          >
-            Effacer
-          </button>
+          {/* DEUX TEMPS, parce que ce bouton détruit ce qui ne se reconstitue
+              pas. Il effaçait tous les cours faits et tout le plan au premier
+              clic, sans confirmation ni annulation, sous un libellé d'un mot
+              collé au compteur de crédits.
+
+              Les cours faits sont la seule donnée que l'étudiant a TAPÉE :
+              un parcours se re-choisit en un clic, quarante sigles se
+              retapent un par un. Un premier clic arme, un second efface, et
+              « Annuler » désarme — pas de fenêtre modale, rien à fermer si on
+              a cliqué par erreur.
+
+              Une vraie annulation APRÈS coup vaudrait mieux encore ; elle
+              demande de garder l'état précédent dans `app/_lib/stockage.ts`,
+              qui n'est pas dans ce lot. */}
+          {arme ? (
+            <>
+              <button
+                type="button"
+                onClick={() => {
+                  toutEffacer();
+                  setArme(false);
+                }}
+                aria-label="Confirmer l'effacement de tous les cours faits et du plan"
+                className="border border-perdu px-2.5 py-1 text-[12.5px] text-perdu transition-colors hover:bg-perdu hover:text-encre"
+              >
+                Tout effacer ?
+              </button>
+              <button
+                type="button"
+                onClick={() => setArme(false)}
+                className="px-2 py-1 text-[12.5px] text-doux underline underline-offset-2 hover:text-papier"
+              >
+                Annuler
+              </button>
+            </>
+          ) : (
+            <button
+              type="button"
+              onClick={() => setArme(true)}
+              disabled={vide}
+              title="Retire tous les cours marqués faits et vide le plan par trimestre."
+              aria-label="Effacer les cours faits et le plan"
+              className="border border-trait px-2.5 py-1 text-[12.5px] text-doux transition-colors hover:border-traitfort hover:text-papier disabled:opacity-40 disabled:hover:border-trait disabled:hover:text-doux"
+            >
+              Effacer les cours faits
+            </button>
+          )}
         </div>
       </div>
 
