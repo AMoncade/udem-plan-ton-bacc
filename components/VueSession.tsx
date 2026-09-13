@@ -33,9 +33,15 @@
  *
  * ## L'état sans horaires n'est pas un cas limite
  *
- * C'est l'état du dépôt aujourd'hui : `Cours.apercuHoraires` est optionnel et
- * rien ne le produit encore. L'écran doit donc être utile sans lui — et le
- * dire, plutôt que d'afficher une grille vide qui a l'air d'une panne.
+ * `Cours.apercuHoraires` est optionnel, et l'absence est FRÉQUENTE même
+ * maintenant que la collecte tourne : la majorité des fiches à jour rendent un
+ * aperçu VIDE, parce que la page de cours ne publie pas d'horaire. L'écran doit
+ * donc rester utile sans grille, et le dire — plutôt que d'afficher un
+ * quadrillage vide qui ressemble à une panne.
+ *
+ * Le piège jumeau, et c'est le plus coûteux : « aucun chevauchement sur ce
+ * qu'on connaît » et « on ne connaît rien » ne doivent JAMAIS rendre la même
+ * couleur. Le second est majoritaire.
  */
 
 import { useMemo, useState } from "react";
@@ -49,6 +55,7 @@ import {
 } from "@/app/_lib/prochaine-session";
 import { aLaSaison, cleTrimestre, horizon, libelleTrimestre } from "@/app/_lib/trimestres";
 import type { CodeCours, Trimestre } from "@/lib/types";
+import { GrilleSemaine, choisirSections } from "./GrilleSemaine";
 import { TitreCours } from "./Etats";
 import { useDonnees, useEtat } from "./ProviderEtat";
 import { TeteEcran } from "./TeteEcran";
@@ -81,6 +88,12 @@ export function VueSession() {
   // rendrait ce composant non déterministe entre deux rendus de la même seconde.
   const [cible, setCible] = useState<Trimestre>(() => prochainTrimestre(new Date()));
   const [charge, setCharge] = useState<number>(15);
+  /* La section retenue par cours. Locale et non persistée : elle ne vaut que
+     pour le trimestre affiché, et une section mémorisée d'un autre trimestre ne
+     se replie sur rien — les libellés sont verbatim et ne sont pas
+     interchangeables. `choisirSections` retombe sur la première publiée quand
+     le nom retenu n'existe pas ici. */
+  const [sections, setSections] = useState<Record<string, string>>({});
 
   const choix = useMemo(() => horizon(cible, 6), [cible]);
 
@@ -99,6 +112,17 @@ export function VueSession() {
   const retenus = suggestions.filter((s) => plan[s.code] !== undefined);
   const creditsRetenus = retenus.reduce((somme, s) => somme + (s.credits ?? 0), 0);
   const retenusSansCredits = retenus.filter((s) => s.credits === null).length;
+
+  const choixSections = useMemo(
+    () =>
+      choisirSections(
+        retenus.map((s) => s.code),
+        (code) => ficheDe(catalogue, code),
+        cible,
+        sections,
+      ),
+    [retenus, catalogue, cible, sections],
+  );
 
   const proposition = useMemo(() => composer(utiles, charge), [utiles, charge]);
   const propositionNeuve = proposition.codes.filter((code) => plan[code] === undefined);
@@ -179,7 +203,19 @@ export function VueSession() {
         cible={cible}
       />
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <PanneauHoraire codes={retenus.map((s) => s.code)} cible={cible} />
+
+      {retenus.length > 0 ? (
+        <GrilleSemaine
+          choix={choixSections}
+          trimestre={cible}
+          onSection={(code, section) =>
+            setSections((avant) => ({ ...avant, [code]: section }))
+          }
+        />
+      ) : null}
+
+      <div className="mt-8">
         <section>
           <div className="flex items-baseline justify-between border-b border-trait pb-2">
             <h2 className="text-[14px] font-semibold">Cours possibles</h2>
@@ -238,8 +274,6 @@ export function VueSession() {
             </details>
           ) : null}
         </section>
-
-        <PanneauHoraire codes={retenus.map((s) => s.code)} cible={cible} />
       </div>
     </div>
   );
@@ -427,12 +461,21 @@ function Ligne({
 /**
  * L'HORAIRE — et aujourd'hui, son absence.
  *
- * `Cours.apercuHoraires` est optionnel et rien ne le produit encore. Trois états
- * que le contrat interdit de confondre, et l'écran les distingue :
+ * Quatre états que le contrat interdit de confondre, et l'écran les distingue :
  *
  *   pas de fiche          on ne sait rien de ce cours
  *   champ ABSENT          la fiche est antérieure à la collecte des horaires
- *   `[]`                  lu, et la page ne publie aucun horaire — 43 % des cas
+ *   `[]`                  lu, et la page ne publie aucun horaire
+ *   non vide              des séances existent, la grille se dessine
+ *
+ * AUCUN POURCENTAGE ICI, et c'est une correction. Ce commentaire portait
+ * « 43 % des cas » à côté de `[]`, recopié du contrat de `Cours.apercuHoraires`
+ * où `adrie-78` l'avait elle-même posé sans périmètre ni date — 43 % de quoi,
+ * mesuré quand ? Elle l'a retiré de son contrat (`38f817a`) en écrivant qu'un
+ * nombre irrésituable posé dans un contrat « se cite ensuite comme s'il avait
+ * été mesuré là ». C'est exactement ce qui s'est passé : il avait atterri ici en
+ * quelques heures. Le fait QUALITATIF suffit et ne se périme pas — l'aperçu vide
+ * est fréquent, c'est pour ça qu'on le distingue du champ absent.
  *
  * ## La forme de la grille, et pourquoi le problème qu'on redoutait n'existe pas
  *
@@ -507,49 +550,37 @@ function PanneauHoraire({ codes, cible }: { codes: CodeCours[]; cible: Trimestre
     return { publie, videConstate, jamaisRegarde, sansFiche };
   }, [catalogue, codes]);
 
+  if (codes.length === 0) {
+    return (
+      <p className="mt-6 border-t border-trait pt-3 text-[12.5px] text-doux">
+        Retenez des cours pour voir ce qu&apos;ils donnent ${auTrimestre(cible)}.
+      </p>
+    );
+  }
+
   return (
-    <aside className="border border-trait">
-      <header className="border-b border-trait bg-relief px-3 py-2">
-        <h2 className="text-[13.5px] font-semibold">Semaine</h2>
-      </header>
-      <div className="space-y-2 px-3 py-3 text-[12px] leading-relaxed text-doux">
-        {codes.length === 0 ? (
-          <p>
-            Retenez des cours pour voir ce qu&apos;ils donnent {auTrimestre(cible)}.
-          </p>
-        ) : (
-          <>
-            <p>
-              Sur <span className="chiffres text-papier">{codes.length}</span> cours
-              retenus :{" "}
-              <span className="chiffres text-papier">{etat.publie}</span>{" "}
-              {pluriel(etat.publie, "publie", "publient")} un aperçu d&apos;horaire,{" "}
-              <span className="chiffres text-papier">{etat.videConstate}</span> n&apos;en{" "}
-              {pluriel(etat.videConstate, "publie", "publient")} aucun,{" "}
-              <span className="chiffres text-papier">{etat.jamaisRegarde}</span>{" "}
-              {pluriel(etat.jamaisRegarde, "n'a", "n'ont")} pas été{" "}
-              {pluriel(etat.jamaisRegarde, "regardé", "regardés")}
-              {etat.sansFiche > 0 ? (
-                <>
-                  , <span className="chiffres text-papier">{etat.sansFiche}</span>{" "}
-                  {pluriel(etat.sansFiche, "n'a", "n'ont")} pas de fiche
-                </>
-              ) : null}
-              .
-            </p>
-            <p className="text-faible">
-              {etat.publie === 0
-                ? "Aucun horaire n'est disponible : la grille de la semaine ne peut pas être dessinée, et un quadrillage vide ressemblerait à une panne."
-                : "La grille hebdomadaire n'est pas encore dessinée. Elle le sera sur sept jours, chaque cours portant les dates où il a lieu : presque aucune séance ne court tout le trimestre, et une grille muette sur les dates promettrait une semaine type qui n'existe pas. Les examens et les séances uniques — près de la moitié des séances publiées — iront dans une liste de dates, pas dans la grille."}
-            </p>
-            <p className="text-faible">
-              Quoi qu&apos;il arrive, la source titre « Aperçu des horaires » et renvoie
-              au Centre étudiant pour l&apos;à-jour. Cet écran ne dira jamais qu&apos;un
-              horaire tient — au mieux, qu&apos;il ne se contredit pas.
-            </p>
-          </>
-        )}
-      </div>
-    </aside>
+    <p className="mt-6 border-t border-trait pt-3 text-[12px] leading-relaxed text-doux">
+      Sur <span className="chiffres text-papier">{codes.length}</span> cours retenus :{" "}
+      <span className="chiffres text-papier">{etat.publie}</span>{" "}
+      {pluriel(etat.publie, "publie", "publient")} un aperçu d&apos;horaire,{" "}
+      <span className="chiffres text-papier">{etat.videConstate}</span> n&apos;en{" "}
+      {pluriel(etat.videConstate, "publie", "publient")} aucun,{" "}
+      <span className="chiffres text-papier">{etat.jamaisRegarde}</span>{" "}
+      {pluriel(etat.jamaisRegarde, "n'a", "n'ont")} pas été{" "}
+      {pluriel(etat.jamaisRegarde, "regardé", "regardés")}
+      {etat.sansFiche > 0 ? (
+        <>
+          , <span className="chiffres text-papier">{etat.sansFiche}</span>{" "}
+          {pluriel(etat.sansFiche, "n'a", "n'ont")} pas de fiche
+        </>
+      ) : null}
+      .{" "}
+      {etat.videConstate + etat.jamaisRegarde + etat.sansFiche > 0 ? (
+        <span className="text-faible">
+          Ceux-là n&apos;apparaissent nulle part dans la semaine ci-dessous, et leur
+          absence de conflit ne veut rien dire.
+        </span>
+      ) : null}
+    </p>
   );
 }
