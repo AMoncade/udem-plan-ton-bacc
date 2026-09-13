@@ -27,6 +27,15 @@
  *                         slugs : « les cours qui manquent À CE LOT ». C'est ce
  *                         qui permet de CIBLER et de REPRENDRE en même temps.
  *   --limite-cours N      plafonner le nombre de fiches de cours de cette passe
+ *   --cours-fichier F     ne traiter que les codes listés dans F, un par ligne,
+ *                         et les traiter MÊME s'ils sont déjà en fiche. Sert au
+ *                         cas où la fiche existe mais son HTML a quitté le cache
+ *                         (795 fiches dans cet état) : il faut alors reprendre la
+ *                         page pour en extraire ce que l'ancienne passe ignorait.
+ *                         Une liste par FICHIER et non par argument : 795 codes
+ *                         dépassent la limite de longueur de ligne de commande
+ *                         de Windows, qui a déjà fait échouer huit tranches en
+ *                         silence.
  *   --delai MS            délai entre deux requêtes réseau (défaut 1200)
  *   --tentatives N        essais par URL sur panne de transport (défaut 4)
  *   --max-age-jours N     périmer le cache au-delà de N jours (défaut 0 = jamais)
@@ -103,6 +112,8 @@ interface Options {
   tousLesCours: boolean;
   coursCites: boolean;
   limiteCours: number | null;
+  /** Chemin d'un fichier de codes, un par ligne. Ignore `--reprendre` pour eux. */
+  coursFichier: string | null;
   sansCours: boolean;
   /** Recopié depuis les options réseau : `--rafraichir` veut dire « tout
    *  redemander », ce qui interdit à `--reprendre` de sauter quoi que ce soit. */
@@ -154,6 +165,7 @@ function lireArguments(argv: string[]): Options {
     tousLesCours: fanions.has("tous-les-cours"),
     coursCites: fanions.has("cours-cites"),
     limiteCours: entier("limite-cours"),
+    coursFichier: lus.get("cours-fichier") ?? null,
     sansCours: fanions.has("sans-cours"),
     rafraichir: fanions.has("rafraichir"),
   };
@@ -619,7 +631,25 @@ async function principal(): Promise<void> {
     //    déclencherait les 11 888 fiches.
     //  - passe complète : l'inventaire entier du sitemap.
     let codes: string[];
-    if (options.coursCites) {
+    if (options.coursFichier !== null) {
+      // Liste explicite : on la traite TELLE QUELLE, sans la soustraire de ce
+      // qui est déjà en fiche. C'est le seul mode où « déjà en fiche » n'est pas
+      // une raison de sauter : la fiche peut exister alors que son HTML a quitté
+      // le cache, et il faut reprendre la page pour en extraire ce qu'une
+      // ancienne passe n'en lisait pas — les horaires, par exemple.
+      const brut = await readFile(options.coursFichier, "utf8");
+      codes = brut
+        .split(/\r?\n/)
+        .map((l) => l.trim())
+        .filter((l) => l !== "")
+        .map((l) => normaliserCode(l))
+        .filter((c): c is string => c !== null);
+      const illisibles = brut.split(/\r?\n/).filter((l) => l.trim() !== "" && normaliserCode(l.trim()) === null);
+      for (const l of illisibles) {
+        journal.inattendu(options.coursFichier, `ligne non normalisable en code, ignorée : « ${l.trim()} »`);
+      }
+      console.log(`\n--cours-fichier : ${codes.length} codes lus dans ${options.coursFichier}`);
+    } else if (options.coursCites) {
       codes = [...(await codesDesProgrammesSurDisque(codesCites, journal, options.programmes))];
     } else if (options.tousLesCours || !partiel) {
       codes = inventaire.cours
@@ -666,7 +696,9 @@ async function principal(): Promise<void> {
     let dejaEnFiche = 0;
     let attestesSansCredits = 0;
     let candidats = aDemander;
-    if (options.reprendre && !options.rafraichir) {
+    // `--cours-fichier` échappe à la reprise : voir plus haut, c'est tout son
+    // objet. La reprise sauterait exactement les codes qu'on demande.
+    if (options.reprendre && !options.rafraichir && options.coursFichier === null) {
       const surDisque = await codesSurDisque();
       // ON SAUTE AUSSI CE QU'ON A DÉJÀ VU SANS CRÉDITS, et c'est ce qui rend le
       // découpage utilisable jusqu'au bout.
