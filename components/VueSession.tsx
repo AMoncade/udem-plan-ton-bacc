@@ -46,7 +46,7 @@
 
 import { useMemo, useState } from "react";
 import { ficheDe } from "@/app/_lib/cours";
-import { pluriel } from "@/app/_lib/francais";
+import { pluriel, s } from "@/app/_lib/francais";
 import {
   composer,
   prochainTrimestre,
@@ -554,7 +554,12 @@ function PanneauHoraire({ codes, cible }: { codes: CodeCours[]; cible: Trimestre
 
   return (
     <p className="mt-6 border-t border-trait pt-3 text-[12px] leading-relaxed text-doux">
-      Sur <span className="chiffres text-papier">{codes.length}</span> cours retenus :{" "}
+      {/* « cours » est INVARIABLE, « retenu » ne l'est pas : « sur 1 cours
+          retenus » était faux, et c'est le genre d'accord qu'un accord
+          mécanique sur le nom rate — il n'y a pas de `s` à ajouter au nom, mais
+          il y en a un à l'adjectif. */}
+      Sur <span className="chiffres text-papier">{codes.length}</span> cours retenu
+      {s(codes.length)} :{" "}
       <span className="chiffres text-papier">{etat.publie}</span>{" "}
       {pluriel(etat.publie, "publie", "publient")} un aperçu d&apos;horaire,{" "}
       <span className="chiffres text-papier">{etat.videConstate}</span> n&apos;en{" "}

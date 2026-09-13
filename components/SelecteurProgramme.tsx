@@ -46,22 +46,52 @@ function ListeFiltre({
   etiquette,
   valeur,
   options,
+  total,
   onChange,
 }: {
   etiquette: string;
   valeur: string | null;
   options: { valeur: string; nombre: number }[];
+  /**
+   * Ce que « Tous » sélectionne RÉELLEMENT — c'est-à-dire tout, y compris les
+   * fiches qui ne déclarent pas ce champ.
+   *
+   * La somme des facettes ne le vaut pas : mesuré le 2026-09-13, le catalogue
+   * porte 1 507 parcours dont 2 sans cycle, 2 sans faculté et 1 sans type de
+   * programme. Les trois listes annonçaient donc « Tous (1505) », « Tous
+   * (1505) » et « Tous (1506) » sur un écran dont le titre disait « 1 507
+   * parcours au catalogue » — quatre nombres pour une seule question, et
+   * l'option « Tous » mentait sur ce qu'elle-même sélectionne : la choisir
+   * rendait bien 1 507 résultats.
+   *
+   * Un écran qui affiche deux totaux pour la même chose n'en fait pas croire un
+   * plutôt que l'autre : il fait douter des deux.
+   */
+  total: number;
   onChange: (valeur: string | null) => void;
 }) {
+  const declares = options.reduce((s, o) => s + o.nombre, 0);
   return (
     <label className="flex min-w-0 flex-1 flex-col gap-1">
-      <span className="text-[11.5px] text-faible">{etiquette}</span>
+      <span className="text-[11.5px] text-faible">
+        {etiquette}
+        {/* L'écart se DIT plutôt que de se deviner. Ces fiches existent, elles
+            sortent avec « Tous », et aucune valeur de la liste ne les atteint —
+            les passer sous silence ferait chercher longtemps pourquoi un
+            programme visible dans la liste disparaît dès qu'on filtre. */}
+        {total > declares ? (
+          <span className="text-verrou">
+            {" "}
+            · {total - declares} sans mention
+          </span>
+        ) : null}
+      </span>
       <select
         value={valeur ?? ""}
         onChange={(e) => onChange(e.target.value === "" ? null : e.target.value)}
         className="min-w-0 border border-trait bg-creux px-2 py-1.5 text-[12.5px] focus:border-traitfort focus:outline-none"
       >
-        <option value="">Tous ({options.reduce((s, o) => s + o.nombre, 0)})</option>
+        <option value="">Tous ({total})</option>
         {options.map((option) => (
           <option key={option.valeur} value={option.valeur}>
             {option.valeur} ({option.nombre})
@@ -236,6 +266,7 @@ export function SelecteurProgramme() {
             etiquette="Cycle"
             valeur={filtres.cycle}
             options={optionsCycle}
+            total={prepare.entrees.length}
             onChange={(valeur) => {
               setFiltres((f) => ({ ...f, cycle: valeur }));
               setSurvol(0);
@@ -245,6 +276,7 @@ export function SelecteurProgramme() {
             etiquette="Faculté"
             valeur={filtres.faculte}
             options={optionsFaculte}
+            total={prepare.entrees.length}
             onChange={(valeur) => {
               setFiltres((f) => ({ ...f, faculte: valeur }));
               setSurvol(0);
@@ -254,6 +286,7 @@ export function SelecteurProgramme() {
             etiquette="Type"
             valeur={filtres.typeProgramme}
             options={optionsType}
+            total={prepare.entrees.length}
             onChange={(valeur) => {
               setFiltres((f) => ({ ...f, typeProgramme: valeur }));
               setSurvol(0);
