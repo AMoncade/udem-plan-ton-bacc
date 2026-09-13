@@ -962,5 +962,52 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-3329x/",
     "scrapeISO": "2026-09-13T03:13:01.760Z"
+  },
+  "MUS 6107": {
+    "code": "MUS 6107",
+    "titre": "Séminaire sur le jeu pianistique, du geste au son",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Étude interdisciplinaire du geste pianistique: fonctions et typologie du geste, contrôle de la mécanique du piano et des paramètres sonores de l’expression musicale (tempo, dynamique, timbre), geste optimal et intégration multisensorielle.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-6107/",
+    "scrapeISO": "2026-09-13T03:37:21.521Z"
+  },
+  "MUS 6316": {
+    "code": "MUS 6316",
+    "titre": "Atelier de musique visuelle immersive",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Atelier de création dirigé. Étude des concepts fondamentaux et des techniques régissant la production musicale et sonore dans un contexte de musique visuelle immersive : dôme, réalité virtuelle, multi-écrans, spatialisation sonore. Remarque : Cours donné en collaboration avec la société des arts technologiques de Montréal.",
+    "prealablesBrut": "MUS6314X et MUS6315X",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MUS 6314X"
+        },
+        {
+          "genre": "cours",
+          "code": "MUS 6315X"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-6316/",
+    "scrapeISO": "2026-09-13T03:52:44.072Z"
   }
 }

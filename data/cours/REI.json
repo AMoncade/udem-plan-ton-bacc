@@ -1306,5 +1306,537 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1240g/",
     "scrapeISO": "2026-09-13T03:14:13.387Z"
+  },
+  "REI 1010G": {
+    "code": "REI 1010G",
+    "titre": "Introduction aux relations industrielles",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Champ d'études : relations du travail, gestion des ressources humaines et politiques publiques du travail. Constitution et évolution des relations industrielles sur le plan théorique. Les acteurs : rôles, objectifs, structures et activités.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI1010/REI1010G",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1010g/",
+    "scrapeISO": "2026-09-13T03:24:13.545Z"
+  },
+  "REI 1140G": {
+    "code": "REI 1140G",
+    "titre": "Approche juridique en RI",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Introduction au droit : les sources du droit, l'organisation judiciaire et les aspects constitutionnels des relations industrielles. Définition et nature du droit du travail. La méthode juridique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "DRT1102/REI1140/REI1140G",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1140g/",
+    "scrapeISO": "2026-09-13T03:24:15.570Z"
+  },
+  "REI 2305G": {
+    "code": "REI 2305G",
+    "titre": "Aspects juridiques du lien d'emploi",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Règles juridiques applicables aux différentes étapes de la relation d'emploi : droit à l'égalité, droit à la vie privée, normes minimales du travail, protection et fin d'emploi, santé et sécurité du travail.",
+    "prealablesBrut": "REI1140G ou REI1140",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "REI 1140G"
+        },
+        {
+          "genre": "cours",
+          "code": "REI 1140"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI2305/REI2250G/REI2305G/REI2250",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2305g/",
+    "scrapeISO": "2026-09-13T03:24:17.599Z"
+  },
+  "REI 1020G": {
+    "code": "REI 1020G",
+    "titre": "Organisation et dynamique de la firme",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Étude des concepts issus de la sociologie de l'entreprise permettant d'analyser les formes organisationnelles et les dynamiques sociales observables dans les entreprises.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI1020/REI1000G/REI1000/REI1020G",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1020g/",
+    "scrapeISO": "2026-09-13T03:24:19.599Z"
+  },
+  "REI 1040G": {
+    "code": "REI 1040G",
+    "titre": "Comportement organisationnel",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Analyse des comportements humains en milieu organisationnel en fonction de problématiques individuelles (différences individuelles, motivation, stress), groupales (communication, leadership, conflit, décision) et organisationnelles (changement).",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI1230G/REI1040/REI1040G/REI1230",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1040g/",
+    "scrapeISO": "2026-09-13T03:24:21.704Z"
+  },
+  "REI 1420G": {
+    "code": "REI 1420G",
+    "titre": "Emploi et salaire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Fonctionnement du marché du travail. Offre et demande de travail. Théories des salaires. Segmentation, imperfections de marchés. Enjeux économiques de l'éducation et de la formation. Discrimination et inégalités. Aspects économiques du syndicalisme.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI1420/REI1420G",
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1420g/",
+    "scrapeISO": "2026-09-13T03:24:25.234Z"
+  },
+  "REI 2310G": {
+    "code": "REI 2310G",
+    "titre": "Convention collective",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Analyse et application des principales clauses : droits de gérance, ancienneté, gestion et protection de l'emploi, sous-traitance, salaires, avantages sociaux, conciliation travail-vie personnelle. Équilibre entre flexibilité et sécurité. Cours équivalent(s) : REI2310",
+    "prealablesBrut": "REI1140G",
+    "prealables": {
+      "genre": "cours",
+      "code": "REI 1140G"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI2310/REI2310G",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2310g/",
+    "scrapeISO": "2026-09-13T03:24:25.614Z"
+  },
+  "REI 2320G": {
+    "code": "REI 2320G",
+    "titre": "Rapports collectifs du travail",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Les règles juridiques s'appliquant au régime général de la négociation collective au Québec. Droit d'association, accréditation, négociation de la convention collective, mode de règlements des conflits.",
+    "prealablesBrut": "REI1140G ou REI1140",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "REI 1140G"
+        },
+        {
+          "genre": "cours",
+          "code": "REI 1140"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI2320/REI2320G",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2320g/",
+    "scrapeISO": "2026-09-13T03:24:27.634Z"
+  },
+  "REI 2340G": {
+    "code": "REI 2340G",
+    "titre": "Négociation collective",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Nature, définition et objet de la négociation, théories et modèles. L'environnement de la négociation collective. La stratégie des acteurs. Les structures de négociation. Déroulement de la négociation et modes de résolution des conflits. Cours équivalent(s) : REI2340",
+    "prealablesBrut": "REI1140G",
+    "prealables": {
+      "genre": "cours",
+      "code": "REI 1140G"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2340g/",
+    "scrapeISO": "2026-09-13T03:24:29.587Z"
+  },
+  "REI 3345G": {
+    "code": "REI 3345G",
+    "titre": "Arbitrage des griefs",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Définition et caractéristiques de l'arbitrage. La compétence arbitrale, les objections préliminaires, l'enquête et la décision de l'arbitre. Le pouvoir de surveillance des tribunaux supérieurs. La jurisprudence arbitrale. Cours équivalent(s) : REI3345",
+    "prealablesBrut": "REI1140G",
+    "prealables": {
+      "genre": "cours",
+      "code": "REI 1140G"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-3345g/",
+    "scrapeISO": "2026-09-13T03:24:31.648Z"
+  },
+  "REI 2211G": {
+    "code": "REI 2211G",
+    "titre": "Formation et dévelop. des RH",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Pratiques relatives au développement de compétences des employés et des cadres (analyse des besoins, élaboration, mise en oeuvre, évaluation), à la gestion de carrière (plans de carrière, développement de carrière) et à la gestion du savoir.",
+    "prealablesBrut": "REI1240 ou REI1240G",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "REI 1240"
+        },
+        {
+          "genre": "cours",
+          "code": "REI 1240G"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI2211/REI2211G/REI3211",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2211g/",
+    "scrapeISO": "2026-09-13T03:24:33.904Z"
+  },
+  "REI 2215G": {
+    "code": "REI 2215G",
+    "titre": "Rémunération",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Étude des divers modèles et approches en rémunération. Éléments pertinents à l'élaboration, l'implantation et la gestion de politiques et de pratiques efficaces et équitables en matière de rémunération.",
+    "prealablesBrut": "REI1240G ou REI1240",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "REI 1240G"
+        },
+        {
+          "genre": "cours",
+          "code": "REI 1240"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI2215/REI2215G/REI3251/REI3251G",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2215g/",
+    "scrapeISO": "2026-09-13T03:24:35.626Z"
+  },
+  "REI 2230G": {
+    "code": "REI 2230G",
+    "titre": "Stratégie RH et dotation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Gestion stratégique des ressources humaines. Gestion prévisionnelle des emplois et des compétences. Recrutement et sélection du personnel. Accueil et intégration des nouveaux employés. Évaluation du processus de dotation.",
+    "prealablesBrut": "REI1240G ou REI1240",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "REI 1240G"
+        },
+        {
+          "genre": "cours",
+          "code": "REI 1240"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "REI2240/REI3216/REI2230/REI2230G/REI2240G/REI3216G",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2230g/",
+    "scrapeISO": "2026-09-13T03:24:37.655Z"
+  },
+  "REI 1850": {
+    "code": "REI 1850",
+    "titre": "Gestion des ressources humaines et IA",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Historique de l’organisation du travail, transformation des emplois avec l’IA, GRH algorithmique. Utilisation de l’IA : principales activités reliées à la GRH, mieux-être au travail, diversité et inclusion, mouvement syndical, droit à la vie privée. Remarque : intelligence artificielle (IA), gestion des ressources humaines (GRH)",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1850/",
+    "scrapeISO": "2026-09-13T03:32:41.993Z"
+  },
+  "REI 3850": {
+    "code": "REI 3850",
+    "titre": "Gestion du changement et adoption de l’IA",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Notions de gestion de changement et particularités liées à l’implantation de l’IA, facteurs de succès et causes d’échec du changement, acteurs impliqués, bonnes pratiques d’adoption de l’IA, collaboration multidisciplinaire, communication, formation. Remarque : intelligence artificielle (IA)",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-3850/",
+    "scrapeISO": "2026-09-13T03:32:43.988Z"
+  },
+  "REI 6170": {
+    "code": "REI 6170",
+    "titre": "Stratégies en santé et sécurité du travail",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse du contexte socio-économique et institutionnel de la SST, des fonctions et des enjeux de la gestion stratégique de la SST aux plans du financement, de la réparation et de la prévention des lésions professionnelles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6170/",
+    "scrapeISO": "2026-09-13T03:40:14.246Z"
+  },
+  "REI 6630": {
+    "code": "REI 6630",
+    "titre": "Mieux-être et promotion de la santé au travail",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude et approfondissement des notions entourant les déterminants, la prévention et l'intervention en matière de mieux-être et de promotion de la santé au travail.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6630/",
+    "scrapeISO": "2026-09-13T03:40:14.981Z"
+  },
+  "REI 6600": {
+    "code": "REI 6600",
+    "titre": "Théories en relations industrielles",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Évolution de l'objet et du champ des relations industrielles. Analyse critique de différentes approches théoriques utilisées pour l'étude de problèmes contemporains en relations industrielles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6600/",
+    "scrapeISO": "2026-09-13T03:42:39.963Z"
+  },
+  "REI 6601": {
+    "code": "REI 6601",
+    "titre": "Méthodologie et analyse de données",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principales opérations méthodologiques dans les stratégies de collecte des données pour la recherche, la résolution de problèmes et la fonction d'analyste-conseil en organisation. Outils d'analyses quantitatives et qualitatives. Remarques: Obligatoire à la maîtrise.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6601/",
+    "scrapeISO": "2026-09-13T03:42:42.004Z"
+  },
+  "REI 6627": {
+    "code": "REI 6627",
+    "titre": "Aspects internationaux de la SST",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Études des aspects internationaux des mécanismes de prévention et de compensation en matière de santé-sécurité au travail.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6627/",
+    "scrapeISO": "2026-09-13T03:42:58.143Z"
+  },
+  "REI 6614": {
+    "code": "REI 6614",
+    "titre": "Diversité, immigration et équité en emploi",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Égalité et discrimination. Principes de mise en oeuvre des programmes d'équité en emploi et d'équité salariale. Rôle des syndicats. Influence des systèmes de relations industrielles et des politiques publiques. Égalité et restructuration économique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6614/",
+    "scrapeISO": "2026-09-13T03:48:30.394Z"
   }
 }

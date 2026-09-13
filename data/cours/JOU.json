@@ -58,5 +58,238 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-2310/",
     "scrapeISO": "2026-09-13T03:07:55.342Z"
+  },
+  "JOU 1001": {
+    "code": "JOU 1001",
+    "titre": "Rédaction journalistique multiplateforme",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Initiation aux techniques d’écriture pour la presse écrite et les médias numériques. Règles grammaticales et terminologiques, codes et conventions de la langue française en rédaction pour différentes plateformes d’information. Remarque : nous vous recommandons de suivre ce cours au trimestre d’admission du programme.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-1001/",
+    "scrapeISO": "2026-09-13T03:24:01.019Z"
+  },
+  "JOU 3300": {
+    "code": "JOU 3300",
+    "titre": "Éthique et déontologie du journalisme",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Éthique et déontologie professionnelle. Droits et responsabilités des journalistes. Organismes régulateurs et autorégulateurs de la presse. Jurisprudence en déontologie journalistique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-3300/",
+    "scrapeISO": "2026-09-13T03:32:03.039Z"
+  },
+  "JOU 1450": {
+    "code": "JOU 1450",
+    "titre": "Atelier de journalisme multimédia",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Initiation aux différents médias audiovisuels et numériques: radio, télévision et web. Exploration des bases de l'écriture dans ces plateformes. Apprentissage du maniement des outils de captation et des logiciels de postproduction et de diffusion.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-1450/",
+    "scrapeISO": "2026-09-13T03:32:52.224Z"
+  },
+  "JOU 2103": {
+    "code": "JOU 2103",
+    "titre": "Atelier de presse écrite et édition numérique",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Atelier pratique appliqué à la fonction de journaliste reporter et initiation au rôle d’éditeur-pupitreur dans une publication écrite et numérique.",
+    "prealablesBrut": "JOU1001",
+    "prealables": {
+      "genre": "cours",
+      "code": "JOU 1001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-2103/",
+    "scrapeISO": "2026-09-13T03:32:54.261Z"
+  },
+  "JOU 2201": {
+    "code": "JOU 2201",
+    "titre": "Atelier de radio",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Pratiques journalistiques dans une salle de nouvelles en radio. Entrevue, reportage, prise de son, montage. Rédaction de nouvelles radiophoniques.",
+    "prealablesBrut": "JOU1450",
+    "prealables": {
+      "genre": "cours",
+      "code": "JOU 1450"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-2201/",
+    "scrapeISO": "2026-09-13T03:32:56.224Z"
+  },
+  "JOU 2350": {
+    "code": "JOU 2350",
+    "titre": "Atelier de presse télévisée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Production de reportages en télévision : recherche, entrevue, tournage, scénarisation et montage de l'information télévisée. Caractéristiques du média et des formes de traitement de la nouvelle.",
+    "prealablesBrut": "JOU1450",
+    "prealables": {
+      "genre": "cours",
+      "code": "JOU 1450"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-2350/",
+    "scrapeISO": "2026-09-13T03:32:58.167Z"
+  },
+  "JOU 2400": {
+    "code": "JOU 2400",
+    "titre": "Le journalisme en ligne",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Techniques de recherche, d'écriture et de production en ligne. Différents genres et formats destinés au Web. Réseaux sociaux et journalisme.",
+    "prealablesBrut": "JOU1001",
+    "prealables": {
+      "genre": "cours",
+      "code": "JOU 1001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-2400/",
+    "scrapeISO": "2026-09-13T03:33:00.204Z"
+  },
+  "JOU 3500": {
+    "code": "JOU 3500",
+    "titre": "Travail dirigé",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Production d'un grand reportage (grande enquête, grand portrait) pour la presse écrite, électronique ou en ligne, sous tutorat.",
+    "prealablesBrut": "18 crédits de sigle JOU, incluant ((JOU1100 et JOU1200 et JOU1450 et JOU3300) et (JOU2101 ou JOU2201 ou JOU2350 ou JOU2400 ou JOU2500))",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "18 crédits de sigle JOU, incluant ((JOU1100 et JOU1200 et JOU1450 et JOU3300) et (JOU2101 ou JOU2201 ou JOU2350 ou JOU2400 ou JOU2500))"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-3500/",
+    "scrapeISO": "2026-09-13T03:33:02.072Z"
+  },
+  "JOU 2510Z": {
+    "code": "JOU 2510Z",
+    "titre": "Le journaliste-entrepreneur",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Analyse de l'industrie des médias du Québec sous l'angle du marché de la pige. Évolution des conditions de pratique et perspectives d'avenir. Contraintes, défis et avantages liés à l'entreprenariat en journalisme.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-2510z/",
+    "scrapeISO": "2026-09-13T03:33:04.113Z"
+  },
+  "JOU 3400": {
+    "code": "JOU 3400",
+    "titre": "Stage en entreprise",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Formation pratique dans l'un des quatre contextes médiatiques suivants : presse écrite, parlée, télévisée ou en ligne. Remarque: Les objectifs et les conditions de réalisation du stage doivent être approuvés par le responsable du programme.",
+    "prealablesBrut": "18 crédits de sigle JOU, incluant ((JOU1100 et JOU1200 et JOU1450 et JOU3300) et (JOU2101 ou JOU2201 ou JOU2350 ou JOU2400 ou JOU2500))",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "18 crédits de sigle JOU, incluant ((JOU1100 et JOU1200 et JOU1450 et JOU3300) et (JOU2101 ou JOU2201 ou JOU2350 ou JOU2400 ou JOU2500))"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-3400/",
+    "scrapeISO": "2026-09-13T03:33:06.306Z"
   }
 }

@@ -355,5 +355,479 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-3900/",
     "scrapeISO": "2026-09-11T17:53:46.829Z"
+  },
+  "DMO 6305": {
+    "code": "DMO 6305",
+    "titre": "Analyse démographique avancée",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Table de mortalité en continu. Le renouvellement des populations. Les populations stables et leur généralisation. Hétérogénéité et sélection. Introduction aux processus de naissance et de mort. Modèles de microsimulation.",
+    "prealablesBrut": "(DMO2311 ou DMO6011 ) et (DMO2312 ou DMO6012 )",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "DMO 2311"
+            },
+            {
+              "genre": "cours",
+              "code": "DMO 6011"
+            }
+          ]
+        },
+        {
+          "genre": "ou",
+          "enfants": [
+            {
+              "genre": "cours",
+              "code": "DMO 2312"
+            },
+            {
+              "genre": "cours",
+              "code": "DMO 6012"
+            }
+          ]
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6305/",
+    "scrapeISO": "2026-09-13T03:38:26.626Z"
+  },
+  "DMO 6371": {
+    "code": "DMO 6371",
+    "titre": "Méthodes statistiques en démographie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Survol des méthodes inductives en démographie : régressions moindres carrés ordinaires, doubles moindres carrés, Tobit, logit/probit. Endogénéité, pondérations, erreurs de mesure, etc.",
+    "prealablesBrut": "SOL2020",
+    "prealables": {
+      "genre": "cours",
+      "code": "SOL 2020"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6371/",
+    "scrapeISO": "2026-09-13T03:38:30.491Z"
+  },
+  "DMO 6500": {
+    "code": "DMO 6500",
+    "titre": "Fécondité et famille",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théories explicatives de la transition de la fécondité. Régimes de faible fécondité. Systèmes familiaux. Évolution de la conjugalité et redéfinition de la famille. Trajectoires familiales et conditions de vie des individus.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6500/",
+    "scrapeISO": "2026-09-13T03:38:31.923Z"
+  },
+  "DMO 6501": {
+    "code": "DMO 6501",
+    "titre": "Migration",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Intégration de la migration dans l'analyse démographique; concepts, méthodes, théories et modèles des migrations internes et internationales; causes et conséquences de la migration; politiques de migration.",
+    "prealablesBrut": "DMO2311 ou DMO6011",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DMO 2311"
+        },
+        {
+          "genre": "cours",
+          "code": "DMO 6011"
+        }
+      ]
+    },
+    "concomitantsBrut": "DMO6501 et DMO2312 ou DMO6012",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6501/",
+    "scrapeISO": "2026-09-13T03:38:32.694Z"
+  },
+  "DMO 6502": {
+    "code": "DMO 6502",
+    "titre": "Mortalité, santé et vieillissement",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Déterminants, conséquences et tendances séculaires de la mortalité et de la santé à travers le cycle de vie. Vieillissement des populations. Examen des politiques de santé publique.",
+    "prealablesBrut": "DMO2311 ou DMO6011",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DMO 2311"
+        },
+        {
+          "genre": "cours",
+          "code": "DMO 6011"
+        }
+      ]
+    },
+    "concomitantsBrut": "DMO6502 et DMO2312 ou DMO6012",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6502/",
+    "scrapeISO": "2026-09-13T03:38:35.027Z"
+  },
+  "DMO 6320": {
+    "code": "DMO 6320",
+    "titre": "Démographie appliquée et perspectives",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Méthodes indirectes d'évaluation des populations et des phénomènes démographiques; principes et méthodes de projections de grands et de petits ensembles, ainsi que de sous-ensembles ayant des caractéristiques particulières.",
+    "prealablesBrut": "DMO2311 ou DMO6011",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DMO 2311"
+        },
+        {
+          "genre": "cours",
+          "code": "DMO 6011"
+        }
+      ]
+    },
+    "concomitantsBrut": "DMO6320 et DMO2312 ou DMO6012",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6320/",
+    "scrapeISO": "2026-09-13T03:38:38.496Z"
+  },
+  "DMO 6330": {
+    "code": "DMO 6330",
+    "titre": "Méthodes de la démographie historique",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude des principales théories, méthodes et sources de la démographie historique. Critique et exploitation des données longitudinales et transversales, quantitatives et qualitatives. Travail individuel de recherche.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6330/",
+    "scrapeISO": "2026-09-13T03:38:40.517Z"
+  },
+  "DMO 6405": {
+    "code": "DMO 6405",
+    "titre": "Modèles de risque et de durée",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Durée et risque. Inférence : échantillon complexe, enquêtes prospectives et rétrospectives. Modèle à risques relatifs de Cox. Censure et troncature. Modèles à risques non relatifs. Analyse de la causalité. Effets aléatoires.",
+    "prealablesBrut": "DMO6371",
+    "prealables": {
+      "genre": "cours",
+      "code": "DMO 6371"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "STS6015/DMO6405",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6405/",
+    "scrapeISO": "2026-09-13T03:38:42.557Z"
+  },
+  "DMO 6820": {
+    "code": "DMO 6820",
+    "titre": "Méthodes multiniveaux et multi-états",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Théorie et substance des méthodes statistiques multiniveaux et multi-états pour l'analyse des données hiérarchiques ou longitudinales. Construction des fichiers, estimation des modèles et interprétation détaillée des résultats.",
+    "prealablesBrut": "DMO6371 ET DMO6405",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "DMO 6371"
+        },
+        {
+          "genre": "cours",
+          "code": "DMO 6405"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6820/",
+    "scrapeISO": "2026-09-13T03:38:44.512Z"
+  },
+  "DMO 6050": {
+    "code": "DMO 6050",
+    "titre": "Démographie et santé",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Notions de base et indicateurs en épidémiologie sociale et démographie/santé. Lecture critique des études populationnelles, transversales et longitudinales à travers le cycle de vie des individus et des familles dans différents environnements.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "DMO1000/DMO1010/DMO6050",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6050/",
+    "scrapeISO": "2026-09-13T03:38:46.522Z"
+  },
+  "DMO 6200": {
+    "code": "DMO 6200",
+    "titre": "Méthodes de recherche et enjeux démographiques",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Présentation des principes, concepts et méthodes utilisés en démographie. Élaboration d'une stratégie de recherche en lien avec les principaux enjeux sociaux.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6200/",
+    "scrapeISO": "2026-09-13T03:38:46.771Z"
+  },
+  "DMO 6311": {
+    "code": "DMO 6311",
+    "titre": "Initiation à la recherche",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Sous la supervision d'un professeur, l'étudiant poursuit et développe un travail de recherche entrepris dans le cadre d'un projet concret, soit au cours d'un travail d'été ou d'un travail d'auxiliaire de recherche.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6311/",
+    "scrapeISO": "2026-09-13T03:38:50.484Z"
+  },
+  "DMO 6430": {
+    "code": "DMO 6430",
+    "titre": "Population et développement",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Liens entre population et développement. Expériences des pays en développement confrontées aux expériences historiques des pays développés.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-6430/",
+    "scrapeISO": "2026-09-13T03:38:52.533Z"
+  },
+  "DMO 3600": {
+    "code": "DMO 3600",
+    "titre": "Sciences de la population",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Intégration et consolidation des apprentissages sur les sciences de la population par le biais d’un projet d’analyse appliquée de nature quantitative ou qualitative impliquant des aspects théoriques et méthodologiques ainsi que des données probantes. Préalable : Seuls les étudiants ayant préalablement complété un minimum de 72 crédits (au total) dans les deux programmes faisant l’objet du BACCAP en sciences de la population seront autorisés à s’y inscrire. Équivalence(s) : DMO3600 / DMO46001",
+    "prealablesBrut": "Seuls les étudiants ayant préalablement complété un minimum de 72 crédits (au total) dans les deux programmes faisant l'objet du BACCAP en sciences de la population seront autorisés à s'y inscrire.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Seuls les étudiants ayant préalablement complété un minimum de 72 crédits (au total) dans les deux programmes faisant l'objet du BACCAP en sciences de la population seront autorisés à s'y inscrire."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-3600/",
+    "scrapeISO": "2026-09-13T03:56:12.913Z"
+  },
+  "DMO 2002": {
+    "code": "DMO 2002",
+    "titre": "Stage 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage supervisé en milieu de travail qui vise l’intégration de la formation académique et des habiletés développées en démographie, en vue d’acquérir une expérience professionnelle (organisation publique ou privée). Production d’un rapport de stage.",
+    "prealablesBrut": "DMO 1000, SOL 1020, DMO 2200, DMO 2311, DMO 2312",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "DMO 1000, SOL 1020, DMO 2200, DMO 2311, DMO 2312"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-2002/",
+    "scrapeISO": "2026-09-13T03:56:16.202Z"
+  },
+  "DMO 3000": {
+    "code": "DMO 3000",
+    "titre": "Stage 2",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Stage supervisé en milieu de travail qui vise l’intégration de la formation académique et des habiletés développées en démographie, en vue d’acquérir une expérience professionnelle (organisation publique ou privée). Production d’un rapport de stage.",
+    "prealablesBrut": "DMO 1000, SOL 1020, DMO 2200, DMO 2311, DMO 2312",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "DMO 1000, SOL 1020, DMO 2200, DMO 2311, DMO 2312"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-3000/",
+    "scrapeISO": "2026-09-13T03:56:17.858Z"
+  },
+  "DMO 2001": {
+    "code": "DMO 2001",
+    "titre": "Recherche appliquée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Participation à un projet de recherche sous la supervision d’un(e) professeur(e) du Département de démographie ou dans un milieu accrédité par le(la) Responsable de programmes de 1er cycle. Rédaction d’un rapport de recherche.",
+    "prealablesBrut": "DMO 1000, SOL 1020, DMO 2200, DMO 2311, DMO 2312",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "DMO 1000, SOL 1020, DMO 2200, DMO 2311, DMO 2312"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-2001/",
+    "scrapeISO": "2026-09-13T03:56:20.168Z"
+  },
+  "DMO 46002": {
+    "code": "DMO 46002",
+    "titre": "Projet d’intégration honor 2",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Séminaire portant sur la planification et l'élaboration d'un projet de recherche en démographie. Familiarisation avec toutes les étapes de réalisation d'une recherche.",
+    "prealablesBrut": "DMO46001",
+    "prealables": {
+      "genre": "cours",
+      "code": "DMO 46001"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/dmo-46002/",
+    "scrapeISO": "2026-09-13T03:56:23.796Z"
   }
 }

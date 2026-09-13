@@ -556,5 +556,75 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-3114/",
     "scrapeISO": "2026-09-12T22:12:02.919Z"
+  },
+  "MTE 1403": {
+    "code": "MTE 1403",
+    "titre": "Composition contemporaine 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Atelier de composition instrumentale amenant l’étudiant(e) à analyser puis à appliquer différentes techniques compositionnelles des XXe et XXIe siècles : modes mélodiques et rythmiques, séries, hétérophonie, micropolyphonie, polymétrie, etc.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-1403/",
+    "scrapeISO": "2026-09-13T03:59:00.201Z"
+  },
+  "MTE 1404": {
+    "code": "MTE 1404",
+    "titre": "Composition contemporaine 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Atelier de composition instrumentale amenant l’étudiant(e) à analyser puis à appliquer différentes techniques compositionnelles des XXe et XXIe siècles : harmonie spectrale, musique concrète instrumentale, algorithmique, notation graphiques/médiatiques.",
+    "prealablesBrut": "MTE1403",
+    "prealables": {
+      "genre": "cours",
+      "code": "MTE 1403"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-1404/",
+    "scrapeISO": "2026-09-13T03:59:00.822Z"
+  },
+  "MTE 3117X": {
+    "code": "MTE 3117X",
+    "titre": "Orchestration symphonique 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Étude historique et pratique de l'orchestration stylistique. Types d'orchestres symphoniques, particularités et l'instrumentarium selon l'époque, conventions de notation, approche de l'orchestration selon les compositeurs, de Mozart à Ravel.",
+    "prealablesBrut": "MTE3114 ou MTE3116",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MTE 3114"
+        },
+        {
+          "genre": "cours",
+          "code": "MTE 3116"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mte-3117x/",
+    "scrapeISO": "2026-09-13T03:59:04.574Z"
   }
 }

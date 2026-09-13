@@ -1,0 +1,72 @@
+{
+  "PSO 1000": {
+    "code": "PSO 1000",
+    "titre": "Psychologie-Sociologie: regards croisés",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Interdisciplinarité. La rencontre des imaginaires, connaissances et approches psychologiques et sociologiques. Le parcours de formation bidisciplinaire et ses champs d'application.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pso-1000/",
+    "scrapeISO": "2026-09-13T03:21:50.532Z"
+  },
+  "PSO 2000": {
+    "code": "PSO 2000",
+    "titre": "Psychologie-Sociologie: champs d'études",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Principes théoriques, méthodologiques et épistémologiques de recherches interdisciplinaires. Étude de travaux de recherche fondamentale ou appliquée, dans des domaines divers, du point de vue de la psychologie et de la sociologie.",
+    "prealablesBrut": "Les étudiants doivent avoir complété un minimum de 24 crédits de cours du programme 1-257-1-0, incluant le PSO1000",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Les étudiants doivent avoir complété un minimum de 24 crédits de cours du programme 1-257-1-0, incluant le PSO1000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pso-2000/",
+    "scrapeISO": "2026-09-13T03:21:52.575Z"
+  },
+  "PSO 3000": {
+    "code": "PSO 3000",
+    "titre": "Psychologie-Sociologie: laboratoire",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Problématisation d'une question au choix et élaboration d'un devis de recherche fondamentale ou appliquée faisant appel aux outils conceptuels et méthodologiques de la psychologie et de la sociologie.",
+    "prealablesBrut": "PSO2000",
+    "prealables": {
+      "genre": "cours",
+      "code": "PSO 2000"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pso-3000/",
+    "scrapeISO": "2026-09-13T03:21:54.551Z"
+  }
+}

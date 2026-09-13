@@ -61,5 +61,242 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-1000/",
     "scrapeISO": "2026-09-13T03:08:16.118Z"
+  },
+  "REP 2100": {
+    "code": "REP 2100",
+    "titre": "Rédaction stratégique et d'influence",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Conditions d'efficacité du texte. Mandats particuliers. Caractéristiques des publics et messages clés. Techniques de présentation selon divers médias et éléments d'argumentation. Communication sensible.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-2100/",
+    "scrapeISO": "2026-09-13T03:24:07.368Z"
+  },
+  "REP 3105": {
+    "code": "REP 3105",
+    "titre": "Affaires publiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Influence du pouvoir public et impacts organisationnels. Processus décisionnel au sein des instances gouvernementales. Communication avec les composantes exécutive, législative et administrative de l’État. Lois encadrant la pratique du lobbying.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "REP3105, REP1000 et REP2100",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-3105/",
+    "scrapeISO": "2026-09-13T03:24:11.551Z"
+  },
+  "REP 1500": {
+    "code": "REP 1500",
+    "titre": "Relations avec les publics internes",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Fondements et pratiques de la communication interne. Analyse des enjeux contemporains : mobilisation, engagement, culture organisationnelle, communication du changement, leadership. Études de cas inspirées de situations professionnelles réelles.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-1500/",
+    "scrapeISO": "2026-09-13T03:29:44.650Z"
+  },
+  "REP 2500": {
+    "code": "REP 2500",
+    "titre": "Responsabilité sociale et enjeux de communication",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Responsabilité d’entreprise et acceptabilité sociale. Engagements envers des facteurs de type EDI et DRA. Développement durable. Stratégies de relations publiques éthiques et responsables. Mise en œuvre en fonction des objectifs organisationnels.",
+    "prealablesBrut": "REP1000 ET REP2100",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "REP 1000"
+        },
+        {
+          "genre": "cours",
+          "code": "REP 2100"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-2500/",
+    "scrapeISO": "2026-09-13T03:29:48.540Z"
+  },
+  "REP 3101": {
+    "code": "REP 3101",
+    "titre": "Recherche, analyse de données, évaluation",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Recherche formative d’une problématique spécifique aux relations publiques. Planification et exploration de données. Tableaux de bord et indicateurs mesurables de gestion. Objectifs SMART. Monitoring aux fins de diagnostic et d’application.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": "REP3101 et REP1000 et REP2100",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-3101/",
+    "scrapeISO": "2026-09-13T03:29:48.713Z"
+  },
+  "REP 3102": {
+    "code": "REP 3102",
+    "titre": "Planification, stratégies et tactiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Planification et rôles stratégiques des interventions de relations publiques. Contribution à l'atteinte des objectifs d'affaires. Gestion des enjeux et de la réputation. Élaboration de plans et de tactiques de communication.",
+    "prealablesBrut": "REP3101",
+    "prealables": {
+      "genre": "cours",
+      "code": "REP 3101"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-3102/",
+    "scrapeISO": "2026-09-13T03:29:50.740Z"
+  },
+  "REP 2300": {
+    "code": "REP 2300",
+    "titre": "Communication avec les médias et les influenceurs",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Approches d’engagement auprès des médias et des influenceurs. Applications pratiques pour les communications externes. Développement de contenus en partenariat. Veille médiatique, indicateurs clés de mesure des résultats.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-2300/",
+    "scrapeISO": "2026-09-13T03:29:56.533Z"
+  },
+  "REP 2600": {
+    "code": "REP 2600",
+    "titre": "Premiers Peuples et communication",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Reconnaissance des injustices historiques et contemporaines. Principes de décolonisation, de réconciliation et d’autochtonisation (DRA). Consultation et communication auprès des partenaires autochtones. Approche du double regard. Atelier immersif en milieu autochtone.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-2600/",
+    "scrapeISO": "2026-09-13T03:29:56.699Z"
+  },
+  "REP 3104": {
+    "code": "REP 3104",
+    "titre": "Gestion de crises et communication",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Types et caractéristiques des crises. Cellule de crise et plan de communication en situation d’urgence. Cycles de gestion de l’information et de la communication en période de crise. Médias sociaux et communication sensible. Aspects déontologiques.",
+    "prealablesBrut": "REP3104, REP1000 et REP2100",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "REP3104, REP1000 et REP2100"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-3104/",
+    "scrapeISO": "2026-09-13T03:29:58.760Z"
+  },
+  "REP 3107": {
+    "code": "REP 3107",
+    "titre": "Stage en relations publiques",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de l’apprentissage continu",
+    "description": "Acquisition d'une expérience pratique dans un service de relations publiques ou de communication d'une organisation. Supervision et encadrement de l'étudiant. Remarques: L'étudiant doit soumettre, pour approbation, un projet de présentation de stage avant de s'inscrire, et par la suite, un journal de bord et un rapport à la fin du stage. Durée minimale de 135 heures.",
+    "prealablesBrut": "Minimum de 21 crédits en relations publiques.",
+    "prealables": {
+      "genre": "opaque",
+      "texte": "Minimum de 21 crédits en relations publiques."
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rep-3107/",
+    "scrapeISO": "2026-09-13T03:30:00.722Z"
   }
 }

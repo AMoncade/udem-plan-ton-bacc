@@ -50,5 +50,151 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-1132/",
     "scrapeISO": "2026-09-11T11:33:36.612Z"
+  },
+  "AUD 6171": {
+    "code": "AUD 6171",
+    "titre": "Méthodes de recherche en audiologie 1",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer principalement la compétence d'érudition reliée à la démarche scientifique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6171/",
+    "scrapeISO": "2026-09-13T03:47:22.216Z"
+  },
+  "AUD 6172": {
+    "code": "AUD 6172",
+    "titre": "Méthodes de recherche en audiologie 2",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer principalement la compétence d'érudition reliée à la démarche scientifique.",
+    "prealablesBrut": "AUD6171",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6171"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6172/",
+    "scrapeISO": "2026-09-13T03:47:22.979Z"
+  },
+  "AUD 6181": {
+    "code": "AUD 6181",
+    "titre": "Pratique factuelle en audiologie",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer la compétence d'érudition reliée à l'évaluation des données probantes en audiologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6181/",
+    "scrapeISO": "2026-09-13T03:47:26.695Z"
+  },
+  "AUD 6273": {
+    "code": "AUD 6273",
+    "titre": "Méthodes de recherche en audiologie 3",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer principalement la compétence d'érudition reliée à la démarche scientifique.",
+    "prealablesBrut": "AUD6172",
+    "prealables": {
+      "genre": "cours",
+      "code": "AUD 6172"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6273/",
+    "scrapeISO": "2026-09-13T03:47:28.769Z"
+  },
+  "AUD 6282": {
+    "code": "AUD 6282",
+    "titre": "Transfert de connaissances en audiologie",
+    "credits": 1,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Le cours vise à développer des compétences reliées à la planification et la réalisation d'activités de transfert de connaissances dans le domaine de l'audiologie.",
+    "prealablesBrut": "AUD6252 et AUD6273",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "AUD 6252"
+        },
+        {
+          "genre": "cours",
+          "code": "AUD 6273"
+        }
+      ]
+    },
+    "concomitantsBrut": "AUD60914",
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6282/",
+    "scrapeISO": "2026-09-13T03:47:30.310Z"
+  },
+  "AUD 6817": {
+    "code": "AUD 6817",
+    "titre": "Stage de recherche en audiologie",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Sous la supervision d'un membre du corps professoral affecté à la Faculté des études supérieures, ce stage permet d'acquérir une expérience pratique des principes élémentaires de la démarche scientifique en audiologie.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aud-6817/",
+    "scrapeISO": "2026-09-13T03:47:32.842Z"
   }
 }

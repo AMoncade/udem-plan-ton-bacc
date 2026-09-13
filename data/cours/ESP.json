@@ -344,5 +344,322 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3444/",
     "scrapeISO": "2026-09-13T03:17:51.631Z"
+  },
+  "ESP 2510": {
+    "code": "ESP 2510",
+    "titre": "Pratique orale de l'espagnol",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Perfectionnement de la compréhension et de l'expression orale en espagnol (exercices oraux, conversation avancée, correction de la prononciation et de l'intonation, etc.). Exercices écrits complémentaires.",
+    "prealablesBrut": "ESP1906",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1906"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2510/",
+    "scrapeISO": "2026-09-13T03:22:22.202Z"
+  },
+  "ESP 2525": {
+    "code": "ESP 2525",
+    "titre": "Composition espagnole",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Acquisition d'une expression intelligible et efficace en espagnol écrit (compétences syntaxique et textuelle). Apprentissage des techniques de base. Révision de notions grammaticales et élargissement du vocabulaire. Remarques: cours offert en espagnol.",
+    "prealablesBrut": "ESP1906",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1906"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2525/",
+    "scrapeISO": "2026-09-13T03:22:22.870Z"
+  },
+  "ESP 2535": {
+    "code": "ESP 2535",
+    "titre": "Rédaction et révision de texte",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Cours destiné à approfondir et maîtriser les techniques de rédaction, pour permettre à l'étudiant d'affiner et de nuancer son jugement linguistique et d'utiliser la langue écrite avec un niveau de correction maximale et dans une variété de genres. Remarques : cours offert en espagnol.",
+    "prealablesBrut": "ESP2525 OU ESP2531",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2531"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2535/",
+    "scrapeISO": "2026-09-13T03:22:24.819Z"
+  },
+  "ESP 2536": {
+    "code": "ESP 2536",
+    "titre": "Grammaire avancée",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Ce cours s'adresse aux étudiants qui ont déjà atteint un niveau supérieur en espagnol. Il vise une connaissance approfondie de la grammaire de l'espagnol, et en particulier de la morpho-syntaxe.",
+    "prealablesBrut": "ESP2510 OU ESP2525 OU ESP2531",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2531"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2536/",
+    "scrapeISO": "2026-09-13T03:22:28.858Z"
+  },
+  "ESP 3312": {
+    "code": "ESP 3312",
+    "titre": "Imaginaires littéraires postcoloniaux",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Examen de différentes expressions discursives de résistance à l'ordre colonial en Amérique hispanique. Remarque : cours offert en espagnol.",
+    "prealablesBrut": "ESP1325",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1325"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3312/",
+    "scrapeISO": "2026-09-13T03:56:30.797Z"
+  },
+  "ESP 1225": {
+    "code": "ESP 1225",
+    "titre": "Littérature espagnole : panorama",
+    "credits": 6,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "a) Méthodologie. Bibliographie. Documentation sur les études hispaniques. b) Étude historique des grands mouvements littéraires des origines à nos jours.",
+    "prealablesBrut": "ESP1906 OU ESP2510 OU ESP2525 OU ESP2536",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1906"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-1225/",
+    "scrapeISO": "2026-09-13T03:56:47.107Z"
+  },
+  "ESP 1325": {
+    "code": "ESP 1325",
+    "titre": "Littérature hispano-américaine: panorama",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude historique des grands mouvements littéraires de leurs origines à nos jours.",
+    "prealablesBrut": "ESP1906 OU ESP2510 OU ESP2525 OU ESP2536",
+    "prealables": {
+      "genre": "ou",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "ESP 1906"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2510"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2525"
+        },
+        {
+          "genre": "cours",
+          "code": "ESP 2536"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-1325/",
+    "scrapeISO": "2026-09-13T03:56:49.109Z"
+  },
+  "ESP 2350": {
+    "code": "ESP 2350",
+    "titre": "Migration, diaspora et littérature",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Analyse des représentations littéraires des diasporas afro-descendantes, arabes, juives et roms en Amérique latine, ainsi que la diaspora latine aux États-Unis et Canada. Remarque : cours offert en espagnol.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-2350/",
+    "scrapeISO": "2026-09-13T03:56:51.394Z"
+  },
+  "ESP 3242": {
+    "code": "ESP 3242",
+    "titre": "Romantisme et réalisme en Espagne",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "L'Espagne et la société espagnole du XIXe siècle à travers l'oeuvre de créateurs représentatifs du romantisme et du réalisme.",
+    "prealablesBrut": "ESP1225",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1225"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3242/",
+    "scrapeISO": "2026-09-13T03:56:51.531Z"
+  },
+  "ESP 3252": {
+    "code": "ESP 3252",
+    "titre": "Roman et théâtre espagnols du 20e siècle",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de textes romanesques et dramatiques contemporains.",
+    "prealablesBrut": "ESP1225",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1225"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3252/",
+    "scrapeISO": "2026-09-13T03:56:55.323Z"
+  },
+  "ESP 3324": {
+    "code": "ESP 3324",
+    "titre": "Roman et conte hispano-américains",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude d'un choix de contes et romans représentatifs des pays de l'Amérique hispanique.",
+    "prealablesBrut": "ESP1325",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1325"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3324/",
+    "scrapeISO": "2026-09-13T03:56:55.541Z"
+  },
+  "ESP 3326": {
+    "code": "ESP 3326",
+    "titre": "Narration et théâtre hispano-américains",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté des arts et des sciences",
+    "description": "Étude de textes narratifs et dramatiques contemporains de l'Amérique hispanique.",
+    "prealablesBrut": "ESP1325",
+    "prealables": {
+      "genre": "cours",
+      "code": "ESP 1325"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/esp-3326/",
+    "scrapeISO": "2026-09-13T03:56:59.442Z"
   }
 }

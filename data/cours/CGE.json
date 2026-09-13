@@ -81,5 +81,305 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6004/",
     "scrapeISO": "2026-09-13T03:16:40.352Z"
+  },
+  "CGE 6009": {
+    "code": "CGE 6009",
+    "titre": "Atelier en conseil génétique 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Atelier permettant de comprendre le rôle du conseiller en génétique, de se familiariser avec les étapes de la démarche clinique et de formuler un conseil génétique approprié.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6009/",
+    "scrapeISO": "2026-09-13T03:50:20.564Z"
+  },
+  "CGE 6010": {
+    "code": "CGE 6010",
+    "titre": "Atelier en conseil génétique 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Fait suite aux ateliers en conseil génétique 1. Permet d'approfondir ses connaissances et ses habiletés en conseil génétique.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6010/",
+    "scrapeISO": "2026-09-13T03:50:24.723Z"
+  },
+  "CGE 6020A": {
+    "code": "CGE 6020A",
+    "titre": "Stage en milieu pédiatrique A",
+    "credits": 2.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Stage permettant une exposition diversifiée à un large spectre de situations cliniques où un conseil génétique est requis. Le stage met l'emphase sur les conditions génétiques ou congénitales à révélation précoce.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CGE60201/CGE6020A",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6020a/",
+    "scrapeISO": "2026-09-13T03:50:28.447Z"
+  },
+  "CGE 6020B": {
+    "code": "CGE 6020B",
+    "titre": "Stage en milieu pédiatrique B",
+    "credits": 2.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Stage permettant une exposition diversifiée à un large spectre de situations cliniques où un conseil génétique est requis. Le stage met l'emphase sur les conditions génétiques ou congénitales à révélation précoce.",
+    "prealablesBrut": "CGE6020A",
+    "prealables": {
+      "genre": "cours",
+      "code": "CGE 6020A"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6020b/",
+    "scrapeISO": "2026-09-13T03:50:30.140Z"
+  },
+  "CGE 6021A": {
+    "code": "CGE 6021A",
+    "titre": "Stage en milieu adulte A",
+    "credits": 2.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Stage centré sur le conseil génétique dans un contexte de rédisposition/conditions génétiques à révélation adulte, incluant la neurogénétique, l'oncogénétique, les erreurs innées du métabolisme et les maladies complexes.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CGE60211/CGE6021A",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6021a/",
+    "scrapeISO": "2026-09-13T03:50:30.885Z"
+  },
+  "CGE 6021B": {
+    "code": "CGE 6021B",
+    "titre": "Stage en milieu adulte B",
+    "credits": 2.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Stage centré sur le conseil génétique dans un contexte de prédisposition/conditions génétiques à révélation adulte, incluant la neurogénétique, l'oncogénétique, les erreurs innées du métabolisme et les maladies complexes.",
+    "prealablesBrut": "CGE6021A",
+    "prealables": {
+      "genre": "cours",
+      "code": "CGE 6021A"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CGE60212/CGE6021B",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6021b/",
+    "scrapeISO": "2026-09-13T03:50:32.911Z"
+  },
+  "CGE 6022A": {
+    "code": "CGE 6022A",
+    "titre": "Stage en diagnostic prénatal A",
+    "credits": 2.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage est centré sur le conseil génétique relié à l'évaluation du risque de malformations ou de maladies héréditaires chez le foetus et des options d'interventions prénatale.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CGE60221/CGE6022A",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6022a/",
+    "scrapeISO": "2026-09-13T03:50:36.713Z"
+  },
+  "CGE 6022B": {
+    "code": "CGE 6022B",
+    "titre": "Stage en diagnostic prénatal B",
+    "credits": 2.5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage est centré sur le conseil génétique relié à l'évaluation du risque de malformations ou de maladies héréditaires chez le foetus et des options d'interventions prénatale.",
+    "prealablesBrut": "CGE6022A",
+    "prealables": {
+      "genre": "cours",
+      "code": "CGE 6022A"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CGE60222/CGE6022B",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6022b/",
+    "scrapeISO": "2026-09-13T03:50:38.894Z"
+  },
+  "CGE 6023": {
+    "code": "CGE 6023",
+    "titre": "Stage en laboratoires diagnostiques",
+    "credits": 5,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage vise à familiariser l'étudiant avec les indications, les limites et l'interprétation des techniques diagnostiques propres à la génétique soit la cytogénétique, la génétique biochimique et la génétique moléculaire.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6023/",
+    "scrapeISO": "2026-09-13T03:50:40.845Z"
+  },
+  "CGE 6024A": {
+    "code": "CGE 6024A",
+    "titre": "Stage en conseil génétique A",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage permet à l'étudiant d'approfondir un aspect particulier du conseil génétique et d'ainsi adapter sa formation à ses intérêts particuliers ou à sa carrière future.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CGE60241/CGE6024A",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6024a/",
+    "scrapeISO": "2026-09-13T03:50:41.059Z"
+  },
+  "CGE 6024B": {
+    "code": "CGE 6024B",
+    "titre": "Stage en conseil génétique B",
+    "credits": 2,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de médecine",
+    "description": "Ce stage permet à l'étudiant d'approfondir un aspect particulier du conseil génétique et d'ainsi adapter sa formation à ses intérêts particuliers ou à sa carrière future.",
+    "prealablesBrut": "CGE6024A",
+    "prealables": {
+      "genre": "cours",
+      "code": "CGE 6024A"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "CGE60242/CGE6024B",
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/cge-6024b/",
+    "scrapeISO": "2026-09-13T03:50:44.894Z"
   }
 }

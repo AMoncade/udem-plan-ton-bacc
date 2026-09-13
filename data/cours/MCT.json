@@ -44,5 +44,153 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-3012/",
     "scrapeISO": "2026-09-11T11:38:13.821Z"
+  },
+  "MCT 6407": {
+    "code": "MCT 6407",
+    "titre": "Composition et création sonore 1",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail dirigé de recherche-création en composition et création sonore. Direction individuelle sur mesure adaptée au projet de l’étudiant.e",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6407/",
+    "scrapeISO": "2026-09-13T03:52:48.034Z"
+  },
+  "MCT 6408": {
+    "code": "MCT 6408",
+    "titre": "Composition et création sonore 2",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail dirigé de recherche-création en composition et création sonore. Direction individuelle sur mesure adaptée au projet de l’étudiant.e",
+    "prealablesBrut": "MCT6407",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 6407"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6408/",
+    "scrapeISO": "2026-09-13T03:52:48.181Z"
+  },
+  "MCT 6409": {
+    "code": "MCT 6409",
+    "titre": "Composition et création sonore 3",
+    "credits": 3,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Travail dirigé de recherche-création en composition et création sonore. Direction individuelle sur mesure adaptée au projet de l’étudiant.e",
+    "prealablesBrut": "MCT6408",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 6408"
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6409/",
+    "scrapeISO": "2026-09-13T03:52:51.524Z"
+  },
+  "MCT 6945": {
+    "code": "MCT 6945",
+    "titre": "Mémoire et portfolio de recherche-création",
+    "credits": 24,
+    "cycle": "Cycles supérieurs",
+    "faculte": "Faculté de musique",
+    "description": "Réalisation d'une œuvre ou d'un corpus accompagné d'un mémoire (60-80 pages) analysant contexte, enjeux et démarche de recherche-création. Évalué par un jury, l'ensemble doit constituer une contribution originale à la discipline.",
+    "prealablesBrut": null,
+    "prealables": null,
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6945/",
+    "scrapeISO": "2026-09-13T03:52:54.000Z"
+  },
+  "MCT 1301": {
+    "code": "MCT 1301",
+    "titre": "Atelier de composition jazz 1",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Initiation aux techniques de composition jazz. Essais de composition dans les techniques et formes étudiées. Cours d'écriture utilisant des textes musicaux comme exemples et se servant de l'analyse comme outil d'apprentissage.",
+    "prealablesBrut": "MCT1301 et MTE1316",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "MCT 1301"
+        },
+        {
+          "genre": "cours",
+          "code": "MTE 1316"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": "MCT1301/MTE3407",
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1301/",
+    "scrapeISO": "2026-09-13T03:58:50.643Z"
+  },
+  "MCT 1302": {
+    "code": "MCT 1302",
+    "titre": "Atelier de composition jazz 2",
+    "credits": 3,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de musique",
+    "description": "Poursuite de l'apprentissage des techniques de composition jazz par l'entremise de travaux pratiques. Essais de composition dans les techniques et formes étudiées (Hard Bop, modal, Fusion, etc.)",
+    "prealablesBrut": "MCT1301",
+    "prealables": {
+      "genre": "cours",
+      "code": "MCT 1301"
+    },
+    "concomitantsBrut": "MCT1302 et MCT1316",
+    "restrictionsBrut": "MCT1302/MTE3408",
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-1302/",
+    "scrapeISO": "2026-09-13T03:58:54.601Z"
   }
 }
