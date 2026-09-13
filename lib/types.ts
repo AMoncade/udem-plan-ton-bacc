@@ -181,11 +181,17 @@ export interface Cours {
    * écrit `cours.apercuHoraires` ne peut pas croire qu'il tient un horaire
    * officiel ; `cours.horaires` le lui aurait laissé croire.
    *
-   * `[]` veut dire LU ET RIEN DE PUBLIÉ — 43 % des pages portent la section
-   * d'horaire vide, c'est un état normal et fréquent. ABSENT veut dire que la
-   * fiche est antérieure à ce champ : on n'a pas regardé. Les deux ne doivent
+   * `[]` veut dire LU ET RIEN DE PUBLIÉ, et c'est un état normal et fréquent :
+   * beaucoup de pages portent leur section d'horaire vide. ABSENT veut dire que
+   * la fiche est antérieure à ce champ — on n'a pas regardé. Les deux ne doivent
    * pas se confondre, pour la même raison que `Creneau.nonAttribue` ne se
    * confond pas avec un champ à `null`.
+   *
+   * (Une version antérieure de ce commentaire chiffrait « 43 % des pages ». Le
+   * chiffre venait du chantier scraper et je l'avais recopié sans son périmètre
+   * ni son SHA — 43 % des pages en cache ? des cours du catalogue ? à quelle
+   * date ? Un nombre qu'on ne peut pas resituer vaut moins que son absence dans
+   * un contrat, parce qu'il se cite ensuite comme s'il avait été mesuré ici.)
    */
   apercuHoraires?: ApercuTrimestre[];
   url: string;

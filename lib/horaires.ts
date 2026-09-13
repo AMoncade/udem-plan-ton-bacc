@@ -27,8 +27,10 @@ const libelle = (t: Trimestre): string => `${t.saison} ${t.annee}`;
  *
  * Sert au sélecteur de l'UI et au pré-contrôle du moteur : appeler ceci avant
  * `seancesDeSection` évite de provoquer une erreur pour une question qu'on
- * pouvait poser. Rend `[]` quand le trimestre n'a rien de publié — état normal,
- * 43 % des pages portent leur section d'horaire vide.
+ * pouvait poser. Rend `[]` quand le trimestre n'a rien de publié — état normal
+ * et fréquent : beaucoup de pages portent leur section d'horaire vide. (Le
+ * chiffre exact appartient au chantier scraper ; il n'est pas recopié ici, un
+ * nombre sans son périmètre se cite ensuite comme s'il avait été mesuré.)
  */
 export function sectionsDuTrimestre(
   apercus: ApercuTrimestre[] | undefined,
