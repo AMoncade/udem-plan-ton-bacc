@@ -254,3 +254,34 @@ describe("ficheParCle et libelleFiche", () => {
     expect(libelleFiche(avecOrientation as FicheIndex)).toContain("orientation");
   });
 });
+
+describe("preparerIndex : la table des cours sans crédits", () => {
+  it("normalise les codes, parce que le consommateur compare des codes normalisés", () => {
+    // Le piège du projet, dans sa version silencieuse : comparer « psy-40001 »
+    // à « PSY 40001 » ne lève AUCUNE erreur, ça rend juste la table vide. Et une
+    // table vide ne se voit pas — elle rend l'écran prudent, donc plausible.
+    const brut: IndexProgrammes = {
+      ...index,
+      codesSansCredits: {
+        "psy-40001": "2026-09-13T03:37:48.480Z",
+        "ACT2250": "2026-09-13T03:38:00.000Z",
+        "pas un code": "2026-09-13T03:39:00.000Z",
+      },
+    };
+    const table = preparerIndex(brut).codesSansCredits;
+    expect(table.get("PSY 40001")).toBe("2026-09-13T03:37:48.480Z");
+    expect(table.get("ACT 2250")).toBe("2026-09-13T03:38:00.000Z");
+    // Un code que `normaliserCode()` refuse est écarté et non gardé verbatim :
+    // il ne pourrait s'apparier à rien, et sa présence gonflerait la table.
+    expect(table.size).toBe(2);
+  });
+
+  it("champ absent : table VIDE, et c'est « je ne sais pas »", () => {
+    // Un dépôt plus ancien que la passe qui écrit le champ. L'absence ne doit
+    // pas lever — elle doit produire une table vide, que le consommateur lit
+    // comme une ignorance et non comme « aucun cours n'est stérile ».
+    const sans: IndexProgrammes = { ...index };
+    delete (sans as { codesSansCredits?: unknown }).codesSansCredits;
+    expect(preparerIndex(sans).codesSansCredits.size).toBe(0);
+  });
+});

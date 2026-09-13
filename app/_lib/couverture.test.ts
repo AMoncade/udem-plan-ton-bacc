@@ -168,10 +168,10 @@ describe("couvertureFiches", () => {
     // Les autres genres portent la CLÉ DU PARCOURS dans le champ `sujet` :
     // `assembler()` y consigne les codes illisibles sous `sujet: cle`. Les
     // prendre pour des sigles ferait annoncer « aucun fichier pour le sigle
-    // baccalaureat-en-droit ».
+    // baccalaureat-en-droit ». ARC est cité ET manquant, donc lui doit sortir.
     const c = couvertureFiches(
       assemble(
-        [bloc("A", ["MAT 1000"])],
+        [bloc("A", ["MAT 1000", "ARC 1000"])],
         ["MAT 1000"],
         [
           manque("ARC"),
@@ -181,6 +181,23 @@ describe("couvertureFiches", () => {
       ),
     );
     expect(c.sujetsSansFichier).toEqual(["ARC"]);
+  });
+
+  it("un sujet muet que ce parcours NE CITE PAS n'est pas annoncé", () => {
+    // Le défaut vu à l'écran sur le bacc en criminologie (orientation
+    // Intervention) : le bandeau disait « aucun fichier pour le sigle NRL »
+    // alors que la page ne cite aucun code NRL. `assembler()` étend les sujets
+    // par les PRÉALABLES et inscrit un `manque` pour chacun de ceux-là aussi ;
+    // les reprendre tels quels fait désigner une cause qui n'en est pas une.
+    //
+    // C'est l'erreur la plus coûteuse des deux : une phrase fausse SUR LES
+    // DONNÉES se corrige, une phrase vraie qui désigne la mauvaise cause envoie
+    // chercher au mauvais endroit.
+    const c = couvertureFiches(
+      assemble([bloc("A", ["MAT 1000"])], ["MAT 1000"], [manque("NRL")]),
+    );
+    expect(c.sujetsSansFichier).toEqual([]);
+    expect(c.niveau).toBe("complete");
   });
 
   it("un code illisible n'est imputé à aucun fichier", () => {
@@ -204,5 +221,129 @@ describe("couvertureFiches", () => {
     expect(c.sansFiche).toBe(0);
     expect(c.sujetsSansFichier).toEqual([]);
     expect(c.sansFicheSujetPresent).toBe(0);
+  });
+});
+
+/**
+ * LA TROISIÈME ABSENCE — « cette fiche n'arrivera jamais ».
+ *
+ * Ce que ces cas surveillent, c'est la phrase que l'écran a le droit d'écrire.
+ * Se tromper de côté n'a pas le même prix des deux bords : annoncer « définitif »
+ * sur une page jamais lue dit à l'étudiant de ne pas revenir, alors que la
+ * prudence inverse ne lui coûte qu'une visite.
+ *
+ * AUCUN COMPTE RÉEL N'EST ÉPINGLÉ ICI. Le nombre de codes stériles monte à
+ * chaque page récupérée : ce n'est pas une erreur qu'on corrige, c'est un
+ * plancher. Un test qui le fige transforme une attestation en prophétie.
+ */
+describe("couvertureFiches : ce qui n'arrivera jamais", () => {
+  const VU = "2026-09-12T14:00:00.000Z";
+  const VU_PLUS_TARD = "2026-09-13T03:00:00.000Z";
+
+  it("sans table, tout est INDÉTERMINÉ — l'absence vaut « je ne sais pas »", () => {
+    // Le cas du câblage manquant, et la raison pour laquelle le paramètre est
+    // optionnel : un appelant qui oublie la table rend l'écran plus prudent,
+    // jamais plus faux.
+    const c = couvertureFiches(assemble([bloc("A", ["MAT 1000", "MAT 1001"])], ["MAT 1000"]));
+    expect(c.nature).toBe("indetermine");
+    expect(c.sansFicheSansCredits).toBe(0);
+    expect(c.sansFicheIndetermine).toBe(1);
+    expect(c.observeDu).toBeNull();
+    expect(c.observeAu).toBeNull();
+  });
+
+  it("tous les manquants vus sans crédits : DÉFINITIF", () => {
+    const c = couvertureFiches(
+      assemble([bloc("A", ["MAT 1000", "PSY 40001"])], ["MAT 1000"]),
+      new Map([["PSY 40001", VU]]),
+    );
+    expect(c.nature).toBe("definitif");
+    expect(c.sansFicheSansCredits).toBe(1);
+    expect(c.sansFicheIndetermine).toBe(0);
+    expect(c.observeDu).toBe(VU);
+    expect(c.observeAu).toBe(VU);
+  });
+
+  it("un seul manquant inexpliqué suffit à rendre le verdict MIXTE", () => {
+    // Le cas qu'on rate en ne regardant que le plus gros compte : dire
+    // « définitif » parce que neuf sur dix le sont enterrerait le dixième, qui
+    // est précisément celui qui peut encore arriver.
+    const c = couvertureFiches(
+      assemble([bloc("A", ["PSY 40001", "PSY 40002", "MAT 1001"])], []),
+      new Map([
+        ["PSY 40001", VU],
+        ["PSY 40002", VU_PLUS_TARD],
+      ]),
+    );
+    expect(c.nature).toBe("mixte");
+    expect(c.sansFicheSansCredits).toBe(2);
+    expect(c.sansFicheIndetermine).toBe(1);
+  });
+
+  it("les deux bornes de date encadrent les observations, sans les confondre", () => {
+    // Une seule date ferait passer la plus ancienne observation pour aussi
+    // fraîche que la plus récente. « Vu sans crédits le 12 » reste vrai pour
+    // toujours ; « n'a pas de crédits » vieillit mal.
+    const c = couvertureFiches(
+      assemble([bloc("A", ["PSY 40001", "PSY 40002"])], []),
+      new Map([
+        ["PSY 40002", VU_PLUS_TARD],
+        ["PSY 40001", VU],
+      ]),
+    );
+    expect(c.observeDu).toBe(VU);
+    expect(c.observeAu).toBe(VU_PLUS_TARD);
+  });
+
+  it("la FICHE fait foi sur la note d'absence, jamais l'inverse", () => {
+    // UdeM peut corriger une page : un code noté sans crédits hier peut avoir
+    // sa fiche aujourd'hui. Compter la note plutôt que la fiche annoncerait
+    // « n'arrivera jamais » sur un cours dont le titre s'affiche à l'écran.
+    const c = couvertureFiches(
+      assemble([bloc("A", ["MAT 1000"])], ["MAT 1000"]),
+      new Map([["MAT 1000", VU]]),
+    );
+    expect(c.niveau).toBe("complete");
+    expect(c.nature).toBe("sans-manque");
+    expect(c.sansFicheSansCredits).toBe(0);
+    expect(c.observeDu).toBeNull();
+  });
+
+  it("un parcours entièrement stérile est « aucune » ET « definitif »", () => {
+    // Les deux axes sont orthogonaux : l'ampleur du manque ne dit rien de sa
+    // nature, et les fondre obligerait à taire l'une des deux questions.
+    const c = couvertureFiches(
+      assemble([bloc("A", ["PSY 40001", "PSY 40002"])], []),
+      new Map([
+        ["PSY 40001", VU],
+        ["PSY 40002", VU],
+      ]),
+    );
+    expect(c.niveau).toBe("aucune");
+    expect(c.nature).toBe("definitif");
+  });
+
+  it("un parcours sans objet n'a pas de manque à qualifier", () => {
+    const c = couvertureFiches(
+      assemble([bloc("A", [], { contenuOuvert: true })], []),
+      new Map([["PSY 40001", VU]]),
+    );
+    expect(c.niveau).toBe("sans-objet");
+    expect(c.nature).toBe("sans-manque");
+  });
+
+  it("un code stérile NON cité par ce parcours ne le concerne pas", () => {
+    // La table est globale, le verdict est local. La consulter sans la croiser
+    // avec les codes cités ferait porter à chaque parcours les manques de tout
+    // le catalogue.
+    const c = couvertureFiches(
+      assemble([bloc("A", ["MAT 1000"])], ["MAT 1000"]),
+      new Map([
+        ["PSY 40001", VU],
+        ["PSY 40002", VU],
+      ]),
+    );
+    expect(c.sansFicheSansCredits).toBe(0);
+    expect(c.nature).toBe("sans-manque");
   });
 });

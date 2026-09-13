@@ -21,7 +21,8 @@
  * baccalauréat en droit avant un cours de « droit du travail » cité par une
  * faculté. Le rang vient donc du NOM, jamais de la faculté.
  */
-import type { FicheIndex, IndexProgrammes } from "../../lib/types";
+import { normaliserCode } from "../../lib/codes";
+import type { CodeCours, FicheIndex, IndexProgrammes } from "../../lib/types";
 
 /** Replie les accents et la casse. « Mathématiques » -> « mathematiques ».
  *
@@ -54,6 +55,26 @@ export interface IndexPrepare {
   /** Fiches dont la page n'a pas de structure exploitable. */
   nbSansStructure: number;
   scrapeISO: string;
+  /**
+   * Cours dont la page a été LUE et ne porte aucune étiquette « Crédits », avec
+   * la date de cette observation — recopié de `IndexProgrammes.codesSansCredits`
+   * et indexé par code NORMALISÉ.
+   *
+   * Ça n'a rien à voir avec la recherche, et c'est assumé : c'est le seul
+   * endroit où l'index brut est transformé avant d'être distribué, et le
+   * dupliquer ailleurs ferait deux lectures du même champ qui divergeraient. Le
+   * consommateur est `couverture.ts`, qui en a besoin pour distinguer « cette
+   * fiche n'arrivera jamais » de « cette fiche n'est pas encore là ».
+   *
+   * Normalisé À L'ENTRÉE parce que les codes cités par les blocs le sont aussi
+   * chez le consommateur : comparer « PSY 40001 » à « psy-40001 » ne lève
+   * aucune erreur, ça rend juste la table vide et l'écran prudent à tort.
+   *
+   * Vide quand le champ est absent — un dépôt plus ancien que la passe qui
+   * l'écrit. Vide veut dire « je ne sais pas », jamais « aucun » : c'est au
+   * consommateur de ne rien affirmer sur cette base.
+   */
+  codesSansCredits: ReadonlyMap<CodeCours, string>;
 }
 
 function triFr(valeurs: Iterable<string>): string[] {
@@ -97,7 +118,21 @@ export function preparerIndex(index: IndexProgrammes): IndexPrepare {
     ),
     nbSansStructure: index.programmes.filter((f) => !f.structureLue).length,
     scrapeISO: index.scrapeISO,
+    codesSansCredits: sansCredits(index),
   };
+}
+
+/** Table normalisée des codes vus sans crédits. Un code que `normaliserCode()`
+ *  refuse est ÉCARTÉ plutôt que gardé verbatim : il ne pourrait jamais
+ *  s'apparier à un code cité, qui est normalisé lui aussi, et sa présence
+ *  ferait croire la table plus riche qu'elle n'est. */
+function sansCredits(index: IndexProgrammes): ReadonlyMap<CodeCours, string> {
+  const table = new Map<CodeCours, string>();
+  for (const [brut, observeISO] of Object.entries(index.codesSansCredits ?? {})) {
+    const code = normaliserCode(brut);
+    if (code !== null) table.set(code, observeISO);
+  }
+  return table;
 }
 
 export interface Filtres {
