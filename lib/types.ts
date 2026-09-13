@@ -37,6 +37,101 @@ export interface Trimestre {
 }
 
 // ---------------------------------------------------------------------------
+// Aperçu des horaires
+// ---------------------------------------------------------------------------
+
+/** Les sept jours tels que la page les écrit. Mesuré sur ~29 400 séances : ces
+ *  sept valeurs et rien d'autre. Un libellé hors liste ne doit PAS être replié
+ *  sur le plus proche — il devient un créneau `illisible` qui garde son texte. */
+export type JourSemaine =
+  | "Lundi" | "Mardi" | "Mercredi" | "Jeudi" | "Vendredi" | "Samedi" | "Dimanche";
+
+/**
+ * Le quand d'une séance — trois états que la page distingue et qu'il ne faut
+ * pas confondre.
+ *
+ * `nonAttribue` est un ÉTAT DÉCLARÉ, pas un trou : 1 634 séances sur 29 391
+ * (5,6 %) portent « Non attribué » avec une plage de dates connue et aucun
+ * créneau. Le représenter par des champs à `null` le rendrait indistinguable de
+ * « on n'a pas su lire », et l'UI afficherait la mauvaise phrase — même raison
+ * que `prealablesBrut: null`, qui affirme « la page n'a pas ce champ ».
+ *
+ * `illisible` garde le verbatim plutôt que de jeter la ligne : c'est le même
+ * geste que `RegleBloc` de type `inconnu`, qui conserve son `brut` pour qu'on
+ * puisse l'ajouter au parseur plus tard au lieu de le perdre.
+ */
+export type Creneau =
+  | { genre: "attribue"; jour: JourSemaine; debutMin: number; finMin: number }
+  | { genre: "nonAttribue" }
+  | { genre: "illisible"; brut: string };
+
+/**
+ * Une ligne de la table d'horaire : un créneau et la FENÊTRE où il s'applique.
+ *
+ * LA FENÊTRE EST SUR LA SÉANCE, ET C'EST LA NORME, PAS UN RAFFINEMENT. Mesuré :
+ * 7 498 sections sur 9 344 (80 %) changent de motif en cours de trimestre, et
+ * une section va jusqu'à 27 fenêtres. `MAT 1400` section A tient mardi ET jeudi
+ * du 31/08 au 16/10, puis jeudi seul du 26/10 au 09/12.
+ *
+ * Deux conséquences, et la seconde touche le produit :
+ *  - deux séances au même jour et à la même heure sur des fenêtres DISJOINTES
+ *    ne sont pas en conflit. Sans `du`/`au` par séance, un calcul de conflit
+ *    serait faux sur la majorité du catalogue ;
+ *  - **« la semaine type » n'existe pas.** Il existe la semaine d'une DATE.
+ *    Un écran qui promet « à quoi ressemble ta semaine » doit dire laquelle.
+ *
+ * `debutMin`/`finMin` en minutes depuis minuit, pas en texte. La page écrit
+ * « De 15 h 30 à 16 h 29 » : les fins sont en :29 et :59, c'est ce qui fait que
+ * deux créneaux consécutifs ne se touchent pas et qu'un test d'intersection
+ * naïf donne le bon résultat. Un nombre rend impossibles les deux bogues du
+ * format texte — l'arrondi cosmétique de 16 h 29 en 16 h 30, qui transforme
+ * tout créneau adjacent en conflit, et le « 8:30 » non complété à gauche, qui
+ * se compare avant « 16:29 ».
+ */
+export interface Seance {
+  creneau: Creneau;
+  /** Date ISO `AAAA-MM-JJ`. La page écrit « 31/08/2026 » : jour/mois/année, et
+   *  seule la forme ISO se compare. Une date non analysable se journalise et la
+   *  séance n'est pas émise — on n'invente pas un ordre de composants. */
+  du: string;
+  au: string;
+}
+
+/**
+ * Une section, telle que l'étudiant s'y inscrit.
+ *
+ * LES SECTIONS SONT DES ALTERNATIVES : on en suit UNE. Leurs séances ne
+ * s'additionnent donc jamais. Mesuré, 774 couples (cours, trimestre) ont des
+ * sections porteuses aux horaires DIVERGENTS — `ALL 1901` en a quatre — donc
+ * choisir sa section est un vrai choix de créneau, pas une formalité.
+ *
+ * Et là où elles ne divergent PAS, le piège est symétrique : `MAT 1400` publie
+ * douze sections pour deux tables identiques à l'octet. Les rendre toutes
+ * afficherait le cours douze fois le jeudi à 8 h 30 en signalant onze conflits
+ * du cours AVEC LUI-MÊME. Une grille doit donc projeter sur la section choisie,
+ * ou dédupliquer — jamais empiler.
+ *
+ * `nom` est VERBATIM, sans le mot « Section ». `A`, `A1`, `A101` et `A102`
+ * coexistent et ne sont pas interchangeables : replier `A101` sur `A1` ou sur
+ * `A` fusionnerait des séances distinctes, sans que rien ne le signale. La
+ * relation entre `A` et `A101` n'est PAS déclarée par la page — le mot « volet »
+ * n'apparaît que sur 7 pages du catalogue — et la déduire d'un libellé serait
+ * deviner d'après un nom.
+ */
+export interface SectionHoraire {
+  nom: string;
+  seances: Seance[];
+}
+
+/** Les sections publiées pour un trimestre donné. `trimestre` est la même
+ *  structure que `Cours.trimestres` et non une chaîne : deux représentations du
+ *  même trimestre finiraient par diverger, et rien ne les recouperait. */
+export interface ApercuTrimestre {
+  trimestre: Trimestre;
+  sections: SectionHoraire[];
+}
+
+// ---------------------------------------------------------------------------
 // Préalables
 // ---------------------------------------------------------------------------
 
@@ -77,6 +172,22 @@ export interface Cours {
    *  n'est pas « jamais offert ». 26 des 55 cours de l'actuariat n'en ont
    *  qu'un seul : c'est la contrainte qui casse un plan. */
   trimestres: Trimestre[];
+  /**
+   * APERÇU des horaires — indicatif, jamais contractuel.
+   *
+   * Le nom porte la réserve parce qu'un commentaire ne voyage pas jusqu'à
+   * l'écran. La page titre « Aperçu des horaires » et renvoie au Centre
+   * étudiant pour l'à-jour, sur 100 % des pages examinées. Un consommateur qui
+   * écrit `cours.apercuHoraires` ne peut pas croire qu'il tient un horaire
+   * officiel ; `cours.horaires` le lui aurait laissé croire.
+   *
+   * `[]` veut dire LU ET RIEN DE PUBLIÉ — 43 % des pages portent la section
+   * d'horaire vide, c'est un état normal et fréquent. ABSENT veut dire que la
+   * fiche est antérieure à ce champ : on n'a pas regardé. Les deux ne doivent
+   * pas se confondre, pour la même raison que `Creneau.nonAttribue` ne se
+   * confond pas avec un champ à `null`.
+   */
+  apercuHoraires?: ApercuTrimestre[];
   url: string;
   scrapeISO: string;
 }
