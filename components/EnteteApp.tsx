@@ -5,6 +5,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { depot } from "@/app/_donnees/source";
 import { MOTEUR_EST_FACTICE } from "@/app/_lib/moteur";
+import { verdictAffiche } from "@/app/_lib/verdict";
 import { useEtat } from "@/components/ProviderEtat";
 
 /* L'ordre suit le parcours d'usage : on choisit un programme, on déclare ce
@@ -40,6 +41,7 @@ export function EnteteApp() {
 
   const programme = donnees?.programme ?? null;
   const audit = donnees?.audit ?? null;
+  const verdict = audit === null ? null : verdictAffiche(audit, faits);
 
   return (
     <header className="sticky top-0 z-30 border-b border-trait bg-encre/95 backdrop-blur">
@@ -121,15 +123,36 @@ export function EnteteApp() {
                 </span>{" "}
                 crédits
               </p>
-              <span
-                className={`border px-2 py-0.5 text-[12px] ${
-                  audit.conforme
-                    ? "border-fait/50 bg-fait/10 text-fait"
-                    : "border-perdu/50 bg-perdu/10 text-perdu"
-                }`}
-              >
-                {audit.conforme ? "Conforme" : "Non conforme"}
-              </span>
+              {/* TROIS ÉTATS, ET LE TROISIÈME EST LE PLUS FRÉQUENT AU PREMIER
+                  CONTACT. « Non conforme » s'affichait avant que l'étudiant ait
+                  saisi un seul cours — exact au sens du moteur, puisqu'un relevé
+                  vide ne satisfait aucun minimum, et destructeur au sens de
+                  l'écran : un verdict d'échec adressé à quelqu'un qui n'a rien
+                  fait de mal n'enseigne qu'une chose, que le badge ne veut rien
+                  dire. Il emporte alors avec lui les verdicts qui comptent.
+
+                  Le troisième état ne masque pas le badge, il dit ce qui est
+                  vrai — rien n'a été saisi — et porte l'action suivante. Un trou
+                  là où l'étudiant a appris à lire un état serait une autre
+                  manière de ne rien dire. Voir `app/_lib/verdict.ts`. */}
+              {verdict === "rien-saisi" ? (
+                <Link
+                  href="/importer"
+                  className="border border-trait px-2 py-0.5 text-[12px] text-doux transition-colors hover:border-traitfort hover:text-papier"
+                >
+                  Rien de saisi — ajoutez vos cours réussis →
+                </Link>
+              ) : (
+                <span
+                  className={`border px-2 py-0.5 text-[12px] ${
+                    verdict === "conforme"
+                      ? "border-fait/50 bg-fait/10 text-fait"
+                      : "border-perdu/50 bg-perdu/10 text-perdu"
+                  }`}
+                >
+                  {verdict === "conforme" ? "Conforme" : "Non conforme"}
+                </span>
+              )}
             </>
           ) : null}
           {/* DEUX TEMPS, parce que ce bouton détruit ce qui ne se reconstitue

@@ -35,11 +35,87 @@ import {
   type ArithmetiqueProgramme,
 } from "@/app/_lib/cours";
 import { exigeUnCheminement } from "@/lib/parcours";
-import type { Bloc, Catalogue, EtatBloc, Intervalle, Programme } from "@/lib/types";
+import { signauxAMontrer, verdictAffiche } from "@/app/_lib/verdict";
+import type {
+  Bloc,
+  Catalogue,
+  EtatBloc,
+  GenreSignal,
+  Intervalle,
+  Programme,
+} from "@/lib/types";
+import Link from "next/link";
 import { Credits, TitreCours } from "./Etats";
 import { TeteEcran } from "./TeteEcran";
 import { Defilable } from "./Defilable";
 import { useDonnees, useEtat } from "./ProviderEtat";
+
+/**
+ * LES SIX GENRES DE SIGNAUX, DANS L'ORDRE OÙ ILS SE LISENT.
+ *
+ * `choixAttendu` en premier parce qu'il se règle EN UN CLIC, et qu'à côté d'un
+ * bloc à contenu ouvert — qui ne se règle jamais — le mettre à égalité
+ * présenterait une action et une fatalité sous la même forme.
+ *
+ * Six sections, mais seulement TROIS poids visuels : ce sur quoi l'étudiant
+ * peut agir, ce qui est hors de sa portée, et ce qui n'est qu'une explication.
+ * Six couleurs distinctes n'en signaleraient plus aucune.
+ */
+const GENRES: { genre: GenreSignal; titre: string; note: string }[] = [
+  {
+    genre: "choixAttendu",
+    titre: "À choisir",
+    note: "L'audit attend une décision de votre part. Un clic, et les chiffres ci-dessus changent.",
+  },
+  {
+    genre: "bloque",
+    titre: "Ce qui empêche le diplôme",
+    note: "Des exigences que le relevé actuel ne satisfait pas. Elles se comblent en réussissant des cours.",
+  },
+  {
+    genre: "perteOuSurplus",
+    titre: "Réussi, mais qui ne compte pas",
+    note: "Des crédits obtenus qui n'avancent pas le diplôme — au-delà du plafond d'un bloc, ou hors de tout bloc.",
+  },
+  {
+    genre: "donneesAmont",
+    titre: "La page du programme est en défaut",
+    note: "Ce n'est pas votre relevé : c'est la source qui se contredit ou qui est incomplète. Vous n'y pouvez rien, et ce n'est pas une faute de votre part.",
+  },
+  {
+    genre: "nonVerifiable",
+    titre: "Ce que l'outil ne peut pas établir",
+    note: "L'audit les a rencontrés sans pouvoir conclure. À vérifier vous-même auprès de votre programme — un verdict favorable ci-dessus ne les couvre pas.",
+  },
+  {
+    genre: "informatif",
+    titre: "Comment un chiffre a été obtenu",
+    note: "Ni un problème ni une réserve : l'explication d'un calcul.",
+  },
+];
+
+/** Trois poids pour six genres. `verrou` est la teinte que l'app emploie pour ce
+ *  qui est hors de portée — la même que sur le bandeau de couverture. */
+function teinteDuGenre(genre: GenreSignal): string {
+  switch (genre) {
+    case "choixAttendu":
+    case "bloque":
+    case "perteOuSurplus":
+      return "border-avert/60 bg-avert/5";
+    case "donneesAmont":
+    case "nonVerifiable":
+      return "border-verrou/60 bg-verrou/5";
+    case "informatif":
+      return "border-trait";
+    default: {
+      // Un septième genre ajouté plus tard tomberait sinon dans une branche
+      // muette : l'étudiant verrait une ligne sans couleur et sans section, et
+      // rien ne le signalerait. C'est le repli silencieux que ce projet traque.
+      const jamais: never = genre;
+      throw new Error(`genre de signal inconnu : ${JSON.stringify(jamais)}`);
+    }
+  }
+}
 
 function pourcent(part: number, tout: number): number {
   if (!Number.isFinite(tout) || tout <= 0) return 0;
@@ -389,7 +465,10 @@ function ExplicationEcart({
 
 export function VueAudit() {
   const { catalogue, programme, audit, blocsIncoherents } = useDonnees();
+  const { faits } = useEtat();
   const exige = useMemo(() => arithmetiqueProgramme(programme), [programme]);
+  const verdict = verdictAffiche(audit, faits);
+  const signaux = useMemo(() => signauxAMontrer(audit, faits), [audit, faits]);
 
   const totalPerdus = audit.blocs.reduce((somme, bloc) => somme + bloc.creditsPerdus, 0);
   const blocsOption = programme.blocs.filter((bloc) => bloc.regle.type === "option");
@@ -573,19 +652,25 @@ export function VueAudit() {
           comptés 0), exclusions de sigle que 47 programmes portent et qu'une
           dérogation peut lever. Un parcours parfaitement conforme peut donc en
           porter plusieurs, et elles étaient AVALÉES précisément au moment où
-          l'écran disait que tout allait bien. C'est le défaut qui revient dans
-          ce projet : un vert qui recouvre un « invérifiable ».
+          l'écran disait que tout allait bien.
 
-          Le verdict garde donc sa couleur, et la liste s'affiche dans les deux
-          cas. Elle n'est pas colorée en rouge : le moteur ne distingue pas dans
-          `problemes` ce qui bloque de ce qu'il n'a pas pu vérifier, et l'écran
-          ne prétend pas le savoir — il le dit. */}
+          CE QUI A CHANGÉ : le moteur porte maintenant `Audit.signaux`, où chaque
+          constat a un GENRE. L'écran portait la phrase « le moteur ne les
+          distingue pas dans sa liste, donc cet écran ne le prétend pas » —
+          honnête quand elle a été écrite, fausse depuis. Les constats sont donc
+          groupés, et le genre vient du moteur : jamais deviné d'un motif de
+          phrase, parce qu'un même site d'émission produit `bloque` ou
+          `nonVerifiable` selon le cas.
+
+          Trois poids visuels pour six genres : ce sur quoi l'étudiant peut agir,
+          ce qui est hors de sa portée, et ce qui n'est qu'une explication. Six
+          couleurs n'en signaleraient aucune. */}
       <section className="mt-8">
         <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-trait pb-2">
           <h2 className="text-[15px] font-semibold">
-            {audit.problemes.length === 0
+            {signaux.length === 0
               ? "Rien à signaler"
-              : `Ce que l'audit signale (${audit.problemes.length})`}
+              : `Ce que l'audit signale (${signaux.length})`}
           </h2>
           <p className="text-[12px] text-faible">
             {audit.blocs.length} bloc{audit.blocs.length === 1 ? "" : "s"} audité
@@ -593,40 +678,55 @@ export function VueAudit() {
           </p>
         </div>
 
-        <p
-          className={`mt-3 border-l-2 px-3 py-2 text-[13px] ${
-            audit.conforme
-              ? "border-fait/60 bg-fait/5 text-fait"
-              : "border-perdu/60 bg-perdu/5 text-papier"
-          }`}
-        >
-          {audit.conforme
-            ? "Toutes les contraintes tiennent ensemble : chaque bloc dans ses bornes, et les totaux par type atteints."
-            : "Au moins une contrainte ne tient pas : un bloc hors de ses bornes, ou un total par type non atteint."}
-        </p>
+        {verdict === "rien-saisi" ? (
+          <p className="mt-3 border-l-2 border-trait px-3 py-2 text-[13px] text-doux">
+            Rien n&apos;est encore saisi, donc il n&apos;y a rien à auditer.{" "}
+            <Link href="/importer" className="text-papier underline underline-offset-2">
+              Ajoutez vos cours réussis
+            </Link>{" "}
+            et cet écran dira où vous en êtes. Les constats qui portent sur le
+            PROGRAMME, eux, sont ci-dessous : ils sont vrais avant le premier geste.
+          </p>
+        ) : (
+          <p
+            className={`mt-3 border-l-2 px-3 py-2 text-[13px] ${
+              verdict === "conforme"
+                ? "border-fait/60 bg-fait/5 text-fait"
+                : "border-perdu/60 bg-perdu/5 text-papier"
+            }`}
+          >
+            {verdict === "conforme"
+              ? "Toutes les contraintes tiennent ensemble : chaque bloc dans ses bornes, et les totaux par type atteints."
+              : "Au moins une contrainte ne tient pas : un bloc hors de ses bornes, ou un total par type non atteint."}
+          </p>
+        )}
 
-        {audit.problemes.length > 0 ? (
-          <>
-            <p className="mt-3 max-w-prose text-[12.5px] leading-relaxed text-doux">
-              {audit.conforme
-                ? "Le verdict ci-dessus est favorable, et ces points restent à vérifier vous-même : l'audit les a rencontrés sans pouvoir conclure."
-                : "Ces lignes mélangent ce qui bloque et ce que l'audit n'a pas pu vérifier."}{" "}
-              Le moteur ne les distingue pas dans sa liste, donc cet écran ne le
-              prétend pas : lisez-les une par une plutôt que de les compter.
-            </p>
-            <ul className="mt-2 space-y-1.5">
-              {audit.problemes.map((probleme) => (
-                <li
-                  key={probleme}
-                  className="border-l-2 border-avert/60 bg-avert/5 px-3 py-1.5 text-[13px] text-papier"
-                >
-                  {probleme}
-                </li>
-              ))}
-            </ul>
-          </>
-        ) : null}
+        {GENRES.map(({ genre, titre, note }) => {
+          const lot = signaux.filter((s) => s.genre === genre);
+          if (lot.length === 0) return null;
+          return (
+            <div key={genre} className="mt-4">
+              <h3 className="text-[13px] font-semibold text-papier">
+                {titre} ({lot.length})
+              </h3>
+              <p className="mt-0.5 max-w-prose text-[12px] leading-snug text-faible">
+                {note}
+              </p>
+              <ul className="mt-1.5 space-y-1.5">
+                {lot.map((signal, i) => (
+                  <li
+                    key={`${genre}-${i}`}
+                    className={`border-l-2 px-3 py-1.5 text-[13px] text-papier ${teinteDuGenre(genre)}`}
+                  >
+                    {signal.message}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
       </section>
+
 
       <section className="mt-9">
         <h2 className="border-b border-trait pb-2 text-[15px] font-semibold">
