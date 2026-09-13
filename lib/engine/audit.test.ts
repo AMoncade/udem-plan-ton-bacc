@@ -749,3 +749,91 @@ describe("auditProgramme — pureté", () => {
     expect(a2).toEqual(a1);
   });
 });
+
+/**
+ * « ATTEINDRE CHAQUE MINIMUM NE SUFFIT PAS » — une phrase qui n'est vraie que
+ * parfois, et qui était dite toujours.
+ *
+ * Le test voisin (actuariat : minimums 18, exigé 33) épingle le cas où elle est
+ * VRAIE. Il ne pouvait donc pas attraper qu'elle était émise sans garde : la
+ * phrase s'accrochait à « il manque des crédits d'option », jamais à une
+ * comparaison entre la somme des minimums et l'exigé.
+ *
+ * Observé sur `/audit` par un audit externe : le bacc. en informatique
+ * orientation générale porte 7 blocs d'option totalisant 40 crédits de minimums
+ * pour 27 exigés. L'aperçu disait « satisfaire chaque bloc SUFFIT », les
+ * signaux disaient l'inverse, à 400 px d'écart sur la même page — et c'est
+ * l'aperçu qui avait raison.
+ */
+describe("le total d'option : la phrase n'est dite que quand elle est vraie", () => {
+  const blocOption = (id: string, min: number, max: number, cours: string[]): Bloc => ({
+    id,
+    cle: cleBloc("70", id, ""),
+    segment: "70",
+    nom: "",
+    regle: { type: "option", bornes: { min, max } },
+    regleBrut: `Option - Minimum ${min} crédits, maximum ${max} crédits.`,
+    cours,
+    contenuOuvert: false,
+    notes: [],
+  });
+
+  /** `exigeOption` crédits exigés, deux blocs d'option à `minBloc` chacun. */
+  const programmeOption = (exigeOption: number, minBloc: number): Programme => ({
+    id: "test-total-option",
+    nom: "Programme SYNTHÉTIQUE (forme du bacc. en informatique orientation générale)",
+    orientation: null,
+    segments: ["70"],
+    orientations: [],
+    cycle: "1er cycle",
+    faculte: "Arts et sciences",
+    typeProgramme: "Baccalauréat",
+    creditsTotal: exigeOption,
+    exigences: {
+      brut: `${exigeOption} crédits à option (SYNTHÉTIQUE)`,
+      obligatoire: { min: 0, max: 0 },
+      option: { min: exigeOption, max: exigeOption },
+      choix: { min: 0, max: 0 },
+    },
+    blocs: [
+      blocOption("70A", minBloc, 30, ["IFT 1000", "IFT 1010", "IFT 1020"]),
+      blocOption("70B", minBloc, 30, ["IFT 2000", "IFT 2010", "IFT 2020"]),
+    ],
+    notes: [],
+    url: "https://exemple.invalide/test-total-option",
+    scrapeISO: "2026-09-13T00:00:00.000Z",
+  });
+
+  const FICHES = ["IFT 1000", "IFT 1010", "IFT 1020", "IFT 2000", "IFT 2010", "IFT 2020"].map((c) =>
+    ficheTest(c, 3),
+  );
+  const auditerOption = (p: Programme, faits: string[]) =>
+    auditProgramme(p, { programmes: [p], cours: Object.fromEntries(FICHES.map((f) => [f.code, f])), prealablesNonParses: [], journal: [], scrapeISO: "" } as Catalogue, new Set(faits));
+
+  it("minimums SUPÉRIEURS à l'exigé : la phrase ne doit PAS être dite", () => {
+    // 9 + 9 = 18 de minimums pour 12 exigés : remplir chaque bloc suffit,
+    // et même dépasse. C'est le cas du bacc. en informatique (40 pour 27).
+    const p = programmeOption(12, 9);
+    const a = auditerOption(p, ["IFT 1000"]);
+    expect(a.conforme).toBe(false);
+    expect(joint(a)).toMatch(/il manque 9 crédits de cours d'option/);
+    expect(joint(a)).not.toMatch(/NE SUFFIT PAS/);
+  });
+
+  it("minimums INFÉRIEURS à l'exigé : la phrase doit être dite", () => {
+    // Le contrôle qui empêche la sur-correction : 3 + 3 = 6 pour 12 exigés,
+    // remplir chaque bloc laisse l'étudiant à 6 crédits du compte.
+    const p = programmeOption(12, 3);
+    const a = auditerOption(p, ["IFT 1000"]);
+    expect(joint(a)).toMatch(/ne totalisent que 6 crédits/);
+    expect(joint(a)).toMatch(/NE SUFFIT PAS/);
+  });
+
+  it("minimums ÉGAUX à l'exigé : la phrase ne doit pas être dite", () => {
+    // La borne. 6 + 6 = 12 pour 12 exigés : satisfaire chaque bloc suffit
+    // exactement, donc « ne suffit pas » serait faux.
+    const p = programmeOption(12, 6);
+    const a = auditerOption(p, ["IFT 1000"]);
+    expect(joint(a)).not.toMatch(/NE SUFFIT PAS/);
+  });
+});

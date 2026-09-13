@@ -923,8 +923,17 @@ export function auditProgramme(
       const restantes = calculs
         .filter((c) => c.bornes.type === "option" && c.bornes.max - c.comptes > 0)
         .map((c) => `${c.bloc.id} ${cr(arrondi(c.bornes.max - c.comptes))}`);
+      // Le piège de l'actuariat — minimums 18 pour 33 exigés — n'est pas
+      // universel : le bacc. en informatique orientation générale totalise 40
+      // de minimums pour 27 exigés, et y remplir chaque bloc SUFFIT. Cette
+      // phrase était dite sans garde, accrochée à « il manque des crédits »
+      // plutôt qu'à la comparaison qu'elle énonce ; l'écran affichait donc deux
+      // conclusions opposées sur les deux mêmes nombres.
       message +=
-        ` Les minimums des blocs d'option ne totalisent que ${cr(minsOption)} : atteindre chaque minimum NE SUFFIT PAS.` +
+        minsOption < borne.min
+          ? ` Les minimums des blocs d'option ne totalisent que ${cr(minsOption)} : atteindre chaque minimum NE SUFFIT PAS.`
+          : ` Les minimums des blocs d'option totalisent ${cr(minsOption)}, soit au moins les ${cr(borne.min)} exigés : satisfaire chaque bloc suffit à atteindre le total.`;
+      message +=
         ` Ajoutez ${cr(manque)} dans n'importe quel bloc d'option encore sous son maximum` +
         (restantes.length > 0 ? ` (place restante : ${restantes.join(", ")}).` : ".");
     }
