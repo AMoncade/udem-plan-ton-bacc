@@ -107,10 +107,73 @@ function plancher(blocs: Bloc[]): number {
   return somme;
 }
 
+/**
+ * Les libellés qui servent d'AXE dans au moins un segment.
+ *
+ * Un segment a un axe dès qu'un de ses ids est réutilisé sous deux libellés.
+ * La réutilisation **active l'axe du segment** ; elle ne désigne pas les blocs
+ * un par un. Preuve arithmétique, sur le doctorat en pathologie : « Accès
+ * direct » ne totalise 90 que si `70C` et `70D` sont marqués, alors que leurs
+ * ids n'apparaissent qu'une fois. Les laisser communs les comptait dans les
+ * DEUX voies et faisait monter la voie M. Sc. à 265.
+ *
+ * Exporté parce que `structure.ts` en a besoin AVANT de construire les
+ * orientations : un segment dont l'entête nomme l'un de ces libellés n'est pas
+ * un tronc commun (voir `lireCheminements`).
+ */
+export function marqueursDeCheminement(blocs: Bloc[]): Set<string> {
+  const marqueurs = new Set<string>();
+  const parSegment = new Map<string, Bloc[]>();
+  for (const b of blocs) {
+    const seau = parSegment.get(b.segment) ?? [];
+    seau.push(b);
+    parSegment.set(b.segment, seau);
+  }
+  for (const duSegment of parSegment.values()) {
+    for (const jeu of axeDuSegment(duSegment)) marqueurs.add(jeu);
+  }
+  return marqueurs;
+}
+
+/**
+ * Les marqueurs qui forment l'AXE d'un segment : ceux portés par un id
+ * RÉUTILISÉ sous deux libellés distincts.
+ *
+ * C'est la frontière entre « nommé » et « marqué », et elle a coûté deux
+ * essais. Marquer tout bloc libellé d'un segment à axe actif casse
+ * `administration sociale` : son segment 70 réutilise `70A` sous « - ST
+ * Méthodologie » / « - TD Méthodologie » (l'axe ST/TD), mais porte aussi
+ * `70B « Gestion (ESPUM) »`, `70C « Spécialisation »`, `70D « Complément de
+ * formation »` — des noms descriptifs, pas des cheminements. Les marquer
+ * fabrique trois faux cheminements et ampute le programme.
+ *
+ * Ne marquer que les blocs d'un groupe réutilisé rate l'inverse : `70C` et
+ * `70D` du doctorat en pathologie portent « Accès direct » avec un id unique,
+ * et les laisser communs les compte dans les DEUX voies.
+ *
+ * La règle qui satisfait les deux : **l'axe est l'ensemble des marqueurs d'un
+ * id réutilisé, et un bloc est marqué si SON marqueur appartient à cet
+ * ensemble** — quel que soit son id.
+ */
+function axeDuSegment(duSegment: Bloc[]): Set<string> {
+  const parId = new Map<string, Set<string>>();
+  for (const b of duSegment) {
+    const jeu = parId.get(idDeBase(b)) ?? new Set<string>();
+    const m = marqueurDe(libelle(b));
+    if (m !== "") jeu.add(m);
+    parId.set(idDeBase(b), jeu);
+  }
+  const axe = new Set<string>();
+  for (const jeu of parId.values()) if (jeu.size > 1) for (const m of jeu) axe.add(m);
+  return axe;
+}
+
 export function lireCheminements(
   blocs: Bloc[],
   creditsTotal: number | null,
   orientations: { nom: string; segments: string[] }[] = [],
+  /** Segment -> cheminement auquel il appartient EN ENTIER (entête qui le nomme). */
+  segmentsDeCheminement: Map<string, string> = new Map(),
 ): Marquage {
   const parCle = new Map<string, string>();
   const ecartes: { segment: string; raison: string }[] = [];
@@ -156,12 +219,36 @@ export function lireCheminements(
       continue;
     }
 
-    for (const g of groupes) {
-      for (const b of g) {
-        const m = marqueurDe(libelle(b));
-        parCle.set(b.cle, m);
-        if (!ordre.includes(m)) ordre.push(m);
-      }
+    // Un bloc est marqué si SON marqueur appartient à l'axe du segment — pas
+    // s'il est simplement nommé, et pas seulement s'il est dans un groupe
+    // réutilisé. Voir `axeDuSegment` : c'est la seule règle qui satisfait à la
+    // fois `70C`/`70D` du doctorat (marqués malgré un id unique) et les blocs
+    // descriptifs de l'administration sociale (laissés communs).
+    const axe = axeDuSegment(duSegment);
+    for (const b of duSegment) {
+      const m = marqueurDe(libelle(b));
+      if (m === "" || !axe.has(m)) continue;
+      parCle.set(b.cle, m);
+      if (!ordre.includes(m)) ordre.push(m);
+    }
+  }
+
+  // UN SEGMENT PEUT ÊTRE UN CHEMINEMENT TOUT ENTIER.
+  //
+  // Le doctorat en pathologie écrit « Segment 01 - Accès de la M. Sc. au
+  // Ph. D. », et cette chaîne est EXACTEMENT un libellé de bloc des segments 70
+  // à 74. Le signal est donc mécanique — égalité de chaîne, pas
+  // interprétation : ce segment n'est pas un tronc commun, c'est la modalité
+  // « Accès de la M. Sc. » en entier, alternative aux segments d'option.
+  //
+  // `structure.ts` l'exclut aussi des segments COMMUNS des orientations. Sans
+  // ça la voie M. Sc. compterait le segment 01 (90) plus sa reprise dans le
+  // segment d'option (90) et vaudrait 180 — mesuré.
+  for (const [segment, cheminement] of segmentsDeCheminement) {
+    for (const b of blocs) {
+      if (b.segment !== segment) continue;
+      parCle.set(b.cle, cheminement);
+      if (!ordre.includes(cheminement)) ordre.push(cheminement);
     }
   }
 

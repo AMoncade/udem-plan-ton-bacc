@@ -49,7 +49,7 @@
 import type { Bloc, ExigencesParType, Orientation, Programme } from "../../lib/types";
 import { cleBloc, normaliserCode } from "../../lib/codes";
 import { lireContrainte } from "./contraintes";
-import { lireCheminements } from "./cheminements";
+import { lireCheminements, marqueursDeCheminement } from "./cheminements";
 import { contenu, decouperSur, texteBrut, texteLigne } from "./html";
 import { Journal } from "./journal";
 import {
@@ -353,6 +353,8 @@ export function parseStructure(
   const orientationsDesEntetes: string[] = [];
   /** Nom d'orientation lu dans un entête -> les segments qui le portent. */
   const segmentsParOrientation = new Map<string, string[]>();
+  /** Numéro de segment -> libellé VERBATIM de son entête. */
+  const libelleParSegment = new Map<string, string>();
   /** Segments dont l'entête nomme une orientation : les autres sont COMMUNS à
    *  tous les parcours (« Segment 01 Commun aux sept orientations »). */
   const segmentsDOrientation = new Set<string>();
@@ -381,6 +383,7 @@ export function parseStructure(
       continue;
     }
     if (!segments.includes(entete.numero)) segments.push(entete.numero);
+    if (!libelleParSegment.has(entete.numero)) libelleParSegment.set(entete.numero, entete.libelle);
     if (entete.orientation) {
       segmentsDOrientation.add(entete.numero);
       if (!orientationsDesEntetes.includes(entete.orientation)) {
@@ -613,7 +616,34 @@ export function parseStructure(
   // « Segment 01 Commun aux sept orientations ») appartiennent à TOUS les
   // parcours : ils sont ajoutés à chacun, sans quoi le tronc commun
   // disparaîtrait de l'audit.
-  const segmentsCommuns = segments.filter((s) => !segmentsDOrientation.has(s));
+  // UN SEGMENT QUI EST UN CHEMINEMENT N'EST PAS UN TRONC COMMUN.
+  //
+  // Le doctorat en pathologie écrit « Segment 01 - Accès de la M. Sc. au
+  // Ph. D. », chaîne EXACTEMENT égale à un libellé de bloc des segments 70-74.
+  // Ce segment est donc la modalité « M. Sc. » en entier, alternative aux
+  // segments d'option — pas leur préfixe. Le compter comme commun donnait
+  // 90 (segment 01) + 90 (sa reprise dans le segment d'option) = 180 pour un
+  // programme de 90, et faisait refuser tout l'axe. Mesuré : en le sortant des
+  // communs, les DIX couples (orientation × cheminement) tombent sur 90.
+  //
+  // Le signal est une égalité de chaîne, pas une interprétation.
+  const marqueursCheminement = marqueursDeCheminement(blocs);
+  const segmentsDeCheminement = new Map<string, string>();
+  for (const [numero, libelleSeg] of libelleParSegment) {
+    const propre = libelleSeg.replace(/\s+/g, " ").trim();
+    if (marqueursCheminement.has(propre)) segmentsDeCheminement.set(numero, propre);
+  }
+  for (const [numero, cheminement] of segmentsDeCheminement) {
+    journal.info(
+      slug,
+      `segment ${numero} : son entête nomme le cheminement « ${cheminement} », qui sert aussi de ` +
+        "libellé de bloc ailleurs — ce segment EST ce cheminement et n'est pas compté comme tronc commun",
+    );
+  }
+
+  const segmentsCommuns = segments.filter(
+    (s) => !segmentsDOrientation.has(s) && !segmentsDeCheminement.has(s),
+  );
   // La description est passée LIGNE PAR LIGNE, pas recollée : `lireOrientations`
   // s'appuie sur les puces, et recoller collerait la phrase d'introduction à la
   // première d'entre elles.
@@ -813,7 +843,7 @@ export function parseStructure(
   // n'émet que si le plancher de chaque cheminement tombe exactement sur le
   // total annoncé — donc une lecture douteuse rend un silence, jamais une
   // donnée fausse (voir `cheminements.ts`).
-  const marquage = lireCheminements(blocs, creditsTotal, orientations);
+  const marquage = lireCheminements(blocs, creditsTotal, orientations, segmentsDeCheminement);
   for (const b of blocs) {
     const m = marquage.parCle.get(b.cle);
     if (m !== undefined) b.cheminement = m;

@@ -404,9 +404,17 @@ function recouperPlancherEtTotal(programmes: Programme[], journal: Journal): voi
   for (const p of programmes) {
     if (!p.creditsTotal || p.blocs.length === 0) continue;
     const parcours = parcoursDe(p);
-    const planchers = parcours.map(({ orientation }) =>
-      plancher(orientation === null ? p.blocs : projeterOrientation(p, orientation).blocs),
-    );
+    // PROJETER AUSSI PAR CHEMINEMENT quand le programme en déclare. Sans ça le
+    // contrôle accuse les programmes qu'on vient justement d'apprendre à lire :
+    // le doctorat en pathologie somme ses deux modalités d'accès dans le même
+    // segment et affiche 180 pour 90, alors que chaque modalité tombe sur 90.
+    // Un bloc sans `cheminement` est commun, donc compté dans tous.
+    const planchers = parcours.flatMap(({ orientation }) => {
+      const blocs = orientation === null ? p.blocs : projeterOrientation(p, orientation).blocs;
+      const chem = p.cheminements?.filter((m) => blocs.some((b) => b.cheminement === m)) ?? [];
+      if (chem.length === 0) return [plancher(blocs)];
+      return chem.map((m) => plancher(blocs.filter((b) => (b.cheminement ?? m) === m)));
+    });
     const moindre = Math.min(...planchers);
     if (moindre <= p.creditsTotal) continue;
     journal.inattendu(
