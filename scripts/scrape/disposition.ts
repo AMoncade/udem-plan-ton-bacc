@@ -220,6 +220,27 @@ export async function codesSurDisque(dossier: string = DOSSIER_COURS): Promise<S
 }
 
 /**
+ * Les codes dont une passe a CONSTATÉ que la page ne porte pas de crédits.
+ *
+ * Lus depuis l'index, où ils sont cumulés et datés. Sert à ne pas les
+ * redemander : ils ne produiront jamais de fiche, donc ils resteraient
+ * candidats à chaque tranche — 79 % du budget d'une tranche y passait avant
+ * qu'on les écarte.
+ *
+ * On ne rend que les CLÉS : la date sert au consommateur qui veut juger de
+ * l'âge d'une observation, pas au scraper qui veut seulement savoir s'il l'a
+ * déjà vue.
+ */
+export async function codesSansCreditsConnus(): Promise<Set<string>> {
+  try {
+    const index = JSON.parse(await readFile(CHEMIN_INDEX, "utf8")) as IndexProgrammes;
+    return new Set(Object.keys(index.codesSansCredits ?? {}));
+  } catch {
+    return new Set();
+  }
+}
+
+/**
  * Écrit l'index en FUSIONNANT par `id` avec l'index déjà sur disque, pour qu'une
  * passe partielle (`--limite 30`) n'efface pas les 1 058 autres fiches.
  */

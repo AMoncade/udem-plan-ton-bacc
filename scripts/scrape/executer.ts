@@ -57,6 +57,7 @@ import {
   CHEMIN_JOURNAL,
   DOSSIER_PROGRAMMES,
   RACINE_DEPOT,
+  codesSansCreditsConnus,
   codesSurDisque,
   ecrireCours,
   ecrireIndex,
@@ -654,11 +655,31 @@ async function principal(): Promise<void> {
     // plus ancienne fiche sur disque date de 11:16Z — donc aucune fiche
     // actuelle ne traîne un parse périmé.)
     let dejaEnFiche = 0;
+    let attestesSansCredits = 0;
     let candidats = aDemander;
     if (options.reprendre && !options.rafraichir) {
       const surDisque = await codesSurDisque();
-      candidats = aDemander.filter((c) => !surDisque.has(c));
-      dejaEnFiche = aDemander.length - candidats.length;
+      // ON SAUTE AUSSI CE QU'ON A DÉJÀ VU SANS CRÉDITS, et c'est ce qui rend le
+      // découpage utilisable jusqu'au bout.
+      //
+      // Une page sans étiquette « Crédits » ne produit pas de fiche, donc son
+      // code n'entre jamais dans `data/cours/` — il restait éternellement
+      // candidat et repassait en tête de CHAQUE tranche. Mesuré au moment où
+      // ça s'est vu : 100 codes traités pour 21 fiches écrites et 94 lectures
+      // de cache, soit 79 % du budget d'une tranche brûlé à relire des pages
+      // dont on savait déjà qu'elles ne donneraient rien.
+      //
+      // C'est l'attestation datée de `codesSansCredits` qui permet de les
+      // écarter sans rien deviner : on ne saute que ce que le parseur a
+      // POSITIVEMENT constaté, jamais un code simplement absent.
+      //
+      // Réversible par construction : `--rafraichir` ignore toute la reprise et
+      // redemande tout, ce qu'il faut faire si l'UdeM corrige ses pages — une
+      // observation vieillit, et rien ici ne prétend le contraire.
+      const sansCreditsConnus = await codesSansCreditsConnus();
+      candidats = aDemander.filter((c) => !surDisque.has(c) && !sansCreditsConnus.has(c));
+      dejaEnFiche = aDemander.filter((c) => surDisque.has(c)).length;
+      attestesSansCredits = aDemander.length - candidats.length - dejaEnFiche;
     }
 
     const total = options.limiteCours === null ? candidats.length : Math.min(options.limiteCours, candidats.length);
@@ -666,7 +687,9 @@ async function principal(): Promise<void> {
 
     console.log(
       `\nFiches de cours à traiter : ${retenus.length}` +
-        (dejaEnFiche > 0 ? ` (${dejaEnFiche} déjà en fiche, sautées par --reprendre)` : "") +
+        (dejaEnFiche > 0 ? ` (${dejaEnFiche} déjà en fiche` : "") +
+        (attestesSansCredits > 0 ? `, ${attestesSansCredits} attestés sans crédits` : "") +
+        (dejaEnFiche > 0 ? ", sautés par --reprendre)" : "") +
         (retenus.length < candidats.length ? ` — ${candidats.length - retenus.length} restantes après cette tranche` : ""),
     );
     // PIÈGE DE BOUCLE, rencontré pour de vrai : « restantes » ne tombe jamais à

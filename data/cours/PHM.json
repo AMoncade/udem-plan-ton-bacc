@@ -1726,5 +1726,41 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6079/",
     "scrapeISO": "2026-09-13T05:13:31.545Z"
+  },
+  "PHM 2952": {
+    "code": "PHM 2952",
+    "titre": "Pharmacologie générale",
+    "credits": 2,
+    "cycle": "1er cycle",
+    "faculte": "Faculté de pharmacie",
+    "description": "Principes de pharmacodynamie et de pharmacocinétique des médicaments. Classes de médicaments et leur pharmacologie. Posologie, voies d'administration et toxicité. Remarques: Cours obligatoire offert aux étudiants de l'École d'optométrie.",
+    "prealablesBrut": "PSL1982 ET PSL1993",
+    "prealables": {
+      "genre": "et",
+      "enfants": [
+        {
+          "genre": "cours",
+          "code": "PSL 1982"
+        },
+        {
+          "genre": "cours",
+          "code": "PSL 1993"
+        }
+      ]
+    },
+    "concomitantsBrut": null,
+    "restrictionsBrut": null,
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
+    "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-2952/",
+    "scrapeISO": "2026-09-13T06:06:19.955Z"
   }
 }
