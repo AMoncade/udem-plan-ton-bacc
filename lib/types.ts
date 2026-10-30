@@ -194,7 +194,7 @@ export interface Cours {
    * un contrat, parce qu'il se cite ensuite comme s'il avait été mesuré ici.)
    */
   apercuHoraires?: ApercuTrimestre[];
-  /** Date ISO de capture de la page d'où viennent `trimestres` et `apercuHoraires` ; absente tant qu'aucune passe d'horaires n'a daté la fiche. */
+  /** Date ISO de capture de la page où la passe hebdomadaire a vu les horaires CHANGER ; absente tant qu'aucun changement n'a été vu depuis la passe complète (alors `scrapeISO` date les horaires). */
   horairesISO?: string;
   url: string;
   scrapeISO: string;

@@ -54,7 +54,8 @@
  *                         TOUTE la boucle des programmes, ne crée aucune fiche,
  *                         et ne réécrit dans les fiches EXISTANTES que
  *                         `trimestres`, `apercuHoraires` et `horairesISO` (la date
- *                         de capture de la page). Ne touche ni aux programmes, ni
+ *                         de capture de la page, posée seulement quand les
+ *                         horaires ont changé). Ne touche ni aux programmes, ni
  *                         à l'index, ni au journal. Codes : `--cours-fichier` si
  *                         donné, sinon l'union des codes cités par
  *                         data/programmes/. Vérifie robots.txt avant la première
@@ -1048,11 +1049,11 @@ async function principal(): Promise<void> {
       // sans aucun trimestre, ce qui est le cas de 43 % du catalogue. Le champ
       // absent voudrait dire « fiche antérieure au champ », ce qui est autre chose.
       fiche.cours.apercuHoraires = parseApercuHoraires(page.html, code, journal);
-      // Même page, même instant de capture que les horaires : la passe
-      // hebdomadaire (`--horaires-seulement`) écrit ce champ, la passe complète
-      // doit le faire aussi sinon ses fiches resteraient sans date de capture
-      // jusqu'au premier lundi.
-      fiche.cours.horairesISO = page.recupereISO;
+      // Pas de `horairesISO` ici : la passe complète date déjà toute la fiche
+      // par `scrapeISO`. Ce champ est réservé à la passe hebdomadaire, qui ne
+      // l'écrit que quand les horaires CHANGENT (voir `fusionnerHoraires`). Le
+      // poser ici le ferait aussi à chaque régénération hors ligne depuis le
+      // cache, sur les 9 619 fiches.
       if (fiche.cours.code !== code) {
         journal.inattendu(
           code,

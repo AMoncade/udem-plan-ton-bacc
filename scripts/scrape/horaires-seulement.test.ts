@@ -105,6 +105,18 @@ describe("fusionnerHoraires", () => {
     expect(fusionnerHoraires(ancienne, lus).apercuHoraires).toEqual([]);
   });
 
+  it("horaires inchangés : fiche rendue telle quelle, horairesISO NON redaté", () => {
+    const datee: Cours = { ...ancienne, horairesISO: "2026-09-13T00:00:00.000Z" };
+    const memes = {
+      trimestres: structuredClone(datee.trimestres),
+      apercuHoraires: structuredClone(datee.apercuHoraires ?? []),
+      horairesISO: "2026-11-02T09:17:00.000Z",
+    };
+    const f = fusionnerHoraires(datee, memes);
+    expect(f).toBe(datee);
+    expect(f.horairesISO).toBe("2026-09-13T00:00:00.000Z");
+  });
+
   it("ne modifie pas la fiche d'entrée", () => {
     const copie = structuredClone(ancienne);
     fusionnerHoraires(ancienne, lus);

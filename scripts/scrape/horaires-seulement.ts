@@ -81,8 +81,18 @@ export interface HorairesLus {
  * La fiche d'entrée n'est pas modifiée. `{ ...ancienne, … }` garde l'ordre des
  * clés de la fiche existante, donc un diff de fichier ne montre que ce qui a
  * vraiment changé.
+ *
+ * HORAIRES INCHANGÉS → FICHE RENDUE TELLE QUELLE, `horairesISO` compris. Dater
+ * chaque lecture ferait changer une ligne dans chacune des ~9 600 fiches tous
+ * les lundis : un commit de 20 Mo de JSON qui ne dit rien de neuf, et un
+ * `git diff --quiet -- data/` qui ne serait plus jamais silencieux. Le champ
+ * date donc le dernier CHANGEMENT d'horaire observé, pas la dernière lecture.
  */
 export function fusionnerHoraires(ancienne: Cours, lus: HorairesLus): Cours {
+  const memes =
+    JSON.stringify([ancienne.trimestres, ancienne.apercuHoraires ?? null]) ===
+    JSON.stringify([lus.trimestres, lus.apercuHoraires]);
+  if (memes) return ancienne;
   return {
     ...ancienne,
     trimestres: lus.trimestres,
