@@ -1,0 +1,209 @@
+name: Scrape complet
+
+# Passe COMPLÈTE, à la main seulement : toutes les pages de structure des
+# programmes, puis les fiches ENTIÈRES des cours cités (préalables, crédits,
+# description, horaires…). Ce que la passe hebdomadaire de scrape-horaires.yml ne
+# fait jamais.
+#
+# JAMAIS SUR main. Le résultat est poussé sur une branche `scrape-complet-<date>`
+# et le résumé du job donne l'URL de comparaison : un humain relit le diff avant de
+# fusionner. Si le garde-fou ou les tests refusent, rien n'est poussé, mais les
+# artefacts (14 jours) permettent d'aller voir ce qui a été récolté.
+#
+# DÉCOUPÉ POUR TENIR SOUS 6 h PAR JOB (la limite de GitHub pour un job hébergé) :
+# un job « programmes », puis quatre tranches de cours par première lettre de
+# sujet, l'une après l'autre (max-parallel: 1 = la politesse d'un seul scraper).
+# Chaque tranche part du checkout + des programmes du premier job, car la liste
+# des cours à demander (`--cours-cites`) est l'union des codes que les programmes
+# citent.
+#
+# Ce que cette passe ne propage PAS : `codesSansCredits` de l'index (les codes vus
+# sans crédits). Chaque tranche ne le met à jour que dans sa copie locale, qui
+# n'est pas rapatriée ; l'index publié garde celui de la branche. Conséquence :
+# une future passe `--reprendre` redemandera ces pages une fois de plus, rien de
+# plus. Voir la doc de scrape pour le rattrapage.
+#
+# Comme scrape-horaires.yml : un push fait avec GITHUB_TOKEN ne relance pas ci.yml,
+# donc les tests tournent dans le job final.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limite_cours:
+        description: "Essai court : au plus N fiches PAR TRANCHE (vide = toutes)"
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+# Même groupe que scrape-horaires.yml : jamais les deux scrapers en même temps.
+concurrency:
+  group: scrape-udem
+  cancel-in-progress: false
+
+jobs:
+  programmes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Passe « structures » (tous les programmes, aucune fiche de cours)
+        run: npm run scrape -- --sans-cours
+
+      - name: Rassembler ce que cette passe a écrit
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p sortie
+          cp -r data/programmes sortie/ 2>/dev/null || true
+          cp data/index-programmes.json data/journal.json sortie/ 2>/dev/null || true
+          find sortie -type f | wc -l
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: complet-programmes
+          path: sortie
+          if-no-files-found: error
+          retention-days: 14
+
+  cours:
+    needs: programmes
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    strategy:
+      # fail-fast (le défaut) : une tranche manquante rend la passe inutilisable,
+      # inutile de faire attendre le serveur pour les suivantes.
+      max-parallel: 1
+      matrix:
+        # A-D 2480, E-L 1678, M-O 2557, P-Z 2904 fiches (data/cours, 2026-10-30).
+        tranche: ["A-D", "E-L", "M-O", "P-Z"]
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: complet-programmes
+          path: data
+
+      - name: Fiches de cours de la tranche
+        shell: bash
+        env:
+          TRANCHE: ${{ matrix.tranche }}
+          LIMITE: ${{ inputs.limite_cours }}
+        run: |
+          # `--reprendre` saute les programmes déjà sur disque (ceux du premier
+          # job : sans ça, chaque tranche referait les 1 088 pages de structure) ;
+          # `--rafraichir` l'empêche de sauter AUSSI les fiches de cours déjà
+          # présentes, car cette passe veut les refaire entières. Les deux ensemble
+          # = « pas de programmes, tous les cours de la tranche ».
+          args=(--cours-cites --reprendre --rafraichir --sujets "$TRANCHE")
+          if [ -n "$LIMITE" ]; then args+=(--limite-cours "$LIMITE"); fi
+          npm run scrape -- "${args[@]}"
+
+      - name: Rassembler les fiches écrites
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p sortie
+          git ls-files -m -o --exclude-standard -z -- data/cours | xargs -0 -r cp --parents -t sortie
+          find sortie -type f | wc -l
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: complet-cours-${{ matrix.tranche }}
+          path: sortie
+          if-no-files-found: ignore
+          retention-days: 14
+
+  reunir:
+    needs: [programmes, cours]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Copie de data/cours avant application
+        run: cp -r data/cours "$RUNNER_TEMP/cours-avant"
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: complet-programmes
+          path: data
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: complet-cours-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/artefacts-cours
+
+      - name: Appliquer les fiches de cours
+        run: cp -r "$RUNNER_TEMP/artefacts-cours/data/." data/
+
+      - name: Garde-fou des horaires
+        shell: bash
+        run: |
+          set +e
+          node --experimental-strip-types scripts/scrape/garde-fou-horaires.ts "$RUNNER_TEMP/cours-avant" data/cours > "$RUNNER_TEMP/garde-fou.txt" 2>&1
+          code=$?
+          { echo '### Garde-fou des horaires'; echo '```'; cat "$RUNNER_TEMP/garde-fou.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUNNER_TEMP/garde-fou.txt"
+          exit $code
+
+      - name: Tests
+        run: npx vitest run
+
+      - name: Pousser sur une branche de relecture (jamais sur main)
+        shell: bash
+        env:
+          DEFAUT: ${{ github.event.repository.default_branch }}
+        run: |
+          if git diff --quiet -- data/ && [ -z "$(git ls-files -o --exclude-standard -- data/)" ]; then
+            echo "Aucun changement dans data/ : pas de branche."
+            echo "Aucun changement dans data/ : rien à relire." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branche="scrape-complet-$(date -u +%F)"
+          if git ls-remote --exit-code --heads origin "$branche" > /dev/null; then
+            branche="${branche}-$(date -u +%H%M)"
+          fi
+          if [ "$branche" = "$DEFAUT" ] || [ "$branche" = "main" ]; then
+            echo "::error::Refus de pousser sur $branche."
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branche"
+          git add data/
+          git commit -m "données : passe complète du $(date -u +%F)"
+          git push origin "$branche"
+          url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/compare/${DEFAUT}...${branche}"
+          echo "Branche poussée : $branche"
+          echo "Comparaison : $url"
+          { echo "### Passe complète prête à relire"; echo; echo "Branche \`${branche}\`"; echo; echo "[Voir la comparaison avec ${DEFAUT}](${url})"; } >> "$GITHUB_STEP_SUMMARY"

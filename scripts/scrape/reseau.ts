@@ -33,7 +33,7 @@ export const DOSSIER_CACHE = path.join(import.meta.dirname, ".cache");
 /** Délai par défaut entre deux requêtes réseau effectives, en millisecondes. */
 export const DELAI_DEFAUT_MS = 1200;
 
-const AGENT =
+export const AGENT =
   "udem-plan-ton-bacc/0.2 (projet etudiant, scrape poli avec cache; contact: adrien@moncade.com)";
 
 /** Tentatives par URL avant d'abandonner une panne de transport. */
@@ -233,6 +233,39 @@ export async function recuperer(url: string): Promise<PageRecuperee> {
     depuisCache: false,
     panne: String(derniere),
   };
+}
+
+/**
+ * Récupère une page SANS toucher au cache, ni en lecture ni en écriture.
+ *
+ * Pour robots.txt : une vérification d'autorisation qui relirait une copie vieille
+ * de trois mois ne vérifierait rien. Même délai poli, mêmes compteurs et même
+ * règle « rien ne lève » que `recuperer` ; trois essais seulement, parce que
+ * c'est un seul fichier et que la passe s'arrête s'il manque. Ne touche pas le
+ * réseau en mode `--hors-ligne`.
+ */
+export async function recupererFrais(url: string): Promise<PageRecuperee> {
+  const recupereISO = new Date().toISOString();
+  if (options.horsLigne) {
+    return { url, html: null, statut: STATUT_HORS_LIGNE, recupereISO, depuisCache: false };
+  }
+  let derniere: unknown = null;
+  for (let essai = 1; essai <= 3; essai += 1) {
+    await attendreTour();
+    requetesReseau += 1;
+    try {
+      const reponse = await fetch(url, {
+        headers: { "User-Agent": AGENT, Accept: "text/plain,text/html" },
+        redirect: "follow",
+      });
+      const html = reponse.ok ? await reponse.text() : null;
+      return { url, html, statut: reponse.status, recupereISO: new Date().toISOString(), depuisCache: false };
+    } catch (cause) {
+      derniere = cause;
+      if (essai < 3) await new Promise((r) => setTimeout(r, 2000 * 2 ** (essai - 1)));
+    }
+  }
+  return { url, html: null, statut: STATUT_PANNE, recupereISO, depuisCache: false, panne: String(derniere) };
 }
 
 /**

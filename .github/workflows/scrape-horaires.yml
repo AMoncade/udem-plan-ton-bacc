@@ -1,0 +1,219 @@
+name: Horaires hebdomadaires
+
+# Passe « horaires seulement » : chaque lundi, relit la page de chaque cours qui a
+# déjà une fiche et ne réécrit que `trimestres`, `apercuHoraires` et `horairesISO`.
+# Aucune fiche n'est créée, aucun programme n'est touché. Voir docs/INVENTAIRE-PROGRAMMES.md §12.
+#
+# DEUX PIÈGES DE GITHUB À CONNAÎTRE
+#
+#  1. Un push fait avec GITHUB_TOKEN ne déclenche AUCUN autre workflow : ci.yml ne
+#     se relancera donc pas sur le commit de données. C'est pour ça que le job
+#     final lance `npx vitest run` lui-même avant de pousser. (Les types, le lint
+#     et le build ne sont pas relancés : un commit qui ne touche que data/ ne
+#     peut pas les casser, et vitest couvre les tests de couture sur les données.)
+#
+#  2. GitHub DÉSACTIVE un workflow planifié après 60 jours sans activité dans le
+#     dépôt. Ses propres commits de données comptent comme activité tant qu'il
+#     tourne, mais s'il s'arrête (période creuse, échec répété) il peut se
+#     désactiver sans bruit : si les horaires cessent d'avancer, regarder d'abord
+#     l'onglet Actions pour un bouton « Enable workflow ».
+#
+# POLITESSE. Les quatre tranches tournent l'une après l'autre (max-parallel: 1) :
+# le serveur de l'UdeM ne voit jamais deux scrapers à la fois, et le délai de
+# 1,2 s entre requêtes reste celui d'un seul. robots.txt est relu au début de
+# chaque tranche et la tranche s'arrête s'il interdit /cours-et-horaires/.
+
+on:
+  schedule:
+    # Lundi 09:17 UTC. Minute non ronde : les cron à :00 sont ceux que tout le
+    # monde lance, et GitHub les retarde ou les saute quand il est chargé.
+    - cron: "17 9 * * 1"
+  workflow_dispatch:
+    inputs:
+      forcer:
+        description: "Lancer même hors période d'inscription et hors premier lundi du mois"
+        type: boolean
+        default: false
+      limite_cours:
+        description: "Essai court : au plus N fiches PAR TRANCHE (vide = toutes)"
+        type: string
+        required: false
+
+env:
+  # Périodes d'inscription, MM-JJ:MM-JJ séparées par des virgules, bornes comprises.
+  # Une période dont le début est après la fin chevauche le Nouvel An (ici 15 oct.
+  # -> 31 janv.). Hors de ces périodes, la passe ne tourne que le premier lundi du
+  # mois. À CONFIRMER CONTRE LE CALENDRIER DE L'UDEM : ces dates sont une première
+  # estimation, pas une donnée relevée.
+  PERIODES_INSCRIPTION: "03-01:09-15,10-15:01-31"
+
+# Lecture seule par défaut ; seul le job final reçoit le droit d'écrire.
+permissions:
+  contents: read
+
+# Jamais deux passes en même temps (ni avec scrape-complet.yml, qui partage ce
+# groupe) : deux scrapers simultanés annulent chacun le délai poli de l'autre.
+concurrency:
+  group: scrape-udem
+  cancel-in-progress: false
+
+jobs:
+  decider:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      executer: ${{ steps.decision.outputs.executer }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Faut-il lancer la passe aujourd'hui ?
+        id: decision
+        env:
+          FORCER: ${{ inputs.forcer }}
+        run: node --experimental-strip-types scripts/scrape/calendrier-horaires.ts
+
+      - name: Raison
+        env:
+          EXECUTER: ${{ steps.decision.outputs.executer }}
+          RAISON: ${{ steps.decision.outputs.raison }}
+        run: |
+          echo "### Décision : executer=${EXECUTER}" >> "$GITHUB_STEP_SUMMARY"
+          echo "${RAISON}" >> "$GITHUB_STEP_SUMMARY"
+
+  tranches:
+    needs: decider
+    if: needs.decider.outputs.executer == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      # Une tranche en échec n'empêche pas les autres : chaque fiche est
+      # indépendante, et le job final applique ce qui est arrivé avant de rougir.
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        # Première lettre du sujet, équilibrée sur le nombre de fiches de
+        # data/cours (2026-10-30) : A-D 2480, E-L 1678, M-O 2557, P-Z 2904.
+        # Les quatre intervalles couvrent A-Z sans trou ni recouvrement ; si un
+        # sujet apparaît hors de ces lettres, il n'est dans aucune tranche.
+        tranche: ["A-D", "E-L", "M-O", "P-Z"]
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Passe d'horaires
+        shell: bash
+        env:
+          TRANCHE: ${{ matrix.tranche }}
+          LIMITE: ${{ inputs.limite_cours }}
+        run: |
+          args=(--horaires-seulement --sujets "$TRANCHE")
+          if [ -n "$LIMITE" ]; then args+=(--limite-cours "$LIMITE"); fi
+          npm run scrape -- "${args[@]}"
+
+      # Ne dépose que les fichiers modifiés, pas tout data/cours : le job final
+      # les applique PAR-DESSUS son propre checkout, et un artefact complet
+      # écraserait au passage tout ce qui aurait changé sur la branche pendant les
+      # heures qu'a duré la passe.
+      - name: Rassembler les fichiers modifiés
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p sortie
+          git ls-files -m -o --exclude-standard -z -- data/cours | xargs -0 -r cp --parents -t sortie
+          find sortie -type f | wc -l
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: horaires-${{ matrix.tranche }}
+          path: sortie
+          if-no-files-found: ignore
+          retention-days: 14
+
+  reunir:
+    needs: [decider, tranches]
+    # `!cancelled()` et non le défaut : une tranche en échec ne doit pas empêcher
+    # d'appliquer les trois autres.
+    if: ${{ !cancelled() && needs.decider.outputs.executer == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # La référence du garde-fou : data/cours tel qu'il est sur la branche, AVANT
+      # d'appliquer quoi que ce soit.
+      - name: Copie de data/cours avant application
+        run: cp -r data/cours "$RUNNER_TEMP/cours-avant"
+
+      - uses: actions/download-artifact@v4
+        # Aucun artefact (toutes les tranches ont échoué avant d'écrire) n'est pas
+        # une raison d'échouer ici : l'étape de fin rougit la passe.
+        continue-on-error: true
+        with:
+          pattern: horaires-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/artefacts
+
+      - name: Appliquer les fichiers
+        shell: bash
+        run: |
+          if [ -d "$RUNNER_TEMP/artefacts/data" ]; then
+            cp -r "$RUNNER_TEMP/artefacts/data/." data/
+          else
+            echo "Aucun fichier à appliquer."
+          fi
+
+      - name: Garde-fou des horaires
+        shell: bash
+        run: |
+          set +e
+          node --experimental-strip-types scripts/scrape/garde-fou-horaires.ts "$RUNNER_TEMP/cours-avant" data/cours > "$RUNNER_TEMP/garde-fou.txt" 2>&1
+          code=$?
+          { echo '### Garde-fou des horaires'; echo '```'; cat "$RUNNER_TEMP/garde-fou.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUNNER_TEMP/garde-fou.txt"
+          exit $code
+
+      # Ce que ci.yml aurait fait sur ce commit s'il se déclenchait (voir l'en-tête).
+      - name: Tests
+        run: npx vitest run
+
+      - name: Commit et push, seulement s'il y a un diff
+        shell: bash
+        env:
+          BRANCHE: ${{ github.ref_name }}
+        run: |
+          if git diff --quiet -- data/; then
+            echo "Aucun changement dans data/ : pas de commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "données : horaires du $(date -u +%F)"
+          git pull --rebase origin "$BRANCHE"
+          git push origin "HEAD:$BRANCHE"
+
+      - name: Signaler les tranches en échec
+        if: ${{ always() && needs.tranches.result != 'success' }}
+        run: |
+          echo "::error::Au moins une tranche a échoué ou n'a pas pu lire assez de pages (résultat : ${{ needs.tranches.result }}). Ce qui a été lu est appliqué ; les fiches des pages en échec sont intactes."
+          exit 1

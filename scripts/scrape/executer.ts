@@ -46,6 +46,25 @@
  *                         autre session y travaille, car deux sessions
  *                         simultanées annulent le délai poli de chacune.
  *   --sans-cours          ne scraper aucune fiche de cours (passe « structures »)
+ *   --sujets SPEC         ne garder que les codes de ces sujets : une liste
+ *                         « ACT,MAT » ou un intervalle de PREMIÈRE lettre « A-F »
+ *                         (mélangeables). Valable dans tous les modes ; sert à
+ *                         découper une passe en tranches disjointes.
+ *   --horaires-seulement  passe HEBDOMADAIRE des horaires. Saute le sitemap et
+ *                         TOUTE la boucle des programmes, ne crée aucune fiche,
+ *                         et ne réécrit dans les fiches EXISTANTES que
+ *                         `trimestres`, `apercuHoraires` et `horairesISO` (la date
+ *                         de capture de la page). Ne touche ni aux programmes, ni
+ *                         à l'index, ni au journal. Codes : `--cours-fichier` si
+ *                         donné, sinon l'union des codes cités par
+ *                         data/programmes/. Vérifie robots.txt avant la première
+ *                         page et s'arrête s'il interdit /cours-et-horaires/ ou
+ *                         s'il est injoignable. Une page en échec laisse la fiche
+ *                         intacte : un échec réseau n'est JAMAIS écrit comme une
+ *                         liste d'horaires vide. Sort en code 1 si plus de 20 %
+ *                         des pages n'ont pas pu être lues.
+ *                         Incompatible avec --programmes, --limite, --reprendre,
+ *                         --tous-les-cours et --sans-cours.
  *
  * Par défaut, `--limite` et `--programmes` restreignent AUSSI les cours à ceux
  * que les programmes retenus citent : sans ça, un échantillon de 30 programmes
@@ -56,7 +75,7 @@
  * d'imports sans extension (voir `index.ts` et `resolveur-ts.mjs`).
  */
 import type { Cours, FicheIndex, Programme } from "../../lib/types";
-import { slugUrl, normaliserCode } from "../../lib/codes";
+import { slugUrl, normaliserCode, sujetDeCode } from "../../lib/codes";
 import { parsePrealables } from "../../lib/engine/prealables";
 import { empreinteExtracteur, empreintesParSource } from "../../lib/empreinte";
 import { parcoursDe, projeterOrientation } from "../../lib/parcours";
@@ -65,6 +84,7 @@ import { parseApercuHoraires } from "./horaires";
 import {
   CHEMIN_INDEX,
   CHEMIN_JOURNAL,
+  DOSSIER_COURS,
   DOSSIER_PROGRAMMES,
   RACINE_DEPOT,
   codesSansCreditsConnus,
@@ -78,6 +98,7 @@ import {
 import { contenu, texteLigne } from "./html";
 import { Journal } from "./journal";
 import {
+  AGENT,
   DELAI_DEFAUT_MS,
   STATUT_HORS_LIGNE,
   STATUT_PANNE,
@@ -86,7 +107,10 @@ import {
   configurerReseau,
   oublierCache,
   recuperer,
+  recupererFrais,
 } from "./reseau";
+import { refusPasseHoraires } from "./robots";
+import { filtrerParSujets, fusionnerHoraires, lireSpecSujets, pagePorteSectionHoraires } from "./horaires-seulement";
 import {
   ecrireSousSitemapsPersistes,
   lireSousSitemapsPersistes,
@@ -115,6 +139,10 @@ interface Options {
   /** Chemin d'un fichier de codes, un par ligne. Ignore `--reprendre` pour eux. */
   coursFichier: string | null;
   sansCours: boolean;
+  /** Spécification de `--sujets` (« ACT,MAT » ou « A-F »), déjà validée. */
+  sujets: string | null;
+  /** Passe hebdomadaire : voir l'en-tête et `passeHorairesSeulement`. */
+  horairesSeulement: boolean;
   /** Recopié depuis les options réseau : `--rafraichir` veut dire « tout
    *  redemander », ce qui interdit à `--reprendre` de sauter quoi que ce soit. */
   rafraichir: boolean;
@@ -152,6 +180,26 @@ function lireArguments(argv: string[]): Options {
     horsLigne: fanions.has("hors-ligne"),
   });
 
+  // Validé ICI, avant tout réseau : un filtre mal tapé doit échouer en une
+  // seconde, pas après le sitemap.
+  const sujets = lus.get("sujets") ?? null;
+  if (sujets !== null) lireSpecSujets(sujets);
+  else if (fanions.has("sujets")) throw new Error("--sujets attend une valeur (« ACT,MAT » ou « A-F »)");
+
+  const horairesSeulement = fanions.has("horaires-seulement");
+  if (horairesSeulement) {
+    // Ces options n'ont aucun sens ici, et les ignorer en silence ferait croire
+    // qu'elles ont agi (une passe « --programmes x » qui réécrit tout).
+    const incompatibles = ["programmes", "limite", "reprendre", "tous-les-cours", "sans-cours"].filter(
+      (nom) => lus.has(nom) || fanions.has(nom),
+    );
+    if (incompatibles.length > 0) {
+      throw new Error(
+        `--horaires-seulement est incompatible avec ${incompatibles.map((n) => `--${n}`).join(", ")}`,
+      );
+    }
+  }
+
   const listeProgrammes = lus.get("programmes");
   return {
     limite: entier("limite"),
@@ -167,6 +215,8 @@ function lireArguments(argv: string[]): Options {
     limiteCours: entier("limite-cours"),
     coursFichier: lus.get("cours-fichier") ?? null,
     sansCours: fanions.has("sans-cours"),
+    sujets,
+    horairesSeulement,
     rafraichir: fanions.has("rafraichir"),
   };
 }
@@ -491,10 +541,235 @@ function programmeVide(
   };
 }
 
+/** Les codes d'un fichier `--cours-fichier` : un par ligne, normalisés. */
+async function lireCodesFichier(chemin: string, journal: Journal): Promise<string[]> {
+  const brut = await readFile(chemin, "utf8");
+  const codes = brut
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter((l) => l !== "")
+    .map((l) => normaliserCode(l))
+    .filter((c): c is string => c !== null);
+  const illisibles = brut.split(/\r?\n/).filter((l) => l.trim() !== "" && normaliserCode(l.trim()) === null);
+  for (const l of illisibles) {
+    journal.inattendu(chemin, `ligne non normalisable en code, ignorée : « ${l.trim()} »`);
+  }
+  console.log(`\n--cours-fichier : ${codes.length} codes lus dans ${chemin}`);
+  return codes;
+}
+
+/**
+ * robots.txt, pour de vrai, au début de la passe hebdomadaire.
+ *
+ * Rend un message d'ARRÊT, ou `null` si la passe peut continuer. En
+ * `--hors-ligne` rien n'est demandé au serveur, donc rien à vérifier : on le dit.
+ * Injoignable ou non-2xx = arrêt aussi : une passe sans surveillance ne doit
+ * pas supposer la permission faute d'avoir pu la lire.
+ */
+async function arretSiRobotsRefuse(): Promise<string | null> {
+  const url = `${RACINE}/robots.txt`;
+  const page = await recupererFrais(url);
+  if (page.statut === STATUT_HORS_LIGNE) {
+    console.log("robots.txt : non vérifié (--hors-ligne, aucune requête)");
+    return null;
+  }
+  if (page.html === null) {
+    return (
+      `${url} est injoignable (${page.statut === STATUT_PANNE ? `panne réseau : ${page.panne ?? "?"}` : `HTTP ${page.statut}`}). ` +
+      "Impossible de confirmer que /cours-et-horaires/ est permis."
+    );
+  }
+  const refus = refusPasseHoraires(page.html, AGENT);
+  if (refus !== null) return refus;
+  console.log("robots.txt : /cours-et-horaires/ permis pour notre agent");
+  return null;
+}
+
+/** Part de pages illisibles au-delà de laquelle la passe sort en code 1. */
+const SEUIL_PAGES_ILLISIBLES = 0.2;
+/** Écriture sur disque tous les N fiches mises à jour : une passe coupée garde son travail. */
+const ECRIRE_TOUS_LES = 250;
+
+/**
+ * `--horaires-seulement` : réécrit `trimestres`, `apercuHoraires` et
+ * `horairesISO` des fiches EXISTANTES, et rien d'autre.
+ *
+ * Ni sitemap (une fiche qu'on a déjà existe, pas besoin de l'inventaire pour le
+ * savoir : 16 requêtes de moins par tranche), ni programmes, ni index, ni
+ * journal sur disque. Chaque page qui échoue laisse l'ancienne fiche intacte —
+ * le point est de ne JAMAIS transformer un échec en « aucun horaire ».
+ */
+async function passeHorairesSeulement(options: Options, journal: Journal): Promise<void> {
+  const debut = Date.now();
+
+  const arret = await arretSiRobotsRefuse();
+  if (arret !== null) {
+    console.error(`\nPasse annulée, aucune page de cours demandée.\n${arret}`);
+    process.exitCode = 1;
+    return;
+  }
+
+  let codes: string[];
+  if (options.coursFichier !== null) {
+    codes = await lireCodesFichier(options.coursFichier, journal);
+  } else {
+    codes = [...(await codesDesProgrammesSurDisque(new Set(), journal, null))];
+  }
+  if (options.sujets !== null) {
+    const avant = codes.length;
+    codes = filtrerParSujets(codes, options.sujets);
+    console.log(`--sujets ${options.sujets} : ${codes.length} codes retenus sur ${avant}`);
+  }
+
+  // Pas de fiche = pas de requête : cette passe ne crée rien.
+  const surDisque = await codesSurDisque();
+  const sansFiche = codes.filter((c) => !surDisque.has(c));
+  for (const c of sansFiche) journal.manque(c, "aucune fiche existante : ignoré par --horaires-seulement (pas de création)");
+  const aDemander = codes.filter((c) => surDisque.has(c));
+  const retenus = options.limiteCours === null ? aDemander : aDemander.slice(0, options.limiteCours);
+  console.log(
+    `\nHoraires à relire : ${retenus.length} fiches existantes` +
+      (sansFiche.length > 0 ? ` (${sansFiche.length} codes sans fiche, ignorés : ${sansFiche.slice(0, 8).join(", ")}${sansFiche.length > 8 ? ", …" : ""})` : "") +
+      (retenus.length < aDemander.length ? ` — ${aDemander.length - retenus.length} restantes après cette tranche` : ""),
+  );
+
+  const fichiersDeSujet = new Map<string, Record<string, Cours>>();
+  const lireSujet = async (sujet: string): Promise<Record<string, Cours>> => {
+    const connu = fichiersDeSujet.get(sujet);
+    if (connu) return connu;
+    const brut = JSON.parse(await readFile(path.join(DOSSIER_COURS, `${sujet}.json`), "utf8")) as Record<string, Cours>;
+    fichiersDeSujet.set(sujet, brut);
+    return brut;
+  };
+
+  const enAttente: Cours[] = [];
+  const nonLus: string[] = [];
+  let misAJour = 0;
+  let horairesChanges = 0;
+  const sujetsTouches = new Set<string>();
+  const vider = async (): Promise<void> => {
+    if (enAttente.length === 0) return;
+    const r = await ecrireCours(enAttente.splice(0));
+    for (const code of r.sansSujet) journal.erreur(code, "code non canonique : fiche non écrite");
+    for (const s of r.sujets) sujetsTouches.add(s);
+  };
+
+  for (const [i, code] of retenus.entries()) {
+    const url = `${RACINE}/cours-et-horaires/cours/${slugUrl(code)}/`;
+    const page = await recuperer(url);
+    if (page.html === null) {
+      if (page.statut === STATUT_PANNE || page.statut === STATUT_HORS_LIGNE) {
+        journal.erreur(
+          code,
+          page.statut === STATUT_HORS_LIGNE
+            ? "absente du cache et --hors-ligne : aucune requête faite, fiche conservée intacte"
+            : `panne réseau après ${TENTATIVES_DEFAUT} tentatives (${page.panne ?? "?"}) — fiche conservée intacte`,
+        );
+      } else {
+        journal.erreur(code, `HTTP ${page.statut} sur ${url} — fiche conservée intacte`);
+      }
+      nonLus.push(code);
+      continue;
+    }
+
+    const lue = parseFicheCours(page.html, url, page.recupereISO, parsePrealables);
+    // Le journal de `parseFicheCours` parle de champs que cette passe n'écrit
+    // pas (préalables, crédits…) : on n'en garde que ce qui dit que la page
+    // n'est pas ce qu'on croit.
+    if (!lue.cours) {
+      journal.erreur(code, "la page n'est pas lisible comme une fiche de cours — fiche conservée intacte");
+      nonLus.push(code);
+      continue;
+    }
+    if (lue.cours.code !== code) {
+      journal.erreur(code, `la page s'annonce comme ${lue.cours.code} (redirection ?) — fiche conservée intacte`);
+      nonLus.push(code);
+      continue;
+    }
+    if (!pagePorteSectionHoraires(page.html)) {
+      journal.erreur(
+        code,
+        "la page ne porte pas sa section d'horaires (100 % des pages de cours la portent, parfois vide) — " +
+          "ce n'est pas « aucun horaire », fiche conservée intacte",
+      );
+      nonLus.push(code);
+      continue;
+    }
+
+    const apercuHoraires = parseApercuHoraires(page.html, code, journal);
+    const sujet = sujetDeCode(code);
+    if (sujet === null) {
+      journal.erreur(code, "code non canonique : fiche non mise à jour");
+      continue;
+    }
+    const ancienne = (await lireSujet(sujet))[code];
+    if (!ancienne) {
+      journal.erreur(code, `listée sur disque mais introuvable dans ${sujet}.json — ignorée`);
+      continue;
+    }
+    const fusionnee = fusionnerHoraires(ancienne, {
+      trimestres: lue.cours.trimestres,
+      apercuHoraires,
+      horairesISO: page.recupereISO,
+    });
+    if (
+      JSON.stringify([ancienne.trimestres, ancienne.apercuHoraires ?? null]) !==
+      JSON.stringify([fusionnee.trimestres, fusionnee.apercuHoraires])
+    ) {
+      horairesChanges += 1;
+    }
+    // Le cache en mémoire suit : un second passage sur le même code (liste
+    // dupliquée) fusionnerait sur la fiche déjà mise à jour.
+    (await lireSujet(sujet))[code] = fusionnee;
+    enAttente.push(fusionnee);
+    misAJour += 1;
+    if (enAttente.length >= ECRIRE_TOUS_LES) await vider();
+
+    if ((i + 1) % 25 === 0 || i + 1 === retenus.length) {
+      const c = compteurs();
+      console.log(`  [${i + 1}/${retenus.length}] ${code}  (réseau ${c.reseau}, cache ${c.cache})`);
+    }
+  }
+  await vider();
+
+  const c = compteurs();
+  const secondes = Math.round((Date.now() - debut) / 1000);
+  console.log(
+    `\n=== Passe d'horaires terminée en ${secondes} s ===\n` +
+      `  requêtes réseau RÉELLES : ${c.reseau}   (lectures de cache : ${c.cache})\n` +
+      `  fiches mises à jour     : ${misAJour} (dont ${horairesChanges} aux horaires modifiés), sujets touchés : ${[...sujetsTouches].sort().join(" ") || "—"}\n` +
+      `  fiches laissées intactes: ${nonLus.length} (page illisible ou en échec)\n` +
+      `  codes sans fiche        : ${sansFiche.length} (ignorés)`,
+  );
+  if (nonLus.length > 0) {
+    console.log(`\nÀ relancer (fiche intacte) : ${nonLus.slice(0, 40).join(", ")}${nonLus.length > 40 ? ", …" : ""}`);
+  }
+  const parGenre = journal.comptes();
+  if (parGenre.erreur > 0 || parGenre.inattendu > 0) {
+    console.log("\nÀ inspecter (erreur / inattendu) :");
+    for (const e of journal.entrees.filter((e) => e.genre === "erreur" || e.genre === "inattendu").slice(0, 60)) {
+      console.log(`  [${e.genre}] ${e.sujet} — ${e.message}`);
+    }
+  }
+  if (retenus.length > 0 && nonLus.length / retenus.length > SEUIL_PAGES_ILLISIBLES) {
+    console.error(
+      `\nÉCHEC : ${nonLus.length} pages illisibles sur ${retenus.length} ` +
+        `(${Math.round((nonLus.length / retenus.length) * 100)} %, seuil ${SEUIL_PAGES_ILLISIBLES * 100} %). ` +
+        "Les fiches concernées sont intactes ; ce qui a été lu est écrit.",
+    );
+    process.exitCode = 1;
+  }
+}
+
 async function principal(): Promise<void> {
   const options = lireArguments(process.argv.slice(2));
   const journal = new Journal();
   const debut = Date.now();
+
+  if (options.horairesSeulement) {
+    await passeHorairesSeulement(options, journal);
+    return;
+  }
 
   const inventaire = await lireInventaire(journal);
 
@@ -637,18 +912,7 @@ async function principal(): Promise<void> {
       // une raison de sauter : la fiche peut exister alors que son HTML a quitté
       // le cache, et il faut reprendre la page pour en extraire ce qu'une
       // ancienne passe n'en lisait pas — les horaires, par exemple.
-      const brut = await readFile(options.coursFichier, "utf8");
-      codes = brut
-        .split(/\r?\n/)
-        .map((l) => l.trim())
-        .filter((l) => l !== "")
-        .map((l) => normaliserCode(l))
-        .filter((c): c is string => c !== null);
-      const illisibles = brut.split(/\r?\n/).filter((l) => l.trim() !== "" && normaliserCode(l.trim()) === null);
-      for (const l of illisibles) {
-        journal.inattendu(options.coursFichier, `ligne non normalisable en code, ignorée : « ${l.trim()} »`);
-      }
-      console.log(`\n--cours-fichier : ${codes.length} codes lus dans ${options.coursFichier}`);
+      codes = await lireCodesFichier(options.coursFichier, journal);
     } else if (options.coursCites) {
       codes = [...(await codesDesProgrammesSurDisque(codesCites, journal, options.programmes))];
     } else if (options.tousLesCours || !partiel) {
@@ -661,6 +925,11 @@ async function principal(): Promise<void> {
       }
     } else {
       codes = [...codesCites];
+    }
+    if (options.sujets !== null) {
+      const avant = codes.length;
+      codes = filtrerParSujets(codes, options.sujets);
+      console.log(`--sujets ${options.sujets} : ${codes.length} codes retenus sur ${avant}`);
     }
     // On ne demande jamais une fiche que le sitemap ne liste pas : c'est ce que
     // l'inventaire sert à éviter. Un bloc peut citer un cours sans fiche (cas
@@ -779,6 +1048,11 @@ async function principal(): Promise<void> {
       // sans aucun trimestre, ce qui est le cas de 43 % du catalogue. Le champ
       // absent voudrait dire « fiche antérieure au champ », ce qui est autre chose.
       fiche.cours.apercuHoraires = parseApercuHoraires(page.html, code, journal);
+      // Même page, même instant de capture que les horaires : la passe
+      // hebdomadaire (`--horaires-seulement`) écrit ce champ, la passe complète
+      // doit le faire aussi sinon ses fiches resteraient sans date de capture
+      // jusqu'au premier lundi.
+      fiche.cours.horairesISO = page.recupereISO;
       if (fiche.cours.code !== code) {
         journal.inattendu(
           code,
