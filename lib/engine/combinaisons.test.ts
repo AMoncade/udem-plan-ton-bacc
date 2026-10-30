@@ -17,6 +17,7 @@ import {
   structureDeSections,
 } from "./combinaisons";
 import { chevauchements } from "./horaires";
+import { grillesDistinctes } from "./grilles";
 import type {
   Cours,
   Creneau,
@@ -483,5 +484,45 @@ describe("combinaisons : plafond, troncature, cas limites", () => {
     const r = combinaisons(fiches, HIVER_2027);
     r.combinaisons[0].choix[0].sections.push("ZZZ");
     expect(JSON.stringify(fiches)).toBe(avant);
+  });
+});
+
+describe("grillesDistinctes : « N horaires possibles » compte des semaines, pas des choix de sections", () => {
+  it("MAT 1400 + STT 1700 : 10 combinaisons, UNE seule semaine", () => {
+    const r = combinaisons([MAT_1400, STT_1700], HIVER_2027);
+    const g = grillesDistinctes(r, [MAT_1400, STT_1700], HIVER_2027);
+    expect(g.grilles).toHaveLength(1);
+    expect(g.sansConflit).toBe(1);
+    expect(g.grilles[0].combinaison).toBe(r.combinaisons[0]);
+    // Les 9 autres choix restent offerts : un groupe peut être plein.
+    expect(g.grilles[0].equivalentes).toHaveLength(9);
+  });
+
+  it("deux sections à des heures différentes donnent deux semaines distinctes", () => {
+    const a = cours("AAA 1000", [section("A", [lundi830()]), section("B", [mardi830()])]);
+    const b = cours("BBB 1000", [section("A", [s("Mercredi", 600, 719, D0, D1)])]);
+    const g = grillesDistinctes(combinaisons([a, b], HIVER_2027), [a, b], HIVER_2027);
+    expect(g.grilles).toHaveLength(2);
+    expect(g.sansConflit).toBe(2);
+    expect(g.grilles.map((x) => x.equivalentes.length)).toEqual([0, 0]);
+  });
+
+  it("garde l'ordre : les grilles sans conflit d'abord, puis les conflictuelles", () => {
+    const a = cours("AAA 1000", [section("A", [lundi830()]), section("B", [mardi830()])]);
+    const b = cours("BBB 1000", [section("A", [lundi830()])]);
+    const g = grillesDistinctes(combinaisons([a, b], HIVER_2027), [a, b], HIVER_2027);
+    expect(g.grilles).toHaveLength(2);
+    expect(g.sansConflit).toBe(1);
+    expect(g.grilles[0].combinaison.conflits).toEqual([]);
+    expect(g.grilles[1].combinaison.conflits.length).toBeGreaterThan(0);
+  });
+
+  it("mêmes heures mais fenêtres de dates différentes : ce n'est PAS la même semaine", () => {
+    const a = cours("AAA 1000", [
+      section("A", [s("Lundi", 510, 629, "2027-01-07", "2027-02-26")]),
+      section("B", [s("Lundi", 510, 629, "2027-03-08", "2027-04-16")]),
+    ]);
+    const g = grillesDistinctes(combinaisons([a], HIVER_2027), [a], HIVER_2027);
+    expect(g.grilles).toHaveLength(2);
   });
 });

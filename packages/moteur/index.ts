@@ -60,6 +60,7 @@ export * from "../../lib/engine";
 export * from "../../lib/horaires";
 export * from "../../lib/engine/horaires";
 export * from "../../lib/engine/combinaisons";
+export * from "../../lib/engine/grilles";
 
 // Planification : offre, trimestres, prochaine session.
 export * from "../../app/_lib/cours";
