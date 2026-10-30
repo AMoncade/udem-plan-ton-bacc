@@ -517,6 +517,17 @@ describe("grillesDistinctes : « N horaires possibles » compte des semaines, pa
     expect(g.grilles[1].combinaison.conflits.length).toBeGreaterThan(0);
   });
 
+  it("reprend tronque, horaireInconnu et indetermines de combinaisons()", () => {
+    // Plafond 2 sur 10 combinaisons identiques : une seule grille VUE, mais la
+    // liste est incomplète, et le résultat doit le dire.
+    const r = combinaisons([MAT_1400, STT_1700], HIVER_2027, { plafond: 2 });
+    const g = grillesDistinctes(r, [MAT_1400, STT_1700], HIVER_2027);
+    expect(g.grilles).toHaveLength(1);
+    expect(g.tronque).toBe(true);
+    expect(g.horaireInconnu).toEqual(r.horaireInconnu);
+    expect(g.indetermines).toEqual(r.indetermines);
+  });
+
   it("mêmes heures mais fenêtres de dates différentes : ce n'est PAS la même semaine", () => {
     const a = cours("AAA 1000", [
       section("A", [s("Lundi", 510, 629, "2027-01-07", "2027-02-26")]),

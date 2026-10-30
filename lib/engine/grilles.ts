@@ -31,6 +31,16 @@ export interface ResultatGrilles {
   grilles: GrilleDistincte[];
   /** Grilles DISTINCTES sans conflit ; elles ouvrent la liste. */
   sansConflit: number;
+  /**
+   * Repris de `combinaisons()` : la liste était tronquée AVANT le regroupement.
+   * Le plafond coupe dans l'ordre de découverte, donc 200 combinaisons peuvent
+   * toutes donner la même semaine et cacher les autres. « 1 horaire » n'est
+   * alors qu'un minimum, et l'écran doit le dire.
+   */
+  tronque: boolean;
+  /** Repris tels quels : un appelant qui n'affiche que les grilles ne doit pas les perdre. */
+  horaireInconnu: ResultatCombinaisons["horaireInconnu"];
+  indetermines: ResultatCombinaisons["indetermines"];
 }
 
 function signature(combinaison: Combinaison, fiches: Map<string, Cours>, cible: Trimestre): string {
@@ -87,5 +97,11 @@ export function grillesDistinctes(
     grilles.push(grille);
     if (combinaison.conflits.length === 0) sansConflit += 1;
   }
-  return { grilles, sansConflit };
+  return {
+    grilles,
+    sansConflit,
+    tronque: resultat.tronque,
+    horaireInconnu: resultat.horaireInconnu,
+    indetermines: resultat.indetermines,
+  };
 }

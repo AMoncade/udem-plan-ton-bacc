@@ -168,6 +168,11 @@ export async function assembler(
 ): Promise<CatalogueAssemble> {
   const journal: EntreeJournal[] = [];
   const toursMax = options.toursMax ?? TOURS_MAX;
+  // Même règle que `combinaisons()` : 0 ne chargerait rien sans le dire, et NaN
+  // rendrait `tours >= toursMax` toujours faux, supprimant le garde-fou anti-boucle.
+  if (!Number.isInteger(toursMax) || toursMax < 1) {
+    throw new RangeError(`toursMax invalide : ${String(toursMax)} (entier >= 1 attendu)`);
+  }
   const limiteDemandee = options.toursMax !== undefined;
 
   // --- de la CLÉ DE PARCOURS au fichier, puis au parcours ------------------

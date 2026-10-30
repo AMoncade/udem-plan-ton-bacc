@@ -228,6 +228,12 @@ describe("assembler", () => {
     expect(limite.catalogue.journal.filter((e) => e.message.includes("tours de chargement"))).toEqual([]);
   });
 
+  it("refuse un toursMax qui supprimerait le garde-fou (0, NaN, décimal)", async () => {
+    for (const toursMax of [0, Number.NaN, 1.5]) {
+      await expect(assembler(creerDepotDemo(), CLE_ACTUARIAT, { toursMax })).rejects.toBeInstanceOf(RangeError);
+    }
+  });
+
   it("normalise les codes et conserve les illisibles", async () => {
     const fiches: Cours[] = [
       {
