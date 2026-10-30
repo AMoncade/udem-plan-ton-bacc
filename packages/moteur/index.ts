@@ -59,6 +59,7 @@ export * from "../../lib/engine";
 // Horaires publiés et chevauchements.
 export * from "../../lib/horaires";
 export * from "../../lib/engine/horaires";
+export * from "../../lib/engine/combinaisons";
 
 // Planification : offre, trimestres, prochaine session.
 export * from "../../app/_lib/cours";
