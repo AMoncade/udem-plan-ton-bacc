@@ -122,6 +122,9 @@ npm run scrape -- --sans-cours            # passe « structures » : les program
 npm run scrape -- --cours-cites --reprendre   # les fiches des cours cités qui manquent encore
 ```
 
+Les horaires se mettent aussi à jour seuls chaque semaine
+(`--horaires-seulement --sujets A-D`, voir `docs/INVENTAIRE-PROGRAMMES.md` §12).
+
 Toutes les options sont décrites en tête de `scripts/scrape/executer.ts`. Le
 scrape complet prend plusieurs heures : une seule session à la fois sur le
 réseau, sinon le délai poli perd son sens.
