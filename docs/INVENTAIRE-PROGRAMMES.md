@@ -500,12 +500,8 @@ une observation vieillit, et c'est précisément pourquoi chaque entrée de
 Deux workflows, qui ne se lancent jamais en même temps (même groupe de
 `concurrency`, donc un seul scraper sur le serveur de l'UdeM).
 
-**`.github/workflows/scrape-horaires.yml`, chaque lundi (et à la main).** Un job
-« decider » (`scripts/scrape/calendrier-horaires.ts`, testé) ne lance la passe
-que si la date tombe dans une période d'inscription (variable
-`PERIODES_INSCRIPTION` en tête du fichier, à confirmer contre le calendrier de
-l'UdeM) ou si c'est le premier lundi du mois ; `forcer` passe outre. Puis quatre
-tranches par première lettre de sujet (A-D, E-L, M-O, P-Z), l'une après l'autre,
+**`.github/workflows/scrape-horaires.yml`, chaque lundi toute l'année (et à la
+main).** Quatre tranches par première lettre de sujet (A-D, E-L, M-O, P-Z), l'une après l'autre,
 lancent `npm run scrape -- --horaires-seulement --sujets <tranche>`. Cette passe
 relit la page de chaque cours qui a DÉJÀ une fiche et ne réécrit que
 `trimestres`, `apercuHoraires` et `horairesISO` (date de capture) ; elle ne crée
@@ -513,7 +509,7 @@ aucune fiche, ne touche ni aux programmes ni à l'index, et vérifie `robots.txt
 avant la première page (arrêt s'il interdit `/cours-et-horaires/` ou s'il est
 injoignable). Une page en échec laisse l'ancienne fiche intacte : un échec réseau
 n'est jamais écrit comme « aucun horaire ». Le job final applique les fichiers,
-lance le **garde-fou**, lance `npx vitest run`, puis commite et pousse seulement
+lance le **garde-fou**, lance `npm test`, puis commite et pousse seulement
 s'il y a un diff dans `data/`.
 
 **Le garde-fou** (`scripts/scrape/garde-fou-horaires.ts`) compare `data/cours`

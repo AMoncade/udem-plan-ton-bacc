@@ -68,7 +68,7 @@ const DEPENDANCES = [
  * réestampillage des données, sans qu'une seule valeur émise ait changé.
  * C'est le faux positif qui apprend à ignorer ce test.
  */
-const HORS_EXTRACTION = ["appliquer-horaires.ts", "calendrier-horaires.ts", "garde-fou-horaires.ts"];
+const HORS_EXTRACTION = ["appliquer-horaires.ts", "garde-fou-horaires.ts"];
 
 /** Les fichiers hachés, chemins relatifs au dépôt, dans l'ordre du hachage. */
 function sourcesHachees(): string[] {

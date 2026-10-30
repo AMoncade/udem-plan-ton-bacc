@@ -43,10 +43,11 @@ if (modifies !== "" && !sale) {
 }
 
 rmSync(join(PAQUET, "dist"), { recursive: true, force: true });
-execFileSync("npx", ["tsc", "-p", join(PAQUET, "tsconfig.json")], {
+// Le compilateur du dépôt, lancé par node : ni `npx` (qui téléchargerait un
+// paquet homonyme si typescript manquait), ni shell.
+execFileSync(process.execPath, [join(RACINE, "node_modules", "typescript", "bin", "tsc"), "-p", join(PAQUET, "tsconfig.json")], {
   cwd: RACINE,
   stdio: "inherit",
-  shell: process.platform === "win32",
 });
 
 const commit = git("rev-parse", "HEAD");

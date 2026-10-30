@@ -8,7 +8,7 @@ name: Horaires hebdomadaires
 #
 #  1. Un push fait avec GITHUB_TOKEN ne déclenche AUCUN autre workflow : ci.yml ne
 #     se relancera donc pas sur le commit de données. C'est pour ça que le job
-#     final lance `npx vitest run` lui-même avant de pousser. (Les types, le lint
+#     final lance `npm test` lui-même avant de pousser. (Les types, le lint
 #     et le build ne sont pas relancés : un commit qui ne touche que data/ ne
 #     peut pas les casser, et vitest couvre les tests de couture sur les données.)
 #
@@ -30,10 +30,6 @@ on:
     - cron: "17 9 * * 1"
   workflow_dispatch:
     inputs:
-      forcer:
-        description: "Lancer même hors période d'inscription et hors premier lundi du mois"
-        type: boolean
-        default: false
       limite_cours:
         description: "Essai court : au plus N fiches PAR TRANCHE (vide = toutes)"
         type: string
@@ -42,14 +38,6 @@ on:
         description: "Lancement manuel seulement : le garde-fou s'affiche mais ne bloque pas (après avoir vérifié qu'une baisse est réelle)"
         type: boolean
         default: false
-
-env:
-  # Périodes d'inscription, MM-JJ:MM-JJ séparées par des virgules, bornes comprises.
-  # Une période dont le début est après la fin chevauche le Nouvel An (ici 15 oct.
-  # -> 31 janv.). Hors de ces périodes, la passe ne tourne que le premier lundi du
-  # mois. À CONFIRMER CONTRE LE CALENDRIER DE L'UDEM : ces dates sont une première
-  # estimation, pas une donnée relevée.
-  PERIODES_INSCRIPTION: "03-01:09-15,10-15:01-31"
 
 # Lecture seule par défaut ; seul le job final reçoit le droit d'écrire.
 permissions:
@@ -61,36 +49,11 @@ concurrency:
   group: scrape-udem
   cancel-in-progress: false
 
+# Chaque lundi, toute l'année : les horaires changent aussi hors des périodes
+# d'inscription (sections ajoutées, salles, annulations), et un seul calendrier
+# à maintenir vaut mieux que des dates d'inscription à deviner chaque année.
 jobs:
-  decider:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    outputs:
-      executer: ${{ steps.decision.outputs.executer }}
-    steps:
-      - uses: actions/checkout@v5
-
-      - uses: actions/setup-node@v5
-        with:
-          node-version: 24
-
-      - name: Faut-il lancer la passe aujourd'hui ?
-        id: decision
-        env:
-          FORCER: ${{ inputs.forcer }}
-        run: node --experimental-strip-types scripts/scrape/calendrier-horaires.ts
-
-      - name: Raison
-        env:
-          EXECUTER: ${{ steps.decision.outputs.executer }}
-          RAISON: ${{ steps.decision.outputs.raison }}
-        run: |
-          echo "### Décision : executer=${EXECUTER}" >> "$GITHUB_STEP_SUMMARY"
-          echo "${RAISON}" >> "$GITHUB_STEP_SUMMARY"
-
   tranches:
-    needs: decider
-    if: needs.decider.outputs.executer == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     strategy:
@@ -146,10 +109,10 @@ jobs:
           retention-days: 14
 
   reunir:
-    needs: [decider, tranches]
+    needs: [tranches]
     # `!cancelled()` et non le défaut : une tranche en échec ne doit pas empêcher
     # d'appliquer les trois autres.
-    if: ${{ !cancelled() && needs.decider.outputs.executer == 'true' }}
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
@@ -201,7 +164,7 @@ jobs:
 
       # Ce que ci.yml aurait fait sur ce commit s'il se déclenchait (voir l'en-tête).
       - name: Tests
-        run: npx vitest run
+        run: npm test
 
       - name: Commit et push, seulement s'il y a un diff
         shell: bash

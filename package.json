@@ -9,6 +9,8 @@
     "lint": "eslint --max-warnings 0",
     "test": "vitest run",
     "test:watch": "vitest",
+    "typegen": "next typegen",
+    "typecheck": "tsc --noEmit",
     "scrape": "node --experimental-strip-types scripts/scrape/index.ts",
     "donnees:copier": "node scripts/copier-donnees.mjs",
     "moteur:build": "tsc -p packages/moteur/tsconfig.json",
