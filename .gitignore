@@ -48,3 +48,7 @@ scripts/scrape/.cache/
 
 # copie jetable de data/ pour le fetch de l UI (regeneree au build)
 public/donnees/
+
+# moteur partage : sortie de compilation et archive pour l extension
+packages/*/dist/
+packages/*/*.tgz

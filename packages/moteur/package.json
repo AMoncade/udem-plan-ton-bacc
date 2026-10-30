@@ -1,0 +1,18 @@
+{
+  "name": "@clientside-labs/moteur",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Moteur de Plan ton bacc (préalables, audit des blocs, offre, prochaine session, chevauchements), compilé pour un bundler.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/packages/moteur/index.d.ts",
+      "default": "./dist/packages/moteur/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

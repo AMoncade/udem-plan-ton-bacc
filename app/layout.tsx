@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Archivo, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { EnteteApp } from "@/components/EnteteApp";
+import { ImportExtension } from "@/components/ImportExtension";
 import { PiedApp } from "@/components/PiedApp";
 import { ProviderEtat } from "@/components/ProviderEtat";
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-full flex flex-col bg-encre text-papier">
         <ProviderEtat>
           <EnteteApp />
+          <ImportExtension />
           <main className="flex-1 w-full">{children}</main>
           <PiedApp />
         </ProviderEtat>

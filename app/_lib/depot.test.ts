@@ -151,6 +151,89 @@ describe("assembler", () => {
     expect(sujets).toEqual(expect.arrayContaining(citesParLesBlocs));
   });
 
+  it("avec toursMax 1, ne charge QUE les sujets cités par les blocs, sans le consigner", async () => {
+    // Un préalable qui SORT des sujets des blocs : ACT 2250 exige MAT 1400. Le
+    // jeu de démonstration n'en a pas — ses préalables restent dans les sujets
+    // déjà cités —, donc il rendrait la même liste avec ou sans l'option.
+    const fiche = (code: string, prealable: string | null): Cours => ({
+      code,
+      titre: code,
+      credits: 3,
+      cycle: "1er cycle",
+      faculte: null,
+      description: "",
+      prealablesBrut: prealable,
+      prealables: prealable === null ? null : { genre: "cours", code: prealable },
+      concomitantsBrut: null,
+      restrictionsBrut: null,
+      trimestres: [],
+      url: "https://exemple.invalid",
+      scrapeISO: "1970-01-01T00:00:00.000Z",
+    });
+    const creerDepot = (): Depot => ({
+      origine: "test",
+      estFactice: true,
+      async chargerIndex() {
+        return { programmes: [], sujets: ["ACT", "MAT"], scrapeISO: "x" };
+      },
+      async chargerProgramme() {
+        return {
+          id: "p",
+          nom: "P",
+          orientation: null,
+          segments: ["01"],
+          cycle: null,
+          faculte: null,
+          typeProgramme: null,
+          creditsTotal: 90,
+          exigences: null,
+          blocs: [
+            {
+              id: "01A",
+              cle: "01/01A",
+              segment: "01",
+              nom: "",
+              regle: { type: "obligatoire", bornes: { min: 3, max: 3 } },
+              regleBrut: "",
+              cours: ["ACT 2250"],
+              notes: [],
+              contenuOuvert: false,
+            },
+          ],
+          notes: [],
+          orientations: [],
+          url: "https://exemple.invalid",
+          scrapeISO: "1970-01-01T00:00:00.000Z",
+        };
+      },
+      async chargerSujet(sujet) {
+        if (sujet === "ACT") return [fiche("ACT 2250", "MAT 1400")];
+        if (sujet === "MAT") return [fiche("MAT 1400", null)];
+        return [];
+      },
+    });
+
+    const complet = await assembler(creerDepot(), "p");
+    expect(complet.sujets).toEqual(["ACT", "MAT"]);
+
+    const depot = creerDepot();
+    const espion = vi.spyOn(depot, "chargerSujet");
+    const limite = await assembler(depot, "p", { toursMax: 1 });
+    expect(limite.sujets).toEqual(["ACT"]);
+    expect(espion.mock.calls.map((appel) => appel[0])).toEqual(["ACT"]);
+    // L'arbre de préalables reste entier : seule la fiche du préalable manque.
+    expect(limite.catalogue.cours["ACT 2250"].prealables).toEqual({ genre: "cours", code: "MAT 1400" });
+    expect(limite.catalogue.cours["MAT 1400"]).toBeUndefined();
+    // Une limite demandée n'est pas un incident ; le garde-fou atteint, si.
+    expect(limite.catalogue.journal.filter((e) => e.message.includes("tours de chargement"))).toEqual([]);
+  });
+
+  it("refuse un toursMax qui supprimerait le garde-fou (0, NaN, décimal)", async () => {
+    for (const toursMax of [0, Number.NaN, 1.5]) {
+      await expect(assembler(creerDepotDemo(), CLE_ACTUARIAT, { toursMax })).rejects.toBeInstanceOf(RangeError);
+    }
+  });
+
   it("normalise les codes et conserve les illisibles", async () => {
     const fiches: Cours[] = [
       {

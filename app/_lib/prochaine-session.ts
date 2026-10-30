@@ -66,8 +66,10 @@ export type Motif =
    *  la contrainte que les étudiants découvrent trop tard. */
   | { genre: "saison-unique"; saison: Saison }
   /** Figure dans les préalables MANQUANTS de `nombre` autres cours cités par ce
-   *  parcours. Se recompte depuis l'arbre des préalables. */
-  | { genre: "debloque"; nombre: number }
+   *  parcours — `codes`, triés. Se recompte depuis l'arbre des préalables. Les
+   *  codes servent à dire LESQUELS (« débloque MAT 2600 »), ce qu'un nombre seul
+   *  ne permet pas de vérifier à la main. */
+  | { genre: "debloque"; nombre: number; codes: CodeCours[] }
   /** Le bloc auquel il appartient n'a plus que `creditsManquants` à combler. */
   | { genre: "bloc-a-combler"; idBloc: string; cleBloc: string; creditsManquants: number };
 
@@ -177,12 +179,14 @@ export function suggererPourTrimestre(
   // Combien d'autres cours DE CE PARCOURS attendent chaque code. Compté sur les
   // `manquants` du diagnostic, qui sont déjà la sortie de l'évaluation des
   // préalables : le recalculer ici ferait deux vérités pour la même question.
-  const attendus = new Map<CodeCours, number>();
+  const attendus = new Map<CodeCours, CodeCours[]>();
   for (const code of citesParLeParcours) {
     const diagnostic = diagnostics.get(code);
     if (diagnostic === undefined || diagnostic.etat !== "verrouille") continue;
     for (const manquant of diagnostic.manquants) {
-      attendus.set(manquant, (attendus.get(manquant) ?? 0) + 1);
+      const liste = attendus.get(manquant) ?? [];
+      if (!liste.includes(code)) liste.push(code);
+      attendus.set(manquant, liste);
     }
   }
 
@@ -218,8 +222,10 @@ export function suggererPourTrimestre(
       motifs.push({ genre: "saison-unique", saison: [...saisons][0] });
     }
 
-    const nombre = attendus.get(code) ?? 0;
-    if (nombre > 0) motifs.push({ genre: "debloque", nombre });
+    const debloques = [...(attendus.get(code) ?? [])].sort((a, b) => a.localeCompare(b, "fr"));
+    if (debloques.length > 0) {
+      motifs.push({ genre: "debloque", nombre: debloques.length, codes: debloques });
+    }
 
     let sansEffet = true;
     for (const bloc of blocsDuCours(programme, code)) {

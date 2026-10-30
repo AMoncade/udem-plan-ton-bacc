@@ -306,7 +306,11 @@ describe("suggererPourTrimestre : les motifs sont recomptables", () => {
       AUTOMNE_2026,
     );
     expect(s[0].code).toBe("ACT 1000");
-    expect(s[0].motifs).toContainEqual({ genre: "debloque", nombre: 2 });
+    expect(s[0].motifs).toContainEqual({
+      genre: "debloque",
+      nombre: 2,
+      codes: ["ACT 2000", "ACT 3000"],
+    });
   });
 
   it("« saison unique » ne se déclare que sur une seule saison, pas une seule année", () => {

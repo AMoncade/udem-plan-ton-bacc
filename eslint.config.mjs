@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Copie jetable de data/, régénérée au build.
     "public/donnees/**",
+    // Sortie compilée du moteur partagé (`npm run moteur:build`).
+    "packages/*/dist/**",
     /**
      * Les worktrees des sessions parallèles sont des copies complètes du dépôt,
      * artefacts de build compris. Sans cette exclusion, `eslint .` y descend et
