@@ -17,8 +17,8 @@ Six onglets, dans l'ordre où on s'en sert :
    puis son orientation ou son cheminement s'il y en a. La recherche ignore les
    accents et l'ordre des mots.
 2. **Relevé** : déclarer les cours réussis, à la main ou à partir d'un horaire
-   `.ics` (par exemple celui exporté de Synchro par
-   [`synchro-calendrier`](https://github.com/AMoncade/synchro-calendrier)). Un
+   `.ics` (par exemple celui exporté de Synchro par l'extension
+   [ClientSide Horaire](https://chromewebstore.google.com/detail/clientside-horaire/dmedkofbjadbabmelocklkmcpellddje)). Un
    horaire prouve qu'un cours a été *suivi*, pas *réussi* : l'import propose
    des cours, rien n'est coché d'avance.
 3. **Préalables** : l'arbre des cours, chacun marqué verrouillé, disponible,

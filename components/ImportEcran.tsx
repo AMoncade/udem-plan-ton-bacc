@@ -95,8 +95,15 @@ export function ImportEcran() {
         </h1>
         <p className="mt-2 text-doux">
           Deux chemins : importer l&apos;horaire exporté par l&apos;extension{" "}
-          <code className="text-papier">synchro-calendrier</code>, ou taper les sigles à la
-          main. Les deux remplissent la même liste, que vous confirmez ensuite.
+          <a
+            href="https://chromewebstore.google.com/detail/clientside-horaire/dmedkofbjadbabmelocklkmcpellddje"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-papier underline decoration-trait underline-offset-2 hover:decoration-papier"
+          >
+            ClientSide Horaire
+          </a>
+          , ou taper les sigles à la main. Les deux remplissent la même liste, que vous confirmez ensuite.
         </p>
         {/* La règle, écrite là où la décision se prend — pas dans une aide. */}
         <p className="mt-3 border-l-2 border-avert/70 bg-avert/5 px-3 py-2 text-[13px] leading-relaxed text-papier">
