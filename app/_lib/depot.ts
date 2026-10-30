@@ -140,11 +140,35 @@ export interface CatalogueAssemble {
  * préalables en silence. Tout code refusé va dans `codesIllisibles`, qui
  * s'affiche.
  */
+export interface OptionsAssemblage {
+  /**
+   * Tours d'expansion des sujets par les préalables. Par défaut `TOURS_MAX`,
+   * qui est un garde-fou contre les boucles et non une limite de qualité.
+   *
+   * `1` ne charge QUE les sujets cités par les blocs du parcours. C'est ce que
+   * demande ClientSide Horaire, et la mesure dit pourquoi : sur le bacc en
+   * mathématiques, orientation Statistique (scrape du 2026-09-13), l'expansion
+   * complète suit les préalables des préalables jusqu'à 57 sujets et 4 233
+   * fiches, soit 5,1 Mo à garder dans un stockage d'extension plafonné à 10 Mo.
+   * Un seul tour donne 9 sujets, 694 fiches et 1,7 Mo. Le diagnostic n'y perd
+   * rien : il évalue l'arbre de préalables d'un cours contre l'ensemble des
+   * cours faits, sans lire la fiche des préalables. Seuls les titres des
+   * préalables hors des sujets chargés manquent.
+   *
+   * Une limite ainsi DEMANDÉE ne s'inscrit pas au journal : elle n'a rien
+   * d'inattendu, contrairement au garde-fou atteint.
+   */
+  toursMax?: number;
+}
+
 export async function assembler(
   depot: Depot,
   cle: string,
+  options: OptionsAssemblage = {},
 ): Promise<CatalogueAssemble> {
   const journal: EntreeJournal[] = [];
+  const toursMax = options.toursMax ?? TOURS_MAX;
+  const limiteDemandee = options.toursMax !== undefined;
 
   // --- de la CLÉ DE PARCOURS au fichier, puis au parcours ------------------
   //
@@ -205,15 +229,17 @@ export async function assembler(
   let tours = 0;
 
   while (aCharger.length > 0) {
-    if (tours >= TOURS_MAX) {
-      journal.push({
-        genre: "inattendu",
-        sujet: cle,
-        message:
-          `les préalables s'étendent au-delà de ${TOURS_MAX} tours de chargement ; ` +
-          `sujets non chargés : ${aCharger.join(", ")}. Les cours de ces sujets ` +
-          `s'afficheront sans fiche.`,
-      });
+    if (tours >= toursMax) {
+      if (!limiteDemandee) {
+        journal.push({
+          genre: "inattendu",
+          sujet: cle,
+          message:
+            `les préalables s'étendent au-delà de ${toursMax} tours de chargement ; ` +
+            `sujets non chargés : ${aCharger.join(", ")}. Les cours de ces sujets ` +
+            `s'afficheront sans fiche.`,
+        });
+      }
       break;
     }
     tours += 1;
