@@ -25,6 +25,13 @@ jobs:
       - name: Types générés par Next
         run: npx next typegen
 
+      # Le moteur partagé avec ClientSide Horaire se compile SANS DOM ni Node
+      # (packages/moteur/tsconfig.json). C'est la seule porte qui empêche un
+      # module de `lib/` ou `app/_lib/` de se mettre à lire `window` ou
+      # `localStorage` et de casser l'extension sans que l'app web s'en aperçoive.
+      - name: Moteur partagé (ni DOM ni Node)
+        run: npm run moteur:build
+
       # Portes ordonnées du moins cher au plus cher : l'échec le plus rapide sort
       # en premier.
       - name: Types
