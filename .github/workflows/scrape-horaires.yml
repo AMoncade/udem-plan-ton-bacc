@@ -38,6 +38,10 @@ on:
         description: "Essai court : au plus N fiches PAR TRANCHE (vide = toutes)"
         type: string
         required: false
+      ignorer_garde_fou:
+        description: "Lancement manuel seulement : le garde-fou s'affiche mais ne bloque pas (après avoir vérifié qu'une baisse est réelle)"
+        type: boolean
+        default: false
 
 env:
   # Périodes d'inscription, MM-JJ:MM-JJ séparées par des virgules, bornes comprises.
@@ -120,10 +124,11 @@ jobs:
           if [ -n "$LIMITE" ]; then args+=(--limite-cours "$LIMITE"); fi
           npm run scrape -- "${args[@]}"
 
-      # Ne dépose que les fichiers modifiés, pas tout data/cours : le job final
-      # les applique PAR-DESSUS son propre checkout, et un artefact complet
-      # écraserait au passage tout ce qui aurait changé sur la branche pendant les
-      # heures qu'a duré la passe.
+      # Ne dépose que les fichiers modifiés, pas tout data/cours. Le job final ne
+      # les COPIE pas : il en reprend fiche par fiche les seuls champs d'horaire
+      # (scripts/scrape/appliquer-horaires.ts), sans quoi un fichier de sujet
+      # entier, calculé sur le checkout du début de la tranche, écraserait ce qui
+      # a changé sur la branche pendant les heures de la passe.
       - name: Rassembler les fichiers modifiés
         if: always()
         shell: bash
@@ -173,23 +178,25 @@ jobs:
           merge-multiple: true
           path: ${{ runner.temp }}/artefacts
 
-      - name: Appliquer les fichiers
-        shell: bash
-        run: |
-          if [ -d "$RUNNER_TEMP/artefacts/data" ]; then
-            cp -r "$RUNNER_TEMP/artefacts/data/." data/
-          else
-            echo "Aucun fichier à appliquer."
-          fi
+      - name: Appliquer les horaires, fiche par fiche
+        run: node --experimental-strip-types scripts/scrape/appliquer-horaires.ts "$RUNNER_TEMP/artefacts/data/cours" data/cours
 
       - name: Garde-fou des horaires
         shell: bash
+        env:
+          IGNORER: ${{ inputs.ignorer_garde_fou }}
         run: |
           set +e
           node --experimental-strip-types scripts/scrape/garde-fou-horaires.ts "$RUNNER_TEMP/cours-avant" data/cours > "$RUNNER_TEMP/garde-fou.txt" 2>&1
           code=$?
           { echo '### Garde-fou des horaires'; echo '```'; cat "$RUNNER_TEMP/garde-fou.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           cat "$RUNNER_TEMP/garde-fou.txt"
+          # Échappatoire MANUELLE seulement (un lancement planifié n'a pas d'entrées) :
+          # une baisse réelle, vérifiée sur le site, ne doit pas bloquer chaque lundi.
+          if [ "$code" = "1" ] && [ "$IGNORER" = "true" ]; then
+            echo "::warning::Garde-fou en échec, ignoré à la demande (lancement manuel)."
+            exit 0
+          fi
           exit $code
 
       # Ce que ci.yml aurait fait sur ce commit s'il se déclenchait (voir l'en-tête).

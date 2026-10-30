@@ -162,9 +162,19 @@ jobs:
           pattern: complet-cours-*
           merge-multiple: true
           path: ${{ runner.temp }}/artefacts-cours
+        # Aucune fiche changée = aucun artefact : ce n'est pas un échec.
+        continue-on-error: true
 
+      # Ici la copie de fichiers ENTIERS est voulue : la passe complète réécrit les
+      # fiches, et son résultat part sur une branche de relecture, jamais sur main.
       - name: Appliquer les fiches de cours
-        run: cp -r "$RUNNER_TEMP/artefacts-cours/data/." data/
+        shell: bash
+        run: |
+          if [ -d "$RUNNER_TEMP/artefacts-cours/data" ]; then
+            cp -r "$RUNNER_TEMP/artefacts-cours/data/." data/
+          else
+            echo "Aucune fiche de cours à appliquer."
+          fi
 
       - name: Garde-fou des horaires
         shell: bash

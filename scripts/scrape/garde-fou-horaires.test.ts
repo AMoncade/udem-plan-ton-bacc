@@ -6,7 +6,7 @@
  */
 import { describe, it, expect } from "vitest";
 import type { ApercuTrimestre, Saison, Seance } from "../../lib/types";
-import { comparerHoraires, formaterVerdict, type FicheHoraires } from "./garde-fou-horaires";
+import { SEUIL_SUJET, comparerHoraires, comparerParSujet, formaterVerdict, type FicheHoraires } from "./garde-fou-horaires";
 
 const AUJOURDHUI = "2026-10-30";
 
@@ -139,6 +139,49 @@ describe("comparerHoraires", () => {
     const v = comparerHoraires(avant, avant, AUJOURDHUI);
     expect(v.echecs).toEqual([]);
     expect(v.lignes[0].fichesAvant).toBe(10);
+  });
+});
+
+describe("comparerParSujet : une tranche vidée ne passe plus sous le seuil global", () => {
+  // Quatre « tranches » de poids inégal ; P-Z (30 %) revient entièrement vide.
+  const avant = new Map<string, FicheHoraires[]>([
+    ["ACT", fiches(26, 3)],
+    ["FRA", fiches(17, 3)],
+    ["MAT", fiches(27, 3)],
+    ["STT", fiches(30, 3)],
+  ]);
+  const apres = new Map<string, FicheHoraires[]>([
+    ["ACT", fiches(26, 3)],
+    ["FRA", fiches(17, 3)],
+    ["MAT", fiches(27, 3)],
+    ["STT", fiches(30, 0)],
+  ]);
+
+  it("le contrôle global, seul, laissait passer la tranche vidée", () => {
+    const global = comparerHoraires([...avant.values()].flat(), [...apres.values()].flat(), AUJOURDHUI);
+    expect(global.echecs).toEqual([]);
+  });
+
+  it("le contrôle par sujet la nomme", () => {
+    expect(comparerParSujet(avant, apres, new Set())).toEqual(["STT, Hiver 2027 : les séances passent de 90 à 0."]);
+  });
+
+  it("ignore un trimestre terminé (décidé sur tout le catalogue) et les petits sujets", () => {
+    expect(comparerParSujet(avant, apres, new Set(["Hiver 2027"]))).toEqual([]);
+    const petit = new Map([["ABC", fiches(1, SEUIL_SUJET - 1)]]);
+    expect(comparerParSujet(petit, new Map([["ABC", fiches(1, 0)]]), new Set())).toEqual([]);
+  });
+
+  it("échoue au-delà de 50 % de perte dans un sujet, passe à -40 %", () => {
+    const a = new Map([["MAT", fiches(10, 10)]]);
+    expect(comparerParSujet(a, new Map([["MAT", fiches(10, 4)]]), new Set())).toEqual([
+      "MAT, Hiver 2027 : les séances passent de 100 à 40 (-60 %).",
+    ]);
+    expect(comparerParSujet(a, new Map([["MAT", fiches(10, 6)]]), new Set())).toEqual([]);
+  });
+
+  it("un fichier de sujet disparu d'APRÈS compte comme vidé", () => {
+    expect(comparerParSujet(avant, new Map(), new Set())).toHaveLength(4);
   });
 });
 

@@ -12,6 +12,12 @@
  *   - ou perd plus de 50 %.
  * Un trimestre nouveau, stable ou en hausse passe.
  *
+ * LA MÊME RÈGLE PAR FICHIER DE SUJET (sujets d'au moins `SEUIL_SUJET` séances
+ * pour le trimestre). Le total seul ne suffit pas : la passe tourne en quatre
+ * tranches qui pèsent chacune de 17 à 30 % des fiches, donc une tranche
+ * entièrement vidée (pages renvoyées avec une section d'horaires vide, ce que
+ * 43 % des pages font légitimement) restait sous le seuil global de 50 %.
+ *
  * Un trimestre est « terminé » quand la plus grande date `au` de ses séances,
  * dans AVANT, est passée : l'Automne 2026 disparaîtra légitimement des pages en
  * janvier, et le garde-fou ne doit pas crier à ce moment-là.
@@ -27,6 +33,12 @@ import { pathToFileURL } from "node:url";
 
 /** Part maximale de perte tolérée sur un trimestre non terminé. */
 export const PERTE_MAX = 0.5;
+
+/**
+ * Séances minimales d'un sujet pour qu'il soit jugé seul. En dessous, une
+ * section annulée suffirait à « perdre 50 % » : le contrôle global les couvre.
+ */
+export const SEUIL_SUJET = 40;
 
 /** Le seul morceau d'une fiche que le garde-fou lit. */
 export type FicheHoraires = Pick<Cours, "apercuHoraires">;
@@ -142,16 +154,51 @@ export function comparerHoraires(
   return { lignes, echecs };
 }
 
-/** Lit toutes les fiches d'un dossier `data/cours` (un `<SUJET>.json` par sujet). */
-export function lireDossierCours(dossier: string): FicheHoraires[] {
-  const fiches: FicheHoraires[] = [];
+/**
+ * La règle de `comparerHoraires`, sujet par sujet. Un trimestre est « terminé »
+ * d'après TOUT le catalogue (`termines`), pas d'après le sujet seul : la plus
+ * grande date d'un petit sujet est trop sensible à une valeur aberrante.
+ */
+export function comparerParSujet(
+  avant: Map<string, FicheHoraires[]>,
+  apres: Map<string, FicheHoraires[]>,
+  termines: ReadonlySet<string>,
+): string[] {
+  const echecs: string[] = [];
+  for (const [sujet, fichesAvant] of [...avant].sort(([a], [b]) => a.localeCompare(b))) {
+    const cAvant = compter(fichesAvant);
+    const cApres = compter(apres.get(sujet) ?? []);
+    for (const [cle, a] of [...cAvant].sort(([x], [y]) => ordre(x, y))) {
+      if (termines.has(libelleDe(cle)) || a.seances < SEUIL_SUJET) continue;
+      const p = cApres.get(cle) ?? { seances: 0, fiches: 0, fin: null };
+      if (p.seances === 0) {
+        echecs.push(`${sujet}, ${libelleDe(cle)} : les séances passent de ${a.seances} à 0.`);
+      } else if (p.seances < a.seances * (1 - PERTE_MAX)) {
+        const perte = Math.round((1 - p.seances / a.seances) * 100);
+        echecs.push(`${sujet}, ${libelleDe(cle)} : les séances passent de ${a.seances} à ${p.seances} (-${perte} %).`);
+      }
+    }
+  }
+  return echecs;
+}
+
+/** Lit toutes les fiches d'un dossier `data/cours`, par sujet (un `<SUJET>.json` par sujet). */
+export function lireDossierParSujet(dossier: string): Map<string, FicheHoraires[]> {
+  const out = new Map<string, FicheHoraires[]>();
   for (const f of readdirSync(dossier).filter((n) => n.endsWith(".json")).sort()) {
     const brut = JSON.parse(readFileSync(path.join(dossier, f), "utf8")) as Record<string, FicheHoraires>;
+    const fiches: FicheHoraires[] = [];
     for (const [code, fiche] of Object.entries(brut)) {
       if (!code.startsWith("_")) fiches.push(fiche);
     }
+    out.set(f.slice(0, -".json".length), fiches);
   }
-  return fiches;
+  return out;
+}
+
+/** Lit toutes les fiches d'un dossier `data/cours` (un `<SUJET>.json` par sujet). */
+export function lireDossierCours(dossier: string): FicheHoraires[] {
+  return [...lireDossierParSujet(dossier).values()].flat();
 }
 
 /** Tableau lisible, pour la console et le résumé de job. */
@@ -186,11 +233,11 @@ function principal(argv: string[]): number {
     console.error("usage : garde-fou-horaires.ts <dossier-avant> <dossier-après> [--aujourdhui AAAA-MM-JJ]");
     return 2;
   }
-  const verdict = comparerHoraires(
-    lireDossierCours(positionnels[0]),
-    lireDossierCours(positionnels[1]),
-    aujourdhui,
-  );
+  const avant = lireDossierParSujet(positionnels[0]);
+  const apres = lireDossierParSujet(positionnels[1]);
+  const verdict = comparerHoraires([...avant.values()].flat(), [...apres.values()].flat(), aujourdhui);
+  const termines = new Set(verdict.lignes.filter((l) => l.termine).map((l) => l.libelle));
+  verdict.echecs.push(...comparerParSujet(avant, apres, termines));
   console.log(`Garde-fou des horaires (aujourd'hui : ${aujourdhui})\n${formaterVerdict(verdict)}`);
   if (verdict.echecs.length > 0) {
     console.error(`\nÉCHEC du garde-fou :\n${verdict.echecs.map((e) => `  - ${e}`).join("\n")}`);

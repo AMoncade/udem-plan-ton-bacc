@@ -564,8 +564,10 @@ async function lireCodesFichier(chemin: string, journal: Journal): Promise<strin
  *
  * Rend un message d'ARRÊT, ou `null` si la passe peut continuer. En
  * `--hors-ligne` rien n'est demandé au serveur, donc rien à vérifier : on le dit.
- * Injoignable ou non-2xx = arrêt aussi : une passe sans surveillance ne doit
- * pas supposer la permission faute d'avoir pu la lire.
+ * RFC 9309 §2.3.1 : un robots.txt ABSENT (4xx) autorise tout, un serveur
+ * INJOIGNABLE (5xx, panne réseau) oblige à tout supposer interdit. Le second cas
+ * arrête la passe : une passe sans surveillance ne suppose pas la permission
+ * faute d'avoir pu la lire.
  */
 async function arretSiRobotsRefuse(): Promise<string | null> {
   const url = `${RACINE}/robots.txt`;
@@ -574,10 +576,14 @@ async function arretSiRobotsRefuse(): Promise<string | null> {
     console.log("robots.txt : non vérifié (--hors-ligne, aucune requête)");
     return null;
   }
+  if (page.html === null && page.statut >= 400 && page.statut < 500) {
+    console.log(`robots.txt : absent (HTTP ${page.statut}), tout est permis (RFC 9309 §2.3.1.3)`);
+    return null;
+  }
   if (page.html === null) {
     return (
       `${url} est injoignable (${page.statut === STATUT_PANNE ? `panne réseau : ${page.panne ?? "?"}` : `HTTP ${page.statut}`}). ` +
-      "Impossible de confirmer que /cours-et-horaires/ est permis."
+      "Impossible de confirmer que /cours-et-horaires/ est permis (RFC 9309 : serveur injoignable = tout interdit)."
     );
   }
   const refus = refusPasseHoraires(page.html, AGENT);

@@ -58,11 +58,23 @@ const DEPENDANCES = [
   "lib/engine/prealables.ts",
 ];
 
+/**
+ * Modules de `scripts/scrape/` qui NE FAÇONNENT AUCUNE donnée émise : outillage
+ * des workflows planifiés (décision de lancer, garde-fou, report des horaires
+ * d'une tranche). Liste nommée, comme `DEPENDANCES`, pour la même raison : un
+ * fichier qui sort de l'empreinte doit le faire par décision lisible.
+ *
+ * Pourquoi les sortir : chaque retouche d'un garde-fou réclamait sinon un
+ * réestampillage des données, sans qu'une seule valeur émise ait changé.
+ * C'est le faux positif qui apprend à ignorer ce test.
+ */
+const HORS_EXTRACTION = ["appliquer-horaires.ts", "calendrier-horaires.ts", "garde-fou-horaires.ts"];
+
 /** Les fichiers hachés, chemins relatifs au dépôt, dans l'ordre du hachage. */
 function sourcesHachees(): string[] {
   const dirScrape = join(RACINE, "scripts", "scrape");
   const scrape = readdirSync(dirScrape)
-    .filter((f) => f.endsWith(".ts") && !f.endsWith(".test.ts"))
+    .filter((f) => f.endsWith(".ts") && !f.endsWith(".test.ts") && !HORS_EXTRACTION.includes(f))
     .sort()
     .map((f) => `scripts/scrape/${f}`);
   return [...scrape, ...DEPENDANCES];
