@@ -204,7 +204,52 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6040/",
     "scrapeISO": "2026-09-13T05:42:20.833Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-07-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-16"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T23:58:29.066Z"
   },
   "ORT 6041": {
     "code": "ORT 6041",
@@ -478,8 +523,127 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-01",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-31",
+                "au": "2027-07-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-31",
+                "au": "2027-07-02"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-25"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:58:34.414Z"
   },
   "ORT 6052": {
     "code": "ORT 6052",
@@ -626,12 +790,72 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 510,
                   "finMin": 689
                 },
                 "du": "2026-10-19",
                 "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
               },
               {
                 "creneau": {
@@ -666,7 +890,7 @@
                   "finMin": 689
                 },
                 "du": "2026-09-14",
-                "au": "2026-12-04"
+                "au": "2026-12-11"
               },
               {
                 "creneau": {
@@ -676,7 +900,7 @@
                   "finMin": 689
                 },
                 "du": "2026-09-14",
-                "au": "2026-10-09"
+                "au": "2026-10-02"
               },
               {
                 "creneau": {
@@ -686,7 +910,7 @@
                   "finMin": 929
                 },
                 "du": "2026-09-14",
-                "au": "2026-12-04"
+                "au": "2026-12-11"
               },
               {
                 "creneau": {
@@ -696,7 +920,7 @@
                   "finMin": 929
                 },
                 "du": "2026-09-14",
-                "au": "2026-10-09"
+                "au": "2026-10-02"
               },
               {
                 "creneau": {
@@ -707,6 +931,126 @@
                 },
                 "du": "2026-10-05",
                 "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-12",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-12",
+                "au": "2026-10-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-12-14",
+                "au": "2026-12-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-12-14",
+                "au": "2026-12-23"
               },
               {
                 "creneau": {
@@ -732,7 +1076,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:58:36.569Z"
   },
   "ORT 6053": {
     "code": "ORT 6053",
@@ -1229,6 +1574,10 @@
       {
         "saison": "Automne",
         "annee": 2026
+      },
+      {
+        "saison": "Hiver",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6054/",
@@ -1346,8 +1695,32 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:58:42.434Z"
   },
   "ORT 6100": {
     "code": "ORT 6100",
@@ -2085,6 +2458,16 @@
                   "finMin": 929
                 },
                 "du": "2026-11-23",
+                "au": "2026-12-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-12-07",
                 "au": "2026-12-11"
               },
               {
@@ -2120,6 +2503,16 @@
                   "finMin": 929
                 },
                 "du": "2026-11-23",
+                "au": "2026-12-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-12-07",
                 "au": "2026-12-11"
               },
               {
@@ -2136,7 +2529,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:58:51.937Z"
   },
   "ORT 6132": {
     "code": "ORT 6132",
@@ -2173,16 +2567,6 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-01-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 689
@@ -2199,6 +2583,16 @@
                 },
                 "du": "2027-01-11",
                 "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-18",
+                "au": "2027-01-29"
               },
               {
                 "creneau": {
@@ -2268,16 +2662,6 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-01-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 689
@@ -2294,6 +2678,16 @@
                 },
                 "du": "2027-01-11",
                 "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-18",
+                "au": "2027-01-29"
               },
               {
                 "creneau": {
@@ -2349,7 +2743,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:58:54.320Z"
   },
   "ORT 6141": {
     "code": "ORT 6141",
@@ -2461,8 +2856,77 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-07-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-06-28",
+                "au": "2027-07-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-28",
+                "au": "2027-07-02"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-07-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-28",
+                "au": "2027-07-02"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:58:57.510Z"
   },
   "ORT 6151": {
     "code": "ORT 6151",
@@ -2652,8 +3116,107 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-21",
+                "au": "2027-07-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-16"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-21",
+                "au": "2027-07-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-16"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:00.499Z"
   },
   "ORT 6305": {
     "code": "ORT 6305",
@@ -3301,8 +3864,147 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:14.811Z"
   },
   "ORT 6513": {
     "code": "ORT 6513",
@@ -3532,9 +4234,39 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-02",
+                "au": "2026-11-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 510,
                   "finMin": 689
+                },
+                "du": "2026-11-09",
+                "au": "2026-11-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-09",
+                "au": "2026-11-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2026-11-09",
                 "au": "2026-11-13"
@@ -3552,12 +4284,32 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-23",
+                "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 750,
                   "finMin": 929
                 },
                 "du": "2026-11-23",
                 "au": "2026-12-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-23",
+                "au": "2026-12-04"
               }
             ]
           },
@@ -3592,7 +4344,7 @@
                   "finMin": 689
                 },
                 "du": "2026-11-02",
-                "au": "2026-11-27"
+                "au": "2026-11-06"
               },
               {
                 "creneau": {
@@ -3607,18 +4359,49 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-09",
+                "au": "2026-11-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-23",
+                "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 750,
                   "finMin": 929
                 },
                 "du": "2026-11-23",
+                "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-30",
                 "au": "2026-12-11"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:18.149Z"
   },
   "ORT 6523": {
     "code": "ORT 6523",
@@ -3721,6 +4504,16 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-01-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -3781,7 +4574,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:22.082Z"
   },
   "ORT 6532": {
     "code": "ORT 6532",
@@ -3883,8 +4677,67 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-07-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-07-02"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-07-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-07-02"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:24.959Z"
   },
   "ORT 6533": {
     "code": "ORT 6533",
@@ -3965,7 +4818,7 @@
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2026-11-02",
+                "du": "2026-11-09",
                 "au": "2026-11-13"
               },
               {
@@ -4040,7 +4893,7 @@
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2026-11-02",
+                "du": "2026-11-09",
                 "au": "2026-11-13"
               },
               {
@@ -4057,7 +4910,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:27.496Z"
   },
   "ORT 6543": {
     "code": "ORT 6543",
@@ -4114,6 +4968,16 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Mardi",
                   "debutMin": 750,
                   "finMin": 929
@@ -4140,11 +5004,21 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
                   "debutMin": 750,
                   "finMin": 929
                 },
                 "du": "2027-03-08",
-                "au": "2027-04-09"
+                "au": "2027-03-12"
               },
               {
                 "creneau": {
@@ -4170,7 +5044,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:30.112Z"
   },
   "ORT 6553": {
     "code": "ORT 6553",
@@ -4298,8 +5173,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:59:33.287Z"
   },
   "ORT 6818": {
     "code": "ORT 6818",

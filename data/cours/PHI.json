@@ -843,8 +843,72 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-06-02",
+                "au": "2027-06-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-16"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:04:57.230Z"
   },
   "PHI 1365": {
     "code": "PHI 1365",
@@ -1035,13 +1099,24 @@
                   "finMin": 929
                 },
                 "du": "2026-10-26",
-                "au": "2026-12-04"
+                "au": "2026-11-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-07"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:06:50.099Z"
   },
   "PHI 2255": {
     "code": "PHI 2255",
@@ -1591,7 +1666,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-3155/",
     "scrapeISO": "2026-09-11T19:00:04.714Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-16"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:13:18.896Z"
   },
   "PHI 2415": {
     "code": "PHI 2415",
@@ -1681,8 +1791,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 1110,
+                  "finMin": 1289
                 },
                 "du": "2027-01-07",
                 "au": "2027-02-26"
@@ -1691,8 +1801,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 1110,
+                  "finMin": 1289
                 },
                 "du": "2027-03-08",
                 "au": "2027-04-16"
@@ -1701,7 +1811,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:20:24.226Z"
   },
   "PHI 2480": {
     "code": "PHI 2480",
@@ -1968,8 +2079,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 780,
-                  "finMin": 959
+                  "debutMin": 900,
+                  "finMin": 989
                 },
                 "du": "2027-01-14",
                 "au": "2027-01-14"
@@ -1978,7 +2089,7 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Vendredi",
-                  "debutMin": 960,
+                  "debutMin": 990,
                   "finMin": 1319
                 },
                 "du": "2027-03-12",
@@ -2008,7 +2119,7 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Vendredi",
-                  "debutMin": 960,
+                  "debutMin": 990,
                   "finMin": 1319
                 },
                 "du": "2027-04-02",
@@ -2038,7 +2149,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:20:16.404Z"
   },
   "PHI 3480": {
     "code": "PHI 3480",
@@ -2051,49 +2163,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Hiver",
-        "annee": 2027
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-3480/",
     "scrapeISO": "2026-09-12T21:29:53.219Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-16"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-03T00:20:18.636Z"
   },
   "PHI 3615": {
     "code": "PHI 3615",
@@ -2597,7 +2671,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-2820/",
     "scrapeISO": "2026-09-12T22:13:53.303Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-17"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:15:32.078Z"
   },
   "PHI 2870": {
     "code": "PHI 2870",
@@ -3767,8 +3876,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-11"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:47:06.108Z"
   },
   "PHI 6990": {
     "code": "PHI 6990",
@@ -3816,8 +3959,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:09:15.536Z"
   },
   "PHI 6515": {
     "code": "PHI 6515",

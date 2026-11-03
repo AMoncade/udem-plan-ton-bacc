@@ -559,48 +559,29 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 629
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 719
                 },
-                "du": "2027-01-18",
-                "au": "2027-01-22"
+                "du": "2027-04-05",
+                "au": "2027-04-16"
               },
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
+                  "jour": "Mardi",
                   "debutMin": 510,
-                  "finMin": 659
+                  "finMin": 719
                 },
-                "du": "2027-01-25",
-                "au": "2027-01-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 899
-                },
-                "du": "2027-02-08",
-                "au": "2027-02-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-02-15",
-                "au": "2027-02-26"
+                "du": "2027-04-19",
+                "au": "2027-04-30"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:20:01.615Z"
   },
   "PLU 6150": {
     "code": "PLU 6150",
@@ -797,8 +778,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 659
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 659
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-19"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:20:06.282Z"
   },
   "PLU 6911A": {
     "code": "PLU 6911A",
@@ -1229,12 +1244,7 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Été",
-        "annee": 2026
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6110/",
     "scrapeISO": "2026-09-13T04:44:43.318Z",
     "apercuHoraires": [
@@ -1351,7 +1361,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:11:22.355Z"
   },
   "PLU 6133": {
     "code": "PLU 6133",

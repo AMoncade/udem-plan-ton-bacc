@@ -262,49 +262,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Hiver",
-        "annee": 2027
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aes-2050/",
     "scrapeISO": "2026-09-12T22:09:26.359Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-16"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-02T20:13:18.790Z"
   },
   "AES 2060": {
     "code": "AES 2060",
@@ -358,8 +320,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-29"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:13:20.945Z"
   },
   "AES 2070": {
     "code": "AES 2070",

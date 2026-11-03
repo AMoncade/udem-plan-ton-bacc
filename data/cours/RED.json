@@ -309,8 +309,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:41:18.498Z"
   },
   "RED 2101": {
     "code": "RED 2101",
@@ -326,7 +360,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-2101/",
     "scrapeISO": "2026-09-13T03:24:03.288Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:41:24.297Z"
   },
   "RED 3001": {
     "code": "RED 3001",
@@ -418,7 +487,28 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:41:26.455Z"
   }
 }

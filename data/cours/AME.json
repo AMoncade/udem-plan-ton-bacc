@@ -742,16 +742,60 @@
             "seances": [
               {
                 "creneau": {
-                  "genre": "nonAttribue"
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
                 },
-                "du": "2027-01-07",
-                "au": "2027-04-30"
+                "du": "2027-02-08",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-15",
+                "au": "2027-03-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-22",
+                "au": "2027-03-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-12",
+                "au": "2027-04-16"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:53:54.037Z"
   },
   "AME 6872": {
     "code": "AME 6872",
@@ -1032,7 +1076,32 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ame-7406/",
     "scrapeISO": "2026-09-12T21:56:32.977Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 720
+                },
+                "du": "2027-01-12",
+                "au": "2027-02-09"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T20:54:13.162Z"
   },
   "AME 7201": {
     "code": "AME 7201",
@@ -1182,7 +1251,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Mardi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -1192,7 +1261,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Mardi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -1203,7 +1272,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:37:14.489Z"
   },
   "AME 6311": {
     "code": "AME 6311",
@@ -2026,8 +2096,142 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-07",
+                "au": "2027-05-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-07",
+                "au": "2027-05-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 719,
+                  "finMin": 960
+                },
+                "du": "2027-05-07",
+                "au": "2027-05-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 719,
+                  "finMin": 960
+                },
+                "du": "2027-05-07",
+                "au": "2027-05-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-21",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-21",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 719,
+                  "finMin": 960
+                },
+                "du": "2027-05-21",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 719,
+                  "finMin": 960
+                },
+                "du": "2027-05-21",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-06-04",
+                "au": "2027-06-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-06-04",
+                "au": "2027-06-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 719,
+                  "finMin": 960
+                },
+                "du": "2027-06-04",
+                "au": "2027-06-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 719,
+                  "finMin": 960
+                },
+                "du": "2027-06-04",
+                "au": "2027-06-05"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:37:06.786Z"
   },
   "AME 6047": {
     "code": "AME 6047",
@@ -2351,8 +2555,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:37:26.985Z"
   },
   "AME 6413": {
     "code": "AME 6413",
@@ -2815,16 +3040,60 @@
             "seances": [
               {
                 "creneau": {
-                  "genre": "nonAttribue"
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 540,
+                  "finMin": 960
                 },
-                "du": "2026-08-24",
-                "au": "2026-12-23"
+                "du": "2026-10-19",
+                "au": "2026-10-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 960
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 540,
+                  "finMin": 960
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 960
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 960
+                },
+                "du": "2026-10-19",
+                "au": "2026-10-23"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:55:22.365Z"
   },
   "AME 6748": {
     "code": "AME 6748",
@@ -3278,7 +3547,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2026
+      },
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ame-6672/",
     "scrapeISO": "2026-09-13T04:53:51.106Z",
     "apercuHoraires": [
@@ -3314,8 +3592,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:56:03.045Z"
   },
   "AME 6909": {
     "code": "AME 6909",

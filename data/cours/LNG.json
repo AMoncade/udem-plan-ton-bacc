@@ -646,8 +646,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-14"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:34:09.412Z"
   },
   "LNG 1126": {
     "code": "LNG 1126",
@@ -793,8 +827,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:16:02.380Z"
   },
   "LNG 2340": {
     "code": "LNG 2340",
@@ -1470,49 +1538,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Hiver",
-        "annee": 2027
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/lng-6030/",
     "scrapeISO": "2026-09-13T03:46:40.282Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-02T22:08:54.085Z"
   },
   "LNG 2080": {
     "code": "LNG 2080",
@@ -1817,6 +1847,16 @@
                   "finMin": 689
                 },
                 "du": "2027-01-07",
+                "au": "2027-01-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-18",
                 "au": "2027-02-26"
               },
               {
@@ -1833,7 +1873,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:31:28.724Z"
   },
   "LNG 1013": {
     "code": "LNG 1013",

@@ -10,10 +10,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Automne",
+        "annee": 2026
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mmv-7025/",
     "scrapeISO": "2026-09-12T21:55:32.180Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-02T23:47:46.519Z"
   },
   "MMV 70006": {
     "code": "MMV 70006",
@@ -133,8 +139,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "G",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T23:47:48.781Z"
   },
   "MMV 70016": {
     "code": "MMV 70016",

@@ -4945,7 +4945,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -5089,7 +5089,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -5233,7 +5233,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -5377,7 +5377,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -5521,7 +5521,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -5665,7 +5665,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -5676,7 +5676,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:26:47.759Z"
   },
   "EDU 1012": {
     "code": "EDU 1012",
@@ -9277,7 +9278,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -9288,7 +9289,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:27:21.060Z"
   },
   "EDU 4016": {
     "code": "EDU 4016",
@@ -11075,13 +11077,24 @@
                   "finMin": 1229
                 },
                 "du": "2027-03-08",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-12",
                 "au": "2027-04-16"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:20:12.240Z"
   },
   "EDU 6095": {
     "code": "EDU 6095",
@@ -11110,15 +11123,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Été",
-        "annee": 2026
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/edu-6660/",
     "scrapeISO": "2026-09-13T03:55:03.886Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-02T22:20:34.682Z"
   },
   "EDU 6646": {
     "code": "EDU 6646",
@@ -12487,8 +12496,112 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-05-08",
+                "au": "2027-05-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-05-08",
+                "au": "2027-05-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-05"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:14:08.885Z"
   },
   "EDU 6082": {
     "code": "EDU 6082",
@@ -12924,95 +13037,11 @@
                 "au": "2027-04-11"
               }
             ]
-          },
-          {
-            "nom": "Q",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2027-01-09",
-                "au": "2027-01-10"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2027-01-09",
-                "au": "2027-01-10"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2027-02-06",
-                "au": "2027-02-07"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2027-02-06",
-                "au": "2027-02-07"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2027-03-13",
-                "au": "2027-03-14"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2027-03-13",
-                "au": "2027-03-14"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2027-04-10",
-                "au": "2027-04-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2027-04-10",
-                "au": "2027-04-11"
-              }
-            ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:14:19.969Z"
   },
   "EDU 6091": {
     "code": "EDU 6091",
@@ -13395,8 +13424,97 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 480,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-14"
+              }
+            ]
+          },
+          {
+            "nom": "A101",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-14"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:14:22.973Z"
   },
   "EDU 6092": {
     "code": "EDU 6092",
@@ -15476,6 +15594,101 @@
             ]
           },
           {
+            "nom": "C",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-06",
+                "au": "2027-01-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-11",
+                "au": "2027-01-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-20",
+                "au": "2027-01-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-25",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-02-03",
+                "au": "2027-02-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-10",
+                "au": "2027-03-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-15",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-14",
+                "au": "2027-04-14"
+              }
+            ]
+          },
+          {
             "nom": "I",
             "seances": [
               {
@@ -15502,7 +15715,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:14:02.337Z"
   },
   "EDU 67093": {
     "code": "EDU 67093",
@@ -15753,8 +15967,62 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-05",
+                "au": "2027-05-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-12",
+                "au": "2027-05-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-02",
+                "au": "2027-06-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-09",
+                "au": "2027-06-09"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:14:59.079Z"
   },
   "EDU 6014B": {
     "code": "EDU 6014B",
@@ -16939,6 +17207,26 @@
                   "finMin": 1229
                 },
                 "du": "2026-10-26",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-11-02",
+                "au": "2026-11-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2026-11-09",
                 "au": "2026-11-27"
               },
               {
@@ -16965,7 +17253,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:20:11.081Z"
   },
   "EDU 6751": {
     "code": "EDU 6751",
@@ -18158,7 +18447,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -18169,7 +18458,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:31:57.446Z"
   },
   "EDU 1410": {
     "code": "EDU 1410",
@@ -19477,7 +19767,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -19706,7 +19996,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -19935,7 +20225,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
+                  "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 929
                 },
@@ -19946,7 +20236,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:32:12.557Z"
   },
   "EDU 3003": {
     "code": "EDU 3003",

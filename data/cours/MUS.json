@@ -438,31 +438,6 @@
         },
         "sections": [
           {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 630,
-                  "finMin": 719
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 630,
-                  "finMin": 719
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-30"
-              }
-            ]
-          },
-          {
             "nom": "B",
             "seances": [
               {
@@ -514,7 +489,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:28:26.101Z"
   },
   "MUS 1015": {
     "code": "MUS 1015",
@@ -1082,7 +1058,42 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-3321/",
     "scrapeISO": "2026-09-13T16:00:56.252Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T22:29:37.253Z"
   },
   "MUS 3322X": {
     "code": "MUS 3322X",
@@ -1321,7 +1332,7 @@
                   "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 540,
-                  "finMin": 689
+                  "finMin": 719
                 },
                 "du": "2027-01-07",
                 "au": "2027-02-26"
@@ -1331,7 +1342,7 @@
                   "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 540,
-                  "finMin": 689
+                  "finMin": 719
                 },
                 "du": "2027-03-08",
                 "au": "2027-04-30"
@@ -1340,7 +1351,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:38:10.415Z"
   },
   "MUS 1327": {
     "code": "MUS 1327",
@@ -1611,7 +1623,7 @@
             ]
           },
           {
-            "nom": "A1",
+            "nom": "A101",
             "seances": [
               {
                 "creneau": {
@@ -1636,7 +1648,7 @@
             ]
           },
           {
-            "nom": "A2",
+            "nom": "A102",
             "seances": [
               {
                 "creneau": {
@@ -1659,10 +1671,86 @@
                 "au": "2027-04-30"
               }
             ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B101",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          },
+          {
+            "nom": "B102",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 630,
+                  "finMin": 719
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:38:52.800Z"
   },
   "MUS 2325": {
     "code": "MUS 2325",
@@ -2264,6 +2352,26 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 540,
+                  "finMin": 899
+                },
+                "du": "2026-10-26",
+                "au": "2026-10-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 899
+                },
+                "du": "2026-11-03",
+                "au": "2026-11-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Samedi",
                   "debutMin": 600,
                   "finMin": 959
@@ -2275,7 +2383,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:39:12.145Z"
   },
   "MUS 4102": {
     "code": "MUS 4102",
@@ -2379,16 +2488,30 @@
             "seances": [
               {
                 "creneau": {
-                  "genre": "nonAttribue"
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 1079
                 },
-                "du": "2027-01-07",
-                "au": "2027-04-30"
+                "du": "2027-03-05",
+                "au": "2027-03-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 1079
+                },
+                "du": "2027-03-06",
+                "au": "2027-03-06"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:39:19.981Z"
   },
   "MUS 4105": {
     "code": "MUS 4105",
@@ -2459,7 +2582,29 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-4106/",
     "scrapeISO": "2026-09-13T03:09:26.241Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T22:39:24.997Z"
   },
   "MUS 1331": {
     "code": "MUS 1331",
@@ -3494,7 +3639,42 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mus-6321/",
     "scrapeISO": "2026-09-13T04:42:56.158Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T23:25:11.210Z"
   },
   "MUS 6322X": {
     "code": "MUS 6322X",

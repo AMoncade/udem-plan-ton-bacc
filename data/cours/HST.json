@@ -2059,7 +2059,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-2402/",
     "scrapeISO": "2026-09-11T18:56:46.230Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T21:28:58.331Z"
   },
   "HST 2410": {
     "code": "HST 2410",
@@ -4322,8 +4357,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:33:48.154Z"
   },
   "HST 3276": {
     "code": "HST 3276",

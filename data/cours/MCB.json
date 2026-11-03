@@ -1235,7 +1235,7 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-01-07",
+                "du": "2027-01-11",
                 "au": "2027-02-26"
               },
               {
@@ -1246,13 +1246,14 @@
                   "finMin": 929
                 },
                 "du": "2027-03-08",
-                "au": "2027-03-12"
+                "au": "2027-03-19"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:27:04.235Z"
   },
   "MCB 1040": {
     "code": "MCB 1040",
@@ -1485,7 +1486,17 @@
                   "debutMin": 630,
                   "finMin": 749
                 },
-                "du": "2026-11-04",
+                "du": "2026-10-26",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 630,
+                  "finMin": 749
+                },
+                "du": "2026-11-09",
                 "au": "2026-12-09"
               }
             ]
@@ -1537,7 +1548,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:26:59.071Z"
   },
   "MCB 2094": {
     "code": "MCB 2094",
@@ -1587,7 +1599,7 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-01-07",
+                "du": "2027-01-08",
                 "au": "2027-02-12"
               },
               {
@@ -1649,7 +1661,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:27:01.986Z"
   },
   "MCB 2985": {
     "code": "MCB 2985",
@@ -3744,9 +3757,43 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mcb-63552/",
     "scrapeISO": "2026-09-13T06:41:18.532Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:00:48.621Z"
   }
 }

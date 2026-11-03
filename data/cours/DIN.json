@@ -1375,8 +1375,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "debutMin": 510,
+                  "finMin": 689
                 },
                 "du": "2027-01-11",
                 "au": "2027-02-26"
@@ -1385,8 +1385,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "debutMin": 510,
+                  "finMin": 689
                 },
                 "du": "2027-03-08",
                 "au": "2027-04-30"
@@ -1395,7 +1395,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T19:57:45.984Z"
   },
   "DIN 3311": {
     "code": "DIN 3311",
@@ -2231,32 +2232,22 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-11",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 510,
                   "finMin": 689
                 },
                 "du": "2027-01-11",
-                "au": "2027-02-26"
+                "au": "2027-02-24"
               },
               {
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "debutMin": 510,
+                  "finMin": 689
                 },
                 "du": "2027-01-11",
-                "au": "2027-02-26"
+                "au": "2027-02-24"
               },
               {
                 "creneau": {
@@ -2266,13 +2257,44 @@
                   "finMin": 929
                 },
                 "du": "2027-01-11",
-                "au": "2027-02-26"
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T19:58:14.841Z"
   },
   "DIN 2022": {
     "code": "DIN 2022",
@@ -2306,32 +2328,22 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-30"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2027-03-08",
-                "au": "2027-04-30"
+                "du": "2027-03-10",
+                "au": "2027-04-28"
               },
               {
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "debutMin": 510,
+                  "finMin": 689
                 },
-                "du": "2027-03-08",
-                "au": "2027-04-30"
+                "du": "2027-03-10",
+                "au": "2027-04-28"
               },
               {
                 "creneau": {
@@ -2340,14 +2352,25 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-03-08",
-                "au": "2027-04-30"
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T19:58:16.963Z"
   },
   "DIN 3600": {
     "code": "DIN 3600",
@@ -2449,10 +2472,70 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/din-3011/",
     "scrapeISO": "2026-09-11T17:56:26.899Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T19:58:24.519Z"
   },
   "DIN 3012": {
     "code": "DIN 3012",
@@ -3137,10 +3220,90 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/din-3019/",
     "scrapeISO": "2026-09-11T17:56:42.430Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T19:58:43.236Z"
   },
   "DIN 3019A": {
     "code": "DIN 3019A",
@@ -3178,10 +3341,70 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/din-3019a/",
     "scrapeISO": "2026-09-11T17:56:44.427Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-10",
+                "au": "2027-04-28"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T19:58:46.375Z"
   },
   "DIN 3111": {
     "code": "DIN 3111",
@@ -3524,10 +3747,90 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/din-3117/",
     "scrapeISO": "2026-09-11T17:56:56.859Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T19:59:03.909Z"
   },
   "DIN 3118": {
     "code": "DIN 3118",
@@ -3606,10 +3909,90 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/din-3119/",
     "scrapeISO": "2026-09-11T17:56:59.535Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-24"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-08"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T19:59:08.840Z"
   },
   "DIN 3120": {
     "code": "DIN 3120",

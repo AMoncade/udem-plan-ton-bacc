@@ -273,7 +273,7 @@
                   "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 750,
-                  "finMin": 929
+                  "finMin": 959
                 },
                 "du": "2027-03-08",
                 "au": "2027-03-12"
@@ -317,26 +317,6 @@
                 },
                 "du": "2027-04-05",
                 "au": "2027-04-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-04-05",
-                "au": "2027-04-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 959
-                },
-                "du": "2027-04-12",
-                "au": "2027-04-16"
               }
             ]
           },
@@ -368,7 +348,7 @@
                   "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 750,
-                  "finMin": 929
+                  "finMin": 959
                 },
                 "du": "2027-03-08",
                 "au": "2027-03-12"
@@ -412,32 +392,13 @@
                 },
                 "du": "2027-04-05",
                 "au": "2027-04-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-04-05",
-                "au": "2027-04-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 959
-                },
-                "du": "2027-04-12",
-                "au": "2027-04-16"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:24:44.505Z"
   },
   "PHT 6401": {
     "code": "PHT 6401",
@@ -996,8 +957,207 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-04-27",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-05-24",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-06-21",
+                "au": "2027-06-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1200,
+                  "finMin": 1289
+                },
+                "du": "2027-06-28",
+                "au": "2027-07-02"
+              }
+            ]
+          },
+          {
+            "nom": "A1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 704
+                },
+                "du": "2027-05-24",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 734
+                },
+                "du": "2027-05-24",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 795,
+                  "finMin": 959
+                },
+                "du": "2027-05-24",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 765,
+                  "finMin": 959
+                },
+                "du": "2027-05-24",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 704
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 704
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 765,
+                  "finMin": 959
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 765,
+                  "finMin": 959
+                },
+                "du": "2027-07-05",
+                "au": "2027-07-09"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:50:31.884Z"
   },
   "PHT 6404": {
     "code": "PHT 6404",
@@ -4819,7 +4979,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mercredi",
+                  "jour": "Lundi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -4900,7 +5060,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:24:41.414Z"
   },
   "PHT 3323": {
     "code": "PHT 3323",
@@ -5081,22 +5242,13 @@
                 },
                 "du": "2026-11-02",
                 "au": "2026-11-27"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 749
-                },
-                "du": "2026-11-30",
-                "au": "2026-12-04"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:24:46.760Z"
   },
   "PHT 3358": {
     "code": "PHT 3358",
@@ -5550,8 +5702,52 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 959
+                },
+                "du": "2027-05-08",
+                "au": "2027-05-09"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:47:53.190Z"
   },
   "PHT 6203": {
     "code": "PHT 6203",

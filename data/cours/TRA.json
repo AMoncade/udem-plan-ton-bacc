@@ -2875,6 +2875,16 @@
                   "finMin": 929
                 },
                 "du": "2026-08-31",
+                "au": "2026-09-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-05",
                 "au": "2026-10-16"
               },
               {
@@ -2924,7 +2934,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:36:29.802Z"
   },
   "TRA 2600": {
     "code": "TRA 2600",
@@ -3064,8 +3075,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-14"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:36:32.092Z"
   },
   "TRA 2450": {
     "code": "TRA 2450",
@@ -4189,49 +4234,11 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Hiver",
-        "annee": 2027
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/tra-3545/",
     "scrapeISO": "2026-09-12T22:08:12.403Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-16"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-03T00:37:23.076Z"
   },
   "TRA 2525": {
     "code": "TRA 2525",
@@ -4766,7 +4773,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/tra-2450g/",
     "scrapeISO": "2026-09-13T03:27:23.809Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:44:05.537Z"
   },
   "TRA 2505G": {
     "code": "TRA 2505G",
@@ -5292,8 +5334,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:44:31.336Z"
   },
   "TRA 3210G": {
     "code": "TRA 3210G",
@@ -5385,8 +5448,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:44:33.662Z"
   },
   "TRA 3915G": {
     "code": "TRA 3915G",

@@ -51,8 +51,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:46:28.164Z"
   },
   "SME 3010": {
     "code": "SME 3010",
@@ -1028,6 +1062,16 @@
                   "finMin": 1289
                 },
                 "du": "2026-10-07",
+                "au": "2026-10-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2026-10-14",
                 "au": "2026-10-14"
               },
               {
@@ -1077,7 +1121,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:44:54.765Z"
   },
   "SME 3000": {
     "code": "SME 3000",
@@ -1508,8 +1553,142 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-08",
+                "au": "2027-05-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-08",
+                "au": "2027-05-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-08",
+                "au": "2027-05-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-08",
+                "au": "2027-05-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-06"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:49:14.678Z"
   },
   "SME 2055T": {
     "code": "SME 2055T",
@@ -1827,7 +2006,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sme-1020/",
     "scrapeISO": "2026-09-13T04:15:59.243Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:44:57.947Z"
   },
   "SME 3005": {
     "code": "SME 3005",
@@ -1843,6 +2057,141 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sme-3005/",
     "scrapeISO": "2026-09-13T04:16:02.982Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-15",
+                "au": "2027-05-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-15",
+                "au": "2027-05-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-15",
+                "au": "2027-05-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-15",
+                "au": "2027-05-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-29",
+                "au": "2027-05-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-05-29",
+                "au": "2027-05-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-29",
+                "au": "2027-05-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-05-29",
+                "au": "2027-05-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-06-12",
+                "au": "2027-06-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 510,
+                  "finMin": 719
+                },
+                "du": "2027-06-12",
+                "au": "2027-06-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-06-12",
+                "au": "2027-06-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-06-12",
+                "au": "2027-06-13"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:45:02.355Z"
   }
 }

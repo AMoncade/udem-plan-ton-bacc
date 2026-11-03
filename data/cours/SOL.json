@@ -55,14 +55,15 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2026-11-23",
+                "du": "2026-11-30",
                 "au": "2026-12-15"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:12:30.351Z"
   },
   "SOL 1090": {
     "code": "SOL 1090",
@@ -651,8 +652,62 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-17"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:05:00.844Z"
   },
   "SOL 2104": {
     "code": "SOL 2104",
@@ -777,6 +832,16 @@
                   "debutMin": 930,
                   "finMin": 1109
                 },
+                "du": "2026-10-26",
+                "au": "2026-10-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
                 "du": "2026-11-09",
                 "au": "2026-12-11"
               },
@@ -804,7 +869,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:05:35.486Z"
   },
   "SOL 3104": {
     "code": "SOL 3104",
@@ -1440,10 +1506,6 @@
       {
         "saison": "Automne",
         "annee": 2026
-      },
-      {
-        "saison": "Hiver",
-        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-1018/",
@@ -1531,41 +1593,9 @@
             ]
           }
         ]
-      },
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A1",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 1050,
-                  "finMin": 1169
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 1050,
-                  "finMin": 1169
-                },
-                "du": "2027-03-12",
-                "au": "2027-04-16"
-              }
-            ]
-          }
-        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:12:16.047Z"
   },
   "SOL 2200": {
     "code": "SOL 2200",
@@ -1891,6 +1921,16 @@
                   "finMin": 1049
                 },
                 "du": "2026-10-26",
+                "au": "2026-11-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2026-11-16",
                 "au": "2026-12-07"
               }
             ]
@@ -1915,7 +1955,47 @@
                   "debutMin": 1050,
                   "finMin": 1169
                 },
+                "du": "2026-08-31",
+                "au": "2026-10-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1169
+                },
                 "du": "2026-10-26",
+                "au": "2026-11-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1169
+                },
+                "du": "2026-10-26",
+                "au": "2026-11-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1169
+                },
+                "du": "2026-11-16",
+                "au": "2026-12-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1169
+                },
+                "du": "2026-11-16",
                 "au": "2026-12-07"
               }
             ]
@@ -1979,8 +2059,107 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 929
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1049
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-22"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:14:49.609Z"
   },
   "SOL 1102": {
     "code": "SOL 1102",
@@ -2331,7 +2510,7 @@
                   "finMin": 629
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-02"
               },
               {
                 "creneau": {
@@ -2340,7 +2519,7 @@
                   "debutMin": 510,
                   "finMin": 629
                 },
-                "du": "2026-10-26",
+                "du": "2026-10-19",
                 "au": "2026-12-21"
               }
             ]
@@ -2353,19 +2532,19 @@
                   "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 630,
-                  "finMin": 719
+                  "finMin": 689
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-02"
               },
               {
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 630,
-                  "finMin": 719
+                  "finMin": 689
                 },
-                "du": "2026-10-26",
+                "du": "2026-10-19",
                 "au": "2026-12-21"
               }
             ]
@@ -2381,7 +2560,7 @@
                   "finMin": 629
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-02"
               },
               {
                 "creneau": {
@@ -2390,7 +2569,7 @@
                   "debutMin": 510,
                   "finMin": 629
                 },
-                "du": "2026-10-26",
+                "du": "2026-10-19",
                 "au": "2026-12-21"
               }
             ]
@@ -2455,7 +2634,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:15:48.621Z"
   },
   "SOL 2027": {
     "code": "SOL 2027",
@@ -2490,7 +2670,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-2050/",
     "scrapeISO": "2026-09-12T22:15:20.044Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-25"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:14:54.450Z"
   },
   "SOL 2103": {
     "code": "SOL 2103",
@@ -2657,8 +2872,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-25"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:16:01.132Z"
   },
   "SOL 2403": {
     "code": "SOL 2403",
@@ -3779,7 +4028,72 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-6053/",
     "scrapeISO": "2026-09-13T04:20:06.477Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 989
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 989
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 989
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 989
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 989
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:07:17.023Z"
   },
   "SOL 6915": {
     "code": "SOL 6915",
@@ -4387,8 +4701,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:44:30.794Z"
   },
   "SOL 6009": {
     "code": "SOL 6009",

@@ -758,8 +758,79 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-14"
+              }
+            ]
+          },
+          {
+            "nom": "D1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-09"
+              }
+            ]
+          },
+          {
+            "nom": "D2",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-10"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-10"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:21:00.692Z"
   },
   "ECN 1040": {
     "code": "ECN 1040",
@@ -1497,8 +1568,79 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-16"
+              }
+            ]
+          },
+          {
+            "nom": "D1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-15"
+              }
+            ]
+          },
+          {
+            "nom": "D2",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 960,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:21:13.398Z"
   },
   "ECN 2165": {
     "code": "ECN 2165",
@@ -2729,8 +2871,107 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              }
+            ]
+          },
+          {
+            "nom": "A1",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:21:37.703Z"
   },
   "ECN 1260": {
     "code": "ECN 1260",
@@ -3626,8 +3867,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "D",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:13:40.384Z"
   },
   "ECN 1800": {
     "code": "ECN 1800",
@@ -4112,8 +4374,62 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:22:16.212Z"
   },
   "ECN 2260": {
     "code": "ECN 2260",
@@ -4640,8 +4956,62 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-28",
+                "au": "2027-06-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-28",
+                "au": "2027-06-16"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:22:30.406Z"
   },
   "ECN 2910": {
     "code": "ECN 2910",
@@ -4814,8 +5184,62 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:22:37.482Z"
   },
   "ECN 3064": {
     "code": "ECN 3064",
@@ -4856,7 +5280,7 @@
                   "debutMin": 930,
                   "finMin": 1109
                 },
-                "du": "2026-08-31",
+                "du": "2026-09-14",
                 "au": "2026-10-16"
               },
               {
@@ -4873,7 +5297,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:22:40.099Z"
   },
   "ECN 3065": {
     "code": "ECN 3065",
@@ -5429,8 +5854,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 930,
+                  "finMin": 1109
                 },
                 "du": "2027-01-07",
                 "au": "2027-02-12"
@@ -5439,8 +5864,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 930,
+                  "finMin": 1109
                 },
                 "du": "2027-02-22",
                 "au": "2027-02-26"
@@ -5449,8 +5874,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 930,
+                  "finMin": 1109
                 },
                 "du": "2027-03-08",
                 "au": "2027-04-09"
@@ -5459,7 +5884,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:23:04.272Z"
   },
   "ECN 3820": {
     "code": "ECN 3820",
@@ -6429,8 +6855,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 780,
-                  "finMin": 869
+                  "debutMin": 600,
+                  "finMin": 689
                 },
                 "du": "2026-09-10",
                 "au": "2026-10-15"
@@ -6439,8 +6865,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 780,
-                  "finMin": 869
+                  "debutMin": 600,
+                  "finMin": 689
                 },
                 "du": "2026-10-29",
                 "au": "2026-12-03"
@@ -6449,7 +6875,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:13:16.760Z"
   },
   "ECN 7049A": {
     "code": "ECN 7049A",
@@ -8407,8 +8834,47 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:20:36.920Z"
   },
   "ECN 6153": {
     "code": "ECN 6153",
@@ -8472,8 +8938,47 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          },
+          {
+            "nom": "B",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:20:38.968Z"
   },
   "ECN 6007": {
     "code": "ECN 6007",

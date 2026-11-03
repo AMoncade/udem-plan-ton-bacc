@@ -51,8 +51,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:04:59.623Z"
   },
   "REL 1930": {
     "code": "REL 1930",
@@ -267,8 +301,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-30"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:12:07.191Z"
   },
   "REL 2270": {
     "code": "REL 2270",
@@ -618,7 +673,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2320/",
     "scrapeISO": "2026-09-13T03:13:32.270Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:16:30.993Z"
   },
   "REL 3940": {
     "code": "REL 3940",
@@ -634,7 +724,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-3940/",
     "scrapeISO": "2026-09-13T03:13:34.348Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-17"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:17:28.220Z"
   },
   "REL 3960": {
     "code": "REL 3960",
@@ -1818,12 +1943,7 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": "REL2420/SRL3120",
-    "trimestres": [
-      {
-        "saison": "Été",
-        "annee": 2026
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-2420/",
     "scrapeISO": "2026-09-13T04:05:18.460Z",
     "apercuHoraires": [
@@ -1980,7 +2100,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:15:54.747Z"
   },
   "REL 2980": {
     "code": "REL 2980",
@@ -3211,7 +3332,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rel-6214/",
     "scrapeISO": "2026-09-13T04:44:51.483Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-17"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:08:22.254Z"
   },
   "REL 6218": {
     "code": "REL 6218",
@@ -4879,8 +5035,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
-                  "debutMin": 930,
-                  "finMin": 1109
+                  "debutMin": 990,
+                  "finMin": 1169
                 },
                 "du": "2027-01-07",
                 "au": "2027-02-26"
@@ -4889,8 +5045,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
-                  "debutMin": 930,
-                  "finMin": 1109
+                  "debutMin": 990,
+                  "finMin": 1169
                 },
                 "du": "2027-03-08",
                 "au": "2027-04-16"
@@ -4899,7 +5055,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:45:06.345Z"
   },
   "REL 62312": {
     "code": "REL 62312",

@@ -175,8 +175,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-14"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:12:13.030Z"
   },
   "CRN 1902": {
     "code": "CRN 1902",
@@ -397,28 +431,29 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Mardi",
                   "debutMin": 510,
                   "finMin": 689
                 },
                 "du": "2027-01-07",
                 "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-08",
+                "au": "2027-02-12"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T20:12:18.486Z"
   },
   "CRN 1904": {
     "code": "CRN 1904",

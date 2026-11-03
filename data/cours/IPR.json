@@ -86,8 +86,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 599
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 900,
+                  "finMin": 989
+                },
+                "du": "2027-02-15",
+                "au": "2027-02-19"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:08:26.365Z"
   },
   "IPR 6011": {
     "code": "IPR 6011",
@@ -108,7 +142,42 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6011/",
     "scrapeISO": "2026-09-13T03:44:54.070Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-19"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T22:08:28.422Z"
   },
   "IPR 6012": {
     "code": "IPR 6012",
@@ -288,8 +357,62 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 659
+                },
+                "du": "2027-01-25",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1019
+                },
+                "du": "2027-01-25",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 540,
+                  "finMin": 629
+                },
+                "du": "2027-02-01",
+                "au": "2027-02-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 900,
+                  "finMin": 1019
+                },
+                "du": "2027-02-01",
+                "au": "2027-02-05"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:08:31.652Z"
   },
   "IPR 6014": {
     "code": "IPR 6014",
@@ -347,10 +470,40 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6001/",
     "scrapeISO": "2026-09-13T04:49:52.859Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-03-11",
+                "au": "2027-04-01"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T22:11:54.826Z"
   },
   "IPR 6002": {
     "code": "IPR 6002",

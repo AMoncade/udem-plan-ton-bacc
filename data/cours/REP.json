@@ -1065,8 +1065,82 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "H",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-08"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Dimanche",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-05-22",
+                "au": "2027-05-23"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:46:45.241Z"
   },
   "REP 3104": {
     "code": "REP 3104",
@@ -1216,7 +1290,28 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:46:46.400Z"
   }
 }

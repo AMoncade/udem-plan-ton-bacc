@@ -424,8 +424,132 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-05-25",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-25",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1049
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:26:14.442Z"
   },
   "ETA 1002": {
     "code": "ETA 1002",
@@ -1068,15 +1192,32 @@
                   "debutMin": 1050,
                   "finMin": 1229
                 },
-                "du": "2027-01-11",
-                "au": "2027-01-15"
+                "du": "2027-01-07",
+                "au": "2027-01-08"
               },
               {
                 "creneau": {
                   "genre": "nonAttribue"
                 },
+                "du": "2027-01-11",
+                "au": "2027-01-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
                 "du": "2027-01-18",
                 "au": "2027-01-22"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-25",
+                "au": "2027-01-29"
               },
               {
                 "creneau": {
@@ -1099,8 +1240,15 @@
                 "creneau": {
                   "genre": "nonAttribue"
                 },
-                "du": "2027-02-08",
-                "au": "2027-02-12"
+                "du": "2027-02-15",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-02-15",
+                "au": "2027-02-19"
               },
               {
                 "creneau": {
@@ -1109,8 +1257,15 @@
                   "debutMin": 1050,
                   "finMin": 1229
                 },
-                "du": "2027-02-15",
-                "au": "2027-02-19"
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
               },
               {
                 "creneau": {
@@ -1126,33 +1281,22 @@
                 "creneau": {
                   "genre": "nonAttribue"
                 },
-                "du": "2027-03-15",
-                "au": "2027-03-19"
-              },
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2027-03-22",
-                "au": "2027-03-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-03-30",
-                "au": "2027-04-02"
-              },
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2027-04-05",
-                "au": "2027-04-09"
-              },
+                "du": "2027-03-08",
+                "au": "2027-03-12"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
               {
                 "creneau": {
                   "genre": "attribue",
@@ -1160,14 +1304,25 @@
                   "debutMin": 1050,
                   "finMin": 1229
                 },
-                "du": "2027-04-12",
-                "au": "2027-04-16"
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:26:20.930Z"
   },
   "ETA 2200": {
     "code": "ETA 2200",
@@ -1685,8 +1840,77 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "N",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:26:23.961Z"
   },
   "ETA 2550": {
     "code": "ETA 2550",
@@ -2171,6 +2395,16 @@
                   "finMin": 929
                 },
                 "du": "2026-09-07",
+                "au": "2026-09-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-05",
                 "au": "2026-10-16"
               },
               {
@@ -2246,8 +2480,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:26:29.118Z"
   },
   "ETA 3346": {
     "code": "ETA 3346",
@@ -3500,6 +3768,71 @@
         },
         "sections": [
           {
+            "nom": "K",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-11",
+                "au": "2027-01-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-18",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-15",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-12",
+                "au": "2027-04-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-19",
+                "au": "2027-04-23"
+              }
+            ]
+          },
+          {
             "nom": "L",
             "seances": [
               {
@@ -3566,7 +3899,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:04:29.432Z"
   },
   "ETA 6802": {
     "code": "ETA 6802",
@@ -4497,8 +4831,72 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-05",
+                "au": "2027-06-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-05",
+                "au": "2027-06-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-16"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:59:35.962Z"
   },
   "ETA 6808": {
     "code": "ETA 6808",
@@ -4589,7 +4987,92 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/eta-6810/",
     "scrapeISO": "2026-09-12T21:35:27.562Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "L",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-04",
+                "au": "2027-05-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-06",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-06",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-25",
+                "au": "2027-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-27",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-17",
+                "au": "2027-06-17"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T22:04:39.389Z"
   },
   "ETA 6937": {
     "code": "ETA 6937",
@@ -4807,16 +5290,20 @@
             "seances": [
               {
                 "creneau": {
-                  "genre": "nonAttribue"
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 899
                 },
-                "du": "2027-01-07",
-                "au": "2027-04-30"
+                "du": "2027-04-15",
+                "au": "2027-04-15"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:04:41.843Z"
   },
   "ETA 69832": {
     "code": "ETA 69832",
@@ -6294,8 +6781,52 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "M",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:14:15.168Z"
   },
   "ETA 6917": {
     "code": "ETA 6917",
@@ -6308,79 +6839,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Hiver",
-        "annee": 2027
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/eta-6917/",
     "scrapeISO": "2026-09-12T22:10:04.551Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-01-11",
-                "au": "2027-01-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-01-18",
-                "au": "2027-02-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-02-22",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-04-19",
-                "au": "2027-04-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-02T21:59:40.693Z"
   },
   "ETA 6401": {
     "code": "ETA 6401",
@@ -6926,8 +7389,112 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-05",
+                "au": "2027-05-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-05",
+                "au": "2027-05-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-17"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-19",
+                "au": "2027-06-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-19",
+                "au": "2027-06-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-09",
+                "au": "2027-06-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-09",
+                "au": "2027-06-16"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:59:09.625Z"
   },
   "ETA 6400": {
     "code": "ETA 6400",
@@ -7103,7 +7670,144 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/eta-6402/",
     "scrapeISO": "2026-09-13T03:58:05.366Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-04",
+                "au": "2027-05-04"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Jeu Jeudi Du 06/05/2027 au 06/05/2027"
+                },
+                "du": "2027-05-06",
+                "au": "2027-05-06"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Mar Mardi Du 11/05/2027 au 11/05/2027"
+                },
+                "du": "2027-05-11",
+                "au": "2027-05-11"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Jeu Jeudi Du 13/05/2027 au 13/05/2027"
+                },
+                "du": "2027-05-13",
+                "au": "2027-05-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-18",
+                "au": "2027-05-18"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Jeu Jeudi Du 20/05/2027 au 20/05/2027"
+                },
+                "du": "2027-05-20",
+                "au": "2027-05-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-25",
+                "au": "2027-05-25"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Jeu Jeudi Du 27/05/2027 au 27/05/2027"
+                },
+                "du": "2027-05-27",
+                "au": "2027-05-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-01",
+                "au": "2027-06-01"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Jeu Jeudi Du 03/06/2027 au 03/06/2027"
+                },
+                "du": "2027-06-03",
+                "au": "2027-06-03"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-08",
+                "au": "2027-06-08"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Jeu Jeudi Du 10/06/2027 au 10/06/2027"
+                },
+                "du": "2027-06-10",
+                "au": "2027-06-10"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Mar Mardi Du 15/06/2027 au 15/06/2027"
+                },
+                "du": "2027-06-15",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "illisible",
+                  "brut": "Jeu Jeudi Du 17/06/2027 au 17/06/2027"
+                },
+                "du": "2027-06-17",
+                "au": "2027-06-17"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T21:59:12.040Z"
   },
   "ETA 6954": {
     "code": "ETA 6954",
@@ -7921,8 +8625,67 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "P",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-17",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-17",
+                "au": "2027-06-25"
+              }
+            ]
+          },
+          {
+            "nom": "Q",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-17",
+                "au": "2027-06-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-25"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:14:12.352Z"
   },
   "ETA 6065": {
     "code": "ETA 6065",
@@ -8699,8 +9462,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "V",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:21:35.479Z"
   },
   "ETA 3550": {
     "code": "ETA 3550",
@@ -8941,6 +9738,31 @@
         },
         "sections": [
           {
+            "nom": "V",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-11",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-23"
+              }
+            ]
+          },
+          {
             "nom": "X",
             "seances": [
               {
@@ -8966,8 +9788,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "V",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:21:37.986Z"
   },
   "ETA 6542": {
     "code": "ETA 6542",

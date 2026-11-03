@@ -145,8 +145,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:04:07.389Z"
   },
   "SBP 6112": {
     "code": "SBP 6112",
@@ -580,7 +614,32 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sbp-6207/",
     "scrapeISO": "2026-09-13T04:17:59.853Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:04:19.512Z"
   },
   "SBP 6047": {
     "code": "SBP 6047",
@@ -647,7 +706,42 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sbp-6119/",
     "scrapeISO": "2026-09-13T04:18:07.867Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-06-21",
+                "au": "2027-07-30"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:04:35.110Z"
   },
   "SBP 6122": {
     "code": "SBP 6122",
@@ -754,8 +848,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-01"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-06",
+                "au": "2027-06-03"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:04:35.269Z"
   },
   "SBP 6123": {
     "code": "SBP 6123",
@@ -846,7 +974,32 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sbp-6204/",
     "scrapeISO": "2026-09-13T04:18:14.205Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-03",
+                "au": "2027-07-02"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:04:40.611Z"
   },
   "SBP 6205": {
     "code": "SBP 6205",
@@ -1351,7 +1504,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Vendredi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -1412,8 +1565,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-01-25",
                 "au": "2027-01-29"
@@ -1431,9 +1584,9 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-02-01",
                 "au": "2027-02-05"
@@ -1441,7 +1594,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Mardi",
                   "debutMin": 750,
                   "finMin": 929
                 },
@@ -1521,9 +1674,9 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-04-05",
                 "au": "2027-04-09"
@@ -1532,17 +1685,48 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-19",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-19",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-04-05",
-                "au": "2027-04-09"
+                "du": "2027-04-19",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-19",
+                "au": "2027-04-23"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:31:41.542Z"
   },
   "SBP 1100": {
     "code": "SBP 1100",
@@ -1714,9 +1898,9 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-01-07",
                 "au": "2027-01-08"
@@ -1756,7 +1940,7 @@
                   "genre": "attribue",
                   "jour": "Mardi",
                   "debutMin": 750,
-                  "finMin": 929
+                  "finMin": 869
                 },
                 "du": "2027-01-25",
                 "au": "2027-01-29"
@@ -1766,7 +1950,7 @@
                   "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 750,
-                  "finMin": 929
+                  "finMin": 869
                 },
                 "du": "2027-02-15",
                 "au": "2027-02-19"
@@ -1780,6 +1964,16 @@
                 },
                 "du": "2027-02-15",
                 "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 869
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
               },
               {
                 "creneau": {
@@ -1805,7 +1999,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:31:44.795Z"
   },
   "SBP 1110": {
     "code": "SBP 1110",
@@ -2670,8 +2865,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "debutMin": 510,
+                  "finMin": 689
                 },
                 "du": "2027-01-25",
                 "au": "2027-01-29"
@@ -2680,8 +2875,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "debutMin": 510,
+                  "finMin": 689
                 },
                 "du": "2027-02-01",
                 "au": "2027-02-05"
@@ -2750,7 +2945,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:31:58.151Z"
   },
   "SBP 2028": {
     "code": "SBP 2028",
@@ -2950,8 +3146,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "debutMin": 510,
+                  "finMin": 689
                 },
                 "du": "2027-01-07",
                 "au": "2027-01-08"
@@ -3130,7 +3326,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:32:02.419Z"
   },
   "SBP 2015": {
     "code": "SBP 2015",
@@ -3369,16 +3566,6 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-01-18",
-                "au": "2027-01-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 750,
                   "finMin": 929
@@ -3389,6 +3576,16 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-02-01",
+                "au": "2027-02-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 750,
                   "finMin": 929
@@ -3399,12 +3596,12 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
                 },
-                "du": "2027-02-01",
-                "au": "2027-02-05"
+                "du": "2027-02-08",
+                "au": "2027-02-12"
               },
               {
                 "creneau": {
@@ -3480,7 +3677,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:32:07.546Z"
   },
   "SBP 2045": {
     "code": "SBP 2045",
@@ -4236,31 +4434,11 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-11-02",
-                "au": "2026-11-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-11-02",
-                "au": "2026-11-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2026-11-02",
-                "au": "2026-11-06"
+                "du": "2026-11-16",
+                "au": "2026-11-20"
               },
               {
                 "creneau": {
@@ -4285,18 +4463,39 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-11-23",
+                "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 750,
                   "finMin": 929
                 },
                 "du": "2026-11-23",
                 "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-30",
+                "au": "2026-12-04"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:32:16.094Z"
   },
   "SBP 2310": {
     "code": "SBP 2310",
@@ -4725,7 +4924,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mercredi",
+                  "jour": "Mardi",
                   "debutMin": 750,
                   "finMin": 929
                 },
@@ -4796,7 +4995,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:32:21.819Z"
   },
   "SBP 2330": {
     "code": "SBP 2330",
@@ -5356,11 +5556,11 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 750,
+                  "finMin": 929
                 },
-                "du": "2027-02-08",
-                "au": "2027-02-12"
+                "du": "2027-01-18",
+                "au": "2027-01-22"
               },
               {
                 "creneau": {
@@ -5485,49 +5685,49 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-04-19",
-                "au": "2027-04-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-04-19",
-                "au": "2027-04-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-04-19",
-                "au": "2027-04-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-04-19",
-                "au": "2027-04-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 510,
                   "finMin": 989
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-04-26",
                 "au": "2027-04-30"
@@ -5536,7 +5736,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:32:31.542Z"
   },
   "SBP 3045": {
     "code": "SBP 3045",
@@ -5765,16 +5966,6 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-10-05",
-                "au": "2026-10-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Mardi",
                   "debutMin": 750,
                   "finMin": 929
@@ -5785,17 +5976,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-10-12",
-                "au": "2026-10-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Mardi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -5811,12 +5992,33 @@
                 },
                 "du": "2026-11-02",
                 "au": "2026-11-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-16",
+                "au": "2026-11-20"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-11-23",
+                "au": "2026-11-27"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:32:37.075Z"
   },
   "SBP 3060": {
     "code": "SBP 3060",
@@ -6263,9 +6465,9 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2026-11-16",
                 "au": "2026-11-20"
@@ -6354,7 +6556,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:32:43.459Z"
   },
   "SBP 3100": {
     "code": "SBP 3100",
@@ -7578,8 +7781,32 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-05",
+                "au": "2027-05-26"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:43:11.662Z"
   },
   "SBP 4002": {
     "code": "SBP 4002",

@@ -2622,13 +2622,24 @@
                   "finMin": 689
                 },
                 "du": "2027-03-29",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-26",
                 "au": "2027-04-30"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:47:24.508Z"
   },
   "KIN 6830": {
     "code": "KIN 6830",
@@ -2683,6 +2694,16 @@
                   "finMin": 929
                 },
                 "du": "2026-09-01",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2026-10-12",
                 "au": "2026-10-16"
               },
               {
@@ -2699,7 +2720,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:47:27.553Z"
   },
   "KIN 6832": {
     "code": "KIN 6832",
@@ -2900,14 +2922,15 @@
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2026-10-26",
-                "au": "2026-12-18"
+                "du": "2026-11-02",
+                "au": "2026-12-11"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:04:18.531Z"
   },
   "KIN 6842": {
     "code": "KIN 6842",
@@ -3153,6 +3176,16 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
+                "du": "2027-01-18",
+                "au": "2027-01-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
                 "du": "2027-02-01",
                 "au": "2027-02-05"
               },
@@ -3163,34 +3196,25 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
+                "du": "2027-02-08",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
                 "du": "2027-02-22",
                 "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-03-15",
-                "au": "2027-03-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-04-05",
-                "au": "2027-04-09"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:12:09.872Z"
   },
   "KIN 7822": {
     "code": "KIN 7822",
@@ -3300,7 +3324,72 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/kin-6838/",
     "scrapeISO": "2026-09-13T03:10:43.127Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-24",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-25"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T22:02:40.220Z"
   },
   "KIN 7427": {
     "code": "KIN 7427",
@@ -4125,7 +4214,52 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/kin-6501/",
     "scrapeISO": "2026-09-13T03:54:45.530Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-06-21",
+                "au": "2027-06-25"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T22:20:05.762Z"
   },
   "KIN 6506": {
     "code": "KIN 6506",
@@ -4219,8 +4353,52 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:20:07.965Z"
   },
   "KIN 6841": {
     "code": "KIN 6841",
@@ -4284,8 +4462,52 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-21",
+                "au": "2027-06-25"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:02:43.422Z"
   },
   "KIN 6427": {
     "code": "KIN 6427",
@@ -4796,6 +5018,16 @@
                   "finMin": 689
                 },
                 "du": "2026-09-14",
+                "au": "2026-09-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2026-09-21",
                 "au": "2026-10-02"
               },
               {
@@ -5092,7 +5324,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:45:36.672Z"
   },
   "KIN 1024": {
     "code": "KIN 1024",
@@ -5446,7 +5679,7 @@
                   "finMin": 689
                 },
                 "du": "2026-09-14",
-                "au": "2026-09-25"
+                "au": "2026-09-18"
               },
               {
                 "creneau": {
@@ -5456,6 +5689,26 @@
                   "finMin": 689
                 },
                 "du": "2026-09-14",
+                "au": "2026-09-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 540,
+                  "finMin": 689
+                },
+                "du": "2026-09-21",
+                "au": "2026-09-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 540,
+                  "finMin": 689
+                },
+                "du": "2026-09-21",
                 "au": "2026-09-25"
               }
             ]
@@ -5602,7 +5855,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:45:49.097Z"
   },
   "KIN 2038": {
     "code": "KIN 2038",
@@ -5660,20 +5914,30 @@
                   "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 540,
-                  "finMin": 689
+                  "finMin": 719
                 },
                 "du": "2026-10-26",
-                "au": "2026-11-06"
+                "au": "2026-10-30"
               },
               {
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 540,
-                  "finMin": 689
+                  "finMin": 719
                 },
                 "du": "2026-10-26",
                 "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 540,
+                  "finMin": 689
+                },
+                "du": "2026-11-02",
+                "au": "2026-11-06"
               },
               {
                 "creneau": {
@@ -5899,7 +6163,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:45:51.631Z"
   },
   "KIN 2040": {
     "code": "KIN 2040",
@@ -6198,8 +6463,107 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              }
+            ]
+          },
+          {
+            "nom": "A101",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-24",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-11"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:45:54.779Z"
   },
   "KIN 2041": {
     "code": "KIN 2041",
@@ -6978,8 +7342,122 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              }
+            ]
+          },
+          {
+            "nom": "A102",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A104",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-05-10",
+                "au": "2027-06-11"
+              }
+            ]
+          },
+          {
+            "nom": "A108",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-10",
+                "au": "2027-06-11"
+              }
+            ]
+          },
+          {
+            "nom": "A110",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-05-10",
+                "au": "2027-06-11"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:45:58.928Z"
   },
   "KIN 2047": {
     "code": "KIN 2047",
@@ -7313,16 +7791,6 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 780,
-                  "finMin": 899
-                },
-                "du": "2027-03-08",
-                "au": "2027-03-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 780,
                   "finMin": 899
@@ -7354,16 +7822,6 @@
                 },
                 "du": "2027-02-22",
                 "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 900,
-                  "finMin": 1019
-                },
-                "du": "2027-03-08",
-                "au": "2027-03-19"
               },
               {
                 "creneau": {
@@ -7403,16 +7861,6 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 480,
-                  "finMin": 599
-                },
-                "du": "2027-03-08",
-                "au": "2027-03-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Jeudi",
                   "debutMin": 480,
                   "finMin": 599
@@ -7448,16 +7896,6 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 600,
-                  "finMin": 719
-                },
-                "du": "2027-03-08",
-                "au": "2027-03-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Jeudi",
                   "debutMin": 600,
                   "finMin": 719
@@ -7479,7 +7917,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:46:04.477Z"
   },
   "KIN 2060": {
     "code": "KIN 2060",
@@ -8453,8 +8892,122 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-30",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              }
+            ]
+          },
+          {
+            "nom": "A102",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-25"
+              }
+            ]
+          },
+          {
+            "nom": "A104",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A108",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A110",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:46:11.124Z"
   },
   "KIN 3040B": {
     "code": "KIN 3040B",
@@ -9412,41 +9965,6 @@
         },
         "sections": [
           {
-            "nom": "A101",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 450,
-                  "finMin": 689
-                },
-                "du": "2027-01-11",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 450,
-                  "finMin": 689
-                },
-                "du": "2027-03-08",
-                "au": "2027-03-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 450,
-                  "finMin": 689
-                },
-                "du": "2027-04-05",
-                "au": "2027-04-23"
-              }
-            ]
-          },
-          {
             "nom": "A102",
             "seances": [
               {
@@ -10067,22 +10585,42 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
+                  "jour": "Mercredi",
                   "debutMin": 720,
                   "finMin": 794
                 },
-                "du": "2027-02-08",
+                "du": "2027-02-01",
                 "au": "2027-02-26"
               },
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
+                  "jour": "Mercredi",
                   "debutMin": 720,
                   "finMin": 794
                 },
                 "du": "2027-03-08",
+                "au": "2027-03-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 720,
+                  "finMin": 794
+                },
+                "du": "2027-03-29",
                 "au": "2027-04-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 780,
+                  "finMin": 1019
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
               }
             ]
           },
@@ -10172,32 +10710,22 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 960,
-                  "finMin": 1035
+                  "jour": "Jeudi",
+                  "debutMin": 720,
+                  "finMin": 795
                 },
-                "du": "2027-01-18",
-                "au": "2027-01-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 925,
-                  "finMin": 1000
-                },
-                "du": "2027-01-25",
+                "du": "2027-02-08",
                 "au": "2027-02-26"
               },
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 925,
-                  "finMin": 1000
+                  "jour": "Jeudi",
+                  "debutMin": 720,
+                  "finMin": 795
                 },
                 "du": "2027-03-08",
-                "au": "2027-04-02"
+                "au": "2027-04-16"
               },
               {
                 "creneau": {
@@ -10205,51 +10733,6 @@
                   "jour": "Jeudi",
                   "debutMin": 780,
                   "finMin": 1019
-                },
-                "du": "2027-04-26",
-                "au": "2027-04-30"
-              }
-            ]
-          },
-          {
-            "nom": "A213",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 650,
-                  "finMin": 830
-                },
-                "du": "2027-01-11",
-                "au": "2027-03-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 650,
-                  "finMin": 830
-                },
-                "du": "2027-03-08",
-                "au": "2027-03-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 650,
-                  "finMin": 730
-                },
-                "du": "2027-03-29",
-                "au": "2027-04-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 450,
-                  "finMin": 689
                 },
                 "du": "2027-04-26",
                 "au": "2027-04-30"
@@ -10272,22 +10755,22 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 450,
-                  "finMin": 689
-                },
-                "du": "2027-02-15",
-                "au": "2027-02-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Jeudi",
                   "debutMin": 885,
                   "finMin": 959
                 },
                 "du": "2027-03-08",
                 "au": "2027-04-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
               }
             ]
           },
@@ -10325,10 +10808,184 @@
                 "au": "2027-04-02"
               }
             ]
+          },
+          {
+            "nom": "A216",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 720,
+                  "finMin": 795
+                },
+                "du": "2027-02-01",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 720,
+                  "finMin": 795
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A102",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-25"
+              }
+            ]
+          },
+          {
+            "nom": "A104",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A108",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 720,
+                  "finMin": 959
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A110",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 450,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A201",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 585
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A202",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 585,
+                  "finMin": 660
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A203",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 660,
+                  "finMin": 735
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
+          },
+          {
+            "nom": "A204",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1040,
+                  "finMin": 1120
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-18"
+              }
+            ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:46:16.422Z"
   },
   "KIN 3049": {
     "code": "KIN 3049",
@@ -10511,17 +11168,10 @@
               },
               {
                 "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-09-14",
-                "au": "2027-04-30"
-              },
-              {
-                "creneau": {
                   "genre": "attribue",
                   "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 570,
+                  "finMin": 749
                 },
                 "du": "2026-12-14",
                 "au": "2026-12-18"
@@ -10559,8 +11209,84 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          },
+          {
+            "nom": "A101",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 690,
+                  "finMin": 749
+                },
+                "du": "2027-01-25",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 959
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 750,
+                  "finMin": 959
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-07-26",
+                "au": "2027-07-30"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:46:16.664Z"
   },
   "KIN 30492": {
     "code": "KIN 30492",
@@ -10576,12 +11302,7 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Été",
-        "annee": 2026
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/kin-30492/",
     "scrapeISO": "2026-09-13T04:07:54.154Z",
     "apercuHoraires": [
@@ -10650,7 +11371,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:46:17.848Z"
   },
   "KIN 2024": {
     "code": "KIN 2024",
@@ -11226,8 +11948,8 @@
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2027-01-04",
-                "au": "2027-02-12"
+                "du": "2027-01-11",
+                "au": "2027-02-05"
               },
               {
                 "creneau": {
@@ -11236,7 +11958,7 @@
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2027-02-22",
+                "du": "2027-02-15",
                 "au": "2027-02-26"
               },
               {
@@ -11247,23 +11969,14 @@
                   "finMin": 689
                 },
                 "du": "2027-03-08",
-                "au": "2027-03-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-03-29",
                 "au": "2027-04-23"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:46:25.242Z"
   },
   "KIN 3090": {
     "code": "KIN 3090",

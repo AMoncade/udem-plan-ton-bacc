@@ -272,7 +272,29 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-70102/",
     "scrapeISO": "2026-09-13T03:47:14.954Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T23:47:31.442Z"
   },
   "ORA 70202": {
     "code": "ORA 70202",
@@ -300,7 +322,29 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-70202/",
     "scrapeISO": "2026-09-13T03:47:19.017Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T23:47:33.677Z"
   },
   "ORA 6868": {
     "code": "ORA 6868",
@@ -382,7 +426,29 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-60112/",
     "scrapeISO": "2026-09-13T03:55:06.040Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Automne",
+          "annee": 2026
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-08-24",
+                "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-02T23:58:11.120Z"
   },
   "ORA 6900": {
     "code": "ORA 6900",
@@ -514,8 +580,32 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T22:26:08.618Z"
   },
   "ORA 1131": {
     "code": "ORA 1131",
@@ -531,7 +621,32 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-1131/",
     "scrapeISO": "2026-09-13T06:42:22.021Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:01:36.407Z"
   },
   "ORA 1536": {
     "code": "ORA 1536",
@@ -547,7 +662,32 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ora-1536/",
     "scrapeISO": "2026-09-13T06:42:23.293Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 990,
+                  "finMin": 1169
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T00:01:39.011Z"
   },
   "ORA 2001": {
     "code": "ORA 2001",
@@ -700,12 +840,56 @@
                   "finMin": 1139
                 },
                 "du": "2027-01-07",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-03-08",
                 "au": "2027-04-30"
               }
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-01",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-07-05",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:01:39.172Z"
   }
 }

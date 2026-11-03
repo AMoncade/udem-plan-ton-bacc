@@ -96,8 +96,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-21"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T19:38:05.214Z"
   },
   "CTL 1902": {
     "code": "CTL 1902",
@@ -114,10 +135,6 @@
       {
         "saison": "Automne",
         "annee": 2026
-      },
-      {
-        "saison": "Hiver",
-        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-1902/",
@@ -155,28 +172,9 @@
             ]
           }
         ]
-      },
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2027-01-07",
-                "au": "2027-04-23"
-              }
-            ]
-          }
-        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T19:38:08.201Z"
   },
   "CTL 1903": {
     "code": "CTL 1903",
@@ -398,8 +396,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-21"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:10:02.908Z"
   },
   "CTL 2420": {
     "code": "CTL 2420",

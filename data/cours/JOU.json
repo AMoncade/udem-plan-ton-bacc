@@ -1060,12 +1060,7 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Été",
-        "annee": 2026
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/jou-2400/",
     "scrapeISO": "2026-09-13T03:33:00.204Z",
     "apercuHoraires": [
@@ -1102,7 +1097,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:53:02.289Z"
   },
   "JOU 3500": {
     "code": "JOU 3500",
@@ -1194,8 +1190,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:56:23.604Z"
   },
   "JOU 2510Z": {
     "code": "JOU 2510Z",
@@ -1366,7 +1383,28 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-08-13"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-02T21:56:28.845Z"
   }
 }

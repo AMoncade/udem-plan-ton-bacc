@@ -715,7 +715,39 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6889/",
     "scrapeISO": "2026-09-12T22:09:36.304Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 480,
+                  "finMin": 1019
+                },
+                "du": "2027-05-28",
+                "au": "2027-05-28"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:47:11.455Z"
   },
   "PHM 6899": {
     "code": "PHM 6899",
@@ -826,7 +858,39 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6891/",
     "scrapeISO": "2026-09-12T22:09:43.812Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-11",
+                "au": "2027-07-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 480,
+                  "finMin": 1019
+                },
+                "du": "2027-06-04",
+                "au": "2027-06-04"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:47:17.378Z"
   },
   "PHM 6895": {
     "code": "PHM 6895",
@@ -1024,10 +1088,40 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6898/",
     "scrapeISO": "2026-09-12T22:09:52.452Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 480,
+                  "finMin": 1019
+                },
+                "du": "2027-03-12",
+                "au": "2027-03-12"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:47:22.549Z"
   },
   "PHM 6897": {
     "code": "PHM 6897",
@@ -1253,6 +1347,16 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-18",
+                "au": "2027-01-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
                   "debutMin": 750,
                   "finMin": 929
                 },
@@ -1273,11 +1377,11 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
-                  "debutMin": 780,
-                  "finMin": 899
+                  "debutMin": 510,
+                  "finMin": 689
                 },
-                "du": "2027-01-25",
-                "au": "2027-01-29"
+                "du": "2027-02-01",
+                "au": "2027-02-05"
               },
               {
                 "creneau": {
@@ -1303,11 +1407,21 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-15",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-02-08",
-                "au": "2027-02-12"
+                "du": "2027-02-15",
+                "au": "2027-02-19"
               },
               {
                 "creneau": {
@@ -1353,17 +1467,28 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Lundi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-22",
+                "au": "2027-03-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-03-15",
-                "au": "2027-03-19"
+                "du": "2027-03-22",
+                "au": "2027-03-26"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:19:26.239Z"
   },
   "PHM 6505": {
     "code": "PHM 6505",
@@ -1421,8 +1546,8 @@
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2027-01-18",
-                "au": "2027-01-22"
+                "du": "2027-01-25",
+                "au": "2027-01-29"
               },
               {
                 "creneau": {
@@ -1431,8 +1556,8 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-01-18",
-                "au": "2027-01-22"
+                "du": "2027-01-25",
+                "au": "2027-01-29"
               },
               {
                 "creneau": {
@@ -1441,8 +1566,8 @@
                   "debutMin": 510,
                   "finMin": 689
                 },
-                "du": "2027-02-01",
-                "au": "2027-02-05"
+                "du": "2027-02-08",
+                "au": "2027-02-11"
               },
               {
                 "creneau": {
@@ -1451,8 +1576,8 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-02-01",
-                "au": "2027-02-05"
+                "du": "2027-02-08",
+                "au": "2027-02-12"
               },
               {
                 "creneau": {
@@ -1498,7 +1623,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:19:28.213Z"
   },
   "PHM 6510": {
     "code": "PHM 6510",
@@ -1567,8 +1693,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-04",
+                "au": "2027-08-12"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:48:13.363Z"
   },
   "PHM 6513": {
     "code": "PHM 6513",
@@ -3173,13 +3320,34 @@
                   "finMin": 1139
                 },
                 "du": "2027-03-08",
+                "au": "2027-03-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1020,
+                  "finMin": 1199
+                },
+                "du": "2027-03-22",
+                "au": "2027-03-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-03-29",
                 "au": "2027-04-16"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:03:45.230Z"
   },
   "PHM 6015": {
     "code": "PHM 6015",
@@ -3326,13 +3494,44 @@
                   "finMin": 1109
                 },
                 "du": "2026-10-12",
+                "au": "2026-10-23"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 1080,
+                  "finMin": 1259
+                },
+                "du": "2026-10-26",
+                "au": "2026-10-30"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-11-02",
+                "au": "2026-11-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-11-09",
                 "au": "2026-12-11"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T01:03:50.067Z"
   },
   "PHM 6153": {
     "code": "PHM 6153",
@@ -3726,7 +3925,32 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6157/",
     "scrapeISO": "2026-09-13T04:18:05.085Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-04"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-03T01:04:30.888Z"
   },
   "PHM 6008": {
     "code": "PHM 6008",

@@ -85,7 +85,7 @@
                   "finMin": 1109
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-09"
               },
               {
                 "creneau": {
@@ -179,7 +179,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:13:05.980Z"
   },
   "PHY 1620": {
     "code": "PHY 1620",
@@ -461,7 +462,7 @@
                   "finMin": 929
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-09"
               },
               {
                 "creneau": {
@@ -555,7 +556,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:13:08.460Z"
   },
   "PHY 1652": {
     "code": "PHY 1652",
@@ -611,7 +613,7 @@
                   "finMin": 869
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-09"
               },
               {
                 "creneau": {
@@ -740,7 +742,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:13:19.064Z"
   },
   "PHY 1972": {
     "code": "PHY 1972",
@@ -829,8 +832,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:13:15.382Z"
   },
   "PHY 3131": {
     "code": "PHY 3131",
@@ -999,9 +1023,9 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 990,
-                  "finMin": 1109
+                  "jour": "Jeudi",
+                  "debutMin": 810,
+                  "finMin": 869
                 },
                 "du": "2026-10-26",
                 "au": "2026-12-09"
@@ -1009,11 +1033,11 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 810,
-                  "finMin": 869
+                  "jour": "Lundi",
+                  "debutMin": 990,
+                  "finMin": 1109
                 },
-                "du": "2026-10-26",
+                "du": "2026-11-02",
                 "au": "2026-12-09"
               }
             ]
@@ -1045,7 +1069,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:21:19.159Z"
   },
   "PHY 2215": {
     "code": "PHY 2215",
@@ -1120,7 +1145,7 @@
                   "debutMin": 750,
                   "finMin": 869
                 },
-                "du": "2026-10-26",
+                "du": "2026-11-02",
                 "au": "2026-12-09"
               }
             ]
@@ -1230,7 +1255,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:20:51.135Z"
   },
   "PHY 1901": {
     "code": "PHY 1901",
@@ -2013,8 +2039,67 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-06-01",
+                "au": "2027-06-16"
+              }
+            ]
+          },
+          {
+            "nom": "A101",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-16"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:05:02.050Z"
   },
   "PHY 1902": {
     "code": "PHY 1902",
@@ -2281,8 +2366,71 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              }
+            ]
+          },
+          {
+            "nom": "A101",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-16"
+              }
+            ]
+          },
+          {
+            "nom": "C",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-06-24",
+                "au": "2027-08-13"
+              }
+            ]
+          },
+          {
+            "nom": "C101",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-06-24",
+                "au": "2027-08-12"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:05:03.220Z"
   },
   "PHY 1234": {
     "code": "PHY 1234",
@@ -3161,7 +3309,7 @@
                   "debutMin": 630,
                   "finMin": 749
                 },
-                "du": "2026-10-26",
+                "du": "2026-11-02",
                 "au": "2026-12-09"
               }
             ]
@@ -3271,7 +3419,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:20:54.482Z"
   },
   "PHY 2810": {
     "code": "PHY 2810",
@@ -3362,7 +3511,7 @@
                   "finMin": 689
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-09"
               },
               {
                 "creneau": {
@@ -3456,7 +3605,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:20:57.543Z"
   },
   "PHY 2813": {
     "code": "PHY 2813",
@@ -4408,7 +4558,7 @@
                   "finMin": 689
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-12"
               },
               {
                 "creneau": {
@@ -4423,8 +4573,8 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 570,
+                  "jour": "Vendredi",
+                  "debutMin": 630,
                   "finMin": 689
                 },
                 "du": "2026-10-26",
@@ -4433,18 +4583,19 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 630,
+                  "jour": "Lundi",
+                  "debutMin": 570,
                   "finMin": 689
                 },
-                "du": "2026-10-26",
+                "du": "2026-11-02",
                 "au": "2026-12-09"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:21:17.775Z"
   },
   "PHY 3214": {
     "code": "PHY 3214",
@@ -4651,7 +4802,7 @@
                   "finMin": 1109
                 },
                 "du": "2026-08-31",
-                "au": "2026-10-16"
+                "au": "2026-10-09"
               },
               {
                 "creneau": {
@@ -4680,7 +4831,7 @@
                   "debutMin": 990,
                   "finMin": 1109
                 },
-                "du": "2026-11-04",
+                "du": "2026-10-28",
                 "au": "2026-12-09"
               }
             ]
@@ -4712,7 +4863,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:21:27.316Z"
   },
   "PHY 3510": {
     "code": "PHY 3510",
@@ -5403,50 +5555,7 @@
             "seances": [
               {
                 "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-04-30"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-04-30"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-04-30"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-04-30"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "genre": "nonAttribue"
                 },
                 "du": "2027-01-07",
                 "au": "2027-04-30"
@@ -5455,7 +5564,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-03T00:24:58.701Z"
   },
   "PHY 6639": {
     "code": "PHY 6639",
@@ -6544,49 +6654,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Hiver",
-        "annee": 2027
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6460/",
     "scrapeISO": "2026-09-13T06:35:31.513Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-01-07",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-30"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-03T01:21:27.941Z"
   },
   "PHY 6580O": {
     "code": "PHY 6580O",
@@ -7101,49 +7173,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Automne",
-        "annee": 2026
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phy-6792/",
     "scrapeISO": "2026-09-13T06:35:59.524Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Automne",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-08-31",
-                "au": "2026-10-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-10-26",
-                "au": "2026-12-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-03T01:22:07.474Z"
   },
   "PHY 6795P": {
     "code": "PHY 6795P",
