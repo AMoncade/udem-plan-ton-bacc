@@ -196,50 +196,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbt-2007/",
     "scrapeISO": "2026-09-13T03:08:00.156Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -307,7 +274,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:33:37.783Z"
+    "horairesISO": "2026-11-10T00:32:55.842Z"
   },
   "PBT 1111": {
     "code": "PBT 1111",
@@ -327,6 +294,10 @@
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -433,7 +404,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:41:18.649Z"
+    "horairesISO": "2026-11-10T00:39:50.640Z"
   },
   "PBT 1002": {
     "code": "PBT 1002",
@@ -449,41 +420,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbt-1002/",
     "scrapeISO": "2026-09-13T03:30:47.233Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T00:43:05.876Z"
   },
   "PBT 2006": {
     "code": "PBT 2006",
@@ -858,10 +796,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       }
@@ -869,39 +803,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pbt-3010/",
     "scrapeISO": "2026-09-13T03:34:45.756Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -936,7 +837,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:49:07.951Z"
+    "horairesISO": "2026-11-10T00:47:23.917Z"
   },
   "PBT 2008": {
     "code": "PBT 2008",

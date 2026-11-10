@@ -505,37 +505,17 @@
     "restrictionsBrut": "REI1030/REI1030G/REI1210/REI1210G",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1030g/",
     "scrapeISO": "2026-09-11T17:22:51.702Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "D",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -577,7 +557,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-10-30T19:31:06.021Z"
+    "horairesISO": "2026-11-10T00:02:49.571Z"
   },
   "REI 7200": {
     "code": "REI 7200",
@@ -976,7 +956,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-7010/",
     "scrapeISO": "2026-09-12T21:54:08.968Z",
     "apercuHoraires": [
@@ -1014,7 +999,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:23:19.281Z"
+    "horairesISO": "2026-11-10T01:19:57.553Z"
   },
   "REI 7030": {
     "code": "REI 7030",
@@ -1030,45 +1015,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-7030/",
     "scrapeISO": "2026-09-12T21:54:09.581Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -1103,7 +1055,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:23:21.625Z"
+    "horairesISO": "2026-11-10T01:19:59.686Z"
   },
   "REI 7060": {
     "code": "REI 7060",
@@ -1150,21 +1102,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-7999/",
     "scrapeISO": "2026-09-12T21:54:17.082Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:23:20.460Z"
   },
   "REI 7918": {
     "code": "REI 7918",
@@ -1179,21 +1132,22 @@
     "restrictionsBrut": "REI7918/REI7917",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-7918/",
     "scrapeISO": "2026-09-12T21:54:23.738Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:23:22.613Z"
   },
   "REI 7926": {
     "code": "REI 7926",
@@ -1208,21 +1162,22 @@
     "restrictionsBrut": "REI7926/REI7925",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-7926/",
     "scrapeISO": "2026-09-12T21:54:27.716Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:23:22.767Z"
   },
   "REI 1040": {
     "code": "REI 1040",
@@ -2576,150 +2531,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-3525/",
     "scrapeISO": "2026-09-12T22:05:57.368Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-12",
-                "au": "2026-05-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-14",
-                "au": "2026-05-14"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-19",
-                "au": "2026-05-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-21",
-                "au": "2026-05-21"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-28",
-                "au": "2026-05-28"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-02",
-                "au": "2026-06-02"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-04",
-                "au": "2026-06-04"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-09",
-                "au": "2026-06-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-11",
-                "au": "2026-06-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-16",
-                "au": "2026-06-16"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -2817,7 +2639,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:28:48.691Z"
+    "horairesISO": "2026-11-10T00:28:00.532Z"
   },
   "REI 3535": {
     "code": "REI 3535",
@@ -3006,10 +2828,6 @@
     "restrictionsBrut": "REI2320/REI2320G",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -3021,59 +2839,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2320/",
     "scrapeISO": "2026-09-12T22:06:03.525Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-25"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-25"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -3140,7 +2905,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T00:27:28.380Z"
   },
   "REI 2330": {
     "code": "REI 2330",
@@ -3271,74 +3037,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2340/",
     "scrapeISO": "2026-09-12T22:06:07.508Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-28",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-28",
-                "au": "2026-06-16"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -3469,7 +3182,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:28:18.541Z"
+    "horairesISO": "2026-11-10T00:27:33.731Z"
   },
   "REI 3315": {
     "code": "REI 3315",
@@ -3819,6 +3532,10 @@
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2475/",
@@ -3944,7 +3661,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:28:23.847Z"
+    "horairesISO": "2026-11-10T00:27:38.200Z"
   },
   "REI 3415": {
     "code": "REI 3415",
@@ -4328,54 +4045,21 @@
     "restrictionsBrut": "REI1010/REI1010G",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1010g/",
     "scrapeISO": "2026-09-13T03:24:13.545Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -4476,7 +4160,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:41:30.524Z"
+    "horairesISO": "2026-11-10T00:40:01.220Z"
   },
   "REI 1140G": {
     "code": "REI 1140G",
@@ -4816,10 +4500,6 @@
     "restrictionsBrut": "REI2310/REI2310G",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Hiver",
         "annee": 2027
       }
@@ -4827,39 +4507,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2310g/",
     "scrapeISO": "2026-09-13T03:24:25.614Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -4893,7 +4540,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T00:40:16.395Z"
   },
   "REI 2320G": {
     "code": "REI 2320G",
@@ -5498,55 +5146,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-2230g/",
     "scrapeISO": "2026-09-13T03:24:37.655Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-09",
-                "au": "2026-06-20"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 989
-                },
-                "du": "2026-05-09",
-                "au": "2026-06-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-06-20",
-                "au": "2026-06-20"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -5581,7 +5186,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:42:01.262Z"
+    "horairesISO": "2026-11-10T00:40:30.346Z"
   },
   "REI 1850": {
     "code": "REI 1850",
@@ -5596,54 +5201,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-1850/",
     "scrapeISO": "2026-09-13T03:32:41.993Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-20"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-20"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -5744,7 +5316,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:43:45.452Z"
+    "horairesISO": "2026-11-10T00:42:02.582Z"
   },
   "REI 3850": {
     "code": "REI 3850",
@@ -5814,54 +5386,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6170/",
     "scrapeISO": "2026-09-13T03:40:14.246Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -5929,7 +5468,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:28:59.370Z"
+    "horairesISO": "2026-11-10T00:28:14.204Z"
   },
   "REI 6630": {
     "code": "REI 6630",
@@ -6343,74 +5882,21 @@
     "restrictionsBrut": "REI3220/REI3220G",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-3220/",
     "scrapeISO": "2026-09-13T04:10:26.338Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-27",
-                "au": "2026-06-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-27",
-                "au": "2026-06-15"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -6531,7 +6017,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:27:59.871Z"
+    "horairesISO": "2026-11-10T00:27:12.272Z"
   },
   "REI 3680": {
     "code": "REI 3680",
@@ -6549,41 +6035,21 @@
     "restrictionsBrut": "REI3680/REI3630/REI3670",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-3680/",
     "scrapeISO": "2026-09-13T04:10:26.505Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -6657,7 +6123,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:28:29.975Z"
+    "horairesISO": "2026-11-10T00:27:42.049Z"
   },
   "REI 3270": {
     "code": "REI 3270",
@@ -6684,70 +6150,17 @@
     "restrictionsBrut": "REI3270/REI3270G",
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-3270/",
     "scrapeISO": "2026-09-13T04:10:30.493Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-25"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-25"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -6835,7 +6248,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:28:32.704Z"
+    "horairesISO": "2026-11-10T00:27:47.684Z"
   },
   "REI 4001": {
     "code": "REI 4001",
@@ -7186,10 +6599,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       }
@@ -7197,39 +6606,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6608/",
     "scrapeISO": "2026-09-13T04:10:44.963Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -7263,7 +6639,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T00:28:26.953Z"
   },
   "REI 6610": {
     "code": "REI 6610",
@@ -7335,6 +6712,10 @@
       {
         "saison": "Automne",
         "annee": 2026
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6611/",
@@ -7407,7 +6788,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:29:09.411Z"
+    "horairesISO": "2026-11-10T00:28:30.540Z"
   },
   "REI 6613": {
     "code": "REI 6613",
@@ -7512,7 +6893,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6615/",
     "scrapeISO": "2026-09-13T04:10:54.622Z",
     "apercuHoraires": [
@@ -7550,7 +6936,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:29:12.977Z"
+    "horairesISO": "2026-11-10T00:28:37.079Z"
   },
   "REI 6625": {
     "code": "REI 6625",
@@ -7791,50 +7177,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6616/",
     "scrapeISO": "2026-09-13T04:17:29.182Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -7902,7 +7255,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:03:16.418Z"
+    "horairesISO": "2026-11-10T01:00:59.859Z"
   },
   "REI 6632": {
     "code": "REI 6632",
@@ -7915,7 +7268,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6632/",
     "scrapeISO": "2026-09-13T04:17:31.180Z",
     "apercuHoraires": [
@@ -7953,7 +7311,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:03:17.598Z"
+    "horairesISO": "2026-11-10T01:01:02.918Z"
   },
   "REI 6629": {
     "code": "REI 6629",
@@ -7968,10 +7326,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Hiver",
         "annee": 2027
       }
@@ -7979,39 +7333,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6629/",
     "scrapeISO": "2026-09-13T04:44:24.927Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 959
-                },
-                "du": "2026-07-14",
-                "au": "2026-08-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 959
-                },
-                "du": "2026-07-14",
-                "au": "2026-08-12"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -8045,7 +7366,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:08:03.924Z"
   },
   "REI 6617": {
     "code": "REI 6617",
@@ -8137,6 +7459,10 @@
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6631/",
@@ -8209,7 +7535,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:10:56.411Z"
+    "horairesISO": "2026-11-10T01:08:09.968Z"
   },
   "REI 6626": {
     "code": "REI 6626",
@@ -8225,85 +7551,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/rei-6626/",
     "scrapeISO": "2026-09-13T04:44:32.990Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 540,
-                  "finMin": 1019
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-07"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 540,
-                  "finMin": 1019
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-07"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 540,
-                  "finMin": 1019
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-07"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 540,
-                  "finMin": 1019
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-07"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-08",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-12",
-                "au": "2026-05-12"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -8418,7 +7671,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:10:57.741Z"
+    "horairesISO": "2026-11-10T01:08:13.315Z"
   },
   "REI 6022": {
     "code": "REI 6022",

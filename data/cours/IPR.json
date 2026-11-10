@@ -39,6 +39,10 @@
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6008/",
@@ -121,7 +125,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T22:08:26.365Z"
+    "horairesISO": "2026-11-09T22:10:38.941Z"
   },
   "IPR 6011": {
     "code": "IPR 6011",
@@ -192,74 +196,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6012/",
     "scrapeISO": "2026-09-13T03:44:56.526Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 540,
-                  "finMin": 659
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 930,
-                  "finMin": 1019
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 540,
-                  "finMin": 629
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 900,
-                  "finMin": 1019
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -412,7 +363,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T22:08:31.652Z"
+    "horairesISO": "2026-11-09T22:10:44.762Z"
   },
   "IPR 6014": {
     "code": "IPR 6014",
@@ -535,36 +486,13 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6007/",
     "scrapeISO": "2026-09-13T04:49:56.816Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-05"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:13:58.942Z"
   },
   "IPR 6009": {
     "code": "IPR 6009",
@@ -577,10 +505,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ipr-6009/",
     "scrapeISO": "2026-09-13T04:49:59.238Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:14:01.140Z"
   },
   "IPR 6013": {
     "code": "IPR 6013",

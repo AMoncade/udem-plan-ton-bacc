@@ -123,21 +123,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-3001/",
     "scrapeISO": "2026-09-13T03:56:34.770Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T20:28:14.788Z"
   },
   "AUT 3002": {
     "code": "AUT 3002",
@@ -153,34 +154,13 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-3002/",
     "scrapeISO": "2026-09-13T03:56:36.806Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Mar Mardi , Mer Mercredi , Jeu Jeudi , Ven Vendredi , Sam Samedi Du 07/07/2026 au 11/07/2026"
-                },
-                "du": "2026-07-07",
-                "au": "2026-07-11"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T20:28:18.251Z"
   },
   "AUT 6010": {
     "code": "AUT 6010",
@@ -362,17 +342,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-6020/",
     "scrapeISO": "2026-09-13T04:44:20.752Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T20:48:02.673Z"
   },
   "AUT 6040": {
     "code": "AUT 6040",
@@ -403,20 +384,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/aut-6040/",
     "scrapeISO": "2026-09-13T04:44:22.487Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T20:48:04.963Z"
   }
 }

@@ -201,10 +201,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -216,26 +212,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6409/",
     "scrapeISO": "2026-09-13T03:52:51.524Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -256,7 +232,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T23:53:33.971Z"
   },
   "MCT 6945": {
     "code": "MCT 6945",
@@ -663,15 +640,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -718,7 +695,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T22:52:29.443Z"
   },
   "MCT 3511X": {
     "code": "MCT 3511X",
@@ -1021,21 +999,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-7930/",
     "scrapeISO": "2026-09-13T04:49:14.690Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T23:45:06.845Z"
   },
   "MCT 7962": {
     "code": "MCT 7962",
@@ -1180,33 +1159,13 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mct-6211x/",
     "scrapeISO": "2026-09-13T06:21:06.251Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T23:53:36.428Z"
   },
   "MCT 6513": {
     "code": "MCT 6513",

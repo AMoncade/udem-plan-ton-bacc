@@ -979,15 +979,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -1031,7 +1031,7 @@
                   "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 510,
-                  "finMin": 689
+                  "finMin": 719
                 },
                 "du": "2027-01-07",
                 "au": "2027-01-08"
@@ -1065,7 +1065,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T21:37:34.225Z"
   },
   "ERT 1461": {
     "code": "ERT 1461",
@@ -2488,11 +2489,11 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -2533,7 +2534,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T21:33:01.994Z"
+    "horairesISO": "2026-11-09T21:37:55.172Z"
   },
   "ERT 3401": {
     "code": "ERT 3401",
@@ -3612,15 +3613,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -3730,7 +3731,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T21:38:13.795Z"
   },
   "ERT 6030": {
     "code": "ERT 6030",
@@ -4170,15 +4172,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -4220,7 +4222,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T22:17:09.897Z"
   },
   "ERT 60913": {
     "code": "ERT 60913",
@@ -4238,21 +4241,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ert-60913/",
     "scrapeISO": "2026-09-13T05:02:11.671Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:17:12.290Z"
   },
   "ERT 6071": {
     "code": "ERT 6071",
@@ -4267,11 +4271,11 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -4321,7 +4325,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T22:17:14.858Z"
   },
   "ERT 6072": {
     "code": "ERT 6072",
@@ -4336,15 +4341,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -4394,7 +4399,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T22:17:17.303Z"
   },
   "ERT 6073": {
     "code": "ERT 6073",
@@ -4669,6 +4675,10 @@
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ert-6074/",
@@ -4717,7 +4727,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T22:17:22.270Z"
   },
   "ERT 6076": {
     "code": "ERT 6076",
@@ -4775,6 +4786,16 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
+                "du": "2027-02-01",
+                "au": "2027-02-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
                 "du": "2027-02-08",
                 "au": "2027-02-12"
               },
@@ -4786,6 +4807,16 @@
                   "finMin": 929
                 },
                 "du": "2027-03-08",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-04-05",
                 "au": "2027-04-09"
               },
               {
@@ -4810,34 +4841,15 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-02-01",
-                "au": "2027-02-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
                 "du": "2027-02-15",
                 "au": "2027-02-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 719
-                },
-                "du": "2027-04-06",
-                "au": "2027-04-09"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T22:17:24.628Z"
   },
   "ERT 6077": {
     "code": "ERT 6077",
@@ -5522,15 +5534,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -5560,7 +5572,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T22:17:43.222Z"
   },
   "ERT 6035": {
     "code": "ERT 6035",
@@ -5757,16 +5770,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ert-6034/",
     "scrapeISO": "2026-09-13T05:44:20.654Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:24:02.168Z"
   }
 }

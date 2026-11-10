@@ -12,54 +12,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3040/",
     "scrapeISO": "2026-09-11T17:22:48.129Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -160,7 +127,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-10-30T19:31:01.475Z"
+    "horairesISO": "2026-11-10T00:02:47.145Z"
   },
   "PPL 3025": {
     "code": "PPL 3025",
@@ -393,50 +360,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-1080/",
     "scrapeISO": "2026-09-13T03:30:04.920Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "D",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -504,7 +438,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:38:57.166Z"
+    "horairesISO": "2026-11-10T00:37:31.973Z"
   },
   "PPL 3600": {
     "code": "PPL 3600",
@@ -776,7 +710,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-2160/",
     "scrapeISO": "2026-09-13T03:30:12.950Z",
     "apercuHoraires": [
@@ -814,7 +753,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:39:05.520Z"
+    "horairesISO": "2026-11-10T00:37:38.698Z"
   },
   "PPL 3076": {
     "code": "PPL 3076",
@@ -1211,10 +1150,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Hiver",
         "annee": 2027
       }
@@ -1222,39 +1157,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3160/",
     "scrapeISO": "2026-09-13T03:30:26.762Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -1288,7 +1190,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T00:44:06.275Z"
   },
   "PPL 3400": {
     "code": "PPL 3400",
@@ -1306,41 +1209,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppl-3400/",
     "scrapeISO": "2026-09-13T03:30:30.611Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-08-14"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -1402,6 +1285,6 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:46:50.429Z"
+    "horairesISO": "2026-11-10T00:45:12.517Z"
   }
 }

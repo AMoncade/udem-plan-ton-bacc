@@ -417,65 +417,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2400/",
     "scrapeISO": "2026-09-11T03:40:27.353Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-08-07"
-              }
-            ]
-          },
-          {
-            "nom": "A101",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 869
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 869
-                },
-                "du": "2026-06-29",
-                "au": "2026-08-07"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -582,8 +534,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 869
+                  "debutMin": 930,
+                  "finMin": 1049
                 },
                 "du": "2027-05-03",
                 "au": "2027-06-18"
@@ -592,8 +544,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 869
+                  "debutMin": 930,
+                  "finMin": 1049
                 },
                 "du": "2027-06-28",
                 "au": "2027-08-06"
@@ -603,7 +555,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:10:38.218Z"
+    "horairesISO": "2026-11-10T00:10:25.430Z"
   },
   "STT 2700": {
     "code": "STT 2700",
@@ -639,69 +591,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-2700/",
     "scrapeISO": "2026-09-11T03:40:28.556Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-08-07"
-              }
-            ]
-          },
-          {
-            "nom": "A101",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 930,
-                  "finMin": 1049
-                },
-                "du": "2026-05-11",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 930,
-                  "finMin": 1049
-                },
-                "du": "2026-06-29",
-                "au": "2026-08-07"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -897,7 +801,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:06:10.470Z"
+    "horairesISO": "2026-11-10T00:05:32.754Z"
   },
   "STT 1682": {
     "code": "STT 1682",
@@ -1771,65 +1675,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-3790/",
     "scrapeISO": "2026-09-11T03:40:56.142Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-08-07"
-              }
-            ]
-          },
-          {
-            "nom": "A101",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 930,
-                  "finMin": 1049
-                },
-                "du": "2026-05-11",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 930,
-                  "finMin": 1049
-                },
-                "du": "2026-06-29",
-                "au": "2026-08-07"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -1957,7 +1813,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:10:48.306Z"
+    "horairesISO": "2026-11-10T00:10:36.343Z"
   },
   "STT 3795": {
     "code": "STT 3795",
@@ -2125,17 +1981,14 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-4000/",
     "scrapeISO": "2026-09-13T16:07:03.675Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T00:19:59.881Z"
   },
   "STT 6215": {
     "code": "STT 6215",
@@ -2514,53 +2367,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-1901/",
     "scrapeISO": "2026-09-11T17:22:55.201Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              }
-            ]
-          },
-          {
-            "nom": "A101",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -2686,7 +2507,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-10-30T19:31:10.802Z"
+    "horairesISO": "2026-11-10T00:02:54.557Z"
   },
   "STT 1903": {
     "code": "STT 1903",
@@ -3183,17 +3004,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-7904/",
     "scrapeISO": "2026-09-12T21:56:10.802Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:27:48.251Z"
   },
   "STT 6902": {
     "code": "STT 6902",
@@ -3208,21 +3030,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-6902/",
     "scrapeISO": "2026-09-13T03:56:00.341Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:40:56.584Z"
   },
   "STT 6911": {
     "code": "STT 6911",
@@ -3237,21 +3060,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/stt-6911/",
     "scrapeISO": "2026-09-13T03:56:02.384Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:40:58.398Z"
   },
   "STT 1979": {
     "code": "STT 1979",

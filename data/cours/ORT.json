@@ -101,21 +101,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6817/",
     "scrapeISO": "2026-09-13T03:47:38.761Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T23:47:18.192Z"
   },
   "ORT 6872": {
     "code": "ORT 6872",
@@ -169,23 +170,30 @@
             "seances": [
               {
                 "creneau": {
-                  "genre": "nonAttribue"
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-01-07",
                 "au": "2027-02-26"
               },
               {
                 "creneau": {
-                  "genre": "nonAttribue"
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-03-08",
-                "au": "2027-04-16"
+                "au": "2027-04-23"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T23:42:38.650Z"
   },
   "ORT 6040": {
     "code": "ORT 6040",
@@ -201,7 +209,12 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6040/",
     "scrapeISO": "2026-09-13T05:42:20.833Z",
     "apercuHoraires": [
@@ -249,7 +262,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:58:29.066Z"
+    "horairesISO": "2026-11-09T23:58:16.672Z"
   },
   "ORT 6041": {
     "code": "ORT 6041",
@@ -404,99 +417,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6051/",
     "scrapeISO": "2026-09-13T05:42:25.779Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-04-27",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-04-27",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-18",
-                "au": "2026-07-10"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-18",
-                "au": "2026-07-10"
-              }
-            ]
-          },
-          {
-            "nom": "B",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-04-27",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-04-27",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -643,7 +578,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:58:34.414Z"
+    "horairesISO": "2026-11-09T23:58:21.553Z"
   },
   "ORT 6052": {
     "code": "ORT 6052",
@@ -683,15 +618,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -1077,7 +1012,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:58:36.569Z"
+    "horairesISO": "2026-11-09T23:58:21.827Z"
   },
   "ORT 6053": {
     "code": "ORT 6053",
@@ -1117,15 +1052,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -1550,7 +1485,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T23:58:25.319Z"
   },
   "ORT 6054": {
     "code": "ORT 6054",
@@ -1568,134 +1504,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6054/",
     "scrapeISO": "2026-09-13T05:42:31.738Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -1720,7 +1543,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:58:42.434Z"
+    "horairesISO": "2026-11-09T23:58:25.642Z"
   },
   "ORT 6100": {
     "code": "ORT 6100",
@@ -2763,100 +2586,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6141/",
     "scrapeISO": "2026-09-13T05:42:48.215Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-11",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-22",
-                "au": "2026-07-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-07-06",
-                "au": "2026-07-17"
-              }
-            ]
-          },
-          {
-            "nom": "B",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-22",
-                "au": "2026-07-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-07-06",
-                "au": "2026-07-17"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -2926,7 +2661,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:58:57.510Z"
+    "horairesISO": "2026-11-09T23:58:44.257Z"
   },
   "ORT 6151": {
     "code": "ORT 6151",
@@ -2953,105 +2688,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6151/",
     "scrapeISO": "2026-09-13T05:42:48.579Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-11",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-22",
-                "au": "2026-07-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-07-06",
-                "au": "2026-07-17"
-              }
-            ]
-          },
-          {
-            "nom": "B",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-22",
-                "au": "2026-07-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-07-06",
-                "au": "2026-07-17"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -3216,7 +2863,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:59:00.499Z"
+    "horairesISO": "2026-11-09T23:58:46.452Z"
   },
   "ORT 6305": {
     "code": "ORT 6305",
@@ -3721,150 +3368,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6512/",
     "scrapeISO": "2026-09-13T05:43:02.831Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-11",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-11",
-                "au": "2026-07-03"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-29",
-                "au": "2026-07-03"
-              }
-            ]
-          },
-          {
-            "nom": "B",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-11",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-11",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-25",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-25",
-                "au": "2026-07-03"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-29",
-                "au": "2026-07-03"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -4004,7 +3513,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:59:14.811Z"
+    "horairesISO": "2026-11-09T23:59:00.415Z"
   },
   "ORT 6513": {
     "code": "ORT 6513",
@@ -4594,90 +4103,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6532/",
     "scrapeISO": "2026-09-13T05:43:10.932Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-11",
-                "au": "2026-07-10"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-11",
-                "au": "2026-06-19"
-              }
-            ]
-          },
-          {
-            "nom": "B",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-07-10"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -4737,7 +4168,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:59:24.959Z"
+    "horairesISO": "2026-11-09T23:59:10.960Z"
   },
   "ORT 6533": {
     "code": "ORT 6533",
@@ -5143,37 +4574,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ort-6300/",
     "scrapeISO": "2026-09-13T05:43:18.814Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -5195,7 +4606,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T23:59:33.287Z"
+    "horairesISO": "2026-11-09T23:59:17.882Z"
   },
   "ORT 6818": {
     "code": "ORT 6818",

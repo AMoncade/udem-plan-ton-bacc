@@ -299,10 +299,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Hiver",
         "annee": 2027
       }
@@ -310,26 +306,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6344/",
     "scrapeISO": "2026-09-13T04:18:49.449Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-22"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -357,7 +333,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:02:49.692Z"
   },
   "SCI 6348": {
     "code": "SCI 6348",
@@ -465,45 +442,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6137/",
     "scrapeISO": "2026-09-13T04:18:59.656Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1080,
-                  "finMin": 1259
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1080,
-                  "finMin": 1259
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-22"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -538,7 +482,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:05:17.096Z"
+    "horairesISO": "2026-11-10T01:02:58.537Z"
   },
   "SCI 6306": {
     "code": "SCI 6306",
@@ -630,10 +574,16 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6373/",
     "scrapeISO": "2026-09-13T04:19:03.759Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:02:59.920Z"
   },
   "SCI 6203": {
     "code": "SCI 6203",
@@ -1372,7 +1322,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Lundi",
                   "debutMin": 1110,
                   "finMin": 1289
                 },
@@ -1382,7 +1332,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Lundi",
                   "debutMin": 1110,
                   "finMin": 1289
                 },
@@ -1393,7 +1343,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:36:22.485Z"
   },
   "SCI 6135": {
     "code": "SCI 6135",
@@ -1703,121 +1654,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6116/",
     "scrapeISO": "2026-09-13T06:25:11.158Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:36:39.215Z"
   },
   "SCI 6118": {
     "code": "SCI 6118",
@@ -3040,126 +2878,13 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6343/",
     "scrapeISO": "2026-09-13T06:25:59.793Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-07-13",
-                "au": "2026-07-24"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:37:30.158Z"
   },
   "SCI 6358": {
     "code": "SCI 6358",
@@ -3282,61 +3007,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6371/",
     "scrapeISO": "2026-09-13T06:26:06.176Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 570,
-                  "finMin": 749
-                },
-                "du": "2026-05-06",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 570,
-                  "finMin": 749
-                },
-                "du": "2026-05-06",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-05-06",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 810,
-                  "finMin": 989
-                },
-                "du": "2026-05-06",
-                "au": "2026-05-29"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:37:37.506Z"
   },
   "SCI 6372": {
     "code": "SCI 6372",
@@ -3373,28 +3045,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6372/",
     "scrapeISO": "2026-09-13T06:26:07.715Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-06-09",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:37:39.697Z"
   },
   "SCI 6375": {
     "code": "SCI 6375",
@@ -3410,81 +3062,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6375/",
     "scrapeISO": "2026-09-13T06:26:09.601Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 570,
-                  "finMin": 689
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 570,
-                  "finMin": 689
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 570,
-                  "finMin": 689
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-17"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:37:42.232Z"
   },
   "SCI 6399": {
     "code": "SCI 6399",
@@ -3615,21 +3194,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6850/",
     "scrapeISO": "2026-09-13T06:26:16.237Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:37:47.853Z"
   },
   "SCI 6925": {
     "code": "SCI 6925",
@@ -3644,21 +3224,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6925/",
     "scrapeISO": "2026-09-13T06:26:18.318Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:37:50.127Z"
   },
   "SCI 6865": {
     "code": "SCI 6865",
@@ -3676,41 +3257,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6865/",
     "scrapeISO": "2026-09-13T06:26:20.177Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -3731,7 +3292,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:37:50.278Z"
   },
   "SCI 6916": {
     "code": "SCI 6916",
@@ -3749,21 +3311,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-6916/",
     "scrapeISO": "2026-09-13T06:26:22.191Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:37:53.389Z"
   },
   "SCI 7000": {
     "code": "SCI 7000",
@@ -3833,21 +3396,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-7001/",
     "scrapeISO": "2026-09-13T06:37:23.556Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:25:54.809Z"
   },
   "SCI 7002": {
     "code": "SCI 7002",
@@ -3972,21 +3536,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-7020/",
     "scrapeISO": "2026-09-13T06:37:32.533Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:26:00.222Z"
   },
   "SCI 7050": {
     "code": "SCI 7050",
@@ -4001,20 +3566,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sci-7050/",
     "scrapeISO": "2026-09-13T06:37:34.516Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:26:02.288Z"
   }
 }

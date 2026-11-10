@@ -525,84 +525,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-1901/",
     "scrapeISO": "2026-09-11T17:24:13.944Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-27"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-27"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-03",
-                "au": "2026-06-03"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-17"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -908,7 +845,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:04:57.230Z"
+    "horairesISO": "2026-11-10T00:04:00.464Z"
   },
   "PHI 1365": {
     "code": "PHI 1365",
@@ -1663,7 +1600,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-3155/",
     "scrapeISO": "2026-09-11T19:00:04.714Z",
     "apercuHoraires": [
@@ -1701,7 +1643,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:13:18.896Z"
+    "horairesISO": "2026-11-10T00:12:54.628Z"
   },
   "PHI 2415": {
     "code": "PHI 2415",
@@ -2668,7 +2610,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-2820/",
     "scrapeISO": "2026-09-12T22:13:53.303Z",
     "apercuHoraires": [
@@ -2706,7 +2653,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:15:32.078Z"
+    "horairesISO": "2026-11-10T00:15:11.113Z"
   },
   "PHI 2870": {
     "code": "PHI 2870",
@@ -2793,51 +2740,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-2965/",
     "scrapeISO": "2026-09-12T22:13:57.514Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-06",
-                "au": "2026-06-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-25",
-                "au": "2026-06-15"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T00:14:49.092Z"
   },
   "PHI 2980": {
     "code": "PHI 2980",
@@ -3738,79 +3642,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-1961/",
     "scrapeISO": "2026-09-13T03:32:03.734Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-05",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-08",
-                "au": "2026-06-19"
-              }
-            ]
-          },
-          {
-            "nom": "B",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-05",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-08",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -3911,7 +3757,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:47:06.108Z"
+    "horairesISO": "2026-11-10T00:45:24.877Z"
   },
   "PHI 6990": {
     "code": "PHI 6990",
@@ -3927,39 +3773,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-6990/",
     "scrapeISO": "2026-09-13T03:40:46.558Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-29",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -3981,7 +3800,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:09:15.536Z"
+    "horairesISO": "2026-11-10T01:06:27.094Z"
   },
   "PHI 6515": {
     "code": "PHI 6515",
@@ -4226,41 +4045,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-6225/",
     "scrapeISO": "2026-09-13T05:04:15.708Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-01",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 930,
-                  "finMin": 1109
-                },
-                "du": "2026-05-01",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:31:03.340Z"
   },
   "PHI 6235": {
     "code": "PHI 6235",
@@ -5101,15 +4887,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -5136,7 +4922,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:33:34.824Z"
   },
   "PHI 6925": {
     "code": "PHI 6925",
@@ -5151,21 +4938,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-6925/",
     "scrapeISO": "2026-09-13T06:22:50.512Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:33:36.796Z"
   },
   "PHI 6935": {
     "code": "PHI 6935",
@@ -5180,15 +4968,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -5215,7 +5003,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:33:38.931Z"
   },
   "PHI 6401": {
     "code": "PHI 6401",
@@ -5398,15 +5187,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -5433,7 +5222,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:33:46.031Z"
   },
   "PHI 6955": {
     "code": "PHI 6955",
@@ -5448,15 +5238,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -5483,7 +5273,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:33:49.125Z"
   },
   "PHI 6960": {
     "code": "PHI 6960",
@@ -5498,15 +5289,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -5533,7 +5324,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:33:51.426Z"
   },
   "PHI 7940": {
     "code": "PHI 7940",
@@ -5548,21 +5340,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-7940/",
     "scrapeISO": "2026-09-13T06:35:12.672Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:17:43.147Z"
   },
   "PHI 7946": {
     "code": "PHI 7946",
@@ -5577,15 +5370,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -5619,7 +5412,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:17:45.462Z"
   },
   "PHI 7950": {
     "code": "PHI 7950",
@@ -5633,10 +5427,6 @@
     "concomitantsBrut": null,
     "restrictionsBrut": null,
     "trimestres": [
-      {
-        "saison": "Été",
-        "annee": 2026
-      },
       {
         "saison": "Automne",
         "annee": 2026
@@ -5669,7 +5459,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:17:47.447Z"
   },
   "PHI 7955": {
     "code": "PHI 7955",
@@ -5684,10 +5475,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -5698,6 +5485,7 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phi-7955/",
     "scrapeISO": "2026-09-13T06:35:19.144Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:17:49.520Z"
   }
 }

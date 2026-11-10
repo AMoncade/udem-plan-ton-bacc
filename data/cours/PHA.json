@@ -1028,9 +1028,29 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "horairesISO": "2026-11-03T01:13:41.594Z"
+    "horairesISO": "2026-11-10T01:10:53.393Z"
   },
   "PHA 6120": {
     "code": "PHA 6120",
@@ -1226,37 +1246,37 @@
                   "genre": "attribue",
                   "jour": "Mardi",
                   "debutMin": 750,
-                  "finMin": 809
-                },
-                "du": "2026-10-05",
-                "au": "2026-10-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 809
-                },
-                "du": "2026-10-05",
-                "au": "2026-10-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 809
-                },
-                "du": "2026-10-05",
-                "au": "2026-10-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
                   "finMin": 929
+                },
+                "du": "2026-10-05",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 809
+                },
+                "du": "2026-10-05",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 809
+                },
+                "du": "2026-10-05",
+                "au": "2026-10-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 809
                 },
                 "du": "2026-10-05",
                 "au": "2026-10-09"
@@ -1275,7 +1295,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:10:55.423Z"
   },
   "PHA 6140": {
     "code": "PHA 6140",
@@ -1730,10 +1751,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       }
@@ -1741,26 +1758,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6002w/",
     "scrapeISO": "2026-09-12T21:38:29.026Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -1791,7 +1788,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:11:00.895Z"
   },
   "PHA 6011W": {
     "code": "PHA 6011W",
@@ -1870,10 +1868,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -1884,7 +1878,8 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-62112/",
     "scrapeISO": "2026-09-12T22:02:44.902Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:09.552Z"
   },
   "PHA 62302": {
     "code": "PHA 62302",
@@ -1902,12 +1897,12 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-62302/",
@@ -1936,7 +1931,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:32:11.494Z"
   },
   "PHA 6340": {
     "code": "PHA 6340",
@@ -2089,100 +2085,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-63502/",
     "scrapeISO": "2026-09-12T22:02:54.858Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 989
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 989
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 989
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 989
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 989
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 989
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 989
-                },
-                "du": "2026-06-12",
-                "au": "2026-06-12"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -2257,7 +2170,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:36:05.747Z"
+    "horairesISO": "2026-11-10T01:32:15.690Z"
   },
   "PHA 6520": {
     "code": "PHA 6520",
@@ -2272,15 +2185,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -2307,7 +2220,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:32:17.672Z"
   },
   "PHA 6611": {
     "code": "PHA 6611",
@@ -2322,21 +2236,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6611/",
     "scrapeISO": "2026-09-12T22:02:59.276Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:20.337Z"
   },
   "PHA 6612": {
     "code": "PHA 6612",
@@ -2351,10 +2266,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -2365,7 +2276,8 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6612/",
     "scrapeISO": "2026-09-12T22:03:01.359Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:22.378Z"
   },
   "PHA 6613": {
     "code": "PHA 6613",
@@ -2380,21 +2292,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6613/",
     "scrapeISO": "2026-09-12T22:03:02.993Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:24.754Z"
   },
   "PHA 6614": {
     "code": "PHA 6614",
@@ -2409,21 +2322,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6614/",
     "scrapeISO": "2026-09-12T22:03:04.989Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:27.213Z"
   },
   "PHA 6615": {
     "code": "PHA 6615",
@@ -2438,17 +2352,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6615/",
     "scrapeISO": "2026-09-12T22:03:07.028Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:29.436Z"
   },
   "PHA 6616": {
     "code": "PHA 6616",
@@ -2463,17 +2378,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6616/",
     "scrapeISO": "2026-09-12T22:03:09.728Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:30.012Z"
   },
   "PHA 6617": {
     "code": "PHA 6617",
@@ -2488,17 +2404,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6617/",
     "scrapeISO": "2026-09-12T22:03:11.220Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:30.855Z"
   },
   "PHA 6618": {
     "code": "PHA 6618",
@@ -2513,17 +2430,14 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6618/",
     "scrapeISO": "2026-09-12T22:03:13.827Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:34.293Z"
   },
   "PHA 6619": {
     "code": "PHA 6619",
@@ -2538,17 +2452,14 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6619/",
     "scrapeISO": "2026-09-12T22:03:15.552Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:32:36.476Z"
   },
   "PHA 6410": {
     "code": "PHA 6410",
@@ -2563,15 +2474,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -2741,7 +2652,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:32:38.670Z"
   },
   "PHA 72012": {
     "code": "PHA 72012",
@@ -2757,7 +2669,12 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-72012/",
     "scrapeISO": "2026-09-13T03:37:50.503Z",
     "apercuHoraires": [
@@ -2782,7 +2699,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:50:59.872Z"
+    "horairesISO": "2026-11-10T00:49:06.799Z"
   },
   "PHA 7211": {
     "code": "PHA 7211",
@@ -2795,7 +2712,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-7211/",
     "scrapeISO": "2026-09-13T03:37:52.581Z",
     "apercuHoraires": [
@@ -2820,7 +2742,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:51:00.005Z"
+    "horairesISO": "2026-11-10T00:49:08.931Z"
   },
   "PHA 71012": {
     "code": "PHA 71012",
@@ -2836,7 +2758,12 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-71012/",
     "scrapeISO": "2026-09-13T03:37:56.501Z",
     "apercuHoraires": [
@@ -2861,7 +2788,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:51:01.206Z"
+    "horairesISO": "2026-11-10T00:49:10.986Z"
   },
   "PHA 71022": {
     "code": "PHA 71022",
@@ -3942,28 +3869,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6000w/",
     "scrapeISO": "2026-09-13T06:41:51.459Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:43:56.154Z"
   },
   "PHA 6012W": {
     "code": "PHA 6012W",
@@ -4058,7 +3965,29 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6013w/",
     "scrapeISO": "2026-09-13T06:41:57.258Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-10T01:44:01.063Z"
   },
   "PHA 6015": {
     "code": "PHA 6015",
@@ -4076,17 +4005,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-6015/",
     "scrapeISO": "2026-09-13T06:41:57.445Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:44:03.216Z"
   },
   "PHA 7100": {
     "code": "PHA 7100",
@@ -4101,17 +4031,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-7100/",
     "scrapeISO": "2026-09-13T06:42:28.109Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:44:35.369Z"
   },
   "PHA 7210": {
     "code": "PHA 7210",
@@ -4126,16 +4057,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pha-7210/",
     "scrapeISO": "2026-09-13T06:42:29.743Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:44:38.645Z"
   }
 }

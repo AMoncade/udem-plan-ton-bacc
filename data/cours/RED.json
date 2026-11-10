@@ -271,45 +271,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-3000/",
     "scrapeISO": "2026-09-13T03:23:56.768Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -344,7 +311,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:41:18.498Z"
+    "horairesISO": "2026-11-10T00:39:48.570Z"
   },
   "RED 2101": {
     "code": "RED 2101",
@@ -357,7 +324,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": "RED2101/CRE2640",
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-2101/",
     "scrapeISO": "2026-09-13T03:24:03.288Z",
     "apercuHoraires": [
@@ -395,7 +367,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:41:24.297Z"
+    "horairesISO": "2026-11-10T00:39:55.464Z"
   },
   "RED 3001": {
     "code": "RED 3001",
@@ -413,41 +385,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/red-3001/",
     "scrapeISO": "2026-09-13T03:24:05.306Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-08-14"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -509,6 +461,6 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:41:26.455Z"
+    "horairesISO": "2026-11-10T00:39:57.627Z"
   }
 }

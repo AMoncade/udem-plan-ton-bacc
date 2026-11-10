@@ -83,21 +83,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6044/",
     "scrapeISO": "2026-09-13T03:12:20.847Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:00:18.368Z"
   },
   "PLU 2800U": {
     "code": "PLU 2800U",
@@ -708,44 +709,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6160/",
     "scrapeISO": "2026-09-13T03:45:06.083Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-22"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -813,7 +791,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:20:06.282Z"
+    "horairesISO": "2026-11-10T01:16:55.071Z"
   },
   "PLU 6911A": {
     "code": "PLU 6911A",
@@ -826,10 +804,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6911a/",
     "scrapeISO": "2026-09-13T03:48:26.011Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:00:37.090Z"
   },
   "PLU 6035": {
     "code": "PLU 6035",
@@ -1247,122 +1231,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6110/",
     "scrapeISO": "2026-09-13T04:44:43.318Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 690
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 690
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 690
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 690
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 690
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 930
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 930
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 930
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 930
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 930
-                },
-                "du": "2026-08-03",
-                "au": "2026-08-11"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "horairesISO": "2026-11-03T01:11:22.355Z"
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:08:37.526Z"
   },
   "PLU 6133": {
     "code": "PLU 6133",
@@ -1430,10 +1300,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-7000/",
     "scrapeISO": "2026-09-13T04:46:44.733Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:16:48.075Z"
   },
   "PLU 6350": {
     "code": "PLU 6350",
@@ -1527,10 +1403,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6910a/",
     "scrapeISO": "2026-09-13T05:01:28.784Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:03:44.680Z"
   },
   "PLU 6901A": {
     "code": "PLU 6901A",
@@ -1543,10 +1425,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6901a/",
     "scrapeISO": "2026-09-13T05:01:32.427Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:03:48.220Z"
   },
   "PLU 61232": {
     "code": "PLU 61232",
@@ -1665,10 +1553,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6907a/",
     "scrapeISO": "2026-09-13T05:50:01.713Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:03:51.345Z"
   },
   "PLU 6904A": {
     "code": "PLU 6904A",
@@ -1697,10 +1591,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6908a/",
     "scrapeISO": "2026-09-13T05:51:16.889Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:05:16.043Z"
   },
   "PLU 6912A": {
     "code": "PLU 6912A",
@@ -1713,10 +1613,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/plu-6912a/",
     "scrapeISO": "2026-09-13T06:27:07.494Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:44:21.621Z"
   },
   "PLU 7001": {
     "code": "PLU 7001",

@@ -508,10 +508,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Hiver",
         "annee": 2027
       }
@@ -519,39 +515,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-2446/",
     "scrapeISO": "2026-09-11T17:30:42.561Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-15"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -585,7 +548,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T21:22:37.941Z"
   },
   "HST 2624": {
     "code": "HST 2624",
@@ -2056,7 +2020,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-2402/",
     "scrapeISO": "2026-09-11T18:56:46.230Z",
     "apercuHoraires": [
@@ -2094,7 +2063,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T21:28:58.331Z"
+    "horairesISO": "2026-11-09T21:34:20.616Z"
   },
   "HST 2410": {
     "code": "HST 2410",
@@ -2165,41 +2134,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-2420/",
     "scrapeISO": "2026-09-11T18:56:50.591Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-16"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T21:34:25.458Z"
   },
   "HST 2427": {
     "code": "HST 2427",
@@ -4273,21 +4209,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-3700/",
     "scrapeISO": "2026-09-13T03:21:31.529Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T21:38:17.161Z"
   },
   "HST 3206": {
     "code": "HST 3206",
@@ -4319,45 +4256,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-3257/",
     "scrapeISO": "2026-09-13T03:21:46.521Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-16"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -4392,7 +4296,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T21:33:48.154Z"
+    "horairesISO": "2026-11-09T21:38:38.394Z"
   },
   "HST 3276": {
     "code": "HST 3276",
@@ -5046,21 +4950,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-3710/",
     "scrapeISO": "2026-09-13T04:23:26.069Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T21:48:09.488Z"
   },
   "HST 3720": {
     "code": "HST 3720",
@@ -5075,21 +4980,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-3720/",
     "scrapeISO": "2026-09-13T04:23:26.313Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T21:48:10.678Z"
   },
   "HST 4000": {
     "code": "HST 4000",
@@ -5821,21 +5727,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-6600/",
     "scrapeISO": "2026-09-13T05:05:29.658Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:19:37.653Z"
   },
   "HST 6623": {
     "code": "HST 6623",
@@ -6024,10 +5931,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -6038,7 +5941,8 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-6025/",
     "scrapeISO": "2026-09-13T05:05:44.262Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:19:48.169Z"
   },
   "HST 6934": {
     "code": "HST 6934",
@@ -6053,21 +5957,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-6934/",
     "scrapeISO": "2026-09-13T05:05:46.408Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:19:50.644Z"
   },
   "HST 69112": {
     "code": "HST 69112",
@@ -6140,10 +6045,6 @@
     "restrictionsBrut": "HST6924/HST6912",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -6154,7 +6055,8 @@
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-6924/",
     "scrapeISO": "2026-09-13T05:05:52.296Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:19:56.283Z"
   },
   "HST 6931": {
     "code": "HST 6931",
@@ -6169,21 +6071,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-6931/",
     "scrapeISO": "2026-09-13T05:05:54.471Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:19:58.702Z"
   },
   "HST 6932": {
     "code": "HST 6932",
@@ -6198,21 +6101,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-6932/",
     "scrapeISO": "2026-09-13T05:05:54.632Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:20:01.158Z"
   },
   "HST 7002": {
     "code": "HST 7002",
@@ -6282,21 +6186,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-7010/",
     "scrapeISO": "2026-09-13T06:34:30.713Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:08:43.794Z"
   },
   "HST 7015": {
     "code": "HST 7015",
@@ -6311,21 +6216,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-7015/",
     "scrapeISO": "2026-09-13T06:34:32.062Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:08:46.664Z"
   },
   "HST 7020": {
     "code": "HST 7020",
@@ -6395,21 +6301,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-7130/",
     "scrapeISO": "2026-09-13T06:34:38.747Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:08:51.249Z"
   },
   "HST 7135": {
     "code": "HST 7135",
@@ -6424,21 +6331,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-7135/",
     "scrapeISO": "2026-09-13T06:34:40.572Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:08:53.282Z"
   },
   "HST 7145": {
     "code": "HST 7145",
@@ -6453,20 +6361,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/hst-7145/",
     "scrapeISO": "2026-09-13T06:34:42.518Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:08:55.682Z"
   }
 }

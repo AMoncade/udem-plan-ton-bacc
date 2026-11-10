@@ -4474,109 +4474,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-3205/",
     "scrapeISO": "2026-09-11T18:51:00.025Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "M",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-25",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-15",
-                "au": "2026-06-19"
-              }
-            ]
-          },
-          {
-            "nom": "N",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-25",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -5558,7 +5470,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:11:24.805Z"
+    "horairesISO": "2026-11-10T00:11:12.809Z"
   },
   "PPA 4365": {
     "code": "PPA 4365",
@@ -5601,6 +5513,13 @@
           {
             "nom": "A",
             "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-11"
+              },
               {
                 "creneau": {
                   "genre": "attribue",
@@ -5732,6 +5651,13 @@
             "seances": [
               {
                 "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-11"
+              },
+              {
+                "creneau": {
                   "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 750,
@@ -5859,6 +5785,13 @@
           {
             "nom": "C",
             "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-11"
+              },
               {
                 "creneau": {
                   "genre": "attribue",
@@ -5992,6 +5925,13 @@
             "seances": [
               {
                 "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-11"
+              },
+              {
+                "creneau": {
                   "genre": "attribue",
                   "jour": "Vendredi",
                   "debutMin": 510,
@@ -6119,6 +6059,13 @@
           {
             "nom": "M",
             "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-11"
+              },
               {
                 "creneau": {
                   "genre": "attribue",
@@ -6252,6 +6199,13 @@
             "seances": [
               {
                 "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2026-12-07",
+                "au": "2026-12-11"
+              },
+              {
+                "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
                   "debutMin": 510,
@@ -6375,7 +6329,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T00:11:12.975Z"
   },
   "PPA 2550": {
     "code": "PPA 2550",
@@ -6390,50 +6345,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-2550/",
     "scrapeISO": "2026-09-11T18:53:23.443Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "M",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -6546,7 +6468,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:11:29.818Z"
+    "horairesISO": "2026-11-10T00:11:14.172Z"
   },
   "PPA 1210": {
     "code": "PPA 1210",
@@ -8823,83 +8745,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6674/",
     "scrapeISO": "2026-09-13T03:17:05.672Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-04-30",
-                "au": "2026-04-30"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-05",
-                "au": "2026-05-26"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Jeu Jeudi Du 07/05/2026 au 04/06/2026"
-                },
-                "du": "2026-05-07",
-                "au": "2026-06-04"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-02",
-                "au": "2026-06-09"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-16",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-23",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -9036,7 +8887,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:06:07.243Z"
+    "horairesISO": "2026-11-10T01:03:39.009Z"
   },
   "PPA 6224": {
     "code": "PPA 6224",
@@ -9366,200 +9217,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6430/",
     "scrapeISO": "2026-09-13T03:39:24.186Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-01",
-                "au": "2026-05-01"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-02",
-                "au": "2026-05-02"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-05-02",
-                "au": "2026-05-02"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-08",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-23",
-                "au": "2026-05-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-05-23",
-                "au": "2026-05-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-05",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-06-06",
-                "au": "2026-06-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-06-06",
-                "au": "2026-06-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-06-13",
-                "au": "2026-06-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-06-13",
-                "au": "2026-06-13"
-              }
-            ]
-          },
-          {
-            "nom": "B",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-07-03",
-                "au": "2026-07-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-07-03",
-                "au": "2026-07-17"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-07-06",
-                "au": "2026-07-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-07-06",
-                "au": "2026-07-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-07-08",
-                "au": "2026-07-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-07-08",
-                "au": "2026-07-15"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -9714,7 +9377,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:05:38.854Z"
+    "horairesISO": "2026-11-10T01:03:13.418Z"
   },
   "PPA 6256": {
     "code": "PPA 6256",
@@ -9900,115 +9563,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6075/",
     "scrapeISO": "2026-09-13T03:57:47.890Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-04"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-06",
-                "au": "2026-05-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-06",
-                "au": "2026-05-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-20",
-                "au": "2026-05-25"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-20",
-                "au": "2026-05-25"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-27",
-                "au": "2026-05-27"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-17",
-                "au": "2026-06-17"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -10093,7 +9653,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:05:58.666Z"
+    "horairesISO": "2026-11-10T01:03:27.812Z"
   },
   "PPA 6228": {
     "code": "PPA 6228",
@@ -10992,92 +10552,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6403/",
     "scrapeISO": "2026-09-13T04:43:24.569Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-05",
-                "au": "2026-05-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-07",
-                "au": "2026-05-21"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-07",
-                "au": "2026-05-21"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-26",
-                "au": "2026-05-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-28",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-28",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-18",
-                "au": "2026-06-18"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "horairesISO": "2026-11-03T01:09:31.584Z"
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:06:41.885Z"
   },
   "PPA 6413": {
     "code": "PPA 6413",
@@ -11093,95 +10569,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6413/",
     "scrapeISO": "2026-09-13T04:43:24.734Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-05",
-                "au": "2026-05-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-07",
-                "au": "2026-05-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-07",
-                "au": "2026-05-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-28",
-                "au": "2026-05-28"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-02",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-02",
-                "au": "2026-06-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-18",
-                "au": "2026-06-18"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -11266,7 +10659,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:09:34.572Z"
+    "horairesISO": "2026-11-10T01:06:44.053Z"
   },
   "PPA 6415": {
     "code": "PPA 6415",
@@ -11394,7 +10787,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6419/",
     "scrapeISO": "2026-09-13T04:43:28.736Z",
     "apercuHoraires": [
@@ -11522,7 +10920,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:09:38.624Z"
+    "horairesISO": "2026-11-10T01:06:49.155Z"
   },
   "PPA 6428": {
     "code": "PPA 6428",
@@ -12005,7 +11403,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6434/",
     "scrapeISO": "2026-09-13T04:43:40.656Z",
     "apercuHoraires": [
@@ -12093,7 +11496,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:09:47.647Z"
+    "horairesISO": "2026-11-10T01:07:00.535Z"
   },
   "PPA 6211": {
     "code": "PPA 6211",
@@ -12979,392 +12382,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6032/",
     "scrapeISO": "2026-09-13T04:59:42.687Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "P",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Mar Mardi Du 20/04/2026 au 24/04/2026"
-                },
-                "du": "2026-04-20",
-                "au": "2026-04-24"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Mar Mardi Du 27/04/2026 au 01/05/2026"
-                },
-                "du": "2026-04-27",
-                "au": "2026-05-01"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-19",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-19",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-05-23",
-                "au": "2026-05-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-05-23",
-                "au": "2026-05-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Jeu Jeudi Du 25/05/2026 au 29/05/2026"
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Jeu Jeudi Du 01/06/2026 au 05/06/2026"
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-06-06",
-                "au": "2026-06-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-06-06",
-                "au": "2026-06-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Jeu Jeudi Du 08/06/2026 au 12/06/2026"
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-06-13",
-                "au": "2026-06-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-06-13",
-                "au": "2026-06-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-15",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-06-15",
-                "au": "2026-06-19"
-              }
-            ]
-          },
-          {
-            "nom": "Q",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Mar Mardi Du 20/04/2026 au 24/04/2026"
-                },
-                "du": "2026-04-20",
-                "au": "2026-04-24"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Mar Mardi Du 27/04/2026 au 01/05/2026"
-                },
-                "du": "2026-04-27",
-                "au": "2026-05-01"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-19",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-19",
-                "au": "2026-05-22"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Mer Mercredi Du 25/05/2026 au 29/05/2026"
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Lun Lundi Du 01/06/2026 au 05/06/2026"
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-15",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-15",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-06-15",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -13390,10 +12413,7 @@
               },
               {
                 "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
+                  "genre": "nonAttribue"
                 },
                 "du": "2027-05-03",
                 "au": "2027-05-07"
@@ -13401,42 +12421,12 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-05-10",
-                "au": "2027-05-14"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Mardi",
                   "debutMin": 1050,
                   "finMin": 1229
                 },
                 "du": "2027-05-10",
                 "au": "2027-05-14"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-05-17",
-                "au": "2027-05-21"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2027-05-17",
-                "au": "2027-05-21"
               },
               {
                 "creneau": {
@@ -13445,8 +12435,8 @@
                   "debutMin": 540,
                   "finMin": 719
                 },
-                "du": "2027-05-22",
-                "au": "2027-05-23"
+                "du": "2027-05-15",
+                "au": "2027-05-16"
               },
               {
                 "creneau": {
@@ -13455,8 +12445,35 @@
                   "debutMin": 780,
                   "finMin": 959
                 },
-                "du": "2027-05-22",
-                "au": "2027-05-23"
+                "du": "2027-05-15",
+                "au": "2027-05-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-25",
+                "au": "2027-05-28"
               },
               {
                 "creneau": {
@@ -13477,13 +12494,6 @@
               },
               {
                 "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2027-05-31",
-                "au": "2027-06-04"
-              },
-              {
-                "creneau": {
                   "genre": "attribue",
                   "jour": "Samedi",
                   "debutMin": 540,
@@ -13505,7 +12515,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Mardi",
                   "debutMin": 1050,
                   "finMin": 1229
                 },
@@ -13525,6 +12535,16 @@
                   "jour": "Samedi",
                   "debutMin": 540,
                   "finMin": 719
+                },
+                "du": "2027-06-12",
+                "au": "2027-06-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
                 },
                 "du": "2027-06-12",
                 "au": "2027-06-13"
@@ -13570,6 +12590,13 @@
               },
               {
                 "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 510,
@@ -13591,6 +12618,16 @@
               {
                 "creneau": {
                   "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
                   "jour": "Mercredi",
                   "debutMin": 510,
                   "finMin": 689
@@ -13600,10 +12637,7 @@
               },
               {
                 "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "genre": "nonAttribue"
                 },
                 "du": "2027-05-25",
                 "au": "2027-05-28"
@@ -13612,6 +12646,16 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mercredi",
                   "debutMin": 750,
                   "finMin": 929
                 },
@@ -13624,13 +12668,6 @@
                   "jour": "Lundi",
                   "debutMin": 750,
                   "finMin": 929
-                },
-                "du": "2027-05-31",
-                "au": "2027-06-04"
-              },
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
                 },
                 "du": "2027-05-31",
                 "au": "2027-06-04"
@@ -13646,16 +12683,6 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-06-07",
-                "au": "2027-06-11"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -13718,23 +12745,13 @@
                 },
                 "du": "2027-06-14",
                 "au": "2027-06-18"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2027-06-21",
-                "au": "2027-06-25"
               }
             ]
           }
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:33:58.295Z"
+    "horairesISO": "2026-11-10T01:30:08.180Z"
   },
   "PPA 6033": {
     "code": "PPA 6033",
@@ -14063,70 +13080,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6201/",
     "scrapeISO": "2026-09-13T04:59:59.809Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "M",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              }
-            ]
-          },
-          {
-            "nom": "P",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -14161,7 +13120,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:34:01.630Z"
+    "horairesISO": "2026-11-10T01:30:13.565Z"
   },
   "PPA 6214": {
     "code": "PPA 6214",
@@ -14860,6 +13819,10 @@
       {
         "saison": "Automne",
         "annee": 2026
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6550/",
@@ -14942,7 +13905,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:34:15.387Z"
+    "horairesISO": "2026-11-10T01:30:26.400Z"
   },
   "PPA 6698": {
     "code": "PPA 6698",
@@ -15102,21 +14065,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-7210/",
     "scrapeISO": "2026-09-13T06:15:16.804Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:25:44.455Z"
   },
   "PPA 7610": {
     "code": "PPA 7610",
@@ -15131,21 +14095,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-7610/",
     "scrapeISO": "2026-09-13T06:15:18.985Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:25:46.513Z"
   },
   "PPA 7491": {
     "code": "PPA 7491",
@@ -15205,21 +14170,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6010/",
     "scrapeISO": "2026-09-13T06:24:27.668Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:36:06.532Z"
   },
   "PPA 6491": {
     "code": "PPA 6491",
@@ -18854,10 +17820,16 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-6006/",
     "scrapeISO": "2026-09-13T06:32:14.676Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:03:03.066Z"
   },
   "PPA 7290": {
     "code": "PPA 7290",
@@ -18904,64 +17876,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ppa-1212/",
     "scrapeISO": "2026-09-13T06:40:11.304Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "V",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1050,
-                  "finMin": 1229
-                },
-                "du": "2026-05-25",
-                "au": "2026-06-19"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -19302,6 +18231,6 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:46:42.786Z"
+    "horairesISO": "2026-11-10T01:42:39.623Z"
   }
 }

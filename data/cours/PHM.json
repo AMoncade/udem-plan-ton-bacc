@@ -582,33 +582,13 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6452/",
     "scrapeISO": "2026-09-12T21:29:06.339Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T00:39:29.543Z"
   },
   "PHM 6453": {
     "code": "PHM 6453",
@@ -623,38 +603,14 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Hiver",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6453/",
     "scrapeISO": "2026-09-12T21:29:08.365Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T00:39:32.541Z"
   },
   "PHM 6300": {
     "code": "PHM 6300",
@@ -712,7 +668,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6889/",
     "scrapeISO": "2026-09-12T22:09:36.304Z",
     "apercuHoraires": [
@@ -747,7 +708,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:47:11.455Z"
+    "horairesISO": "2026-11-10T01:43:05.608Z"
   },
   "PHM 6899": {
     "code": "PHM 6899",
@@ -763,31 +724,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6899/",
     "scrapeISO": "2026-09-12T22:09:38.491Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Vendredi",
-                  "debutMin": 480,
-                  "finMin": 1019
-                },
-                "du": "2026-05-29",
-                "au": "2026-05-29"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:43:07.825Z"
   },
   "PHM 6890": {
     "code": "PHM 6890",
@@ -855,7 +793,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6891/",
     "scrapeISO": "2026-09-12T22:09:43.812Z",
     "apercuHoraires": [
@@ -890,7 +833,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:47:17.378Z"
+    "horairesISO": "2026-11-10T01:43:09.961Z"
   },
   "PHM 6895": {
     "code": "PHM 6895",
@@ -906,31 +849,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6895/",
     "scrapeISO": "2026-09-12T22:09:44.430Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 480,
-                  "finMin": 1019
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:43:13.664Z"
   },
   "PHM 6893": {
     "code": "PHM 6893",
@@ -1639,41 +1559,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6510/",
     "scrapeISO": "2026-09-12T22:11:51.019Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-01",
-                "au": "2026-08-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -1689,6 +1589,26 @@
                 },
                 "du": "2026-08-24",
                 "au": "2026-12-23"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-01-07",
+                "au": "2027-04-30"
               }
             ]
           }
@@ -1715,7 +1635,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:48:13.363Z"
+    "horairesISO": "2026-11-10T01:44:05.892Z"
   },
   "PHM 6513": {
     "code": "PHM 6513",
@@ -2556,44 +2476,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6088/",
     "scrapeISO": "2026-09-13T03:55:11.983Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 1049
-                },
-                "du": "2026-06-11",
-                "au": "2026-06-11"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -2640,7 +2537,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:39:05.961Z"
   },
   "PHM 6076": {
     "code": "PHM 6076",
@@ -2655,15 +2553,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -2693,7 +2591,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:39:08.084Z"
   },
   "PHM 6077": {
     "code": "PHM 6077",
@@ -2708,38 +2607,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6077/",
     "scrapeISO": "2026-09-13T03:55:14.186Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "illisible",
-                  "brut": "Mar Mardi Du 05/05/2026 au 26/08/2026"
-                },
-                "du": "2026-05-05",
-                "au": "2026-08-26"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -2760,7 +2638,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T00:32:29.366Z"
   },
   "PHM 6097": {
     "code": "PHM 6097",
@@ -2775,21 +2654,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6097/",
     "scrapeISO": "2026-09-13T03:55:16.159Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:39:16.171Z"
   },
   "PHM 6004": {
     "code": "PHM 6004",
@@ -2879,11 +2759,11 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -2910,7 +2790,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:39:18.257Z"
   },
   "PHM 6062": {
     "code": "PHM 6062",
@@ -3031,15 +2912,15 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
+        "annee": 2027
+      },
+      {
+        "saison": "Été",
         "annee": 2027
       }
     ],
@@ -3066,7 +2947,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:39:20.213Z"
   },
   "PHM 6098": {
     "code": "PHM 6098",
@@ -3922,7 +3804,12 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6157/",
     "scrapeISO": "2026-09-13T04:18:05.085Z",
     "apercuHoraires": [
@@ -3950,7 +3837,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:04:30.888Z"
+    "horairesISO": "2026-11-10T01:02:13.044Z"
   },
   "PHM 6008": {
     "code": "PHM 6008",
@@ -4075,21 +3962,22 @@
     "restrictionsBrut": "SBP6116/PHM6156A",
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6156a/",
     "scrapeISO": "2026-09-13T04:37:40.623Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T00:32:16.670Z"
   },
   "PHM 7078": {
     "code": "PHM 7078",
@@ -4159,21 +4047,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-7090/",
     "scrapeISO": "2026-09-13T04:52:17.642Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:26:53.284Z"
   },
   "PHM 7073": {
     "code": "PHM 7073",
@@ -4188,21 +4077,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-7073/",
     "scrapeISO": "2026-09-13T04:52:19.419Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:26:55.180Z"
   },
   "PHM 7104": {
     "code": "PHM 7104",
@@ -4217,17 +4107,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-7104/",
     "scrapeISO": "2026-09-13T04:52:23.889Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:26:58.119Z"
   },
   "PHM 7105": {
     "code": "PHM 7105",
@@ -4243,12 +4134,13 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-7105/",
     "scrapeISO": "2026-09-13T04:52:25.206Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:27:00.058Z"
   },
   "PHM 6069": {
     "code": "PHM 6069",
@@ -4366,21 +4258,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6042/",
     "scrapeISO": "2026-09-13T05:13:19.718Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:38:56.069Z"
   },
   "PHM 60532": {
     "code": "PHM 60532",
@@ -4398,17 +4291,18 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-60532/",
     "scrapeISO": "2026-09-13T05:13:23.454Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:38:59.400Z"
   },
   "PHM 6001": {
     "code": "PHM 6001",
@@ -4488,21 +4382,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/phm-6190/",
     "scrapeISO": "2026-09-13T05:13:29.587Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:39:11.218Z"
   },
   "PHM 6079": {
     "code": "PHM 6079",

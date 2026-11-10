@@ -309,7 +309,12 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pst-2505g/",
     "scrapeISO": "2026-09-13T03:33:18.504Z",
     "apercuHoraires": [
@@ -347,7 +352,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:48:04.167Z"
+    "horairesISO": "2026-11-10T00:46:21.116Z"
   },
   "PST 1600G": {
     "code": "PST 1600G",
@@ -1396,21 +1401,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pst-7981/",
     "scrapeISO": "2026-09-13T06:37:42.222Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:27:19.700Z"
   },
   "PST 6120": {
     "code": "PST 6120",
@@ -1426,35 +1432,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pst-6120/",
     "scrapeISO": "2026-09-13T06:39:48.444Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-05"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -1479,7 +1462,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:43:30.705Z"
+    "horairesISO": "2026-11-10T01:39:25.146Z"
   },
   "PST 6931": {
     "code": "PST 6931",
@@ -1494,21 +1477,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/pst-6931/",
     "scrapeISO": "2026-09-13T06:39:50.237Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:39:28.027Z"
   },
   "PST 1000": {
     "code": "PST 1000",

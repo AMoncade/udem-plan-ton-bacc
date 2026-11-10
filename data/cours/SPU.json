@@ -12,37 +12,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
+        "saison": "Automne",
         "annee": 2026
       },
       {
-        "saison": "Automne",
-        "annee": 2026
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-6600/",
     "scrapeISO": "2026-09-13T16:06:57.232Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-11",
-                "au": "2026-07-26"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -94,7 +74,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:42:58.623Z"
+    "horairesISO": "2026-11-10T00:41:22.345Z"
   },
   "SPU 1020G": {
     "code": "SPU 1020G",
@@ -1228,45 +1208,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-7501/",
     "scrapeISO": "2026-09-12T21:57:26.896Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-26"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -1431,7 +1378,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:51:24.739Z"
+    "horairesISO": "2026-11-10T00:49:34.160Z"
   },
   "SPU 7605": {
     "code": "SPU 7605",
@@ -2216,10 +2163,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       }
@@ -2227,39 +2170,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-7130/",
     "scrapeISO": "2026-09-12T21:57:39.066Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 780,
-                  "finMin": 959
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 540,
-                  "finMin": 719
-                },
-                "du": "2026-07-06",
-                "au": "2026-07-10"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -2303,7 +2213,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T01:28:24.981Z"
   },
   "SPU 7920": {
     "code": "SPU 7920",
@@ -2316,10 +2227,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-7920/",
     "scrapeISO": "2026-09-12T21:57:40.906Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:28:28.288Z"
   },
   "SPU 2310G": {
     "code": "SPU 2310G",
@@ -2755,79 +2672,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-1000g/",
     "scrapeISO": "2026-09-13T03:29:14.292Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Y",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          },
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -2978,7 +2837,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:36:09.062Z"
+    "horairesISO": "2026-11-10T00:34:50.490Z"
   },
   "SPU 3033G": {
     "code": "SPU 3033G",
@@ -3792,10 +3651,6 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
@@ -3807,26 +3662,6 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-2000d/",
     "scrapeISO": "2026-09-13T03:35:11.888Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "S",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-16"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -3867,7 +3702,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-10T00:20:53.474Z"
   },
   "SPU 2004": {
     "code": "SPU 2004",
@@ -4181,32 +4017,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-6002/",
     "scrapeISO": "2026-09-13T03:58:40.629Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-17"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -4228,7 +4044,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T00:42:55.811Z"
+    "horairesISO": "2026-11-10T00:41:21.137Z"
   },
   "SPU 75032": {
     "code": "SPU 75032",
@@ -4243,41 +4059,21 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-75032/",
     "scrapeISO": "2026-09-13T03:58:46.619Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "nonAttribue"
-                },
-                "du": "2026-05-04",
-                "au": "2026-08-14"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Automne",
@@ -4339,7 +4135,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:48:16.971Z"
+    "horairesISO": "2026-11-10T01:44:09.036Z"
   },
   "SPU 2002": {
     "code": "SPU 2002",
@@ -4745,45 +4541,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-6005/",
     "scrapeISO": "2026-09-13T04:20:36.839Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-19"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-22"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -4818,7 +4581,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:08:29.582Z"
+    "horairesISO": "2026-11-10T01:05:41.881Z"
   },
   "SPU 7001": {
     "code": "SPU 7001",
@@ -5051,21 +4814,22 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
-      },
-      {
         "saison": "Automne",
         "annee": 2026
       },
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-7912/",
     "scrapeISO": "2026-09-13T04:50:21.771Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-10T01:23:34.231Z"
   },
   "SPU 7351": {
     "code": "SPU 7351",
@@ -5621,75 +5385,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/spu-6969/",
     "scrapeISO": "2026-09-13T06:23:32.715Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-04",
-                "au": "2026-05-08"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-11",
-                "au": "2026-05-15"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-05-25",
-                "au": "2026-05-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-01",
-                "au": "2026-06-05"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
-                },
-                "du": "2026-06-08",
-                "au": "2026-06-12"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -5754,6 +5455,6 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-03T01:39:07.636Z"
+    "horairesISO": "2026-11-10T01:35:11.150Z"
   }
 }

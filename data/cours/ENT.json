@@ -158,7 +158,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ent-1030/",
     "scrapeISO": "2026-09-11T17:55:03.717Z",
     "apercuHoraires": [
@@ -196,7 +201,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T21:21:30.919Z"
+    "horairesISO": "2026-11-09T21:27:40.016Z"
   },
   "ENT 1000": {
     "code": "ENT 1000",
@@ -212,45 +217,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ent-1000/",
     "scrapeISO": "2026-09-12T22:08:38.042Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 510,
-                  "finMin": 719
-                },
-                "du": "2026-05-09",
-                "au": "2026-05-16"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 1019
-                },
-                "du": "2026-05-09",
-                "au": "2026-05-16"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -275,7 +247,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T22:21:45.984Z"
+    "horairesISO": "2026-11-09T22:23:17.185Z"
   },
   "ENT 1001": {
     "code": "ENT 1001",
@@ -291,42 +263,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ent-1001/",
     "scrapeISO": "2026-09-12T22:08:40.173Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 510,
-                  "finMin": 719
-                },
-                "du": "2026-05-23",
-                "au": "2026-05-30"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 1019
-                },
-                "du": "2026-05-23",
-                "au": "2026-05-30"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "horairesISO": "2026-11-02T22:21:46.987Z"
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:23:18.384Z"
   },
   "ENT 1002": {
     "code": "ENT 1002",
@@ -342,62 +280,8 @@
     "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ent-1002/",
     "scrapeISO": "2026-09-12T22:08:42.163Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "H",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 510,
-                  "finMin": 719
-                },
-                "du": "2026-06-06",
-                "au": "2026-06-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 1019
-                },
-                "du": "2026-06-06",
-                "au": "2026-06-06"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 510,
-                  "finMin": 719
-                },
-                "du": "2026-06-20",
-                "au": "2026-06-20"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 1019
-                },
-                "du": "2026-06-20",
-                "au": "2026-06-20"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "horairesISO": "2026-11-02T22:21:48.171Z"
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-09T22:23:19.574Z"
   },
   "ENT 1003": {
     "code": "ENT 1003",

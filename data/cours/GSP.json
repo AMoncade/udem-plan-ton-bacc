@@ -567,50 +567,17 @@
     "restrictionsBrut": null,
     "trimestres": [
       {
-        "saison": "Été",
-        "annee": 2026
+        "saison": "Hiver",
+        "annee": 2027
       },
       {
-        "saison": "Hiver",
+        "saison": "Été",
         "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/gsp-3020/",
     "scrapeISO": "2026-09-12T21:30:13.421Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 510,
-                  "finMin": 719
-                },
-                "du": "2026-05-09",
-                "au": "2026-06-13"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Samedi",
-                  "debutMin": 780,
-                  "finMin": 1019
-                },
-                "du": "2026-05-09",
-                "au": "2026-06-13"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Hiver",
@@ -644,7 +611,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-09T21:56:59.329Z"
   },
   "GSP 1160": {
     "code": "GSP 1160",
@@ -660,45 +628,12 @@
     "trimestres": [
       {
         "saison": "Été",
-        "annee": 2026
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/gsp-1160/",
     "scrapeISO": "2026-09-12T21:30:15.390Z",
     "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Été",
-          "annee": 2026
-        },
-        "sections": [
-          {
-            "nom": "Z",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mercredi",
-                  "debutMin": 1110,
-                  "finMin": 1289
-                },
-                "du": "2026-05-04",
-                "au": "2026-06-23"
-              }
-            ]
-          }
-        ]
-      },
       {
         "trimestre": {
           "saison": "Été",
@@ -733,7 +668,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T21:54:30.091Z"
+    "horairesISO": "2026-11-09T21:57:02.655Z"
   },
   "GSP 2600Z": {
     "code": "GSP 2600Z",
@@ -838,7 +773,12 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/gsp-3000/",
     "scrapeISO": "2026-09-12T21:30:20.733Z",
     "apercuHoraires": [
@@ -876,7 +816,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-02T21:55:26.312Z"
+    "horairesISO": "2026-11-09T21:57:55.243Z"
   },
   "GSP 3010": {
     "code": "GSP 3010",
