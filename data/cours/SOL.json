@@ -671,10 +671,6 @@
       {
         "saison": "Automne",
         "annee": 2026
-      },
-      {
-        "saison": "Été",
-        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-2104/",
@@ -764,7 +760,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-10T00:04:51.377Z"
+    "horairesISO": "2026-11-16T23:58:19.389Z"
   },
   "SOL 3104": {
     "code": "SOL 3104",
@@ -851,10 +847,50 @@
     },
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-2111/",
     "scrapeISO": "2026-09-11T17:45:59.661Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-01-08",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Vendredi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-16"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-16T23:59:56.215Z"
   },
   "SOL 2301": {
     "code": "SOL 2301",
@@ -2059,7 +2095,7 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-01-07",
+                "du": "2027-01-12",
                 "au": "2027-02-19"
               },
               {
@@ -2069,14 +2105,15 @@
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-03-08",
+                "du": "2027-03-09",
                 "au": "2027-04-23"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-17T00:19:19.300Z"
   },
   "SOL 2015": {
     "code": "SOL 2015",
@@ -4531,16 +4568,12 @@
       {
         "saison": "Hiver",
         "annee": 2027
-      },
-      {
-        "saison": "Été",
-        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/sol-6009/",
     "scrapeISO": "2026-09-13T05:13:46.011Z",
     "apercuHoraires": [],
-    "horairesISO": "2026-11-10T01:40:31.820Z"
+    "horairesISO": "2026-11-17T01:32:32.525Z"
   },
   "SOL 6013": {
     "code": "SOL 6013",
@@ -4738,7 +4771,7 @@
                   "debutMin": 930,
                   "finMin": 1109
                 },
-                "du": "2027-01-07",
+                "du": "2027-01-12",
                 "au": "2027-02-26"
               },
               {
@@ -4749,13 +4782,14 @@
                   "finMin": 1109
                 },
                 "du": "2027-03-08",
-                "au": "2027-04-09"
+                "au": "2027-04-20"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-17T01:32:42.685Z"
   },
   "SOL 6659": {
     "code": "SOL 6659",

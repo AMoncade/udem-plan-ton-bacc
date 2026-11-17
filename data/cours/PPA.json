@@ -5864,8 +5864,8 @@
                 "creneau": {
                   "genre": "attribue",
                   "jour": "Jeudi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-01-25",
                 "au": "2027-01-29"
@@ -5891,7 +5891,7 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
+                  "jour": "Lundi",
                   "debutMin": 510,
                   "finMin": 689
                 },
@@ -5901,9 +5901,9 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 510,
-                  "finMin": 689
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-02-01",
                 "au": "2027-02-05"
@@ -6330,7 +6330,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-10T00:11:12.975Z"
+    "horairesISO": "2026-11-17T00:05:44.822Z"
   },
   "PPA 2550": {
     "code": "PPA 2550",
@@ -12747,11 +12747,188 @@
                 "au": "2027-06-18"
               }
             ]
+          },
+          {
+            "nom": "R",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-04-19",
+                "au": "2027-04-23"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-04-26",
+                "au": "2027-04-30"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-03",
+                "au": "2027-05-07"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-10",
+                "au": "2027-05-14"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-05-15",
+                "au": "2027-05-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-05-15",
+                "au": "2027-05-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-17",
+                "au": "2027-05-21"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-25",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-25",
+                "au": "2027-05-28"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-05-31",
+                "au": "2027-06-04"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-06-05",
+                "au": "2027-06-06"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-06-07",
+                "au": "2027-06-11"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 540,
+                  "finMin": 719
+                },
+                "du": "2027-06-12",
+                "au": "2027-06-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Samedi",
+                  "debutMin": 780,
+                  "finMin": 959
+                },
+                "du": "2027-06-12",
+                "au": "2027-06-13"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-18"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-06-14",
+                "au": "2027-06-18"
+              }
+            ]
           }
         ]
       }
     ],
-    "horairesISO": "2026-11-10T01:30:08.180Z"
+    "horairesISO": "2026-11-17T01:21:44.276Z"
   },
   "PPA 6033": {
     "code": "PPA 6033",
@@ -13592,10 +13769,156 @@
                 "au": "2027-04-23"
               }
             ]
+          },
+          {
+            "nom": "R",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-11",
+                "au": "2027-01-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-18",
+                "au": "2027-01-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-01-25",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-02-01",
+                "au": "2027-02-05"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-02-08",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-02-15",
+                "au": "2027-02-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-02-22",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-08",
+                "au": "2027-03-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-15",
+                "au": "2027-03-19"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-22",
+                "au": "2027-03-25"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-03-30",
+                "au": "2027-04-02"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-05",
+                "au": "2027-04-09"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-12",
+                "au": "2027-04-16"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1050,
+                  "finMin": 1229
+                },
+                "du": "2027-04-19",
+                "au": "2027-04-23"
+              }
+            ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-17T01:21:54.468Z"
   },
   "PPA 6236": {
     "code": "PPA 6236",
@@ -15714,7 +16037,7 @@
                   "finMin": 1139
                 },
                 "du": "2027-01-07",
-                "au": "2027-01-22"
+                "au": "2027-01-15"
               },
               {
                 "creneau": {
@@ -15724,44 +16047,44 @@
                   "finMin": 929
                 },
                 "du": "2027-01-11",
+                "au": "2027-01-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-01-18",
                 "au": "2027-01-22"
               },
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 960,
-                  "finMin": 1139
-                },
-                "du": "2027-01-25",
-                "au": "2027-01-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
                   "jour": "Lundi",
                   "debutMin": 750,
                   "finMin": 929
                 },
-                "du": "2027-01-25",
-                "au": "2027-01-29"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 960,
-                  "finMin": 1139
-                },
-                "du": "2027-02-01",
+                "du": "2027-01-18",
                 "au": "2027-02-05"
               },
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Lundi",
-                  "debutMin": 750,
-                  "finMin": 929
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1139
+                },
+                "du": "2027-01-25",
+                "au": "2027-01-29"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 960,
+                  "finMin": 1139
                 },
                 "du": "2027-02-01",
                 "au": "2027-02-12"
@@ -15769,9 +16092,9 @@
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 960,
-                  "finMin": 1139
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-02-08",
                 "au": "2027-02-12"
@@ -15784,7 +16107,7 @@
                   "finMin": 1139
                 },
                 "du": "2027-02-15",
-                "au": "2027-02-19"
+                "au": "2027-02-26"
               },
               {
                 "creneau": {
@@ -15794,14 +16117,14 @@
                   "finMin": 929
                 },
                 "du": "2027-02-15",
-                "au": "2027-02-26"
+                "au": "2027-02-19"
               },
               {
                 "creneau": {
                   "genre": "attribue",
-                  "jour": "Jeudi",
-                  "debutMin": 960,
-                  "finMin": 1139
+                  "jour": "Lundi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-02-22",
                 "au": "2027-02-26"
@@ -15830,7 +16153,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-17T00:07:35.077Z"
   },
   "PPA 2110": {
     "code": "PPA 2110",

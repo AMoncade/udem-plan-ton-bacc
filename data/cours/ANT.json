@@ -1910,7 +1910,20 @@
             "seances": [
               {
                 "creneau": {
-                  "genre": "nonAttribue"
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 750,
+                  "finMin": 929
                 },
                 "du": "2027-05-01",
                 "au": "2027-08-22"
@@ -1920,7 +1933,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-09T19:52:52.343Z"
+    "horairesISO": "2026-11-16T19:40:25.162Z"
   },
   "ANT 2055": {
     "code": "ANT 2055",

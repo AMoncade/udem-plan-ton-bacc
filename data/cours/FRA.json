@@ -4190,6 +4190,16 @@
                   "finMin": 689
                 },
                 "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-22",
                 "au": "2027-02-26"
               },
               {
@@ -4206,7 +4216,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-16T21:47:53.329Z"
   },
   "FRA 3819": {
     "code": "FRA 3819",
@@ -6278,6 +6289,16 @@
                   "finMin": 689
                 },
                 "du": "2027-01-07",
+                "au": "2027-02-12"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 510,
+                  "finMin": 689
+                },
+                "du": "2027-02-22",
                 "au": "2027-02-26"
               },
               {
@@ -6294,7 +6315,8 @@
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-16T22:08:34.414Z"
   },
   "FRA 2031": {
     "code": "FRA 2031",
@@ -6593,10 +6615,16 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/fra-1713/",
     "scrapeISO": "2026-09-13T06:30:11.241Z",
-    "apercuHoraires": []
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-16T21:48:10.339Z"
   },
   "FRA 2708": {
     "code": "FRA 2708",

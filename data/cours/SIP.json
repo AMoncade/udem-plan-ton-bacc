@@ -2324,9 +2324,54 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "Y",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          },
+          {
+            "nom": "Z",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 1110,
+                  "finMin": 1289
+                },
+                "du": "2027-05-03",
+                "au": "2027-06-22"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "horairesISO": "2026-11-10T00:45:16.865Z"
+    "horairesISO": "2026-11-17T00:36:18.160Z"
   },
   "SIP 3040G": {
     "code": "SIP 3040G",

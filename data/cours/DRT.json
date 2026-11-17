@@ -5169,60 +5169,11 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [
-      {
-        "saison": "Hiver",
-        "annee": 2027
-      }
-    ],
+    "trimestres": [],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/drt-3005/",
     "scrapeISO": "2026-09-11T17:58:44.745Z",
-    "apercuHoraires": [
-      {
-        "trimestre": {
-          "saison": "Hiver",
-          "annee": 2027
-        },
-        "sections": [
-          {
-            "nom": "A",
-            "seances": [
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-01-05",
-                "au": "2027-02-12"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-02-22",
-                "au": "2027-02-26"
-              },
-              {
-                "creneau": {
-                  "genre": "attribue",
-                  "jour": "Mardi",
-                  "debutMin": 750,
-                  "finMin": 929
-                },
-                "du": "2027-03-08",
-                "au": "2027-04-09"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "horairesISO": "2026-11-02T20:00:49.564Z"
+    "apercuHoraires": [],
+    "horairesISO": "2026-11-16T20:03:11.954Z"
   },
   "DRT 3008": {
     "code": "DRT 3008",
@@ -6633,10 +6584,50 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Hiver",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/drt-3209/",
     "scrapeISO": "2026-09-11T18:40:16.593Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Hiver",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-01-05",
+                "au": "2027-02-26"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 750,
+                  "finMin": 929
+                },
+                "du": "2027-03-08",
+                "au": "2027-04-09"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-16T20:04:07.248Z"
   },
   "DRT 3210": {
     "code": "DRT 3210",
@@ -17091,7 +17082,7 @@
                   "debutMin": 930,
                   "finMin": 1109
                 },
-                "du": "2027-02-11",
+                "du": "2027-02-04",
                 "au": "2027-02-26"
               },
               {
@@ -17109,7 +17100,7 @@
         ]
       }
     ],
-    "horairesISO": "2026-11-09T21:12:50.646Z"
+    "horairesISO": "2026-11-16T21:05:18.234Z"
   },
   "DRT 6304": {
     "code": "DRT 6304",
@@ -22109,12 +22100,23 @@
                 },
                 "du": "2026-10-26",
                 "au": "2026-11-27"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Lundi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2026-11-30",
+                "au": "2026-12-04"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "horairesISO": "2026-11-16T20:33:59.042Z"
   },
   "DRT 6942": {
     "code": "DRT 6942",

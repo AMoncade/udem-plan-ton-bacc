@@ -115,6 +115,10 @@
       {
         "saison": "Automne",
         "annee": 2026
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/ctl-1902/",
@@ -152,9 +156,42 @@
             ]
           }
         ]
+      },
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Mardi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-15"
+              },
+              {
+                "creneau": {
+                  "genre": "attribue",
+                  "jour": "Jeudi",
+                  "debutMin": 930,
+                  "finMin": 1109
+                },
+                "du": "2027-05-04",
+                "au": "2027-06-15"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "horairesISO": "2026-11-02T19:38:08.201Z"
+    "horairesISO": "2026-11-16T19:43:30.117Z"
   },
   "CTL 1903": {
     "code": "CTL 1903",

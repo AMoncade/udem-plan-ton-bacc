@@ -4829,10 +4829,37 @@
     "prealables": null,
     "concomitantsBrut": null,
     "restrictionsBrut": null,
-    "trimestres": [],
+    "trimestres": [
+      {
+        "saison": "Été",
+        "annee": 2027
+      }
+    ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mev-6729/",
     "scrapeISO": "2026-09-13T05:31:30.309Z",
-    "apercuHoraires": []
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-16T23:01:30.834Z"
   },
   "MEV 6731": {
     "code": "MEV 6731",
@@ -5429,6 +5456,10 @@
         "annee": 2026
       },
       {
+        "saison": "Hiver",
+        "annee": 2027
+      },
+      {
         "saison": "Été",
         "annee": 2027
       }
@@ -5436,7 +5467,7 @@
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mev-6639v/",
     "scrapeISO": "2026-09-13T05:32:29.745Z",
     "apercuHoraires": [],
-    "horairesISO": "2026-11-09T23:08:49.155Z"
+    "horairesISO": "2026-11-16T23:02:33.622Z"
   },
   "MEV 6639W": {
     "code": "MEV 6639W",
@@ -18346,12 +18377,37 @@
       {
         "saison": "Hiver",
         "annee": 2027
+      },
+      {
+        "saison": "Été",
+        "annee": 2027
       }
     ],
     "url": "https://admission.umontreal.ca/cours-et-horaires/cours/mev-6706/",
     "scrapeISO": "2026-09-13T06:26:46.992Z",
-    "apercuHoraires": [],
-    "horairesISO": "2026-11-09T23:58:09.895Z"
+    "apercuHoraires": [
+      {
+        "trimestre": {
+          "saison": "Été",
+          "annee": 2027
+        },
+        "sections": [
+          {
+            "nom": "A",
+            "seances": [
+              {
+                "creneau": {
+                  "genre": "nonAttribue"
+                },
+                "du": "2027-05-01",
+                "au": "2027-08-22"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "horairesISO": "2026-11-16T23:50:38.945Z"
   },
   "MEV 6707": {
     "code": "MEV 6707",
